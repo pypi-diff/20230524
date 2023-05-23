@@ -866,3 +866,18 @@ EOFError: EOF read where object expected
 [2023-05-24 01:18:46] INFO root fetch - main [MainThread]: End processing [quantconnect-stubs]: success
 [2023-05-24 01:19:24] INFO root fetch - main [MainThread]: End processing [cengal]: success
 [2023-05-24 01:19:24] INFO root fetch - main [MainThread]: Store serial: [18220993]
+[2023-05-24 01:24:28] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18220993]
+[2023-05-24 01:24:32] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2023-05-24 01:24:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: biolink-model
+[2023-05-24 01:24:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: paraphase
+[2023-05-24 01:24:32] INFO root fetch - processPackages [biolink-model]: New version: [3.3.4] Old Version: [3.3.3]
+[2023-05-24 01:24:33] INFO root fetch - processPackages [paraphase]: New version: [2.2.3] Old Version: [2.2.2]
+[2023-05-24 01:24:33] INFO root fetch - processPackages [paraphase]: Downloading https://files.pythonhosted.org/packages/5a/25/e3ee5f91545542a24769289f15a68cd9ca7cb977b550fa06a27facc45e23/paraphase-2.2.2.tar.gz
+[2023-05-24 01:24:33] INFO root fetch - processPackages [biolink-model]: executing diffoscope
+[2023-05-24 01:24:33] INFO root fetch - processPackages [biolink-model]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/biolink-model-3.3.3.tar.gz tmp/biolink-model-3.3.4.tar.gz --markdown 20230524/b/biolink-model/3.3.3-3.3.4/diff.md --exclude *.pyd
+[2023-05-24 01:24:33] INFO root fetch - processPackages [paraphase]: Downloading https://files.pythonhosted.org/packages/54/c7/01b75796d2a8befbed67527e4049d8d808c8ddf3fea0bbb9235d1cfdc1c0/paraphase-2.2.3.tar.gz
+[2023-05-24 01:24:33] INFO root fetch - processPackages [paraphase]: executing diffoscope
+[2023-05-24 01:24:33] INFO root fetch - processPackages [paraphase]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/paraphase-2.2.2.tar.gz tmp/paraphase-2.2.3.tar.gz --markdown 20230524/p/paraphase/2.2.2-2.2.3/diff.md --exclude *.pyd
+[2023-05-24 01:24:34] INFO root fetch - main [MainThread]: End processing [biolink-model]: success
+[2023-05-24 01:24:35] INFO root fetch - main [MainThread]: End processing [paraphase]: success
+[2023-05-24 01:24:35] INFO root fetch - main [MainThread]: Store serial: [18221002]
