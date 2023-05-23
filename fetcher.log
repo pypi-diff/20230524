@@ -799,3 +799,70 @@ EOFError: EOF read where object expected
 [2023-05-24 01:13:27] INFO root fetch - main [MainThread]: End processing [vmware-cloud-foundation-health-monitoring]: success
 [2023-05-24 01:13:28] INFO root fetch - main [MainThread]: End processing [whylogs]: success
 [2023-05-24 01:13:28] INFO root fetch - main [MainThread]: Store serial: [18220910]
+[2023-05-24 01:18:33] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18220910]
+[2023-05-24 01:18:38] INFO root fetch - main [MainThread]: Found 10 changed packages
+[2023-05-24 01:18:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: new-component
+[2023-05-24 01:18:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: cengal
+[2023-05-24 01:18:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: eth-py
+[2023-05-24 01:18:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: Fiona
+[2023-05-24 01:18:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: quantconnect-stubs
+[2023-05-24 01:18:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: pepperize.cdk-ses-smtp-credentials
+[2023-05-24 01:18:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: pepmatch
+[2023-05-24 01:18:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: wraps
+[2023-05-24 01:18:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: bookocr
+[2023-05-24 01:18:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: cfr
+[2023-05-24 01:18:38] INFO root fetch - processPackages [eth-py]: New version: [2.3] Old Version: [2.2]
+[2023-05-24 01:18:38] INFO root fetch - processPackages [new-component]: New version: [0.6.0] Old Version: [0.5.0]
+[2023-05-24 01:18:38] INFO root fetch - processPackages [cengal]: New version: [3.2.2] Old Version: [3.2.1]
+[2023-05-24 01:18:38] INFO root fetch - processPackages [pepperize.cdk-ses-smtp-credentials]: New version: [0.3.333] Old Version: [0.3.332]
+[2023-05-24 01:18:38] INFO root fetch - processPackages [pepmatch]: New version: [0.9.1] Old Version: [0.9.0]
+[2023-05-24 01:18:38] INFO root fetch - processPackages [Fiona]: New version: [1.9b2] Old Version: [1.9b1]
+[2023-05-24 01:18:38] INFO root fetch - processPackages [quantconnect-stubs]: New version: [9998] Old Version: [9997]
+[2023-05-24 01:18:38] INFO root fetch - processPackages [bookocr]: New version: [1.0.3] Old Version: [1.0.2]
+[2023-05-24 01:18:38] INFO root fetch - processPackages [wraps]: New version: [0.6.1] Old Version: [0.6.0]
+[2023-05-24 01:18:38] INFO root fetch - processPackages [cfr]: New version: [0.5.0] Old Version: [0.4.6]
+[2023-05-24 01:18:38] INFO root fetch - processPackages [quantconnect-stubs]: executing diffoscope
+[2023-05-24 01:18:38] INFO root fetch - processPackages [quantconnect-stubs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/quantconnect-stubs-9997.tar.gz tmp/quantconnect-stubs-9998.tar.gz --markdown 20230524/q/quantconnect-stubs/9997-9998/diff.md --exclude *.pyd
+[2023-05-24 01:18:38] INFO root fetch - processPackages [new-component]: Downloading https://files.pythonhosted.org/packages/22/f3/77d88694d82443e260943cda5ab16affb43e405c9d53995ec0b6bf6496ed/new-component-0.5.0.tar.gz
+[2023-05-24 01:18:38] INFO root fetch - processPackages [pepmatch]: Downloading https://files.pythonhosted.org/packages/31/29/c29f913c392dc3ff6607ba2a33c15cf771163d35a500eaa2b4593ac8f1b9/pepmatch-0.9.0.tar.gz
+[2023-05-24 01:18:38] INFO root fetch - processPackages [eth-py]: Downloading https://files.pythonhosted.org/packages/c4/6a/5d5860e01c9866eaa8b61f98329151f6977e8d14bd5c36160a7496249ccf/eth_py-2.2.tar.gz
+[2023-05-24 01:18:38] INFO root fetch - processPackages [pepperize.cdk-ses-smtp-credentials]: Downloading https://files.pythonhosted.org/packages/3f/73/38f83f4a648713c1cb011b3d26ef9a981f2cc62f70e9e6d77af1c38a257d/pepperize.cdk-ses-smtp-credentials-0.3.332.tar.gz
+[2023-05-24 01:18:38] INFO root fetch - processPackages [cfr]: Downloading https://files.pythonhosted.org/packages/be/62/5c38e08809d8cc9f8ba953112791ad95e1dc96897ac37f65fa1b4cfb92aa/cfr-0.4.6.tar.gz
+[2023-05-24 01:18:38] INFO root fetch - processPackages [bookocr]: Downloading https://files.pythonhosted.org/packages/7d/d8/9770c013de9ebb814d6d097e4eb1155c6ad395d8457d95e3b254970fda2c/bookocr-1.0.3.tar.gz
+[2023-05-24 01:18:38] INFO root fetch - processPackages [cengal]: Downloading https://files.pythonhosted.org/packages/35/7c/374e91968709d032eb9acf03541be85b23ad0bb371a0d20460f7cc811b26/cengal-3.2.1.tar.gz
+[2023-05-24 01:18:38] INFO root fetch - processPackages [pepmatch]: Downloading https://files.pythonhosted.org/packages/0a/5a/b5c876a972cb6238d21ddc3a74bef577c740b72d89c568ee785fa884eb10/pepmatch-0.9.1.tar.gz
+[2023-05-24 01:18:38] INFO root fetch - processPackages [new-component]: Downloading https://files.pythonhosted.org/packages/7a/9e/7e67bd531574a9c5d2c4ee40114fe2d12273b010fd251d02d2a23f30a88d/new-component-0.6.0.tar.gz
+[2023-05-24 01:18:38] INFO root fetch - processPackages [wraps]: Downloading https://files.pythonhosted.org/packages/8e/08/22c36d2667ee64a9ba0a1e89c9370b6592fb00b1d4b601483ef36d45cac6/wraps-0.6.1.tar.gz
+[2023-05-24 01:18:38] INFO root fetch - processPackages [Fiona]: executing diffoscope
+[2023-05-24 01:18:38] INFO root fetch - processPackages [Fiona]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Fiona-1.9b1.tar.gz tmp/Fiona-1.9b2.tar.gz --markdown 20230524/F/Fiona/1.9b1-1.9b2/diff.md --exclude *.pyd
+[2023-05-24 01:18:38] INFO root fetch - processPackages [eth-py]: Downloading https://files.pythonhosted.org/packages/c3/41/707a92dfba70468e06c7b79f4ecba7a9b87a3ea4bca071300bdd12ea7ca3/eth_py-2.3.tar.gz
+[2023-05-24 01:18:38] INFO root fetch - processPackages [pepperize.cdk-ses-smtp-credentials]: Downloading https://files.pythonhosted.org/packages/e3/b9/0e0a0b11e13ddb23f2dc482578a223d8a38b63e7e905195516d78a662297/pepperize.cdk-ses-smtp-credentials-0.3.333.tar.gz
+[2023-05-24 01:18:38] INFO root fetch - processPackages [pepmatch]: executing diffoscope
+[2023-05-24 01:18:38] INFO root fetch - processPackages [pepmatch]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pepmatch-0.9.0.tar.gz tmp/pepmatch-0.9.1.tar.gz --markdown 20230524/p/pepmatch/0.9.0-0.9.1/diff.md --exclude *.pyd
+[2023-05-24 01:18:38] INFO root fetch - processPackages [cfr]: Downloading https://files.pythonhosted.org/packages/09/fd/252cc54325702fedf56a255caf40b852d461e73db0abcf9d442337883e88/cfr-0.5.0.tar.gz
+[2023-05-24 01:18:38] INFO root fetch - processPackages [new-component]: executing diffoscope
+[2023-05-24 01:18:38] INFO root fetch - processPackages [new-component]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/new-component-0.5.0.tar.gz tmp/new-component-0.6.0.tar.gz --markdown 20230524/n/new-component/0.5.0-0.6.0/diff.md --exclude *.pyd
+[2023-05-24 01:18:38] INFO root fetch - processPackages [wraps]: executing diffoscope
+[2023-05-24 01:18:38] INFO root fetch - processPackages [wraps]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wraps-0.6.0.tar.gz tmp/wraps-0.6.1.tar.gz --markdown 20230524/w/wraps/0.6.0-0.6.1/diff.md --exclude *.pyd
+[2023-05-24 01:18:38] INFO root fetch - processPackages [eth-py]: executing diffoscope
+[2023-05-24 01:18:38] INFO root fetch - processPackages [eth-py]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/eth_py-2.2.tar.gz tmp/eth_py-2.3.tar.gz --markdown 20230524/e/eth-py/2.2-2.3/diff.md --exclude *.pyd
+[2023-05-24 01:18:38] INFO root fetch - processPackages [cengal]: Downloading https://files.pythonhosted.org/packages/14/47/3a2de990ebefac33c3c5dfa1b136fbacb321349976b7837fa03d42944f66/cengal-3.2.2.tar.gz
+[2023-05-24 01:18:38] INFO root fetch - processPackages [pepperize.cdk-ses-smtp-credentials]: executing diffoscope
+[2023-05-24 01:18:38] INFO root fetch - processPackages [pepperize.cdk-ses-smtp-credentials]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pepperize.cdk-ses-smtp-credentials-0.3.332.tar.gz tmp/pepperize.cdk-ses-smtp-credentials-0.3.333.tar.gz --markdown 20230524/p/pepperize.cdk-ses-smtp-credentials/0.3.332-0.3.333/diff.md --exclude *.pyd
+[2023-05-24 01:18:38] INFO root fetch - processPackages [bookocr]: executing diffoscope
+[2023-05-24 01:18:38] INFO root fetch - processPackages [bookocr]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bookocr-1.0.2.tar.gz tmp/bookocr-1.0.3.tar.gz --markdown 20230524/b/bookocr/1.0.2-1.0.3/diff.md --exclude *.pyd
+[2023-05-24 01:18:38] INFO root fetch - processPackages [cfr]: executing diffoscope
+[2023-05-24 01:18:38] INFO root fetch - processPackages [cfr]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cfr-0.4.6.tar.gz tmp/cfr-0.5.0.tar.gz --markdown 20230524/c/cfr/0.4.6-0.5.0/diff.md --exclude *.pyd
+[2023-05-24 01:18:38] INFO root fetch - processPackages [cengal]: executing diffoscope
+[2023-05-24 01:18:38] INFO root fetch - processPackages [cengal]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cengal-3.2.1.tar.gz tmp/cengal-3.2.2.tar.gz --markdown 20230524/c/cengal/3.2.1-3.2.2/diff.md --exclude *.pyd
+[2023-05-24 01:18:40] INFO root fetch - main [MainThread]: End processing [pepmatch]: success
+[2023-05-24 01:18:40] INFO root fetch - main [MainThread]: End processing [eth-py]: success
+[2023-05-24 01:18:40] INFO root fetch - main [MainThread]: End processing [new-component]: success
+[2023-05-24 01:18:40] INFO root fetch - main [MainThread]: End processing [bookocr]: success
+[2023-05-24 01:18:40] INFO root fetch - main [MainThread]: End processing [cfr]: success
+[2023-05-24 01:18:40] INFO root fetch - main [MainThread]: End processing [wraps]: success
+[2023-05-24 01:18:40] INFO root fetch - main [MainThread]: End processing [pepperize.cdk-ses-smtp-credentials]: success
+[2023-05-24 01:18:41] INFO root fetch - main [MainThread]: End processing [Fiona]: success
+[2023-05-24 01:18:46] INFO root fetch - main [MainThread]: End processing [quantconnect-stubs]: success
+[2023-05-24 01:19:24] INFO root fetch - main [MainThread]: End processing [cengal]: success
+[2023-05-24 01:19:24] INFO root fetch - main [MainThread]: Store serial: [18220993]
