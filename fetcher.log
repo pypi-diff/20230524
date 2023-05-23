@@ -737,3 +737,65 @@ EOFError: EOF read where object expected
 [2023-05-24 01:08:13] INFO root fetch - main [MainThread]: End processing [tmnt]: success
 [2023-05-24 01:08:16] INFO root fetch - main [MainThread]: End processing [flowtask]: success
 [2023-05-24 01:08:16] INFO root fetch - main [MainThread]: Store serial: [18220874]
+[2023-05-24 01:13:20] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18220874]
+[2023-05-24 01:13:25] INFO root fetch - main [MainThread]: Found 11 changed packages
+[2023-05-24 01:13:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: Lab3py-farisey
+[2023-05-24 01:13:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pepperize.cdk-ses-smtp-credentials
+[2023-05-24 01:13:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: whylogs
+[2023-05-24 01:13:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: iters
+[2023-05-24 01:13:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: vmware-cloud-foundation-health-monitoring
+[2023-05-24 01:13:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: flexsea
+[2023-05-24 01:13:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: gadapt
+[2023-05-24 01:13:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: py-to-proto
+[2023-05-24 01:13:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: launchflow
+[2023-05-24 01:13:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: twitter-api-client
+[2023-05-24 01:13:25] INFO root fetch - processPackages [gadapt]: New version: [0.2.4] Old Version: [0.2.3]
+[2023-05-24 01:13:25] INFO root fetch - processPackages [pepperize.cdk-ses-smtp-credentials]: New version: [0.3.331] Old Version: [0.3.330]
+[2023-05-24 01:13:25] WARNING root fetch - processPackages [Lab3py-farisey]: Skipping, unable to determine old version
+[2023-05-24 01:13:25] INFO root fetch - processPackages [Lab3py-farisey]: Start processing: mixed-methods
+[2023-05-24 01:13:25] INFO root fetch - main [MainThread]: End processing [Lab3py-farisey] error
+[2023-05-24 01:13:25] INFO root fetch - processPackages [vmware-cloud-foundation-health-monitoring]: New version: [1.1.0.1002] Old Version: [1.1.0]
+[2023-05-24 01:13:25] INFO root fetch - processPackages [iters]: New version: [0.9.0] Old Version: [0.8.0]
+[2023-05-24 01:13:25] INFO root fetch - processPackages [py-to-proto]: New version: [0.3.0] Old Version: [0.2.1]
+[2023-05-24 01:13:25] INFO root fetch - processPackages [launchflow]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-24 01:13:25] INFO root fetch - processPackages [flexsea]: New version: [9.1.1] Old Version: [9.1.0]
+[2023-05-24 01:13:25] INFO root fetch - processPackages [twitter-api-client]: New version: [0.8.2] Old Version: [0.8.1]
+[2023-05-24 01:13:25] INFO root fetch - processPackages [whylogs]: New version: [1.1.9.dev0] Old Version: [1.1.9]
+[2023-05-24 01:13:25] INFO root fetch - processPackages [gadapt]: Downloading https://files.pythonhosted.org/packages/41/7a/aaee544ee4bc00b1b5a526014cda3b3de53b0c908385ca63943772f2e4a5/gadapt-0.2.4.tar.gz
+[2023-05-24 01:13:25] INFO root fetch - processPackages [mixed-methods]: New version: [1.0.2] Old Version: [1.0.1]
+[2023-05-24 01:13:25] INFO root fetch - processPackages [pepperize.cdk-ses-smtp-credentials]: executing diffoscope
+[2023-05-24 01:13:25] INFO root fetch - processPackages [pepperize.cdk-ses-smtp-credentials]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pepperize.cdk-ses-smtp-credentials-0.3.330.tar.gz tmp/pepperize.cdk-ses-smtp-credentials-0.3.331.tar.gz --markdown 20230524/p/pepperize.cdk-ses-smtp-credentials/0.3.330-0.3.331/diff.md --exclude *.pyd
+[2023-05-24 01:13:25] INFO root fetch - processPackages [launchflow]: Downloading https://files.pythonhosted.org/packages/2a/b0/56dc7bd9ba2263bd34aa1a371f6b9c20aea5efc162d9c5179983dcd3fd1b/launchflow-0.1.8.tar.gz
+[2023-05-24 01:13:25] INFO root fetch - processPackages [flexsea]: Downloading https://files.pythonhosted.org/packages/73/13/5e6a24eca54dfb5d33c482a558ba5eec2335484350b7b286b306d01712b9/flexsea-9.1.0-py3-none-any.whl
+[2023-05-24 01:13:25] INFO root fetch - processPackages [gadapt]: executing diffoscope
+[2023-05-24 01:13:25] INFO root fetch - processPackages [gadapt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gadapt-0.2.3.tar.gz tmp/gadapt-0.2.4.tar.gz --markdown 20230524/g/gadapt/0.2.3-0.2.4/diff.md --exclude *.pyd
+[2023-05-24 01:13:25] INFO root fetch - processPackages [mixed-methods]: Downloading https://files.pythonhosted.org/packages/b2/da/cdfbbd412dfb416e273980e35064105f8fe338100127ee6bf7b9dc4eece2/mixed_methods-1.0.1.tar.gz
+[2023-05-24 01:13:25] WARNING root fetch - processPackages [flexsea]: Skipping package: exceeds size limit 13968448>=10485760
+[2023-05-24 01:13:25] INFO root fetch - main [MainThread]: End processing [flexsea] error
+[2023-05-24 01:13:25] INFO root fetch - processPackages [vmware-cloud-foundation-health-monitoring]: Downloading https://files.pythonhosted.org/packages/c1/6d/23b471f0ba79a77dcc963598ac2be62cde5c7425c70ffa55d4d42ee949f8/vmware-cloud-foundation-health-monitoring-1.1.0.1002.tar.gz
+[2023-05-24 01:13:25] INFO root fetch - processPackages [py-to-proto]: Downloading https://files.pythonhosted.org/packages/7c/1e/b65eae7f4b68e3ae6d421ef297f38728f35af7afc4bea5dcfa9a4fdfa745/py_to_proto-0.3.0-py39-none-any.whl
+[2023-05-24 01:13:25] INFO root fetch - processPackages [twitter-api-client]: Downloading https://files.pythonhosted.org/packages/06/31/8c4e66295d6e9196c0c28c35ba948eb486e3c81f75f3fc93f7cc64e1c9a2/twitter-api-client-0.8.2.tar.gz
+[2023-05-24 01:13:25] INFO root fetch - processPackages [iters]: executing diffoscope
+[2023-05-24 01:13:25] INFO root fetch - processPackages [iters]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/iters-0.8.0.tar.gz tmp/iters-0.9.0.tar.gz --markdown 20230524/i/iters/0.8.0-0.9.0/diff.md --exclude *.pyd
+[2023-05-24 01:13:25] INFO root fetch - processPackages [whylogs]: executing diffoscope
+[2023-05-24 01:13:25] INFO root fetch - processPackages [whylogs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/whylogs-1.1.9.tar.gz tmp/whylogs-1.1.9.dev0.tar.gz --markdown 20230524/w/whylogs/1.1.9-1.1.9.dev0/diff.md --exclude *.pyd
+[2023-05-24 01:13:25] INFO root fetch - processPackages [mixed-methods]: Downloading https://files.pythonhosted.org/packages/4a/7c/aa6fc8296a52bf0e455e9253b01332caf56487dd3bd44270918bbee729c8/mixed_methods-1.0.2.tar.gz
+[2023-05-24 01:13:25] INFO root fetch - processPackages [vmware-cloud-foundation-health-monitoring]: executing diffoscope
+[2023-05-24 01:13:25] INFO root fetch - processPackages [vmware-cloud-foundation-health-monitoring]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vmware-cloud-foundation-health-monitoring-1.1.0.tar.gz tmp/vmware-cloud-foundation-health-monitoring-1.1.0.1002.tar.gz --markdown 20230524/v/vmware-cloud-foundation-health-monitoring/1.1.0-1.1.0.1002/diff.md --exclude *.pyd
+[2023-05-24 01:13:25] INFO root fetch - processPackages [py-to-proto]: executing diffoscope
+[2023-05-24 01:13:25] INFO root fetch - processPackages [py-to-proto]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/py_to_proto-0.2.1-py39-none-any.whl.zip tmp/py_to_proto-0.3.0-py39-none-any.whl.zip --markdown 20230524/p/py-to-proto/0.2.1-0.3.0/diff.md --exclude *.pyd
+[2023-05-24 01:13:25] INFO root fetch - processPackages [twitter-api-client]: executing diffoscope
+[2023-05-24 01:13:25] INFO root fetch - processPackages [twitter-api-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/twitter-api-client-0.8.1.tar.gz tmp/twitter-api-client-0.8.2.tar.gz --markdown 20230524/t/twitter-api-client/0.8.1-0.8.2/diff.md --exclude *.pyd
+[2023-05-24 01:13:26] INFO root fetch - processPackages [mixed-methods]: executing diffoscope
+[2023-05-24 01:13:26] INFO root fetch - processPackages [mixed-methods]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mixed_methods-1.0.1.tar.gz tmp/mixed_methods-1.0.2.tar.gz --markdown 20230524/m/mixed-methods/1.0.1-1.0.2/diff.md --exclude *.pyd
+[2023-05-24 01:13:26] WARNING root fetch - processPackages [launchflow]: Skipping package: exceeds size limit 96610312>=10485760
+[2023-05-24 01:13:26] INFO root fetch - main [MainThread]: End processing [launchflow] error
+[2023-05-24 01:13:27] INFO root fetch - main [MainThread]: End processing [gadapt]: success
+[2023-05-24 01:13:27] INFO root fetch - main [MainThread]: End processing [py-to-proto]: success
+[2023-05-24 01:13:27] INFO root fetch - main [MainThread]: End processing [iters]: success
+[2023-05-24 01:13:27] INFO root fetch - main [MainThread]: End processing [pepperize.cdk-ses-smtp-credentials]: success
+[2023-05-24 01:13:27] INFO root fetch - main [MainThread]: End processing [mixed-methods]: success
+[2023-05-24 01:13:27] INFO root fetch - main [MainThread]: End processing [twitter-api-client]: success
+[2023-05-24 01:13:27] INFO root fetch - main [MainThread]: End processing [vmware-cloud-foundation-health-monitoring]: success
+[2023-05-24 01:13:28] INFO root fetch - main [MainThread]: End processing [whylogs]: success
+[2023-05-24 01:13:28] INFO root fetch - main [MainThread]: Store serial: [18220910]
