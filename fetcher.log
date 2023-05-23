@@ -674,3 +674,66 @@ EOFError: EOF read where object expected
 [2023-05-24 01:03:00] INFO root fetch - main [MainThread]: End processing [caikit]: success
 [2023-05-24 01:03:01] INFO root fetch - main [MainThread]: End processing [naludaq]: success
 [2023-05-24 01:03:01] INFO root fetch - main [MainThread]: Store serial: [18220843]
+[2023-05-24 01:08:05] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18220843]
+[2023-05-24 01:08:10] INFO root fetch - main [MainThread]: Found 11 changed packages
+[2023-05-24 01:08:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: flwr-nightly
+[2023-05-24 01:08:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: tmnt
+[2023-05-24 01:08:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: transpose-dit
+[2023-05-24 01:08:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: KiMoPack
+[2023-05-24 01:08:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: funcs
+[2023-05-24 01:08:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: gadapt
+[2023-05-24 01:08:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: safir
+[2023-05-24 01:08:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: sndfileio
+[2023-05-24 01:08:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: cqlsh-expansion
+[2023-05-24 01:08:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: flowtask
+[2023-05-24 01:08:10] WARNING root fetch - processPackages [transpose-dit]: Skipping, unable to determine old version
+[2023-05-24 01:08:10] INFO root fetch - processPackages [transpose-dit]: Start processing: sndfileio
+[2023-05-24 01:08:10] INFO root fetch - main [MainThread]: End processing [transpose-dit] error
+[2023-05-24 01:08:10] INFO root fetch - processPackages [tmnt]: New version: [0.7.0b20230522] Old Version: [0.7.0b20230521]
+[2023-05-24 01:08:10] INFO root fetch - processPackages [flowtask]: New version: [4.3.9] Old Version: [4.3.8]
+[2023-05-24 01:08:10] INFO root fetch - processPackages [gadapt]: New version: [0.2.3] Old Version: [0.2.2]
+[2023-05-24 01:08:11] INFO root fetch - processPackages [KiMoPack]: New version: [7.0.9] Old Version: [7.0.8]
+[2023-05-24 01:08:11] INFO root fetch - processPackages [sndfileio]: New version: [1.9.2] Old Version: [1.9.1]
+[2023-05-24 01:08:11] INFO root fetch - processPackages [sndfileio]: New version: [1.9.2] Old Version: [1.9.1]
+[2023-05-24 01:08:11] INFO root fetch - processPackages [KiMoPack]: Downloading https://files.pythonhosted.org/packages/32/d9/4e06e90f9fbbaf6c0c3c9908682c88319e3c2720e28b27eef6efe988a4e9/KiMoPack-7.0.8.tar.gz
+[2023-05-24 01:08:11] INFO root fetch - processPackages [funcs]: New version: [0.7.1] Old Version: [0.7.0]
+[2023-05-24 01:08:11] INFO root fetch - processPackages [flwr-nightly]: New version: [1.5.0.dev20230523] Old Version: [1.5.0.dev20230522]
+[2023-05-24 01:08:11] INFO root fetch - processPackages [safir]: New version: [4.3.0] Old Version: [4.2.2]
+[2023-05-24 01:08:11] INFO root fetch - processPackages [cqlsh-expansion]: New version: [0.9.0] Old Version: [0.7.8]
+[2023-05-24 01:08:11] INFO root fetch - processPackages [sndfileio]: executing diffoscope
+[2023-05-24 01:08:11] INFO root fetch - processPackages [sndfileio]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sndfileio-1.9.1.tar.gz tmp/sndfileio-1.9.2-py3-none-any.whl.zip --markdown 20230524/s/sndfileio/1.9.1-1.9.2/diff.md --exclude *.pyd
+[2023-05-24 01:08:11] INFO root fetch - processPackages [flowtask]: executing diffoscope
+[2023-05-24 01:08:11] INFO root fetch - processPackages [flowtask]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/flowtask-4.3.8-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip tmp/flowtask-4.3.9-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip --markdown 20230524/f/flowtask/4.3.8-4.3.9/diff.md --exclude *.pyd
+[2023-05-24 01:08:11] WARNING root fetch - processPackages [KiMoPack]: Skipping package: exceeds size limit 55231158>=10485760
+[2023-05-24 01:08:11] INFO root fetch - main [MainThread]: End processing [KiMoPack] error
+[2023-05-24 01:08:11] INFO root fetch - processPackages [sndfileio]: executing diffoscope
+[2023-05-24 01:08:11] INFO root fetch - processPackages [sndfileio]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sndfileio-1.9.1.tar.gz tmp/sndfileio-1.9.2-py3-none-any.whl.zip --markdown 20230524/s/sndfileio/1.9.1-1.9.2/diff.md --exclude *.pyd
+[2023-05-24 01:08:11] INFO root fetch - processPackages [tmnt]: Downloading https://files.pythonhosted.org/packages/1c/f9/a4c1b0d5f2dc94deda5a5661f010a299cf155cec12eb0e8c6ac37704d114/tmnt-0.7.0b20230522.tar.gz
+[2023-05-24 01:08:11] INFO root fetch - processPackages [gadapt]: Downloading https://files.pythonhosted.org/packages/f4/17/27af78604bd946a8f94ef79442f2c3f64136766ce9e83c0e925bb84a5d11/gadapt-0.2.3.tar.gz
+[2023-05-24 01:08:11] INFO root fetch - processPackages [cqlsh-expansion]: Downloading https://files.pythonhosted.org/packages/4e/23/af31a9561b973d5f24c22a9ccae86f5f89c62348e64fef203a65e083cbc9/cqlsh_expansion-0.7.8-py2-none-any.whl
+[2023-05-24 01:08:11] INFO root fetch - processPackages [tmnt]: executing diffoscope
+[2023-05-24 01:08:11] INFO root fetch - processPackages [tmnt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tmnt-0.7.0b20230521.tar.gz tmp/tmnt-0.7.0b20230522.tar.gz --markdown 20230524/t/tmnt/0.7.0b20230521-0.7.0b20230522/diff.md --exclude *.pyd
+[2023-05-24 01:08:11] INFO root fetch - processPackages [gadapt]: executing diffoscope
+[2023-05-24 01:08:11] INFO root fetch - processPackages [gadapt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gadapt-0.2.2.tar.gz tmp/gadapt-0.2.3.tar.gz --markdown 20230524/g/gadapt/0.2.2-0.2.3/diff.md --exclude *.pyd
+[2023-05-24 01:08:11] INFO root fetch - processPackages [safir]: Downloading https://files.pythonhosted.org/packages/a7/95/b61927ff01924de96f59898a898fbd82e2decb99f8b205146bfdf82dcc1b/safir-4.3.0.tar.gz
+[2023-05-24 01:08:11] INFO root fetch - processPackages [flwr-nightly]: Downloading https://files.pythonhosted.org/packages/45/89/7597926d2cb1e7d846f864e3de520abe1cb3a1d06a77a847a117f4a297f3/flwr_nightly-1.5.0.dev20230523.tar.gz
+[2023-05-24 01:08:11] INFO root fetch - processPackages [funcs]: Downloading https://files.pythonhosted.org/packages/e4/d6/2e8c75b00644ebe1326a3a8e39a48cdefb5402d40ce88355a865bdfdaea9/funcs-0.7.1.tar.gz
+[2023-05-24 01:08:11] INFO root fetch - processPackages [safir]: executing diffoscope
+[2023-05-24 01:08:11] INFO root fetch - processPackages [safir]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/safir-4.2.2.tar.gz tmp/safir-4.3.0.tar.gz --markdown 20230524/s/safir/4.2.2-4.3.0/diff.md --exclude *.pyd
+[2023-05-24 01:08:11] INFO root fetch - processPackages [funcs]: executing diffoscope
+[2023-05-24 01:08:11] INFO root fetch - processPackages [funcs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/funcs-0.7.0.tar.gz tmp/funcs-0.7.1.tar.gz --markdown 20230524/f/funcs/0.7.0-0.7.1/diff.md --exclude *.pyd
+[2023-05-24 01:08:11] INFO root fetch - processPackages [cqlsh-expansion]: Downloading https://files.pythonhosted.org/packages/6b/71/3598428cc3e8044fdef1b52c10e0052c791ccfd2a63742dca43d878e5b3f/cqlsh_expansion-0.9.0-py3-none-any.whl
+[2023-05-24 01:08:11] INFO root fetch - processPackages [flwr-nightly]: executing diffoscope
+[2023-05-24 01:08:11] INFO root fetch - processPackages [flwr-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/flwr_nightly-1.5.0.dev20230522.tar.gz tmp/flwr_nightly-1.5.0.dev20230523.tar.gz --markdown 20230524/f/flwr-nightly/1.5.0.dev20230522-1.5.0.dev20230523/diff.md --exclude *.pyd
+[2023-05-24 01:08:11] INFO root fetch - processPackages [cqlsh-expansion]: executing diffoscope
+[2023-05-24 01:08:11] INFO root fetch - processPackages [cqlsh-expansion]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cqlsh_expansion-0.7.8-py2-none-any.whl.zip tmp/cqlsh_expansion-0.9.0-py3-none-any.whl.zip --markdown 20230524/c/cqlsh-expansion/0.7.8-0.9.0/diff.md --exclude *.pyd
+[2023-05-24 01:08:12] INFO root fetch - main [MainThread]: End processing [sndfileio]: success
+[2023-05-24 01:08:12] INFO root fetch - main [MainThread]: End processing [funcs]: success
+[2023-05-24 01:08:13] INFO root fetch - main [MainThread]: End processing [cqlsh-expansion]: success
+[2023-05-24 01:08:13] INFO root fetch - main [MainThread]: End processing [gadapt]: success
+[2023-05-24 01:08:13] INFO root fetch - main [MainThread]: End processing [sndfileio]: success
+[2023-05-24 01:08:13] INFO root fetch - main [MainThread]: End processing [flwr-nightly]: success
+[2023-05-24 01:08:13] INFO root fetch - main [MainThread]: End processing [safir]: success
+[2023-05-24 01:08:13] INFO root fetch - main [MainThread]: End processing [tmnt]: success
+[2023-05-24 01:08:16] INFO root fetch - main [MainThread]: End processing [flowtask]: success
+[2023-05-24 01:08:16] INFO root fetch - main [MainThread]: Store serial: [18220874]
