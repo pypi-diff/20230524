@@ -1,0 +1,115 @@
+[2023-05-24 00:04:02] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18220408]
+[2023-05-24 00:04:06] INFO root fetch - main [MainThread]: Found 12 changed packages
+[2023-05-24 00:04:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: torchgfn
+[2023-05-24 00:04:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: cengal
+[2023-05-24 00:04:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: html-msg
+[2023-05-24 00:04:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: deamons
+[2023-05-24 00:04:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: djangocms-simple-admin-style
+[2023-05-24 00:04:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: versions
+[2023-05-24 00:04:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: trulens-eval
+[2023-05-24 00:04:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: pywinrequest
+[2023-05-24 00:04:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: melexis-i2c-stick
+[2023-05-24 00:04:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: serverhttpy
+[2023-05-24 00:04:06] INFO root fetch - processPackages [html-msg]: New version: [1.1.6] Old Version: [1.1.5]
+[2023-05-24 00:04:06] INFO root fetch - processPackages [versions]: New version: [1.6.0] Old Version: [1.5.0]
+[2023-05-24 00:04:06] INFO root fetch - processPackages [djangocms-simple-admin-style]: New version: [0.4.2] Old Version: [0.4.1]
+[2023-05-24 00:04:06] INFO root fetch - processPackages [serverhttpy]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-05-24 00:04:06] WARNING root fetch - processPackages [torchgfn]: Skipping, unable to determine old version
+[2023-05-24 00:04:06] INFO root fetch - processPackages [torchgfn]: Start processing: tn-crypto
+[2023-05-24 00:04:06] INFO root fetch - main [MainThread]: End processing [torchgfn] error
+[2023-05-24 00:04:06] WARNING root fetch - processPackages [trulens-eval]: Skipping, unable to determine old version
+[2023-05-24 00:04:06] INFO root fetch - processPackages [cengal]: New version: [3.2.0.1] Old Version: [3.2.0]
+[2023-05-24 00:04:06] INFO root fetch - processPackages [trulens-eval]: Start processing: appmap
+[2023-05-24 00:04:06] WARNING root fetch - processPackages [pywinrequest]: Skipping, unable to determine old version
+[2023-05-24 00:04:06] INFO root fetch - main [MainThread]: End processing [trulens-eval] error
+[2023-05-24 00:04:06] INFO root fetch - main [MainThread]: End processing [pywinrequest] error
+[2023-05-24 00:04:06] WARNING root fetch - processPackages [deamons]: Skipping, unable to determine old version
+[2023-05-24 00:04:06] INFO root fetch - main [MainThread]: End processing [deamons] error
+[2023-05-24 00:04:06] INFO root fetch - processPackages [melexis-i2c-stick]: New version: [0.2.0] Old Version: [0.1.5]
+[2023-05-24 00:04:06] WARNING root fetch - processPackages [tn-crypto]: Skipping, unable to determine old version
+[2023-05-24 00:04:06] INFO root fetch - main [MainThread]: End processing [tn-crypto] error
+[2023-05-24 00:04:06] INFO root fetch - processPackages [appmap]: New version: [1.9.1] Old Version: [1.9.0]
+[2023-05-24 00:04:07] INFO root fetch - processPackages [html-msg]: Downloading https://files.pythonhosted.org/packages/73/df/6a99209e67f37f5c49f226920c2c6622c74060a604c30da5b1091fdc614e/html_msg-1.1.5.tar.gz
+[2023-05-24 00:04:07] INFO root fetch - processPackages [serverhttpy]: Downloading https://files.pythonhosted.org/packages/e2/f5/8289f346306151b543ca6244b7d4c6d27aa7cd8bd309081a78b3ee1cd6b9/serverhttpy-0.0.3.tar.gz
+[2023-05-24 00:04:07] INFO root fetch - processPackages [cengal]: Downloading https://files.pythonhosted.org/packages/99/46/42b2ecb8a7388885aaf439f8d97a0b37f49999a66b6613fbd0a5226426c7/cengal-3.2.0.tar.gz
+[2023-05-24 00:04:07] INFO root fetch - processPackages [versions]: Downloading https://files.pythonhosted.org/packages/c0/87/8f4a02597b55699feb566e3f388dba89cf93237cae4997ddda3abaa3ba39/versions-1.6.0.tar.gz
+[2023-05-24 00:04:07] INFO root fetch - processPackages [djangocms-simple-admin-style]: Downloading https://files.pythonhosted.org/packages/8a/86/cfc70a00f219a99cdee6d4393343d57c9f74124de94af2f1ef867cb604ae/djangocms-simple-admin-style-0.4.2.tar.gz
+[2023-05-24 00:04:07] INFO root fetch - processPackages [appmap]: Downloading https://files.pythonhosted.org/packages/f2/7e/f32f11d1f20873b6544f9429e83a6cb2a22abe5f245abba0bcd91dfe715c/appmap-1.9.0.tar.gz
+[2023-05-24 00:04:07] INFO root fetch - processPackages [melexis-i2c-stick]: Downloading https://files.pythonhosted.org/packages/4d/49/75dfc88a105ad6b431e64349b9aac79f1b09b6c546a83802a855fa0ed9e6/melexis-i2c-stick-0.2.0.tar.gz
+[2023-05-24 00:04:07] INFO root fetch - processPackages [serverhttpy]: executing diffoscope
+[2023-05-24 00:04:07] INFO root fetch - processPackages [serverhttpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/serverhttpy-0.0.2.tar.gz tmp/serverhttpy-0.0.3.tar.gz --markdown 20230524/s/serverhttpy/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-05-24 00:04:07] INFO root fetch - processPackages [versions]: executing diffoscope
+[2023-05-24 00:04:07] INFO root fetch - processPackages [versions]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/versions-1.5.0.tar.gz tmp/versions-1.6.0.tar.gz --markdown 20230524/v/versions/1.5.0-1.6.0/diff.md --exclude *.pyd
+[2023-05-24 00:04:07] INFO root fetch - processPackages [djangocms-simple-admin-style]: executing diffoscope
+[2023-05-24 00:04:07] INFO root fetch - processPackages [djangocms-simple-admin-style]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/djangocms-simple-admin-style-0.4.1.tar.gz tmp/djangocms-simple-admin-style-0.4.2.tar.gz --markdown 20230524/d/djangocms-simple-admin-style/0.4.1-0.4.2/diff.md --exclude *.pyd
+[2023-05-24 00:04:07] INFO root fetch - processPackages [html-msg]: Downloading https://files.pythonhosted.org/packages/95/25/e75b263865b167fe01b625e4b037121a5191294c08e7c2e95a3715dcb56f/html_msg-1.1.6.tar.gz
+[2023-05-24 00:04:07] INFO root fetch - processPackages [melexis-i2c-stick]: executing diffoscope
+[2023-05-24 00:04:07] INFO root fetch - processPackages [melexis-i2c-stick]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/melexis-i2c-stick-0.1.5.tar.gz tmp/melexis-i2c-stick-0.2.0.tar.gz --markdown 20230524/m/melexis-i2c-stick/0.1.5-0.2.0/diff.md --exclude *.pyd
+[2023-05-24 00:04:07] INFO root fetch - processPackages [cengal]: Downloading https://files.pythonhosted.org/packages/2e/de/ec67c18a6551527ad05091295f9224e309686b5a9225844b17bf3030f9b0/cengal-3.2.0.1.tar.gz
+[2023-05-24 00:04:07] INFO root fetch - processPackages [cengal]: executing diffoscope
+[2023-05-24 00:04:07] INFO root fetch - processPackages [cengal]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cengal-3.2.0.tar.gz tmp/cengal-3.2.0.1.tar.gz --markdown 20230524/c/cengal/3.2.0-3.2.0.1/diff.md --exclude *.pyd
+[2023-05-24 00:04:07] INFO root fetch - processPackages [appmap]: Downloading https://files.pythonhosted.org/packages/d8/c7/6ce38549b3048524dba85c7c34487c648fd10bdd5378a2654bf672a6baba/appmap-1.9.1.tar.gz
+[2023-05-24 00:04:07] INFO root fetch - processPackages [html-msg]: executing diffoscope
+[2023-05-24 00:04:07] INFO root fetch - processPackages [html-msg]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/html_msg-1.1.5.tar.gz tmp/html_msg-1.1.6.tar.gz --markdown 20230524/h/html-msg/1.1.5-1.1.6/diff.md --exclude *.pyd
+[2023-05-24 00:04:07] INFO root fetch - processPackages [appmap]: executing diffoscope
+[2023-05-24 00:04:07] INFO root fetch - processPackages [appmap]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/appmap-1.9.0.tar.gz tmp/appmap-1.9.1.tar.gz --markdown 20230524/a/appmap/1.9.0-1.9.1/diff.md --exclude *.pyd
+[2023-05-24 00:04:09] INFO root fetch - main [MainThread]: End processing [html-msg]: success
+[2023-05-24 00:04:09] INFO root fetch - main [MainThread]: End processing [versions]: success
+[2023-05-24 00:04:09] INFO root fetch - main [MainThread]: End processing [melexis-i2c-stick]: success
+[2023-05-24 00:04:09] INFO root fetch - main [MainThread]: End processing [serverhttpy]: success
+[2023-05-24 00:04:09] INFO root fetch - main [MainThread]: End processing [djangocms-simple-admin-style]: success
+[2023-05-24 00:04:10] ERROR root fetch - processPackages [appmap]: Diffoscope failed: Traceback (most recent call last):
+  File "/srv/diffoscope/diffoscope/main.py", line 767, in main
+    sys.exit(run_diffoscope(parsed_args))
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/main.py", line 718, in run_diffoscope
+    difference = compare_root_paths(path1, path2)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/compare.py", line 69, in compare_root_paths
+    difference = compare_files(file1, file2)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/compare.py", line 149, in compare_files
+    return file1.compare(file2, source)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/file.py", line 515, in compare
+    difference = self._compare_using_details(other, source)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/file.py", line 450, in _compare_using_details
+    details.extend(
+  File "/srv/diffoscope/diffoscope/comparators/utils/container.py", line 197, in compare_pair
+    difference = compare_files(
+                 ^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/compare.py", line 149, in compare_files
+    return file1.compare(file2, source)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/file.py", line 515, in compare
+    difference = self._compare_using_details(other, source)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/file.py", line 450, in _compare_using_details
+    details.extend(
+  File "/srv/diffoscope/diffoscope/comparators/utils/container.py", line 197, in compare_pair
+    difference = compare_files(
+                 ^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/compare.py", line 149, in compare_files
+    return file1.compare(file2, source)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/file.py", line 515, in compare
+    difference = self._compare_using_details(other, source)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/file.py", line 416, in _compare_using_details
+    details.extend(self.compare_details(other, source))
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/python.py", line 51, in compare_details
+    describe_pyc(self.path),
+    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/python.py", line 65, in describe_pyc
+    return "\n".join(parse_pyc(f))
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/python.py", line 81, in parse_pyc
+    code = marshal.load(f)
+           ^^^^^^^^^^^^^^^
+EOFError: EOF read where object expected
+
+[2023-05-24 00:04:10] INFO root fetch - main [MainThread]: End processing [appmap] error
+[2023-05-24 00:04:23] INFO root fetch - main [MainThread]: End processing [cengal]: success
+[2023-05-24 00:04:23] INFO root fetch - main [MainThread]: Store serial: [18220464]
