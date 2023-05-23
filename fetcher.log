@@ -881,3 +881,49 @@ EOFError: EOF read where object expected
 [2023-05-24 01:24:34] INFO root fetch - main [MainThread]: End processing [biolink-model]: success
 [2023-05-24 01:24:35] INFO root fetch - main [MainThread]: End processing [paraphase]: success
 [2023-05-24 01:24:35] INFO root fetch - main [MainThread]: Store serial: [18221002]
+[2023-05-24 01:29:39] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18221002]
+[2023-05-24 01:29:44] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-05-24 01:29:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: novelai-api
+[2023-05-24 01:29:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: vegafusion-python-embed
+[2023-05-24 01:29:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: lockss-debugpanel
+[2023-05-24 01:29:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: nriapp
+[2023-05-24 01:29:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: vegafusion
+[2023-05-24 01:29:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: EnergyCapSdk
+[2023-05-24 01:29:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: vegafusion-jupyter
+[2023-05-24 01:29:44] INFO root fetch - processPackages [novelai-api]: New version: [0.9] Old Version: [0.8]
+[2023-05-24 01:29:44] INFO root fetch - processPackages [nriapp]: New version: [1.1.19] Old Version: [1.1.18]
+[2023-05-24 01:29:44] INFO root fetch - processPackages [lockss-debugpanel]: New version: [0.7.0.post1] Old Version: [0.7.0]
+[2023-05-24 01:29:44] INFO root fetch - processPackages [vegafusion-jupyter]: New version: [1.3.0rc3] Old Version: [1.3.0rc2]
+[2023-05-24 01:29:44] INFO root fetch - processPackages [vegafusion]: New version: [1.3.0rc3] Old Version: [1.3.0rc2]
+[2023-05-24 01:29:44] INFO root fetch - processPackages [vegafusion-python-embed]: New version: [1.3.0rc3] Old Version: [1.3.0rc2]
+[2023-05-24 01:29:44] INFO root fetch - processPackages [EnergyCapSdk]: New version: [8.2302.4562] Old Version: [8.2302.4548]
+[2023-05-24 01:29:44] INFO root fetch - processPackages [lockss-debugpanel]: Downloading https://files.pythonhosted.org/packages/8a/ab/0892dc325f6af1d71e11457462329d18e8cfa7ffd382b2b0c9d274fef70f/lockss_debugpanel-0.7.0.tar.gz
+[2023-05-24 01:29:44] INFO root fetch - processPackages [nriapp]: Downloading https://files.pythonhosted.org/packages/76/36/1f6d428568549b8672286d79228e90b5a1ebbe3bdeef11d1307dbaf87126/nriapp-1.1.18.tar.gz
+[2023-05-24 01:29:44] INFO root fetch - processPackages [novelai-api]: executing diffoscope
+[2023-05-24 01:29:44] INFO root fetch - processPackages [novelai-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/novelai-api-0.8.tar.gz tmp/novelai-api-0.9.tar.gz --markdown 20230524/n/novelai-api/0.8-0.9/diff.md --exclude *.pyd
+[2023-05-24 01:29:44] INFO root fetch - processPackages [vegafusion-python-embed]: Downloading https://files.pythonhosted.org/packages/71/f5/acea7990c012df0a6a24ee842494207eee015d5763db684a85f72a223d97/vegafusion_python_embed-1.3.0_rc3.tar.gz
+[2023-05-24 01:29:44] INFO root fetch - processPackages [vegafusion-jupyter]: Downloading https://files.pythonhosted.org/packages/01/d0/38329ee92b24a418e4879508f649f89d35ff561cc3eb61046c9229942402/vegafusion-jupyter-1.3.0rc3.tar.gz
+[2023-05-24 01:29:44] INFO root fetch - processPackages [EnergyCapSdk]: Downloading https://files.pythonhosted.org/packages/83/90/e6c4aae656bceca41e8cf4557430463237d870e7fe1bc0d616c0a947e844/EnergyCapSdk-8.2302.4562.tar.gz
+[2023-05-24 01:29:44] INFO root fetch - processPackages [vegafusion]: Downloading https://files.pythonhosted.org/packages/27/e2/a55510922b1c643e6710f09bce069d635e9e100bf8cfc1c5dd2cb1cc0574/vegafusion-1.3.0rc3.tar.gz
+[2023-05-24 01:29:44] INFO root fetch - processPackages [nriapp]: Downloading https://files.pythonhosted.org/packages/62/0e/d16b37711350cd5a8361c8a3f254374d6ddf8d555175c55807824e38cc2e/nriapp-1.1.19.tar.gz
+[2023-05-24 01:29:44] INFO root fetch - processPackages [lockss-debugpanel]: Downloading https://files.pythonhosted.org/packages/f8/12/4b66a2edde51620a746c307640c86213458759ca67f743251b7ad2c20f30/lockss_debugpanel-0.7.0.post1.tar.gz
+[2023-05-24 01:29:44] INFO root fetch - processPackages [vegafusion]: executing diffoscope
+[2023-05-24 01:29:44] INFO root fetch - processPackages [vegafusion]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vegafusion-1.3.0rc2.tar.gz tmp/vegafusion-1.3.0rc3.tar.gz --markdown 20230524/v/vegafusion/1.3.0rc2-1.3.0rc3/diff.md --exclude *.pyd
+[2023-05-24 01:29:44] INFO root fetch - processPackages [nriapp]: executing diffoscope
+[2023-05-24 01:29:44] INFO root fetch - processPackages [nriapp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nriapp-1.1.18.tar.gz tmp/nriapp-1.1.19.tar.gz --markdown 20230524/n/nriapp/1.1.18-1.1.19/diff.md --exclude *.pyd
+[2023-05-24 01:29:44] INFO root fetch - processPackages [EnergyCapSdk]: executing diffoscope
+[2023-05-24 01:29:44] INFO root fetch - processPackages [EnergyCapSdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/EnergyCapSdk-8.2302.4548.tar.gz tmp/EnergyCapSdk-8.2302.4562.tar.gz --markdown 20230524/E/EnergyCapSdk/8.2302.4548-8.2302.4562/diff.md --exclude *.pyd
+[2023-05-24 01:29:44] INFO root fetch - processPackages [lockss-debugpanel]: executing diffoscope
+[2023-05-24 01:29:44] INFO root fetch - processPackages [lockss-debugpanel]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lockss_debugpanel-0.7.0.tar.gz tmp/lockss_debugpanel-0.7.0.post1.tar.gz --markdown 20230524/l/lockss-debugpanel/0.7.0-0.7.0.post1/diff.md --exclude *.pyd
+[2023-05-24 01:29:45] INFO root fetch - processPackages [vegafusion-jupyter]: executing diffoscope
+[2023-05-24 01:29:45] INFO root fetch - processPackages [vegafusion-jupyter]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vegafusion-jupyter-1.3.0rc2.tar.gz tmp/vegafusion-jupyter-1.3.0rc3.tar.gz --markdown 20230524/v/vegafusion-jupyter/1.3.0rc2-1.3.0rc3/diff.md --exclude *.pyd
+[2023-05-24 01:29:45] INFO root fetch - processPackages [vegafusion-python-embed]: executing diffoscope
+[2023-05-24 01:29:45] INFO root fetch - processPackages [vegafusion-python-embed]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vegafusion_python_embed-1.3.0_rc2.tar.gz tmp/vegafusion_python_embed-1.3.0_rc3.tar.gz --markdown 20230524/v/vegafusion-python-embed/1.3.0rc2-1.3.0rc3/diff.md --exclude *.pyd
+[2023-05-24 01:29:46] INFO root fetch - main [MainThread]: End processing [nriapp]: success
+[2023-05-24 01:29:46] INFO root fetch - main [MainThread]: End processing [novelai-api]: success
+[2023-05-24 01:29:46] INFO root fetch - main [MainThread]: End processing [vegafusion]: success
+[2023-05-24 01:29:46] INFO root fetch - main [MainThread]: End processing [lockss-debugpanel]: success
+[2023-05-24 01:30:17] INFO root fetch - main [MainThread]: End processing [vegafusion-python-embed]: success
+[2023-05-24 01:30:18] INFO root fetch - main [MainThread]: End processing [EnergyCapSdk]: success
+[2023-05-24 01:31:26] INFO root fetch - main [MainThread]: End processing [vegafusion-jupyter]: success
+[2023-05-24 01:31:26] INFO root fetch - main [MainThread]: Store serial: [18221042]
