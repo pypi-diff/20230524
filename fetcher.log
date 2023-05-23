@@ -245,3 +245,49 @@ EOFError: EOF read where object expected
 [2023-05-24 00:20:03] INFO root fetch - main [MainThread]: End processing [hydra-zen]: success
 [2023-05-24 00:20:12] INFO root fetch - main [MainThread]: End processing [rime-sdk]: success
 [2023-05-24 00:20:12] INFO root fetch - main [MainThread]: Store serial: [18220533]
+[2023-05-24 00:25:16] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18220533]
+[2023-05-24 00:25:20] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-05-24 00:25:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: nonebot-plugin-smallapi
+[2023-05-24 00:25:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: py-to-proto
+[2023-05-24 00:25:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: hanlp
+[2023-05-24 00:25:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: hexabyte-extended-info
+[2023-05-24 00:25:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: gadapt
+[2023-05-24 00:25:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: hexabyte-entropy
+[2023-05-24 00:25:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: calcipy
+[2023-05-24 00:25:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: ha-av
+[2023-05-24 00:25:20] INFO root fetch - processPackages [py-to-proto]: New version: [0.2.1] Old Version: [0.2.0]
+[2023-05-24 00:25:20] INFO root fetch - processPackages [nonebot-plugin-smallapi]: New version: [1.0.5] Old Version: [1.0.4]
+[2023-05-24 00:25:20] WARNING root fetch - processPackages [hexabyte-entropy]: Skipping, unable to determine old version
+[2023-05-24 00:25:20] INFO root fetch - main [MainThread]: End processing [hexabyte-entropy] error
+[2023-05-24 00:25:20] INFO root fetch - processPackages [hanlp]: New version: [2.1.0b9] Old Version: [2.1.0b8]
+[2023-05-24 00:25:20] WARNING root fetch - processPackages [gadapt]: Skipping, unable to determine old version
+[2023-05-24 00:25:20] INFO root fetch - main [MainThread]: End processing [gadapt] error
+[2023-05-24 00:25:20] WARNING root fetch - processPackages [hexabyte-extended-info]: Skipping, unable to determine old version
+[2023-05-24 00:25:20] INFO root fetch - main [MainThread]: End processing [hexabyte-extended-info] error
+[2023-05-24 00:25:20] INFO root fetch - processPackages [calcipy]: New version: [1.2.5] Old Version: [1.2.4]
+[2023-05-24 00:25:20] INFO root fetch - processPackages [ha-av]: New version: [9.2.0.post1] Old Version: [9.1.1.post3]
+[2023-05-24 00:25:21] INFO root fetch - processPackages [py-to-proto]: Downloading https://files.pythonhosted.org/packages/ab/47/94f9c823b1b5b0cacffc33c7796aae69901cb40e383266b72f8a45e87a6c/py_to_proto-0.2.0-py39-none-any.whl
+[2023-05-24 00:25:21] INFO root fetch - processPackages [calcipy]: Downloading https://files.pythonhosted.org/packages/7f/32/46784d4fd3f3e3bc5879381fccfe70f639db7722a26f5c5f9b3692c8a343/calcipy-1.2.4.tar.gz
+[2023-05-24 00:25:21] INFO root fetch - processPackages [hanlp]: Downloading https://files.pythonhosted.org/packages/61/f3/a23a0e125a1f608f73b9e68cd507a465ead98016ea38eeffd96c743f381d/hanlp-2.1.0b8.tar.gz
+[2023-05-24 00:25:21] INFO root fetch - processPackages [ha-av]: Downloading https://files.pythonhosted.org/packages/ec/39/60239a364f1bc671cc320c22ab12031dc8741e378ec4e31c0d51357d4d05/ha-av-9.1.1.post3.tar.gz
+[2023-05-24 00:25:21] INFO root fetch - processPackages [nonebot-plugin-smallapi]: Downloading https://files.pythonhosted.org/packages/b3/4d/8c1808741283e3fb6d11c8a3ff3bcdc576e27bc9f9c53e9b86f787edb780/nonebot_plugin_smallapi-1.0.5.tar.gz
+[2023-05-24 00:25:21] INFO root fetch - processPackages [nonebot-plugin-smallapi]: executing diffoscope
+[2023-05-24 00:25:21] INFO root fetch - processPackages [nonebot-plugin-smallapi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nonebot_plugin_smallapi-1.0.4.tar.gz tmp/nonebot_plugin_smallapi-1.0.5.tar.gz --markdown 20230524/n/nonebot-plugin-smallapi/1.0.4-1.0.5/diff.md --exclude *.pyd
+[2023-05-24 00:25:21] INFO root fetch - processPackages [calcipy]: Downloading https://files.pythonhosted.org/packages/ca/9d/0811bc8e6db205a3d935972bbdfe0d0767040abcc41b4eaf9588c2df7a50/calcipy-1.2.5.tar.gz
+[2023-05-24 00:25:21] INFO root fetch - processPackages [py-to-proto]: Downloading https://files.pythonhosted.org/packages/a2/f8/5d1f0c79430ba5cc48bf6f6d8afcc2c52068ecf166ba88c15c7af7c9d658/py_to_proto-0.2.1-py39-none-any.whl
+[2023-05-24 00:25:21] INFO root fetch - processPackages [calcipy]: executing diffoscope
+[2023-05-24 00:25:21] INFO root fetch - processPackages [calcipy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/calcipy-1.2.4.tar.gz tmp/calcipy-1.2.5.tar.gz --markdown 20230524/c/calcipy/1.2.4-1.2.5/diff.md --exclude *.pyd
+[2023-05-24 00:25:21] INFO root fetch - processPackages [hanlp]: Downloading https://files.pythonhosted.org/packages/30/90/37715b36d841aec8af03e9873fcac29380cb0f424beaa8ddc149fb980c63/hanlp-2.1.0b9.tar.gz
+[2023-05-24 00:25:21] INFO root fetch - processPackages [py-to-proto]: executing diffoscope
+[2023-05-24 00:25:21] INFO root fetch - processPackages [py-to-proto]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/py_to_proto-0.2.0-py39-none-any.whl.zip tmp/py_to_proto-0.2.1-py39-none-any.whl.zip --markdown 20230524/p/py-to-proto/0.2.0-0.2.1/diff.md --exclude *.pyd
+[2023-05-24 00:25:21] INFO root fetch - processPackages [hanlp]: executing diffoscope
+[2023-05-24 00:25:21] INFO root fetch - processPackages [hanlp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hanlp-2.1.0b8.tar.gz tmp/hanlp-2.1.0b9.tar.gz --markdown 20230524/h/hanlp/2.1.0b8-2.1.0b9/diff.md --exclude *.pyd
+[2023-05-24 00:25:21] INFO root fetch - processPackages [ha-av]: Downloading https://files.pythonhosted.org/packages/6c/85/306d7d4e343cb8b09b9242db415536a8140f2e5640135f671531ae19113a/ha-av-9.2.0.post1.tar.gz
+[2023-05-24 00:25:22] INFO root fetch - main [MainThread]: End processing [nonebot-plugin-smallapi]: success
+[2023-05-24 00:25:22] INFO root fetch - processPackages [ha-av]: executing diffoscope
+[2023-05-24 00:25:22] INFO root fetch - processPackages [ha-av]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ha-av-9.1.1.post3.tar.gz tmp/ha-av-9.2.0.post1.tar.gz --markdown 20230524/h/ha-av/9.1.1.post3-9.2.0.post1/diff.md --exclude *.pyd
+[2023-05-24 00:25:22] INFO root fetch - main [MainThread]: End processing [py-to-proto]: success
+[2023-05-24 00:25:22] INFO root fetch - main [MainThread]: End processing [calcipy]: success
+[2023-05-24 00:25:24] INFO root fetch - main [MainThread]: End processing [hanlp]: success
+[2023-05-24 00:25:34] INFO root fetch - main [MainThread]: End processing [ha-av]: success
+[2023-05-24 00:25:34] INFO root fetch - main [MainThread]: Store serial: [18220567]
