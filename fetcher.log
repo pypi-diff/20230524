@@ -1045,3 +1045,70 @@ EOFError: EOF read where object expected
 [2023-05-24 01:47:09] INFO root fetch - main [MainThread]: End processing [IMDBTraktSyncer]: success
 [2023-05-24 01:47:09] INFO root fetch - main [MainThread]: End processing [pyhtnorm]: success
 [2023-05-24 01:47:09] INFO root fetch - main [MainThread]: Store serial: [18221125]
+[2023-05-24 01:52:13] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18221125]
+[2023-05-24 01:52:18] INFO root fetch - main [MainThread]: Found 11 changed packages
+[2023-05-24 01:52:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: dinohub-seedwork-be
+[2023-05-24 01:52:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: certora-cli-alpha-jtoman-full-support-for-types
+[2023-05-24 01:52:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: omgifol
+[2023-05-24 01:52:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: nxs-analysis-tools
+[2023-05-24 01:52:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: metallurgy
+[2023-05-24 01:52:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: fabrictestbed
+[2023-05-24 01:52:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: sqlglot
+[2023-05-24 01:52:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: jort
+[2023-05-24 01:52:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: viser
+[2023-05-24 01:52:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: mpcontribs-client
+[2023-05-24 01:52:18] INFO root fetch - processPackages [nxs-analysis-tools]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-24 01:52:18] WARNING root fetch - processPackages [certora-cli-alpha-jtoman-full-support-for-types]: Skipping, unable to determine old version
+[2023-05-24 01:52:18] INFO root fetch - processPackages [certora-cli-alpha-jtoman-full-support-for-types]: Start processing: isofit
+[2023-05-24 01:52:18] INFO root fetch - main [MainThread]: End processing [certora-cli-alpha-jtoman-full-support-for-types] error
+[2023-05-24 01:52:18] INFO root fetch - processPackages [jort]: New version: [1.2.0] Old Version: [1.1.0]
+[2023-05-24 01:52:18] INFO root fetch - processPackages [omgifol]: New version: [0.5.1] Old Version: [0.5.0]
+[2023-05-24 01:52:18] INFO root fetch - processPackages [dinohub-seedwork-be]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-24 01:52:18] INFO root fetch - processPackages [metallurgy]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-24 01:52:18] INFO root fetch - processPackages [viser]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-24 01:52:18] INFO root fetch - processPackages [fabrictestbed]: New version: [1.5.0rc2] Old Version: [1.5.0rc1]
+[2023-05-24 01:52:18] INFO root fetch - processPackages [isofit]: New version: [2.9.9.2] Old Version: [2.9.8]
+[2023-05-24 01:52:18] INFO root fetch - processPackages [mpcontribs-client]: New version: [5.3.5] Old Version: [5.3.4]
+[2023-05-24 01:52:18] INFO root fetch - processPackages [sqlglot]: New version: [9.0.6] Old Version: [9.0.5]
+[2023-05-24 01:52:18] INFO root fetch - processPackages [nxs-analysis-tools]: executing diffoscope
+[2023-05-24 01:52:18] INFO root fetch - processPackages [nxs-analysis-tools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nxs_analysis_tools-0.0.8.tar.gz tmp/nxs_analysis_tools-0.0.9.tar.gz --markdown 20230524/n/nxs-analysis-tools/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-24 01:52:18] INFO root fetch - processPackages [isofit]: Downloading https://files.pythonhosted.org/packages/e9/7e/ef36ea757547e67b9cf4e4bccaf78041365152f33614248d0d06a38fff7f/isofit-2.9.8.tar.gz
+[2023-05-24 01:52:18] INFO root fetch - processPackages [omgifol]: Downloading https://files.pythonhosted.org/packages/91/f5/68103471805a4bdc7d21f523c8ea2ba36a3b529de8054c3286451c694568/omgifol-0.5.0.tar.gz
+[2023-05-24 01:52:18] WARNING root fetch - processPackages [isofit]: Skipping package: exceeds size limit 22322579>=10485760
+[2023-05-24 01:52:18] INFO root fetch - main [MainThread]: End processing [isofit] error
+[2023-05-24 01:52:18] INFO root fetch - processPackages [jort]: Downloading https://files.pythonhosted.org/packages/ad/3b/bfa276a00d6387dcab83ae61b1ffddf2345868af9afe0f33ab7ef7970fa5/jort-1.1.0.tar.gz
+[2023-05-24 01:52:18] INFO root fetch - processPackages [fabrictestbed]: Downloading https://files.pythonhosted.org/packages/02/f1/0b30248692a9c1ff71c8701fe3da6846b54fb4e76652767ed87d1dcd8613/fabrictestbed-1.5.0rc1.tar.gz
+[2023-05-24 01:52:18] INFO root fetch - processPackages [metallurgy]: Downloading https://files.pythonhosted.org/packages/f0/d2/ae6fe788585f386b15156f3fc1363d9f35a57551cd420d8cdbbfecbcfab6/metallurgy-0.0.8.tar.gz
+[2023-05-24 01:52:18] INFO root fetch - processPackages [viser]: Downloading https://files.pythonhosted.org/packages/6e/fe/c353160b1cadb91f2eb1f35a3c0e853765a09f0b07a38f84fb158ed4da6c/viser-0.0.8.tar.gz
+[2023-05-24 01:52:18] INFO root fetch - processPackages [dinohub-seedwork-be]: executing diffoscope
+[2023-05-24 01:52:18] INFO root fetch - processPackages [dinohub-seedwork-be]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dinohub_seedwork_be-0.1.8.tar.gz tmp/dinohub_seedwork_be-0.1.9.tar.gz --markdown 20230524/d/dinohub-seedwork-be/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-24 01:52:18] INFO root fetch - processPackages [omgifol]: Downloading https://files.pythonhosted.org/packages/e0/f6/6a33c861cf943a2178a3b77ae1a6cabb72b50d46d1d8168472984e2ecda5/omgifol-0.5.1.tar.gz
+[2023-05-24 01:52:18] INFO root fetch - processPackages [mpcontribs-client]: Downloading https://files.pythonhosted.org/packages/3e/22/d46988f4840643cd4184bb5c53db2c9815f05e571dcadc8e9652a85e3d88/mpcontribs-client-5.3.5.tar.gz
+[2023-05-24 01:52:18] INFO root fetch - processPackages [jort]: Downloading https://files.pythonhosted.org/packages/2a/31/d8cb39f05372010ad94e9b49dcb79876fc81ba3f40d5673eb1bf4e690c84/jort-1.2.0.tar.gz
+[2023-05-24 01:52:18] INFO root fetch - processPackages [sqlglot]: executing diffoscope
+[2023-05-24 01:52:18] INFO root fetch - processPackages [sqlglot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sqlglot-9.0.5.tar.gz tmp/sqlglot-9.0.6.tar.gz --markdown 20230524/s/sqlglot/9.0.5-9.0.6/diff.md --exclude *.pyd
+[2023-05-24 01:52:18] INFO root fetch - processPackages [omgifol]: executing diffoscope
+[2023-05-24 01:52:18] INFO root fetch - processPackages [omgifol]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/omgifol-0.5.0.tar.gz tmp/omgifol-0.5.1.tar.gz --markdown 20230524/o/omgifol/0.5.0-0.5.1/diff.md --exclude *.pyd
+[2023-05-24 01:52:18] INFO root fetch - processPackages [fabrictestbed]: Downloading https://files.pythonhosted.org/packages/5c/a8/32ff6ba0af71134229fee55ab80274c4e478b7464a3abcf169b8501819cc/fabrictestbed-1.5.0rc2.tar.gz
+[2023-05-24 01:52:18] INFO root fetch - processPackages [mpcontribs-client]: executing diffoscope
+[2023-05-24 01:52:18] INFO root fetch - processPackages [mpcontribs-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mpcontribs-client-5.3.4.tar.gz tmp/mpcontribs-client-5.3.5.tar.gz --markdown 20230524/m/mpcontribs-client/5.3.4-5.3.5/diff.md --exclude *.pyd
+[2023-05-24 01:52:18] INFO root fetch - processPackages [jort]: executing diffoscope
+[2023-05-24 01:52:18] INFO root fetch - processPackages [jort]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jort-1.1.0.tar.gz tmp/jort-1.2.0.tar.gz --markdown 20230524/j/jort/1.1.0-1.2.0/diff.md --exclude *.pyd
+[2023-05-24 01:52:18] INFO root fetch - processPackages [fabrictestbed]: executing diffoscope
+[2023-05-24 01:52:18] INFO root fetch - processPackages [fabrictestbed]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fabrictestbed-1.5.0rc1.tar.gz tmp/fabrictestbed-1.5.0rc2.tar.gz --markdown 20230524/f/fabrictestbed/1.5.0rc1-1.5.0rc2/diff.md --exclude *.pyd
+[2023-05-24 01:52:18] INFO root fetch - processPackages [metallurgy]: Downloading https://files.pythonhosted.org/packages/1a/19/5624e7c004647a08ce78043b2cac8fb796f46c493783319f1701ccf94128/metallurgy-0.0.9.tar.gz
+[2023-05-24 01:52:19] INFO root fetch - processPackages [metallurgy]: executing diffoscope
+[2023-05-24 01:52:19] INFO root fetch - processPackages [metallurgy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/metallurgy-0.0.8.tar.gz tmp/metallurgy-0.0.9.tar.gz --markdown 20230524/m/metallurgy/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-24 01:52:19] INFO root fetch - processPackages [viser]: Downloading https://files.pythonhosted.org/packages/cb/f5/f013f503f5b339d78ad453be61c50acb5961c960d8c771453d6f3817f03c/viser-0.0.9.tar.gz
+[2023-05-24 01:52:19] INFO root fetch - main [MainThread]: End processing [nxs-analysis-tools]: success
+[2023-05-24 01:52:19] INFO root fetch - processPackages [viser]: executing diffoscope
+[2023-05-24 01:52:19] INFO root fetch - processPackages [viser]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/viser-0.0.8.tar.gz tmp/viser-0.0.9.tar.gz --markdown 20230524/v/viser/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-24 01:52:20] INFO root fetch - main [MainThread]: End processing [omgifol]: success
+[2023-05-24 01:52:20] INFO root fetch - main [MainThread]: End processing [jort]: success
+[2023-05-24 01:52:20] INFO root fetch - main [MainThread]: End processing [mpcontribs-client]: success
+[2023-05-24 01:52:20] INFO root fetch - main [MainThread]: End processing [metallurgy]: success
+[2023-05-24 01:52:20] INFO root fetch - main [MainThread]: End processing [fabrictestbed]: success
+[2023-05-24 01:52:20] INFO root fetch - main [MainThread]: End processing [sqlglot]: success
+[2023-05-24 01:52:22] INFO root fetch - main [MainThread]: End processing [dinohub-seedwork-be]: success
+[2023-05-24 01:54:37] INFO root fetch - main [MainThread]: End processing [viser]: success
+[2023-05-24 01:54:37] INFO root fetch - main [MainThread]: Store serial: [18221159]
