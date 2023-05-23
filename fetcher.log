@@ -927,3 +927,50 @@ EOFError: EOF read where object expected
 [2023-05-24 01:30:18] INFO root fetch - main [MainThread]: End processing [EnergyCapSdk]: success
 [2023-05-24 01:31:26] INFO root fetch - main [MainThread]: End processing [vegafusion-jupyter]: success
 [2023-05-24 01:31:26] INFO root fetch - main [MainThread]: Store serial: [18221042]
+[2023-05-24 01:36:39] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18221042]
+[2023-05-24 01:36:44] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2023-05-24 01:36:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: mex-gene-archive
+[2023-05-24 01:36:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: t8s
+[2023-05-24 01:36:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: T1TVs
+[2023-05-24 01:36:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: gadapt
+[2023-05-24 01:36:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: animegifs
+[2023-05-24 01:36:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: factscore
+[2023-05-24 01:36:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: chemfunc
+[2023-05-24 01:36:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: mosaicml-cli
+[2023-05-24 01:36:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: T1TVs
+[2023-05-24 01:36:44] INFO root fetch - processPackages [factscore]: New version: [0.1.3] Old Version: [0.1.2]
+[2023-05-24 01:36:44] INFO root fetch - processPackages [mex-gene-archive]: New version: [0.2.3] Old Version: [0.2.2]
+[2023-05-24 01:36:44] WARNING root fetch - processPackages [T1TVs]: Skipping, unable to determine old version
+[2023-05-24 01:36:44] INFO root fetch - main [MainThread]: End processing [T1TVs] error
+[2023-05-24 01:36:44] WARNING root fetch - processPackages [chemfunc]: Skipping, unable to determine old version
+[2023-05-24 01:36:44] WARNING root fetch - processPackages [T1TVs]: Skipping, unable to determine old version
+[2023-05-24 01:36:44] INFO root fetch - main [MainThread]: End processing [chemfunc] error
+[2023-05-24 01:36:44] INFO root fetch - main [MainThread]: End processing [T1TVs] error
+[2023-05-24 01:36:44] INFO root fetch - processPackages [animegifs]: New version: [0.5.4] Old Version: [0.5.3]
+[2023-05-24 01:36:44] INFO root fetch - processPackages [gadapt]: New version: [0.2.6] Old Version: [0.2.5]
+[2023-05-24 01:36:44] WARNING root fetch - processPackages [t8s]: Skipping, unable to determine old version
+[2023-05-24 01:36:44] INFO root fetch - main [MainThread]: End processing [t8s] error
+[2023-05-24 01:36:44] INFO root fetch - processPackages [mosaicml-cli]: New version: [0.4.3] Old Version: [0.4.2]
+[2023-05-24 01:36:44] INFO root fetch - processPackages [factscore]: executing diffoscope
+[2023-05-24 01:36:44] INFO root fetch - processPackages [factscore]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/factscore-0.1.2.tar.gz tmp/factscore-0.1.3.tar.gz --markdown 20230524/f/factscore/0.1.2-0.1.3/diff.md --exclude *.pyd
+[2023-05-24 01:36:45] INFO root fetch - processPackages [mex-gene-archive]: Downloading https://files.pythonhosted.org/packages/93/69/bc975eea6fb7c6220a1f9bfefb66158646e477bff8bd544b1f19720cb79e/mex_gene_archive-0.2.2.tar.gz
+[2023-05-24 01:36:45] INFO root fetch - processPackages [gadapt]: Downloading https://files.pythonhosted.org/packages/c9/47/40ed4e6792e2ad44520c6a235d8dc13868f5528cdb24182ca0a42e03b6cb/gadapt-0.2.5.tar.gz
+[2023-05-24 01:36:45] INFO root fetch - processPackages [mosaicml-cli]: Downloading https://files.pythonhosted.org/packages/89/f6/e16a4e1929c3ffb7efda3df49e439bc0303c137102203b39bcace66d9528/mosaicml-cli-0.4.2.tar.gz
+[2023-05-24 01:36:45] INFO root fetch - processPackages [animegifs]: Downloading https://files.pythonhosted.org/packages/9b/e4/8d8a2cb074b76c72edf28c004292a69e061e431b8560c9ff26eca61c37cd/animegifs-0.5.4.tar.gz
+[2023-05-24 01:36:45] INFO root fetch - processPackages [gadapt]: Downloading https://files.pythonhosted.org/packages/7d/60/f35ad1443d124a536b13755511df6916dfd478fedaab7ec2e7743c466d9b/gadapt-0.2.6.tar.gz
+[2023-05-24 01:36:45] INFO root fetch - processPackages [mosaicml-cli]: Downloading https://files.pythonhosted.org/packages/f3/26/cde2cb40095e513caea5a99dc116c777b7a9765cdb12650e5589fce058c5/mosaicml-cli-0.4.3.tar.gz
+[2023-05-24 01:36:45] INFO root fetch - processPackages [mex-gene-archive]: Downloading https://files.pythonhosted.org/packages/bb/8e/63631eb26e65955050063442659eab161b6fcd3fcd9da1cbfd99d05c38b5/mex_gene_archive-0.2.3.tar.gz
+[2023-05-24 01:36:45] INFO root fetch - processPackages [animegifs]: executing diffoscope
+[2023-05-24 01:36:45] INFO root fetch - processPackages [animegifs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/animegifs-0.5.3.tar.gz tmp/animegifs-0.5.4.tar.gz --markdown 20230524/a/animegifs/0.5.3-0.5.4/diff.md --exclude *.pyd
+[2023-05-24 01:36:45] INFO root fetch - processPackages [gadapt]: executing diffoscope
+[2023-05-24 01:36:45] INFO root fetch - processPackages [gadapt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gadapt-0.2.5.tar.gz tmp/gadapt-0.2.6.tar.gz --markdown 20230524/g/gadapt/0.2.5-0.2.6/diff.md --exclude *.pyd
+[2023-05-24 01:36:45] INFO root fetch - processPackages [mosaicml-cli]: executing diffoscope
+[2023-05-24 01:36:45] INFO root fetch - processPackages [mosaicml-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mosaicml-cli-0.4.2.tar.gz tmp/mosaicml-cli-0.4.3.tar.gz --markdown 20230524/m/mosaicml-cli/0.4.2-0.4.3/diff.md --exclude *.pyd
+[2023-05-24 01:36:45] INFO root fetch - processPackages [mex-gene-archive]: executing diffoscope
+[2023-05-24 01:36:45] INFO root fetch - processPackages [mex-gene-archive]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mex_gene_archive-0.2.2.tar.gz tmp/mex_gene_archive-0.2.3.tar.gz --markdown 20230524/m/mex-gene-archive/0.2.2-0.2.3/diff.md --exclude *.pyd
+[2023-05-24 01:36:46] INFO root fetch - main [MainThread]: End processing [factscore]: success
+[2023-05-24 01:36:46] INFO root fetch - main [MainThread]: End processing [animegifs]: success
+[2023-05-24 01:36:46] INFO root fetch - main [MainThread]: End processing [mex-gene-archive]: success
+[2023-05-24 01:36:46] INFO root fetch - main [MainThread]: End processing [gadapt]: success
+[2023-05-24 01:36:47] INFO root fetch - main [MainThread]: End processing [mosaicml-cli]: success
+[2023-05-24 01:36:47] INFO root fetch - main [MainThread]: Store serial: [18221079]
