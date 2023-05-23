@@ -324,3 +324,35 @@ EOFError: EOF read where object expected
 [2023-05-24 00:30:46] INFO root fetch - main [MainThread]: End processing [caikit]: success
 [2023-05-24 00:30:51] INFO root fetch - main [MainThread]: End processing [quantconnect-stubs]: success
 [2023-05-24 00:30:51] INFO root fetch - main [MainThread]: Store serial: [18220621]
+[2023-05-24 00:35:55] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18220621]
+[2023-05-24 00:36:00] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-05-24 00:36:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: htcdaskgateway
+[2023-05-24 00:36:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: eyecite
+[2023-05-24 00:36:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: serverhttpy
+[2023-05-24 00:36:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: apstools
+[2023-05-24 00:36:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: async-extensions
+[2023-05-24 00:36:01] INFO root fetch - processPackages [apstools]: New version: [1.6.9rc1] Old Version: [1.6.9]
+[2023-05-24 00:36:01] INFO root fetch - processPackages [serverhttpy]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-05-24 00:36:01] INFO root fetch - processPackages [htcdaskgateway]: New version: [0.1.7] Old Version: [0.1.6]
+[2023-05-24 00:36:01] INFO root fetch - processPackages [eyecite]: New version: [2.5.2] Old Version: [2.5.1]
+[2023-05-24 00:36:01] INFO root fetch - processPackages [async-extensions]: New version: [1.4.1] Old Version: [1.4.0]
+[2023-05-24 00:36:01] INFO root fetch - processPackages [apstools]: executing diffoscope
+[2023-05-24 00:36:01] INFO root fetch - processPackages [apstools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/apstools-1.6.9.tar.gz tmp/apstools-1.6.9rc1.tar.gz --markdown 20230524/a/apstools/1.6.9-1.6.9rc1/diff.md --exclude *.pyd
+[2023-05-24 00:36:01] INFO root fetch - processPackages [serverhttpy]: executing diffoscope
+[2023-05-24 00:36:01] INFO root fetch - processPackages [serverhttpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/serverhttpy-0.0.2.tar.gz tmp/serverhttpy-0.0.3.tar.gz --markdown 20230524/s/serverhttpy/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-05-24 00:36:01] INFO root fetch - processPackages [htcdaskgateway]: Downloading https://files.pythonhosted.org/packages/5f/45/58446b28fc71573d7149cea07e96b9c650b3e3060b449325a085becc94e8/htcdaskgateway-0.1.7.tar.gz
+[2023-05-24 00:36:01] INFO root fetch - processPackages [eyecite]: Downloading https://files.pythonhosted.org/packages/b3/e8/84bd81c8ecd5748c7cc18aba43ae8debfa8bb9c9357a9d7b5baf585dfed0/eyecite-2.5.1.tar.gz
+[2023-05-24 00:36:01] INFO root fetch - processPackages [async-extensions]: Downloading https://files.pythonhosted.org/packages/40/a4/295be11bcdaf69ede5c6e5b9e282c14875b9bd9f020fef318da017b9d658/async_extensions-1.4.1.tar.gz
+[2023-05-24 00:36:01] INFO root fetch - processPackages [htcdaskgateway]: executing diffoscope
+[2023-05-24 00:36:01] INFO root fetch - processPackages [htcdaskgateway]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/htcdaskgateway-0.1.6.tar.gz tmp/htcdaskgateway-0.1.7.tar.gz --markdown 20230524/h/htcdaskgateway/0.1.6-0.1.7/diff.md --exclude *.pyd
+[2023-05-24 00:36:01] INFO root fetch - processPackages [eyecite]: Downloading https://files.pythonhosted.org/packages/b2/01/612d0e333210f63171fa93eae3809bb7987b39b374dd6a2bc3f2cc58cfdb/eyecite-2.5.2.tar.gz
+[2023-05-24 00:36:01] INFO root fetch - processPackages [async-extensions]: executing diffoscope
+[2023-05-24 00:36:01] INFO root fetch - processPackages [async-extensions]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/async_extensions-1.4.0.tar.gz tmp/async_extensions-1.4.1.tar.gz --markdown 20230524/a/async-extensions/1.4.0-1.4.1/diff.md --exclude *.pyd
+[2023-05-24 00:36:01] INFO root fetch - processPackages [eyecite]: executing diffoscope
+[2023-05-24 00:36:01] INFO root fetch - processPackages [eyecite]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/eyecite-2.5.1.tar.gz tmp/eyecite-2.5.2.tar.gz --markdown 20230524/e/eyecite/2.5.1-2.5.2/diff.md --exclude *.pyd
+[2023-05-24 00:36:02] INFO root fetch - main [MainThread]: End processing [serverhttpy]: success
+[2023-05-24 00:36:02] INFO root fetch - main [MainThread]: End processing [htcdaskgateway]: success
+[2023-05-24 00:36:02] INFO root fetch - main [MainThread]: End processing [async-extensions]: success
+[2023-05-24 00:36:02] INFO root fetch - main [MainThread]: End processing [eyecite]: success
+[2023-05-24 00:36:05] INFO root fetch - main [MainThread]: End processing [apstools]: success
+[2023-05-24 00:36:05] INFO root fetch - main [MainThread]: Store serial: [18220636]
