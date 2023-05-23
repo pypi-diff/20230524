@@ -421,3 +421,54 @@ EOFError: EOF read where object expected
 [2023-05-24 00:41:32] INFO root fetch - main [MainThread]: End processing [cengal]: success
 [2023-05-24 00:42:09] INFO root fetch - main [MainThread]: End processing [mage-ai]: success
 [2023-05-24 00:42:09] INFO root fetch - main [MainThread]: Store serial: [18220678]
+[2023-05-24 00:47:13] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18220678]
+[2023-05-24 00:47:18] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-05-24 00:47:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: streamlit-deckgl
+[2023-05-24 00:47:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: PyHP3478A
+[2023-05-24 00:47:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: xformers
+[2023-05-24 00:47:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pykn-mysqltools
+[2023-05-24 00:47:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: PyHP3325A
+[2023-05-24 00:47:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: isee
+[2023-05-24 00:47:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: torchgfn
+[2023-05-24 00:47:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: audio-journal
+[2023-05-24 00:47:18] INFO root fetch - processPackages [xformers]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-24 00:47:18] WARNING root fetch - processPackages [PyHP3325A]: Skipping, unable to determine old version
+[2023-05-24 00:47:18] INFO root fetch - processPackages [torchgfn]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-05-24 00:47:18] INFO root fetch - main [MainThread]: End processing [PyHP3325A] error
+[2023-05-24 00:47:18] INFO root fetch - processPackages [audio-journal]: New version: [0.0.5] Old Version: [0.0.4]
+[2023-05-24 00:47:18] INFO root fetch - processPackages [pykn-mysqltools]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-05-24 00:47:18] INFO root fetch - processPackages [streamlit-deckgl]: New version: [0.4.1] Old Version: [0.4.0]
+[2023-05-24 00:47:18] INFO root fetch - processPackages [PyHP3478A]: New version: [0.4] Old Version: [0.3]
+[2023-05-24 00:47:18] INFO root fetch - processPackages [isee]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-24 00:47:18] INFO root fetch - processPackages [pykn-mysqltools]: Downloading https://files.pythonhosted.org/packages/4c/e1/2459476a601ffc271734e85a8a4ba1cc6461c70ec6819aded8d5085ae7c1/pykn_mysqltools-0.0.1.tar.gz
+[2023-05-24 00:47:19] INFO root fetch - processPackages [torchgfn]: Downloading https://files.pythonhosted.org/packages/93/91/2ce6c079a3ab2b1562766519f9787cc49ab5c984605f22c32c82ce873324/torchgfn-0.1.0.tar.gz
+[2023-05-24 00:47:19] INFO root fetch - processPackages [PyHP3478A]: Downloading https://files.pythonhosted.org/packages/ee/cf/d41c3d293687e949a81423ab680ae65edbf9104c617ae3a813546df56695/PyHP3478A-0.3.tar.gz
+[2023-05-24 00:47:19] INFO root fetch - processPackages [audio-journal]: Downloading https://files.pythonhosted.org/packages/ea/71/4fbe4bc98f47be6b3609c24eb9f67c1c03aba52989b3f9927d8439a0247a/audio-journal-0.0.5.tar.gz
+[2023-05-24 00:47:19] INFO root fetch - processPackages [audio-journal]: executing diffoscope
+[2023-05-24 00:47:19] INFO root fetch - processPackages [audio-journal]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/audio-journal-0.0.4.tar.gz tmp/audio-journal-0.0.5.tar.gz --markdown 20230524/a/audio-journal/0.0.4-0.0.5/diff.md --exclude *.pyd
+[2023-05-24 00:47:19] INFO root fetch - processPackages [isee]: Downloading https://files.pythonhosted.org/packages/f3/68/b48661dba17fe14ac8ccbd66adba5c38b3caddd2b48f826e3b1959101a12/isee-0.1.8.tar.gz
+[2023-05-24 00:47:19] INFO root fetch - processPackages [torchgfn]: Downloading https://files.pythonhosted.org/packages/7b/95/68c7b8b84e03721ea1ca38d1357f4baeb87732966b37b6fd27664fd7ce2d/torchgfn-0.1.1.tar.gz
+[2023-05-24 00:47:19] INFO root fetch - processPackages [xformers]: executing diffoscope
+[2023-05-24 00:47:19] INFO root fetch - processPackages [xformers]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xformers-0.0.8.tar.gz tmp/xformers-0.0.9.tar.gz --markdown 20230524/x/xformers/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-24 00:47:19] INFO root fetch - processPackages [streamlit-deckgl]: Downloading https://files.pythonhosted.org/packages/67/38/d38ede433134784c19963f7f08b7ab34880f4779aef103ce42b6b614e420/streamlit-deckgl-0.4.1.tar.gz
+[2023-05-24 00:47:19] INFO root fetch - processPackages [torchgfn]: executing diffoscope
+[2023-05-24 00:47:19] INFO root fetch - processPackages [torchgfn]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/torchgfn-0.1.0.tar.gz tmp/torchgfn-0.1.1.tar.gz --markdown 20230524/t/torchgfn/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-05-24 00:47:19] INFO root fetch - processPackages [pykn-mysqltools]: Downloading https://files.pythonhosted.org/packages/de/92/5d231f3119171f3d78b14a2d34ed066afbb3b92d9de705442f526a26c391/pykn_mysqltools-0.0.2.tar.gz
+[2023-05-24 00:47:19] INFO root fetch - processPackages [pykn-mysqltools]: executing diffoscope
+[2023-05-24 00:47:19] INFO root fetch - processPackages [pykn-mysqltools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pykn_mysqltools-0.0.1.tar.gz tmp/pykn_mysqltools-0.0.2.tar.gz --markdown 20230524/p/pykn-mysqltools/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-05-24 00:47:19] INFO root fetch - processPackages [PyHP3478A]: Downloading https://files.pythonhosted.org/packages/de/ed/b549a0fb527506165a776f0b0c78481f1d005dfd9ab068587d801b995bed/PyHP3478A-0.4.tar.gz
+[2023-05-24 00:47:19] INFO root fetch - processPackages [streamlit-deckgl]: executing diffoscope
+[2023-05-24 00:47:19] INFO root fetch - processPackages [streamlit-deckgl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/streamlit-deckgl-0.4.0.tar.gz tmp/streamlit-deckgl-0.4.1.tar.gz --markdown 20230524/s/streamlit-deckgl/0.4.0-0.4.1/diff.md --exclude *.pyd
+[2023-05-24 00:47:19] INFO root fetch - processPackages [isee]: Downloading https://files.pythonhosted.org/packages/f7/7b/d9319532d419d0c030908b4a258c830ae85893e2b04bdac9ab7e94ff23d6/isee-0.1.9.tar.gz
+[2023-05-24 00:47:19] INFO root fetch - processPackages [isee]: executing diffoscope
+[2023-05-24 00:47:19] INFO root fetch - processPackages [isee]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/isee-0.1.8.tar.gz tmp/isee-0.1.9.tar.gz --markdown 20230524/i/isee/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-24 00:47:19] INFO root fetch - processPackages [PyHP3478A]: executing diffoscope
+[2023-05-24 00:47:19] INFO root fetch - processPackages [PyHP3478A]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PyHP3478A-0.3.tar.gz tmp/PyHP3478A-0.4.tar.gz --markdown 20230524/P/PyHP3478A/0.3-0.4/diff.md --exclude *.pyd
+[2023-05-24 00:47:20] INFO root fetch - main [MainThread]: End processing [pykn-mysqltools]: success
+[2023-05-24 00:47:20] INFO root fetch - main [MainThread]: End processing [torchgfn]: success
+[2023-05-24 00:47:20] INFO root fetch - main [MainThread]: End processing [PyHP3478A]: success
+[2023-05-24 00:47:20] INFO root fetch - main [MainThread]: End processing [isee]: success
+[2023-05-24 00:47:20] INFO root fetch - main [MainThread]: End processing [streamlit-deckgl]: success
+[2023-05-24 00:47:21] INFO root fetch - main [MainThread]: End processing [xformers]: success
+[2023-05-24 00:47:21] INFO root fetch - main [MainThread]: End processing [audio-journal]: success
+[2023-05-24 00:47:21] INFO root fetch - main [MainThread]: Store serial: [18220705]
