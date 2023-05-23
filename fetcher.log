@@ -472,3 +472,31 @@ EOFError: EOF read where object expected
 [2023-05-24 00:47:21] INFO root fetch - main [MainThread]: End processing [xformers]: success
 [2023-05-24 00:47:21] INFO root fetch - main [MainThread]: End processing [audio-journal]: success
 [2023-05-24 00:47:21] INFO root fetch - main [MainThread]: Store serial: [18220705]
+[2023-05-24 00:52:25] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18220705]
+[2023-05-24 00:52:30] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-05-24 00:52:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: gadapt
+[2023-05-24 00:52:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: freeplay
+[2023-05-24 00:52:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: auto-schema
+[2023-05-24 00:52:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: transpose-dit
+[2023-05-24 00:52:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pickled-carrots
+[2023-05-24 00:52:30] WARNING root fetch - processPackages [gadapt]: Skipping, unable to determine old version
+[2023-05-24 00:52:30] INFO root fetch - main [MainThread]: End processing [gadapt] error
+[2023-05-24 00:52:30] INFO root fetch - processPackages [pickled-carrots]: New version: [0.1.4] Old Version: [0.1.3]
+[2023-05-24 00:52:30] INFO root fetch - processPackages [auto-schema]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-24 00:52:30] INFO root fetch - processPackages [freeplay]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-05-24 00:52:30] WARNING root fetch - processPackages [transpose-dit]: Skipping, unable to determine old version
+[2023-05-24 00:52:30] INFO root fetch - main [MainThread]: End processing [transpose-dit] error
+[2023-05-24 00:52:30] INFO root fetch - processPackages [pickled-carrots]: executing diffoscope
+[2023-05-24 00:52:30] INFO root fetch - processPackages [pickled-carrots]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pickled_carrots-0.1.3.tar.gz tmp/pickled_carrots-0.1.4.tar.gz --markdown 20230524/p/pickled-carrots/0.1.3-0.1.4/diff.md --exclude *.pyd
+[2023-05-24 00:52:30] INFO root fetch - processPackages [freeplay]: Downloading https://files.pythonhosted.org/packages/9b/88/2259c4f76e31f5bd0dd1bc7638655b0eab722aa7d6d9e9d729c4fa87d777/freeplay-0.1.0.tar.gz
+[2023-05-24 00:52:30] INFO root fetch - processPackages [auto-schema]: Downloading https://files.pythonhosted.org/packages/b8/b4/470205144f4dbbf650e37df4dbddcaa6e25cc76ae7f6dc72bbc4b91ca5ed/auto_schema-0.0.8.tar.gz
+[2023-05-24 00:52:30] INFO root fetch - processPackages [freeplay]: Downloading https://files.pythonhosted.org/packages/82/6a/c5479be21c754198dcd35b6ea0d357c5eac8fe21be38f73fc9645e2c22e8/freeplay-0.1.1.tar.gz
+[2023-05-24 00:52:30] INFO root fetch - processPackages [auto-schema]: Downloading https://files.pythonhosted.org/packages/0a/fc/73ed6a7e90c129e21b3322d7d3fca577369f52ddf8ac078496b8e3204799/auto_schema-0.0.9.tar.gz
+[2023-05-24 00:52:30] INFO root fetch - processPackages [freeplay]: executing diffoscope
+[2023-05-24 00:52:30] INFO root fetch - processPackages [freeplay]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/freeplay-0.1.0.tar.gz tmp/freeplay-0.1.1.tar.gz --markdown 20230524/f/freeplay/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-05-24 00:52:31] INFO root fetch - processPackages [auto-schema]: executing diffoscope
+[2023-05-24 00:52:31] INFO root fetch - processPackages [auto-schema]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/auto_schema-0.0.8.tar.gz tmp/auto_schema-0.0.9.tar.gz --markdown 20230524/a/auto-schema/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-24 00:52:31] INFO root fetch - main [MainThread]: End processing [pickled-carrots]: success
+[2023-05-24 00:52:31] INFO root fetch - main [MainThread]: End processing [freeplay]: success
+[2023-05-24 00:52:32] INFO root fetch - main [MainThread]: End processing [auto-schema]: success
+[2023-05-24 00:52:32] INFO root fetch - main [MainThread]: Store serial: [18220735]
