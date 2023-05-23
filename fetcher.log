@@ -154,3 +154,72 @@ EOFError: EOF read where object expected
 [2023-05-24 00:09:36] INFO root fetch - main [MainThread]: End processing [steamship]: success
 [2023-05-24 00:09:36] INFO root fetch - main [MainThread]: End processing [webviz-config]: success
 [2023-05-24 00:09:36] INFO root fetch - main [MainThread]: Store serial: [18220492]
+[2023-05-24 00:14:41] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18220492]
+[2023-05-24 00:14:46] INFO root fetch - main [MainThread]: Found 11 changed packages
+[2023-05-24 00:14:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: dataconf
+[2023-05-24 00:14:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: opencv-stream
+[2023-05-24 00:14:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pulpcore
+[2023-05-24 00:14:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pulpcore-client
+[2023-05-24 00:14:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: MyoBand
+[2023-05-24 00:14:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: torchgfn
+[2023-05-24 00:14:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: dart-tools
+[2023-05-24 00:14:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: translateabc
+[2023-05-24 00:14:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: irisml-tasks
+[2023-05-24 00:14:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: np-queuey
+[2023-05-24 00:14:46] WARNING root fetch - processPackages [MyoBand]: Skipping, unable to determine old version
+[2023-05-24 00:14:46] INFO root fetch - processPackages [MyoBand]: Start processing: sndfileio
+[2023-05-24 00:14:46] INFO root fetch - main [MainThread]: End processing [MyoBand] error
+[2023-05-24 00:14:46] INFO root fetch - processPackages [np-queuey]: New version: [0.2.9] Old Version: [0.2.8]
+[2023-05-24 00:14:46] WARNING root fetch - processPackages [torchgfn]: Skipping, unable to determine old version
+[2023-05-24 00:14:46] INFO root fetch - main [MainThread]: End processing [torchgfn] error
+[2023-05-24 00:14:46] INFO root fetch - processPackages [translateabc]: New version: [1.0.5] Old Version: [1.0.4]
+[2023-05-24 00:14:46] INFO root fetch - processPackages [pulpcore]: New version: [3.9.1] Old Version: [3.9.0]
+[2023-05-24 00:14:46] INFO root fetch - processPackages [dataconf]: New version: [2.2.0] Old Version: [2.1.3]
+[2023-05-24 00:14:46] INFO root fetch - processPackages [irisml-tasks]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-24 00:14:46] INFO root fetch - processPackages [dart-tools]: New version: [0.3.0] Old Version: [0.2.0]
+[2023-05-24 00:14:46] INFO root fetch - processPackages [np-queuey]: executing diffoscope
+[2023-05-24 00:14:46] INFO root fetch - processPackages [np-queuey]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/np_queuey-0.2.8.tar.gz tmp/np_queuey-0.2.9.tar.gz --markdown 20230524/n/np-queuey/0.2.8-0.2.9/diff.md --exclude *.pyd
+[2023-05-24 00:14:46] INFO root fetch - processPackages [opencv-stream]: New version: [0.1.0] Old Version: [0.0.9]
+[2023-05-24 00:14:46] INFO root fetch - processPackages [sndfileio]: New version: [1.9.2] Old Version: [1.9.1]
+[2023-05-24 00:14:46] INFO root fetch - processPackages [translateabc]: Downloading https://files.pythonhosted.org/packages/1f/46/b4d41cf428b2f67f3a284bd775227e50fc629db528cc75e3b8611b2bec3a/translateabc-1.0.5.tar.gz
+[2023-05-24 00:14:46] INFO root fetch - processPackages [pulpcore]: Downloading https://files.pythonhosted.org/packages/f8/1d/71d5ee5112d508faa58a8e221cf74383b6d987ca0d17c18e2703c7f42845/pulpcore-3.9.0.tar.gz
+[2023-05-24 00:14:46] INFO root fetch - processPackages [dataconf]: Downloading https://files.pythonhosted.org/packages/3e/c5/9922fb8deb686f377cd8e4e6d20dd7f42a0f5b755d408f8164e5d1b2ab4c/dataconf-2.1.3.tar.gz
+[2023-05-24 00:14:46] INFO root fetch - processPackages [dart-tools]: Downloading https://files.pythonhosted.org/packages/2b/96/64ea2b72fb70b5280933a4d2739f0cb598b64816ae90a689b5bb91cc8ce0/dart-tools-0.2.0.tar.gz
+[2023-05-24 00:14:46] INFO root fetch - processPackages [pulpcore-client]: New version: [3.9.1] Old Version: [3.9.0.dev1607297320]
+[2023-05-24 00:14:46] INFO root fetch - processPackages [irisml-tasks]: Downloading https://files.pythonhosted.org/packages/f9/c3/617dc10d3d86277422b1376712fbcae45013c1fe00a777e78eee45fb1f31/irisml-tasks-0.0.8.tar.gz
+[2023-05-24 00:14:46] INFO root fetch - processPackages [opencv-stream]: Downloading https://files.pythonhosted.org/packages/18/39/c2559a54dd6e076ea2d7aae6e0cb76bb92d4c6d72c2588dfde09da7a0cdf/opencv_stream-0.0.9.tar.gz
+[2023-05-24 00:14:46] INFO root fetch - processPackages [sndfileio]: Downloading https://files.pythonhosted.org/packages/21/d9/6987d81e5d8034af478b54e486b446f61f67656e8565efe77ebaf7baa04b/sndfileio-1.9.1.tar.gz
+[2023-05-24 00:14:46] INFO root fetch - processPackages [translateabc]: executing diffoscope
+[2023-05-24 00:14:46] INFO root fetch - processPackages [translateabc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/translateabc-1.0.4.tar.gz tmp/translateabc-1.0.5.tar.gz --markdown 20230524/t/translateabc/1.0.4-1.0.5/diff.md --exclude *.pyd
+[2023-05-24 00:14:47] INFO root fetch - processPackages [pulpcore-client]: Downloading https://files.pythonhosted.org/packages/bc/86/6e7f7c30116cfa30b6bd9e4cb32992d10e7c7f831ceef210610b30707023/pulpcore-client-3.9.0.dev1607297320.tar.gz
+[2023-05-24 00:14:47] INFO root fetch - processPackages [dataconf]: Downloading https://files.pythonhosted.org/packages/7f/cf/5a67bbe171e20064d5f21f031f90c89ab0c835378313396c0ad7a5e256f3/dataconf-2.2.0.tar.gz
+[2023-05-24 00:14:47] INFO root fetch - processPackages [opencv-stream]: Downloading https://files.pythonhosted.org/packages/24/36/1df340b9e05a33496cd9aad0bb8b7d25f1d753dacabffba7910db3430c28/opencv_stream-0.1.0.tar.gz
+[2023-05-24 00:14:47] INFO root fetch - processPackages [sndfileio]: Downloading https://files.pythonhosted.org/packages/c8/6c/6236cf3d7f655403ad60d47f8e8b9164fc20551fd0db4cc576e53f2573ea/sndfileio-1.9.2-py3-none-any.whl
+[2023-05-24 00:14:47] INFO root fetch - processPackages [pulpcore]: Downloading https://files.pythonhosted.org/packages/bb/70/24516074cc53b97be0e41b4892a3f5bcf3ac34e3b7634e49e28a6ae67a49/pulpcore-3.9.1.tar.gz
+[2023-05-24 00:14:47] INFO root fetch - processPackages [irisml-tasks]: Downloading https://files.pythonhosted.org/packages/75/98/971cdf4f2e7e1a8cbd90c669ad60ca4117884f745d742a5d9911b79bef87/irisml-tasks-0.0.9.tar.gz
+[2023-05-24 00:14:47] INFO root fetch - processPackages [dart-tools]: Downloading https://files.pythonhosted.org/packages/bb/a5/a548ae102cf3ed3d1ff64186cb5bf780363ec09d25bdfc20f99da76d8b7a/dart-tools-0.3.0.tar.gz
+[2023-05-24 00:14:47] INFO root fetch - processPackages [irisml-tasks]: executing diffoscope
+[2023-05-24 00:14:47] INFO root fetch - processPackages [irisml-tasks]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/irisml-tasks-0.0.8.tar.gz tmp/irisml-tasks-0.0.9.tar.gz --markdown 20230524/i/irisml-tasks/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-24 00:14:47] INFO root fetch - processPackages [pulpcore]: executing diffoscope
+[2023-05-24 00:14:47] INFO root fetch - processPackages [pulpcore]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulpcore-3.9.0.tar.gz tmp/pulpcore-3.9.1.tar.gz --markdown 20230524/p/pulpcore/3.9.0-3.9.1/diff.md --exclude *.pyd
+[2023-05-24 00:14:47] INFO root fetch - processPackages [dataconf]: executing diffoscope
+[2023-05-24 00:14:47] INFO root fetch - processPackages [dataconf]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dataconf-2.1.3.tar.gz tmp/dataconf-2.2.0.tar.gz --markdown 20230524/d/dataconf/2.1.3-2.2.0/diff.md --exclude *.pyd
+[2023-05-24 00:14:47] INFO root fetch - processPackages [opencv-stream]: executing diffoscope
+[2023-05-24 00:14:47] INFO root fetch - processPackages [opencv-stream]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/opencv_stream-0.0.9.tar.gz tmp/opencv_stream-0.1.0.tar.gz --markdown 20230524/o/opencv-stream/0.0.9-0.1.0/diff.md --exclude *.pyd
+[2023-05-24 00:14:47] INFO root fetch - processPackages [sndfileio]: executing diffoscope
+[2023-05-24 00:14:47] INFO root fetch - processPackages [sndfileio]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sndfileio-1.9.1.tar.gz tmp/sndfileio-1.9.2-py3-none-any.whl.zip --markdown 20230524/s/sndfileio/1.9.1-1.9.2/diff.md --exclude *.pyd
+[2023-05-24 00:14:47] INFO root fetch - processPackages [dart-tools]: executing diffoscope
+[2023-05-24 00:14:47] INFO root fetch - processPackages [dart-tools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dart-tools-0.2.0.tar.gz tmp/dart-tools-0.3.0.tar.gz --markdown 20230524/d/dart-tools/0.2.0-0.3.0/diff.md --exclude *.pyd
+[2023-05-24 00:14:47] INFO root fetch - processPackages [pulpcore-client]: Downloading https://files.pythonhosted.org/packages/35/63/611a0870907086abd3a010fad88acd0236d830aac5b72032d41e66440aff/pulpcore-client-3.9.1.tar.gz
+[2023-05-24 00:14:47] INFO root fetch - processPackages [pulpcore-client]: executing diffoscope
+[2023-05-24 00:14:47] INFO root fetch - processPackages [pulpcore-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulpcore-client-3.9.0.dev1607297320.tar.gz tmp/pulpcore-client-3.9.1.tar.gz --markdown 20230524/p/pulpcore-client/3.9.0.dev1607297320-3.9.1/diff.md --exclude *.pyd
+[2023-05-24 00:14:47] INFO root fetch - main [MainThread]: End processing [np-queuey]: success
+[2023-05-24 00:14:48] INFO root fetch - main [MainThread]: End processing [sndfileio]: success
+[2023-05-24 00:14:48] INFO root fetch - main [MainThread]: End processing [opencv-stream]: success
+[2023-05-24 00:14:48] INFO root fetch - main [MainThread]: End processing [dart-tools]: success
+[2023-05-24 00:14:48] INFO root fetch - main [MainThread]: End processing [dataconf]: success
+[2023-05-24 00:14:48] INFO root fetch - main [MainThread]: End processing [irisml-tasks]: success
+[2023-05-24 00:14:49] INFO root fetch - main [MainThread]: End processing [translateabc]: success
+[2023-05-24 00:14:49] INFO root fetch - main [MainThread]: End processing [pulpcore]: success
+[2023-05-24 00:14:50] INFO root fetch - main [MainThread]: End processing [pulpcore-client]: success
+[2023-05-24 00:14:50] INFO root fetch - main [MainThread]: Store serial: [18220524]
