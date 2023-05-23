@@ -356,3 +356,68 @@ EOFError: EOF read where object expected
 [2023-05-24 00:36:02] INFO root fetch - main [MainThread]: End processing [eyecite]: success
 [2023-05-24 00:36:05] INFO root fetch - main [MainThread]: End processing [apstools]: success
 [2023-05-24 00:36:05] INFO root fetch - main [MainThread]: Store serial: [18220636]
+[2023-05-24 00:41:09] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18220636]
+[2023-05-24 00:41:14] INFO root fetch - main [MainThread]: Found 13 changed packages
+[2023-05-24 00:41:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: motass
+[2023-05-24 00:41:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: dev-gpt
+[2023-05-24 00:41:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: cengal
+[2023-05-24 00:41:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: claudia
+[2023-05-24 00:41:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: swigex0
+[2023-05-24 00:41:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: sidetrek
+[2023-05-24 00:41:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: momento-wire-types
+[2023-05-24 00:41:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: dev-gpt
+[2023-05-24 00:41:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: autora-experimentalist-novelty-sampler
+[2023-05-24 00:41:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: PyHP8903A
+[2023-05-24 00:41:14] INFO root fetch - processPackages [cengal]: New version: [3.2.0.1] Old Version: [3.2.0]
+[2023-05-24 00:41:14] INFO root fetch - processPackages [momento-wire-types]: New version: [0.9.2] Old Version: [0.9.1]
+[2023-05-24 00:41:14] INFO root fetch - processPackages [sidetrek]: New version: [0.0.9] Old Version: [0.0.81]
+[2023-05-24 00:41:14] INFO root fetch - processPackages [dev-gpt]: New version: [0.18.42.dev8] Old Version: [0.18.42.dev5]
+[2023-05-24 00:41:14] INFO root fetch - processPackages [claudia]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-24 00:41:14] INFO root fetch - processPackages [dev-gpt]: New version: [0.18.42.dev8] Old Version: [0.18.42.dev5]
+[2023-05-24 00:41:14] INFO root fetch - processPackages [momento-wire-types]: executing diffoscope
+[2023-05-24 00:41:14] INFO root fetch - processPackages [momento-wire-types]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/momento-wire-types-0.9.1.tar.gz tmp/momento-wire-types-0.9.2.tar.gz --markdown 20230524/m/momento-wire-types/0.9.1-0.9.2/diff.md --exclude *.pyd
+[2023-05-24 00:41:14] WARNING root fetch - processPackages [motass]: Skipping, unable to determine old version
+[2023-05-24 00:41:14] INFO root fetch - processPackages [motass]: Start processing: mage-ai
+[2023-05-24 00:41:14] INFO root fetch - main [MainThread]: End processing [motass] error
+[2023-05-24 00:41:14] INFO root fetch - processPackages [PyHP8903A]: New version: [0.3] Old Version: [0.2]
+[2023-05-24 00:41:14] WARNING root fetch - processPackages [swigex0]: Skipping, unable to determine old version
+[2023-05-24 00:41:14] INFO root fetch - processPackages [swigex0]: Start processing: langkit
+[2023-05-24 00:41:14] INFO root fetch - main [MainThread]: End processing [swigex0] error
+[2023-05-24 00:41:14] INFO root fetch - processPackages [cengal]: executing diffoscope
+[2023-05-24 00:41:14] INFO root fetch - processPackages [cengal]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cengal-3.2.0.tar.gz tmp/cengal-3.2.0.1.tar.gz --markdown 20230524/c/cengal/3.2.0-3.2.0.1/diff.md --exclude *.pyd
+[2023-05-24 00:41:14] WARNING root fetch - processPackages [autora-experimentalist-novelty-sampler]: Skipping, unable to determine old version
+[2023-05-24 00:41:14] INFO root fetch - processPackages [autora-experimentalist-novelty-sampler]: Start processing: streamlit-deckgl
+[2023-05-24 00:41:14] INFO root fetch - main [MainThread]: End processing [autora-experimentalist-novelty-sampler] error
+[2023-05-24 00:41:14] INFO root fetch - processPackages [claudia]: executing diffoscope
+[2023-05-24 00:41:14] INFO root fetch - processPackages [claudia]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/claudia-0.0.8.tar.gz tmp/claudia-0.0.9.tar.gz --markdown 20230524/c/claudia/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-24 00:41:14] INFO root fetch - processPackages [sidetrek]: executing diffoscope
+[2023-05-24 00:41:14] INFO root fetch - processPackages [sidetrek]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sidetrek-0.0.81.tar.gz tmp/sidetrek-0.0.9.tar.gz --markdown 20230524/s/sidetrek/0.0.81-0.0.9/diff.md --exclude *.pyd
+[2023-05-24 00:41:14] INFO root fetch - processPackages [dev-gpt]: executing diffoscope
+[2023-05-24 00:41:14] INFO root fetch - processPackages [dev-gpt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dev-gpt-0.18.42.dev5.tar.gz tmp/dev-gpt-0.18.42.dev8.tar.gz --markdown 20230524/d/dev-gpt/0.18.42.dev5-0.18.42.dev8/diff.md --exclude *.pyd
+[2023-05-24 00:41:14] INFO root fetch - processPackages [mage-ai]: New version: [0.8.9] Old Version: [0.8.82]
+[2023-05-24 00:41:14] INFO root fetch - processPackages [dev-gpt]: executing diffoscope
+[2023-05-24 00:41:14] INFO root fetch - processPackages [dev-gpt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dev-gpt-0.18.42.dev5.tar.gz tmp/dev-gpt-0.18.42.dev8.tar.gz --markdown 20230524/d/dev-gpt/0.18.42.dev5-0.18.42.dev8/diff.md --exclude *.pyd
+[2023-05-24 00:41:14] INFO root fetch - processPackages [streamlit-deckgl]: New version: [0.4.0] Old Version: [0.3.0]
+[2023-05-24 00:41:14] INFO root fetch - processPackages [langkit]: New version: [0.0.1b3] Old Version: [0.0.1b2]
+[2023-05-24 00:41:14] INFO root fetch - processPackages [mage-ai]: executing diffoscope
+[2023-05-24 00:41:14] INFO root fetch - processPackages [mage-ai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mage-ai-0.8.82.tar.gz tmp/mage-ai-0.8.9.tar.gz --markdown 20230524/m/mage-ai/0.8.82-0.8.9/diff.md --exclude *.pyd
+[2023-05-24 00:41:14] INFO root fetch - processPackages [PyHP8903A]: Downloading https://files.pythonhosted.org/packages/b4/40/2bdc45a5ddea868730a9674af68b6cd92098795acf7b5749c70ed588722a/PyHP8903A-0.2.tar.gz
+[2023-05-24 00:41:14] INFO root fetch - processPackages [streamlit-deckgl]: executing diffoscope
+[2023-05-24 00:41:14] INFO root fetch - processPackages [streamlit-deckgl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/streamlit-deckgl-0.3.0.tar.gz tmp/streamlit-deckgl-0.4.0.tar.gz --markdown 20230524/s/streamlit-deckgl/0.3.0-0.4.0/diff.md --exclude *.pyd
+[2023-05-24 00:41:14] INFO root fetch - processPackages [PyHP8903A]: Downloading https://files.pythonhosted.org/packages/d5/bb/191a0a4a44a3ec6d1a1f4ffe946d262c9dd0d9dac93068a32274506f8d45/PyHP8903A-0.3.tar.gz
+[2023-05-24 00:41:14] INFO root fetch - processPackages [langkit]: Downloading https://files.pythonhosted.org/packages/07/74/a0f90b0fa2830793ceec7d1b9fd702c19de9d5b714c1c9fa7199bc03d04e/langkit-0.0.1b3.tar.gz
+[2023-05-24 00:41:14] INFO root fetch - processPackages [PyHP8903A]: executing diffoscope
+[2023-05-24 00:41:14] INFO root fetch - processPackages [PyHP8903A]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PyHP8903A-0.2.tar.gz tmp/PyHP8903A-0.3.tar.gz --markdown 20230524/P/PyHP8903A/0.2-0.3/diff.md --exclude *.pyd
+[2023-05-24 00:41:15] INFO root fetch - processPackages [langkit]: executing diffoscope
+[2023-05-24 00:41:15] INFO root fetch - processPackages [langkit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/langkit-0.0.1b2.tar.gz tmp/langkit-0.0.1b3.tar.gz --markdown 20230524/l/langkit/0.0.1b2-0.0.1b3/diff.md --exclude *.pyd
+[2023-05-24 00:41:15] INFO root fetch - main [MainThread]: End processing [momento-wire-types]: success
+[2023-05-24 00:41:15] INFO root fetch - main [MainThread]: End processing [sidetrek]: success
+[2023-05-24 00:41:16] INFO root fetch - main [MainThread]: End processing [langkit]: success
+[2023-05-24 00:41:16] INFO root fetch - main [MainThread]: End processing [PyHP8903A]: success
+[2023-05-24 00:41:17] INFO root fetch - main [MainThread]: End processing [streamlit-deckgl]: success
+[2023-05-24 00:41:17] INFO root fetch - main [MainThread]: End processing [dev-gpt]: success
+[2023-05-24 00:41:17] INFO root fetch - main [MainThread]: End processing [dev-gpt]: success
+[2023-05-24 00:41:17] INFO root fetch - main [MainThread]: End processing [claudia]: success
+[2023-05-24 00:41:32] INFO root fetch - main [MainThread]: End processing [cengal]: success
+[2023-05-24 00:42:09] INFO root fetch - main [MainThread]: End processing [mage-ai]: success
+[2023-05-24 00:42:09] INFO root fetch - main [MainThread]: Store serial: [18220678]
