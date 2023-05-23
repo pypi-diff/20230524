@@ -223,3 +223,25 @@ EOFError: EOF read where object expected
 [2023-05-24 00:14:49] INFO root fetch - main [MainThread]: End processing [pulpcore]: success
 [2023-05-24 00:14:50] INFO root fetch - main [MainThread]: End processing [pulpcore-client]: success
 [2023-05-24 00:14:50] INFO root fetch - main [MainThread]: Store serial: [18220524]
+[2023-05-24 00:19:54] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18220524]
+[2023-05-24 00:19:59] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2023-05-24 00:19:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: hydra-zen
+[2023-05-24 00:19:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: rime-sdk
+[2023-05-24 00:19:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: np-envs
+[2023-05-24 00:19:59] INFO root fetch - processPackages [np-envs]: New version: [0.1.4] Old Version: [0.1.3]
+[2023-05-24 00:19:59] INFO root fetch - processPackages [hydra-zen]: New version: [0.9.1] Old Version: [0.9.0rc5]
+[2023-05-24 00:19:59] INFO root fetch - processPackages [rime-sdk]: New version: [2.1.0rc4] Old Version: [2.1.0rc3]
+[2023-05-24 00:19:59] INFO root fetch - processPackages [hydra-zen]: Downloading https://files.pythonhosted.org/packages/21/7e/604d7ba9ff16a283e2f50a1de89b0bf58cf1bd84b2dcbb6f6f9658b232f6/hydra_zen-0.9.0rc5.tar.gz
+[2023-05-24 00:19:59] INFO root fetch - processPackages [np-envs]: Downloading https://files.pythonhosted.org/packages/54/d7/e35e2afa6e91002b1052d1999886f904a1b907c4d67ccfc08d41b4031b0b/np_envs-0.1.4.tar.gz
+[2023-05-24 00:19:59] INFO root fetch - processPackages [rime-sdk]: Downloading https://files.pythonhosted.org/packages/22/f5/77b4e0ca0ccf4b4b226b47df2890ad150e9e27b9046492695be0e7a1296a/rime_sdk-2.1.0rc4.tar.gz
+[2023-05-24 00:19:59] INFO root fetch - processPackages [np-envs]: executing diffoscope
+[2023-05-24 00:19:59] INFO root fetch - processPackages [np-envs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/np_envs-0.1.3.tar.gz tmp/np_envs-0.1.4.tar.gz --markdown 20230524/n/np-envs/0.1.3-0.1.4/diff.md --exclude *.pyd
+[2023-05-24 00:20:00] INFO root fetch - processPackages [rime-sdk]: executing diffoscope
+[2023-05-24 00:20:00] INFO root fetch - processPackages [rime-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rime_sdk-2.1.0rc3.tar.gz tmp/rime_sdk-2.1.0rc4.tar.gz --markdown 20230524/r/rime-sdk/2.1.0rc3-2.1.0rc4/diff.md --exclude *.pyd
+[2023-05-24 00:20:00] INFO root fetch - processPackages [hydra-zen]: Downloading https://files.pythonhosted.org/packages/86/3d/de492179605f70616f99c02b2d98c9d2e3234d211c4a3c11237fafe66db0/hydra_zen-0.9.1.tar.gz
+[2023-05-24 00:20:00] INFO root fetch - main [MainThread]: End processing [np-envs]: success
+[2023-05-24 00:20:01] INFO root fetch - processPackages [hydra-zen]: executing diffoscope
+[2023-05-24 00:20:01] INFO root fetch - processPackages [hydra-zen]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hydra_zen-0.9.0rc5.tar.gz tmp/hydra_zen-0.9.1.tar.gz --markdown 20230524/h/hydra-zen/0.9.0rc5-0.9.1/diff.md --exclude *.pyd
+[2023-05-24 00:20:03] INFO root fetch - main [MainThread]: End processing [hydra-zen]: success
+[2023-05-24 00:20:12] INFO root fetch - main [MainThread]: End processing [rime-sdk]: success
+[2023-05-24 00:20:12] INFO root fetch - main [MainThread]: Store serial: [18220533]
