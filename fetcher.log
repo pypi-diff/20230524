@@ -291,3 +291,36 @@ EOFError: EOF read where object expected
 [2023-05-24 00:25:24] INFO root fetch - main [MainThread]: End processing [hanlp]: success
 [2023-05-24 00:25:34] INFO root fetch - main [MainThread]: End processing [ha-av]: success
 [2023-05-24 00:25:34] INFO root fetch - main [MainThread]: Store serial: [18220567]
+[2023-05-24 00:30:38] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18220567]
+[2023-05-24 00:30:43] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-05-24 00:30:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: autora-synthetic-data
+[2023-05-24 00:30:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: quantconnect-stubs
+[2023-05-24 00:30:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: dnastack-client-library
+[2023-05-24 00:30:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: caikit
+[2023-05-24 00:30:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: fire-opal
+[2023-05-24 00:30:43] INFO root fetch - processPackages [autora-synthetic-data]: New version: [1.0.0a4] Old Version: [1.0.0a3]
+[2023-05-24 00:30:43] INFO root fetch - processPackages [dnastack-client-library]: New version: [3.0.84a1651270839] Old Version: [3.0.81a1650987643]
+[2023-05-24 00:30:43] INFO root fetch - processPackages [dnastack-client-library]: executing diffoscope
+[2023-05-24 00:30:43] INFO root fetch - processPackages [dnastack-client-library]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dnastack_client_library-3.0.81a1650987643-py3-none-any.whl.zip tmp/dnastack_client_library-3.0.84a1651270839-py3-none-any.whl.zip --markdown 20230524/d/dnastack-client-library/3.0.81a1650987643-3.0.84a1651270839/diff.md --exclude *.pyd
+[2023-05-24 00:30:43] INFO root fetch - processPackages [fire-opal]: New version: [5.2.1] Old Version: [5.2.0]
+[2023-05-24 00:30:43] INFO root fetch - processPackages [caikit]: New version: [0.5.1] Old Version: [0.5.0]
+[2023-05-24 00:30:43] INFO root fetch - processPackages [quantconnect-stubs]: New version: [9998] Old Version: [9997]
+[2023-05-24 00:30:43] INFO root fetch - processPackages [autora-synthetic-data]: Downloading https://files.pythonhosted.org/packages/e4/d4/8b6a8e77a11df540f6793036082a122ace3f90c9e78ea0b2993bda0298d5/autora-synthetic-data-1.0.0a3.tar.gz
+[2023-05-24 00:30:43] INFO root fetch - processPackages [fire-opal]: Downloading https://files.pythonhosted.org/packages/f8/14/bd879a30f76a96d598562cb2eaaf4659a2215a273dac7df4578f530c1ac8/fire_opal-5.2.0.tar.gz
+[2023-05-24 00:30:44] INFO root fetch - processPackages [autora-synthetic-data]: Downloading https://files.pythonhosted.org/packages/17/cf/7b46f69190e88f06ef2e616304b82ffa07308339d5ee5b35762e78107fd0/autora-synthetic-data-1.0.0a4.tar.gz
+[2023-05-24 00:30:44] INFO root fetch - processPackages [caikit]: Downloading https://files.pythonhosted.org/packages/68/a4/57f873b77a25ac86e12bfd30b3688331499c0746183f9b4cc8ee92fd14d2/caikit-0.5.1.tar.gz
+[2023-05-24 00:30:44] INFO root fetch - processPackages [quantconnect-stubs]: executing diffoscope
+[2023-05-24 00:30:44] INFO root fetch - processPackages [quantconnect-stubs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/quantconnect-stubs-9997.tar.gz tmp/quantconnect-stubs-9998.tar.gz --markdown 20230524/q/quantconnect-stubs/9997-9998/diff.md --exclude *.pyd
+[2023-05-24 00:30:44] INFO root fetch - processPackages [autora-synthetic-data]: executing diffoscope
+[2023-05-24 00:30:44] INFO root fetch - processPackages [autora-synthetic-data]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/autora-synthetic-data-1.0.0a3.tar.gz tmp/autora-synthetic-data-1.0.0a4.tar.gz --markdown 20230524/a/autora-synthetic-data/1.0.0a3-1.0.0a4/diff.md --exclude *.pyd
+[2023-05-24 00:30:44] INFO root fetch - processPackages [caikit]: executing diffoscope
+[2023-05-24 00:30:44] INFO root fetch - processPackages [caikit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/caikit-0.5.0.tar.gz tmp/caikit-0.5.1.tar.gz --markdown 20230524/c/caikit/0.5.0-0.5.1/diff.md --exclude *.pyd
+[2023-05-24 00:30:44] INFO root fetch - processPackages [fire-opal]: Downloading https://files.pythonhosted.org/packages/e8/5c/c34b05405c2eba7f47f5ad9cfa89c950eb325428fc0ba156f19839a8def6/fire_opal-5.2.1.tar.gz
+[2023-05-24 00:30:44] INFO root fetch - processPackages [fire-opal]: executing diffoscope
+[2023-05-24 00:30:44] INFO root fetch - processPackages [fire-opal]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fire_opal-5.2.0.tar.gz tmp/fire_opal-5.2.1.tar.gz --markdown 20230524/f/fire-opal/5.2.0-5.2.1/diff.md --exclude *.pyd
+[2023-05-24 00:30:45] INFO root fetch - main [MainThread]: End processing [dnastack-client-library]: success
+[2023-05-24 00:30:45] INFO root fetch - main [MainThread]: End processing [autora-synthetic-data]: success
+[2023-05-24 00:30:46] INFO root fetch - main [MainThread]: End processing [fire-opal]: success
+[2023-05-24 00:30:46] INFO root fetch - main [MainThread]: End processing [caikit]: success
+[2023-05-24 00:30:51] INFO root fetch - main [MainThread]: End processing [quantconnect-stubs]: success
+[2023-05-24 00:30:51] INFO root fetch - main [MainThread]: Store serial: [18220621]
