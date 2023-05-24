@@ -6033,3 +6033,91 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-05-24 04:35:37] INFO root fetch - main [MainThread]: End processing [odoo-addon-partner-statement]: success
 [2023-05-24 04:35:38] INFO root fetch - main [MainThread]: End processing [iam-actions]: success
 [2023-05-24 04:35:38] INFO root fetch - main [MainThread]: Store serial: [18224149]
+[2023-05-24 04:40:42] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18224149]
+[2023-05-24 04:40:47] INFO root fetch - main [MainThread]: Found 14 changed packages
+[2023-05-24 04:40:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: witness-etl
+[2023-05-24 04:40:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: captif-cpx-db
+[2023-05-24 04:40:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: omjlcomps
+[2023-05-24 04:40:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: mo-future
+[2023-05-24 04:40:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: database-local
+[2023-05-24 04:40:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: flux-local
+[2023-05-24 04:40:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: tencentcloud-sdk-python-intl-en
+[2023-05-24 04:40:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: chainforge
+[2023-05-24 04:40:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: mo-imports
+[2023-05-24 04:40:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: stpmex
+[2023-05-24 04:40:47] INFO root fetch - processPackages [chainforge]: New version: [0.1.2] Old Version: [0.1.1]
+[2023-05-24 04:40:47] INFO root fetch - processPackages [tencentcloud-sdk-python-intl-en]: New version: [3.0.99] Old Version: [3.0.98]
+[2023-05-24 04:40:47] INFO root fetch - processPackages [chainforge]: executing diffoscope
+[2023-05-24 04:40:47] INFO root fetch - processPackages [chainforge]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/chainforge-0.1.1.tar.gz tmp/chainforge-0.1.2.tar.gz --markdown 20230524/c/chainforge/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2023-05-24 04:40:47] INFO root fetch - processPackages [captif-cpx-db]: New version: [0.5] Old Version: [0.4]
+[2023-05-24 04:40:47] INFO root fetch - processPackages [omjlcomps]: New version: [0.2.0] Old Version: [0.1.9]
+[2023-05-24 04:40:47] INFO root fetch - processPackages [witness-etl]: New version: [0.0.6] Old Version: [0.0.5]
+[2023-05-24 04:40:47] INFO root fetch - processPackages [mo-future]: New version: [7.401.23144] Old Version: [7.340.23006]
+[2023-05-24 04:40:47] INFO root fetch - processPackages [flux-local]: New version: [1.2.0] Old Version: [1.1.3]
+[2023-05-24 04:40:47] INFO root fetch - processPackages [mo-imports]: New version: [7.401.23144] Old Version: [7.365.23080]
+[2023-05-24 04:40:47] WARNING root fetch - processPackages [database-local]: Skipping, unable to determine old version
+[2023-05-24 04:40:47] INFO root fetch - processPackages [database-local]: Start processing: quick-pypi-test
+[2023-05-24 04:40:47] INFO root fetch - main [MainThread]: End processing [database-local] error
+[2023-05-24 04:40:47] INFO root fetch - processPackages [tencentcloud-sdk-python-intl-en]: executing diffoscope
+[2023-05-24 04:40:47] INFO root fetch - processPackages [tencentcloud-sdk-python-intl-en]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tencentcloud-sdk-python-intl-en-3.0.98.tar.gz tmp/tencentcloud-sdk-python-intl-en-3.0.99.tar.gz --markdown 20230524/t/tencentcloud-sdk-python-intl-en/3.0.98-3.0.99/diff.md --exclude *.pyd
+[2023-05-24 04:40:47] INFO root fetch - processPackages [stpmex]: New version: [3.9.3.dev0] Old Version: [3.9.2]
+[2023-05-24 04:40:47] INFO root fetch - processPackages [omjlcomps]: Downloading https://files.pythonhosted.org/packages/c3/a9/b1e0341b6c17b3dc35b2054a4870522d325165a5876cc898b80e73928775/omjlcomps-0.1.9.tar.gz
+[2023-05-24 04:40:47] INFO root fetch - processPackages [captif-cpx-db]: Downloading https://files.pythonhosted.org/packages/db/0d/65ba593159b4f901debb5ab0188acabc054a2959fc5606b2ffe5fe2b96d5/captif_cpx_db-0.4.tar.gz
+[2023-05-24 04:40:47] INFO root fetch - processPackages [stpmex]: executing diffoscope
+[2023-05-24 04:40:47] INFO root fetch - processPackages [stpmex]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/stpmex-3.9.2.tar.gz tmp/stpmex-3.9.3.dev0.tar.gz --markdown 20230524/s/stpmex/3.9.2-3.9.3.dev0/diff.md --exclude *.pyd
+[2023-05-24 04:40:47] INFO root fetch - processPackages [quick-pypi-test]: New version: [0.0.2] Old Version: [0.0.1a0]
+[2023-05-24 04:40:47] INFO root fetch - processPackages [mo-future]: Downloading https://files.pythonhosted.org/packages/35/ca/228ca199c785c7ec1d917f0254da631791d4b1c96007d87c3df1b483571f/mo_future-7.340.23006-py2.py3-none-any.whl
+[2023-05-24 04:40:47] INFO root fetch - processPackages [flux-local]: Downloading https://files.pythonhosted.org/packages/4f/8e/0b74a3c20dafb3ab46569654cfdc830e1488eccc1e752e73559a65731e59/flux-local-1.1.3.tar.gz
+[2023-05-24 04:40:47] INFO root fetch - processPackages [mo-imports]: Downloading https://files.pythonhosted.org/packages/d0/db/8754c2538d0513df70dcf4dcf985ebf795b2b4d44f228d3becb318b33512/mo_imports-7.365.23080-py2.py3-none-any.whl
+[2023-05-24 04:40:48] INFO root fetch - processPackages [quick-pypi-test]: Downloading https://files.pythonhosted.org/packages/1d/3e/ad994f4002a31c793b6886a942d702fc3d55d1ae0020d94a0b8b596e04ca/quick-pypi-test-0.0.1a0.tar.gz
+[2023-05-24 04:40:48] INFO root fetch - processPackages [witness-etl]: Downloading https://files.pythonhosted.org/packages/ff/c8/5e67c6c816e8ada923dfcfdc5ad31ee26f9868c85e1490fe93bfe77e4844/witness-etl-0.0.6.tar.gz
+[2023-05-24 04:40:48] INFO root fetch - processPackages [captif-cpx-db]: Downloading https://files.pythonhosted.org/packages/89/7d/f80f6fede05ae48e530a8bd7c4a0b6e87a6a25aabeab00f7dadb53479920/captif_cpx_db-0.5.tar.gz
+[2023-05-24 04:40:48] INFO root fetch - processPackages [mo-future]: Downloading https://files.pythonhosted.org/packages/bc/42/63a2fb3a34419c8ae9ab29e081cff9c6eb86273f05ce0c07ba234f9111ee/mo_future-7.401.23144-py2.py3-none-any.whl
+[2023-05-24 04:40:48] INFO root fetch - processPackages [witness-etl]: executing diffoscope
+[2023-05-24 04:40:48] INFO root fetch - processPackages [witness-etl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/witness-etl-0.0.5.tar.gz tmp/witness-etl-0.0.6.tar.gz --markdown 20230524/w/witness-etl/0.0.5-0.0.6/diff.md --exclude *.pyd
+[2023-05-24 04:40:48] INFO root fetch - processPackages [mo-imports]: Downloading https://files.pythonhosted.org/packages/b9/49/7115a54802ada1c43194d293b0c36407311558878ca4295368e8cd30adf9/mo_imports-7.401.23144-py2.py3-none-any.whl
+[2023-05-24 04:40:48] INFO root fetch - processPackages [captif-cpx-db]: executing diffoscope
+[2023-05-24 04:40:48] INFO root fetch - processPackages [captif-cpx-db]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/captif_cpx_db-0.4.tar.gz tmp/captif_cpx_db-0.5.tar.gz --markdown 20230524/c/captif-cpx-db/0.4-0.5/diff.md --exclude *.pyd
+[2023-05-24 04:40:48] INFO root fetch - processPackages [omjlcomps]: Downloading https://files.pythonhosted.org/packages/d7/27/cf71e5301d60b768189fbe7d8dcbc35868cad94b846e537a5cae8541ba89/omjlcomps-0.2.0.tar.gz
+[2023-05-24 04:40:48] INFO root fetch - processPackages [mo-future]: executing diffoscope
+[2023-05-24 04:40:48] INFO root fetch - processPackages [mo-future]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mo_future-7.340.23006-py2.py3-none-any.whl.zip tmp/mo_future-7.401.23144-py2.py3-none-any.whl.zip --markdown 20230524/m/mo-future/7.340.23006-7.401.23144/diff.md --exclude *.pyd
+[2023-05-24 04:40:48] INFO root fetch - processPackages [quick-pypi-test]: Downloading https://files.pythonhosted.org/packages/29/a7/8d3800bd85ac919291913ebe0b029b0d0f34adc030e4865e98ae820e0d9d/quick-pypi-test-0.0.2.tar.gz
+[2023-05-24 04:40:48] INFO root fetch - processPackages [flux-local]: Downloading https://files.pythonhosted.org/packages/e7/48/2881adce576a254e8d3a4da646b5e480236a2727f9d7bbd96f2c9bf35c8c/flux-local-1.2.0.tar.gz
+[2023-05-24 04:40:48] INFO root fetch - processPackages [mo-imports]: executing diffoscope
+[2023-05-24 04:40:48] INFO root fetch - processPackages [mo-imports]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mo_imports-7.365.23080-py2.py3-none-any.whl.zip tmp/mo_imports-7.401.23144-py2.py3-none-any.whl.zip --markdown 20230524/m/mo-imports/7.365.23080-7.401.23144/diff.md --exclude *.pyd
+[2023-05-24 04:40:48] INFO root fetch - processPackages [omjlcomps]: executing diffoscope
+[2023-05-24 04:40:48] INFO root fetch - processPackages [omjlcomps]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/omjlcomps-0.1.9.tar.gz tmp/omjlcomps-0.2.0.tar.gz --markdown 20230524/o/omjlcomps/0.1.9-0.2.0/diff.md --exclude *.pyd
+[2023-05-24 04:40:48] INFO root fetch - processPackages [quick-pypi-test]: executing diffoscope
+[2023-05-24 04:40:48] INFO root fetch - processPackages [quick-pypi-test]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/quick-pypi-test-0.0.1a0.tar.gz tmp/quick-pypi-test-0.0.2.tar.gz --markdown 20230524/q/quick-pypi-test/0.0.1a0-0.0.2/diff.md --exclude *.pyd
+[2023-05-24 04:40:48] INFO root fetch - processPackages [flux-local]: executing diffoscope
+[2023-05-24 04:40:48] INFO root fetch - processPackages [flux-local]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/flux-local-1.1.3.tar.gz tmp/flux-local-1.2.0.tar.gz --markdown 20230524/f/flux-local/1.1.3-1.2.0/diff.md --exclude *.pyd
+[2023-05-24 04:40:49] INFO root fetch - processPackages [stpmex]: Start processing: bkapi-plugins-py
+[2023-05-24 04:40:49] INFO root fetch - main [MainThread]: End processing [stpmex]: success
+[2023-05-24 04:40:49] INFO root fetch - processPackages [bkapi-plugins-py]: New version: [0.522] Old Version: [0.5121714]
+[2023-05-24 04:40:49] INFO root fetch - processPackages [mo-imports]: Start processing: flojoy
+[2023-05-24 04:40:49] INFO root fetch - main [MainThread]: End processing [mo-imports]: success
+[2023-05-24 04:40:49] INFO root fetch - processPackages [captif-cpx-db]: Start processing: mo-dots
+[2023-05-24 04:40:49] INFO root fetch - main [MainThread]: End processing [captif-cpx-db]: success
+[2023-05-24 04:40:49] INFO root fetch - main [MainThread]: End processing [mo-future]: success
+[2023-05-24 04:40:49] INFO root fetch - processPackages [flojoy]: New version: [0.2.2.dev9] Old Version: [0.2.2.dev8]
+[2023-05-24 04:40:49] INFO root fetch - main [MainThread]: End processing [omjlcomps]: success
+[2023-05-24 04:40:49] INFO root fetch - processPackages [mo-dots]: New version: [9.401.23144] Old Version: [9.376.23121]
+[2023-05-24 04:40:49] INFO root fetch - main [MainThread]: End processing [quick-pypi-test]: success
+[2023-05-24 04:40:49] INFO root fetch - main [MainThread]: End processing [witness-etl]: success
+[2023-05-24 04:40:49] INFO root fetch - processPackages [bkapi-plugins-py]: executing diffoscope
+[2023-05-24 04:40:49] INFO root fetch - processPackages [bkapi-plugins-py]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bkapi-plugins-py-0.5121714.tar.gz tmp/bkapi-plugins-py-0.522.tar.gz --markdown 20230524/b/bkapi-plugins-py/0.5121714-0.522/diff.md --exclude *.pyd
+[2023-05-24 04:40:50] INFO root fetch - processPackages [flojoy]: Downloading https://files.pythonhosted.org/packages/58/4a/411ed49c4c426bcb70e5ad46561890a01ad521164c31dc1a485ce164a90b/flojoy-0.2.2.dev8.tar.gz
+[2023-05-24 04:40:50] INFO root fetch - processPackages [mo-dots]: Downloading https://files.pythonhosted.org/packages/5a/fc/08ff3416d1f4464cee3e8a21389099c46e658d0d02868d021c683f97449c/mo_dots-9.376.23121-py2.py3-none-any.whl
+[2023-05-24 04:40:50] INFO root fetch - processPackages [mo-dots]: Downloading https://files.pythonhosted.org/packages/7a/9d/d7a2a9e1685c7500416d9ddf1dc26a70463b3f44d55727681ca170262bca/mo_dots-9.401.23144-py2.py3-none-any.whl
+[2023-05-24 04:40:50] INFO root fetch - processPackages [mo-dots]: executing diffoscope
+[2023-05-24 04:40:50] INFO root fetch - processPackages [mo-dots]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mo_dots-9.376.23121-py2.py3-none-any.whl.zip tmp/mo_dots-9.401.23144-py2.py3-none-any.whl.zip --markdown 20230524/m/mo-dots/9.376.23121-9.401.23144/diff.md --exclude *.pyd
+[2023-05-24 04:40:50] INFO root fetch - processPackages [flojoy]: Downloading https://files.pythonhosted.org/packages/bc/c3/8f34f775e6b17119e5ed320a7df64187257c3d699a70476e77c210160e7f/flojoy-0.2.2.dev9.tar.gz
+[2023-05-24 04:40:50] INFO root fetch - main [MainThread]: End processing [tencentcloud-sdk-python-intl-en]: success
+[2023-05-24 04:40:50] INFO root fetch - processPackages [flojoy]: executing diffoscope
+[2023-05-24 04:40:50] INFO root fetch - processPackages [flojoy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/flojoy-0.2.2.dev8.tar.gz tmp/flojoy-0.2.2.dev9.tar.gz --markdown 20230524/f/flojoy/0.2.2.dev8-0.2.2.dev9/diff.md --exclude *.pyd
+[2023-05-24 04:40:51] INFO root fetch - main [MainThread]: End processing [flux-local]: success
+[2023-05-24 04:40:51] INFO root fetch - main [MainThread]: End processing [bkapi-plugins-py]: success
+[2023-05-24 04:40:51] INFO root fetch - main [MainThread]: End processing [chainforge]: success
+[2023-05-24 04:40:51] INFO root fetch - main [MainThread]: End processing [mo-dots]: success
+[2023-05-24 04:40:51] INFO root fetch - main [MainThread]: End processing [flojoy]: success
+[2023-05-24 04:40:51] INFO root fetch - main [MainThread]: Store serial: [18224193]
