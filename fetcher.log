@@ -14782,3 +14782,137 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd4 in position 72: invalid
 [2023-05-24 14:29:39] INFO root fetch - main [MainThread]: End processing [openlane]: success
 [2023-05-24 14:29:39] INFO root fetch - main [MainThread]: End processing [swh.storage]: success
 [2023-05-24 14:29:39] INFO root fetch - main [MainThread]: Store serial: [18229451]
+[2023-05-24 14:34:44] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18229451]
+[2023-05-24 14:34:49] INFO root fetch - main [MainThread]: Found 22 changed packages
+[2023-05-24 14:34:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: gps-activity
+[2023-05-24 14:34:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: python-teamcity
+[2023-05-24 14:34:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: mysmallutils
+[2023-05-24 14:34:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: bigdl-orca-spark2
+[2023-05-24 14:34:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: workflow-templater
+[2023-05-24 14:34:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: learning-loop-node
+[2023-05-24 14:34:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: bigdl-friesian-spark2
+[2023-05-24 14:34:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: chiakilisp
+[2023-05-24 14:34:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: aviatrix-discovery
+[2023-05-24 14:34:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: bigdl-chronos-spark2
+[2023-05-24 14:34:49] INFO root fetch - processPackages [workflow-templater]: New version: [0.2.9] Old Version: [0.2.8]
+[2023-05-24 14:34:49] INFO root fetch - processPackages [bigdl-orca-spark2]: New version: [2.4.0b20230523] Old Version: [2.4.0b20230522]
+[2023-05-24 14:34:49] INFO root fetch - processPackages [aviatrix-discovery]: New version: [0.2.9] Old Version: [0.2.8]
+[2023-05-24 14:34:49] INFO root fetch - processPackages [chiakilisp]: New version: [1.4.0rc2] Old Version: [1.4.0rc1]
+[2023-05-24 14:34:49] INFO root fetch - processPackages [bigdl-friesian-spark2]: New version: [2.4.0b20230523] Old Version: [2.4.0b20230522]
+[2023-05-24 14:34:49] INFO root fetch - processPackages [bigdl-chronos-spark2]: New version: [2.4.0b20230523] Old Version: [2.4.0b20230522]
+[2023-05-24 14:34:49] INFO root fetch - processPackages [gps-activity]: New version: [0.7.3] Old Version: [0.7.2]
+[2023-05-24 14:34:49] INFO root fetch - processPackages [python-teamcity]: New version: [0.1.4.dev6] Old Version: [0.1.0]
+[2023-05-24 14:34:49] INFO root fetch - processPackages [learning-loop-node]: New version: [0.7.9] Old Version: [0.7.8]
+[2023-05-24 14:34:49] INFO root fetch - processPackages [mysmallutils]: New version: [2.0.5] Old Version: [2.0.4]
+[2023-05-24 14:34:49] INFO root fetch - processPackages [chiakilisp]: executing diffoscope
+[2023-05-24 14:34:49] INFO root fetch - processPackages [chiakilisp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/chiakilisp-1.4.0rc1-py3-none-any.whl.zip tmp/chiakilisp-1.4.0rc2-py3-none-any.whl.zip --markdown 20230524/c/chiakilisp/1.4.0rc1-1.4.0rc2/diff.md --exclude *.pyd
+[2023-05-24 14:34:49] INFO root fetch - processPackages [workflow-templater]: Downloading https://files.pythonhosted.org/packages/ff/f3/01335d7d117dfc8e3e858138846dcad19ed3a511b53328ff69cd6f02031e/workflow_templater-0.2.8.tar.gz
+[2023-05-24 14:34:49] INFO root fetch - processPackages [aviatrix-discovery]: executing diffoscope
+[2023-05-24 14:34:49] INFO root fetch - processPackages [aviatrix-discovery]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aviatrix_discovery-0.2.8-cp39-cp39-win_amd64.whl.zip tmp/aviatrix_discovery-0.2.9-cp39-cp39-win_amd64.whl.zip --markdown 20230524/a/aviatrix-discovery/0.2.8-0.2.9/diff.md --exclude *.pyd
+[2023-05-24 14:34:49] INFO root fetch - processPackages [bigdl-orca-spark2]: Downloading https://files.pythonhosted.org/packages/a5/ff/9a0556630cd6c82605bde020db09124ad59e15c43390dcca410933de6284/bigdl_orca_spark2-2.4.0b20230522-py3-none-manylinux1_x86_64.whl
+[2023-05-24 14:34:49] INFO root fetch - processPackages [python-teamcity]: Downloading https://files.pythonhosted.org/packages/33/85/d2b6de7c2b5bb05e8aca5dd56758f72cf923ed28a2eb49e8cf66848e33df/python-teamcity-0.1.0.tar.gz
+[2023-05-24 14:34:49] WARNING root fetch - processPackages [bigdl-orca-spark2]: Skipping package: exceeds size limit 20369447>=10485760
+[2023-05-24 14:34:49] INFO root fetch - processPackages [bigdl-orca-spark2]: Start processing: safecopy
+[2023-05-24 14:34:49] INFO root fetch - main [MainThread]: End processing [bigdl-orca-spark2] error
+[2023-05-24 14:34:49] INFO root fetch - processPackages [learning-loop-node]: Downloading https://files.pythonhosted.org/packages/1f/cb/2617a70bfea8104e450be1813671e93c04052dcf86502644bbe48e57f59c/learning_loop_node-0.7.8.tar.gz
+[2023-05-24 14:34:49] INFO root fetch - processPackages [gps-activity]: Downloading https://files.pythonhosted.org/packages/aa/f1/061754152af250a8faa76913dbd7946f478fa9957b4ebb44f2590155fe36/gps_activity-0.7.2.tar.gz
+[2023-05-24 14:34:49] INFO root fetch - processPackages [safecopy]: New version: [1.3.0] Old Version: [1.2.8]
+[2023-05-24 14:34:49] INFO root fetch - processPackages [mysmallutils]: Downloading https://files.pythonhosted.org/packages/4a/0b/0d79e5d9fd4ce871fee8fadd1b7bbe3e8b132b73526eed700ffa94b0c044/mysmallutils-2.0.4.tar.gz
+[2023-05-24 14:34:49] INFO root fetch - processPackages [bigdl-friesian-spark2]: executing diffoscope
+[2023-05-24 14:34:49] INFO root fetch - processPackages [bigdl-friesian-spark2]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bigdl_friesian_spark2-2.4.0b20230522-py3-none-manylinux1_x86_64.whl.zip tmp/bigdl_friesian_spark2-2.4.0b20230523-py3-none-manylinux1_x86_64.whl.zip --markdown 20230524/b/bigdl-friesian-spark2/2.4.0b20230522-2.4.0b20230523/diff.md --exclude *.pyd
+[2023-05-24 14:34:49] INFO root fetch - processPackages [bigdl-chronos-spark2]: executing diffoscope
+[2023-05-24 14:34:49] INFO root fetch - processPackages [bigdl-chronos-spark2]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bigdl_chronos_spark2-2.4.0b20230522-py3-none-manylinux1_x86_64.whl.zip tmp/bigdl_chronos_spark2-2.4.0b20230523-py3-none-manylinux1_x86_64.whl.zip --markdown 20230524/b/bigdl-chronos-spark2/2.4.0b20230522-2.4.0b20230523/diff.md --exclude *.pyd
+[2023-05-24 14:34:49] INFO root fetch - processPackages [safecopy]: Downloading https://files.pythonhosted.org/packages/f1/db/fe9824c414496c010568bbb757a5393a5611ca9e5c08d9741ddc590b44a5/safecopy-1.2.8.tar.gz
+[2023-05-24 14:34:49] INFO root fetch - processPackages [gps-activity]: Downloading https://files.pythonhosted.org/packages/ea/bc/01a8488254a3f87654ee5a723b1e0d2687fbf5e92ae96a06ef1dedd9461f/gps_activity-0.7.3.tar.gz
+[2023-05-24 14:34:49] INFO root fetch - processPackages [mysmallutils]: Downloading https://files.pythonhosted.org/packages/e7/21/9afbd802827da0528cf13eabb5a3064daea6989557201053c682569f37c2/mysmallutils-2.0.5.tar.gz
+[2023-05-24 14:34:49] INFO root fetch - processPackages [python-teamcity]: Downloading https://files.pythonhosted.org/packages/1a/2a/4af88568b43b5dab5eca663d5b7e6dd27ae3f7f4ceb9a7a1f0c476091be4/python-teamcity-0.1.4.dev6.tar.gz
+[2023-05-24 14:34:49] INFO root fetch - processPackages [learning-loop-node]: Downloading https://files.pythonhosted.org/packages/9a/ae/be20a853859effd4b1d12a78e480284843351c6206c58a4eb2be709f42d0/learning_loop_node-0.7.9.tar.gz
+[2023-05-24 14:34:49] INFO root fetch - processPackages [workflow-templater]: Downloading https://files.pythonhosted.org/packages/97/b5/d7dee5f107cbfe25d096f0e4f7fff3c8b6bf7e8fd0e564ab5a52dfe3cbed/workflow_templater-0.2.9.tar.gz
+[2023-05-24 14:34:49] INFO root fetch - processPackages [gps-activity]: executing diffoscope
+[2023-05-24 14:34:49] INFO root fetch - processPackages [gps-activity]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gps_activity-0.7.2.tar.gz tmp/gps_activity-0.7.3.tar.gz --markdown 20230524/g/gps-activity/0.7.2-0.7.3/diff.md --exclude *.pyd
+[2023-05-24 14:34:49] INFO root fetch - processPackages [mysmallutils]: executing diffoscope
+[2023-05-24 14:34:49] INFO root fetch - processPackages [python-teamcity]: executing diffoscope
+[2023-05-24 14:34:49] INFO root fetch - processPackages [python-teamcity]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/python-teamcity-0.1.0.tar.gz tmp/python-teamcity-0.1.4.dev6.tar.gz --markdown 20230524/p/python-teamcity/0.1.0-0.1.4.dev6/diff.md --exclude *.pyd
+[2023-05-24 14:34:49] INFO root fetch - processPackages [mysmallutils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mysmallutils-2.0.4.tar.gz tmp/mysmallutils-2.0.5.tar.gz --markdown 20230524/m/mysmallutils/2.0.4-2.0.5/diff.md --exclude *.pyd
+[2023-05-24 14:34:49] INFO root fetch - processPackages [learning-loop-node]: executing diffoscope
+[2023-05-24 14:34:49] INFO root fetch - processPackages [learning-loop-node]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/learning_loop_node-0.7.8.tar.gz tmp/learning_loop_node-0.7.9.tar.gz --markdown 20230524/l/learning-loop-node/0.7.8-0.7.9/diff.md --exclude *.pyd
+[2023-05-24 14:34:49] INFO root fetch - processPackages [workflow-templater]: executing diffoscope
+[2023-05-24 14:34:49] INFO root fetch - processPackages [workflow-templater]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/workflow_templater-0.2.8.tar.gz tmp/workflow_templater-0.2.9.tar.gz --markdown 20230524/w/workflow-templater/0.2.8-0.2.9/diff.md --exclude *.pyd
+[2023-05-24 14:34:49] INFO root fetch - processPackages [safecopy]: Downloading https://files.pythonhosted.org/packages/4d/bd/713476e39570b70c3c0647453c551d3e7ccf9806a314af3eb732f1586b66/safecopy-1.3.0.tar.gz
+[2023-05-24 14:34:50] INFO root fetch - processPackages [safecopy]: executing diffoscope
+[2023-05-24 14:34:50] INFO root fetch - processPackages [safecopy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/safecopy-1.2.8.tar.gz tmp/safecopy-1.3.0.tar.gz --markdown 20230524/s/safecopy/1.2.8-1.3.0/diff.md --exclude *.pyd
+[2023-05-24 14:34:50] INFO root fetch - processPackages [chiakilisp]: Start processing: ronnytest
+[2023-05-24 14:34:50] INFO root fetch - main [MainThread]: End processing [chiakilisp]: success
+[2023-05-24 14:34:50] INFO root fetch - processPackages [ronnytest]: New version: [0.0.4] Old Version: [0.0.3]
+[2023-05-24 14:34:50] INFO root fetch - processPackages [aviatrix-discovery]: Start processing: bigdl-spark2
+[2023-05-24 14:34:50] INFO root fetch - main [MainThread]: End processing [aviatrix-discovery]: success
+[2023-05-24 14:34:50] INFO root fetch - processPackages [bigdl-spark2]: New version: [2.4.0b20230523] Old Version: [2.4.0b20230522]
+[2023-05-24 14:34:51] INFO root fetch - processPackages [ronnytest]: Downloading https://files.pythonhosted.org/packages/5f/f5/ae365e6fe7f7b5c612748816594882413d2a8db3eeb8d85098a686f7751b/ronnytest-0.0.4.tar.gz
+[2023-05-24 14:34:51] INFO root fetch - processPackages [ronnytest]: executing diffoscope
+[2023-05-24 14:34:51] INFO root fetch - processPackages [ronnytest]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ronnytest-0.0.3.tar.gz tmp/ronnytest-0.0.4.tar.gz --markdown 20230524/r/ronnytest/0.0.3-0.0.4/diff.md --exclude *.pyd
+[2023-05-24 14:34:51] INFO root fetch - processPackages [bigdl-spark2]: executing diffoscope
+[2023-05-24 14:34:51] INFO root fetch - processPackages [bigdl-spark2]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bigdl_spark2-2.4.0b20230522-py3-none-manylinux1_x86_64.whl.zip tmp/bigdl_spark2-2.4.0b20230523-py3-none-manylinux1_x86_64.whl.zip --markdown 20230524/b/bigdl-spark2/2.4.0b20230522-2.4.0b20230523/diff.md --exclude *.pyd
+[2023-05-24 14:34:51] INFO root fetch - processPackages [python-teamcity]: Start processing: provo
+[2023-05-24 14:34:51] INFO root fetch - main [MainThread]: End processing [python-teamcity]: success
+[2023-05-24 14:34:51] INFO root fetch - processPackages [provo]: New version: [1.0.4] Old Version: [1.0.3]
+[2023-05-24 14:34:51] INFO root fetch - processPackages [provo]: executing diffoscope
+[2023-05-24 14:34:51] INFO root fetch - processPackages [provo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/provo-1.0.3.tar.gz tmp/provo-1.0.4.tar.gz --markdown 20230524/p/provo/1.0.3-1.0.4/diff.md --exclude *.pyd
+[2023-05-24 14:34:51] INFO root fetch - processPackages [workflow-templater]: Start processing: safelock
+[2023-05-24 14:34:51] INFO root fetch - main [MainThread]: End processing [workflow-templater]: success
+[2023-05-24 14:34:51] INFO root fetch - processPackages [safelock]: New version: [1.3.0] Old Version: [1.2.9]
+[2023-05-24 14:34:51] INFO root fetch - processPackages [mysmallutils]: Start processing: aviatrix-migration
+[2023-05-24 14:34:51] INFO root fetch - main [MainThread]: End processing [mysmallutils]: success
+[2023-05-24 14:34:51] INFO root fetch - processPackages [aviatrix-migration]: New version: [0.2.9] Old Version: [0.2.8]
+[2023-05-24 14:34:51] INFO root fetch - processPackages [learning-loop-node]: Start processing: inspirational-quotes
+[2023-05-24 14:34:51] INFO root fetch - main [MainThread]: End processing [learning-loop-node]: success
+[2023-05-24 14:34:51] INFO root fetch - processPackages [inspirational-quotes]: New version: [0.0.8] Old Version: [0.0.7]
+[2023-05-24 14:34:51] INFO root fetch - processPackages [safelock]: Downloading https://files.pythonhosted.org/packages/07/cf/f1ea32ac339f410f08b034b4bc31e86d269325811e42041abafb2889ed05/safelock-1.2.9.tar.gz
+[2023-05-24 14:34:51] INFO root fetch - processPackages [safecopy]: Start processing: safelog
+[2023-05-24 14:34:51] INFO root fetch - main [MainThread]: End processing [safecopy]: success
+[2023-05-24 14:34:52] INFO root fetch - processPackages [safelog]: New version: [1.8.0] Old Version: [1.7.8]
+[2023-05-24 14:34:52] INFO root fetch - processPackages [inspirational-quotes]: executing diffoscope
+[2023-05-24 14:34:52] INFO root fetch - processPackages [inspirational-quotes]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/inspirational_quotes-0.0.7.tar.gz tmp/inspirational_quotes-0.0.8.tar.gz --markdown 20230524/i/inspirational-quotes/0.0.7-0.0.8/diff.md --exclude *.pyd
+[2023-05-24 14:34:52] INFO root fetch - processPackages [gps-activity]: Start processing: solidlibs
+[2023-05-24 14:34:52] INFO root fetch - main [MainThread]: End processing [gps-activity]: success
+[2023-05-24 14:34:52] INFO root fetch - processPackages [bigdl-friesian-spark2]: Start processing: pyopencl-extension
+[2023-05-24 14:34:52] INFO root fetch - main [MainThread]: End processing [bigdl-friesian-spark2]: success
+[2023-05-24 14:34:52] WARNING root fetch - processPackages [solidlibs]: Skipping, unable to determine old version
+[2023-05-24 14:34:52] INFO root fetch - processPackages [solidlibs]: Start processing: ronnytest
+[2023-05-24 14:34:52] INFO root fetch - main [MainThread]: End processing [solidlibs] error
+[2023-05-24 14:34:52] INFO root fetch - processPackages [pyopencl-extension]: New version: [0.2.6] Old Version: [0.2.5]
+[2023-05-24 14:34:52] INFO root fetch - processPackages [ronnytest]: New version: [0.0.7] Old Version: [0.0.6]
+[2023-05-24 14:34:52] INFO root fetch - processPackages [safelog]: Downloading https://files.pythonhosted.org/packages/1c/78/c777dbc24ff10e4ba7a28e068238d010e917063cf8a64fc48fdc799f25c2/safelog-1.7.8.tar.gz
+[2023-05-24 14:34:52] INFO root fetch - processPackages [aviatrix-migration]: executing diffoscope
+[2023-05-24 14:34:52] INFO root fetch - processPackages [aviatrix-migration]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aviatrix_migration-0.2.8-cp39-cp39-win_amd64.whl.zip tmp/aviatrix_migration-0.2.9-cp39-cp39-win_amd64.whl.zip --markdown 20230524/a/aviatrix-migration/0.2.8-0.2.9/diff.md --exclude *.pyd
+[2023-05-24 14:34:52] INFO root fetch - processPackages [safelock]: Downloading https://files.pythonhosted.org/packages/98/5e/1f0935d568d6ffbc0b001e3eed0ae765a3891f359a290bce73444e994407/safelock-1.3.0.tar.gz
+[2023-05-24 14:34:52] INFO root fetch - processPackages [bigdl-chronos-spark2]: Start processing: finbourne-insights-sdk-preview
+[2023-05-24 14:34:52] INFO root fetch - main [MainThread]: End processing [bigdl-chronos-spark2]: success
+[2023-05-24 14:34:52] INFO root fetch - processPackages [pyopencl-extension]: Downloading https://files.pythonhosted.org/packages/7c/1b/1689558de36a15489dc24eb0ac4fa69089dd35f42605e78f08203d5b29a8/pyopencl-extension-0.2.5.tar.gz
+[2023-05-24 14:34:52] INFO root fetch - processPackages [ronnytest]: Downloading https://files.pythonhosted.org/packages/c5/14/b7edf9db7a2b2caa85ccad4f528e92437108dd907591f5e209f678817ea3/ronnytest-0.0.6-py3-none-any.whl
+[2023-05-24 14:34:52] INFO root fetch - processPackages [finbourne-insights-sdk-preview]: New version: [0.0.652] Old Version: [0.0.612]
+[2023-05-24 14:34:52] INFO root fetch - processPackages [safelock]: executing diffoscope
+[2023-05-24 14:34:52] INFO root fetch - processPackages [safelock]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/safelock-1.2.9.tar.gz tmp/safelock-1.3.0.tar.gz --markdown 20230524/s/safelock/1.2.9-1.3.0/diff.md --exclude *.pyd
+[2023-05-24 14:34:52] INFO root fetch - processPackages [safelog]: Downloading https://files.pythonhosted.org/packages/91/8d/8b5b86f0997f6236fa4bc8ab91feefa160f82b09c4a4cb8ee741d1adedbd/safelog-1.8.0.tar.gz
+[2023-05-24 14:34:52] INFO root fetch - main [MainThread]: End processing [ronnytest]: success
+[2023-05-24 14:34:52] INFO root fetch - main [MainThread]: End processing [bigdl-spark2]: success
+[2023-05-24 14:34:52] INFO root fetch - processPackages [ronnytest]: Downloading https://files.pythonhosted.org/packages/e2/b7/98723d694ec3f3391fec37c0e90be57ffbbaac784cd30e0e7ea85d1fc13b/ronnytest-0.0.7.tar.gz
+[2023-05-24 14:34:52] INFO root fetch - processPackages [finbourne-insights-sdk-preview]: Downloading https://files.pythonhosted.org/packages/58/e1/22193d4584d9905ea954498a34b3567377e1ca6890857c6bcdc90c5d36b3/finbourne-insights-sdk-preview-0.0.612.tar.gz
+[2023-05-24 14:34:52] INFO root fetch - processPackages [safelog]: executing diffoscope
+[2023-05-24 14:34:52] INFO root fetch - processPackages [safelog]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/safelog-1.7.8.tar.gz tmp/safelog-1.8.0.tar.gz --markdown 20230524/s/safelog/1.7.8-1.8.0/diff.md --exclude *.pyd
+[2023-05-24 14:34:52] INFO root fetch - processPackages [pyopencl-extension]: Downloading https://files.pythonhosted.org/packages/e2/39/1ed729f2eb1aa76731f2965c4c67a100d1c3c40780592982eb7cfe2564f2/pyopencl-extension-0.2.6.tar.gz
+[2023-05-24 14:34:52] INFO root fetch - processPackages [ronnytest]: executing diffoscope
+[2023-05-24 14:34:52] INFO root fetch - processPackages [ronnytest]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ronnytest-0.0.6-py3-none-any.whl.zip tmp/ronnytest-0.0.7.tar.gz --markdown 20230524/r/ronnytest/0.0.6-0.0.7/diff.md --exclude *.pyd
+[2023-05-24 14:34:52] INFO root fetch - processPackages [finbourne-insights-sdk-preview]: Downloading https://files.pythonhosted.org/packages/fe/0c/e023efcd03d3df54e59e62d90f93851a8a8cc4fbd1d4c739a5edec82ee21/finbourne-insights-sdk-preview-0.0.652.tar.gz
+[2023-05-24 14:34:52] INFO root fetch - processPackages [pyopencl-extension]: executing diffoscope
+[2023-05-24 14:34:52] INFO root fetch - processPackages [pyopencl-extension]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyopencl-extension-0.2.5.tar.gz tmp/pyopencl-extension-0.2.6.tar.gz --markdown 20230524/p/pyopencl-extension/0.2.5-0.2.6/diff.md --exclude *.pyd
+[2023-05-24 14:34:53] INFO root fetch - processPackages [finbourne-insights-sdk-preview]: executing diffoscope
+[2023-05-24 14:34:53] INFO root fetch - processPackages [finbourne-insights-sdk-preview]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/finbourne-insights-sdk-preview-0.0.612.tar.gz tmp/finbourne-insights-sdk-preview-0.0.652.tar.gz --markdown 20230524/f/finbourne-insights-sdk-preview/0.0.612-0.0.652/diff.md --exclude *.pyd
+[2023-05-24 14:34:53] INFO root fetch - main [MainThread]: End processing [provo]: success
+[2023-05-24 14:34:53] INFO root fetch - main [MainThread]: End processing [inspirational-quotes]: success
+[2023-05-24 14:34:53] INFO root fetch - main [MainThread]: End processing [safelock]: success
+[2023-05-24 14:34:53] INFO root fetch - main [MainThread]: End processing [aviatrix-migration]: success
+[2023-05-24 14:34:53] INFO root fetch - main [MainThread]: End processing [safelog]: success
+[2023-05-24 14:34:53] INFO root fetch - main [MainThread]: End processing [ronnytest]: success
+[2023-05-24 14:34:55] INFO root fetch - main [MainThread]: End processing [finbourne-insights-sdk-preview]: success
+[2023-05-24 14:34:55] INFO root fetch - main [MainThread]: End processing [pyopencl-extension]: success
+[2023-05-24 14:34:55] INFO root fetch - main [MainThread]: Store serial: [18229548]
