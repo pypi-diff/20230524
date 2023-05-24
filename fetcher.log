@@ -10459,3 +10459,68 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-05-24 10:27:51] INFO root fetch - main [MainThread]: End processing [strelok]: success
 [2023-05-24 10:27:52] INFO root fetch - main [MainThread]: End processing [supervisely]: success
 [2023-05-24 10:27:52] INFO root fetch - main [MainThread]: Store serial: [18226816]
+[2023-05-24 10:32:56] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18226816]
+[2023-05-24 10:33:01] INFO root fetch - main [MainThread]: Found 11 changed packages
+[2023-05-24 10:33:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: wow-ai-ml
+[2023-05-24 10:33:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: srrcomp
+[2023-05-24 10:33:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: aiomisc
+[2023-05-24 10:33:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: laningapi
+[2023-05-24 10:33:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pixano
+[2023-05-24 10:33:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: ango
+[2023-05-24 10:33:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: notion2vuepress
+[2023-05-24 10:33:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: aiomisc
+[2023-05-24 10:33:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: USsym
+[2023-05-24 10:33:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: codal-tsetmc
+[2023-05-24 10:33:01] WARNING root fetch - processPackages [notion2vuepress]: Skipping, unable to determine old version
+[2023-05-24 10:33:01] INFO root fetch - processPackages [notion2vuepress]: Start processing: asposepdfcloud
+[2023-05-24 10:33:01] INFO root fetch - main [MainThread]: End processing [notion2vuepress] error
+[2023-05-24 10:33:01] INFO root fetch - processPackages [aiomisc]: New version: [9.8.4] Old Version: [9.8.1]
+[2023-05-24 10:33:01] INFO root fetch - processPackages [aiomisc]: New version: [9.8.4] Old Version: [9.8.1]
+[2023-05-24 10:33:01] INFO root fetch - processPackages [USsym]: New version: [0.1.0] Old Version: [0.0.2]
+[2023-05-24 10:33:01] INFO root fetch - processPackages [srrcomp]: New version: [0.1.2] Old Version: [0.1.1]
+[2023-05-24 10:33:01] INFO root fetch - processPackages [wow-ai-ml]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-24 10:33:01] INFO root fetch - processPackages [laningapi]: New version: [0.0.6] Old Version: [0.0.5]
+[2023-05-24 10:33:01] WARNING root fetch - processPackages [codal-tsetmc]: Skipping, unable to determine old version
+[2023-05-24 10:33:01] INFO root fetch - main [MainThread]: End processing [codal-tsetmc] error
+[2023-05-24 10:33:01] INFO root fetch - processPackages [pixano]: New version: [0.2.0] Old Version: [0.1.1]
+[2023-05-24 10:33:01] INFO root fetch - processPackages [aiomisc]: executing diffoscope
+[2023-05-24 10:33:01] INFO root fetch - processPackages [ango]: New version: [1.0.4] Old Version: [1.0.3]
+[2023-05-24 10:33:01] INFO root fetch - processPackages [aiomisc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aiomisc-9.8.1.tar.gz tmp/aiomisc-9.8.4.tar.gz --markdown 20230524/a/aiomisc/9.8.1-9.8.4/diff.md --exclude *.pyd
+[2023-05-24 10:33:01] INFO root fetch - processPackages [USsym]: executing diffoscope
+[2023-05-24 10:33:01] INFO root fetch - processPackages [USsym]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/USsym-0.0.2.tar.gz tmp/USsym-0.1.0.tar.gz --markdown 20230524/U/USsym/0.0.2-0.1.0/diff.md --exclude *.pyd
+[2023-05-24 10:33:01] INFO root fetch - processPackages [aiomisc]: executing diffoscope
+[2023-05-24 10:33:01] INFO root fetch - processPackages [aiomisc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aiomisc-9.8.1.tar.gz tmp/aiomisc-9.8.4.tar.gz --markdown 20230524/a/aiomisc/9.8.1-9.8.4/diff.md --exclude *.pyd
+[2023-05-24 10:33:01] INFO root fetch - processPackages [asposepdfcloud]: New version: [23.5.0] Old Version: [23.4.0]
+[2023-05-24 10:33:01] INFO root fetch - processPackages [srrcomp]: Downloading https://files.pythonhosted.org/packages/9f/32/9c0a2a760ad76dbb1072fa9229590474c6c7363c4dbee0deedcece7765c3/srrcomp-0.1.1.tar.gz
+[2023-05-24 10:33:01] INFO root fetch - processPackages [laningapi]: Downloading https://files.pythonhosted.org/packages/65/f6/c0e72d40b4ed49fa5671fc92ea6758a7dfcfb9cd71670dc2b525201033bd/laningapi-0.0.5.tar.gz
+[2023-05-24 10:33:02] INFO root fetch - processPackages [pixano]: Downloading https://files.pythonhosted.org/packages/44/6a/339bc62110c6662a2503af9515b34b04adc07d9e1c6b74871afd2be6518e/pixano-0.1.1.tar.gz
+[2023-05-24 10:33:02] INFO root fetch - processPackages [wow-ai-ml]: Downloading https://files.pythonhosted.org/packages/59/eb/4e3f8da99e5e4496c2c6ddb06bf860130ef7f19aeed760a97c9a3142f4d3/wow_ai_ml-0.1.8.tar.gz
+[2023-05-24 10:33:02] INFO root fetch - processPackages [asposepdfcloud]: Downloading https://files.pythonhosted.org/packages/6e/c2/f945e7c6faee5ca9720e44228de27816e659da28abb487a1da526491dd02/asposepdfcloud-23.4.0.tar.gz
+[2023-05-24 10:33:02] INFO root fetch - processPackages [laningapi]: Downloading https://files.pythonhosted.org/packages/5f/81/8b211df54689f463f4a922edfc154594f39d975993657698351f35e3e7af/laningapi-0.0.6.tar.gz
+[2023-05-24 10:33:02] INFO root fetch - processPackages [ango]: Downloading https://files.pythonhosted.org/packages/b7/ce/3f714c0c55dcf2c1e1fe5dbf39b465b72f1a62de6061fedc427e9e69fd1c/ango-1.0.4.tar.gz
+[2023-05-24 10:33:02] INFO root fetch - processPackages [srrcomp]: Downloading https://files.pythonhosted.org/packages/f8/c5/74a6116931f0d5ac198dd5736c86e0a7fead9f13827790495f33b7206fc1/srrcomp-0.1.2.tar.gz
+[2023-05-24 10:33:02] INFO root fetch - processPackages [laningapi]: executing diffoscope
+[2023-05-24 10:33:02] INFO root fetch - processPackages [laningapi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/laningapi-0.0.5.tar.gz tmp/laningapi-0.0.6.tar.gz --markdown 20230524/l/laningapi/0.0.5-0.0.6/diff.md --exclude *.pyd
+[2023-05-24 10:33:02] INFO root fetch - processPackages [ango]: executing diffoscope
+[2023-05-24 10:33:02] INFO root fetch - processPackages [ango]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ango-1.0.3.tar.gz tmp/ango-1.0.4.tar.gz --markdown 20230524/a/ango/1.0.3-1.0.4/diff.md --exclude *.pyd
+[2023-05-24 10:33:02] INFO root fetch - processPackages [pixano]: Downloading https://files.pythonhosted.org/packages/19/31/b3243cb2d64f815e50e39ee24c697b65a6bf111ccb999c8ab6b214a8ab20/pixano-0.2.0.tar.gz
+[2023-05-24 10:33:02] INFO root fetch - processPackages [srrcomp]: executing diffoscope
+[2023-05-24 10:33:02] INFO root fetch - processPackages [srrcomp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/srrcomp-0.1.1.tar.gz tmp/srrcomp-0.1.2.tar.gz --markdown 20230524/s/srrcomp/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2023-05-24 10:33:02] INFO root fetch - processPackages [wow-ai-ml]: Downloading https://files.pythonhosted.org/packages/b7/00/fdf6d27d5658b0587df70b136824419742416e63a9cad00d824829844e6d/wow_ai_ml-0.1.9.tar.gz
+[2023-05-24 10:33:02] INFO root fetch - processPackages [pixano]: executing diffoscope
+[2023-05-24 10:33:02] INFO root fetch - processPackages [pixano]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pixano-0.1.1.tar.gz tmp/pixano-0.2.0.tar.gz --markdown 20230524/p/pixano/0.1.1-0.2.0/diff.md --exclude *.pyd
+[2023-05-24 10:33:02] INFO root fetch - processPackages [asposepdfcloud]: Downloading https://files.pythonhosted.org/packages/0c/b4/44423f84d61386fba45f1352142b7338c491ee920f4d8fe70d07d255f2fb/asposepdfcloud-23.5.0.tar.gz
+[2023-05-24 10:33:02] INFO root fetch - processPackages [wow-ai-ml]: executing diffoscope
+[2023-05-24 10:33:02] INFO root fetch - processPackages [wow-ai-ml]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wow_ai_ml-0.1.8.tar.gz tmp/wow_ai_ml-0.1.9.tar.gz --markdown 20230524/w/wow-ai-ml/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-24 10:33:02] INFO root fetch - processPackages [asposepdfcloud]: executing diffoscope
+[2023-05-24 10:33:02] INFO root fetch - processPackages [asposepdfcloud]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/asposepdfcloud-23.4.0.tar.gz tmp/asposepdfcloud-23.5.0.tar.gz --markdown 20230524/a/asposepdfcloud/23.4.0-23.5.0/diff.md --exclude *.pyd
+[2023-05-24 10:33:02] INFO root fetch - main [MainThread]: End processing [USsym]: success
+[2023-05-24 10:33:03] INFO root fetch - main [MainThread]: End processing [aiomisc]: success
+[2023-05-24 10:33:03] INFO root fetch - main [MainThread]: End processing [aiomisc]: success
+[2023-05-24 10:33:03] INFO root fetch - main [MainThread]: End processing [ango]: success
+[2023-05-24 10:33:03] INFO root fetch - main [MainThread]: End processing [laningapi]: success
+[2023-05-24 10:33:03] INFO root fetch - main [MainThread]: End processing [srrcomp]: success
+[2023-05-24 10:33:03] INFO root fetch - main [MainThread]: End processing [wow-ai-ml]: success
+[2023-05-24 10:33:06] INFO root fetch - main [MainThread]: End processing [asposepdfcloud]: success
+[2023-05-24 10:33:15] INFO root fetch - main [MainThread]: End processing [pixano]: success
+[2023-05-24 10:33:15] INFO root fetch - main [MainThread]: Store serial: [18226854]
