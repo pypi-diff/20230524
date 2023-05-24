@@ -9103,3 +9103,86 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-05-24 08:54:46] INFO root fetch - main [MainThread]: End processing [tfy-mlflow-client]: success
 [2023-05-24 08:55:08] INFO root fetch - main [MainThread]: End processing [gfs-dynamical-core]: success
 [2023-05-24 08:55:08] INFO root fetch - main [MainThread]: Store serial: [18225981]
+[2023-05-24 09:00:15] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18225981]
+[2023-05-24 09:00:20] INFO root fetch - main [MainThread]: Found 15 changed packages
+[2023-05-24 09:00:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: swcgeom
+[2023-05-24 09:00:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: bmsdna-lakeapi
+[2023-05-24 09:00:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pip-inside
+[2023-05-24 09:00:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: vbimage
+[2023-05-24 09:00:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: py-Pyro
+[2023-05-24 09:00:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: yambs
+[2023-05-24 09:00:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: onnx-predict-yolov8
+[2023-05-24 09:00:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: yyxx-game-pkg
+[2023-05-24 09:00:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: django-autocomplete-light
+[2023-05-24 09:00:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: huspacy-nightly
+[2023-05-24 09:00:20] INFO root fetch - processPackages [pip-inside]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-24 09:00:20] INFO root fetch - processPackages [vbimage]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-24 09:00:20] WARNING root fetch - processPackages [onnx-predict-yolov8]: Skipping, unable to determine old version
+[2023-05-24 09:00:20] INFO root fetch - processPackages [onnx-predict-yolov8]: Start processing: datacollectors
+[2023-05-24 09:00:20] INFO root fetch - main [MainThread]: End processing [onnx-predict-yolov8] error
+[2023-05-24 09:00:20] INFO root fetch - processPackages [huspacy-nightly]: New version: [0.9.0.dev223] Old Version: [0.9.0.dev222]
+[2023-05-24 09:00:20] INFO root fetch - processPackages [bmsdna-lakeapi]: New version: [0.3.1] Old Version: [0.3.0]
+[2023-05-24 09:00:20] INFO root fetch - processPackages [django-autocomplete-light]: New version: [3.9.8rc20] Old Version: [3.9.8rc19]
+[2023-05-24 09:00:20] INFO root fetch - processPackages [vbimage]: executing diffoscope
+[2023-05-24 09:00:20] INFO root fetch - processPackages [swcgeom]: New version: [0.9.0] Old Version: [0.8.0]
+[2023-05-24 09:00:20] INFO root fetch - processPackages [vbimage]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vbimage-0.1.8.tar.gz tmp/vbimage-0.1.9.tar.gz --markdown 20230524/v/vbimage/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-24 09:00:20] WARNING root fetch - processPackages [py-Pyro]: Skipping, unable to determine old version
+[2023-05-24 09:00:20] INFO root fetch - processPackages [py-Pyro]: Start processing: drafthorse2
+[2023-05-24 09:00:20] INFO root fetch - main [MainThread]: End processing [py-Pyro] error
+[2023-05-24 09:00:20] INFO root fetch - processPackages [yambs]: New version: [1.5.0] Old Version: [1.4.4]
+[2023-05-24 09:00:20] INFO root fetch - processPackages [yyxx-game-pkg]: New version: [2023.5.4.1] Old Version: [2023.5.24.1]
+[2023-05-24 09:00:20] INFO root fetch - processPackages [django-autocomplete-light]: executing diffoscope
+[2023-05-24 09:00:20] INFO root fetch - processPackages [django-autocomplete-light]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django-autocomplete-light-3.9.8rc19.tar.gz tmp/django-autocomplete-light-3.9.8rc20.tar.gz --markdown 20230524/d/django-autocomplete-light/3.9.8rc19-3.9.8rc20/diff.md --exclude *.pyd
+[2023-05-24 09:00:20] INFO root fetch - processPackages [datacollectors]: New version: [0.6.9] Old Version: [0.6.8]
+[2023-05-24 09:00:20] INFO root fetch - processPackages [pip-inside]: Downloading https://files.pythonhosted.org/packages/d3/cc/9bb6c9f2e1c4e2f7965ffe44c641d8e763c9edbf489228ff87fc220fd19e/pip-inside-0.1.8.tar.gz
+[2023-05-24 09:00:20] WARNING root fetch - processPackages [drafthorse2]: Skipping, unable to determine old version
+[2023-05-24 09:00:20] INFO root fetch - processPackages [drafthorse2]: Start processing: aos-signer
+[2023-05-24 09:00:20] INFO root fetch - main [MainThread]: End processing [drafthorse2] error
+[2023-05-24 09:00:20] INFO root fetch - processPackages [aos-signer]: New version: [1.8.2b7] Old Version: [1.8.2b6]
+[2023-05-24 09:00:20] INFO root fetch - processPackages [yyxx-game-pkg]: Downloading https://files.pythonhosted.org/packages/60/36/ff54fd15972cfe746e9d11fb001f3d37f4dcf7b05acf514d38d7a37f40ec/yyxx_game_pkg-2023.5.24.1.tar.gz
+[2023-05-24 09:00:20] INFO root fetch - processPackages [swcgeom]: Downloading https://files.pythonhosted.org/packages/69/50/47107683c2c6e33f33d0a5032f48bad016082b8c536b1ea65edcbd2fa614/swcgeom-0.8.0.tar.gz
+[2023-05-24 09:00:20] INFO root fetch - processPackages [bmsdna-lakeapi]: Downloading https://files.pythonhosted.org/packages/81/8f/32dae262975a632ff80b376faf0b9de00fbad4d880e7d0abd7bda9100d98/bmsdna_lakeapi-0.3.1.tar.gz
+[2023-05-24 09:00:20] INFO root fetch - processPackages [huspacy-nightly]: Downloading https://files.pythonhosted.org/packages/b1/72/6ac88a531685430f36d8001ce9afa1d1ac1f941838ff4400268cac2de33f/huspacy_nightly-0.9.0.dev223-py3-none-any.whl
+[2023-05-24 09:00:20] INFO root fetch - processPackages [aos-signer]: executing diffoscope
+[2023-05-24 09:00:20] INFO root fetch - processPackages [aos-signer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aos_signer-1.8.2b6-py3-none-any.whl.zip tmp/aos_signer-1.8.2b7-py3-none-any.whl.zip --markdown 20230524/a/aos-signer/1.8.2b6-1.8.2b7/diff.md --exclude *.pyd
+[2023-05-24 09:00:20] INFO root fetch - processPackages [datacollectors]: Downloading https://files.pythonhosted.org/packages/b9/da/bd58e34347ac53ab3542f8d92b6f5c240f765bf5de25eaf108e078687f9c/datacollectors-0.6.8.tar.gz
+[2023-05-24 09:00:20] INFO root fetch - processPackages [bmsdna-lakeapi]: executing diffoscope
+[2023-05-24 09:00:20] INFO root fetch - processPackages [bmsdna-lakeapi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bmsdna_lakeapi-0.3.0.tar.gz tmp/bmsdna_lakeapi-0.3.1.tar.gz --markdown 20230524/b/bmsdna-lakeapi/0.3.0-0.3.1/diff.md --exclude *.pyd
+[2023-05-24 09:00:21] INFO root fetch - processPackages [yambs]: Downloading https://files.pythonhosted.org/packages/90/b2/a30a93213b2f4eb603efbd29a22442f15ac0c428a8f753fc4e42f972bbf5/yambs-1.5.0.tar.gz
+[2023-05-24 09:00:21] INFO root fetch - processPackages [huspacy-nightly]: executing diffoscope
+[2023-05-24 09:00:21] INFO root fetch - processPackages [huspacy-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/huspacy_nightly-0.9.0.dev222-py3-none-any.whl.zip tmp/huspacy_nightly-0.9.0.dev223-py3-none-any.whl.zip --markdown 20230524/h/huspacy-nightly/0.9.0.dev222-0.9.0.dev223/diff.md --exclude *.pyd
+[2023-05-24 09:00:21] INFO root fetch - processPackages [yambs]: executing diffoscope
+[2023-05-24 09:00:21] INFO root fetch - processPackages [yambs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/yambs-1.4.4.tar.gz tmp/yambs-1.5.0.tar.gz --markdown 20230524/y/yambs/1.4.4-1.5.0/diff.md --exclude *.pyd
+[2023-05-24 09:00:21] INFO root fetch - processPackages [yyxx-game-pkg]: Downloading https://files.pythonhosted.org/packages/a5/73/9e57b9b59e83d8a8c7761faf5f6e097db7f7be4a7baf0902d2cc7a3804f2/yyxx_game_pkg-2023.5.4.1.tar.gz
+[2023-05-24 09:00:21] INFO root fetch - processPackages [pip-inside]: Downloading https://files.pythonhosted.org/packages/03/29/8da5b4e43dd72f20de380f015a3da26ad5d6903ca91d52f6707e3fff7ee9/pip-inside-0.1.9.tar.gz
+[2023-05-24 09:00:21] INFO root fetch - processPackages [datacollectors]: Downloading https://files.pythonhosted.org/packages/82/f7/0177fea485f95f47e3d9b0b312ef9e007fdecfd17e954fa6446aab8841dc/datacollectors-0.6.9.tar.gz
+[2023-05-24 09:00:21] INFO root fetch - processPackages [pip-inside]: executing diffoscope
+[2023-05-24 09:00:21] INFO root fetch - processPackages [pip-inside]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pip-inside-0.1.8.tar.gz tmp/pip-inside-0.1.9.tar.gz --markdown 20230524/p/pip-inside/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-24 09:00:21] INFO root fetch - processPackages [datacollectors]: executing diffoscope
+[2023-05-24 09:00:21] INFO root fetch - processPackages [datacollectors]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/datacollectors-0.6.8.tar.gz tmp/datacollectors-0.6.9.tar.gz --markdown 20230524/d/datacollectors/0.6.8-0.6.9/diff.md --exclude *.pyd
+[2023-05-24 09:00:21] INFO root fetch - processPackages [swcgeom]: Downloading https://files.pythonhosted.org/packages/5e/01/21fad200bc76a70b07900952e197e18fc7fc55cf10ce14e4985e47a9c76a/swcgeom-0.9.0.tar.gz
+[2023-05-24 09:00:21] INFO root fetch - processPackages [vbimage]: Start processing: dash-connectivity-viewer
+[2023-05-24 09:00:21] INFO root fetch - main [MainThread]: End processing [vbimage]: success
+[2023-05-24 09:00:21] INFO root fetch - processPackages [dash-connectivity-viewer]: New version: [2.0.9] Old Version: [2.0.8]
+[2023-05-24 09:00:21] INFO root fetch - processPackages [swcgeom]: executing diffoscope
+[2023-05-24 09:00:21] INFO root fetch - processPackages [swcgeom]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/swcgeom-0.8.0.tar.gz tmp/swcgeom-0.9.0.tar.gz --markdown 20230524/s/swcgeom/0.8.0-0.9.0/diff.md --exclude *.pyd
+[2023-05-24 09:00:21] INFO root fetch - processPackages [dash-connectivity-viewer]: executing diffoscope
+[2023-05-24 09:00:21] INFO root fetch - processPackages [dash-connectivity-viewer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dash-connectivity-viewer-2.0.8.tar.gz tmp/dash-connectivity-viewer-2.0.9.tar.gz --markdown 20230524/d/dash-connectivity-viewer/2.0.8-2.0.9/diff.md --exclude *.pyd
+[2023-05-24 09:00:22] INFO root fetch - processPackages [yyxx-game-pkg]: executing diffoscope
+[2023-05-24 09:00:22] INFO root fetch - processPackages [yyxx-game-pkg]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/yyxx_game_pkg-2023.5.24.1.tar.gz tmp/yyxx_game_pkg-2023.5.4.1.tar.gz --markdown 20230524/y/yyxx-game-pkg/2023.5.24.1-2023.5.4.1/diff.md --exclude *.pyd
+[2023-05-24 09:00:22] INFO root fetch - processPackages [aos-signer]: Start processing: TradeGate
+[2023-05-24 09:00:22] INFO root fetch - main [MainThread]: End processing [aos-signer]: success
+[2023-05-24 09:00:22] INFO root fetch - processPackages [TradeGate]: New version: [0.3.7] Old Version: [0.3.6.1]
+[2023-05-24 09:00:22] INFO root fetch - processPackages [TradeGate]: executing diffoscope
+[2023-05-24 09:00:22] INFO root fetch - processPackages [TradeGate]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/TradeGate-0.3.6.1.tar.gz tmp/TradeGate-0.3.7.tar.gz --markdown 20230524/T/TradeGate/0.3.6.1-0.3.7/diff.md --exclude *.pyd
+[2023-05-24 09:00:22] INFO root fetch - main [MainThread]: End processing [datacollectors]: success
+[2023-05-24 09:00:22] INFO root fetch - main [MainThread]: End processing [pip-inside]: success
+[2023-05-24 09:00:22] INFO root fetch - main [MainThread]: End processing [bmsdna-lakeapi]: success
+[2023-05-24 09:00:23] INFO root fetch - main [MainThread]: End processing [yambs]: success
+[2023-05-24 09:00:23] INFO root fetch - main [MainThread]: End processing [dash-connectivity-viewer]: success
+[2023-05-24 09:00:24] INFO root fetch - main [MainThread]: End processing [TradeGate]: success
+[2023-05-24 09:00:24] INFO root fetch - main [MainThread]: End processing [yyxx-game-pkg]: success
+[2023-05-24 09:00:25] INFO root fetch - main [MainThread]: End processing [huspacy-nightly]: success
+[2023-05-24 09:00:25] INFO root fetch - main [MainThread]: End processing [django-autocomplete-light]: success
+[2023-05-24 09:00:25] INFO root fetch - main [MainThread]: End processing [swcgeom]: success
+[2023-05-24 09:00:25] INFO root fetch - main [MainThread]: Store serial: [18226026]
