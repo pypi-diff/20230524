@@ -13661,3 +13661,124 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd4 in position 72: invalid
 [2023-05-24 13:27:14] INFO root fetch - main [MainThread]: End processing [shrug-viz]: success
 [2023-05-24 13:27:23] INFO root fetch - main [MainThread]: End processing [Geode-Common]: success
 [2023-05-24 13:27:23] INFO root fetch - main [MainThread]: Store serial: [18228792]
+[2023-05-24 13:32:27] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18228792]
+[2023-05-24 13:32:32] INFO root fetch - main [MainThread]: Found 20 changed packages
+[2023-05-24 13:32:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: applovin-report
+[2023-05-24 13:32:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: harness-featureflags
+[2023-05-24 13:32:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: keyauth-tech
+[2023-05-24 13:32:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: quantplay
+[2023-05-24 13:32:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: st4sd-runtime-core
+[2023-05-24 13:32:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: torchx-nightly
+[2023-05-24 13:32:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: eargait
+[2023-05-24 13:32:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: nlptest
+[2023-05-24 13:32:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: secimport
+[2023-05-24 13:32:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: micromechanics
+[2023-05-24 13:32:32] INFO root fetch - processPackages [nlptest]: New version: [1.3.0rc1] Old Version: [1.2.0rc3]
+[2023-05-24 13:32:32] INFO root fetch - processPackages [eargait]: New version: [1.8.0] Old Version: [1.7.0]
+[2023-05-24 13:32:32] INFO root fetch - processPackages [secimport]: New version: [0.8.1] Old Version: [0.8.0]
+[2023-05-24 13:32:32] INFO root fetch - processPackages [torchx-nightly]: New version: [2023.5.9] Old Version: [2023.5.8]
+[2023-05-24 13:32:32] INFO root fetch - processPackages [nlptest]: Downloading https://files.pythonhosted.org/packages/7e/8b/597da6d92e36d20607899a989d7cf179c6b9063b8e287ae096f56e707484/nlptest-1.2.0rc3-py3-none-any.whl
+[2023-05-24 13:32:32] INFO root fetch - processPackages [keyauth-tech]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-05-24 13:32:32] INFO root fetch - processPackages [st4sd-runtime-core]: New version: [2.0.0a9.dev8] Old Version: [2.0.0a9.dev7]
+[2023-05-24 13:32:32] INFO root fetch - processPackages [applovin-report]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-24 13:32:32] WARNING root fetch - processPackages [nlptest]: Skipping package: exceeds size limit 54737099>=10485760
+[2023-05-24 13:32:32] INFO root fetch - processPackages [nlptest]: Start processing: torchrec-nightly
+[2023-05-24 13:32:32] INFO root fetch - main [MainThread]: End processing [nlptest] error
+[2023-05-24 13:32:32] INFO root fetch - processPackages [harness-featureflags]: New version: [1.1.9] Old Version: [1.1.8]
+[2023-05-24 13:32:32] INFO root fetch - processPackages [micromechanics]: New version: [1.1.9] Old Version: [1.1.8]
+[2023-05-24 13:32:32] INFO root fetch - processPackages [torchx-nightly]: executing diffoscope
+[2023-05-24 13:32:32] INFO root fetch - processPackages [torchx-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/torchx_nightly-2023.5.8-py3-none-any.whl.zip tmp/torchx_nightly-2023.5.9-py3-none-any.whl.zip --markdown 20230524/t/torchx-nightly/2023.5.8-2023.5.9/diff.md --exclude *.pyd
+[2023-05-24 13:32:32] INFO root fetch - processPackages [quantplay]: New version: [1.2.9] Old Version: [1.2.87]
+[2023-05-24 13:32:32] INFO root fetch - processPackages [torchrec-nightly]: New version: [2023.5.8] Old Version: [2023.5.7]
+[2023-05-24 13:32:32] INFO root fetch - processPackages [applovin-report]: Downloading https://files.pythonhosted.org/packages/d5/1d/d6f5d47632e7a12a5f617d1e53947921f1b30f8ed34a9650f709b65e01b1/applovin_report-0.1.8.tar.gz
+[2023-05-24 13:32:32] INFO root fetch - processPackages [secimport]: Downloading https://files.pythonhosted.org/packages/75/d3/6db9966694671d76068ccf44373bfd4550b8b26ec5514ca83bef79ddcdd7/secimport-0.8.0.tar.gz
+[2023-05-24 13:32:32] INFO root fetch - processPackages [keyauth-tech]: Downloading https://files.pythonhosted.org/packages/97/c0/99e45a8eedb2611c0e4e5770593b6e72bd6ffeb2444e2c6f028dd4362267/keyauth-tech-0.0.1.tar.gz
+[2023-05-24 13:32:32] INFO root fetch - processPackages [quantplay]: Downloading https://files.pythonhosted.org/packages/ad/ac/da0980c14680d3bed790771c6cede93e02469655204ead09288f73c2e229/quantplay-1.2.87.tar.gz
+[2023-05-24 13:32:32] INFO root fetch - processPackages [micromechanics]: Downloading https://files.pythonhosted.org/packages/57/8f/eda73c3dc1076ca43deae2b499a34b7dfae082657560376894816573b9d4/micromechanics-1.1.8-py3-none-any.whl
+[2023-05-24 13:32:32] INFO root fetch - processPackages [harness-featureflags]: Downloading https://files.pythonhosted.org/packages/96/62/26d7f2198a384880725f0ee6d93ad0bcede8e02459e879d50921d3f10f37/harness-featureflags-1.1.8.tar.gz
+[2023-05-24 13:32:32] INFO root fetch - processPackages [eargait]: executing diffoscope
+[2023-05-24 13:32:32] INFO root fetch - processPackages [eargait]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/eargait-1.7.0.tar.gz tmp/eargait-1.8.0.tar.gz --markdown 20230524/e/eargait/1.7.0-1.8.0/diff.md --exclude *.pyd
+[2023-05-24 13:32:32] INFO root fetch - processPackages [torchrec-nightly]: executing diffoscope
+[2023-05-24 13:32:32] INFO root fetch - processPackages [torchrec-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/torchrec_nightly-2023.5.7-py39-none-any.whl.zip tmp/torchrec_nightly-2023.5.8-py39-none-any.whl.zip --markdown 20230524/t/torchrec-nightly/2023.5.7-2023.5.8/diff.md --exclude *.pyd
+[2023-05-24 13:32:32] INFO root fetch - processPackages [applovin-report]: Downloading https://files.pythonhosted.org/packages/85/4c/0cadfdebe4cee547734619a7dc24faa3f0574815a8f2bb1428049b8c01a0/applovin_report-0.1.9.tar.gz
+[2023-05-24 13:32:32] INFO root fetch - processPackages [keyauth-tech]: Downloading https://files.pythonhosted.org/packages/9d/a1/f80b3e11638238587c35eb3db98300d7106df25cce707e11ddf213f71d4b/keyauth-tech-0.0.2.tar.gz
+[2023-05-24 13:32:32] INFO root fetch - processPackages [st4sd-runtime-core]: executing diffoscope
+[2023-05-24 13:32:32] INFO root fetch - processPackages [st4sd-runtime-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/st4sd-runtime-core-2.0.0a9.dev7.tar.gz tmp/st4sd-runtime-core-2.0.0a9.dev8.tar.gz --markdown 20230524/s/st4sd-runtime-core/2.0.0a9.dev7-2.0.0a9.dev8/diff.md --exclude *.pyd
+[2023-05-24 13:32:32] INFO root fetch - processPackages [quantplay]: executing diffoscope
+[2023-05-24 13:32:32] INFO root fetch - processPackages [quantplay]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/quantplay-1.2.87.tar.gz tmp/quantplay-1.2.9.tar.gz --markdown 20230524/q/quantplay/1.2.87-1.2.9/diff.md --exclude *.pyd
+[2023-05-24 13:32:32] INFO root fetch - processPackages [secimport]: Downloading https://files.pythonhosted.org/packages/00/bd/28053a861656f325e827a9f6305626cafbc146efbde1305013c404e1fcc9/secimport-0.8.1.tar.gz
+[2023-05-24 13:32:32] INFO root fetch - processPackages [applovin-report]: executing diffoscope
+[2023-05-24 13:32:32] INFO root fetch - processPackages [applovin-report]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/applovin_report-0.1.8.tar.gz tmp/applovin_report-0.1.9.tar.gz --markdown 20230524/a/applovin-report/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-24 13:32:32] INFO root fetch - processPackages [keyauth-tech]: executing diffoscope
+[2023-05-24 13:32:32] INFO root fetch - processPackages [keyauth-tech]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/keyauth-tech-0.0.1.tar.gz tmp/keyauth-tech-0.0.2.tar.gz --markdown 20230524/k/keyauth-tech/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-05-24 13:32:32] INFO root fetch - processPackages [secimport]: executing diffoscope
+[2023-05-24 13:32:32] INFO root fetch - processPackages [secimport]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/secimport-0.8.0.tar.gz tmp/secimport-0.8.1.tar.gz --markdown 20230524/s/secimport/0.8.0-0.8.1/diff.md --exclude *.pyd
+[2023-05-24 13:32:33] INFO root fetch - processPackages [harness-featureflags]: Downloading https://files.pythonhosted.org/packages/3c/dc/bf2bf01053df6a3b68c7cbb877b75f317aa20333fb2f3511efe55a1b7a39/harness-featureflags-1.1.9.tar.gz
+[2023-05-24 13:32:33] INFO root fetch - processPackages [micromechanics]: Downloading https://files.pythonhosted.org/packages/4d/e2/037f671e5aa3eae25209ff0af248ba81db39bc5721a2fc48f7a62388eebd/micromechanics-1.1.9-py3-none-any.whl
+[2023-05-24 13:32:33] INFO root fetch - processPackages [harness-featureflags]: executing diffoscope
+[2023-05-24 13:32:33] INFO root fetch - processPackages [harness-featureflags]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/harness-featureflags-1.1.8.tar.gz tmp/harness-featureflags-1.1.9.tar.gz --markdown 20230524/h/harness-featureflags/1.1.8-1.1.9/diff.md --exclude *.pyd
+[2023-05-24 13:32:33] INFO root fetch - processPackages [micromechanics]: executing diffoscope
+[2023-05-24 13:32:33] INFO root fetch - processPackages [micromechanics]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/micromechanics-1.1.8-py3-none-any.whl.zip tmp/micromechanics-1.1.9-py3-none-any.whl.zip --markdown 20230524/m/micromechanics/1.1.8-1.1.9/diff.md --exclude *.pyd
+[2023-05-24 13:32:34] INFO root fetch - processPackages [eargait]: Start processing: applovin-report
+[2023-05-24 13:32:34] INFO root fetch - main [MainThread]: End processing [eargait]: success
+[2023-05-24 13:32:34] INFO root fetch - processPackages [applovin-report]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-24 13:32:34] INFO root fetch - processPackages [applovin-report]: Start processing: tradingcomdados
+[2023-05-24 13:32:34] INFO root fetch - main [MainThread]: End processing [applovin-report]: success
+[2023-05-24 13:32:34] INFO root fetch - processPackages [keyauth-tech]: Start processing: coiled
+[2023-05-24 13:32:34] INFO root fetch - main [MainThread]: End processing [keyauth-tech]: success
+[2023-05-24 13:32:34] INFO root fetch - processPackages [applovin-report]: executing diffoscope
+[2023-05-24 13:32:34] INFO root fetch - processPackages [applovin-report]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/applovin_report-0.1.8.tar.gz tmp/applovin_report-0.1.9.tar.gz --markdown 20230524/a/applovin-report/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-24 13:32:34] INFO root fetch - processPackages [coiled]: New version: [0.6.7.dev9] Old Version: [0.6.7.dev8]
+[2023-05-24 13:32:34] WARNING root fetch - processPackages [tradingcomdados]: Skipping, unable to determine old version
+[2023-05-24 13:32:34] INFO root fetch - processPackages [tradingcomdados]: Start processing: nonebot-plugin-helloworld
+[2023-05-24 13:32:34] INFO root fetch - main [MainThread]: End processing [tradingcomdados] error
+[2023-05-24 13:32:34] INFO root fetch - processPackages [coiled]: executing diffoscope
+[2023-05-24 13:32:34] INFO root fetch - processPackages [coiled]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/coiled-0.6.7.dev8.tar.gz tmp/coiled-0.6.7.dev9.tar.gz --markdown 20230524/c/coiled/0.6.7.dev8-0.6.7.dev9/diff.md --exclude *.pyd
+[2023-05-24 13:32:34] INFO root fetch - processPackages [nonebot-plugin-helloworld]: New version: [0.2.0] Old Version: [0.1.0]
+[2023-05-24 13:32:34] INFO root fetch - processPackages [torchx-nightly]: Start processing: cloud-pak-operations-cli
+[2023-05-24 13:32:34] INFO root fetch - main [MainThread]: End processing [torchx-nightly]: success
+[2023-05-24 13:32:34] INFO root fetch - processPackages [cloud-pak-operations-cli]: New version: [0.3.4] Old Version: [0.3.3]
+[2023-05-24 13:32:34] INFO root fetch - processPackages [micromechanics]: Start processing: vid2info
+[2023-05-24 13:32:34] INFO root fetch - main [MainThread]: End processing [micromechanics]: success
+[2023-05-24 13:32:34] INFO root fetch - processPackages [vid2info]: New version: [1.99] Old Version: [1.98]
+[2023-05-24 13:32:34] INFO root fetch - processPackages [nonebot-plugin-helloworld]: Downloading https://files.pythonhosted.org/packages/fd/c5/def10b9cbdea5181af2e295352adb4e9487bb8dafc321515e29b9914b8e1/nonebot-plugin-helloworld-0.1.0.tar.gz
+[2023-05-24 13:32:34] INFO root fetch - processPackages [cloud-pak-operations-cli]: Downloading https://files.pythonhosted.org/packages/b2/05/de34e2f02d542f4e7a0260a38eda5eac93e769ed10b68a76228334e039c9/cloud-pak-operations-cli-0.3.3.tar.gz
+[2023-05-24 13:32:34] INFO root fetch - processPackages [vid2info]: executing diffoscope
+[2023-05-24 13:32:34] INFO root fetch - processPackages [vid2info]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vid2info-1.98.tar.gz tmp/vid2info-1.99.tar.gz --markdown 20230524/v/vid2info/1.98-1.99/diff.md --exclude *.pyd
+[2023-05-24 13:32:34] INFO root fetch - processPackages [torchrec-nightly]: Start processing: pylibrb
+[2023-05-24 13:32:34] INFO root fetch - main [MainThread]: End processing [torchrec-nightly]: success
+[2023-05-24 13:32:35] INFO root fetch - processPackages [pylibrb]: New version: [0.0.5] Old Version: [0.0.4]
+[2023-05-24 13:32:35] INFO root fetch - processPackages [nonebot-plugin-helloworld]: Downloading https://files.pythonhosted.org/packages/70/9e/b63f6d39d2ff11d2229b6c0a07c17d740368124cec7b3ed1fd0e4d0093f9/nonebot-plugin-helloworld-0.2.0.tar.gz
+[2023-05-24 13:32:35] INFO root fetch - processPackages [nonebot-plugin-helloworld]: executing diffoscope
+[2023-05-24 13:32:35] INFO root fetch - processPackages [nonebot-plugin-helloworld]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nonebot-plugin-helloworld-0.1.0.tar.gz tmp/nonebot-plugin-helloworld-0.2.0.tar.gz --markdown 20230524/n/nonebot-plugin-helloworld/0.1.0-0.2.0/diff.md --exclude *.pyd
+[2023-05-24 13:32:35] INFO root fetch - processPackages [cloud-pak-operations-cli]: Downloading https://files.pythonhosted.org/packages/d2/6d/e1e6f50888d1998d2e82563ea95e4284c103243d581569890865d2810321/cloud-pak-operations-cli-0.3.4.tar.gz
+[2023-05-24 13:32:35] INFO root fetch - processPackages [pylibrb]: Downloading https://files.pythonhosted.org/packages/7e/89/06fc19dd8d13a56919ad9af30a6d3fc946d1306af650653d906b349ff2c6/pylibrb-0.0.5.tar.gz
+[2023-05-24 13:32:35] INFO root fetch - processPackages [pylibrb]: executing diffoscope
+[2023-05-24 13:32:35] INFO root fetch - processPackages [pylibrb]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pylibrb-0.0.4.tar.gz tmp/pylibrb-0.0.5.tar.gz --markdown 20230524/p/pylibrb/0.0.4-0.0.5/diff.md --exclude *.pyd
+[2023-05-24 13:32:35] INFO root fetch - processPackages [cloud-pak-operations-cli]: executing diffoscope
+[2023-05-24 13:32:35] INFO root fetch - processPackages [cloud-pak-operations-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cloud-pak-operations-cli-0.3.3.tar.gz tmp/cloud-pak-operations-cli-0.3.4.tar.gz --markdown 20230524/c/cloud-pak-operations-cli/0.3.3-0.3.4/diff.md --exclude *.pyd
+[2023-05-24 13:32:35] INFO root fetch - processPackages [applovin-report]: Start processing: craft-ai-sdk
+[2023-05-24 13:32:35] INFO root fetch - main [MainThread]: End processing [applovin-report]: success
+[2023-05-24 13:32:35] INFO root fetch - processPackages [craft-ai-sdk]: New version: [0.9.1] Old Version: [0.9.0]
+[2023-05-24 13:32:35] INFO root fetch - processPackages [secimport]: Start processing: oarepo-runtime
+[2023-05-24 13:32:35] INFO root fetch - main [MainThread]: End processing [secimport]: success
+[2023-05-24 13:32:35] INFO root fetch - processPackages [craft-ai-sdk]: Downloading https://files.pythonhosted.org/packages/37/9a/425e98770d7c632e8edaa1eda238a5459ba6f00ddc434fcf87962f118a27/craft_ai_sdk-0.9.0.tar.gz
+[2023-05-24 13:32:35] INFO root fetch - main [MainThread]: End processing [coiled]: success
+[2023-05-24 13:32:36] INFO root fetch - processPackages [oarepo-runtime]: New version: [1.3.0] Old Version: [1.2.9]
+[2023-05-24 13:32:36] INFO root fetch - main [MainThread]: End processing [quantplay]: success
+[2023-05-24 13:32:36] INFO root fetch - processPackages [oarepo-runtime]: Downloading https://files.pythonhosted.org/packages/4f/62/3e8e2e0a8b93184437084b6d1e063f3f668c1d63b8cb6d50a4265d60b92e/oarepo-runtime-1.2.9.tar.gz
+[2023-05-24 13:32:36] INFO root fetch - main [MainThread]: End processing [harness-featureflags]: success
+[2023-05-24 13:32:36] INFO root fetch - processPackages [craft-ai-sdk]: Downloading https://files.pythonhosted.org/packages/4b/d1/169475b438f1184af924d80d3cc7cb68caa2e756a9acb5c8cf6eafc0ca61/craft_ai_sdk-0.9.1.tar.gz
+[2023-05-24 13:32:36] INFO root fetch - main [MainThread]: End processing [nonebot-plugin-helloworld]: success
+[2023-05-24 13:32:36] INFO root fetch - processPackages [craft-ai-sdk]: executing diffoscope
+[2023-05-24 13:32:36] INFO root fetch - processPackages [craft-ai-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/craft_ai_sdk-0.9.0.tar.gz tmp/craft_ai_sdk-0.9.1.tar.gz --markdown 20230524/c/craft-ai-sdk/0.9.0-0.9.1/diff.md --exclude *.pyd
+[2023-05-24 13:32:36] INFO root fetch - processPackages [oarepo-runtime]: Downloading https://files.pythonhosted.org/packages/32/02/33c33b916a355ba413291a8904b002586df23e09f616685740d374df3848/oarepo-runtime-1.3.0.tar.gz
+[2023-05-24 13:32:36] INFO root fetch - processPackages [oarepo-runtime]: executing diffoscope
+[2023-05-24 13:32:36] INFO root fetch - processPackages [oarepo-runtime]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/oarepo-runtime-1.2.9.tar.gz tmp/oarepo-runtime-1.3.0.tar.gz --markdown 20230524/o/oarepo-runtime/1.2.9-1.3.0/diff.md --exclude *.pyd
+[2023-05-24 13:32:36] INFO root fetch - main [MainThread]: End processing [pylibrb]: success
+[2023-05-24 13:32:37] INFO root fetch - main [MainThread]: End processing [craft-ai-sdk]: success
+[2023-05-24 13:32:37] INFO root fetch - main [MainThread]: End processing [oarepo-runtime]: success
+[2023-05-24 13:32:37] INFO root fetch - main [MainThread]: End processing [st4sd-runtime-core]: success
+[2023-05-24 13:32:38] INFO root fetch - main [MainThread]: End processing [cloud-pak-operations-cli]: success
+[2023-05-24 13:32:39] INFO root fetch - main [MainThread]: End processing [vid2info]: success
+[2023-05-24 13:32:39] INFO root fetch - main [MainThread]: Store serial: [18228884]
