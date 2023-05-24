@@ -13184,3 +13184,57 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd4 in position 72: invalid
 [2023-05-24 12:49:08] INFO root fetch - main [MainThread]: End processing [eo-learn]: success
 [2023-05-24 12:49:08] INFO root fetch - main [MainThread]: End processing [igenius-adapters-sdk]: success
 [2023-05-24 12:49:08] INFO root fetch - main [MainThread]: Store serial: [18228537]
+[2023-05-24 12:54:13] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18228537]
+[2023-05-24 12:54:18] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2023-05-24 12:54:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: orkg
+[2023-05-24 12:54:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: scaneo
+[2023-05-24 12:54:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: scaneo
+[2023-05-24 12:54:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: bzt
+[2023-05-24 12:54:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: izihawa-utils
+[2023-05-24 12:54:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: nbdocs
+[2023-05-24 12:54:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: shrug-viz
+[2023-05-24 12:54:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: scaneo
+[2023-05-24 12:54:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: projit
+[2023-05-24 12:54:18] INFO root fetch - processPackages [scaneo]: New version: [0.0.3.post3] Old Version: [0.0.3.post2]
+[2023-05-24 12:54:18] INFO root fetch - processPackages [scaneo]: New version: [0.0.3.post3] Old Version: [0.0.3.post2]
+[2023-05-24 12:54:18] INFO root fetch - processPackages [scaneo]: New version: [0.0.3.post3] Old Version: [0.0.3.post2]
+[2023-05-24 12:54:18] INFO root fetch - processPackages [scaneo]: executing diffoscope
+[2023-05-24 12:54:18] INFO root fetch - processPackages [scaneo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/scaneo-0.0.3.post2.tar.gz tmp/scaneo-0.0.3.post3.tar.gz --markdown 20230524/s/scaneo/0.0.3.post2-0.0.3.post3/diff.md --exclude *.pyd
+[2023-05-24 12:54:18] INFO root fetch - processPackages [scaneo]: executing diffoscope
+[2023-05-24 12:54:18] INFO root fetch - processPackages [scaneo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/scaneo-0.0.3.post2.tar.gz tmp/scaneo-0.0.3.post3.tar.gz --markdown 20230524/s/scaneo/0.0.3.post2-0.0.3.post3/diff.md --exclude *.pyd
+[2023-05-24 12:54:18] INFO root fetch - processPackages [orkg]: New version: [0.9.2] Old Version: [0.9]
+[2023-05-24 12:54:18] INFO root fetch - processPackages [nbdocs]: New version: [0.2.2] Old Version: [0.0.41]
+[2023-05-24 12:54:18] WARNING root fetch - processPackages [shrug-viz]: Skipping, unable to determine old version
+[2023-05-24 12:54:18] INFO root fetch - processPackages [projit]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-24 12:54:18] INFO root fetch - main [MainThread]: End processing [shrug-viz] error
+[2023-05-24 12:54:18] INFO root fetch - processPackages [izihawa-utils]: New version: [1.1.1] Old Version: [1.1.0]
+[2023-05-24 12:54:18] INFO root fetch - processPackages [bzt]: New version: [1.9.6] Old Version: [1.9.5]
+[2023-05-24 12:54:18] INFO root fetch - processPackages [scaneo]: executing diffoscope
+[2023-05-24 12:54:18] INFO root fetch - processPackages [scaneo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/scaneo-0.0.3.post2.tar.gz tmp/scaneo-0.0.3.post3.tar.gz --markdown 20230524/s/scaneo/0.0.3.post2-0.0.3.post3/diff.md --exclude *.pyd
+[2023-05-24 12:54:18] INFO root fetch - processPackages [nbdocs]: Downloading https://files.pythonhosted.org/packages/25/08/2cfd6ce705a85cc0b18f408ac66b9c6eb150204da3f9b022311ff0a740d3/nbdocs-0.0.41.tar.gz
+[2023-05-24 12:54:18] INFO root fetch - processPackages [projit]: Downloading https://files.pythonhosted.org/packages/51/1a/7aa95dd2e5b662fd548a982c00c99991226bf9ce5078ac6560454e98a3c3/projit-0.1.8.tar.gz
+[2023-05-24 12:54:18] INFO root fetch - processPackages [izihawa-utils]: Downloading https://files.pythonhosted.org/packages/60/c7/ce2c61808417678b4e195329699bd22d28cf7caa92520f8a05a505b8585f/izihawa_utils-1.1.0-py3-none-any.whl
+[2023-05-24 12:54:18] INFO root fetch - processPackages [bzt]: Downloading https://files.pythonhosted.org/packages/4f/85/3730bf6788e9d22a430324fef9dc81b7b65718ab1d6e2485d1eb12fc8d4f/bzt-1.9.5.tar.gz
+[2023-05-24 12:54:18] INFO root fetch - processPackages [orkg]: executing diffoscope
+[2023-05-24 12:54:18] INFO root fetch - processPackages [orkg]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/orkg-0.9.tar.gz tmp/orkg-0.9.2.tar.gz --markdown 20230524/o/orkg/0.9-0.9.2/diff.md --exclude *.pyd
+[2023-05-24 12:54:18] INFO root fetch - processPackages [izihawa-utils]: Downloading https://files.pythonhosted.org/packages/ed/f1/1c41e2dfa4a4325288f0022621be1339ff81e7267a0bae6c0840281f0e22/izihawa_utils-1.1.1-py3-none-any.whl
+[2023-05-24 12:54:19] INFO root fetch - processPackages [bzt]: Downloading https://files.pythonhosted.org/packages/76/3f/b2005924277461ac74c83a6ae6ec9235dcf2374c551d3494a6866139dfb8/bzt-1.9.6.tar.gz
+[2023-05-24 12:54:19] INFO root fetch - processPackages [nbdocs]: Downloading https://files.pythonhosted.org/packages/f9/01/423efef8f67837ecb3edb0aec953805882397afc8b7142585b3a6728f780/nbdocs-0.2.2.tar.gz
+[2023-05-24 12:54:19] INFO root fetch - processPackages [izihawa-utils]: executing diffoscope
+[2023-05-24 12:54:19] INFO root fetch - processPackages [izihawa-utils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/izihawa_utils-1.1.0-py3-none-any.whl.zip tmp/izihawa_utils-1.1.1-py3-none-any.whl.zip --markdown 20230524/i/izihawa-utils/1.1.0-1.1.1/diff.md --exclude *.pyd
+[2023-05-24 12:54:19] INFO root fetch - processPackages [projit]: Downloading https://files.pythonhosted.org/packages/3c/76/44de4f75834b6c0bdbe838f5f30e8fc3a1362afd53dcd8ecdc1cfba55a89/projit-0.1.9.tar.gz
+[2023-05-24 12:54:19] INFO root fetch - processPackages [nbdocs]: executing diffoscope
+[2023-05-24 12:54:19] INFO root fetch - processPackages [nbdocs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nbdocs-0.0.41.tar.gz tmp/nbdocs-0.2.2.tar.gz --markdown 20230524/n/nbdocs/0.0.41-0.2.2/diff.md --exclude *.pyd
+[2023-05-24 12:54:19] INFO root fetch - processPackages [projit]: executing diffoscope
+[2023-05-24 12:54:19] INFO root fetch - processPackages [projit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/projit-0.1.8.tar.gz tmp/projit-0.1.9.tar.gz --markdown 20230524/p/projit/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-24 12:54:19] INFO root fetch - processPackages [bzt]: executing diffoscope
+[2023-05-24 12:54:19] INFO root fetch - processPackages [bzt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bzt-1.9.5.tar.gz tmp/bzt-1.9.6.tar.gz --markdown 20230524/b/bzt/1.9.5-1.9.6/diff.md --exclude *.pyd
+[2023-05-24 12:54:19] INFO root fetch - main [MainThread]: End processing [scaneo]: success
+[2023-05-24 12:54:19] INFO root fetch - main [MainThread]: End processing [scaneo]: success
+[2023-05-24 12:54:20] INFO root fetch - main [MainThread]: End processing [orkg]: success
+[2023-05-24 12:54:20] INFO root fetch - main [MainThread]: End processing [scaneo]: success
+[2023-05-24 12:54:20] INFO root fetch - main [MainThread]: End processing [izihawa-utils]: success
+[2023-05-24 12:54:21] INFO root fetch - main [MainThread]: End processing [nbdocs]: success
+[2023-05-24 12:54:24] INFO root fetch - main [MainThread]: End processing [bzt]: success
+[2023-05-24 12:55:05] INFO root fetch - main [MainThread]: End processing [projit]: success
+[2023-05-24 12:55:05] INFO root fetch - main [MainThread]: Store serial: [18228566]
