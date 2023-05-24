@@ -13289,3 +13289,51 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd4 in position 72: invalid
 [2023-05-24 13:00:17] INFO root fetch - main [MainThread]: End processing [robusta-cli]: success
 [2023-05-24 13:00:19] INFO root fetch - main [MainThread]: End processing [chellow]: success
 [2023-05-24 13:00:19] INFO root fetch - main [MainThread]: Store serial: [18228604]
+[2023-05-24 13:05:24] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18228604]
+[2023-05-24 13:05:29] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2023-05-24 13:05:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: gamla
+[2023-05-24 13:05:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: dcs-code-injector
+[2023-05-24 13:05:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: clevertable
+[2023-05-24 13:05:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: wagtail-mailchimp-integration
+[2023-05-24 13:05:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: lendsmart-reva
+[2023-05-24 13:05:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: paotung
+[2023-05-24 13:05:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: eoq2
+[2023-05-24 13:05:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: shrug-viz
+[2023-05-24 13:05:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: bhousing-model
+[2023-05-24 13:05:29] INFO root fetch - processPackages [clevertable]: New version: [2.4.1] Old Version: [2.4.0]
+[2023-05-24 13:05:29] INFO root fetch - processPackages [eoq2]: New version: [2.2.9] Old Version: [2.2.6]
+[2023-05-24 13:05:29] WARNING root fetch - processPackages [shrug-viz]: Skipping, unable to determine old version
+[2023-05-24 13:05:29] INFO root fetch - main [MainThread]: End processing [shrug-viz] error
+[2023-05-24 13:05:29] INFO root fetch - processPackages [lendsmart-reva]: New version: [1.5] Old Version: [1.4]
+[2023-05-24 13:05:29] WARNING root fetch - processPackages [wagtail-mailchimp-integration]: Skipping, unable to determine old version
+[2023-05-24 13:05:29] INFO root fetch - main [MainThread]: End processing [wagtail-mailchimp-integration] error
+[2023-05-24 13:05:29] INFO root fetch - processPackages [dcs-code-injector]: New version: [1.0.2] Old Version: [1.0.1]
+[2023-05-24 13:05:29] INFO root fetch - processPackages [gamla]: New version: [99] Old Version: [98]
+[2023-05-24 13:05:29] WARNING root fetch - processPackages [bhousing-model]: Skipping, unable to determine old version
+[2023-05-24 13:05:29] INFO root fetch - main [MainThread]: End processing [bhousing-model] error
+[2023-05-24 13:05:29] WARNING root fetch - processPackages [paotung]: Skipping, unable to determine old version
+[2023-05-24 13:05:29] INFO root fetch - main [MainThread]: End processing [paotung] error
+[2023-05-24 13:05:29] INFO root fetch - processPackages [eoq2]: Downloading https://files.pythonhosted.org/packages/57/6e/e62ab44476da66a91daf5168772cbfd01a9ba29a1ca30fc6e3987111d3bc/eoq2-2.2.6.tar.gz
+[2023-05-24 13:05:29] INFO root fetch - processPackages [clevertable]: Downloading https://files.pythonhosted.org/packages/9b/48/eed394430ca8ff79bdfcf3a38b933043ee307349002dd7b3c3556659b1b9/clevertable-2.4.1.tar.gz
+[2023-05-24 13:05:29] INFO root fetch - processPackages [lendsmart-reva]: Downloading https://files.pythonhosted.org/packages/64/5e/a0b3ca3435787206e07ebb240f3543dd4527908f69e4f37177915bcd9517/lendsmart_reva-1.4.tar.gz
+[2023-05-24 13:05:29] INFO root fetch - processPackages [dcs-code-injector]: Downloading https://files.pythonhosted.org/packages/08/6f/f3f45ef68c7702890a4e0598b4d9ec47db79f9bdaf06b3efbdbe6521ed32/dcs-code-injector-1.0.2.tar.gz
+[2023-05-24 13:05:29] INFO root fetch - processPackages [gamla]: Downloading https://files.pythonhosted.org/packages/69/f8/ecd46c1a43ef4f38dc58417cdb0231d02fe691e1bc702abaaa13d469a421/gamla-98.tar.gz
+[2023-05-24 13:05:29] INFO root fetch - processPackages [clevertable]: executing diffoscope
+[2023-05-24 13:05:29] INFO root fetch - processPackages [clevertable]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/clevertable-2.4.0.tar.gz tmp/clevertable-2.4.1.tar.gz --markdown 20230524/c/clevertable/2.4.0-2.4.1/diff.md --exclude *.pyd
+[2023-05-24 13:05:29] INFO root fetch - processPackages [lendsmart-reva]: Downloading https://files.pythonhosted.org/packages/5a/f4/6a53995e34cb4943f7394658723beba04cc0a0194d4e3beea6fc6c85faba/lendsmart_reva-1.5.tar.gz
+[2023-05-24 13:05:29] INFO root fetch - processPackages [eoq2]: Downloading https://files.pythonhosted.org/packages/f6/d9/e7990e24511c866fc166b1b6d7b39adf769f6f28ca78a9093c7d4c4ab0cc/eoq2-2.2.9.tar.gz
+[2023-05-24 13:05:29] INFO root fetch - processPackages [gamla]: Downloading https://files.pythonhosted.org/packages/d5/30/3ac70220c721ace5db4771369280b855e8d9d0f11f63afae59c2a5877427/gamla-99.tar.gz
+[2023-05-24 13:05:29] INFO root fetch - processPackages [lendsmart-reva]: executing diffoscope
+[2023-05-24 13:05:29] INFO root fetch - processPackages [lendsmart-reva]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lendsmart_reva-1.4.tar.gz tmp/lendsmart_reva-1.5.tar.gz --markdown 20230524/l/lendsmart-reva/1.4-1.5/diff.md --exclude *.pyd
+[2023-05-24 13:05:30] INFO root fetch - processPackages [dcs-code-injector]: executing diffoscope
+[2023-05-24 13:05:30] INFO root fetch - processPackages [dcs-code-injector]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dcs-code-injector-1.0.1.tar.gz tmp/dcs-code-injector-1.0.2.tar.gz --markdown 20230524/d/dcs-code-injector/1.0.1-1.0.2/diff.md --exclude *.pyd
+[2023-05-24 13:05:30] INFO root fetch - processPackages [gamla]: executing diffoscope
+[2023-05-24 13:05:30] INFO root fetch - processPackages [gamla]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gamla-98.tar.gz tmp/gamla-99.tar.gz --markdown 20230524/g/gamla/98-99/diff.md --exclude *.pyd
+[2023-05-24 13:05:30] INFO root fetch - processPackages [eoq2]: executing diffoscope
+[2023-05-24 13:05:30] INFO root fetch - processPackages [eoq2]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/eoq2-2.2.6.tar.gz tmp/eoq2-2.2.9.tar.gz --markdown 20230524/e/eoq2/2.2.6-2.2.9/diff.md --exclude *.pyd
+[2023-05-24 13:05:30] INFO root fetch - main [MainThread]: End processing [clevertable]: success
+[2023-05-24 13:05:31] INFO root fetch - main [MainThread]: End processing [lendsmart-reva]: success
+[2023-05-24 13:05:31] INFO root fetch - main [MainThread]: End processing [gamla]: success
+[2023-05-24 13:05:31] INFO root fetch - main [MainThread]: End processing [dcs-code-injector]: success
+[2023-05-24 13:05:32] INFO root fetch - main [MainThread]: End processing [eoq2]: success
+[2023-05-24 13:05:32] INFO root fetch - main [MainThread]: Store serial: [18228638]
