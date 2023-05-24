@@ -16372,3 +16372,140 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd4 in position 72: invalid
 [2023-05-24 15:50:11] INFO root fetch - main [MainThread]: End processing [rattr]: success
 [2023-05-24 15:50:11] INFO root fetch - main [MainThread]: End processing [ofscraper]: success
 [2023-05-24 15:50:11] INFO root fetch - main [MainThread]: Store serial: [18230450]
+[2023-05-24 15:55:15] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18230450]
+[2023-05-24 15:55:20] INFO root fetch - main [MainThread]: Found 25 changed packages
+[2023-05-24 15:55:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: hyppo
+[2023-05-24 15:55:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: raspisump
+[2023-05-24 15:55:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: smartlogger
+[2023-05-24 15:55:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: flask-starter
+[2023-05-24 15:55:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: bmsdna-lakeapi
+[2023-05-24 15:55:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: kr8s
+[2023-05-24 15:55:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: licensekeygentest
+[2023-05-24 15:55:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: urbanity
+[2023-05-24 15:55:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: windmill-api
+[2023-05-24 15:55:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: wmill
+[2023-05-24 15:55:20] INFO root fetch - processPackages [bmsdna-lakeapi]: New version: [0.4.2] Old Version: [0.4.1]
+[2023-05-24 15:55:20] INFO root fetch - processPackages [raspisump]: New version: [1.7] Old Version: [1.6.1]
+[2023-05-24 15:55:20] INFO root fetch - processPackages [kr8s]: New version: [0.4.0] Old Version: [0.3.0]
+[2023-05-24 15:55:20] INFO root fetch - processPackages [licensekeygentest]: New version: [1.0.1] Old Version: [0.2.1]
+[2023-05-24 15:55:20] INFO root fetch - processPackages [urbanity]: New version: [0.3.9] Old Version: [0.3.8]
+[2023-05-24 15:55:20] INFO root fetch - processPackages [wmill]: New version: [1.99.0] Old Version: [1.98.0]
+[2023-05-24 15:55:20] INFO root fetch - processPackages [urbanity]: Downloading https://files.pythonhosted.org/packages/28/ce/287a83d95c4c114edd2c27eaec0baebd670f933229cf00dff92c8ebd26a6/urbanity-0.3.8-py3-none-any.whl
+[2023-05-24 15:55:20] INFO root fetch - processPackages [raspisump]: executing diffoscope
+[2023-05-24 15:55:20] INFO root fetch - processPackages [raspisump]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/raspisump-1.6.1.tar.gz tmp/raspisump-1.7.tar.gz --markdown 20230524/r/raspisump/1.6.1-1.7/diff.md --exclude *.pyd
+[2023-05-24 15:55:20] INFO root fetch - processPackages [licensekeygentest]: executing diffoscope
+[2023-05-24 15:55:20] INFO root fetch - processPackages [licensekeygentest]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/licensekeygentest-0.2.1.tar.gz tmp/licensekeygentest-1.0.1.tar.gz --markdown 20230524/l/licensekeygentest/0.2.1-1.0.1/diff.md --exclude *.pyd
+[2023-05-24 15:55:20] INFO root fetch - processPackages [flask-starter]: New version: [0.8.0] Old Version: [0.7.0]
+[2023-05-24 15:55:20] INFO root fetch - processPackages [hyppo]: New version: [0.4.0] Old Version: [0.3.2]
+[2023-05-24 15:55:20] INFO root fetch - processPackages [smartlogger]: New version: [0.0.1.dev9] Old Version: [0.0.1.dev8]
+[2023-05-24 15:55:20] WARNING root fetch - processPackages [urbanity]: Skipping package: exceeds size limit 57706457>=10485760
+[2023-05-24 15:55:20] INFO root fetch - processPackages [urbanity]: Start processing: wmill-pg
+[2023-05-24 15:55:20] INFO root fetch - main [MainThread]: End processing [urbanity] error
+[2023-05-24 15:55:20] INFO root fetch - processPackages [windmill-api]: New version: [1.99.0] Old Version: [1.98.0]
+[2023-05-24 15:55:20] INFO root fetch - processPackages [kr8s]: Downloading https://files.pythonhosted.org/packages/ef/7f/6fa89ed9c6e9b7b623156e0fbf76da6b7b6b4d70805e18e05d5b09817338/kr8s-0.3.0.tar.gz
+[2023-05-24 15:55:20] INFO root fetch - processPackages [bmsdna-lakeapi]: Downloading https://files.pythonhosted.org/packages/e7/de/aef8e947f02d0411f7f9a64ac89f688eece74756649f2678fbf001828153/bmsdna_lakeapi-0.4.2.tar.gz
+[2023-05-24 15:55:20] INFO root fetch - processPackages [flask-starter]: Downloading https://files.pythonhosted.org/packages/82/0f/79fbf6d91e88294ba9996fe29225946f753849af6f0ac6f102de674291fc/flask-starter-0.7.0.tar.gz
+[2023-05-24 15:55:20] INFO root fetch - processPackages [wmill-pg]: New version: [1.99.0] Old Version: [1.98.0]
+[2023-05-24 15:55:20] INFO root fetch - processPackages [hyppo]: Downloading https://files.pythonhosted.org/packages/ff/60/19dea23d2112c99a2478513936aade4dfc4046f635ae9d82cbec03a6c9c4/hyppo-0.3.2.tar.gz
+[2023-05-24 15:55:21] INFO root fetch - processPackages [smartlogger]: Downloading https://files.pythonhosted.org/packages/07/b8/31385a77f735932242ebdac2e0b292facd7603ca7d4babcd2dce7d86d19b/smartlogger-0.0.1.dev8.tar.gz
+[2023-05-24 15:55:21] INFO root fetch - processPackages [bmsdna-lakeapi]: executing diffoscope
+[2023-05-24 15:55:21] INFO root fetch - processPackages [bmsdna-lakeapi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bmsdna_lakeapi-0.4.1.tar.gz tmp/bmsdna_lakeapi-0.4.2.tar.gz --markdown 20230524/b/bmsdna-lakeapi/0.4.1-0.4.2/diff.md --exclude *.pyd
+[2023-05-24 15:55:21] INFO root fetch - processPackages [wmill]: executing diffoscope
+[2023-05-24 15:55:21] INFO root fetch - processPackages [wmill]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wmill-1.98.0.tar.gz tmp/wmill-1.99.0.tar.gz --markdown 20230524/w/wmill/1.98.0-1.99.0/diff.md --exclude *.pyd
+[2023-05-24 15:55:21] INFO root fetch - processPackages [flask-starter]: Downloading https://files.pythonhosted.org/packages/86/26/c1bb2404a1a3f686315e4aad63857cada6b9ecb2787f31c6f2333f74536e/flask-starter-0.8.0.tar.gz
+[2023-05-24 15:55:21] INFO root fetch - processPackages [hyppo]: Downloading https://files.pythonhosted.org/packages/34/87/7940713f929d0280cff1bde207479cb588a0d3a4dd49a0e2e69bfff46363/hyppo-0.4.0-py3-none-any.whl
+[2023-05-24 15:55:21] INFO root fetch - processPackages [windmill-api]: executing diffoscope
+[2023-05-24 15:55:21] INFO root fetch - processPackages [windmill-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/windmill_api-1.98.0.tar.gz tmp/windmill_api-1.99.0.tar.gz --markdown 20230524/w/windmill-api/1.98.0-1.99.0/diff.md --exclude *.pyd
+[2023-05-24 15:55:21] INFO root fetch - processPackages [smartlogger]: Downloading https://files.pythonhosted.org/packages/0d/4d/825ae0420080d5bc86f3de11c6856e3359e0abb561254bc8ca291c70cf40/smartlogger-0.0.1.dev9.tar.gz
+[2023-05-24 15:55:21] INFO root fetch - processPackages [kr8s]: Downloading https://files.pythonhosted.org/packages/2b/41/70c075d0f577aa3b76ae55de4eab421b10310c02baa249175a49d83fe076/kr8s-0.4.0.tar.gz
+[2023-05-24 15:55:21] INFO root fetch - processPackages [flask-starter]: executing diffoscope
+[2023-05-24 15:55:21] INFO root fetch - processPackages [flask-starter]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/flask-starter-0.7.0.tar.gz tmp/flask-starter-0.8.0.tar.gz --markdown 20230524/f/flask-starter/0.7.0-0.8.0/diff.md --exclude *.pyd
+[2023-05-24 15:55:21] INFO root fetch - processPackages [hyppo]: executing diffoscope
+[2023-05-24 15:55:21] INFO root fetch - processPackages [hyppo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hyppo-0.3.2.tar.gz tmp/hyppo-0.4.0-py3-none-any.whl.zip --markdown 20230524/h/hyppo/0.3.2-0.4.0/diff.md --exclude *.pyd
+[2023-05-24 15:55:21] INFO root fetch - processPackages [wmill-pg]: executing diffoscope
+[2023-05-24 15:55:21] INFO root fetch - processPackages [wmill-pg]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wmill_pg-1.98.0.tar.gz tmp/wmill_pg-1.99.0.tar.gz --markdown 20230524/w/wmill-pg/1.98.0-1.99.0/diff.md --exclude *.pyd
+[2023-05-24 15:55:21] INFO root fetch - processPackages [smartlogger]: executing diffoscope
+[2023-05-24 15:55:21] INFO root fetch - processPackages [smartlogger]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/smartlogger-0.0.1.dev8.tar.gz tmp/smartlogger-0.0.1.dev9.tar.gz --markdown 20230524/s/smartlogger/0.0.1.dev8-0.0.1.dev9/diff.md --exclude *.pyd
+[2023-05-24 15:55:21] INFO root fetch - processPackages [kr8s]: executing diffoscope
+[2023-05-24 15:55:21] INFO root fetch - processPackages [kr8s]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kr8s-0.3.0.tar.gz tmp/kr8s-0.4.0.tar.gz --markdown 20230524/k/kr8s/0.3.0-0.4.0/diff.md --exclude *.pyd
+[2023-05-24 15:55:22] INFO root fetch - processPackages [licensekeygentest]: Start processing: rgbloom
+[2023-05-24 15:55:22] INFO root fetch - main [MainThread]: End processing [licensekeygentest]: success
+[2023-05-24 15:55:22] INFO root fetch - processPackages [rgbloom]: New version: [1.5] Old Version: [1.4]
+[2023-05-24 15:55:22] INFO root fetch - processPackages [wmill]: Start processing: constellation
+[2023-05-24 15:55:22] INFO root fetch - main [MainThread]: End processing [wmill]: success
+[2023-05-24 15:55:22] INFO root fetch - processPackages [constellation]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-24 15:55:22] INFO root fetch - processPackages [rgbloom]: Downloading https://files.pythonhosted.org/packages/bd/06/35ba6b795caabb6e953f1292a36a4efd73fd999a7efee5b5ecfb1635ea14/rgbloom-1.5.tar.gz
+[2023-05-24 15:55:22] INFO root fetch - processPackages [constellation]: Downloading https://files.pythonhosted.org/packages/47/62/653d73ea51616077953a69547d9ef70749f23b23701fcdd5932541ed1e44/constellation-0.0.8.tar.gz
+[2023-05-24 15:55:22] INFO root fetch - processPackages [rgbloom]: executing diffoscope
+[2023-05-24 15:55:22] INFO root fetch - processPackages [rgbloom]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rgbloom-1.4.tar.gz tmp/rgbloom-1.5.tar.gz --markdown 20230524/r/rgbloom/1.4-1.5/diff.md --exclude *.pyd
+[2023-05-24 15:55:22] INFO root fetch - processPackages [flask-starter]: Start processing: flask-starter
+[2023-05-24 15:55:22] INFO root fetch - main [MainThread]: End processing [flask-starter]: success
+[2023-05-24 15:55:22] INFO root fetch - processPackages [hyppo]: Start processing: Candataloader
+[2023-05-24 15:55:22] INFO root fetch - main [MainThread]: End processing [hyppo]: success
+[2023-05-24 15:55:22] INFO root fetch - processPackages [flask-starter]: New version: [0.8.0] Old Version: [0.7.0]
+[2023-05-24 15:55:22] INFO root fetch - processPackages [Candataloader]: New version: [1.0.9] Old Version: [1.0.8]
+[2023-05-24 15:55:22] INFO root fetch - processPackages [wmill-pg]: Start processing: heksher
+[2023-05-24 15:55:22] INFO root fetch - main [MainThread]: End processing [wmill-pg]: success
+[2023-05-24 15:55:22] INFO root fetch - processPackages [Candataloader]: Downloading https://files.pythonhosted.org/packages/43/9f/3343d948f87be846201d65a32e559007b8b576792733b91c28d7717cb064/Candataloader-1.0.8.tar.gz
+[2023-05-24 15:55:22] INFO root fetch - processPackages [smartlogger]: Start processing: langchain-api
+[2023-05-24 15:55:22] INFO root fetch - main [MainThread]: End processing [smartlogger]: success
+[2023-05-24 15:55:22] INFO root fetch - processPackages [flask-starter]: executing diffoscope
+[2023-05-24 15:55:22] INFO root fetch - processPackages [flask-starter]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/flask-starter-0.7.0.tar.gz tmp/flask-starter-0.8.0.tar.gz --markdown 20230524/f/flask-starter/0.7.0-0.8.0/diff.md --exclude *.pyd
+[2023-05-24 15:55:22] WARNING root fetch - processPackages [Candataloader]: Skipping package: exceeds size limit 12205280>=10485760
+[2023-05-24 15:55:22] INFO root fetch - processPackages [Candataloader]: Start processing: openepd
+[2023-05-24 15:55:22] INFO root fetch - main [MainThread]: End processing [Candataloader] error
+[2023-05-24 15:55:23] INFO root fetch - processPackages [heksher]: New version: [0.2.2] Old Version: [0.2.1]
+[2023-05-24 15:55:23] ERROR root fetch - processPackages [langchain-api]: Unable to get metadata: No such project 'langchain-api'
+[2023-05-24 15:55:23] INFO root fetch - processPackages [langchain-api]: Start processing: shihua-sunbasket
+[2023-05-24 15:55:23] INFO root fetch - main [MainThread]: End processing [langchain-api] error
+[2023-05-24 15:55:23] INFO root fetch - processPackages [constellation]: Downloading https://files.pythonhosted.org/packages/de/a7/95715ff4d4629e53f4e9a7a4f6e01ff355c63b9e186010ed908a07d15aef/constellation-0.0.9.tar.gz
+[2023-05-24 15:55:23] INFO root fetch - processPackages [bmsdna-lakeapi]: Start processing: chatai-agent
+[2023-05-24 15:55:23] INFO root fetch - main [MainThread]: End processing [bmsdna-lakeapi]: success
+[2023-05-24 15:55:23] WARNING root fetch - processPackages [openepd]: Skipping, unable to determine old version
+[2023-05-24 15:55:23] INFO root fetch - processPackages [openepd]: Start processing: searchkit
+[2023-05-24 15:55:23] INFO root fetch - main [MainThread]: End processing [openepd] error
+[2023-05-24 15:55:23] INFO root fetch - processPackages [searchkit]: New version: [0.2.6] Old Version: [0.2.5]
+[2023-05-24 15:55:23] INFO root fetch - processPackages [raspisump]: Start processing: digital-unit
+[2023-05-24 15:55:23] INFO root fetch - main [MainThread]: End processing [raspisump]: success
+[2023-05-24 15:55:23] WARNING root fetch - processPackages [shihua-sunbasket]: Skipping, unable to determine old version
+[2023-05-24 15:55:23] INFO root fetch - processPackages [shihua-sunbasket]: Start processing: shihua-sunflow
+[2023-05-24 15:55:23] INFO root fetch - main [MainThread]: End processing [shihua-sunbasket] error
+[2023-05-24 15:55:23] WARNING root fetch - processPackages [chatai-agent]: Skipping, unable to determine old version
+[2023-05-24 15:55:23] INFO root fetch - processPackages [chatai-agent]: Start processing: git-build-branch
+[2023-05-24 15:55:23] INFO root fetch - main [MainThread]: End processing [chatai-agent] error
+[2023-05-24 15:55:23] INFO root fetch - processPackages [digital-unit]: New version: [1.4b2] Old Version: [1.4b1]
+[2023-05-24 15:55:23] INFO root fetch - processPackages [git-build-branch]: New version: [0.1.9] Old Version: [0.1.14]
+[2023-05-24 15:55:23] WARNING root fetch - processPackages [digital-unit]: fallback to get urls: [1.4b1]
+[2023-05-24 15:55:23] INFO root fetch - processPackages [searchkit]: executing diffoscope
+[2023-05-24 15:55:23] INFO root fetch - processPackages [searchkit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/searchkit-0.2.5.tar.gz tmp/searchkit-0.2.6.tar.gz --markdown 20230524/s/searchkit/0.2.5-0.2.6/diff.md --exclude *.pyd
+[2023-05-24 15:55:23] INFO root fetch - processPackages [heksher]: Downloading https://files.pythonhosted.org/packages/bc/1a/5b98da1c639483b39ff24cfdae46fa6bba88d0142e906faaf842d5c4aeb1/heksher-0.2.1.tar.gz
+[2023-05-24 15:55:23] WARNING root fetch - processPackages [digital-unit]: None
+[2023-05-24 15:55:23] INFO root fetch - processPackages [constellation]: executing diffoscope
+[2023-05-24 15:55:23] INFO root fetch - processPackages [constellation]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/constellation-0.0.8.tar.gz tmp/constellation-0.0.9.tar.gz --markdown 20230524/c/constellation/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-24 15:55:23] WARNING root fetch - processPackages [digital-unit]: None
+[2023-05-24 15:55:23] WARNING root fetch - processPackages [shihua-sunflow]: Skipping, unable to determine old version
+[2023-05-24 15:55:23] INFO root fetch - processPackages [shihua-sunflow]: Start processing: dipex
+[2023-05-24 15:55:23] INFO root fetch - main [MainThread]: End processing [shihua-sunflow] error
+[2023-05-24 15:55:23] WARNING root fetch - processPackages [digital-unit]: unable to get url for both version [1.4b1]
+[2023-05-24 15:55:23] WARNING root fetch - processPackages [digital-unit]: None
+[2023-05-24 15:55:23] INFO root fetch - main [MainThread]: End processing [digital-unit] error
+[2023-05-24 15:55:23] INFO root fetch - processPackages [dipex]: New version: [4.9.2] Old Version: [4.9.1]
+[2023-05-24 15:55:23] INFO root fetch - processPackages [git-build-branch]: Downloading https://files.pythonhosted.org/packages/cb/82/26eb28350ff946bc924223fabd60c921d593e9528ef47e6c65850c0d40ca/git-build-branch-0.1.14.tar.gz
+[2023-05-24 15:55:23] INFO root fetch - processPackages [heksher]: Downloading https://files.pythonhosted.org/packages/88/fe/bb40f2aa86d708f7186eb50ed2e01a419f9cd6ee4e879ac8b18e3e1d88a6/heksher-0.2.2.tar.gz
+[2023-05-24 15:55:23] INFO root fetch - main [MainThread]: End processing [kr8s]: success
+[2023-05-24 15:55:23] INFO root fetch - processPackages [heksher]: executing diffoscope
+[2023-05-24 15:55:23] INFO root fetch - processPackages [heksher]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/heksher-0.2.1.tar.gz tmp/heksher-0.2.2.tar.gz --markdown 20230524/h/heksher/0.2.1-0.2.2/diff.md --exclude *.pyd
+[2023-05-24 15:55:23] INFO root fetch - processPackages [dipex]: executing diffoscope
+[2023-05-24 15:55:23] INFO root fetch - processPackages [dipex]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dipex-4.9.1.tar.gz tmp/dipex-4.9.2.tar.gz --markdown 20230524/d/dipex/4.9.1-4.9.2/diff.md --exclude *.pyd
+[2023-05-24 15:55:23] INFO root fetch - processPackages [git-build-branch]: Downloading https://files.pythonhosted.org/packages/a3/cc/df47d08b1c835314294b2fcf01142e40f4f428c291211812bbb4bee92824/git-build-branch-0.1.9.tar.gz
+[2023-05-24 15:55:23] INFO root fetch - processPackages [git-build-branch]: executing diffoscope
+[2023-05-24 15:55:23] INFO root fetch - processPackages [git-build-branch]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/git-build-branch-0.1.14.tar.gz tmp/git-build-branch-0.1.9.tar.gz --markdown 20230524/g/git-build-branch/0.1.14-0.1.9/diff.md --exclude *.pyd
+[2023-05-24 15:55:24] INFO root fetch - main [MainThread]: End processing [rgbloom]: success
+[2023-05-24 15:55:24] INFO root fetch - main [MainThread]: End processing [flask-starter]: success
+[2023-05-24 15:55:24] INFO root fetch - main [MainThread]: End processing [constellation]: success
+[2023-05-24 15:55:24] INFO root fetch - main [MainThread]: End processing [heksher]: success
+[2023-05-24 15:55:24] INFO root fetch - main [MainThread]: End processing [searchkit]: success
+[2023-05-24 15:55:25] INFO root fetch - main [MainThread]: End processing [git-build-branch]: success
+[2023-05-24 15:55:25] INFO root fetch - main [MainThread]: End processing [dipex]: success
+[2023-05-24 15:55:38] INFO root fetch - main [MainThread]: End processing [windmill-api]: success
+[2023-05-24 15:55:38] INFO root fetch - main [MainThread]: Store serial: [18230535]
