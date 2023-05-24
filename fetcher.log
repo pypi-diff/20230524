@@ -9445,3 +9445,140 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-05-24 09:21:26] INFO root fetch - main [MainThread]: End processing [okdata-cli]: success
 [2023-05-24 09:21:28] INFO root fetch - main [MainThread]: End processing [syngen]: success
 [2023-05-24 09:21:28] INFO root fetch - main [MainThread]: Store serial: [18226200]
+[2023-05-24 09:26:32] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18226200]
+[2023-05-24 09:26:37] INFO root fetch - main [MainThread]: Found 23 changed packages
+[2023-05-24 09:26:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: dinamis-sdk
+[2023-05-24 09:26:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: apache-airflow-providers-common-sql
+[2023-05-24 09:26:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: ekuiper
+[2023-05-24 09:26:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: odoo14-addon-contract
+[2023-05-24 09:26:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: apache-airflow-providers-ftp
+[2023-05-24 09:26:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: ekuiper
+[2023-05-24 09:26:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: apache-airflow-providers-google
+[2023-05-24 09:26:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: apache-airflow-providers-http
+[2023-05-24 09:26:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: apache-airflow-providers-imap
+[2023-05-24 09:26:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: apache-airflow-providers-microsoft-azure
+[2023-05-24 09:26:37] INFO root fetch - processPackages [apache-airflow-providers-common-sql]: New version: [1.5.1rc1] Old Version: [1.5.0rc2]
+[2023-05-24 09:26:37] INFO root fetch - processPackages [dinamis-sdk]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-24 09:26:37] INFO root fetch - processPackages [odoo14-addon-contract]: New version: [14.0.2.9.6.dev2] Old Version: [14.0.2.9.5.dev2]
+[2023-05-24 09:26:37] INFO root fetch - processPackages [apache-airflow-providers-ftp]: New version: [3.4.1rc1] Old Version: [3.4.0rc2]
+[2023-05-24 09:26:37] INFO root fetch - processPackages [ekuiper]: New version: [1.9.2] Old Version: [1.9.1]
+[2023-05-24 09:26:37] INFO root fetch - processPackages [apache-airflow-providers-imap]: New version: [3.2.1rc1] Old Version: [3.2.0rc2]
+[2023-05-24 09:26:37] INFO root fetch - processPackages [ekuiper]: New version: [1.9.2] Old Version: [1.9.1]
+[2023-05-24 09:26:37] INFO root fetch - processPackages [apache-airflow-providers-microsoft-azure]: New version: [6.1.1rc1] Old Version: [6.1.0rc2]
+[2023-05-24 09:26:37] INFO root fetch - processPackages [apache-airflow-providers-http]: New version: [4.4.1rc1] Old Version: [4.4.0rc2]
+[2023-05-24 09:26:37] INFO root fetch - processPackages [apache-airflow-providers-google]: New version: [9.0.0rc2] Old Version: [9.0.0rc1]
+[2023-05-24 09:26:37] INFO root fetch - processPackages [dinamis-sdk]: Downloading https://files.pythonhosted.org/packages/f4/05/802fa81e5b2dc455bb7d27c463cdaec469477ffa53555ac8b685b09dfd1d/dinamis-sdk-0.0.8.tar.gz
+[2023-05-24 09:26:37] INFO root fetch - processPackages [apache-airflow-providers-microsoft-azure]: Downloading https://files.pythonhosted.org/packages/20/0b/613dd29b812e93177cfbd2cd1d5ee94123ce129959428e7430dd51c5bc1b/apache-airflow-providers-microsoft-azure-6.1.1rc1.tar.gz
+[2023-05-24 09:26:37] INFO root fetch - processPackages [apache-airflow-providers-common-sql]: Downloading https://files.pythonhosted.org/packages/d6/0a/183246caca144cbc72a64eeccd37d4b4048362c2e6a9b4c6356a2072d0a0/apache-airflow-providers-common-sql-1.5.1rc1.tar.gz
+[2023-05-24 09:26:37] INFO root fetch - processPackages [apache-airflow-providers-google]: executing diffoscope
+[2023-05-24 09:26:37] INFO root fetch - processPackages [apache-airflow-providers-google]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/apache-airflow-providers-google-9.0.0rc1.tar.gz tmp/apache-airflow-providers-google-9.0.0rc2.tar.gz --markdown 20230524/a/apache-airflow-providers-google/9.0.0rc1-9.0.0rc2/diff.md --exclude *.pyd
+[2023-05-24 09:26:37] INFO root fetch - processPackages [apache-airflow-providers-http]: Downloading https://files.pythonhosted.org/packages/f6/de/cf68559b93178ef5a3eb521a1e0b2386561d5d59406579e0f573c3dae63a/apache-airflow-providers-http-4.4.1rc1.tar.gz
+[2023-05-24 09:26:37] INFO root fetch - processPackages [odoo14-addon-contract]: executing diffoscope
+[2023-05-24 09:26:37] INFO root fetch - processPackages [odoo14-addon-contract]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo14_addon_contract-14.0.2.9.5.dev2-py3-none-any.whl.zip tmp/odoo14_addon_contract-14.0.2.9.6.dev2-py3-none-any.whl.zip --markdown 20230524/o/odoo14-addon-contract/14.0.2.9.5.dev2-14.0.2.9.6.dev2/diff.md --exclude *.pyd
+[2023-05-24 09:26:37] INFO root fetch - processPackages [apache-airflow-providers-microsoft-azure]: executing diffoscope
+[2023-05-24 09:26:37] INFO root fetch - processPackages [apache-airflow-providers-microsoft-azure]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/apache-airflow-providers-microsoft-azure-6.1.0rc2.tar.gz tmp/apache-airflow-providers-microsoft-azure-6.1.1rc1.tar.gz --markdown 20230524/a/apache-airflow-providers-microsoft-azure/6.1.0rc2-6.1.1rc1/diff.md --exclude *.pyd
+[2023-05-24 09:26:37] INFO root fetch - processPackages [apache-airflow-providers-imap]: Downloading https://files.pythonhosted.org/packages/40/e6/d2bbfe046696085d4be7454ca1d789fd53259b436b02aba12f16099fa356/apache-airflow-providers-imap-3.2.1rc1.tar.gz
+[2023-05-24 09:26:37] INFO root fetch - processPackages [ekuiper]: executing diffoscope
+[2023-05-24 09:26:37] INFO root fetch - processPackages [ekuiper]: executing diffoscope
+[2023-05-24 09:26:37] INFO root fetch - processPackages [ekuiper]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ekuiper-1.9.1.tar.gz tmp/ekuiper-1.9.2.tar.gz --markdown 20230524/e/ekuiper/1.9.1-1.9.2/diff.md --exclude *.pyd
+[2023-05-24 09:26:37] INFO root fetch - processPackages [ekuiper]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ekuiper-1.9.1.tar.gz tmp/ekuiper-1.9.2.tar.gz --markdown 20230524/e/ekuiper/1.9.1-1.9.2/diff.md --exclude *.pyd
+[2023-05-24 09:26:37] INFO root fetch - processPackages [dinamis-sdk]: Downloading https://files.pythonhosted.org/packages/82/c5/c0226478e0a4911853335a789765c4b0ebe2533108d4c20ca4ab6e5463a1/dinamis-sdk-0.0.9.tar.gz
+[2023-05-24 09:26:37] INFO root fetch - processPackages [apache-airflow-providers-common-sql]: executing diffoscope
+[2023-05-24 09:26:37] INFO root fetch - processPackages [apache-airflow-providers-common-sql]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/apache-airflow-providers-common-sql-1.5.0rc2.tar.gz tmp/apache-airflow-providers-common-sql-1.5.1rc1.tar.gz --markdown 20230524/a/apache-airflow-providers-common-sql/1.5.0rc2-1.5.1rc1/diff.md --exclude *.pyd
+[2023-05-24 09:26:37] INFO root fetch - processPackages [apache-airflow-providers-http]: executing diffoscope
+[2023-05-24 09:26:37] INFO root fetch - processPackages [apache-airflow-providers-http]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/apache-airflow-providers-http-4.4.0rc2.tar.gz tmp/apache-airflow-providers-http-4.4.1rc1.tar.gz --markdown 20230524/a/apache-airflow-providers-http/4.4.0rc2-4.4.1rc1/diff.md --exclude *.pyd
+[2023-05-24 09:26:37] INFO root fetch - processPackages [apache-airflow-providers-ftp]: Downloading https://files.pythonhosted.org/packages/11/ba/028e57d7c0706e890bab226005e98875f955fbde186d0d0dc6674177c174/apache-airflow-providers-ftp-3.4.1rc1.tar.gz
+[2023-05-24 09:26:37] INFO root fetch - processPackages [dinamis-sdk]: executing diffoscope
+[2023-05-24 09:26:37] INFO root fetch - processPackages [dinamis-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dinamis-sdk-0.0.8.tar.gz tmp/dinamis-sdk-0.0.9.tar.gz --markdown 20230524/d/dinamis-sdk/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-24 09:26:37] INFO root fetch - processPackages [apache-airflow-providers-ftp]: executing diffoscope
+[2023-05-24 09:26:37] INFO root fetch - processPackages [apache-airflow-providers-ftp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/apache-airflow-providers-ftp-3.4.0rc2.tar.gz tmp/apache-airflow-providers-ftp-3.4.1rc1.tar.gz --markdown 20230524/a/apache-airflow-providers-ftp/3.4.0rc2-3.4.1rc1/diff.md --exclude *.pyd
+[2023-05-24 09:26:37] INFO root fetch - processPackages [apache-airflow-providers-imap]: executing diffoscope
+[2023-05-24 09:26:37] INFO root fetch - processPackages [apache-airflow-providers-imap]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/apache-airflow-providers-imap-3.2.0rc2.tar.gz tmp/apache-airflow-providers-imap-3.2.1rc1.tar.gz --markdown 20230524/a/apache-airflow-providers-imap/3.2.0rc2-3.2.1rc1/diff.md --exclude *.pyd
+[2023-05-24 09:26:39] INFO root fetch - processPackages [ekuiper]: Start processing: apache-airflow-providers-sqlite
+[2023-05-24 09:26:39] INFO root fetch - main [MainThread]: End processing [ekuiper]: success
+[2023-05-24 09:26:39] INFO root fetch - processPackages [apache-airflow-providers-sqlite]: New version: [3.4.1rc1] Old Version: [3.4.0rc2]
+[2023-05-24 09:26:39] INFO root fetch - processPackages [dinamis-sdk]: Start processing: whatsapp-api-client-python
+[2023-05-24 09:26:39] INFO root fetch - main [MainThread]: End processing [dinamis-sdk]: success
+[2023-05-24 09:26:39] INFO root fetch - processPackages [whatsapp-api-client-python]: New version: [0.0.35] Old Version: [0.0.34]
+[2023-05-24 09:26:39] INFO root fetch - processPackages [apache-airflow-providers-common-sql]: Start processing: opsramp-analytics-utils
+[2023-05-24 09:26:39] INFO root fetch - main [MainThread]: End processing [apache-airflow-providers-common-sql]: success
+[2023-05-24 09:26:39] INFO root fetch - processPackages [apache-airflow-providers-http]: Start processing: scippnexus
+[2023-05-24 09:26:39] INFO root fetch - main [MainThread]: End processing [apache-airflow-providers-http]: success
+[2023-05-24 09:26:39] INFO root fetch - processPackages [opsramp-analytics-utils]: New version: [3.3.3] Old Version: [3.3.2]
+[2023-05-24 09:26:39] INFO root fetch - processPackages [scippnexus]: New version: [23.5.1] Old Version: [23.5.0]
+[2023-05-24 09:26:39] INFO root fetch - processPackages [whatsapp-api-client-python]: Downloading https://files.pythonhosted.org/packages/28/fe/d45373619378a72aa3e538a947894cff73ecadcdf960e834880478a1b40d/whatsapp-api-client-python-0.0.34.tar.gz
+[2023-05-24 09:26:39] INFO root fetch - processPackages [apache-airflow-providers-ftp]: Start processing: odoo-addon-contract-invoice-start-end-dates
+[2023-05-24 09:26:39] INFO root fetch - main [MainThread]: End processing [apache-airflow-providers-ftp]: success
+[2023-05-24 09:26:39] WARNING root fetch - processPackages [odoo-addon-contract-invoice-start-end-dates]: Skipping, unable to determine old version
+[2023-05-24 09:26:39] INFO root fetch - processPackages [odoo-addon-contract-invoice-start-end-dates]: Start processing: ipxact2systemverilog
+[2023-05-24 09:26:39] INFO root fetch - main [MainThread]: End processing [odoo-addon-contract-invoice-start-end-dates] error
+[2023-05-24 09:26:39] INFO root fetch - processPackages [ipxact2systemverilog]: New version: [1.0.9] Old Version: [1.0.8]
+[2023-05-24 09:26:39] INFO root fetch - processPackages [ekuiper]: Start processing: midvoxio
+[2023-05-24 09:26:39] INFO root fetch - main [MainThread]: End processing [ekuiper]: success
+[2023-05-24 09:26:39] INFO root fetch - processPackages [midvoxio]: New version: [0.1.2] Old Version: [0.1.1]
+[2023-05-24 09:26:39] INFO root fetch - processPackages [scippnexus]: Downloading https://files.pythonhosted.org/packages/b7/eb/43108a57eecc38ca0975389758427b73b799abe4aad0136d5ebb5fb7c33a/scippnexus-23.5.0.tar.gz
+[2023-05-24 09:26:39] INFO root fetch - processPackages [apache-airflow-providers-sqlite]: Downloading https://files.pythonhosted.org/packages/59/22/17822177bdbef38eabf88fa9f6cf51fa2fa7fe768120a3a0e566c1f9e821/apache-airflow-providers-sqlite-3.4.1rc1.tar.gz
+[2023-05-24 09:26:39] INFO root fetch - processPackages [apache-airflow-providers-imap]: Start processing: nonebot-plugin-herocard
+[2023-05-24 09:26:39] INFO root fetch - main [MainThread]: End processing [apache-airflow-providers-imap]: success
+[2023-05-24 09:26:39] INFO root fetch - processPackages [ipxact2systemverilog]: executing diffoscope
+[2023-05-24 09:26:39] INFO root fetch - processPackages [ipxact2systemverilog]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ipxact2systemverilog-1.0.8.tar.gz tmp/ipxact2systemverilog-1.0.9.tar.gz --markdown 20230524/i/ipxact2systemverilog/1.0.8-1.0.9/diff.md --exclude *.pyd
+[2023-05-24 09:26:39] INFO root fetch - processPackages [opsramp-analytics-utils]: Downloading https://files.pythonhosted.org/packages/fa/24/dfb693b552f0bcdc96d753a0d411d30f1fe4bf9d8c4306dc9375490556af/opsramp-analytics-utils-3.3.2.tar.gz
+[2023-05-24 09:26:39] INFO root fetch - processPackages [whatsapp-api-client-python]: Downloading https://files.pythonhosted.org/packages/f1/b6/1444ecc2f28913c8e79d4c79becb091db24a55dabf176d9a5082edb8fb0f/whatsapp-api-client-python-0.0.35.tar.gz
+[2023-05-24 09:26:39] WARNING root fetch - processPackages [nonebot-plugin-herocard]: Skipping, unable to determine old version
+[2023-05-24 09:26:39] INFO root fetch - processPackages [nonebot-plugin-herocard]: Start processing: odcs
+[2023-05-24 09:26:39] INFO root fetch - main [MainThread]: End processing [nonebot-plugin-herocard] error
+[2023-05-24 09:26:39] INFO root fetch - processPackages [midvoxio]: Downloading https://files.pythonhosted.org/packages/93/b2/23f8d75eb3d80b4d4200a4c26762a7d78a040d81f76eebf6dff1c7cc6c83/midvoxio-0.1.2.tar.gz
+[2023-05-24 09:26:39] INFO root fetch - processPackages [odcs]: New version: [0.6.0] Old Version: [0.5.0]
+[2023-05-24 09:26:39] INFO root fetch - processPackages [apache-airflow-providers-sqlite]: executing diffoscope
+[2023-05-24 09:26:39] INFO root fetch - processPackages [apache-airflow-providers-sqlite]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/apache-airflow-providers-sqlite-3.4.0rc2.tar.gz tmp/apache-airflow-providers-sqlite-3.4.1rc1.tar.gz --markdown 20230524/a/apache-airflow-providers-sqlite/3.4.0rc2-3.4.1rc1/diff.md --exclude *.pyd
+[2023-05-24 09:26:39] INFO root fetch - processPackages [whatsapp-api-client-python]: executing diffoscope
+[2023-05-24 09:26:39] INFO root fetch - processPackages [whatsapp-api-client-python]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/whatsapp-api-client-python-0.0.34.tar.gz tmp/whatsapp-api-client-python-0.0.35.tar.gz --markdown 20230524/w/whatsapp-api-client-python/0.0.34-0.0.35/diff.md --exclude *.pyd
+[2023-05-24 09:26:39] INFO root fetch - processPackages [midvoxio]: executing diffoscope
+[2023-05-24 09:26:39] INFO root fetch - processPackages [midvoxio]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/midvoxio-0.1.1.tar.gz tmp/midvoxio-0.1.2.tar.gz --markdown 20230524/m/midvoxio/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2023-05-24 09:26:39] INFO root fetch - processPackages [opsramp-analytics-utils]: Downloading https://files.pythonhosted.org/packages/ac/9a/af63b9ba418b50456d1dd7f7a90dbb62b9466e31726ed76087ded93f4bf2/opsramp-analytics-utils-3.3.3.tar.gz
+[2023-05-24 09:26:39] INFO root fetch - processPackages [odcs]: Downloading https://files.pythonhosted.org/packages/aa/07/c317e85df91a6b22b1585ea2c5c577fdbba08d6ebde42d0e9591a5047b94/odcs-0.5.0.tar.gz
+[2023-05-24 09:26:39] INFO root fetch - processPackages [scippnexus]: Downloading https://files.pythonhosted.org/packages/6b/1c/67dfac2d2b55cab3f02e2c3595ac868e50ab20bf4244877c0211b71867d1/scippnexus-23.5.1.tar.gz
+[2023-05-24 09:26:40] INFO root fetch - processPackages [scippnexus]: executing diffoscope
+[2023-05-24 09:26:40] INFO root fetch - processPackages [scippnexus]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/scippnexus-23.5.0.tar.gz tmp/scippnexus-23.5.1.tar.gz --markdown 20230524/s/scippnexus/23.5.0-23.5.1/diff.md --exclude *.pyd
+[2023-05-24 09:26:40] INFO root fetch - processPackages [opsramp-analytics-utils]: executing diffoscope
+[2023-05-24 09:26:40] INFO root fetch - processPackages [opsramp-analytics-utils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/opsramp-analytics-utils-3.3.2.tar.gz tmp/opsramp-analytics-utils-3.3.3.tar.gz --markdown 20230524/o/opsramp-analytics-utils/3.3.2-3.3.3/diff.md --exclude *.pyd
+[2023-05-24 09:26:40] INFO root fetch - processPackages [odcs]: Downloading https://files.pythonhosted.org/packages/26/ff/973a60ddc5f6ce970bafd10b898596609bdcf6454c04859f60a13ab88a37/odcs-0.6.0.tar.gz
+[2023-05-24 09:26:40] INFO root fetch - processPackages [odcs]: executing diffoscope
+[2023-05-24 09:26:40] INFO root fetch - processPackages [odcs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odcs-0.5.0.tar.gz tmp/odcs-0.6.0.tar.gz --markdown 20230524/o/odcs/0.5.0-0.6.0/diff.md --exclude *.pyd
+[2023-05-24 09:26:40] INFO root fetch - processPackages [odoo14-addon-contract]: Start processing: recon-lw
+[2023-05-24 09:26:40] INFO root fetch - main [MainThread]: End processing [odoo14-addon-contract]: success
+[2023-05-24 09:26:40] INFO root fetch - processPackages [recon-lw]: New version: [2.0.0.dev5065851138] Old Version: [2.0.0.dev5060266515]
+[2023-05-24 09:26:40] INFO root fetch - processPackages [recon-lw]: Downloading https://files.pythonhosted.org/packages/b1/64/b11670bceba1adbfe798c63c233dcf62a7be1f50b2336063e767c4fc0a49/recon_lw-2.0.0.dev5065851138.tar.gz
+[2023-05-24 09:26:40] INFO root fetch - processPackages [apache-airflow-providers-microsoft-azure]: Start processing: open-gpt-torch
+[2023-05-24 09:26:40] INFO root fetch - main [MainThread]: End processing [apache-airflow-providers-microsoft-azure]: success
+[2023-05-24 09:26:40] INFO root fetch - processPackages [recon-lw]: executing diffoscope
+[2023-05-24 09:26:40] INFO root fetch - processPackages [recon-lw]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/recon_lw-2.0.0.dev5060266515.tar.gz tmp/recon_lw-2.0.0.dev5065851138.tar.gz --markdown 20230524/r/recon-lw/2.0.0.dev5060266515-2.0.0.dev5065851138/diff.md --exclude *.pyd
+[2023-05-24 09:26:40] INFO root fetch - processPackages [open-gpt-torch]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-05-24 09:26:41] INFO root fetch - processPackages [open-gpt-torch]: Downloading https://files.pythonhosted.org/packages/06/c3/32acf50d0a0bdd71ba67af595f3110d4dbc898e1ace0700e3c3f46174aad/open_gpt_torch-0.0.2.tar.gz
+[2023-05-24 09:26:41] INFO root fetch - processPackages [apache-airflow-providers-sqlite]: Start processing: mlx.robot2rst
+[2023-05-24 09:26:41] INFO root fetch - main [MainThread]: End processing [apache-airflow-providers-sqlite]: success
+[2023-05-24 09:26:41] INFO root fetch - processPackages [ipxact2systemverilog]: Start processing: sealights-python-agent
+[2023-05-24 09:26:41] INFO root fetch - main [MainThread]: End processing [ipxact2systemverilog]: success
+[2023-05-24 09:26:41] INFO root fetch - processPackages [open-gpt-torch]: Downloading https://files.pythonhosted.org/packages/1a/27/38e8ba6312192aae6a426cd859b1c681991d7c7a15654e06a561d2d573da/open_gpt_torch-0.0.3.tar.gz
+[2023-05-24 09:26:41] INFO root fetch - main [MainThread]: End processing [midvoxio]: success
+[2023-05-24 09:26:41] INFO root fetch - processPackages [mlx.robot2rst]: New version: [3.3.0] Old Version: [3.2.1]
+[2023-05-24 09:26:41] INFO root fetch - processPackages [open-gpt-torch]: executing diffoscope
+[2023-05-24 09:26:41] INFO root fetch - processPackages [open-gpt-torch]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/open_gpt_torch-0.0.2.tar.gz tmp/open_gpt_torch-0.0.3.tar.gz --markdown 20230524/o/open-gpt-torch/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-05-24 09:26:41] INFO root fetch - processPackages [sealights-python-agent]: New version: [1.1.0] Old Version: [1.0.6]
+[2023-05-24 09:26:41] INFO root fetch - main [MainThread]: End processing [whatsapp-api-client-python]: success
+[2023-05-24 09:26:41] INFO root fetch - processPackages [mlx.robot2rst]: Downloading https://files.pythonhosted.org/packages/21/d7/f9402ab3612c06e577799b20f025fd9e57e55ddae4ae3f3db4afe5bec6a4/mlx.robot2rst-3.2.1.tar.gz
+[2023-05-24 09:26:41] INFO root fetch - processPackages [sealights-python-agent]: Downloading https://files.pythonhosted.org/packages/0f/61/950137050d5d4689c511091e46b374bf3c26c81d5169e14641347b24b63f/sealights-python-agent-1.1.0.tar.gz
+[2023-05-24 09:26:41] INFO root fetch - main [MainThread]: End processing [opsramp-analytics-utils]: success
+[2023-05-24 09:26:41] INFO root fetch - processPackages [mlx.robot2rst]: Downloading https://files.pythonhosted.org/packages/e6/18/48e79c31ec6dbcdc1534ad30cb408fedeaca68f4d049a8d4eadbfcaf301f/mlx.robot2rst-3.3.0.tar.gz
+[2023-05-24 09:26:41] INFO root fetch - main [MainThread]: End processing [recon-lw]: success
+[2023-05-24 09:26:42] INFO root fetch - processPackages [mlx.robot2rst]: executing diffoscope
+[2023-05-24 09:26:42] INFO root fetch - processPackages [mlx.robot2rst]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mlx.robot2rst-3.2.1.tar.gz tmp/mlx.robot2rst-3.3.0.tar.gz --markdown 20230524/m/mlx.robot2rst/3.2.1-3.3.0/diff.md --exclude *.pyd
+[2023-05-24 09:26:42] INFO root fetch - processPackages [sealights-python-agent]: executing diffoscope
+[2023-05-24 09:26:42] INFO root fetch - processPackages [sealights-python-agent]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sealights-python-agent-1.0.6.tar.gz tmp/sealights-python-agent-1.1.0.tar.gz --markdown 20230524/s/sealights-python-agent/1.0.6-1.1.0/diff.md --exclude *.pyd
+[2023-05-24 09:26:43] INFO root fetch - main [MainThread]: End processing [mlx.robot2rst]: success
+[2023-05-24 09:26:43] INFO root fetch - main [MainThread]: End processing [open-gpt-torch]: success
+[2023-05-24 09:26:43] INFO root fetch - main [MainThread]: End processing [odcs]: success
+[2023-05-24 09:26:44] INFO root fetch - main [MainThread]: End processing [scippnexus]: success
+[2023-05-24 09:26:44] INFO root fetch - main [MainThread]: End processing [sealights-python-agent]: success
+[2023-05-24 09:27:05] INFO root fetch - main [MainThread]: End processing [apache-airflow-providers-google]: success
+[2023-05-24 09:27:05] INFO root fetch - main [MainThread]: Store serial: [18226265]
