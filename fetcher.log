@@ -6164,3 +6164,24 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-05-24 04:46:03] INFO root fetch - main [MainThread]: End processing [pyidevice]: success
 [2023-05-24 04:46:04] INFO root fetch - main [MainThread]: End processing [aegis-tools]: success
 [2023-05-24 04:46:04] INFO root fetch - main [MainThread]: Store serial: [18224217]
+[2023-05-24 04:51:08] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18224217]
+[2023-05-24 04:51:12] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2023-05-24 04:51:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: lineagex
+[2023-05-24 04:51:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: blender-wormholes
+[2023-05-24 04:51:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: centerline-width
+[2023-05-24 04:51:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: gmsofttest
+[2023-05-24 04:51:12] INFO root fetch - processPackages [centerline-width]: New version: [0.1.0] Old Version: [0.0.2]
+[2023-05-24 04:51:12] INFO root fetch - processPackages [gmsofttest]: New version: [0.0.5] Old Version: [0.0.4]
+[2023-05-24 04:51:12] WARNING root fetch - processPackages [blender-wormholes]: Skipping, unable to determine old version
+[2023-05-24 04:51:12] INFO root fetch - main [MainThread]: End processing [blender-wormholes] error
+[2023-05-24 04:51:12] INFO root fetch - processPackages [lineagex]: New version: [0.0.5a5] Old Version: [0.0.5a4]
+[2023-05-24 04:51:12] INFO root fetch - processPackages [gmsofttest]: executing diffoscope
+[2023-05-24 04:51:12] INFO root fetch - processPackages [gmsofttest]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gmsofttest-0.0.4.tar.gz tmp/gmsofttest-0.0.5.tar.gz --markdown 20230524/g/gmsofttest/0.0.4-0.0.5/diff.md --exclude *.pyd
+[2023-05-24 04:51:13] INFO root fetch - processPackages [lineagex]: executing diffoscope
+[2023-05-24 04:51:13] INFO root fetch - processPackages [lineagex]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lineagex-0.0.5a4.tar.gz tmp/lineagex-0.0.5a5.tar.gz --markdown 20230524/l/lineagex/0.0.5a4-0.0.5a5/diff.md --exclude *.pyd
+[2023-05-24 04:51:13] INFO root fetch - processPackages [centerline-width]: executing diffoscope
+[2023-05-24 04:51:13] INFO root fetch - processPackages [centerline-width]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/centerline-width-0.0.2.tar.gz tmp/centerline-width-0.1.0.tar.gz --markdown 20230524/c/centerline-width/0.0.2-0.1.0/diff.md --exclude *.pyd
+[2023-05-24 04:51:13] INFO root fetch - main [MainThread]: End processing [gmsofttest]: success
+[2023-05-24 04:51:14] INFO root fetch - main [MainThread]: End processing [centerline-width]: success
+[2023-05-24 04:51:14] INFO root fetch - main [MainThread]: End processing [lineagex]: success
+[2023-05-24 04:51:14] INFO root fetch - main [MainThread]: Store serial: [18224228]
