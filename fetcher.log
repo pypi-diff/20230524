@@ -18331,3 +18331,157 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd4 in position 72: invalid
 [2023-05-24 17:22:07] INFO root fetch - main [MainThread]: End processing [uquake]: success
 [2023-05-24 17:22:07] INFO root fetch - main [MainThread]: End processing [speech-collator]: success
 [2023-05-24 17:22:07] INFO root fetch - main [MainThread]: Store serial: [18231779]
+[2023-05-24 17:27:12] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18231779]
+[2023-05-24 17:27:16] INFO root fetch - main [MainThread]: Found 24 changed packages
+[2023-05-24 17:27:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: corby
+[2023-05-24 17:27:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: uquake
+[2023-05-24 17:27:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: ValiotWorker
+[2023-05-24 17:27:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: structify-net
+[2023-05-24 17:27:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: aiorobonect
+[2023-05-24 17:27:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: birdhouse-birdy
+[2023-05-24 17:27:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: nonebot-plugin-herocard
+[2023-05-24 17:27:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: abqpy
+[2023-05-24 17:27:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: abqpy
+[2023-05-24 17:27:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: abqpy
+[2023-05-24 17:27:16] INFO root fetch - processPackages [structify-net]: New version: [0.9.49.dev0] Old Version: [0.0.0]
+[2023-05-24 17:27:17] INFO root fetch - processPackages [ValiotWorker]: New version: [5.3.3] Old Version: [5.3.2]
+[2023-05-24 17:27:17] INFO root fetch - processPackages [corby]: New version: [0.0.6] Old Version: [0.0.5]
+[2023-05-24 17:27:17] INFO root fetch - processPackages [birdhouse-birdy]: New version: [0.8.4] Old Version: [0.8.3]
+[2023-05-24 17:27:17] INFO root fetch - processPackages [structify-net]: Downloading https://files.pythonhosted.org/packages/ed/81/eed6be563e3ac7ee21ba919c98a597ac87dd96c6c152baa6e5132b04230c/structify_net-0.9.49.dev0.tar.gz
+[2023-05-24 17:27:17] INFO root fetch - processPackages [nonebot-plugin-herocard]: New version: [1.0.3] Old Version: [1.0.2]
+[2023-05-24 17:27:17] INFO root fetch - processPackages [aiorobonect]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-24 17:27:17] INFO root fetch - processPackages [uquake]: New version: [1.3.6] Old Version: [1.3.5]
+[2023-05-24 17:27:17] INFO root fetch - processPackages [abqpy]: New version: [2023.5.2] Old Version: [2023.5.1]
+[2023-05-24 17:27:17] INFO root fetch - processPackages [abqpy]: New version: [2023.5.2] Old Version: [2023.5.1]
+[2023-05-24 17:27:17] INFO root fetch - processPackages [abqpy]: New version: [2023.5.2] Old Version: [2023.5.1]
+[2023-05-24 17:27:17] WARNING root fetch - processPackages [structify-net]: Skipping package: exceeds size limit 11178517>=10485760
+[2023-05-24 17:27:17] INFO root fetch - processPackages [structify-net]: Start processing: abqpy
+[2023-05-24 17:27:17] INFO root fetch - main [MainThread]: End processing [structify-net] error
+[2023-05-24 17:27:17] INFO root fetch - processPackages [abqpy]: New version: [2023.5.2] Old Version: [2023.5.1]
+[2023-05-24 17:27:17] INFO root fetch - processPackages [ValiotWorker]: Downloading https://files.pythonhosted.org/packages/a3/1a/3db6f8ca81565fe319c8af0f8cd640a2e0e47bb362e5086f39e2eac9775a/ValiotWorker-5.3.2.tar.gz
+[2023-05-24 17:27:17] INFO root fetch - processPackages [birdhouse-birdy]: Downloading https://files.pythonhosted.org/packages/d7/b8/a2d9e12eaa28080649759e44e132944ed90f2312d97afb5554a8c7d4ad8b/birdhouse-birdy-0.8.3.tar.gz
+[2023-05-24 17:27:17] INFO root fetch - processPackages [abqpy]: Downloading https://files.pythonhosted.org/packages/38/ba/886553dbb82d284f711159e5a6d6ddea99d66513d01d4c9a29f9cf39461b/abqpy-2023.5.1.tar.gz
+[2023-05-24 17:27:17] INFO root fetch - processPackages [abqpy]: Downloading https://files.pythonhosted.org/packages/38/ba/886553dbb82d284f711159e5a6d6ddea99d66513d01d4c9a29f9cf39461b/abqpy-2023.5.1.tar.gz
+[2023-05-24 17:27:17] INFO root fetch - processPackages [abqpy]: Downloading https://files.pythonhosted.org/packages/38/ba/886553dbb82d284f711159e5a6d6ddea99d66513d01d4c9a29f9cf39461b/abqpy-2023.5.1.tar.gz
+[2023-05-24 17:27:17] INFO root fetch - processPackages [uquake]: Downloading https://files.pythonhosted.org/packages/ec/22/e9443185ba6a7489655cd1895d775facd3b9d2fc8ece8593cbd2002b4a93/uquake-1.3.6.tar.gz
+[2023-05-24 17:27:17] INFO root fetch - processPackages [abqpy]: Downloading https://files.pythonhosted.org/packages/38/ba/886553dbb82d284f711159e5a6d6ddea99d66513d01d4c9a29f9cf39461b/abqpy-2023.5.1.tar.gz
+[2023-05-24 17:27:17] INFO root fetch - processPackages [nonebot-plugin-herocard]: Downloading https://files.pythonhosted.org/packages/28/b3/9018f6ffc2eab5b8b9caa7f495a94845faa9ec5a88316899475aff29f244/nonebot-plugin-herocard-1.0.3.tar.gz
+[2023-05-24 17:27:17] INFO root fetch - processPackages [corby]: Downloading https://files.pythonhosted.org/packages/b4/e0/380cda70d2fe7e0042788fb70f8bafd5ce007431566a27df649757c77eb4/corby-0.0.6.tar.gz
+[2023-05-24 17:27:17] INFO root fetch - processPackages [aiorobonect]: executing diffoscope
+[2023-05-24 17:27:17] INFO root fetch - processPackages [aiorobonect]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aiorobonect-0.1.8.tar.gz tmp/aiorobonect-0.1.9.tar.gz --markdown 20230524/a/aiorobonect/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-24 17:27:17] INFO root fetch - processPackages [corby]: executing diffoscope
+[2023-05-24 17:27:17] INFO root fetch - processPackages [corby]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/corby-0.0.5.tar.gz tmp/corby-0.0.6.tar.gz --markdown 20230524/c/corby/0.0.5-0.0.6/diff.md --exclude *.pyd
+[2023-05-24 17:27:17] INFO root fetch - processPackages [ValiotWorker]: Downloading https://files.pythonhosted.org/packages/46/55/408fa25f973b0aef675b2ac490720ab1c95952be0c5fdc81d43ec185e6c9/ValiotWorker-5.3.3.tar.gz
+[2023-05-24 17:27:17] INFO root fetch - processPackages [uquake]: executing diffoscope
+[2023-05-24 17:27:17] INFO root fetch - processPackages [uquake]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/uquake-1.3.5.tar.gz tmp/uquake-1.3.6.tar.gz --markdown 20230524/u/uquake/1.3.5-1.3.6/diff.md --exclude *.pyd
+[2023-05-24 17:27:17] INFO root fetch - processPackages [nonebot-plugin-herocard]: executing diffoscope
+[2023-05-24 17:27:17] INFO root fetch - processPackages [nonebot-plugin-herocard]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nonebot_plugin_herocard-1.0.2.tar.gz tmp/nonebot-plugin-herocard-1.0.3.tar.gz --markdown 20230524/n/nonebot-plugin-herocard/1.0.2-1.0.3/diff.md --exclude *.pyd
+[2023-05-24 17:27:17] INFO root fetch - processPackages [birdhouse-birdy]: Downloading https://files.pythonhosted.org/packages/89/ec/bc7424fec128c31c92168f0dceae046ef59db7557b1b3b993e7186e670d2/birdhouse-birdy-0.8.4.tar.gz
+[2023-05-24 17:27:17] INFO root fetch - processPackages [ValiotWorker]: executing diffoscope
+[2023-05-24 17:27:17] INFO root fetch - processPackages [ValiotWorker]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ValiotWorker-5.3.2.tar.gz tmp/ValiotWorker-5.3.3.tar.gz --markdown 20230524/V/ValiotWorker/5.3.2-5.3.3/diff.md --exclude *.pyd
+[2023-05-24 17:27:17] INFO root fetch - processPackages [birdhouse-birdy]: executing diffoscope
+[2023-05-24 17:27:17] INFO root fetch - processPackages [birdhouse-birdy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/birdhouse-birdy-0.8.3.tar.gz tmp/birdhouse-birdy-0.8.4.tar.gz --markdown 20230524/b/birdhouse-birdy/0.8.3-0.8.4/diff.md --exclude *.pyd
+[2023-05-24 17:27:18] INFO root fetch - processPackages [abqpy]: Downloading https://files.pythonhosted.org/packages/8f/73/9ee79ba56edebe8f535bea0f880196acfbee09a607e596b6cef7f6c4b96b/abqpy-2023.5.2.tar.gz
+[2023-05-24 17:27:18] INFO root fetch - processPackages [abqpy]: Downloading https://files.pythonhosted.org/packages/8f/73/9ee79ba56edebe8f535bea0f880196acfbee09a607e596b6cef7f6c4b96b/abqpy-2023.5.2.tar.gz
+[2023-05-24 17:27:18] INFO root fetch - processPackages [abqpy]: Downloading https://files.pythonhosted.org/packages/8f/73/9ee79ba56edebe8f535bea0f880196acfbee09a607e596b6cef7f6c4b96b/abqpy-2023.5.2.tar.gz
+[2023-05-24 17:27:18] INFO root fetch - processPackages [abqpy]: Downloading https://files.pythonhosted.org/packages/8f/73/9ee79ba56edebe8f535bea0f880196acfbee09a607e596b6cef7f6c4b96b/abqpy-2023.5.2.tar.gz
+[2023-05-24 17:27:18] INFO root fetch - processPackages [aiorobonect]: Start processing: abqpy
+[2023-05-24 17:27:18] INFO root fetch - main [MainThread]: End processing [aiorobonect]: success
+[2023-05-24 17:27:18] INFO root fetch - processPackages [abqpy]: New version: [2023.5.2] Old Version: [2023.5.1]
+[2023-05-24 17:27:18] INFO root fetch - processPackages [abqpy]: Downloading https://files.pythonhosted.org/packages/8f/73/9ee79ba56edebe8f535bea0f880196acfbee09a607e596b6cef7f6c4b96b/abqpy-2023.5.2.tar.gz
+[2023-05-24 17:27:18] INFO root fetch - processPackages [corby]: Start processing: atomlite
+[2023-05-24 17:27:18] INFO root fetch - main [MainThread]: End processing [corby]: success
+[2023-05-24 17:27:18] INFO root fetch - processPackages [atomlite]: New version: [1.2.0] Old Version: [1.1.2]
+[2023-05-24 17:27:18] INFO root fetch - processPackages [nonebot-plugin-herocard]: Start processing: abqpy
+[2023-05-24 17:27:18] INFO root fetch - main [MainThread]: End processing [nonebot-plugin-herocard]: success
+[2023-05-24 17:27:19] INFO root fetch - processPackages [abqpy]: New version: [2023.5.2] Old Version: [2023.5.1]
+[2023-05-24 17:27:19] INFO root fetch - processPackages [ValiotWorker]: Start processing: openTSNE
+[2023-05-24 17:27:19] INFO root fetch - main [MainThread]: End processing [ValiotWorker]: success
+[2023-05-24 17:27:19] INFO root fetch - processPackages [abqpy]: Downloading https://files.pythonhosted.org/packages/8f/73/9ee79ba56edebe8f535bea0f880196acfbee09a607e596b6cef7f6c4b96b/abqpy-2023.5.2.tar.gz
+[2023-05-24 17:27:19] INFO root fetch - processPackages [atomlite]: Downloading https://files.pythonhosted.org/packages/24/81/c05b1ba7f25f5fd477aca159d7f2baea0db4f1d8ef95d11d60034a890757/atomlite-1.1.2.tar.gz
+[2023-05-24 17:27:19] INFO root fetch - processPackages [openTSNE]: New version: [1.0.0] Old Version: [0.7.1]
+[2023-05-24 17:27:19] INFO root fetch - processPackages [uquake]: Start processing: abqpy
+[2023-05-24 17:27:19] INFO root fetch - main [MainThread]: End processing [uquake]: success
+[2023-05-24 17:27:19] INFO root fetch - processPackages [abqpy]: New version: [2023.5.2] Old Version: [2023.5.1]
+[2023-05-24 17:27:19] INFO root fetch - processPackages [atomlite]: Downloading https://files.pythonhosted.org/packages/85/5b/82b1e812a06da1bc824b7e39854bbbb02da461b333666cf850a61768dd72/atomlite-1.2.0.tar.gz
+[2023-05-24 17:27:19] INFO root fetch - processPackages [openTSNE]: Downloading https://files.pythonhosted.org/packages/6f/95/c27857a6bbcc1827e0062140a96c860b16bd38ca9a784e81216610adc0e9/openTSNE-0.7.1.tar.gz
+[2023-05-24 17:27:19] INFO root fetch - processPackages [abqpy]: Downloading https://files.pythonhosted.org/packages/8f/73/9ee79ba56edebe8f535bea0f880196acfbee09a607e596b6cef7f6c4b96b/abqpy-2023.5.2.tar.gz
+[2023-05-24 17:27:19] INFO root fetch - processPackages [atomlite]: executing diffoscope
+[2023-05-24 17:27:19] INFO root fetch - processPackages [atomlite]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/atomlite-1.1.2.tar.gz tmp/atomlite-1.2.0.tar.gz --markdown 20230524/a/atomlite/1.1.2-1.2.0/diff.md --exclude *.pyd
+[2023-05-24 17:27:19] INFO root fetch - processPackages [abqpy]: executing diffoscope
+[2023-05-24 17:27:19] INFO root fetch - processPackages [abqpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/abqpy-2023.5.1.tar.gz tmp/abqpy-2023.5.2.tar.gz --markdown 20230524/a/abqpy/2023.5.1-2023.5.2/diff.md --exclude *.pyd
+[2023-05-24 17:27:19] INFO root fetch - processPackages [abqpy]: executing diffoscope
+[2023-05-24 17:27:19] INFO root fetch - processPackages [abqpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/abqpy-2023.5.1.tar.gz tmp/abqpy-2023.5.2.tar.gz --markdown 20230524/a/abqpy/2023.5.1-2023.5.2/diff.md --exclude *.pyd
+[2023-05-24 17:27:19] INFO root fetch - processPackages [abqpy]: executing diffoscope
+[2023-05-24 17:27:19] INFO root fetch - processPackages [abqpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/abqpy-2023.5.1.tar.gz tmp/abqpy-2023.5.2.tar.gz --markdown 20230524/a/abqpy/2023.5.1-2023.5.2/diff.md --exclude *.pyd
+[2023-05-24 17:27:19] INFO root fetch - processPackages [abqpy]: executing diffoscope
+[2023-05-24 17:27:19] INFO root fetch - processPackages [abqpy]: executing diffoscope
+[2023-05-24 17:27:19] INFO root fetch - processPackages [abqpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/abqpy-2023.5.1.tar.gz tmp/abqpy-2023.5.2.tar.gz --markdown 20230524/a/abqpy/2023.5.1-2023.5.2/diff.md --exclude *.pyd
+[2023-05-24 17:27:19] INFO root fetch - processPackages [abqpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/abqpy-2023.5.1.tar.gz tmp/abqpy-2023.5.2.tar.gz --markdown 20230524/a/abqpy/2023.5.1-2023.5.2/diff.md --exclude *.pyd
+[2023-05-24 17:27:19] INFO root fetch - processPackages [abqpy]: executing diffoscope
+[2023-05-24 17:27:19] INFO root fetch - processPackages [abqpy]: executing diffoscope
+[2023-05-24 17:27:19] INFO root fetch - processPackages [abqpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/abqpy-2023.5.1.tar.gz tmp/abqpy-2023.5.2.tar.gz --markdown 20230524/a/abqpy/2023.5.1-2023.5.2/diff.md --exclude *.pyd
+[2023-05-24 17:27:19] INFO root fetch - processPackages [abqpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/abqpy-2023.5.1.tar.gz tmp/abqpy-2023.5.2.tar.gz --markdown 20230524/a/abqpy/2023.5.1-2023.5.2/diff.md --exclude *.pyd
+[2023-05-24 17:27:20] INFO root fetch - processPackages [openTSNE]: Downloading https://files.pythonhosted.org/packages/52/fa/2d625c36712341f3c792d226ff229495d41e8b612f9344292c2822dde7a9/openTSNE-1.0.0.tar.gz
+[2023-05-24 17:27:20] INFO root fetch - processPackages [openTSNE]: executing diffoscope
+[2023-05-24 17:27:20] INFO root fetch - processPackages [openTSNE]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/openTSNE-0.7.1.tar.gz tmp/openTSNE-1.0.0.tar.gz --markdown 20230524/o/openTSNE/0.7.1-1.0.0/diff.md --exclude *.pyd
+[2023-05-24 17:27:20] INFO root fetch - processPackages [birdhouse-birdy]: Start processing: bigc
+[2023-05-24 17:27:20] INFO root fetch - main [MainThread]: End processing [birdhouse-birdy]: success
+[2023-05-24 17:27:20] INFO root fetch - processPackages [bigc]: New version: [0.2.8] Old Version: [0.2.7]
+[2023-05-24 17:27:20] INFO root fetch - processPackages [bigc]: Downloading https://files.pythonhosted.org/packages/9e/eb/d575dc39a74354adb26754857e2d63063b4cd16aedb97aa38c8eb1f3ead6/bigc-0.2.7.tar.gz
+[2023-05-24 17:27:21] INFO root fetch - processPackages [atomlite]: Start processing: abqpy
+[2023-05-24 17:27:21] INFO root fetch - main [MainThread]: End processing [atomlite]: success
+[2023-05-24 17:27:21] INFO root fetch - processPackages [abqpy]: New version: [2023.5.2] Old Version: [2023.5.1]
+[2023-05-24 17:27:21] INFO root fetch - processPackages [abqpy]: executing diffoscope
+[2023-05-24 17:27:21] INFO root fetch - processPackages [abqpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/abqpy-2023.5.1.tar.gz tmp/abqpy-2023.5.2.tar.gz --markdown 20230524/a/abqpy/2023.5.1-2023.5.2/diff.md --exclude *.pyd
+[2023-05-24 17:27:21] INFO root fetch - processPackages [bigc]: Downloading https://files.pythonhosted.org/packages/d8/5b/3b1df59963688640d275c2f7503010e072562316a30cd3f8552c59946237/bigc-0.2.8.tar.gz
+[2023-05-24 17:27:21] INFO root fetch - processPackages [bigc]: executing diffoscope
+[2023-05-24 17:27:21] INFO root fetch - processPackages [bigc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bigc-0.2.7.tar.gz tmp/bigc-0.2.8.tar.gz --markdown 20230524/b/bigc/0.2.7-0.2.8/diff.md --exclude *.pyd
+[2023-05-24 17:27:22] INFO root fetch - processPackages [bigc]: Start processing: delphi-epidata
+[2023-05-24 17:27:22] INFO root fetch - main [MainThread]: End processing [bigc]: success
+[2023-05-24 17:27:23] INFO root fetch - processPackages [delphi-epidata]: New version: [4.1.0] Old Version: [0.4.9]
+[2023-05-24 17:27:23] INFO root fetch - processPackages [delphi-epidata]: Downloading https://files.pythonhosted.org/packages/9d/74/8b35b77d1a7f52e4e564df18306cd751dac58b8ef6f4e448c938429ba763/delphi_epidata-4.1.0.tar.gz
+[2023-05-24 17:27:23] INFO root fetch - processPackages [delphi-epidata]: executing diffoscope
+[2023-05-24 17:27:23] INFO root fetch - processPackages [delphi-epidata]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/delphi_epidata-0.4.9.tar.gz tmp/delphi_epidata-4.1.0.tar.gz --markdown 20230524/d/delphi-epidata/0.4.9-4.1.0/diff.md --exclude *.pyd
+[2023-05-24 17:27:25] INFO root fetch - processPackages [delphi-epidata]: Start processing: promptops
+[2023-05-24 17:27:25] INFO root fetch - main [MainThread]: End processing [delphi-epidata]: success
+[2023-05-24 17:27:25] INFO root fetch - processPackages [promptops]: New version: [0.1.3] Old Version: [0.1.2]
+[2023-05-24 17:27:25] INFO root fetch - processPackages [promptops]: Downloading https://files.pythonhosted.org/packages/06/31/be452e7dbf43ff083ae2aa92eac80f8f565037ea4ddf0777d71337576a0a/promptops-0.1.2.tar.gz
+[2023-05-24 17:27:26] INFO root fetch - processPackages [promptops]: Downloading https://files.pythonhosted.org/packages/f5/93/019010c1df08061039645f801ccd320adb0aa73a17fd3e38467f2c2bb469/promptops-0.1.3.tar.gz
+[2023-05-24 17:27:26] INFO root fetch - processPackages [openTSNE]: Start processing: netbox-cisco-maintenance
+[2023-05-24 17:27:26] INFO root fetch - main [MainThread]: End processing [openTSNE]: success
+[2023-05-24 17:27:26] INFO root fetch - processPackages [promptops]: executing diffoscope
+[2023-05-24 17:27:26] INFO root fetch - processPackages [promptops]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/promptops-0.1.2.tar.gz tmp/promptops-0.1.3.tar.gz --markdown 20230524/p/promptops/0.1.2-0.1.3/diff.md --exclude *.pyd
+[2023-05-24 17:27:26] INFO root fetch - processPackages [netbox-cisco-maintenance]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-24 17:27:26] INFO root fetch - processPackages [netbox-cisco-maintenance]: executing diffoscope
+[2023-05-24 17:27:26] INFO root fetch - processPackages [netbox-cisco-maintenance]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/netbox-cisco-maintenance-0.0.8.tar.gz tmp/netbox-cisco-maintenance-0.0.9.tar.gz --markdown 20230524/n/netbox-cisco-maintenance/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-24 17:27:28] INFO root fetch - processPackages [netbox-cisco-maintenance]: Start processing: ssh-certificate-parser
+[2023-05-24 17:27:28] INFO root fetch - main [MainThread]: End processing [netbox-cisco-maintenance]: success
+[2023-05-24 17:27:28] INFO root fetch - processPackages [ssh-certificate-parser]: New version: [1.4.0] Old Version: [1.3.3]
+[2023-05-24 17:27:28] INFO root fetch - processPackages [ssh-certificate-parser]: Downloading https://files.pythonhosted.org/packages/36/70/e96ed520495a428d0324e3ac0f466a652fd9746e881a2bcfc43ff1c5b6c6/ssh_certificate_parser-1.3.3.tar.gz
+[2023-05-24 17:27:28] INFO root fetch - processPackages [promptops]: Start processing: pyatlan
+[2023-05-24 17:27:28] INFO root fetch - main [MainThread]: End processing [promptops]: success
+[2023-05-24 17:27:28] INFO root fetch - processPackages [pyatlan]: New version: [0.0.33] Old Version: [0.0.32]
+[2023-05-24 17:27:28] INFO root fetch - processPackages [ssh-certificate-parser]: Downloading https://files.pythonhosted.org/packages/d8/ff/6f2a0686bc106f9a2f71d061097fa4aabc94de83586d948875a9bafd5f9c/ssh_certificate_parser-1.4.0.tar.gz
+[2023-05-24 17:27:28] INFO root fetch - processPackages [ssh-certificate-parser]: executing diffoscope
+[2023-05-24 17:27:28] INFO root fetch - processPackages [ssh-certificate-parser]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ssh_certificate_parser-1.3.3.tar.gz tmp/ssh_certificate_parser-1.4.0.tar.gz --markdown 20230524/s/ssh-certificate-parser/1.3.3-1.4.0/diff.md --exclude *.pyd
+[2023-05-24 17:27:28] INFO root fetch - processPackages [pyatlan]: Downloading https://files.pythonhosted.org/packages/90/fb/94f2f7a1c20321cd775776cc74ea22def0cb6c56891a87baad9c6e2faed5/pyatlan-0.0.33.tar.gz
+[2023-05-24 17:27:28] INFO root fetch - processPackages [pyatlan]: executing diffoscope
+[2023-05-24 17:27:28] INFO root fetch - processPackages [pyatlan]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyatlan-0.0.32.tar.gz tmp/pyatlan-0.0.33.tar.gz --markdown 20230524/p/pyatlan/0.0.32-0.0.33/diff.md --exclude *.pyd
+[2023-05-24 17:27:30] INFO root fetch - processPackages [ssh-certificate-parser]: Start processing: rapidpro-flow-tools
+[2023-05-24 17:27:30] INFO root fetch - main [MainThread]: End processing [ssh-certificate-parser]: success
+[2023-05-24 17:27:30] INFO root fetch - processPackages [rapidpro-flow-tools]: New version: [0.9.3] Old Version: [0.9.2]
+[2023-05-24 17:27:30] INFO root fetch - processPackages [rapidpro-flow-tools]: Downloading https://files.pythonhosted.org/packages/90/f3/613d18584dca9477fe0ff76711cd7035839e4ebcdb09560252b70a942d6e/rapidpro_flow_tools-0.9.3.tar.gz
+[2023-05-24 17:27:30] INFO root fetch - processPackages [rapidpro-flow-tools]: executing diffoscope
+[2023-05-24 17:27:30] INFO root fetch - processPackages [rapidpro-flow-tools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rapidpro_flow_tools-0.9.2.tar.gz tmp/rapidpro_flow_tools-0.9.3.tar.gz --markdown 20230524/r/rapidpro-flow-tools/0.9.2-0.9.3/diff.md --exclude *.pyd
+[2023-05-24 17:27:31] INFO root fetch - main [MainThread]: End processing [pyatlan]: success
+[2023-05-24 17:27:32] INFO root fetch - main [MainThread]: End processing [rapidpro-flow-tools]: success
+[2023-05-24 17:27:51] INFO root fetch - main [MainThread]: End processing [abqpy]: success
+[2023-05-24 17:27:51] INFO root fetch - main [MainThread]: End processing [abqpy]: success
+[2023-05-24 17:27:51] INFO root fetch - main [MainThread]: End processing [abqpy]: success
+[2023-05-24 17:27:51] INFO root fetch - main [MainThread]: End processing [abqpy]: success
+[2023-05-24 17:27:51] INFO root fetch - main [MainThread]: End processing [abqpy]: success
+[2023-05-24 17:27:52] INFO root fetch - main [MainThread]: End processing [abqpy]: success
+[2023-05-24 17:27:52] INFO root fetch - main [MainThread]: End processing [abqpy]: success
+[2023-05-24 17:27:53] INFO root fetch - main [MainThread]: End processing [abqpy]: success
+[2023-05-24 17:27:53] INFO root fetch - main [MainThread]: Store serial: [18231879]
