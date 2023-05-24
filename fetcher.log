@@ -8826,3 +8826,66 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-05-24 08:33:47] INFO root fetch - main [MainThread]: End processing [cercis]: success
 [2023-05-24 08:33:48] INFO root fetch - main [MainThread]: End processing [acryl-datahub]: success
 [2023-05-24 08:33:48] INFO root fetch - main [MainThread]: Store serial: [18225809]
+[2023-05-24 08:38:52] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18225809]
+[2023-05-24 08:38:57] INFO root fetch - main [MainThread]: Found 10 changed packages
+[2023-05-24 08:38:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pykn-mysqltools
+[2023-05-24 08:38:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: yulm-styled
+[2023-05-24 08:38:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: angeltools
+[2023-05-24 08:38:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pyinterp
+[2023-05-24 08:38:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: HTMLCompare
+[2023-05-24 08:38:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: google-sheet-downloader
+[2023-05-24 08:38:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: odoo14-addon-pricelist-cache
+[2023-05-24 08:38:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: ChatLLM
+[2023-05-24 08:38:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: ctmd
+[2023-05-24 08:38:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: knowledgebase-gsheet-gpt
+[2023-05-24 08:38:57] INFO root fetch - processPackages [odoo14-addon-pricelist-cache]: New version: [14.0.1.3.0] Old Version: [14.0.1.2.0]
+[2023-05-24 08:38:57] WARNING root fetch - processPackages [yulm-styled]: Skipping, unable to determine old version
+[2023-05-24 08:38:57] INFO root fetch - processPackages [pyinterp]: New version: [2023.5.0] Old Version: [2023.2.1]
+[2023-05-24 08:38:57] INFO root fetch - main [MainThread]: End processing [yulm-styled] error
+[2023-05-24 08:38:57] INFO root fetch - processPackages [angeltools]: New version: [0.3.4] Old Version: [0.3.2]
+[2023-05-24 08:38:57] INFO root fetch - processPackages [google-sheet-downloader]: New version: [1.0.7] Old Version: [1.0.6]
+[2023-05-24 08:38:57] INFO root fetch - processPackages [pykn-mysqltools]: New version: [0.0.6] Old Version: [0.0.5]
+[2023-05-24 08:38:57] INFO root fetch - processPackages [HTMLCompare]: New version: [0.3.2] Old Version: [0.3.1]
+[2023-05-24 08:38:57] WARNING root fetch - processPackages [ctmd]: Skipping, unable to determine old version
+[2023-05-24 08:38:57] INFO root fetch - main [MainThread]: End processing [ctmd] error
+[2023-05-24 08:38:57] INFO root fetch - processPackages [ChatLLM]: New version: [2023.5.4.12.7.23] Old Version: [2023.5.4.11.58.59]
+[2023-05-24 08:38:57] INFO root fetch - processPackages [knowledgebase-gsheet-gpt]: New version: [1.2.7] Old Version: [1.2.5]
+[2023-05-24 08:38:57] INFO root fetch - processPackages [pykn-mysqltools]: Downloading https://files.pythonhosted.org/packages/ea/ba/cc514fc4759f5c072420cbac7cc13806c0fa6c2bc7e5fd3cc07c96c12f0a/pykn_mysqltools-0.0.5.tar.gz
+[2023-05-24 08:38:57] INFO root fetch - processPackages [odoo14-addon-pricelist-cache]: Downloading https://files.pythonhosted.org/packages/3b/d7/da78b2eb9c1ed451890962755ea79ec1fd9efb31d26010be81e865d6b8c2/odoo14_addon_pricelist_cache-14.0.1.2.0-py3-none-any.whl
+[2023-05-24 08:38:57] INFO root fetch - processPackages [google-sheet-downloader]: Downloading https://files.pythonhosted.org/packages/60/67/6f45c18c79a2c5c06b0b1fa77e4d54ee4145d42bff10ee2db4fa1bb22c95/google-sheet-downloader-1.0.6.tar.gz
+[2023-05-24 08:38:57] INFO root fetch - processPackages [angeltools]: Downloading https://files.pythonhosted.org/packages/bc/a2/fe0fa5b4af237a3df146b2480c8e64ff0a9a65285fe3923f915f1f88e865/angeltools-0.3.2.tar.gz
+[2023-05-24 08:38:57] INFO root fetch - processPackages [pyinterp]: Downloading https://files.pythonhosted.org/packages/22/60/59f70b5caaf5515e53cd31982f45079e65053cdc31689099ca1ab60cb34e/pyinterp-2023.2.1.tar.gz
+[2023-05-24 08:38:57] INFO root fetch - processPackages [HTMLCompare]: Downloading https://files.pythonhosted.org/packages/9a/f2/d3e697e3ec28299ae5c6c905dac4705493fcdcbf3357e5f475d952b87ac5/HTMLCompare-0.3.1.tar.gz
+[2023-05-24 08:38:57] INFO root fetch - processPackages [knowledgebase-gsheet-gpt]: Downloading https://files.pythonhosted.org/packages/fc/9e/92cd6dbd71c7b432581bd54ee887370e72af44c1cfc0548e59d5a09f1079/knowledgebase-gsheet-gpt-1.2.5.tar.gz
+[2023-05-24 08:38:57] INFO root fetch - processPackages [pykn-mysqltools]: Downloading https://files.pythonhosted.org/packages/fb/c4/a0b404b989df9295212954037cc1d9a83d760b071f991b93ce6c8e7909cf/pykn_mysqltools-0.0.6.tar.gz
+[2023-05-24 08:38:57] INFO root fetch - processPackages [google-sheet-downloader]: Downloading https://files.pythonhosted.org/packages/94/a7/29dbfb998b0c4e345ff5b1314924983f3115d331342e73e327b5874b2d40/google-sheet-downloader-1.0.7.tar.gz
+[2023-05-24 08:38:57] INFO root fetch - processPackages [ChatLLM]: executing diffoscope
+[2023-05-24 08:38:57] INFO root fetch - processPackages [ChatLLM]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ChatLLM-2023.5.4.11.58.59.tar.gz tmp/ChatLLM-2023.5.4.12.7.23.tar.gz --markdown 20230524/C/ChatLLM/2023.5.4.11.58.59-2023.5.4.12.7.23/diff.md --exclude *.pyd
+[2023-05-24 08:38:57] INFO root fetch - processPackages [HTMLCompare]: Downloading https://files.pythonhosted.org/packages/fd/c2/afc180f71f8b51ed3d954f45ce26ada0c1bb18a3f0f85386c8355e7a2c73/HTMLCompare-0.3.2.tar.gz
+[2023-05-24 08:38:57] INFO root fetch - processPackages [angeltools]: Downloading https://files.pythonhosted.org/packages/b5/91/c534d790b331201147b3a1fc8431d7b21f8ed792cc97f33af4809a68afd1/angeltools-0.3.4.tar.gz
+[2023-05-24 08:38:57] INFO root fetch - processPackages [pyinterp]: Downloading https://files.pythonhosted.org/packages/d5/e0/9fedf6863f9da66de9a0315fbbeb00013f9b2387c9933a63f069945186cb/pyinterp-2023.5.0.tar.gz
+[2023-05-24 08:38:57] INFO root fetch - processPackages [pykn-mysqltools]: executing diffoscope
+[2023-05-24 08:38:57] INFO root fetch - processPackages [pykn-mysqltools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pykn_mysqltools-0.0.5.tar.gz tmp/pykn_mysqltools-0.0.6.tar.gz --markdown 20230524/p/pykn-mysqltools/0.0.5-0.0.6/diff.md --exclude *.pyd
+[2023-05-24 08:38:57] INFO root fetch - processPackages [odoo14-addon-pricelist-cache]: Downloading https://files.pythonhosted.org/packages/cd/8b/74a0bcb8c62a3604c9869cdd7b773857c07c964d0228de1a845daecfd0f0/odoo14_addon_pricelist_cache-14.0.1.3.0-py3-none-any.whl
+[2023-05-24 08:38:57] INFO root fetch - processPackages [google-sheet-downloader]: executing diffoscope
+[2023-05-24 08:38:57] INFO root fetch - processPackages [google-sheet-downloader]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/google-sheet-downloader-1.0.6.tar.gz tmp/google-sheet-downloader-1.0.7.tar.gz --markdown 20230524/g/google-sheet-downloader/1.0.6-1.0.7/diff.md --exclude *.pyd
+[2023-05-24 08:38:57] INFO root fetch - processPackages [knowledgebase-gsheet-gpt]: Downloading https://files.pythonhosted.org/packages/a4/19/5ad38bfe3a2506719bcb854feefaa2f2bea1329ff5e89abb2895033a579f/knowledgebase-gsheet-gpt-1.2.7.tar.gz
+[2023-05-24 08:38:57] INFO root fetch - processPackages [HTMLCompare]: executing diffoscope
+[2023-05-24 08:38:57] INFO root fetch - processPackages [HTMLCompare]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/HTMLCompare-0.3.1.tar.gz tmp/HTMLCompare-0.3.2.tar.gz --markdown 20230524/H/HTMLCompare/0.3.1-0.3.2/diff.md --exclude *.pyd
+[2023-05-24 08:38:58] INFO root fetch - processPackages [angeltools]: executing diffoscope
+[2023-05-24 08:38:58] INFO root fetch - processPackages [angeltools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/angeltools-0.3.2.tar.gz tmp/angeltools-0.3.4.tar.gz --markdown 20230524/a/angeltools/0.3.2-0.3.4/diff.md --exclude *.pyd
+[2023-05-24 08:38:58] INFO root fetch - processPackages [odoo14-addon-pricelist-cache]: executing diffoscope
+[2023-05-24 08:38:58] INFO root fetch - processPackages [odoo14-addon-pricelist-cache]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo14_addon_pricelist_cache-14.0.1.2.0-py3-none-any.whl.zip tmp/odoo14_addon_pricelist_cache-14.0.1.3.0-py3-none-any.whl.zip --markdown 20230524/o/odoo14-addon-pricelist-cache/14.0.1.2.0-14.0.1.3.0/diff.md --exclude *.pyd
+[2023-05-24 08:38:58] INFO root fetch - processPackages [pyinterp]: executing diffoscope
+[2023-05-24 08:38:58] INFO root fetch - processPackages [pyinterp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyinterp-2023.2.1.tar.gz tmp/pyinterp-2023.5.0.tar.gz --markdown 20230524/p/pyinterp/2023.2.1-2023.5.0/diff.md --exclude *.pyd
+[2023-05-24 08:38:58] INFO root fetch - processPackages [knowledgebase-gsheet-gpt]: executing diffoscope
+[2023-05-24 08:38:58] INFO root fetch - processPackages [knowledgebase-gsheet-gpt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/knowledgebase-gsheet-gpt-1.2.5.tar.gz tmp/knowledgebase-gsheet-gpt-1.2.7.tar.gz --markdown 20230524/k/knowledgebase-gsheet-gpt/1.2.5-1.2.7/diff.md --exclude *.pyd
+[2023-05-24 08:38:59] INFO root fetch - main [MainThread]: End processing [pykn-mysqltools]: success
+[2023-05-24 08:38:59] INFO root fetch - main [MainThread]: End processing [google-sheet-downloader]: success
+[2023-05-24 08:38:59] INFO root fetch - main [MainThread]: End processing [angeltools]: success
+[2023-05-24 08:38:59] INFO root fetch - main [MainThread]: End processing [HTMLCompare]: success
+[2023-05-24 08:38:59] INFO root fetch - main [MainThread]: End processing [knowledgebase-gsheet-gpt]: success
+[2023-05-24 08:38:59] INFO root fetch - main [MainThread]: End processing [odoo14-addon-pricelist-cache]: success
+[2023-05-24 08:39:00] INFO root fetch - main [MainThread]: End processing [ChatLLM]: success
+[2023-05-24 08:39:06] INFO root fetch - main [MainThread]: End processing [pyinterp]: success
+[2023-05-24 08:39:06] INFO root fetch - main [MainThread]: Store serial: [18225847]
