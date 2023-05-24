@@ -8175,3 +8175,79 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-05-24 07:33:17] INFO root fetch - main [MainThread]: End processing [sdc-scissor]: success
 [2023-05-24 07:33:17] INFO root fetch - main [MainThread]: End processing [tongsuopy-crayon]: success
 [2023-05-24 07:33:17] INFO root fetch - main [MainThread]: Store serial: [18225357]
+[2023-05-24 07:38:22] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18225357]
+[2023-05-24 07:38:26] INFO root fetch - main [MainThread]: Found 13 changed packages
+[2023-05-24 07:38:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: chalk-harness
+[2023-05-24 07:38:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: javonet-python-sdk
+[2023-05-24 07:38:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: prfiesta
+[2023-05-24 07:38:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: Lcmbb-Division
+[2023-05-24 07:38:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: mobio-dedupe-sdk-test
+[2023-05-24 07:38:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: landingai
+[2023-05-24 07:38:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: furiosa-common
+[2023-05-24 07:38:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: furiosa-cli
+[2023-05-24 07:38:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: furiosa-tools
+[2023-05-24 07:38:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: meta-matching-tool
+[2023-05-24 07:38:27] WARNING root fetch - processPackages [Lcmbb-Division]: Skipping, unable to determine old version
+[2023-05-24 07:38:27] INFO root fetch - processPackages [Lcmbb-Division]: Start processing: furiosa-registry
+[2023-05-24 07:38:27] INFO root fetch - main [MainThread]: End processing [Lcmbb-Division] error
+[2023-05-24 07:38:27] INFO root fetch - processPackages [chalk-harness]: New version: [0.9.9] Old Version: [0.9.8]
+[2023-05-24 07:38:27] INFO root fetch - processPackages [prfiesta]: New version: [0.8.0b124] Old Version: [0.8.0]
+[2023-05-24 07:38:27] INFO root fetch - processPackages [mobio-dedupe-sdk-test]: New version: [1.0.9] Old Version: [1.0.8]
+[2023-05-24 07:38:27] INFO root fetch - processPackages [furiosa-cli]: New version: [0.9.0rc3] Old Version: [0.9.0rc2]
+[2023-05-24 07:38:27] INFO root fetch - processPackages [javonet-python-sdk]: New version: [2.1.3] Old Version: [2.1.2]
+[2023-05-24 07:38:27] WARNING root fetch - processPackages [meta-matching-tool]: Skipping, unable to determine old version
+[2023-05-24 07:38:27] INFO root fetch - processPackages [meta-matching-tool]: Start processing: furiosa-runtime
+[2023-05-24 07:38:27] INFO root fetch - main [MainThread]: End processing [meta-matching-tool] error
+[2023-05-24 07:38:27] INFO root fetch - processPackages [furiosa-common]: New version: [0.9.1] Old Version: [0.9.0rc3]
+[2023-05-24 07:38:27] INFO root fetch - processPackages [furiosa-tools]: New version: [0.9.1] Old Version: [0.9.0rc3]
+[2023-05-24 07:38:27] INFO root fetch - processPackages [chalk-harness]: executing diffoscope
+[2023-05-24 07:38:27] INFO root fetch - processPackages [chalk-harness]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/chalk-harness-0.9.8.tar.gz tmp/chalk-harness-0.9.9.tar.gz --markdown 20230524/c/chalk-harness/0.9.8-0.9.9/diff.md --exclude *.pyd
+[2023-05-24 07:38:27] INFO root fetch - processPackages [landingai]: New version: [0.0.8] Old Version: [0.0.7]
+[2023-05-24 07:38:27] INFO root fetch - processPackages [mobio-dedupe-sdk-test]: executing diffoscope
+[2023-05-24 07:38:27] INFO root fetch - processPackages [mobio-dedupe-sdk-test]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mobio-dedupe-sdk-test-1.0.8.tar.gz tmp/mobio-dedupe-sdk-test-1.0.9.tar.gz --markdown 20230524/m/mobio-dedupe-sdk-test/1.0.8-1.0.9/diff.md --exclude *.pyd
+[2023-05-24 07:38:27] INFO root fetch - processPackages [prfiesta]: executing diffoscope
+[2023-05-24 07:38:27] INFO root fetch - processPackages [prfiesta]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/prfiesta-0.8.0.tar.gz tmp/prfiesta-0.8.0b124.tar.gz --markdown 20230524/p/prfiesta/0.8.0-0.8.0b124/diff.md --exclude *.pyd
+[2023-05-24 07:38:27] INFO root fetch - processPackages [furiosa-registry]: New version: [0.9.1] Old Version: [0.9.0rc3]
+[2023-05-24 07:38:27] INFO root fetch - processPackages [furiosa-runtime]: New version: [0.9.1] Old Version: [0.9.0rc3]
+[2023-05-24 07:38:27] INFO root fetch - processPackages [javonet-python-sdk]: Downloading https://files.pythonhosted.org/packages/af/1c/75a82a452255c8ddf83258e2b372b4ffcdbd35f907f836f141241ce63960/javonet_python_sdk-2.1.2-py3-none-any.whl
+[2023-05-24 07:38:27] INFO root fetch - processPackages [furiosa-cli]: Downloading https://files.pythonhosted.org/packages/10/dd/808d91424a99f050d97b124e0a4c794afd4114849d83a18e879f89dd6ec4/furiosa-cli-0.9.0rc2.tar.gz
+[2023-05-24 07:38:27] INFO root fetch - processPackages [furiosa-common]: Downloading https://files.pythonhosted.org/packages/16/73/b3beadcf94f5144cc40211bd64931c90bafa07e81c4e567405772ed64996/furiosa-common-0.9.0rc3.tar.gz
+[2023-05-24 07:38:27] INFO root fetch - processPackages [landingai]: Downloading https://files.pythonhosted.org/packages/24/85/41de202cb57658583318c807ea79fedd058c090462f950346d7677af0cfb/landingai-0.0.7.tar.gz
+[2023-05-24 07:38:27] INFO root fetch - processPackages [furiosa-registry]: Downloading https://files.pythonhosted.org/packages/fa/1f/11507ac9a74d83992922654cc41402ae511e5a1f33ede4744d18dc727dd9/furiosa-registry-0.9.0rc3.tar.gz
+[2023-05-24 07:38:27] INFO root fetch - processPackages [furiosa-tools]: Downloading https://files.pythonhosted.org/packages/13/09/cf28665cb2da7e77abb5bbf278614e2cb39d6b827311b96076245be39e38/furiosa-tools-0.9.0rc3.tar.gz
+[2023-05-24 07:38:27] WARNING root fetch - processPackages [javonet-python-sdk]: Skipping package: exceeds size limit 89470311>=10485760
+[2023-05-24 07:38:27] INFO root fetch - processPackages [javonet-python-sdk]: Start processing: furiosa-optimizer
+[2023-05-24 07:38:27] INFO root fetch - main [MainThread]: End processing [javonet-python-sdk] error
+[2023-05-24 07:38:27] INFO root fetch - processPackages [furiosa-runtime]: Downloading https://files.pythonhosted.org/packages/a3/6c/35083d6c9120947d20b39a21ac658746181ad712ce67fe70d927cb76d336/furiosa-runtime-0.9.0rc3.tar.gz
+[2023-05-24 07:38:27] INFO root fetch - processPackages [furiosa-optimizer]: New version: [0.9.0rc3] Old Version: [0.9.0rc2]
+[2023-05-24 07:38:27] INFO root fetch - processPackages [furiosa-common]: Downloading https://files.pythonhosted.org/packages/70/09/65950e83e29aa9d28538674957ef8f4816f2f5a0345beee06aaa3cbb87c0/furiosa_common-0.9.1.tar.gz
+[2023-05-24 07:38:27] INFO root fetch - processPackages [furiosa-cli]: Downloading https://files.pythonhosted.org/packages/96/de/696a597e430ef41323a6c5ad2ea4b504aa72c548739862dd38adec4b9f9d/furiosa-cli-0.9.0rc3.tar.gz
+[2023-05-24 07:38:27] INFO root fetch - processPackages [furiosa-registry]: Downloading https://files.pythonhosted.org/packages/4b/a6/dde3b4dd3502383eeb52c9c7ce4c0c7ef79ae5f1ad74aa328b789e53bd02/furiosa_registry-0.9.1.tar.gz
+[2023-05-24 07:38:27] INFO root fetch - processPackages [furiosa-common]: executing diffoscope
+[2023-05-24 07:38:27] INFO root fetch - processPackages [furiosa-common]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/furiosa-common-0.9.0rc3.tar.gz tmp/furiosa_common-0.9.1.tar.gz --markdown 20230524/f/furiosa-common/0.9.0rc3-0.9.1/diff.md --exclude *.pyd
+[2023-05-24 07:38:27] INFO root fetch - processPackages [furiosa-optimizer]: Downloading https://files.pythonhosted.org/packages/64/23/679691234044c12432b5deddc61a992d3a66de2659204d430d3beebcded5/furiosa-optimizer-0.9.0rc2.tar.gz
+[2023-05-24 07:38:27] INFO root fetch - processPackages [furiosa-cli]: executing diffoscope
+[2023-05-24 07:38:27] INFO root fetch - processPackages [furiosa-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/furiosa-cli-0.9.0rc2.tar.gz tmp/furiosa-cli-0.9.0rc3.tar.gz --markdown 20230524/f/furiosa-cli/0.9.0rc2-0.9.0rc3/diff.md --exclude *.pyd
+[2023-05-24 07:38:27] INFO root fetch - processPackages [furiosa-registry]: executing diffoscope
+[2023-05-24 07:38:27] INFO root fetch - processPackages [furiosa-registry]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/furiosa-registry-0.9.0rc3.tar.gz tmp/furiosa_registry-0.9.1.tar.gz --markdown 20230524/f/furiosa-registry/0.9.0rc3-0.9.1/diff.md --exclude *.pyd
+[2023-05-24 07:38:27] INFO root fetch - processPackages [furiosa-runtime]: Downloading https://files.pythonhosted.org/packages/f7/8a/9657dffa84a2d14662b0cbb1d1b55e7c7e655bf258e570b45f8077de3d68/furiosa_runtime-0.9.1.tar.gz
+[2023-05-24 07:38:27] INFO root fetch - processPackages [landingai]: Downloading https://files.pythonhosted.org/packages/fe/41/217b3e0de0fdb300f1bc686d8d5f39f3f600569ab95aa5302ab5c16adc30/landingai-0.0.8.tar.gz
+[2023-05-24 07:38:27] INFO root fetch - processPackages [furiosa-tools]: Downloading https://files.pythonhosted.org/packages/14/db/9dd3d57910dc20d2b81cdd0101eedd36f59c65adbd8e468f8f9c63f32de4/furiosa_tools-0.9.1.tar.gz
+[2023-05-24 07:38:27] INFO root fetch - processPackages [furiosa-tools]: executing diffoscope
+[2023-05-24 07:38:27] INFO root fetch - processPackages [furiosa-tools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/furiosa-tools-0.9.0rc3.tar.gz tmp/furiosa_tools-0.9.1.tar.gz --markdown 20230524/f/furiosa-tools/0.9.0rc3-0.9.1/diff.md --exclude *.pyd
+[2023-05-24 07:38:27] INFO root fetch - processPackages [furiosa-runtime]: executing diffoscope
+[2023-05-24 07:38:27] INFO root fetch - processPackages [furiosa-runtime]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/furiosa-runtime-0.9.0rc3.tar.gz tmp/furiosa_runtime-0.9.1.tar.gz --markdown 20230524/f/furiosa-runtime/0.9.0rc3-0.9.1/diff.md --exclude *.pyd
+[2023-05-24 07:38:28] INFO root fetch - processPackages [landingai]: executing diffoscope
+[2023-05-24 07:38:28] INFO root fetch - processPackages [landingai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/landingai-0.0.7.tar.gz tmp/landingai-0.0.8.tar.gz --markdown 20230524/l/landingai/0.0.7-0.0.8/diff.md --exclude *.pyd
+[2023-05-24 07:38:28] WARNING root fetch - processPackages [furiosa-optimizer]: Skipping package: exceeds size limit 20707737>=10485760
+[2023-05-24 07:38:28] INFO root fetch - main [MainThread]: End processing [furiosa-optimizer] error
+[2023-05-24 07:38:28] INFO root fetch - main [MainThread]: End processing [chalk-harness]: success
+[2023-05-24 07:38:28] INFO root fetch - main [MainThread]: End processing [mobio-dedupe-sdk-test]: success
+[2023-05-24 07:38:28] INFO root fetch - main [MainThread]: End processing [prfiesta]: success
+[2023-05-24 07:38:28] INFO root fetch - main [MainThread]: End processing [furiosa-common]: success
+[2023-05-24 07:38:29] INFO root fetch - main [MainThread]: End processing [furiosa-cli]: success
+[2023-05-24 07:38:29] INFO root fetch - main [MainThread]: End processing [landingai]: success
+[2023-05-24 07:38:29] INFO root fetch - main [MainThread]: End processing [furiosa-registry]: success
+[2023-05-24 07:38:29] INFO root fetch - main [MainThread]: End processing [furiosa-runtime]: success
+[2023-05-24 07:39:14] INFO root fetch - main [MainThread]: End processing [furiosa-tools]: success
+[2023-05-24 07:39:14] INFO root fetch - main [MainThread]: Store serial: [18225402]
