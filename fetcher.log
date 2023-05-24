@@ -20397,3 +20397,111 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd4 in position 72: invalid
 [2023-05-24 18:50:10] INFO root fetch - main [MainThread]: End processing [divio-docs-gen]: success
 [2023-05-24 18:50:21] INFO root fetch - main [MainThread]: End processing [windmill-api]: success
 [2023-05-24 18:50:21] INFO root fetch - main [MainThread]: Store serial: [18233081]
+[2023-05-24 18:55:26] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18233081]
+[2023-05-24 18:55:31] INFO root fetch - main [MainThread]: Found 19 changed packages
+[2023-05-24 18:55:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: divio-docs-gen
+[2023-05-24 18:55:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: aacommpy
+[2023-05-24 18:55:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: hyperthought-transfer
+[2023-05-24 18:55:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: PrimeBotFramework
+[2023-05-24 18:55:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: mkdocs-exclude-unused-files
+[2023-05-24 18:55:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: gcp-pilot
+[2023-05-24 18:55:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: t4-geom-convert
+[2023-05-24 18:55:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: cdsspy
+[2023-05-24 18:55:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: genomenotebook
+[2023-05-24 18:55:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: edc-model-wrapper
+[2023-05-24 18:55:31] INFO root fetch - processPackages [hyperthought-transfer]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-24 18:55:31] INFO root fetch - processPackages [divio-docs-gen]: New version: [0.2.4] Old Version: [0.2.3]
+[2023-05-24 18:55:31] INFO root fetch - processPackages [PrimeBotFramework]: New version: [1.0.16] Old Version: [1.0.14]
+[2023-05-24 18:55:31] INFO root fetch - processPackages [mkdocs-exclude-unused-files]: New version: [1.2.0] Old Version: [1.1.0]
+[2023-05-24 18:55:31] INFO root fetch - processPackages [genomenotebook]: New version: [0.6.1] Old Version: [0.6.0]
+[2023-05-24 18:55:31] INFO root fetch - processPackages [t4-geom-convert]: New version: [0.6.2] Old Version: [0.6.1]
+[2023-05-24 18:55:31] INFO root fetch - processPackages [cdsspy]: New version: [1.2.68] Old Version: [1.2.67]
+[2023-05-24 18:55:31] INFO root fetch - processPackages [aacommpy]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-24 18:55:31] INFO root fetch - processPackages [edc-model-wrapper]: New version: [0.3.9] Old Version: [0.3.8]
+[2023-05-24 18:55:31] INFO root fetch - processPackages [gcp-pilot]: New version: [1.9.0] Old Version: [1.8.0]
+[2023-05-24 18:55:31] INFO root fetch - processPackages [genomenotebook]: Downloading https://files.pythonhosted.org/packages/ec/1b/140267eb550520cfc2cbd656da9d3a2c5d82a73e517f6ddd568266f09df2/genomenotebook-0.6.0.tar.gz
+[2023-05-24 18:55:31] INFO root fetch - processPackages [divio-docs-gen]: executing diffoscope
+[2023-05-24 18:55:31] INFO root fetch - processPackages [divio-docs-gen]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/divio_docs_gen-0.2.3.tar.gz tmp/divio_docs_gen-0.2.4.tar.gz --markdown 20230524/d/divio-docs-gen/0.2.3-0.2.4/diff.md --exclude *.pyd
+[2023-05-24 18:55:31] INFO root fetch - processPackages [mkdocs-exclude-unused-files]: executing diffoscope
+[2023-05-24 18:55:31] INFO root fetch - processPackages [mkdocs-exclude-unused-files]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mkdocs-exclude-unused-files-1.1.0.tar.gz tmp/mkdocs_exclude_unused_files-1.2.0.tar.gz --markdown 20230524/m/mkdocs-exclude-unused-files/1.1.0-1.2.0/diff.md --exclude *.pyd
+[2023-05-24 18:55:31] INFO root fetch - processPackages [t4-geom-convert]: Downloading https://files.pythonhosted.org/packages/01/5c/935181a0ce83602773bbd10133f04abfd11aa07aabfb450e8eeff4c17919/t4_geom_convert-0.6.1.tar.gz
+[2023-05-24 18:55:31] WARNING root fetch - processPackages [genomenotebook]: Skipping package: exceeds size limit 21354819>=10485760
+[2023-05-24 18:55:31] INFO root fetch - processPackages [genomenotebook]: Start processing: sisaptools
+[2023-05-24 18:55:31] INFO root fetch - main [MainThread]: End processing [genomenotebook] error
+[2023-05-24 18:55:31] INFO root fetch - processPackages [hyperthought-transfer]: Downloading https://files.pythonhosted.org/packages/8f/80/e0a4ceda42c0d34e1da449303343a32ee3d507ebdd784a14d5dfcf83d8d0/hyperthought-transfer-0.1.8.tar.gz
+[2023-05-24 18:55:31] INFO root fetch - processPackages [sisaptools]: New version: [1.9.9] Old Version: [1.9.8]
+[2023-05-24 18:55:31] INFO root fetch - processPackages [PrimeBotFramework]: Downloading https://files.pythonhosted.org/packages/95/e8/ae0ab2c41e4c6d8e204302d7f1bbfaac9a4e7199fa35db5958e738afab73/PrimeBotFramework-1.0.16.tar.gz
+[2023-05-24 18:55:31] INFO root fetch - processPackages [edc-model-wrapper]: Downloading https://files.pythonhosted.org/packages/ec/50/3a8acf316ffc6743290ede7e4e07ec305a0a92b1b44eef999c83dce5e59a/edc-model-wrapper-0.3.8.tar.gz
+[2023-05-24 18:55:31] INFO root fetch - processPackages [sisaptools]: executing diffoscope
+[2023-05-24 18:55:31] INFO root fetch - processPackages [sisaptools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sisaptools-1.9.8.tar.gz tmp/sisaptools-1.9.9.tar.gz --markdown 20230524/s/sisaptools/1.9.8-1.9.9/diff.md --exclude *.pyd
+[2023-05-24 18:55:31] INFO root fetch - processPackages [gcp-pilot]: Downloading https://files.pythonhosted.org/packages/78/4c/904d9bfad08e100e7292aa65ba02bb2970a1847c9b70f40c2e5b5f7c0394/gcp_pilot-1.8.0.tar.gz
+[2023-05-24 18:55:31] INFO root fetch - processPackages [PrimeBotFramework]: executing diffoscope
+[2023-05-24 18:55:31] INFO root fetch - processPackages [PrimeBotFramework]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PrimeBotFramework-1.0.14.tar.gz tmp/PrimeBotFramework-1.0.16.tar.gz --markdown 20230524/P/PrimeBotFramework/1.0.14-1.0.16/diff.md --exclude *.pyd
+[2023-05-24 18:55:31] INFO root fetch - processPackages [cdsspy]: Downloading https://files.pythonhosted.org/packages/6b/8c/6e764f6f5490fc3552fe2a41858a25c70921eb71cd7ce5d836e46dc74ae4/cdsspy-1.2.68.tar.gz
+[2023-05-24 18:55:31] INFO root fetch - processPackages [aacommpy]: executing diffoscope
+[2023-05-24 18:55:31] INFO root fetch - processPackages [aacommpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aacommpy-0.1.8.tar.gz tmp/aacommpy-0.1.9.tar.gz --markdown 20230524/a/aacommpy/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-24 18:55:31] INFO root fetch - processPackages [cdsspy]: executing diffoscope
+[2023-05-24 18:55:31] INFO root fetch - processPackages [cdsspy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdsspy-1.2.67.tar.gz tmp/cdsspy-1.2.68.tar.gz --markdown 20230524/c/cdsspy/1.2.67-1.2.68/diff.md --exclude *.pyd
+[2023-05-24 18:55:31] INFO root fetch - processPackages [hyperthought-transfer]: Downloading https://files.pythonhosted.org/packages/f0/11/9f13ece6320ed3fe05a1fbb97a23992d62561c192ba6afb194674cddff55/hyperthought-transfer-0.1.9.tar.gz
+[2023-05-24 18:55:31] INFO root fetch - processPackages [t4-geom-convert]: Downloading https://files.pythonhosted.org/packages/24/1a/aa4990450516933ea199729e164260fc1b2ca02f491699ba852b7affe41b/t4_geom_convert-0.6.2.tar.gz
+[2023-05-24 18:55:31] INFO root fetch - processPackages [edc-model-wrapper]: Downloading https://files.pythonhosted.org/packages/7c/d6/50874dcde6b62bb29e94558901daf3a9b7fe74232fd1a3e1e48fe862570d/edc-model-wrapper-0.3.9.tar.gz
+[2023-05-24 18:55:32] INFO root fetch - processPackages [gcp-pilot]: Downloading https://files.pythonhosted.org/packages/77/21/e21af36c6a9ae3ffd798bb349a5af13504c2c3ec3e5361bdfcd34b9fa888/gcp_pilot-1.9.0.tar.gz
+[2023-05-24 18:55:32] INFO root fetch - processPackages [hyperthought-transfer]: executing diffoscope
+[2023-05-24 18:55:32] INFO root fetch - processPackages [hyperthought-transfer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hyperthought-transfer-0.1.8.tar.gz tmp/hyperthought-transfer-0.1.9.tar.gz --markdown 20230524/h/hyperthought-transfer/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-24 18:55:32] INFO root fetch - processPackages [t4-geom-convert]: executing diffoscope
+[2023-05-24 18:55:32] INFO root fetch - processPackages [t4-geom-convert]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/t4_geom_convert-0.6.1.tar.gz tmp/t4_geom_convert-0.6.2.tar.gz --markdown 20230524/t/t4-geom-convert/0.6.1-0.6.2/diff.md --exclude *.pyd
+[2023-05-24 18:55:32] INFO root fetch - processPackages [gcp-pilot]: executing diffoscope
+[2023-05-24 18:55:32] INFO root fetch - processPackages [gcp-pilot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gcp_pilot-1.8.0.tar.gz tmp/gcp_pilot-1.9.0.tar.gz --markdown 20230524/g/gcp-pilot/1.8.0-1.9.0/diff.md --exclude *.pyd
+[2023-05-24 18:55:32] INFO root fetch - processPackages [edc-model-wrapper]: executing diffoscope
+[2023-05-24 18:55:32] INFO root fetch - processPackages [edc-model-wrapper]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/edc-model-wrapper-0.3.8.tar.gz tmp/edc-model-wrapper-0.3.9.tar.gz --markdown 20230524/e/edc-model-wrapper/0.3.8-0.3.9/diff.md --exclude *.pyd
+[2023-05-24 18:55:32] INFO root fetch - processPackages [mkdocs-exclude-unused-files]: Start processing: edc-listboard
+[2023-05-24 18:55:32] INFO root fetch - main [MainThread]: End processing [mkdocs-exclude-unused-files]: success
+[2023-05-24 18:55:32] INFO root fetch - processPackages [edc-listboard]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-24 18:55:32] INFO root fetch - processPackages [aacommpy]: Start processing: cardsort
+[2023-05-24 18:55:32] INFO root fetch - main [MainThread]: End processing [aacommpy]: success
+[2023-05-24 18:55:33] INFO root fetch - processPackages [cardsort]: New version: [0.2.6] Old Version: [0.2.4]
+[2023-05-24 18:55:33] INFO root fetch - processPackages [edc-listboard]: Downloading https://files.pythonhosted.org/packages/44/da/9378ed95f6e91ff4cfd958e2962897c6f3779cfdaeee7da8f5694ceb0f2d/edc-listboard-0.1.8.tar.gz
+[2023-05-24 18:55:33] INFO root fetch - processPackages [divio-docs-gen]: Start processing: airflow-aws-shared-secrets
+[2023-05-24 18:55:33] INFO root fetch - main [MainThread]: End processing [divio-docs-gen]: success
+[2023-05-24 18:55:33] INFO root fetch - processPackages [cdsspy]: Start processing: edc-protocol
+[2023-05-24 18:55:33] INFO root fetch - main [MainThread]: End processing [cdsspy]: success
+[2023-05-24 18:55:33] INFO root fetch - processPackages [sisaptools]: Start processing: sisaptools
+[2023-05-24 18:55:33] INFO root fetch - main [MainThread]: End processing [sisaptools]: success
+[2023-05-24 18:55:33] INFO root fetch - processPackages [cardsort]: executing diffoscope
+[2023-05-24 18:55:33] INFO root fetch - processPackages [cardsort]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cardsort-0.2.4.tar.gz tmp/cardsort-0.2.6.tar.gz --markdown 20230524/c/cardsort/0.2.4-0.2.6/diff.md --exclude *.pyd
+[2023-05-24 18:55:33] INFO root fetch - processPackages [sisaptools]: New version: [1.9.9] Old Version: [1.9.8]
+[2023-05-24 18:55:33] INFO root fetch - processPackages [edc-listboard]: Downloading https://files.pythonhosted.org/packages/84/bc/1c7a5bec5a284a08fa57262f7da55208fe9e196d6cc02fbb483562dee2cc/edc-listboard-0.1.9.tar.gz
+[2023-05-24 18:55:33] WARNING root fetch - processPackages [airflow-aws-shared-secrets]: Skipping, unable to determine old version
+[2023-05-24 18:55:33] INFO root fetch - processPackages [airflow-aws-shared-secrets]: Start processing: Dehaze
+[2023-05-24 18:55:33] INFO root fetch - main [MainThread]: End processing [airflow-aws-shared-secrets] error
+[2023-05-24 18:55:33] WARNING root fetch - processPackages [Dehaze]: Skipping, unable to determine old version
+[2023-05-24 18:55:33] INFO root fetch - processPackages [Dehaze]: Start processing: datumaro-light
+[2023-05-24 18:55:33] INFO root fetch - main [MainThread]: End processing [Dehaze] error
+[2023-05-24 18:55:33] INFO root fetch - processPackages [sisaptools]: executing diffoscope
+[2023-05-24 18:55:33] INFO root fetch - processPackages [sisaptools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sisaptools-1.9.8.tar.gz tmp/sisaptools-1.9.9.tar.gz --markdown 20230524/s/sisaptools/1.9.8-1.9.9/diff.md --exclude *.pyd
+[2023-05-24 18:55:33] INFO root fetch - processPackages [edc-protocol]: New version: [0.3.9] Old Version: [0.3.8]
+[2023-05-24 18:55:33] INFO root fetch - processPackages [PrimeBotFramework]: Start processing: edc-pharmacy-dashboard
+[2023-05-24 18:55:33] INFO root fetch - main [MainThread]: End processing [PrimeBotFramework]: success
+[2023-05-24 18:55:33] INFO root fetch - processPackages [edc-listboard]: executing diffoscope
+[2023-05-24 18:55:33] INFO root fetch - processPackages [edc-listboard]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/edc-listboard-0.1.8.tar.gz tmp/edc-listboard-0.1.9.tar.gz --markdown 20230524/e/edc-listboard/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-24 18:55:33] INFO root fetch - processPackages [edc-pharmacy-dashboard]: New version: [0.1.2] Old Version: [0.1.1a9]
+[2023-05-24 18:55:33] WARNING root fetch - processPackages [datumaro-light]: Skipping, unable to determine old version
+[2023-05-24 18:55:33] INFO root fetch - main [MainThread]: End processing [datumaro-light] error
+[2023-05-24 18:55:33] INFO root fetch - processPackages [edc-protocol]: Downloading https://files.pythonhosted.org/packages/4f/a8/4e5e42921b530be61a9f4c313ae4ff49c7014689833c86fe2e6d2386eb00/edc-protocol-0.3.8.tar.gz
+[2023-05-24 18:55:33] INFO root fetch - processPackages [edc-pharmacy-dashboard]: Downloading https://files.pythonhosted.org/packages/23/fd/67761d136d85af6aff07642a288dcd0fb1ac1ee9e32bffa2f46b35fb265e/edc_pharmacy_dashboard-0.1.1a9-py3-none-any.whl
+[2023-05-24 18:55:33] INFO root fetch - main [MainThread]: End processing [gcp-pilot]: success
+[2023-05-24 18:55:33] INFO root fetch - processPackages [edc-protocol]: Downloading https://files.pythonhosted.org/packages/7d/79/8a7436d810a5afd23a09af7d683d6c37c56b01037571d32d4a6903de17cc/edc-protocol-0.3.9.tar.gz
+[2023-05-24 18:55:34] INFO root fetch - processPackages [edc-protocol]: executing diffoscope
+[2023-05-24 18:55:34] INFO root fetch - processPackages [edc-protocol]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/edc-protocol-0.3.8.tar.gz tmp/edc-protocol-0.3.9.tar.gz --markdown 20230524/e/edc-protocol/0.3.8-0.3.9/diff.md --exclude *.pyd
+[2023-05-24 18:55:34] INFO root fetch - main [MainThread]: End processing [cardsort]: success
+[2023-05-24 18:55:34] INFO root fetch - processPackages [edc-pharmacy-dashboard]: Downloading https://files.pythonhosted.org/packages/16/c0/637889d665c091cff2a4da91a00bb466d5e469f815ecc1d0a094bff67c82/edc-pharmacy-dashboard-0.1.2.tar.gz
+[2023-05-24 18:55:34] INFO root fetch - processPackages [edc-pharmacy-dashboard]: executing diffoscope
+[2023-05-24 18:55:34] INFO root fetch - processPackages [edc-pharmacy-dashboard]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/edc_pharmacy_dashboard-0.1.1a9-py3-none-any.whl.zip tmp/edc-pharmacy-dashboard-0.1.2.tar.gz --markdown 20230524/e/edc-pharmacy-dashboard/0.1.1a9-0.1.2/diff.md --exclude *.pyd
+[2023-05-24 18:55:34] INFO root fetch - main [MainThread]: End processing [edc-model-wrapper]: success
+[2023-05-24 18:55:34] INFO root fetch - main [MainThread]: End processing [sisaptools]: success
+[2023-05-24 18:55:34] INFO root fetch - main [MainThread]: End processing [hyperthought-transfer]: success
+[2023-05-24 18:55:34] INFO root fetch - main [MainThread]: End processing [edc-listboard]: success
+[2023-05-24 18:55:35] INFO root fetch - main [MainThread]: End processing [edc-protocol]: success
+[2023-05-24 18:55:35] INFO root fetch - main [MainThread]: End processing [edc-pharmacy-dashboard]: success
+[2023-05-24 18:55:37] INFO root fetch - main [MainThread]: End processing [t4-geom-convert]: success
+[2023-05-24 18:55:37] INFO root fetch - main [MainThread]: Store serial: [18233143]
