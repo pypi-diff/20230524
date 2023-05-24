@@ -13782,3 +13782,107 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd4 in position 72: invalid
 [2023-05-24 13:32:38] INFO root fetch - main [MainThread]: End processing [cloud-pak-operations-cli]: success
 [2023-05-24 13:32:39] INFO root fetch - main [MainThread]: End processing [vid2info]: success
 [2023-05-24 13:32:39] INFO root fetch - main [MainThread]: Store serial: [18228884]
+[2023-05-24 13:37:43] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18228884]
+[2023-05-24 13:37:48] INFO root fetch - main [MainThread]: Found 19 changed packages
+[2023-05-24 13:37:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: edwh-restic-plugin
+[2023-05-24 13:37:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: torchserve-nightly
+[2023-05-24 13:37:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: torch-model-archiver-nightly
+[2023-05-24 13:37:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: dtlpy
+[2023-05-24 13:37:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: torch-workflow-archiver-nightly
+[2023-05-24 13:37:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: shrug-viz
+[2023-05-24 13:37:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: mypykits
+[2023-05-24 13:37:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: bambooai
+[2023-05-24 13:37:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: hashwire
+[2023-05-24 13:37:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: Renate
+[2023-05-24 13:37:48] INFO root fetch - processPackages [edwh-restic-plugin]: New version: [0.1.6] Old Version: [0.1.5]
+[2023-05-24 13:37:48] INFO root fetch - processPackages [dtlpy]: New version: [1.77.18] Old Version: [1.76.17]
+[2023-05-24 13:37:48] INFO root fetch - processPackages [shrug-viz]: New version: [0.1.4] Old Version: [0.1.3]
+[2023-05-24 13:37:48] INFO root fetch - processPackages [torch-workflow-archiver-nightly]: New version: [2023.5.9] Old Version: [2023.5.8]
+[2023-05-24 13:37:48] INFO root fetch - processPackages [Renate]: New version: [0.3.0] Old Version: [0.2.1]
+[2023-05-24 13:37:48] INFO root fetch - processPackages [torch-model-archiver-nightly]: New version: [2023.5.9] Old Version: [2023.5.8]
+[2023-05-24 13:37:48] INFO root fetch - processPackages [hashwire]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-05-24 13:37:48] INFO root fetch - processPackages [torchserve-nightly]: New version: [2023.5.9] Old Version: [2023.5.8]
+[2023-05-24 13:37:48] INFO root fetch - processPackages [bambooai]: New version: [0.2.6] Old Version: [0.2.5]
+[2023-05-24 13:37:48] INFO root fetch - processPackages [torchserve-nightly]: Downloading https://files.pythonhosted.org/packages/84/1f/9485a72320b2c7f49d6a9304acfbc2bd5fe71c25e0e7a3844ce81a1ed180/torchserve_nightly-2023.5.8-py3-none-any.whl
+[2023-05-24 13:37:48] WARNING root fetch - processPackages [mypykits]: Skipping, unable to determine old version
+[2023-05-24 13:37:48] INFO root fetch - processPackages [mypykits]: Start processing: easyprofile
+[2023-05-24 13:37:48] INFO root fetch - main [MainThread]: End processing [mypykits] error
+[2023-05-24 13:37:48] INFO root fetch - processPackages [torch-workflow-archiver-nightly]: executing diffoscope
+[2023-05-24 13:37:48] INFO root fetch - processPackages [torch-workflow-archiver-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/torch_workflow_archiver_nightly-2023.5.8-py3-none-any.whl.zip tmp/torch_workflow_archiver_nightly-2023.5.9-py3-none-any.whl.zip --markdown 20230524/t/torch-workflow-archiver-nightly/2023.5.8-2023.5.9/diff.md --exclude *.pyd
+[2023-05-24 13:37:48] INFO root fetch - processPackages [edwh-restic-plugin]: Downloading https://files.pythonhosted.org/packages/c8/35/9e024019e7a929a157b0ff8b91023cdfc1fa6cf5ae53b7c615bca35c8f96/edwh_restic_plugin-0.1.5.tar.gz
+[2023-05-24 13:37:48] INFO root fetch - processPackages [torch-model-archiver-nightly]: executing diffoscope
+[2023-05-24 13:37:48] INFO root fetch - processPackages [torch-model-archiver-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/torch_model_archiver_nightly-2023.5.8-py3-none-any.whl.zip tmp/torch_model_archiver_nightly-2023.5.9-py3-none-any.whl.zip --markdown 20230524/t/torch-model-archiver-nightly/2023.5.8-2023.5.9/diff.md --exclude *.pyd
+[2023-05-24 13:37:48] INFO root fetch - processPackages [dtlpy]: Downloading https://files.pythonhosted.org/packages/52/cc/573ab78189bcf831d90da84a3678b8aaa8135402ef538e5e7ba63149f0ee/dtlpy-1.76.17-py3-none-any.whl
+[2023-05-24 13:37:48] WARNING root fetch - processPackages [easyprofile]: Skipping, unable to determine old version
+[2023-05-24 13:37:48] INFO root fetch - processPackages [easyprofile]: Start processing: ronnytest
+[2023-05-24 13:37:48] INFO root fetch - main [MainThread]: End processing [easyprofile] error
+[2023-05-24 13:37:48] WARNING root fetch - processPackages [torchserve-nightly]: Skipping package: exceeds size limit 23716791>=10485760
+[2023-05-24 13:37:48] INFO root fetch - processPackages [torchserve-nightly]: Start processing: bigdl-nano
+[2023-05-24 13:37:48] INFO root fetch - main [MainThread]: End processing [torchserve-nightly] error
+[2023-05-24 13:37:48] INFO root fetch - processPackages [bigdl-nano]: New version: [2.4.0b20230524] Old Version: [2.4.0b20230523]
+[2023-05-24 13:37:48] INFO root fetch - processPackages [Renate]: Downloading https://files.pythonhosted.org/packages/28/5f/097fca87c7bb31fa3e3f9e6986ded07f572703bfa4d69cdb5dcf8d6752c8/Renate-0.2.1.tar.gz
+[2023-05-24 13:37:48] INFO root fetch - processPackages [hashwire]: Downloading https://files.pythonhosted.org/packages/01/f6/42abf4ad6f58cfc7f8059697a7be28d0207b3c0fdb72da39fa907a48cbea/hashwire-0.0.2.tar.gz
+[2023-05-24 13:37:48] INFO root fetch - processPackages [shrug-viz]: Downloading https://files.pythonhosted.org/packages/df/55/c559a35463c00b0861008e7fbc81c2f132e7e2447984ca70e51825741e00/shrug_viz-0.1.4.tar.gz
+[2023-05-24 13:37:48] WARNING root fetch - processPackages [ronnytest]: Skipping, unable to determine old version
+[2023-05-24 13:37:48] INFO root fetch - processPackages [ronnytest]: Start processing: bigdl-chronos
+[2023-05-24 13:37:48] INFO root fetch - main [MainThread]: End processing [ronnytest] error
+[2023-05-24 13:37:48] INFO root fetch - processPackages [bigdl-chronos]: New version: [2.4.0b20230523] Old Version: [2.4.0b20230522]
+[2023-05-24 13:37:48] INFO root fetch - processPackages [hashwire]: executing diffoscope
+[2023-05-24 13:37:48] INFO root fetch - processPackages [hashwire]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hashwire-0.0.1.tar.gz tmp/hashwire-0.0.2.tar.gz --markdown 20230524/h/hashwire/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-05-24 13:37:48] INFO root fetch - processPackages [edwh-restic-plugin]: Downloading https://files.pythonhosted.org/packages/41/45/80e4294f815d75451a9e5e29961bda401b55263dbf404c596a42e4508db1/edwh_restic_plugin-0.1.6.tar.gz
+[2023-05-24 13:37:48] INFO root fetch - processPackages [bambooai]: Downloading https://files.pythonhosted.org/packages/7b/42/6fa8ee87e964645e6bb018dbeb5a85eaee9ea96f231060689fdad4f38854/bambooai-0.2.6.tar.gz
+[2023-05-24 13:37:48] INFO root fetch - processPackages [bigdl-nano]: Downloading https://files.pythonhosted.org/packages/a4/70/0722fafd908c75fc0ca92740e2f766ef9f72c0d1a457539119cfc77b6102/bigdl_nano-2.4.0b20230523-py3-none-win_amd64.whl
+[2023-05-24 13:37:48] INFO root fetch - processPackages [dtlpy]: Downloading https://files.pythonhosted.org/packages/0e/f2/64d7371e09ee6e357d941e8e499361eee15a6aebf7a0114af02b88582152/dtlpy-1.77.18-py3-none-any.whl
+[2023-05-24 13:37:48] INFO root fetch - processPackages [shrug-viz]: executing diffoscope
+[2023-05-24 13:37:48] INFO root fetch - processPackages [shrug-viz]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/shrug_viz-0.1.3.tar.gz tmp/shrug_viz-0.1.4.tar.gz --markdown 20230524/s/shrug-viz/0.1.3-0.1.4/diff.md --exclude *.pyd
+[2023-05-24 13:37:48] INFO root fetch - processPackages [bambooai]: executing diffoscope
+[2023-05-24 13:37:48] INFO root fetch - processPackages [bambooai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bambooai-0.2.5.tar.gz tmp/bambooai-0.2.6.tar.gz --markdown 20230524/b/bambooai/0.2.5-0.2.6/diff.md --exclude *.pyd
+[2023-05-24 13:37:48] INFO root fetch - processPackages [edwh-restic-plugin]: executing diffoscope
+[2023-05-24 13:37:48] INFO root fetch - processPackages [edwh-restic-plugin]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/edwh_restic_plugin-0.1.5.tar.gz tmp/edwh_restic_plugin-0.1.6.tar.gz --markdown 20230524/e/edwh-restic-plugin/0.1.5-0.1.6/diff.md --exclude *.pyd
+[2023-05-24 13:37:48] INFO root fetch - processPackages [dtlpy]: executing diffoscope
+[2023-05-24 13:37:48] INFO root fetch - processPackages [dtlpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dtlpy-1.76.17-py3-none-any.whl.zip tmp/dtlpy-1.77.18-py3-none-any.whl.zip --markdown 20230524/d/dtlpy/1.76.17-1.77.18/diff.md --exclude *.pyd
+[2023-05-24 13:37:48] INFO root fetch - processPackages [Renate]: Downloading https://files.pythonhosted.org/packages/5a/27/96df23626b2be30d78a7613960db8f7a3d25353f6c8c1c43101885c6a26a/Renate-0.3.0.tar.gz
+[2023-05-24 13:37:48] INFO root fetch - processPackages [bigdl-chronos]: Downloading https://files.pythonhosted.org/packages/89/cd/01c0b2d1a980201c57df2f9ba4499d057a780b89ffa1c84cb9a1978d966c/bigdl_chronos-2.4.0b20230523-py3-none-win_amd64.whl
+[2023-05-24 13:37:49] INFO root fetch - processPackages [bigdl-nano]: Downloading https://files.pythonhosted.org/packages/61/38/48a3018a296a47c058d24a9c4c568563b173f77082175946a378c4ec8550/bigdl_nano-2.4.0b20230524-py3-none-win_amd64.whl
+[2023-05-24 13:37:49] INFO root fetch - processPackages [Renate]: executing diffoscope
+[2023-05-24 13:37:49] INFO root fetch - processPackages [Renate]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Renate-0.2.1.tar.gz tmp/Renate-0.3.0.tar.gz --markdown 20230524/R/Renate/0.2.1-0.3.0/diff.md --exclude *.pyd
+[2023-05-24 13:37:49] INFO root fetch - processPackages [bigdl-chronos]: executing diffoscope
+[2023-05-24 13:37:49] INFO root fetch - processPackages [bigdl-chronos]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bigdl_chronos-2.4.0b20230522-py3-none-win_amd64.whl.zip tmp/bigdl_chronos-2.4.0b20230523-py3-none-win_amd64.whl.zip --markdown 20230524/b/bigdl-chronos/2.4.0b20230522-2.4.0b20230523/diff.md --exclude *.pyd
+[2023-05-24 13:37:49] INFO root fetch - processPackages [bigdl-nano]: executing diffoscope
+[2023-05-24 13:37:49] INFO root fetch - processPackages [bigdl-nano]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bigdl_nano-2.4.0b20230523-py3-none-win_amd64.whl.zip tmp/bigdl_nano-2.4.0b20230524-py3-none-win_amd64.whl.zip --markdown 20230524/b/bigdl-nano/2.4.0b20230523-2.4.0b20230524/diff.md --exclude *.pyd
+[2023-05-24 13:37:49] INFO root fetch - processPackages [torch-workflow-archiver-nightly]: Start processing: prowler-cloud
+[2023-05-24 13:37:49] INFO root fetch - main [MainThread]: End processing [torch-workflow-archiver-nightly]: success
+[2023-05-24 13:37:49] INFO root fetch - processPackages [torch-model-archiver-nightly]: Start processing: pyre-check-nightly
+[2023-05-24 13:37:49] INFO root fetch - main [MainThread]: End processing [torch-model-archiver-nightly]: success
+[2023-05-24 13:37:49] INFO root fetch - processPackages [prowler-cloud]: New version: [3.5.3] Old Version: [3.5.2]
+[2023-05-24 13:37:49] INFO root fetch - processPackages [pyre-check-nightly]: New version: [0.0.101684926767] Old Version: [0.0.101684840340]
+[2023-05-24 13:37:49] INFO root fetch - processPackages [hashwire]: Start processing: bigdl-serving
+[2023-05-24 13:37:49] INFO root fetch - main [MainThread]: End processing [hashwire]: success
+[2023-05-24 13:37:50] INFO root fetch - processPackages [bigdl-serving]: New version: [2.4.0b20230523] Old Version: [2.4.0b20230522]
+[2023-05-24 13:37:50] INFO root fetch - processPackages [pyre-check-nightly]: Downloading https://files.pythonhosted.org/packages/9d/3d/7010bab2de348c8ace2bf25ca8f77185d2c20b9be5af6076e6a8ac5b7b50/pyre_check_nightly-0.0.101684840340-py3-none-manylinux1_x86_64.whl
+[2023-05-24 13:37:50] INFO root fetch - processPackages [bambooai]: Start processing: libcnmc
+[2023-05-24 13:37:50] INFO root fetch - main [MainThread]: End processing [bambooai]: success
+[2023-05-24 13:37:50] WARNING root fetch - processPackages [pyre-check-nightly]: Skipping package: exceeds size limit 45871340>=10485760
+[2023-05-24 13:37:50] INFO root fetch - processPackages [pyre-check-nightly]: Start processing: nssurge-utils
+[2023-05-24 13:37:50] INFO root fetch - main [MainThread]: End processing [pyre-check-nightly] error
+[2023-05-24 13:37:50] INFO root fetch - processPackages [prowler-cloud]: Downloading https://files.pythonhosted.org/packages/4b/e8/f70ec4bb3ae544faf955c6256690421cea6af87cc614b148fbafe1a30bf3/prowler_cloud-3.5.3.tar.gz
+[2023-05-24 13:37:50] INFO root fetch - processPackages [libcnmc]: New version: [23.9.1] Old Version: [23.9.0]
+[2023-05-24 13:37:50] INFO root fetch - processPackages [bigdl-serving]: Downloading https://files.pythonhosted.org/packages/bb/22/f886c84c04155acc52a3eb05d158472b838c0b76f40826ebb89784f71f8b/bigdl_serving-2.4.0b20230523-py2.py3-none-any.whl
+[2023-05-24 13:37:50] INFO root fetch - processPackages [libcnmc]: executing diffoscope
+[2023-05-24 13:37:50] INFO root fetch - processPackages [libcnmc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/libcnmc-23.9.0.tar.gz tmp/libcnmc-23.9.1.tar.gz --markdown 20230524/l/libcnmc/23.9.0-23.9.1/diff.md --exclude *.pyd
+[2023-05-24 13:37:50] WARNING root fetch - processPackages [nssurge-utils]: Skipping, unable to determine old version
+[2023-05-24 13:37:50] INFO root fetch - main [MainThread]: End processing [nssurge-utils] error
+[2023-05-24 13:37:50] INFO root fetch - processPackages [bigdl-serving]: executing diffoscope
+[2023-05-24 13:37:50] INFO root fetch - processPackages [bigdl-serving]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bigdl_serving-2.4.0b20230522-py2.py3-none-any.whl.zip tmp/bigdl_serving-2.4.0b20230523-py2.py3-none-any.whl.zip --markdown 20230524/b/bigdl-serving/2.4.0b20230522-2.4.0b20230523/diff.md --exclude *.pyd
+[2023-05-24 13:37:50] INFO root fetch - processPackages [prowler-cloud]: executing diffoscope
+[2023-05-24 13:37:50] INFO root fetch - processPackages [prowler-cloud]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/prowler_cloud-3.5.2.tar.gz tmp/prowler_cloud-3.5.3.tar.gz --markdown 20230524/p/prowler-cloud/3.5.2-3.5.3/diff.md --exclude *.pyd
+[2023-05-24 13:37:50] INFO root fetch - main [MainThread]: End processing [edwh-restic-plugin]: success
+[2023-05-24 13:37:51] INFO root fetch - main [MainThread]: End processing [bigdl-chronos]: success
+[2023-05-24 13:37:51] INFO root fetch - main [MainThread]: End processing [bigdl-serving]: success
+[2023-05-24 13:37:52] INFO root fetch - main [MainThread]: End processing [bigdl-nano]: success
+[2023-05-24 13:37:54] INFO root fetch - main [MainThread]: End processing [Renate]: success
+[2023-05-24 13:37:54] INFO root fetch - main [MainThread]: End processing [dtlpy]: success
+[2023-05-24 13:37:55] INFO root fetch - main [MainThread]: End processing [libcnmc]: success
+[2023-05-24 13:37:57] INFO root fetch - main [MainThread]: End processing [shrug-viz]: success
+[2023-05-24 13:38:07] INFO root fetch - main [MainThread]: End processing [prowler-cloud]: success
+[2023-05-24 13:38:07] INFO root fetch - main [MainThread]: Store serial: [18228945]
