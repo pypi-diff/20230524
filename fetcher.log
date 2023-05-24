@@ -21482,3 +21482,137 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd4 in position 72: invalid
 [2023-05-24 19:44:23] INFO root fetch - main [MainThread]: End processing [embiggen]: success
 [2023-05-24 19:46:10] INFO root fetch - main [MainThread]: End processing [benchling-api-client]: success
 [2023-05-24 19:46:10] INFO root fetch - main [MainThread]: Store serial: [18233813]
+[2023-05-24 19:51:14] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18233813]
+[2023-05-24 19:51:19] INFO root fetch - main [MainThread]: Found 22 changed packages
+[2023-05-24 19:51:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: bytecode
+[2023-05-24 19:51:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: mapel
+[2023-05-24 19:51:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: mapel-core
+[2023-05-24 19:51:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: mapel-elections
+[2023-05-24 19:51:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: kodexa
+[2023-05-24 19:51:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: intecomm-form-validators
+[2023-05-24 19:51:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: mapel-marriages
+[2023-05-24 19:51:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: mapel-roommates
+[2023-05-24 19:51:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: graphkb
+[2023-05-24 19:51:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: scipion-em-cryoassess
+[2023-05-24 19:51:19] INFO root fetch - processPackages [mapel-marriages]: New version: [2.0.3.dev6] Old Version: [2.0.3.dev1]
+[2023-05-24 19:51:19] INFO root fetch - processPackages [mapel-roommates]: New version: [2.0.3.dev6] Old Version: [2.0.3.dev1]
+[2023-05-24 19:51:19] INFO root fetch - processPackages [mapel-marriages]: executing diffoscope
+[2023-05-24 19:51:19] INFO root fetch - processPackages [mapel-marriages]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mapel-marriages-2.0.3.dev1.tar.gz tmp/mapel-marriages-2.0.3.dev6.tar.gz --markdown 20230524/m/mapel-marriages/2.0.3.dev1-2.0.3.dev6/diff.md --exclude *.pyd
+[2023-05-24 19:51:19] INFO root fetch - processPackages [intecomm-form-validators]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-24 19:51:20] INFO root fetch - processPackages [mapel]: New version: [2.0.3.dev7] Old Version: [2.0.3.dev6]
+[2023-05-24 19:51:20] INFO root fetch - processPackages [bytecode]: New version: [0.9.0] Old Version: [0.8.0]
+[2023-05-24 19:51:20] INFO root fetch - processPackages [mapel-elections]: New version: [2.0.3.dev7] Old Version: [2.0.3.dev6]
+[2023-05-24 19:51:20] INFO root fetch - processPackages [mapel-roommates]: executing diffoscope
+[2023-05-24 19:51:20] INFO root fetch - processPackages [mapel-core]: New version: [2.0.3.dev7] Old Version: [2.0.3.dev6]
+[2023-05-24 19:51:20] INFO root fetch - processPackages [mapel-roommates]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mapel-roommates-2.0.3.dev1.tar.gz tmp/mapel-roommates-2.0.3.dev6.tar.gz --markdown 20230524/m/mapel-roommates/2.0.3.dev1-2.0.3.dev6/diff.md --exclude *.pyd
+[2023-05-24 19:51:20] INFO root fetch - processPackages [scipion-em-cryoassess]: New version: [3.3] Old Version: [3.2]
+[2023-05-24 19:51:20] INFO root fetch - processPackages [graphkb]: New version: [1.9.0] Old Version: [1.8.0]
+[2023-05-24 19:51:20] INFO root fetch - processPackages [kodexa]: New version: [6.1.4] Old Version: [6.1.3]
+[2023-05-24 19:51:20] INFO root fetch - processPackages [mapel]: Downloading https://files.pythonhosted.org/packages/c8/99/a29fb5e64a2176ba4b3d89c85bd68eec4a89c20657c49cb32e4ef7267e07/mapel-2.0.3.dev6.tar.gz
+[2023-05-24 19:51:20] INFO root fetch - processPackages [mapel-core]: Downloading https://files.pythonhosted.org/packages/aa/86/abfb84b88f2c923f006f72da6142f014d039b376d2dd0feb38686c30363a/mapel-core-2.0.3.dev6.tar.gz
+[2023-05-24 19:51:20] INFO root fetch - processPackages [intecomm-form-validators]: Downloading https://files.pythonhosted.org/packages/19/e9/26d572e63c08a9513b13571870a97c28d2bf542993480376e37c828c564b/intecomm-form-validators-0.1.8.tar.gz
+[2023-05-24 19:51:20] INFO root fetch - processPackages [scipion-em-cryoassess]: Downloading https://files.pythonhosted.org/packages/c9/31/653b19b0937e1d74151f64f3d41e3b6bf09d5a0f52b6f1f72c603d292e2a/scipion-em-cryoassess-3.2.tar.gz
+[2023-05-24 19:51:20] INFO root fetch - processPackages [graphkb]: Downloading https://files.pythonhosted.org/packages/b1/a6/acad53361089bdb88aa43be98227f209f27904eabbd59f2135c92448a272/graphkb-1.8.0.tar.gz
+[2023-05-24 19:51:20] INFO root fetch - processPackages [bytecode]: Downloading https://files.pythonhosted.org/packages/c9/e4/d039414448e1c84fb14c32db948474661ce24995484bb4cb35aa3c97673b/bytecode-0.8.0.tar.gz
+[2023-05-24 19:51:20] INFO root fetch - processPackages [mapel-elections]: Downloading https://files.pythonhosted.org/packages/e4/e0/ebee03c94caeb81cbfa31aa72081e868ee0c970079d589cb27897a9d9b19/mapel-elections-2.0.3.dev6.tar.gz
+[2023-05-24 19:51:20] INFO root fetch - processPackages [mapel]: Downloading https://files.pythonhosted.org/packages/42/a4/61c47fe9aec4fcee7d34e721a71c33a15f6db4b17cbf9646a9e49724a525/mapel-2.0.3.dev7.tar.gz
+[2023-05-24 19:51:20] INFO root fetch - processPackages [mapel-core]: Downloading https://files.pythonhosted.org/packages/31/9f/f6acb6b9ef3e7006da7ad7dd497a3c36b59f6214e21d668403a52e94e846/mapel-core-2.0.3.dev7.tar.gz
+[2023-05-24 19:51:20] INFO root fetch - processPackages [scipion-em-cryoassess]: Downloading https://files.pythonhosted.org/packages/cc/7c/449266aebc07f0cb33709ea2ffe1ccdb9f0f775e923f2c7913b83675e795/scipion-em-cryoassess-3.3.tar.gz
+[2023-05-24 19:51:20] INFO root fetch - processPackages [kodexa]: executing diffoscope
+[2023-05-24 19:51:20] INFO root fetch - processPackages [kodexa]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kodexa-6.1.3.tar.gz tmp/kodexa-6.1.4.tar.gz --markdown 20230524/k/kodexa/6.1.3-6.1.4/diff.md --exclude *.pyd
+[2023-05-24 19:51:20] INFO root fetch - processPackages [graphkb]: Downloading https://files.pythonhosted.org/packages/ee/0e/aa6c33a0a05ea61656f3dfa10991a9292fd2e5996dadd715694d482e0b36/graphkb-1.9.0.tar.gz
+[2023-05-24 19:51:20] INFO root fetch - processPackages [scipion-em-cryoassess]: executing diffoscope
+[2023-05-24 19:51:20] INFO root fetch - processPackages [scipion-em-cryoassess]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/scipion-em-cryoassess-3.2.tar.gz tmp/scipion-em-cryoassess-3.3.tar.gz --markdown 20230524/s/scipion-em-cryoassess/3.2-3.3/diff.md --exclude *.pyd
+[2023-05-24 19:51:20] INFO root fetch - processPackages [bytecode]: Downloading https://files.pythonhosted.org/packages/e3/f4/1dba8cd543268b13528ffba35dcac3ddf9da44f3a15cec18d01fea10da50/bytecode-0.9.0.tar.gz
+[2023-05-24 19:51:20] INFO root fetch - processPackages [mapel]: executing diffoscope
+[2023-05-24 19:51:20] INFO root fetch - processPackages [mapel]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mapel-2.0.3.dev6.tar.gz tmp/mapel-2.0.3.dev7.tar.gz --markdown 20230524/m/mapel/2.0.3.dev6-2.0.3.dev7/diff.md --exclude *.pyd
+[2023-05-24 19:51:20] INFO root fetch - processPackages [mapel-elections]: Downloading https://files.pythonhosted.org/packages/9b/8d/092491f62f8a4786e92d103c03c69c0783f3e0aa1457eeadc93e412a8430/mapel-elections-2.0.3.dev7.tar.gz
+[2023-05-24 19:51:20] INFO root fetch - processPackages [mapel-core]: executing diffoscope
+[2023-05-24 19:51:20] INFO root fetch - processPackages [mapel-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mapel-core-2.0.3.dev6.tar.gz tmp/mapel-core-2.0.3.dev7.tar.gz --markdown 20230524/m/mapel-core/2.0.3.dev6-2.0.3.dev7/diff.md --exclude *.pyd
+[2023-05-24 19:51:20] INFO root fetch - processPackages [intecomm-form-validators]: Downloading https://files.pythonhosted.org/packages/8d/9a/ba39b1b74dd7d50770da9d0b45563e555a5e19ba671fa21a047da9450cf3/intecomm-form-validators-0.1.9.tar.gz
+[2023-05-24 19:51:20] INFO root fetch - processPackages [bytecode]: executing diffoscope
+[2023-05-24 19:51:20] INFO root fetch - processPackages [bytecode]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bytecode-0.8.0.tar.gz tmp/bytecode-0.9.0.tar.gz --markdown 20230524/b/bytecode/0.8.0-0.9.0/diff.md --exclude *.pyd
+[2023-05-24 19:51:20] INFO root fetch - processPackages [mapel-elections]: executing diffoscope
+[2023-05-24 19:51:20] INFO root fetch - processPackages [mapel-elections]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mapel-elections-2.0.3.dev6.tar.gz tmp/mapel-elections-2.0.3.dev7.tar.gz --markdown 20230524/m/mapel-elections/2.0.3.dev6-2.0.3.dev7/diff.md --exclude *.pyd
+[2023-05-24 19:51:20] INFO root fetch - processPackages [graphkb]: executing diffoscope
+[2023-05-24 19:51:20] INFO root fetch - processPackages [graphkb]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/graphkb-1.8.0.tar.gz tmp/graphkb-1.9.0.tar.gz --markdown 20230524/g/graphkb/1.8.0-1.9.0/diff.md --exclude *.pyd
+[2023-05-24 19:51:20] INFO root fetch - processPackages [intecomm-form-validators]: executing diffoscope
+[2023-05-24 19:51:20] INFO root fetch - processPackages [intecomm-form-validators]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/intecomm-form-validators-0.1.8.tar.gz tmp/intecomm-form-validators-0.1.9.tar.gz --markdown 20230524/i/intecomm-form-validators/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-24 19:51:21] INFO root fetch - processPackages [mapel-marriages]: Start processing: farm-haystack
+[2023-05-24 19:51:21] INFO root fetch - main [MainThread]: End processing [mapel-marriages]: success
+[2023-05-24 19:51:22] INFO root fetch - processPackages [mapel-roommates]: Start processing: ligo-followup-advocate
+[2023-05-24 19:51:22] INFO root fetch - main [MainThread]: End processing [mapel-roommates]: success
+[2023-05-24 19:51:22] INFO root fetch - processPackages [farm-haystack]: New version: [1.9.1rc1] Old Version: [1.9.1]
+[2023-05-24 19:51:22] INFO root fetch - processPackages [ligo-followup-advocate]: New version: [1.2.3] Old Version: [1.2.2]
+[2023-05-24 19:51:22] INFO root fetch - processPackages [mapel]: Start processing: benchling-sdk
+[2023-05-24 19:51:22] INFO root fetch - main [MainThread]: End processing [mapel]: success
+[2023-05-24 19:51:22] INFO root fetch - processPackages [kodexa]: Start processing: lbrlabs-pulumi-dynatrace
+[2023-05-24 19:51:22] INFO root fetch - main [MainThread]: End processing [kodexa]: success
+[2023-05-24 19:51:22] INFO root fetch - processPackages [mapel-core]: Start processing: cybrid-api-id-python
+[2023-05-24 19:51:22] INFO root fetch - main [MainThread]: End processing [mapel-core]: success
+[2023-05-24 19:51:22] INFO root fetch - processPackages [benchling-sdk]: New version: [1.7.0a9] Old Version: [1.7.0a8]
+[2023-05-24 19:51:22] INFO root fetch - processPackages [ligo-followup-advocate]: Downloading https://files.pythonhosted.org/packages/a5/94/ef292ff6cb4a5d66498927e206c7cfc67115be5156349594c0295705ada5/ligo-followup-advocate-1.2.2.tar.gz
+[2023-05-24 19:51:22] INFO root fetch - processPackages [cybrid-api-id-python]: New version: [0.9.9] Old Version: [0.9.8]
+[2023-05-24 19:51:22] INFO root fetch - processPackages [lbrlabs-pulumi-dynatrace]: New version: [0.0.3a1684948997] Old Version: [0.0.3a1684699558]
+[2023-05-24 19:51:22] INFO root fetch - processPackages [farm-haystack]: executing diffoscope
+[2023-05-24 19:51:22] INFO root fetch - processPackages [farm-haystack]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/farm_haystack-1.9.1.tar.gz tmp/farm_haystack-1.9.1rc1.tar.gz --markdown 20230524/f/farm-haystack/1.9.1-1.9.1rc1/diff.md --exclude *.pyd
+[2023-05-24 19:51:22] INFO root fetch - processPackages [cybrid-api-id-python]: executing diffoscope
+[2023-05-24 19:51:22] INFO root fetch - processPackages [cybrid-api-id-python]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cybrid-api-id-python-0.9.8.tar.gz tmp/cybrid-api-id-python-0.9.9.tar.gz --markdown 20230524/c/cybrid-api-id-python/0.9.8-0.9.9/diff.md --exclude *.pyd
+[2023-05-24 19:51:22] INFO root fetch - processPackages [mapel-elections]: Start processing: neon-utils
+[2023-05-24 19:51:22] INFO root fetch - main [MainThread]: End processing [mapel-elections]: success
+[2023-05-24 19:51:22] INFO root fetch - processPackages [lbrlabs-pulumi-dynatrace]: Downloading https://files.pythonhosted.org/packages/0c/4f/b33a7144777235354906f9db58c5ae8fa3637ee34f6c6b6a133e645d0374/lbrlabs_pulumi_dynatrace-0.0.3a1684948997.tar.gz
+[2023-05-24 19:51:22] INFO root fetch - processPackages [benchling-sdk]: executing diffoscope
+[2023-05-24 19:51:22] INFO root fetch - processPackages [benchling-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/benchling_sdk-1.7.0a8.tar.gz tmp/benchling_sdk-1.7.0a9.tar.gz --markdown 20230524/b/benchling-sdk/1.7.0a8-1.7.0a9/diff.md --exclude *.pyd
+[2023-05-24 19:51:22] INFO root fetch - processPackages [neon-utils]: New version: [1.5.0a8] Old Version: [1.5.0a7]
+[2023-05-24 19:51:22] INFO root fetch - processPackages [lbrlabs-pulumi-dynatrace]: executing diffoscope
+[2023-05-24 19:51:22] INFO root fetch - processPackages [lbrlabs-pulumi-dynatrace]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lbrlabs_pulumi_dynatrace-0.0.3a1684699558.tar.gz tmp/lbrlabs_pulumi_dynatrace-0.0.3a1684948997.tar.gz --markdown 20230524/l/lbrlabs-pulumi-dynatrace/0.0.3a1684699558-0.0.3a1684948997/diff.md --exclude *.pyd
+[2023-05-24 19:51:22] INFO root fetch - processPackages [graphkb]: Start processing: cybrid-api-organization-python
+[2023-05-24 19:51:22] INFO root fetch - main [MainThread]: End processing [graphkb]: success
+[2023-05-24 19:51:22] INFO root fetch - processPackages [cybrid-api-organization-python]: New version: [0.9.9] Old Version: [0.9.8]
+[2023-05-24 19:51:23] INFO root fetch - processPackages [cybrid-api-organization-python]: executing diffoscope
+[2023-05-24 19:51:23] INFO root fetch - processPackages [cybrid-api-organization-python]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cybrid-api-organization-python-0.9.8.tar.gz tmp/cybrid-api-organization-python-0.9.9.tar.gz --markdown 20230524/c/cybrid-api-organization-python/0.9.8-0.9.9/diff.md --exclude *.pyd
+[2023-05-24 19:51:23] INFO root fetch - processPackages [neon-utils]: Downloading https://files.pythonhosted.org/packages/9f/97/671000208c19191cd660b6c4024750bdc704a60bc7c654b7b7cdcfe6b533/neon_utils-1.5.0a8-py3-none-any.whl
+[2023-05-24 19:51:23] INFO root fetch - processPackages [neon-utils]: executing diffoscope
+[2023-05-24 19:51:23] INFO root fetch - processPackages [neon-utils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/neon_utils-1.5.0a7-py3-none-any.whl.zip tmp/neon_utils-1.5.0a8-py3-none-any.whl.zip --markdown 20230524/n/neon-utils/1.5.0a7-1.5.0a8/diff.md --exclude *.pyd
+[2023-05-24 19:51:23] INFO root fetch - processPackages [bytecode]: Start processing: macos-application-location
+[2023-05-24 19:51:23] INFO root fetch - main [MainThread]: End processing [bytecode]: success
+[2023-05-24 19:51:23] INFO root fetch - processPackages [macos-application-location]: New version: [1.0.1] Old Version: [1.0.0]
+[2023-05-24 19:51:23] INFO root fetch - processPackages [intecomm-form-validators]: Start processing: edc
+[2023-05-24 19:51:23] INFO root fetch - main [MainThread]: End processing [intecomm-form-validators]: success
+[2023-05-24 19:51:23] INFO root fetch - processPackages [edc]: New version: [0.4.93] Old Version: [0.4.92]
+[2023-05-24 19:51:23] INFO root fetch - processPackages [macos-application-location]: executing diffoscope
+[2023-05-24 19:51:23] INFO root fetch - processPackages [macos-application-location]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/macos_application_location-1.0.0.tar.gz tmp/macos_application_location-1.0.1.tar.gz --markdown 20230524/m/macos-application-location/1.0.0-1.0.1/diff.md --exclude *.pyd
+[2023-05-24 19:51:23] INFO root fetch - processPackages [edc]: executing diffoscope
+[2023-05-24 19:51:23] INFO root fetch - processPackages [edc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/edc-0.4.92.tar.gz tmp/edc-0.4.93.tar.gz --markdown 20230524/e/edc/0.4.92-0.4.93/diff.md --exclude *.pyd
+[2023-05-24 19:51:24] INFO root fetch - processPackages [ligo-followup-advocate]: Downloading https://files.pythonhosted.org/packages/d1/b3/f1ce7af52d5a4664afce0e45fbbee53dd29b4bf13a7d95ac435360089522/ligo-followup-advocate-1.2.3.tar.gz
+[2023-05-24 19:51:24] INFO root fetch - processPackages [macos-application-location]: Start processing: pybuilder-integration
+[2023-05-24 19:51:24] INFO root fetch - main [MainThread]: End processing [macos-application-location]: success
+[2023-05-24 19:51:24] INFO root fetch - processPackages [pybuilder-integration]: New version: [93] Old Version: [92]
+[2023-05-24 19:51:24] INFO root fetch - processPackages [ligo-followup-advocate]: executing diffoscope
+[2023-05-24 19:51:24] INFO root fetch - processPackages [ligo-followup-advocate]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ligo-followup-advocate-1.2.2.tar.gz tmp/ligo-followup-advocate-1.2.3.tar.gz --markdown 20230524/l/ligo-followup-advocate/1.2.2-1.2.3/diff.md --exclude *.pyd
+[2023-05-24 19:51:25] INFO root fetch - processPackages [pybuilder-integration]: Downloading https://files.pythonhosted.org/packages/81/0e/9a23a6d7943a43bbac3169bf6f7d2bea3b47b1934534f2d41c3e6301c3d7/pybuilder-integration-93.tar.gz
+[2023-05-24 19:51:25] INFO root fetch - processPackages [neon-utils]: Start processing: cybrid-api-bank-python
+[2023-05-24 19:51:25] INFO root fetch - main [MainThread]: End processing [neon-utils]: success
+[2023-05-24 19:51:25] INFO root fetch - processPackages [pybuilder-integration]: executing diffoscope
+[2023-05-24 19:51:25] INFO root fetch - processPackages [pybuilder-integration]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pybuilder-integration-92.tar.gz tmp/pybuilder-integration-93.tar.gz --markdown 20230524/p/pybuilder-integration/92-93/diff.md --exclude *.pyd
+[2023-05-24 19:51:25] INFO root fetch - processPackages [cybrid-api-bank-python]: New version: [0.9.9] Old Version: [0.9.8]
+[2023-05-24 19:51:25] INFO root fetch - processPackages [cybrid-api-bank-python]: executing diffoscope
+[2023-05-24 19:51:25] INFO root fetch - processPackages [cybrid-api-bank-python]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cybrid-api-bank-python-0.9.8.tar.gz tmp/cybrid-api-bank-python-0.9.9.tar.gz --markdown 20230524/c/cybrid-api-bank-python/0.9.8-0.9.9/diff.md --exclude *.pyd
+[2023-05-24 19:51:25] INFO root fetch - processPackages [edc]: Start processing: pingertron
+[2023-05-24 19:51:25] INFO root fetch - main [MainThread]: End processing [edc]: success
+[2023-05-24 19:51:25] INFO root fetch - processPackages [pingertron]: New version: [0.2.0] Old Version: [0.1.0]
+[2023-05-24 19:51:25] INFO root fetch - main [MainThread]: End processing [cybrid-api-organization-python]: success
+[2023-05-24 19:51:25] INFO root fetch - processPackages [pingertron]: Downloading https://files.pythonhosted.org/packages/44/98/d1402bc93ffad751905be63419338abb6d05d6887386af335ca4703f8ffc/pingertron-0.1.0.tar.gz
+[2023-05-24 19:51:26] INFO root fetch - processPackages [pingertron]: Downloading https://files.pythonhosted.org/packages/e0/1f/6d66f6c35ad307f78d6b05c3fd46c6bdbbe53ea41cf9826254e793484a31/pingertron-0.2.0.tar.gz
+[2023-05-24 19:51:26] INFO root fetch - processPackages [pingertron]: executing diffoscope
+[2023-05-24 19:51:26] INFO root fetch - processPackages [pingertron]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pingertron-0.1.0.tar.gz tmp/pingertron-0.2.0.tar.gz --markdown 20230524/p/pingertron/0.1.0-0.2.0/diff.md --exclude *.pyd
+[2023-05-24 19:51:26] INFO root fetch - main [MainThread]: End processing [pybuilder-integration]: success
+[2023-05-24 19:51:26] INFO root fetch - main [MainThread]: End processing [lbrlabs-pulumi-dynatrace]: success
+[2023-05-24 19:51:26] INFO root fetch - main [MainThread]: End processing [cybrid-api-id-python]: success
+[2023-05-24 19:51:27] INFO root fetch - main [MainThread]: End processing [pingertron]: success
+[2023-05-24 19:51:27] INFO root fetch - main [MainThread]: End processing [benchling-sdk]: success
+[2023-05-24 19:51:27] INFO root fetch - main [MainThread]: End processing [ligo-followup-advocate]: success
+[2023-05-24 19:51:28] INFO root fetch - main [MainThread]: End processing [cybrid-api-bank-python]: success
+[2023-05-24 19:51:28] INFO root fetch - main [MainThread]: End processing [farm-haystack]: success
+[2023-05-24 19:52:01] INFO root fetch - main [MainThread]: End processing [scipion-em-cryoassess]: success
+[2023-05-24 19:52:01] INFO root fetch - main [MainThread]: Store serial: [18233923]
