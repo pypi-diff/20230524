@@ -3980,3 +3980,131 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-05-24 03:33:51] INFO root fetch - main [MainThread]: End processing [botocore-a-la-carte]: success
 [2023-05-24 03:35:11] INFO root fetch - main [MainThread]: End processing [bioregistry]: success
 [2023-05-24 03:35:11] INFO root fetch - main [MainThread]: Store serial: [18222667]
+[2023-05-24 03:40:17] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18222667]
+[2023-05-24 03:40:22] INFO root fetch - main [MainThread]: Found 22 changed packages
+[2023-05-24 03:40:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: NikGapps
+[2023-05-24 03:40:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: kgx
+[2023-05-24 03:40:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: nbdev-stdlib
+[2023-05-24 03:40:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: cdk-wordpress
+[2023-05-24 03:40:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: isoCycle
+[2023-05-24 03:40:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: nbdev-numpy
+[2023-05-24 03:40:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: types-circuitpython
+[2023-05-24 03:40:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: tccli
+[2023-05-24 03:40:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: TMDBTraktSyncer
+[2023-05-24 03:40:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: dash-connectivity-viewer
+[2023-05-24 03:40:22] INFO root fetch - processPackages [dash-connectivity-viewer]: New version: [2.0.9] Old Version: [2.0.8]
+[2023-05-24 03:40:22] INFO root fetch - processPackages [nbdev-numpy]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-05-24 03:40:22] INFO root fetch - processPackages [tccli]: New version: [3.0.99.1] Old Version: [3.0.98.1]
+[2023-05-24 03:40:22] INFO root fetch - processPackages [NikGapps]: New version: [1.8] Old Version: [1.7]
+[2023-05-24 03:40:22] INFO root fetch - processPackages [isoCycle]: New version: [0.0.34] Old Version: [0.0.33]
+[2023-05-24 03:40:22] INFO root fetch - processPackages [kgx]: New version: [2.1.0] Old Version: [2.0.8]
+[2023-05-24 03:40:22] INFO root fetch - processPackages [TMDBTraktSyncer]: New version: [1.1.7] Old Version: [1.1.6]
+[2023-05-24 03:40:22] INFO root fetch - processPackages [types-circuitpython]: New version: [8.1.0b2] Old Version: [8.1.0b1]
+[2023-05-24 03:40:22] INFO root fetch - processPackages [dash-connectivity-viewer]: executing diffoscope
+[2023-05-24 03:40:22] INFO root fetch - processPackages [dash-connectivity-viewer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dash-connectivity-viewer-2.0.8.tar.gz tmp/dash-connectivity-viewer-2.0.9.tar.gz --markdown 20230524/d/dash-connectivity-viewer/2.0.8-2.0.9/diff.md --exclude *.pyd
+[2023-05-24 03:40:22] INFO root fetch - processPackages [nbdev-numpy]: executing diffoscope
+[2023-05-24 03:40:22] INFO root fetch - processPackages [nbdev-numpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nbdev-numpy-0.0.98.tar.gz tmp/nbdev-numpy-0.0.99.tar.gz --markdown 20230524/n/nbdev-numpy/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-05-24 03:40:22] INFO root fetch - processPackages [cdk-wordpress]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-05-24 03:40:22] INFO root fetch - processPackages [nbdev-stdlib]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-05-24 03:40:22] INFO root fetch - processPackages [tccli]: executing diffoscope
+[2023-05-24 03:40:22] INFO root fetch - processPackages [tccli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tccli-3.0.98.1.tar.gz tmp/tccli-3.0.99.1.tar.gz --markdown 20230524/t/tccli/3.0.98.1-3.0.99.1/diff.md --exclude *.pyd
+[2023-05-24 03:40:22] INFO root fetch - processPackages [NikGapps]: Downloading https://files.pythonhosted.org/packages/01/22/590533a415b59dc16be6b84c8dc92ecc4fdcc83905cabc7d7fd936f04a84/NikGapps-1.7.tar.gz
+[2023-05-24 03:40:22] INFO root fetch - processPackages [isoCycle]: Downloading https://files.pythonhosted.org/packages/6c/59/aa79670688fbb55e8cda02162b44da09233a42e932939b64859ec218c50e/isoCycle-0.0.33.tar.gz
+[2023-05-24 03:40:22] INFO root fetch - processPackages [types-circuitpython]: Downloading https://files.pythonhosted.org/packages/46/9c/52b23a53f9774eb762e217367b1128659e65694909b1e4a0a13ea12b9e3a/types-circuitpython-8.1.0b1.tar.gz
+[2023-05-24 03:40:22] WARNING root fetch - processPackages [NikGapps]: Skipping package: exceeds size limit 41549908>=10485760
+[2023-05-24 03:40:22] INFO root fetch - processPackages [NikGapps]: Start processing: cyberdrop-dl
+[2023-05-24 03:40:22] INFO root fetch - main [MainThread]: End processing [NikGapps] error
+[2023-05-24 03:40:23] WARNING root fetch - processPackages [isoCycle]: Skipping package: exceeds size limit 18573179>=10485760
+[2023-05-24 03:40:23] INFO root fetch - processPackages [isoCycle]: Start processing: coiled
+[2023-05-24 03:40:23] INFO root fetch - main [MainThread]: End processing [isoCycle] error
+[2023-05-24 03:40:23] INFO root fetch - processPackages [coiled]: New version: [0.6.7.dev9] Old Version: [0.6.7.dev8]
+[2023-05-24 03:40:23] INFO root fetch - processPackages [kgx]: Downloading https://files.pythonhosted.org/packages/df/35/3e2651fe36a0bc154ea8f559b8b9cbac3596915b79285f9465e4fb7fc0be/kgx-2.0.8.tar.gz
+[2023-05-24 03:40:23] INFO root fetch - processPackages [TMDBTraktSyncer]: Downloading https://files.pythonhosted.org/packages/7d/20/de0fcf1b3ffe9b2140c0ce219265d88051bde7fb635ba024376070c89262/TMDBTraktSyncer-1.1.7.tar.gz
+[2023-05-24 03:40:23] INFO root fetch - processPackages [coiled]: executing diffoscope
+[2023-05-24 03:40:23] INFO root fetch - processPackages [coiled]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/coiled-0.6.7.dev8.tar.gz tmp/coiled-0.6.7.dev9.tar.gz --markdown 20230524/c/coiled/0.6.7.dev8-0.6.7.dev9/diff.md --exclude *.pyd
+[2023-05-24 03:40:23] INFO root fetch - processPackages [TMDBTraktSyncer]: executing diffoscope
+[2023-05-24 03:40:23] INFO root fetch - processPackages [TMDBTraktSyncer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/TMDBTraktSyncer-1.1.6.tar.gz tmp/TMDBTraktSyncer-1.1.7.tar.gz --markdown 20230524/T/TMDBTraktSyncer/1.1.6-1.1.7/diff.md --exclude *.pyd
+[2023-05-24 03:40:23] INFO root fetch - processPackages [types-circuitpython]: Downloading https://files.pythonhosted.org/packages/1c/df/8439c6bba355ee718025a273b313c7120af6ea7595a20794bfa46928ea77/types-circuitpython-8.1.0b2.tar.gz
+[2023-05-24 03:40:23] INFO root fetch - processPackages [cyberdrop-dl]: New version: [4.2.46] Old Version: [4.2.45]
+[2023-05-24 03:40:23] INFO root fetch - processPackages [cdk-wordpress]: executing diffoscope
+[2023-05-24 03:40:23] INFO root fetch - processPackages [cdk-wordpress]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-wordpress-0.0.98.tar.gz tmp/cdk-wordpress-0.0.99.tar.gz --markdown 20230524/c/cdk-wordpress/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-05-24 03:40:23] INFO root fetch - processPackages [types-circuitpython]: executing diffoscope
+[2023-05-24 03:40:23] INFO root fetch - processPackages [types-circuitpython]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/types-circuitpython-8.1.0b1.tar.gz tmp/types-circuitpython-8.1.0b2.tar.gz --markdown 20230524/t/types-circuitpython/8.1.0b1-8.1.0b2/diff.md --exclude *.pyd
+[2023-05-24 03:40:23] INFO root fetch - processPackages [cyberdrop-dl]: Downloading https://files.pythonhosted.org/packages/1b/1d/c0ad6e176a1ac8a3b4da2760a7240447ddb2b5a8cdf9a2ee1546d852e2ed/cyberdrop-dl-4.2.45.tar.gz
+[2023-05-24 03:40:23] INFO root fetch - processPackages [kgx]: Downloading https://files.pythonhosted.org/packages/0d/6b/983f1ecccbf7efc900b9eb93081bfcb42a774673f0206d1cc5eb59e1a457/kgx-2.1.0.tar.gz
+[2023-05-24 03:40:23] INFO root fetch - processPackages [nbdev-stdlib]: executing diffoscope
+[2023-05-24 03:40:23] INFO root fetch - processPackages [nbdev-stdlib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nbdev-stdlib-0.0.98.tar.gz tmp/nbdev-stdlib-0.0.99.tar.gz --markdown 20230524/n/nbdev-stdlib/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-05-24 03:40:23] INFO root fetch - processPackages [kgx]: executing diffoscope
+[2023-05-24 03:40:23] INFO root fetch - processPackages [kgx]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kgx-2.0.8.tar.gz tmp/kgx-2.1.0.tar.gz --markdown 20230524/k/kgx/2.0.8-2.1.0/diff.md --exclude *.pyd
+[2023-05-24 03:40:23] INFO root fetch - processPackages [cyberdrop-dl]: Downloading https://files.pythonhosted.org/packages/ac/2d/d887497ec56c70177d8f81c9e91d1dfe4996795ac6508a0e2954f8dc3a0b/cyberdrop-dl-4.2.46.tar.gz
+[2023-05-24 03:40:23] INFO root fetch - processPackages [cyberdrop-dl]: executing diffoscope
+[2023-05-24 03:40:23] INFO root fetch - processPackages [cyberdrop-dl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cyberdrop-dl-4.2.45.tar.gz tmp/cyberdrop-dl-4.2.46.tar.gz --markdown 20230524/c/cyberdrop-dl/4.2.45-4.2.46/diff.md --exclude *.pyd
+[2023-05-24 03:40:24] INFO root fetch - processPackages [dash-connectivity-viewer]: Start processing: nbdev-pandas
+[2023-05-24 03:40:24] INFO root fetch - main [MainThread]: End processing [dash-connectivity-viewer]: success
+[2023-05-24 03:40:24] INFO root fetch - processPackages [nbdev-pandas]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-05-24 03:40:24] INFO root fetch - processPackages [nbdev-pandas]: executing diffoscope
+[2023-05-24 03:40:24] INFO root fetch - processPackages [nbdev-pandas]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nbdev-pandas-0.0.98.tar.gz tmp/nbdev-pandas-0.0.99.tar.gz --markdown 20230524/n/nbdev-pandas/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-05-24 03:40:24] INFO root fetch - processPackages [TMDBTraktSyncer]: Start processing: cyberdrop-dl
+[2023-05-24 03:40:24] INFO root fetch - main [MainThread]: End processing [TMDBTraktSyncer]: success
+[2023-05-24 03:40:24] INFO root fetch - processPackages [cyberdrop-dl]: New version: [4.2.46] Old Version: [4.2.45]
+[2023-05-24 03:40:24] INFO root fetch - processPackages [cyberdrop-dl]: executing diffoscope
+[2023-05-24 03:40:24] INFO root fetch - processPackages [cyberdrop-dl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cyberdrop-dl-4.2.45.tar.gz tmp/cyberdrop-dl-4.2.46.tar.gz --markdown 20230524/c/cyberdrop-dl/4.2.45-4.2.46/diff.md --exclude *.pyd
+[2023-05-24 03:40:24] INFO root fetch - processPackages [cdk-wordpress]: Start processing: searchlogit
+[2023-05-24 03:40:24] INFO root fetch - main [MainThread]: End processing [cdk-wordpress]: success
+[2023-05-24 03:40:24] INFO root fetch - processPackages [searchlogit]: New version: [0.3.9] Old Version: [0.3.8]
+[2023-05-24 03:40:24] INFO root fetch - processPackages [nbdev-stdlib]: Start processing: agixt
+[2023-05-24 03:40:24] INFO root fetch - main [MainThread]: End processing [nbdev-stdlib]: success
+[2023-05-24 03:40:24] INFO root fetch - processPackages [agixt]: New version: [1.1.69b0] Old Version: [1.1.68b0]
+[2023-05-24 03:40:25] INFO root fetch - processPackages [nbdev-numpy]: Start processing: nbdev-pytorch
+[2023-05-24 03:40:25] INFO root fetch - main [MainThread]: End processing [nbdev-numpy]: success
+[2023-05-24 03:40:25] INFO root fetch - processPackages [nbdev-pytorch]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-05-24 03:40:25] INFO root fetch - processPackages [agixt]: Downloading https://files.pythonhosted.org/packages/50/e1/a80ef93473688cbe9c34f22cc6ce54d184aa83e1900f97e8205c4a4f10ce/agixt-1.1.69b0.tar.gz
+[2023-05-24 03:40:25] INFO root fetch - processPackages [searchlogit]: executing diffoscope
+[2023-05-24 03:40:25] INFO root fetch - processPackages [searchlogit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/searchlogit-0.3.8.tar.gz tmp/searchlogit-0.3.9.tar.gz --markdown 20230524/s/searchlogit/0.3.8-0.3.9/diff.md --exclude *.pyd
+[2023-05-24 03:40:25] INFO root fetch - processPackages [kgx]: Start processing: graphene-federation
+[2023-05-24 03:40:25] INFO root fetch - main [MainThread]: End processing [kgx]: success
+[2023-05-24 03:40:25] INFO root fetch - processPackages [nbdev-pytorch]: executing diffoscope
+[2023-05-24 03:40:25] INFO root fetch - processPackages [nbdev-pytorch]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nbdev-pytorch-0.0.98.tar.gz tmp/nbdev-pytorch-0.0.99.tar.gz --markdown 20230524/n/nbdev-pytorch/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-05-24 03:40:25] INFO root fetch - processPackages [agixt]: executing diffoscope
+[2023-05-24 03:40:25] INFO root fetch - processPackages [agixt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/agixt-1.1.68b0.tar.gz tmp/agixt-1.1.69b0.tar.gz --markdown 20230524/a/agixt/1.1.68b0-1.1.69b0/diff.md --exclude *.pyd
+[2023-05-24 03:40:25] INFO root fetch - processPackages [cyberdrop-dl]: Start processing: coverage
+[2023-05-24 03:40:25] INFO root fetch - main [MainThread]: End processing [cyberdrop-dl]: success
+[2023-05-24 03:40:25] INFO root fetch - processPackages [coverage]: New version: [7.2.5] Old Version: [7.2.4]
+[2023-05-24 03:40:25] INFO root fetch - processPackages [graphene-federation]: New version: [3.1.4] Old Version: [3.1.3]
+[2023-05-24 03:40:25] INFO root fetch - processPackages [coverage]: Downloading https://files.pythonhosted.org/packages/78/3e/8e2d27ae0ec92d009c2906d21f15f5936cfddc5bb5660f5bb50c521c4114/coverage-7.2.4.tar.gz
+[2023-05-24 03:40:25] INFO root fetch - processPackages [graphene-federation]: Downloading https://files.pythonhosted.org/packages/b1/13/ffded4b290bb2e6a04df1cd1f556ea6415632600037c31aabadbdf4741c8/graphene-federation-3.1.3.tar.gz
+[2023-05-24 03:40:25] INFO root fetch - processPackages [coverage]: Downloading https://files.pythonhosted.org/packages/3d/87/ac5bb366221fe53c55f5ea83b14d476834703cbb395dcc335a92742737c3/coverage-7.2.5.tar.gz
+[2023-05-24 03:40:25] INFO root fetch - processPackages [coverage]: executing diffoscope
+[2023-05-24 03:40:25] INFO root fetch - processPackages [coverage]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/coverage-7.2.4.tar.gz tmp/coverage-7.2.5.tar.gz --markdown 20230524/c/coverage/7.2.4-7.2.5/diff.md --exclude *.pyd
+[2023-05-24 03:40:25] INFO root fetch - processPackages [coiled]: Start processing: PrSpiders
+[2023-05-24 03:40:25] INFO root fetch - main [MainThread]: End processing [coiled]: success
+[2023-05-24 03:40:25] INFO root fetch - processPackages [PrSpiders]: New version: [0.5.0] Old Version: [0.4.9]
+[2023-05-24 03:40:25] INFO root fetch - processPackages [graphene-federation]: Downloading https://files.pythonhosted.org/packages/c4/e0/3bb1d0a48775535d716b81d6259489471ddbb77779d1447b18a0ed66c40f/graphene-federation-3.1.4.tar.gz
+[2023-05-24 03:40:26] INFO root fetch - processPackages [graphene-federation]: executing diffoscope
+[2023-05-24 03:40:26] INFO root fetch - processPackages [graphene-federation]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/graphene-federation-3.1.3.tar.gz tmp/graphene-federation-3.1.4.tar.gz --markdown 20230524/g/graphene-federation/3.1.3-3.1.4/diff.md --exclude *.pyd
+[2023-05-24 03:40:26] INFO root fetch - processPackages [PrSpiders]: Downloading https://files.pythonhosted.org/packages/7e/c4/59d302069955157c0146cbc64e3d50c368a060db70fbc612c1eb96073b6d/PrSpiders-0.5.0.tar.gz
+[2023-05-24 03:40:26] INFO root fetch - processPackages [PrSpiders]: executing diffoscope
+[2023-05-24 03:40:26] INFO root fetch - processPackages [PrSpiders]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PrSpiders-0.4.9.tar.gz tmp/PrSpiders-0.5.0.tar.gz --markdown 20230524/P/PrSpiders/0.4.9-0.5.0/diff.md --exclude *.pyd
+[2023-05-24 03:40:26] INFO root fetch - processPackages [nbdev-pytorch]: Start processing: snbtlib
+[2023-05-24 03:40:26] INFO root fetch - main [MainThread]: End processing [nbdev-pytorch]: success
+[2023-05-24 03:40:26] INFO root fetch - processPackages [searchlogit]: Start processing: nbdev-scipy
+[2023-05-24 03:40:26] INFO root fetch - main [MainThread]: End processing [searchlogit]: success
+[2023-05-24 03:40:26] INFO root fetch - processPackages [snbtlib]: New version: [0.1.0] Old Version: [0.0.7]
+[2023-05-24 03:40:26] INFO root fetch - processPackages [nbdev-scipy]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-05-24 03:40:26] INFO root fetch - main [MainThread]: End processing [agixt]: success
+[2023-05-24 03:40:26] INFO root fetch - processPackages [nbdev-scipy]: executing diffoscope
+[2023-05-24 03:40:26] INFO root fetch - processPackages [nbdev-scipy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nbdev-scipy-0.0.98.tar.gz tmp/nbdev-scipy-0.0.99.tar.gz --markdown 20230524/n/nbdev-scipy/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-05-24 03:40:26] INFO root fetch - processPackages [snbtlib]: Downloading https://files.pythonhosted.org/packages/5e/69/2bbf334504f2b5106421bc8b1b9764c19c9afaea952eeb68d237c0ba7294/snbtlib-0.0.7.tar.gz
+[2023-05-24 03:40:27] INFO root fetch - main [MainThread]: End processing [types-circuitpython]: success
+[2023-05-24 03:40:27] INFO root fetch - main [MainThread]: End processing [cyberdrop-dl]: success
+[2023-05-24 03:40:27] INFO root fetch - processPackages [snbtlib]: Downloading https://files.pythonhosted.org/packages/a3/45/e0850b58ceb2b533be57a1f26aa67d3eb215816aa41b56c63b1df2bf9261/snbtlib-0.1.0.tar.gz
+[2023-05-24 03:40:27] INFO root fetch - main [MainThread]: End processing [graphene-federation]: success
+[2023-05-24 03:40:27] INFO root fetch - processPackages [snbtlib]: executing diffoscope
+[2023-05-24 03:40:27] INFO root fetch - processPackages [snbtlib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/snbtlib-0.0.7.tar.gz tmp/snbtlib-0.1.0.tar.gz --markdown 20230524/s/snbtlib/0.0.7-0.1.0/diff.md --exclude *.pyd
+[2023-05-24 03:40:27] INFO root fetch - main [MainThread]: End processing [nbdev-pandas]: success
+[2023-05-24 03:40:27] INFO root fetch - main [MainThread]: End processing [PrSpiders]: success
+[2023-05-24 03:40:27] INFO root fetch - main [MainThread]: End processing [nbdev-scipy]: success
+[2023-05-24 03:40:28] INFO root fetch - main [MainThread]: End processing [tccli]: success
+[2023-05-24 03:40:28] INFO root fetch - main [MainThread]: End processing [snbtlib]: success
+[2023-05-24 03:40:29] INFO root fetch - main [MainThread]: End processing [coverage]: success
+[2023-05-24 03:40:29] INFO root fetch - main [MainThread]: Store serial: [18223007]
