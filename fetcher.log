@@ -21616,3 +21616,70 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd4 in position 72: invalid
 [2023-05-24 19:51:28] INFO root fetch - main [MainThread]: End processing [farm-haystack]: success
 [2023-05-24 19:52:01] INFO root fetch - main [MainThread]: End processing [scipion-em-cryoassess]: success
 [2023-05-24 19:52:01] INFO root fetch - main [MainThread]: Store serial: [18233923]
+[2023-05-24 19:57:05] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18233923]
+[2023-05-24 19:57:10] INFO root fetch - main [MainThread]: Found 11 changed packages
+[2023-05-24 19:57:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: intecomm-edc
+[2023-05-24 19:57:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: psdist
+[2023-05-24 19:57:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: supervisely
+[2023-05-24 19:57:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: intecomm-edc
+[2023-05-24 19:57:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pulumiverse-astra
+[2023-05-24 19:57:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: cardsort
+[2023-05-24 19:57:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: twitter-api-client
+[2023-05-24 19:57:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: redfin-scraper
+[2023-05-24 19:57:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: pulumi-vsphere
+[2023-05-24 19:57:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: cdsspy
+[2023-05-24 19:57:10] INFO root fetch - processPackages [cardsort]: New version: [0.2.6] Old Version: [0.2.4]
+[2023-05-24 19:57:10] INFO root fetch - processPackages [twitter-api-client]: New version: [0.8.2] Old Version: [0.8.1]
+[2023-05-24 19:57:10] INFO root fetch - processPackages [cdsspy]: New version: [1.2.690] Old Version: [1.2.69]
+[2023-05-24 19:57:10] INFO root fetch - processPackages [pulumi-vsphere]: New version: [4.5.0a1684947541] Old Version: [4.5.0a1684391558]
+[2023-05-24 19:57:10] INFO root fetch - processPackages [supervisely]: New version: [6.9.2] Old Version: [6.9.1]
+[2023-05-24 19:57:10] INFO root fetch - processPackages [pulumi-vsphere]: executing diffoscope
+[2023-05-24 19:57:10] INFO root fetch - processPackages [pulumi-vsphere]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_vsphere-4.5.0a1684391558.tar.gz tmp/pulumi_vsphere-4.5.0a1684947541.tar.gz --markdown 20230524/p/pulumi-vsphere/4.5.0a1684391558-4.5.0a1684947541/diff.md --exclude *.pyd
+[2023-05-24 19:57:10] INFO root fetch - processPackages [intecomm-edc]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-24 19:57:10] INFO root fetch - processPackages [intecomm-edc]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-24 19:57:10] INFO root fetch - processPackages [psdist]: New version: [0.1.4] Old Version: [0.1.3]
+[2023-05-24 19:57:10] INFO root fetch - processPackages [redfin-scraper]: New version: [0.2.1] Old Version: [0.2.0]
+[2023-05-24 19:57:10] INFO root fetch - processPackages [pulumiverse-astra]: New version: [1.0.37] Old Version: [1.0.26]
+[2023-05-24 19:57:10] INFO root fetch - processPackages [cardsort]: executing diffoscope
+[2023-05-24 19:57:10] INFO root fetch - processPackages [cardsort]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cardsort-0.2.4.tar.gz tmp/cardsort-0.2.6.tar.gz --markdown 20230524/c/cardsort/0.2.4-0.2.6/diff.md --exclude *.pyd
+[2023-05-24 19:57:10] INFO root fetch - processPackages [twitter-api-client]: executing diffoscope
+[2023-05-24 19:57:10] INFO root fetch - processPackages [twitter-api-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/twitter-api-client-0.8.1.tar.gz tmp/twitter-api-client-0.8.2.tar.gz --markdown 20230524/t/twitter-api-client/0.8.1-0.8.2/diff.md --exclude *.pyd
+[2023-05-24 19:57:10] INFO root fetch - processPackages [supervisely]: executing diffoscope
+[2023-05-24 19:57:10] INFO root fetch - processPackages [supervisely]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/supervisely-6.9.1.tar.gz tmp/supervisely-6.9.2.tar.gz --markdown 20230524/s/supervisely/6.9.1-6.9.2/diff.md --exclude *.pyd
+[2023-05-24 19:57:10] INFO root fetch - processPackages [cdsspy]: Downloading https://files.pythonhosted.org/packages/33/bf/250ef6c9a3fbb14462c47649a09925afd151dc103046480fc75b4e4bd923/cdsspy-1.2.690.tar.gz
+[2023-05-24 19:57:10] ERROR root fetch - processPackages [twitter-api-client]: Diffoscope failed: Error: error creating container storage: the container name "amazing_bell" is already in use by "6d653b16ed652b4ae48ac41f803c0c31f6fc0a101208cb5d831bb89935c98873". You have to remove that container to be able to reuse that name.: that name is already in use
+
+[2023-05-24 19:57:10] INFO root fetch - processPackages [twitter-api-client]: Start processing: skelly-synchronize
+[2023-05-24 19:57:10] INFO root fetch - main [MainThread]: End processing [twitter-api-client] error
+[2023-05-24 19:57:10] INFO root fetch - processPackages [psdist]: Downloading https://files.pythonhosted.org/packages/ca/8b/ea79562d245ce5be7a3d1fc1c10dc86edd003d42a34d794fc1fdf01291f2/psdist-0.1.3.tar.gz
+[2023-05-24 19:57:11] INFO root fetch - processPackages [pulumiverse-astra]: Downloading https://files.pythonhosted.org/packages/3b/c2/0456ec6db4ff755dbe6c29bf235cb991dca4476683a0c77b391288d2a0dc/pulumiverse_astra-1.0.26.tar.gz
+[2023-05-24 19:57:11] INFO root fetch - processPackages [skelly-synchronize]: New version: [2023.5.1017] Old Version: [2023.5.1016]
+[2023-05-24 19:57:11] INFO root fetch - processPackages [cdsspy]: executing diffoscope
+[2023-05-24 19:57:11] INFO root fetch - processPackages [cdsspy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdsspy-1.2.69.tar.gz tmp/cdsspy-1.2.690.tar.gz --markdown 20230524/c/cdsspy/1.2.69-1.2.690/diff.md --exclude *.pyd
+[2023-05-24 19:57:11] INFO root fetch - processPackages [psdist]: Downloading https://files.pythonhosted.org/packages/d9/7b/43a4bc35bb3c344a3f7c39d999ede5711364c1ca5d9413c27af87307903b/psdist-0.1.4.tar.gz
+[2023-05-24 19:57:11] INFO root fetch - processPackages [redfin-scraper]: Downloading https://files.pythonhosted.org/packages/01/79/10a4563c20c231a4bf8f627e14c62ad680da32eab244ef90f7c330723345/redfin-scraper-0.2.1.tar.gz
+[2023-05-24 19:57:11] INFO root fetch - processPackages [intecomm-edc]: executing diffoscope
+[2023-05-24 19:57:11] INFO root fetch - processPackages [intecomm-edc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/intecomm-edc-0.1.8.tar.gz tmp/intecomm-edc-0.1.9.tar.gz --markdown 20230524/i/intecomm-edc/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-24 19:57:11] INFO root fetch - processPackages [intecomm-edc]: executing diffoscope
+[2023-05-24 19:57:11] INFO root fetch - processPackages [intecomm-edc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/intecomm-edc-0.1.8.tar.gz tmp/intecomm-edc-0.1.9.tar.gz --markdown 20230524/i/intecomm-edc/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-24 19:57:11] INFO root fetch - processPackages [redfin-scraper]: executing diffoscope
+[2023-05-24 19:57:11] INFO root fetch - processPackages [redfin-scraper]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/redfin-scraper-0.2.0.tar.gz tmp/redfin-scraper-0.2.1.tar.gz --markdown 20230524/r/redfin-scraper/0.2.0-0.2.1/diff.md --exclude *.pyd
+[2023-05-24 19:57:11] INFO root fetch - processPackages [psdist]: executing diffoscope
+[2023-05-24 19:57:11] INFO root fetch - processPackages [psdist]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/psdist-0.1.3.tar.gz tmp/psdist-0.1.4.tar.gz --markdown 20230524/p/psdist/0.1.3-0.1.4/diff.md --exclude *.pyd
+[2023-05-24 19:57:11] INFO root fetch - processPackages [pulumiverse-astra]: Downloading https://files.pythonhosted.org/packages/9c/de/1c8f2fd9e508a9d6c0d8d89c48d2da967c979503440945e7fa9003edf4a9/pulumiverse_astra-1.0.37.tar.gz
+[2023-05-24 19:57:11] INFO root fetch - processPackages [skelly-synchronize]: Downloading https://files.pythonhosted.org/packages/08/72/ff1508ebb29d7b83677ea0a2bfb97ba8f71e5d48b9f82526d117e3479d0b/skelly_synchronize-2023.5.1017.tar.gz
+[2023-05-24 19:57:11] INFO root fetch - processPackages [pulumiverse-astra]: executing diffoscope
+[2023-05-24 19:57:11] INFO root fetch - processPackages [pulumiverse-astra]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumiverse_astra-1.0.26.tar.gz tmp/pulumiverse_astra-1.0.37.tar.gz --markdown 20230524/p/pulumiverse-astra/1.0.26-1.0.37/diff.md --exclude *.pyd
+[2023-05-24 19:57:11] INFO root fetch - processPackages [skelly-synchronize]: executing diffoscope
+[2023-05-24 19:57:11] INFO root fetch - processPackages [skelly-synchronize]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/skelly_synchronize-2023.5.1016.tar.gz tmp/skelly_synchronize-2023.5.1017.tar.gz --markdown 20230524/s/skelly-synchronize/2023.5.1016-2023.5.1017/diff.md --exclude *.pyd
+[2023-05-24 19:57:12] INFO root fetch - main [MainThread]: End processing [cardsort]: success
+[2023-05-24 19:57:12] INFO root fetch - main [MainThread]: End processing [cdsspy]: success
+[2023-05-24 19:57:12] INFO root fetch - main [MainThread]: End processing [redfin-scraper]: success
+[2023-05-24 19:57:12] INFO root fetch - main [MainThread]: End processing [psdist]: success
+[2023-05-24 19:57:12] INFO root fetch - main [MainThread]: End processing [skelly-synchronize]: success
+[2023-05-24 19:57:13] INFO root fetch - main [MainThread]: End processing [pulumiverse-astra]: success
+[2023-05-24 19:57:15] INFO root fetch - main [MainThread]: End processing [supervisely]: success
+[2023-05-24 19:57:15] INFO root fetch - main [MainThread]: End processing [pulumi-vsphere]: success
+[2023-05-24 19:57:16] INFO root fetch - main [MainThread]: End processing [intecomm-edc]: success
+[2023-05-24 19:57:18] INFO root fetch - main [MainThread]: End processing [intecomm-edc]: success
+[2023-05-24 19:57:18] INFO root fetch - main [MainThread]: Store serial: [18233956]
