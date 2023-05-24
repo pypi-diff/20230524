@@ -6185,3 +6185,43 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-05-24 04:51:14] INFO root fetch - main [MainThread]: End processing [centerline-width]: success
 [2023-05-24 04:51:14] INFO root fetch - main [MainThread]: End processing [lineagex]: success
 [2023-05-24 04:51:14] INFO root fetch - main [MainThread]: Store serial: [18224228]
+[2023-05-24 04:56:18] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18224228]
+[2023-05-24 04:56:22] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-05-24 04:56:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: aliyun-python-sdk-gpdb
+[2023-05-24 04:56:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: coastseg
+[2023-05-24 04:56:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pyidevice
+[2023-05-24 04:56:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: antchain-securitytech
+[2023-05-24 04:56:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: mo-sql-parsing
+[2023-05-24 04:56:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: ipylib
+[2023-05-24 04:56:22] INFO root fetch - processPackages [coastseg]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-24 04:56:22] INFO root fetch - processPackages [mo-sql-parsing]: New version: [9.401.23144] Old Version: [9.390.23138]
+[2023-05-24 04:56:22] INFO root fetch - processPackages [coastseg]: Downloading https://files.pythonhosted.org/packages/75/3b/19efffac60ef69a861417a37a370dc3f3a497cb93009fe8fff8dda38b476/coastseg-0.0.8.tar.gz
+[2023-05-24 04:56:22] INFO root fetch - processPackages [antchain-securitytech]: New version: [1.1.4] Old Version: [1.0.3]
+[2023-05-24 04:56:22] INFO root fetch - processPackages [ipylib]: New version: [0.2.3] Old Version: [0.2.0]
+[2023-05-24 04:56:22] INFO root fetch - processPackages [aliyun-python-sdk-gpdb]: New version: [1.1.6] Old Version: [1.1.5]
+[2023-05-24 04:56:22] INFO root fetch - processPackages [pyidevice]: New version: [2.3.32.3] Old Version: [2.3.32.2]
+[2023-05-24 04:56:22] WARNING root fetch - processPackages [coastseg]: Skipping package: exceeds size limit 38421077>=10485760
+[2023-05-24 04:56:22] INFO root fetch - main [MainThread]: End processing [coastseg] error
+[2023-05-24 04:56:22] INFO root fetch - processPackages [mo-sql-parsing]: executing diffoscope
+[2023-05-24 04:56:22] INFO root fetch - processPackages [mo-sql-parsing]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mo_sql_parsing-9.390.23138-py2.py3-none-any.whl.zip tmp/mo_sql_parsing-9.401.23144-py2.py3-none-any.whl.zip --markdown 20230524/m/mo-sql-parsing/9.390.23138-9.401.23144/diff.md --exclude *.pyd
+[2023-05-24 04:56:23] INFO root fetch - processPackages [antchain-securitytech]: Downloading https://files.pythonhosted.org/packages/4d/e1/b2fe4eb0ff408e2e3b6d4f9872f9ab72acde75831ad950b14a0715c73942/antchain_securitytech-1.0.3.tar.gz
+[2023-05-24 04:56:23] INFO root fetch - processPackages [aliyun-python-sdk-gpdb]: Downloading https://files.pythonhosted.org/packages/fb/0d/35b3cb66e7c03d5c03f98b14ece6468f20d24c485568e2a4ed30aba6d2fe/aliyun-python-sdk-gpdb-1.1.5.tar.gz
+[2023-05-24 04:56:23] INFO root fetch - processPackages [pyidevice]: Downloading https://files.pythonhosted.org/packages/c0/4b/00bd7ab7d0316609d640d9ef967970e1505154eada65c6d67a0378140601/pyidevice-2.3.32.3.tar.gz
+[2023-05-24 04:56:23] INFO root fetch - processPackages [ipylib]: Downloading https://files.pythonhosted.org/packages/30/59/2bb8b8917e05c697fb8ec452a76cff2762baa03df572b7cec45c2264f3f1/ipylib-0.2.0.tar.gz
+[2023-05-24 04:56:23] INFO root fetch - processPackages [pyidevice]: executing diffoscope
+[2023-05-24 04:56:23] INFO root fetch - processPackages [pyidevice]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyidevice-2.3.32.2.tar.gz tmp/pyidevice-2.3.32.3.tar.gz --markdown 20230524/p/pyidevice/2.3.32.2-2.3.32.3/diff.md --exclude *.pyd
+[2023-05-24 04:56:23] INFO root fetch - processPackages [antchain-securitytech]: Downloading https://files.pythonhosted.org/packages/85/74/de63acec3536bd154310d50577fc0677035373db22935abc972e5fc92b50/antchain_securitytech-1.1.4.tar.gz
+[2023-05-24 04:56:23] INFO root fetch - processPackages [aliyun-python-sdk-gpdb]: Downloading https://files.pythonhosted.org/packages/2a/e0/20e628872630f51269869b456993e56ef3c5fba95368821692c95119f862/aliyun-python-sdk-gpdb-1.1.6.tar.gz
+[2023-05-24 04:56:23] INFO root fetch - processPackages [antchain-securitytech]: executing diffoscope
+[2023-05-24 04:56:23] INFO root fetch - processPackages [antchain-securitytech]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/antchain_securitytech-1.0.3.tar.gz tmp/antchain_securitytech-1.1.4.tar.gz --markdown 20230524/a/antchain-securitytech/1.0.3-1.1.4/diff.md --exclude *.pyd
+[2023-05-24 04:56:23] INFO root fetch - processPackages [aliyun-python-sdk-gpdb]: executing diffoscope
+[2023-05-24 04:56:23] INFO root fetch - processPackages [aliyun-python-sdk-gpdb]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aliyun-python-sdk-gpdb-1.1.5.tar.gz tmp/aliyun-python-sdk-gpdb-1.1.6.tar.gz --markdown 20230524/a/aliyun-python-sdk-gpdb/1.1.5-1.1.6/diff.md --exclude *.pyd
+[2023-05-24 04:56:23] INFO root fetch - processPackages [ipylib]: Downloading https://files.pythonhosted.org/packages/a1/53/eb22f5757ded898e0428422069952e5140775a9e129bd865d243feccfa31/ipylib-0.2.3.tar.gz
+[2023-05-24 04:56:23] INFO root fetch - processPackages [ipylib]: executing diffoscope
+[2023-05-24 04:56:23] INFO root fetch - processPackages [ipylib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ipylib-0.2.0.tar.gz tmp/ipylib-0.2.3.tar.gz --markdown 20230524/i/ipylib/0.2.0-0.2.3/diff.md --exclude *.pyd
+[2023-05-24 04:56:24] INFO root fetch - main [MainThread]: End processing [mo-sql-parsing]: success
+[2023-05-24 04:56:24] INFO root fetch - main [MainThread]: End processing [antchain-securitytech]: success
+[2023-05-24 04:56:24] INFO root fetch - main [MainThread]: End processing [pyidevice]: success
+[2023-05-24 04:56:24] INFO root fetch - main [MainThread]: End processing [ipylib]: success
+[2023-05-24 04:56:24] INFO root fetch - main [MainThread]: End processing [aliyun-python-sdk-gpdb]: success
+[2023-05-24 04:56:24] INFO root fetch - main [MainThread]: Store serial: [18224246]
