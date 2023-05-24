@@ -20926,3 +20926,135 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd4 in position 72: invalid
 [2023-05-24 19:12:03] INFO root fetch - main [MainThread]: End processing [edc-metadata]: success
 [2023-05-24 19:12:04] INFO root fetch - main [MainThread]: End processing [ml-starter]: success
 [2023-05-24 19:12:04] INFO root fetch - main [MainThread]: Store serial: [18233355]
+[2023-05-24 19:17:08] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18233355]
+[2023-05-24 19:17:13] INFO root fetch - main [MainThread]: Found 21 changed packages
+[2023-05-24 19:17:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: edc-metadata
+[2023-05-24 19:17:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: certora-cli-alpha-jtoman-cert-2201
+[2023-05-24 19:17:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: certora-cli-alpha-jtoman-cert-2201
+[2023-05-24 19:17:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: nowcasting-datamodel
+[2023-05-24 19:17:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: edc-randomization
+[2023-05-24 19:17:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: edc-reference
+[2023-05-24 19:17:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: opvious
+[2023-05-24 19:17:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: edc-navbar
+[2023-05-24 19:17:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: edc-lab
+[2023-05-24 19:17:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: edc-list-data
+[2023-05-24 19:17:13] INFO root fetch - processPackages [nowcasting-datamodel]: New version: [1.3.9] Old Version: [1.3.8]
+[2023-05-24 19:17:13] INFO root fetch - processPackages [edc-metadata]: New version: [0.3.9] Old Version: [0.3.8]
+[2023-05-24 19:17:13] INFO root fetch - processPackages [edc-list-data]: New version: [0.3.9] Old Version: [0.3.8]
+[2023-05-24 19:17:13] INFO root fetch - processPackages [edc-navbar]: New version: [0.3.9] Old Version: [0.3.8]
+[2023-05-24 19:17:13] INFO root fetch - processPackages [edc-reference]: New version: [0.3.9] Old Version: [0.3.8]
+[2023-05-24 19:17:13] INFO root fetch - processPackages [opvious]: New version: [0.9.6] Old Version: [0.9.5]
+[2023-05-24 19:17:13] INFO root fetch - processPackages [edc-randomization]: New version: [0.3.9] Old Version: [0.3.8]
+[2023-05-24 19:17:13] INFO root fetch - processPackages [certora-cli-alpha-jtoman-cert-2201]: New version: [20230524.17.12.878229] Old Version: [20230524.17.12.624676]
+[2023-05-24 19:17:13] INFO root fetch - processPackages [certora-cli-alpha-jtoman-cert-2201]: New version: [20230524.17.12.878229] Old Version: [20230524.17.12.624676]
+[2023-05-24 19:17:13] INFO root fetch - processPackages [nowcasting-datamodel]: executing diffoscope
+[2023-05-24 19:17:13] INFO root fetch - processPackages [nowcasting-datamodel]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nowcasting_datamodel-1.3.8.tar.gz tmp/nowcasting_datamodel-1.3.9.tar.gz --markdown 20230524/n/nowcasting-datamodel/1.3.8-1.3.9/diff.md --exclude *.pyd
+[2023-05-24 19:17:13] INFO root fetch - processPackages [edc-metadata]: executing diffoscope
+[2023-05-24 19:17:13] INFO root fetch - processPackages [edc-metadata]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/edc_metadata-0.3.8-py3-none-any.whl.zip tmp/edc_metadata-0.3.9-py3-none-any.whl.zip --markdown 20230524/e/edc-metadata/0.3.8-0.3.9/diff.md --exclude *.pyd
+[2023-05-24 19:17:13] INFO root fetch - processPackages [edc-lab]: New version: [0.3.9] Old Version: [0.3.8]
+[2023-05-24 19:17:13] INFO root fetch - processPackages [opvious]: executing diffoscope
+[2023-05-24 19:17:13] INFO root fetch - processPackages [opvious]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/opvious-0.9.5.tar.gz tmp/opvious-0.9.6.tar.gz --markdown 20230524/o/opvious/0.9.5-0.9.6/diff.md --exclude *.pyd
+[2023-05-24 19:17:14] INFO root fetch - processPackages [edc-reference]: Downloading https://files.pythonhosted.org/packages/b7/b6/eab08f130b612c4adc7895aa9c2069cb23fc5ede9d5e3ed5ae1f307c506f/edc_reference-0.3.8-py3-none-any.whl
+[2023-05-24 19:17:14] INFO root fetch - processPackages [edc-navbar]: Downloading https://files.pythonhosted.org/packages/97/d3/f0928be90aca965fc8c4ed40d8261941a108aaf8911bffc98ace5981ff53/edc-navbar-0.3.8.tar.gz
+[2023-05-24 19:17:14] INFO root fetch - processPackages [edc-list-data]: Downloading https://files.pythonhosted.org/packages/cb/41/cfe2c7a2194c41a2f1b6d98f9ceb812460e1e5588d3d0661b80e69c57fbc/edc_list_data-0.3.8-py3-none-any.whl
+[2023-05-24 19:17:14] INFO root fetch - processPackages [certora-cli-alpha-jtoman-cert-2201]: Downloading https://files.pythonhosted.org/packages/c9/0f/446dc3021340a6b2d633ef5e62e19b64407ab143f21830db1e53f63907f0/certora-cli-alpha-jtoman-cert-2201-20230524.17.12.624676.tar.gz
+[2023-05-24 19:17:14] INFO root fetch - processPackages [certora-cli-alpha-jtoman-cert-2201]: Downloading https://files.pythonhosted.org/packages/c9/0f/446dc3021340a6b2d633ef5e62e19b64407ab143f21830db1e53f63907f0/certora-cli-alpha-jtoman-cert-2201-20230524.17.12.624676.tar.gz
+[2023-05-24 19:17:14] INFO root fetch - processPackages [edc-randomization]: Downloading https://files.pythonhosted.org/packages/89/58/a366502b90a9a63fc0705bbe32b9bbfd851b78d2a4a5c937c1900510b086/edc_randomization-0.3.8-py3-none-any.whl
+[2023-05-24 19:17:14] WARNING root fetch - processPackages [certora-cli-alpha-jtoman-cert-2201]: Skipping package: exceeds size limit 38980081>=10485760
+[2023-05-24 19:17:14] INFO root fetch - processPackages [certora-cli-alpha-jtoman-cert-2201]: Start processing: fortune
+[2023-05-24 19:17:14] INFO root fetch - main [MainThread]: End processing [certora-cli-alpha-jtoman-cert-2201] error
+[2023-05-24 19:17:14] WARNING root fetch - processPackages [certora-cli-alpha-jtoman-cert-2201]: Skipping package: exceeds size limit 38980081>=10485760
+[2023-05-24 19:17:14] INFO root fetch - processPackages [certora-cli-alpha-jtoman-cert-2201]: Start processing: edc-data-manager
+[2023-05-24 19:17:14] INFO root fetch - main [MainThread]: End processing [certora-cli-alpha-jtoman-cert-2201] error
+[2023-05-24 19:17:14] INFO root fetch - processPackages [edc-lab]: Downloading https://files.pythonhosted.org/packages/a7/85/79ac43d88d756948cc62062c3b1428c11fbd675f831a656891e076fa9ad9/edc_lab-0.3.8-py3-none-any.whl
+[2023-05-24 19:17:14] INFO root fetch - processPackages [fortune]: New version: [1.1.0] Old Version: [1.0.1]
+[2023-05-24 19:17:14] INFO root fetch - processPackages [edc-data-manager]: New version: [0.3.9] Old Version: [0.3.8]
+[2023-05-24 19:17:14] WARNING root fetch - processPackages [fortune]: fallback to get urls: [1.0.1]
+[2023-05-24 19:17:14] WARNING root fetch - processPackages [fortune]: None
+[2023-05-24 19:17:14] WARNING root fetch - processPackages [fortune]: None
+[2023-05-24 19:17:14] WARNING root fetch - processPackages [fortune]: unable to get url for both version [1.0.1]
+[2023-05-24 19:17:14] WARNING root fetch - processPackages [fortune]: None
+[2023-05-24 19:17:14] INFO root fetch - processPackages [fortune]: Start processing: edc-form-label
+[2023-05-24 19:17:14] INFO root fetch - main [MainThread]: End processing [fortune] error
+[2023-05-24 19:17:14] INFO root fetch - processPackages [edc-reference]: Downloading https://files.pythonhosted.org/packages/71/ef/04e54c49d503a2882ce28956b5634c5df1ed8db573a42b8dfbd5f58b5729/edc-reference-0.3.9.tar.gz
+[2023-05-24 19:17:14] INFO root fetch - processPackages [edc-navbar]: Downloading https://files.pythonhosted.org/packages/4c/6c/b333d55b3c933f5f5e1481a2062a73308f09b2e3288693bc43164b28bacd/edc-navbar-0.3.9.tar.gz
+[2023-05-24 19:17:14] INFO root fetch - processPackages [edc-randomization]: Downloading https://files.pythonhosted.org/packages/61/5b/4b82d8712c93515bde8a0695fa0cb2bb2299961f752a6028150ce09b27fd/edc_randomization-0.3.9-py3-none-any.whl
+[2023-05-24 19:17:14] INFO root fetch - processPackages [edc-data-manager]: Downloading https://files.pythonhosted.org/packages/cf/eb/b881c291d0ea6e7f72a467ff4a719417e8d865215e706e0bee3228c76051/edc_data_manager-0.3.8-py3-none-any.whl
+[2023-05-24 19:17:14] INFO root fetch - processPackages [edc-form-label]: New version: [0.3.9] Old Version: [0.3.8]
+[2023-05-24 19:17:14] INFO root fetch - processPackages [edc-lab]: Downloading https://files.pythonhosted.org/packages/57/2a/2cf53e2d5a12609174f36cabceac51b9d64206272a6f3082ca18c484cb7e/edc_lab-0.3.9-py3-none-any.whl
+[2023-05-24 19:17:14] INFO root fetch - processPackages [edc-randomization]: executing diffoscope
+[2023-05-24 19:17:14] INFO root fetch - processPackages [edc-randomization]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/edc_randomization-0.3.8-py3-none-any.whl.zip tmp/edc_randomization-0.3.9-py3-none-any.whl.zip --markdown 20230524/e/edc-randomization/0.3.8-0.3.9/diff.md --exclude *.pyd
+[2023-05-24 19:17:14] INFO root fetch - processPackages [edc-list-data]: Downloading https://files.pythonhosted.org/packages/6f/3a/f0243d8f0eb2f42fcca9ab0c84caf50d754cd3e205c900c3aa2ef49235d3/edc_list_data-0.3.9-py3-none-any.whl
+[2023-05-24 19:17:14] INFO root fetch - processPackages [edc-reference]: executing diffoscope
+[2023-05-24 19:17:14] INFO root fetch - processPackages [edc-reference]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/edc_reference-0.3.8-py3-none-any.whl.zip tmp/edc-reference-0.3.9.tar.gz --markdown 20230524/e/edc-reference/0.3.8-0.3.9/diff.md --exclude *.pyd
+[2023-05-24 19:17:14] INFO root fetch - processPackages [edc-navbar]: executing diffoscope
+[2023-05-24 19:17:14] INFO root fetch - processPackages [edc-navbar]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/edc-navbar-0.3.8.tar.gz tmp/edc-navbar-0.3.9.tar.gz --markdown 20230524/e/edc-navbar/0.3.8-0.3.9/diff.md --exclude *.pyd
+[2023-05-24 19:17:14] INFO root fetch - processPackages [edc-list-data]: executing diffoscope
+[2023-05-24 19:17:14] INFO root fetch - processPackages [edc-list-data]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/edc_list_data-0.3.8-py3-none-any.whl.zip tmp/edc_list_data-0.3.9-py3-none-any.whl.zip --markdown 20230524/e/edc-list-data/0.3.8-0.3.9/diff.md --exclude *.pyd
+[2023-05-24 19:17:14] INFO root fetch - processPackages [edc-form-label]: Downloading https://files.pythonhosted.org/packages/36/cb/6b0d8423f38d4543baf63ad96d3a3b1376104ce7cf32c53bf88fc12225a0/edc-form-label-0.3.8.tar.gz
+[2023-05-24 19:17:14] INFO root fetch - processPackages [edc-lab]: executing diffoscope
+[2023-05-24 19:17:14] INFO root fetch - processPackages [edc-lab]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/edc_lab-0.3.8-py3-none-any.whl.zip tmp/edc_lab-0.3.9-py3-none-any.whl.zip --markdown 20230524/e/edc-lab/0.3.8-0.3.9/diff.md --exclude *.pyd
+[2023-05-24 19:17:15] INFO root fetch - processPackages [edc-form-label]: Downloading https://files.pythonhosted.org/packages/48/0d/0855bdcc7c836645cb57662845941f444b78fbce332c46ce6f0a4bc6b3cc/edc-form-label-0.3.9.tar.gz
+[2023-05-24 19:17:15] INFO root fetch - processPackages [edc-data-manager]: Downloading https://files.pythonhosted.org/packages/94/af/5355122bb9b005686e292173b83d79689d43989f75374ab3ccda7985bd89/edc_data_manager-0.3.9-py3-none-any.whl
+[2023-05-24 19:17:15] INFO root fetch - processPackages [edc-form-label]: executing diffoscope
+[2023-05-24 19:17:15] INFO root fetch - processPackages [edc-form-label]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/edc-form-label-0.3.8.tar.gz tmp/edc-form-label-0.3.9.tar.gz --markdown 20230524/e/edc-form-label/0.3.8-0.3.9/diff.md --exclude *.pyd
+[2023-05-24 19:17:15] INFO root fetch - processPackages [edc-data-manager]: executing diffoscope
+[2023-05-24 19:17:15] INFO root fetch - processPackages [edc-data-manager]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/edc_data_manager-0.3.8-py3-none-any.whl.zip tmp/edc_data_manager-0.3.9-py3-none-any.whl.zip --markdown 20230524/e/edc-data-manager/0.3.8-0.3.9/diff.md --exclude *.pyd
+[2023-05-24 19:17:15] INFO root fetch - processPackages [opvious]: Start processing: aio-dt-protocol
+[2023-05-24 19:17:15] INFO root fetch - processPackages [nowcasting-datamodel]: Start processing: smartdash
+[2023-05-24 19:17:15] INFO root fetch - main [MainThread]: End processing [opvious]: success
+[2023-05-24 19:17:15] INFO root fetch - main [MainThread]: End processing [nowcasting-datamodel]: success
+[2023-05-24 19:17:15] INFO root fetch - processPackages [smartdash]: New version: [0.0.1.dev3] Old Version: [0.0.1.dev2]
+[2023-05-24 19:17:15] INFO root fetch - processPackages [aio-dt-protocol]: New version: [1.0.1] Old Version: [0.9.5]
+[2023-05-24 19:17:15] INFO root fetch - processPackages [aio-dt-protocol]: executing diffoscope
+[2023-05-24 19:17:15] INFO root fetch - processPackages [aio-dt-protocol]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aio_dt_protocol-0.9.5.tar.gz tmp/aio_dt_protocol-1.0.1.tar.gz --markdown 20230524/a/aio-dt-protocol/0.9.5-1.0.1/diff.md --exclude *.pyd
+[2023-05-24 19:17:15] INFO root fetch - processPackages [smartdash]: Downloading https://files.pythonhosted.org/packages/af/07/50a26c5ed1b3a6700f4140d3c865239b5504acc0f3473baacbd7ee3bbd14/smartdash-0.0.1.dev3.tar.gz
+[2023-05-24 19:17:15] INFO root fetch - processPackages [smartdash]: executing diffoscope
+[2023-05-24 19:17:15] INFO root fetch - processPackages [smartdash]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/smartdash-0.0.1.dev2.tar.gz tmp/smartdash-0.0.1.dev3.tar.gz --markdown 20230524/s/smartdash/0.0.1.dev2-0.0.1.dev3/diff.md --exclude *.pyd
+[2023-05-24 19:17:16] INFO root fetch - processPackages [edc-reference]: Start processing: edc-identifier
+[2023-05-24 19:17:16] INFO root fetch - main [MainThread]: End processing [edc-reference]: success
+[2023-05-24 19:17:16] INFO root fetch - processPackages [edc-metadata]: Start processing: smartlogger
+[2023-05-24 19:17:16] INFO root fetch - main [MainThread]: End processing [edc-metadata]: success
+[2023-05-24 19:17:16] INFO root fetch - processPackages [smartlogger]: New version: [0.0.1.dev9] Old Version: [0.0.1.dev8]
+[2023-05-24 19:17:16] INFO root fetch - processPackages [edc-identifier]: New version: [0.3.9] Old Version: [0.3.8]
+[2023-05-24 19:17:16] INFO root fetch - processPackages [smartlogger]: executing diffoscope
+[2023-05-24 19:17:16] INFO root fetch - processPackages [smartlogger]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/smartlogger-0.0.1.dev8.tar.gz tmp/smartlogger-0.0.1.dev9.tar.gz --markdown 20230524/s/smartlogger/0.0.1.dev8-0.0.1.dev9/diff.md --exclude *.pyd
+[2023-05-24 19:17:16] INFO root fetch - processPackages [edc-randomization]: Start processing: shell-source
+[2023-05-24 19:17:16] INFO root fetch - main [MainThread]: End processing [edc-randomization]: success
+[2023-05-24 19:17:16] INFO root fetch - processPackages [edc-identifier]: Downloading https://files.pythonhosted.org/packages/71/fa/f8ffd16fba5589ccecf8e2264079f0ab3b900e21fca6126a6d3d0af4aa07/edc_identifier-0.3.8-py3-none-any.whl
+[2023-05-24 19:17:16] INFO root fetch - processPackages [edc-list-data]: Start processing: edc-mnsi
+[2023-05-24 19:17:16] INFO root fetch - main [MainThread]: End processing [edc-list-data]: success
+[2023-05-24 19:17:16] INFO root fetch - processPackages [shell-source]: New version: [3.0.0] Old Version: [2.0.1]
+[2023-05-24 19:17:16] INFO root fetch - processPackages [edc-mnsi]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-24 19:17:16] INFO root fetch - processPackages [shell-source]: Downloading https://files.pythonhosted.org/packages/7e/94/2ef38c496acb577f8acf5a73a601369f233680464b217c9969494dfd6c8d/shell_source-2.0.1.tar.gz
+[2023-05-24 19:17:16] INFO root fetch - processPackages [edc-mnsi]: Downloading https://files.pythonhosted.org/packages/9e/b5/2f05f25dc03ba478d8ef1682a900dad229f457c79266f8452b61854cba33/edc-mnsi-0.1.8.tar.gz
+[2023-05-24 19:17:16] INFO root fetch - processPackages [edc-navbar]: Start processing: jodvlevel
+[2023-05-24 19:17:16] INFO root fetch - main [MainThread]: End processing [edc-navbar]: success
+[2023-05-24 19:17:16] INFO root fetch - processPackages [edc-identifier]: Downloading https://files.pythonhosted.org/packages/c5/1d/960b783770d664ed61e379df90d4bb3542af350b22428169749d65b21fdd/edc-identifier-0.3.9.tar.gz
+[2023-05-24 19:17:16] INFO root fetch - processPackages [shell-source]: Downloading https://files.pythonhosted.org/packages/a8/0b/c4ee6404c2039dad0afadcf2e54aa95d721b687c91c8ed73da59843b58b3/shell_source-3.0.0.tar.gz
+[2023-05-24 19:17:16] WARNING root fetch - processPackages [jodvlevel]: Skipping, unable to determine old version
+[2023-05-24 19:17:16] INFO root fetch - processPackages [jodvlevel]: Start processing: edc-utils
+[2023-05-24 19:17:16] INFO root fetch - main [MainThread]: End processing [jodvlevel] error
+[2023-05-24 19:17:16] INFO root fetch - processPackages [edc-identifier]: executing diffoscope
+[2023-05-24 19:17:16] INFO root fetch - processPackages [edc-identifier]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/edc_identifier-0.3.8-py3-none-any.whl.zip tmp/edc-identifier-0.3.9.tar.gz --markdown 20230524/e/edc-identifier/0.3.8-0.3.9/diff.md --exclude *.pyd
+[2023-05-24 19:17:16] INFO root fetch - processPackages [edc-utils]: New version: [0.3.9] Old Version: [0.3.8]
+[2023-05-24 19:17:16] INFO root fetch - processPackages [shell-source]: executing diffoscope
+[2023-05-24 19:17:16] INFO root fetch - processPackages [shell-source]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/shell_source-2.0.1.tar.gz tmp/shell_source-3.0.0.tar.gz --markdown 20230524/s/shell-source/2.0.1-3.0.0/diff.md --exclude *.pyd
+[2023-05-24 19:17:17] INFO root fetch - processPackages [edc-mnsi]: Downloading https://files.pythonhosted.org/packages/be/b8/4083662795c7254c9b47e4bbf0bbc518d1e95eadd330ea69df1ce778a01f/edc-mnsi-0.1.9.tar.gz
+[2023-05-24 19:17:17] INFO root fetch - processPackages [edc-utils]: Downloading https://files.pythonhosted.org/packages/cb/66/e90e415e8707c8f9f9ecf4a54ed26779d1e117fff293baccdc450ea803b8/edc-utils-0.3.8.tar.gz
+[2023-05-24 19:17:17] INFO root fetch - main [MainThread]: End processing [edc-form-label]: success
+[2023-05-24 19:17:17] INFO root fetch - processPackages [edc-mnsi]: executing diffoscope
+[2023-05-24 19:17:17] INFO root fetch - processPackages [edc-mnsi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/edc-mnsi-0.1.8.tar.gz tmp/edc-mnsi-0.1.9.tar.gz --markdown 20230524/e/edc-mnsi/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-24 19:17:17] INFO root fetch - main [MainThread]: End processing [edc-lab]: success
+[2023-05-24 19:17:17] INFO root fetch - main [MainThread]: End processing [smartdash]: success
+[2023-05-24 19:17:17] INFO root fetch - processPackages [edc-utils]: Downloading https://files.pythonhosted.org/packages/38/72/edd21a261064b267d6be6d3bc34c287f2b6c399f749cb1826a2873c4553f/edc-utils-0.3.9.tar.gz
+[2023-05-24 19:17:17] INFO root fetch - main [MainThread]: End processing [smartlogger]: success
+[2023-05-24 19:17:17] INFO root fetch - main [MainThread]: End processing [edc-data-manager]: success
+[2023-05-24 19:17:17] INFO root fetch - processPackages [edc-utils]: executing diffoscope
+[2023-05-24 19:17:17] INFO root fetch - processPackages [edc-utils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/edc-utils-0.3.8.tar.gz tmp/edc-utils-0.3.9.tar.gz --markdown 20230524/e/edc-utils/0.3.8-0.3.9/diff.md --exclude *.pyd
+[2023-05-24 19:17:18] INFO root fetch - main [MainThread]: End processing [edc-identifier]: success
+[2023-05-24 19:17:18] INFO root fetch - main [MainThread]: End processing [shell-source]: success
+[2023-05-24 19:17:18] INFO root fetch - main [MainThread]: End processing [aio-dt-protocol]: success
+[2023-05-24 19:17:18] INFO root fetch - main [MainThread]: End processing [edc-utils]: success
+[2023-05-24 19:17:20] INFO root fetch - main [MainThread]: End processing [edc-mnsi]: success
+[2023-05-24 19:17:20] INFO root fetch - main [MainThread]: Store serial: [18233431]
