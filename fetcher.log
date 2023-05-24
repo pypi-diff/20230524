@@ -18604,3 +18604,69 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd4 in position 72: invalid
 [2023-05-24 17:33:08] INFO root fetch - main [MainThread]: End processing [pyrealb]: success
 [2023-05-24 17:33:11] INFO root fetch - main [MainThread]: End processing [faust-streaming]: success
 [2023-05-24 17:33:11] INFO root fetch - main [MainThread]: Store serial: [18231960]
+[2023-05-24 17:38:16] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18231960]
+[2023-05-24 17:38:21] INFO root fetch - main [MainThread]: Found 12 changed packages
+[2023-05-24 17:38:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: vape_base_extension
+[2023-05-24 17:38:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: xformers
+[2023-05-24 17:38:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: smartdash
+[2023-05-24 17:38:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: dbtgenlib
+[2023-05-24 17:38:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: satosacontrib.perun
+[2023-05-24 17:38:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: ccinput
+[2023-05-24 17:38:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: yellowbox-statsd
+[2023-05-24 17:38:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: simc-support
+[2023-05-24 17:38:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: echofish-aws-raw-to-zarr-lambda
+[2023-05-24 17:38:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: trove-classifiers
+[2023-05-24 17:38:21] INFO root fetch - processPackages [dbtgenlib]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-24 17:38:21] INFO root fetch - processPackages [smartdash]: New version: [0.0.1.dev2] Old Version: [0.0.1.dev1]
+[2023-05-24 17:38:21] INFO root fetch - processPackages [xformers]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-24 17:38:21] INFO root fetch - processPackages [simc-support]: New version: [9.2.5.3] Old Version: [9.2.5.2]
+[2023-05-24 17:38:21] INFO root fetch - processPackages [dbtgenlib]: executing diffoscope
+[2023-05-24 17:38:21] INFO root fetch - processPackages [dbtgenlib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dbtgenlib-0.0.8.tar.gz tmp/dbtgenlib-0.0.9.tar.gz --markdown 20230524/d/dbtgenlib/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-24 17:38:21] INFO root fetch - processPackages [satosacontrib.perun]: New version: [3.2.0] Old Version: [3.1.0]
+[2023-05-24 17:38:21] WARNING root fetch - processPackages [vape_base_extension]: Skipping, unable to determine old version
+[2023-05-24 17:38:21] INFO root fetch - processPackages [vape_base_extension]: Start processing: OSF-EIMTC
+[2023-05-24 17:38:21] INFO root fetch - main [MainThread]: End processing [vape_base_extension] error
+[2023-05-24 17:38:21] WARNING root fetch - processPackages [echofish-aws-raw-to-zarr-lambda]: Skipping, unable to determine old version
+[2023-05-24 17:38:21] INFO root fetch - processPackages [echofish-aws-raw-to-zarr-lambda]: Start processing: rapidpro-flow-tools
+[2023-05-24 17:38:21] INFO root fetch - main [MainThread]: End processing [echofish-aws-raw-to-zarr-lambda] error
+[2023-05-24 17:38:21] INFO root fetch - processPackages [yellowbox-statsd]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-05-24 17:38:21] INFO root fetch - processPackages [trove-classifiers]: New version: [2023.5.24] Old Version: [2023.5.22]
+[2023-05-24 17:38:21] INFO root fetch - processPackages [ccinput]: New version: [1.8.1] Old Version: [1.8.0]
+[2023-05-24 17:38:21] INFO root fetch - processPackages [smartdash]: executing diffoscope
+[2023-05-24 17:38:21] INFO root fetch - processPackages [smartdash]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/smartdash-0.0.1.dev1.tar.gz tmp/smartdash-0.0.1.dev2.tar.gz --markdown 20230524/s/smartdash/0.0.1.dev1-0.0.1.dev2/diff.md --exclude *.pyd
+[2023-05-24 17:38:21] INFO root fetch - processPackages [rapidpro-flow-tools]: New version: [0.9.4] Old Version: [0.9.3]
+[2023-05-24 17:38:21] INFO root fetch - processPackages [simc-support]: executing diffoscope
+[2023-05-24 17:38:21] INFO root fetch - processPackages [simc-support]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/simc_support-9.2.5.2.tar.gz tmp/simc_support-9.2.5.3.tar.gz --markdown 20230524/s/simc-support/9.2.5.2-9.2.5.3/diff.md --exclude *.pyd
+[2023-05-24 17:38:21] INFO root fetch - processPackages [OSF-EIMTC]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-24 17:38:21] INFO root fetch - processPackages [satosacontrib.perun]: Downloading https://files.pythonhosted.org/packages/19/f0/b0df7007bc2d7089df1c134265546030ea6ecfcf74d2f08ae0c4c628a2b0/satosacontrib.perun-3.2.0.tar.gz
+[2023-05-24 17:38:21] INFO root fetch - processPackages [yellowbox-statsd]: Downloading https://files.pythonhosted.org/packages/36/47/62ccdfb56d6defbb289538eaeae5284a4e84693f61e83b465d319a469ce9/yellowbox_statsd-0.1.0.tar.gz
+[2023-05-24 17:38:21] INFO root fetch - processPackages [ccinput]: Downloading https://files.pythonhosted.org/packages/5f/a6/7b8db94f19dbd687f0c91063820f940ddd2b2c32943cdb27f3243f7ce962/ccinput-1.8.0.tar.gz
+[2023-05-24 17:38:21] INFO root fetch - processPackages [xformers]: executing diffoscope
+[2023-05-24 17:38:21] INFO root fetch - processPackages [xformers]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xformers-0.0.8.tar.gz tmp/xformers-0.0.9.tar.gz --markdown 20230524/x/xformers/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-24 17:38:21] INFO root fetch - processPackages [rapidpro-flow-tools]: Downloading https://files.pythonhosted.org/packages/32/0d/18b00e1e5e3b65ed030f8d6172b2533cd68ac2c1684023abbb0094ddec6c/rapidpro_flow_tools-0.9.4.tar.gz
+[2023-05-24 17:38:21] INFO root fetch - processPackages [satosacontrib.perun]: executing diffoscope
+[2023-05-24 17:38:21] INFO root fetch - processPackages [satosacontrib.perun]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/satosacontrib.perun-3.1.0.tar.gz tmp/satosacontrib.perun-3.2.0.tar.gz --markdown 20230524/s/satosacontrib.perun/3.1.0-3.2.0/diff.md --exclude *.pyd
+[2023-05-24 17:38:21] INFO root fetch - processPackages [trove-classifiers]: Downloading https://files.pythonhosted.org/packages/4a/ed/789b86a020378341936d0edc570130451915cee92db440bb513cd5b712a1/trove-classifiers-2023.5.24.tar.gz
+[2023-05-24 17:38:21] INFO root fetch - processPackages [OSF-EIMTC]: Downloading https://files.pythonhosted.org/packages/07/47/16d078e1107ddbfc1c5606fa448180e3bd7923ef32d5aad2a9a3e97e0214/OSF_EIMTC-0.1.8.tar.gz
+[2023-05-24 17:38:21] INFO root fetch - processPackages [rapidpro-flow-tools]: executing diffoscope
+[2023-05-24 17:38:21] INFO root fetch - processPackages [rapidpro-flow-tools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rapidpro_flow_tools-0.9.3.tar.gz tmp/rapidpro_flow_tools-0.9.4.tar.gz --markdown 20230524/r/rapidpro-flow-tools/0.9.3-0.9.4/diff.md --exclude *.pyd
+[2023-05-24 17:38:21] INFO root fetch - processPackages [trove-classifiers]: executing diffoscope
+[2023-05-24 17:38:21] INFO root fetch - processPackages [trove-classifiers]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/trove-classifiers-2023.5.22.tar.gz tmp/trove-classifiers-2023.5.24.tar.gz --markdown 20230524/t/trove-classifiers/2023.5.22-2023.5.24/diff.md --exclude *.pyd
+[2023-05-24 17:38:21] INFO root fetch - processPackages [ccinput]: Downloading https://files.pythonhosted.org/packages/43/30/cd4deb6633223f5bfa4645e90953339e19ff6d3b0d60e300b963a96914b1/ccinput-1.8.1.tar.gz
+[2023-05-24 17:38:21] WARNING root fetch - processPackages [OSF-EIMTC]: Skipping package: exceeds size limit 13771117>=10485760
+[2023-05-24 17:38:21] INFO root fetch - main [MainThread]: End processing [OSF-EIMTC] error
+[2023-05-24 17:38:22] INFO root fetch - processPackages [ccinput]: executing diffoscope
+[2023-05-24 17:38:22] INFO root fetch - processPackages [ccinput]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ccinput-1.8.0.tar.gz tmp/ccinput-1.8.1.tar.gz --markdown 20230524/c/ccinput/1.8.0-1.8.1/diff.md --exclude *.pyd
+[2023-05-24 17:38:22] INFO root fetch - processPackages [yellowbox-statsd]: Downloading https://files.pythonhosted.org/packages/5a/18/a23b18b68f406cb1f1cbfa3c5bc1d09e5845e7c95170ecb850efa993acda/yellowbox_statsd-0.1.1.tar.gz
+[2023-05-24 17:38:22] INFO root fetch - processPackages [yellowbox-statsd]: executing diffoscope
+[2023-05-24 17:38:22] INFO root fetch - processPackages [yellowbox-statsd]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/yellowbox_statsd-0.1.0.tar.gz tmp/yellowbox_statsd-0.1.1.tar.gz --markdown 20230524/y/yellowbox-statsd/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-05-24 17:38:22] INFO root fetch - main [MainThread]: End processing [smartdash]: success
+[2023-05-24 17:38:22] INFO root fetch - main [MainThread]: End processing [dbtgenlib]: success
+[2023-05-24 17:38:23] INFO root fetch - main [MainThread]: End processing [satosacontrib.perun]: success
+[2023-05-24 17:38:23] INFO root fetch - main [MainThread]: End processing [trove-classifiers]: success
+[2023-05-24 17:38:23] INFO root fetch - main [MainThread]: End processing [yellowbox-statsd]: success
+[2023-05-24 17:38:23] INFO root fetch - main [MainThread]: End processing [rapidpro-flow-tools]: success
+[2023-05-24 17:38:24] INFO root fetch - main [MainThread]: End processing [simc-support]: success
+[2023-05-24 17:38:25] INFO root fetch - main [MainThread]: End processing [xformers]: success
+[2023-05-24 17:39:08] INFO root fetch - main [MainThread]: End processing [ccinput]: success
+[2023-05-24 17:39:08] INFO root fetch - main [MainThread]: Store serial: [18232000]
