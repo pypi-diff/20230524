@@ -9968,3 +9968,34 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-05-24 09:51:12] INFO root fetch - main [MainThread]: End processing [dcs-code-injector]: success
 [2023-05-24 09:51:13] INFO root fetch - main [MainThread]: End processing [orchestrator-core]: success
 [2023-05-24 09:51:13] INFO root fetch - main [MainThread]: Store serial: [18226504]
+[2023-05-24 09:56:18] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18226504]
+[2023-05-24 09:56:22] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-05-24 09:56:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: radtract
+[2023-05-24 09:56:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: lazychains
+[2023-05-24 09:56:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: superfluid
+[2023-05-24 09:56:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: superfluid
+[2023-05-24 09:56:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: fugue-ml
+[2023-05-24 09:56:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: certora-cli-alpha-master
+[2023-05-24 09:56:22] INFO root fetch - processPackages [certora-cli-alpha-master]: New version: [20230523.15.35.372425] Old Version: [20230523.14.53.508403]
+[2023-05-24 09:56:22] INFO root fetch - processPackages [superfluid]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-24 09:56:22] INFO root fetch - processPackages [superfluid]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-24 09:56:22] INFO root fetch - processPackages [superfluid]: executing diffoscope
+[2023-05-24 09:56:22] INFO root fetch - processPackages [superfluid]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/superfluid-0.0.8.tar.gz tmp/superfluid-0.0.9.tar.gz --markdown 20230524/s/superfluid/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-24 09:56:23] WARNING root fetch - processPackages [radtract]: Skipping, unable to determine old version
+[2023-05-24 09:56:23] WARNING root fetch - processPackages [fugue-ml]: Skipping, unable to determine old version
+[2023-05-24 09:56:23] INFO root fetch - main [MainThread]: End processing [radtract] error
+[2023-05-24 09:56:23] INFO root fetch - main [MainThread]: End processing [fugue-ml] error
+[2023-05-24 09:56:23] INFO root fetch - processPackages [lazychains]: New version: [0.2.7] Old Version: [0.2.6]
+[2023-05-24 09:56:23] INFO root fetch - processPackages [superfluid]: executing diffoscope
+[2023-05-24 09:56:23] INFO root fetch - processPackages [superfluid]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/superfluid-0.0.8.tar.gz tmp/superfluid-0.0.9.tar.gz --markdown 20230524/s/superfluid/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-24 09:56:23] INFO root fetch - processPackages [certora-cli-alpha-master]: Downloading https://files.pythonhosted.org/packages/5b/86/5dd401dfd5a748fc7ab238b0545265869f8c74e75ebe28202e7a7ef989b8/certora-cli-alpha-master-20230523.14.53.508403.tar.gz
+[2023-05-24 09:56:23] WARNING root fetch - processPackages [certora-cli-alpha-master]: Skipping package: exceeds size limit 39044164>=10485760
+[2023-05-24 09:56:23] INFO root fetch - main [MainThread]: End processing [certora-cli-alpha-master] error
+[2023-05-24 09:56:23] INFO root fetch - processPackages [lazychains]: Downloading https://files.pythonhosted.org/packages/2c/7c/2d177eabeb6bf033605af3cd8f09c5b7524f1e737f8f4fb904ed0f177d90/lazychains-0.2.6.tar.gz
+[2023-05-24 09:56:23] INFO root fetch - processPackages [lazychains]: Downloading https://files.pythonhosted.org/packages/79/95/ed458c624444fb5f02e66c1d478a23068654339a2649a040396dbece5f1a/lazychains-0.2.7.tar.gz
+[2023-05-24 09:56:23] INFO root fetch - processPackages [lazychains]: executing diffoscope
+[2023-05-24 09:56:23] INFO root fetch - processPackages [lazychains]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lazychains-0.2.6.tar.gz tmp/lazychains-0.2.7.tar.gz --markdown 20230524/l/lazychains/0.2.6-0.2.7/diff.md --exclude *.pyd
+[2023-05-24 09:56:23] INFO root fetch - main [MainThread]: End processing [superfluid]: success
+[2023-05-24 09:56:24] INFO root fetch - main [MainThread]: End processing [superfluid]: success
+[2023-05-24 09:56:24] INFO root fetch - main [MainThread]: End processing [lazychains]: success
+[2023-05-24 09:56:24] INFO root fetch - main [MainThread]: Store serial: [18226532]
