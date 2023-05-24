@@ -9275,3 +9275,42 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-05-24 09:05:40] INFO root fetch - main [MainThread]: End processing [yyxx-game-pkg]: success
 [2023-05-24 09:05:40] INFO root fetch - main [MainThread]: End processing [z4d-certified-devices]: success
 [2023-05-24 09:05:40] INFO root fetch - main [MainThread]: Store serial: [18226070]
+[2023-05-24 09:10:45] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18226070]
+[2023-05-24 09:10:50] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-05-24 09:10:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: drafthorse2
+[2023-05-24 09:10:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: reditio
+[2023-05-24 09:10:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: tf-models-nightly
+[2023-05-24 09:10:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pygeoshader
+[2023-05-24 09:10:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: HawaData
+[2023-05-24 09:10:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: huspacy-nightly
+[2023-05-24 09:10:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: savant-rs
+[2023-05-24 09:10:50] INFO root fetch - processPackages [reditio]: New version: [0.2.0] Old Version: [0.1.0]
+[2023-05-24 09:10:50] WARNING root fetch - processPackages [drafthorse2]: Skipping, unable to determine old version
+[2023-05-24 09:10:50] INFO root fetch - main [MainThread]: End processing [drafthorse2] error
+[2023-05-24 09:10:50] WARNING root fetch - processPackages [pygeoshader]: Skipping, unable to determine old version
+[2023-05-24 09:10:50] INFO root fetch - main [MainThread]: End processing [pygeoshader] error
+[2023-05-24 09:10:50] INFO root fetch - processPackages [huspacy-nightly]: New version: [0.9.0.dev224] Old Version: [0.9.0.dev223]
+[2023-05-24 09:10:50] INFO root fetch - processPackages [HawaData]: New version: [0.5.3] Old Version: [0.5.2]
+[2023-05-24 09:10:50] INFO root fetch - processPackages [savant-rs]: New version: [0.1.9] Old Version: [0.1.7]
+[2023-05-24 09:10:50] INFO root fetch - processPackages [tf-models-nightly]: New version: [2.9.0.dev20220920] Old Version: [2.9.0.dev20220919]
+[2023-05-24 09:10:50] INFO root fetch - processPackages [savant-rs]: executing diffoscope
+[2023-05-24 09:10:50] INFO root fetch - processPackages [savant-rs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/savant_rs-0.1.7.tar.gz tmp/savant_rs-0.1.9.tar.gz --markdown 20230524/s/savant-rs/0.1.7-0.1.9/diff.md --exclude *.pyd
+[2023-05-24 09:10:50] INFO root fetch - processPackages [tf-models-nightly]: executing diffoscope
+[2023-05-24 09:10:50] INFO root fetch - processPackages [tf-models-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tf_models_nightly-2.9.0.dev20220919-py2.py3-none-any.whl.zip tmp/tf_models_nightly-2.9.0.dev20220920-py2.py3-none-any.whl.zip --markdown 20230524/t/tf-models-nightly/2.9.0.dev20220919-2.9.0.dev20220920/diff.md --exclude *.pyd
+[2023-05-24 09:10:50] INFO root fetch - processPackages [HawaData]: Downloading https://files.pythonhosted.org/packages/75/3e/79dafd3ccdc07e8b1625c26c70d52c431a8c0350105e703e7aa0d79a2344/HawaData-0.5.2.tar.gz
+[2023-05-24 09:10:50] INFO root fetch - processPackages [reditio]: Downloading https://files.pythonhosted.org/packages/ae/fa/0875e65768d0fc0eae7796e28b4c05e92e7c2e5c5cd989f38516abe15a53/reditio-0.1.0.tar.gz
+[2023-05-24 09:10:50] INFO root fetch - processPackages [huspacy-nightly]: Downloading https://files.pythonhosted.org/packages/ec/28/6c181f86112bde622a23031ef997014ee4c88e3b33be2886e508a2cc7f3b/huspacy_nightly-0.9.0.dev224-py3-none-any.whl
+[2023-05-24 09:10:50] INFO root fetch - processPackages [huspacy-nightly]: executing diffoscope
+[2023-05-24 09:10:50] INFO root fetch - processPackages [huspacy-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/huspacy_nightly-0.9.0.dev223-py3-none-any.whl.zip tmp/huspacy_nightly-0.9.0.dev224-py3-none-any.whl.zip --markdown 20230524/h/huspacy-nightly/0.9.0.dev223-0.9.0.dev224/diff.md --exclude *.pyd
+[2023-05-24 09:10:50] INFO root fetch - processPackages [HawaData]: Downloading https://files.pythonhosted.org/packages/4d/17/4fad37051d5c60ec61e9b82f4282bf79fe10d97e024b05c54debb37d6f03/HawaData-0.5.3.tar.gz
+[2023-05-24 09:10:50] INFO root fetch - processPackages [HawaData]: executing diffoscope
+[2023-05-24 09:10:50] INFO root fetch - processPackages [HawaData]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/HawaData-0.5.2.tar.gz tmp/HawaData-0.5.3.tar.gz --markdown 20230524/H/HawaData/0.5.2-0.5.3/diff.md --exclude *.pyd
+[2023-05-24 09:10:50] INFO root fetch - processPackages [reditio]: Downloading https://files.pythonhosted.org/packages/28/46/3696f31aea5e00123173d1654e2eb7ebca86dfa1cf7c8d75294040f8b786/reditio-0.2.0.tar.gz
+[2023-05-24 09:10:50] INFO root fetch - processPackages [reditio]: executing diffoscope
+[2023-05-24 09:10:50] INFO root fetch - processPackages [reditio]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/reditio-0.1.0.tar.gz tmp/reditio-0.2.0.tar.gz --markdown 20230524/r/reditio/0.1.0-0.2.0/diff.md --exclude *.pyd
+[2023-05-24 09:10:51] INFO root fetch - main [MainThread]: End processing [HawaData]: success
+[2023-05-24 09:10:51] INFO root fetch - main [MainThread]: End processing [reditio]: success
+[2023-05-24 09:10:51] INFO root fetch - main [MainThread]: End processing [huspacy-nightly]: success
+[2023-05-24 09:10:53] INFO root fetch - main [MainThread]: End processing [savant-rs]: success
+[2023-05-24 09:11:03] INFO root fetch - main [MainThread]: End processing [tf-models-nightly]: success
+[2023-05-24 09:11:03] INFO root fetch - main [MainThread]: Store serial: [18226105]
