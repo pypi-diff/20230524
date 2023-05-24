@@ -7288,3 +7288,32 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-05-24 06:11:25] INFO root fetch - main [MainThread]: End processing [segment-geospatial]: success
 [2023-05-24 06:11:25] INFO root fetch - main [MainThread]: End processing [odoo14-addon-mrp-routing]: success
 [2023-05-24 06:11:25] INFO root fetch - main [MainThread]: Store serial: [18224800]
+[2023-05-24 06:16:29] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18224800]
+[2023-05-24 06:16:34] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-05-24 06:16:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: launchflow
+[2023-05-24 06:16:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: edman
+[2023-05-24 06:16:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: isqlab
+[2023-05-24 06:16:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: SmokeyBear
+[2023-05-24 06:16:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: gnssanalysis
+[2023-05-24 06:16:34] INFO root fetch - processPackages [gnssanalysis]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-24 06:16:34] INFO root fetch - processPackages [edman]: New version: [2023.5.8] Old Version: [2023.5.23.1]
+[2023-05-24 06:16:34] INFO root fetch - processPackages [launchflow]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-24 06:16:34] INFO root fetch - processPackages [isqlab]: New version: [0.3.6] Old Version: [0.3.4]
+[2023-05-24 06:16:34] WARNING root fetch - processPackages [SmokeyBear]: Skipping, unable to determine old version
+[2023-05-24 06:16:34] INFO root fetch - main [MainThread]: End processing [SmokeyBear] error
+[2023-05-24 06:16:34] INFO root fetch - processPackages [edman]: Downloading https://files.pythonhosted.org/packages/6d/e3/31ac8b7b1032658fa1f21078fb958d6d6666b25771112827d4c5ceab735c/edman-2023.5.23.1.tar.gz
+[2023-05-24 06:16:34] INFO root fetch - processPackages [gnssanalysis]: executing diffoscope
+[2023-05-24 06:16:34] INFO root fetch - processPackages [gnssanalysis]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gnssanalysis-0.0.8.tar.gz tmp/gnssanalysis-0.0.9.tar.gz --markdown 20230524/g/gnssanalysis/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-24 06:16:34] INFO root fetch - processPackages [launchflow]: Downloading https://files.pythonhosted.org/packages/2a/b0/56dc7bd9ba2263bd34aa1a371f6b9c20aea5efc162d9c5179983dcd3fd1b/launchflow-0.1.8.tar.gz
+[2023-05-24 06:16:34] INFO root fetch - processPackages [isqlab]: Downloading https://files.pythonhosted.org/packages/88/58/0f190ccda3a8640cf7cdde1f810278e0e52d50ff3c8d9f4ce8e43e5bae10/isqlab-0.3.4.tar.gz
+[2023-05-24 06:16:34] WARNING root fetch - processPackages [launchflow]: Skipping package: exceeds size limit 96610312>=10485760
+[2023-05-24 06:16:34] INFO root fetch - main [MainThread]: End processing [launchflow] error
+[2023-05-24 06:16:34] INFO root fetch - processPackages [edman]: executing diffoscope
+[2023-05-24 06:16:34] INFO root fetch - processPackages [edman]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/edman-2023.5.23.1.tar.gz tmp/edman-2023.5.8.tar.gz --markdown 20230524/e/edman/2023.5.23.1-2023.5.8/diff.md --exclude *.pyd
+[2023-05-24 06:16:34] INFO root fetch - processPackages [isqlab]: Downloading https://files.pythonhosted.org/packages/61/cf/8a995fbfc66b1aee95c12edd1b7b90e132f35cd35cc89e2593e36ccb0bb3/isqlab-0.3.6.tar.gz
+[2023-05-24 06:16:34] INFO root fetch - processPackages [isqlab]: executing diffoscope
+[2023-05-24 06:16:34] INFO root fetch - processPackages [isqlab]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/isqlab-0.3.4.tar.gz tmp/isqlab-0.3.6.tar.gz --markdown 20230524/i/isqlab/0.3.4-0.3.6/diff.md --exclude *.pyd
+[2023-05-24 06:16:35] INFO root fetch - main [MainThread]: End processing [gnssanalysis]: success
+[2023-05-24 06:16:35] INFO root fetch - main [MainThread]: End processing [edman]: success
+[2023-05-24 06:16:35] INFO root fetch - main [MainThread]: End processing [isqlab]: success
+[2023-05-24 06:16:35] INFO root fetch - main [MainThread]: Store serial: [18224819]
