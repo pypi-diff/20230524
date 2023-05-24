@@ -12848,3 +12848,68 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd4 in position 72: invalid
 [2023-05-24 12:32:41] INFO root fetch - main [MainThread]: End processing [v8unpack]: success
 [2023-05-24 12:32:43] INFO root fetch - main [MainThread]: End processing [BookerWikiTool]: success
 [2023-05-24 12:32:43] INFO root fetch - main [MainThread]: Store serial: [18228320]
+[2023-05-24 12:37:47] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18228320]
+[2023-05-24 12:37:51] INFO root fetch - main [MainThread]: Found 12 changed packages
+[2023-05-24 12:37:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: mlcvzoo-base
+[2023-05-24 12:37:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: upstash-pulumi
+[2023-05-24 12:37:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: yunpancli
+[2023-05-24 12:37:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: decore-Base
+[2023-05-24 12:37:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: qtgql
+[2023-05-24 12:37:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: p-ttauto-crawler
+[2023-05-24 12:37:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: qontract-reconcile
+[2023-05-24 12:37:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: JBPhD
+[2023-05-24 12:37:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: stlock
+[2023-05-24 12:37:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: scaneo
+[2023-05-24 12:37:51] INFO root fetch - processPackages [yunpancli]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-05-24 12:37:51] INFO root fetch - processPackages [p-ttauto-crawler]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-24 12:37:51] INFO root fetch - processPackages [qtgql]: New version: [0.118.0] Old Version: [0.117.0]
+[2023-05-24 12:37:51] WARNING root fetch - processPackages [scaneo]: Skipping, unable to determine old version
+[2023-05-24 12:37:51] INFO root fetch - processPackages [JBPhD]: New version: [2.1.9] Old Version: [2.1.8]
+[2023-05-24 12:37:51] INFO root fetch - processPackages [scaneo]: Start processing: pygments-git
+[2023-05-24 12:37:51] INFO root fetch - main [MainThread]: End processing [scaneo] error
+[2023-05-24 12:37:51] INFO root fetch - processPackages [stlock]: New version: [0.0.7.2] Old Version: [0.0.7.1]
+[2023-05-24 12:37:51] INFO root fetch - processPackages [qontract-reconcile]: New version: [0.9.1rc99] Old Version: [0.9.1rc98]
+[2023-05-24 12:37:51] INFO root fetch - processPackages [JBPhD]: executing diffoscope
+[2023-05-24 12:37:51] INFO root fetch - processPackages [JBPhD]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/JBPhD-2.1.8-py3-none-any.whl.zip tmp/JBPhD-2.1.9.tar.gz --markdown 20230524/J/JBPhD/2.1.8-2.1.9/diff.md --exclude *.pyd
+[2023-05-24 12:37:51] INFO root fetch - processPackages [upstash-pulumi]: New version: [0.2.0] Old Version: [0.1.2]
+[2023-05-24 12:37:51] INFO root fetch - processPackages [mlcvzoo-base]: New version: [5.3.4] Old Version: [5.3.3]
+[2023-05-24 12:37:51] WARNING root fetch - processPackages [decore-Base]: Skipping, unable to determine old version
+[2023-05-24 12:37:51] INFO root fetch - processPackages [decore-Base]: Start processing: superannotate
+[2023-05-24 12:37:51] INFO root fetch - main [MainThread]: End processing [decore-Base] error
+[2023-05-24 12:37:51] INFO root fetch - processPackages [yunpancli]: executing diffoscope
+[2023-05-24 12:37:51] INFO root fetch - processPackages [yunpancli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/yunpancli-0.0.1.tar.gz tmp/yunpancli-0.0.2.tar.gz --markdown 20230524/y/yunpancli/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-05-24 12:37:51] INFO root fetch - processPackages [qontract-reconcile]: executing diffoscope
+[2023-05-24 12:37:51] INFO root fetch - processPackages [qontract-reconcile]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/qontract_reconcile-0.9.1rc98-py3-none-any.whl.zip tmp/qontract_reconcile-0.9.1rc99-py3-none-any.whl.zip --markdown 20230524/q/qontract-reconcile/0.9.1rc98-0.9.1rc99/diff.md --exclude *.pyd
+[2023-05-24 12:37:51] INFO root fetch - processPackages [qtgql]: executing diffoscope
+[2023-05-24 12:37:51] INFO root fetch - processPackages [qtgql]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/qtgql-0.117.0.tar.gz tmp/qtgql-0.118.0.tar.gz --markdown 20230524/q/qtgql/0.117.0-0.118.0/diff.md --exclude *.pyd
+[2023-05-24 12:37:52] INFO root fetch - processPackages [superannotate]: New version: [4.4.9b1] Old Version: [4.4.9.dev5]
+[2023-05-24 12:37:52] INFO root fetch - processPackages [pygments-git]: New version: [1.4.0] Old Version: [1.3.0]
+[2023-05-24 12:37:52] INFO root fetch - processPackages [superannotate]: executing diffoscope
+[2023-05-24 12:37:52] INFO root fetch - processPackages [superannotate]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/superannotate-4.4.9.dev5.tar.gz tmp/superannotate-4.4.9b1.tar.gz --markdown 20230524/s/superannotate/4.4.9.dev5-4.4.9b1/diff.md --exclude *.pyd
+[2023-05-24 12:37:52] INFO root fetch - processPackages [stlock]: Downloading https://files.pythonhosted.org/packages/c5/20/ca907e33570cad38f8af3862cc958edcb4cf95bd8daa67a11ed6abe5bfac/stlock-0.0.7.2.tar.gz
+[2023-05-24 12:37:52] INFO root fetch - processPackages [stlock]: executing diffoscope
+[2023-05-24 12:37:52] INFO root fetch - processPackages [stlock]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/stlock-0.0.7.1.tar.gz tmp/stlock-0.0.7.2.tar.gz --markdown 20230524/s/stlock/0.0.7.1-0.0.7.2/diff.md --exclude *.pyd
+[2023-05-24 12:37:52] INFO root fetch - processPackages [pygments-git]: Downloading https://files.pythonhosted.org/packages/9f/31/2b4a41ab92ab785afcfcb189ca4ba81c476eaa25f90f0f3ed351636e03e6/pygments_git-1.3.0.tar.gz
+[2023-05-24 12:37:52] INFO root fetch - processPackages [p-ttauto-crawler]: executing diffoscope
+[2023-05-24 12:37:52] INFO root fetch - processPackages [p-ttauto-crawler]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/p-ttauto-crawler-0.0.8.tar.gz tmp/p-ttauto-crawler-0.0.9.tar.gz --markdown 20230524/p/p-ttauto-crawler/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-24 12:37:52] INFO root fetch - processPackages [mlcvzoo-base]: Downloading https://files.pythonhosted.org/packages/6c/b8/3a8a2e99d0c0d5d4d4b97eb4ea0171920b7692348f48a07c9706994b0fe7/mlcvzoo_base-5.3.4.tar.gz
+[2023-05-24 12:37:52] INFO root fetch - processPackages [upstash-pulumi]: Downloading https://files.pythonhosted.org/packages/42/af/af360bd1fb980a45a4db37d104346ae5ce6a9db65f8ff9a3b8f17a4acb86/upstash_pulumi-0.1.2.tar.gz
+[2023-05-24 12:37:52] INFO root fetch - processPackages [mlcvzoo-base]: executing diffoscope
+[2023-05-24 12:37:52] INFO root fetch - processPackages [mlcvzoo-base]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mlcvzoo_base-5.3.3.tar.gz tmp/mlcvzoo_base-5.3.4.tar.gz --markdown 20230524/m/mlcvzoo-base/5.3.3-5.3.4/diff.md --exclude *.pyd
+[2023-05-24 12:37:52] INFO root fetch - processPackages [pygments-git]: Downloading https://files.pythonhosted.org/packages/86/b1/430d04f1baddfc6ec4cbe992fd319e811cb0838fddd8f61ce7e81056ee9b/pygments_git-1.4.0.tar.gz
+[2023-05-24 12:37:52] INFO root fetch - processPackages [upstash-pulumi]: Downloading https://files.pythonhosted.org/packages/7a/eb/ca74e94f6b3f42dfd67de17c6590f78bdef43ff5edbb15511527a01e0fd4/upstash_pulumi-0.2.0.tar.gz
+[2023-05-24 12:37:52] INFO root fetch - processPackages [upstash-pulumi]: executing diffoscope
+[2023-05-24 12:37:52] INFO root fetch - processPackages [upstash-pulumi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/upstash_pulumi-0.1.2.tar.gz tmp/upstash_pulumi-0.2.0.tar.gz --markdown 20230524/u/upstash-pulumi/0.1.2-0.2.0/diff.md --exclude *.pyd
+[2023-05-24 12:37:52] INFO root fetch - processPackages [pygments-git]: executing diffoscope
+[2023-05-24 12:37:52] INFO root fetch - processPackages [pygments-git]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pygments_git-1.3.0.tar.gz tmp/pygments_git-1.4.0.tar.gz --markdown 20230524/p/pygments-git/1.3.0-1.4.0/diff.md --exclude *.pyd
+[2023-05-24 12:37:53] INFO root fetch - main [MainThread]: End processing [yunpancli]: success
+[2023-05-24 12:37:53] INFO root fetch - main [MainThread]: End processing [stlock]: success
+[2023-05-24 12:37:53] INFO root fetch - main [MainThread]: End processing [p-ttauto-crawler]: success
+[2023-05-24 12:37:53] INFO root fetch - main [MainThread]: End processing [qtgql]: success
+[2023-05-24 12:37:54] INFO root fetch - main [MainThread]: End processing [pygments-git]: success
+[2023-05-24 12:37:54] INFO root fetch - main [MainThread]: End processing [upstash-pulumi]: success
+[2023-05-24 12:37:54] INFO root fetch - main [MainThread]: End processing [mlcvzoo-base]: success
+[2023-05-24 12:37:55] INFO root fetch - main [MainThread]: End processing [JBPhD]: success
+[2023-05-24 12:37:56] INFO root fetch - main [MainThread]: End processing [superannotate]: success
+[2023-05-24 12:37:58] INFO root fetch - main [MainThread]: End processing [qontract-reconcile]: success
+[2023-05-24 12:37:58] INFO root fetch - main [MainThread]: Store serial: [18228382]
