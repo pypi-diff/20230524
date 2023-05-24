@@ -6398,3 +6398,54 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-05-24 05:17:58] INFO root fetch - main [MainThread]: End processing [rapidpro-flow-tools]: success
 [2023-05-24 05:18:02] INFO root fetch - main [MainThread]: End processing [cdktf-cdktf-provider-spotinst]: success
 [2023-05-24 05:18:02] INFO root fetch - main [MainThread]: Store serial: [18224358]
+[2023-05-24 05:23:07] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18224358]
+[2023-05-24 05:23:12] INFO root fetch - main [MainThread]: Found 10 changed packages
+[2023-05-24 05:23:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: aaz-dev
+[2023-05-24 05:23:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: TF-Misc
+[2023-05-24 05:23:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: hydra-zen
+[2023-05-24 05:23:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: GANDLF
+[2023-05-24 05:23:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: celescope
+[2023-05-24 05:23:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: llmo
+[2023-05-24 05:23:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: closeai
+[2023-05-24 05:23:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: tf-misc
+[2023-05-24 05:23:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: rapidpro-flow-tools
+[2023-05-24 05:23:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: chalk-harness
+[2023-05-24 05:23:12] INFO root fetch - processPackages [hydra-zen]: New version: [0.9.1] Old Version: [0.9.0rc5]
+[2023-05-24 05:23:12] INFO root fetch - processPackages [llmo]: New version: [0.2.2] Old Version: [0.2.1]
+[2023-05-24 05:23:12] INFO root fetch - processPackages [rapidpro-flow-tools]: New version: [0.5.0] Old Version: [0.3.0]
+[2023-05-24 05:23:12] INFO root fetch - processPackages [chalk-harness]: New version: [0.9.9] Old Version: [0.9.8]
+[2023-05-24 05:23:12] INFO root fetch - processPackages [hydra-zen]: executing diffoscope
+[2023-05-24 05:23:12] INFO root fetch - processPackages [hydra-zen]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hydra_zen-0.9.0rc5.tar.gz tmp/hydra_zen-0.9.1.tar.gz --markdown 20230524/h/hydra-zen/0.9.0rc5-0.9.1/diff.md --exclude *.pyd
+[2023-05-24 05:23:12] INFO root fetch - processPackages [aaz-dev]: New version: [1.3.0] Old Version: [1.2.1]
+[2023-05-24 05:23:12] INFO root fetch - processPackages [GANDLF]: New version: [0.0.17.dev20230524] Old Version: [0.0.17.dev20230523]
+[2023-05-24 05:23:12] INFO root fetch - processPackages [llmo]: executing diffoscope
+[2023-05-24 05:23:12] WARNING root fetch - processPackages [closeai]: Skipping, unable to determine old version
+[2023-05-24 05:23:12] INFO root fetch - processPackages [llmo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/llmo-0.2.1.tar.gz tmp/llmo-0.2.2.tar.gz --markdown 20230524/l/llmo/0.2.1-0.2.2/diff.md --exclude *.pyd
+[2023-05-24 05:23:12] INFO root fetch - processPackages [chalk-harness]: executing diffoscope
+[2023-05-24 05:23:12] INFO root fetch - main [MainThread]: End processing [closeai] error
+[2023-05-24 05:23:12] INFO root fetch - processPackages [chalk-harness]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/chalk-harness-0.9.8.tar.gz tmp/chalk-harness-0.9.9.tar.gz --markdown 20230524/c/chalk-harness/0.9.8-0.9.9/diff.md --exclude *.pyd
+[2023-05-24 05:23:12] INFO root fetch - processPackages [celescope]: New version: [1.9.0] Old Version: [1.8.1]
+[2023-05-24 05:23:12] WARNING root fetch - processPackages [TF-Misc]: Skipping, unable to determine old version
+[2023-05-24 05:23:12] WARNING root fetch - processPackages [tf-misc]: Skipping, unable to determine old version
+[2023-05-24 05:23:12] INFO root fetch - main [MainThread]: End processing [TF-Misc] error
+[2023-05-24 05:23:12] INFO root fetch - main [MainThread]: End processing [tf-misc] error
+[2023-05-24 05:23:12] INFO root fetch - processPackages [rapidpro-flow-tools]: Downloading https://files.pythonhosted.org/packages/e0/f1/32791f8b28420e387106f73fef6e4f35beceafcd0a6be6b62a3e02ab9f09/rapidpro_flow_tools-0.5.0.tar.gz
+[2023-05-24 05:23:12] INFO root fetch - processPackages [aaz-dev]: Downloading https://files.pythonhosted.org/packages/ea/f5/ae0555518560e9c5e56bc3854499f32fa10d4379e3e63e992f607c551a68/aaz-dev-1.2.1.tar.gz
+[2023-05-24 05:23:12] INFO root fetch - processPackages [rapidpro-flow-tools]: executing diffoscope
+[2023-05-24 05:23:12] INFO root fetch - processPackages [rapidpro-flow-tools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rapidpro_flow_tools-0.3.0.tar.gz tmp/rapidpro_flow_tools-0.5.0.tar.gz --markdown 20230524/r/rapidpro-flow-tools/0.3.0-0.5.0/diff.md --exclude *.pyd
+[2023-05-24 05:23:12] INFO root fetch - processPackages [GANDLF]: Downloading https://files.pythonhosted.org/packages/74/e3/a8cf489fb04f7e5d6fa46eb38297a9456e66c7d1a01a9a198b491f5e5fc5/GANDLF-0.0.17.dev20230524.tar.gz
+[2023-05-24 05:23:12] INFO root fetch - processPackages [celescope]: executing diffoscope
+[2023-05-24 05:23:12] INFO root fetch - processPackages [celescope]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/celescope-1.8.1.tar.gz tmp/celescope-1.9.0.tar.gz --markdown 20230524/c/celescope/1.8.1-1.9.0/diff.md --exclude *.pyd
+[2023-05-24 05:23:12] INFO root fetch - processPackages [GANDLF]: executing diffoscope
+[2023-05-24 05:23:12] INFO root fetch - processPackages [GANDLF]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/GANDLF-0.0.17.dev20230523.tar.gz tmp/GANDLF-0.0.17.dev20230524.tar.gz --markdown 20230524/G/GANDLF/0.0.17.dev20230523-0.0.17.dev20230524/diff.md --exclude *.pyd
+[2023-05-24 05:23:13] INFO root fetch - processPackages [aaz-dev]: Downloading https://files.pythonhosted.org/packages/f4/78/cbf569ae20cc7dafa3f489ee70b01cffd87a36174605192b213b01abc4c6/aaz-dev-1.3.0.tar.gz
+[2023-05-24 05:23:13] INFO root fetch - processPackages [aaz-dev]: executing diffoscope
+[2023-05-24 05:23:13] INFO root fetch - processPackages [aaz-dev]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aaz-dev-1.2.1.tar.gz tmp/aaz-dev-1.3.0.tar.gz --markdown 20230524/a/aaz-dev/1.2.1-1.3.0/diff.md --exclude *.pyd
+[2023-05-24 05:23:13] INFO root fetch - main [MainThread]: End processing [chalk-harness]: success
+[2023-05-24 05:23:13] INFO root fetch - main [MainThread]: End processing [llmo]: success
+[2023-05-24 05:23:13] INFO root fetch - main [MainThread]: End processing [rapidpro-flow-tools]: success
+[2023-05-24 05:23:15] INFO root fetch - main [MainThread]: End processing [GANDLF]: success
+[2023-05-24 05:23:15] INFO root fetch - main [MainThread]: End processing [celescope]: success
+[2023-05-24 05:23:16] INFO root fetch - main [MainThread]: End processing [hydra-zen]: success
+[2023-05-24 05:23:17] INFO root fetch - main [MainThread]: End processing [aaz-dev]: success
+[2023-05-24 05:23:17] INFO root fetch - main [MainThread]: Store serial: [18224398]
