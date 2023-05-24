@@ -22838,3 +22838,98 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd4 in position 72: invalid
 [2023-05-24 21:25:04] INFO root fetch - main [MainThread]: End processing [spic]: success
 [2023-05-24 21:25:04] INFO root fetch - main [MainThread]: End processing [jadecobra]: success
 [2023-05-24 21:25:04] INFO root fetch - main [MainThread]: Store serial: [18234842]
+[2023-05-24 21:30:08] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18234842]
+[2023-05-24 21:30:13] INFO root fetch - main [MainThread]: Found 16 changed packages
+[2023-05-24 21:30:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: spacetraders
+[2023-05-24 21:30:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: vcorelib
+[2023-05-24 21:30:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: auto-archiver
+[2023-05-24 21:30:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: DUELink
+[2023-05-24 21:30:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: simply-sqlite
+[2023-05-24 21:30:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: ebdesk-email-executor
+[2023-05-24 21:30:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: datasette-sqlite-vss
+[2023-05-24 21:30:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: sqlite-vss
+[2023-05-24 21:30:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: seeFretboard
+[2023-05-24 21:30:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: rubi
+[2023-05-24 21:30:13] INFO root fetch - processPackages [vcorelib]: New version: [1.6.5] Old Version: [1.6.4]
+[2023-05-24 21:30:13] INFO root fetch - processPackages [auto-archiver]: New version: [0.5.8] Old Version: [0.5.7]
+[2023-05-24 21:30:13] INFO root fetch - processPackages [datasette-sqlite-vss]: New version: [0.1.1a6] Old Version: [0.1.1a5]
+[2023-05-24 21:30:13] INFO root fetch - processPackages [seeFretboard]: New version: [0.0.4] Old Version: [0.0.3]
+[2023-05-24 21:30:13] INFO root fetch - processPackages [sqlite-vss]: New version: [0.1.1a6] Old Version: [0.1.1a5]
+[2023-05-24 21:30:13] INFO root fetch - processPackages [simply-sqlite]: New version: [0.1.16] Old Version: [0.1.14]
+[2023-05-24 21:30:13] INFO root fetch - processPackages [spacetraders]: New version: [0.5.0] Old Version: [0.4.0]
+[2023-05-24 21:30:13] INFO root fetch - processPackages [DUELink]: New version: [1.0.2] Old Version: [1.0.1]
+[2023-05-24 21:30:13] WARNING root fetch - processPackages [ebdesk-email-executor]: Skipping, unable to determine old version
+[2023-05-24 21:30:13] INFO root fetch - processPackages [ebdesk-email-executor]: Start processing: datumaro-light
+[2023-05-24 21:30:13] INFO root fetch - main [MainThread]: End processing [ebdesk-email-executor] error
+[2023-05-24 21:30:13] INFO root fetch - processPackages [rubi]: New version: [1.3.2] Old Version: [1.3.1]
+[2023-05-24 21:30:13] INFO root fetch - processPackages [auto-archiver]: executing diffoscope
+[2023-05-24 21:30:13] INFO root fetch - processPackages [auto-archiver]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/auto_archiver-0.5.7.tar.gz tmp/auto_archiver-0.5.8.tar.gz --markdown 20230524/a/auto-archiver/0.5.7-0.5.8/diff.md --exclude *.pyd
+[2023-05-24 21:30:13] WARNING root fetch - processPackages [datumaro-light]: Skipping, unable to determine old version
+[2023-05-24 21:30:13] INFO root fetch - processPackages [datumaro-light]: Start processing: randseal
+[2023-05-24 21:30:13] INFO root fetch - main [MainThread]: End processing [datumaro-light] error
+[2023-05-24 21:30:13] INFO root fetch - processPackages [vcorelib]: Downloading https://files.pythonhosted.org/packages/b7/4b/d57abae1cf5b69804ee3c8a837a4ec9273378857ea12f986dd55cecc207e/vcorelib-1.6.4.tar.gz
+[2023-05-24 21:30:13] INFO root fetch - processPackages [seeFretboard]: Downloading https://files.pythonhosted.org/packages/71/f6/e13ad9e82e3882693c4fdfc1b741a8ca36c5be3aa470fc01cff8c04b0d9c/seeFretboard-0.0.3.tar.gz
+[2023-05-24 21:30:13] INFO root fetch - processPackages [spacetraders]: Downloading https://files.pythonhosted.org/packages/07/c7/374766ef686ded38eb7bbafe00bb4176531dc2fb401e6dd988de132a829a/spacetraders-0.4.0.tar.gz
+[2023-05-24 21:30:13] INFO root fetch - processPackages [randseal]: New version: [3.3.0] Old Version: [3.2.0]
+[2023-05-24 21:30:13] INFO root fetch - processPackages [datasette-sqlite-vss]: Downloading https://files.pythonhosted.org/packages/4d/e1/f1104c3298a2916f85cdfe49f424e31d5a6a24c94342a7057a636530729d/datasette_sqlite_vss-0.1.1a6-py3-none-any.whl
+[2023-05-24 21:30:13] INFO root fetch - processPackages [sqlite-vss]: Downloading https://files.pythonhosted.org/packages/d2/d3/8c7c6f0ea2183bb004c2d3ea55fb1c3f917777607ae9ab4d084d45526bb5/sqlite_vss-0.1.1a6-py3-none-manylinux_2_17_x86_64.manylinux2014_x86_64.manylinux1_x86_64.whl
+[2023-05-24 21:30:13] INFO root fetch - processPackages [simply-sqlite]: Downloading https://files.pythonhosted.org/packages/fd/27/344ed84a67a561972f47b50f9c02774d8a74ec8ff0cc0005870a1b059557/simply_sqlite-0.1.14-py3-none-any.whl
+[2023-05-24 21:30:13] INFO root fetch - processPackages [rubi]: Downloading https://files.pythonhosted.org/packages/45/b8/3a73f13874d7ffadd35253acbb6e27bdcb56351b4d2c93f0015994f701e6/rubi-1.3.1.tar.gz
+[2023-05-24 21:30:13] INFO root fetch - processPackages [DUELink]: Downloading https://files.pythonhosted.org/packages/ca/38/24fdc9d4300b0aa68852f56d0db1adf0bdcf0918ca0e7a40dd7351ca1d57/DUELink-1.0.1-py3-none-any.whl
+[2023-05-24 21:30:13] INFO root fetch - processPackages [datasette-sqlite-vss]: executing diffoscope
+[2023-05-24 21:30:13] INFO root fetch - processPackages [datasette-sqlite-vss]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/datasette_sqlite_vss-0.1.1a5-py3-none-any.whl.zip tmp/datasette_sqlite_vss-0.1.1a6-py3-none-any.whl.zip --markdown 20230524/d/datasette-sqlite-vss/0.1.1a5-0.1.1a6/diff.md --exclude *.pyd
+[2023-05-24 21:30:13] INFO root fetch - processPackages [randseal]: Downloading https://files.pythonhosted.org/packages/5c/fc/bf889531f0a4e5d3f890bf49174bb68056aa3acb6d3072bcd60275797b0d/randseal-3.2.0.tar.gz
+[2023-05-24 21:30:13] INFO root fetch - processPackages [vcorelib]: Downloading https://files.pythonhosted.org/packages/d1/4b/ababde6159c9524c4bdae3b8379ca9434ad7df946b3c4209bbd8034bb0db/vcorelib-1.6.5.tar.gz
+[2023-05-24 21:30:13] INFO root fetch - processPackages [sqlite-vss]: executing diffoscope
+[2023-05-24 21:30:13] INFO root fetch - processPackages [sqlite-vss]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sqlite_vss-0.1.1a5-py3-none-manylinux_2_17_x86_64.manylinux2014_x86_64.manylinux1_x86_64.whl.zip tmp/sqlite_vss-0.1.1a6-py3-none-manylinux_2_17_x86_64.manylinux2014_x86_64.manylinux1_x86_64.whl.zip --markdown 20230524/s/sqlite-vss/0.1.1a5-0.1.1a6/diff.md --exclude *.pyd
+[2023-05-24 21:30:13] INFO root fetch - processPackages [seeFretboard]: Downloading https://files.pythonhosted.org/packages/69/b3/fd72e7e0053b090aa4ed78c2c4aa9e5f66ce013fa0d3d626a5dd77f63e5c/seeFretboard-0.0.4.tar.gz
+[2023-05-24 21:30:13] INFO root fetch - processPackages [simply-sqlite]: Downloading https://files.pythonhosted.org/packages/31/e6/1670f7146f17001266ae6a79bd6a6941d6c6340d99c6e5aea7ec4897f2a2/simply_sqlite-0.1.16-py3-none-any.whl
+[2023-05-24 21:30:13] INFO root fetch - processPackages [DUELink]: Downloading https://files.pythonhosted.org/packages/fb/48/fa0de62fd645d1157578f82fdd65d0b80797a25e2c310ccde17b47e9a80c/DUELink-1.0.2-py3-none-any.whl
+[2023-05-24 21:30:13] INFO root fetch - processPackages [rubi]: Downloading https://files.pythonhosted.org/packages/f7/01/f2f6ec973c51a3b09660c23499c214d67499289da3b655a421abaf5637d6/rubi-1.3.2.tar.gz
+[2023-05-24 21:30:13] INFO root fetch - processPackages [spacetraders]: Downloading https://files.pythonhosted.org/packages/75/a3/872cdaed04a8a9f7549be05941afa518d3f0d55d1a954e400965cadf0d78/spacetraders-0.5.0.tar.gz
+[2023-05-24 21:30:13] INFO root fetch - processPackages [vcorelib]: executing diffoscope
+[2023-05-24 21:30:13] INFO root fetch - processPackages [vcorelib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vcorelib-1.6.4.tar.gz tmp/vcorelib-1.6.5.tar.gz --markdown 20230524/v/vcorelib/1.6.4-1.6.5/diff.md --exclude *.pyd
+[2023-05-24 21:30:13] INFO root fetch - processPackages [simply-sqlite]: executing diffoscope
+[2023-05-24 21:30:13] INFO root fetch - processPackages [simply-sqlite]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/simply_sqlite-0.1.14-py3-none-any.whl.zip tmp/simply_sqlite-0.1.16-py3-none-any.whl.zip --markdown 20230524/s/simply-sqlite/0.1.14-0.1.16/diff.md --exclude *.pyd
+[2023-05-24 21:30:13] INFO root fetch - processPackages [DUELink]: executing diffoscope
+[2023-05-24 21:30:13] INFO root fetch - processPackages [DUELink]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/DUELink-1.0.1-py3-none-any.whl.zip tmp/DUELink-1.0.2-py3-none-any.whl.zip --markdown 20230524/D/DUELink/1.0.1-1.0.2/diff.md --exclude *.pyd
+[2023-05-24 21:30:14] INFO root fetch - processPackages [rubi]: executing diffoscope
+[2023-05-24 21:30:14] INFO root fetch - processPackages [rubi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rubi-1.3.1.tar.gz tmp/rubi-1.3.2.tar.gz --markdown 20230524/r/rubi/1.3.1-1.3.2/diff.md --exclude *.pyd
+[2023-05-24 21:30:14] INFO root fetch - processPackages [spacetraders]: executing diffoscope
+[2023-05-24 21:30:14] INFO root fetch - processPackages [spacetraders]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spacetraders-0.4.0.tar.gz tmp/spacetraders-0.5.0.tar.gz --markdown 20230524/s/spacetraders/0.4.0-0.5.0/diff.md --exclude *.pyd
+[2023-05-24 21:30:14] INFO root fetch - processPackages [seeFretboard]: executing diffoscope
+[2023-05-24 21:30:14] INFO root fetch - processPackages [seeFretboard]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/seeFretboard-0.0.3.tar.gz tmp/seeFretboard-0.0.4.tar.gz --markdown 20230524/s/seeFretboard/0.0.3-0.0.4/diff.md --exclude *.pyd
+[2023-05-24 21:30:14] INFO root fetch - processPackages [randseal]: Downloading https://files.pythonhosted.org/packages/52/98/7cfbe06f2b7cd9b8cec21a4deb1d6e624d21365e9f37c28086f0ce19ffda/randseal-3.3.0.tar.gz
+[2023-05-24 21:30:14] INFO root fetch - processPackages [randseal]: executing diffoscope
+[2023-05-24 21:30:14] INFO root fetch - processPackages [randseal]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/randseal-3.2.0.tar.gz tmp/randseal-3.3.0.tar.gz --markdown 20230524/r/randseal/3.2.0-3.3.0/diff.md --exclude *.pyd
+[2023-05-24 21:30:14] INFO root fetch - processPackages [datasette-sqlite-vss]: Start processing: determined-common
+[2023-05-24 21:30:14] INFO root fetch - main [MainThread]: End processing [datasette-sqlite-vss]: success
+[2023-05-24 21:30:15] INFO root fetch - processPackages [auto-archiver]: Start processing: determined-deploy
+[2023-05-24 21:30:15] INFO root fetch - main [MainThread]: End processing [auto-archiver]: success
+[2023-05-24 21:30:15] INFO root fetch - processPackages [determined-common]: New version: [0.22.2rc1] Old Version: [0.22.2rc0]
+[2023-05-24 21:30:15] INFO root fetch - processPackages [determined-deploy]: New version: [0.22.2rc1] Old Version: [0.22.2rc0]
+[2023-05-24 21:30:15] INFO root fetch - processPackages [determined-common]: executing diffoscope
+[2023-05-24 21:30:15] INFO root fetch - processPackages [determined-common]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/determined_common-0.22.2rc0-py3-none-any.whl.zip tmp/determined_common-0.22.2rc1-py3-none-any.whl.zip --markdown 20230524/d/determined-common/0.22.2rc0-0.22.2rc1/diff.md --exclude *.pyd
+[2023-05-24 21:30:15] INFO root fetch - processPackages [simply-sqlite]: Start processing: auto-screener
+[2023-05-24 21:30:15] INFO root fetch - main [MainThread]: End processing [simply-sqlite]: success
+[2023-05-24 21:30:15] INFO root fetch - processPackages [DUELink]: Start processing: determined
+[2023-05-24 21:30:15] INFO root fetch - main [MainThread]: End processing [DUELink]: success
+[2023-05-24 21:30:15] INFO root fetch - processPackages [determined-deploy]: executing diffoscope
+[2023-05-24 21:30:15] INFO root fetch - processPackages [determined-deploy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/determined_deploy-0.22.2rc0-py3-none-any.whl.zip tmp/determined_deploy-0.22.2rc1-py3-none-any.whl.zip --markdown 20230524/d/determined-deploy/0.22.2rc0-0.22.2rc1/diff.md --exclude *.pyd
+[2023-05-24 21:30:15] INFO root fetch - processPackages [auto-screener]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-24 21:30:15] INFO root fetch - processPackages [determined]: New version: [0.22.2rc1] Old Version: [0.22.2rc0]
+[2023-05-24 21:30:15] INFO root fetch - main [MainThread]: End processing [seeFretboard]: success
+[2023-05-24 21:30:16] INFO root fetch - main [MainThread]: End processing [vcorelib]: success
+[2023-05-24 21:30:16] INFO root fetch - main [MainThread]: End processing [rubi]: success
+[2023-05-24 21:30:16] INFO root fetch - main [MainThread]: End processing [randseal]: success
+[2023-05-24 21:30:16] INFO root fetch - processPackages [auto-screener]: executing diffoscope
+[2023-05-24 21:30:16] INFO root fetch - processPackages [auto-screener]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/auto-screener-0.0.8.tar.gz tmp/auto-screener-0.0.9.tar.gz --markdown 20230524/a/auto-screener/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-24 21:30:16] INFO root fetch - processPackages [determined]: executing diffoscope
+[2023-05-24 21:30:16] INFO root fetch - processPackages [determined]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/determined-0.22.2rc0-py3-none-any.whl.zip tmp/determined-0.22.2rc1-py3-none-any.whl.zip --markdown 20230524/d/determined/0.22.2rc0-0.22.2rc1/diff.md --exclude *.pyd
+[2023-05-24 21:30:16] INFO root fetch - main [MainThread]: End processing [determined-common]: success
+[2023-05-24 21:30:17] INFO root fetch - main [MainThread]: End processing [determined-deploy]: success
+[2023-05-24 21:30:17] INFO root fetch - main [MainThread]: End processing [spacetraders]: success
+[2023-05-24 21:30:18] INFO root fetch - main [MainThread]: End processing [auto-screener]: success
+[2023-05-24 21:30:19] INFO root fetch - main [MainThread]: End processing [determined]: success
+[2023-05-24 21:30:53] INFO root fetch - main [MainThread]: End processing [sqlite-vss]: success
+[2023-05-24 21:30:53] INFO root fetch - main [MainThread]: Store serial: [18234886]
