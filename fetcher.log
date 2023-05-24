@@ -17578,3 +17578,184 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd4 in position 72: invalid
 [2023-05-24 16:51:35] ERROR root fetch - processPackages [pycarlo]: Timeout during execution of pkgdiff
 [2023-05-24 16:51:35] INFO root fetch - main [MainThread]: End processing [pycarlo] error
 [2023-05-24 16:51:35] INFO root fetch - main [MainThread]: Store serial: [18231226]
+[2023-05-24 16:56:43] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18231226]
+[2023-05-24 16:56:48] INFO root fetch - main [MainThread]: Found 31 changed packages
+[2023-05-24 16:56:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pycarlo
+[2023-05-24 16:56:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: nucliadb-contributor-assets
+[2023-05-24 16:56:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: project-lighter
+[2023-05-24 16:56:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: gstorm
+[2023-05-24 16:56:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: speech-collator
+[2023-05-24 16:56:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: bluepy3
+[2023-05-24 16:56:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: jieba-pyfast
+[2023-05-24 16:56:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: scinumtools
+[2023-05-24 16:56:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: ign-pdal-tools
+[2023-05-24 16:56:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: mesh-sandbox
+[2023-05-24 16:56:48] INFO root fetch - processPackages [pycarlo]: New version: [0.7.5] Old Version: [0.7.4]
+[2023-05-24 16:56:49] INFO root fetch - processPackages [project-lighter]: New version: [0.0.2a2] Old Version: [0.0.2a1]
+[2023-05-24 16:56:49] INFO root fetch - processPackages [pycarlo]: executing diffoscope
+[2023-05-24 16:56:49] INFO root fetch - processPackages [speech-collator]: New version: [0.1.6] Old Version: [0.1.5]
+[2023-05-24 16:56:49] INFO root fetch - processPackages [pycarlo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pycarlo-0.7.4.tar.gz tmp/pycarlo-0.7.5.tar.gz --markdown 20230524/p/pycarlo/0.7.4-0.7.5/diff.md --exclude *.pyd
+[2023-05-24 16:56:49] INFO root fetch - processPackages [scinumtools]: New version: [1.0.0] Old Version: [0.3.0]
+[2023-05-24 16:56:49] INFO root fetch - processPackages [jieba-pyfast]: New version: [3.11.1] Old Version: [3.11.0]
+[2023-05-24 16:56:49] INFO root fetch - processPackages [bluepy3]: New version: [1.6.1] Old Version: [1.4.1]
+[2023-05-24 16:56:49] INFO root fetch - processPackages [ign-pdal-tools]: New version: [0.5.3] Old Version: [0.5.2.dev0]
+[2023-05-24 16:56:49] INFO root fetch - processPackages [mesh-sandbox]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-24 16:56:49] INFO root fetch - processPackages [nucliadb-contributor-assets]: New version: [1.0.0.post797] Old Version: [1.0.0.post796]
+[2023-05-24 16:56:49] INFO root fetch - processPackages [gstorm]: New version: [0.9.1] Old Version: [0.9.0]
+[2023-05-24 16:56:49] INFO root fetch - processPackages [project-lighter]: Downloading https://files.pythonhosted.org/packages/a5/dd/59966e54e78f719fc8ad881f75800ddb2efc4eec6dc5a925fe7d0d4a4c90/project_lighter-0.0.2a1.tar.gz
+[2023-05-24 16:56:49] INFO root fetch - processPackages [speech-collator]: Downloading https://files.pythonhosted.org/packages/67/f5/9cb6bcd1f5a657c1a66af22170587e537727952a06174f7b0f61080f15c9/speech_collator-0.1.5.tar.gz
+[2023-05-24 16:56:49] INFO root fetch - processPackages [bluepy3]: Downloading https://files.pythonhosted.org/packages/3c/56/47bbe34acffc77e2f8acfd980eec08f4a3c983f03dedb7a79603fa7d9cf5/bluepy3-1.4.1.tar.gz
+[2023-05-24 16:56:49] INFO root fetch - processPackages [scinumtools]: Downloading https://files.pythonhosted.org/packages/4d/b2/02b152160d90f37a20b27f96162f773235f08d7a4c21a81b9a50ab4eccb3/scinumtools-0.3.0.tar.gz
+[2023-05-24 16:56:49] INFO root fetch - processPackages [jieba-pyfast]: Downloading https://files.pythonhosted.org/packages/4c/a5/45708f99483c2dfce573ef3f4cf7209c682feeaca50017ea648ab3f133c0/jieba_pyfast-3.11.0-cp311-cp311-musllinux_1_1_x86_64.whl
+[2023-05-24 16:56:49] INFO root fetch - processPackages [nucliadb-contributor-assets]: Downloading https://files.pythonhosted.org/packages/89/09/7fea321264a68f4fe67e621aaf0f2a3ca24fc4a64180c0c98cf31a0cc82e/nucliadb_contributor_assets-1.0.0.post796-py3-none-any.whl
+[2023-05-24 16:56:49] INFO root fetch - processPackages [ign-pdal-tools]: Downloading https://files.pythonhosted.org/packages/83/c8/d7b8c9ad9482bac304b2fa52253f7dd15f2d9c78ced0624887913f26a14b/ign_pdal_tools-0.5.2.dev0-py3-none-any.whl
+[2023-05-24 16:56:49] INFO root fetch - processPackages [jieba-pyfast]: Downloading https://files.pythonhosted.org/packages/7e/a0/b5d72079b461ef60a28b599e7213f8643ccb9128087dff8a176097e21903/jieba_pyfast-3.11.1-cp311-cp311-musllinux_1_1_x86_64.whl
+[2023-05-24 16:56:49] INFO root fetch - processPackages [gstorm]: executing diffoscope
+[2023-05-24 16:56:49] INFO root fetch - processPackages [gstorm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gstorm-0.9.0.tar.gz tmp/gstorm-0.9.1-py3.8.egg --markdown 20230524/g/gstorm/0.9.0-0.9.1/diff.md --exclude *.pyd
+[2023-05-24 16:56:49] INFO root fetch - processPackages [bluepy3]: Downloading https://files.pythonhosted.org/packages/ef/9e/dae2072352ec205f7b07a7079b80850a1499122e7f91881a4234bbac2319/bluepy3-1.6.1.tar.gz
+[2023-05-24 16:56:49] INFO root fetch - processPackages [scinumtools]: Downloading https://files.pythonhosted.org/packages/a7/a8/dbd740f5dc0b4a8ec7784633c863cf568c54f17dde7af3e59f4361e14e4c/scinumtools-1.0.0.tar.gz
+[2023-05-24 16:56:49] INFO root fetch - processPackages [project-lighter]: Downloading https://files.pythonhosted.org/packages/99/ad/8124ea84536d3a4465abfa779492814e82961599938224df7529848775b4/project_lighter-0.0.2a2.tar.gz
+[2023-05-24 16:56:49] INFO root fetch - processPackages [mesh-sandbox]: executing diffoscope
+[2023-05-24 16:56:49] INFO root fetch - processPackages [mesh-sandbox]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mesh_sandbox-0.1.8-py3-none-any.whl.zip tmp/mesh_sandbox-0.1.9-py3-none-any.whl.zip --markdown 20230524/m/mesh-sandbox/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-24 16:56:49] INFO root fetch - processPackages [scinumtools]: executing diffoscope
+[2023-05-24 16:56:49] INFO root fetch - processPackages [scinumtools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/scinumtools-0.3.0.tar.gz tmp/scinumtools-1.0.0.tar.gz --markdown 20230524/s/scinumtools/0.3.0-1.0.0/diff.md --exclude *.pyd
+[2023-05-24 16:56:49] INFO root fetch - processPackages [nucliadb-contributor-assets]: Downloading https://files.pythonhosted.org/packages/8d/d8/c1020a68275298bd828ed08999628c4e67fc442d795102f28c15a856dccd/nucliadb_contributor_assets-1.0.0.post797-py3-none-any.whl
+[2023-05-24 16:56:49] INFO root fetch - processPackages [bluepy3]: executing diffoscope
+[2023-05-24 16:56:49] INFO root fetch - processPackages [bluepy3]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bluepy3-1.4.1.tar.gz tmp/bluepy3-1.6.1.tar.gz --markdown 20230524/b/bluepy3/1.4.1-1.6.1/diff.md --exclude *.pyd
+[2023-05-24 16:56:49] INFO root fetch - processPackages [ign-pdal-tools]: Downloading https://files.pythonhosted.org/packages/ae/1b/ba5b76cae2d103d10ecdd7bacd44cd9d604a838a4264570092cdb5a9cda4/ign-pdal-tools-0.5.3.tar.gz
+[2023-05-24 16:56:49] INFO root fetch - processPackages [project-lighter]: executing diffoscope
+[2023-05-24 16:56:49] INFO root fetch - processPackages [project-lighter]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/project_lighter-0.0.2a1.tar.gz tmp/project_lighter-0.0.2a2.tar.gz --markdown 20230524/p/project-lighter/0.0.2a1-0.0.2a2/diff.md --exclude *.pyd
+[2023-05-24 16:56:49] INFO root fetch - processPackages [ign-pdal-tools]: executing diffoscope
+[2023-05-24 16:56:49] INFO root fetch - processPackages [ign-pdal-tools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ign_pdal_tools-0.5.2.dev0-py3-none-any.whl.zip tmp/ign-pdal-tools-0.5.3.tar.gz --markdown 20230524/i/ign-pdal-tools/0.5.2.dev0-0.5.3/diff.md --exclude *.pyd
+[2023-05-24 16:56:49] INFO root fetch - processPackages [nucliadb-contributor-assets]: executing diffoscope
+[2023-05-24 16:56:49] INFO root fetch - processPackages [nucliadb-contributor-assets]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nucliadb_contributor_assets-1.0.0.post796-py3-none-any.whl.zip tmp/nucliadb_contributor_assets-1.0.0.post797-py3-none-any.whl.zip --markdown 20230524/n/nucliadb-contributor-assets/1.0.0.post796-1.0.0.post797/diff.md --exclude *.pyd
+[2023-05-24 16:56:50] INFO root fetch - processPackages [jieba-pyfast]: executing diffoscope
+[2023-05-24 16:56:50] INFO root fetch - processPackages [jieba-pyfast]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jieba_pyfast-3.11.0-cp311-cp311-musllinux_1_1_x86_64.whl.zip tmp/jieba_pyfast-3.11.1-cp311-cp311-musllinux_1_1_x86_64.whl.zip --markdown 20230524/j/jieba-pyfast/3.11.0-3.11.1/diff.md --exclude *.pyd
+[2023-05-24 16:56:50] INFO root fetch - processPackages [speech-collator]: Downloading https://files.pythonhosted.org/packages/44/19/c5d02ad1bf3fabfc36cf51483bf5cb8cc09c8344f30f55766baa2b7ff8ac/speech_collator-0.1.6.tar.gz
+[2023-05-24 16:56:50] INFO root fetch - processPackages [gstorm]: Start processing: xpress
+[2023-05-24 16:56:50] INFO root fetch - main [MainThread]: End processing [gstorm]: success
+[2023-05-24 16:56:50] INFO root fetch - processPackages [xpress]: New version: [9.1.1] Old Version: [9.1.0]
+[2023-05-24 16:56:50] INFO root fetch - processPackages [scinumtools]: Start processing: merqube-client-lib
+[2023-05-24 16:56:50] INFO root fetch - main [MainThread]: End processing [scinumtools]: success
+[2023-05-24 16:56:50] INFO root fetch - processPackages [merqube-client-lib]: New version: [0.8.1] Old Version: [0.8.0]
+[2023-05-24 16:56:51] INFO root fetch - processPackages [xpress]: Downloading https://files.pythonhosted.org/packages/ec/15/7008a16b56d0b5385a0da7c000101f7ee021f0738db612edcf2b84fcd4aa/xpress-9.1.0-cp39-cp39-win_amd64.whl
+[2023-05-24 16:56:51] INFO root fetch - processPackages [merqube-client-lib]: executing diffoscope
+[2023-05-24 16:56:51] INFO root fetch - processPackages [merqube-client-lib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/merqube_client_lib-0.8.0.tar.gz tmp/merqube_client_lib-0.8.1.tar.gz --markdown 20230524/m/merqube-client-lib/0.8.0-0.8.1/diff.md --exclude *.pyd
+[2023-05-24 16:56:51] WARNING root fetch - processPackages [xpress]: Skipping package: exceeds size limit 55087257>=10485760
+[2023-05-24 16:56:51] INFO root fetch - processPackages [xpress]: Start processing: neighborly
+[2023-05-24 16:56:51] INFO root fetch - main [MainThread]: End processing [xpress] error
+[2023-05-24 16:56:51] INFO root fetch - processPackages [mesh-sandbox]: Start processing: pyRaTS
+[2023-05-24 16:56:51] INFO root fetch - main [MainThread]: End processing [mesh-sandbox]: success
+[2023-05-24 16:56:51] INFO root fetch - processPackages [pyRaTS]: New version: [0.20] Old Version: [0.15]
+[2023-05-24 16:56:51] INFO root fetch - processPackages [ign-pdal-tools]: Start processing: acrod
+[2023-05-24 16:56:51] INFO root fetch - main [MainThread]: End processing [ign-pdal-tools]: success
+[2023-05-24 16:56:51] INFO root fetch - processPackages [neighborly]: New version: [0.9.4] Old Version: [0.9.3]
+[2023-05-24 16:56:51] INFO root fetch - processPackages [pyRaTS]: executing diffoscope
+[2023-05-24 16:56:51] INFO root fetch - processPackages [pyRaTS]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyRaTS-0.15.tar.gz tmp/pyRaTS-0.20.tar.gz --markdown 20230524/p/pyRaTS/0.15-0.20/diff.md --exclude *.pyd
+[2023-05-24 16:56:51] INFO root fetch - processPackages [project-lighter]: Start processing: shoulder
+[2023-05-24 16:56:51] INFO root fetch - main [MainThread]: End processing [project-lighter]: success
+[2023-05-24 16:56:51] INFO root fetch - processPackages [shoulder]: New version: [1.0.7] Old Version: [1.0.6]
+[2023-05-24 16:56:51] INFO root fetch - processPackages [acrod]: New version: [1.1.4] Old Version: [1.1.3]
+[2023-05-24 16:56:51] INFO root fetch - processPackages [speech-collator]: executing diffoscope
+[2023-05-24 16:56:51] INFO root fetch - processPackages [speech-collator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/speech_collator-0.1.5.tar.gz tmp/speech_collator-0.1.6.tar.gz --markdown 20230524/s/speech-collator/0.1.5-0.1.6/diff.md --exclude *.pyd
+[2023-05-24 16:56:51] INFO root fetch - processPackages [bluepy3]: Start processing: nustarpipeline
+[2023-05-24 16:56:51] INFO root fetch - main [MainThread]: End processing [bluepy3]: success
+[2023-05-24 16:56:51] INFO root fetch - processPackages [acrod]: Downloading https://files.pythonhosted.org/packages/c9/0c/1d25847f0892170100e976df4467c3879c7d09abeee6d6a91a8406726590/acrod-1.1.3.tar.gz
+[2023-05-24 16:56:51] INFO root fetch - processPackages [nustarpipeline]: New version: [0.2.9] Old Version: [0.2.8]
+[2023-05-24 16:56:51] INFO root fetch - processPackages [neighborly]: executing diffoscope
+[2023-05-24 16:56:51] INFO root fetch - processPackages [neighborly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/neighborly-0.9.3.tar.gz tmp/neighborly-0.9.4.tar.gz --markdown 20230524/n/neighborly/0.9.3-0.9.4/diff.md --exclude *.pyd
+[2023-05-24 16:56:51] INFO root fetch - processPackages [acrod]: Downloading https://files.pythonhosted.org/packages/6c/a9/aa31138fa579d627e16e51f03720dceb55150f128f48657aa596fdb7f75f/acrod-1.1.4.tar.gz
+[2023-05-24 16:56:51] INFO root fetch - processPackages [shoulder]: executing diffoscope
+[2023-05-24 16:56:51] INFO root fetch - processPackages [shoulder]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/shoulder-1.0.6.tar.gz tmp/shoulder-1.0.7.tar.gz --markdown 20230524/s/shoulder/1.0.6-1.0.7/diff.md --exclude *.pyd
+[2023-05-24 16:56:51] INFO root fetch - processPackages [acrod]: executing diffoscope
+[2023-05-24 16:56:51] INFO root fetch - processPackages [acrod]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/acrod-1.1.3.tar.gz tmp/acrod-1.1.4.tar.gz --markdown 20230524/a/acrod/1.1.3-1.1.4/diff.md --exclude *.pyd
+[2023-05-24 16:56:51] INFO root fetch - processPackages [nustarpipeline]: executing diffoscope
+[2023-05-24 16:56:51] INFO root fetch - processPackages [nustarpipeline]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nustarpipeline-0.2.8.tar.gz tmp/nustarpipeline-0.2.9.tar.gz --markdown 20230524/n/nustarpipeline/0.2.8-0.2.9/diff.md --exclude *.pyd
+[2023-05-24 16:56:52] INFO root fetch - processPackages [merqube-client-lib]: Start processing: AltTester-Driver
+[2023-05-24 16:56:52] INFO root fetch - main [MainThread]: End processing [merqube-client-lib]: success
+[2023-05-24 16:56:52] INFO root fetch - processPackages [AltTester-Driver]: New version: [2.0.0] Old Version: [1.8.2]
+[2023-05-24 16:56:52] INFO root fetch - processPackages [pyRaTS]: Start processing: veetility
+[2023-05-24 16:56:52] INFO root fetch - main [MainThread]: End processing [pyRaTS]: success
+[2023-05-24 16:56:52] INFO root fetch - processPackages [veetility]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-24 16:56:52] INFO root fetch - processPackages [veetility]: executing diffoscope
+[2023-05-24 16:56:52] INFO root fetch - processPackages [veetility]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/veetility-0.1.8.tar.gz tmp/veetility-0.1.9.tar.gz --markdown 20230524/v/veetility/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-24 16:56:52] INFO root fetch - processPackages [AltTester-Driver]: Downloading https://files.pythonhosted.org/packages/13/ca/99911a0f6bfe3f3ffcf04d1f75ecec814c813cd7c0d65c25dafa6ceeaefe/AltTester-Driver-1.8.2.tar.gz
+[2023-05-24 16:56:53] INFO root fetch - processPackages [AltTester-Driver]: Downloading https://files.pythonhosted.org/packages/ed/1f/ca8d8e96ff79e70046c3e839bf1c4e1bf570279f9e282963764df75fb31e/AltTester-Driver-2.0.0.tar.gz
+[2023-05-24 16:56:53] INFO root fetch - processPackages [shoulder]: Start processing: axiprop
+[2023-05-24 16:56:53] INFO root fetch - main [MainThread]: End processing [shoulder]: success
+[2023-05-24 16:56:53] WARNING root fetch - processPackages [axiprop]: Skipping, unable to determine old version
+[2023-05-24 16:56:53] INFO root fetch - processPackages [axiprop]: Start processing: quick-pypi-test
+[2023-05-24 16:56:53] INFO root fetch - main [MainThread]: End processing [axiprop] error
+[2023-05-24 16:56:53] INFO root fetch - processPackages [AltTester-Driver]: executing diffoscope
+[2023-05-24 16:56:53] INFO root fetch - processPackages [AltTester-Driver]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/AltTester-Driver-1.8.2.tar.gz tmp/AltTester-Driver-2.0.0.tar.gz --markdown 20230524/A/AltTester-Driver/1.8.2-2.0.0/diff.md --exclude *.pyd
+[2023-05-24 16:56:53] INFO root fetch - processPackages [quick-pypi-test]: New version: [0.0.3a3] Old Version: [0.0.3a2]
+[2023-05-24 16:56:53] INFO root fetch - processPackages [quick-pypi-test]: executing diffoscope
+[2023-05-24 16:56:53] INFO root fetch - processPackages [quick-pypi-test]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/quick-pypi-test-0.0.3a2.tar.gz tmp/quick-pypi-test-0.0.3a3.tar.gz --markdown 20230524/q/quick-pypi-test/0.0.3a2-0.0.3a3/diff.md --exclude *.pyd
+[2023-05-24 16:56:53] INFO root fetch - processPackages [nustarpipeline]: Start processing: Geode-Common
+[2023-05-24 16:56:53] INFO root fetch - main [MainThread]: End processing [nustarpipeline]: success
+[2023-05-24 16:56:53] INFO root fetch - processPackages [acrod]: Start processing: django-dynamic-storage
+[2023-05-24 16:56:53] INFO root fetch - main [MainThread]: End processing [acrod]: success
+[2023-05-24 16:56:53] INFO root fetch - processPackages [neighborly]: Start processing: jwt-helper
+[2023-05-24 16:56:53] INFO root fetch - main [MainThread]: End processing [neighborly]: success
+[2023-05-24 16:56:53] INFO root fetch - processPackages [Geode-Common]: New version: [25.0.9rc3] Old Version: [25.0.9]
+[2023-05-24 16:56:53] INFO root fetch - processPackages [jwt-helper]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-24 16:56:53] WARNING root fetch - processPackages [django-dynamic-storage]: Skipping, unable to determine old version
+[2023-05-24 16:56:53] INFO root fetch - processPackages [django-dynamic-storage]: Start processing: langchain
+[2023-05-24 16:56:53] INFO root fetch - main [MainThread]: End processing [django-dynamic-storage] error
+[2023-05-24 16:56:53] INFO root fetch - processPackages [langchain]: New version: [0.0.99rc0] Old Version: [0.0.99]
+[2023-05-24 16:56:53] INFO root fetch - processPackages [jwt-helper]: Downloading https://files.pythonhosted.org/packages/07/d9/f19cb3013b6bfa1a2b24fd8c3deb29c1e77c47a7e972f803e505edf867e1/jwt_helper-0.0.8.tar.gz
+[2023-05-24 16:56:53] INFO root fetch - processPackages [veetility]: Start processing: mapel
+[2023-05-24 16:56:53] INFO root fetch - main [MainThread]: End processing [veetility]: success
+[2023-05-24 16:56:53] INFO root fetch - processPackages [Geode-Common]: Downloading https://files.pythonhosted.org/packages/02/7f/faf7c1acc995c89ab852d9a8773c3f9fb9918116df2d1bcaa09c2e6b2c07/Geode_Common-25.0.9rc3-cp39-cp39-win_amd64.whl
+[2023-05-24 16:56:53] INFO root fetch - processPackages [mapel]: New version: [2.0.3.dev6] Old Version: [2.0.3.dev1]
+[2023-05-24 16:56:54] INFO root fetch - processPackages [jwt-helper]: Downloading https://files.pythonhosted.org/packages/cd/e0/9951352a2985573aa6c21cdc218ab469b6d13dbeb4318b50be42cfa14e63/jwt_helper-0.0.9.tar.gz
+[2023-05-24 16:56:54] INFO root fetch - processPackages [langchain]: executing diffoscope
+[2023-05-24 16:56:54] INFO root fetch - processPackages [langchain]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/langchain-0.0.99.tar.gz tmp/langchain-0.0.99rc0.tar.gz --markdown 20230524/l/langchain/0.0.99-0.0.99rc0/diff.md --exclude *.pyd
+[2023-05-24 16:56:54] INFO root fetch - processPackages [jieba-pyfast]: Start processing: mapel-core
+[2023-05-24 16:56:54] INFO root fetch - main [MainThread]: End processing [jieba-pyfast]: success
+[2023-05-24 16:56:54] INFO root fetch - processPackages [mapel]: Downloading https://files.pythonhosted.org/packages/57/94/c70b218fb473d3ad7f5e00213f9be28dcf0af6bf3f11096413b438b609fe/mapel-2.0.3.dev1.tar.gz
+[2023-05-24 16:56:54] INFO root fetch - processPackages [mapel-core]: New version: [2.0.3.dev6] Old Version: [2.0.3.dev1]
+[2023-05-24 16:56:54] INFO root fetch - processPackages [jwt-helper]: executing diffoscope
+[2023-05-24 16:56:54] INFO root fetch - processPackages [jwt-helper]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jwt_helper-0.0.8.tar.gz tmp/jwt_helper-0.0.9.tar.gz --markdown 20230524/j/jwt-helper/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-24 16:56:54] INFO root fetch - processPackages [Geode-Common]: executing diffoscope
+[2023-05-24 16:56:54] INFO root fetch - processPackages [Geode-Common]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Geode_Common-25.0.9-cp39-cp39-win_amd64.whl.zip tmp/Geode_Common-25.0.9rc3-cp39-cp39-win_amd64.whl.zip --markdown 20230524/G/Geode-Common/25.0.9-25.0.9rc3/diff.md --exclude *.pyd
+[2023-05-24 16:56:54] INFO root fetch - processPackages [mapel]: Downloading https://files.pythonhosted.org/packages/a4/2d/063b9347b0f4f2ae025af7996025eb293ed334990c62a0ab3ffc82437fa4/mapel-2.0.3.dev6-py3-none-any.whl
+[2023-05-24 16:56:54] INFO root fetch - processPackages [mapel-core]: Downloading https://files.pythonhosted.org/packages/d6/35/50f37abf5973ceb880e43f865e26621b1a9d447d49c9de1708d83ee8c786/mapel-core-2.0.3.dev1.tar.gz
+[2023-05-24 16:56:54] INFO root fetch - processPackages [quick-pypi-test]: Start processing: mapel-elections
+[2023-05-24 16:56:54] INFO root fetch - main [MainThread]: End processing [quick-pypi-test]: success
+[2023-05-24 16:56:54] INFO root fetch - processPackages [mapel]: executing diffoscope
+[2023-05-24 16:56:54] INFO root fetch - processPackages [mapel]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mapel-2.0.3.dev1.tar.gz tmp/mapel-2.0.3.dev6-py3-none-any.whl.zip --markdown 20230524/m/mapel/2.0.3.dev1-2.0.3.dev6/diff.md --exclude *.pyd
+[2023-05-24 16:56:54] INFO root fetch - processPackages [mapel-core]: Downloading https://files.pythonhosted.org/packages/17/7d/89807f7782b9d8cd4e1ef1c15359318412de12ce83cc5786065b3c6224a0/mapel_core-2.0.3.dev6-py3-none-any.whl
+[2023-05-24 16:56:54] INFO root fetch - processPackages [mapel-elections]: New version: [2.0.3.dev6] Old Version: [2.0.3.dev1]
+[2023-05-24 16:56:54] INFO root fetch - processPackages [mapel-core]: executing diffoscope
+[2023-05-24 16:56:54] INFO root fetch - processPackages [mapel-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mapel-core-2.0.3.dev1.tar.gz tmp/mapel_core-2.0.3.dev6-py3-none-any.whl.zip --markdown 20230524/m/mapel-core/2.0.3.dev1-2.0.3.dev6/diff.md --exclude *.pyd
+[2023-05-24 16:56:54] INFO root fetch - processPackages [mapel-elections]: Downloading https://files.pythonhosted.org/packages/9a/26/d5fb83edaff3a27a3a0ba195f42209d39c2ff51cb0ca1fd5bfe6fc1b333b/mapel-elections-2.0.3.dev1.tar.gz
+[2023-05-24 16:56:55] INFO root fetch - processPackages [AltTester-Driver]: Start processing: corby
+[2023-05-24 16:56:55] INFO root fetch - main [MainThread]: End processing [AltTester-Driver]: success
+[2023-05-24 16:56:55] WARNING root fetch - processPackages [corby]: Skipping, unable to determine old version
+[2023-05-24 16:56:55] INFO root fetch - processPackages [corby]: Start processing: dxsp
+[2023-05-24 16:56:55] INFO root fetch - main [MainThread]: End processing [corby] error
+[2023-05-24 16:56:55] INFO root fetch - processPackages [dxsp]: New version: [2.3.0] Old Version: [2.2.9]
+[2023-05-24 16:56:55] INFO root fetch - processPackages [mapel-elections]: Downloading https://files.pythonhosted.org/packages/76/75/af0ea41bae21757e5d526b1bcf8a6012b25c95b51192319c4051673e7077/mapel_elections-2.0.3.dev6-cp37-cp37m-musllinux_1_1_i686.whl
+[2023-05-24 16:56:55] INFO root fetch - processPackages [dxsp]: Downloading https://files.pythonhosted.org/packages/61/89/2c3430147b42a6dd74aaddccc8500c61d3a83e4e7f38b428cbe30980bd30/dxsp-2.3.0.tar.gz
+[2023-05-24 16:56:55] INFO root fetch - processPackages [dxsp]: executing diffoscope
+[2023-05-24 16:56:55] INFO root fetch - processPackages [dxsp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dxsp-2.2.9.tar.gz tmp/dxsp-2.3.0.tar.gz --markdown 20230524/d/dxsp/2.2.9-2.3.0/diff.md --exclude *.pyd
+[2023-05-24 16:56:55] INFO root fetch - processPackages [jwt-helper]: Start processing: ensmallen
+[2023-05-24 16:56:55] INFO root fetch - main [MainThread]: End processing [jwt-helper]: success
+[2023-05-24 16:56:55] INFO root fetch - main [MainThread]: End processing [mapel]: success
+[2023-05-24 16:56:55] INFO root fetch - processPackages [ensmallen]: New version: [0.8.9] Old Version: [0.8.8]
+[2023-05-24 16:56:56] INFO root fetch - processPackages [ensmallen]: Downloading https://files.pythonhosted.org/packages/75/07/70c25877db695ae02b4a944b722513282eaca44b6bec77e09bed7e8bea0c/ensmallen-0.8.8-cp37-abi3-manylinux_2_12_x86_64.manylinux2010_x86_64.whl
+[2023-05-24 16:56:56] INFO root fetch - main [MainThread]: End processing [mapel-core]: success
+[2023-05-24 16:56:56] WARNING root fetch - processPackages [ensmallen]: Skipping package: exceeds size limit 18826030>=10485760
+[2023-05-24 16:56:56] INFO root fetch - main [MainThread]: End processing [ensmallen] error
+[2023-05-24 16:56:56] INFO root fetch - processPackages [mapel-elections]: executing diffoscope
+[2023-05-24 16:56:56] INFO root fetch - processPackages [mapel-elections]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mapel-elections-2.0.3.dev1.tar.gz tmp/mapel_elections-2.0.3.dev6-cp37-cp37m-musllinux_1_1_i686.whl.zip --markdown 20230524/m/mapel-elections/2.0.3.dev1-2.0.3.dev6/diff.md --exclude *.pyd
+[2023-05-24 16:56:56] INFO root fetch - main [MainThread]: End processing [speech-collator]: success
+[2023-05-24 16:56:56] INFO root fetch - main [MainThread]: End processing [dxsp]: success
+[2023-05-24 16:56:57] INFO root fetch - main [MainThread]: End processing [langchain]: success
+[2023-05-24 16:56:57] INFO root fetch - main [MainThread]: End processing [mapel-elections]: success
+[2023-05-24 16:57:03] INFO root fetch - main [MainThread]: End processing [nucliadb-contributor-assets]: success
+[2023-05-24 16:57:06] INFO root fetch - main [MainThread]: End processing [Geode-Common]: success
+[2023-05-24 16:59:49] ERROR root fetch - processPackages [pycarlo]: Timeout during execution of pkgdiff
+[2023-05-24 16:59:49] INFO root fetch - main [MainThread]: End processing [pycarlo] error
+[2023-05-24 16:59:49] INFO root fetch - main [MainThread]: Store serial: [18231344]
