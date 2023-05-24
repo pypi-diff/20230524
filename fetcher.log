@@ -22723,3 +22723,91 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd4 in position 72: invalid
 [2023-05-24 21:14:35] INFO root fetch - main [MainThread]: End processing [cdk-sops-secrets]: success
 [2023-05-24 21:14:35] INFO root fetch - main [MainThread]: End processing [xplorts]: success
 [2023-05-24 21:14:35] INFO root fetch - main [MainThread]: Store serial: [18234790]
+[2023-05-24 21:19:40] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18234790]
+[2023-05-24 21:19:46] INFO root fetch - main [MainThread]: Found 15 changed packages
+[2023-05-24 21:19:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: nexgraphx
+[2023-05-24 21:19:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: opvious
+[2023-05-24 21:19:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: mysql-statement-builder
+[2023-05-24 21:19:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: datalad-catalog
+[2023-05-24 21:19:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: wsi-annotations-kit
+[2023-05-24 21:19:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: crosslab-api-client
+[2023-05-24 21:19:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: crosslab-soa-client
+[2023-05-24 21:19:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: crosslab-soa-service-electrical
+[2023-05-24 21:19:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: crosslab-soa-service-file
+[2023-05-24 21:19:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: crosslab-soa-service-message
+[2023-05-24 21:19:46] WARNING root fetch - processPackages [nexgraphx]: Skipping, unable to determine old version
+[2023-05-24 21:19:46] INFO root fetch - processPackages [nexgraphx]: Start processing: crosslab-soa-service-webcam
+[2023-05-24 21:19:46] INFO root fetch - main [MainThread]: End processing [nexgraphx] error
+[2023-05-24 21:19:46] INFO root fetch - processPackages [opvious]: New version: [0.9.6] Old Version: [0.9.5]
+[2023-05-24 21:19:46] INFO root fetch - processPackages [wsi-annotations-kit]: New version: [1.1.3] Old Version: [1.1.2]
+[2023-05-24 21:19:46] INFO root fetch - processPackages [mysql-statement-builder]: New version: [0.2.6] Old Version: [0.2.3]
+[2023-05-24 21:19:46] INFO root fetch - processPackages [crosslab-soa-client]: New version: [0.2.3] Old Version: [0.2.2]
+[2023-05-24 21:19:46] INFO root fetch - processPackages [datalad-catalog]: New version: [0.2.1] Old Version: [0.2.0]
+[2023-05-24 21:19:46] INFO root fetch - processPackages [crosslab-api-client]: New version: [0.2.3] Old Version: [0.2.2]
+[2023-05-24 21:19:46] INFO root fetch - processPackages [opvious]: executing diffoscope
+[2023-05-24 21:19:46] INFO root fetch - processPackages [opvious]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/opvious-0.9.5.tar.gz tmp/opvious-0.9.6.tar.gz --markdown 20230524/o/opvious/0.9.5-0.9.6/diff.md --exclude *.pyd
+[2023-05-24 21:19:46] INFO root fetch - processPackages [crosslab-soa-service-file]: New version: [0.2.4] Old Version: [0.2.3]
+[2023-05-24 21:19:46] INFO root fetch - processPackages [crosslab-soa-service-electrical]: New version: [0.2.4] Old Version: [0.2.3]
+[2023-05-24 21:19:46] INFO root fetch - processPackages [crosslab-soa-service-message]: New version: [0.2.4] Old Version: [0.2.3]
+[2023-05-24 21:19:46] INFO root fetch - processPackages [crosslab-soa-service-webcam]: New version: [0.2.4] Old Version: [0.2.3]
+[2023-05-24 21:19:46] INFO root fetch - processPackages [wsi-annotations-kit]: Downloading https://files.pythonhosted.org/packages/c9/c4/87fbc5b483abf88cc8c1bb6e20ce95e160fb121bc36a2812ee5cb68778d2/wsi-annotations-kit-1.1.2.tar.gz
+[2023-05-24 21:19:46] INFO root fetch - processPackages [datalad-catalog]: Downloading https://files.pythonhosted.org/packages/5f/f9/cb7baa0e64f71d4565c398d8dcf6e9b14ffc17202a7318e718626c49dd40/datalad_catalog-0.2.0.tar.gz
+[2023-05-24 21:19:46] INFO root fetch - processPackages [mysql-statement-builder]: Downloading https://files.pythonhosted.org/packages/a7/f1/44f3d42d9049473e9392b65cd69493ecdef910730e1bff18c7690bd88799/mysql-statement-builder-0.2.6.tar.gz
+[2023-05-24 21:19:46] INFO root fetch - processPackages [mysql-statement-builder]: executing diffoscope
+[2023-05-24 21:19:46] INFO root fetch - processPackages [mysql-statement-builder]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mysql-statement-builder-0.2.3.tar.gz tmp/mysql-statement-builder-0.2.6.tar.gz --markdown 20230524/m/mysql-statement-builder/0.2.3-0.2.6/diff.md --exclude *.pyd
+[2023-05-24 21:19:46] INFO root fetch - processPackages [crosslab-soa-client]: executing diffoscope
+[2023-05-24 21:19:46] INFO root fetch - processPackages [crosslab-soa-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/crosslab_soa_client-0.2.2.tar.gz tmp/crosslab_soa_client-0.2.3.tar.gz --markdown 20230524/c/crosslab-soa-client/0.2.2-0.2.3/diff.md --exclude *.pyd
+[2023-05-24 21:19:46] INFO root fetch - processPackages [crosslab-soa-service-file]: Downloading https://files.pythonhosted.org/packages/44/7f/5308c251732554b44e5cba75041d020c6331c4c9c1a176dd3af37ec2ef22/crosslab_soa_service_file-0.2.4.tar.gz
+[2023-05-24 21:19:46] INFO root fetch - processPackages [crosslab-api-client]: executing diffoscope
+[2023-05-24 21:19:46] INFO root fetch - processPackages [crosslab-api-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/crosslab_api_client-0.2.2.tar.gz tmp/crosslab_api_client-0.2.3.tar.gz --markdown 20230524/c/crosslab-api-client/0.2.2-0.2.3/diff.md --exclude *.pyd
+[2023-05-24 21:19:46] INFO root fetch - processPackages [crosslab-soa-service-message]: Downloading https://files.pythonhosted.org/packages/bf/6d/9c07e81a29cd869e41b0a315d6576b369b8d960fb18a0f45f4f9ee225b22/crosslab_soa_service_message-0.2.4.tar.gz
+[2023-05-24 21:19:46] INFO root fetch - processPackages [crosslab-soa-service-electrical]: Downloading https://files.pythonhosted.org/packages/0c/10/30e654a8290934dbd4f620935c5bfa332e0cac48141e28c5e40feefee239/crosslab_soa_service_electrical-0.2.4.tar.gz
+[2023-05-24 21:19:46] INFO root fetch - processPackages [crosslab-soa-service-webcam]: Downloading https://files.pythonhosted.org/packages/1c/03/2ff00ef876e7ac9fcd76bfb5979d9de348fa93467f9ac43d49da4261ee38/crosslab_soa_service_webcam-0.2.4.tar.gz
+[2023-05-24 21:19:46] INFO root fetch - processPackages [wsi-annotations-kit]: Downloading https://files.pythonhosted.org/packages/9d/24/5e574e10de877ed11200122157e60b8d243971cc26e3352026b8a1514acc/wsi-annotations-kit-1.1.3.tar.gz
+[2023-05-24 21:19:46] INFO root fetch - processPackages [crosslab-soa-service-file]: executing diffoscope
+[2023-05-24 21:19:46] INFO root fetch - processPackages [crosslab-soa-service-file]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/crosslab_soa_service_file-0.2.3.tar.gz tmp/crosslab_soa_service_file-0.2.4.tar.gz --markdown 20230524/c/crosslab-soa-service-file/0.2.3-0.2.4/diff.md --exclude *.pyd
+[2023-05-24 21:19:46] INFO root fetch - processPackages [crosslab-soa-service-message]: executing diffoscope
+[2023-05-24 21:19:46] INFO root fetch - processPackages [crosslab-soa-service-message]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/crosslab_soa_service_message-0.2.3.tar.gz tmp/crosslab_soa_service_message-0.2.4.tar.gz --markdown 20230524/c/crosslab-soa-service-message/0.2.3-0.2.4/diff.md --exclude *.pyd
+[2023-05-24 21:19:46] INFO root fetch - processPackages [crosslab-soa-service-electrical]: executing diffoscope
+[2023-05-24 21:19:46] INFO root fetch - processPackages [crosslab-soa-service-electrical]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/crosslab_soa_service_electrical-0.2.3.tar.gz tmp/crosslab_soa_service_electrical-0.2.4.tar.gz --markdown 20230524/c/crosslab-soa-service-electrical/0.2.3-0.2.4/diff.md --exclude *.pyd
+[2023-05-24 21:19:46] INFO root fetch - processPackages [crosslab-soa-service-webcam]: executing diffoscope
+[2023-05-24 21:19:46] INFO root fetch - processPackages [crosslab-soa-service-webcam]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/crosslab_soa_service_webcam-0.2.3.tar.gz tmp/crosslab_soa_service_webcam-0.2.4.tar.gz --markdown 20230524/c/crosslab-soa-service-webcam/0.2.3-0.2.4/diff.md --exclude *.pyd
+[2023-05-24 21:19:47] INFO root fetch - processPackages [wsi-annotations-kit]: executing diffoscope
+[2023-05-24 21:19:47] INFO root fetch - processPackages [wsi-annotations-kit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wsi-annotations-kit-1.1.2.tar.gz tmp/wsi-annotations-kit-1.1.3.tar.gz --markdown 20230524/w/wsi-annotations-kit/1.1.2-1.1.3/diff.md --exclude *.pyd
+[2023-05-24 21:19:47] INFO root fetch - processPackages [opvious]: Start processing: baichat-py
+[2023-05-24 21:19:47] INFO root fetch - main [MainThread]: End processing [opvious]: success
+[2023-05-24 21:19:48] INFO root fetch - processPackages [baichat-py]: New version: [0.2.2] Old Version: [0.2.1]
+[2023-05-24 21:19:48] INFO root fetch - processPackages [mysql-statement-builder]: Start processing: np-envs
+[2023-05-24 21:19:48] INFO root fetch - main [MainThread]: End processing [mysql-statement-builder]: success
+[2023-05-24 21:19:48] INFO root fetch - processPackages [np-envs]: New version: [0.1.5] Old Version: [0.1.4]
+[2023-05-24 21:19:48] INFO root fetch - processPackages [baichat-py]: Downloading https://files.pythonhosted.org/packages/d6/84/c37088ae549c0db80ef049844e3f0e1920f22db94954c0594c68479250c7/baichat_py-0.2.1.tar.gz
+[2023-05-24 21:19:48] INFO root fetch - processPackages [crosslab-soa-client]: Start processing: sqlalchemy-iris
+[2023-05-24 21:19:48] INFO root fetch - main [MainThread]: End processing [crosslab-soa-client]: success
+[2023-05-24 21:19:48] INFO root fetch - processPackages [sqlalchemy-iris]: New version: [0.9.0] Old Version: [0.8.1b1]
+[2023-05-24 21:19:48] INFO root fetch - processPackages [np-envs]: Downloading https://files.pythonhosted.org/packages/ba/3a/232c958b743e0aad5401ad1c8bf63321405a7f20cd71077de02a4c5b3c9e/np_envs-0.1.5.tar.gz
+[2023-05-24 21:19:48] INFO root fetch - processPackages [sqlalchemy-iris]: executing diffoscope
+[2023-05-24 21:19:48] INFO root fetch - processPackages [sqlalchemy-iris]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sqlalchemy-iris-0.8.1b1.tar.gz tmp/sqlalchemy-iris-0.9.0.tar.gz --markdown 20230524/s/sqlalchemy-iris/0.8.1b1-0.9.0/diff.md --exclude *.pyd
+[2023-05-24 21:19:48] INFO root fetch - processPackages [crosslab-soa-service-message]: Start processing: dbt-doc-py
+[2023-05-24 21:19:48] INFO root fetch - main [MainThread]: End processing [crosslab-soa-service-message]: success
+[2023-05-24 21:19:48] INFO root fetch - processPackages [baichat-py]: Downloading https://files.pythonhosted.org/packages/db/3a/da6d352c9a364577f37088a75fdaff5b8d79b4d2a5aaa0c11b8a4eb7b8c5/baichat_py-0.2.2.tar.gz
+[2023-05-24 21:19:48] INFO root fetch - processPackages [dbt-doc-py]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-24 21:19:48] INFO root fetch - processPackages [np-envs]: executing diffoscope
+[2023-05-24 21:19:48] INFO root fetch - processPackages [np-envs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/np_envs-0.1.4.tar.gz tmp/np_envs-0.1.5.tar.gz --markdown 20230524/n/np-envs/0.1.4-0.1.5/diff.md --exclude *.pyd
+[2023-05-24 21:19:48] INFO root fetch - main [MainThread]: End processing [crosslab-soa-service-webcam]: success
+[2023-05-24 21:19:48] INFO root fetch - main [MainThread]: End processing [crosslab-soa-service-file]: success
+[2023-05-24 21:19:48] INFO root fetch - processPackages [baichat-py]: executing diffoscope
+[2023-05-24 21:19:48] INFO root fetch - processPackages [baichat-py]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/baichat_py-0.2.1.tar.gz tmp/baichat_py-0.2.2.tar.gz --markdown 20230524/b/baichat-py/0.2.1-0.2.2/diff.md --exclude *.pyd
+[2023-05-24 21:19:48] INFO root fetch - processPackages [dbt-doc-py]: executing diffoscope
+[2023-05-24 21:19:48] INFO root fetch - processPackages [dbt-doc-py]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dbt-doc-py-0.1.8.tar.gz tmp/dbt-doc-py-0.1.9.tar.gz --markdown 20230524/d/dbt-doc-py/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-24 21:19:48] INFO root fetch - processPackages [datalad-catalog]: Downloading https://files.pythonhosted.org/packages/56/14/c84a12adc41d91fb04dbe2851bf512e59895c9c4a93d4a0f1dfa916b1a5d/datalad_catalog-0.2.1.tar.gz
+[2023-05-24 21:19:48] INFO root fetch - main [MainThread]: End processing [wsi-annotations-kit]: success
+[2023-05-24 21:19:48] INFO root fetch - main [MainThread]: End processing [crosslab-soa-service-electrical]: success
+[2023-05-24 21:19:49] INFO root fetch - main [MainThread]: End processing [baichat-py]: success
+[2023-05-24 21:19:49] INFO root fetch - processPackages [datalad-catalog]: executing diffoscope
+[2023-05-24 21:19:49] INFO root fetch - processPackages [datalad-catalog]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/datalad_catalog-0.2.0.tar.gz tmp/datalad_catalog-0.2.1.tar.gz --markdown 20230524/d/datalad-catalog/0.2.0-0.2.1/diff.md --exclude *.pyd
+[2023-05-24 21:19:49] INFO root fetch - main [MainThread]: End processing [np-envs]: success
+[2023-05-24 21:19:49] INFO root fetch - main [MainThread]: End processing [dbt-doc-py]: success
+[2023-05-24 21:19:50] INFO root fetch - main [MainThread]: End processing [sqlalchemy-iris]: success
+[2023-05-24 21:19:50] INFO root fetch - main [MainThread]: End processing [crosslab-api-client]: success
+[2023-05-24 21:19:52] INFO root fetch - main [MainThread]: End processing [datalad-catalog]: success
+[2023-05-24 21:19:52] INFO root fetch - main [MainThread]: Store serial: [18234831]
