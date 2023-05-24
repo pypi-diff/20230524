@@ -16025,3 +16025,105 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd4 in position 72: invalid
 [2023-05-24 15:34:15] INFO root fetch - main [MainThread]: End processing [c2cciutils]: success
 [2023-05-24 15:34:19] INFO root fetch - main [MainThread]: End processing [sparsify-nightly]: success
 [2023-05-24 15:34:19] INFO root fetch - main [MainThread]: Store serial: [18230219]
+[2023-05-24 15:39:24] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18230219]
+[2023-05-24 15:39:29] INFO root fetch - main [MainThread]: Found 18 changed packages
+[2023-05-24 15:39:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: cloud-toolkit-aws
+[2023-05-24 15:39:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pyeCam
+[2023-05-24 15:39:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: meta-matching-tool
+[2023-05-24 15:39:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: json2csv
+[2023-05-24 15:39:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: srf-client
+[2023-05-24 15:39:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: dbtgenlib
+[2023-05-24 15:39:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: TwitAnalysis
+[2023-05-24 15:39:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: scrapy-puppeteer-client
+[2023-05-24 15:39:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: cenao
+[2023-05-24 15:39:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: piccolo
+[2023-05-24 15:39:29] WARNING root fetch - processPackages [json2csv]: Skipping, unable to determine old version
+[2023-05-24 15:39:29] INFO root fetch - processPackages [json2csv]: Start processing: iron-toolbox
+[2023-05-24 15:39:29] INFO root fetch - main [MainThread]: End processing [json2csv] error
+[2023-05-24 15:39:29] INFO root fetch - processPackages [dbtgenlib]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-24 15:39:29] INFO root fetch - processPackages [iron-toolbox]: New version: [1.0.9] Old Version: [1.0.8]
+[2023-05-24 15:39:29] INFO root fetch - processPackages [dbtgenlib]: executing diffoscope
+[2023-05-24 15:39:29] INFO root fetch - processPackages [cloud-toolkit-aws]: New version: [0.9.1] Old Version: [0.9.0]
+[2023-05-24 15:39:29] INFO root fetch - processPackages [dbtgenlib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dbtgenlib-0.0.8.tar.gz tmp/dbtgenlib-0.0.9.tar.gz --markdown 20230524/d/dbtgenlib/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-24 15:39:29] INFO root fetch - processPackages [srf-client]: New version: [1.4] Old Version: [1.3.2]
+[2023-05-24 15:39:29] INFO root fetch - processPackages [pyeCam]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-24 15:39:29] WARNING root fetch - processPackages [meta-matching-tool]: Skipping, unable to determine old version
+[2023-05-24 15:39:29] INFO root fetch - processPackages [TwitAnalysis]: New version: [1.0.20] Old Version: [1.0.19]
+[2023-05-24 15:39:29] INFO root fetch - processPackages [meta-matching-tool]: Start processing: season
+[2023-05-24 15:39:29] INFO root fetch - main [MainThread]: End processing [meta-matching-tool] error
+[2023-05-24 15:39:29] INFO root fetch - processPackages [scrapy-puppeteer-client]: New version: [0.0.8] Old Version: [0.0.7]
+[2023-05-24 15:39:29] INFO root fetch - processPackages [cenao]: New version: [0.9.2] Old Version: [0.9.1]
+[2023-05-24 15:39:29] INFO root fetch - processPackages [piccolo]: New version: [0.99.0] Old Version: [0.98.0]
+[2023-05-24 15:39:29] INFO root fetch - processPackages [season]: New version: [2.3.1] Old Version: [2.3.0]
+[2023-05-24 15:39:29] INFO root fetch - processPackages [season]: Downloading https://files.pythonhosted.org/packages/1b/88/ac4e80da8fefdaf140fafc2d6d07d41ebfddb27386c48e43b8aa28d8a54e/season-2.3.0-py3-none-any.whl
+[2023-05-24 15:39:29] INFO root fetch - processPackages [iron-toolbox]: executing diffoscope
+[2023-05-24 15:39:29] INFO root fetch - processPackages [iron-toolbox]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/iron_toolbox-1.0.8.tar.gz tmp/iron_toolbox-1.0.9.tar.gz --markdown 20230524/i/iron-toolbox/1.0.8-1.0.9/diff.md --exclude *.pyd
+[2023-05-24 15:39:29] WARNING root fetch - processPackages [season]: Skipping package: exceeds size limit 13772725>=10485760
+[2023-05-24 15:39:29] INFO root fetch - processPackages [season]: Start processing: bhousing-model
+[2023-05-24 15:39:29] INFO root fetch - main [MainThread]: End processing [season] error
+[2023-05-24 15:39:29] INFO root fetch - processPackages [scrapy-puppeteer-client]: Downloading https://files.pythonhosted.org/packages/ef/9c/4b55a0f6a224226e4e808cfbd1b69b89954ad4531e8ef811021a1080bbcb/scrapy-puppeteer-client-0.0.7.tar.gz
+[2023-05-24 15:39:29] INFO root fetch - processPackages [TwitAnalysis]: Downloading https://files.pythonhosted.org/packages/44/49/2488d992e953496a92638b977d838960a2c4ae004363e05885d9ab1a3bbc/TwitAnalysis-1.0.19.tar.gz
+[2023-05-24 15:39:29] INFO root fetch - processPackages [bhousing-model]: New version: [0.0.4] Old Version: [0.0.3]
+[2023-05-24 15:39:29] INFO root fetch - processPackages [srf-client]: Downloading https://files.pythonhosted.org/packages/a4/95/1a873a8b83ec7ee270cddd1399be98238e12193287c8d562eca6345585ea/srf-client-1.3.2.tar.gz
+[2023-05-24 15:39:29] INFO root fetch - processPackages [cenao]: Downloading https://files.pythonhosted.org/packages/95/e9/72b1a664edb2930bd951e0cea59d5781db6210573a74c71d1b8129ed4483/cenao-0.9.1.tar.gz
+[2023-05-24 15:39:29] INFO root fetch - processPackages [piccolo]: Downloading https://files.pythonhosted.org/packages/ce/2e/670339ba209098ad7e26363966d6f472f16037e22c57ec0998d6fc5eb2ef/piccolo-0.98.0.tar.gz
+[2023-05-24 15:39:29] INFO root fetch - processPackages [pyeCam]: executing diffoscope
+[2023-05-24 15:39:29] INFO root fetch - processPackages [pyeCam]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyeCam-0.0.8.tar.gz tmp/pyeCam-0.0.9.tar.gz --markdown 20230524/p/pyeCam/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-24 15:39:29] INFO root fetch - processPackages [cloud-toolkit-aws]: executing diffoscope
+[2023-05-24 15:39:29] INFO root fetch - processPackages [cloud-toolkit-aws]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cloud_toolkit_aws-0.9.0.tar.gz tmp/cloud_toolkit_aws-0.9.1.tar.gz --markdown 20230524/c/cloud-toolkit-aws/0.9.0-0.9.1/diff.md --exclude *.pyd
+[2023-05-24 15:39:29] INFO root fetch - processPackages [bhousing-model]: Downloading https://files.pythonhosted.org/packages/0e/6f/c72a698b23d4185766c23b572875c14e16f7d704f499358396d376ce0ca4/bhousing-model-0.0.4.tar.gz
+[2023-05-24 15:39:29] INFO root fetch - processPackages [TwitAnalysis]: Downloading https://files.pythonhosted.org/packages/26/6e/af1c732af0eb6bf0b5b773293f808c970f6cdef924b23c6a601b0beb2ec6/TwitAnalysis-1.0.20.tar.gz
+[2023-05-24 15:39:29] INFO root fetch - processPackages [scrapy-puppeteer-client]: Downloading https://files.pythonhosted.org/packages/0b/9d/f175e2455682eaf8e990051e754bd661815f0e7ead2bbc8720da4d9b98ba/scrapy-puppeteer-client-0.0.8.tar.gz
+[2023-05-24 15:39:29] INFO root fetch - processPackages [srf-client]: Downloading https://files.pythonhosted.org/packages/0b/a2/36e0ec6d4f15817990ba53f0eb34eb5978aebe747a1858202fd9f3d3a896/srf-client-1.4.tar.gz
+[2023-05-24 15:39:29] INFO root fetch - processPackages [cenao]: Downloading https://files.pythonhosted.org/packages/b2/4f/e479b5df46dcfea6e7703e37978947a27114e66a1d7dbb3f4feb874b14e6/cenao-0.9.2.tar.gz
+[2023-05-24 15:39:29] INFO root fetch - processPackages [TwitAnalysis]: executing diffoscope
+[2023-05-24 15:39:29] INFO root fetch - processPackages [TwitAnalysis]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/TwitAnalysis-1.0.19.tar.gz tmp/TwitAnalysis-1.0.20.tar.gz --markdown 20230524/T/TwitAnalysis/1.0.19-1.0.20/diff.md --exclude *.pyd
+[2023-05-24 15:39:29] INFO root fetch - processPackages [scrapy-puppeteer-client]: executing diffoscope
+[2023-05-24 15:39:29] INFO root fetch - processPackages [scrapy-puppeteer-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/scrapy-puppeteer-client-0.0.7.tar.gz tmp/scrapy-puppeteer-client-0.0.8.tar.gz --markdown 20230524/s/scrapy-puppeteer-client/0.0.7-0.0.8/diff.md --exclude *.pyd
+[2023-05-24 15:39:29] INFO root fetch - processPackages [bhousing-model]: executing diffoscope
+[2023-05-24 15:39:29] INFO root fetch - processPackages [bhousing-model]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bhousing-model-0.0.3.tar.gz tmp/bhousing-model-0.0.4.tar.gz --markdown 20230524/b/bhousing-model/0.0.3-0.0.4/diff.md --exclude *.pyd
+[2023-05-24 15:39:30] INFO root fetch - processPackages [srf-client]: executing diffoscope
+[2023-05-24 15:39:30] INFO root fetch - processPackages [srf-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/srf-client-1.3.2.tar.gz tmp/srf-client-1.4.tar.gz --markdown 20230524/s/srf-client/1.3.2-1.4/diff.md --exclude *.pyd
+[2023-05-24 15:39:30] INFO root fetch - processPackages [cenao]: executing diffoscope
+[2023-05-24 15:39:30] INFO root fetch - processPackages [cenao]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cenao-0.9.1.tar.gz tmp/cenao-0.9.2.tar.gz --markdown 20230524/c/cenao/0.9.1-0.9.2/diff.md --exclude *.pyd
+[2023-05-24 15:39:30] INFO root fetch - processPackages [piccolo]: Downloading https://files.pythonhosted.org/packages/d1/7b/62bb2f4141cb1520764033657ecef8fc6f29e4591d23d681699dcb460558/piccolo-0.99.0.tar.gz
+[2023-05-24 15:39:30] INFO root fetch - processPackages [piccolo]: executing diffoscope
+[2023-05-24 15:39:30] INFO root fetch - processPackages [piccolo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/piccolo-0.98.0.tar.gz tmp/piccolo-0.99.0.tar.gz --markdown 20230524/p/piccolo/0.98.0-0.99.0/diff.md --exclude *.pyd
+[2023-05-24 15:39:30] INFO root fetch - processPackages [dbtgenlib]: Start processing: text2tags-lib
+[2023-05-24 15:39:30] INFO root fetch - main [MainThread]: End processing [dbtgenlib]: success
+[2023-05-24 15:39:30] INFO root fetch - processPackages [text2tags-lib]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-05-24 15:39:30] ERROR root fetch - processPackages [text2tags-lib]: Unable to fetch info: No such project/version 'text2tags-lib' 0.0.2
+[2023-05-24 15:39:30] INFO root fetch - processPackages [text2tags-lib]: Start processing: arcaflow
+[2023-05-24 15:39:30] INFO root fetch - main [MainThread]: End processing [text2tags-lib] error
+[2023-05-24 15:39:30] INFO root fetch - processPackages [arcaflow]: New version: [0.4.2] Old Version: [0.4.1]
+[2023-05-24 15:39:30] INFO root fetch - processPackages [pyeCam]: Start processing: pyshacl
+[2023-05-24 15:39:30] INFO root fetch - main [MainThread]: End processing [pyeCam]: success
+[2023-05-24 15:39:31] INFO root fetch - processPackages [arcaflow]: Downloading https://files.pythonhosted.org/packages/7a/07/74427a6e9f940dc73439a2e1fa820fdd00141823cf4504de96b9e9dafaa6/arcaflow-0.4.1-py3-none-win_amd64.whl
+[2023-05-24 15:39:31] WARNING root fetch - processPackages [arcaflow]: Skipping package: exceeds size limit 10613743>=10485760
+[2023-05-24 15:39:31] INFO root fetch - processPackages [arcaflow]: Start processing: panda-server
+[2023-05-24 15:39:31] INFO root fetch - main [MainThread]: End processing [arcaflow] error
+[2023-05-24 15:39:31] INFO root fetch - processPackages [pyshacl]: New version: [0.9.9.post1] Old Version: [0.9.9]
+[2023-05-24 15:39:31] INFO root fetch - processPackages [panda-server]: New version: [0.0.54] Old Version: [0.0.53]
+[2023-05-24 15:39:31] INFO root fetch - processPackages [iron-toolbox]: Start processing: threedi-schema
+[2023-05-24 15:39:31] INFO root fetch - main [MainThread]: End processing [iron-toolbox]: success
+[2023-05-24 15:39:31] INFO root fetch - processPackages [panda-server]: executing diffoscope
+[2023-05-24 15:39:31] INFO root fetch - processPackages [panda-server]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/panda-server-0.0.53.tar.gz tmp/panda-server-0.0.54.tar.gz --markdown 20230524/p/panda-server/0.0.53-0.0.54/diff.md --exclude *.pyd
+[2023-05-24 15:39:31] INFO root fetch - processPackages [pyshacl]: Downloading https://files.pythonhosted.org/packages/ff/90/e2518dca4e25c145cb465a84c62a64fb43f0bb5dd61cc44d3a696e32d2c4/pyshacl-0.9.9.tar.gz
+[2023-05-24 15:39:31] INFO root fetch - processPackages [threedi-schema]: New version: [0.217.2] Old Version: [0.217.1]
+[2023-05-24 15:39:31] INFO root fetch - main [MainThread]: End processing [TwitAnalysis]: success
+[2023-05-24 15:39:31] INFO root fetch - main [MainThread]: End processing [cloud-toolkit-aws]: success
+[2023-05-24 15:39:31] INFO root fetch - processPackages [pyshacl]: Downloading https://files.pythonhosted.org/packages/7a/09/13681b7d6de8bff056035ab45612fbe759259502dc023601f2a8912e4b4c/pyshacl-0.9.9.post1.tar.gz
+[2023-05-24 15:39:31] INFO root fetch - main [MainThread]: End processing [scrapy-puppeteer-client]: success
+[2023-05-24 15:39:31] INFO root fetch - main [MainThread]: End processing [srf-client]: success
+[2023-05-24 15:39:31] INFO root fetch - processPackages [threedi-schema]: Downloading https://files.pythonhosted.org/packages/79/7e/3fd0c9b39c67bd2cd79537254e97a1f09f647fcd78f0031fd0cc8f13cd5e/threedi-schema-0.217.2.tar.gz
+[2023-05-24 15:39:31] INFO root fetch - main [MainThread]: End processing [bhousing-model]: success
+[2023-05-24 15:39:31] INFO root fetch - processPackages [pyshacl]: executing diffoscope
+[2023-05-24 15:39:31] INFO root fetch - processPackages [pyshacl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyshacl-0.9.9.tar.gz tmp/pyshacl-0.9.9.post1.tar.gz --markdown 20230524/p/pyshacl/0.9.9-0.9.9.post1/diff.md --exclude *.pyd
+[2023-05-24 15:39:31] INFO root fetch - processPackages [threedi-schema]: executing diffoscope
+[2023-05-24 15:39:31] INFO root fetch - processPackages [threedi-schema]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/threedi-schema-0.217.1.tar.gz tmp/threedi-schema-0.217.2.tar.gz --markdown 20230524/t/threedi-schema/0.217.1-0.217.2/diff.md --exclude *.pyd
+[2023-05-24 15:39:32] INFO root fetch - main [MainThread]: End processing [cenao]: success
+[2023-05-24 15:39:33] INFO root fetch - main [MainThread]: End processing [threedi-schema]: success
+[2023-05-24 15:39:33] INFO root fetch - main [MainThread]: End processing [piccolo]: success
+[2023-05-24 15:39:33] INFO root fetch - main [MainThread]: End processing [pyshacl]: success
+[2023-05-24 15:39:35] INFO root fetch - main [MainThread]: End processing [panda-server]: success
+[2023-05-24 15:39:35] INFO root fetch - main [MainThread]: Store serial: [18230277]
