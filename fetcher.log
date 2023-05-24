@@ -12431,3 +12431,86 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd4 in position 72: invalid
 [2023-05-24 12:04:51] INFO root fetch - main [MainThread]: End processing [ibmcloudant]: success
 [2023-05-24 12:04:58] INFO root fetch - main [MainThread]: End processing [brainpy]: success
 [2023-05-24 12:04:58] INFO root fetch - main [MainThread]: Store serial: [18227962]
+[2023-05-24 12:10:04] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18227962]
+[2023-05-24 12:10:08] INFO root fetch - main [MainThread]: Found 14 changed packages
+[2023-05-24 12:10:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: transaction-indexer-quality-checker
+[2023-05-24 12:10:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: kyoslib-py
+[2023-05-24 12:10:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: otc-sphinx-directives
+[2023-05-24 12:10:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: lesscode-py
+[2023-05-24 12:10:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: prowler
+[2023-05-24 12:10:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: ewoksserver
+[2023-05-24 12:10:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: checkov
+[2023-05-24 12:10:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: vbimage
+[2023-05-24 12:10:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: sherpa-ncnn
+[2023-05-24 12:10:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: cefeste
+[2023-05-24 12:10:08] INFO root fetch - processPackages [vbimage]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-24 12:10:08] INFO root fetch - processPackages [ewoksserver]: New version: [0.1.0rc1] Old Version: [0.1.0rc0]
+[2023-05-24 12:10:08] INFO root fetch - processPackages [cefeste]: New version: [1.1.7] Old Version: [1.1.6]
+[2023-05-24 12:10:08] INFO root fetch - processPackages [otc-sphinx-directives]: New version: [0.2.3] Old Version: [0.2.2]
+[2023-05-24 12:10:09] INFO root fetch - processPackages [lesscode-py]: New version: [0.3.9] Old Version: [0.3.8]
+[2023-05-24 12:10:09] INFO root fetch - processPackages [checkov]: New version: [2.3.99] Old Version: [2.3.98]
+[2023-05-24 12:10:09] WARNING root fetch - processPackages [transaction-indexer-quality-checker]: Skipping, unable to determine old version
+[2023-05-24 12:10:09] INFO root fetch - processPackages [transaction-indexer-quality-checker]: Start processing: mtpandas
+[2023-05-24 12:10:09] INFO root fetch - main [MainThread]: End processing [transaction-indexer-quality-checker] error
+[2023-05-24 12:10:09] INFO root fetch - processPackages [kyoslib-py]: New version: [4.1.1] Old Version: [4.1.0]
+[2023-05-24 12:10:09] INFO root fetch - processPackages [prowler]: New version: [3.5.3] Old Version: [3.5.2]
+[2023-05-24 12:10:09] INFO root fetch - processPackages [sherpa-ncnn]: New version: [2.0.2] Old Version: [2.0.1]
+[2023-05-24 12:10:09] INFO root fetch - processPackages [checkov]: executing diffoscope
+[2023-05-24 12:10:09] INFO root fetch - processPackages [checkov]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/checkov-2.3.98.tar.gz tmp/checkov-2.3.99.tar.gz --markdown 20230524/c/checkov/2.3.98-2.3.99/diff.md --exclude *.pyd
+[2023-05-24 12:10:09] INFO root fetch - processPackages [vbimage]: executing diffoscope
+[2023-05-24 12:10:09] INFO root fetch - processPackages [vbimage]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vbimage-0.1.8.tar.gz tmp/vbimage-0.1.9.tar.gz --markdown 20230524/v/vbimage/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-24 12:10:09] INFO root fetch - processPackages [mtpandas]: New version: [1.9.202208120520] Old Version: [1.9.202208011136]
+[2023-05-24 12:10:09] INFO root fetch - processPackages [ewoksserver]: Downloading https://files.pythonhosted.org/packages/06/fb/020e056b525432f8b112e072b8d464818c31bda358fe089220552502931a/ewoksserver-0.1.0rc1.tar.gz
+[2023-05-24 12:10:09] INFO root fetch - processPackages [otc-sphinx-directives]: Downloading https://files.pythonhosted.org/packages/de/ad/f0658c7fb90c7e2ed326f2eac6f41029e9e2cb6f277e0f8f3ce69152fd3c/otc_sphinx_directives-0.2.2.tar.gz
+[2023-05-24 12:10:09] INFO root fetch - processPackages [kyoslib-py]: Downloading https://files.pythonhosted.org/packages/bf/c7/3df03ad8c8f5e620e1ff8fe5109f18e43ec1f30f64cf815672b99b290e01/kyoslib_py-4.1.0.tar.gz
+[2023-05-24 12:10:09] INFO root fetch - processPackages [lesscode-py]: executing diffoscope
+[2023-05-24 12:10:09] INFO root fetch - processPackages [lesscode-py]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lesscode-py-0.3.8.tar.gz tmp/lesscode-py-0.3.9.tar.gz --markdown 20230524/l/lesscode-py/0.3.8-0.3.9/diff.md --exclude *.pyd
+[2023-05-24 12:10:09] INFO root fetch - processPackages [ewoksserver]: executing diffoscope
+[2023-05-24 12:10:09] INFO root fetch - processPackages [ewoksserver]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ewoksserver-0.1.0rc0.tar.gz tmp/ewoksserver-0.1.0rc1.tar.gz --markdown 20230524/e/ewoksserver/0.1.0rc0-0.1.0rc1/diff.md --exclude *.pyd
+[2023-05-24 12:10:09] INFO root fetch - processPackages [cefeste]: Downloading https://files.pythonhosted.org/packages/90/5c/3d42aac0b8c9afe5c2ee91b5ec27c430f248a4f43cd8a01f81031375c0b1/cefeste-1.1.7.tar.gz
+[2023-05-24 12:10:09] INFO root fetch - processPackages [mtpandas]: Downloading https://files.pythonhosted.org/packages/83/07/ea7b949233637231b605ad043e5af153695fabeec4dd4d2941c8d0bdd8c1/mtpandas-1.9.202208011136-py3-none-any.whl
+[2023-05-24 12:10:09] INFO root fetch - processPackages [prowler]: Downloading https://files.pythonhosted.org/packages/15/41/1c531aa0742ada57c2e49d9dee020075b506a1483c54f1c30415d41cd0a2/prowler-3.5.3.tar.gz
+[2023-05-24 12:10:09] INFO root fetch - processPackages [sherpa-ncnn]: Downloading https://files.pythonhosted.org/packages/89/06/e4933d01447623e1e7ec7f99daa41a580e6559b2d4be7377030a5ca748da/sherpa_ncnn-2.0.2-cp39-cp39-macosx_10_9_x86_64.whl
+[2023-05-24 12:10:09] INFO root fetch - processPackages [cefeste]: executing diffoscope
+[2023-05-24 12:10:09] INFO root fetch - processPackages [cefeste]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cefeste-1.1.6.tar.gz tmp/cefeste-1.1.7.tar.gz --markdown 20230524/c/cefeste/1.1.6-1.1.7/diff.md --exclude *.pyd
+[2023-05-24 12:10:09] INFO root fetch - processPackages [otc-sphinx-directives]: Downloading https://files.pythonhosted.org/packages/a2/fb/c4db103168ef342f0def34a78ec50a484a2f517817d825d1988f0e7b9a84/otc_sphinx_directives-0.2.3.tar.gz
+[2023-05-24 12:10:09] INFO root fetch - processPackages [prowler]: executing diffoscope
+[2023-05-24 12:10:09] INFO root fetch - processPackages [prowler]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/prowler-3.5.2.tar.gz tmp/prowler-3.5.3.tar.gz --markdown 20230524/p/prowler/3.5.2-3.5.3/diff.md --exclude *.pyd
+[2023-05-24 12:10:09] INFO root fetch - processPackages [otc-sphinx-directives]: executing diffoscope
+[2023-05-24 12:10:09] INFO root fetch - processPackages [otc-sphinx-directives]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/otc_sphinx_directives-0.2.2.tar.gz tmp/otc_sphinx_directives-0.2.3.tar.gz --markdown 20230524/o/otc-sphinx-directives/0.2.2-0.2.3/diff.md --exclude *.pyd
+[2023-05-24 12:10:09] INFO root fetch - processPackages [kyoslib-py]: Downloading https://files.pythonhosted.org/packages/fb/f5/fb569467d68b970c6b2d53c392961fa9994c9edaf4014854bcdbeba93f14/kyoslib_py-4.1.1.tar.gz
+[2023-05-24 12:10:09] INFO root fetch - processPackages [kyoslib-py]: executing diffoscope
+[2023-05-24 12:10:09] INFO root fetch - processPackages [kyoslib-py]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kyoslib_py-4.1.0.tar.gz tmp/kyoslib_py-4.1.1.tar.gz --markdown 20230524/k/kyoslib-py/4.1.0-4.1.1/diff.md --exclude *.pyd
+[2023-05-24 12:10:09] INFO root fetch - processPackages [mtpandas]: Downloading https://files.pythonhosted.org/packages/6b/c5/5887a43a006743313198ea775120a74710c0da606c9ccbd6612c8010296a/mtpandas-1.9.202208120520-py3-none-any.whl
+[2023-05-24 12:10:09] INFO root fetch - processPackages [mtpandas]: executing diffoscope
+[2023-05-24 12:10:09] INFO root fetch - processPackages [mtpandas]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mtpandas-1.9.202208011136-py3-none-any.whl.zip tmp/mtpandas-1.9.202208120520-py3-none-any.whl.zip --markdown 20230524/m/mtpandas/1.9.202208011136-1.9.202208120520/diff.md --exclude *.pyd
+[2023-05-24 12:10:10] INFO root fetch - processPackages [sherpa-ncnn]: executing diffoscope
+[2023-05-24 12:10:10] INFO root fetch - processPackages [sherpa-ncnn]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sherpa_ncnn-2.0.1-cp39-cp39-win_amd64.whl.zip tmp/sherpa_ncnn-2.0.2-cp39-cp39-macosx_10_9_x86_64.whl.zip --markdown 20230524/s/sherpa-ncnn/2.0.1-2.0.2/diff.md --exclude *.pyd
+[2023-05-24 12:10:10] INFO root fetch - processPackages [vbimage]: Start processing: nonecorn
+[2023-05-24 12:10:10] INFO root fetch - main [MainThread]: End processing [vbimage]: success
+[2023-05-24 12:10:10] INFO root fetch - processPackages [nonecorn]: New version: [0.14.3.dev1] Old Version: [0.14.1.dev1]
+[2023-05-24 12:10:10] INFO root fetch - processPackages [nonecorn]: Downloading https://files.pythonhosted.org/packages/84/93/4439b0208d05aa0ebf33385f188aed4b74435612a39beaf62ecfce6548b3/nonecorn-0.14.1.dev1.tar.gz
+[2023-05-24 12:10:10] INFO root fetch - processPackages [cefeste]: Start processing: vbimage
+[2023-05-24 12:10:10] INFO root fetch - main [MainThread]: End processing [cefeste]: success
+[2023-05-24 12:10:10] INFO root fetch - processPackages [vbimage]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-24 12:10:11] INFO root fetch - processPackages [nonecorn]: Downloading https://files.pythonhosted.org/packages/9e/ca/14019b7ded6981606000df694ded766b73e4ca4f7a2d620e4f5084ec4fb1/nonecorn-0.14.3.dev1.tar.gz
+[2023-05-24 12:10:11] INFO root fetch - processPackages [vbimage]: executing diffoscope
+[2023-05-24 12:10:11] INFO root fetch - processPackages [vbimage]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vbimage-0.1.8.tar.gz tmp/vbimage-0.1.9.tar.gz --markdown 20230524/v/vbimage/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-24 12:10:11] INFO root fetch - processPackages [nonecorn]: executing diffoscope
+[2023-05-24 12:10:11] INFO root fetch - processPackages [nonecorn]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nonecorn-0.14.1.dev1.tar.gz tmp/nonecorn-0.14.3.dev1.tar.gz --markdown 20230524/n/nonecorn/0.14.1.dev1-0.14.3.dev1/diff.md --exclude *.pyd
+[2023-05-24 12:10:11] INFO root fetch - processPackages [ewoksserver]: Start processing: cognite-power-ops
+[2023-05-24 12:10:11] INFO root fetch - main [MainThread]: End processing [ewoksserver]: success
+[2023-05-24 12:10:11] INFO root fetch - processPackages [cognite-power-ops]: New version: [0.7.1] Old Version: [0.7.0]
+[2023-05-24 12:10:11] INFO root fetch - processPackages [cognite-power-ops]: executing diffoscope
+[2023-05-24 12:10:11] INFO root fetch - processPackages [cognite-power-ops]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cognite_power_ops-0.7.0.tar.gz tmp/cognite_power_ops-0.7.1.tar.gz --markdown 20230524/c/cognite-power-ops/0.7.0-0.7.1/diff.md --exclude *.pyd
+[2023-05-24 12:10:11] INFO root fetch - main [MainThread]: End processing [mtpandas]: success
+[2023-05-24 12:10:11] INFO root fetch - main [MainThread]: End processing [otc-sphinx-directives]: success
+[2023-05-24 12:10:11] INFO root fetch - main [MainThread]: End processing [kyoslib-py]: success
+[2023-05-24 12:10:12] INFO root fetch - main [MainThread]: End processing [vbimage]: success
+[2023-05-24 12:10:12] INFO root fetch - main [MainThread]: End processing [lesscode-py]: success
+[2023-05-24 12:10:12] INFO root fetch - main [MainThread]: End processing [nonecorn]: success
+[2023-05-24 12:10:12] INFO root fetch - main [MainThread]: End processing [cognite-power-ops]: success
+[2023-05-24 12:10:14] INFO root fetch - main [MainThread]: End processing [sherpa-ncnn]: success
+[2023-05-24 12:10:26] INFO root fetch - main [MainThread]: End processing [prowler]: success
+[2023-05-24 12:10:48] INFO root fetch - main [MainThread]: End processing [checkov]: success
+[2023-05-24 12:10:48] INFO root fetch - main [MainThread]: Store serial: [18228010]
