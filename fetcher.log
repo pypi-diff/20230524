@@ -7136,3 +7136,50 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-05-24 05:55:09] INFO root fetch - main [MainThread]: End processing [azure-mgmt-resource]: success
 [2023-05-24 05:55:46] INFO root fetch - main [MainThread]: End processing [caqui]: success
 [2023-05-24 05:55:46] INFO root fetch - main [MainThread]: Store serial: [18224691]
+[2023-05-24 06:00:50] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18224691]
+[2023-05-24 06:00:55] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-05-24 06:00:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: Python-dependency-confusion-attacks
+[2023-05-24 06:00:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ovos-config
+[2023-05-24 06:00:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: rapidpro-flow-tools
+[2023-05-24 06:00:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: ovos-dinkum-listener
+[2023-05-24 06:00:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: aind-data-schema
+[2023-05-24 06:00:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: genshitjokes
+[2023-05-24 06:00:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: llmo
+[2023-05-24 06:00:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: cashman
+[2023-05-24 06:00:55] INFO root fetch - processPackages [rapidpro-flow-tools]: New version: [0.7.0] Old Version: [0.6.0]
+[2023-05-24 06:00:55] INFO root fetch - processPackages [genshitjokes]: New version: [2023.5.9] Old Version: [2023.5.8]
+[2023-05-24 06:00:55] INFO root fetch - processPackages [llmo]: New version: [0.3.0] Old Version: [0.2.2]
+[2023-05-24 06:00:55] INFO root fetch - processPackages [aind-data-schema]: New version: [0.9.6] Old Version: [0.9.5]
+[2023-05-24 06:00:55] WARNING root fetch - processPackages [Python-dependency-confusion-attacks]: Skipping, unable to determine old version
+[2023-05-24 06:00:55] INFO root fetch - main [MainThread]: End processing [Python-dependency-confusion-attacks] error
+[2023-05-24 06:00:55] INFO root fetch - processPackages [ovos-config]: New version: [0.0.9a6] Old Version: [0.0.9a5]
+[2023-05-24 06:00:56] INFO root fetch - processPackages [ovos-dinkum-listener]: New version: [0.0.2a9] Old Version: [0.0.2a8]
+[2023-05-24 06:00:56] INFO root fetch - processPackages [cashman]: New version: [0.1.0] Old Version: [0.0.0]
+[2023-05-24 06:00:56] INFO root fetch - processPackages [genshitjokes]: Downloading https://files.pythonhosted.org/packages/b7/33/a74f65b48aa34fa8d7496f336504c5b73bd22be3f644d340018baf6723a0/genshitjokes-2023.5.8.tar.gz
+[2023-05-24 06:00:56] INFO root fetch - processPackages [aind-data-schema]: executing diffoscope
+[2023-05-24 06:00:56] INFO root fetch - processPackages [aind-data-schema]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aind-data-schema-0.9.5.tar.gz tmp/aind-data-schema-0.9.6.tar.gz --markdown 20230524/a/aind-data-schema/0.9.5-0.9.6/diff.md --exclude *.pyd
+[2023-05-24 06:00:56] INFO root fetch - processPackages [rapidpro-flow-tools]: Downloading https://files.pythonhosted.org/packages/8f/5c/bea28fa819d2a9e9a8f009da91ad3a5341e93f28c4183fc7faa4c0103257/rapidpro_flow_tools-0.7.0.tar.gz
+[2023-05-24 06:00:56] INFO root fetch - processPackages [llmo]: Downloading https://files.pythonhosted.org/packages/02/4b/3e74deb6ee9ddc4a6bce268c231ad042aa46757ea04d2b56020e77443b0a/llmo-0.3.0.tar.gz
+[2023-05-24 06:00:56] INFO root fetch - processPackages [ovos-config]: Downloading https://files.pythonhosted.org/packages/00/40/2f28776213f8846271bcb0c5acad044cbf7340e248c1efa2b99332b69afd/ovos-config-0.0.9a5.tar.gz
+[2023-05-24 06:00:56] INFO root fetch - processPackages [cashman]: Downloading https://files.pythonhosted.org/packages/52/58/e0b90a8b289824389ca0c9349c56ad3dadb32ed483ecc68353d964f14764/cashman-0.0.0.tar.gz
+[2023-05-24 06:00:56] INFO root fetch - processPackages [rapidpro-flow-tools]: executing diffoscope
+[2023-05-24 06:00:56] INFO root fetch - processPackages [rapidpro-flow-tools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rapidpro_flow_tools-0.6.0.tar.gz tmp/rapidpro_flow_tools-0.7.0.tar.gz --markdown 20230524/r/rapidpro-flow-tools/0.6.0-0.7.0/diff.md --exclude *.pyd
+[2023-05-24 06:00:56] INFO root fetch - processPackages [llmo]: executing diffoscope
+[2023-05-24 06:00:56] INFO root fetch - processPackages [llmo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/llmo-0.2.2.tar.gz tmp/llmo-0.3.0.tar.gz --markdown 20230524/l/llmo/0.2.2-0.3.0/diff.md --exclude *.pyd
+[2023-05-24 06:00:56] INFO root fetch - processPackages [ovos-config]: Downloading https://files.pythonhosted.org/packages/0e/27/fd24bba7718bf24f47e35b7dc41763dba65d64a2e20b8107759d62108d7b/ovos-config-0.0.9a6.tar.gz
+[2023-05-24 06:00:56] INFO root fetch - processPackages [ovos-dinkum-listener]: executing diffoscope
+[2023-05-24 06:00:56] INFO root fetch - processPackages [ovos-dinkum-listener]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ovos_dinkum_listener-0.0.2a8-py3-none-any.whl.zip tmp/ovos_dinkum_listener-0.0.2a9-py3-none-any.whl.zip --markdown 20230524/o/ovos-dinkum-listener/0.0.2a8-0.0.2a9/diff.md --exclude *.pyd
+[2023-05-24 06:00:56] INFO root fetch - processPackages [cashman]: Downloading https://files.pythonhosted.org/packages/1c/c0/d47febb640e78e85130abe1fb8890f7e865fb9afeffe64c1582cfbbe1084/cashman-0.1.0.tar.gz
+[2023-05-24 06:00:56] INFO root fetch - processPackages [ovos-config]: executing diffoscope
+[2023-05-24 06:00:56] INFO root fetch - processPackages [ovos-config]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ovos-config-0.0.9a5.tar.gz tmp/ovos-config-0.0.9a6.tar.gz --markdown 20230524/o/ovos-config/0.0.9a5-0.0.9a6/diff.md --exclude *.pyd
+[2023-05-24 06:00:56] WARNING root fetch - processPackages [genshitjokes]: Skipping package: exceeds size limit 68859298>=10485760
+[2023-05-24 06:00:56] INFO root fetch - main [MainThread]: End processing [genshitjokes] error
+[2023-05-24 06:00:56] INFO root fetch - processPackages [cashman]: executing diffoscope
+[2023-05-24 06:00:56] INFO root fetch - processPackages [cashman]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cashman-0.0.0.tar.gz tmp/cashman-0.1.0.tar.gz --markdown 20230524/c/cashman/0.0.0-0.1.0/diff.md --exclude *.pyd
+[2023-05-24 06:00:57] INFO root fetch - main [MainThread]: End processing [ovos-dinkum-listener]: success
+[2023-05-24 06:00:57] INFO root fetch - main [MainThread]: End processing [llmo]: success
+[2023-05-24 06:00:57] INFO root fetch - main [MainThread]: End processing [ovos-config]: success
+[2023-05-24 06:00:57] INFO root fetch - main [MainThread]: End processing [cashman]: success
+[2023-05-24 06:00:57] INFO root fetch - main [MainThread]: End processing [aind-data-schema]: success
+[2023-05-24 06:00:58] INFO root fetch - main [MainThread]: End processing [rapidpro-flow-tools]: success
+[2023-05-24 06:00:58] INFO root fetch - main [MainThread]: Store serial: [18224722]
