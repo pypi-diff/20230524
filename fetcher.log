@@ -17091,3 +17091,78 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd4 in position 72: invalid
 [2023-05-24 16:22:47] INFO root fetch - processPackages [yarok]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/yarok-0.0.8.tar.gz tmp/yarok-0.0.9.tar.gz --markdown 20230524/y/yarok/0.0.8-0.0.9/diff.md --exclude *.pyd
 [2023-05-24 16:22:51] INFO root fetch - main [MainThread]: End processing [yarok]: success
 [2023-05-24 16:22:51] INFO root fetch - main [MainThread]: Store serial: [18230913]
+[2023-05-24 16:27:55] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18230913]
+[2023-05-24 16:28:00] INFO root fetch - main [MainThread]: Found 14 changed packages
+[2023-05-24 16:28:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: chainforge
+[2023-05-24 16:28:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: spanishconjugator
+[2023-05-24 16:28:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: vessl
+[2023-05-24 16:28:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: spanishconjugator
+[2023-05-24 16:28:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: simplefourierfilter
+[2023-05-24 16:28:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: datamarket
+[2023-05-24 16:28:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: remla12-lib-release
+[2023-05-24 16:28:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: dtdf-flyte-toolkit
+[2023-05-24 16:28:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: simple-chatgpt-cli
+[2023-05-24 16:28:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: fabcohort-test
+[2023-05-24 16:28:00] INFO root fetch - processPackages [remla12-lib-release]: New version: [0.0.8] Old Version: [0.0.6]
+[2023-05-24 16:28:00] WARNING root fetch - processPackages [simplefourierfilter]: Skipping, unable to determine old version
+[2023-05-24 16:28:00] INFO root fetch - processPackages [simplefourierfilter]: Start processing: json2csv
+[2023-05-24 16:28:00] INFO root fetch - main [MainThread]: End processing [simplefourierfilter] error
+[2023-05-24 16:28:00] WARNING root fetch - processPackages [fabcohort-test]: Skipping, unable to determine old version
+[2023-05-24 16:28:00] INFO root fetch - processPackages [fabcohort-test]: Start processing: reytool
+[2023-05-24 16:28:00] INFO root fetch - main [MainThread]: End processing [fabcohort-test] error
+[2023-05-24 16:28:00] INFO root fetch - processPackages [simple-chatgpt-cli]: New version: [0.1.8] Old Version: [0.1.7]
+[2023-05-24 16:28:00] INFO root fetch - processPackages [json2csv]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-05-24 16:28:00] INFO root fetch - processPackages [reytool]: New version: [0.99] Old Version: [0.98]
+[2023-05-24 16:28:00] INFO root fetch - processPackages [chainforge]: New version: [0.1.2.2] Old Version: [0.1.2.1]
+[2023-05-24 16:28:00] WARNING root fetch - processPackages [dtdf-flyte-toolkit]: Skipping, unable to determine old version
+[2023-05-24 16:28:00] INFO root fetch - processPackages [dtdf-flyte-toolkit]: Start processing: scaneo
+[2023-05-24 16:28:00] INFO root fetch - main [MainThread]: End processing [dtdf-flyte-toolkit] error
+[2023-05-24 16:28:00] INFO root fetch - processPackages [datamarket]: New version: [0.2.6] Old Version: [0.2.5]
+[2023-05-24 16:28:00] INFO root fetch - processPackages [simple-chatgpt-cli]: executing diffoscope
+[2023-05-24 16:28:00] INFO root fetch - processPackages [simple-chatgpt-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/simple_chatgpt_cli-0.1.7.tar.gz tmp/simple_chatgpt_cli-0.1.8.tar.gz --markdown 20230524/s/simple-chatgpt-cli/0.1.7-0.1.8/diff.md --exclude *.pyd
+[2023-05-24 16:28:00] INFO root fetch - processPackages [vessl]: New version: [0.1.97] Old Version: [0.1.96]
+[2023-05-24 16:28:00] INFO root fetch - processPackages [scaneo]: New version: [0.0.9.post3] Old Version: [0.0.9.post2]
+[2023-05-24 16:28:00] INFO root fetch - processPackages [reytool]: executing diffoscope
+[2023-05-24 16:28:00] INFO root fetch - processPackages [reytool]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/reytool-0.98-py3-none-any.whl.zip tmp/reytool-0.99-py3-none-any.whl.zip --markdown 20230524/r/reytool/0.98-0.99/diff.md --exclude *.pyd
+[2023-05-24 16:28:00] INFO root fetch - processPackages [spanishconjugator]: New version: [2.3.999] Old Version: [2.3.998]
+[2023-05-24 16:28:00] INFO root fetch - processPackages [spanishconjugator]: New version: [2.3.999] Old Version: [2.3.998]
+[2023-05-24 16:28:00] INFO root fetch - processPackages [remla12-lib-release]: Downloading https://files.pythonhosted.org/packages/91/e6/2f1fe22a0f4e7965f365b006ab651a531d2c5a05b6e4c91d4379a9955cd3/remla12-lib-release-0.0.8.tar.gz
+[2023-05-24 16:28:00] INFO root fetch - processPackages [vessl]: Downloading https://files.pythonhosted.org/packages/7c/ba/14d111c212a3a3ff5c2e144377066cc2e25d3df5e85de30056886f1cf1e8/vessl-0.1.96.tar.gz
+[2023-05-24 16:28:00] INFO root fetch - processPackages [json2csv]: Downloading https://files.pythonhosted.org/packages/8f/13/986c0db0584d93f3b1164094da418db7277e9c6084d9488c25553e910590/json2csv-0.0.3.tar.gz
+[2023-05-24 16:28:00] INFO root fetch - processPackages [datamarket]: Downloading https://files.pythonhosted.org/packages/e7/da/be9dc2e1fef11e8127d733dde586aae3fa2e0e92123c2073dd5ad986da7c/datamarket-0.2.5.tar.gz
+[2023-05-24 16:28:00] INFO root fetch - processPackages [scaneo]: executing diffoscope
+[2023-05-24 16:28:00] INFO root fetch - processPackages [scaneo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/scaneo-0.0.9.post2.tar.gz tmp/scaneo-0.0.9.post3.tar.gz --markdown 20230524/s/scaneo/0.0.9.post2-0.0.9.post3/diff.md --exclude *.pyd
+[2023-05-24 16:28:00] INFO root fetch - processPackages [chainforge]: Downloading https://files.pythonhosted.org/packages/39/ab/40baef7a60d0504f1d9c7585ab13245b826fb25e94853bfe643cef794da2/chainforge-0.1.2.1.tar.gz
+[2023-05-24 16:28:00] INFO root fetch - processPackages [remla12-lib-release]: executing diffoscope
+[2023-05-24 16:28:00] INFO root fetch - processPackages [remla12-lib-release]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/remla12-lib-release-0.0.6.tar.gz tmp/remla12-lib-release-0.0.8.tar.gz --markdown 20230524/r/remla12-lib-release/0.0.6-0.0.8/diff.md --exclude *.pyd
+[2023-05-24 16:28:00] INFO root fetch - processPackages [json2csv]: executing diffoscope
+[2023-05-24 16:28:00] INFO root fetch - processPackages [json2csv]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/json2csv-0.0.2.tar.gz tmp/json2csv-0.0.3.tar.gz --markdown 20230524/j/json2csv/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-05-24 16:28:01] INFO root fetch - processPackages [datamarket]: Downloading https://files.pythonhosted.org/packages/78/13/65e5a00e69ad904683be24eb6c7a32263bea5d20a40e38def34f6a5b093d/datamarket-0.2.6.tar.gz
+[2023-05-24 16:28:01] INFO root fetch - processPackages [vessl]: Downloading https://files.pythonhosted.org/packages/e6/8d/63cb720a373137970c1c7ba853c811c0d045f9612b448d7f3af458995816/vessl-0.1.97.tar.gz
+[2023-05-24 16:28:01] INFO root fetch - processPackages [chainforge]: Downloading https://files.pythonhosted.org/packages/2d/e6/eb248572a029af87067f130e52fc61516c465e72936ac03c59de17e226f1/chainforge-0.1.2.2.tar.gz
+[2023-05-24 16:28:01] INFO root fetch - processPackages [datamarket]: executing diffoscope
+[2023-05-24 16:28:01] INFO root fetch - processPackages [datamarket]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/datamarket-0.2.5.tar.gz tmp/datamarket-0.2.6.tar.gz --markdown 20230524/d/datamarket/0.2.5-0.2.6/diff.md --exclude *.pyd
+[2023-05-24 16:28:01] INFO root fetch - processPackages [vessl]: executing diffoscope
+[2023-05-24 16:28:01] INFO root fetch - processPackages [vessl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vessl-0.1.96.tar.gz tmp/vessl-0.1.97.tar.gz --markdown 20230524/v/vessl/0.1.96-0.1.97/diff.md --exclude *.pyd
+[2023-05-24 16:28:01] INFO root fetch - processPackages [spanishconjugator]: executing diffoscope
+[2023-05-24 16:28:01] INFO root fetch - processPackages [spanishconjugator]: executing diffoscope
+[2023-05-24 16:28:01] INFO root fetch - processPackages [spanishconjugator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spanishconjugator-2.3.998.tar.gz tmp/spanishconjugator-2.3.999.tar.gz --markdown 20230524/s/spanishconjugator/2.3.998-2.3.999/diff.md --exclude *.pyd
+[2023-05-24 16:28:01] INFO root fetch - processPackages [spanishconjugator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spanishconjugator-2.3.998.tar.gz tmp/spanishconjugator-2.3.999.tar.gz --markdown 20230524/s/spanishconjugator/2.3.998-2.3.999/diff.md --exclude *.pyd
+[2023-05-24 16:28:01] INFO root fetch - processPackages [simple-chatgpt-cli]: Start processing: scaneo
+[2023-05-24 16:28:01] INFO root fetch - main [MainThread]: End processing [simple-chatgpt-cli]: success
+[2023-05-24 16:28:01] INFO root fetch - processPackages [scaneo]: New version: [0.0.9.post3] Old Version: [0.0.9.post2]
+[2023-05-24 16:28:01] INFO root fetch - processPackages [chainforge]: executing diffoscope
+[2023-05-24 16:28:01] INFO root fetch - processPackages [chainforge]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/chainforge-0.1.2.1.tar.gz tmp/chainforge-0.1.2.2.tar.gz --markdown 20230524/c/chainforge/0.1.2.1-0.1.2.2/diff.md --exclude *.pyd
+[2023-05-24 16:28:02] INFO root fetch - processPackages [scaneo]: executing diffoscope
+[2023-05-24 16:28:02] INFO root fetch - processPackages [scaneo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/scaneo-0.0.9.post2.tar.gz tmp/scaneo-0.0.9.post3.tar.gz --markdown 20230524/s/scaneo/0.0.9.post2-0.0.9.post3/diff.md --exclude *.pyd
+[2023-05-24 16:28:02] INFO root fetch - main [MainThread]: End processing [reytool]: success
+[2023-05-24 16:28:02] INFO root fetch - main [MainThread]: End processing [json2csv]: success
+[2023-05-24 16:28:02] INFO root fetch - main [MainThread]: End processing [remla12-lib-release]: success
+[2023-05-24 16:28:02] INFO root fetch - main [MainThread]: End processing [scaneo]: success
+[2023-05-24 16:28:02] INFO root fetch - main [MainThread]: End processing [datamarket]: success
+[2023-05-24 16:28:03] INFO root fetch - main [MainThread]: End processing [spanishconjugator]: success
+[2023-05-24 16:28:03] INFO root fetch - main [MainThread]: End processing [spanishconjugator]: success
+[2023-05-24 16:28:03] INFO root fetch - main [MainThread]: End processing [scaneo]: success
+[2023-05-24 16:28:09] INFO root fetch - main [MainThread]: End processing [vessl]: success
+[2023-05-24 16:30:49] INFO root fetch - main [MainThread]: End processing [chainforge]: success
+[2023-05-24 16:30:49] INFO root fetch - main [MainThread]: Store serial: [18230964]
