@@ -9735,3 +9735,83 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-05-24 09:37:39] INFO root fetch - main [MainThread]: End processing [papai-public]: success
 [2023-05-24 09:37:39] INFO root fetch - main [MainThread]: End processing [qecore]: success
 [2023-05-24 09:37:39] INFO root fetch - main [MainThread]: Store serial: [18226346]
+[2023-05-24 09:42:43] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18226346]
+[2023-05-24 09:42:48] INFO root fetch - main [MainThread]: Found 13 changed packages
+[2023-05-24 09:42:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: finetuner
+[2023-05-24 09:42:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: streamlit-nightly
+[2023-05-24 09:42:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: cd-dynamic-versioning
+[2023-05-24 09:42:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: assisted-service-client
+[2023-05-24 09:42:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: strace-process-tree
+[2023-05-24 09:42:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: taktile-auth
+[2023-05-24 09:42:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: common-test
+[2023-05-24 09:42:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: ert
+[2023-05-24 09:42:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: Geode-Numerics
+[2023-05-24 09:42:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: muutils
+[2023-05-24 09:42:48] INFO root fetch - processPackages [taktile-auth]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-24 09:42:48] INFO root fetch - processPackages [finetuner]: New version: [0.7.7] Old Version: [0.7.6]
+[2023-05-24 09:42:48] INFO root fetch - processPackages [cd-dynamic-versioning]: New version: [0.0.4] Old Version: [0.0.3]
+[2023-05-24 09:42:48] INFO root fetch - processPackages [Geode-Numerics]: New version: [3.0.4] Old Version: [3.0.3]
+[2023-05-24 09:42:48] INFO root fetch - processPackages [common-test]: New version: [29.9.41] Old Version: [29.9.40]
+[2023-05-24 09:42:48] INFO root fetch - processPackages [streamlit-nightly]: New version: [1.9.3.dev20220601] Old Version: [1.9.3.dev20220531]
+[2023-05-24 09:42:48] INFO root fetch - processPackages [strace-process-tree]: New version: [1.3.0] Old Version: [1.2.1]
+[2023-05-24 09:42:48] INFO root fetch - processPackages [ert]: New version: [5.0.0b9] Old Version: [5.0.0b8]
+[2023-05-24 09:42:48] INFO root fetch - processPackages [assisted-service-client]: New version: [2.9.0.post9] Old Version: [2.9.0.post8]
+[2023-05-24 09:42:49] INFO root fetch - processPackages [muutils]: New version: [0.3.9] Old Version: [0.3.8]
+[2023-05-24 09:42:49] INFO root fetch - processPackages [streamlit-nightly]: executing diffoscope
+[2023-05-24 09:42:49] INFO root fetch - processPackages [streamlit-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/streamlit-nightly-1.9.3.dev20220531.tar.gz tmp/streamlit-nightly-1.9.3.dev20220601.tar.gz --markdown 20230524/s/streamlit-nightly/1.9.3.dev20220531-1.9.3.dev20220601/diff.md --exclude *.pyd
+[2023-05-24 09:42:49] INFO root fetch - processPackages [common-test]: executing diffoscope
+[2023-05-24 09:42:49] INFO root fetch - processPackages [common-test]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/common-test-29.9.40.tar.gz tmp/common-test-29.9.41.tar.gz --markdown 20230524/c/common-test/29.9.40-29.9.41/diff.md --exclude *.pyd
+[2023-05-24 09:42:49] INFO root fetch - processPackages [taktile-auth]: Downloading https://files.pythonhosted.org/packages/78/c7/800b4beea76c590ebcdd1aab9afb19f296e7cdab4526fda6486f8c5ec53e/taktile-auth-0.0.8.tar.gz
+[2023-05-24 09:42:49] INFO root fetch - processPackages [finetuner]: Downloading https://files.pythonhosted.org/packages/1e/f2/65b859918b1e5e4cbfa6e52fb711087e0f44047426e4e7a9c1eb5894eef0/finetuner-0.7.6.tar.gz
+[2023-05-24 09:42:49] INFO root fetch - processPackages [strace-process-tree]: Downloading https://files.pythonhosted.org/packages/ff/40/1680551510aaf4be4c874d30edc0cb4efe2e67f1341b87bbffc4fa46d60f/strace-process-tree-1.2.1.tar.gz
+[2023-05-24 09:42:49] INFO root fetch - processPackages [Geode-Numerics]: Downloading https://files.pythonhosted.org/packages/8e/31/b2645296e6f51c4574a621fd58975aba4e0cafa0a24cd2b8bd338301b722/Geode_Numerics-3.0.3-cp39-cp39-win_amd64.whl
+[2023-05-24 09:42:49] INFO root fetch - processPackages [cd-dynamic-versioning]: Downloading https://files.pythonhosted.org/packages/40/6c/280dd3031a4739435664d9b1dddeabc0ded139578e42ba9db8e29ace1a9d/cd_dynamic_versioning-0.0.4.tar.gz
+[2023-05-24 09:42:49] INFO root fetch - processPackages [ert]: Downloading https://files.pythonhosted.org/packages/cb/3d/80b6c99c43f3c92066af4a56956d70911c4da697ba1d7029ee813b5b4964/ert-5.0.0b8-cp38-cp38-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2023-05-24 09:42:49] INFO root fetch - processPackages [cd-dynamic-versioning]: executing diffoscope
+[2023-05-24 09:42:49] INFO root fetch - processPackages [cd-dynamic-versioning]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cd_dynamic_versioning-0.0.3.tar.gz tmp/cd_dynamic_versioning-0.0.4.tar.gz --markdown 20230524/c/cd-dynamic-versioning/0.0.3-0.0.4/diff.md --exclude *.pyd
+[2023-05-24 09:42:49] INFO root fetch - processPackages [strace-process-tree]: Downloading https://files.pythonhosted.org/packages/2f/8a/1640a331a31469c4f4fce8da53d48b96b1ffe541db8222ea77dbaf298c6f/strace-process-tree-1.3.0.tar.gz
+[2023-05-24 09:42:49] INFO root fetch - processPackages [finetuner]: Downloading https://files.pythonhosted.org/packages/f1/bf/644e8d3677ec5df3326cc717b55b2b67c6a338cb19d0be93a3fe67849b2f/finetuner-0.7.7.tar.gz
+[2023-05-24 09:42:49] INFO root fetch - processPackages [strace-process-tree]: executing diffoscope
+[2023-05-24 09:42:49] INFO root fetch - processPackages [strace-process-tree]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/strace-process-tree-1.2.1.tar.gz tmp/strace-process-tree-1.3.0.tar.gz --markdown 20230524/s/strace-process-tree/1.2.1-1.3.0/diff.md --exclude *.pyd
+[2023-05-24 09:42:49] INFO root fetch - processPackages [taktile-auth]: Downloading https://files.pythonhosted.org/packages/fc/81/f433d9604f88f2411f1198281d506bcbd0caf1e00cd3b0e8d55c1ee399d3/taktile-auth-0.0.9.tar.gz
+[2023-05-24 09:42:49] INFO root fetch - processPackages [assisted-service-client]: executing diffoscope
+[2023-05-24 09:42:49] INFO root fetch - processPackages [assisted-service-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/assisted_service_client-2.9.0.post8-py3-none-any.whl.zip tmp/assisted_service_client-2.9.0.post9-py3-none-any.whl.zip --markdown 20230524/a/assisted-service-client/2.9.0.post8-2.9.0.post9/diff.md --exclude *.pyd
+[2023-05-24 09:42:49] INFO root fetch - processPackages [muutils]: executing diffoscope
+[2023-05-24 09:42:49] INFO root fetch - processPackages [muutils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/muutils-0.3.8.tar.gz tmp/muutils-0.3.9.tar.gz --markdown 20230524/m/muutils/0.3.8-0.3.9/diff.md --exclude *.pyd
+[2023-05-24 09:42:49] INFO root fetch - processPackages [taktile-auth]: executing diffoscope
+[2023-05-24 09:42:49] INFO root fetch - processPackages [taktile-auth]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/taktile-auth-0.0.8.tar.gz tmp/taktile-auth-0.0.9.tar.gz --markdown 20230524/t/taktile-auth/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-24 09:42:49] INFO root fetch - processPackages [finetuner]: executing diffoscope
+[2023-05-24 09:42:49] INFO root fetch - processPackages [finetuner]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/finetuner-0.7.6.tar.gz tmp/finetuner-0.7.7.tar.gz --markdown 20230524/f/finetuner/0.7.6-0.7.7/diff.md --exclude *.pyd
+[2023-05-24 09:42:49] INFO root fetch - processPackages [Geode-Numerics]: Downloading https://files.pythonhosted.org/packages/3f/29/2ba95136eb5d373bc56b97e3a4dc21f0a55f4f04737ff123309bc1f92f47/Geode_Numerics-3.0.4-cp39-cp39-manylinux2014_x86_64.whl
+[2023-05-24 09:42:49] INFO root fetch - processPackages [ert]: Downloading https://files.pythonhosted.org/packages/6e/7a/64206a81b9774e1293da64620fc53b5361b00e67985deb374cf0d7fb179a/ert-5.0.0b9-cp38-cp38-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2023-05-24 09:42:49] INFO root fetch - processPackages [Geode-Numerics]: executing diffoscope
+[2023-05-24 09:42:49] INFO root fetch - processPackages [Geode-Numerics]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Geode_Numerics-3.0.3-cp39-cp39-win_amd64.whl.zip tmp/Geode_Numerics-3.0.4-cp39-cp39-manylinux2014_x86_64.whl.zip --markdown 20230524/G/Geode-Numerics/3.0.3-3.0.4/diff.md --exclude *.pyd
+[2023-05-24 09:42:50] INFO root fetch - processPackages [ert]: executing diffoscope
+[2023-05-24 09:42:50] INFO root fetch - processPackages [ert]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ert-5.0.0b8-cp38-cp38-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip tmp/ert-5.0.0b9-cp38-cp38-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip --markdown 20230524/e/ert/5.0.0b8-5.0.0b9/diff.md --exclude *.pyd
+[2023-05-24 09:42:50] INFO root fetch - processPackages [cd-dynamic-versioning]: Start processing: jijzept
+[2023-05-24 09:42:50] INFO root fetch - main [MainThread]: End processing [cd-dynamic-versioning]: success
+[2023-05-24 09:42:50] INFO root fetch - processPackages [common-test]: Start processing: aliyun-python-sdk-asapi
+[2023-05-24 09:42:50] INFO root fetch - main [MainThread]: End processing [common-test]: success
+[2023-05-24 09:42:50] INFO root fetch - processPackages [jijzept]: New version: [1.9.2] Old Version: [1.9.1]
+[2023-05-24 09:42:50] WARNING root fetch - processPackages [aliyun-python-sdk-asapi]: Skipping, unable to determine old version
+[2023-05-24 09:42:50] INFO root fetch - processPackages [aliyun-python-sdk-asapi]: Start processing: kiwi
+[2023-05-24 09:42:50] INFO root fetch - main [MainThread]: End processing [aliyun-python-sdk-asapi] error
+[2023-05-24 09:42:51] INFO root fetch - processPackages [kiwi]: New version: [9.8.0] Old Version: [9.7.4]
+[2023-05-24 09:42:51] INFO root fetch - main [MainThread]: End processing [strace-process-tree]: success
+[2023-05-24 09:42:51] INFO root fetch - processPackages [jijzept]: executing diffoscope
+[2023-05-24 09:42:51] INFO root fetch - processPackages [jijzept]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jijzept-1.9.1-cp39-cp39-win_amd64.whl.zip tmp/jijzept-1.9.2-cp39-cp39-win_amd64.whl.zip --markdown 20230524/j/jijzept/1.9.1-1.9.2/diff.md --exclude *.pyd
+[2023-05-24 09:42:51] INFO root fetch - processPackages [kiwi]: Downloading https://files.pythonhosted.org/packages/fc/f2/14aa92d902e928c95adddf778710948ec0ac3c182c9165580259aa18eaa8/kiwi-9.7.4.tar.gz
+[2023-05-24 09:42:51] INFO root fetch - main [MainThread]: End processing [taktile-auth]: success
+[2023-05-24 09:42:51] INFO root fetch - main [MainThread]: End processing [finetuner]: success
+[2023-05-24 09:42:51] INFO root fetch - main [MainThread]: End processing [muutils]: success
+[2023-05-24 09:42:52] INFO root fetch - processPackages [kiwi]: Downloading https://files.pythonhosted.org/packages/a0/15/c757f7f6d32bf5ebe742d435008e609b0683336a29bc81aaae006c577d96/kiwi-9.8.0.tar.gz
+[2023-05-24 09:42:53] INFO root fetch - main [MainThread]: End processing [assisted-service-client]: success
+[2023-05-24 09:42:53] INFO root fetch - main [MainThread]: End processing [jijzept]: success
+[2023-05-24 09:42:53] INFO root fetch - processPackages [kiwi]: executing diffoscope
+[2023-05-24 09:42:53] INFO root fetch - processPackages [kiwi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kiwi-9.7.4.tar.gz tmp/kiwi-9.8.0.tar.gz --markdown 20230524/k/kiwi/9.7.4-9.8.0/diff.md --exclude *.pyd
+[2023-05-24 09:42:53] INFO root fetch - main [MainThread]: End processing [Geode-Numerics]: success
+[2023-05-24 09:42:59] INFO root fetch - main [MainThread]: End processing [streamlit-nightly]: success
+[2023-05-24 09:43:03] INFO root fetch - main [MainThread]: End processing [ert]: success
+[2023-05-24 09:45:53] ERROR root fetch - processPackages [kiwi]: Timeout during execution of pkgdiff
+[2023-05-24 09:45:53] INFO root fetch - main [MainThread]: End processing [kiwi] error
+[2023-05-24 09:45:53] INFO root fetch - main [MainThread]: Store serial: [18226414]
