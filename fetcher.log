@@ -16970,3 +16970,124 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd4 in position 72: invalid
 [2023-05-24 16:17:25] INFO root fetch - main [MainThread]: End processing [faster-whisper]: success
 [2023-05-24 16:17:32] INFO root fetch - main [MainThread]: End processing [unified-planning]: success
 [2023-05-24 16:17:32] INFO root fetch - main [MainThread]: Store serial: [18230823]
+[2023-05-24 16:22:36] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18230823]
+[2023-05-24 16:22:41] INFO root fetch - main [MainThread]: Found 19 changed packages
+[2023-05-24 16:22:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: neptune-tensorboard
+[2023-05-24 16:22:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: to-cei
+[2023-05-24 16:22:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: nista-library
+[2023-05-24 16:22:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: asfpy
+[2023-05-24 16:22:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: spic
+[2023-05-24 16:22:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: vector-quantize-pytorch
+[2023-05-24 16:22:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: odoo14-addon-barcodes-generator-abstract
+[2023-05-24 16:22:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: odoo14-addon-barcodes-generator-product
+[2023-05-24 16:22:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: socservthread
+[2023-05-24 16:22:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: alphapulldown
+[2023-05-24 16:22:41] INFO root fetch - processPackages [odoo14-addon-barcodes-generator-product]: New version: [14.0.1.1.1.dev2] Old Version: [14.0.1.1.1.dev1]
+[2023-05-24 16:22:41] INFO root fetch - processPackages [spic]: New version: [0.0.4] Old Version: [0.0.3]
+[2023-05-24 16:22:41] INFO root fetch - processPackages [vector-quantize-pytorch]: New version: [1.5.7] Old Version: [1.5.6]
+[2023-05-24 16:22:41] INFO root fetch - processPackages [odoo14-addon-barcodes-generator-abstract]: New version: [14.0.1.0.3.dev1] Old Version: [14.0.1.0.2.dev1]
+[2023-05-24 16:22:41] INFO root fetch - processPackages [spic]: executing diffoscope
+[2023-05-24 16:22:41] INFO root fetch - processPackages [spic]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spic-0.0.3.tar.gz tmp/spic-0.0.4.tar.gz --markdown 20230524/s/spic/0.0.3-0.0.4/diff.md --exclude *.pyd
+[2023-05-24 16:22:41] INFO root fetch - processPackages [socservthread]: New version: [1.1.4] Old Version: [1.1.3]
+[2023-05-24 16:22:41] INFO root fetch - processPackages [to-cei]: New version: [0.1.7] Old Version: [0.1.6]
+[2023-05-24 16:22:41] INFO root fetch - processPackages [alphapulldown]: New version: [0.30.6] Old Version: [0.30.5]
+[2023-05-24 16:22:41] INFO root fetch - processPackages [neptune-tensorboard]: New version: [1.0.0rc0] Old Version: [0.5.1]
+[2023-05-24 16:22:41] INFO root fetch - processPackages [nista-library]: New version: [4.0.3] Old Version: [4.0.2]
+[2023-05-24 16:22:41] INFO root fetch - processPackages [asfpy]: New version: [0.9] Old Version: [0.8]
+[2023-05-24 16:22:41] INFO root fetch - processPackages [vector-quantize-pytorch]: Downloading https://files.pythonhosted.org/packages/d9/7d/6d769af2f9f319e42053c8d428529975893f8a25b72ceadae71e62e3822d/vector_quantize_pytorch-1.5.6.tar.gz
+[2023-05-24 16:22:41] INFO root fetch - processPackages [odoo14-addon-barcodes-generator-abstract]: Downloading https://files.pythonhosted.org/packages/72/ad/c60408b399b787418effcffbc0f1ddef86614938b362d165e646b6319446/odoo14_addon_barcodes_generator_abstract-14.0.1.0.2.dev1-py3-none-any.whl
+[2023-05-24 16:22:41] INFO root fetch - processPackages [odoo14-addon-barcodes-generator-product]: Downloading https://files.pythonhosted.org/packages/27/20/a24b1b775081e59e2d949928510400cc103f3bf8b96f8114662e514b8920/odoo14_addon_barcodes_generator_product-14.0.1.1.1.dev1-py3-none-any.whl
+[2023-05-24 16:22:41] INFO root fetch - processPackages [to-cei]: Downloading https://files.pythonhosted.org/packages/04/2b/dd7e74a7b0219c07f2929eb909761a7e255e5f1f44b3148d9d650ff1d193/to_cei-0.1.6.tar.gz
+[2023-05-24 16:22:41] INFO root fetch - processPackages [socservthread]: Downloading https://files.pythonhosted.org/packages/bf/d2/9e7847e38c71e4515d770bf8bb748a12556cd55bb333de7fd7788a201e2c/socservthread-1.1.3.tar.gz
+[2023-05-24 16:22:41] INFO root fetch - processPackages [alphapulldown]: Downloading https://files.pythonhosted.org/packages/3b/d4/d636c99a9e639c6e49b936648d5b67234024e67e16e4cb0a93a23c52154d/alphapulldown-0.30.5.tar.gz
+[2023-05-24 16:22:41] INFO root fetch - processPackages [neptune-tensorboard]: Downloading https://files.pythonhosted.org/packages/8e/f4/e1433e470f8c0e210da326ec1425b67a7a1c315b188f781a2359877940ce/neptune-tensorboard-0.5.1.tar.gz
+[2023-05-24 16:22:41] INFO root fetch - processPackages [asfpy]: Downloading https://files.pythonhosted.org/packages/3a/c8/f6a76d839f060bc8966c52570d01bd6fe03a7a3c5b5bc353ea31f88f93cf/asfpy-0.8.tar.gz
+[2023-05-24 16:22:41] INFO root fetch - processPackages [vector-quantize-pytorch]: Downloading https://files.pythonhosted.org/packages/a4/af/ad47fa20dc87af31103636f9bdf5f77c1dc9f3fbc17a4edb47b45fb569a0/vector_quantize_pytorch-1.5.7.tar.gz
+[2023-05-24 16:22:41] INFO root fetch - processPackages [nista-library]: Downloading https://files.pythonhosted.org/packages/6c/71/e7f1694531f0ddae1b4866bae7d8902454f9661218c5b8ae6cddb3254321/nista_library-4.0.3.tar.gz
+[2023-05-24 16:22:42] INFO root fetch - processPackages [odoo14-addon-barcodes-generator-abstract]: Downloading https://files.pythonhosted.org/packages/47/e0/0f69516245406156acf975647534b70166f7194e1975e47f45f76619d9ed/odoo14_addon_barcodes_generator_abstract-14.0.1.0.3.dev1-py3-none-any.whl
+[2023-05-24 16:22:42] INFO root fetch - processPackages [to-cei]: Downloading https://files.pythonhosted.org/packages/a9/ed/351b189bf8dc87f0bd2506966126ab5667b2d080d028b65fdb701e6b7daf/to_cei-0.1.7.tar.gz
+[2023-05-24 16:22:42] INFO root fetch - processPackages [alphapulldown]: Downloading https://files.pythonhosted.org/packages/6f/c3/8949351389107d5a79640ba06f50621059c1b43aa0c5881ba92c846c009c/alphapulldown-0.30.6.tar.gz
+[2023-05-24 16:22:42] INFO root fetch - processPackages [odoo14-addon-barcodes-generator-abstract]: executing diffoscope
+[2023-05-24 16:22:42] INFO root fetch - processPackages [odoo14-addon-barcodes-generator-abstract]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo14_addon_barcodes_generator_abstract-14.0.1.0.2.dev1-py3-none-any.whl.zip tmp/odoo14_addon_barcodes_generator_abstract-14.0.1.0.3.dev1-py3-none-any.whl.zip --markdown 20230524/o/odoo14-addon-barcodes-generator-abstract/14.0.1.0.2.dev1-14.0.1.0.3.dev1/diff.md --exclude *.pyd
+[2023-05-24 16:22:42] INFO root fetch - processPackages [vector-quantize-pytorch]: executing diffoscope
+[2023-05-24 16:22:42] INFO root fetch - processPackages [socservthread]: Downloading https://files.pythonhosted.org/packages/d8/22/7ee8ed18505eb4968cb1fb8eba96c42c809d8fc58cba3cc43e7e9ee7658f/socservthread-1.1.4.tar.gz
+[2023-05-24 16:22:42] INFO root fetch - processPackages [vector-quantize-pytorch]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vector_quantize_pytorch-1.5.6.tar.gz tmp/vector_quantize_pytorch-1.5.7.tar.gz --markdown 20230524/v/vector-quantize-pytorch/1.5.6-1.5.7/diff.md --exclude *.pyd
+[2023-05-24 16:22:42] INFO root fetch - processPackages [neptune-tensorboard]: Downloading https://files.pythonhosted.org/packages/86/ea/de77fce927cff007a777341061380d61d6aa8e39b20f5c53311eef99eca9/neptune_tensorboard-1.0.0rc0.tar.gz
+[2023-05-24 16:22:42] INFO root fetch - processPackages [nista-library]: executing diffoscope
+[2023-05-24 16:22:42] INFO root fetch - processPackages [nista-library]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nista_library-4.0.2.tar.gz tmp/nista_library-4.0.3.tar.gz --markdown 20230524/n/nista-library/4.0.2-4.0.3/diff.md --exclude *.pyd
+[2023-05-24 16:22:42] INFO root fetch - processPackages [asfpy]: Downloading https://files.pythonhosted.org/packages/52/39/791aabb53ac9b5babb229dbed13515d5245859521352b8ff681aab0626ec/asfpy-0.9.tar.gz
+[2023-05-24 16:22:42] INFO root fetch - processPackages [to-cei]: executing diffoscope
+[2023-05-24 16:22:42] INFO root fetch - processPackages [to-cei]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/to_cei-0.1.6.tar.gz tmp/to_cei-0.1.7.tar.gz --markdown 20230524/t/to-cei/0.1.6-0.1.7/diff.md --exclude *.pyd
+[2023-05-24 16:22:42] INFO root fetch - processPackages [alphapulldown]: executing diffoscope
+[2023-05-24 16:22:42] INFO root fetch - processPackages [alphapulldown]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/alphapulldown-0.30.5.tar.gz tmp/alphapulldown-0.30.6.tar.gz --markdown 20230524/a/alphapulldown/0.30.5-0.30.6/diff.md --exclude *.pyd
+[2023-05-24 16:22:42] INFO root fetch - processPackages [neptune-tensorboard]: executing diffoscope
+[2023-05-24 16:22:42] INFO root fetch - processPackages [neptune-tensorboard]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/neptune-tensorboard-0.5.1.tar.gz tmp/neptune_tensorboard-1.0.0rc0.tar.gz --markdown 20230524/n/neptune-tensorboard/0.5.1-1.0.0rc0/diff.md --exclude *.pyd
+[2023-05-24 16:22:42] INFO root fetch - processPackages [socservthread]: executing diffoscope
+[2023-05-24 16:22:42] INFO root fetch - processPackages [socservthread]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/socservthread-1.1.3.tar.gz tmp/socservthread-1.1.4.tar.gz --markdown 20230524/s/socservthread/1.1.3-1.1.4/diff.md --exclude *.pyd
+[2023-05-24 16:22:42] INFO root fetch - processPackages [odoo14-addon-barcodes-generator-product]: Downloading https://files.pythonhosted.org/packages/ca/f6/335c11469d673a6ac25536dbc8ba176fc491d56aaf05886093593f09dde7/odoo14_addon_barcodes_generator_product-14.0.1.1.1.dev2-py3-none-any.whl
+[2023-05-24 16:22:42] INFO root fetch - processPackages [asfpy]: executing diffoscope
+[2023-05-24 16:22:42] INFO root fetch - processPackages [asfpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/asfpy-0.8.tar.gz tmp/asfpy-0.9.tar.gz --markdown 20230524/a/asfpy/0.8-0.9/diff.md --exclude *.pyd
+[2023-05-24 16:22:42] INFO root fetch - processPackages [odoo14-addon-barcodes-generator-product]: executing diffoscope
+[2023-05-24 16:22:42] INFO root fetch - processPackages [odoo14-addon-barcodes-generator-product]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo14_addon_barcodes_generator_product-14.0.1.1.1.dev1-py3-none-any.whl.zip tmp/odoo14_addon_barcodes_generator_product-14.0.1.1.1.dev2-py3-none-any.whl.zip --markdown 20230524/o/odoo14-addon-barcodes-generator-product/14.0.1.1.1.dev1-14.0.1.1.1.dev2/diff.md --exclude *.pyd
+[2023-05-24 16:22:42] INFO root fetch - processPackages [spic]: Start processing: onvif-zeep-async
+[2023-05-24 16:22:42] INFO root fetch - main [MainThread]: End processing [spic]: success
+[2023-05-24 16:22:43] INFO root fetch - processPackages [onvif-zeep-async]: New version: [3.1.8] Old Version: [3.1.7]
+[2023-05-24 16:22:43] INFO root fetch - processPackages [onvif-zeep-async]: Downloading https://files.pythonhosted.org/packages/4a/2e/039432fb63211019e556a35bcfaae416fc4b7dd12e974d4cd3ef8d34c1f0/onvif-zeep-async-3.1.7.tar.gz
+[2023-05-24 16:22:43] INFO root fetch - processPackages [onvif-zeep-async]: Downloading https://files.pythonhosted.org/packages/c5/de/86ab61374f58917aeadbad84de2bb6d3cd1ef3ad4d0764f910f00ab77ec1/onvif-zeep-async-3.1.8.tar.gz
+[2023-05-24 16:22:43] INFO root fetch - processPackages [onvif-zeep-async]: executing diffoscope
+[2023-05-24 16:22:43] INFO root fetch - processPackages [onvif-zeep-async]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/onvif-zeep-async-3.1.7.tar.gz tmp/onvif-zeep-async-3.1.8.tar.gz --markdown 20230524/o/onvif-zeep-async/3.1.7-3.1.8/diff.md --exclude *.pyd
+[2023-05-24 16:22:43] INFO root fetch - processPackages [odoo14-addon-barcodes-generator-abstract]: Start processing: flask-starter
+[2023-05-24 16:22:43] INFO root fetch - main [MainThread]: End processing [odoo14-addon-barcodes-generator-abstract]: success
+[2023-05-24 16:22:43] INFO root fetch - processPackages [flask-starter]: New version: [0.8.0] Old Version: [0.7.0]
+[2023-05-24 16:22:43] INFO root fetch - processPackages [asfpy]: Start processing: emoji
+[2023-05-24 16:22:43] INFO root fetch - main [MainThread]: End processing [asfpy]: success
+[2023-05-24 16:22:43] INFO root fetch - processPackages [socservthread]: Start processing: llm-rs
+[2023-05-24 16:22:43] INFO root fetch - main [MainThread]: End processing [socservthread]: success
+[2023-05-24 16:22:43] INFO root fetch - processPackages [flask-starter]: executing diffoscope
+[2023-05-24 16:22:43] INFO root fetch - processPackages [flask-starter]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/flask-starter-0.7.0.tar.gz tmp/flask-starter-0.8.0.tar.gz --markdown 20230524/f/flask-starter/0.7.0-0.8.0/diff.md --exclude *.pyd
+[2023-05-24 16:22:43] INFO root fetch - processPackages [emoji]: New version: [2.3.0] Old Version: [2.2.0]
+[2023-05-24 16:22:43] INFO root fetch - processPackages [neptune-tensorboard]: Start processing: FCSAPIAccessSDK
+[2023-05-24 16:22:43] INFO root fetch - main [MainThread]: End processing [neptune-tensorboard]: success
+[2023-05-24 16:22:43] INFO root fetch - processPackages [llm-rs]: New version: [0.2.3] Old Version: [0.2.2]
+[2023-05-24 16:22:43] INFO root fetch - processPackages [FCSAPIAccessSDK]: New version: [1.1.1] Old Version: [1.1.0]
+[2023-05-24 16:22:44] INFO root fetch - processPackages [vector-quantize-pytorch]: Start processing: Files.com
+[2023-05-24 16:22:44] INFO root fetch - main [MainThread]: End processing [vector-quantize-pytorch]: success
+[2023-05-24 16:22:44] INFO root fetch - processPackages [Files.com]: New version: [1.0.99] Old Version: [1.0.98]
+[2023-05-24 16:22:44] INFO root fetch - processPackages [llm-rs]: executing diffoscope
+[2023-05-24 16:22:44] INFO root fetch - processPackages [llm-rs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/llm_rs-0.2.2.tar.gz tmp/llm_rs-0.2.3.tar.gz --markdown 20230524/l/llm-rs/0.2.2-0.2.3/diff.md --exclude *.pyd
+[2023-05-24 16:22:44] INFO root fetch - processPackages [emoji]: executing diffoscope
+[2023-05-24 16:22:44] INFO root fetch - processPackages [emoji]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/emoji-2.2.0.tar.gz tmp/emoji-2.3.0.tar.gz --markdown 20230524/e/emoji/2.2.0-2.3.0/diff.md --exclude *.pyd
+[2023-05-24 16:22:44] INFO root fetch - processPackages [odoo14-addon-barcodes-generator-product]: Start processing: yarok
+[2023-05-24 16:22:44] INFO root fetch - main [MainThread]: End processing [odoo14-addon-barcodes-generator-product]: success
+[2023-05-24 16:22:44] INFO root fetch - processPackages [Files.com]: executing diffoscope
+[2023-05-24 16:22:44] INFO root fetch - processPackages [Files.com]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Files.com-1.0.98.tar.gz tmp/Files.com-1.0.99.tar.gz --markdown 20230524/F/Files.com/1.0.98-1.0.99/diff.md --exclude *.pyd
+[2023-05-24 16:22:44] INFO root fetch - processPackages [FCSAPIAccessSDK]: executing diffoscope
+[2023-05-24 16:22:44] INFO root fetch - processPackages [FCSAPIAccessSDK]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/FCSAPIAccessSDK-1.1.0.tar.gz tmp/FCSAPIAccessSDK-1.1.1.tar.gz --markdown 20230524/F/FCSAPIAccessSDK/1.1.0-1.1.1/diff.md --exclude *.pyd
+[2023-05-24 16:22:44] INFO root fetch - processPackages [yarok]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-24 16:22:44] INFO root fetch - processPackages [to-cei]: Start processing: is-msgs
+[2023-05-24 16:22:44] INFO root fetch - main [MainThread]: End processing [to-cei]: success
+[2023-05-24 16:22:44] INFO root fetch - processPackages [is-msgs]: New version: [1.1.9] Old Version: [1.1.8]
+[2023-05-24 16:22:44] INFO root fetch - processPackages [yarok]: Downloading https://files.pythonhosted.org/packages/5b/35/b497f1c84b39f1ee0c2371d186f0a233ac16bfb20ce52629354a54ffb03a/yarok-0.0.8.tar.gz
+[2023-05-24 16:22:44] INFO root fetch - processPackages [is-msgs]: Downloading https://files.pythonhosted.org/packages/d7/81/7b8f740a6af88b56d6ac931ea77453ef860f56c47a9f9019edf0c6815ca7/is_msgs-1.1.8.tar.gz
+[2023-05-24 16:22:44] INFO root fetch - processPackages [alphapulldown]: Start processing: quick-pypi-test
+[2023-05-24 16:22:44] INFO root fetch - main [MainThread]: End processing [alphapulldown]: success
+[2023-05-24 16:22:44] INFO root fetch - processPackages [quick-pypi-test]: New version: [0.0.3a0] Old Version: [0.0.2]
+[2023-05-24 16:22:44] INFO root fetch - processPackages [is-msgs]: Downloading https://files.pythonhosted.org/packages/2f/49/9eef83cfc6edd2af7a23ee4956c5eb506a1e5bb8a6c5b703638e9747c87e/is_msgs-1.1.9.tar.gz
+[2023-05-24 16:22:44] INFO root fetch - processPackages [quick-pypi-test]: executing diffoscope
+[2023-05-24 16:22:44] INFO root fetch - processPackages [quick-pypi-test]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/quick-pypi-test-0.0.2.tar.gz tmp/quick-pypi-test-0.0.3a0.tar.gz --markdown 20230524/q/quick-pypi-test/0.0.2-0.0.3a0/diff.md --exclude *.pyd
+[2023-05-24 16:22:45] INFO root fetch - processPackages [is-msgs]: executing diffoscope
+[2023-05-24 16:22:45] INFO root fetch - processPackages [is-msgs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/is_msgs-1.1.8.tar.gz tmp/is_msgs-1.1.9.tar.gz --markdown 20230524/i/is-msgs/1.1.8-1.1.9/diff.md --exclude *.pyd
+[2023-05-24 16:22:45] INFO root fetch - main [MainThread]: End processing [flask-starter]: success
+[2023-05-24 16:22:45] INFO root fetch - main [MainThread]: End processing [llm-rs]: success
+[2023-05-24 16:22:45] INFO root fetch - main [MainThread]: End processing [Files.com]: success
+[2023-05-24 16:22:46] INFO root fetch - main [MainThread]: End processing [quick-pypi-test]: success
+[2023-05-24 16:22:46] INFO root fetch - processPackages [yarok]: Downloading https://files.pythonhosted.org/packages/df/af/c521521987dcb898560332432e48f81574262b43e3defad1821893b945a9/yarok-0.0.9.tar.gz
+[2023-05-24 16:22:46] INFO root fetch - main [MainThread]: End processing [is-msgs]: success
+[2023-05-24 16:22:46] INFO root fetch - main [MainThread]: End processing [onvif-zeep-async]: success
+[2023-05-24 16:22:46] INFO root fetch - main [MainThread]: End processing [nista-library]: success
+[2023-05-24 16:22:46] INFO root fetch - main [MainThread]: End processing [FCSAPIAccessSDK]: success
+[2023-05-24 16:22:46] INFO root fetch - main [MainThread]: End processing [emoji]: success
+[2023-05-24 16:22:47] INFO root fetch - processPackages [yarok]: executing diffoscope
+[2023-05-24 16:22:47] INFO root fetch - processPackages [yarok]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/yarok-0.0.8.tar.gz tmp/yarok-0.0.9.tar.gz --markdown 20230524/y/yarok/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-24 16:22:51] INFO root fetch - main [MainThread]: End processing [yarok]: success
+[2023-05-24 16:22:51] INFO root fetch - main [MainThread]: Store serial: [18230913]
