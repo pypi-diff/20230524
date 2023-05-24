@@ -14916,3 +14916,119 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd4 in position 72: invalid
 [2023-05-24 14:34:55] INFO root fetch - main [MainThread]: End processing [finbourne-insights-sdk-preview]: success
 [2023-05-24 14:34:55] INFO root fetch - main [MainThread]: End processing [pyopencl-extension]: success
 [2023-05-24 14:34:55] INFO root fetch - main [MainThread]: Store serial: [18229548]
+[2023-05-24 14:39:59] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18229548]
+[2023-05-24 14:40:04] INFO root fetch - main [MainThread]: Found 21 changed packages
+[2023-05-24 14:40:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: chainlit
+[2023-05-24 14:40:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: scaneo
+[2023-05-24 14:40:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: topoly
+[2023-05-24 14:40:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: django-cloudwatch-metrics
+[2023-05-24 14:40:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: medivisio
+[2023-05-24 14:40:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: scaneo
+[2023-05-24 14:40:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: lupin-grognard
+[2023-05-24 14:40:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: scaneo
+[2023-05-24 14:40:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: pianogen
+[2023-05-24 14:40:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: pyclesperanto
+[2023-05-24 14:40:04] WARNING root fetch - processPackages [django-cloudwatch-metrics]: Skipping, unable to determine old version
+[2023-05-24 14:40:04] INFO root fetch - processPackages [django-cloudwatch-metrics]: Start processing: yze
+[2023-05-24 14:40:04] INFO root fetch - main [MainThread]: End processing [django-cloudwatch-metrics] error
+[2023-05-24 14:40:04] INFO root fetch - processPackages [lupin-grognard]: New version: [1.9.0] Old Version: [1.7.0]
+[2023-05-24 14:40:04] WARNING root fetch - processPackages [pianogen]: Skipping, unable to determine old version
+[2023-05-24 14:40:04] INFO root fetch - processPackages [pianogen]: Start processing: odoo14-addon-l10n-br-account
+[2023-05-24 14:40:04] INFO root fetch - main [MainThread]: End processing [pianogen] error
+[2023-05-24 14:40:04] INFO root fetch - processPackages [topoly]: New version: [0.9.9] Old Version: [0.9.8]
+[2023-05-24 14:40:04] INFO root fetch - processPackages [pyclesperanto]: New version: [0.6.5] Old Version: [0.6.2]
+[2023-05-24 14:40:04] INFO root fetch - processPackages [yze]: New version: [0.0.4] Old Version: [0.0.2]
+[2023-05-24 14:40:04] INFO root fetch - processPackages [odoo14-addon-l10n-br-account]: New version: [14.0.6.1.1.dev1] Old Version: [14.0.6.1.0]
+[2023-05-24 14:40:04] WARNING root fetch - processPackages [medivisio]: Skipping, unable to determine old version
+[2023-05-24 14:40:04] INFO root fetch - processPackages [medivisio]: Start processing: mlo
+[2023-05-24 14:40:04] INFO root fetch - main [MainThread]: End processing [medivisio] error
+[2023-05-24 14:40:04] INFO root fetch - processPackages [chainlit]: New version: [0.2.104] Old Version: [0.2.103]
+[2023-05-24 14:40:04] INFO root fetch - processPackages [lupin-grognard]: executing diffoscope
+[2023-05-24 14:40:04] INFO root fetch - processPackages [lupin-grognard]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lupin-grognard-1.7.0.tar.gz tmp/lupin-grognard-1.9.0.tar.gz --markdown 20230524/l/lupin-grognard/1.7.0-1.9.0/diff.md --exclude *.pyd
+[2023-05-24 14:40:04] INFO root fetch - processPackages [scaneo]: New version: [0.0.9.post3] Old Version: [0.0.9.post2]
+[2023-05-24 14:40:04] INFO root fetch - processPackages [scaneo]: New version: [0.0.9.post3] Old Version: [0.0.9.post2]
+[2023-05-24 14:40:04] INFO root fetch - processPackages [scaneo]: New version: [0.0.9.post3] Old Version: [0.0.9.post2]
+[2023-05-24 14:40:04] INFO root fetch - processPackages [mlo]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-05-24 14:40:04] INFO root fetch - processPackages [topoly]: executing diffoscope
+[2023-05-24 14:40:04] INFO root fetch - processPackages [topoly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/topoly-0.9.8-cp38-cp38-manylinux2010_x86_64.whl.zip tmp/topoly-0.9.9-cp39-cp39-manylinux2010_x86_64.whl.zip --markdown 20230524/t/topoly/0.9.8-0.9.9/diff.md --exclude *.pyd
+[2023-05-24 14:40:04] INFO root fetch - processPackages [yze]: executing diffoscope
+[2023-05-24 14:40:04] INFO root fetch - processPackages [yze]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/yze-0.0.2.tar.gz tmp/yze-0.0.4.tar.gz --markdown 20230524/y/yze/0.0.2-0.0.4/diff.md --exclude *.pyd
+[2023-05-24 14:40:04] INFO root fetch - processPackages [pyclesperanto]: Downloading https://files.pythonhosted.org/packages/d5/c8/8b9d38cc54cffc833cd5070e6ee5cd6ca39658da45e6b1e7c865b96c9d0a/pyclesperanto-0.6.2.tar.gz
+[2023-05-24 14:40:04] INFO root fetch - processPackages [mlo]: executing diffoscope
+[2023-05-24 14:40:04] INFO root fetch - processPackages [mlo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mlo-0.0.2.tar.gz tmp/mlo-0.0.3-py3.9.egg --markdown 20230524/m/mlo/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-05-24 14:40:04] INFO root fetch - processPackages [odoo14-addon-l10n-br-account]: Downloading https://files.pythonhosted.org/packages/50/25/6c5ad291a26d12e7a048cff17ac2974997fb777fc7e263b3e6cfd7604d41/odoo14_addon_l10n_br_account-14.0.6.1.1.dev1-py3-none-any.whl
+[2023-05-24 14:40:04] INFO root fetch - processPackages [scaneo]: Downloading https://files.pythonhosted.org/packages/6f/93/e08c39c23fcadc478af684e05bc5a93f71d6c5acd021bd6b4d3cc541e98c/scaneo-0.0.9.post2.tar.gz
+[2023-05-24 14:40:04] INFO root fetch - processPackages [scaneo]: Downloading https://files.pythonhosted.org/packages/6f/93/e08c39c23fcadc478af684e05bc5a93f71d6c5acd021bd6b4d3cc541e98c/scaneo-0.0.9.post2.tar.gz
+[2023-05-24 14:40:04] INFO root fetch - processPackages [scaneo]: Downloading https://files.pythonhosted.org/packages/6f/93/e08c39c23fcadc478af684e05bc5a93f71d6c5acd021bd6b4d3cc541e98c/scaneo-0.0.9.post2.tar.gz
+[2023-05-24 14:40:05] INFO root fetch - processPackages [chainlit]: Downloading https://files.pythonhosted.org/packages/fb/a8/e93451be84c560dde0fafd1e10eaf1c9efa1068157343fbcaa8bc6b3d1a4/chainlit-0.2.104.tar.gz
+[2023-05-24 14:40:05] INFO root fetch - processPackages [odoo14-addon-l10n-br-account]: executing diffoscope
+[2023-05-24 14:40:05] INFO root fetch - processPackages [odoo14-addon-l10n-br-account]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo14_addon_l10n_br_account-14.0.6.1.0-py3-none-any.whl.zip tmp/odoo14_addon_l10n_br_account-14.0.6.1.1.dev1-py3-none-any.whl.zip --markdown 20230524/o/odoo14-addon-l10n-br-account/14.0.6.1.0-14.0.6.1.1.dev1/diff.md --exclude *.pyd
+[2023-05-24 14:40:05] INFO root fetch - processPackages [chainlit]: executing diffoscope
+[2023-05-24 14:40:05] INFO root fetch - processPackages [chainlit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/chainlit-0.2.103.tar.gz tmp/chainlit-0.2.104.tar.gz --markdown 20230524/c/chainlit/0.2.103-0.2.104/diff.md --exclude *.pyd
+[2023-05-24 14:40:05] INFO root fetch - processPackages [scaneo]: Downloading https://files.pythonhosted.org/packages/30/fc/1e6dfa75a6438766d69c64ebff0b297fd1f8bca40073b095e614bcd8c808/scaneo-0.0.9.post3.tar.gz
+[2023-05-24 14:40:05] INFO root fetch - processPackages [scaneo]: Downloading https://files.pythonhosted.org/packages/30/fc/1e6dfa75a6438766d69c64ebff0b297fd1f8bca40073b095e614bcd8c808/scaneo-0.0.9.post3.tar.gz
+[2023-05-24 14:40:05] INFO root fetch - processPackages [scaneo]: Downloading https://files.pythonhosted.org/packages/30/fc/1e6dfa75a6438766d69c64ebff0b297fd1f8bca40073b095e614bcd8c808/scaneo-0.0.9.post3.tar.gz
+[2023-05-24 14:40:05] INFO root fetch - processPackages [scaneo]: executing diffoscope
+[2023-05-24 14:40:05] INFO root fetch - processPackages [scaneo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/scaneo-0.0.9.post2.tar.gz tmp/scaneo-0.0.9.post3.tar.gz --markdown 20230524/s/scaneo/0.0.9.post2-0.0.9.post3/diff.md --exclude *.pyd
+[2023-05-24 14:40:05] INFO root fetch - processPackages [scaneo]: executing diffoscope
+[2023-05-24 14:40:05] INFO root fetch - processPackages [scaneo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/scaneo-0.0.9.post2.tar.gz tmp/scaneo-0.0.9.post3.tar.gz --markdown 20230524/s/scaneo/0.0.9.post2-0.0.9.post3/diff.md --exclude *.pyd
+[2023-05-24 14:40:05] INFO root fetch - processPackages [scaneo]: executing diffoscope
+[2023-05-24 14:40:05] INFO root fetch - processPackages [scaneo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/scaneo-0.0.9.post2.tar.gz tmp/scaneo-0.0.9.post3.tar.gz --markdown 20230524/s/scaneo/0.0.9.post2-0.0.9.post3/diff.md --exclude *.pyd
+[2023-05-24 14:40:06] INFO root fetch - processPackages [yze]: Start processing: formulae
+[2023-05-24 14:40:06] INFO root fetch - main [MainThread]: End processing [yze]: success
+[2023-05-24 14:40:06] INFO root fetch - processPackages [formulae]: New version: [0.4.0] Old Version: [0.3.4]
+[2023-05-24 14:40:06] INFO root fetch - processPackages [mlo]: Start processing: netbox-cisco-maintenance
+[2023-05-24 14:40:06] INFO root fetch - main [MainThread]: End processing [mlo]: success
+[2023-05-24 14:40:06] INFO root fetch - processPackages [pyclesperanto]: Downloading https://files.pythonhosted.org/packages/19/4b/e4b310520452172d3016359f1444836a8926a3df5e8160dc7c8a9626d7ff/pyclesperanto-0.6.5.tar.gz
+[2023-05-24 14:40:06] INFO root fetch - processPackages [netbox-cisco-maintenance]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-24 14:40:06] INFO root fetch - processPackages [formulae]: Downloading https://files.pythonhosted.org/packages/43/a7/4a3043b24f76d318eb6f12464aca4daef39c23630803eeb6acbae8a78fc3/formulae-0.3.4.tar.gz
+[2023-05-24 14:40:06] INFO root fetch - processPackages [lupin-grognard]: Start processing: pyxmmsas
+[2023-05-24 14:40:06] INFO root fetch - main [MainThread]: End processing [lupin-grognard]: success
+[2023-05-24 14:40:06] INFO root fetch - processPackages [pyxmmsas]: New version: [1.4.9] Old Version: [1.4.8]
+[2023-05-24 14:40:06] INFO root fetch - processPackages [pyclesperanto]: executing diffoscope
+[2023-05-24 14:40:06] INFO root fetch - processPackages [pyclesperanto]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyclesperanto-0.6.2.tar.gz tmp/pyclesperanto-0.6.5.tar.gz --markdown 20230524/p/pyclesperanto/0.6.2-0.6.5/diff.md --exclude *.pyd
+[2023-05-24 14:40:06] INFO root fetch - processPackages [netbox-cisco-maintenance]: executing diffoscope
+[2023-05-24 14:40:06] INFO root fetch - processPackages [netbox-cisco-maintenance]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/netbox-cisco-maintenance-0.0.8.tar.gz tmp/netbox-cisco-maintenance-0.0.9.tar.gz --markdown 20230524/n/netbox-cisco-maintenance/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-24 14:40:06] INFO root fetch - processPackages [formulae]: Downloading https://files.pythonhosted.org/packages/ba/23/883f3a0055889953ed4d0465e2ca9b4ad46dc9a80c2d5078b4d4a6300db3/formulae-0.4.0.tar.gz
+[2023-05-24 14:40:06] INFO root fetch - processPackages [odoo14-addon-l10n-br-account]: Start processing: pyeCam
+[2023-05-24 14:40:06] INFO root fetch - main [MainThread]: End processing [odoo14-addon-l10n-br-account]: success
+[2023-05-24 14:40:06] INFO root fetch - processPackages [pyxmmsas]: Downloading https://files.pythonhosted.org/packages/77/de/8ebdb3e7c37368481111334d4a0123c5d8cfef45f2fc6d9cc6e46db524cd/pyxmmsas-1.4.8.tar.gz
+[2023-05-24 14:40:06] INFO root fetch - processPackages [pyeCam]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-24 14:40:06] INFO root fetch - processPackages [formulae]: executing diffoscope
+[2023-05-24 14:40:06] INFO root fetch - processPackages [formulae]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/formulae-0.3.4.tar.gz tmp/formulae-0.4.0.tar.gz --markdown 20230524/f/formulae/0.3.4-0.4.0/diff.md --exclude *.pyd
+[2023-05-24 14:40:07] INFO root fetch - processPackages [pyeCam]: executing diffoscope
+[2023-05-24 14:40:07] INFO root fetch - processPackages [pyeCam]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyeCam-0.0.8.tar.gz tmp/pyeCam-0.0.9.tar.gz --markdown 20230524/p/pyeCam/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-24 14:40:07] INFO root fetch - processPackages [pyxmmsas]: Downloading https://files.pythonhosted.org/packages/5d/07/f02edf2b3a827e2427d88cb81c34cf5112e5c0cb4bc4d1033e5f2fc6df53/pyxmmsas-1.4.9.tar.gz
+[2023-05-24 14:40:07] INFO root fetch - processPackages [pyxmmsas]: executing diffoscope
+[2023-05-24 14:40:07] INFO root fetch - processPackages [pyxmmsas]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyxmmsas-1.4.8.tar.gz tmp/pyxmmsas-1.4.9.tar.gz --markdown 20230524/p/pyxmmsas/1.4.8-1.4.9/diff.md --exclude *.pyd
+[2023-05-24 14:40:07] INFO root fetch - processPackages [scaneo]: Start processing: pyopencl-extension
+[2023-05-24 14:40:07] INFO root fetch - main [MainThread]: End processing [scaneo]: success
+[2023-05-24 14:40:07] INFO root fetch - processPackages [scaneo]: Start processing: lusid-sdk
+[2023-05-24 14:40:07] INFO root fetch - main [MainThread]: End processing [scaneo]: success
+[2023-05-24 14:40:07] INFO root fetch - processPackages [pyopencl-extension]: New version: [0.2.6] Old Version: [0.2.5]
+[2023-05-24 14:40:07] INFO root fetch - processPackages [lusid-sdk]: New version: [1.0.98] Old Version: [1.0.91]
+[2023-05-24 14:40:07] INFO root fetch - processPackages [pyopencl-extension]: executing diffoscope
+[2023-05-24 14:40:07] INFO root fetch - processPackages [pyopencl-extension]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyopencl-extension-0.2.5.tar.gz tmp/pyopencl-extension-0.2.6.tar.gz --markdown 20230524/p/pyopencl-extension/0.2.5-0.2.6/diff.md --exclude *.pyd
+[2023-05-24 14:40:07] INFO root fetch - processPackages [lusid-sdk]: executing diffoscope
+[2023-05-24 14:40:07] INFO root fetch - processPackages [lusid-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lusid-sdk-1.0.91.tar.gz tmp/lusid-sdk-1.0.98.tar.gz --markdown 20230524/l/lusid-sdk/1.0.91-1.0.98/diff.md --exclude *.pyd
+[2023-05-24 14:40:07] INFO root fetch - processPackages [netbox-cisco-maintenance]: Start processing: scaneo
+[2023-05-24 14:40:07] INFO root fetch - main [MainThread]: End processing [netbox-cisco-maintenance]: success
+[2023-05-24 14:40:07] INFO root fetch - processPackages [scaneo]: New version: [0.0.9.post3] Old Version: [0.0.9.post2]
+[2023-05-24 14:40:08] INFO root fetch - processPackages [scaneo]: executing diffoscope
+[2023-05-24 14:40:08] INFO root fetch - processPackages [scaneo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/scaneo-0.0.9.post2.tar.gz tmp/scaneo-0.0.9.post3.tar.gz --markdown 20230524/s/scaneo/0.0.9.post2-0.0.9.post3/diff.md --exclude *.pyd
+[2023-05-24 14:40:08] INFO root fetch - processPackages [pyeCam]: Start processing: lusid-sdk-preview
+[2023-05-24 14:40:08] INFO root fetch - main [MainThread]: End processing [pyeCam]: success
+[2023-05-24 14:40:08] INFO root fetch - processPackages [lusid-sdk-preview]: New version: [1.0.98] Old Version: [1.0.91]
+[2023-05-24 14:40:08] INFO root fetch - processPackages [lusid-sdk-preview]: executing diffoscope
+[2023-05-24 14:40:08] INFO root fetch - processPackages [lusid-sdk-preview]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lusid-sdk-preview-1.0.91.tar.gz tmp/lusid-sdk-preview-1.0.98.tar.gz --markdown 20230524/l/lusid-sdk-preview/1.0.91-1.0.98/diff.md --exclude *.pyd
+[2023-05-24 14:40:08] INFO root fetch - main [MainThread]: End processing [pyxmmsas]: success
+[2023-05-24 14:40:09] INFO root fetch - main [MainThread]: End processing [pyopencl-extension]: success
+[2023-05-24 14:40:09] INFO root fetch - main [MainThread]: End processing [formulae]: success
+[2023-05-24 14:40:09] INFO root fetch - main [MainThread]: End processing [scaneo]: success
+[2023-05-24 14:40:09] INFO root fetch - main [MainThread]: End processing [chainlit]: success
+[2023-05-24 14:40:09] INFO root fetch - main [MainThread]: End processing [scaneo]: success
+[2023-05-24 14:40:24] INFO root fetch - main [MainThread]: End processing [lusid-sdk]: success
+[2023-05-24 14:40:26] INFO root fetch - main [MainThread]: End processing [pyclesperanto]: success
+[2023-05-24 14:40:34] INFO root fetch - main [MainThread]: End processing [lusid-sdk-preview]: success
+[2023-05-24 14:41:09] INFO root fetch - main [MainThread]: End processing [topoly]: success
+[2023-05-24 14:41:09] INFO root fetch - main [MainThread]: Store serial: [18229643]
