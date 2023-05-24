@@ -7183,3 +7183,74 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-05-24 06:00:57] INFO root fetch - main [MainThread]: End processing [aind-data-schema]: success
 [2023-05-24 06:00:58] INFO root fetch - main [MainThread]: End processing [rapidpro-flow-tools]: success
 [2023-05-24 06:00:58] INFO root fetch - main [MainThread]: Store serial: [18224722]
+[2023-05-24 06:06:01] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18224722]
+[2023-05-24 06:06:06] INFO root fetch - main [MainThread]: Found 11 changed packages
+[2023-05-24 06:06:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: NikGapps
+[2023-05-24 06:06:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: roboduck
+[2023-05-24 06:06:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: ibm-watson-openscale
+[2023-05-24 06:06:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: geniusdotpy
+[2023-05-24 06:06:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: hexabyte
+[2023-05-24 06:06:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: kecam
+[2023-05-24 06:06:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: keras-cv-attention-models
+[2023-05-24 06:06:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: django-oasis4
+[2023-05-24 06:06:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: hexabyte
+[2023-05-24 06:06:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: pyMSVC
+[2023-05-24 06:06:06] INFO root fetch - processPackages [hexabyte]: New version: [0.7.0rc0] Old Version: [0.6.0rc0]
+[2023-05-24 06:06:06] INFO root fetch - processPackages [hexabyte]: New version: [0.7.0rc0] Old Version: [0.6.0rc0]
+[2023-05-24 06:06:06] INFO root fetch - processPackages [roboduck]: New version: [0.3.0] Old Version: [0.2.0]
+[2023-05-24 06:06:06] INFO root fetch - processPackages [geniusdotpy]: New version: [0.9.0] Old Version: [0.1.8.1]
+[2023-05-24 06:06:06] INFO root fetch - processPackages [hexabyte]: executing diffoscope
+[2023-05-24 06:06:06] INFO root fetch - processPackages [hexabyte]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hexabyte-0.6.0rc0.tar.gz tmp/hexabyte-0.7.0rc0.tar.gz --markdown 20230524/h/hexabyte/0.6.0rc0-0.7.0rc0/diff.md --exclude *.pyd
+[2023-05-24 06:06:06] INFO root fetch - processPackages [ibm-watson-openscale]: New version: [3.0.9] Old Version: [3.0.8]
+[2023-05-24 06:06:06] INFO root fetch - processPackages [pyMSVC]: New version: [0.5.2] Old Version: [0.5.1]
+[2023-05-24 06:06:07] WARNING root fetch - processPackages [NikGapps]: Skipping, unable to determine old version
+[2023-05-24 06:06:07] INFO root fetch - processPackages [NikGapps]: Start processing: code-sage
+[2023-05-24 06:06:07] INFO root fetch - processPackages [django-oasis4]: New version: [1.1.1a2] Old Version: [1.1.1a1]
+[2023-05-24 06:06:07] INFO root fetch - main [MainThread]: End processing [NikGapps] error
+[2023-05-24 06:06:07] INFO root fetch - processPackages [kecam]: New version: [1.3.16] Old Version: [1.3.15]
+[2023-05-24 06:06:07] INFO root fetch - processPackages [keras-cv-attention-models]: New version: [1.3.9] Old Version: [1.3.8]
+[2023-05-24 06:06:07] INFO root fetch - processPackages [hexabyte]: executing diffoscope
+[2023-05-24 06:06:07] INFO root fetch - processPackages [hexabyte]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hexabyte-0.6.0rc0.tar.gz tmp/hexabyte-0.7.0rc0.tar.gz --markdown 20230524/h/hexabyte/0.6.0rc0-0.7.0rc0/diff.md --exclude *.pyd
+[2023-05-24 06:06:07] INFO root fetch - processPackages [code-sage]: New version: [0.1.2] Old Version: [0.1.1]
+[2023-05-24 06:06:07] INFO root fetch - processPackages [roboduck]: Downloading https://files.pythonhosted.org/packages/d8/d4/7fbdfd1ac739854d2e176d637839a51bb8fa4be6b796ce4043276672948b/roboduck-0.2.0.tar.gz
+[2023-05-24 06:06:07] INFO root fetch - processPackages [geniusdotpy]: Downloading https://files.pythonhosted.org/packages/cd/45/b2182570164dc96bc05bade254f0db0f0ee9790677b296112bdbd52aa4ec/geniusdotpy-0.1.8.1.tar.gz
+[2023-05-24 06:06:07] INFO root fetch - processPackages [django-oasis4]: Downloading https://files.pythonhosted.org/packages/3a/c6/5a0169fe04d734456d7d84eced4d5c9d9db05a23a3d479e72d0d60ae10ce/django-oasis4-1.1.1a1.tar.gz
+[2023-05-24 06:06:07] INFO root fetch - processPackages [keras-cv-attention-models]: Downloading https://files.pythonhosted.org/packages/f4/7c/b6a11f0dda117f09d633a7c8735cb29dbbf978343d137197448a93bd3923/keras-cv-attention-models-1.3.8.tar.gz
+[2023-05-24 06:06:07] INFO root fetch - processPackages [ibm-watson-openscale]: Downloading https://files.pythonhosted.org/packages/ff/8a/a4e714ad4a5b578378a89893becf5d175e82d2787794712186e72711c809/ibm_watson_openscale-3.0.8-py3-none-any.whl
+[2023-05-24 06:06:07] INFO root fetch - processPackages [kecam]: Downloading https://files.pythonhosted.org/packages/d4/e7/fcdbcffced406cce88483d80f4594311ab8a9725896390ab9e2876dfecec/kecam-1.3.15.tar.gz
+[2023-05-24 06:06:07] INFO root fetch - processPackages [code-sage]: Downloading https://files.pythonhosted.org/packages/68/a4/0798041e0c340afc85bcc2000e2a6d5396c7c910ae1bf8db6848a024a687/code_sage-0.1.1.tar.gz
+[2023-05-24 06:06:07] INFO root fetch - processPackages [pyMSVC]: Downloading https://files.pythonhosted.org/packages/27/87/0a6376e8bb50a4b867bc432b5cb7a0d542a983580d74cb9b4305482dbdf6/pyMSVC-0.5.2.tar.gz
+[2023-05-24 06:06:07] INFO root fetch - processPackages [django-oasis4]: Downloading https://files.pythonhosted.org/packages/a6/28/32cf33d8d9761f4271dc946b2edfe6bedb523a9042134c5c5dac9591f1ba/django-oasis4-1.1.1a2.tar.gz
+[2023-05-24 06:06:07] INFO root fetch - processPackages [roboduck]: Downloading https://files.pythonhosted.org/packages/cb/b0/7383750a651e3c38a03ec89bcd488ff119c8ff86983b9439d6e6aede3f8d/roboduck-0.3.0.tar.gz
+[2023-05-24 06:06:07] INFO root fetch - processPackages [pyMSVC]: executing diffoscope
+[2023-05-24 06:06:07] INFO root fetch - processPackages [pyMSVC]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyMSVC-0.5.1.tar.gz tmp/pyMSVC-0.5.2.tar.gz --markdown 20230524/p/pyMSVC/0.5.1-0.5.2/diff.md --exclude *.pyd
+[2023-05-24 06:06:07] INFO root fetch - processPackages [geniusdotpy]: Downloading https://files.pythonhosted.org/packages/c6/b6/8d2ed605668d27a566ddffc3fa0fa6d62fe76eaf37e4f89f100386afdc0e/geniusdotpy-0.9.0.tar.gz
+[2023-05-24 06:06:07] INFO root fetch - processPackages [django-oasis4]: executing diffoscope
+[2023-05-24 06:06:07] INFO root fetch - processPackages [django-oasis4]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django-oasis4-1.1.1a1.tar.gz tmp/django-oasis4-1.1.1a2.tar.gz --markdown 20230524/d/django-oasis4/1.1.1a1-1.1.1a2/diff.md --exclude *.pyd
+[2023-05-24 06:06:07] INFO root fetch - processPackages [code-sage]: Downloading https://files.pythonhosted.org/packages/52/35/1705cbdbab1f007dba9a5294972ff4d9c051bcdf38602c3b8edf5cef819b/code_sage-0.1.2.tar.gz
+[2023-05-24 06:06:07] INFO root fetch - processPackages [geniusdotpy]: executing diffoscope
+[2023-05-24 06:06:07] INFO root fetch - processPackages [geniusdotpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/geniusdotpy-0.1.8.1.tar.gz tmp/geniusdotpy-0.9.0.tar.gz --markdown 20230524/g/geniusdotpy/0.1.8.1-0.9.0/diff.md --exclude *.pyd
+[2023-05-24 06:06:07] INFO root fetch - processPackages [roboduck]: executing diffoscope
+[2023-05-24 06:06:07] INFO root fetch - processPackages [roboduck]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/roboduck-0.2.0.tar.gz tmp/roboduck-0.3.0.tar.gz --markdown 20230524/r/roboduck/0.2.0-0.3.0/diff.md --exclude *.pyd
+[2023-05-24 06:06:07] INFO root fetch - processPackages [kecam]: Downloading https://files.pythonhosted.org/packages/af/ca/9e538d6278ad16f20b4e79ed767d0ff124c8c2695e0613ae68107cfdf5eb/kecam-1.3.16.tar.gz
+[2023-05-24 06:06:07] INFO root fetch - processPackages [ibm-watson-openscale]: Downloading https://files.pythonhosted.org/packages/b0/33/1dc28a5725a301c519fe0d47d81218c12e19c1155621813f73d268dbfc9b/ibm_watson_openscale-3.0.9-py3-none-any.whl
+[2023-05-24 06:06:07] INFO root fetch - processPackages [code-sage]: executing diffoscope
+[2023-05-24 06:06:07] INFO root fetch - processPackages [code-sage]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/code_sage-0.1.1.tar.gz tmp/code_sage-0.1.2.tar.gz --markdown 20230524/c/code-sage/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2023-05-24 06:06:07] INFO root fetch - processPackages [ibm-watson-openscale]: executing diffoscope
+[2023-05-24 06:06:07] INFO root fetch - processPackages [ibm-watson-openscale]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ibm_watson_openscale-3.0.8-py3-none-any.whl.zip tmp/ibm_watson_openscale-3.0.9-py3-none-any.whl.zip --markdown 20230524/i/ibm-watson-openscale/3.0.8-3.0.9/diff.md --exclude *.pyd
+[2023-05-24 06:06:07] INFO root fetch - processPackages [kecam]: executing diffoscope
+[2023-05-24 06:06:07] INFO root fetch - processPackages [kecam]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kecam-1.3.15.tar.gz tmp/kecam-1.3.16.tar.gz --markdown 20230524/k/kecam/1.3.15-1.3.16/diff.md --exclude *.pyd
+[2023-05-24 06:06:07] INFO root fetch - processPackages [keras-cv-attention-models]: Downloading https://files.pythonhosted.org/packages/26/09/ed1d0ee6a598979f95cea42108e8503a6c97409adbfd1ca6a154c7f10432/keras-cv-attention-models-1.3.9.tar.gz
+[2023-05-24 06:06:08] INFO root fetch - processPackages [keras-cv-attention-models]: executing diffoscope
+[2023-05-24 06:06:08] INFO root fetch - processPackages [keras-cv-attention-models]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/keras-cv-attention-models-1.3.8.tar.gz tmp/keras-cv-attention-models-1.3.9.tar.gz --markdown 20230524/k/keras-cv-attention-models/1.3.8-1.3.9/diff.md --exclude *.pyd
+[2023-05-24 06:06:08] INFO root fetch - main [MainThread]: End processing [hexabyte]: success
+[2023-05-24 06:06:08] INFO root fetch - main [MainThread]: End processing [code-sage]: success
+[2023-05-24 06:06:09] INFO root fetch - main [MainThread]: End processing [geniusdotpy]: success
+[2023-05-24 06:06:09] INFO root fetch - main [MainThread]: End processing [pyMSVC]: success
+[2023-05-24 06:06:09] INFO root fetch - main [MainThread]: End processing [roboduck]: success
+[2023-05-24 06:06:09] INFO root fetch - main [MainThread]: End processing [hexabyte]: success
+[2023-05-24 06:06:10] INFO root fetch - main [MainThread]: End processing [django-oasis4]: success
+[2023-05-24 06:06:11] INFO root fetch - main [MainThread]: End processing [ibm-watson-openscale]: success
+[2023-05-24 06:06:11] INFO root fetch - main [MainThread]: End processing [kecam]: success
+[2023-05-24 06:06:13] INFO root fetch - main [MainThread]: End processing [keras-cv-attention-models]: success
+[2023-05-24 06:06:13] INFO root fetch - main [MainThread]: Store serial: [18224774]
