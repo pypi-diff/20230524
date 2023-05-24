@@ -21721,3 +21721,56 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd4 in position 72: invalid
 [2023-05-24 20:02:33] INFO root fetch - processPackages [klayout]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/klayout-0.28.8-cp310-cp310-win32.whl.zip tmp/klayout-0.28.post1.tar.gz --markdown 20230524/k/klayout/0.28.8-0.28.post1/diff.md --exclude *.pyd
 [2023-05-24 20:02:43] INFO root fetch - main [MainThread]: End processing [klayout]: success
 [2023-05-24 20:02:43] INFO root fetch - main [MainThread]: Store serial: [18233973]
+[2023-05-24 20:08:08] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18233973]
+[2023-05-24 20:08:13] INFO root fetch - main [MainThread]: Found 10 changed packages
+[2023-05-24 20:08:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: klayout
+[2023-05-24 20:08:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: anyscale
+[2023-05-24 20:08:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: smb3-video-autosplitter
+[2023-05-24 20:08:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: apache-beam
+[2023-05-24 20:08:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: certora-cli-alpha-master
+[2023-05-24 20:08:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: piperider-nightly
+[2023-05-24 20:08:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: model-validation
+[2023-05-24 20:08:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: suxarray
+[2023-05-24 20:08:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: CoLT5-attention
+[2023-05-24 20:08:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: laue-dials
+[2023-05-24 20:08:13] INFO root fetch - processPackages [smb3-video-autosplitter]: New version: [0.3.0] Old Version: [0.2.0]
+[2023-05-24 20:08:13] INFO root fetch - processPackages [certora-cli-alpha-master]: New version: [20230524.7.55.4971] Old Version: [20230524.17.26.651958]
+[2023-05-24 20:08:13] INFO root fetch - processPackages [piperider-nightly]: New version: [0.9.0.20220921] Old Version: [0.9.0.20220920]
+[2023-05-24 20:08:13] INFO root fetch - processPackages [apache-beam]: New version: [2.9.0] Old Version: [2.8.0]
+[2023-05-24 20:08:13] INFO root fetch - processPackages [anyscale]: New version: [0.5.99] Old Version: [0.5.98]
+[2023-05-24 20:08:13] INFO root fetch - processPackages [klayout]: New version: [0.28.post1] Old Version: [0.28.8]
+[2023-05-24 20:08:13] WARNING root fetch - processPackages [model-validation]: Skipping, unable to determine old version
+[2023-05-24 20:08:13] INFO root fetch - processPackages [smb3-video-autosplitter]: executing diffoscope
+[2023-05-24 20:08:13] INFO root fetch - processPackages [smb3-video-autosplitter]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/smb3-video-autosplitter-0.2.0.tar.gz tmp/smb3-video-autosplitter-0.3.0.tar.gz --markdown 20230524/s/smb3-video-autosplitter/0.2.0-0.3.0/diff.md --exclude *.pyd
+[2023-05-24 20:08:13] INFO root fetch - processPackages [laue-dials]: New version: [0.2] Old Version: [0.1.4]
+[2023-05-24 20:08:13] INFO root fetch - main [MainThread]: End processing [model-validation] error
+[2023-05-24 20:08:13] WARNING root fetch - processPackages [suxarray]: Skipping, unable to determine old version
+[2023-05-24 20:08:13] INFO root fetch - main [MainThread]: End processing [suxarray] error
+[2023-05-24 20:08:13] INFO root fetch - processPackages [CoLT5-attention]: New version: [0.9.0] Old Version: [0.8.1]
+[2023-05-24 20:08:13] INFO root fetch - processPackages [certora-cli-alpha-master]: Downloading https://files.pythonhosted.org/packages/48/0a/f1dee7da366ae434b381e52c59a20a1727fd9cff56b23a1494601fca9a6b/certora-cli-alpha-master-20230524.17.26.651958.tar.gz
+[2023-05-24 20:08:13] INFO root fetch - processPackages [piperider-nightly]: executing diffoscope
+[2023-05-24 20:08:13] INFO root fetch - processPackages [piperider-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/piperider-nightly-0.9.0.20220920.tar.gz tmp/piperider-nightly-0.9.0.20220921.tar.gz --markdown 20230524/p/piperider-nightly/0.9.0.20220920-0.9.0.20220921/diff.md --exclude *.pyd
+[2023-05-24 20:08:13] WARNING root fetch - processPackages [certora-cli-alpha-master]: Skipping package: exceeds size limit 39001906>=10485760
+[2023-05-24 20:08:13] INFO root fetch - main [MainThread]: End processing [certora-cli-alpha-master] error
+[2023-05-24 20:08:13] INFO root fetch - processPackages [klayout]: Downloading https://files.pythonhosted.org/packages/7b/a9/f5452d470995256ec3803411f96bc2022a4a0b2d6f79a29619125d0b3896/klayout-0.28.8-cp39-cp39-win_amd64.whl
+[2023-05-24 20:08:13] INFO root fetch - processPackages [apache-beam]: Downloading https://files.pythonhosted.org/packages/81/ea/11cec69a659af024f7f37e928ff533ad5e30b7a519d9982e2bb5b81fcb52/apache-beam-2.8.0.zip
+[2023-05-24 20:08:13] INFO root fetch - processPackages [laue-dials]: Downloading https://files.pythonhosted.org/packages/b6/a6/ad0f0249fe9653f0718fea3208ecdb90add25cc3e5c1df8bc22070afa019/laue_dials-0.1.4.tar.gz
+[2023-05-24 20:08:13] WARNING root fetch - processPackages [klayout]: Skipping package: exceeds size limit 11755834>=10485760
+[2023-05-24 20:08:13] INFO root fetch - main [MainThread]: End processing [klayout] error
+[2023-05-24 20:08:13] INFO root fetch - processPackages [anyscale]: executing diffoscope
+[2023-05-24 20:08:13] INFO root fetch - processPackages [anyscale]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/anyscale-0.5.98.tar.gz tmp/anyscale-0.5.99.tar.gz --markdown 20230524/a/anyscale/0.5.98-0.5.99/diff.md --exclude *.pyd
+[2023-05-24 20:08:13] INFO root fetch - processPackages [CoLT5-attention]: executing diffoscope
+[2023-05-24 20:08:13] INFO root fetch - processPackages [CoLT5-attention]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/CoLT5-attention-0.8.1.tar.gz tmp/CoLT5-attention-0.9.0.tar.gz --markdown 20230524/C/CoLT5-attention/0.8.1-0.9.0/diff.md --exclude *.pyd
+[2023-05-24 20:08:14] INFO root fetch - processPackages [laue-dials]: Downloading https://files.pythonhosted.org/packages/55/9c/98785ee132f05c0cd4b5bf8e4496e19da4d35bd4841a410f14d9431ce787/laue_dials-0.2.tar.gz
+[2023-05-24 20:08:14] INFO root fetch - processPackages [laue-dials]: executing diffoscope
+[2023-05-24 20:08:14] INFO root fetch - processPackages [laue-dials]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/laue_dials-0.1.4.tar.gz tmp/laue_dials-0.2.tar.gz --markdown 20230524/l/laue-dials/0.1.4-0.2/diff.md --exclude *.pyd
+[2023-05-24 20:08:14] INFO root fetch - processPackages [apache-beam]: Downloading https://files.pythonhosted.org/packages/02/8f/a9cd498e0e576c8537e65c4e3aacbffe4b3dc9a189287cd8a91c93784308/apache-beam-2.9.0.zip
+[2023-05-24 20:08:14] INFO root fetch - main [MainThread]: End processing [smb3-video-autosplitter]: success
+[2023-05-24 20:08:14] INFO root fetch - processPackages [apache-beam]: executing diffoscope
+[2023-05-24 20:08:14] INFO root fetch - processPackages [apache-beam]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/apache-beam-2.8.0.zip tmp/apache-beam-2.9.0.zip --markdown 20230524/a/apache-beam/2.8.0-2.9.0/diff.md --exclude *.pyd
+[2023-05-24 20:08:15] INFO root fetch - main [MainThread]: End processing [CoLT5-attention]: success
+[2023-05-24 20:08:15] INFO root fetch - main [MainThread]: End processing [laue-dials]: success
+[2023-05-24 20:08:16] INFO root fetch - main [MainThread]: End processing [piperider-nightly]: success
+[2023-05-24 20:08:23] INFO root fetch - main [MainThread]: End processing [apache-beam]: success
+[2023-05-24 20:08:23] INFO root fetch - main [MainThread]: End processing [anyscale]: success
+[2023-05-24 20:08:23] INFO root fetch - main [MainThread]: Store serial: [18234053]
