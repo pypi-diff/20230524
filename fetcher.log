@@ -7852,3 +7852,76 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-05-24 07:03:32] INFO root fetch - main [MainThread]: End processing [noise2read]: success
 [2023-05-24 07:03:34] INFO root fetch - main [MainThread]: End processing [dask-cuda]: success
 [2023-05-24 07:03:34] INFO root fetch - main [MainThread]: Store serial: [18225117]
+[2023-05-24 07:08:38] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18225117]
+[2023-05-24 07:08:43] INFO root fetch - main [MainThread]: Found 13 changed packages
+[2023-05-24 07:08:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: odoo-addons-oca-server-tools
+[2023-05-24 07:08:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: rapid-pe
+[2023-05-24 07:08:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: vval
+[2023-05-24 07:08:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: sdc-scissor
+[2023-05-24 07:08:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: spic
+[2023-05-24 07:08:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: multi-model-server
+[2023-05-24 07:08:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: onnxruntime
+[2023-05-24 07:08:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: onnxruntime-directml
+[2023-05-24 07:08:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: phap
+[2023-05-24 07:08:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: meta-matching-tool
+[2023-05-24 07:08:43] INFO root fetch - processPackages [spic]: New version: [0.0.4] Old Version: [0.0.3]
+[2023-05-24 07:08:43] INFO root fetch - processPackages [sdc-scissor]: New version: [2.2.0rc0] Old Version: [2.2.0a0]
+[2023-05-24 07:08:43] INFO root fetch - processPackages [odoo-addons-oca-server-tools]: New version: [16.0.20230523.0] Old Version: [16.0.20230516.0]
+[2023-05-24 07:08:43] INFO root fetch - processPackages [rapid-pe]: New version: [0.1.1.dev20230524] Old Version: [0.1.1.dev20230523]
+[2023-05-24 07:08:43] WARNING root fetch - processPackages [vval]: Skipping, unable to determine old version
+[2023-05-24 07:08:43] INFO root fetch - processPackages [meta-matching-tool]: New version: [1.0.1] Old Version: [1.0.0]
+[2023-05-24 07:08:43] INFO root fetch - processPackages [vval]: Start processing: Python-dependency-confusion-attacks
+[2023-05-24 07:08:43] INFO root fetch - main [MainThread]: End processing [vval] error
+[2023-05-24 07:08:43] INFO root fetch - processPackages [phap]: New version: [2.1.0] Old Version: [2.0.1]
+[2023-05-24 07:08:43] INFO root fetch - processPackages [onnxruntime]: New version: [1.9.0] Old Version: [1.8.1]
+[2023-05-24 07:08:43] INFO root fetch - processPackages [multi-model-server]: New version: [1.1.8b20230524] Old Version: [1.1.8b20230523]
+[2023-05-24 07:08:43] WARNING root fetch - processPackages [Python-dependency-confusion-attacks]: Skipping, unable to determine old version
+[2023-05-24 07:08:43] INFO root fetch - processPackages [Python-dependency-confusion-attacks]: Start processing: onnxruntime-gpu
+[2023-05-24 07:08:43] INFO root fetch - main [MainThread]: End processing [Python-dependency-confusion-attacks] error
+[2023-05-24 07:08:43] INFO root fetch - processPackages [onnxruntime-directml]: New version: [1.9.0] Old Version: [1.15.0]
+[2023-05-24 07:08:43] INFO root fetch - processPackages [meta-matching-tool]: executing diffoscope
+[2023-05-24 07:08:43] INFO root fetch - processPackages [meta-matching-tool]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/meta_matching_tool-1.0.0.tar.gz tmp/meta_matching_tool-1.0.1.tar.gz --markdown 20230524/m/meta-matching-tool/1.0.0-1.0.1/diff.md --exclude *.pyd
+[2023-05-24 07:08:43] INFO root fetch - processPackages [phap]: executing diffoscope
+[2023-05-24 07:08:43] INFO root fetch - processPackages [phap]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/phap-2.0.1-cp39-abi3-any.whl.zip tmp/phap-2.1.0.tar.gz --markdown 20230524/p/phap/2.0.1-2.1.0/diff.md --exclude *.pyd
+[2023-05-24 07:08:43] INFO root fetch - processPackages [sdc-scissor]: Downloading https://files.pythonhosted.org/packages/82/7d/1d1f25f1c2e6a9299f64d914a75d81db1156ddcf8729e39e2ba83ef2817e/sdc_scissor-2.2.0a0.tar.gz
+[2023-05-24 07:08:43] INFO root fetch - processPackages [spic]: Downloading https://files.pythonhosted.org/packages/68/81/34aa8ce74c8a47815712ebc1f89a874e862b999f724795492bac1cd58c93/spic-0.0.4.tar.gz
+[2023-05-24 07:08:43] INFO root fetch - processPackages [onnxruntime]: Downloading https://files.pythonhosted.org/packages/c7/d4/b59694df6ca8308dea9c979520058fbcf197fc37cd5cbd9f2759e8caad3b/onnxruntime-1.8.1-cp39-cp39-win_amd64.whl
+[2023-05-24 07:08:43] INFO root fetch - processPackages [multi-model-server]: Downloading https://files.pythonhosted.org/packages/e7/56/06776810dc4232066de8fe0fd0c78a81e44b0981e3cc9d2035b25e9fd83a/multi_model_server-1.1.8b20230524-py2.py3-none-any.whl
+[2023-05-24 07:08:43] INFO root fetch - processPackages [spic]: executing diffoscope
+[2023-05-24 07:08:43] INFO root fetch - processPackages [spic]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spic-0.0.3.tar.gz tmp/spic-0.0.4.tar.gz --markdown 20230524/s/spic/0.0.3-0.0.4/diff.md --exclude *.pyd
+[2023-05-24 07:08:43] INFO root fetch - processPackages [onnxruntime-gpu]: New version: [1.9.0] Old Version: [1.8.1]
+[2023-05-24 07:08:43] INFO root fetch - processPackages [onnxruntime-directml]: Downloading https://files.pythonhosted.org/packages/8c/3c/aa5f4390da1fb793350e1b81376511f3cfc0c3024403bbdfa2fddc87447e/onnxruntime_directml-1.15.0-cp39-cp39-win_amd64.whl
+[2023-05-24 07:08:43] INFO root fetch - processPackages [odoo-addons-oca-server-tools]: Downloading https://files.pythonhosted.org/packages/35/3b/1b82d29575989ef8aec65519b2dbd6a42dd9ae659c7038ac1bddac17f593/odoo_addons_oca_server_tools-16.0.20230523.0-py3-none-any.whl
+[2023-05-24 07:08:43] INFO root fetch - processPackages [rapid-pe]: Downloading https://files.pythonhosted.org/packages/54/9e/2da3780232f8805a3dd62ef38774ac7bbf3258aaad24a929ce78a26ebd6d/rapid_pe-0.1.1.dev20230524.tar.gz
+[2023-05-24 07:08:43] INFO root fetch - processPackages [onnxruntime-gpu]: Downloading https://files.pythonhosted.org/packages/e7/99/ac9d4415ed323a9e3aee4757b078bb108cfbf04dd52f68eef73500f53fe1/onnxruntime_gpu-1.8.1-cp39-cp39-win_amd64.whl
+[2023-05-24 07:08:43] INFO root fetch - processPackages [odoo-addons-oca-server-tools]: executing diffoscope
+[2023-05-24 07:08:43] INFO root fetch - processPackages [odoo-addons-oca-server-tools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addons_oca_server_tools-16.0.20230516.0-py3-none-any.whl.zip tmp/odoo_addons_oca_server_tools-16.0.20230523.0-py3-none-any.whl.zip --markdown 20230524/o/odoo-addons-oca-server-tools/16.0.20230516.0-16.0.20230523.0/diff.md --exclude *.pyd
+[2023-05-24 07:08:43] INFO root fetch - processPackages [rapid-pe]: executing diffoscope
+[2023-05-24 07:08:43] INFO root fetch - processPackages [rapid-pe]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rapid_pe-0.1.1.dev20230523.tar.gz tmp/rapid_pe-0.1.1.dev20230524.tar.gz --markdown 20230524/r/rapid-pe/0.1.1.dev20230523-0.1.1.dev20230524/diff.md --exclude *.pyd
+[2023-05-24 07:08:43] INFO root fetch - processPackages [sdc-scissor]: Downloading https://files.pythonhosted.org/packages/d7/b6/215a7d5d9ec2fa479cea5e51dbf0de72522eea59a35053c3b68ddea43482/sdc_scissor-2.2.0rc0.tar.gz
+[2023-05-24 07:08:43] WARNING root fetch - processPackages [onnxruntime-directml]: Skipping package: exceeds size limit 14700286>=10485760
+[2023-05-24 07:08:43] INFO root fetch - processPackages [onnxruntime-directml]: Start processing: badi-users
+[2023-05-24 07:08:43] INFO root fetch - main [MainThread]: End processing [onnxruntime-directml] error
+[2023-05-24 07:08:44] INFO root fetch - processPackages [onnxruntime]: Downloading https://files.pythonhosted.org/packages/4b/f2/fc1fe9109358a1750996ebd16ac7666244025f1613f4e61a5fd47ca069b5/onnxruntime-1.9.0-cp39-cp39-win_amd64.whl
+[2023-05-24 07:08:44] INFO root fetch - processPackages [badi-users]: New version: [1.0.4] Old Version: [1.0.3]
+[2023-05-24 07:08:44] INFO root fetch - processPackages [sdc-scissor]: executing diffoscope
+[2023-05-24 07:08:44] INFO root fetch - processPackages [sdc-scissor]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sdc_scissor-2.2.0a0.tar.gz tmp/sdc_scissor-2.2.0rc0.tar.gz --markdown 20230524/s/sdc-scissor/2.2.0a0-2.2.0rc0/diff.md --exclude *.pyd
+[2023-05-24 07:08:44] INFO root fetch - main [MainThread]: End processing [phap]: success
+[2023-05-24 07:08:44] INFO root fetch - main [MainThread]: End processing [meta-matching-tool]: success
+[2023-05-24 07:08:44] INFO root fetch - processPackages [badi-users]: Downloading https://files.pythonhosted.org/packages/51/aa/6aa0939aa63e6f43840a1f891561c941bb62806304a7d3f102c2ebef8d50/badi_users-1.0.4.tar.gz
+[2023-05-24 07:08:44] WARNING root fetch - processPackages [onnxruntime-gpu]: Skipping package: exceeds size limit 62696041>=10485760
+[2023-05-24 07:08:44] INFO root fetch - main [MainThread]: End processing [onnxruntime-gpu] error
+[2023-05-24 07:08:44] INFO root fetch - processPackages [onnxruntime]: executing diffoscope
+[2023-05-24 07:08:44] INFO root fetch - processPackages [onnxruntime]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/onnxruntime-1.8.1-cp39-cp39-win_amd64.whl.zip tmp/onnxruntime-1.9.0-cp39-cp39-win_amd64.whl.zip --markdown 20230524/o/onnxruntime/1.8.1-1.9.0/diff.md --exclude *.pyd
+[2023-05-24 07:08:44] INFO root fetch - processPackages [multi-model-server]: executing diffoscope
+[2023-05-24 07:08:44] INFO root fetch - processPackages [multi-model-server]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/multi_model_server-1.1.8b20230523-py2.py3-none-any.whl.zip tmp/multi_model_server-1.1.8b20230524-py2.py3-none-any.whl.zip --markdown 20230524/m/multi-model-server/1.1.8b20230523-1.1.8b20230524/diff.md --exclude *.pyd
+[2023-05-24 07:08:44] INFO root fetch - main [MainThread]: End processing [spic]: success
+[2023-05-24 07:08:44] INFO root fetch - main [MainThread]: End processing [odoo-addons-oca-server-tools]: success
+[2023-05-24 07:08:45] INFO root fetch - processPackages [badi-users]: executing diffoscope
+[2023-05-24 07:08:45] INFO root fetch - processPackages [badi-users]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/badi_users-1.0.3.tar.gz tmp/badi_users-1.0.4.tar.gz --markdown 20230524/b/badi-users/1.0.3-1.0.4/diff.md --exclude *.pyd
+[2023-05-24 07:08:45] INFO root fetch - main [MainThread]: End processing [rapid-pe]: success
+[2023-05-24 07:08:47] INFO root fetch - main [MainThread]: End processing [badi-users]: success
+[2023-05-24 07:08:47] INFO root fetch - main [MainThread]: End processing [onnxruntime]: success
+[2023-05-24 07:08:48] INFO root fetch - main [MainThread]: End processing [sdc-scissor]: success
+[2023-05-24 07:11:29] INFO root fetch - main [MainThread]: End processing [multi-model-server]: success
+[2023-05-24 07:11:29] INFO root fetch - main [MainThread]: Store serial: [18225181]
