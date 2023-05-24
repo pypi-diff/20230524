@@ -8133,3 +8133,45 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-05-24 07:28:06] INFO root fetch - main [MainThread]: End processing [acryo]: success
 [2023-05-24 07:28:06] INFO root fetch - main [MainThread]: End processing [stefutils]: success
 [2023-05-24 07:28:06] INFO root fetch - main [MainThread]: Store serial: [18225314]
+[2023-05-24 07:33:11] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18225314]
+[2023-05-24 07:33:15] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-05-24 07:33:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: codetf
+[2023-05-24 07:33:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: arclet-letoderea
+[2023-05-24 07:33:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: gnssanalysis
+[2023-05-24 07:33:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: attm
+[2023-05-24 07:33:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: mobio-dedupe-sdk-test
+[2023-05-24 07:33:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: pacparser
+[2023-05-24 07:33:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: sdc-scissor
+[2023-05-24 07:33:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: tongsuopy-crayon
+[2023-05-24 07:33:15] INFO root fetch - processPackages [arclet-letoderea]: New version: [0.6.0] Old Version: [0.5.0]
+[2023-05-24 07:33:15] INFO root fetch - processPackages [attm]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-24 07:33:15] INFO root fetch - processPackages [sdc-scissor]: New version: [2.2.0rc0] Old Version: [2.2.0a0]
+[2023-05-24 07:33:15] INFO root fetch - processPackages [gnssanalysis]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-24 07:33:15] INFO root fetch - processPackages [mobio-dedupe-sdk-test]: New version: [1.0.9] Old Version: [1.0.8]
+[2023-05-24 07:33:15] INFO root fetch - processPackages [tongsuopy-crayon]: New version: [1.0.2b4] Old Version: [1.0.2b3]
+[2023-05-24 07:33:15] INFO root fetch - processPackages [pacparser]: New version: [1.4.1.dev7] Old Version: [1.4.1]
+[2023-05-24 07:33:15] WARNING root fetch - processPackages [codetf]: Skipping, unable to determine old version
+[2023-05-24 07:33:15] INFO root fetch - main [MainThread]: End processing [codetf] error
+[2023-05-24 07:33:15] INFO root fetch - processPackages [arclet-letoderea]: executing diffoscope
+[2023-05-24 07:33:15] INFO root fetch - processPackages [arclet-letoderea]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/arclet-letoderea-0.5.0.tar.gz tmp/arclet-letoderea-0.6.0.tar.gz --markdown 20230524/a/arclet-letoderea/0.5.0-0.6.0/diff.md --exclude *.pyd
+[2023-05-24 07:33:15] INFO root fetch - processPackages [sdc-scissor]: executing diffoscope
+[2023-05-24 07:33:15] INFO root fetch - processPackages [sdc-scissor]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sdc_scissor-2.2.0a0.tar.gz tmp/sdc_scissor-2.2.0rc0.tar.gz --markdown 20230524/s/sdc-scissor/2.2.0a0-2.2.0rc0/diff.md --exclude *.pyd
+[2023-05-24 07:33:15] INFO root fetch - processPackages [attm]: executing diffoscope
+[2023-05-24 07:33:15] INFO root fetch - processPackages [attm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/attm-0.0.8-py3-none-win_amd64.whl.zip tmp/attm-0.0.9-py3-none-win_amd64.whl.zip --markdown 20230524/a/attm/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-24 07:33:15] INFO root fetch - processPackages [pacparser]: executing diffoscope
+[2023-05-24 07:33:15] INFO root fetch - processPackages [pacparser]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pacparser-1.4.1.tar.gz tmp/pacparser-1.4.1.dev7.tar.gz --markdown 20230524/p/pacparser/1.4.1-1.4.1.dev7/diff.md --exclude *.pyd
+[2023-05-24 07:33:15] INFO root fetch - processPackages [gnssanalysis]: executing diffoscope
+[2023-05-24 07:33:15] INFO root fetch - processPackages [gnssanalysis]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gnssanalysis-0.0.8.tar.gz tmp/gnssanalysis-0.0.9.tar.gz --markdown 20230524/g/gnssanalysis/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-24 07:33:16] INFO root fetch - processPackages [mobio-dedupe-sdk-test]: executing diffoscope
+[2023-05-24 07:33:16] INFO root fetch - processPackages [mobio-dedupe-sdk-test]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mobio-dedupe-sdk-test-1.0.8.tar.gz tmp/mobio-dedupe-sdk-test-1.0.9.tar.gz --markdown 20230524/m/mobio-dedupe-sdk-test/1.0.8-1.0.9/diff.md --exclude *.pyd
+[2023-05-24 07:33:16] INFO root fetch - processPackages [tongsuopy-crayon]: Downloading https://files.pythonhosted.org/packages/35/eb/1747ecceb81bfbdb40dc6a1c767a85f739764154eadd8d34c590d6009a2c/tongsuopy_crayon-1.0.2b4-pp39-pypy39_pp73-win_amd64.whl
+[2023-05-24 07:33:16] INFO root fetch - processPackages [tongsuopy-crayon]: executing diffoscope
+[2023-05-24 07:33:16] INFO root fetch - processPackages [tongsuopy-crayon]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tongsuopy_crayon-1.0.2b3-pp39-pypy39_pp73-win_amd64.whl.zip tmp/tongsuopy_crayon-1.0.2b4-pp39-pypy39_pp73-win_amd64.whl.zip --markdown 20230524/t/tongsuopy-crayon/1.0.2b3-1.0.2b4/diff.md --exclude *.pyd
+[2023-05-24 07:33:17] INFO root fetch - main [MainThread]: End processing [pacparser]: success
+[2023-05-24 07:33:17] INFO root fetch - main [MainThread]: End processing [attm]: success
+[2023-05-24 07:33:17] INFO root fetch - main [MainThread]: End processing [arclet-letoderea]: success
+[2023-05-24 07:33:17] INFO root fetch - main [MainThread]: End processing [gnssanalysis]: success
+[2023-05-24 07:33:17] INFO root fetch - main [MainThread]: End processing [mobio-dedupe-sdk-test]: success
+[2023-05-24 07:33:17] INFO root fetch - main [MainThread]: End processing [sdc-scissor]: success
+[2023-05-24 07:33:17] INFO root fetch - main [MainThread]: End processing [tongsuopy-crayon]: success
+[2023-05-24 07:33:17] INFO root fetch - main [MainThread]: Store serial: [18225357]
