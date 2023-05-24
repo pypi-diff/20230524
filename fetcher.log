@@ -10807,3 +10807,121 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-05-24 10:50:40] INFO root fetch - main [MainThread]: End processing [angeltools]: success
 [2023-05-24 10:50:41] INFO root fetch - main [MainThread]: End processing [panda-server]: success
 [2023-05-24 10:50:41] INFO root fetch - main [MainThread]: Store serial: [18227022]
+[2023-05-24 10:55:46] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18227022]
+[2023-05-24 10:55:51] INFO root fetch - main [MainThread]: Found 21 changed packages
+[2023-05-24 10:55:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: qwak-core
+[2023-05-24 10:55:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: oddrn-generator
+[2023-05-24 10:55:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pyubx2
+[2023-05-24 10:55:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: codal-tsetmc
+[2023-05-24 10:55:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: linearmodels
+[2023-05-24 10:55:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: mfunc
+[2023-05-24 10:55:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: range-compression
+[2023-05-24 10:55:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: primervcf
+[2023-05-24 10:55:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: certora-cli-alpha-shays-CERT-2092
+[2023-05-24 10:55:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: pyflipper
+[2023-05-24 10:55:51] INFO root fetch - processPackages [range-compression]: New version: [0.2.0] Old Version: [0.1.1]
+[2023-05-24 10:55:51] INFO root fetch - processPackages [pyubx2]: New version: [1.2.9] Old Version: [1.2.8]
+[2023-05-24 10:55:51] INFO root fetch - processPackages [certora-cli-alpha-shays-CERT-2092]: New version: [20230523.9.24.81079] Old Version: [20230523.7.37.9913]
+[2023-05-24 10:55:51] WARNING root fetch - processPackages [codal-tsetmc]: Skipping, unable to determine old version
+[2023-05-24 10:55:51] INFO root fetch - processPackages [codal-tsetmc]: Start processing: vbimage
+[2023-05-24 10:55:51] INFO root fetch - main [MainThread]: End processing [codal-tsetmc] error
+[2023-05-24 10:55:51] INFO root fetch - processPackages [qwak-core]: New version: [0.0.77] Old Version: [0.0.76]
+[2023-05-24 10:55:51] WARNING root fetch - processPackages [mfunc]: Skipping, unable to determine old version
+[2023-05-24 10:55:51] INFO root fetch - processPackages [mfunc]: Start processing: djangoldp-application
+[2023-05-24 10:55:51] INFO root fetch - main [MainThread]: End processing [mfunc] error
+[2023-05-24 10:55:51] WARNING root fetch - processPackages [pyflipper]: Skipping, unable to determine old version
+[2023-05-24 10:55:51] INFO root fetch - processPackages [pyflipper]: Start processing: pydantic-xmlmodel
+[2023-05-24 10:55:51] INFO root fetch - main [MainThread]: End processing [pyflipper] error
+[2023-05-24 10:55:51] INFO root fetch - processPackages [primervcf]: New version: [0.1.5] Old Version: [0.1.4]
+[2023-05-24 10:55:51] INFO root fetch - processPackages [vbimage]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-24 10:55:51] INFO root fetch - processPackages [oddrn-generator]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-24 10:55:51] INFO root fetch - processPackages [djangoldp-application]: New version: [1.1.8] Old Version: [1.1.7]
+[2023-05-24 10:55:51] INFO root fetch - processPackages [linearmodels]: New version: [5.0] Old Version: [4.9]
+[2023-05-24 10:55:51] INFO root fetch - processPackages [pyubx2]: Downloading https://files.pythonhosted.org/packages/f2/9f/9f6f21654c17948189768ad01305c6b5acbead228fe5545d17173d555468/pyubx2-1.2.8.tar.gz
+[2023-05-24 10:55:51] INFO root fetch - processPackages [certora-cli-alpha-shays-CERT-2092]: Downloading https://files.pythonhosted.org/packages/c0/ea/71b883d54625b6e48aeac8cb7fdbb16fabe797f5497ee655671568fcca27/certora-cli-alpha-shays-CERT-2092-20230523.7.37.9913.tar.gz
+[2023-05-24 10:55:51] WARNING root fetch - processPackages [certora-cli-alpha-shays-CERT-2092]: Skipping package: exceeds size limit 38977534>=10485760
+[2023-05-24 10:55:51] INFO root fetch - processPackages [certora-cli-alpha-shays-CERT-2092]: Start processing: FastDub
+[2023-05-24 10:55:51] INFO root fetch - main [MainThread]: End processing [certora-cli-alpha-shays-CERT-2092] error
+[2023-05-24 10:55:51] INFO root fetch - processPackages [pydantic-xmlmodel]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-05-24 10:55:51] INFO root fetch - processPackages [FastDub]: New version: [3.6.0b2] Old Version: [3.6.0b1]
+[2023-05-24 10:55:51] INFO root fetch - processPackages [vbimage]: executing diffoscope
+[2023-05-24 10:55:51] INFO root fetch - processPackages [vbimage]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vbimage-0.1.8.tar.gz tmp/vbimage-0.1.9.tar.gz --markdown 20230524/v/vbimage/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-24 10:55:51] INFO root fetch - processPackages [primervcf]: Downloading https://files.pythonhosted.org/packages/6c/5d/213525902b7188c564561dc2676428c6cb9ceeed2195bd1eae9633a8fde7/primervcf-0.1.4-py3-none-any.whl
+[2023-05-24 10:55:51] INFO root fetch - processPackages [range-compression]: executing diffoscope
+[2023-05-24 10:55:51] INFO root fetch - processPackages [range-compression]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/range_compression-0.1.1.tar.gz tmp/range_compression-0.2.0.tar.gz --markdown 20230524/r/range-compression/0.1.1-0.2.0/diff.md --exclude *.pyd
+[2023-05-24 10:55:51] INFO root fetch - processPackages [oddrn-generator]: Downloading https://files.pythonhosted.org/packages/3c/34/699cecf0046ed3a9658b2cc8dee7ad28f76ab3f13dc6bbcba8d01e63adca/oddrn-generator-0.1.8.tar.gz
+[2023-05-24 10:55:51] INFO root fetch - processPackages [linearmodels]: Downloading https://files.pythonhosted.org/packages/85/67/e8661132e2c1859c0e9d498c6d0932b43b45d59ae4db0cefd91f758f8e1d/linearmodels-4.9.tar.gz
+[2023-05-24 10:55:51] INFO root fetch - processPackages [qwak-core]: Downloading https://files.pythonhosted.org/packages/e9/35/1af2b673b7534971338f5a8a2117aa452e3abca0930a4fa46c6b0280f390/qwak_core-0.0.77.tar.gz
+[2023-05-24 10:55:51] INFO root fetch - processPackages [pyubx2]: Downloading https://files.pythonhosted.org/packages/d6/9e/b86798e51a6e76aa7507a405905a8fe30562608f9ff78aa4d0558f918c1d/pyubx2-1.2.9.tar.gz
+[2023-05-24 10:55:51] INFO root fetch - processPackages [primervcf]: Downloading https://files.pythonhosted.org/packages/05/52/c03c560e5bbece5a7fbf99f6bbfd667add08af20dfafefce8f9c1c6ae935/primervcf-0.1.5-py3-none-any.whl
+[2023-05-24 10:55:51] INFO root fetch - processPackages [pyubx2]: executing diffoscope
+[2023-05-24 10:55:51] INFO root fetch - processPackages [pyubx2]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyubx2-1.2.8.tar.gz tmp/pyubx2-1.2.9.tar.gz --markdown 20230524/p/pyubx2/1.2.8-1.2.9/diff.md --exclude *.pyd
+[2023-05-24 10:55:51] INFO root fetch - processPackages [pydantic-xmlmodel]: Downloading https://files.pythonhosted.org/packages/c4/21/c4b982b4d25291ae9202645a6a496fdaebfb102af73bce4de47154cfe79f/pydantic_xmlmodel-0.1.0.tar.gz
+[2023-05-24 10:55:51] INFO root fetch - processPackages [djangoldp-application]: Downloading https://files.pythonhosted.org/packages/f8/fc/52f6e727e55981048733ca3634b636b1b12b921d911ec928c4863e14c270/djangoldp_application-1.1.8.tar.gz
+[2023-05-24 10:55:51] INFO root fetch - processPackages [qwak-core]: executing diffoscope
+[2023-05-24 10:55:51] INFO root fetch - processPackages [qwak-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/qwak_core-0.0.76.tar.gz tmp/qwak_core-0.0.77.tar.gz --markdown 20230524/q/qwak-core/0.0.76-0.0.77/diff.md --exclude *.pyd
+[2023-05-24 10:55:51] INFO root fetch - processPackages [djangoldp-application]: executing diffoscope
+[2023-05-24 10:55:51] INFO root fetch - processPackages [djangoldp-application]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/djangoldp_application-1.1.7.tar.gz tmp/djangoldp_application-1.1.8.tar.gz --markdown 20230524/d/djangoldp-application/1.1.7-1.1.8/diff.md --exclude *.pyd
+[2023-05-24 10:55:51] INFO root fetch - processPackages [primervcf]: executing diffoscope
+[2023-05-24 10:55:51] INFO root fetch - processPackages [primervcf]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/primervcf-0.1.4-py3-none-any.whl.zip tmp/primervcf-0.1.5-py3-none-any.whl.zip --markdown 20230524/p/primervcf/0.1.4-0.1.5/diff.md --exclude *.pyd
+[2023-05-24 10:55:51] INFO root fetch - processPackages [oddrn-generator]: Downloading https://files.pythonhosted.org/packages/2a/2e/c01483d58b0cf1c450eb92f93a9180e3d71bda2dfe4cbe678bad80d62bfb/oddrn-generator-0.1.9.tar.gz
+[2023-05-24 10:55:51] INFO root fetch - processPackages [FastDub]: executing diffoscope
+[2023-05-24 10:55:51] INFO root fetch - processPackages [FastDub]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/FastDub-3.6.0b1.tar.gz tmp/FastDub-3.6.0b2.tar.gz --markdown 20230524/F/FastDub/3.6.0b1-3.6.0b2/diff.md --exclude *.pyd
+[2023-05-24 10:55:51] INFO root fetch - processPackages [oddrn-generator]: executing diffoscope
+[2023-05-24 10:55:51] INFO root fetch - processPackages [oddrn-generator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/oddrn-generator-0.1.8.tar.gz tmp/oddrn-generator-0.1.9.tar.gz --markdown 20230524/o/oddrn-generator/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-24 10:55:52] INFO root fetch - processPackages [pydantic-xmlmodel]: Downloading https://files.pythonhosted.org/packages/0e/7d/7b0e652418c8eab982057c681f908926812c222523deae05c1e08073506f/pydantic_xmlmodel-0.1.1.tar.gz
+[2023-05-24 10:55:52] INFO root fetch - processPackages [linearmodels]: Downloading https://files.pythonhosted.org/packages/84/f4/854e923b08e6c9d9afa676143c273676cd929b9d5db9996421f308696826/linearmodels-5.0-cp39-cp39-win_amd64.whl
+[2023-05-24 10:55:52] INFO root fetch - processPackages [pydantic-xmlmodel]: executing diffoscope
+[2023-05-24 10:55:52] INFO root fetch - processPackages [pydantic-xmlmodel]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pydantic_xmlmodel-0.1.0.tar.gz tmp/pydantic_xmlmodel-0.1.1.tar.gz --markdown 20230524/p/pydantic-xmlmodel/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-05-24 10:55:52] INFO root fetch - processPackages [linearmodels]: executing diffoscope
+[2023-05-24 10:55:52] INFO root fetch - processPackages [linearmodels]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/linearmodels-4.9.tar.gz tmp/linearmodels-5.0-cp39-cp39-win_amd64.whl.zip --markdown 20230524/l/linearmodels/4.9-5.0/diff.md --exclude *.pyd
+[2023-05-24 10:55:52] INFO root fetch - processPackages [vbimage]: Start processing: JJukE
+[2023-05-24 10:55:52] INFO root fetch - main [MainThread]: End processing [vbimage]: success
+[2023-05-24 10:55:52] INFO root fetch - processPackages [range-compression]: Start processing: django-autocomplete-light
+[2023-05-24 10:55:52] INFO root fetch - main [MainThread]: End processing [range-compression]: success
+[2023-05-24 10:55:52] WARNING root fetch - processPackages [JJukE]: Skipping, unable to determine old version
+[2023-05-24 10:55:52] INFO root fetch - processPackages [JJukE]: Start processing: HighResAnalysis
+[2023-05-24 10:55:52] INFO root fetch - main [MainThread]: End processing [JJukE] error
+[2023-05-24 10:55:52] INFO root fetch - processPackages [django-autocomplete-light]: New version: [3.9.8rc28] Old Version: [3.9.8rc25]
+[2023-05-24 10:55:53] INFO root fetch - processPackages [HighResAnalysis]: New version: [0.0.4] Old Version: [0.0.3]
+[2023-05-24 10:55:53] INFO root fetch - processPackages [django-autocomplete-light]: Downloading https://files.pythonhosted.org/packages/b2/b7/c7abbc66372ab56cb1ed4e31082e4c336dafad90622796d40d878f641b33/django-autocomplete-light-3.9.8rc28.tar.gz
+[2023-05-24 10:55:53] INFO root fetch - processPackages [primervcf]: Start processing: pyFipper
+[2023-05-24 10:55:53] INFO root fetch - main [MainThread]: End processing [primervcf]: success
+[2023-05-24 10:55:53] INFO root fetch - processPackages [pyFipper]: New version: [0.1.2.dev1] Old Version: [0.1.0]
+[2023-05-24 10:55:53] INFO root fetch - processPackages [django-autocomplete-light]: executing diffoscope
+[2023-05-24 10:55:53] INFO root fetch - processPackages [django-autocomplete-light]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django-autocomplete-light-3.9.8rc25.tar.gz tmp/django-autocomplete-light-3.9.8rc28.tar.gz --markdown 20230524/d/django-autocomplete-light/3.9.8rc25-3.9.8rc28/diff.md --exclude *.pyd
+[2023-05-24 10:55:53] INFO root fetch - processPackages [pyFipper]: executing diffoscope
+[2023-05-24 10:55:53] INFO root fetch - processPackages [pyFipper]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyFipper-0.1.0.tar.gz tmp/pyFipper-0.1.2.dev1.tar.gz --markdown 20230524/p/pyFipper/0.1.0-0.1.2.dev1/diff.md --exclude *.pyd
+[2023-05-24 10:55:53] INFO root fetch - processPackages [HighResAnalysis]: Downloading https://files.pythonhosted.org/packages/13/b9/1bc34b70a5e20ed0999375cad204edb57a5e3b800a60b36f5b2f4ff3b304/HighResAnalysis-0.0.4.tar.gz
+[2023-05-24 10:55:53] INFO root fetch - processPackages [djangoldp-application]: Start processing: xj-finance
+[2023-05-24 10:55:53] INFO root fetch - main [MainThread]: End processing [djangoldp-application]: success
+[2023-05-24 10:55:53] INFO root fetch - processPackages [xj-finance]: New version: [1.1.8] Old Version: [1.1.7]
+[2023-05-24 10:55:53] INFO root fetch - processPackages [pydantic-xmlmodel]: Start processing: Products.MeetingLalouviere
+[2023-05-24 10:55:53] INFO root fetch - main [MainThread]: End processing [pydantic-xmlmodel]: success
+[2023-05-24 10:55:53] INFO root fetch - processPackages [oddrn-generator]: Start processing: spt-factory
+[2023-05-24 10:55:53] INFO root fetch - main [MainThread]: End processing [oddrn-generator]: success
+[2023-05-24 10:55:53] INFO root fetch - processPackages [HighResAnalysis]: executing diffoscope
+[2023-05-24 10:55:53] INFO root fetch - processPackages [HighResAnalysis]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/HighResAnalysis-0.0.3.tar.gz tmp/HighResAnalysis-0.0.4.tar.gz --markdown 20230524/H/HighResAnalysis/0.0.3-0.0.4/diff.md --exclude *.pyd
+[2023-05-24 10:55:53] INFO root fetch - processPackages [Products.MeetingLalouviere]: New version: [4.2.3] Old Version: [4.2.2]
+[2023-05-24 10:55:53] INFO root fetch - processPackages [spt-factory]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-24 10:55:53] INFO root fetch - processPackages [Products.MeetingLalouviere]: Downloading https://files.pythonhosted.org/packages/9d/20/f9773340dadaa4ec3c9222a89380a9b34bf4dfbba113634f6f8d519ebdc6/Products.MeetingLalouviere-4.2.2.tar.gz
+[2023-05-24 10:55:53] INFO root fetch - processPackages [spt-factory]: Downloading https://files.pythonhosted.org/packages/c2/4c/7c84e2219d9004bfadf0192aafebc7a42f5eaf9e40ca03c2fe101addfee3/spt_factory-0.0.8.tar.gz
+[2023-05-24 10:55:53] INFO root fetch - processPackages [xj-finance]: executing diffoscope
+[2023-05-24 10:55:53] INFO root fetch - processPackages [xj-finance]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xj_finance-1.1.7.tar.gz tmp/xj_finance-1.1.8.tar.gz --markdown 20230524/x/xj-finance/1.1.7-1.1.8/diff.md --exclude *.pyd
+[2023-05-24 10:55:54] INFO root fetch - processPackages [Products.MeetingLalouviere]: Downloading https://files.pythonhosted.org/packages/ce/94/9203abf0d5b185894cc161f93a23958fbaf8432a521aaf6f802d95359359/Products.MeetingLalouviere-4.2.3.tar.gz
+[2023-05-24 10:55:54] INFO root fetch - main [MainThread]: End processing [FastDub]: success
+[2023-05-24 10:55:54] INFO root fetch - main [MainThread]: End processing [pyubx2]: success
+[2023-05-24 10:55:54] INFO root fetch - main [MainThread]: End processing [linearmodels]: success
+[2023-05-24 10:55:54] INFO root fetch - processPackages [spt-factory]: Downloading https://files.pythonhosted.org/packages/b9/45/b4ddeefbad693fe21d5bc917e2e9bd8db6f6a28f632dd46cea2102602ea3/spt_factory-0.0.9.tar.gz
+[2023-05-24 10:55:54] INFO root fetch - processPackages [spt-factory]: executing diffoscope
+[2023-05-24 10:55:54] INFO root fetch - processPackages [spt-factory]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spt_factory-0.0.8.tar.gz tmp/spt_factory-0.0.9.tar.gz --markdown 20230524/s/spt-factory/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-24 10:55:54] INFO root fetch - processPackages [Products.MeetingLalouviere]: executing diffoscope
+[2023-05-24 10:55:54] INFO root fetch - processPackages [Products.MeetingLalouviere]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Products.MeetingLalouviere-4.2.2.tar.gz tmp/Products.MeetingLalouviere-4.2.3.tar.gz --markdown 20230524/P/Products.MeetingLalouviere/4.2.2-4.2.3/diff.md --exclude *.pyd
+[2023-05-24 10:55:55] INFO root fetch - main [MainThread]: End processing [spt-factory]: success
+[2023-05-24 10:55:55] INFO root fetch - main [MainThread]: End processing [django-autocomplete-light]: success
+[2023-05-24 10:55:55] INFO root fetch - main [MainThread]: End processing [xj-finance]: success
+[2023-05-24 10:55:56] INFO root fetch - main [MainThread]: End processing [Products.MeetingLalouviere]: success
+[2023-05-24 10:55:56] INFO root fetch - main [MainThread]: End processing [HighResAnalysis]: success
+[2023-05-24 10:55:57] INFO root fetch - main [MainThread]: End processing [qwak-core]: success
+[2023-05-24 10:56:01] INFO root fetch - main [MainThread]: End processing [pyFipper]: success
+[2023-05-24 10:56:01] INFO root fetch - main [MainThread]: Store serial: [18227096]
