@@ -23767,3 +23767,66 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd4 in position 72: invalid
 [2023-05-24 22:18:41] INFO root fetch - main [MainThread]: End processing [aim]: success
 [2023-05-24 22:18:42] INFO root fetch - main [MainThread]: End processing [ethyca-fides]: success
 [2023-05-24 22:18:42] INFO root fetch - main [MainThread]: Store serial: [18235422]
+[2023-05-24 22:23:46] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18235422]
+[2023-05-24 22:23:51] INFO root fetch - main [MainThread]: Found 11 changed packages
+[2023-05-24 22:23:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: Sophia-Optimizer
+[2023-05-24 22:23:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: tensortrax
+[2023-05-24 22:23:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: EBglmnet
+[2023-05-24 22:23:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: cryptbuddy
+[2023-05-24 22:23:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: frankAllSkyCam
+[2023-05-24 22:23:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: spanishconjugator
+[2023-05-24 22:23:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: spanishconjugator
+[2023-05-24 22:23:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: ncbi-datasets-pylib
+[2023-05-24 22:23:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: webarchiver
+[2023-05-24 22:23:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: stdl
+[2023-05-24 22:23:51] INFO root fetch - processPackages [tensortrax]: New version: [0.9.0] Old Version: [0.8.5]
+[2023-05-24 22:23:51] INFO root fetch - processPackages [frankAllSkyCam]: New version: [7.5] Old Version: [7.4]
+[2023-05-24 22:23:51] INFO root fetch - processPackages [cryptbuddy]: New version: [0.0.5] Old Version: [0.0.1]
+[2023-05-24 22:23:51] INFO root fetch - processPackages [Sophia-Optimizer]: New version: [0.1.2] Old Version: [0.1.1]
+[2023-05-24 22:23:51] INFO root fetch - processPackages [webarchiver]: New version: [0.9.0] Old Version: [0.8.0]
+[2023-05-24 22:23:51] INFO root fetch - processPackages [EBglmnet]: New version: [1.1] Old Version: [1.0]
+[2023-05-24 22:23:52] INFO root fetch - processPackages [spanishconjugator]: New version: [2.3.999] Old Version: [2.3.998]
+[2023-05-24 22:23:52] INFO root fetch - processPackages [stdl]: New version: [0.4.5] Old Version: [0.4.4]
+[2023-05-24 22:23:52] INFO root fetch - processPackages [webarchiver]: executing diffoscope
+[2023-05-24 22:23:52] INFO root fetch - processPackages [webarchiver]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/webarchiver-0.8.0-py2.py3-none-any.whl.zip tmp/webarchiver-0.9.0-py2.py3-none-any.whl.zip --markdown 20230524/w/webarchiver/0.8.0-0.9.0/diff.md --exclude *.pyd
+[2023-05-24 22:23:52] INFO root fetch - processPackages [tensortrax]: executing diffoscope
+[2023-05-24 22:23:52] ERROR root fetch - processPackages [frankAllSkyCam]: Unable to fetch info: No such project/version 'frankAllSkyCam' 7.4
+[2023-05-24 22:23:52] INFO root fetch - processPackages [tensortrax]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tensortrax-0.8.5.tar.gz tmp/tensortrax-0.9.0.tar.gz --markdown 20230524/t/tensortrax/0.8.5-0.9.0/diff.md --exclude *.pyd
+[2023-05-24 22:23:52] INFO root fetch - processPackages [frankAllSkyCam]: Start processing: chromadb-client
+[2023-05-24 22:23:52] INFO root fetch - main [MainThread]: End processing [frankAllSkyCam] error
+[2023-05-24 22:23:52] INFO root fetch - processPackages [ncbi-datasets-pylib]: New version: [9.1.0] Old Version: [9.0.0]
+[2023-05-24 22:23:52] INFO root fetch - processPackages [EBglmnet]: Downloading https://files.pythonhosted.org/packages/e1/55/c2e0110182ce30444fc5a71d7b46da401e5d075e9021dfa51bef3b6cc7b3/EBglmnet-1.0.tar.gz
+[2023-05-24 22:23:52] INFO root fetch - processPackages [spanishconjugator]: New version: [2.3.999] Old Version: [2.3.998]
+[2023-05-24 22:23:52] WARNING root fetch - processPackages [chromadb-client]: Skipping, unable to determine old version
+[2023-05-24 22:23:52] INFO root fetch - main [MainThread]: End processing [chromadb-client] error
+[2023-05-24 22:23:52] INFO root fetch - processPackages [cryptbuddy]: Downloading https://files.pythonhosted.org/packages/2d/0e/a29ce09bdcab35d9558064e2c113a3b45a905d3d63ba4b9d22193fcff96f/cryptbuddy-0.0.1.tar.gz
+[2023-05-24 22:23:52] INFO root fetch - processPackages [Sophia-Optimizer]: Downloading https://files.pythonhosted.org/packages/fb/05/eed1ff0365ceec649e26944a9cb571e0288aefefb17e991ed7c690960940/Sophia-Optimizer-0.1.1.tar.gz
+[2023-05-24 22:23:52] INFO root fetch - processPackages [spanishconjugator]: executing diffoscope
+[2023-05-24 22:23:52] INFO root fetch - processPackages [spanishconjugator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spanishconjugator-2.3.998.tar.gz tmp/spanishconjugator-2.3.999.tar.gz --markdown 20230524/s/spanishconjugator/2.3.998-2.3.999/diff.md --exclude *.pyd
+[2023-05-24 22:23:52] INFO root fetch - processPackages [stdl]: Downloading https://files.pythonhosted.org/packages/c9/20/0ced3ee48e4fcfbf006ae23f57fb5f8072d97f9624c836d04887af59f608/stdl-0.4.4.tar.gz
+[2023-05-24 22:23:52] INFO root fetch - processPackages [spanishconjugator]: executing diffoscope
+[2023-05-24 22:23:52] INFO root fetch - processPackages [spanishconjugator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spanishconjugator-2.3.998.tar.gz tmp/spanishconjugator-2.3.999.tar.gz --markdown 20230524/s/spanishconjugator/2.3.998-2.3.999/diff.md --exclude *.pyd
+[2023-05-24 22:23:52] INFO root fetch - processPackages [cryptbuddy]: Downloading https://files.pythonhosted.org/packages/03/9d/52aeaf1497e26434780622c82946909b174202d279485b9b993696fce464/cryptbuddy-0.0.5.tar.gz
+[2023-05-24 22:23:52] INFO root fetch - processPackages [Sophia-Optimizer]: Downloading https://files.pythonhosted.org/packages/b5/b3/6ee0f3c8179147dfcf247c34c38a094e26ebe617e88891f4ccaf80fdaadd/Sophia-Optimizer-0.1.2.tar.gz
+[2023-05-24 22:23:52] INFO root fetch - processPackages [stdl]: Downloading https://files.pythonhosted.org/packages/2b/d9/c13c806cca6eabcf6d86206fac73f753f84f778bed38b21ad42c2870802b/stdl-0.4.5.tar.gz
+[2023-05-24 22:23:52] INFO root fetch - processPackages [cryptbuddy]: executing diffoscope
+[2023-05-24 22:23:52] INFO root fetch - processPackages [cryptbuddy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cryptbuddy-0.0.1.tar.gz tmp/cryptbuddy-0.0.5.tar.gz --markdown 20230524/c/cryptbuddy/0.0.1-0.0.5/diff.md --exclude *.pyd
+[2023-05-24 22:23:52] INFO root fetch - processPackages [ncbi-datasets-pylib]: executing diffoscope
+[2023-05-24 22:23:52] INFO root fetch - processPackages [ncbi-datasets-pylib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ncbi-datasets-pylib-9.0.0.tar.gz tmp/ncbi-datasets-pylib-9.1.0.tar.gz --markdown 20230524/n/ncbi-datasets-pylib/9.0.0-9.1.0/diff.md --exclude *.pyd
+[2023-05-24 22:23:52] INFO root fetch - processPackages [Sophia-Optimizer]: executing diffoscope
+[2023-05-24 22:23:52] INFO root fetch - processPackages [Sophia-Optimizer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Sophia-Optimizer-0.1.1.tar.gz tmp/Sophia-Optimizer-0.1.2.tar.gz --markdown 20230524/S/Sophia-Optimizer/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2023-05-24 22:23:52] INFO root fetch - processPackages [stdl]: executing diffoscope
+[2023-05-24 22:23:52] INFO root fetch - processPackages [stdl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/stdl-0.4.4.tar.gz tmp/stdl-0.4.5.tar.gz --markdown 20230524/s/stdl/0.4.4-0.4.5/diff.md --exclude *.pyd
+[2023-05-24 22:23:52] INFO root fetch - processPackages [EBglmnet]: Downloading https://files.pythonhosted.org/packages/fd/85/c932dd0df70c6a1d26bb65929d31f62e33f1c4ac7dab8ee013c1549ae5a2/EBglmnet-1.1.tar.gz
+[2023-05-24 22:23:52] INFO root fetch - processPackages [EBglmnet]: executing diffoscope
+[2023-05-24 22:23:52] INFO root fetch - processPackages [EBglmnet]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/EBglmnet-1.0.tar.gz tmp/EBglmnet-1.1.tar.gz --markdown 20230524/E/EBglmnet/1.0-1.1/diff.md --exclude *.pyd
+[2023-05-24 22:23:53] INFO root fetch - main [MainThread]: End processing [webarchiver]: success
+[2023-05-24 22:23:53] INFO root fetch - main [MainThread]: End processing [tensortrax]: success
+[2023-05-24 22:23:54] INFO root fetch - main [MainThread]: End processing [spanishconjugator]: success
+[2023-05-24 22:23:54] INFO root fetch - main [MainThread]: End processing [Sophia-Optimizer]: success
+[2023-05-24 22:23:54] INFO root fetch - main [MainThread]: End processing [spanishconjugator]: success
+[2023-05-24 22:23:54] INFO root fetch - main [MainThread]: End processing [EBglmnet]: success
+[2023-05-24 22:23:54] INFO root fetch - main [MainThread]: End processing [cryptbuddy]: success
+[2023-05-24 22:23:54] INFO root fetch - main [MainThread]: End processing [stdl]: success
+[2023-05-24 22:23:54] INFO root fetch - main [MainThread]: End processing [ncbi-datasets-pylib]: success
+[2023-05-24 22:23:54] INFO root fetch - main [MainThread]: Store serial: [18235459]
