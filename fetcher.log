@@ -18801,3 +18801,135 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd4 in position 72: invalid
 [2023-05-24 17:44:24] INFO root fetch - main [MainThread]: End processing [Simba-UW-tf-dev]: success
 [2023-05-24 17:44:24] INFO root fetch - main [MainThread]: End processing [irails]: success
 [2023-05-24 17:44:24] INFO root fetch - main [MainThread]: Store serial: [18232080]
+[2023-05-24 17:49:29] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18232080]
+[2023-05-24 17:49:34] INFO root fetch - main [MainThread]: Found 25 changed packages
+[2023-05-24 17:49:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: vellum-ai
+[2023-05-24 17:49:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: workos
+[2023-05-24 17:49:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: odoo14-addon-mrp-production-picking-type-from-route
+[2023-05-24 17:49:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: movement
+[2023-05-24 17:49:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: datatrail-cli
+[2023-05-24 17:49:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: sanic-security
+[2023-05-24 17:49:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: pyemerald
+[2023-05-24 17:49:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: havoc-clustering
+[2023-05-24 17:49:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: py-posh
+[2023-05-24 17:49:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: pyflp
+[2023-05-24 17:49:34] INFO root fetch - processPackages [havoc-clustering]: New version: [0.0.9] Old Version: [0.0.4]
+[2023-05-24 17:49:34] INFO root fetch - processPackages [sanic-security]: New version: [1.9.9] Old Version: [1.9.8]
+[2023-05-24 17:49:34] WARNING root fetch - processPackages [pyemerald]: Skipping, unable to determine old version
+[2023-05-24 17:49:34] INFO root fetch - processPackages [pyemerald]: Start processing: ddadevops
+[2023-05-24 17:49:34] INFO root fetch - main [MainThread]: End processing [pyemerald] error
+[2023-05-24 17:49:34] INFO root fetch - processPackages [ddadevops]: New version: [4.0.0.dev9] Old Version: [4.0.0.dev8]
+[2023-05-24 17:49:34] WARNING root fetch - processPackages [odoo14-addon-mrp-production-picking-type-from-route]: Skipping, unable to determine old version
+[2023-05-24 17:49:34] INFO root fetch - processPackages [odoo14-addon-mrp-production-picking-type-from-route]: Start processing: coiled
+[2023-05-24 17:49:34] INFO root fetch - main [MainThread]: End processing [odoo14-addon-mrp-production-picking-type-from-route] error
+[2023-05-24 17:49:34] INFO root fetch - processPackages [vellum-ai]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-24 17:49:34] INFO root fetch - processPackages [workos]: New version: [1.9.0] Old Version: [1.8.0]
+[2023-05-24 17:49:34] INFO root fetch - processPackages [datatrail-cli]: New version: [0.1.2] Old Version: [0.1.1]
+[2023-05-24 17:49:34] WARNING root fetch - processPackages [py-posh]: Skipping, unable to determine old version
+[2023-05-24 17:49:34] INFO root fetch - processPackages [py-posh]: Start processing: synapse
+[2023-05-24 17:49:34] INFO root fetch - main [MainThread]: End processing [py-posh] error
+[2023-05-24 17:49:34] INFO root fetch - processPackages [pyflp]: New version: [2.1.1] Old Version: [2.1.0]
+[2023-05-24 17:49:34] INFO root fetch - processPackages [movement]: New version: [0.0.4] Old Version: [0.0.3]
+[2023-05-24 17:49:34] INFO root fetch - processPackages [sanic-security]: executing diffoscope
+[2023-05-24 17:49:34] INFO root fetch - processPackages [sanic-security]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sanic-security-1.9.8.tar.gz tmp/sanic-security-1.9.9.tar.gz --markdown 20230524/s/sanic-security/1.9.8-1.9.9/diff.md --exclude *.pyd
+[2023-05-24 17:49:34] INFO root fetch - processPackages [synapse]: New version: [2.99.0] Old Version: [2.98.0]
+[2023-05-24 17:49:34] INFO root fetch - processPackages [havoc-clustering]: executing diffoscope
+[2023-05-24 17:49:34] INFO root fetch - processPackages [havoc-clustering]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/havoc_clustering-0.0.4.tar.gz tmp/havoc_clustering-0.0.9.tar.gz --markdown 20230524/h/havoc-clustering/0.0.4-0.0.9/diff.md --exclude *.pyd
+[2023-05-24 17:49:34] INFO root fetch - processPackages [coiled]: New version: [0.6.7.dev9] Old Version: [0.6.7.dev8]
+[2023-05-24 17:49:34] INFO root fetch - processPackages [ddadevops]: executing diffoscope
+[2023-05-24 17:49:34] INFO root fetch - processPackages [ddadevops]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ddadevops-4.0.0.dev8.tar.gz tmp/ddadevops-4.0.0.dev9.tar.gz --markdown 20230524/d/ddadevops/4.0.0.dev8-4.0.0.dev9/diff.md --exclude *.pyd
+[2023-05-24 17:49:34] INFO root fetch - processPackages [coiled]: executing diffoscope
+[2023-05-24 17:49:34] INFO root fetch - processPackages [coiled]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/coiled-0.6.7.dev8.tar.gz tmp/coiled-0.6.7.dev9.tar.gz --markdown 20230524/c/coiled/0.6.7.dev8-0.6.7.dev9/diff.md --exclude *.pyd
+[2023-05-24 17:49:34] INFO root fetch - processPackages [workos]: Downloading https://files.pythonhosted.org/packages/fa/8d/353a2989ca173f10c4b54863f8f6b076fc1187c4a5ff205c4c8cd946eb50/workos-1.8.0.tar.gz
+[2023-05-24 17:49:34] INFO root fetch - processPackages [pyflp]: Downloading https://files.pythonhosted.org/packages/b9/76/a851cbbba29d26e8377d9b19fe3324a3091d691149d7967748edcec4dd7e/pyflp-2.1.0.tar.gz
+[2023-05-24 17:49:34] INFO root fetch - processPackages [movement]: Downloading https://files.pythonhosted.org/packages/f4/2e/5a041fc5956743184bbecb56e39a40ab1fa329b7c9a8db8628b617074882/movement-0.0.3.tar.gz
+[2023-05-24 17:49:34] INFO root fetch - processPackages [datatrail-cli]: Downloading https://files.pythonhosted.org/packages/16/cb/35a4792a427d57dae9c18f58c758a8598d3831eeab501210d152522c4914/datatrail_cli-0.1.2.tar.gz
+[2023-05-24 17:49:34] INFO root fetch - processPackages [vellum-ai]: executing diffoscope
+[2023-05-24 17:49:34] INFO root fetch - processPackages [vellum-ai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vellum_ai-0.0.8.tar.gz tmp/vellum_ai-0.0.9.tar.gz --markdown 20230524/v/vellum-ai/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-24 17:49:34] INFO root fetch - processPackages [datatrail-cli]: executing diffoscope
+[2023-05-24 17:49:34] INFO root fetch - processPackages [datatrail-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/datatrail_cli-0.1.1.tar.gz tmp/datatrail_cli-0.1.2.tar.gz --markdown 20230524/d/datatrail-cli/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2023-05-24 17:49:34] INFO root fetch - processPackages [synapse]: executing diffoscope
+[2023-05-24 17:49:34] INFO root fetch - processPackages [synapse]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/synapse-2.98.0.tar.gz tmp/synapse-2.99.0.tar.gz --markdown 20230524/s/synapse/2.98.0-2.99.0/diff.md --exclude *.pyd
+[2023-05-24 17:49:34] INFO root fetch - processPackages [workos]: Downloading https://files.pythonhosted.org/packages/a4/b3/813363ee5aded1d7a93976bd822f32ead11e155db844f7ba25029cdf9a6b/workos-1.9.0.tar.gz
+[2023-05-24 17:49:34] INFO root fetch - processPackages [movement]: Downloading https://files.pythonhosted.org/packages/0e/db/e82a3a138379ea4b6c98ee86693942d9a6d027998cf60b22138e1fcc6412/movement-0.0.4.tar.gz
+[2023-05-24 17:49:34] INFO root fetch - processPackages [pyflp]: Downloading https://files.pythonhosted.org/packages/2e/d3/9a826c46d283826135ea57a247820742725e437ee42ce1f71e2dc3bbf5c9/pyflp-2.1.1.tar.gz
+[2023-05-24 17:49:34] INFO root fetch - processPackages [movement]: executing diffoscope
+[2023-05-24 17:49:34] INFO root fetch - processPackages [movement]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/movement-0.0.3.tar.gz tmp/movement-0.0.4.tar.gz --markdown 20230524/m/movement/0.0.3-0.0.4/diff.md --exclude *.pyd
+[2023-05-24 17:49:34] INFO root fetch - processPackages [workos]: executing diffoscope
+[2023-05-24 17:49:34] INFO root fetch - processPackages [workos]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/workos-1.8.0.tar.gz tmp/workos-1.9.0.tar.gz --markdown 20230524/w/workos/1.8.0-1.9.0/diff.md --exclude *.pyd
+[2023-05-24 17:49:35] INFO root fetch - processPackages [pyflp]: executing diffoscope
+[2023-05-24 17:49:35] INFO root fetch - processPackages [pyflp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyflp-2.1.0.tar.gz tmp/pyflp-2.1.1.tar.gz --markdown 20230524/p/pyflp/2.1.0-2.1.1/diff.md --exclude *.pyd
+[2023-05-24 17:49:35] INFO root fetch - processPackages [havoc-clustering]: Start processing: routeml
+[2023-05-24 17:49:35] INFO root fetch - main [MainThread]: End processing [havoc-clustering]: success
+[2023-05-24 17:49:35] INFO root fetch - processPackages [routeml]: New version: [0.3.0] Old Version: [0.2.0]
+[2023-05-24 17:49:35] INFO root fetch - processPackages [routeml]: executing diffoscope
+[2023-05-24 17:49:35] INFO root fetch - processPackages [routeml]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/routeml-0.2.0.tar.gz tmp/routeml-0.3.0.tar.gz --markdown 20230524/r/routeml/0.2.0-0.3.0/diff.md --exclude *.pyd
+[2023-05-24 17:49:36] INFO root fetch - processPackages [sanic-security]: Start processing: idem-vmware-alb
+[2023-05-24 17:49:36] INFO root fetch - main [MainThread]: End processing [sanic-security]: success
+[2023-05-24 17:49:36] INFO root fetch - processPackages [movement]: Start processing: topoly
+[2023-05-24 17:49:36] INFO root fetch - main [MainThread]: End processing [movement]: success
+[2023-05-24 17:49:36] INFO root fetch - processPackages [topoly]: New version: [0.9.9] Old Version: [0.9.8]
+[2023-05-24 17:49:36] INFO root fetch - processPackages [vellum-ai]: Start processing: lti-consumer-xblock
+[2023-05-24 17:49:36] INFO root fetch - main [MainThread]: End processing [vellum-ai]: success
+[2023-05-24 17:49:36] INFO root fetch - processPackages [lti-consumer-xblock]: New version: [9.5.1] Old Version: [9.5.0]
+[2023-05-24 17:49:36] WARNING root fetch - processPackages [idem-vmware-alb]: Skipping, unable to determine old version
+[2023-05-24 17:49:36] INFO root fetch - processPackages [idem-vmware-alb]: Start processing: oarepo-model-builder
+[2023-05-24 17:49:36] INFO root fetch - main [MainThread]: End processing [idem-vmware-alb] error
+[2023-05-24 17:49:36] INFO root fetch - processPackages [oarepo-model-builder]: New version: [4.0.3] Old Version: [4.0.2]
+[2023-05-24 17:49:36] INFO root fetch - processPackages [oarepo-model-builder]: executing diffoscope
+[2023-05-24 17:49:36] INFO root fetch - processPackages [oarepo-model-builder]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/oarepo-model-builder-4.0.2.tar.gz tmp/oarepo-model-builder-4.0.3.tar.gz --markdown 20230524/o/oarepo-model-builder/4.0.2-4.0.3/diff.md --exclude *.pyd
+[2023-05-24 17:49:36] INFO root fetch - processPackages [ddadevops]: Start processing: scrapere
+[2023-05-24 17:49:36] INFO root fetch - main [MainThread]: End processing [ddadevops]: success
+[2023-05-24 17:49:36] INFO root fetch - processPackages [workos]: Start processing: pvbm
+[2023-05-24 17:49:36] INFO root fetch - main [MainThread]: End processing [workos]: success
+[2023-05-24 17:49:36] INFO root fetch - processPackages [datatrail-cli]: Start processing: markdownparser
+[2023-05-24 17:49:36] INFO root fetch - processPackages [pvbm]: New version: [2.1.7] Old Version: [2.1.6]
+[2023-05-24 17:49:36] INFO root fetch - main [MainThread]: End processing [datatrail-cli]: success
+[2023-05-24 17:49:36] INFO root fetch - processPackages [markdownparser]: New version: [0.4.2] Old Version: [0.4.1]
+[2023-05-24 17:49:36] INFO root fetch - processPackages [scrapere]: New version: [0.2.9] Old Version: [0.2.8]
+[2023-05-24 17:49:36] INFO root fetch - processPackages [markdownparser]: executing diffoscope
+[2023-05-24 17:49:36] INFO root fetch - processPackages [markdownparser]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/markdownparser-0.4.1.tar.gz tmp/markdownparser-0.4.2.tar.gz --markdown 20230524/m/markdownparser/0.4.1-0.4.2/diff.md --exclude *.pyd
+[2023-05-24 17:49:36] INFO root fetch - processPackages [topoly]: executing diffoscope
+[2023-05-24 17:49:36] INFO root fetch - processPackages [topoly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/topoly-0.9.8-cp38-cp38-manylinux2010_x86_64.whl.zip tmp/topoly-0.9.9-cp39-cp39-manylinux2010_x86_64.whl.zip --markdown 20230524/t/topoly/0.9.8-0.9.9/diff.md --exclude *.pyd
+[2023-05-24 17:49:36] INFO root fetch - processPackages [lti-consumer-xblock]: executing diffoscope
+[2023-05-24 17:49:36] INFO root fetch - processPackages [lti-consumer-xblock]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lti-consumer-xblock-9.5.0.tar.gz tmp/lti-consumer-xblock-9.5.1.tar.gz --markdown 20230524/l/lti-consumer-xblock/9.5.0-9.5.1/diff.md --exclude *.pyd
+[2023-05-24 17:49:36] INFO root fetch - processPackages [pvbm]: Downloading https://files.pythonhosted.org/packages/ae/0c/e416bf1701598c838484a278579c1ce5e0279573e6ff00c4e15ef9e63502/pvbm-2.1.7.tar.gz
+[2023-05-24 17:49:36] INFO root fetch - processPackages [scrapere]: Downloading https://files.pythonhosted.org/packages/a9/fe/466794a591181b8dff8c747c1dc38360a96ec56938827813f1455b4af415/scrapere-0.2.8.tar.gz
+[2023-05-24 17:49:36] INFO root fetch - processPackages [pvbm]: executing diffoscope
+[2023-05-24 17:49:36] INFO root fetch - processPackages [pvbm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pvbm-2.1.6.tar.gz tmp/pvbm-2.1.7.tar.gz --markdown 20230524/p/pvbm/2.1.6-2.1.7/diff.md --exclude *.pyd
+[2023-05-24 17:49:37] INFO root fetch - processPackages [routeml]: Start processing: zavod
+[2023-05-24 17:49:37] INFO root fetch - main [MainThread]: End processing [routeml]: success
+[2023-05-24 17:49:37] INFO root fetch - processPackages [scrapere]: Downloading https://files.pythonhosted.org/packages/ec/48/689635ed18e3c728212e8f72daaf07ba83bb71f4aae472126492791cd21f/scrapere-0.2.9.tar.gz
+[2023-05-24 17:49:37] INFO root fetch - processPackages [coiled]: Start processing: soil
+[2023-05-24 17:49:37] INFO root fetch - main [MainThread]: End processing [coiled]: success
+[2023-05-24 17:49:37] INFO root fetch - processPackages [soil]: New version: [1.0.0rc9] Old Version: [1.0.0rc8]
+[2023-05-24 17:49:37] INFO root fetch - processPackages [zavod]: New version: [0.6.3] Old Version: [0.6.2]
+[2023-05-24 17:49:37] INFO root fetch - processPackages [scrapere]: executing diffoscope
+[2023-05-24 17:49:37] INFO root fetch - processPackages [scrapere]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/scrapere-0.2.8.tar.gz tmp/scrapere-0.2.9.tar.gz --markdown 20230524/s/scrapere/0.2.8-0.2.9/diff.md --exclude *.pyd
+[2023-05-24 17:49:37] INFO root fetch - processPackages [zavod]: Downloading https://files.pythonhosted.org/packages/ee/92/4786540fb4ac585e81d43b0644317e9e2ebb0be8431ddb1c13ec14a61cf5/zavod-0.6.2.tar.gz
+[2023-05-24 17:49:37] INFO root fetch - processPackages [soil]: executing diffoscope
+[2023-05-24 17:49:37] INFO root fetch - processPackages [soil]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/soil-1.0.0rc8.tar.gz tmp/soil-1.0.0rc9.tar.gz --markdown 20230524/s/soil/1.0.0rc8-1.0.0rc9/diff.md --exclude *.pyd
+[2023-05-24 17:49:37] INFO root fetch - processPackages [zavod]: Downloading https://files.pythonhosted.org/packages/cc/51/8ce63e5ccc041bfbdda5094294dfdb81486ec8b7ec469934fbbed6b7a242/zavod-0.6.3.tar.gz
+[2023-05-24 17:49:37] INFO root fetch - processPackages [markdownparser]: Start processing: genomenotebook
+[2023-05-24 17:49:37] INFO root fetch - main [MainThread]: End processing [markdownparser]: success
+[2023-05-24 17:49:37] INFO root fetch - processPackages [zavod]: executing diffoscope
+[2023-05-24 17:49:37] INFO root fetch - processPackages [zavod]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/zavod-0.6.2.tar.gz tmp/zavod-0.6.3.tar.gz --markdown 20230524/z/zavod/0.6.2-0.6.3/diff.md --exclude *.pyd
+[2023-05-24 17:49:38] INFO root fetch - processPackages [genomenotebook]: New version: [0.6.1] Old Version: [0.6.0]
+[2023-05-24 17:49:38] INFO root fetch - processPackages [genomenotebook]: Downloading https://files.pythonhosted.org/packages/ec/1b/140267eb550520cfc2cbd656da9d3a2c5d82a73e517f6ddd568266f09df2/genomenotebook-0.6.0.tar.gz
+[2023-05-24 17:49:38] INFO root fetch - processPackages [pvbm]: Start processing: PyGeodesy
+[2023-05-24 17:49:38] INFO root fetch - main [MainThread]: End processing [pvbm]: success
+[2023-05-24 17:49:38] INFO root fetch - processPackages [PyGeodesy]: New version: [23.5.21] Old Version: [23.4.6]
+[2023-05-24 17:49:38] WARNING root fetch - processPackages [genomenotebook]: Skipping package: exceeds size limit 21354819>=10485760
+[2023-05-24 17:49:38] INFO root fetch - main [MainThread]: End processing [genomenotebook] error
+[2023-05-24 17:49:38] INFO root fetch - processPackages [PyGeodesy]: executing diffoscope
+[2023-05-24 17:49:38] INFO root fetch - processPackages [PyGeodesy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PyGeodesy-23.4.6.zip tmp/PyGeodesy-23.5.21.zip --markdown 20230524/P/PyGeodesy/23.4.6-23.5.21/diff.md --exclude *.pyd
+[2023-05-24 17:49:39] INFO root fetch - main [MainThread]: End processing [oarepo-model-builder]: success
+[2023-05-24 17:49:39] INFO root fetch - main [MainThread]: End processing [zavod]: success
+[2023-05-24 17:49:39] INFO root fetch - main [MainThread]: End processing [soil]: success
+[2023-05-24 17:49:40] INFO root fetch - main [MainThread]: End processing [synapse]: success
+[2023-05-24 17:49:40] INFO root fetch - main [MainThread]: End processing [lti-consumer-xblock]: success
+[2023-05-24 17:49:40] INFO root fetch - main [MainThread]: End processing [pyflp]: success
+[2023-05-24 17:49:42] INFO root fetch - main [MainThread]: End processing [scrapere]: success
+[2023-05-24 17:50:33] INFO root fetch - main [MainThread]: End processing [PyGeodesy]: success
+[2023-05-24 17:50:38] INFO root fetch - main [MainThread]: End processing [topoly]: success
+[2023-05-24 17:50:38] INFO root fetch - main [MainThread]: Store serial: [18232166]
