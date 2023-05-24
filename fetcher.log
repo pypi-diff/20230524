@@ -13531,3 +13531,71 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd4 in position 72: invalid
 [2023-05-24 13:16:08] INFO root fetch - main [MainThread]: End processing [fluidsim]: success
 [2023-05-24 13:16:45] INFO root fetch - main [MainThread]: End processing [linkedinpdfextractor]: success
 [2023-05-24 13:16:45] INFO root fetch - main [MainThread]: Store serial: [18228710]
+[2023-05-24 13:21:49] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18228710]
+[2023-05-24 13:21:54] INFO root fetch - main [MainThread]: Found 11 changed packages
+[2023-05-24 13:21:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pyRaTS
+[2023-05-24 13:21:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: os2ds-rules
+[2023-05-24 13:21:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: dav-tools
+[2023-05-24 13:21:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: rust-contracts-builder
+[2023-05-24 13:21:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pysimflow
+[2023-05-24 13:21:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: eobi
+[2023-05-24 13:21:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: fundamentals
+[2023-05-24 13:21:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: dav-tools
+[2023-05-24 13:21:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: tradingcomdados
+[2023-05-24 13:21:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: alphamed-federated
+[2023-05-24 13:21:54] INFO root fetch - processPackages [pysimflow]: New version: [0.0.38] Old Version: [0.0.37]
+[2023-05-24 13:21:54] INFO root fetch - processPackages [dav-tools]: New version: [0.0.4] Old Version: [0.0.2]
+[2023-05-24 13:21:54] INFO root fetch - processPackages [rust-contracts-builder]: New version: [0.2.6] Old Version: [0.2.5]
+[2023-05-24 13:21:54] INFO root fetch - processPackages [dav-tools]: New version: [0.0.4] Old Version: [0.0.2]
+[2023-05-24 13:21:54] INFO root fetch - processPackages [pyRaTS]: New version: [0.20] Old Version: [0.15]
+[2023-05-24 13:21:54] INFO root fetch - processPackages [os2ds-rules]: New version: [0.0.8] Old Version: [0.0.7]
+[2023-05-24 13:21:54] WARNING root fetch - processPackages [tradingcomdados]: Skipping, unable to determine old version
+[2023-05-24 13:21:54] INFO root fetch - processPackages [tradingcomdados]: Start processing: keyauth-tech
+[2023-05-24 13:21:54] INFO root fetch - main [MainThread]: End processing [tradingcomdados] error
+[2023-05-24 13:21:54] INFO root fetch - processPackages [eobi]: New version: [1.1.4] Old Version: [1.1.2]
+[2023-05-24 13:21:54] INFO root fetch - processPackages [alphamed-federated]: New version: [0.4.9] Old Version: [0.4.7]
+[2023-05-24 13:21:54] INFO root fetch - processPackages [fundamentals]: New version: [2.4.0] Old Version: [2.3.9]
+[2023-05-24 13:21:54] INFO root fetch - processPackages [rust-contracts-builder]: Downloading https://files.pythonhosted.org/packages/8b/94/f416546571b66085591c597a44d9e21333ebfebd0073b14ba96957f4cb5b/rust-contracts-builder-0.2.5.tar.gz
+[2023-05-24 13:21:54] INFO root fetch - processPackages [pysimflow]: Downloading https://files.pythonhosted.org/packages/07/84/e0df4904e1387ff2cfa097b3ca6a75b4ddf3f1ba79e80419b1c0e4e3ff5f/pysimflow-0.0.38.tar.gz
+[2023-05-24 13:21:54] WARNING root fetch - processPackages [keyauth-tech]: Skipping, unable to determine old version
+[2023-05-24 13:21:54] INFO root fetch - main [MainThread]: End processing [keyauth-tech] error
+[2023-05-24 13:21:55] INFO root fetch - processPackages [dav-tools]: Downloading https://files.pythonhosted.org/packages/8c/bf/3c4876651f72d127e4d4d35f09cfcf18c6f19aab4023b66463782e90129a/dav_tools-0.0.4.tar.gz
+[2023-05-24 13:21:55] INFO root fetch - processPackages [pyRaTS]: Downloading https://files.pythonhosted.org/packages/0c/4b/e623470fef17506bbd3559ec6c253385c80388fac4e4d8684f1f5d44c74b/pyRaTS-0.15.tar.gz
+[2023-05-24 13:21:55] INFO root fetch - processPackages [dav-tools]: Downloading https://files.pythonhosted.org/packages/8c/bf/3c4876651f72d127e4d4d35f09cfcf18c6f19aab4023b66463782e90129a/dav_tools-0.0.4.tar.gz
+[2023-05-24 13:21:55] INFO root fetch - processPackages [eobi]: Downloading https://files.pythonhosted.org/packages/52/1c/4f45d96bb41951a57a3fd563f19ac546833d11a875b522e0ddd0b73a690b/eobi-1.1.2.tar.gz
+[2023-05-24 13:21:55] INFO root fetch - processPackages [alphamed-federated]: Downloading https://files.pythonhosted.org/packages/e8/83/082b0c83a56d8a70bdfc30a0eb1109a622f93c6af0073287d331ba123a01/alphamed-federated-0.4.7.tar.gz
+[2023-05-24 13:21:55] INFO root fetch - processPackages [fundamentals]: Downloading https://files.pythonhosted.org/packages/96/9a/c398fb62c27293a0be3bfa124d07bcc764036e7bef2c3feedb39f4e86ed0/fundamentals-2.3.9.tar.gz
+[2023-05-24 13:21:55] INFO root fetch - processPackages [pysimflow]: executing diffoscope
+[2023-05-24 13:21:55] INFO root fetch - processPackages [pysimflow]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pysimflow-0.0.37.tar.gz tmp/pysimflow-0.0.38.tar.gz --markdown 20230524/p/pysimflow/0.0.37-0.0.38/diff.md --exclude *.pyd
+[2023-05-24 13:21:55] INFO root fetch - processPackages [dav-tools]: executing diffoscope
+[2023-05-24 13:21:55] INFO root fetch - processPackages [dav-tools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dav_tools-0.0.2.tar.gz tmp/dav_tools-0.0.4.tar.gz --markdown 20230524/d/dav-tools/0.0.2-0.0.4/diff.md --exclude *.pyd
+[2023-05-24 13:21:55] INFO root fetch - processPackages [dav-tools]: executing diffoscope
+[2023-05-24 13:21:55] INFO root fetch - processPackages [dav-tools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dav_tools-0.0.2.tar.gz tmp/dav_tools-0.0.4.tar.gz --markdown 20230524/d/dav-tools/0.0.2-0.0.4/diff.md --exclude *.pyd
+[2023-05-24 13:21:55] INFO root fetch - processPackages [os2ds-rules]: Downloading https://files.pythonhosted.org/packages/c1/37/7fda63dab4ea867efa8dbe133c0fa7df25ac5bfed23978cc80a30bd2acc7/os2ds-rules-0.0.8.tar.gz
+[2023-05-24 13:21:55] INFO root fetch - processPackages [rust-contracts-builder]: Downloading https://files.pythonhosted.org/packages/01/52/15d5e590462093c0147dc0af87d32dbdfeaac1800622826c9ba9ea252b1a/rust-contracts-builder-0.2.6.tar.gz
+[2023-05-24 13:21:55] INFO root fetch - processPackages [os2ds-rules]: executing diffoscope
+[2023-05-24 13:21:55] INFO root fetch - processPackages [os2ds-rules]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/os2ds-rules-0.0.7.tar.gz tmp/os2ds-rules-0.0.8.tar.gz --markdown 20230524/o/os2ds-rules/0.0.7-0.0.8/diff.md --exclude *.pyd
+[2023-05-24 13:21:55] INFO root fetch - processPackages [fundamentals]: Downloading https://files.pythonhosted.org/packages/14/eb/ee57c37a51c12f94e5c613604d021b5c9799708f4207e3bcd8449a885c62/fundamentals-2.4.0.tar.gz
+[2023-05-24 13:21:55] INFO root fetch - processPackages [eobi]: Downloading https://files.pythonhosted.org/packages/1f/4f/ff036f988833a92855eb066f0f9ddca631f9ca16e13ed2e99ccc013c2235/eobi-1.1.4.tar.gz
+[2023-05-24 13:21:55] INFO root fetch - processPackages [rust-contracts-builder]: executing diffoscope
+[2023-05-24 13:21:55] INFO root fetch - processPackages [rust-contracts-builder]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rust-contracts-builder-0.2.5.tar.gz tmp/rust-contracts-builder-0.2.6.tar.gz --markdown 20230524/r/rust-contracts-builder/0.2.5-0.2.6/diff.md --exclude *.pyd
+[2023-05-24 13:21:55] INFO root fetch - processPackages [pyRaTS]: Downloading https://files.pythonhosted.org/packages/fc/b1/bf11796d6aa92059d342b6db42de00e0254fa416e041807dc621bb3f3db7/pyRaTS-0.20.tar.gz
+[2023-05-24 13:21:55] INFO root fetch - processPackages [fundamentals]: executing diffoscope
+[2023-05-24 13:21:55] INFO root fetch - processPackages [fundamentals]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fundamentals-2.3.9.tar.gz tmp/fundamentals-2.4.0.tar.gz --markdown 20230524/f/fundamentals/2.3.9-2.4.0/diff.md --exclude *.pyd
+[2023-05-24 13:21:55] INFO root fetch - processPackages [alphamed-federated]: Downloading https://files.pythonhosted.org/packages/20/59/180e8d786337647fbef22a1279a4458b8499ef846dff6c413c5a86f84e01/alphamed-federated-0.4.9.tar.gz
+[2023-05-24 13:21:55] INFO root fetch - processPackages [eobi]: executing diffoscope
+[2023-05-24 13:21:55] INFO root fetch - processPackages [eobi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/eobi-1.1.2.tar.gz tmp/eobi-1.1.4.tar.gz --markdown 20230524/e/eobi/1.1.2-1.1.4/diff.md --exclude *.pyd
+[2023-05-24 13:21:55] INFO root fetch - processPackages [pyRaTS]: executing diffoscope
+[2023-05-24 13:21:55] INFO root fetch - processPackages [pyRaTS]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyRaTS-0.15.tar.gz tmp/pyRaTS-0.20.tar.gz --markdown 20230524/p/pyRaTS/0.15-0.20/diff.md --exclude *.pyd
+[2023-05-24 13:21:55] INFO root fetch - processPackages [alphamed-federated]: executing diffoscope
+[2023-05-24 13:21:55] INFO root fetch - processPackages [alphamed-federated]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/alphamed-federated-0.4.7.tar.gz tmp/alphamed-federated-0.4.9.tar.gz --markdown 20230524/a/alphamed-federated/0.4.7-0.4.9/diff.md --exclude *.pyd
+[2023-05-24 13:21:56] INFO root fetch - main [MainThread]: End processing [dav-tools]: success
+[2023-05-24 13:21:56] INFO root fetch - main [MainThread]: End processing [dav-tools]: success
+[2023-05-24 13:21:56] INFO root fetch - main [MainThread]: End processing [rust-contracts-builder]: success
+[2023-05-24 13:21:56] INFO root fetch - main [MainThread]: End processing [os2ds-rules]: success
+[2023-05-24 13:21:56] INFO root fetch - main [MainThread]: End processing [eobi]: success
+[2023-05-24 13:21:56] INFO root fetch - main [MainThread]: End processing [pysimflow]: success
+[2023-05-24 13:21:56] INFO root fetch - main [MainThread]: End processing [pyRaTS]: success
+[2023-05-24 13:21:57] INFO root fetch - main [MainThread]: End processing [fundamentals]: success
+[2023-05-24 13:21:58] INFO root fetch - main [MainThread]: End processing [alphamed-federated]: success
+[2023-05-24 13:21:58] INFO root fetch - main [MainThread]: Store serial: [18228755]
