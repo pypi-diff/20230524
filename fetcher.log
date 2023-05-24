@@ -6351,3 +6351,50 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-05-24 05:12:04] INFO root fetch - main [MainThread]: End processing [aind-data-transfer]: success
 [2023-05-24 05:12:46] INFO root fetch - main [MainThread]: End processing [Slpapy]: success
 [2023-05-24 05:12:46] INFO root fetch - main [MainThread]: Store serial: [18224339]
+[2023-05-24 05:17:49] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18224339]
+[2023-05-24 05:17:54] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-05-24 05:17:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: odoo12-addon-website-sale-resource-booking
+[2023-05-24 05:17:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: typing-extensions
+[2023-05-24 05:17:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: preston
+[2023-05-24 05:17:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: lowvision
+[2023-05-24 05:17:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: cis
+[2023-05-24 05:17:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: rapidpro-flow-tools
+[2023-05-24 05:17:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: cdktf-cdktf-provider-spotinst
+[2023-05-24 05:17:55] INFO root fetch - processPackages [rapidpro-flow-tools]: New version: [0.3.0] Old Version: [0.2.0]
+[2023-05-24 05:17:55] INFO root fetch - processPackages [preston]: New version: [4.1.1] Old Version: [4.1.0]
+[2023-05-24 05:17:55] INFO root fetch - processPackages [odoo12-addon-website-sale-resource-booking]: New version: [12.0.1.0.1.99.dev1] Old Version: [12.0.1.0.1]
+[2023-05-24 05:17:55] INFO root fetch - processPackages [lowvision]: New version: [0.2.1] Old Version: [0.2.0]
+[2023-05-24 05:17:55] INFO root fetch - processPackages [typing-extensions]: New version: [4.6.1] Old Version: [4.6.0]
+[2023-05-24 05:17:55] INFO root fetch - processPackages [cdktf-cdktf-provider-spotinst]: New version: [7.0.4] Old Version: [7.0.3]
+[2023-05-24 05:17:55] INFO root fetch - processPackages [cis]: New version: [1.7.8] Old Version: [1.7.7]
+[2023-05-24 05:17:55] INFO root fetch - processPackages [rapidpro-flow-tools]: executing diffoscope
+[2023-05-24 05:17:55] INFO root fetch - processPackages [rapidpro-flow-tools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rapidpro_flow_tools-0.2.0.tar.gz tmp/rapidpro_flow_tools-0.3.0.tar.gz --markdown 20230524/r/rapidpro-flow-tools/0.2.0-0.3.0/diff.md --exclude *.pyd
+[2023-05-24 05:17:55] INFO root fetch - processPackages [preston]: Downloading https://files.pythonhosted.org/packages/90/2e/2e62a5623443ea34bef8985b95db104b518853630216502a7b653945252a/Preston-4.1.0.tar.gz
+[2023-05-24 05:17:55] INFO root fetch - processPackages [lowvision]: Downloading https://files.pythonhosted.org/packages/04/f9/8b07c62db6bab1e9da776c6df0f6c277d7233e3e9dd7eb95f55097baf37c/lowvision-0.2.0.tar.gz
+[2023-05-24 05:17:55] INFO root fetch - processPackages [odoo12-addon-website-sale-resource-booking]: Downloading https://files.pythonhosted.org/packages/33/08/5637b5bfb0c530c9c5d69c4a3174a91caa091b720309c3962b00dbfaaa79/odoo12_addon_website_sale_resource_booking-12.0.1.0.1-py3-none-any.whl
+[2023-05-24 05:17:55] INFO root fetch - processPackages [cdktf-cdktf-provider-spotinst]: Downloading https://files.pythonhosted.org/packages/cf/da/06ad66cae278e5b5fc32ad34dd7ee057b6228d362381f858b2698dd3ac12/cdktf-cdktf-provider-spotinst-7.0.3.tar.gz
+[2023-05-24 05:17:55] INFO root fetch - processPackages [cis]: Downloading https://files.pythonhosted.org/packages/61/b6/ddc0d0edfd99d79bcc0cb57a4fbde903eec6f80304abfd5be965e644d3e3/cis-1.7.7.tar.gz
+[2023-05-24 05:17:55] INFO root fetch - processPackages [typing-extensions]: Downloading https://files.pythonhosted.org/packages/aa/67/f4e6ae6998b0c86ab10f8e96339f00afaf30bef11f63a81c63977c2b89d7/typing_extensions-4.6.1.tar.gz
+[2023-05-24 05:17:55] WARNING root fetch - processPackages [cis]: Skipping package: exceeds size limit 22195521>=10485760
+[2023-05-24 05:17:55] INFO root fetch - main [MainThread]: End processing [cis] error
+[2023-05-24 05:17:55] INFO root fetch - processPackages [typing-extensions]: executing diffoscope
+[2023-05-24 05:17:55] INFO root fetch - processPackages [typing-extensions]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/typing_extensions-4.6.0.tar.gz tmp/typing_extensions-4.6.1.tar.gz --markdown 20230524/t/typing-extensions/4.6.0-4.6.1/diff.md --exclude *.pyd
+[2023-05-24 05:17:55] INFO root fetch - processPackages [lowvision]: Downloading https://files.pythonhosted.org/packages/36/fe/97d94bd7694e884517ec6583c7f8850f15a039e2108762d43e2229a1795d/lowvision-0.2.1.tar.gz
+[2023-05-24 05:17:55] INFO root fetch - processPackages [preston]: Downloading https://files.pythonhosted.org/packages/ec/73/f22e362112a871cae830006166264038ab6d3765f8e8057544c4a395561d/preston-4.1.1.tar.gz
+[2023-05-24 05:17:55] INFO root fetch - processPackages [odoo12-addon-website-sale-resource-booking]: Downloading https://files.pythonhosted.org/packages/f7/ad/a7b37c1df003ae5902256498d980c53a4339ef141ee0039b565e91a30c2c/odoo12_addon_website_sale_resource_booking-12.0.1.0.1.99.dev1-py3-none-any.whl
+[2023-05-24 05:17:55] INFO root fetch - processPackages [preston]: executing diffoscope
+[2023-05-24 05:17:55] INFO root fetch - processPackages [preston]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Preston-4.1.0.tar.gz tmp/preston-4.1.1.tar.gz --markdown 20230524/p/preston/4.1.0-4.1.1/diff.md --exclude *.pyd
+[2023-05-24 05:17:55] INFO root fetch - processPackages [lowvision]: executing diffoscope
+[2023-05-24 05:17:55] INFO root fetch - processPackages [lowvision]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lowvision-0.2.0.tar.gz tmp/lowvision-0.2.1.tar.gz --markdown 20230524/l/lowvision/0.2.0-0.2.1/diff.md --exclude *.pyd
+[2023-05-24 05:17:55] INFO root fetch - processPackages [odoo12-addon-website-sale-resource-booking]: executing diffoscope
+[2023-05-24 05:17:55] INFO root fetch - processPackages [odoo12-addon-website-sale-resource-booking]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo12_addon_website_sale_resource_booking-12.0.1.0.1-py3-none-any.whl.zip tmp/odoo12_addon_website_sale_resource_booking-12.0.1.0.1.99.dev1-py3-none-any.whl.zip --markdown 20230524/o/odoo12-addon-website-sale-resource-booking/12.0.1.0.1-12.0.1.0.1.99.dev1/diff.md --exclude *.pyd
+[2023-05-24 05:17:56] INFO root fetch - processPackages [cdktf-cdktf-provider-spotinst]: Downloading https://files.pythonhosted.org/packages/ca/4b/0243855501941c557262a36d5d9c1c6a38685d44c0f03eae3313032a46cb/cdktf-cdktf-provider-spotinst-7.0.4.tar.gz
+[2023-05-24 05:17:56] INFO root fetch - main [MainThread]: End processing [typing-extensions]: success
+[2023-05-24 05:17:56] INFO root fetch - main [MainThread]: End processing [preston]: success
+[2023-05-24 05:17:56] INFO root fetch - main [MainThread]: End processing [lowvision]: success
+[2023-05-24 05:17:56] INFO root fetch - processPackages [cdktf-cdktf-provider-spotinst]: executing diffoscope
+[2023-05-24 05:17:56] INFO root fetch - processPackages [cdktf-cdktf-provider-spotinst]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdktf-cdktf-provider-spotinst-7.0.3.tar.gz tmp/cdktf-cdktf-provider-spotinst-7.0.4.tar.gz --markdown 20230524/c/cdktf-cdktf-provider-spotinst/7.0.3-7.0.4/diff.md --exclude *.pyd
+[2023-05-24 05:17:56] INFO root fetch - main [MainThread]: End processing [odoo12-addon-website-sale-resource-booking]: success
+[2023-05-24 05:17:58] INFO root fetch - main [MainThread]: End processing [rapidpro-flow-tools]: success
+[2023-05-24 05:18:02] INFO root fetch - main [MainThread]: End processing [cdktf-cdktf-provider-spotinst]: success
+[2023-05-24 05:18:02] INFO root fetch - main [MainThread]: Store serial: [18224358]
