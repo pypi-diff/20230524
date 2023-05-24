@@ -5812,3 +5812,30 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-05-24 04:14:04] INFO root fetch - main [MainThread]: End processing [tencentcloud-sdk-python-yunjing]: success
 [2023-05-24 04:14:48] INFO root fetch - main [MainThread]: End processing [tencentcloud-sdk-python-youmall]: success
 [2023-05-24 04:14:48] INFO root fetch - main [MainThread]: Store serial: [18224024]
+[2023-05-24 04:19:53] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18224024]
+[2023-05-24 04:19:58] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-05-24 04:19:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: passfortify
+[2023-05-24 04:19:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: lineagex
+[2023-05-24 04:19:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: storage-local
+[2023-05-24 04:19:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: custardpy
+[2023-05-24 04:19:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: dashscope
+[2023-05-24 04:19:58] INFO root fetch - processPackages [custardpy]: New version: [0.4.5] Old Version: [0.4.4]
+[2023-05-24 04:19:58] WARNING root fetch - processPackages [passfortify]: Skipping, unable to determine old version
+[2023-05-24 04:19:58] INFO root fetch - processPackages [lineagex]: New version: [0.0.5a5] Old Version: [0.0.5a4]
+[2023-05-24 04:19:58] INFO root fetch - main [MainThread]: End processing [passfortify] error
+[2023-05-24 04:19:58] INFO root fetch - processPackages [dashscope]: New version: [1.1.1] Old Version: [1.1.0]
+[2023-05-24 04:19:58] WARNING root fetch - processPackages [storage-local]: Skipping, unable to determine old version
+[2023-05-24 04:19:58] INFO root fetch - main [MainThread]: End processing [storage-local] error
+[2023-05-24 04:19:58] INFO root fetch - processPackages [lineagex]: Downloading https://files.pythonhosted.org/packages/57/fd/2c689264b9d27bc9c10c257a67fbfe614051eb3f2318078a434a1777380a/lineagex-0.0.5a5.tar.gz
+[2023-05-24 04:19:58] INFO root fetch - processPackages [custardpy]: Downloading https://files.pythonhosted.org/packages/75/b9/b0ec679837f9684f48d1e72e40caf98dffbd8d863caf94327a195b4f8bfc/custardpy-0.4.5-py3-none-any.whl
+[2023-05-24 04:19:58] INFO root fetch - processPackages [custardpy]: executing diffoscope
+[2023-05-24 04:19:58] INFO root fetch - processPackages [custardpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/custardpy-0.4.4-py3-none-any.whl.zip tmp/custardpy-0.4.5-py3-none-any.whl.zip --markdown 20230524/c/custardpy/0.4.4-0.4.5/diff.md --exclude *.pyd
+[2023-05-24 04:19:58] INFO root fetch - processPackages [dashscope]: Downloading https://files.pythonhosted.org/packages/65/c3/10c0c5d8e82371087d651b32e5c835716fd406e2e62087f56bb62c0461ac/dashscope-1.1.1-py3-none-any.whl
+[2023-05-24 04:19:58] INFO root fetch - processPackages [dashscope]: executing diffoscope
+[2023-05-24 04:19:58] INFO root fetch - processPackages [dashscope]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dashscope-1.1.0-py3-none-any.whl.zip tmp/dashscope-1.1.1-py3-none-any.whl.zip --markdown 20230524/d/dashscope/1.1.0-1.1.1/diff.md --exclude *.pyd
+[2023-05-24 04:19:58] INFO root fetch - processPackages [lineagex]: executing diffoscope
+[2023-05-24 04:19:58] INFO root fetch - processPackages [lineagex]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lineagex-0.0.5a4.tar.gz tmp/lineagex-0.0.5a5.tar.gz --markdown 20230524/l/lineagex/0.0.5a4-0.0.5a5/diff.md --exclude *.pyd
+[2023-05-24 04:19:59] INFO root fetch - main [MainThread]: End processing [custardpy]: success
+[2023-05-24 04:19:59] INFO root fetch - main [MainThread]: End processing [dashscope]: success
+[2023-05-24 04:20:00] INFO root fetch - main [MainThread]: End processing [lineagex]: success
+[2023-05-24 04:20:00] INFO root fetch - main [MainThread]: Store serial: [18224044]
