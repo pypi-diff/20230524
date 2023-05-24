@@ -1379,3 +1379,75 @@ EOFError: EOF read where object expected
 [2023-05-24 02:16:00] INFO root fetch - main [MainThread]: End processing [pepperize.cdk-github]: success
 [2023-05-24 02:16:01] INFO root fetch - main [MainThread]: End processing [xenoslib]: success
 [2023-05-24 02:16:01] INFO root fetch - main [MainThread]: Store serial: [18221319]
+[2023-05-24 02:21:04] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18221319]
+[2023-05-24 02:21:09] INFO root fetch - main [MainThread]: Found 13 changed packages
+[2023-05-24 02:21:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: zxkane.cdk-construct-simple-nat
+[2023-05-24 02:21:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: jutility
+[2023-05-24 02:21:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: foliage
+[2023-05-24 02:21:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: cdk8s-valheim
+[2023-05-24 02:21:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: momento
+[2023-05-24 02:21:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: cdk-secret-manager-wrapper-layer
+[2023-05-24 02:21:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: pepperize.cdk-github
+[2023-05-24 02:21:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: unifi-protect-backup
+[2023-05-24 02:21:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: cdktf-surreal-backend
+[2023-05-24 02:21:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: cdk-budibase
+[2023-05-24 02:21:09] INFO root fetch - processPackages [cdktf-surreal-backend]: New version: [1.0.99] Old Version: [1.0.98]
+[2023-05-24 02:21:09] INFO root fetch - processPackages [cdk8s-valheim]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-24 02:21:09] INFO root fetch - processPackages [pepperize.cdk-github]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-05-24 02:21:09] INFO root fetch - processPackages [zxkane.cdk-construct-simple-nat]: New version: [0.2.99] Old Version: [0.2.98]
+[2023-05-24 02:21:09] INFO root fetch - processPackages [cdk-secret-manager-wrapper-layer]: New version: [2.0.99] Old Version: [2.0.98]
+[2023-05-24 02:21:09] INFO root fetch - processPackages [jutility]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-24 02:21:09] INFO root fetch - processPackages [momento]: New version: [1.5.0] Old Version: [1.4.0]
+[2023-05-24 02:21:09] INFO root fetch - processPackages [unifi-protect-backup]: New version: [0.9.2] Old Version: [0.9.1]
+[2023-05-24 02:21:09] INFO root fetch - processPackages [pepperize.cdk-github]: executing diffoscope
+[2023-05-24 02:21:09] INFO root fetch - processPackages [pepperize.cdk-github]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pepperize.cdk-github-0.0.98.tar.gz tmp/pepperize.cdk-github-0.0.99.tar.gz --markdown 20230524/p/pepperize.cdk-github/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-05-24 02:21:09] INFO root fetch - processPackages [cdktf-surreal-backend]: executing diffoscope
+[2023-05-24 02:21:09] INFO root fetch - processPackages [cdktf-surreal-backend]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdktf-surreal-backend-1.0.98.tar.gz tmp/cdktf-surreal-backend-1.0.99.tar.gz --markdown 20230524/c/cdktf-surreal-backend/1.0.98-1.0.99/diff.md --exclude *.pyd
+[2023-05-24 02:21:09] INFO root fetch - processPackages [cdk-budibase]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-24 02:21:09] INFO root fetch - processPackages [foliage]: New version: [1.6.0] Old Version: [1.5.5]
+[2023-05-24 02:21:10] INFO root fetch - processPackages [zxkane.cdk-construct-simple-nat]: executing diffoscope
+[2023-05-24 02:21:10] INFO root fetch - processPackages [zxkane.cdk-construct-simple-nat]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/zxkane.cdk-construct-simple-nat-0.2.98.tar.gz tmp/zxkane.cdk-construct-simple-nat-0.2.99.tar.gz --markdown 20230524/z/zxkane.cdk-construct-simple-nat/0.2.98-0.2.99/diff.md --exclude *.pyd
+[2023-05-24 02:21:10] INFO root fetch - processPackages [cdk-secret-manager-wrapper-layer]: executing diffoscope
+[2023-05-24 02:21:10] INFO root fetch - processPackages [cdk-secret-manager-wrapper-layer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-secret-manager-wrapper-layer-2.0.98.tar.gz tmp/cdk-secret-manager-wrapper-layer-2.0.99.tar.gz --markdown 20230524/c/cdk-secret-manager-wrapper-layer/2.0.98-2.0.99/diff.md --exclude *.pyd
+[2023-05-24 02:21:10] INFO root fetch - processPackages [cdk-budibase]: executing diffoscope
+[2023-05-24 02:21:10] INFO root fetch - processPackages [cdk-budibase]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-budibase-0.0.8.tar.gz tmp/cdk-budibase-0.0.9.tar.gz --markdown 20230524/c/cdk-budibase/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-24 02:21:10] INFO root fetch - processPackages [cdk8s-valheim]: executing diffoscope
+[2023-05-24 02:21:10] INFO root fetch - processPackages [cdk8s-valheim]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk8s-valheim-0.0.8.tar.gz tmp/cdk8s-valheim-0.0.9.tar.gz --markdown 20230524/c/cdk8s-valheim/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-24 02:21:10] INFO root fetch - processPackages [unifi-protect-backup]: Downloading https://files.pythonhosted.org/packages/06/9f/3c22505698b1ee9fac1e7875452f135100476d0ab0c622b547b888d624d6/unifi_protect_backup-0.9.1.tar.gz
+[2023-05-24 02:21:10] INFO root fetch - processPackages [foliage]: Downloading https://files.pythonhosted.org/packages/d4/ff/e0d123b84cbb63a4f5720912b7b5b7c1c25392ec7bb6b44a540cbe081c9a/foliage-1.5.5.tar.gz
+[2023-05-24 02:21:10] INFO root fetch - processPackages [momento]: Downloading https://files.pythonhosted.org/packages/ac/5e/581788b7d54bcec0b16befa799dc6aec12d67c519e4f42fb8de342533dee/momento-1.5.0.tar.gz
+[2023-05-24 02:21:10] INFO root fetch - processPackages [jutility]: executing diffoscope
+[2023-05-24 02:21:10] INFO root fetch - processPackages [jutility]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jutility-0.0.8.tar.gz tmp/jutility-0.0.9.tar.gz --markdown 20230524/j/jutility/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-24 02:21:10] INFO root fetch - processPackages [momento]: executing diffoscope
+[2023-05-24 02:21:10] INFO root fetch - processPackages [momento]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/momento-1.4.0.tar.gz tmp/momento-1.5.0.tar.gz --markdown 20230524/m/momento/1.4.0-1.5.0/diff.md --exclude *.pyd
+[2023-05-24 02:21:10] INFO root fetch - processPackages [foliage]: Downloading https://files.pythonhosted.org/packages/45/c6/42a79395283d280b8c6b9c70a46290d5b7a8ddd215da86afc9a952c3d144/foliage-1.6.0.tar.gz
+[2023-05-24 02:21:10] INFO root fetch - processPackages [unifi-protect-backup]: Downloading https://files.pythonhosted.org/packages/ea/1d/e5d959dc80051fb8331b2936b70120e1c55805bc2b9c4d0ab1b2b595cda5/unifi_protect_backup-0.9.2.tar.gz
+[2023-05-24 02:21:10] INFO root fetch - processPackages [foliage]: executing diffoscope
+[2023-05-24 02:21:10] INFO root fetch - processPackages [foliage]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/foliage-1.5.5.tar.gz tmp/foliage-1.6.0.tar.gz --markdown 20230524/f/foliage/1.5.5-1.6.0/diff.md --exclude *.pyd
+[2023-05-24 02:21:10] INFO root fetch - processPackages [unifi-protect-backup]: executing diffoscope
+[2023-05-24 02:21:10] INFO root fetch - processPackages [unifi-protect-backup]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/unifi_protect_backup-0.9.1.tar.gz tmp/unifi_protect_backup-0.9.2.tar.gz --markdown 20230524/u/unifi-protect-backup/0.9.1-0.9.2/diff.md --exclude *.pyd
+[2023-05-24 02:21:11] INFO root fetch - processPackages [cdk-secret-manager-wrapper-layer]: Start processing: geodistance
+[2023-05-24 02:21:11] INFO root fetch - main [MainThread]: End processing [cdk-secret-manager-wrapper-layer]: success
+[2023-05-24 02:21:11] INFO root fetch - processPackages [pepperize.cdk-github]: Start processing: cim-graph
+[2023-05-24 02:21:11] INFO root fetch - main [MainThread]: End processing [pepperize.cdk-github]: success
+[2023-05-24 02:21:11] INFO root fetch - processPackages [cim-graph]: New version: [2023.5.1a2] Old Version: [2023.5.1a1]
+[2023-05-24 02:21:11] INFO root fetch - processPackages [cdktf-surreal-backend]: Start processing: cdk-amazon-chime-resources
+[2023-05-24 02:21:11] INFO root fetch - main [MainThread]: End processing [cdktf-surreal-backend]: success
+[2023-05-24 02:21:11] INFO root fetch - processPackages [cdk-amazon-chime-resources]: New version: [2.3.9] Old Version: [2.3.8]
+[2023-05-24 02:21:11] WARNING root fetch - processPackages [geodistance]: Skipping, unable to determine old version
+[2023-05-24 02:21:11] INFO root fetch - main [MainThread]: End processing [geodistance] error
+[2023-05-24 02:21:11] INFO root fetch - processPackages [cdk-amazon-chime-resources]: Downloading https://files.pythonhosted.org/packages/15/ac/bee4d7971c4b31f5809d546f8f4d120d37a258cdbfb28775825c6a72b324/cdk-amazon-chime-resources-2.3.8.tar.gz
+[2023-05-24 02:21:11] INFO root fetch - main [MainThread]: End processing [cdk8s-valheim]: success
+[2023-05-24 02:21:11] WARNING root fetch - processPackages [cdk-amazon-chime-resources]: Skipping package: exceeds size limit 14200774>=10485760
+[2023-05-24 02:21:11] INFO root fetch - main [MainThread]: End processing [cdk-amazon-chime-resources] error
+[2023-05-24 02:21:11] INFO root fetch - processPackages [cim-graph]: Downloading https://files.pythonhosted.org/packages/51/61/1cb7b07fd8ce506ab1dfa86c6dee786e9a4481d0d9abf63968120160a484/cim_graph-2023.5.1a2.tar.gz
+[2023-05-24 02:21:11] INFO root fetch - main [MainThread]: End processing [jutility]: success
+[2023-05-24 02:21:11] INFO root fetch - processPackages [cim-graph]: executing diffoscope
+[2023-05-24 02:21:11] INFO root fetch - processPackages [cim-graph]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cim_graph-2023.5.1a1.tar.gz tmp/cim_graph-2023.5.1a2.tar.gz --markdown 20230524/c/cim-graph/2023.5.1a1-2023.5.1a2/diff.md --exclude *.pyd
+[2023-05-24 02:21:11] INFO root fetch - main [MainThread]: End processing [unifi-protect-backup]: success
+[2023-05-24 02:21:12] INFO root fetch - main [MainThread]: End processing [zxkane.cdk-construct-simple-nat]: success
+[2023-05-24 02:21:12] INFO root fetch - main [MainThread]: End processing [momento]: success
+[2023-05-24 02:21:12] INFO root fetch - main [MainThread]: End processing [foliage]: success
+[2023-05-24 02:21:12] INFO root fetch - main [MainThread]: End processing [cdk-budibase]: success
+[2023-05-24 02:21:13] INFO root fetch - main [MainThread]: End processing [cim-graph]: success
+[2023-05-24 02:21:13] INFO root fetch - main [MainThread]: Store serial: [18221361]
