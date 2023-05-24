@@ -19959,3 +19959,132 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd4 in position 72: invalid
 [2023-05-24 18:34:03] INFO root fetch - main [MainThread]: End processing [edc-model]: success
 [2023-05-24 18:34:03] INFO root fetch - main [MainThread]: End processing [edc-lab-panel]: success
 [2023-05-24 18:34:03] INFO root fetch - main [MainThread]: Store serial: [18232836]
+[2023-05-24 18:39:08] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18232836]
+[2023-05-24 18:39:13] INFO root fetch - main [MainThread]: Found 23 changed packages
+[2023-05-24 18:39:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: cloudsmith-api
+[2023-05-24 18:39:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: edc-pdf-reports
+[2023-05-24 18:39:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: storms
+[2023-05-24 18:39:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: edc-refusal
+[2023-05-24 18:39:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: aries-cloudcontroller
+[2023-05-24 18:39:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: domolibrary
+[2023-05-24 18:39:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: edc-model-admin
+[2023-05-24 18:39:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: matlab-tictoc
+[2023-05-24 18:39:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: stringtokenizer
+[2023-05-24 18:39:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: yarok
+[2023-05-24 18:39:13] INFO root fetch - processPackages [matlab-tictoc]: New version: [1.0.0] Old Version: [0.0.1]
+[2023-05-24 18:39:13] INFO root fetch - processPackages [domolibrary]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-24 18:39:13] INFO root fetch - processPackages [yarok]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-24 18:39:13] WARNING root fetch - processPackages [storms]: Skipping, unable to determine old version
+[2023-05-24 18:39:13] INFO root fetch - processPackages [storms]: Start processing: pyttygif
+[2023-05-24 18:39:13] INFO root fetch - main [MainThread]: End processing [storms] error
+[2023-05-24 18:39:13] INFO root fetch - processPackages [cloudsmith-api]: New version: [2.0.4] Old Version: [2.0.3]
+[2023-05-24 18:39:13] INFO root fetch - processPackages [edc-refusal]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-24 18:39:13] INFO root fetch - processPackages [domolibrary]: executing diffoscope
+[2023-05-24 18:39:13] INFO root fetch - processPackages [edc-pdf-reports]: New version: [0.3.9] Old Version: [0.3.13]
+[2023-05-24 18:39:13] INFO root fetch - processPackages [domolibrary]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/domolibrary-0.1.8.tar.gz tmp/domolibrary-0.1.9.tar.gz --markdown 20230524/d/domolibrary/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-24 18:39:13] INFO root fetch - processPackages [stringtokenizer]: New version: [1.1.5] Old Version: [1.1.3]
+[2023-05-24 18:39:13] INFO root fetch - processPackages [aries-cloudcontroller]: New version: [0.8.0rc9] Old Version: [0.8.0rc8]
+[2023-05-24 18:39:13] INFO root fetch - processPackages [edc-model-admin]: New version: [0.3.9] Old Version: [0.3.8]
+[2023-05-24 18:39:13] INFO root fetch - processPackages [pyttygif]: New version: [0.3.2] Old Version: [0.3.1]
+[2023-05-24 18:39:13] INFO root fetch - processPackages [matlab-tictoc]: Downloading https://files.pythonhosted.org/packages/af/44/1592539853ce44e44cb48044437bf5e2904ff0b419ff5944747f8f2555b2/matlab-tictoc-0.0.1.tar.gz
+[2023-05-24 18:39:13] INFO root fetch - processPackages [yarok]: executing diffoscope
+[2023-05-24 18:39:13] INFO root fetch - processPackages [yarok]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/yarok-0.0.8.tar.gz tmp/yarok-0.0.9.tar.gz --markdown 20230524/y/yarok/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-24 18:39:13] INFO root fetch - processPackages [edc-refusal]: Downloading https://files.pythonhosted.org/packages/85/2f/9360dbb5c9d3c4c8f59bd00d126e0effd3ac40e39e18b9cfae9c1dbe14bd/edc-refusal-0.1.8.tar.gz
+[2023-05-24 18:39:13] INFO root fetch - processPackages [pyttygif]: executing diffoscope
+[2023-05-24 18:39:13] INFO root fetch - processPackages [pyttygif]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyttygif-0.3.1.tar.gz tmp/pyttygif-0.3.2.tar.gz --markdown 20230524/p/pyttygif/0.3.1-0.3.2/diff.md --exclude *.pyd
+[2023-05-24 18:39:13] INFO root fetch - processPackages [edc-pdf-reports]: Downloading https://files.pythonhosted.org/packages/f7/1e/04cf743f5039ef5162a938c4bad31f37307a0fbf2b52a6aee3b82c0e7367/edc-pdf-reports-0.3.13.tar.gz
+[2023-05-24 18:39:13] INFO root fetch - processPackages [edc-model-admin]: Downloading https://files.pythonhosted.org/packages/8e/24/d1d3372dddbcec39a17d98c5d62dc8c2f67219eac6dffdf828c392ef807f/edc_model_admin-0.3.8-py3-none-any.whl
+[2023-05-24 18:39:13] INFO root fetch - processPackages [cloudsmith-api]: Downloading https://files.pythonhosted.org/packages/03/ba/99f42737ed331a70758e6f201552a1a875a556b012470266ccea563435b1/cloudsmith_api-2.0.4-py2.py3-none-any.whl
+[2023-05-24 18:39:13] INFO root fetch - processPackages [matlab-tictoc]: Downloading https://files.pythonhosted.org/packages/b1/63/092a19fa4474b88df5c7d00b0d184f2ca127e7a1a0e7c7be42ee62f4a91d/matlab-tictoc-1.0.0.tar.gz
+[2023-05-24 18:39:13] INFO root fetch - processPackages [stringtokenizer]: Downloading https://files.pythonhosted.org/packages/33/2d/a2d895b9d9bc2c7c291beb6648cfac2e1895c7a1576cd0c04cd3b751d7a5/stringtokenizer-1.1.5.tar.gz
+[2023-05-24 18:39:13] INFO root fetch - processPackages [cloudsmith-api]: executing diffoscope
+[2023-05-24 18:39:13] INFO root fetch - processPackages [cloudsmith-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cloudsmith_api-2.0.3-py2.py3-none-any.whl.zip tmp/cloudsmith_api-2.0.4-py2.py3-none-any.whl.zip --markdown 20230524/c/cloudsmith-api/2.0.3-2.0.4/diff.md --exclude *.pyd
+[2023-05-24 18:39:13] INFO root fetch - processPackages [stringtokenizer]: executing diffoscope
+[2023-05-24 18:39:13] INFO root fetch - processPackages [stringtokenizer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/stringtokenizer-1.1.3.tar.gz tmp/stringtokenizer-1.1.5.tar.gz --markdown 20230524/s/stringtokenizer/1.1.3-1.1.5/diff.md --exclude *.pyd
+[2023-05-24 18:39:13] INFO root fetch - processPackages [aries-cloudcontroller]: executing diffoscope
+[2023-05-24 18:39:13] INFO root fetch - processPackages [aries-cloudcontroller]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aries_cloudcontroller-0.8.0rc8.tar.gz tmp/aries_cloudcontroller-0.8.0rc9.tar.gz --markdown 20230524/a/aries-cloudcontroller/0.8.0rc8-0.8.0rc9/diff.md --exclude *.pyd
+[2023-05-24 18:39:13] INFO root fetch - processPackages [edc-refusal]: Downloading https://files.pythonhosted.org/packages/f9/dd/3af8a57aa77f54dfafdaf716406e4f887df2fc34091c28a47516798ff7bd/edc-refusal-0.1.9.tar.gz
+[2023-05-24 18:39:13] INFO root fetch - processPackages [edc-pdf-reports]: Downloading https://files.pythonhosted.org/packages/f6/f9/ff5521ba26ca2c42105ff66e6fdbe57e998921d1287d264e0a6754ede2fe/edc-pdf-reports-0.3.9.tar.gz
+[2023-05-24 18:39:13] INFO root fetch - processPackages [matlab-tictoc]: executing diffoscope
+[2023-05-24 18:39:13] INFO root fetch - processPackages [matlab-tictoc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/matlab-tictoc-0.0.1.tar.gz tmp/matlab-tictoc-1.0.0.tar.gz --markdown 20230524/m/matlab-tictoc/0.0.1-1.0.0/diff.md --exclude *.pyd
+[2023-05-24 18:39:13] INFO root fetch - processPackages [edc-model-admin]: Downloading https://files.pythonhosted.org/packages/4f/db/c8ef59cf96e2f3bf3460d5b4a7dc1f6adf0b4e1ec89227788583de019595/edc_model_admin-0.3.9-py3-none-any.whl
+[2023-05-24 18:39:13] INFO root fetch - processPackages [edc-refusal]: executing diffoscope
+[2023-05-24 18:39:13] INFO root fetch - processPackages [edc-refusal]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/edc-refusal-0.1.8.tar.gz tmp/edc-refusal-0.1.9.tar.gz --markdown 20230524/e/edc-refusal/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-24 18:39:14] INFO root fetch - processPackages [edc-model-admin]: executing diffoscope
+[2023-05-24 18:39:14] INFO root fetch - processPackages [edc-model-admin]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/edc_model_admin-0.3.8-py3-none-any.whl.zip tmp/edc_model_admin-0.3.9-py3-none-any.whl.zip --markdown 20230524/e/edc-model-admin/0.3.8-0.3.9/diff.md --exclude *.pyd
+[2023-05-24 18:39:14] INFO root fetch - processPackages [edc-pdf-reports]: executing diffoscope
+[2023-05-24 18:39:14] INFO root fetch - processPackages [edc-pdf-reports]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/edc-pdf-reports-0.3.13.tar.gz tmp/edc-pdf-reports-0.3.9.tar.gz --markdown 20230524/e/edc-pdf-reports/0.3.13-0.3.9/diff.md --exclude *.pyd
+[2023-05-24 18:39:15] INFO root fetch - processPackages [stringtokenizer]: Start processing: windmill-api
+[2023-05-24 18:39:15] INFO root fetch - main [MainThread]: End processing [stringtokenizer]: success
+[2023-05-24 18:39:15] INFO root fetch - processPackages [windmill-api]: New version: [1.99.0] Old Version: [1.98.0]
+[2023-05-24 18:39:15] INFO root fetch - processPackages [matlab-tictoc]: Start processing: wmill
+[2023-05-24 18:39:15] INFO root fetch - main [MainThread]: End processing [matlab-tictoc]: success
+[2023-05-24 18:39:15] INFO root fetch - processPackages [windmill-api]: executing diffoscope
+[2023-05-24 18:39:15] INFO root fetch - processPackages [windmill-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/windmill_api-1.98.0.tar.gz tmp/windmill_api-1.99.0.tar.gz --markdown 20230524/w/windmill-api/1.98.0-1.99.0/diff.md --exclude *.pyd
+[2023-05-24 18:39:15] INFO root fetch - processPackages [wmill]: New version: [1.99.0] Old Version: [1.98.0]
+[2023-05-24 18:39:15] INFO root fetch - processPackages [wmill]: executing diffoscope
+[2023-05-24 18:39:15] INFO root fetch - processPackages [wmill]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wmill-1.98.0.tar.gz tmp/wmill-1.99.0.tar.gz --markdown 20230524/w/wmill/1.98.0-1.99.0/diff.md --exclude *.pyd
+[2023-05-24 18:39:15] INFO root fetch - processPackages [pyttygif]: Start processing: djangocms-blog-agenda
+[2023-05-24 18:39:15] INFO root fetch - main [MainThread]: End processing [pyttygif]: success
+[2023-05-24 18:39:15] INFO root fetch - processPackages [edc-refusal]: Start processing: wmill-pg
+[2023-05-24 18:39:15] INFO root fetch - main [MainThread]: End processing [edc-refusal]: success
+[2023-05-24 18:39:15] INFO root fetch - processPackages [wmill-pg]: New version: [1.99.0] Old Version: [1.98.0]
+[2023-05-24 18:39:15] INFO root fetch - processPackages [djangocms-blog-agenda]: New version: [0.3.3] Old Version: [0.3.2]
+[2023-05-24 18:39:15] INFO root fetch - processPackages [wmill-pg]: executing diffoscope
+[2023-05-24 18:39:15] INFO root fetch - processPackages [wmill-pg]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wmill_pg-1.98.0.tar.gz tmp/wmill_pg-1.99.0.tar.gz --markdown 20230524/w/wmill-pg/1.98.0-1.99.0/diff.md --exclude *.pyd
+[2023-05-24 18:39:15] INFO root fetch - processPackages [edc-pdf-reports]: Start processing: bose
+[2023-05-24 18:39:15] INFO root fetch - main [MainThread]: End processing [edc-pdf-reports]: success
+[2023-05-24 18:39:15] INFO root fetch - processPackages [bose]: New version: [1.5.4] Old Version: [1.5.3]
+[2023-05-24 18:39:15] INFO root fetch - processPackages [djangocms-blog-agenda]: Downloading https://files.pythonhosted.org/packages/71/d4/d8a3ecba6860576d9652e320dbd81d0059e6026d04c7c9942f667f19e4e1/djangocms-blog-agenda-0.3.2.tar.gz
+[2023-05-24 18:39:15] INFO root fetch - processPackages [edc-model-admin]: Start processing: pybotx
+[2023-05-24 18:39:15] INFO root fetch - main [MainThread]: End processing [edc-model-admin]: success
+[2023-05-24 18:39:15] INFO root fetch - processPackages [bose]: Downloading https://files.pythonhosted.org/packages/ba/cc/8f6f5e88e0f9dbe3801cb483596133ca623c83f0b4eaa3a05dfb50f76de0/bose-1.5.4.tar.gz
+[2023-05-24 18:39:16] INFO root fetch - processPackages [djangocms-blog-agenda]: Downloading https://files.pythonhosted.org/packages/d3/b6/f5dcd5a2a7e173ff7d0e307306b8da88fa5db82426b2c0db7fe6578e3b05/djangocms-blog-agenda-0.3.3.tar.gz
+[2023-05-24 18:39:16] INFO root fetch - processPackages [pybotx]: New version: [0.55.2] Old Version: [0.55.1]
+[2023-05-24 18:39:16] INFO root fetch - processPackages [bose]: executing diffoscope
+[2023-05-24 18:39:16] INFO root fetch - processPackages [bose]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bose-1.5.3.tar.gz tmp/bose-1.5.4.tar.gz --markdown 20230524/b/bose/1.5.3-1.5.4/diff.md --exclude *.pyd
+[2023-05-24 18:39:16] INFO root fetch - processPackages [djangocms-blog-agenda]: executing diffoscope
+[2023-05-24 18:39:16] INFO root fetch - processPackages [djangocms-blog-agenda]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/djangocms-blog-agenda-0.3.2.tar.gz tmp/djangocms-blog-agenda-0.3.3.tar.gz --markdown 20230524/d/djangocms-blog-agenda/0.3.2-0.3.3/diff.md --exclude *.pyd
+[2023-05-24 18:39:16] INFO root fetch - processPackages [pybotx]: Downloading https://files.pythonhosted.org/packages/67/a9/6300f1fd90fbbc0d277db4e1413d3a82a80d93fa21714d9e537f4f374ea9/pybotx-0.55.1.tar.gz
+[2023-05-24 18:39:16] INFO root fetch - processPackages [pybotx]: Downloading https://files.pythonhosted.org/packages/79/67/3847f0608ec6b4e8e50d1e0c4d18637335884379659e2e2e7907330bcac1/pybotx-0.55.2.tar.gz
+[2023-05-24 18:39:16] INFO root fetch - processPackages [pybotx]: executing diffoscope
+[2023-05-24 18:39:16] INFO root fetch - processPackages [pybotx]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pybotx-0.55.1.tar.gz tmp/pybotx-0.55.2.tar.gz --markdown 20230524/p/pybotx/0.55.1-0.55.2/diff.md --exclude *.pyd
+[2023-05-24 18:39:16] INFO root fetch - processPackages [wmill]: Start processing: aiodiskqueue
+[2023-05-24 18:39:16] INFO root fetch - main [MainThread]: End processing [wmill]: success
+[2023-05-24 18:39:16] WARNING root fetch - processPackages [aiodiskqueue]: Skipping, unable to determine old version
+[2023-05-24 18:39:16] INFO root fetch - processPackages [aiodiskqueue]: Start processing: imessagedb
+[2023-05-24 18:39:16] INFO root fetch - main [MainThread]: End processing [aiodiskqueue] error
+[2023-05-24 18:39:16] INFO root fetch - processPackages [imessagedb]: New version: [1.3.2] Old Version: [1.3.1]
+[2023-05-24 18:39:16] INFO root fetch - processPackages [wmill-pg]: Start processing: fschat
+[2023-05-24 18:39:16] INFO root fetch - main [MainThread]: End processing [wmill-pg]: success
+[2023-05-24 18:39:16] INFO root fetch - processPackages [imessagedb]: executing diffoscope
+[2023-05-24 18:39:16] INFO root fetch - processPackages [imessagedb]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/imessagedb-1.3.1.tar.gz tmp/imessagedb-1.3.2.tar.gz --markdown 20230524/i/imessagedb/1.3.1-1.3.2/diff.md --exclude *.pyd
+[2023-05-24 18:39:16] INFO root fetch - processPackages [fschat]: New version: [0.2.9] Old Version: [0.2.8]
+[2023-05-24 18:39:17] INFO root fetch - processPackages [fschat]: executing diffoscope
+[2023-05-24 18:39:17] INFO root fetch - processPackages [fschat]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fschat-0.2.8.tar.gz tmp/fschat-0.2.9.tar.gz --markdown 20230524/f/fschat/0.2.8-0.2.9/diff.md --exclude *.pyd
+[2023-05-24 18:39:17] INFO root fetch - processPackages [djangocms-blog-agenda]: Start processing: alpaka-job-coverage
+[2023-05-24 18:39:17] INFO root fetch - main [MainThread]: End processing [djangocms-blog-agenda]: success
+[2023-05-24 18:39:17] INFO root fetch - processPackages [alpaka-job-coverage]: New version: [1.3.0] Old Version: [1.2.1]
+[2023-05-24 18:39:17] INFO root fetch - processPackages [alpaka-job-coverage]: Downloading https://files.pythonhosted.org/packages/cb/32/972e822850a5116da69aece8e40f38bb1197b2a368caa8cdaa93dfc88734/alpaka-job-coverage-1.2.1.tar.gz
+[2023-05-24 18:39:17] INFO root fetch - processPackages [bose]: Start processing: size-constrained-clustering2
+[2023-05-24 18:39:17] INFO root fetch - main [MainThread]: End processing [bose]: success
+[2023-05-24 18:39:17] WARNING root fetch - processPackages [size-constrained-clustering2]: Skipping, unable to determine old version
+[2023-05-24 18:39:17] INFO root fetch - processPackages [size-constrained-clustering2]: Start processing: np-workflows
+[2023-05-24 18:39:17] INFO root fetch - main [MainThread]: End processing [size-constrained-clustering2] error
+[2023-05-24 18:39:17] INFO root fetch - processPackages [np-workflows]: New version: [1.4.9] Old Version: [1.4.8]
+[2023-05-24 18:39:17] INFO root fetch - processPackages [np-workflows]: executing diffoscope
+[2023-05-24 18:39:17] INFO root fetch - processPackages [np-workflows]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/np_workflows-1.4.8.tar.gz tmp/np_workflows-1.4.9.tar.gz --markdown 20230524/n/np-workflows/1.4.8-1.4.9/diff.md --exclude *.pyd
+[2023-05-24 18:39:18] INFO root fetch - processPackages [alpaka-job-coverage]: Downloading https://files.pythonhosted.org/packages/d5/42/435f70aa93ca3311b8c624d857e9142b6ec3e77cbcb688c7055420731d49/alpaka-job-coverage-1.3.0.tar.gz
+[2023-05-24 18:39:18] INFO root fetch - main [MainThread]: End processing [domolibrary]: success
+[2023-05-24 18:39:18] INFO root fetch - processPackages [alpaka-job-coverage]: executing diffoscope
+[2023-05-24 18:39:18] INFO root fetch - processPackages [alpaka-job-coverage]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/alpaka-job-coverage-1.2.1.tar.gz tmp/alpaka-job-coverage-1.3.0.tar.gz --markdown 20230524/a/alpaka-job-coverage/1.2.1-1.3.0/diff.md --exclude *.pyd
+[2023-05-24 18:39:18] INFO root fetch - main [MainThread]: End processing [imessagedb]: success
+[2023-05-24 18:39:19] INFO root fetch - main [MainThread]: End processing [cloudsmith-api]: success
+[2023-05-24 18:39:19] INFO root fetch - main [MainThread]: End processing [fschat]: success
+[2023-05-24 18:39:19] INFO root fetch - main [MainThread]: End processing [np-workflows]: success
+[2023-05-24 18:39:19] INFO root fetch - main [MainThread]: End processing [pybotx]: success
+[2023-05-24 18:39:19] INFO root fetch - main [MainThread]: End processing [alpaka-job-coverage]: success
+[2023-05-24 18:39:20] INFO root fetch - main [MainThread]: End processing [yarok]: success
+[2023-05-24 18:39:20] INFO root fetch - main [MainThread]: End processing [aries-cloudcontroller]: success
+[2023-05-24 18:39:31] INFO root fetch - main [MainThread]: End processing [windmill-api]: success
+[2023-05-24 18:39:31] INFO root fetch - main [MainThread]: Store serial: [18232929]
