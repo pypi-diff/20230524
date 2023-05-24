@@ -8759,3 +8759,70 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-05-24 08:28:25] INFO root fetch - main [MainThread]: End processing [giscemultitools]: success
 [2023-05-24 08:28:30] INFO root fetch - main [MainThread]: End processing [fake-bpy-module-latest]: success
 [2023-05-24 08:28:30] INFO root fetch - main [MainThread]: Store serial: [18225775]
+[2023-05-24 08:33:37] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18225775]
+[2023-05-24 08:33:42] INFO root fetch - main [MainThread]: Found 11 changed packages
+[2023-05-24 08:33:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ds-stats-mexico
+[2023-05-24 08:33:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: acryl-datahub
+[2023-05-24 08:33:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: acryl-datahub-airflow-plugin
+[2023-05-24 08:33:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: visual-compare
+[2023-05-24 08:33:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: mw
+[2023-05-24 08:33:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: xia-engine
+[2023-05-24 08:33:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: templatte
+[2023-05-24 08:33:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: cercis
+[2023-05-24 08:33:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: bitsandbytes
+[2023-05-24 08:33:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: entangled-cli
+[2023-05-24 08:33:42] INFO root fetch - processPackages [mw]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-05-24 08:33:42] INFO root fetch - processPackages [cercis]: New version: [0.1.6] Old Version: [0.1.5]
+[2023-05-24 08:33:42] INFO root fetch - processPackages [visual-compare]: New version: [1.0.2.3] Old Version: [1.0.2.2]
+[2023-05-24 08:33:42] INFO root fetch - processPackages [ds-stats-mexico]: New version: [1.1.1] Old Version: [1.1]
+[2023-05-24 08:33:42] INFO root fetch - processPackages [entangled-cli]: New version: [2.0.0b1] Old Version: [2.0.0a3]
+[2023-05-24 08:33:42] INFO root fetch - processPackages [bitsandbytes]: New version: [0.39.0] Old Version: [0.38.1]
+[2023-05-24 08:33:42] INFO root fetch - processPackages [templatte]: New version: [0.2] Old Version: [0.1]
+[2023-05-24 08:33:42] INFO root fetch - processPackages [acryl-datahub-airflow-plugin]: New version: [0.9.6rc1] Old Version: [0.9.6rc0]
+[2023-05-24 08:33:42] INFO root fetch - processPackages [acryl-datahub]: New version: [0.9.6rc1] Old Version: [0.9.6rc0]
+[2023-05-24 08:33:42] INFO root fetch - processPackages [xia-engine]: New version: [0.8.9] Old Version: [0.8.8]
+[2023-05-24 08:33:42] INFO root fetch - processPackages [ds-stats-mexico]: Downloading https://files.pythonhosted.org/packages/f9/98/d5ebd827dd68f291ef66ea1c99b2690469dc156e5501b82d3b953fd5144d/ds_stats_mexico-1.1.tar.gz
+[2023-05-24 08:33:42] INFO root fetch - processPackages [acryl-datahub-airflow-plugin]: executing diffoscope
+[2023-05-24 08:33:42] INFO root fetch - processPackages [acryl-datahub-airflow-plugin]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/acryl-datahub-airflow-plugin-0.9.6rc0.tar.gz tmp/acryl-datahub-airflow-plugin-0.9.6rc1.tar.gz --markdown 20230524/a/acryl-datahub-airflow-plugin/0.9.6rc0-0.9.6rc1/diff.md --exclude *.pyd
+[2023-05-24 08:33:42] INFO root fetch - processPackages [acryl-datahub]: executing diffoscope
+[2023-05-24 08:33:42] INFO root fetch - processPackages [acryl-datahub]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/acryl-datahub-0.9.6rc0.tar.gz tmp/acryl-datahub-0.9.6rc1.tar.gz --markdown 20230524/a/acryl-datahub/0.9.6rc0-0.9.6rc1/diff.md --exclude *.pyd
+[2023-05-24 08:33:42] INFO root fetch - processPackages [entangled-cli]: Downloading https://files.pythonhosted.org/packages/5a/94/602c1fe8d56f25c147e53591830c7fae5ad3f22f7599ff3e7d87d008ca23/entangled_cli-2.0.0a3.tar.gz
+[2023-05-24 08:33:42] INFO root fetch - processPackages [cercis]: Downloading https://files.pythonhosted.org/packages/8f/8f/ab76aab18b07ccc92a34befd6184d668bb4b98197054c861e77b4ee390bc/cercis-0.1.5.tar.gz
+[2023-05-24 08:33:42] INFO root fetch - processPackages [mw]: Downloading https://files.pythonhosted.org/packages/90/0c/ea78a80e7c749d8e63ec3c9c245aa3f0bf4a1e02831fbfa7a70ef1d3b8b2/mw-0.0.2.tar.gz
+[2023-05-24 08:33:42] INFO root fetch - processPackages [bitsandbytes]: Downloading https://files.pythonhosted.org/packages/8f/2f/d54cc8d153bed5a5b56682b287765a3c049bd6c8bdae1f995eb06a59da5d/bitsandbytes-0.38.1.tar.gz
+[2023-05-24 08:33:42] INFO root fetch - processPackages [templatte]: Downloading https://files.pythonhosted.org/packages/34/56/92d3733eadff332c49e3f65da7bb4e46f2a4b46bb91139d55c4e91e35cda/templatte-0.1.tar.gz
+[2023-05-24 08:33:42] WARNING root fetch - processPackages [bitsandbytes]: Skipping package: exceeds size limit 102768448>=10485760
+[2023-05-24 08:33:42] INFO root fetch - processPackages [bitsandbytes]: Start processing: changesuffix
+[2023-05-24 08:33:42] INFO root fetch - main [MainThread]: End processing [bitsandbytes] error
+[2023-05-24 08:33:43] INFO root fetch - processPackages [visual-compare]: Downloading https://files.pythonhosted.org/packages/8f/59/6b5110e33d50bacb399f2923cd3ad8761b7a478e5d4d9a760f2cd47677d6/visual-compare-1.0.2.3.tar.gz
+[2023-05-24 08:33:43] WARNING root fetch - processPackages [changesuffix]: Skipping, unable to determine old version
+[2023-05-24 08:33:43] INFO root fetch - main [MainThread]: End processing [changesuffix] error
+[2023-05-24 08:33:43] INFO root fetch - processPackages [mw]: Downloading https://files.pythonhosted.org/packages/79/e4/a4cd87398afd63f7fc76e3d41376e7f2d03a4954c2728e79262a00fb79ca/mw-0.0.3.tar.gz
+[2023-05-24 08:33:43] INFO root fetch - processPackages [entangled-cli]: Downloading https://files.pythonhosted.org/packages/db/8d/5314130b10ee09b15f005fd1246186c1584a9127f07394d3c531bb02d911/entangled_cli-2.0.0b1.tar.gz
+[2023-05-24 08:33:43] INFO root fetch - processPackages [templatte]: Downloading https://files.pythonhosted.org/packages/9b/aa/a8db2c1ef4ca21622d740369fffec8cbc6c1d7b774811cebbde95046c842/templatte-0.2.tar.gz
+[2023-05-24 08:33:43] INFO root fetch - processPackages [visual-compare]: executing diffoscope
+[2023-05-24 08:33:43] INFO root fetch - processPackages [visual-compare]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/visual-compare-1.0.2.2.tar.gz tmp/visual-compare-1.0.2.3.tar.gz --markdown 20230524/v/visual-compare/1.0.2.2-1.0.2.3/diff.md --exclude *.pyd
+[2023-05-24 08:33:43] INFO root fetch - processPackages [xia-engine]: executing diffoscope
+[2023-05-24 08:33:43] INFO root fetch - processPackages [xia-engine]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xia_engine-0.8.8-cp39-none-win_amd64.whl.zip tmp/xia_engine-0.8.9-cp39-none-win_amd64.whl.zip --markdown 20230524/x/xia-engine/0.8.8-0.8.9/diff.md --exclude *.pyd
+[2023-05-24 08:33:43] INFO root fetch - processPackages [cercis]: Downloading https://files.pythonhosted.org/packages/07/9a/f6751fbeff6c5f086c96feb317fe3341989adf576d04c8df1cc6f2f2a4b9/cercis-0.1.6.tar.gz
+[2023-05-24 08:33:43] INFO root fetch - processPackages [ds-stats-mexico]: Downloading https://files.pythonhosted.org/packages/8d/5a/8287a05d75a7eac4393ad9e8ecf01318eb6433f78ab4f4804c3814a005b2/ds_stats_mexico-1.1.1.tar.gz
+[2023-05-24 08:33:43] INFO root fetch - processPackages [mw]: executing diffoscope
+[2023-05-24 08:33:43] INFO root fetch - processPackages [mw]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mw-0.0.2.tar.gz tmp/mw-0.0.3.tar.gz --markdown 20230524/m/mw/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-05-24 08:33:43] INFO root fetch - processPackages [entangled-cli]: executing diffoscope
+[2023-05-24 08:33:43] INFO root fetch - processPackages [entangled-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/entangled_cli-2.0.0a3.tar.gz tmp/entangled_cli-2.0.0b1.tar.gz --markdown 20230524/e/entangled-cli/2.0.0a3-2.0.0b1/diff.md --exclude *.pyd
+[2023-05-24 08:33:43] INFO root fetch - processPackages [ds-stats-mexico]: executing diffoscope
+[2023-05-24 08:33:43] INFO root fetch - processPackages [ds-stats-mexico]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ds_stats_mexico-1.1.tar.gz tmp/ds_stats_mexico-1.1.1.tar.gz --markdown 20230524/d/ds-stats-mexico/1.1-1.1.1/diff.md --exclude *.pyd
+[2023-05-24 08:33:43] INFO root fetch - processPackages [cercis]: executing diffoscope
+[2023-05-24 08:33:43] INFO root fetch - processPackages [cercis]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cercis-0.1.5.tar.gz tmp/cercis-0.1.6.tar.gz --markdown 20230524/c/cercis/0.1.5-0.1.6/diff.md --exclude *.pyd
+[2023-05-24 08:33:43] INFO root fetch - processPackages [templatte]: executing diffoscope
+[2023-05-24 08:33:43] INFO root fetch - processPackages [templatte]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/templatte-0.1.tar.gz tmp/templatte-0.2.tar.gz --markdown 20230524/t/templatte/0.1-0.2/diff.md --exclude *.pyd
+[2023-05-24 08:33:44] INFO root fetch - main [MainThread]: End processing [acryl-datahub-airflow-plugin]: success
+[2023-05-24 08:33:44] INFO root fetch - main [MainThread]: End processing [xia-engine]: success
+[2023-05-24 08:33:44] INFO root fetch - main [MainThread]: End processing [mw]: success
+[2023-05-24 08:33:44] INFO root fetch - main [MainThread]: End processing [visual-compare]: success
+[2023-05-24 08:33:44] INFO root fetch - main [MainThread]: End processing [templatte]: success
+[2023-05-24 08:33:44] INFO root fetch - main [MainThread]: End processing [ds-stats-mexico]: success
+[2023-05-24 08:33:45] INFO root fetch - main [MainThread]: End processing [entangled-cli]: success
+[2023-05-24 08:33:47] INFO root fetch - main [MainThread]: End processing [cercis]: success
+[2023-05-24 08:33:48] INFO root fetch - main [MainThread]: End processing [acryl-datahub]: success
+[2023-05-24 08:33:48] INFO root fetch - main [MainThread]: Store serial: [18225809]
