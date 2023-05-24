@@ -14657,3 +14657,128 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd4 in position 72: invalid
 [2023-05-24 14:23:52] INFO root fetch - main [MainThread]: End processing [argus-api]: success
 [2023-05-24 14:24:24] INFO root fetch - main [MainThread]: End processing [checkov]: success
 [2023-05-24 14:24:24] INFO root fetch - main [MainThread]: Store serial: [18229367]
+[2023-05-24 14:29:28] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18229367]
+[2023-05-24 14:29:33] INFO root fetch - main [MainThread]: Found 23 changed packages
+[2023-05-24 14:29:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: lupin-grognard
+[2023-05-24 14:29:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: bigdl-orca
+[2023-05-24 14:29:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: eve-client
+[2023-05-24 14:29:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: bigdl-friesian
+[2023-05-24 14:29:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: NXTensor
+[2023-05-24 14:29:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: bigdl
+[2023-05-24 14:29:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: humlab-penelope
+[2023-05-24 14:29:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: squigglepy
+[2023-05-24 14:29:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: bigdl-dllib-spark2
+[2023-05-24 14:29:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: neural-anthropometer
+[2023-05-24 14:29:33] INFO root fetch - processPackages [lupin-grognard]: New version: [1.9.0] Old Version: [1.7.0]
+[2023-05-24 14:29:33] WARNING root fetch - processPackages [neural-anthropometer]: Skipping, unable to determine old version
+[2023-05-24 14:29:33] INFO root fetch - processPackages [neural-anthropometer]: Start processing: sqrt-kit
+[2023-05-24 14:29:33] INFO root fetch - main [MainThread]: End processing [neural-anthropometer] error
+[2023-05-24 14:29:33] INFO root fetch - processPackages [bigdl]: New version: [2.4.0b20230523] Old Version: [2.4.0b20230522]
+[2023-05-24 14:29:33] INFO root fetch - processPackages [squigglepy]: New version: [0.9] Old Version: [0.8]
+[2023-05-24 14:29:33] INFO root fetch - processPackages [bigdl-dllib-spark2]: New version: [2.4.0b20230523] Old Version: [2.4.0b20230522]
+[2023-05-24 14:29:33] INFO root fetch - processPackages [sqrt-kit]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-05-24 14:29:33] INFO root fetch - processPackages [eve-client]: New version: [2.0.9] Old Version: [2.0.8]
+[2023-05-24 14:29:33] INFO root fetch - processPackages [lupin-grognard]: executing diffoscope
+[2023-05-24 14:29:33] INFO root fetch - processPackages [lupin-grognard]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lupin-grognard-1.7.0.tar.gz tmp/lupin-grognard-1.9.0.tar.gz --markdown 20230524/l/lupin-grognard/1.7.0-1.9.0/diff.md --exclude *.pyd
+[2023-05-24 14:29:33] INFO root fetch - processPackages [NXTensor]: New version: [0.3.3.9] Old Version: [0.3.3.8]
+[2023-05-24 14:29:33] INFO root fetch - processPackages [bigdl-friesian]: New version: [2.4.0b20230524] Old Version: [2.4.0b20230523]
+[2023-05-24 14:29:33] INFO root fetch - processPackages [humlab-penelope]: New version: [0.7.9] Old Version: [0.7.8]
+[2023-05-24 14:29:33] INFO root fetch - processPackages [bigdl-orca]: New version: [2.4.0b20230524] Old Version: [2.4.0b20230523]
+[2023-05-24 14:29:33] INFO root fetch - processPackages [sqrt-kit]: executing diffoscope
+[2023-05-24 14:29:33] INFO root fetch - processPackages [sqrt-kit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sqrt-kit-0.0.1.tar.gz tmp/sqrt-kit-0.0.2.tar.gz --markdown 20230524/s/sqrt-kit/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-05-24 14:29:33] INFO root fetch - processPackages [squigglepy]: Downloading https://files.pythonhosted.org/packages/4b/91/e2c57a68dc036f3e23038710c42183e19211957c933e28ae94d35c6564ca/squigglepy-0.8.tar.gz
+[2023-05-24 14:29:33] INFO root fetch - processPackages [bigdl-dllib-spark2]: Downloading https://files.pythonhosted.org/packages/18/28/291bb6d95cb161173665a3db4ed2c65022262330af1c5ce8eaab8f218b01/bigdl-dllib-spark2-2.4.0b20230522.tar.gz
+[2023-05-24 14:29:33] WARNING root fetch - processPackages [bigdl-dllib-spark2]: Skipping package: exceeds size limit 53560851>=10485760
+[2023-05-24 14:29:33] INFO root fetch - processPackages [bigdl-dllib-spark2]: Start processing: pianogen
+[2023-05-24 14:29:33] INFO root fetch - main [MainThread]: End processing [bigdl-dllib-spark2] error
+[2023-05-24 14:29:33] INFO root fetch - processPackages [NXTensor]: Downloading https://files.pythonhosted.org/packages/09/ce/49b436a4397c00cdf42259d20269ad78df99473ba467e0351d17f683966c/NXTensor-0.3.3.8.tar.gz
+[2023-05-24 14:29:33] INFO root fetch - processPackages [bigdl-friesian]: Downloading https://files.pythonhosted.org/packages/d2/ce/c17b5dae4e1ac4f8950a41388c988242d8e145639fe1764467970bec9e95/bigdl_friesian-2.4.0b20230523-py3-none-manylinux1_x86_64.whl
+[2023-05-24 14:29:33] INFO root fetch - processPackages [bigdl-orca]: Downloading https://files.pythonhosted.org/packages/94/aa/bb7c56d25c04a7e467d7c6197e49f06167eb0b09e0deb4142c0b2ba782ca/bigdl_orca-2.4.0b20230523-py3-none-manylinux1_x86_64.whl
+[2023-05-24 14:29:33] WARNING root fetch - processPackages [bigdl-orca]: Skipping package: exceeds size limit 20369435>=10485760
+[2023-05-24 14:29:33] INFO root fetch - processPackages [bigdl-orca]: Start processing: act-scio
+[2023-05-24 14:29:33] INFO root fetch - main [MainThread]: End processing [bigdl-orca] error
+[2023-05-24 14:29:33] INFO root fetch - processPackages [bigdl]: executing diffoscope
+[2023-05-24 14:29:33] INFO root fetch - processPackages [bigdl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bigdl-2.4.0b20230522-py3-none-manylinux1_x86_64.whl.zip tmp/bigdl-2.4.0b20230523-py3-none-manylinux1_x86_64.whl.zip --markdown 20230524/b/bigdl/2.4.0b20230522-2.4.0b20230523/diff.md --exclude *.pyd
+[2023-05-24 14:29:33] WARNING root fetch - processPackages [pianogen]: Skipping, unable to determine old version
+[2023-05-24 14:29:33] INFO root fetch - processPackages [pianogen]: Start processing: firebase-push
+[2023-05-24 14:29:33] INFO root fetch - main [MainThread]: End processing [pianogen] error
+[2023-05-24 14:29:33] INFO root fetch - processPackages [firebase-push]: New version: [0.2.3] Old Version: [0.2.2]
+[2023-05-24 14:29:33] INFO root fetch - processPackages [eve-client]: executing diffoscope
+[2023-05-24 14:29:33] INFO root fetch - processPackages [eve-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/eve_client-2.0.8.tar.gz tmp/eve_client-2.0.9.tar.gz --markdown 20230524/e/eve-client/2.0.8-2.0.9/diff.md --exclude *.pyd
+[2023-05-24 14:29:33] INFO root fetch - processPackages [act-scio]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-24 14:29:34] INFO root fetch - processPackages [humlab-penelope]: executing diffoscope
+[2023-05-24 14:29:34] INFO root fetch - processPackages [humlab-penelope]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/humlab-penelope-0.7.8.tar.gz tmp/humlab-penelope-0.7.9.tar.gz --markdown 20230524/h/humlab-penelope/0.7.8-0.7.9/diff.md --exclude *.pyd
+[2023-05-24 14:29:34] INFO root fetch - processPackages [bigdl-friesian]: Downloading https://files.pythonhosted.org/packages/cd/00/d88e746fd2a35c4c6b30d0c4712b48a026e4b7ca90f22dd05ae29418b270/bigdl_friesian-2.4.0b20230524-py3-none-manylinux1_x86_64.whl
+[2023-05-24 14:29:34] INFO root fetch - processPackages [NXTensor]: Downloading https://files.pythonhosted.org/packages/7c/ca/cb7519d4cbd5d84f25cff4bb90f995d0e2d5d2a3e1d8d6ea6d349e906a18/NXTensor-0.3.3.9.tar.gz
+[2023-05-24 14:29:34] INFO root fetch - processPackages [squigglepy]: Downloading https://files.pythonhosted.org/packages/7b/22/cb047a2a4f21111bf282ecdd54027eadbbd6b182a9185f68af0d77c4e3d8/squigglepy-0.9.tar.gz
+[2023-05-24 14:29:34] INFO root fetch - processPackages [firebase-push]: Downloading https://files.pythonhosted.org/packages/48/cf/355b1b2bcb37f2d1a41c77d3232af458f2d44f0344827109418b3629e2e8/firebase_push-0.2.3-py3-none-any.whl
+[2023-05-24 14:29:34] INFO root fetch - processPackages [act-scio]: Downloading https://files.pythonhosted.org/packages/cc/79/b3ecb2e35635fe3751ab12fe4d5e551974a5253e8355ed5d23cf96be3d2b/act-scio-0.0.8.tar.gz
+[2023-05-24 14:29:34] INFO root fetch - processPackages [NXTensor]: executing diffoscope
+[2023-05-24 14:29:34] INFO root fetch - processPackages [NXTensor]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/NXTensor-0.3.3.8.tar.gz tmp/NXTensor-0.3.3.9.tar.gz --markdown 20230524/N/NXTensor/0.3.3.8-0.3.3.9/diff.md --exclude *.pyd
+[2023-05-24 14:29:34] INFO root fetch - processPackages [bigdl-friesian]: executing diffoscope
+[2023-05-24 14:29:34] INFO root fetch - processPackages [bigdl-friesian]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bigdl_friesian-2.4.0b20230523-py3-none-manylinux1_x86_64.whl.zip tmp/bigdl_friesian-2.4.0b20230524-py3-none-manylinux1_x86_64.whl.zip --markdown 20230524/b/bigdl-friesian/2.4.0b20230523-2.4.0b20230524/diff.md --exclude *.pyd
+[2023-05-24 14:29:34] INFO root fetch - processPackages [firebase-push]: executing diffoscope
+[2023-05-24 14:29:34] INFO root fetch - processPackages [firebase-push]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/firebase_push-0.2.2-py3-none-any.whl.zip tmp/firebase_push-0.2.3-py3-none-any.whl.zip --markdown 20230524/f/firebase-push/0.2.2-0.2.3/diff.md --exclude *.pyd
+[2023-05-24 14:29:34] INFO root fetch - processPackages [squigglepy]: executing diffoscope
+[2023-05-24 14:29:34] INFO root fetch - processPackages [squigglepy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/squigglepy-0.8.tar.gz tmp/squigglepy-0.9.tar.gz --markdown 20230524/s/squigglepy/0.8-0.9/diff.md --exclude *.pyd
+[2023-05-24 14:29:34] INFO root fetch - processPackages [sqrt-kit]: Start processing: digitalguide
+[2023-05-24 14:29:34] INFO root fetch - main [MainThread]: End processing [sqrt-kit]: success
+[2023-05-24 14:29:34] INFO root fetch - processPackages [digitalguide]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-05-24 14:29:34] INFO root fetch - processPackages [lupin-grognard]: Start processing: ifiscripts
+[2023-05-24 14:29:34] INFO root fetch - main [MainThread]: End processing [lupin-grognard]: success
+[2023-05-24 14:29:34] INFO root fetch - processPackages [ifiscripts]: New version: [2023.5.10.1] Old Version: [2023.1.9.1]
+[2023-05-24 14:29:35] INFO root fetch - processPackages [digitalguide]: executing diffoscope
+[2023-05-24 14:29:35] INFO root fetch - processPackages [digitalguide]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/digitalguide-0.0.98.tar.gz tmp/digitalguide-0.0.99.tar.gz --markdown 20230524/d/digitalguide/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-05-24 14:29:35] INFO root fetch - processPackages [act-scio]: Downloading https://files.pythonhosted.org/packages/4e/5f/3f6f35286ec7966992c930e83b49be860cd2820687276994905004881d87/act-scio-0.0.9.tar.gz
+[2023-05-24 14:29:35] INFO root fetch - processPackages [bigdl]: Start processing: dicomindex
+[2023-05-24 14:29:35] INFO root fetch - main [MainThread]: End processing [bigdl]: success
+[2023-05-24 14:29:35] INFO root fetch - processPackages [ifiscripts]: Downloading https://files.pythonhosted.org/packages/3b/f4/bb348882500290329e71c04a3c7c138af85b72f6a28ae66ebe5c50894705/ifiscripts-2023.1.9.1.tar.gz
+[2023-05-24 14:29:35] WARNING root fetch - processPackages [dicomindex]: Skipping, unable to determine old version
+[2023-05-24 14:29:35] INFO root fetch - processPackages [dicomindex]: Start processing: swh.storage
+[2023-05-24 14:29:35] INFO root fetch - main [MainThread]: End processing [dicomindex] error
+[2023-05-24 14:29:35] INFO root fetch - processPackages [eve-client]: Start processing: kronbinations
+[2023-05-24 14:29:35] INFO root fetch - main [MainThread]: End processing [eve-client]: success
+[2023-05-24 14:29:35] INFO root fetch - processPackages [swh.storage]: New version: [1.9.0] Old Version: [1.8.0]
+[2023-05-24 14:29:35] INFO root fetch - processPackages [kronbinations]: New version: [1.9] Old Version: [1.8]
+[2023-05-24 14:29:35] INFO root fetch - processPackages [ifiscripts]: Downloading https://files.pythonhosted.org/packages/93/c8/df96f1af998eb12b86c86fd36b0fe74c7d3d13cc401dfc0d4408becebcc8/ifiscripts-2023.5.10.1.tar.gz
+[2023-05-24 14:29:35] INFO root fetch - processPackages [kronbinations]: executing diffoscope
+[2023-05-24 14:29:35] INFO root fetch - processPackages [kronbinations]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kronbinations-1.8.tar.gz tmp/kronbinations-1.9.tar.gz --markdown 20230524/k/kronbinations/1.8-1.9/diff.md --exclude *.pyd
+[2023-05-24 14:29:35] INFO root fetch - processPackages [swh.storage]: Downloading https://files.pythonhosted.org/packages/2a/de/dfede4312a54f58ce0cacba3673579b46c45be36910fe4c346f85de2a969/swh.storage-1.8.0.tar.gz
+[2023-05-24 14:29:35] INFO root fetch - processPackages [ifiscripts]: executing diffoscope
+[2023-05-24 14:29:35] INFO root fetch - processPackages [ifiscripts]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ifiscripts-2023.1.9.1.tar.gz tmp/ifiscripts-2023.5.10.1.tar.gz --markdown 20230524/i/ifiscripts/2023.1.9.1-2023.5.10.1/diff.md --exclude *.pyd
+[2023-05-24 14:29:35] INFO root fetch - processPackages [NXTensor]: Start processing: openlane
+[2023-05-24 14:29:35] INFO root fetch - main [MainThread]: End processing [NXTensor]: success
+[2023-05-24 14:29:35] INFO root fetch - processPackages [act-scio]: executing diffoscope
+[2023-05-24 14:29:35] INFO root fetch - processPackages [act-scio]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/act-scio-0.0.8.tar.gz tmp/act-scio-0.0.9.tar.gz --markdown 20230524/a/act-scio/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-24 14:29:35] INFO root fetch - processPackages [openlane]: New version: [2.0.0a9] Old Version: [2.0.0a8]
+[2023-05-24 14:29:35] INFO root fetch - processPackages [firebase-push]: Start processing: bridgecrew
+[2023-05-24 14:29:35] INFO root fetch - main [MainThread]: End processing [firebase-push]: success
+[2023-05-24 14:29:35] INFO root fetch - processPackages [openlane]: executing diffoscope
+[2023-05-24 14:29:35] INFO root fetch - processPackages [openlane]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/openlane-2.0.0a8.tar.gz tmp/openlane-2.0.0a9.tar.gz --markdown 20230524/o/openlane/2.0.0a8-2.0.0a9/diff.md --exclude *.pyd
+[2023-05-24 14:29:36] INFO root fetch - processPackages [bridgecrew]: New version: [2.3.99] Old Version: [2.3.98]
+[2023-05-24 14:29:36] INFO root fetch - processPackages [swh.storage]: Downloading https://files.pythonhosted.org/packages/96/d9/1ce230d5c980eab9071c640a60c695e7efad82145bb8f2662ef8678e7661/swh.storage-1.9.0.tar.gz
+[2023-05-24 14:29:36] INFO root fetch - processPackages [squigglepy]: Start processing: otools-rpc
+[2023-05-24 14:29:36] INFO root fetch - main [MainThread]: End processing [squigglepy]: success
+[2023-05-24 14:29:36] INFO root fetch - processPackages [otools-rpc]: New version: [0.2.6] Old Version: [0.2.5]
+[2023-05-24 14:29:36] INFO root fetch - processPackages [bridgecrew]: executing diffoscope
+[2023-05-24 14:29:36] INFO root fetch - processPackages [bridgecrew]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bridgecrew-2.3.98.tar.gz tmp/bridgecrew-2.3.99.tar.gz --markdown 20230524/b/bridgecrew/2.3.98-2.3.99/diff.md --exclude *.pyd
+[2023-05-24 14:29:36] INFO root fetch - processPackages [swh.storage]: executing diffoscope
+[2023-05-24 14:29:36] INFO root fetch - processPackages [swh.storage]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/swh.storage-1.8.0.tar.gz tmp/swh.storage-1.9.0.tar.gz --markdown 20230524/s/swh.storage/1.8.0-1.9.0/diff.md --exclude *.pyd
+[2023-05-24 14:29:36] INFO root fetch - processPackages [otools-rpc]: executing diffoscope
+[2023-05-24 14:29:36] INFO root fetch - processPackages [otools-rpc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/otools-rpc-0.2.5.tar.gz tmp/otools-rpc-0.2.6.tar.gz --markdown 20230524/o/otools-rpc/0.2.5-0.2.6/diff.md --exclude *.pyd
+[2023-05-24 14:29:36] INFO root fetch - processPackages [bigdl-friesian]: Start processing: gamla
+[2023-05-24 14:29:36] INFO root fetch - main [MainThread]: End processing [bigdl-friesian]: success
+[2023-05-24 14:29:36] INFO root fetch - processPackages [gamla]: New version: [99] Old Version: [98]
+[2023-05-24 14:29:36] INFO root fetch - processPackages [gamla]: executing diffoscope
+[2023-05-24 14:29:36] INFO root fetch - processPackages [gamla]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gamla-98.tar.gz tmp/gamla-99.tar.gz --markdown 20230524/g/gamla/98-99/diff.md --exclude *.pyd
+[2023-05-24 14:29:36] INFO root fetch - main [MainThread]: End processing [digitalguide]: success
+[2023-05-24 14:29:37] INFO root fetch - main [MainThread]: End processing [bridgecrew]: success
+[2023-05-24 14:29:37] INFO root fetch - main [MainThread]: End processing [kronbinations]: success
+[2023-05-24 14:29:37] INFO root fetch - main [MainThread]: End processing [otools-rpc]: success
+[2023-05-24 14:29:38] INFO root fetch - main [MainThread]: End processing [gamla]: success
+[2023-05-24 14:29:38] INFO root fetch - main [MainThread]: End processing [humlab-penelope]: success
+[2023-05-24 14:29:39] INFO root fetch - main [MainThread]: End processing [act-scio]: success
+[2023-05-24 14:29:39] INFO root fetch - main [MainThread]: End processing [ifiscripts]: success
+[2023-05-24 14:29:39] INFO root fetch - main [MainThread]: End processing [openlane]: success
+[2023-05-24 14:29:39] INFO root fetch - main [MainThread]: End processing [swh.storage]: success
+[2023-05-24 14:29:39] INFO root fetch - main [MainThread]: Store serial: [18229451]
