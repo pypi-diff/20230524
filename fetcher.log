@@ -6281,3 +6281,31 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-05-24 05:01:36] INFO root fetch - main [MainThread]: End processing [vectorbt]: success
 [2023-05-24 05:01:38] INFO root fetch - main [MainThread]: End processing [tiledb]: success
 [2023-05-24 05:01:38] INFO root fetch - main [MainThread]: Store serial: [18224301]
+[2023-05-24 05:06:42] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18224301]
+[2023-05-24 05:06:47] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2023-05-24 05:06:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: stabby
+[2023-05-24 05:06:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: scorecardpipeline
+[2023-05-24 05:06:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: cloudimg
+[2023-05-24 05:06:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: antchain-twc
+[2023-05-24 05:06:47] INFO root fetch - processPackages [stabby]: New version: [1.0.2] Old Version: [1.0.1]
+[2023-05-24 05:06:47] INFO root fetch - processPackages [cloudimg]: New version: [1.6.1] Old Version: [1.6.0]
+[2023-05-24 05:06:47] INFO root fetch - processPackages [scorecardpipeline]: New version: [0.1.6] Old Version: [0.1.5]
+[2023-05-24 05:06:47] INFO root fetch - processPackages [antchain-twc]: New version: [1.9.0] Old Version: [1.8.9]
+[2023-05-24 05:06:47] INFO root fetch - processPackages [stabby]: executing diffoscope
+[2023-05-24 05:06:47] INFO root fetch - processPackages [stabby]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/stabby-1.0.1-py3.8.egg tmp/stabby-1.0.2.tar.gz --markdown 20230524/s/stabby/1.0.1-1.0.2/diff.md --exclude *.pyd
+[2023-05-24 05:06:47] INFO root fetch - processPackages [cloudimg]: Downloading https://files.pythonhosted.org/packages/30/f7/3da1295605b0f16156e7948ef023b9ad4475229f2137fa33e03b257a8a5a/cloudimg-1.6.0.tar.gz
+[2023-05-24 05:06:47] INFO root fetch - processPackages [antchain-twc]: Downloading https://files.pythonhosted.org/packages/be/7d/c706ac71802457b87a49a83609510e11978f747b3b4bb06fdf4de952c80a/antchain_twc-1.8.9.tar.gz
+[2023-05-24 05:06:48] INFO root fetch - processPackages [scorecardpipeline]: Downloading https://files.pythonhosted.org/packages/54/ec/de160bfc393a326de9fb4782763f75861266c67a44b82edf076e8f76511e/scorecardpipeline-0.1.6.tar.gz
+[2023-05-24 05:06:48] INFO root fetch - processPackages [antchain-twc]: Downloading https://files.pythonhosted.org/packages/c8/36/ff01772c79f6304da84d484196bc1707748a6660a1040ac06c256cf6ac4a/antchain_twc-1.9.0.tar.gz
+[2023-05-24 05:06:48] INFO root fetch - processPackages [scorecardpipeline]: executing diffoscope
+[2023-05-24 05:06:48] INFO root fetch - processPackages [scorecardpipeline]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/scorecardpipeline-0.1.5.tar.gz tmp/scorecardpipeline-0.1.6.tar.gz --markdown 20230524/s/scorecardpipeline/0.1.5-0.1.6/diff.md --exclude *.pyd
+[2023-05-24 05:06:48] INFO root fetch - processPackages [cloudimg]: Downloading https://files.pythonhosted.org/packages/83/05/8771f29ad9c1b7543ff7bf0ba0748dcad5fff3e996a02285234ac7b8795d/cloudimg-1.6.1.tar.gz
+[2023-05-24 05:06:48] INFO root fetch - processPackages [antchain-twc]: executing diffoscope
+[2023-05-24 05:06:48] INFO root fetch - processPackages [antchain-twc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/antchain_twc-1.8.9.tar.gz tmp/antchain_twc-1.9.0.tar.gz --markdown 20230524/a/antchain-twc/1.8.9-1.9.0/diff.md --exclude *.pyd
+[2023-05-24 05:06:48] INFO root fetch - processPackages [cloudimg]: executing diffoscope
+[2023-05-24 05:06:48] INFO root fetch - processPackages [cloudimg]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cloudimg-1.6.0.tar.gz tmp/cloudimg-1.6.1.tar.gz --markdown 20230524/c/cloudimg/1.6.0-1.6.1/diff.md --exclude *.pyd
+[2023-05-24 05:06:48] INFO root fetch - main [MainThread]: End processing [stabby]: success
+[2023-05-24 05:06:49] INFO root fetch - main [MainThread]: End processing [scorecardpipeline]: success
+[2023-05-24 05:06:49] INFO root fetch - main [MainThread]: End processing [cloudimg]: success
+[2023-05-24 05:06:50] INFO root fetch - main [MainThread]: End processing [antchain-twc]: success
+[2023-05-24 05:06:50] INFO root fetch - main [MainThread]: Store serial: [18224322]
