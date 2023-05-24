@@ -13886,3 +13886,41 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd4 in position 72: invalid
 [2023-05-24 13:37:57] INFO root fetch - main [MainThread]: End processing [shrug-viz]: success
 [2023-05-24 13:38:07] INFO root fetch - main [MainThread]: End processing [prowler-cloud]: success
 [2023-05-24 13:38:07] INFO root fetch - main [MainThread]: Store serial: [18228945]
+[2023-05-24 13:43:11] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18228945]
+[2023-05-24 13:43:16] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-05-24 13:43:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: georideapilib
+[2023-05-24 13:43:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: vid2info
+[2023-05-24 13:43:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: hcai-nova-server-nightly
+[2023-05-24 13:43:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: InstallDemo
+[2023-05-24 13:43:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: chainlit
+[2023-05-24 13:43:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: certora-cli-alpha-master
+[2023-05-24 13:43:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: accim
+[2023-05-24 13:43:16] INFO root fetch - processPackages [chainlit]: New version: [0.2.103] Old Version: [0.2.102]
+[2023-05-24 13:43:16] INFO root fetch - processPackages [certora-cli-alpha-master]: New version: [20230524.7.55.4971] Old Version: [20230524.11.41.347695]
+[2023-05-24 13:43:16] INFO root fetch - processPackages [georideapilib]: New version: [1.0.1] Old Version: [1.0.0]
+[2023-05-24 13:43:16] INFO root fetch - processPackages [accim]: New version: [0.6.9] Old Version: [0.6.8]
+[2023-05-24 13:43:16] INFO root fetch - processPackages [vid2info]: New version: [1.99] Old Version: [1.98]
+[2023-05-24 13:43:16] WARNING root fetch - processPackages [InstallDemo]: Skipping, unable to determine old version
+[2023-05-24 13:43:16] INFO root fetch - main [MainThread]: End processing [InstallDemo] error
+[2023-05-24 13:43:16] INFO root fetch - processPackages [hcai-nova-server-nightly]: New version: [0.1.6.dev202305221457] Old Version: [0.1.5.dev202305221455]
+[2023-05-24 13:43:16] INFO root fetch - processPackages [vid2info]: executing diffoscope
+[2023-05-24 13:43:16] INFO root fetch - processPackages [vid2info]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vid2info-1.98.tar.gz tmp/vid2info-1.99.tar.gz --markdown 20230524/v/vid2info/1.98-1.99/diff.md --exclude *.pyd
+[2023-05-24 13:43:16] INFO root fetch - processPackages [certora-cli-alpha-master]: Downloading https://files.pythonhosted.org/packages/66/8a/0fc94c7ee52763b34dc7afa17ac96bfa3a1353862d1b143e5746a280fa22/certora-cli-alpha-master-20230524.11.41.347695.tar.gz
+[2023-05-24 13:43:17] INFO root fetch - processPackages [chainlit]: Downloading https://files.pythonhosted.org/packages/2d/dc/0768d4ab42eaf80077263413c9d45cb0d228649e54a9cf7f918c9e801d06/chainlit-0.2.103.tar.gz
+[2023-05-24 13:43:17] INFO root fetch - processPackages [accim]: Downloading https://files.pythonhosted.org/packages/cd/c7/3a8127622e29d2867e2a0200894f2d56823ecb20ce7046e189503caf7443/accim-0.6.8.tar.gz
+[2023-05-24 13:43:17] INFO root fetch - processPackages [georideapilib]: Downloading https://files.pythonhosted.org/packages/c7/53/27833cec1518fad991cc962a31609eff7642a2823c2e7c11bd579b1607fb/georideapilib-1.0.1.tar.gz
+[2023-05-24 13:43:17] INFO root fetch - processPackages [georideapilib]: executing diffoscope
+[2023-05-24 13:43:17] INFO root fetch - processPackages [georideapilib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/georideapilib-1.0.0.tar.gz tmp/georideapilib-1.0.1.tar.gz --markdown 20230524/g/georideapilib/1.0.0-1.0.1/diff.md --exclude *.pyd
+[2023-05-24 13:43:17] WARNING root fetch - processPackages [certora-cli-alpha-master]: Skipping package: exceeds size limit 38998429>=10485760
+[2023-05-24 13:43:17] INFO root fetch - main [MainThread]: End processing [certora-cli-alpha-master] error
+[2023-05-24 13:43:17] WARNING root fetch - processPackages [accim]: Skipping package: exceeds size limit 23953167>=10485760
+[2023-05-24 13:43:17] INFO root fetch - main [MainThread]: End processing [accim] error
+[2023-05-24 13:43:17] INFO root fetch - processPackages [chainlit]: executing diffoscope
+[2023-05-24 13:43:17] INFO root fetch - processPackages [chainlit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/chainlit-0.2.102.tar.gz tmp/chainlit-0.2.103.tar.gz --markdown 20230524/c/chainlit/0.2.102-0.2.103/diff.md --exclude *.pyd
+[2023-05-24 13:43:17] INFO root fetch - processPackages [hcai-nova-server-nightly]: executing diffoscope
+[2023-05-24 13:43:17] INFO root fetch - processPackages [hcai-nova-server-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hcai-nova-server-nightly-0.1.5.dev202305221455.tar.gz tmp/hcai-nova-server-nightly-0.1.6.dev202305221457.tar.gz --markdown 20230524/h/hcai-nova-server-nightly/0.1.5.dev202305221455-0.1.6.dev202305221457/diff.md --exclude *.pyd
+[2023-05-24 13:43:18] INFO root fetch - main [MainThread]: End processing [georideapilib]: success
+[2023-05-24 13:43:18] INFO root fetch - main [MainThread]: End processing [hcai-nova-server-nightly]: success
+[2023-05-24 13:43:19] INFO root fetch - main [MainThread]: End processing [vid2info]: success
+[2023-05-24 13:43:33] INFO root fetch - main [MainThread]: End processing [chainlit]: success
+[2023-05-24 13:43:33] INFO root fetch - main [MainThread]: Store serial: [18228970]
