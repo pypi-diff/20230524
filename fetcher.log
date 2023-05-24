@@ -15099,3 +15099,95 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd4 in position 72: invalid
 [2023-05-24 14:46:29] INFO root fetch - main [MainThread]: End processing [HighResAnalysis]: success
 [2023-05-24 14:46:32] INFO root fetch - main [MainThread]: End processing [c2cciutils]: success
 [2023-05-24 14:46:32] INFO root fetch - main [MainThread]: Store serial: [18229681]
+[2023-05-24 14:51:39] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18229681]
+[2023-05-24 14:51:44] INFO root fetch - main [MainThread]: Found 17 changed packages
+[2023-05-24 14:51:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: mse-cli-core
+[2023-05-24 14:51:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: c2cciutils
+[2023-05-24 14:51:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: manticore
+[2023-05-24 14:51:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: digitalguide
+[2023-05-24 14:51:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: t4flib
+[2023-05-24 14:51:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: bugout
+[2023-05-24 14:51:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: kentigern
+[2023-05-24 14:51:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: tensorcircuit-nightly
+[2023-05-24 14:51:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: medivisio
+[2023-05-24 14:51:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: ronnytest
+[2023-05-24 14:51:44] INFO root fetch - processPackages [t4flib]: New version: [0.2.6] Old Version: [0.2.5]
+[2023-05-24 14:51:44] INFO root fetch - processPackages [ronnytest]: New version: [0.0.7] Old Version: [0.0.6]
+[2023-05-24 14:51:44] WARNING root fetch - processPackages [medivisio]: Skipping, unable to determine old version
+[2023-05-24 14:51:44] INFO root fetch - processPackages [medivisio]: Start processing: text2tags-ooferdoodles
+[2023-05-24 14:51:44] INFO root fetch - main [MainThread]: End processing [medivisio] error
+[2023-05-24 14:51:44] INFO root fetch - processPackages [c2cciutils]: New version: [1.6.0.dev98] Old Version: [1.6.0.dev95]
+[2023-05-24 14:51:44] INFO root fetch - processPackages [digitalguide]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-05-24 14:51:44] INFO root fetch - processPackages [manticore]: New version: [0.3.8.dev230523] Old Version: [0.3.8.dev230522]
+[2023-05-24 14:51:44] WARNING root fetch - processPackages [mse-cli-core]: Skipping, unable to determine old version
+[2023-05-24 14:51:44] INFO root fetch - processPackages [mse-cli-core]: Start processing: c2cciutils
+[2023-05-24 14:51:44] INFO root fetch - main [MainThread]: End processing [mse-cli-core] error
+[2023-05-24 14:51:44] INFO root fetch - processPackages [kentigern]: New version: [0.4.0] Old Version: [0.3.0]
+[2023-05-24 14:51:44] INFO root fetch - processPackages [bugout]: New version: [0.2.7] Old Version: [0.2.6]
+[2023-05-24 14:51:44] INFO root fetch - processPackages [ronnytest]: executing diffoscope
+[2023-05-24 14:51:44] INFO root fetch - processPackages [ronnytest]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ronnytest-0.0.6-py3-none-any.whl.zip tmp/ronnytest-0.0.7.tar.gz --markdown 20230524/r/ronnytest/0.0.6-0.0.7/diff.md --exclude *.pyd
+[2023-05-24 14:51:44] INFO root fetch - processPackages [c2cciutils]: executing diffoscope
+[2023-05-24 14:51:44] INFO root fetch - processPackages [c2cciutils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/c2cciutils-1.6.0.dev95.tar.gz tmp/c2cciutils-1.6.0.dev98.tar.gz --markdown 20230524/c/c2cciutils/1.6.0.dev95-1.6.0.dev98/diff.md --exclude *.pyd
+[2023-05-24 14:51:44] INFO root fetch - processPackages [tensorcircuit-nightly]: New version: [0.9.1.dev20230524] Old Version: [0.9.1.dev20230523]
+[2023-05-24 14:51:44] WARNING root fetch - processPackages [text2tags-ooferdoodles]: Skipping, unable to determine old version
+[2023-05-24 14:51:44] INFO root fetch - processPackages [text2tags-ooferdoodles]: Start processing: django-typomatic
+[2023-05-24 14:51:44] INFO root fetch - main [MainThread]: End processing [text2tags-ooferdoodles] error
+[2023-05-24 14:51:44] INFO root fetch - processPackages [digitalguide]: executing diffoscope
+[2023-05-24 14:51:44] INFO root fetch - processPackages [digitalguide]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/digitalguide-0.0.98.tar.gz tmp/digitalguide-0.0.99.tar.gz --markdown 20230524/d/digitalguide/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-05-24 14:51:44] INFO root fetch - processPackages [c2cciutils]: New version: [1.6.0.dev98] Old Version: [1.6.0.dev95]
+[2023-05-24 14:51:44] INFO root fetch - processPackages [manticore]: executing diffoscope
+[2023-05-24 14:51:44] INFO root fetch - processPackages [manticore]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/manticore-0.3.8.dev230522.tar.gz tmp/manticore-0.3.8.dev230523.tar.gz --markdown 20230524/m/manticore/0.3.8.dev230522-0.3.8.dev230523/diff.md --exclude *.pyd
+[2023-05-24 14:51:44] INFO root fetch - processPackages [django-typomatic]: New version: [2.3.2] Old Version: [2.3.1]
+[2023-05-24 14:51:44] INFO root fetch - processPackages [c2cciutils]: executing diffoscope
+[2023-05-24 14:51:44] INFO root fetch - processPackages [c2cciutils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/c2cciutils-1.6.0.dev95.tar.gz tmp/c2cciutils-1.6.0.dev98.tar.gz --markdown 20230524/c/c2cciutils/1.6.0.dev95-1.6.0.dev98/diff.md --exclude *.pyd
+[2023-05-24 14:51:44] INFO root fetch - processPackages [kentigern]: Downloading https://files.pythonhosted.org/packages/f4/6d/c0f60d1e4a5e8b29d958dad4392a6b734c7293bd74af9628e621ffe1fc3f/kentigern-0.3.0-py3-none-any.whl
+[2023-05-24 14:51:44] INFO root fetch - processPackages [bugout]: Downloading https://files.pythonhosted.org/packages/3b/62/5449d3d16f226b10e8765220f45de9f9cf788e58b8ba16ae59243809b241/bugout-0.2.6.tar.gz
+[2023-05-24 14:51:44] INFO root fetch - processPackages [tensorcircuit-nightly]: Downloading https://files.pythonhosted.org/packages/89/7b/fa4ce49a08bd67810909bd48928fa4e85a639042b8d2fd1c450600d4b533/tensorcircuit-nightly-0.9.1.dev20230523.tar.gz
+[2023-05-24 14:51:44] INFO root fetch - processPackages [t4flib]: Downloading https://files.pythonhosted.org/packages/40/5d/928308b80bdeae138a2f3eb71a179becd1118a0ff2262f3a75b8b6d81592/t4flib-0.2.6-py2.py3-none-any.whl
+[2023-05-24 14:51:44] INFO root fetch - processPackages [t4flib]: executing diffoscope
+[2023-05-24 14:51:44] INFO root fetch - processPackages [t4flib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/t4flib-0.2.5-py2.py3-none-any.whl.zip tmp/t4flib-0.2.6-py2.py3-none-any.whl.zip --markdown 20230524/t/t4flib/0.2.5-0.2.6/diff.md --exclude *.pyd
+[2023-05-24 14:51:44] INFO root fetch - processPackages [kentigern]: Downloading https://files.pythonhosted.org/packages/1c/83/ac1335611e6386dc3c38d78b077d6007e77a52ac5bfa0b4a36439f897049/kentigern-0.4.0.tar.gz
+[2023-05-24 14:51:44] INFO root fetch - processPackages [django-typomatic]: Downloading https://files.pythonhosted.org/packages/2c/fa/2650f6f59c40c894db5e9baa6842655dac00833f113283578a2fa3c63a0d/django-typomatic-2.3.2.tar.gz
+[2023-05-24 14:51:44] INFO root fetch - processPackages [tensorcircuit-nightly]: Downloading https://files.pythonhosted.org/packages/35/38/fbcb51bc663a146e817e132f262b59fd40270b0ee9d8062563204c0c5d0a/tensorcircuit-nightly-0.9.1.dev20230524.tar.gz
+[2023-05-24 14:51:44] INFO root fetch - processPackages [bugout]: Downloading https://files.pythonhosted.org/packages/34/29/611fe63cb862c95c5787ae33229bbed6ad166fd97ea6b2cd5856d16e7d81/bugout-0.2.7.tar.gz
+[2023-05-24 14:51:44] WARNING root fetch - processPackages [kentigern]: Skipping package: exceeds size limit 19702012>=10485760
+[2023-05-24 14:51:44] INFO root fetch - processPackages [kentigern]: Start processing: recon-lw
+[2023-05-24 14:51:44] INFO root fetch - main [MainThread]: End processing [kentigern] error
+[2023-05-24 14:51:44] INFO root fetch - processPackages [recon-lw]: New version: [2.0.0.dev5065851138] Old Version: [2.0.0.dev5060266515]
+[2023-05-24 14:51:44] INFO root fetch - processPackages [tensorcircuit-nightly]: executing diffoscope
+[2023-05-24 14:51:44] INFO root fetch - processPackages [tensorcircuit-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tensorcircuit-nightly-0.9.1.dev20230523.tar.gz tmp/tensorcircuit-nightly-0.9.1.dev20230524.tar.gz --markdown 20230524/t/tensorcircuit-nightly/0.9.1.dev20230523-0.9.1.dev20230524/diff.md --exclude *.pyd
+[2023-05-24 14:51:44] INFO root fetch - processPackages [bugout]: executing diffoscope
+[2023-05-24 14:51:44] INFO root fetch - processPackages [bugout]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bugout-0.2.6.tar.gz tmp/bugout-0.2.7.tar.gz --markdown 20230524/b/bugout/0.2.6-0.2.7/diff.md --exclude *.pyd
+[2023-05-24 14:51:44] INFO root fetch - processPackages [django-typomatic]: executing diffoscope
+[2023-05-24 14:51:44] INFO root fetch - processPackages [django-typomatic]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django-typomatic-2.3.1.tar.gz tmp/django-typomatic-2.3.2.tar.gz --markdown 20230524/d/django-typomatic/2.3.1-2.3.2/diff.md --exclude *.pyd
+[2023-05-24 14:51:45] INFO root fetch - processPackages [recon-lw]: executing diffoscope
+[2023-05-24 14:51:45] INFO root fetch - processPackages [recon-lw]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/recon_lw-2.0.0.dev5060266515.tar.gz tmp/recon_lw-2.0.0.dev5065851138.tar.gz --markdown 20230524/r/recon-lw/2.0.0.dev5060266515-2.0.0.dev5065851138/diff.md --exclude *.pyd
+[2023-05-24 14:51:45] INFO root fetch - processPackages [ronnytest]: Start processing: molecule-multipass
+[2023-05-24 14:51:45] INFO root fetch - main [MainThread]: End processing [ronnytest]: success
+[2023-05-24 14:51:45] INFO root fetch - processPackages [molecule-multipass]: New version: [0.5.0] Old Version: [0.4.9]
+[2023-05-24 14:51:45] INFO root fetch - processPackages [molecule-multipass]: Downloading https://files.pythonhosted.org/packages/bd/15/953d51e5d4015487211304ac572188211453ae901cb080b2e30fff6b083b/molecule_multipass-0.5.0.tar.gz
+[2023-05-24 14:51:46] INFO root fetch - processPackages [t4flib]: Start processing: ixpeobssim
+[2023-05-24 14:51:46] INFO root fetch - main [MainThread]: End processing [t4flib]: success
+[2023-05-24 14:51:46] INFO root fetch - processPackages [digitalguide]: Start processing: utils-flask-sqlalchemy-geo
+[2023-05-24 14:51:46] INFO root fetch - main [MainThread]: End processing [digitalguide]: success
+[2023-05-24 14:51:46] INFO root fetch - processPackages [ixpeobssim]: New version: [30.4.0] Old Version: [30.3.1]
+[2023-05-24 14:51:46] INFO root fetch - processPackages [molecule-multipass]: executing diffoscope
+[2023-05-24 14:51:46] INFO root fetch - processPackages [molecule-multipass]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/molecule_multipass-0.4.9.tar.gz tmp/molecule_multipass-0.5.0.tar.gz --markdown 20230524/m/molecule-multipass/0.4.9-0.5.0/diff.md --exclude *.pyd
+[2023-05-24 14:51:46] INFO root fetch - processPackages [ixpeobssim]: Downloading https://files.pythonhosted.org/packages/b7/b2/c468533e5374569514e6366bb3a501d0fb1ab15a8967055b6969647dec35/ixpeobssim-30.3.1.tar.gz
+[2023-05-24 14:51:46] WARNING root fetch - processPackages [ixpeobssim]: Skipping package: exceeds size limit 40523889>=10485760
+[2023-05-24 14:51:46] INFO root fetch - main [MainThread]: End processing [ixpeobssim] error
+[2023-05-24 14:51:46] INFO root fetch - processPackages [utils-flask-sqlalchemy-geo]: New version: [0.2.8] Old Version: [0.2.7]
+[2023-05-24 14:51:46] INFO root fetch - main [MainThread]: End processing [manticore]: success
+[2023-05-24 14:51:46] INFO root fetch - processPackages [utils-flask-sqlalchemy-geo]: Downloading https://files.pythonhosted.org/packages/7c/1c/de3d70d7ad53dc501b88dc2f13bda60a7e33cd56683877da5f01d527f76c/utils-flask-sqlalchemy-geo-0.2.7.tar.gz
+[2023-05-24 14:51:46] INFO root fetch - main [MainThread]: End processing [bugout]: success
+[2023-05-24 14:51:46] INFO root fetch - main [MainThread]: End processing [django-typomatic]: success
+[2023-05-24 14:51:46] INFO root fetch - main [MainThread]: End processing [recon-lw]: success
+[2023-05-24 14:51:46] INFO root fetch - processPackages [utils-flask-sqlalchemy-geo]: Downloading https://files.pythonhosted.org/packages/2a/39/28c6010eff7c8bb73c84e45c062bf7bba152dfe3c2bfd0d7c2cd49d8ad64/utils-flask-sqlalchemy-geo-0.2.8.tar.gz
+[2023-05-24 14:51:47] INFO root fetch - processPackages [utils-flask-sqlalchemy-geo]: executing diffoscope
+[2023-05-24 14:51:47] INFO root fetch - processPackages [utils-flask-sqlalchemy-geo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/utils-flask-sqlalchemy-geo-0.2.7.tar.gz tmp/utils-flask-sqlalchemy-geo-0.2.8.tar.gz --markdown 20230524/u/utils-flask-sqlalchemy-geo/0.2.7-0.2.8/diff.md --exclude *.pyd
+[2023-05-24 14:51:47] INFO root fetch - main [MainThread]: End processing [molecule-multipass]: success
+[2023-05-24 14:51:48] INFO root fetch - main [MainThread]: End processing [utils-flask-sqlalchemy-geo]: success
+[2023-05-24 14:51:48] INFO root fetch - main [MainThread]: End processing [tensorcircuit-nightly]: success
+[2023-05-24 14:51:50] INFO root fetch - main [MainThread]: End processing [c2cciutils]: success
+[2023-05-24 14:51:54] INFO root fetch - main [MainThread]: End processing [c2cciutils]: success
+[2023-05-24 14:51:54] INFO root fetch - main [MainThread]: Store serial: [18229734]
