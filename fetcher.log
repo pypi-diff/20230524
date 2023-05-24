@@ -18037,3 +18037,146 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd4 in position 72: invalid
 [2023-05-24 17:10:30] INFO root fetch - main [MainThread]: End processing [tobiko]: success
 [2023-05-24 17:10:57] INFO root fetch - main [MainThread]: End processing [tensorflow-text-nightly]: success
 [2023-05-24 17:10:57] INFO root fetch - main [MainThread]: Store serial: [18231557]
+[2023-05-24 17:16:06] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18231557]
+[2023-05-24 17:16:10] INFO root fetch - main [MainThread]: Found 24 changed packages
+[2023-05-24 17:16:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: qtgql
+[2023-05-24 17:16:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: english-words
+[2023-05-24 17:16:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: trame-simput
+[2023-05-24 17:16:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: isoCycle
+[2023-05-24 17:16:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: balistem
+[2023-05-24 17:16:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: mapfun
+[2023-05-24 17:16:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: uquake
+[2023-05-24 17:16:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: runningz
+[2023-05-24 17:16:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: riptide-db-mongo
+[2023-05-24 17:16:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: AlienUpgrade
+[2023-05-24 17:16:11] INFO root fetch - processPackages [isoCycle]: New version: [0.0.37] Old Version: [0.0.36]
+[2023-05-24 17:16:11] INFO root fetch - processPackages [mapfun]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-05-24 17:16:11] INFO root fetch - processPackages [uquake]: New version: [1.3.2] Old Version: [1.3.1]
+[2023-05-24 17:16:11] INFO root fetch - processPackages [isoCycle]: Downloading https://files.pythonhosted.org/packages/e1/99/5f40f2a833c8a6abd36ca0887676b6b4f4099a595c8a731f5fb322ce13e2/isoCycle-0.0.36.tar.gz
+[2023-05-24 17:16:11] INFO root fetch - processPackages [trame-simput]: New version: [2.3.2] Old Version: [2.3.1]
+[2023-05-24 17:16:11] WARNING root fetch - processPackages [balistem]: Skipping, unable to determine old version
+[2023-05-24 17:16:11] INFO root fetch - processPackages [balistem]: Start processing: YMS
+[2023-05-24 17:16:11] INFO root fetch - main [MainThread]: End processing [balistem] error
+[2023-05-24 17:16:11] INFO root fetch - processPackages [english-words]: New version: [2.0.1] Old Version: [2.0.0]
+[2023-05-24 17:16:11] INFO root fetch - processPackages [runningz]: New version: [0.11.3.7] Old Version: [0.11.3.6]
+[2023-05-24 17:16:11] WARNING root fetch - processPackages [riptide-db-mongo]: Skipping, unable to determine old version
+[2023-05-24 17:16:11] INFO root fetch - processPackages [riptide-db-mongo]: Start processing: mm-sdk
+[2023-05-24 17:16:11] INFO root fetch - main [MainThread]: End processing [riptide-db-mongo] error
+[2023-05-24 17:16:11] INFO root fetch - processPackages [qtgql]: New version: [0.119.1] Old Version: [0.119.0]
+[2023-05-24 17:16:11] WARNING root fetch - processPackages [AlienUpgrade]: Skipping, unable to determine old version
+[2023-05-24 17:16:11] INFO root fetch - processPackages [AlienUpgrade]: Start processing: policyengine-core
+[2023-05-24 17:16:11] INFO root fetch - main [MainThread]: End processing [AlienUpgrade] error
+[2023-05-24 17:16:11] INFO root fetch - processPackages [YMS]: New version: [0.83] Old Version: [0.82]
+[2023-05-24 17:16:11] INFO root fetch - processPackages [uquake]: executing diffoscope
+[2023-05-24 17:16:11] INFO root fetch - processPackages [uquake]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/uquake-1.3.1.tar.gz tmp/uquake-1.3.2.tar.gz --markdown 20230524/u/uquake/1.3.1-1.3.2/diff.md --exclude *.pyd
+[2023-05-24 17:16:11] INFO root fetch - processPackages [mapfun]: Downloading https://files.pythonhosted.org/packages/ee/7a/ff1b467e646f87d3b0748981d14457704ef1032fcb56a368f2fb012a2a1e/mapfun-0.0.1.tar.gz
+[2023-05-24 17:16:11] WARNING root fetch - processPackages [isoCycle]: Skipping package: exceeds size limit 92197577>=10485760
+[2023-05-24 17:16:11] INFO root fetch - processPackages [isoCycle]: Start processing: neural-anthropometer
+[2023-05-24 17:16:11] INFO root fetch - main [MainThread]: End processing [isoCycle] error
+[2023-05-24 17:16:11] INFO root fetch - processPackages [trame-simput]: Downloading https://files.pythonhosted.org/packages/1c/da/f4cf7121e4b5653a13dada78cd850c2ae1371e8e1a283daf74c185000122/trame-simput-2.3.1.tar.gz
+[2023-05-24 17:16:11] INFO root fetch - processPackages [mm-sdk]: New version: [0.1.3] Old Version: [0.1.281]
+[2023-05-24 17:16:11] INFO root fetch - processPackages [YMS]: executing diffoscope
+[2023-05-24 17:16:11] INFO root fetch - processPackages [policyengine-core]: New version: [2.1.1] Old Version: [2.0.4]
+[2023-05-24 17:16:11] INFO root fetch - processPackages [YMS]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/YMS-0.82.tar.gz tmp/YMS-0.83.tar.gz --markdown 20230524/Y/YMS/0.82-0.83/diff.md --exclude *.pyd
+[2023-05-24 17:16:11] INFO root fetch - processPackages [qtgql]: Downloading https://files.pythonhosted.org/packages/fb/46/eed662b58b836de4d6180dc4a8f42ff69a09229a91aa5125dc07c8b27366/qtgql-0.119.0.tar.gz
+[2023-05-24 17:16:11] INFO root fetch - processPackages [neural-anthropometer]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-05-24 17:16:11] INFO root fetch - processPackages [english-words]: Downloading https://files.pythonhosted.org/packages/34/55/4a8c7eb50e2c9445e8dd8e1960893050267179359fbd348a0601b800d7c8/english-words-2.0.0.tar.gz
+[2023-05-24 17:16:11] INFO root fetch - processPackages [mm-sdk]: Downloading https://files.pythonhosted.org/packages/b8/74/87a4fd4a1779faf953acada4421513079914ffef9d4dc625e99fa2b9967d/mm_sdk-0.1.281.tar.gz
+[2023-05-24 17:16:11] INFO root fetch - processPackages [runningz]: Downloading https://files.pythonhosted.org/packages/d3/3c/abf4c04035335603028fa8aada7a95b18985a9f9e19817e487aa19d6bda5/runningz-0.11.3.7-py39-none-any.whl
+[2023-05-24 17:16:11] INFO root fetch - processPackages [neural-anthropometer]: Downloading https://files.pythonhosted.org/packages/28/88/818257bcd56f870aca7de74916e3b6855099b2e1059748c2cc110b8062ae/neural_anthropometer-0.0.2.tar.gz
+[2023-05-24 17:16:11] INFO root fetch - processPackages [mapfun]: Downloading https://files.pythonhosted.org/packages/21/10/7d00a0cc68a8ccdf971952cc10ef50bbeb82199b4519f6a8421b89ae3762/mapfun-0.0.2.tar.gz
+[2023-05-24 17:16:11] INFO root fetch - processPackages [trame-simput]: Downloading https://files.pythonhosted.org/packages/99/08/af8dc51383e23e21e736107b672608df8f770320f861125a411be36cc237/trame-simput-2.3.2.tar.gz
+[2023-05-24 17:16:11] INFO root fetch - processPackages [qtgql]: Downloading https://files.pythonhosted.org/packages/00/61/d239ada664140f01279ef7388183018f1af5f6d26b1e66b9955f110c904c/qtgql-0.119.1.tar.gz
+[2023-05-24 17:16:11] INFO root fetch - processPackages [runningz]: executing diffoscope
+[2023-05-24 17:16:11] INFO root fetch - processPackages [runningz]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/runningz-0.11.3.6-py39-none-any.whl.zip tmp/runningz-0.11.3.7-py39-none-any.whl.zip --markdown 20230524/r/runningz/0.11.3.6-0.11.3.7/diff.md --exclude *.pyd
+[2023-05-24 17:16:11] INFO root fetch - processPackages [policyengine-core]: Downloading https://files.pythonhosted.org/packages/15/75/f85ca1251bd356bf32832ef1d81f6ff989528a6008b66dab6066d4d4f7ef/policyengine-core-2.1.1.tar.gz
+[2023-05-24 17:16:11] INFO root fetch - processPackages [mapfun]: executing diffoscope
+[2023-05-24 17:16:11] INFO root fetch - processPackages [mapfun]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mapfun-0.0.1.tar.gz tmp/mapfun-0.0.2.tar.gz --markdown 20230524/m/mapfun/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-05-24 17:16:11] INFO root fetch - processPackages [trame-simput]: executing diffoscope
+[2023-05-24 17:16:11] INFO root fetch - processPackages [trame-simput]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/trame-simput-2.3.1.tar.gz tmp/trame-simput-2.3.2.tar.gz --markdown 20230524/t/trame-simput/2.3.1-2.3.2/diff.md --exclude *.pyd
+[2023-05-24 17:16:11] INFO root fetch - processPackages [policyengine-core]: executing diffoscope
+[2023-05-24 17:16:11] INFO root fetch - processPackages [policyengine-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/policyengine-core-2.0.4.tar.gz tmp/policyengine-core-2.1.1.tar.gz --markdown 20230524/p/policyengine-core/2.0.4-2.1.1/diff.md --exclude *.pyd
+[2023-05-24 17:16:11] INFO root fetch - processPackages [english-words]: Downloading https://files.pythonhosted.org/packages/94/d1/78b51ad44e4a318ee4f6d32a0b344a918d5fd690de0b0ff6a116b1bc97cf/english-words-2.0.1.tar.gz
+[2023-05-24 17:16:11] INFO root fetch - processPackages [mm-sdk]: Downloading https://files.pythonhosted.org/packages/03/aa/d8c272285a7704066ac4561b833b5144e76c812479a75a91e1eff3bc24af/mm-sdk-0.1.3.tar.gz
+[2023-05-24 17:16:11] INFO root fetch - processPackages [qtgql]: executing diffoscope
+[2023-05-24 17:16:11] INFO root fetch - processPackages [qtgql]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/qtgql-0.119.0.tar.gz tmp/qtgql-0.119.1.tar.gz --markdown 20230524/q/qtgql/0.119.0-0.119.1/diff.md --exclude *.pyd
+[2023-05-24 17:16:11] INFO root fetch - processPackages [neural-anthropometer]: Downloading https://files.pythonhosted.org/packages/7f/27/bd1010221f317f3e745576e05b8b71618b3b793f3b94171040a24d23f89b/neural_anthropometer-0.0.3.tar.gz
+[2023-05-24 17:16:11] INFO root fetch - processPackages [mm-sdk]: executing diffoscope
+[2023-05-24 17:16:11] INFO root fetch - processPackages [mm-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mm_sdk-0.1.281.tar.gz tmp/mm-sdk-0.1.3.tar.gz --markdown 20230524/m/mm-sdk/0.1.281-0.1.3/diff.md --exclude *.pyd
+[2023-05-24 17:16:11] INFO root fetch - processPackages [neural-anthropometer]: executing diffoscope
+[2023-05-24 17:16:11] INFO root fetch - processPackages [neural-anthropometer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/neural_anthropometer-0.0.2.tar.gz tmp/neural_anthropometer-0.0.3.tar.gz --markdown 20230524/n/neural-anthropometer/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-05-24 17:16:12] INFO root fetch - processPackages [english-words]: executing diffoscope
+[2023-05-24 17:16:12] INFO root fetch - processPackages [english-words]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/english-words-2.0.0.tar.gz tmp/english-words-2.0.1.tar.gz --markdown 20230524/e/english-words/2.0.0-2.0.1/diff.md --exclude *.pyd
+[2023-05-24 17:16:12] INFO root fetch - processPackages [YMS]: Start processing: riptide-all
+[2023-05-24 17:16:12] INFO root fetch - main [MainThread]: End processing [YMS]: success
+[2023-05-24 17:16:12] INFO root fetch - processPackages [riptide-all]: New version: [0.8.0b1] Old Version: [0.7.0]
+[2023-05-24 17:16:12] INFO root fetch - processPackages [uquake]: Start processing: corby
+[2023-05-24 17:16:12] INFO root fetch - main [MainThread]: End processing [uquake]: success
+[2023-05-24 17:16:12] INFO root fetch - processPackages [corby]: New version: [0.0.1] Old Version: [0.0.0]
+[2023-05-24 17:16:12] INFO root fetch - processPackages [riptide-all]: Downloading https://files.pythonhosted.org/packages/48/0d/6f174177341cccf6be3a104a9c824eb2196d9f66b52fdf693e218443996c/riptide_all-0.7.0-py3-none-any.whl
+[2023-05-24 17:16:13] INFO root fetch - processPackages [corby]: Downloading https://files.pythonhosted.org/packages/a4/a3/492586414a47baae21ae321e0ddb559ad3fcc1f501a729207d38ca28365e/corby-0.0.0.tar.gz
+[2023-05-24 17:16:13] INFO root fetch - processPackages [mapfun]: Start processing: finbourne-identity-sdk
+[2023-05-24 17:16:13] INFO root fetch - main [MainThread]: End processing [mapfun]: success
+[2023-05-24 17:16:13] INFO root fetch - processPackages [riptide-all]: Downloading https://files.pythonhosted.org/packages/83/e5/57027b39bb44896553849e7e327a3a7733c2b02821d7556d07f914c56d2e/riptide_all-0.8.0b1-py3-none-any.whl
+[2023-05-24 17:16:13] INFO root fetch - processPackages [riptide-all]: executing diffoscope
+[2023-05-24 17:16:13] INFO root fetch - processPackages [riptide-all]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/riptide_all-0.7.0-py3-none-any.whl.zip tmp/riptide_all-0.8.0b1-py3-none-any.whl.zip --markdown 20230524/r/riptide-all/0.7.0-0.8.0b1/diff.md --exclude *.pyd
+[2023-05-24 17:16:13] INFO root fetch - processPackages [corby]: Downloading https://files.pythonhosted.org/packages/0a/7b/7d9da95af7dd47dcd0a1c8e9bcf9b5a3e93d5d6ca28e59cab3af2518df5e/corby-0.0.1.tar.gz
+[2023-05-24 17:16:13] INFO root fetch - processPackages [finbourne-identity-sdk]: New version: [0.0.840] Old Version: [0.0.2442]
+[2023-05-24 17:16:13] INFO root fetch - processPackages [corby]: executing diffoscope
+[2023-05-24 17:16:13] INFO root fetch - processPackages [corby]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/corby-0.0.0.tar.gz tmp/corby-0.0.1.tar.gz --markdown 20230524/c/corby/0.0.0-0.0.1/diff.md --exclude *.pyd
+[2023-05-24 17:16:13] INFO root fetch - processPackages [finbourne-identity-sdk]: Downloading https://files.pythonhosted.org/packages/44/1e/beb146fb8cb005805034c01e6533b46d71a9dc1e316aa7bf95abcb96edb1/finbourne-identity-sdk-0.0.2442.tar.gz
+[2023-05-24 17:16:13] INFO root fetch - processPackages [runningz]: Start processing: dirigera
+[2023-05-24 17:16:13] INFO root fetch - main [MainThread]: End processing [runningz]: success
+[2023-05-24 17:16:13] INFO root fetch - processPackages [finbourne-identity-sdk]: executing diffoscope
+[2023-05-24 17:16:13] INFO root fetch - processPackages [finbourne-identity-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/finbourne-identity-sdk-0.0.2442.tar.gz tmp/finbourne-identity-sdk-0.0.840.tar.gz --markdown 20230524/f/finbourne-identity-sdk/0.0.2442-0.0.840/diff.md --exclude *.pyd
+[2023-05-24 17:16:13] INFO root fetch - processPackages [dirigera]: New version: [0.1.7] Old Version: [0.1.6]
+[2023-05-24 17:16:13] INFO root fetch - processPackages [qtgql]: Start processing: zood
+[2023-05-24 17:16:13] INFO root fetch - main [MainThread]: End processing [qtgql]: success
+[2023-05-24 17:16:13] INFO root fetch - processPackages [dirigera]: Downloading https://files.pythonhosted.org/packages/06/27/6c0732d8755fd7b6b350693f20a77f9f8ce8966729a3697fd62fa9ab33ee/dirigera-0.1.6.tar.gz
+[2023-05-24 17:16:14] INFO root fetch - processPackages [zood]: New version: [0.7.5] Old Version: [0.7.4]
+[2023-05-24 17:16:14] INFO root fetch - processPackages [neural-anthropometer]: Start processing: remla12-lib-release
+[2023-05-24 17:16:14] INFO root fetch - main [MainThread]: End processing [neural-anthropometer]: success
+[2023-05-24 17:16:14] INFO root fetch - processPackages [remla12-lib-release]: New version: [0.1.0] Old Version: [0.0.8]
+[2023-05-24 17:16:14] INFO root fetch - processPackages [remla12-lib-release]: executing diffoscope
+[2023-05-24 17:16:14] INFO root fetch - processPackages [remla12-lib-release]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/remla12-lib-release-0.0.8.tar.gz tmp/remla12-lib-release-0.1.0.tar.gz --markdown 20230524/r/remla12-lib-release/0.0.8-0.1.0/diff.md --exclude *.pyd
+[2023-05-24 17:16:14] INFO root fetch - processPackages [mm-sdk]: Start processing: funding-service-design-utils
+[2023-05-24 17:16:14] INFO root fetch - main [MainThread]: End processing [mm-sdk]: success
+[2023-05-24 17:16:14] INFO root fetch - processPackages [dirigera]: Downloading https://files.pythonhosted.org/packages/d9/c2/9ce83bd474be341ec450532bf904f526d5453d236cab38a5a39f840ebc90/dirigera-0.1.7.tar.gz
+[2023-05-24 17:16:14] INFO root fetch - processPackages [riptide-all]: Start processing: pollination-honeybee-radiance-postprocess
+[2023-05-24 17:16:14] INFO root fetch - main [MainThread]: End processing [riptide-all]: success
+[2023-05-24 17:16:14] INFO root fetch - processPackages [zood]: Downloading https://files.pythonhosted.org/packages/5c/a7/cfb42c9f6699466a97f37f4d457ac6a7794ac7d557203d20153f1d7ce262/zood-0.7.5.tar.gz
+[2023-05-24 17:16:14] INFO root fetch - processPackages [dirigera]: executing diffoscope
+[2023-05-24 17:16:14] INFO root fetch - processPackages [dirigera]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dirigera-0.1.6.tar.gz tmp/dirigera-0.1.7.tar.gz --markdown 20230524/d/dirigera/0.1.6-0.1.7/diff.md --exclude *.pyd
+[2023-05-24 17:16:14] INFO root fetch - processPackages [funding-service-design-utils]: New version: [2.0.3] Old Version: [2.0.2]
+[2023-05-24 17:16:14] INFO root fetch - processPackages [zood]: executing diffoscope
+[2023-05-24 17:16:14] INFO root fetch - processPackages [zood]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/zood-0.7.4.tar.gz tmp/zood-0.7.5.tar.gz --markdown 20230524/z/zood/0.7.4-0.7.5/diff.md --exclude *.pyd
+[2023-05-24 17:16:14] INFO root fetch - processPackages [corby]: Start processing: sfapi-client
+[2023-05-24 17:16:14] INFO root fetch - main [MainThread]: End processing [corby]: success
+[2023-05-24 17:16:14] INFO root fetch - processPackages [sfapi-client]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-05-24 17:16:14] INFO root fetch - processPackages [pollination-honeybee-radiance-postprocess]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-24 17:16:14] INFO root fetch - processPackages [funding-service-design-utils]: Downloading https://files.pythonhosted.org/packages/84/fa/33d0e4e0b1fd1c6d85052e71207ed8e38f58cddae9a9e16728d2554fc29f/funding-service-design-utils-2.0.3.tar.gz
+[2023-05-24 17:16:14] INFO root fetch - processPackages [funding-service-design-utils]: executing diffoscope
+[2023-05-24 17:16:14] INFO root fetch - processPackages [funding-service-design-utils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/funding-service-design-utils-2.0.2.tar.gz tmp/funding-service-design-utils-2.0.3.tar.gz --markdown 20230524/f/funding-service-design-utils/2.0.2-2.0.3/diff.md --exclude *.pyd
+[2023-05-24 17:16:15] INFO root fetch - processPackages [sfapi-client]: Downloading https://files.pythonhosted.org/packages/b8/4d/c94cb18c4a0ef1ad70742a5b06a6c1c22810313dd698d7052780ba7e20dc/sfapi_client-0.0.3.tar.gz
+[2023-05-24 17:16:15] INFO root fetch - processPackages [pollination-honeybee-radiance-postprocess]: executing diffoscope
+[2023-05-24 17:16:15] INFO root fetch - processPackages [pollination-honeybee-radiance-postprocess]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pollination-honeybee-radiance-postprocess-0.0.8.tar.gz tmp/pollination-honeybee-radiance-postprocess-0.0.9.tar.gz --markdown 20230524/p/pollination-honeybee-radiance-postprocess/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-24 17:16:15] INFO root fetch - processPackages [sfapi-client]: executing diffoscope
+[2023-05-24 17:16:15] INFO root fetch - processPackages [sfapi-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sfapi_client-0.0.2.tar.gz tmp/sfapi_client-0.0.3.tar.gz --markdown 20230524/s/sfapi-client/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-05-24 17:16:15] INFO root fetch - processPackages [remla12-lib-release]: Start processing: alchemite-apiclient
+[2023-05-24 17:16:15] INFO root fetch - main [MainThread]: End processing [remla12-lib-release]: success
+[2023-05-24 17:16:15] INFO root fetch - processPackages [alchemite-apiclient]: New version: [0.54.0.post1] Old Version: [0.54.0]
+[2023-05-24 17:16:15] INFO root fetch - main [MainThread]: End processing [finbourne-identity-sdk]: success
+[2023-05-24 17:16:15] INFO root fetch - processPackages [alchemite-apiclient]: Downloading https://files.pythonhosted.org/packages/9b/a8/a27cbf7d28d0c9f6ad738c0ed50ae0e3c47785fe708379fda82e48712a00/alchemite_apiclient-0.54.0.tar.gz
+[2023-05-24 17:16:16] INFO root fetch - main [MainThread]: End processing [zood]: success
+[2023-05-24 17:16:16] INFO root fetch - main [MainThread]: End processing [policyengine-core]: success
+[2023-05-24 17:16:16] INFO root fetch - main [MainThread]: End processing [dirigera]: success
+[2023-05-24 17:16:16] INFO root fetch - processPackages [alchemite-apiclient]: Downloading https://files.pythonhosted.org/packages/cc/95/ab9b31aecd7e9e7c53bf9679e7563aa2c1ace2de8217e8db9bc9a6612bb2/alchemite_apiclient-0.54.0.post1.tar.gz
+[2023-05-24 17:16:16] INFO root fetch - main [MainThread]: End processing [pollination-honeybee-radiance-postprocess]: success
+[2023-05-24 17:16:16] INFO root fetch - processPackages [alchemite-apiclient]: executing diffoscope
+[2023-05-24 17:16:16] INFO root fetch - processPackages [alchemite-apiclient]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/alchemite_apiclient-0.54.0.tar.gz tmp/alchemite_apiclient-0.54.0.post1.tar.gz --markdown 20230524/a/alchemite-apiclient/0.54.0-0.54.0.post1/diff.md --exclude *.pyd
+[2023-05-24 17:16:16] INFO root fetch - main [MainThread]: End processing [sfapi-client]: success
+[2023-05-24 17:16:17] INFO root fetch - main [MainThread]: End processing [funding-service-design-utils]: success
+[2023-05-24 17:16:22] INFO root fetch - main [MainThread]: End processing [alchemite-apiclient]: success
+[2023-05-24 17:16:23] INFO root fetch - main [MainThread]: End processing [trame-simput]: success
+[2023-05-24 17:16:26] INFO root fetch - main [MainThread]: End processing [english-words]: success
+[2023-05-24 17:16:26] INFO root fetch - main [MainThread]: Store serial: [18231635]
