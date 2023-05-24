@@ -10623,3 +10623,134 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-05-24 10:38:32] INFO root fetch - main [MainThread]: End processing [alibabacloud-dingtalk]: success
 [2023-05-24 10:39:29] INFO root fetch - main [MainThread]: End processing [ewoksweb]: success
 [2023-05-24 10:39:29] INFO root fetch - main [MainThread]: Store serial: [18226909]
+[2023-05-24 10:44:34] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18226909]
+[2023-05-24 10:44:39] INFO root fetch - main [MainThread]: Found 23 changed packages
+[2023-05-24 10:44:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: django-vectortiles
+[2023-05-24 10:44:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: tigerblog
+[2023-05-24 10:44:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: gardener-cicd-base
+[2023-05-24 10:44:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: gardener-cicd-cli
+[2023-05-24 10:44:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: gardener-cicd-dso
+[2023-05-24 10:44:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: gardener-cicd-libs
+[2023-05-24 10:44:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: gardener-cicd-whd
+[2023-05-24 10:44:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: gardener-oci
+[2023-05-24 10:44:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: gmltools
+[2023-05-24 10:44:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: USsym
+[2023-05-24 10:44:39] INFO root fetch - processPackages [django-vectortiles]: New version: [1.0.0b2] Old Version: [1.0.0b1]
+[2023-05-24 10:44:39] INFO root fetch - processPackages [tigerblog]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-24 10:44:39] INFO root fetch - processPackages [USsym]: New version: [0.1.3] Old Version: [0.1.2]
+[2023-05-24 10:44:39] INFO root fetch - processPackages [USsym]: executing diffoscope
+[2023-05-24 10:44:39] INFO root fetch - processPackages [USsym]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/USsym-0.1.2.tar.gz tmp/USsym-0.1.3.tar.gz --markdown 20230524/U/USsym/0.1.2-0.1.3/diff.md --exclude *.pyd
+[2023-05-24 10:44:39] INFO root fetch - processPackages [gmltools]: New version: [0.0.66] Old Version: [0.0.65]
+[2023-05-24 10:44:39] INFO root fetch - processPackages [gardener-cicd-base]: New version: [1.2061.0] Old Version: [1.2060.0]
+[2023-05-24 10:44:39] INFO root fetch - processPackages [gardener-cicd-cli]: New version: [1.2061.0] Old Version: [1.2060.0]
+[2023-05-24 10:44:39] INFO root fetch - processPackages [gardener-cicd-dso]: New version: [1.2061.0] Old Version: [1.2060.0]
+[2023-05-24 10:44:39] INFO root fetch - processPackages [gardener-cicd-whd]: New version: [1.2061.0] Old Version: [1.2060.0]
+[2023-05-24 10:44:39] INFO root fetch - processPackages [gardener-cicd-libs]: New version: [1.2061.0] Old Version: [1.2060.0]
+[2023-05-24 10:44:39] INFO root fetch - processPackages [gardener-oci]: New version: [1.999.0] Old Version: [1.998.0]
+[2023-05-24 10:44:40] INFO root fetch - processPackages [django-vectortiles]: Downloading https://files.pythonhosted.org/packages/c7/af/70551fe52dc06b95be3f3d0c16c6485f26712a9324b281c1593daf1bd7bc/django-vectortiles-1.0.0b2.tar.gz
+[2023-05-24 10:44:40] INFO root fetch - processPackages [tigerblog]: Downloading https://files.pythonhosted.org/packages/23/0f/6a0fec4b0cafdb4c1a9f42e93a456ba31cc0b1f03240d001db6df1ee282d/tigerblog-0.1.9.tar.gz
+[2023-05-24 10:44:40] INFO root fetch - processPackages [gardener-cicd-base]: Downloading https://files.pythonhosted.org/packages/36/33/e3593f19ba330ca150924778424505f9387ea816203c7cd2c871a9b38e94/gardener-cicd-base-1.2061.0.tar.gz
+[2023-05-24 10:44:40] INFO root fetch - processPackages [gardener-cicd-dso]: Downloading https://files.pythonhosted.org/packages/08/a5/faf0f15897794de77527e245653c53518bb5b3cd07d54b4a78f56b85ddbf/gardener-cicd-dso-1.2061.0.tar.gz
+[2023-05-24 10:44:40] INFO root fetch - processPackages [gardener-cicd-whd]: Downloading https://files.pythonhosted.org/packages/70/31/eec43537a72157320c92ea54b2b8deaa9fc5c3f04d5a7bb21e1b86a471a5/gardener-cicd-whd-1.2061.0.tar.gz
+[2023-05-24 10:44:40] INFO root fetch - processPackages [django-vectortiles]: executing diffoscope
+[2023-05-24 10:44:40] INFO root fetch - processPackages [django-vectortiles]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django-vectortiles-1.0.0b1.tar.gz tmp/django-vectortiles-1.0.0b2.tar.gz --markdown 20230524/d/django-vectortiles/1.0.0b1-1.0.0b2/diff.md --exclude *.pyd
+[2023-05-24 10:44:40] INFO root fetch - processPackages [gardener-cicd-cli]: Downloading https://files.pythonhosted.org/packages/6c/52/b035bddb4bc7431ff36394c3b689ea189fa178e673c3417679a66789ee76/gardener-cicd-cli-1.2061.0.tar.gz
+[2023-05-24 10:44:40] INFO root fetch - processPackages [tigerblog]: executing diffoscope
+[2023-05-24 10:44:40] INFO root fetch - processPackages [gmltools]: Downloading https://files.pythonhosted.org/packages/33/07/c9bb043d364117d759ce18b4fa3a6eaef7a47fc3b2c9579435d3e15d8810/gmltools-0.0.66.tar.gz
+[2023-05-24 10:44:40] INFO root fetch - processPackages [tigerblog]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tigerblog-0.1.8.tar.gz tmp/tigerblog-0.1.9.tar.gz --markdown 20230524/t/tigerblog/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-24 10:44:40] INFO root fetch - processPackages [gardener-cicd-libs]: Downloading https://files.pythonhosted.org/packages/c6/5b/870bcb80ad5fdeba4a1fe9d78e7c6256c18aec4e4022d328b7dbf5402221/gardener-cicd-libs-1.2061.0.tar.gz
+[2023-05-24 10:44:40] INFO root fetch - processPackages [gardener-oci]: executing diffoscope
+[2023-05-24 10:44:40] INFO root fetch - processPackages [gardener-oci]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gardener-oci-1.998.0.tar.gz tmp/gardener-oci-1.999.0.tar.gz --markdown 20230524/g/gardener-oci/1.998.0-1.999.0/diff.md --exclude *.pyd
+[2023-05-24 10:44:40] INFO root fetch - processPackages [gardener-cicd-base]: executing diffoscope
+[2023-05-24 10:44:40] INFO root fetch - processPackages [gardener-cicd-base]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gardener-cicd-base-1.2060.0.tar.gz tmp/gardener-cicd-base-1.2061.0.tar.gz --markdown 20230524/g/gardener-cicd-base/1.2060.0-1.2061.0/diff.md --exclude *.pyd
+[2023-05-24 10:44:40] INFO root fetch - processPackages [gardener-cicd-dso]: executing diffoscope
+[2023-05-24 10:44:40] INFO root fetch - processPackages [gardener-cicd-dso]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gardener-cicd-dso-1.2060.0.tar.gz tmp/gardener-cicd-dso-1.2061.0.tar.gz --markdown 20230524/g/gardener-cicd-dso/1.2060.0-1.2061.0/diff.md --exclude *.pyd
+[2023-05-24 10:44:40] INFO root fetch - processPackages [gardener-cicd-whd]: executing diffoscope
+[2023-05-24 10:44:40] INFO root fetch - processPackages [gardener-cicd-whd]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gardener-cicd-whd-1.2060.0.tar.gz tmp/gardener-cicd-whd-1.2061.0.tar.gz --markdown 20230524/g/gardener-cicd-whd/1.2060.0-1.2061.0/diff.md --exclude *.pyd
+[2023-05-24 10:44:40] INFO root fetch - processPackages [gardener-cicd-cli]: executing diffoscope
+[2023-05-24 10:44:40] INFO root fetch - processPackages [gardener-cicd-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gardener-cicd-cli-1.2060.0.tar.gz tmp/gardener-cicd-cli-1.2061.0.tar.gz --markdown 20230524/g/gardener-cicd-cli/1.2060.0-1.2061.0/diff.md --exclude *.pyd
+[2023-05-24 10:44:40] INFO root fetch - processPackages [gardener-cicd-libs]: executing diffoscope
+[2023-05-24 10:44:40] INFO root fetch - processPackages [gardener-cicd-libs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gardener-cicd-libs-1.2060.0.tar.gz tmp/gardener-cicd-libs-1.2061.0.tar.gz --markdown 20230524/g/gardener-cicd-libs/1.2060.0-1.2061.0/diff.md --exclude *.pyd
+[2023-05-24 10:44:40] INFO root fetch - processPackages [gmltools]: executing diffoscope
+[2023-05-24 10:44:40] INFO root fetch - processPackages [gmltools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gmltools-0.0.65.tar.gz tmp/gmltools-0.0.66.tar.gz --markdown 20230524/g/gmltools/0.0.65-0.0.66/diff.md --exclude *.pyd
+[2023-05-24 10:44:41] INFO root fetch - processPackages [USsym]: Start processing: mltu
+[2023-05-24 10:44:41] INFO root fetch - main [MainThread]: End processing [USsym]: success
+[2023-05-24 10:44:41] INFO root fetch - processPackages [mltu]: New version: [1.0.8] Old Version: [1.0.7]
+[2023-05-24 10:44:41] INFO root fetch - processPackages [mltu]: Downloading https://files.pythonhosted.org/packages/29/97/beddbb722b630327e2e86086cc501026ed9614647be1460c5d05debf613b/mltu-1.0.7.tar.gz
+[2023-05-24 10:44:41] INFO root fetch - processPackages [django-vectortiles]: Start processing: FreeplanIr
+[2023-05-24 10:44:41] INFO root fetch - main [MainThread]: End processing [django-vectortiles]: success
+[2023-05-24 10:44:41] INFO root fetch - processPackages [gardener-oci]: Start processing: panda-client-light
+[2023-05-24 10:44:41] INFO root fetch - main [MainThread]: End processing [gardener-oci]: success
+[2023-05-24 10:44:41] INFO root fetch - processPackages [tigerblog]: Start processing: panda-client
+[2023-05-24 10:44:41] INFO root fetch - main [MainThread]: End processing [tigerblog]: success
+[2023-05-24 10:44:41] INFO root fetch - processPackages [panda-client]: New version: [1.5.9] Old Version: [1.5.8]
+[2023-05-24 10:44:41] INFO root fetch - processPackages [gardener-cicd-whd]: Start processing: bossman
+[2023-05-24 10:44:41] INFO root fetch - main [MainThread]: End processing [gardener-cicd-whd]: success
+[2023-05-24 10:44:41] WARNING root fetch - processPackages [FreeplanIr]: Skipping, unable to determine old version
+[2023-05-24 10:44:41] INFO root fetch - processPackages [FreeplanIr]: Start processing: tff-nightly
+[2023-05-24 10:44:41] INFO root fetch - main [MainThread]: End processing [FreeplanIr] error
+[2023-05-24 10:44:41] INFO root fetch - processPackages [tff-nightly]: New version: [0.0.1.dev20230523] Old Version: [0.0.1.dev20230522]
+[2023-05-24 10:44:41] INFO root fetch - processPackages [panda-client-light]: New version: [1.5.53] Old Version: [1.5.52]
+[2023-05-24 10:44:41] INFO root fetch - processPackages [bossman]: New version: [0.9.0] Old Version: [0.8.0]
+[2023-05-24 10:44:42] INFO root fetch - processPackages [gardener-cicd-base]: Start processing: keystore-client
+[2023-05-24 10:44:42] INFO root fetch - main [MainThread]: End processing [gardener-cicd-base]: success
+[2023-05-24 10:44:42] INFO root fetch - processPackages [gardener-cicd-cli]: Start processing: docarray
+[2023-05-24 10:44:42] INFO root fetch - main [MainThread]: End processing [gardener-cicd-cli]: success
+[2023-05-24 10:44:42] INFO root fetch - processPackages [docarray]: New version: [0.9.9.dev5] Old Version: [0.9.9.dev4]
+[2023-05-24 10:44:42] INFO root fetch - processPackages [mltu]: Downloading https://files.pythonhosted.org/packages/6c/7a/53267e410178b81e16179bba8681a8ec5371b61b229a6af8deb4d1ec90a5/mltu-1.0.8.tar.gz
+[2023-05-24 10:44:42] WARNING root fetch - processPackages [keystore-client]: Skipping, unable to determine old version
+[2023-05-24 10:44:42] INFO root fetch - processPackages [keystore-client]: Start processing: spetlr
+[2023-05-24 10:44:42] INFO root fetch - main [MainThread]: End processing [keystore-client] error
+[2023-05-24 10:44:42] INFO root fetch - processPackages [tff-nightly]: Downloading https://files.pythonhosted.org/packages/94/45/2dcd6a27bba9dade8abbae81d02ec3efb39e27f368784b90b5a338d1f9d1/tff_nightly-0.0.1.dev20230523-py2.py3-none-any.whl
+[2023-05-24 10:44:42] INFO root fetch - processPackages [bossman]: Downloading https://files.pythonhosted.org/packages/84/0e/9d0882f1736f5b726a0a9dcd16b03c2d77de338e829eefcb99b592a5daf8/bossman-0.8.0.tar.gz
+[2023-05-24 10:44:42] INFO root fetch - processPackages [mltu]: executing diffoscope
+[2023-05-24 10:44:42] INFO root fetch - processPackages [mltu]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mltu-1.0.7.tar.gz tmp/mltu-1.0.8.tar.gz --markdown 20230524/m/mltu/1.0.7-1.0.8/diff.md --exclude *.pyd
+[2023-05-24 10:44:42] INFO root fetch - processPackages [docarray]: executing diffoscope
+[2023-05-24 10:44:42] INFO root fetch - processPackages [docarray]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/docarray-0.9.9.dev4.tar.gz tmp/docarray-0.9.9.dev5.tar.gz --markdown 20230524/d/docarray/0.9.9.dev4-0.9.9.dev5/diff.md --exclude *.pyd
+[2023-05-24 10:44:42] INFO root fetch - processPackages [panda-client-light]: Downloading https://files.pythonhosted.org/packages/29/2e/84b96e87c7b455910aec3545b5bc87f121c7bf22722155807e690e2e7ace/panda_client_light-1.5.53-py2.py3-none-any.whl
+[2023-05-24 10:44:42] INFO root fetch - processPackages [panda-client]: executing diffoscope
+[2023-05-24 10:44:42] INFO root fetch - processPackages [panda-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/panda-client-1.5.8.tar.gz tmp/panda-client-1.5.9.tar.gz --markdown 20230524/p/panda-client/1.5.8-1.5.9/diff.md --exclude *.pyd
+[2023-05-24 10:44:42] INFO root fetch - processPackages [spetlr]: New version: [1.1.89] Old Version: [1.1.86]
+[2023-05-24 10:44:42] INFO root fetch - processPackages [panda-client-light]: executing diffoscope
+[2023-05-24 10:44:42] INFO root fetch - processPackages [panda-client-light]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/panda_client_light-1.5.52-py2.py3-none-any.whl.zip tmp/panda_client_light-1.5.53-py2.py3-none-any.whl.zip --markdown 20230524/p/panda-client-light/1.5.52-1.5.53/diff.md --exclude *.pyd
+[2023-05-24 10:44:42] INFO root fetch - processPackages [tff-nightly]: executing diffoscope
+[2023-05-24 10:44:42] INFO root fetch - processPackages [tff-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tff_nightly-0.0.1.dev20230522-py2.py3-none-any.whl.zip tmp/tff_nightly-0.0.1.dev20230523-py2.py3-none-any.whl.zip --markdown 20230524/t/tff-nightly/0.0.1.dev20230522-0.0.1.dev20230523/diff.md --exclude *.pyd
+[2023-05-24 10:44:42] INFO root fetch - processPackages [bossman]: Downloading https://files.pythonhosted.org/packages/98/bf/bd08a2c9ebf3fbbebc99e6964e93e9bdaf207b14ebeb622b08a6fff76f59/bossman-0.9.0.tar.gz
+[2023-05-24 10:44:42] INFO root fetch - processPackages [bossman]: executing diffoscope
+[2023-05-24 10:44:42] INFO root fetch - processPackages [bossman]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bossman-0.8.0.tar.gz tmp/bossman-0.9.0.tar.gz --markdown 20230524/b/bossman/0.8.0-0.9.0/diff.md --exclude *.pyd
+[2023-05-24 10:44:42] INFO root fetch - processPackages [spetlr]: Downloading https://files.pythonhosted.org/packages/89/9a/d8bcd5c46b201d514ab8ee8adb74409dda71c2d1667fd4272736c14ca3cd/spetlr-1.1.89.tar.gz
+[2023-05-24 10:44:42] INFO root fetch - processPackages [spetlr]: executing diffoscope
+[2023-05-24 10:44:42] INFO root fetch - processPackages [spetlr]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spetlr-1.1.86.tar.gz tmp/spetlr-1.1.89.tar.gz --markdown 20230524/s/spetlr/1.1.86-1.1.89/diff.md --exclude *.pyd
+[2023-05-24 10:44:43] INFO root fetch - processPackages [gardener-cicd-dso]: Start processing: tf-estimator-nightly
+[2023-05-24 10:44:43] INFO root fetch - main [MainThread]: End processing [gardener-cicd-dso]: success
+[2023-05-24 10:44:43] INFO root fetch - processPackages [tf-estimator-nightly]: New version: [2.9.0.dev2022033108] Old Version: [2.9.0.dev2022033008]
+[2023-05-24 10:44:43] INFO root fetch - processPackages [tf-estimator-nightly]: executing diffoscope
+[2023-05-24 10:44:43] INFO root fetch - processPackages [tf-estimator-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tf_estimator_nightly-2.9.0.dev2022033008-py2.py3-none-any.whl.zip tmp/tf_estimator_nightly-2.9.0.dev2022033108-py2.py3-none-any.whl.zip --markdown 20230524/t/tf-estimator-nightly/2.9.0.dev2022033008-2.9.0.dev2022033108/diff.md --exclude *.pyd
+[2023-05-24 10:44:43] INFO root fetch - processPackages [gmltools]: Start processing: agilerl
+[2023-05-24 10:44:43] INFO root fetch - main [MainThread]: End processing [gmltools]: success
+[2023-05-24 10:44:43] INFO root fetch - processPackages [mltu]: Start processing: medsenger-api
+[2023-05-24 10:44:43] INFO root fetch - main [MainThread]: End processing [mltu]: success
+[2023-05-24 10:44:43] INFO root fetch - processPackages [agilerl]: New version: [0.1.6] Old Version: [0.1.5]
+[2023-05-24 10:44:43] INFO root fetch - processPackages [medsenger-api]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-24 10:44:43] INFO root fetch - processPackages [agilerl]: Downloading https://files.pythonhosted.org/packages/3f/0b/151b5e24acecd3e740debb113e07574e6b8c92f0ccf69bed09a655e72d63/agilerl-0.1.5.tar.gz
+[2023-05-24 10:44:43] INFO root fetch - processPackages [agilerl]: Downloading https://files.pythonhosted.org/packages/70/cf/d7199ed6437d1e4bc532839ba8ca32555be3532ba0022a47051924ce9210/agilerl-0.1.6.tar.gz
+[2023-05-24 10:44:43] INFO root fetch - processPackages [bossman]: Start processing: tfp-nightly
+[2023-05-24 10:44:43] INFO root fetch - main [MainThread]: End processing [bossman]: success
+[2023-05-24 10:44:44] INFO root fetch - processPackages [tfp-nightly]: New version: [0.9.0.dev20200114] Old Version: [0.9.0.dev20200113]
+[2023-05-24 10:44:44] INFO root fetch - processPackages [medsenger-api]: executing diffoscope
+[2023-05-24 10:44:44] INFO root fetch - processPackages [medsenger-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/medsenger_api-0.1.8.tar.gz tmp/medsenger_api-0.1.9.tar.gz --markdown 20230524/m/medsenger-api/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-24 10:44:44] INFO root fetch - processPackages [agilerl]: executing diffoscope
+[2023-05-24 10:44:44] INFO root fetch - processPackages [agilerl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/agilerl-0.1.5.tar.gz tmp/agilerl-0.1.6.tar.gz --markdown 20230524/a/agilerl/0.1.5-0.1.6/diff.md --exclude *.pyd
+[2023-05-24 10:44:44] INFO root fetch - main [MainThread]: End processing [panda-client-light]: success
+[2023-05-24 10:44:44] INFO root fetch - processPackages [tfp-nightly]: executing diffoscope
+[2023-05-24 10:44:44] INFO root fetch - processPackages [tfp-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tfp_nightly-0.9.0.dev20200113-py2.py3-none-any.whl.zip tmp/tfp_nightly-0.9.0.dev20200114-py2.py3-none-any.whl.zip --markdown 20230524/t/tfp-nightly/0.9.0.dev20200113-0.9.0.dev20200114/diff.md --exclude *.pyd
+[2023-05-24 10:44:44] INFO root fetch - main [MainThread]: End processing [docarray]: success
+[2023-05-24 10:44:45] INFO root fetch - main [MainThread]: End processing [tf-estimator-nightly]: success
+[2023-05-24 10:44:45] INFO root fetch - main [MainThread]: End processing [spetlr]: success
+[2023-05-24 10:44:45] INFO root fetch - main [MainThread]: End processing [medsenger-api]: success
+[2023-05-24 10:44:45] INFO root fetch - main [MainThread]: End processing [panda-client]: success
+[2023-05-24 10:44:46] INFO root fetch - main [MainThread]: End processing [agilerl]: success
+[2023-05-24 10:44:47] INFO root fetch - main [MainThread]: End processing [gardener-cicd-libs]: success
+[2023-05-24 10:44:58] INFO root fetch - main [MainThread]: End processing [tfp-nightly]: success
+[2023-05-24 10:45:28] INFO root fetch - main [MainThread]: End processing [tff-nightly]: success
+[2023-05-24 10:45:28] INFO root fetch - main [MainThread]: Store serial: [18226979]
