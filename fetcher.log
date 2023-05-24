@@ -2032,3 +2032,59 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-05-24 03:14:11] INFO root fetch - main [MainThread]: End processing [bmt]: success
 [2023-05-24 03:14:11] INFO root fetch - main [MainThread]: End processing [cdk-sops-secrets]: success
 [2023-05-24 03:14:11] INFO root fetch - main [MainThread]: Store serial: [18221648]
+[2023-05-24 03:19:15] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18221648]
+[2023-05-24 03:19:19] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-05-24 03:19:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pepperize.cdk-organizations
+[2023-05-24 03:19:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: discord-ext-pager
+[2023-05-24 03:19:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: plink
+[2023-05-24 03:19:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: torchcross
+[2023-05-24 03:19:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: spherogram
+[2023-05-24 03:19:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: pyleft
+[2023-05-24 03:19:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: lineagex
+[2023-05-24 03:19:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: mimeta-pytorch
+[2023-05-24 03:19:20] INFO root fetch - processPackages [pepperize.cdk-organizations]: New version: [0.7.99] Old Version: [0.7.98]
+[2023-05-24 03:19:20] INFO root fetch - processPackages [pyleft]: New version: [1.2.0] Old Version: [1.1.5]
+[2023-05-24 03:19:20] INFO root fetch - processPackages [torchcross]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-05-24 03:19:20] INFO root fetch - processPackages [plink]: New version: [2.4.2] Old Version: [2.4.1]
+[2023-05-24 03:19:20] INFO root fetch - processPackages [mimeta-pytorch]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-05-24 03:19:20] INFO root fetch - processPackages [lineagex]: New version: [0.0.5a1] Old Version: [0.0.4]
+[2023-05-24 03:19:20] INFO root fetch - processPackages [discord-ext-pager]: New version: [1.1.1b0] Old Version: [1.0.2.post2]
+[2023-05-24 03:19:20] INFO root fetch - processPackages [pepperize.cdk-organizations]: executing diffoscope
+[2023-05-24 03:19:20] INFO root fetch - processPackages [pepperize.cdk-organizations]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pepperize.cdk-organizations-0.7.98.tar.gz tmp/pepperize.cdk-organizations-0.7.99.tar.gz --markdown 20230524/p/pepperize.cdk-organizations/0.7.98-0.7.99/diff.md --exclude *.pyd
+[2023-05-24 03:19:20] INFO root fetch - processPackages [spherogram]: New version: [2.2] Old Version: [2.1]
+[2023-05-24 03:19:20] INFO root fetch - processPackages [pyleft]: Downloading https://files.pythonhosted.org/packages/76/21/c508214bb307ab21c49e6d397ff8ec4fe099444789fcabe949ca87e3e946/pyleft-1.1.5.tar.gz
+[2023-05-24 03:19:20] INFO root fetch - processPackages [torchcross]: Downloading https://files.pythonhosted.org/packages/07/0d/e7ed2ca57d2ec455ab581b8685ac3260306cd3b3437f54fbf3b9a8dadfcb/torchcross-0.0.2.tar.gz
+[2023-05-24 03:19:20] INFO root fetch - processPackages [plink]: Downloading https://files.pythonhosted.org/packages/17/cf/bf25ec25e71f4731f3e844ea857ab6e9e0f5085261506a899c8a83c2b576/plink-2.4.1.tar.gz
+[2023-05-24 03:19:20] INFO root fetch - processPackages [discord-ext-pager]: Downloading https://files.pythonhosted.org/packages/63/f0/318124b1eddbb64c96035af9c87f29990db8a625298206c9e9608f145b5b/discord-ext-pager-1.0.2.post2.tar.gz
+[2023-05-24 03:19:20] INFO root fetch - processPackages [spherogram]: Downloading https://files.pythonhosted.org/packages/8a/43/f4760574c949efd0a575b554cfde0aaf412d0d33878e94d925dba360adb5/spherogram-2.1.tar.gz
+[2023-05-24 03:19:20] INFO root fetch - processPackages [mimeta-pytorch]: Downloading https://files.pythonhosted.org/packages/aa/b3/9ba32307baa68eeaa1ac8b34b2ace95b284c2c95d148a83b95d6e25b430f/mimeta_pytorch-0.0.2.tar.gz
+[2023-05-24 03:19:20] INFO root fetch - processPackages [lineagex]: Downloading https://files.pythonhosted.org/packages/c0/e5/932f32dd3f5c38f51e57f083ea850c4975235db28a8ef46f3a66f355ce4e/lineagex-0.0.5a1.tar.gz
+[2023-05-24 03:19:20] INFO root fetch - processPackages [discord-ext-pager]: Downloading https://files.pythonhosted.org/packages/0b/0c/911a087d49f663d4babd6c794df7434d10358d23a7aea5d7af6f6b09c582/discord-ext-pager-1.1.1b0.tar.gz
+[2023-05-24 03:19:20] INFO root fetch - processPackages [pyleft]: Downloading https://files.pythonhosted.org/packages/a9/6b/f6133e7d87a393956058ae227e00c0292fc467bd5c59342bbe4057c07ce1/pyleft-1.2.0.tar.gz
+[2023-05-24 03:19:20] INFO root fetch - processPackages [plink]: Downloading https://files.pythonhosted.org/packages/c5/f7/82e61fefb774e6eee9adcc10e16dd22aeb1ac01c49789d8a912a49c506f2/plink-2.4.2.tar.gz
+[2023-05-24 03:19:20] INFO root fetch - processPackages [spherogram]: Downloading https://files.pythonhosted.org/packages/aa/de/5887775177ef0488bb171856820d60e1775d87a0e0ca821294f9bdcb42c8/spherogram-2.2.tar.gz
+[2023-05-24 03:19:20] INFO root fetch - processPackages [discord-ext-pager]: executing diffoscope
+[2023-05-24 03:19:20] INFO root fetch - processPackages [discord-ext-pager]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/discord-ext-pager-1.0.2.post2.tar.gz tmp/discord-ext-pager-1.1.1b0.tar.gz --markdown 20230524/d/discord-ext-pager/1.0.2.post2-1.1.1b0/diff.md --exclude *.pyd
+[2023-05-24 03:19:20] INFO root fetch - processPackages [mimeta-pytorch]: Downloading https://files.pythonhosted.org/packages/12/1f/fdbd0f8ff3f74797a808f191c9177cab4a11c6b347d5e33173405e1104b0/mimeta_pytorch-0.0.3.tar.gz
+[2023-05-24 03:19:20] INFO root fetch - processPackages [lineagex]: executing diffoscope
+[2023-05-24 03:19:20] INFO root fetch - processPackages [lineagex]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lineagex-0.0.4.tar.gz tmp/lineagex-0.0.5a1.tar.gz --markdown 20230524/l/lineagex/0.0.4-0.0.5a1/diff.md --exclude *.pyd
+[2023-05-24 03:19:20] INFO root fetch - processPackages [pyleft]: executing diffoscope
+[2023-05-24 03:19:20] INFO root fetch - processPackages [pyleft]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyleft-1.1.5.tar.gz tmp/pyleft-1.2.0.tar.gz --markdown 20230524/p/pyleft/1.1.5-1.2.0/diff.md --exclude *.pyd
+[2023-05-24 03:19:20] INFO root fetch - processPackages [torchcross]: Downloading https://files.pythonhosted.org/packages/b2/2b/fc0b61c4fafd405e00f7a393f17f475ae56959226a7e361db524aa603356/torchcross-0.0.3.tar.gz
+[2023-05-24 03:19:20] INFO root fetch - processPackages [plink]: executing diffoscope
+[2023-05-24 03:19:20] INFO root fetch - processPackages [plink]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/plink-2.4.1.tar.gz tmp/plink-2.4.2.tar.gz --markdown 20230524/p/plink/2.4.1-2.4.2/diff.md --exclude *.pyd
+[2023-05-24 03:19:20] INFO root fetch - processPackages [mimeta-pytorch]: executing diffoscope
+[2023-05-24 03:19:20] INFO root fetch - processPackages [mimeta-pytorch]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mimeta_pytorch-0.0.2.tar.gz tmp/mimeta_pytorch-0.0.3.tar.gz --markdown 20230524/m/mimeta-pytorch/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-05-24 03:19:20] INFO root fetch - processPackages [torchcross]: executing diffoscope
+[2023-05-24 03:19:20] INFO root fetch - processPackages [torchcross]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/torchcross-0.0.2.tar.gz tmp/torchcross-0.0.3.tar.gz --markdown 20230524/t/torchcross/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-05-24 03:19:20] INFO root fetch - processPackages [spherogram]: executing diffoscope
+[2023-05-24 03:19:20] INFO root fetch - processPackages [spherogram]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spherogram-2.1.tar.gz tmp/spherogram-2.2.tar.gz --markdown 20230524/s/spherogram/2.1-2.2/diff.md --exclude *.pyd
+[2023-05-24 03:19:21] INFO root fetch - main [MainThread]: End processing [pepperize.cdk-organizations]: success
+[2023-05-24 03:19:22] INFO root fetch - main [MainThread]: End processing [pyleft]: success
+[2023-05-24 03:19:22] INFO root fetch - main [MainThread]: End processing [torchcross]: success
+[2023-05-24 03:19:22] INFO root fetch - main [MainThread]: End processing [discord-ext-pager]: success
+[2023-05-24 03:19:22] INFO root fetch - main [MainThread]: End processing [mimeta-pytorch]: success
+[2023-05-24 03:19:23] INFO root fetch - main [MainThread]: End processing [spherogram]: success
+[2023-05-24 03:19:23] INFO root fetch - main [MainThread]: End processing [lineagex]: success
+[2023-05-24 03:19:25] INFO root fetch - main [MainThread]: End processing [plink]: success
+[2023-05-24 03:19:25] INFO root fetch - main [MainThread]: Store serial: [18221704]
