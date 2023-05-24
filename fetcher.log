@@ -14462,3 +14462,77 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd4 in position 72: invalid
 [2023-05-24 14:12:25] INFO root fetch - main [MainThread]: End processing [localstack-core]: success
 [2023-05-24 14:12:26] INFO root fetch - main [MainThread]: End processing [graphdatascience]: success
 [2023-05-24 14:12:26] INFO root fetch - main [MainThread]: Store serial: [18229245]
+[2023-05-24 14:17:31] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18229245]
+[2023-05-24 14:17:36] INFO root fetch - main [MainThread]: Found 12 changed packages
+[2023-05-24 14:17:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: scipion-em-dynamo
+[2023-05-24 14:17:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: digitalguide
+[2023-05-24 14:17:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: Cython
+[2023-05-24 14:17:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: odoo13-addon-stock-request
+[2023-05-24 14:17:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: cybrid-api-organization-python
+[2023-05-24 14:17:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: car-connector-framework
+[2023-05-24 14:17:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: ls2d
+[2023-05-24 14:17:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: cybrid-api-id-python
+[2023-05-24 14:17:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: cybrid-api-bank-python
+[2023-05-24 14:17:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: struqture-py
+[2023-05-24 14:17:36] INFO root fetch - processPackages [odoo13-addon-stock-request]: New version: [13.0.1.7.2.dev1] Old Version: [13.0.1.7.2]
+[2023-05-24 14:17:36] INFO root fetch - processPackages [ls2d]: New version: [1.0.2] Old Version: [1.0.1]
+[2023-05-24 14:17:36] INFO root fetch - processPackages [scipion-em-dynamo]: New version: [3.1.9] Old Version: [3.1.8]
+[2023-05-24 14:17:36] INFO root fetch - processPackages [digitalguide]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-05-24 14:17:36] INFO root fetch - processPackages [car-connector-framework]: New version: [4.0.0rc286] Old Version: [3.0.2rc285]
+[2023-05-24 14:17:36] INFO root fetch - processPackages [cybrid-api-bank-python]: New version: [0.9.9] Old Version: [0.9.8]
+[2023-05-24 14:17:36] INFO root fetch - processPackages [cybrid-api-organization-python]: New version: [0.9.9] Old Version: [0.9.8]
+[2023-05-24 14:17:36] INFO root fetch - processPackages [cybrid-api-id-python]: New version: [0.9.9] Old Version: [0.9.8]
+[2023-05-24 14:17:36] INFO root fetch - processPackages [Cython]: New version: [3.0a7] Old Version: [3.0a6]
+[2023-05-24 14:17:36] INFO root fetch - processPackages [struqture-py]: New version: [1.1.1] Old Version: [1.1.0]
+[2023-05-24 14:17:36] INFO root fetch - processPackages [digitalguide]: executing diffoscope
+[2023-05-24 14:17:36] INFO root fetch - processPackages [digitalguide]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/digitalguide-0.0.98.tar.gz tmp/digitalguide-0.0.99.tar.gz --markdown 20230524/d/digitalguide/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-05-24 14:17:36] INFO root fetch - processPackages [odoo13-addon-stock-request]: Downloading https://files.pythonhosted.org/packages/15/34/587ac1bd6d5855746a3eda27fddd9e97af98186ec3af3d425e84824fb3bc/odoo13_addon_stock_request-13.0.1.7.2-py3-none-any.whl
+[2023-05-24 14:17:36] INFO root fetch - processPackages [cybrid-api-bank-python]: executing diffoscope
+[2023-05-24 14:17:36] INFO root fetch - processPackages [cybrid-api-bank-python]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cybrid-api-bank-python-0.9.8.tar.gz tmp/cybrid-api-bank-python-0.9.9.tar.gz --markdown 20230524/c/cybrid-api-bank-python/0.9.8-0.9.9/diff.md --exclude *.pyd
+[2023-05-24 14:17:36] INFO root fetch - processPackages [cybrid-api-organization-python]: executing diffoscope
+[2023-05-24 14:17:36] INFO root fetch - processPackages [cybrid-api-organization-python]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cybrid-api-organization-python-0.9.8.tar.gz tmp/cybrid-api-organization-python-0.9.9.tar.gz --markdown 20230524/c/cybrid-api-organization-python/0.9.8-0.9.9/diff.md --exclude *.pyd
+[2023-05-24 14:17:36] INFO root fetch - processPackages [car-connector-framework]: Downloading https://files.pythonhosted.org/packages/78/a1/709f0ab335ef9bfee22deb83f402d95927fe00d43d0e063d937297e9b9e3/car-connector-framework-4.0.0rc286.tar.gz
+[2023-05-24 14:17:36] INFO root fetch - processPackages [scipion-em-dynamo]: Downloading https://files.pythonhosted.org/packages/0e/06/18d756fc477a9faf167144f1c0b90369e74f002ac8214206347ed553b1af/scipion-em-dynamo-3.1.8.tar.gz
+[2023-05-24 14:17:36] INFO root fetch - processPackages [ls2d]: Downloading https://files.pythonhosted.org/packages/fc/39/72633802f0bbf6d2f9efca66ce5958019c1198c6814820fc73eee45c2772/ls2d-1.0.1.tar.gz
+[2023-05-24 14:17:36] INFO root fetch - processPackages [Cython]: Downloading https://files.pythonhosted.org/packages/5b/40/8165ee55b276382b0c3ab3c1300020427d571d710675e70b9a6a0161dbd7/Cython-3.0a6.tar.gz
+[2023-05-24 14:17:36] INFO root fetch - processPackages [struqture-py]: Downloading https://files.pythonhosted.org/packages/f0/8f/159eb855e3c22b1dfcd03a11fd3da31867fabcdc9e4abed326486d6a9758/struqture_py-1.1.0.tar.gz
+[2023-05-24 14:17:36] INFO root fetch - processPackages [cybrid-api-id-python]: executing diffoscope
+[2023-05-24 14:17:36] INFO root fetch - processPackages [cybrid-api-id-python]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cybrid-api-id-python-0.9.8.tar.gz tmp/cybrid-api-id-python-0.9.9.tar.gz --markdown 20230524/c/cybrid-api-id-python/0.9.8-0.9.9/diff.md --exclude *.pyd
+[2023-05-24 14:17:36] INFO root fetch - processPackages [car-connector-framework]: executing diffoscope
+[2023-05-24 14:17:36] INFO root fetch - processPackages [car-connector-framework]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/car-connector-framework-3.0.2rc285.tar.gz tmp/car-connector-framework-4.0.0rc286.tar.gz --markdown 20230524/c/car-connector-framework/3.0.2rc285-4.0.0rc286/diff.md --exclude *.pyd
+[2023-05-24 14:17:36] INFO root fetch - processPackages [odoo13-addon-stock-request]: Downloading https://files.pythonhosted.org/packages/41/da/071d46086a70cbc374caa8d16584e610c588d9c4eaeee72fad16af7a8473/odoo13_addon_stock_request-13.0.1.7.2.dev1-py3-none-any.whl
+[2023-05-24 14:17:36] INFO root fetch - processPackages [scipion-em-dynamo]: Downloading https://files.pythonhosted.org/packages/fa/42/87e294e41a5327d84dd9117c44c2dd241ce407f7bfcf98a87e28fe0b6518/scipion-em-dynamo-3.1.9.tar.gz
+[2023-05-24 14:17:36] INFO root fetch - processPackages [struqture-py]: Downloading https://files.pythonhosted.org/packages/d2/20/eb6b4c1cd02f6fcf174467c24f5cc3772cd9512002064f0e51e904021942/struqture_py-1.1.1.tar.gz
+[2023-05-24 14:17:36] INFO root fetch - processPackages [odoo13-addon-stock-request]: executing diffoscope
+[2023-05-24 14:17:36] INFO root fetch - processPackages [odoo13-addon-stock-request]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo13_addon_stock_request-13.0.1.7.2-py3-none-any.whl.zip tmp/odoo13_addon_stock_request-13.0.1.7.2.dev1-py3-none-any.whl.zip --markdown 20230524/o/odoo13-addon-stock-request/13.0.1.7.2-13.0.1.7.2.dev1/diff.md --exclude *.pyd
+[2023-05-24 14:17:36] INFO root fetch - processPackages [ls2d]: Downloading https://files.pythonhosted.org/packages/b9/5a/886490895a57853055c130ec5d42589d255e696a0dbd23fe0536688f7943/ls2d-1.0.2.tar.gz
+[2023-05-24 14:17:37] INFO root fetch - processPackages [Cython]: Downloading https://files.pythonhosted.org/packages/e5/96/c67b06e24002cac938eacdd72d390c30c5542b6ea0d7f886bf5bbfbd8231/Cython-3.0a7.tar.gz
+[2023-05-24 14:17:37] INFO root fetch - processPackages [struqture-py]: executing diffoscope
+[2023-05-24 14:17:37] INFO root fetch - processPackages [struqture-py]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/struqture_py-1.1.0.tar.gz tmp/struqture_py-1.1.1.tar.gz --markdown 20230524/s/struqture-py/1.1.0-1.1.1/diff.md --exclude *.pyd
+[2023-05-24 14:17:37] INFO root fetch - processPackages [ls2d]: executing diffoscope
+[2023-05-24 14:17:37] INFO root fetch - processPackages [ls2d]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ls2d-1.0.1.tar.gz tmp/ls2d-1.0.2.tar.gz --markdown 20230524/l/ls2d/1.0.1-1.0.2/diff.md --exclude *.pyd
+[2023-05-24 14:17:37] INFO root fetch - processPackages [scipion-em-dynamo]: executing diffoscope
+[2023-05-24 14:17:37] INFO root fetch - processPackages [scipion-em-dynamo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/scipion-em-dynamo-3.1.8.tar.gz tmp/scipion-em-dynamo-3.1.9.tar.gz --markdown 20230524/s/scipion-em-dynamo/3.1.8-3.1.9/diff.md --exclude *.pyd
+[2023-05-24 14:17:37] INFO root fetch - processPackages [Cython]: executing diffoscope
+[2023-05-24 14:17:37] INFO root fetch - processPackages [Cython]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Cython-3.0a6.tar.gz tmp/Cython-3.0a7.tar.gz --markdown 20230524/C/Cython/3.0a6-3.0a7/diff.md --exclude *.pyd
+[2023-05-24 14:17:37] INFO root fetch - processPackages [digitalguide]: Start processing: alertlogic-sdk-definitions
+[2023-05-24 14:17:37] INFO root fetch - main [MainThread]: End processing [digitalguide]: success
+[2023-05-24 14:17:38] INFO root fetch - processPackages [alertlogic-sdk-definitions]: New version: [0.1.99] Old Version: [0.1.98]
+[2023-05-24 14:17:38] INFO root fetch - processPackages [car-connector-framework]: Start processing: reportportal-client
+[2023-05-24 14:17:38] INFO root fetch - main [MainThread]: End processing [car-connector-framework]: success
+[2023-05-24 14:17:38] INFO root fetch - processPackages [reportportal-client]: New version: [5.3.3] Old Version: [5.3.2]
+[2023-05-24 14:17:38] INFO root fetch - main [MainThread]: End processing [cybrid-api-organization-python]: success
+[2023-05-24 14:17:38] INFO root fetch - processPackages [reportportal-client]: executing diffoscope
+[2023-05-24 14:17:38] INFO root fetch - processPackages [reportportal-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/reportportal-client-5.3.2.tar.gz tmp/reportportal-client-5.3.3.tar.gz --markdown 20230524/r/reportportal-client/5.3.2-5.3.3/diff.md --exclude *.pyd
+[2023-05-24 14:17:38] INFO root fetch - processPackages [alertlogic-sdk-definitions]: executing diffoscope
+[2023-05-24 14:17:38] INFO root fetch - processPackages [alertlogic-sdk-definitions]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/alertlogic-sdk-definitions-0.1.98.tar.gz tmp/alertlogic-sdk-definitions-0.1.99.tar.gz --markdown 20230524/a/alertlogic-sdk-definitions/0.1.98-0.1.99/diff.md --exclude *.pyd
+[2023-05-24 14:17:38] INFO root fetch - main [MainThread]: End processing [scipion-em-dynamo]: success
+[2023-05-24 14:17:38] INFO root fetch - main [MainThread]: End processing [odoo13-addon-stock-request]: success
+[2023-05-24 14:17:39] INFO root fetch - main [MainThread]: End processing [reportportal-client]: success
+[2023-05-24 14:17:39] INFO root fetch - main [MainThread]: End processing [cybrid-api-id-python]: success
+[2023-05-24 14:17:39] INFO root fetch - main [MainThread]: End processing [ls2d]: success
+[2023-05-24 14:17:40] INFO root fetch - main [MainThread]: End processing [alertlogic-sdk-definitions]: success
+[2023-05-24 14:17:42] INFO root fetch - main [MainThread]: End processing [cybrid-api-bank-python]: success
+[2023-05-24 14:17:43] INFO root fetch - main [MainThread]: End processing [struqture-py]: success
+[2023-05-24 14:18:29] INFO root fetch - main [MainThread]: End processing [Cython]: success
+[2023-05-24 14:18:29] INFO root fetch - main [MainThread]: Store serial: [18229290]
