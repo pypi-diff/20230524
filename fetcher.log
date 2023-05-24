@@ -10369,3 +10369,93 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-05-24 10:22:36] INFO root fetch - main [MainThread]: End processing [django-autocomplete-light]: success
 [2023-05-24 10:22:39] INFO root fetch - main [MainThread]: End processing [qwak-core]: success
 [2023-05-24 10:22:39] INFO root fetch - main [MainThread]: Store serial: [18226755]
+[2023-05-24 10:27:43] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18226755]
+[2023-05-24 10:27:47] INFO root fetch - main [MainThread]: Found 15 changed packages
+[2023-05-24 10:27:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: Candataloader
+[2023-05-24 10:27:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: automation_rest_server
+[2023-05-24 10:27:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: th2-data-services
+[2023-05-24 10:27:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: scorecardpipeline
+[2023-05-24 10:27:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: supervisely
+[2023-05-24 10:27:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: overhave
+[2023-05-24 10:27:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: USsym
+[2023-05-24 10:27:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: django-simple-notes
+[2023-05-24 10:27:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: Printrun
+[2023-05-24 10:27:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: alibabacloud-ros-tran
+[2023-05-24 10:27:47] INFO root fetch - processPackages [Candataloader]: New version: [1.0.9] Old Version: [1.0.8]
+[2023-05-24 10:27:47] INFO root fetch - processPackages [alibabacloud-ros-tran]: New version: [0.3.9] Old Version: [0.3.8]
+[2023-05-24 10:27:47] INFO root fetch - processPackages [automation_rest_server]: New version: [3.7.6] Old Version: [3.7.5]
+[2023-05-24 10:27:47] INFO root fetch - processPackages [USsym]: New version: [0.1.0] Old Version: [0.0.2]
+[2023-05-24 10:27:47] INFO root fetch - processPackages [scorecardpipeline]: New version: [0.1.7] Old Version: [0.1.6]
+[2023-05-24 10:27:47] INFO root fetch - processPackages [overhave]: New version: [3.9.0] Old Version: [3.8.4]
+[2023-05-24 10:27:47] WARNING root fetch - processPackages [django-simple-notes]: Skipping, unable to determine old version
+[2023-05-24 10:27:47] INFO root fetch - processPackages [django-simple-notes]: Start processing: ixpeobssim
+[2023-05-24 10:27:47] INFO root fetch - processPackages [Printrun]: New version: [2.0.1] Old Version: [2.0.0rc7]
+[2023-05-24 10:27:47] INFO root fetch - main [MainThread]: End processing [django-simple-notes] error
+[2023-05-24 10:27:47] INFO root fetch - processPackages [supervisely]: New version: [6.9.2] Old Version: [6.9.1]
+[2023-05-24 10:27:47] INFO root fetch - processPackages [ixpeobssim]: New version: [30.4.0] Old Version: [30.3.1]
+[2023-05-24 10:27:47] INFO root fetch - processPackages [th2-data-services]: New version: [2.0.0.dev5066341549] Old Version: [2.0.0.dev4991731144]
+[2023-05-24 10:27:47] INFO root fetch - processPackages [supervisely]: executing diffoscope
+[2023-05-24 10:27:47] INFO root fetch - processPackages [supervisely]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/supervisely-6.9.1.tar.gz tmp/supervisely-6.9.2.tar.gz --markdown 20230524/s/supervisely/6.9.1-6.9.2/diff.md --exclude *.pyd
+[2023-05-24 10:27:47] INFO root fetch - processPackages [Candataloader]: Downloading https://files.pythonhosted.org/packages/43/9f/3343d948f87be846201d65a32e559007b8b576792733b91c28d7717cb064/Candataloader-1.0.8.tar.gz
+[2023-05-24 10:27:47] INFO root fetch - processPackages [alibabacloud-ros-tran]: Downloading https://files.pythonhosted.org/packages/c4/65/49d1898400e031ab7fcfb352f31fee67b468954c33e0725c56cfad552fe3/alibabacloud-ros-tran-0.3.8.tar.gz
+[2023-05-24 10:27:47] INFO root fetch - processPackages [USsym]: Downloading https://files.pythonhosted.org/packages/b6/b2/fe216fdbc0ebd9b3b2d6f128d7080ab17d8e9571be185857058f5471af89/USsym-0.0.2.tar.gz
+[2023-05-24 10:27:47] INFO root fetch - processPackages [scorecardpipeline]: Downloading https://files.pythonhosted.org/packages/95/78/52e4d0d91803ea9633c253da606c98e58dff8f8dee0cea722119d21ebe70/scorecardpipeline-0.1.7.tar.gz
+[2023-05-24 10:27:48] WARNING root fetch - processPackages [Candataloader]: Skipping package: exceeds size limit 12205280>=10485760
+[2023-05-24 10:27:48] INFO root fetch - processPackages [Candataloader]: Start processing: arkitema-config
+[2023-05-24 10:27:48] INFO root fetch - main [MainThread]: End processing [Candataloader] error
+[2023-05-24 10:27:48] INFO root fetch - processPackages [overhave]: Downloading https://files.pythonhosted.org/packages/35/d2/ab3a72dd99318a4ecf97364c7c67b8903528d6443e59e69d0e5cb8aa6d76/overhave-3.8.4.tar.gz
+[2023-05-24 10:27:48] INFO root fetch - processPackages [Printrun]: Downloading https://files.pythonhosted.org/packages/8f/02/645949461c1a41becc0a416bb79a82d2ce4ed0a954339176c3c9e40f1c02/Printrun-2.0.0rc7.tar.gz
+[2023-05-24 10:27:48] INFO root fetch - processPackages [th2-data-services]: Downloading https://files.pythonhosted.org/packages/58/11/d494cfe2bf6bb3e45d7a8525f6c04c9c99d11a6b41f2502b749d71c92b15/th2_data_services-2.0.0.dev4991731144.tar.gz
+[2023-05-24 10:27:48] INFO root fetch - processPackages [arkitema-config]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-05-24 10:27:48] INFO root fetch - processPackages [ixpeobssim]: Downloading https://files.pythonhosted.org/packages/b7/b2/c468533e5374569514e6366bb3a501d0fb1ab15a8967055b6969647dec35/ixpeobssim-30.3.1.tar.gz
+[2023-05-24 10:27:48] WARNING root fetch - processPackages [ixpeobssim]: Skipping package: exceeds size limit 40523889>=10485760
+[2023-05-24 10:27:48] INFO root fetch - processPackages [ixpeobssim]: Start processing: transnet-generator
+[2023-05-24 10:27:48] INFO root fetch - main [MainThread]: End processing [ixpeobssim] error
+[2023-05-24 10:27:48] INFO root fetch - processPackages [automation_rest_server]: Downloading https://files.pythonhosted.org/packages/a6/c2/141576c05e1cf57198dc83c0983aea421bbd66b0115e2d329cb98b34a559/automation_rest_server-3.7.6.tar.gz
+[2023-05-24 10:27:48] INFO root fetch - processPackages [scorecardpipeline]: executing diffoscope
+[2023-05-24 10:27:48] INFO root fetch - processPackages [scorecardpipeline]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/scorecardpipeline-0.1.6.tar.gz tmp/scorecardpipeline-0.1.7.tar.gz --markdown 20230524/s/scorecardpipeline/0.1.6-0.1.7/diff.md --exclude *.pyd
+[2023-05-24 10:27:48] WARNING root fetch - processPackages [transnet-generator]: Skipping, unable to determine old version
+[2023-05-24 10:27:48] INFO root fetch - processPackages [transnet-generator]: Start processing: th2-common-utils
+[2023-05-24 10:27:48] INFO root fetch - main [MainThread]: End processing [transnet-generator] error
+[2023-05-24 10:27:48] INFO root fetch - processPackages [arkitema-config]: Downloading https://files.pythonhosted.org/packages/ee/1f/e542a9526e449e4e8350af5327b316c8e3f947759b7f3c3d5bdd2ccf77cd/arkitema_config-0.1.0.tar.gz
+[2023-05-24 10:27:48] INFO root fetch - processPackages [alibabacloud-ros-tran]: Downloading https://files.pythonhosted.org/packages/45/28/8fe3adc97c5dbd7165702f68e9bc6914dbb0494108b48146543f61f2f02b/alibabacloud-ros-tran-0.3.9.tar.gz
+[2023-05-24 10:27:48] INFO root fetch - processPackages [th2-common-utils]: New version: [2.0.1] Old Version: [2.0.0.dev4574477823]
+[2023-05-24 10:27:48] INFO root fetch - processPackages [Printrun]: Downloading https://files.pythonhosted.org/packages/26/17/51167e17f3e44d283930da801ae36d497763281bc2c0065fc2c4e5d751b0/Printrun-2.0.1.tar.gz
+[2023-05-24 10:27:48] INFO root fetch - processPackages [automation_rest_server]: executing diffoscope
+[2023-05-24 10:27:48] INFO root fetch - processPackages [automation_rest_server]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/automation_rest_server-3.7.5.tar.gz tmp/automation_rest_server-3.7.6.tar.gz --markdown 20230524/a/automation_rest_server/3.7.5-3.7.6/diff.md --exclude *.pyd
+[2023-05-24 10:27:48] INFO root fetch - processPackages [USsym]: Downloading https://files.pythonhosted.org/packages/e7/e0/f530c15312abdb181baaad46c0e834f5c75de421ae4003c5de4b0af7fa13/USsym-0.1.0.tar.gz
+[2023-05-24 10:27:48] INFO root fetch - processPackages [th2-data-services]: Downloading https://files.pythonhosted.org/packages/97/b0/46854bafee70ca753711d919b76be3b0cfa919f22b4e185f9de6b52743f1/th2_data_services-2.0.0.dev5066341549.tar.gz
+[2023-05-24 10:27:48] INFO root fetch - processPackages [alibabacloud-ros-tran]: executing diffoscope
+[2023-05-24 10:27:48] INFO root fetch - processPackages [alibabacloud-ros-tran]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/alibabacloud-ros-tran-0.3.8.tar.gz tmp/alibabacloud-ros-tran-0.3.9.tar.gz --markdown 20230524/a/alibabacloud-ros-tran/0.3.8-0.3.9/diff.md --exclude *.pyd
+[2023-05-24 10:27:48] INFO root fetch - processPackages [th2-common-utils]: executing diffoscope
+[2023-05-24 10:27:48] INFO root fetch - processPackages [th2-common-utils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/th2_common_utils-2.0.0.dev4574477823.tar.gz tmp/th2_common_utils-2.0.1.tar.gz --markdown 20230524/t/th2-common-utils/2.0.0.dev4574477823-2.0.1/diff.md --exclude *.pyd
+[2023-05-24 10:27:48] INFO root fetch - processPackages [Printrun]: executing diffoscope
+[2023-05-24 10:27:48] INFO root fetch - processPackages [Printrun]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Printrun-2.0.0rc7.tar.gz tmp/Printrun-2.0.1.tar.gz --markdown 20230524/P/Printrun/2.0.0rc7-2.0.1/diff.md --exclude *.pyd
+[2023-05-24 10:27:48] INFO root fetch - processPackages [overhave]: Downloading https://files.pythonhosted.org/packages/53/af/c768a33320940cbb4d2e9af53d090268fc9eb0b87bed8e10c081c668f698/overhave-3.9.0.tar.gz
+[2023-05-24 10:27:48] INFO root fetch - processPackages [th2-data-services]: executing diffoscope
+[2023-05-24 10:27:48] INFO root fetch - processPackages [th2-data-services]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/th2_data_services-2.0.0.dev4991731144.tar.gz tmp/th2_data_services-2.0.0.dev5066341549.tar.gz --markdown 20230524/t/th2-data-services/2.0.0.dev4991731144-2.0.0.dev5066341549/diff.md --exclude *.pyd
+[2023-05-24 10:27:48] INFO root fetch - processPackages [arkitema-config]: Downloading https://files.pythonhosted.org/packages/ad/59/6435cffb8730a1e585e93c4a6aed582efa52892cb566fe4760b8dada2a7b/arkitema_config-0.1.1.tar.gz
+[2023-05-24 10:27:48] INFO root fetch - processPackages [USsym]: executing diffoscope
+[2023-05-24 10:27:48] INFO root fetch - processPackages [USsym]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/USsym-0.0.2.tar.gz tmp/USsym-0.1.0.tar.gz --markdown 20230524/U/USsym/0.0.2-0.1.0/diff.md --exclude *.pyd
+[2023-05-24 10:27:48] INFO root fetch - processPackages [arkitema-config]: executing diffoscope
+[2023-05-24 10:27:48] INFO root fetch - processPackages [arkitema-config]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/arkitema_config-0.1.0.tar.gz tmp/arkitema_config-0.1.1.tar.gz --markdown 20230524/a/arkitema-config/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-05-24 10:27:48] INFO root fetch - processPackages [overhave]: executing diffoscope
+[2023-05-24 10:27:48] INFO root fetch - processPackages [overhave]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/overhave-3.8.4.tar.gz tmp/overhave-3.9.0.tar.gz --markdown 20230524/o/overhave/3.8.4-3.9.0/diff.md --exclude *.pyd
+[2023-05-24 10:27:49] INFO root fetch - processPackages [USsym]: Start processing: strelok
+[2023-05-24 10:27:49] INFO root fetch - main [MainThread]: End processing [USsym]: success
+[2023-05-24 10:27:49] INFO root fetch - processPackages [strelok]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-05-24 10:27:50] INFO root fetch - main [MainThread]: End processing [arkitema-config]: success
+[2023-05-24 10:27:50] INFO root fetch - main [MainThread]: End processing [th2-common-utils]: success
+[2023-05-24 10:27:50] INFO root fetch - processPackages [strelok]: Downloading https://files.pythonhosted.org/packages/16/bc/2039590e7d8e0f8c4878dcbb78b4a203879ce372177420d10055be9129f4/strelok-0.0.1.tar.gz
+[2023-05-24 10:27:50] INFO root fetch - main [MainThread]: End processing [scorecardpipeline]: success
+[2023-05-24 10:27:50] INFO root fetch - processPackages [strelok]: Downloading https://files.pythonhosted.org/packages/8d/7f/3b3c60cb86ba6f7718c9afa24dd8c45c330a088413674b7e774aea3f7c6e/strelok-0.0.2.tar.gz
+[2023-05-24 10:27:50] INFO root fetch - main [MainThread]: End processing [alibabacloud-ros-tran]: success
+[2023-05-24 10:27:50] INFO root fetch - processPackages [strelok]: executing diffoscope
+[2023-05-24 10:27:50] INFO root fetch - processPackages [strelok]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/strelok-0.0.1.tar.gz tmp/strelok-0.0.2.tar.gz --markdown 20230524/s/strelok/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-05-24 10:27:50] INFO root fetch - main [MainThread]: End processing [automation_rest_server]: success
+[2023-05-24 10:27:50] INFO root fetch - main [MainThread]: End processing [Printrun]: success
+[2023-05-24 10:27:51] INFO root fetch - main [MainThread]: End processing [overhave]: success
+[2023-05-24 10:27:51] INFO root fetch - main [MainThread]: End processing [th2-data-services]: success
+[2023-05-24 10:27:51] INFO root fetch - main [MainThread]: End processing [strelok]: success
+[2023-05-24 10:27:52] INFO root fetch - main [MainThread]: End processing [supervisely]: success
+[2023-05-24 10:27:52] INFO root fetch - main [MainThread]: Store serial: [18226816]
