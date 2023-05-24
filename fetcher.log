@@ -14536,3 +14536,124 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd4 in position 72: invalid
 [2023-05-24 14:17:43] INFO root fetch - main [MainThread]: End processing [struqture-py]: success
 [2023-05-24 14:18:29] INFO root fetch - main [MainThread]: End processing [Cython]: success
 [2023-05-24 14:18:29] INFO root fetch - main [MainThread]: Store serial: [18229290]
+[2023-05-24 14:23:34] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18229290]
+[2023-05-24 14:23:39] INFO root fetch - main [MainThread]: Found 20 changed packages
+[2023-05-24 14:23:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: yze
+[2023-05-24 14:23:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: mocksafe
+[2023-05-24 14:23:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: checkov
+[2023-05-24 14:23:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: cloudmesh-common
+[2023-05-24 14:23:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: car-connector-framework
+[2023-05-24 14:23:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: solotools
+[2023-05-24 14:23:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: udps
+[2023-05-24 14:23:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: inspirational-quotes
+[2023-05-24 14:23:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: poetry-plugin-freeze
+[2023-05-24 14:23:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: panml
+[2023-05-24 14:23:39] INFO root fetch - processPackages [car-connector-framework]: New version: [4.0.0rc286] Old Version: [3.0.2rc285]
+[2023-05-24 14:23:39] INFO root fetch - processPackages [checkov]: New version: [2.3.99] Old Version: [2.3.98]
+[2023-05-24 14:23:39] INFO root fetch - processPackages [mocksafe]: New version: [0.5.0a0] Old Version: [0.4.1a0]
+[2023-05-24 14:23:39] INFO root fetch - processPackages [udps]: New version: [0.1.15] Old Version: [0.1.14]
+[2023-05-24 14:23:39] INFO root fetch - processPackages [inspirational-quotes]: New version: [0.0.8] Old Version: [0.0.7]
+[2023-05-24 14:23:39] INFO root fetch - processPackages [panml]: New version: [0.0.16] Old Version: [0.0.15]
+[2023-05-24 14:23:39] INFO root fetch - processPackages [poetry-plugin-freeze]: New version: [1.0.5] Old Version: [1.0.3]
+[2023-05-24 14:23:39] INFO root fetch - processPackages [yze]: New version: [0.0.4] Old Version: [0.0.2]
+[2023-05-24 14:23:39] WARNING root fetch - processPackages [solotools]: Skipping, unable to determine old version
+[2023-05-24 14:23:39] INFO root fetch - processPackages [solotools]: Start processing: sqrt-kit
+[2023-05-24 14:23:39] INFO root fetch - main [MainThread]: End processing [solotools] error
+[2023-05-24 14:23:40] INFO root fetch - processPackages [cloudmesh-common]: New version: [4.3.99] Old Version: [4.3.98]
+[2023-05-24 14:23:40] INFO root fetch - processPackages [car-connector-framework]: executing diffoscope
+[2023-05-24 14:23:40] INFO root fetch - processPackages [car-connector-framework]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/car-connector-framework-3.0.2rc285.tar.gz tmp/car-connector-framework-4.0.0rc286.tar.gz --markdown 20230524/c/car-connector-framework/3.0.2rc285-4.0.0rc286/diff.md --exclude *.pyd
+[2023-05-24 14:23:40] INFO root fetch - processPackages [sqrt-kit]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-05-24 14:23:40] INFO root fetch - processPackages [udps]: Downloading https://files.pythonhosted.org/packages/41/af/97807a05650fbdc28d4f01bac3141f499e6f783385f75428e04c3fab1257/udps-0.1.14.tar.gz
+[2023-05-24 14:23:40] INFO root fetch - processPackages [checkov]: executing diffoscope
+[2023-05-24 14:23:40] INFO root fetch - processPackages [checkov]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/checkov-2.3.98.tar.gz tmp/checkov-2.3.99.tar.gz --markdown 20230524/c/checkov/2.3.98-2.3.99/diff.md --exclude *.pyd
+[2023-05-24 14:23:40] INFO root fetch - processPackages [panml]: Downloading https://files.pythonhosted.org/packages/c3/d1/f51d699a090401fa7d5f871c7c75cbdd36c53db46c87381d6dacc6ec7c03/panml-0.0.15.tar.gz
+[2023-05-24 14:23:40] INFO root fetch - processPackages [yze]: Downloading https://files.pythonhosted.org/packages/75/96/a80a720b4216c541b7275a081f4c3d96118aad801192267f910b9635e88b/yze-0.0.2.tar.gz
+[2023-05-24 14:23:40] INFO root fetch - processPackages [poetry-plugin-freeze]: Downloading https://files.pythonhosted.org/packages/a3/6a/6fc5dfc7937361d01484acc8e084f88a538a6306dd691513ba5a902e06ad/poetry_plugin_freeze-1.0.3.tar.gz
+[2023-05-24 14:23:40] INFO root fetch - processPackages [inspirational-quotes]: Downloading https://files.pythonhosted.org/packages/6e/f7/50e1fde40bee7b6fa7eb61a5a0d2f9408f2c12fb935996271968a220ccad/inspirational_quotes-0.0.7.tar.gz
+[2023-05-24 14:23:40] INFO root fetch - processPackages [cloudmesh-common]: Downloading https://files.pythonhosted.org/packages/68/c3/2fff9f3ea01944b9d6b899705c9bed1ef01383b84542bbfe95d76134debc/cloudmesh-common-4.3.98.tar.gz
+[2023-05-24 14:23:40] INFO root fetch - processPackages [mocksafe]: Downloading https://files.pythonhosted.org/packages/13/de/bf47f6999d84ecbbffec722b84860fadab9d7177a677ffba2fab523f17a9/mocksafe-0.5.0a0.tar.gz
+[2023-05-24 14:23:40] INFO root fetch - processPackages [sqrt-kit]: Downloading https://files.pythonhosted.org/packages/61/a1/c94c40b7e9e936c0e7d9bd24a15ada72b42cba76eac3d4595d804baaa0bb/sqrt-kit-0.0.1.tar.gz
+[2023-05-24 14:23:40] INFO root fetch - processPackages [mocksafe]: executing diffoscope
+[2023-05-24 14:23:40] INFO root fetch - processPackages [mocksafe]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mocksafe-0.4.1a0.tar.gz tmp/mocksafe-0.5.0a0.tar.gz --markdown 20230524/m/mocksafe/0.4.1a0-0.5.0a0/diff.md --exclude *.pyd
+[2023-05-24 14:23:40] INFO root fetch - processPackages [panml]: Downloading https://files.pythonhosted.org/packages/8e/d1/7e7ff36797790ae8ed8770a2cd45c74547947326e5e4bcb50f5aad94fd77/panml-0.0.16.tar.gz
+[2023-05-24 14:23:40] INFO root fetch - processPackages [poetry-plugin-freeze]: Downloading https://files.pythonhosted.org/packages/0b/30/b321c41d0d079a7bb42d5d7cb13b31469526bdc73fc74ffb9817709a80b3/poetry_plugin_freeze-1.0.5.tar.gz
+[2023-05-24 14:23:40] INFO root fetch - processPackages [panml]: executing diffoscope
+[2023-05-24 14:23:40] INFO root fetch - processPackages [panml]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/panml-0.0.15.tar.gz tmp/panml-0.0.16.tar.gz --markdown 20230524/p/panml/0.0.15-0.0.16/diff.md --exclude *.pyd
+[2023-05-24 14:23:40] INFO root fetch - processPackages [udps]: Downloading https://files.pythonhosted.org/packages/00/b5/1bd7331571e7ec9510d59460c6e130e994c1a4a90f5f1c550d5b485a4b13/udps-0.1.15.tar.gz
+[2023-05-24 14:23:40] INFO root fetch - processPackages [poetry-plugin-freeze]: executing diffoscope
+[2023-05-24 14:23:40] INFO root fetch - processPackages [poetry-plugin-freeze]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/poetry_plugin_freeze-1.0.3.tar.gz tmp/poetry_plugin_freeze-1.0.5.tar.gz --markdown 20230524/p/poetry-plugin-freeze/1.0.3-1.0.5/diff.md --exclude *.pyd
+[2023-05-24 14:23:40] INFO root fetch - processPackages [inspirational-quotes]: Downloading https://files.pythonhosted.org/packages/12/c4/c1baf500caa330545ae725d79e00b7eb16ac2bc03dad5af365bfdbdd2d03/inspirational_quotes-0.0.8.tar.gz
+[2023-05-24 14:23:40] INFO root fetch - processPackages [yze]: Downloading https://files.pythonhosted.org/packages/95/89/7faa42a36d7e24468538b043a8796c221579fe2b5c8e776aa6cb48c1001f/yze-0.0.4.tar.gz
+[2023-05-24 14:23:40] INFO root fetch - processPackages [sqrt-kit]: Downloading https://files.pythonhosted.org/packages/d2/2d/bef4b9a41cace9eddfca994bfb78d609ce3e37387f69b1ef9ed141ffd52b/sqrt-kit-0.0.2.tar.gz
+[2023-05-24 14:23:40] INFO root fetch - processPackages [inspirational-quotes]: executing diffoscope
+[2023-05-24 14:23:40] INFO root fetch - processPackages [inspirational-quotes]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/inspirational_quotes-0.0.7.tar.gz tmp/inspirational_quotes-0.0.8.tar.gz --markdown 20230524/i/inspirational-quotes/0.0.7-0.0.8/diff.md --exclude *.pyd
+[2023-05-24 14:23:40] INFO root fetch - processPackages [udps]: executing diffoscope
+[2023-05-24 14:23:40] INFO root fetch - processPackages [udps]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/udps-0.1.14.tar.gz tmp/udps-0.1.15.tar.gz --markdown 20230524/u/udps/0.1.14-0.1.15/diff.md --exclude *.pyd
+[2023-05-24 14:23:40] INFO root fetch - processPackages [yze]: executing diffoscope
+[2023-05-24 14:23:40] INFO root fetch - processPackages [yze]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/yze-0.0.2.tar.gz tmp/yze-0.0.4.tar.gz --markdown 20230524/y/yze/0.0.2-0.0.4/diff.md --exclude *.pyd
+[2023-05-24 14:23:40] INFO root fetch - processPackages [sqrt-kit]: executing diffoscope
+[2023-05-24 14:23:40] INFO root fetch - processPackages [sqrt-kit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sqrt-kit-0.0.1.tar.gz tmp/sqrt-kit-0.0.2.tar.gz --markdown 20230524/s/sqrt-kit/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-05-24 14:23:40] INFO root fetch - processPackages [cloudmesh-common]: Downloading https://files.pythonhosted.org/packages/e0/06/2a9df727a32d9c3a2e1bc9afb544e91ea00289cb5cc2e474e902e06b74d7/cloudmesh-common-4.3.99.tar.gz
+[2023-05-24 14:23:41] INFO root fetch - processPackages [cloudmesh-common]: executing diffoscope
+[2023-05-24 14:23:41] INFO root fetch - processPackages [cloudmesh-common]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cloudmesh-common-4.3.98.tar.gz tmp/cloudmesh-common-4.3.99.tar.gz --markdown 20230524/c/cloudmesh-common/4.3.98-4.3.99/diff.md --exclude *.pyd
+[2023-05-24 14:23:41] INFO root fetch - processPackages [car-connector-framework]: Start processing: twitter-api-py
+[2023-05-24 14:23:41] INFO root fetch - main [MainThread]: End processing [car-connector-framework]: success
+[2023-05-24 14:23:41] INFO root fetch - processPackages [twitter-api-py]: New version: [0.8.0] Old Version: [0.7.3]
+[2023-05-24 14:23:41] INFO root fetch - processPackages [mocksafe]: Start processing: macrobond-data-api
+[2023-05-24 14:23:41] INFO root fetch - main [MainThread]: End processing [mocksafe]: success
+[2023-05-24 14:23:41] INFO root fetch - processPackages [macrobond-data-api]: New version: [1.0.5] Old Version: [1.0.4]
+[2023-05-24 14:23:41] INFO root fetch - processPackages [twitter-api-py]: Downloading https://files.pythonhosted.org/packages/b8/53/4144f9fe1e36a1a72e5b033b0b6d747b24c07cbc29022a8013d7f0f8b3d5/twitter_api_py-0.8.0.tar.gz
+[2023-05-24 14:23:41] INFO root fetch - processPackages [twitter-api-py]: executing diffoscope
+[2023-05-24 14:23:41] INFO root fetch - processPackages [twitter-api-py]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/twitter_api_py-0.7.3.tar.gz tmp/twitter_api_py-0.8.0.tar.gz --markdown 20230524/t/twitter-api-py/0.7.3-0.8.0/diff.md --exclude *.pyd
+[2023-05-24 14:23:42] INFO root fetch - processPackages [panml]: Start processing: django-cloudwatch-metrics
+[2023-05-24 14:23:42] INFO root fetch - main [MainThread]: End processing [panml]: success
+[2023-05-24 14:23:42] INFO root fetch - processPackages [macrobond-data-api]: Downloading https://files.pythonhosted.org/packages/15/60/3342610072b774621fbce528082fc38d1ceaf108bf76f42f1ba365e4ce68/macrobond-data-api-1.0.4.tar.gz
+[2023-05-24 14:23:42] INFO root fetch - processPackages [poetry-plugin-freeze]: Start processing: argus-api
+[2023-05-24 14:23:42] INFO root fetch - main [MainThread]: End processing [poetry-plugin-freeze]: success
+[2023-05-24 14:23:42] INFO root fetch - processPackages [sqrt-kit]: Start processing: season
+[2023-05-24 14:23:42] INFO root fetch - main [MainThread]: End processing [sqrt-kit]: success
+[2023-05-24 14:23:42] WARNING root fetch - processPackages [django-cloudwatch-metrics]: Skipping, unable to determine old version
+[2023-05-24 14:23:42] INFO root fetch - processPackages [django-cloudwatch-metrics]: Start processing: certora-cli-alpha-EyalH-SeparationOfCompileAndCheck
+[2023-05-24 14:23:42] INFO root fetch - main [MainThread]: End processing [django-cloudwatch-metrics] error
+[2023-05-24 14:23:42] INFO root fetch - processPackages [season]: New version: [2.2.6] Old Version: [2.2.5]
+[2023-05-24 14:23:42] INFO root fetch - processPackages [inspirational-quotes]: Start processing: libaarhusxyz
+[2023-05-24 14:23:42] INFO root fetch - main [MainThread]: End processing [inspirational-quotes]: success
+[2023-05-24 14:23:42] WARNING root fetch - processPackages [certora-cli-alpha-EyalH-SeparationOfCompileAndCheck]: Skipping, unable to determine old version
+[2023-05-24 14:23:42] INFO root fetch - processPackages [certora-cli-alpha-EyalH-SeparationOfCompileAndCheck]: Start processing: sqrt-kit
+[2023-05-24 14:23:42] INFO root fetch - main [MainThread]: End processing [certora-cli-alpha-EyalH-SeparationOfCompileAndCheck] error
+[2023-05-24 14:23:42] INFO root fetch - processPackages [libaarhusxyz]: New version: [0.0.6] Old Version: [0.0.5]
+[2023-05-24 14:23:42] INFO root fetch - processPackages [argus-api]: New version: [3.9.0] Old Version: [3.8.0]
+[2023-05-24 14:23:42] INFO root fetch - processPackages [sqrt-kit]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-05-24 14:23:42] INFO root fetch - processPackages [yze]: Start processing: lupin-grognard
+[2023-05-24 14:23:42] INFO root fetch - main [MainThread]: End processing [yze]: success
+[2023-05-24 14:23:42] INFO root fetch - processPackages [sqrt-kit]: executing diffoscope
+[2023-05-24 14:23:42] INFO root fetch - processPackages [sqrt-kit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sqrt-kit-0.0.1.tar.gz tmp/sqrt-kit-0.0.2.tar.gz --markdown 20230524/s/sqrt-kit/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-05-24 14:23:42] INFO root fetch - processPackages [lupin-grognard]: New version: [1.9.0] Old Version: [1.7.0]
+[2023-05-24 14:23:42] INFO root fetch - processPackages [season]: Downloading https://files.pythonhosted.org/packages/41/08/b0709668aeebb889305058977d50fe64b9d14b5b8fdef83a14dc0f240340/season-2.2.5-py3-none-any.whl
+[2023-05-24 14:23:42] INFO root fetch - processPackages [libaarhusxyz]: Downloading https://files.pythonhosted.org/packages/f2/bc/c135e9afddb3182108e542bed26dc274782159e6331f7d5f2c8a4d17de9d/libaarhusxyz-0.0.5.tar.gz
+[2023-05-24 14:23:42] INFO root fetch - processPackages [argus-api]: Downloading https://files.pythonhosted.org/packages/7c/a9/0de0fe925190dbfbc41478bcfc14f296a31afc53fc179db5e58b7c11ff0c/argus_api-3.8.0.tar.gz
+[2023-05-24 14:23:42] INFO root fetch - processPackages [macrobond-data-api]: Downloading https://files.pythonhosted.org/packages/04/78/7255fbc71d630dd03c73006dc9901e9d03f210d1b78e5a4dcd0c019dc006/macrobond-data-api-1.0.5.tar.gz
+[2023-05-24 14:23:42] INFO root fetch - processPackages [lupin-grognard]: executing diffoscope
+[2023-05-24 14:23:42] INFO root fetch - processPackages [lupin-grognard]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lupin-grognard-1.7.0.tar.gz tmp/lupin-grognard-1.9.0.tar.gz --markdown 20230524/l/lupin-grognard/1.7.0-1.9.0/diff.md --exclude *.pyd
+[2023-05-24 14:23:42] INFO root fetch - processPackages [macrobond-data-api]: executing diffoscope
+[2023-05-24 14:23:42] INFO root fetch - processPackages [macrobond-data-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/macrobond-data-api-1.0.4.tar.gz tmp/macrobond-data-api-1.0.5.tar.gz --markdown 20230524/m/macrobond-data-api/1.0.4-1.0.5/diff.md --exclude *.pyd
+[2023-05-24 14:23:42] INFO root fetch - processPackages [libaarhusxyz]: Downloading https://files.pythonhosted.org/packages/f9/96/72607f1164b63d5d652e17f1d0370a3b641cbbb10ddefd41e5f0f4e56531/libaarhusxyz-0.0.6.tar.gz
+[2023-05-24 14:23:42] INFO root fetch - main [MainThread]: End processing [cloudmesh-common]: success
+[2023-05-24 14:23:42] INFO root fetch - processPackages [libaarhusxyz]: executing diffoscope
+[2023-05-24 14:23:42] INFO root fetch - processPackages [libaarhusxyz]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/libaarhusxyz-0.0.5.tar.gz tmp/libaarhusxyz-0.0.6.tar.gz --markdown 20230524/l/libaarhusxyz/0.0.5-0.0.6/diff.md --exclude *.pyd
+[2023-05-24 14:23:43] INFO root fetch - processPackages [argus-api]: Downloading https://files.pythonhosted.org/packages/48/2f/dc8867bfe5957610794f3fd60f0d1e3aa2212100eb22b8938d8f2c8a29cd/argus_api-3.9.0.tar.gz
+[2023-05-24 14:23:43] INFO root fetch - main [MainThread]: End processing [sqrt-kit]: success
+[2023-05-24 14:23:43] INFO root fetch - processPackages [argus-api]: executing diffoscope
+[2023-05-24 14:23:43] INFO root fetch - processPackages [argus-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/argus_api-3.8.0.tar.gz tmp/argus_api-3.9.0.tar.gz --markdown 20230524/a/argus-api/3.8.0-3.9.0/diff.md --exclude *.pyd
+[2023-05-24 14:23:43] INFO root fetch - main [MainThread]: End processing [lupin-grognard]: success
+[2023-05-24 14:23:43] INFO root fetch - processPackages [season]: Downloading https://files.pythonhosted.org/packages/78/1a/bf9f6f8031674f1081db07fc1611811fa7355d50c127da51678d994ab0b4/season-2.2.6-py3-none-any.whl
+[2023-05-24 14:23:43] INFO root fetch - main [MainThread]: End processing [libaarhusxyz]: success
+[2023-05-24 14:23:44] INFO root fetch - processPackages [season]: executing diffoscope
+[2023-05-24 14:23:44] INFO root fetch - processPackages [season]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/season-2.2.5-py3-none-any.whl.zip tmp/season-2.2.6-py3-none-any.whl.zip --markdown 20230524/s/season/2.2.5-2.2.6/diff.md --exclude *.pyd
+[2023-05-24 14:23:44] INFO root fetch - main [MainThread]: End processing [macrobond-data-api]: success
+[2023-05-24 14:23:44] INFO root fetch - main [MainThread]: End processing [twitter-api-py]: success
+[2023-05-24 14:23:45] INFO root fetch - main [MainThread]: End processing [udps]: success
+[2023-05-24 14:23:48] INFO root fetch - main [MainThread]: End processing [season]: success
+[2023-05-24 14:23:52] INFO root fetch - main [MainThread]: End processing [argus-api]: success
+[2023-05-24 14:24:24] INFO root fetch - main [MainThread]: End processing [checkov]: success
+[2023-05-24 14:24:24] INFO root fetch - main [MainThread]: Store serial: [18229367]
