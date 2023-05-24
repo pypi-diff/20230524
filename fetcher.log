@@ -19337,3 +19337,144 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd4 in position 72: invalid
 [2023-05-24 18:07:00] INFO root fetch - main [MainThread]: End processing [deepsearch-toolkit]: success
 [2023-05-24 18:07:06] INFO root fetch - main [MainThread]: End processing [oak9-tython]: success
 [2023-05-24 18:07:06] INFO root fetch - main [MainThread]: Store serial: [18232429]
+[2023-05-24 18:12:11] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18232429]
+[2023-05-24 18:12:16] INFO root fetch - main [MainThread]: Found 25 changed packages
+[2023-05-24 18:12:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: odoo14-addon-scrap-reason-code
+[2023-05-24 18:12:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: notification-service-nightly
+[2023-05-24 18:12:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: ezQgd
+[2023-05-24 18:12:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: ai-flow-nightly
+[2023-05-24 18:12:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: edc-glucose
+[2023-05-24 18:12:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: domolibrary
+[2023-05-24 18:12:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: Dehaze
+[2023-05-24 18:12:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: strangeworks-qiskit-runtime
+[2023-05-24 18:12:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: pepperize.cdk-vpc
+[2023-05-24 18:12:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: ask-smapi-model
+[2023-05-24 18:12:16] INFO root fetch - processPackages [edc-glucose]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-24 18:12:16] WARNING root fetch - processPackages [strangeworks-qiskit-runtime]: Skipping, unable to determine old version
+[2023-05-24 18:12:16] INFO root fetch - processPackages [strangeworks-qiskit-runtime]: Start processing: scienceio
+[2023-05-24 18:12:16] INFO root fetch - main [MainThread]: End processing [strangeworks-qiskit-runtime] error
+[2023-05-24 18:12:16] INFO root fetch - processPackages [ai-flow-nightly]: New version: [2023.5.9] Old Version: [2023.5.8]
+[2023-05-24 18:12:16] WARNING root fetch - processPackages [Dehaze]: Skipping, unable to determine old version
+[2023-05-24 18:12:16] INFO root fetch - processPackages [Dehaze]: Start processing: pyttygif
+[2023-05-24 18:12:16] INFO root fetch - processPackages [ezQgd]: New version: [1.0.0] Old Version: [0.0.0.3]
+[2023-05-24 18:12:16] INFO root fetch - main [MainThread]: End processing [Dehaze] error
+[2023-05-24 18:12:16] INFO root fetch - processPackages [odoo14-addon-scrap-reason-code]: New version: [14.0.1.1.0] Old Version: [14.0.1.0.2.dev2]
+[2023-05-24 18:12:16] INFO root fetch - processPackages [domolibrary]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-24 18:12:16] INFO root fetch - processPackages [ask-smapi-model]: New version: [1.9.2] Old Version: [1.9.1]
+[2023-05-24 18:12:16] INFO root fetch - processPackages [pepperize.cdk-vpc]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-05-24 18:12:16] INFO root fetch - processPackages [scienceio]: New version: [2.1.1] Old Version: [2.1.0]
+[2023-05-24 18:12:16] INFO root fetch - processPackages [pyttygif]: New version: [0.3.2] Old Version: [0.3.1]
+[2023-05-24 18:12:16] INFO root fetch - processPackages [notification-service-nightly]: New version: [2023.5.9] Old Version: [2023.5.8]
+[2023-05-24 18:12:16] INFO root fetch - processPackages [domolibrary]: executing diffoscope
+[2023-05-24 18:12:16] INFO root fetch - processPackages [domolibrary]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/domolibrary-0.1.8.tar.gz tmp/domolibrary-0.1.9.tar.gz --markdown 20230524/d/domolibrary/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-24 18:12:16] INFO root fetch - processPackages [ask-smapi-model]: executing diffoscope
+[2023-05-24 18:12:16] INFO root fetch - processPackages [ask-smapi-model]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ask-smapi-model-1.9.1.tar.gz tmp/ask-smapi-model-1.9.2.tar.gz --markdown 20230524/a/ask-smapi-model/1.9.1-1.9.2/diff.md --exclude *.pyd
+[2023-05-24 18:12:16] INFO root fetch - processPackages [edc-glucose]: Downloading https://files.pythonhosted.org/packages/5c/c4/7c8c7a40ebfe9a901238b2489fcb461c3c439bd10382d8c50533aee9cf3e/edc_glucose-0.1.8-py3-none-any.whl
+[2023-05-24 18:12:16] INFO root fetch - processPackages [pepperize.cdk-vpc]: executing diffoscope
+[2023-05-24 18:12:16] INFO root fetch - processPackages [pepperize.cdk-vpc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pepperize.cdk-vpc-0.0.98.tar.gz tmp/pepperize.cdk-vpc-0.0.99.tar.gz --markdown 20230524/p/pepperize.cdk-vpc/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-05-24 18:12:16] INFO root fetch - processPackages [ezQgd]: Downloading https://files.pythonhosted.org/packages/ac/ea/cd35fd65ca3243f7c4048bfaf201fed5c80860742675c3ae6f45bd7b9e60/ezQgd-0.0.0.3-py3-none-any.whl
+[2023-05-24 18:12:16] INFO root fetch - processPackages [pyttygif]: Downloading https://files.pythonhosted.org/packages/36/e0/3839d379b3b1ada6910d2769348f51c47f34eda6526c9cb594f076a4e4c8/pyttygif-0.3.1.tar.gz
+[2023-05-24 18:12:17] INFO root fetch - processPackages [ai-flow-nightly]: executing diffoscope
+[2023-05-24 18:12:17] INFO root fetch - processPackages [ai-flow-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ai_flow_nightly-2023.5.8.tar.gz tmp/ai_flow_nightly-2023.5.9.tar.gz --markdown 20230524/a/ai-flow-nightly/2023.5.8-2023.5.9/diff.md --exclude *.pyd
+[2023-05-24 18:12:17] INFO root fetch - processPackages [odoo14-addon-scrap-reason-code]: Downloading https://files.pythonhosted.org/packages/03/22/9f3f3d37d54f0d362450390732fdfa7b1866bf6ecef8c452be266ff6987c/odoo14_addon_scrap_reason_code-14.0.1.0.2.dev2-py3-none-any.whl
+[2023-05-24 18:12:17] INFO root fetch - processPackages [scienceio]: Downloading https://files.pythonhosted.org/packages/c9/b0/17efcba0c2806bb295075c140b1f7fe1064680f673f2e40a9823b4280b59/scienceio-2.1.1.tar.gz
+[2023-05-24 18:12:17] INFO root fetch - processPackages [edc-glucose]: Downloading https://files.pythonhosted.org/packages/e7/01/7d35231023cd75dcd885278afa69e716fc5c7993f8c77eab3963f0319481/edc_glucose-0.1.9-py3-none-any.whl
+[2023-05-24 18:12:17] INFO root fetch - processPackages [pyttygif]: Downloading https://files.pythonhosted.org/packages/bd/01/e84254402f896ac3629b1cce29d27a2a14c2ebfc1127bf7669750584118f/pyttygif-0.3.2.tar.gz
+[2023-05-24 18:12:17] INFO root fetch - processPackages [notification-service-nightly]: executing diffoscope
+[2023-05-24 18:12:17] INFO root fetch - processPackages [notification-service-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/notification_service_nightly-2023.5.8.tar.gz tmp/notification_service_nightly-2023.5.9.tar.gz --markdown 20230524/n/notification-service-nightly/2023.5.8-2023.5.9/diff.md --exclude *.pyd
+[2023-05-24 18:12:17] INFO root fetch - processPackages [scienceio]: executing diffoscope
+[2023-05-24 18:12:17] INFO root fetch - processPackages [scienceio]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/scienceio-2.1.0.tar.gz tmp/scienceio-2.1.1.tar.gz --markdown 20230524/s/scienceio/2.1.0-2.1.1/diff.md --exclude *.pyd
+[2023-05-24 18:12:17] INFO root fetch - processPackages [edc-glucose]: executing diffoscope
+[2023-05-24 18:12:17] INFO root fetch - processPackages [edc-glucose]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/edc_glucose-0.1.8-py3-none-any.whl.zip tmp/edc_glucose-0.1.9-py3-none-any.whl.zip --markdown 20230524/e/edc-glucose/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-24 18:12:17] INFO root fetch - processPackages [ezQgd]: Downloading https://files.pythonhosted.org/packages/1f/0a/3eb9ffb3997889b2f447aa3fed41c36532640173bd81df37a3b79eb22eaf/ezQgd-1.0.0-py2.py3-none-any.whl
+[2023-05-24 18:12:17] INFO root fetch - processPackages [pyttygif]: executing diffoscope
+[2023-05-24 18:12:17] INFO root fetch - processPackages [pyttygif]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyttygif-0.3.1.tar.gz tmp/pyttygif-0.3.2.tar.gz --markdown 20230524/p/pyttygif/0.3.1-0.3.2/diff.md --exclude *.pyd
+[2023-05-24 18:12:17] INFO root fetch - processPackages [ezQgd]: executing diffoscope
+[2023-05-24 18:12:17] INFO root fetch - processPackages [ezQgd]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ezQgd-0.0.0.3-py3-none-any.whl.zip tmp/ezQgd-1.0.0-py2.py3-none-any.whl.zip --markdown 20230524/e/ezQgd/0.0.0.3-1.0.0/diff.md --exclude *.pyd
+[2023-05-24 18:12:17] INFO root fetch - processPackages [odoo14-addon-scrap-reason-code]: Downloading https://files.pythonhosted.org/packages/03/5b/e210b556fe281075c2c369b13053e2d87d43d8e5a38f0f453b1619801251/odoo14_addon_scrap_reason_code-14.0.1.1.0-py3-none-any.whl
+[2023-05-24 18:12:17] INFO root fetch - processPackages [odoo14-addon-scrap-reason-code]: executing diffoscope
+[2023-05-24 18:12:17] INFO root fetch - processPackages [odoo14-addon-scrap-reason-code]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo14_addon_scrap_reason_code-14.0.1.0.2.dev2-py3-none-any.whl.zip tmp/odoo14_addon_scrap_reason_code-14.0.1.1.0-py3-none-any.whl.zip --markdown 20230524/o/odoo14-addon-scrap-reason-code/14.0.1.0.2.dev2-14.0.1.1.0/diff.md --exclude *.pyd
+[2023-05-24 18:12:18] INFO root fetch - processPackages [pepperize.cdk-vpc]: Start processing: mkdocs-exclude-unused-files
+[2023-05-24 18:12:18] INFO root fetch - main [MainThread]: End processing [pepperize.cdk-vpc]: success
+[2023-05-24 18:12:18] INFO root fetch - processPackages [mkdocs-exclude-unused-files]: New version: [1.2.0] Old Version: [1.1.0]
+[2023-05-24 18:12:18] INFO root fetch - processPackages [scienceio]: Start processing: pyiir
+[2023-05-24 18:12:18] INFO root fetch - main [MainThread]: End processing [scienceio]: success
+[2023-05-24 18:12:18] INFO root fetch - processPackages [pyiir]: New version: [0.0.5] Old Version: [0.0.3]
+[2023-05-24 18:12:18] INFO root fetch - processPackages [mkdocs-exclude-unused-files]: Downloading https://files.pythonhosted.org/packages/4c/98/fd46a8592777485d3af67eb1474b47cb033c0aaa4181959fc5caa3af1cc8/mkdocs-exclude-unused-files-1.1.0.tar.gz
+[2023-05-24 18:12:18] INFO root fetch - processPackages [edc-glucose]: Start processing: bycon
+[2023-05-24 18:12:18] INFO root fetch - main [MainThread]: End processing [edc-glucose]: success
+[2023-05-24 18:12:18] INFO root fetch - processPackages [bycon]: New version: [1.0.9] Old Version: [1.0.8]
+[2023-05-24 18:12:18] INFO root fetch - processPackages [ezQgd]: Start processing: pass-collaborate
+[2023-05-24 18:12:18] INFO root fetch - main [MainThread]: End processing [ezQgd]: success
+[2023-05-24 18:12:18] INFO root fetch - processPackages [pass-collaborate]: New version: [0.1.2] Old Version: [0.1.1]
+[2023-05-24 18:12:18] INFO root fetch - processPackages [pyiir]: Downloading https://files.pythonhosted.org/packages/ee/23/8bccefb323f375fe3fa680b6138ceecb93413bbb3553f3ca24850db8eb9e/pyiir-0.0.3.tar.gz
+[2023-05-24 18:12:18] INFO root fetch - processPackages [odoo14-addon-scrap-reason-code]: Start processing: T1TV
+[2023-05-24 18:12:18] INFO root fetch - main [MainThread]: End processing [odoo14-addon-scrap-reason-code]: success
+[2023-05-24 18:12:19] WARNING root fetch - processPackages [T1TV]: Skipping, unable to determine old version
+[2023-05-24 18:12:19] INFO root fetch - processPackages [T1TV]: Start processing: perfectem
+[2023-05-24 18:12:19] INFO root fetch - main [MainThread]: End processing [T1TV] error
+[2023-05-24 18:12:19] WARNING root fetch - processPackages [perfectem]: Skipping, unable to determine old version
+[2023-05-24 18:12:19] INFO root fetch - processPackages [perfectem]: Start processing: agixt
+[2023-05-24 18:12:19] INFO root fetch - main [MainThread]: End processing [perfectem] error
+[2023-05-24 18:12:19] INFO root fetch - processPackages [notification-service-nightly]: Start processing: autora-experimentalist-sampler-nearest-value-sampler
+[2023-05-24 18:12:19] INFO root fetch - main [MainThread]: End processing [notification-service-nightly]: success
+[2023-05-24 18:12:19] INFO root fetch - processPackages [agixt]: New version: [1.1.72b0] Old Version: [1.1.71b0]
+[2023-05-24 18:12:19] INFO root fetch - processPackages [autora-experimentalist-sampler-nearest-value-sampler]: New version: [1.0.0b0] Old Version: [1.0.0a0]
+[2023-05-24 18:12:19] INFO root fetch - processPackages [pass-collaborate]: Downloading https://files.pythonhosted.org/packages/de/60/81dfcb1a4ae53f27044dc5a8a49c8d6f910532c8f9f5aca9b2d53384cc03/pass-collaborate-0.1.1.tar.gz
+[2023-05-24 18:12:19] INFO root fetch - processPackages [mkdocs-exclude-unused-files]: Downloading https://files.pythonhosted.org/packages/a4/e9/1b7a7c569c0bc14e82feb0d0fddf32a8c47946a31d3a3226e3dd7a1124ea/mkdocs_exclude_unused_files-1.2.0.tar.gz
+[2023-05-24 18:12:19] INFO root fetch - processPackages [pyiir]: Downloading https://files.pythonhosted.org/packages/df/26/10ce7ff92b8b235cd61f4df08b83a44218d69eb2e1c6977621ac74811ffa/pyiir-0.0.5.tar.gz
+[2023-05-24 18:12:19] INFO root fetch - processPackages [mkdocs-exclude-unused-files]: executing diffoscope
+[2023-05-24 18:12:19] INFO root fetch - processPackages [mkdocs-exclude-unused-files]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mkdocs-exclude-unused-files-1.1.0.tar.gz tmp/mkdocs_exclude_unused_files-1.2.0.tar.gz --markdown 20230524/m/mkdocs-exclude-unused-files/1.1.0-1.2.0/diff.md --exclude *.pyd
+[2023-05-24 18:12:19] INFO root fetch - processPackages [agixt]: Downloading https://files.pythonhosted.org/packages/67/15/8ec316b28472c258da0b4658f96af3fd52af4de6450a1dfad0dd0485c49a/agixt-1.1.71b0.tar.gz
+[2023-05-24 18:12:19] INFO root fetch - processPackages [bycon]: executing diffoscope
+[2023-05-24 18:12:19] INFO root fetch - processPackages [bycon]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bycon-1.0.8.tar.gz tmp/bycon-1.0.9.tar.gz --markdown 20230524/b/bycon/1.0.8-1.0.9/diff.md --exclude *.pyd
+[2023-05-24 18:12:19] INFO root fetch - processPackages [autora-experimentalist-sampler-nearest-value-sampler]: Downloading https://files.pythonhosted.org/packages/65/b1/a70f106571b5ad854730bcd3ced860340a23c9dcbb6a19779d8262f12e03/Autora-Experimentalist-Sampler-Nearest-Value-Sampler-1.0.0a0.tar.gz
+[2023-05-24 18:12:19] INFO root fetch - processPackages [pyiir]: executing diffoscope
+[2023-05-24 18:12:19] INFO root fetch - processPackages [pyiir]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyiir-0.0.3.tar.gz tmp/pyiir-0.0.5.tar.gz --markdown 20230524/p/pyiir/0.0.3-0.0.5/diff.md --exclude *.pyd
+[2023-05-24 18:12:19] INFO root fetch - processPackages [pass-collaborate]: Downloading https://files.pythonhosted.org/packages/ca/94/25577f0d20c626d85951fe73d70f9c2b7b055a199bb1fd77b56124978db1/pass-collaborate-0.1.2.tar.gz
+[2023-05-24 18:12:19] INFO root fetch - processPackages [agixt]: Downloading https://files.pythonhosted.org/packages/aa/a2/a9fd64c3e3711094e9c34b51e5fc596aefa8eac141423e0f90a26a63a892/agixt-1.1.72b0.tar.gz
+[2023-05-24 18:12:19] INFO root fetch - processPackages [pyttygif]: Start processing: tvb-framework
+[2023-05-24 18:12:19] INFO root fetch - main [MainThread]: End processing [pyttygif]: success
+[2023-05-24 18:12:19] INFO root fetch - processPackages [autora-experimentalist-sampler-nearest-value-sampler]: Downloading https://files.pythonhosted.org/packages/fa/cc/c1f9ed97fa8f6eb7c484c350fc84c4d1c5c81f31eb71eacf3018aea0e524/autora-experimentalist-sampler-nearest-value-sampler-1.0.0b0.tar.gz
+[2023-05-24 18:12:19] INFO root fetch - processPackages [pass-collaborate]: executing diffoscope
+[2023-05-24 18:12:19] INFO root fetch - processPackages [pass-collaborate]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pass-collaborate-0.1.1.tar.gz tmp/pass-collaborate-0.1.2.tar.gz --markdown 20230524/p/pass-collaborate/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2023-05-24 18:12:19] INFO root fetch - processPackages [tvb-framework]: New version: [2.8.1.1] Old Version: [2.8.1]
+[2023-05-24 18:12:19] INFO root fetch - processPackages [autora-experimentalist-sampler-nearest-value-sampler]: executing diffoscope
+[2023-05-24 18:12:19] INFO root fetch - processPackages [autora-experimentalist-sampler-nearest-value-sampler]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Autora-Experimentalist-Sampler-Nearest-Value-Sampler-1.0.0a0.tar.gz tmp/autora-experimentalist-sampler-nearest-value-sampler-1.0.0b0.tar.gz --markdown 20230524/a/autora-experimentalist-sampler-nearest-value-sampler/1.0.0a0-1.0.0b0/diff.md --exclude *.pyd
+[2023-05-24 18:12:19] INFO root fetch - processPackages [agixt]: executing diffoscope
+[2023-05-24 18:12:19] INFO root fetch - processPackages [agixt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/agixt-1.1.71b0.tar.gz tmp/agixt-1.1.72b0.tar.gz --markdown 20230524/a/agixt/1.1.71b0-1.1.72b0/diff.md --exclude *.pyd
+[2023-05-24 18:12:19] INFO root fetch - processPackages [tvb-framework]: Downloading https://files.pythonhosted.org/packages/96/66/1391297c2cd36f0387d7f3055cae25b4b4b5903fd2ed695ced25094af916/tvb-framework-2.8.1.1.tar.gz
+[2023-05-24 18:12:20] INFO root fetch - processPackages [ai-flow-nightly]: Start processing: wireguard-tools
+[2023-05-24 18:12:20] INFO root fetch - main [MainThread]: End processing [ai-flow-nightly]: success
+[2023-05-24 18:12:20] INFO root fetch - processPackages [wireguard-tools]: New version: [0.4.2] Old Version: [0.4.1]
+[2023-05-24 18:12:20] INFO root fetch - processPackages [mkdocs-exclude-unused-files]: Start processing: idn-data-models
+[2023-05-24 18:12:20] INFO root fetch - main [MainThread]: End processing [mkdocs-exclude-unused-files]: success
+[2023-05-24 18:12:20] INFO root fetch - processPackages [pyiir]: Start processing: simplefourierfilter
+[2023-05-24 18:12:20] INFO root fetch - main [MainThread]: End processing [pyiir]: success
+[2023-05-24 18:12:20] INFO root fetch - processPackages [wireguard-tools]: Downloading https://files.pythonhosted.org/packages/9a/4a/de91c39a7b1266b6a7a035095625e1dc24400af0cbe2dbefc0b6e912034b/wireguard_tools-0.4.1.tar.gz
+[2023-05-24 18:12:20] WARNING root fetch - processPackages [idn-data-models]: Skipping, unable to determine old version
+[2023-05-24 18:12:20] INFO root fetch - processPackages [idn-data-models]: Start processing: wizata-dsapi
+[2023-05-24 18:12:20] INFO root fetch - main [MainThread]: End processing [idn-data-models] error
+[2023-05-24 18:12:20] INFO root fetch - processPackages [simplefourierfilter]: New version: [0.3] Old Version: [0.2]
+[2023-05-24 18:12:20] INFO root fetch - processPackages [wizata-dsapi]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-24 18:12:20] INFO root fetch - processPackages [wireguard-tools]: Downloading https://files.pythonhosted.org/packages/88/3f/c7cc122cb03e45b460bd4b8a12bebb6441a4ee2fd149e1b0fafb615b4985/wireguard_tools-0.4.2.tar.gz
+[2023-05-24 18:12:20] INFO root fetch - processPackages [wizata-dsapi]: executing diffoscope
+[2023-05-24 18:12:20] INFO root fetch - processPackages [wizata-dsapi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wizata-dsapi-0.1.8.tar.gz tmp/wizata-dsapi-0.1.9.tar.gz --markdown 20230524/w/wizata-dsapi/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-24 18:12:20] INFO root fetch - main [MainThread]: End processing [autora-experimentalist-sampler-nearest-value-sampler]: success
+[2023-05-24 18:12:20] INFO root fetch - processPackages [simplefourierfilter]: Downloading https://files.pythonhosted.org/packages/58/71/c01b3fdc397674a6c31b4264d9a1cb5a58625836c7827939beb9575b9d73/simplefourierfilter-0.3.tar.gz
+[2023-05-24 18:12:20] INFO root fetch - processPackages [simplefourierfilter]: executing diffoscope
+[2023-05-24 18:12:20] INFO root fetch - processPackages [simplefourierfilter]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/simplefourierfilter-0.2.tar.gz tmp/simplefourierfilter-0.3.tar.gz --markdown 20230524/s/simplefourierfilter/0.2-0.3/diff.md --exclude *.pyd
+[2023-05-24 18:12:20] INFO root fetch - processPackages [wireguard-tools]: executing diffoscope
+[2023-05-24 18:12:20] INFO root fetch - processPackages [wireguard-tools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wireguard_tools-0.4.1.tar.gz tmp/wireguard_tools-0.4.2.tar.gz --markdown 20230524/w/wireguard-tools/0.4.1-0.4.2/diff.md --exclude *.pyd
+[2023-05-24 18:12:20] INFO root fetch - main [MainThread]: End processing [pass-collaborate]: success
+[2023-05-24 18:12:21] INFO root fetch - processPackages [tvb-framework]: executing diffoscope
+[2023-05-24 18:12:21] INFO root fetch - processPackages [tvb-framework]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tvb-framework-2.8.1.tar.gz tmp/tvb-framework-2.8.1.1.tar.gz --markdown 20230524/t/tvb-framework/2.8.1-2.8.1.1/diff.md --exclude *.pyd
+[2023-05-24 18:12:21] INFO root fetch - main [MainThread]: End processing [agixt]: success
+[2023-05-24 18:12:21] INFO root fetch - main [MainThread]: End processing [domolibrary]: success
+[2023-05-24 18:12:22] INFO root fetch - main [MainThread]: End processing [wizata-dsapi]: success
+[2023-05-24 18:12:22] INFO root fetch - main [MainThread]: End processing [simplefourierfilter]: success
+[2023-05-24 18:12:22] INFO root fetch - main [MainThread]: End processing [wireguard-tools]: success
+[2023-05-24 18:12:28] INFO root fetch - main [MainThread]: End processing [bycon]: success
+[2023-05-24 18:12:31] INFO root fetch - main [MainThread]: End processing [ask-smapi-model]: success
+[2023-05-24 18:12:48] INFO root fetch - main [MainThread]: End processing [tvb-framework]: success
+[2023-05-24 18:12:48] INFO root fetch - main [MainThread]: Store serial: [18232524]
