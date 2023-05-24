@@ -22174,3 +22174,75 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd4 in position 72: invalid
 [2023-05-24 20:42:32] INFO root fetch - main [MainThread]: End processing [speech-collator]: success
 [2023-05-24 20:42:49] INFO root fetch - main [MainThread]: End processing [arize-phoenix]: success
 [2023-05-24 20:42:49] INFO root fetch - main [MainThread]: Store serial: [18234382]
+[2023-05-24 20:47:54] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18234382]
+[2023-05-24 20:47:59] INFO root fetch - main [MainThread]: Found 12 changed packages
+[2023-05-24 20:47:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: warrenapp
+[2023-05-24 20:47:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: sickchill
+[2023-05-24 20:47:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: django-google-cloud-tasks
+[2023-05-24 20:47:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: data-diff
+[2023-05-24 20:47:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pytest-cov
+[2023-05-24 20:47:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: boonamber
+[2023-05-24 20:47:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: coiled
+[2023-05-24 20:47:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: sharedbuffers
+[2023-05-24 20:47:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: NamasteiG
+[2023-05-24 20:47:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: Eryn
+[2023-05-24 20:47:59] INFO root fetch - processPackages [pytest-cov]: New version: [4.0.0] Old Version: [3.0.0]
+[2023-05-24 20:47:59] INFO root fetch - processPackages [coiled]: New version: [0.6.7.dev9] Old Version: [0.6.7.dev8]
+[2023-05-24 20:47:59] INFO root fetch - processPackages [boonamber]: New version: [2.0.4] Old Version: [2.0.3]
+[2023-05-24 20:47:59] INFO root fetch - processPackages [warrenapp]: New version: [0.1.3] Old Version: [0.1.2]
+[2023-05-24 20:47:59] INFO root fetch - processPackages [data-diff]: New version: [0.7.8] Old Version: [0.7.7]
+[2023-05-24 20:47:59] INFO root fetch - processPackages [sickchill]: New version: [2023.5.24] Old Version: [2023.1.2]
+[2023-05-24 20:47:59] INFO root fetch - processPackages [django-google-cloud-tasks]: New version: [2.3.0] Old Version: [2.2.4]
+[2023-05-24 20:47:59] INFO root fetch - processPackages [coiled]: executing diffoscope
+[2023-05-24 20:47:59] INFO root fetch - processPackages [coiled]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/coiled-0.6.7.dev8.tar.gz tmp/coiled-0.6.7.dev9.tar.gz --markdown 20230524/c/coiled/0.6.7.dev8-0.6.7.dev9/diff.md --exclude *.pyd
+[2023-05-24 20:47:59] INFO root fetch - processPackages [Eryn]: New version: [1.1.3] Old Version: [1.1.1]
+[2023-05-24 20:47:59] INFO root fetch - processPackages [sharedbuffers]: New version: [1.1.0] Old Version: [1.0.0]
+[2023-05-24 20:47:59] INFO root fetch - processPackages [NamasteiG]: New version: [0.3.1] Old Version: [0.3.0]
+[2023-05-24 20:47:59] INFO root fetch - processPackages [pytest-cov]: Downloading https://files.pythonhosted.org/packages/61/41/e046526849972555928a6d31c2068410e47a31fb5ab0a77f868596811329/pytest-cov-3.0.0.tar.gz
+[2023-05-24 20:47:59] INFO root fetch - processPackages [data-diff]: Downloading https://files.pythonhosted.org/packages/e9/72/dbf543d582bbc3c547747a49b543732408ae0ea5e8f548936802feb651d9/data_diff-0.7.7.tar.gz
+[2023-05-24 20:47:59] INFO root fetch - processPackages [warrenapp]: Downloading https://files.pythonhosted.org/packages/8e/6d/8ec1276796eec8356845225e4b7a535e2cf8cd110c5c821701592ff69e85/warrenapp-0.1.2.tar.gz
+[2023-05-24 20:47:59] INFO root fetch - processPackages [Eryn]: Downloading https://files.pythonhosted.org/packages/a0/07/d1f44691a3a20b52a5eae1256ba227b9460503be02016db6dc4907ce4f9c/Eryn-1.1.1.tar.gz
+[2023-05-24 20:47:59] INFO root fetch - processPackages [sickchill]: Downloading https://files.pythonhosted.org/packages/a0/e7/6a7f791f0da48afbac29fbfe6128fd67167928673696e7e73f7ba5014495/sickchill-2023.1.2.tar.gz
+[2023-05-24 20:47:59] INFO root fetch - processPackages [sharedbuffers]: Downloading https://files.pythonhosted.org/packages/31/b9/166b2894fc42f00c800620a47f1174d87c0b3237bb95554426bedc9bc80b/sharedbuffers-1.0.0.tar.gz
+[2023-05-24 20:47:59] INFO root fetch - processPackages [NamasteiG]: Downloading https://files.pythonhosted.org/packages/c6/38/deca9ef585bb8a5e9a1cb45ffd002b7cc1d4fbb27a969a538b651d848bf3/NamasteiG-0.3.0.tar.gz
+[2023-05-24 20:48:00] INFO root fetch - processPackages [boonamber]: executing diffoscope
+[2023-05-24 20:48:00] INFO root fetch - processPackages [boonamber]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/boonamber-2.0.3.tar.gz tmp/boonamber-2.0.4.tar.gz --markdown 20230524/b/boonamber/2.0.3-2.0.4/diff.md --exclude *.pyd
+[2023-05-24 20:48:00] INFO root fetch - processPackages [django-google-cloud-tasks]: Downloading https://files.pythonhosted.org/packages/53/7d/b639802a173ed6cd0dc1c28c9888ec2ed5432b24250ca9785990dd959de1/django_google_cloud_tasks-2.3.0.tar.gz
+[2023-05-24 20:48:00] INFO root fetch - processPackages [pytest-cov]: Downloading https://files.pythonhosted.org/packages/ea/70/da97fd5f6270c7d2ce07559a19e5bf36a76f0af21500256f005a69d9beba/pytest-cov-4.0.0.tar.gz
+[2023-05-24 20:48:00] INFO root fetch - processPackages [warrenapp]: Downloading https://files.pythonhosted.org/packages/54/80/b4964662700c1fd310d2842c4f421d19faec462eca6ed3068f70a59f1d0d/warrenapp-0.1.3.tar.gz
+[2023-05-24 20:48:00] INFO root fetch - processPackages [django-google-cloud-tasks]: executing diffoscope
+[2023-05-24 20:48:00] INFO root fetch - processPackages [django-google-cloud-tasks]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django_google_cloud_tasks-2.2.4.tar.gz tmp/django_google_cloud_tasks-2.3.0.tar.gz --markdown 20230524/d/django-google-cloud-tasks/2.2.4-2.3.0/diff.md --exclude *.pyd
+[2023-05-24 20:48:00] INFO root fetch - processPackages [data-diff]: Downloading https://files.pythonhosted.org/packages/bb/36/ca801d8b1ef5dcc30d053086d846544bdbe2e29f31940737b24f7078a897/data_diff-0.7.8.tar.gz
+[2023-05-24 20:48:00] INFO root fetch - processPackages [Eryn]: Downloading https://files.pythonhosted.org/packages/7e/66/c3d02f27ec316065982cba0609c5553396e087be6552f23d33fbf5c4e6a5/Eryn-1.1.3.tar.gz
+[2023-05-24 20:48:00] INFO root fetch - processPackages [pytest-cov]: executing diffoscope
+[2023-05-24 20:48:00] INFO root fetch - processPackages [pytest-cov]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pytest-cov-3.0.0.tar.gz tmp/pytest-cov-4.0.0.tar.gz --markdown 20230524/p/pytest-cov/3.0.0-4.0.0/diff.md --exclude *.pyd
+[2023-05-24 20:48:00] INFO root fetch - processPackages [warrenapp]: executing diffoscope
+[2023-05-24 20:48:00] INFO root fetch - processPackages [warrenapp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/warrenapp-0.1.2.tar.gz tmp/warrenapp-0.1.3.tar.gz --markdown 20230524/w/warrenapp/0.1.2-0.1.3/diff.md --exclude *.pyd
+[2023-05-24 20:48:00] INFO root fetch - processPackages [NamasteiG]: Downloading https://files.pythonhosted.org/packages/2a/b7/24b146f32fc12e409dc5033ef1b9acd2e2455368105136b2b3f0aca69ecf/NamasteiG-0.3.1.tar.gz
+[2023-05-24 20:48:00] INFO root fetch - processPackages [data-diff]: executing diffoscope
+[2023-05-24 20:48:00] INFO root fetch - processPackages [data-diff]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/data_diff-0.7.7.tar.gz tmp/data_diff-0.7.8.tar.gz --markdown 20230524/d/data-diff/0.7.7-0.7.8/diff.md --exclude *.pyd
+[2023-05-24 20:48:00] INFO root fetch - processPackages [Eryn]: executing diffoscope
+[2023-05-24 20:48:00] INFO root fetch - processPackages [Eryn]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Eryn-1.1.1.tar.gz tmp/Eryn-1.1.3.tar.gz --markdown 20230524/E/Eryn/1.1.1-1.1.3/diff.md --exclude *.pyd
+[2023-05-24 20:48:00] INFO root fetch - processPackages [sharedbuffers]: Downloading https://files.pythonhosted.org/packages/92/76/958aaa780da4fac4ceee50d73635c888e089d86d3cf4ec3ee517b84c22f0/sharedbuffers-1.1.0.tar.gz
+[2023-05-24 20:48:00] INFO root fetch - processPackages [NamasteiG]: executing diffoscope
+[2023-05-24 20:48:00] INFO root fetch - processPackages [NamasteiG]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/NamasteiG-0.3.0.tar.gz tmp/NamasteiG-0.3.1.tar.gz --markdown 20230524/N/NamasteiG/0.3.0-0.3.1/diff.md --exclude *.pyd
+[2023-05-24 20:48:00] WARNING root fetch - processPackages [sickchill]: Skipping package: exceeds size limit 14751107>=10485760
+[2023-05-24 20:48:00] INFO root fetch - processPackages [sickchill]: Start processing: rahaut
+[2023-05-24 20:48:00] INFO root fetch - main [MainThread]: End processing [sickchill] error
+[2023-05-24 20:48:00] INFO root fetch - processPackages [sharedbuffers]: executing diffoscope
+[2023-05-24 20:48:00] INFO root fetch - processPackages [sharedbuffers]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sharedbuffers-1.0.0.tar.gz tmp/sharedbuffers-1.1.0.tar.gz --markdown 20230524/s/sharedbuffers/1.0.0-1.1.0/diff.md --exclude *.pyd
+[2023-05-24 20:48:00] WARNING root fetch - processPackages [rahaut]: Skipping, unable to determine old version
+[2023-05-24 20:48:00] INFO root fetch - processPackages [rahaut]: Start processing: xplorts
+[2023-05-24 20:48:00] INFO root fetch - main [MainThread]: End processing [rahaut] error
+[2023-05-24 20:48:00] WARNING root fetch - processPackages [xplorts]: Skipping, unable to determine old version
+[2023-05-24 20:48:00] INFO root fetch - main [MainThread]: End processing [xplorts] error
+[2023-05-24 20:48:01] INFO root fetch - main [MainThread]: End processing [django-google-cloud-tasks]: success
+[2023-05-24 20:48:01] INFO root fetch - main [MainThread]: End processing [warrenapp]: success
+[2023-05-24 20:48:01] INFO root fetch - main [MainThread]: End processing [NamasteiG]: success
+[2023-05-24 20:48:01] INFO root fetch - main [MainThread]: End processing [Eryn]: success
+[2023-05-24 20:48:01] INFO root fetch - main [MainThread]: End processing [pytest-cov]: success
+[2023-05-24 20:48:02] INFO root fetch - main [MainThread]: End processing [data-diff]: success
+[2023-05-24 20:48:02] INFO root fetch - main [MainThread]: End processing [coiled]: success
+[2023-05-24 20:48:03] INFO root fetch - main [MainThread]: End processing [boonamber]: success
+[2023-05-24 20:48:09] INFO root fetch - main [MainThread]: End processing [sharedbuffers]: success
+[2023-05-24 20:48:09] INFO root fetch - main [MainThread]: Store serial: [18234427]
