@@ -22057,3 +22057,51 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd4 in position 72: invalid
 [2023-05-24 20:32:00] INFO root fetch - main [MainThread]: End processing [nbox]: success
 [2023-05-24 20:32:04] INFO root fetch - main [MainThread]: End processing [trame-client]: success
 [2023-05-24 20:32:04] INFO root fetch - main [MainThread]: Store serial: [18234233]
+[2023-05-24 20:37:09] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18234233]
+[2023-05-24 20:37:13] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2023-05-24 20:37:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: generic-etl
+[2023-05-24 20:37:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: deklinacija
+[2023-05-24 20:37:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: nso-oc
+[2023-05-24 20:37:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: lib-pybroker
+[2023-05-24 20:37:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: neon-messagebus
+[2023-05-24 20:37:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: eia
+[2023-05-24 20:37:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: hotsos
+[2023-05-24 20:37:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: stringtokenizer
+[2023-05-24 20:37:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: xroms
+[2023-05-24 20:37:14] INFO root fetch - processPackages [generic-etl]: New version: [0.1.dev3] Old Version: [0.1.dev2]
+[2023-05-24 20:37:14] INFO root fetch - processPackages [nso-oc]: New version: [2.51.0] Old Version: [2.50.3]
+[2023-05-24 20:37:14] INFO root fetch - processPackages [hotsos]: New version: [1.1.14.post5] Old Version: [1.1.14.post4]
+[2023-05-24 20:37:14] INFO root fetch - processPackages [stringtokenizer]: New version: [1.1.7] Old Version: [1.1.3]
+[2023-05-24 20:37:14] INFO root fetch - processPackages [generic-etl]: executing diffoscope
+[2023-05-24 20:37:14] INFO root fetch - processPackages [generic-etl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/generic-etl-0.1.dev2.tar.gz tmp/generic-etl-0.1.dev3.tar.gz --markdown 20230524/g/generic-etl/0.1.dev2-0.1.dev3/diff.md --exclude *.pyd
+[2023-05-24 20:37:14] WARNING root fetch - processPackages [eia]: Skipping, unable to determine old version
+[2023-05-24 20:37:14] INFO root fetch - processPackages [nso-oc]: executing diffoscope
+[2023-05-24 20:37:14] INFO root fetch - main [MainThread]: End processing [eia] error
+[2023-05-24 20:37:14] INFO root fetch - processPackages [nso-oc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nso-oc-2.50.3.tar.gz tmp/nso-oc-2.51.0.tar.gz --markdown 20230524/n/nso-oc/2.50.3-2.51.0/diff.md --exclude *.pyd
+[2023-05-24 20:37:14] INFO root fetch - processPackages [deklinacija]: New version: [1.0.0] Old Version: [0.0.3]
+[2023-05-24 20:37:14] INFO root fetch - processPackages [lib-pybroker]: New version: [1.1.9] Old Version: [1.1.8]
+[2023-05-24 20:37:14] INFO root fetch - processPackages [neon-messagebus]: New version: [0.3.2a5] Old Version: [0.3.2a4]
+[2023-05-24 20:37:14] WARNING root fetch - processPackages [xroms]: Skipping, unable to determine old version
+[2023-05-24 20:37:14] INFO root fetch - main [MainThread]: End processing [xroms] error
+[2023-05-24 20:37:14] INFO root fetch - processPackages [hotsos]: Downloading https://files.pythonhosted.org/packages/83/4c/51354b7e419f9c58fd960f72c72e8199fb87c813508cdd80e1e3e13cccaf/hotsos-1.1.14.post5.tar.gz
+[2023-05-24 20:37:14] INFO root fetch - processPackages [hotsos]: executing diffoscope
+[2023-05-24 20:37:14] INFO root fetch - processPackages [hotsos]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hotsos-1.1.14.post4.tar.gz tmp/hotsos-1.1.14.post5.tar.gz --markdown 20230524/h/hotsos/1.1.14.post4-1.1.14.post5/diff.md --exclude *.pyd
+[2023-05-24 20:37:14] INFO root fetch - processPackages [stringtokenizer]: Downloading https://files.pythonhosted.org/packages/b0/53/8ab2524f5e473fb18ea1ea0dd9f9f855f9f20b275f60fa0b442ae42bf871/stringtokenizer-1.1.7.tar.gz
+[2023-05-24 20:37:14] INFO root fetch - processPackages [neon-messagebus]: Downloading https://files.pythonhosted.org/packages/8b/8f/1976f73296c4ccbc3c88913aa31e8effab25e083f432a0d36da8846d497a/neon_messagebus-0.3.2a5-py3-none-any.whl
+[2023-05-24 20:37:14] INFO root fetch - processPackages [deklinacija]: Downloading https://files.pythonhosted.org/packages/14/09/87ec36c80099b0f312ef08aed9aed796255fd247e8762b1646fdca8af97c/deklinacija-1.0.0.tar.gz
+[2023-05-24 20:37:14] INFO root fetch - processPackages [lib-pybroker]: executing diffoscope
+[2023-05-24 20:37:14] INFO root fetch - processPackages [lib-pybroker]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lib-pybroker-1.1.8.tar.gz tmp/lib-pybroker-1.1.9.tar.gz --markdown 20230524/l/lib-pybroker/1.1.8-1.1.9/diff.md --exclude *.pyd
+[2023-05-24 20:37:14] INFO root fetch - processPackages [stringtokenizer]: executing diffoscope
+[2023-05-24 20:37:14] INFO root fetch - processPackages [stringtokenizer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/stringtokenizer-1.1.3.tar.gz tmp/stringtokenizer-1.1.7.tar.gz --markdown 20230524/s/stringtokenizer/1.1.3-1.1.7/diff.md --exclude *.pyd
+[2023-05-24 20:37:14] INFO root fetch - processPackages [neon-messagebus]: executing diffoscope
+[2023-05-24 20:37:14] INFO root fetch - processPackages [neon-messagebus]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/neon_messagebus-0.3.2a4-py3-none-any.whl.zip tmp/neon_messagebus-0.3.2a5-py3-none-any.whl.zip --markdown 20230524/n/neon-messagebus/0.3.2a4-0.3.2a5/diff.md --exclude *.pyd
+[2023-05-24 20:37:14] INFO root fetch - processPackages [deklinacija]: executing diffoscope
+[2023-05-24 20:37:14] INFO root fetch - processPackages [deklinacija]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/deklinacija-0.0.3.tar.gz tmp/deklinacija-1.0.0.tar.gz --markdown 20230524/d/deklinacija/0.0.3-1.0.0/diff.md --exclude *.pyd
+[2023-05-24 20:37:15] INFO root fetch - main [MainThread]: End processing [generic-etl]: success
+[2023-05-24 20:37:15] INFO root fetch - main [MainThread]: End processing [neon-messagebus]: success
+[2023-05-24 20:37:15] INFO root fetch - main [MainThread]: End processing [deklinacija]: success
+[2023-05-24 20:37:15] INFO root fetch - main [MainThread]: End processing [stringtokenizer]: success
+[2023-05-24 20:37:15] INFO root fetch - main [MainThread]: End processing [lib-pybroker]: success
+[2023-05-24 20:37:16] INFO root fetch - main [MainThread]: End processing [nso-oc]: success
+[2023-05-24 20:37:19] INFO root fetch - main [MainThread]: End processing [hotsos]: success
+[2023-05-24 20:37:19] INFO root fetch - main [MainThread]: Store serial: [18234262]
