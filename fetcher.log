@@ -9005,3 +9005,101 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-05-24 08:49:30] INFO root fetch - main [MainThread]: End processing [dcarte]: success
 [2023-05-24 08:49:31] INFO root fetch - main [MainThread]: End processing [munet]: success
 [2023-05-24 08:49:31] INFO root fetch - main [MainThread]: Store serial: [18225909]
+[2023-05-24 08:54:35] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18225909]
+[2023-05-24 08:54:40] INFO root fetch - main [MainThread]: Found 17 changed packages
+[2023-05-24 08:54:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: tfy-mlflow-client
+[2023-05-24 08:54:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: vbimage
+[2023-05-24 08:54:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: odh-core
+[2023-05-24 08:54:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: stmd
+[2023-05-24 08:54:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: flirimageextractor
+[2023-05-24 08:54:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: z4d-certified-devices
+[2023-05-24 08:54:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: pacparser
+[2023-05-24 08:54:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: gfs-dynamical-core
+[2023-05-24 08:54:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: almost-p2p-messenget
+[2023-05-24 08:54:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: vbimage
+[2023-05-24 08:54:40] INFO root fetch - processPackages [tfy-mlflow-client]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-24 08:54:40] WARNING root fetch - processPackages [stmd]: Skipping, unable to determine old version
+[2023-05-24 08:54:40] INFO root fetch - processPackages [stmd]: Start processing: knowledgebase-gsheet-gpt
+[2023-05-24 08:54:40] INFO root fetch - main [MainThread]: End processing [stmd] error
+[2023-05-24 08:54:40] INFO root fetch - processPackages [odh-core]: New version: [0.1.9] Old Version: [0.1.15]
+[2023-05-24 08:54:40] INFO root fetch - processPackages [pacparser]: New version: [1.4.1.dev9] Old Version: [1.4.1.dev8]
+[2023-05-24 08:54:40] INFO root fetch - processPackages [vbimage]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-24 08:54:40] INFO root fetch - processPackages [vbimage]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-24 08:54:40] INFO root fetch - processPackages [z4d-certified-devices]: New version: [2.64] Old Version: [2.63]
+[2023-05-24 08:54:40] INFO root fetch - processPackages [odh-core]: executing diffoscope
+[2023-05-24 08:54:40] INFO root fetch - processPackages [odh-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odh_core-0.1.15.tar.gz tmp/odh_core-0.1.9.tar.gz --markdown 20230524/o/odh-core/0.1.15-0.1.9/diff.md --exclude *.pyd
+[2023-05-24 08:54:40] WARNING root fetch - processPackages [almost-p2p-messenget]: Skipping, unable to determine old version
+[2023-05-24 08:54:40] INFO root fetch - processPackages [almost-p2p-messenget]: Start processing: arknights-toolkit
+[2023-05-24 08:54:40] INFO root fetch - main [MainThread]: End processing [almost-p2p-messenget] error
+[2023-05-24 08:54:40] INFO root fetch - processPackages [flirimageextractor]: New version: [1.5.3] Old Version: [1.5.2]
+[2023-05-24 08:54:40] INFO root fetch - processPackages [gfs-dynamical-core]: New version: [0.1.4] Old Version: [0.1.3]
+[2023-05-24 08:54:40] INFO root fetch - processPackages [knowledgebase-gsheet-gpt]: New version: [1.2.8] Old Version: [1.2.7]
+[2023-05-24 08:54:40] INFO root fetch - processPackages [tfy-mlflow-client]: Downloading https://files.pythonhosted.org/packages/43/f0/45be21abdff732bb8de13f178413b52bd098bb8395e239c8721423f39e0e/tfy-mlflow-client-0.0.8.tar.gz
+[2023-05-24 08:54:40] INFO root fetch - processPackages [arknights-toolkit]: New version: [0.5.9] Old Version: [0.5.8]
+[2023-05-24 08:54:40] INFO root fetch - processPackages [vbimage]: Downloading https://files.pythonhosted.org/packages/68/4a/592b6169a4c0dce31e9ec0c8ea971cb0b07b488e5311e3ace5017a94fc9a/vbimage-0.1.8.tar.gz
+[2023-05-24 08:54:40] INFO root fetch - processPackages [vbimage]: Downloading https://files.pythonhosted.org/packages/68/4a/592b6169a4c0dce31e9ec0c8ea971cb0b07b488e5311e3ace5017a94fc9a/vbimage-0.1.8.tar.gz
+[2023-05-24 08:54:40] INFO root fetch - processPackages [knowledgebase-gsheet-gpt]: Downloading https://files.pythonhosted.org/packages/32/6c/89bd76324175d876bf4ef956be8a0ec9237b6c7a4d9d0a998a7e00957e86/knowledgebase-gsheet-gpt-1.2.8.tar.gz
+[2023-05-24 08:54:40] INFO root fetch - processPackages [pacparser]: executing diffoscope
+[2023-05-24 08:54:40] INFO root fetch - processPackages [pacparser]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pacparser-1.4.1.dev8.tar.gz tmp/pacparser-1.4.1.dev9.tar.gz --markdown 20230524/p/pacparser/1.4.1.dev8-1.4.1.dev9/diff.md --exclude *.pyd
+[2023-05-24 08:54:40] INFO root fetch - processPackages [arknights-toolkit]: Downloading https://files.pythonhosted.org/packages/9b/28/9d1b16a7cd5619c7ebf93577b3e562535e731305556d427845773dcbdc62/arknights_toolkit-0.5.8.tar.gz
+[2023-05-24 08:54:40] INFO root fetch - processPackages [knowledgebase-gsheet-gpt]: executing diffoscope
+[2023-05-24 08:54:40] INFO root fetch - processPackages [knowledgebase-gsheet-gpt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/knowledgebase-gsheet-gpt-1.2.7.tar.gz tmp/knowledgebase-gsheet-gpt-1.2.8.tar.gz --markdown 20230524/k/knowledgebase-gsheet-gpt/1.2.7-1.2.8/diff.md --exclude *.pyd
+[2023-05-24 08:54:40] INFO root fetch - processPackages [gfs-dynamical-core]: Downloading https://files.pythonhosted.org/packages/32/64/57d2f0099781184538b7833a2e3a474250abcfba7ba8dec05b65cfd19d25/gfs_dynamical_core-0.1.4-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2023-05-24 08:54:40] INFO root fetch - processPackages [flirimageextractor]: Downloading https://files.pythonhosted.org/packages/fe/be/3eaef31b70ed586b283f0dd26e7d7abe24a8df8a156092845a516bb76145/flirimageextractor-1.5.3.tar.gz
+[2023-05-24 08:54:40] INFO root fetch - processPackages [z4d-certified-devices]: Downloading https://files.pythonhosted.org/packages/18/18/bc1ea19ba0fe7e9a008145eb61ac4c2a671ae807506801ba084b1834481f/z4d-certified-devices-2.64.tar.gz
+[2023-05-24 08:54:40] INFO root fetch - processPackages [vbimage]: Downloading https://files.pythonhosted.org/packages/cd/c9/275f7f26a834e6b1512b0c75f07c95f28e4ba7d4ae4c44dc4244b1a54e0d/vbimage-0.1.9.tar.gz
+[2023-05-24 08:54:40] INFO root fetch - processPackages [vbimage]: Downloading https://files.pythonhosted.org/packages/cd/c9/275f7f26a834e6b1512b0c75f07c95f28e4ba7d4ae4c44dc4244b1a54e0d/vbimage-0.1.9.tar.gz
+[2023-05-24 08:54:40] INFO root fetch - processPackages [flirimageextractor]: executing diffoscope
+[2023-05-24 08:54:40] INFO root fetch - processPackages [flirimageextractor]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/flirimageextractor-1.5.2.tar.gz tmp/flirimageextractor-1.5.3.tar.gz --markdown 20230524/f/flirimageextractor/1.5.2-1.5.3/diff.md --exclude *.pyd
+[2023-05-24 08:54:40] INFO root fetch - processPackages [z4d-certified-devices]: executing diffoscope
+[2023-05-24 08:54:40] INFO root fetch - processPackages [z4d-certified-devices]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/z4d-certified-devices-2.63.tar.gz tmp/z4d-certified-devices-2.64.tar.gz --markdown 20230524/z/z4d-certified-devices/2.63-2.64/diff.md --exclude *.pyd
+[2023-05-24 08:54:41] INFO root fetch - processPackages [vbimage]: executing diffoscope
+[2023-05-24 08:54:41] INFO root fetch - processPackages [vbimage]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vbimage-0.1.8.tar.gz tmp/vbimage-0.1.9.tar.gz --markdown 20230524/v/vbimage/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-24 08:54:41] INFO root fetch - processPackages [vbimage]: executing diffoscope
+[2023-05-24 08:54:41] INFO root fetch - processPackages [vbimage]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vbimage-0.1.8.tar.gz tmp/vbimage-0.1.9.tar.gz --markdown 20230524/v/vbimage/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-24 08:54:41] WARNING root fetch - processPackages [arknights-toolkit]: Skipping package: exceeds size limit 17444363>=10485760
+[2023-05-24 08:54:41] INFO root fetch - processPackages [arknights-toolkit]: Start processing: taskbadger
+[2023-05-24 08:54:41] INFO root fetch - main [MainThread]: End processing [arknights-toolkit] error
+[2023-05-24 08:54:41] INFO root fetch - processPackages [tfy-mlflow-client]: Downloading https://files.pythonhosted.org/packages/99/46/ec87ff507a911f7eb4550bd758513440cf543ba1d9701b042b5caf64682a/tfy-mlflow-client-0.0.9.tar.gz
+[2023-05-24 08:54:41] INFO root fetch - processPackages [taskbadger]: New version: [0.4.0] Old Version: [0.3.2]
+[2023-05-24 08:54:41] INFO root fetch - processPackages [odh-core]: Start processing: squirrel-datasets-core
+[2023-05-24 08:54:41] INFO root fetch - main [MainThread]: End processing [odh-core]: success
+[2023-05-24 08:54:41] INFO root fetch - processPackages [pacparser]: Start processing: vbimage
+[2023-05-24 08:54:41] INFO root fetch - main [MainThread]: End processing [pacparser]: success
+[2023-05-24 08:54:41] INFO root fetch - processPackages [vbimage]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-24 08:54:41] INFO root fetch - processPackages [taskbadger]: Downloading https://files.pythonhosted.org/packages/7c/f4/c640455df48f41ad1cb33b9ae47d56c63575264693619dc6043849c0f640/taskbadger-0.3.2.tar.gz
+[2023-05-24 08:54:41] INFO root fetch - processPackages [squirrel-datasets-core]: New version: [0.3.1.dev577398] Old Version: [0.3.1.dev22854]
+[2023-05-24 08:54:41] INFO root fetch - processPackages [knowledgebase-gsheet-gpt]: Start processing: kubescaler
+[2023-05-24 08:54:41] INFO root fetch - main [MainThread]: End processing [knowledgebase-gsheet-gpt]: success
+[2023-05-24 08:54:41] INFO root fetch - processPackages [tfy-mlflow-client]: executing diffoscope
+[2023-05-24 08:54:41] INFO root fetch - processPackages [tfy-mlflow-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tfy-mlflow-client-0.0.8.tar.gz tmp/tfy-mlflow-client-0.0.9.tar.gz --markdown 20230524/t/tfy-mlflow-client/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-24 08:54:41] INFO root fetch - processPackages [gfs-dynamical-core]: executing diffoscope
+[2023-05-24 08:54:41] INFO root fetch - processPackages [gfs-dynamical-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gfs_dynamical_core-0.1.3-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip tmp/gfs_dynamical_core-0.1.4-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip --markdown 20230524/g/gfs-dynamical-core/0.1.3-0.1.4/diff.md --exclude *.pyd
+[2023-05-24 08:54:41] INFO root fetch - processPackages [vbimage]: executing diffoscope
+[2023-05-24 08:54:41] INFO root fetch - processPackages [vbimage]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vbimage-0.1.8.tar.gz tmp/vbimage-0.1.9.tar.gz --markdown 20230524/v/vbimage/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-24 08:54:42] INFO root fetch - processPackages [squirrel-datasets-core]: Downloading https://files.pythonhosted.org/packages/b9/fd/4575d09a04fbb75436dc64617e06a5d7600f93ebdd52f5a0c0d6c3c0a5cb/squirrel_datasets_core-0.3.1.dev22854.tar.gz
+[2023-05-24 08:54:42] WARNING root fetch - processPackages [kubescaler]: Skipping, unable to determine old version
+[2023-05-24 08:54:42] INFO root fetch - processPackages [kubescaler]: Start processing: ydata-synthetic
+[2023-05-24 08:54:42] INFO root fetch - main [MainThread]: End processing [kubescaler] error
+[2023-05-24 08:54:42] INFO root fetch - main [MainThread]: End processing [flirimageextractor]: success
+[2023-05-24 08:54:42] INFO root fetch - processPackages [taskbadger]: Downloading https://files.pythonhosted.org/packages/c1/40/c36ff25a1a613e14490c5955f210fca3b57885b39c7e8d5778b3109131c6/taskbadger-0.4.0.tar.gz
+[2023-05-24 08:54:42] INFO root fetch - processPackages [ydata-synthetic]: New version: [1.2.0] Old Version: [1.1.0]
+[2023-05-24 08:54:42] INFO root fetch - processPackages [taskbadger]: executing diffoscope
+[2023-05-24 08:54:42] INFO root fetch - processPackages [taskbadger]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/taskbadger-0.3.2.tar.gz tmp/taskbadger-0.4.0.tar.gz --markdown 20230524/t/taskbadger/0.3.2-0.4.0/diff.md --exclude *.pyd
+[2023-05-24 08:54:42] INFO root fetch - main [MainThread]: End processing [vbimage]: success
+[2023-05-24 08:54:42] INFO root fetch - processPackages [ydata-synthetic]: Downloading https://files.pythonhosted.org/packages/be/de/fa8b7d925d2cde18142cb67ea441dcdb03ac06022710c7c7713354b104c1/ydata-synthetic-1.1.0.tar.gz
+[2023-05-24 08:54:42] INFO root fetch - processPackages [squirrel-datasets-core]: Downloading https://files.pythonhosted.org/packages/22/b7/ab02caa7860919cc6581022642a0fd68b6bcd9c32782c200bc97658d6202/squirrel_datasets_core-0.3.1.dev577398.tar.gz
+[2023-05-24 08:54:42] INFO root fetch - main [MainThread]: End processing [vbimage]: success
+[2023-05-24 08:54:42] INFO root fetch - processPackages [squirrel-datasets-core]: executing diffoscope
+[2023-05-24 08:54:42] INFO root fetch - processPackages [squirrel-datasets-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/squirrel_datasets_core-0.3.1.dev22854.tar.gz tmp/squirrel_datasets_core-0.3.1.dev577398.tar.gz --markdown 20230524/s/squirrel-datasets-core/0.3.1.dev22854-0.3.1.dev577398/diff.md --exclude *.pyd
+[2023-05-24 08:54:42] INFO root fetch - processPackages [ydata-synthetic]: Downloading https://files.pythonhosted.org/packages/d3/53/316dd16bba27e547c85b42851eb393eb82412f9513c029b6ad8073d7ff8b/ydata-synthetic-1.2.0.tar.gz
+[2023-05-24 08:54:42] INFO root fetch - processPackages [ydata-synthetic]: executing diffoscope
+[2023-05-24 08:54:42] INFO root fetch - processPackages [ydata-synthetic]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ydata-synthetic-1.1.0.tar.gz tmp/ydata-synthetic-1.2.0.tar.gz --markdown 20230524/y/ydata-synthetic/1.1.0-1.2.0/diff.md --exclude *.pyd
+[2023-05-24 08:54:43] INFO root fetch - main [MainThread]: End processing [vbimage]: success
+[2023-05-24 08:54:43] INFO root fetch - main [MainThread]: End processing [taskbadger]: success
+[2023-05-24 08:54:43] INFO root fetch - main [MainThread]: End processing [squirrel-datasets-core]: success
+[2023-05-24 08:54:44] INFO root fetch - main [MainThread]: End processing [ydata-synthetic]: success
+[2023-05-24 08:54:44] INFO root fetch - main [MainThread]: End processing [z4d-certified-devices]: success
+[2023-05-24 08:54:46] INFO root fetch - main [MainThread]: End processing [tfy-mlflow-client]: success
+[2023-05-24 08:55:08] INFO root fetch - main [MainThread]: End processing [gfs-dynamical-core]: success
+[2023-05-24 08:55:08] INFO root fetch - main [MainThread]: Store serial: [18225981]
