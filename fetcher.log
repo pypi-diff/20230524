@@ -1610,3 +1610,52 @@ EOFError: EOF read where object expected
 [2023-05-24 02:31:40] INFO root fetch - main [MainThread]: End processing [pepperize.cdk-github]: success
 [2023-05-24 02:33:14] INFO root fetch - main [MainThread]: End processing [benchling-api-client]: success
 [2023-05-24 02:33:14] INFO root fetch - main [MainThread]: Store serial: [18221447]
+[2023-05-24 02:38:19] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18221447]
+[2023-05-24 02:38:23] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-05-24 02:38:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: remyxai
+[2023-05-24 02:38:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: cellmaps-image-embedding
+[2023-05-24 02:38:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: progress-runner
+[2023-05-24 02:38:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: django-mongoengine-filter
+[2023-05-24 02:38:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pywinpipe
+[2023-05-24 02:38:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: sparksnake
+[2023-05-24 02:38:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: pettingzoo
+[2023-05-24 02:38:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: seismic-classifier
+[2023-05-24 02:38:24] INFO root fetch - processPackages [django-mongoengine-filter]: New version: [0.4.1] Old Version: [0.4.0]
+[2023-05-24 02:38:24] INFO root fetch - processPackages [remyxai]: New version: [0.1.2.post1] Old Version: [0.1.2]
+[2023-05-24 02:38:24] WARNING root fetch - processPackages [progress-runner]: Skipping, unable to determine old version
+[2023-05-24 02:38:24] INFO root fetch - main [MainThread]: End processing [progress-runner] error
+[2023-05-24 02:38:24] INFO root fetch - processPackages [pywinpipe]: New version: [0.11] Old Version: [0.10]
+[2023-05-24 02:38:24] INFO root fetch - processPackages [sparksnake]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-24 02:38:24] WARNING root fetch - processPackages [seismic-classifier]: Skipping, unable to determine old version
+[2023-05-24 02:38:24] INFO root fetch - main [MainThread]: End processing [seismic-classifier] error
+[2023-05-24 02:38:24] INFO root fetch - processPackages [cellmaps-image-embedding]: New version: [0.1.0a5] Old Version: [0.1.0a4]
+[2023-05-24 02:38:24] INFO root fetch - processPackages [pettingzoo]: New version: [1.9.0] Old Version: [1.8.2]
+[2023-05-24 02:38:24] INFO root fetch - processPackages [django-mongoengine-filter]: Downloading https://files.pythonhosted.org/packages/d1/e3/acd8df7a8f8ba5cdf86507999f5b7ca80a7dce5f3702e747d84685c404d8/django-mongoengine-filter-0.4.0.tar.gz
+[2023-05-24 02:38:24] INFO root fetch - processPackages [sparksnake]: Downloading https://files.pythonhosted.org/packages/07/82/b61aa887aa1d5119b80feb0143d565e3cf5c7acca393fe99c8acf9712b7f/sparksnake-0.1.8.tar.gz
+[2023-05-24 02:38:24] INFO root fetch - processPackages [pywinpipe]: Downloading https://files.pythonhosted.org/packages/08/c1/f45f1099f3b73223720e72946ceb987a0246a84e5c3f12cf66e117931977/pywinpipe-0.10.tar.gz
+[2023-05-24 02:38:24] INFO root fetch - processPackages [pettingzoo]: Downloading https://files.pythonhosted.org/packages/86/46/25fe8d9973be0eaa139b229ff0a8bf8889c38de7d52506cdb5d143e42137/PettingZoo-1.8.2.tar.gz
+[2023-05-24 02:38:24] INFO root fetch - processPackages [remyxai]: Downloading https://files.pythonhosted.org/packages/75/ca/86c9dac94ce9750707eceee87d5d5a8cd892b7775c79063bd01282d82a21/remyxai-0.1.2.post1.tar.gz
+[2023-05-24 02:38:24] INFO root fetch - processPackages [cellmaps-image-embedding]: Downloading https://files.pythonhosted.org/packages/44/44/f6d5743a0ffc0d35116f9ceac7a654dbc0da9f1e43b46d02d6ddcf52694f/cellmaps_image_embedding-0.1.0a5.tar.gz
+[2023-05-24 02:38:24] INFO root fetch - processPackages [pywinpipe]: Downloading https://files.pythonhosted.org/packages/dc/6a/ad775d60cbd810997ad688aca70e8e936e4796e9f97eeeba8df196299b3c/pywinpipe-0.11.tar.gz
+[2023-05-24 02:38:24] INFO root fetch - processPackages [remyxai]: executing diffoscope
+[2023-05-24 02:38:24] INFO root fetch - processPackages [remyxai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/remyxai-0.1.2.tar.gz tmp/remyxai-0.1.2.post1.tar.gz --markdown 20230524/r/remyxai/0.1.2-0.1.2.post1/diff.md --exclude *.pyd
+[2023-05-24 02:38:24] INFO root fetch - processPackages [django-mongoengine-filter]: Downloading https://files.pythonhosted.org/packages/30/7f/f5c6e4ff37476f4e9f7fc7cadb412b263751bc445837a3adb8a588fbea7e/django-mongoengine-filter-0.4.1.tar.gz
+[2023-05-24 02:38:24] INFO root fetch - processPackages [cellmaps-image-embedding]: executing diffoscope
+[2023-05-24 02:38:24] INFO root fetch - processPackages [cellmaps-image-embedding]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cellmaps_image_embedding-0.1.0a4.tar.gz tmp/cellmaps_image_embedding-0.1.0a5.tar.gz --markdown 20230524/c/cellmaps-image-embedding/0.1.0a4-0.1.0a5/diff.md --exclude *.pyd
+[2023-05-24 02:38:24] INFO root fetch - processPackages [pywinpipe]: executing diffoscope
+[2023-05-24 02:38:24] INFO root fetch - processPackages [pywinpipe]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pywinpipe-0.10.tar.gz tmp/pywinpipe-0.11.tar.gz --markdown 20230524/p/pywinpipe/0.10-0.11/diff.md --exclude *.pyd
+[2023-05-24 02:38:24] INFO root fetch - processPackages [sparksnake]: Downloading https://files.pythonhosted.org/packages/96/eb/78a26281cfc4ee84b9572f8495ca91db74d482a3c9752fba1c7b2faa0466/sparksnake-0.1.9.tar.gz
+[2023-05-24 02:38:24] INFO root fetch - processPackages [pettingzoo]: Downloading https://files.pythonhosted.org/packages/2f/35/37c4d362b3666cb0c507a9be7fe791d7f06ec8892e0f4bb5d7e54649a884/PettingZoo-1.9.0.tar.gz
+[2023-05-24 02:38:24] INFO root fetch - processPackages [django-mongoengine-filter]: executing diffoscope
+[2023-05-24 02:38:24] INFO root fetch - processPackages [django-mongoengine-filter]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django-mongoengine-filter-0.4.0.tar.gz tmp/django-mongoengine-filter-0.4.1.tar.gz --markdown 20230524/d/django-mongoengine-filter/0.4.0-0.4.1/diff.md --exclude *.pyd
+[2023-05-24 02:38:24] INFO root fetch - processPackages [sparksnake]: executing diffoscope
+[2023-05-24 02:38:24] INFO root fetch - processPackages [sparksnake]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sparksnake-0.1.8.tar.gz tmp/sparksnake-0.1.9.tar.gz --markdown 20230524/s/sparksnake/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-24 02:38:25] INFO root fetch - processPackages [pettingzoo]: executing diffoscope
+[2023-05-24 02:38:25] INFO root fetch - processPackages [pettingzoo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PettingZoo-1.8.2.tar.gz tmp/PettingZoo-1.9.0.tar.gz --markdown 20230524/p/pettingzoo/1.8.2-1.9.0/diff.md --exclude *.pyd
+[2023-05-24 02:38:25] INFO root fetch - main [MainThread]: End processing [remyxai]: success
+[2023-05-24 02:38:26] INFO root fetch - main [MainThread]: End processing [cellmaps-image-embedding]: success
+[2023-05-24 02:38:26] INFO root fetch - main [MainThread]: End processing [sparksnake]: success
+[2023-05-24 02:38:26] INFO root fetch - main [MainThread]: End processing [django-mongoengine-filter]: success
+[2023-05-24 02:38:27] INFO root fetch - main [MainThread]: End processing [pettingzoo]: success
+[2023-05-24 02:39:12] INFO root fetch - main [MainThread]: End processing [pywinpipe]: success
+[2023-05-24 02:39:12] INFO root fetch - main [MainThread]: Store serial: [18221478]
