@@ -8026,3 +8026,37 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-05-24 07:16:47] INFO root fetch - processPackages [Mosek]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Mosek-9.3.8-cp39-cp39-win_amd64.whl.zip tmp/Mosek-9.3.9-cp39-cp39-win_amd64.whl.zip --markdown 20230524/M/Mosek/9.3.8-9.3.9/diff.md --exclude *.pyd
 [2023-05-24 07:17:34] INFO root fetch - main [MainThread]: End processing [Mosek]: success
 [2023-05-24 07:17:34] INFO root fetch - main [MainThread]: Store serial: [18225249]
+[2023-05-24 07:22:39] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18225249]
+[2023-05-24 07:22:44] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-05-24 07:22:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: furiosa-quantizer-impl
+[2023-05-24 07:22:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: grai-client
+[2023-05-24 07:22:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: dash-connectivity-viewer
+[2023-05-24 07:22:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: PrSpiders
+[2023-05-24 07:22:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pipen-board
+[2023-05-24 07:22:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: Lcmbb-Division
+[2023-05-24 07:22:44] INFO root fetch - processPackages [dash-connectivity-viewer]: New version: [2.0.9] Old Version: [2.0.8]
+[2023-05-24 07:22:44] INFO root fetch - processPackages [PrSpiders]: New version: [0.5.1] Old Version: [0.5.0]
+[2023-05-24 07:22:44] INFO root fetch - processPackages [furiosa-quantizer-impl]: New version: [0.9.2] Old Version: [0.9.1]
+[2023-05-24 07:22:44] INFO root fetch - processPackages [pipen-board]: New version: [0.1.0] Old Version: [0.0.9]
+[2023-05-24 07:22:44] WARNING root fetch - processPackages [Lcmbb-Division]: Skipping, unable to determine old version
+[2023-05-24 07:22:44] INFO root fetch - main [MainThread]: End processing [Lcmbb-Division] error
+[2023-05-24 07:22:44] INFO root fetch - processPackages [grai-client]: New version: [0.2.9] Old Version: [0.2.8]
+[2023-05-24 07:22:44] INFO root fetch - processPackages [dash-connectivity-viewer]: executing diffoscope
+[2023-05-24 07:22:44] INFO root fetch - processPackages [dash-connectivity-viewer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dash-connectivity-viewer-2.0.8.tar.gz tmp/dash-connectivity-viewer-2.0.9.tar.gz --markdown 20230524/d/dash-connectivity-viewer/2.0.8-2.0.9/diff.md --exclude *.pyd
+[2023-05-24 07:22:44] INFO root fetch - processPackages [furiosa-quantizer-impl]: Downloading https://files.pythonhosted.org/packages/3e/42/cc4b542f6ef2e7d01c4314921e7ef2197e5f23f19d1d6dcd81ab853f25b4/furiosa_quantizer_impl-0.9.1-cp39-cp39-manylinux_2_28_x86_64.whl
+[2023-05-24 07:22:44] INFO root fetch - processPackages [PrSpiders]: Downloading https://files.pythonhosted.org/packages/05/fd/747589885e02118bbd0196de45e2cc02f1069ad9f01d45682cac8a7cce3d/PrSpiders-0.5.1.tar.gz
+[2023-05-24 07:22:44] INFO root fetch - processPackages [pipen-board]: Downloading https://files.pythonhosted.org/packages/76/75/9dfbe613db363d72e0a6de5ee0f554059cc36a28eeb8b5b62751cc64f800/pipen_board-0.0.9.tar.gz
+[2023-05-24 07:22:44] WARNING root fetch - processPackages [furiosa-quantizer-impl]: Skipping package: exceeds size limit 16308070>=10485760
+[2023-05-24 07:22:44] INFO root fetch - main [MainThread]: End processing [furiosa-quantizer-impl] error
+[2023-05-24 07:22:44] INFO root fetch - processPackages [PrSpiders]: executing diffoscope
+[2023-05-24 07:22:44] INFO root fetch - processPackages [PrSpiders]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PrSpiders-0.5.0.tar.gz tmp/PrSpiders-0.5.1.tar.gz --markdown 20230524/P/PrSpiders/0.5.0-0.5.1/diff.md --exclude *.pyd
+[2023-05-24 07:22:45] INFO root fetch - processPackages [grai-client]: executing diffoscope
+[2023-05-24 07:22:45] INFO root fetch - processPackages [grai-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/grai_client-0.2.8.tar.gz tmp/grai_client-0.2.9.tar.gz --markdown 20230524/g/grai-client/0.2.8-0.2.9/diff.md --exclude *.pyd
+[2023-05-24 07:22:45] INFO root fetch - processPackages [pipen-board]: Downloading https://files.pythonhosted.org/packages/0e/93/d9fd0e4cf3a521dccd4c065a30c2deca1548c5b37dbe8c1d97e10e9e058c/pipen_board-0.1.0.tar.gz
+[2023-05-24 07:22:45] INFO root fetch - processPackages [pipen-board]: executing diffoscope
+[2023-05-24 07:22:45] INFO root fetch - processPackages [pipen-board]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pipen_board-0.0.9.tar.gz tmp/pipen_board-0.1.0.tar.gz --markdown 20230524/p/pipen-board/0.0.9-0.1.0/diff.md --exclude *.pyd
+[2023-05-24 07:22:45] INFO root fetch - main [MainThread]: End processing [PrSpiders]: success
+[2023-05-24 07:22:45] INFO root fetch - main [MainThread]: End processing [grai-client]: success
+[2023-05-24 07:22:46] INFO root fetch - main [MainThread]: End processing [dash-connectivity-viewer]: success
+[2023-05-24 07:22:55] INFO root fetch - main [MainThread]: End processing [pipen-board]: success
+[2023-05-24 07:22:55] INFO root fetch - main [MainThread]: Store serial: [18225271]
