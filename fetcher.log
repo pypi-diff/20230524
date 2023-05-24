@@ -7515,3 +7515,36 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-05-24 06:27:05] INFO root fetch - processPackages [webarchiver]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/webarchiver-0.8.0-py2.py3-none-any.whl.zip tmp/webarchiver-0.9.0-py2.py3-none-any.whl.zip --markdown 20230524/w/webarchiver/0.8.0-0.9.0/diff.md --exclude *.pyd
 [2023-05-24 06:27:06] INFO root fetch - main [MainThread]: End processing [webarchiver]: success
 [2023-05-24 06:27:06] INFO root fetch - main [MainThread]: Store serial: [18224890]
+[2023-05-24 06:32:10] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18224890]
+[2023-05-24 06:32:15] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-05-24 06:32:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: velovae
+[2023-05-24 06:32:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: mielib
+[2023-05-24 06:32:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: rapidpro-flow-tools
+[2023-05-24 06:32:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: attm
+[2023-05-24 06:32:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: mielib
+[2023-05-24 06:32:15] INFO root fetch - processPackages [attm]: New version: [0.0.8] Old Version: [0.0.7]
+[2023-05-24 06:32:15] INFO root fetch - processPackages [rapidpro-flow-tools]: New version: [0.9.0] Old Version: [0.8.0]
+[2023-05-24 06:32:15] WARNING root fetch - processPackages [velovae]: Skipping, unable to determine old version
+[2023-05-24 06:32:15] INFO root fetch - main [MainThread]: End processing [velovae] error
+[2023-05-24 06:32:15] INFO root fetch - processPackages [mielib]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-24 06:32:15] INFO root fetch - processPackages [mielib]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-24 06:32:15] INFO root fetch - processPackages [attm]: Downloading https://files.pythonhosted.org/packages/86/01/0122e81ccf4073c1ad11103c113a494a0c1e01f6d643bbac99a7e009d02b/attm-0.0.7-py3-none-win_amd64.whl
+[2023-05-24 06:32:15] INFO root fetch - processPackages [rapidpro-flow-tools]: Downloading https://files.pythonhosted.org/packages/f6/6d/8361839e3e77dd4b440805823c6ba5d70478de1bd00cc3f2840bb872ba1e/rapidpro_flow_tools-0.9.0.tar.gz
+[2023-05-24 06:32:15] INFO root fetch - processPackages [mielib]: Downloading https://files.pythonhosted.org/packages/ee/52/0e4ce7609c1b78b1c31c3935d9302346af10db0b9f1398c5420b49caa761/mielib-0.1.8.tar.gz
+[2023-05-24 06:32:15] INFO root fetch - processPackages [mielib]: Downloading https://files.pythonhosted.org/packages/ee/52/0e4ce7609c1b78b1c31c3935d9302346af10db0b9f1398c5420b49caa761/mielib-0.1.8.tar.gz
+[2023-05-24 06:32:15] INFO root fetch - processPackages [rapidpro-flow-tools]: executing diffoscope
+[2023-05-24 06:32:15] INFO root fetch - processPackages [rapidpro-flow-tools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rapidpro_flow_tools-0.8.0.tar.gz tmp/rapidpro_flow_tools-0.9.0.tar.gz --markdown 20230524/r/rapidpro-flow-tools/0.8.0-0.9.0/diff.md --exclude *.pyd
+[2023-05-24 06:32:15] INFO root fetch - processPackages [attm]: Downloading https://files.pythonhosted.org/packages/d2/90/4c51de0cead49f72d977126dc914d600ceb130155884e5298fe198c414fd/attm-0.0.8-py3-none-win_amd64.whl
+[2023-05-24 06:32:16] INFO root fetch - processPackages [attm]: executing diffoscope
+[2023-05-24 06:32:16] INFO root fetch - processPackages [attm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/attm-0.0.7-py3-none-win_amd64.whl.zip tmp/attm-0.0.8-py3-none-win_amd64.whl.zip --markdown 20230524/a/attm/0.0.7-0.0.8/diff.md --exclude *.pyd
+[2023-05-24 06:32:16] INFO root fetch - processPackages [mielib]: Downloading https://files.pythonhosted.org/packages/6e/39/118d48e461131e18da6d187be9ddf73801279ab291c50a40ad6e9866cfa3/mielib-0.1.9.tar.gz
+[2023-05-24 06:32:16] INFO root fetch - processPackages [mielib]: Downloading https://files.pythonhosted.org/packages/6e/39/118d48e461131e18da6d187be9ddf73801279ab291c50a40ad6e9866cfa3/mielib-0.1.9.tar.gz
+[2023-05-24 06:32:16] INFO root fetch - processPackages [mielib]: executing diffoscope
+[2023-05-24 06:32:16] INFO root fetch - processPackages [mielib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mielib-0.1.8.tar.gz tmp/mielib-0.1.9.tar.gz --markdown 20230524/m/mielib/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-24 06:32:16] INFO root fetch - processPackages [mielib]: executing diffoscope
+[2023-05-24 06:32:16] INFO root fetch - processPackages [mielib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mielib-0.1.8.tar.gz tmp/mielib-0.1.9.tar.gz --markdown 20230524/m/mielib/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-24 06:32:17] INFO root fetch - main [MainThread]: End processing [attm]: success
+[2023-05-24 06:32:17] INFO root fetch - main [MainThread]: End processing [rapidpro-flow-tools]: success
+[2023-05-24 06:32:17] INFO root fetch - main [MainThread]: End processing [mielib]: success
+[2023-05-24 06:32:17] INFO root fetch - main [MainThread]: End processing [mielib]: success
+[2023-05-24 06:32:17] INFO root fetch - main [MainThread]: Store serial: [18224906]
