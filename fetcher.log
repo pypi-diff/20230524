@@ -7056,3 +7056,24 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-05-24 05:44:38] INFO root fetch - main [MainThread]: End processing [ezyquant-execution]: success
 [2023-05-24 05:44:38] INFO root fetch - main [MainThread]: End processing [seven-cloudapp-frame]: success
 [2023-05-24 05:44:38] INFO root fetch - main [MainThread]: Store serial: [18224642]
+[2023-05-24 05:49:43] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18224642]
+[2023-05-24 05:49:47] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2023-05-24 05:49:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: closet-engine-cv
+[2023-05-24 05:49:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: PyFixedReps-andnp
+[2023-05-24 05:49:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: ovos-config
+[2023-05-24 05:49:47] INFO root fetch - processPackages [ovos-config]: New version: [0.0.9a4] Old Version: [0.0.9a3]
+[2023-05-24 05:49:47] INFO root fetch - processPackages [PyFixedReps-andnp]: New version: [4.0.1] Old Version: [4.0.0]
+[2023-05-24 05:49:47] INFO root fetch - processPackages [ovos-config]: executing diffoscope
+[2023-05-24 05:49:47] INFO root fetch - processPackages [ovos-config]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ovos-config-0.0.9a3.tar.gz tmp/ovos-config-0.0.9a4.tar.gz --markdown 20230524/o/ovos-config/0.0.9a3-0.0.9a4/diff.md --exclude *.pyd
+[2023-05-24 05:49:48] INFO root fetch - processPackages [closet-engine-cv]: New version: [0.0.7] Old Version: [0.0.6]
+[2023-05-24 05:49:48] INFO root fetch - processPackages [PyFixedReps-andnp]: Downloading https://files.pythonhosted.org/packages/c9/9b/3e7de47aac7de2c4d71cd55624e6b0de014f479be37276c180752b21e2e7/PyFixedReps-andnp-4.0.1.tar.gz
+[2023-05-24 05:49:48] INFO root fetch - processPackages [closet-engine-cv]: Downloading https://files.pythonhosted.org/packages/53/ab/d4d7d2efe9b06b88dc6418454600b2e0b33e172fc3d41cbdaa5ab9e32b32/closet-engine-cv-0.0.6.tar.gz
+[2023-05-24 05:49:48] INFO root fetch - processPackages [PyFixedReps-andnp]: executing diffoscope
+[2023-05-24 05:49:48] INFO root fetch - processPackages [PyFixedReps-andnp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PyFixedReps-andnp-4.0.0.tar.gz tmp/PyFixedReps-andnp-4.0.1.tar.gz --markdown 20230524/P/PyFixedReps-andnp/4.0.0-4.0.1/diff.md --exclude *.pyd
+[2023-05-24 05:49:48] INFO root fetch - processPackages [closet-engine-cv]: Downloading https://files.pythonhosted.org/packages/15/42/46b3999e4899f09d747a107406417d2192d50d2011b382e5248a0bdaf5c6/closet-engine-cv-0.0.7.tar.gz
+[2023-05-24 05:49:49] INFO root fetch - main [MainThread]: End processing [ovos-config]: success
+[2023-05-24 05:49:49] INFO root fetch - processPackages [closet-engine-cv]: executing diffoscope
+[2023-05-24 05:49:49] INFO root fetch - processPackages [closet-engine-cv]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/closet-engine-cv-0.0.6.tar.gz tmp/closet-engine-cv-0.0.7.tar.gz --markdown 20230524/c/closet-engine-cv/0.0.6-0.0.7/diff.md --exclude *.pyd
+[2023-05-24 05:49:49] INFO root fetch - main [MainThread]: End processing [PyFixedReps-andnp]: success
+[2023-05-24 05:49:50] INFO root fetch - main [MainThread]: End processing [closet-engine-cv]: success
+[2023-05-24 05:49:50] INFO root fetch - main [MainThread]: Store serial: [18224651]
