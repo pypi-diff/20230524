@@ -11434,3 +11434,102 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-05-24 11:22:23] INFO root fetch - main [MainThread]: End processing [jieba-pyfast]: success
 [2023-05-24 11:22:30] INFO root fetch - main [MainThread]: End processing [cairo-lang]: success
 [2023-05-24 11:22:30] INFO root fetch - main [MainThread]: Store serial: [18227433]
+[2023-05-24 11:27:38] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18227433]
+[2023-05-24 11:27:43] INFO root fetch - main [MainThread]: Found 18 changed packages
+[2023-05-24 11:27:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: enebootools
+[2023-05-24 11:27:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: frogmouth
+[2023-05-24 11:27:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: error-suggester
+[2023-05-24 11:27:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: robotframework-doctestlibrary
+[2023-05-24 11:27:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: djangoldp-application
+[2023-05-24 11:27:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: st-lucas
+[2023-05-24 11:27:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: skytek-utils
+[2023-05-24 11:27:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: orbitkit
+[2023-05-24 11:27:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: knifes
+[2023-05-24 11:27:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: ignord
+[2023-05-24 11:27:44] INFO root fetch - processPackages [frogmouth]: New version: [0.6.0] Old Version: [0.5.0]
+[2023-05-24 11:27:44] INFO root fetch - processPackages [robotframework-doctestlibrary]: New version: [0.9.1] Old Version: [0.9.0]
+[2023-05-24 11:27:44] INFO root fetch - processPackages [enebootools]: New version: [2.0.4] Old Version: [2.0.3]
+[2023-05-24 11:27:44] INFO root fetch - processPackages [error-suggester]: New version: [0.1.2] Old Version: [0.1.1]
+[2023-05-24 11:27:44] WARNING root fetch - processPackages [st-lucas]: Skipping, unable to determine old version
+[2023-05-24 11:27:44] INFO root fetch - processPackages [djangoldp-application]: New version: [1.1.9] Old Version: [1.1.8]
+[2023-05-24 11:27:44] INFO root fetch - processPackages [skytek-utils]: New version: [0.5.0] Old Version: [0.4.1]
+[2023-05-24 11:27:44] INFO root fetch - processPackages [st-lucas]: Start processing: error-suggester
+[2023-05-24 11:27:44] INFO root fetch - main [MainThread]: End processing [st-lucas] error
+[2023-05-24 11:27:44] INFO root fetch - processPackages [error-suggester]: New version: [0.1.2] Old Version: [0.1.1]
+[2023-05-24 11:27:44] WARNING root fetch - processPackages [ignord]: Skipping, unable to determine old version
+[2023-05-24 11:27:44] INFO root fetch - processPackages [ignord]: Start processing: tb-rest-client
+[2023-05-24 11:27:44] INFO root fetch - main [MainThread]: End processing [ignord] error
+[2023-05-24 11:27:44] INFO root fetch - processPackages [skytek-utils]: executing diffoscope
+[2023-05-24 11:27:44] INFO root fetch - processPackages [skytek-utils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/skytek-utils-0.4.1.tar.gz tmp/skytek-utils-0.5.0.tar.gz --markdown 20230524/s/skytek-utils/0.4.1-0.5.0/diff.md --exclude *.pyd
+[2023-05-24 11:27:44] INFO root fetch - processPackages [knifes]: New version: [0.8.9] Old Version: [0.8.8]
+[2023-05-24 11:27:44] INFO root fetch - processPackages [orbitkit]: New version: [0.3.2] Old Version: [0.3.1]
+[2023-05-24 11:27:44] INFO root fetch - processPackages [tb-rest-client]: New version: [1.6] Old Version: [1.5]
+[2023-05-24 11:27:44] INFO root fetch - processPackages [frogmouth]: Downloading https://files.pythonhosted.org/packages/22/ec/1028908aee851f4f98438a2ff45b569780b5f26019d823cd698e9f1f26a4/frogmouth-0.5.0.tar.gz
+[2023-05-24 11:27:44] INFO root fetch - processPackages [tb-rest-client]: executing diffoscope
+[2023-05-24 11:27:44] INFO root fetch - processPackages [tb-rest-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tb-rest-client-1.5.tar.gz tmp/tb-rest-client-1.6.tar.gz --markdown 20230524/t/tb-rest-client/1.5-1.6/diff.md --exclude *.pyd
+[2023-05-24 11:27:44] INFO root fetch - processPackages [djangoldp-application]: Downloading https://files.pythonhosted.org/packages/b7/b7/8a606abd339e0c2484559a023ae6d03db3efb739766fbf764b7258930155/djangoldp_application-1.1.9.tar.gz
+[2023-05-24 11:27:44] INFO root fetch - processPackages [robotframework-doctestlibrary]: Downloading https://files.pythonhosted.org/packages/2e/54/a470f127f072ab492ddf90515598177d377d01d7f6527fbd157fa0af805c/robotframework_doctestlibrary-0.9.0.tar.gz
+[2023-05-24 11:27:44] INFO root fetch - processPackages [knifes]: Downloading https://files.pythonhosted.org/packages/47/dc/9b70eaa9ada5c17c527442c7f6913d9f419b00084ca98bf313a61f6ebb19/knifes-0.8.8.tar.gz
+[2023-05-24 11:27:44] INFO root fetch - processPackages [djangoldp-application]: executing diffoscope
+[2023-05-24 11:27:44] INFO root fetch - processPackages [enebootools]: Downloading https://files.pythonhosted.org/packages/6a/2c/039e88110bca129b8b509184de71415bd19fecccf496318868b4d195d3ac/enebootools-2.0.4.tar.gz
+[2023-05-24 11:27:44] INFO root fetch - processPackages [djangoldp-application]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/djangoldp_application-1.1.8.tar.gz tmp/djangoldp_application-1.1.9.tar.gz --markdown 20230524/d/djangoldp-application/1.1.8-1.1.9/diff.md --exclude *.pyd
+[2023-05-24 11:27:44] INFO root fetch - processPackages [error-suggester]: Downloading https://files.pythonhosted.org/packages/d2/16/d61471cc43ec2b689c79cd81f361db246d9e00a1d13ce8b3d907c484ac06/error_suggester-0.1.2.tar.gz
+[2023-05-24 11:27:44] INFO root fetch - processPackages [error-suggester]: Downloading https://files.pythonhosted.org/packages/d2/16/d61471cc43ec2b689c79cd81f361db246d9e00a1d13ce8b3d907c484ac06/error_suggester-0.1.2.tar.gz
+[2023-05-24 11:27:44] INFO root fetch - processPackages [frogmouth]: Downloading https://files.pythonhosted.org/packages/31/08/d863af16d33adac02d8cf3bac76ab0d9548b7d9cb31595bf4691d53eb13f/frogmouth-0.6.0.tar.gz
+[2023-05-24 11:27:44] INFO root fetch - processPackages [error-suggester]: executing diffoscope
+[2023-05-24 11:27:44] INFO root fetch - processPackages [error-suggester]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/error_suggester-0.1.1.tar.gz tmp/error_suggester-0.1.2.tar.gz --markdown 20230524/e/error-suggester/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2023-05-24 11:27:44] INFO root fetch - processPackages [orbitkit]: Downloading https://files.pythonhosted.org/packages/d8/6b/41db270a5a8fb652ba1e36b75eab9df89711ac4680ff6f9082f0d32999f3/orbitkit-0.3.2.tar.gz
+[2023-05-24 11:27:44] INFO root fetch - processPackages [enebootools]: executing diffoscope
+[2023-05-24 11:27:44] INFO root fetch - processPackages [enebootools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/enebootools-2.0.3.tar.gz tmp/enebootools-2.0.4.tar.gz --markdown 20230524/e/enebootools/2.0.3-2.0.4/diff.md --exclude *.pyd
+[2023-05-24 11:27:44] INFO root fetch - processPackages [error-suggester]: executing diffoscope
+[2023-05-24 11:27:44] INFO root fetch - processPackages [error-suggester]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/error_suggester-0.1.1.tar.gz tmp/error_suggester-0.1.2.tar.gz --markdown 20230524/e/error-suggester/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2023-05-24 11:27:44] INFO root fetch - processPackages [frogmouth]: executing diffoscope
+[2023-05-24 11:27:44] INFO root fetch - processPackages [frogmouth]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/frogmouth-0.5.0.tar.gz tmp/frogmouth-0.6.0.tar.gz --markdown 20230524/f/frogmouth/0.5.0-0.6.0/diff.md --exclude *.pyd
+[2023-05-24 11:27:44] INFO root fetch - processPackages [orbitkit]: executing diffoscope
+[2023-05-24 11:27:44] INFO root fetch - processPackages [orbitkit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/orbitkit-0.3.1.tar.gz tmp/orbitkit-0.3.2.tar.gz --markdown 20230524/o/orbitkit/0.3.1-0.3.2/diff.md --exclude *.pyd
+[2023-05-24 11:27:44] INFO root fetch - processPackages [robotframework-doctestlibrary]: Downloading https://files.pythonhosted.org/packages/b7/0d/91dc6867f7ed4440045e0507d17d30031ff5dd7cfaf7af6d74b583f25614/robotframework_doctestlibrary-0.9.1.tar.gz
+[2023-05-24 11:27:44] INFO root fetch - processPackages [knifes]: Downloading https://files.pythonhosted.org/packages/e7/be/f84349fc65ba6f31df45d2dfb2d03897b26e1c0962d5927c173699f6b248/knifes-0.8.9.tar.gz
+[2023-05-24 11:27:44] INFO root fetch - processPackages [robotframework-doctestlibrary]: executing diffoscope
+[2023-05-24 11:27:44] INFO root fetch - processPackages [robotframework-doctestlibrary]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/robotframework_doctestlibrary-0.9.0.tar.gz tmp/robotframework_doctestlibrary-0.9.1.tar.gz --markdown 20230524/r/robotframework-doctestlibrary/0.9.0-0.9.1/diff.md --exclude *.pyd
+[2023-05-24 11:27:44] INFO root fetch - processPackages [knifes]: executing diffoscope
+[2023-05-24 11:27:44] INFO root fetch - processPackages [knifes]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/knifes-0.8.8.tar.gz tmp/knifes-0.8.9.tar.gz --markdown 20230524/k/knifes/0.8.8-0.8.9/diff.md --exclude *.pyd
+[2023-05-24 11:27:45] INFO root fetch - processPackages [skytek-utils]: Start processing: fastdeploy-python
+[2023-05-24 11:27:45] INFO root fetch - main [MainThread]: End processing [skytek-utils]: success
+[2023-05-24 11:27:45] INFO root fetch - processPackages [fastdeploy-python]: New version: [1.0.6] Old Version: [1.0.0]
+[2023-05-24 11:27:45] INFO root fetch - processPackages [error-suggester]: Start processing: toollib
+[2023-05-24 11:27:45] INFO root fetch - main [MainThread]: End processing [error-suggester]: success
+[2023-05-24 11:27:45] INFO root fetch - processPackages [toollib]: New version: [1.4.4] Old Version: [1.4.3]
+[2023-05-24 11:27:45] INFO root fetch - processPackages [djangoldp-application]: Start processing: izihawa-loglib
+[2023-05-24 11:27:45] INFO root fetch - main [MainThread]: End processing [djangoldp-application]: success
+[2023-05-24 11:27:45] INFO root fetch - processPackages [fastdeploy-python]: Downloading https://files.pythonhosted.org/packages/28/b7/600cac8f5362e82f4c064b4d48f8106fbdceeba7ce24ab05b428c3bd58d9/fastdeploy_python-1.0.0-cp39-cp39-win_amd64.whl
+[2023-05-24 11:27:46] INFO root fetch - processPackages [error-suggester]: Start processing: djangoldp-application
+[2023-05-24 11:27:46] INFO root fetch - main [MainThread]: End processing [error-suggester]: success
+[2023-05-24 11:27:46] INFO root fetch - processPackages [djangoldp-application]: New version: [1.1.9] Old Version: [1.1.8]
+[2023-05-24 11:27:46] WARNING root fetch - processPackages [izihawa-loglib]: Skipping, unable to determine old version
+[2023-05-24 11:27:46] INFO root fetch - processPackages [izihawa-loglib]: Start processing: pyeCam
+[2023-05-24 11:27:46] INFO root fetch - main [MainThread]: End processing [izihawa-loglib] error
+[2023-05-24 11:27:46] INFO root fetch - processPackages [pyeCam]: New version: [0.0.5] Old Version: [0.0.4]
+[2023-05-24 11:27:46] INFO root fetch - processPackages [djangoldp-application]: executing diffoscope
+[2023-05-24 11:27:46] INFO root fetch - processPackages [djangoldp-application]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/djangoldp_application-1.1.8.tar.gz tmp/djangoldp_application-1.1.9.tar.gz --markdown 20230524/d/djangoldp-application/1.1.8-1.1.9/diff.md --exclude *.pyd
+[2023-05-24 11:27:46] WARNING root fetch - processPackages [fastdeploy-python]: Skipping package: exceeds size limit 226748060>=10485760
+[2023-05-24 11:27:46] INFO root fetch - processPackages [fastdeploy-python]: Start processing: polarismesh-specification
+[2023-05-24 11:27:46] INFO root fetch - main [MainThread]: End processing [fastdeploy-python] error
+[2023-05-24 11:27:46] INFO root fetch - processPackages [polarismesh-specification]: New version: [1.3.2a1] Old Version: [1.3.2a0]
+[2023-05-24 11:27:46] INFO root fetch - main [MainThread]: End processing [orbitkit]: success
+[2023-05-24 11:27:46] INFO root fetch - processPackages [pyeCam]: executing diffoscope
+[2023-05-24 11:27:46] INFO root fetch - processPackages [pyeCam]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyeCam-0.0.4.tar.gz tmp/pyeCam-0.0.5.tar.gz --markdown 20230524/p/pyeCam/0.0.4-0.0.5/diff.md --exclude *.pyd
+[2023-05-24 11:27:46] INFO root fetch - processPackages [toollib]: executing diffoscope
+[2023-05-24 11:27:46] INFO root fetch - processPackages [toollib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/toollib-1.4.3-py3-none-any.whl.zip tmp/toollib-1.4.4-py3-none-any.whl.zip --markdown 20230524/t/toollib/1.4.3-1.4.4/diff.md --exclude *.pyd
+[2023-05-24 11:27:46] INFO root fetch - main [MainThread]: End processing [knifes]: success
+[2023-05-24 11:27:46] INFO root fetch - main [MainThread]: End processing [frogmouth]: success
+[2023-05-24 11:27:46] INFO root fetch - processPackages [polarismesh-specification]: Downloading https://files.pythonhosted.org/packages/31/a8/45524ca559818423f90e4fcaed2345e9671ebb2d46824cc55d0548739f13/polarismesh_specification-1.3.2a1.tar.gz
+[2023-05-24 11:27:46] INFO root fetch - main [MainThread]: End processing [robotframework-doctestlibrary]: success
+[2023-05-24 11:27:47] INFO root fetch - processPackages [polarismesh-specification]: executing diffoscope
+[2023-05-24 11:27:47] INFO root fetch - processPackages [polarismesh-specification]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/polarismesh_specification-1.3.2a0.tar.gz tmp/polarismesh_specification-1.3.2a1.tar.gz --markdown 20230524/p/polarismesh-specification/1.3.2a0-1.3.2a1/diff.md --exclude *.pyd
+[2023-05-24 11:27:47] INFO root fetch - main [MainThread]: End processing [djangoldp-application]: success
+[2023-05-24 11:27:47] INFO root fetch - main [MainThread]: End processing [pyeCam]: success
+[2023-05-24 11:27:48] INFO root fetch - main [MainThread]: End processing [toollib]: success
+[2023-05-24 11:27:48] INFO root fetch - main [MainThread]: End processing [polarismesh-specification]: success
+[2023-05-24 11:27:48] INFO root fetch - main [MainThread]: End processing [enebootools]: success
+[2023-05-24 11:27:56] INFO root fetch - main [MainThread]: End processing [tb-rest-client]: success
+[2023-05-24 11:27:56] INFO root fetch - main [MainThread]: Store serial: [18227497]
