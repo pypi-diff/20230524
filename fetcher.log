@@ -6121,3 +6121,46 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-05-24 04:40:51] INFO root fetch - main [MainThread]: End processing [mo-dots]: success
 [2023-05-24 04:40:51] INFO root fetch - main [MainThread]: End processing [flojoy]: success
 [2023-05-24 04:40:51] INFO root fetch - main [MainThread]: Store serial: [18224193]
+[2023-05-24 04:45:55] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18224193]
+[2023-05-24 04:46:00] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-05-24 04:46:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: aegis-tools
+[2023-05-24 04:46:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: mo-parsing
+[2023-05-24 04:46:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: requests-go
+[2023-05-24 04:46:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: mo-sql-parsing
+[2023-05-24 04:46:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: dpyuserembed
+[2023-05-24 04:46:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: py-ios-device
+[2023-05-24 04:46:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: pyidevice
+[2023-05-24 04:46:00] INFO root fetch - processPackages [mo-parsing]: New version: [8.6.21337] Old Version: [8.4.21326]
+[2023-05-24 04:46:00] WARNING root fetch - processPackages [requests-go]: Skipping, unable to determine old version
+[2023-05-24 04:46:00] WARNING root fetch - processPackages [dpyuserembed]: Skipping, unable to determine old version
+[2023-05-24 04:46:00] INFO root fetch - main [MainThread]: End processing [requests-go] error
+[2023-05-24 04:46:00] INFO root fetch - main [MainThread]: End processing [dpyuserembed] error
+[2023-05-24 04:46:00] INFO root fetch - processPackages [pyidevice]: New version: [2.3.32.2] Old Version: [2.3.32]
+[2023-05-24 04:46:00] INFO root fetch - processPackages [aegis-tools]: New version: [2.1.6] Old Version: [2.1.5]
+[2023-05-24 04:46:01] INFO root fetch - processPackages [mo-sql-parsing]: New version: [9.401.23144] Old Version: [9.390.23138]
+[2023-05-24 04:46:01] INFO root fetch - processPackages [py-ios-device]: New version: [2.3.32.2] Old Version: [2.3.32.1]
+[2023-05-24 04:46:01] INFO root fetch - processPackages [mo-parsing]: Downloading https://files.pythonhosted.org/packages/9d/a4/9961d49f979aec0dc7bcd90c693b5c03e598f0a416d578a8ff7c588ee37f/mo-parsing-8.4.21326.tar.gz
+[2023-05-24 04:46:01] INFO root fetch - processPackages [pyidevice]: Downloading https://files.pythonhosted.org/packages/f8/a8/cc8d631e6eb85eb7ccdd16f1bb439deba3034aff95de4ac892e58e3e25c5/pyidevice-2.3.32.tar.gz
+[2023-05-24 04:46:01] INFO root fetch - processPackages [py-ios-device]: Downloading https://files.pythonhosted.org/packages/ee/e1/31d47bd380bfa99125deee2b0b692d69f3097679e33079bb92d1556b133a/py_ios_device-2.3.32.1.tar.gz
+[2023-05-24 04:46:01] INFO root fetch - processPackages [aegis-tools]: Downloading https://files.pythonhosted.org/packages/f9/0e/a42c889c7555272a35b9f4142f55770ba399929b9e55561024f1a2d28a05/aegis-tools-2.1.5.tar.gz
+[2023-05-24 04:46:01] INFO root fetch - processPackages [mo-sql-parsing]: Downloading https://files.pythonhosted.org/packages/0e/c9/b53954d1a46667db76becfa4826295dafa6bebdee8584711085e046cf6d1/mo_sql_parsing-9.401.23144-py2.py3-none-any.whl
+[2023-05-24 04:46:01] INFO root fetch - processPackages [pyidevice]: Downloading https://files.pythonhosted.org/packages/71/34/04e1a44ea96f686b3649aa09771256c5d56650233209cdb4607e3c7db5e7/pyidevice-2.3.32.2.tar.gz
+[2023-05-24 04:46:01] INFO root fetch - processPackages [mo-sql-parsing]: executing diffoscope
+[2023-05-24 04:46:01] INFO root fetch - processPackages [mo-sql-parsing]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mo_sql_parsing-9.390.23138-py2.py3-none-any.whl.zip tmp/mo_sql_parsing-9.401.23144-py2.py3-none-any.whl.zip --markdown 20230524/m/mo-sql-parsing/9.390.23138-9.401.23144/diff.md --exclude *.pyd
+[2023-05-24 04:46:01] INFO root fetch - processPackages [mo-parsing]: Downloading https://files.pythonhosted.org/packages/f5/1a/82201993fe48978b96bd30729e1d7c8097d4513168689bc51790c6a20d90/mo-parsing-8.6.21337.tar.gz
+[2023-05-24 04:46:01] INFO root fetch - processPackages [py-ios-device]: Downloading https://files.pythonhosted.org/packages/92/bf/0f577ac1958b122b0e037c72bed2f71cc41b6507008b9b1c9b1b0cee953c/py_ios_device-2.3.32.2.tar.gz
+[2023-05-24 04:46:01] INFO root fetch - processPackages [pyidevice]: executing diffoscope
+[2023-05-24 04:46:01] INFO root fetch - processPackages [pyidevice]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyidevice-2.3.32.tar.gz tmp/pyidevice-2.3.32.2.tar.gz --markdown 20230524/p/pyidevice/2.3.32-2.3.32.2/diff.md --exclude *.pyd
+[2023-05-24 04:46:01] INFO root fetch - processPackages [aegis-tools]: Downloading https://files.pythonhosted.org/packages/86/ae/df1626109ce8211e4fe361e5f6d3721bfeb1e7f9d544a73b62e837e5a7dc/aegis-tools-2.1.6.tar.gz
+[2023-05-24 04:46:01] INFO root fetch - processPackages [py-ios-device]: executing diffoscope
+[2023-05-24 04:46:01] INFO root fetch - processPackages [py-ios-device]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/py_ios_device-2.3.32.1.tar.gz tmp/py_ios_device-2.3.32.2.tar.gz --markdown 20230524/p/py-ios-device/2.3.32.1-2.3.32.2/diff.md --exclude *.pyd
+[2023-05-24 04:46:01] INFO root fetch - processPackages [mo-parsing]: executing diffoscope
+[2023-05-24 04:46:01] INFO root fetch - processPackages [mo-parsing]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mo-parsing-8.4.21326.tar.gz tmp/mo-parsing-8.6.21337.tar.gz --markdown 20230524/m/mo-parsing/8.4.21326-8.6.21337/diff.md --exclude *.pyd
+[2023-05-24 04:46:01] INFO root fetch - processPackages [aegis-tools]: executing diffoscope
+[2023-05-24 04:46:01] INFO root fetch - processPackages [aegis-tools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aegis-tools-2.1.5.tar.gz tmp/aegis-tools-2.1.6.tar.gz --markdown 20230524/a/aegis-tools/2.1.5-2.1.6/diff.md --exclude *.pyd
+[2023-05-24 04:46:02] INFO root fetch - main [MainThread]: End processing [mo-sql-parsing]: success
+[2023-05-24 04:46:02] INFO root fetch - main [MainThread]: End processing [mo-parsing]: success
+[2023-05-24 04:46:03] INFO root fetch - main [MainThread]: End processing [py-ios-device]: success
+[2023-05-24 04:46:03] INFO root fetch - main [MainThread]: End processing [pyidevice]: success
+[2023-05-24 04:46:04] INFO root fetch - main [MainThread]: End processing [aegis-tools]: success
+[2023-05-24 04:46:04] INFO root fetch - main [MainThread]: Store serial: [18224217]
