@@ -19776,3 +19776,65 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd4 in position 72: invalid
 [2023-05-24 18:23:22] INFO root fetch - main [MainThread]: End processing [a2ml]: success
 [2023-05-24 18:23:24] INFO root fetch - main [MainThread]: End processing [Simba-UW-tf-dev]: success
 [2023-05-24 18:23:24] INFO root fetch - main [MainThread]: Store serial: [18232725]
+[2023-05-24 18:28:28] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18232725]
+[2023-05-24 18:28:33] INFO root fetch - main [MainThread]: Found 11 changed packages
+[2023-05-24 18:28:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: nucliadb-utils
+[2023-05-24 18:28:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: dev-gpt
+[2023-05-24 18:28:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: sisaptools
+[2023-05-24 18:28:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: stringtokenizer
+[2023-05-24 18:28:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: domolibrary
+[2023-05-24 18:28:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: ard
+[2023-05-24 18:28:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: revChatGPT
+[2023-05-24 18:28:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: pybettor
+[2023-05-24 18:28:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: matlab-tictoc
+[2023-05-24 18:28:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: NuMeTriS
+[2023-05-24 18:28:33] INFO root fetch - processPackages [domolibrary]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-24 18:28:33] WARNING root fetch - processPackages [matlab-tictoc]: Skipping, unable to determine old version
+[2023-05-24 18:28:33] INFO root fetch - processPackages [matlab-tictoc]: Start processing: rime-sdk
+[2023-05-24 18:28:33] INFO root fetch - main [MainThread]: End processing [matlab-tictoc] error
+[2023-05-24 18:28:33] INFO root fetch - processPackages [nucliadb-utils]: New version: [2.9.0.post267] Old Version: [2.9.0.post266]
+[2023-05-24 18:28:33] INFO root fetch - processPackages [revChatGPT]: New version: [5.1.0] Old Version: [5.0.4]
+[2023-05-24 18:28:33] INFO root fetch - processPackages [rime-sdk]: New version: [2.1.0rc4] Old Version: [2.1.0rc3]
+[2023-05-24 18:28:33] INFO root fetch - processPackages [stringtokenizer]: New version: [1.1.4] Old Version: [1.1.3]
+[2023-05-24 18:28:33] INFO root fetch - processPackages [sisaptools]: New version: [1.9.9] Old Version: [1.9.8]
+[2023-05-24 18:28:33] INFO root fetch - processPackages [domolibrary]: executing diffoscope
+[2023-05-24 18:28:33] INFO root fetch - processPackages [domolibrary]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/domolibrary-0.1.8.tar.gz tmp/domolibrary-0.1.9.tar.gz --markdown 20230524/d/domolibrary/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-24 18:28:33] INFO root fetch - processPackages [dev-gpt]: New version: [0.18.42.dev8] Old Version: [0.18.42.dev5]
+[2023-05-24 18:28:33] INFO root fetch - processPackages [ard]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-24 18:28:33] INFO root fetch - processPackages [pybettor]: New version: [1.1.0] Old Version: [1.0.0]
+[2023-05-24 18:28:33] INFO root fetch - processPackages [NuMeTriS]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-24 18:28:33] INFO root fetch - processPackages [rime-sdk]: executing diffoscope
+[2023-05-24 18:28:33] INFO root fetch - processPackages [rime-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rime_sdk-2.1.0rc3.tar.gz tmp/rime_sdk-2.1.0rc4.tar.gz --markdown 20230524/r/rime-sdk/2.1.0rc3-2.1.0rc4/diff.md --exclude *.pyd
+[2023-05-24 18:28:33] INFO root fetch - processPackages [nucliadb-utils]: executing diffoscope
+[2023-05-24 18:28:33] INFO root fetch - processPackages [nucliadb-utils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nucliadb_utils-2.9.0.post266-py3-none-any.whl.zip tmp/nucliadb_utils-2.9.0.post267-py3-none-any.whl.zip --markdown 20230524/n/nucliadb-utils/2.9.0.post266-2.9.0.post267/diff.md --exclude *.pyd
+[2023-05-24 18:28:34] INFO root fetch - processPackages [ard]: Downloading https://files.pythonhosted.org/packages/c1/ac/c84567d74cdf5d7267a0850321f39bc6c3af659571cfb4d7bb27d9b8638c/ard-0.0.8.tar.gz
+[2023-05-24 18:28:34] INFO root fetch - processPackages [NuMeTriS]: Downloading https://files.pythonhosted.org/packages/6e/01/d7687a1cc18656d09682488380cbfde488bdc4c992462c4cfa3b710199e6/NuMeTriS-0.0.8.tar.gz
+[2023-05-24 18:28:34] INFO root fetch - processPackages [pybettor]: Downloading https://files.pythonhosted.org/packages/7b/4f/3e8c3f24278b2ce8353a1d7970056390eaaf5cf5914522c7bcc17d3fb7d9/pybettor-1.0.0-py3-none-any.whl
+[2023-05-24 18:28:34] INFO root fetch - processPackages [revChatGPT]: executing diffoscope
+[2023-05-24 18:28:34] INFO root fetch - processPackages [revChatGPT]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/revChatGPT-5.0.4.tar.gz tmp/revChatGPT-5.1.0.tar.gz --markdown 20230524/r/revChatGPT/5.0.4-5.1.0/diff.md --exclude *.pyd
+[2023-05-24 18:28:34] INFO root fetch - processPackages [stringtokenizer]: Downloading https://files.pythonhosted.org/packages/89/5e/7d030a005d3688af7b7c61a574483c438e13cf6d9c7dcbaf3d58622e4b6f/stringtokenizer-1.1.4.tar.gz
+[2023-05-24 18:28:34] INFO root fetch - processPackages [sisaptools]: executing diffoscope
+[2023-05-24 18:28:34] INFO root fetch - processPackages [sisaptools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sisaptools-1.9.8.tar.gz tmp/sisaptools-1.9.9.tar.gz --markdown 20230524/s/sisaptools/1.9.8-1.9.9/diff.md --exclude *.pyd
+[2023-05-24 18:28:34] INFO root fetch - processPackages [stringtokenizer]: executing diffoscope
+[2023-05-24 18:28:34] INFO root fetch - processPackages [stringtokenizer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/stringtokenizer-1.1.3.tar.gz tmp/stringtokenizer-1.1.4.tar.gz --markdown 20230524/s/stringtokenizer/1.1.3-1.1.4/diff.md --exclude *.pyd
+[2023-05-24 18:28:34] INFO root fetch - processPackages [NuMeTriS]: Downloading https://files.pythonhosted.org/packages/23/e7/1a8da067a1e318b8460f440709d928bca9e22fd25627225e2d91068fe38f/NuMeTriS-0.0.9.tar.gz
+[2023-05-24 18:28:34] INFO root fetch - processPackages [dev-gpt]: executing diffoscope
+[2023-05-24 18:28:34] INFO root fetch - processPackages [dev-gpt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dev-gpt-0.18.42.dev5.tar.gz tmp/dev-gpt-0.18.42.dev8.tar.gz --markdown 20230524/d/dev-gpt/0.18.42.dev5-0.18.42.dev8/diff.md --exclude *.pyd
+[2023-05-24 18:28:34] INFO root fetch - processPackages [ard]: Downloading https://files.pythonhosted.org/packages/6d/ca/d32d94db83236e448563e7f840ac205b5804707ac8fcde244ebe51b8363f/ard-0.0.9.tar.gz
+[2023-05-24 18:28:34] INFO root fetch - processPackages [NuMeTriS]: executing diffoscope
+[2023-05-24 18:28:34] INFO root fetch - processPackages [NuMeTriS]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/NuMeTriS-0.0.8.tar.gz tmp/NuMeTriS-0.0.9.tar.gz --markdown 20230524/N/NuMeTriS/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-24 18:28:34] INFO root fetch - processPackages [pybettor]: Downloading https://files.pythonhosted.org/packages/ce/a5/da1feac9d8639cdad7367a562bf1e4360cbbe94f8a6e07cfe661fc235f62/pybettor-1.1.0.tar.gz
+[2023-05-24 18:28:34] WARNING root fetch - processPackages [pybettor]: Skipping package: exceeds size limit 15515620>=10485760
+[2023-05-24 18:28:34] INFO root fetch - main [MainThread]: End processing [pybettor] error
+[2023-05-24 18:28:34] INFO root fetch - processPackages [ard]: executing diffoscope
+[2023-05-24 18:28:34] INFO root fetch - processPackages [ard]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ard-0.0.8.tar.gz tmp/ard-0.0.9.tar.gz --markdown 20230524/a/ard/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-24 18:28:35] INFO root fetch - main [MainThread]: End processing [stringtokenizer]: success
+[2023-05-24 18:28:35] INFO root fetch - main [MainThread]: End processing [sisaptools]: success
+[2023-05-24 18:28:35] INFO root fetch - main [MainThread]: End processing [nucliadb-utils]: success
+[2023-05-24 18:28:35] INFO root fetch - main [MainThread]: End processing [NuMeTriS]: success
+[2023-05-24 18:28:35] INFO root fetch - main [MainThread]: End processing [revChatGPT]: success
+[2023-05-24 18:28:35] INFO root fetch - main [MainThread]: End processing [dev-gpt]: success
+[2023-05-24 18:28:36] INFO root fetch - main [MainThread]: End processing [ard]: success
+[2023-05-24 18:28:37] INFO root fetch - main [MainThread]: End processing [domolibrary]: success
+[2023-05-24 18:28:50] INFO root fetch - main [MainThread]: End processing [rime-sdk]: success
+[2023-05-24 18:28:50] INFO root fetch - main [MainThread]: Store serial: [18232761]
