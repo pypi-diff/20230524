@@ -23830,3 +23830,69 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd4 in position 72: invalid
 [2023-05-24 22:23:54] INFO root fetch - main [MainThread]: End processing [stdl]: success
 [2023-05-24 22:23:54] INFO root fetch - main [MainThread]: End processing [ncbi-datasets-pylib]: success
 [2023-05-24 22:23:54] INFO root fetch - main [MainThread]: Store serial: [18235459]
+[2023-05-24 22:28:59] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18235459]
+[2023-05-24 22:29:04] INFO root fetch - main [MainThread]: Found 12 changed packages
+[2023-05-24 22:29:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: hierarch
+[2023-05-24 22:29:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: oceano-algos
+[2023-05-24 22:29:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: django-post-fetch-hook
+[2023-05-24 22:29:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: ml-starter
+[2023-05-24 22:29:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: typing-inspect
+[2023-05-24 22:29:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: melexis-i2c-stick
+[2023-05-24 22:29:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: rahaut6
+[2023-05-24 22:29:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: makejinja
+[2023-05-24 22:29:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: foursight
+[2023-05-24 22:29:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: mud-py
+[2023-05-24 22:29:04] INFO root fetch - processPackages [oceano-algos]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-05-24 22:29:04] INFO root fetch - processPackages [foursight]: New version: [3.4.5] Old Version: [3.4.3.1b1]
+[2023-05-24 22:29:04] INFO root fetch - processPackages [typing-inspect]: New version: [0.8.0] Old Version: [0.7.1]
+[2023-05-24 22:29:04] INFO root fetch - processPackages [mud-py]: New version: [1.2.9] Old Version: [1.2.8]
+[2023-05-24 22:29:04] INFO root fetch - processPackages [melexis-i2c-stick]: New version: [0.2.0] Old Version: [0.1.5]
+[2023-05-24 22:29:04] INFO root fetch - processPackages [ml-starter]: New version: [0.0.42] Old Version: [0.0.41]
+[2023-05-24 22:29:04] WARNING root fetch - processPackages [django-post-fetch-hook]: Skipping, unable to determine old version
+[2023-05-24 22:29:04] INFO root fetch - processPackages [django-post-fetch-hook]: Start processing: aind-data-schema
+[2023-05-24 22:29:04] INFO root fetch - main [MainThread]: End processing [django-post-fetch-hook] error
+[2023-05-24 22:29:04] INFO root fetch - processPackages [ml-starter]: executing diffoscope
+[2023-05-24 22:29:04] INFO root fetch - processPackages [ml-starter]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ml-starter-0.0.41.tar.gz tmp/ml-starter-0.0.42.tar.gz --markdown 20230524/m/ml-starter/0.0.41-0.0.42/diff.md --exclude *.pyd
+[2023-05-24 22:29:04] WARNING root fetch - processPackages [rahaut6]: Skipping, unable to determine old version
+[2023-05-24 22:29:04] INFO root fetch - processPackages [rahaut6]: Start processing: retain
+[2023-05-24 22:29:04] INFO root fetch - processPackages [hierarch]: New version: [1.1.5] Old Version: [1.1.3]
+[2023-05-24 22:29:04] INFO root fetch - main [MainThread]: End processing [rahaut6] error
+[2023-05-24 22:29:04] INFO root fetch - processPackages [makejinja]: New version: [2.0.0b2] Old Version: [2.0.0b1]
+[2023-05-24 22:29:04] INFO root fetch - processPackages [melexis-i2c-stick]: executing diffoscope
+[2023-05-24 22:29:04] INFO root fetch - processPackages [melexis-i2c-stick]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/melexis-i2c-stick-0.1.5.tar.gz tmp/melexis-i2c-stick-0.2.0.tar.gz --markdown 20230524/m/melexis-i2c-stick/0.1.5-0.2.0/diff.md --exclude *.pyd
+[2023-05-24 22:29:04] INFO root fetch - processPackages [aind-data-schema]: New version: [0.9.6] Old Version: [0.9.5]
+[2023-05-24 22:29:04] INFO root fetch - processPackages [mud-py]: executing diffoscope
+[2023-05-24 22:29:04] INFO root fetch - processPackages [mud-py]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mud-py-1.2.8.tar.gz tmp/mud-py-1.2.9.tar.gz --markdown 20230524/m/mud-py/1.2.8-1.2.9/diff.md --exclude *.pyd
+[2023-05-24 22:29:04] INFO root fetch - processPackages [typing-inspect]: Downloading https://files.pythonhosted.org/packages/c3/da/864ce66818e308b38209d4b1ef0585921d28eb07621ba7d905a0e96bcc80/typing_inspect-0.7.1.tar.gz
+[2023-05-24 22:29:04] INFO root fetch - processPackages [aind-data-schema]: executing diffoscope
+[2023-05-24 22:29:04] INFO root fetch - processPackages [aind-data-schema]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aind-data-schema-0.9.5.tar.gz tmp/aind-data-schema-0.9.6.tar.gz --markdown 20230524/a/aind-data-schema/0.9.5-0.9.6/diff.md --exclude *.pyd
+[2023-05-24 22:29:04] INFO root fetch - processPackages [oceano-algos]: executing diffoscope
+[2023-05-24 22:29:04] INFO root fetch - processPackages [oceano-algos]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/oceano_algos-0.0.98.tar.gz tmp/oceano_algos-0.0.99.tar.gz --markdown 20230524/o/oceano-algos/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-05-24 22:29:04] INFO root fetch - processPackages [retain]: New version: [1.3.0] Old Version: [1.2.0]
+[2023-05-24 22:29:04] INFO root fetch - processPackages [hierarch]: Downloading https://files.pythonhosted.org/packages/fd/bf/6dea422a71e2be18ec516640a804362dfbbfe22b0fbef67e17652949a8f9/hierarch-1.1.3.tar.gz
+[2023-05-24 22:29:04] INFO root fetch - processPackages [typing-inspect]: Downloading https://files.pythonhosted.org/packages/72/23/bed3ea644bcd77ffe9a7f591eb058c00739747e33ab94d80cc4319ddee8e/typing_inspect-0.8.0.tar.gz
+[2023-05-24 22:29:04] INFO root fetch - processPackages [foursight]: executing diffoscope
+[2023-05-24 22:29:04] INFO root fetch - processPackages [foursight]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/foursight-3.4.3.1b1.tar.gz tmp/foursight-3.4.5.tar.gz --markdown 20230524/f/foursight/3.4.3.1b1-3.4.5/diff.md --exclude *.pyd
+[2023-05-24 22:29:04] INFO root fetch - processPackages [makejinja]: Downloading https://files.pythonhosted.org/packages/b0/bb/e6c299a98c37626aabe1e2f8b731df7a38e1aa470282e73c5a3eac1e327f/makejinja-2.0.0b2.tar.gz
+[2023-05-24 22:29:04] INFO root fetch - processPackages [retain]: Downloading https://files.pythonhosted.org/packages/43/bf/27a922530dbebc56d85d656d72d7835685560664804d9ff76f235779bf85/retain-1.2.0-py2.py3-none-any.whl
+[2023-05-24 22:29:04] INFO root fetch - processPackages [typing-inspect]: executing diffoscope
+[2023-05-24 22:29:04] INFO root fetch - processPackages [typing-inspect]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/typing_inspect-0.7.1.tar.gz tmp/typing_inspect-0.8.0.tar.gz --markdown 20230524/t/typing-inspect/0.7.1-0.8.0/diff.md --exclude *.pyd
+[2023-05-24 22:29:04] INFO root fetch - processPackages [hierarch]: Downloading https://files.pythonhosted.org/packages/a8/11/f595db7808fb13984c2549bd50f92a9e01d89b73f567dd7da509d314aa01/hierarch-1.1.5.tar.gz
+[2023-05-24 22:29:04] INFO root fetch - processPackages [makejinja]: executing diffoscope
+[2023-05-24 22:29:04] INFO root fetch - processPackages [makejinja]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/makejinja-2.0.0b1.tar.gz tmp/makejinja-2.0.0b2.tar.gz --markdown 20230524/m/makejinja/2.0.0b1-2.0.0b2/diff.md --exclude *.pyd
+[2023-05-24 22:29:04] INFO root fetch - processPackages [hierarch]: executing diffoscope
+[2023-05-24 22:29:04] INFO root fetch - processPackages [hierarch]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hierarch-1.1.3.tar.gz tmp/hierarch-1.1.5.tar.gz --markdown 20230524/h/hierarch/1.1.3-1.1.5/diff.md --exclude *.pyd
+[2023-05-24 22:29:05] INFO root fetch - processPackages [retain]: Downloading https://files.pythonhosted.org/packages/af/0e/3069c4a769d688ad65923f70315267a0b62339c5fe8014cabc4b2ffad20b/retain-1.3.0.tar.gz
+[2023-05-24 22:29:05] INFO root fetch - processPackages [retain]: executing diffoscope
+[2023-05-24 22:29:05] INFO root fetch - processPackages [retain]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/retain-1.2.0-py2.py3-none-any.whl.zip tmp/retain-1.3.0.tar.gz --markdown 20230524/r/retain/1.2.0-1.3.0/diff.md --exclude *.pyd
+[2023-05-24 22:29:05] INFO root fetch - main [MainThread]: End processing [melexis-i2c-stick]: success
+[2023-05-24 22:29:06] INFO root fetch - main [MainThread]: End processing [typing-inspect]: success
+[2023-05-24 22:29:06] INFO root fetch - main [MainThread]: End processing [oceano-algos]: success
+[2023-05-24 22:29:06] INFO root fetch - main [MainThread]: End processing [makejinja]: success
+[2023-05-24 22:29:06] INFO root fetch - main [MainThread]: End processing [aind-data-schema]: success
+[2023-05-24 22:29:06] INFO root fetch - main [MainThread]: End processing [ml-starter]: success
+[2023-05-24 22:29:06] INFO root fetch - main [MainThread]: End processing [foursight]: success
+[2023-05-24 22:29:06] INFO root fetch - main [MainThread]: End processing [hierarch]: success
+[2023-05-24 22:29:06] INFO root fetch - main [MainThread]: End processing [retain]: success
+[2023-05-24 22:29:07] INFO root fetch - main [MainThread]: End processing [mud-py]: success
+[2023-05-24 22:29:07] INFO root fetch - main [MainThread]: Store serial: [18235508]
