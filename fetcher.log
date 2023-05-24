@@ -16851,3 +16851,122 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd4 in position 72: invalid
 [2023-05-24 16:11:26] INFO root fetch - main [MainThread]: End processing [pybiolib]: success
 [2023-05-24 16:12:11] INFO root fetch - main [MainThread]: End processing [otx]: success
 [2023-05-24 16:12:11] INFO root fetch - main [MainThread]: Store serial: [18230754]
+[2023-05-24 16:17:15] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18230754]
+[2023-05-24 16:17:20] INFO root fetch - main [MainThread]: Found 20 changed packages
+[2023-05-24 16:17:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: isoCycle
+[2023-05-24 16:17:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: unified-planning
+[2023-05-24 16:17:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: gitwithtea-py
+[2023-05-24 16:17:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: jupyterlab-sql-editor
+[2023-05-24 16:17:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pygeoshader
+[2023-05-24 16:17:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: ngdataenginterface
+[2023-05-24 16:17:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: configzen
+[2023-05-24 16:17:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: graiax-shortcut
+[2023-05-24 16:17:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: tkblock
+[2023-05-24 16:17:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: nanolayer
+[2023-05-24 16:17:20] INFO root fetch - processPackages [nanolayer]: New version: [0.4.9] Old Version: [0.4.8]
+[2023-05-24 16:17:20] INFO root fetch - processPackages [configzen]: New version: [0.1.35] Old Version: [0.1.34]
+[2023-05-24 16:17:20] INFO root fetch - processPackages [tkblock]: New version: [2.1.0] Old Version: [2.0.0]
+[2023-05-24 16:17:20] INFO root fetch - processPackages [graiax-shortcut]: New version: [0.2.1] Old Version: [0.2.0]
+[2023-05-24 16:17:20] INFO root fetch - processPackages [ngdataenginterface]: New version: [0.0.6] Old Version: [0.0.5]
+[2023-05-24 16:17:20] INFO root fetch - processPackages [isoCycle]: New version: [0.0.37] Old Version: [0.0.36]
+[2023-05-24 16:17:20] INFO root fetch - processPackages [nanolayer]: executing diffoscope
+[2023-05-24 16:17:20] INFO root fetch - processPackages [nanolayer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nanolayer-0.4.8-py3-none-any.whl.zip tmp/nanolayer-0.4.9-py3-none-any.whl.zip --markdown 20230524/n/nanolayer/0.4.8-0.4.9/diff.md --exclude *.pyd
+[2023-05-24 16:17:20] INFO root fetch - processPackages [jupyterlab-sql-editor]: New version: [0.1.65] Old Version: [0.1.64]
+[2023-05-24 16:17:20] INFO root fetch - processPackages [gitwithtea-py]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-05-24 16:17:20] INFO root fetch - processPackages [pygeoshader]: New version: [0.1.0a1] Old Version: [0.1.0a0]
+[2023-05-24 16:17:20] INFO root fetch - processPackages [unified-planning]: New version: [0.6.0.9.dev1] Old Version: [0.6.0.71.dev1]
+[2023-05-24 16:17:20] INFO root fetch - processPackages [graiax-shortcut]: Downloading https://files.pythonhosted.org/packages/c8/03/cfd04b0120470d733c3232881310aa5272322ab0c265f3d41e19f883d17c/graiax-shortcut-0.2.0.tar.gz
+[2023-05-24 16:17:20] INFO root fetch - processPackages [gitwithtea-py]: Downloading https://files.pythonhosted.org/packages/9f/70/32290d94b2ee2f3d8dce6b43b62bd17b01da61b3695d3cd3686b92aaeffb/gitwithtea_py-0.1.0.tar.gz
+[2023-05-24 16:17:20] INFO root fetch - processPackages [isoCycle]: Downloading https://files.pythonhosted.org/packages/e1/99/5f40f2a833c8a6abd36ca0887676b6b4f4099a595c8a731f5fb322ce13e2/isoCycle-0.0.36.tar.gz
+[2023-05-24 16:17:20] INFO root fetch - processPackages [unified-planning]: Downloading https://files.pythonhosted.org/packages/04/70/d3edfb89ae9035a845cb8ba2e9b544f6e1c5769551a6bc3c0e9f3ba05230/unified_planning-0.6.0.71.dev1.tar.gz
+[2023-05-24 16:17:20] INFO root fetch - processPackages [pygeoshader]: Downloading https://files.pythonhosted.org/packages/88/e7/5ef616e3fff2d3297fb2e210dbb4dd6212891a46e1bd8c26d449aeed1f82/pygeoshader-0.1.0a0.tar.gz
+[2023-05-24 16:17:20] INFO root fetch - processPackages [configzen]: executing diffoscope
+[2023-05-24 16:17:20] INFO root fetch - processPackages [configzen]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/configzen-0.1.34.tar.gz tmp/configzen-0.1.35.tar.gz --markdown 20230524/c/configzen/0.1.34-0.1.35/diff.md --exclude *.pyd
+[2023-05-24 16:17:20] WARNING root fetch - processPackages [isoCycle]: Skipping package: exceeds size limit 92197577>=10485760
+[2023-05-24 16:17:20] INFO root fetch - processPackages [isoCycle]: Start processing: aws-service-catalog-puppet
+[2023-05-24 16:17:20] INFO root fetch - main [MainThread]: End processing [isoCycle] error
+[2023-05-24 16:17:20] INFO root fetch - processPackages [tkblock]: executing diffoscope
+[2023-05-24 16:17:20] INFO root fetch - processPackages [tkblock]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tkblock-2.0.0.tar.gz tmp/tkblock-2.1.0.tar.gz --markdown 20230524/t/tkblock/2.0.0-2.1.0/diff.md --exclude *.pyd
+[2023-05-24 16:17:20] INFO root fetch - processPackages [ngdataenginterface]: Downloading https://files.pythonhosted.org/packages/59/9c/03dcb3440fc44455cbf24ddfb6a6eb9ac7fb58a3ab6411aff94a3f3b228c/ngdataenginterface-0.0.6.tar.gz
+[2023-05-24 16:17:20] INFO root fetch - processPackages [gitwithtea-py]: Downloading https://files.pythonhosted.org/packages/35/85/7944d66849e0cd177857cb035d5060a465fae9f5bad07e18fc949f785bf2/gitwithtea_py-0.1.1.tar.gz
+[2023-05-24 16:17:20] INFO root fetch - processPackages [jupyterlab-sql-editor]: Downloading https://files.pythonhosted.org/packages/c4/11/86bdd7d43d08414613dd8a74aebe2fa73ae1d8842d4fafc1f1a93896905c/jupyterlab_sql_editor-0.1.65.tar.gz
+[2023-05-24 16:17:20] INFO root fetch - processPackages [aws-service-catalog-puppet]: New version: [0.99.2] Old Version: [0.99.1]
+[2023-05-24 16:17:20] INFO root fetch - processPackages [pygeoshader]: Downloading https://files.pythonhosted.org/packages/db/bd/506725e131fa557b4fdfcab74e5c2c0645509133e3354b21a9d175cd7260/pygeoshader-0.1.0a1.tar.gz
+[2023-05-24 16:17:20] INFO root fetch - processPackages [ngdataenginterface]: executing diffoscope
+[2023-05-24 16:17:20] INFO root fetch - processPackages [ngdataenginterface]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ngdataenginterface-0.0.5.tar.gz tmp/ngdataenginterface-0.0.6.tar.gz --markdown 20230524/n/ngdataenginterface/0.0.5-0.0.6/diff.md --exclude *.pyd
+[2023-05-24 16:17:21] INFO root fetch - processPackages [graiax-shortcut]: Downloading https://files.pythonhosted.org/packages/41/25/bbe40698ae32b61e0afdf1db4acf74925cb8ef01c06cc8a45d33e116959b/graiax-shortcut-0.2.1.tar.gz
+[2023-05-24 16:17:21] INFO root fetch - processPackages [gitwithtea-py]: executing diffoscope
+[2023-05-24 16:17:21] INFO root fetch - processPackages [gitwithtea-py]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gitwithtea_py-0.1.0.tar.gz tmp/gitwithtea_py-0.1.1.tar.gz --markdown 20230524/g/gitwithtea-py/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-05-24 16:17:21] INFO root fetch - processPackages [jupyterlab-sql-editor]: executing diffoscope
+[2023-05-24 16:17:21] INFO root fetch - processPackages [jupyterlab-sql-editor]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jupyterlab_sql_editor-0.1.64.tar.gz tmp/jupyterlab_sql_editor-0.1.65.tar.gz --markdown 20230524/j/jupyterlab-sql-editor/0.1.64-0.1.65/diff.md --exclude *.pyd
+[2023-05-24 16:17:21] INFO root fetch - processPackages [graiax-shortcut]: executing diffoscope
+[2023-05-24 16:17:21] INFO root fetch - processPackages [graiax-shortcut]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/graiax-shortcut-0.2.0.tar.gz tmp/graiax-shortcut-0.2.1.tar.gz --markdown 20230524/g/graiax-shortcut/0.2.0-0.2.1/diff.md --exclude *.pyd
+[2023-05-24 16:17:21] INFO root fetch - processPackages [unified-planning]: executing diffoscope
+[2023-05-24 16:17:21] INFO root fetch - processPackages [unified-planning]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/unified_planning-0.6.0.71.dev1.tar.gz tmp/unified_planning-0.6.0.9.dev1.tar.gz --markdown 20230524/u/unified-planning/0.6.0.71.dev1-0.6.0.9.dev1/diff.md --exclude *.pyd
+[2023-05-24 16:17:21] INFO root fetch - processPackages [pygeoshader]: executing diffoscope
+[2023-05-24 16:17:21] INFO root fetch - processPackages [pygeoshader]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pygeoshader-0.1.0a0.tar.gz tmp/pygeoshader-0.1.0a1.tar.gz --markdown 20230524/p/pygeoshader/0.1.0a0-0.1.0a1/diff.md --exclude *.pyd
+[2023-05-24 16:17:21] INFO root fetch - processPackages [aws-service-catalog-puppet]: Downloading https://files.pythonhosted.org/packages/3a/0a/dc7cf04c0ea832cf150d3f55f108dd565dd0d54088947fc29ea34dc03c99/aws-service-catalog-puppet-0.99.1.tar.gz
+[2023-05-24 16:17:21] INFO root fetch - processPackages [aws-service-catalog-puppet]: Downloading https://files.pythonhosted.org/packages/6e/80/879da5426c375016f7a97e287a9c8f48b1c49989432086cc0896a9d58374/aws-service-catalog-puppet-0.99.2.tar.gz
+[2023-05-24 16:17:21] INFO root fetch - processPackages [aws-service-catalog-puppet]: executing diffoscope
+[2023-05-24 16:17:21] INFO root fetch - processPackages [aws-service-catalog-puppet]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aws-service-catalog-puppet-0.99.1.tar.gz tmp/aws-service-catalog-puppet-0.99.2.tar.gz --markdown 20230524/a/aws-service-catalog-puppet/0.99.1-0.99.2/diff.md --exclude *.pyd
+[2023-05-24 16:17:21] INFO root fetch - processPackages [nanolayer]: Start processing: YMS
+[2023-05-24 16:17:21] INFO root fetch - main [MainThread]: End processing [nanolayer]: success
+[2023-05-24 16:17:21] INFO root fetch - processPackages [YMS]: New version: [0.81] Old Version: [0.8]
+[2023-05-24 16:17:22] INFO root fetch - processPackages [YMS]: executing diffoscope
+[2023-05-24 16:17:22] INFO root fetch - processPackages [YMS]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/YMS-0.8.tar.gz tmp/YMS-0.81.tar.gz --markdown 20230524/Y/YMS/0.8-0.81/diff.md --exclude *.pyd
+[2023-05-24 16:17:22] INFO root fetch - processPackages [configzen]: Start processing: dspeed
+[2023-05-24 16:17:22] INFO root fetch - main [MainThread]: End processing [configzen]: success
+[2023-05-24 16:17:22] WARNING root fetch - processPackages [dspeed]: Skipping, unable to determine old version
+[2023-05-24 16:17:22] INFO root fetch - processPackages [dspeed]: Start processing: deepdataspace
+[2023-05-24 16:17:22] INFO root fetch - main [MainThread]: End processing [dspeed] error
+[2023-05-24 16:17:22] INFO root fetch - processPackages [tkblock]: Start processing: TwitAnalysis
+[2023-05-24 16:17:22] INFO root fetch - main [MainThread]: End processing [tkblock]: success
+[2023-05-24 16:17:22] INFO root fetch - processPackages [deepdataspace]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-05-24 16:17:22] INFO root fetch - processPackages [pygeoshader]: Start processing: coiled
+[2023-05-24 16:17:22] INFO root fetch - main [MainThread]: End processing [pygeoshader]: success
+[2023-05-24 16:17:22] INFO root fetch - processPackages [ngdataenginterface]: Start processing: mpxj
+[2023-05-24 16:17:22] INFO root fetch - main [MainThread]: End processing [ngdataenginterface]: success
+[2023-05-24 16:17:22] INFO root fetch - processPackages [coiled]: New version: [0.6.7.dev9] Old Version: [0.6.7.dev8]
+[2023-05-24 16:17:22] INFO root fetch - processPackages [TwitAnalysis]: New version: [1.0.21] Old Version: [1.0.19]
+[2023-05-24 16:17:22] INFO root fetch - processPackages [coiled]: executing diffoscope
+[2023-05-24 16:17:22] INFO root fetch - processPackages [coiled]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/coiled-0.6.7.dev8.tar.gz tmp/coiled-0.6.7.dev9.tar.gz --markdown 20230524/c/coiled/0.6.7.dev8-0.6.7.dev9/diff.md --exclude *.pyd
+[2023-05-24 16:17:22] INFO root fetch - processPackages [mpxj]: New version: [9.8.3] Old Version: [9.8.2]
+[2023-05-24 16:17:22] INFO root fetch - processPackages [deepdataspace]: Downloading https://files.pythonhosted.org/packages/56/1c/70866b2ec307e942f08fb5a62599fa2d5bdd46e3a6e70060169da73925b5/deepdataspace-0.0.2.tar.gz
+[2023-05-24 16:17:22] INFO root fetch - processPackages [graiax-shortcut]: Start processing: mikro
+[2023-05-24 16:17:22] INFO root fetch - main [MainThread]: End processing [graiax-shortcut]: success
+[2023-05-24 16:17:22] INFO root fetch - processPackages [mikro]: New version: [0.3.9] Old Version: [0.3.8]
+[2023-05-24 16:17:23] INFO root fetch - processPackages [mikro]: executing diffoscope
+[2023-05-24 16:17:23] INFO root fetch - processPackages [mikro]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mikro-0.3.8.tar.gz tmp/mikro-0.3.9.tar.gz --markdown 20230524/m/mikro/0.3.8-0.3.9/diff.md --exclude *.pyd
+[2023-05-24 16:17:23] INFO root fetch - processPackages [mpxj]: Downloading https://files.pythonhosted.org/packages/39/d0/4e44b7920417d0090990177f4d89ad7335ca83c0adef231d736a31b223c5/mpxj-9.8.2.tar.gz
+[2023-05-24 16:17:23] INFO root fetch - processPackages [TwitAnalysis]: Downloading https://files.pythonhosted.org/packages/4c/5c/7a0b598454fe50e1fa312ed9dbc183e296f49cc59207c61f6a895ba322d0/TwitAnalysis-1.0.21.tar.gz
+[2023-05-24 16:17:23] INFO root fetch - processPackages [deepdataspace]: Downloading https://files.pythonhosted.org/packages/f3/e0/8d94994247394f7c97a72b38e6f8dfdc7bddfab5f1e4327279e35c0714c0/deepdataspace-0.0.3.tar.gz
+[2023-05-24 16:17:23] INFO root fetch - processPackages [TwitAnalysis]: executing diffoscope
+[2023-05-24 16:17:23] INFO root fetch - processPackages [TwitAnalysis]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/TwitAnalysis-1.0.19.tar.gz tmp/TwitAnalysis-1.0.21.tar.gz --markdown 20230524/T/TwitAnalysis/1.0.19-1.0.21/diff.md --exclude *.pyd
+[2023-05-24 16:17:23] INFO root fetch - processPackages [deepdataspace]: executing diffoscope
+[2023-05-24 16:17:23] INFO root fetch - processPackages [deepdataspace]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/deepdataspace-0.0.2.tar.gz tmp/deepdataspace-0.0.3.tar.gz --markdown 20230524/d/deepdataspace/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-05-24 16:17:23] INFO root fetch - processPackages [jupyterlab-sql-editor]: Start processing: faster-whisper
+[2023-05-24 16:17:23] INFO root fetch - main [MainThread]: End processing [jupyterlab-sql-editor]: success
+[2023-05-24 16:17:23] INFO root fetch - processPackages [YMS]: Start processing: oc-mailer
+[2023-05-24 16:17:23] INFO root fetch - main [MainThread]: End processing [YMS]: success
+[2023-05-24 16:17:23] INFO root fetch - processPackages [faster-whisper]: New version: [0.5.1] Old Version: [0.5.0]
+[2023-05-24 16:17:23] WARNING root fetch - processPackages [mpxj]: Skipping package: exceeds size limit 16838188>=10485760
+[2023-05-24 16:17:23] INFO root fetch - main [MainThread]: End processing [mpxj] error
+[2023-05-24 16:17:23] INFO root fetch - processPackages [oc-mailer]: New version: [1.0.1] Old Version: [1.0.0]
+[2023-05-24 16:17:23] INFO root fetch - processPackages [faster-whisper]: Downloading https://files.pythonhosted.org/packages/5d/36/1a40fabdccd8b876ecc7959d494b59f1a65296e2d20d0838deb80c6db601/faster-whisper-0.5.0.tar.gz
+[2023-05-24 16:17:23] INFO root fetch - processPackages [oc-mailer]: Downloading https://files.pythonhosted.org/packages/e2/42/6d8777e54995159b47b17ae0e7b8fdf20c82d7e2006c051f29bf6f4aaecb/oc_mailer-1.0.0-py3-none-any.whl
+[2023-05-24 16:17:23] INFO root fetch - main [MainThread]: End processing [gitwithtea-py]: success
+[2023-05-24 16:17:24] INFO root fetch - processPackages [faster-whisper]: Downloading https://files.pythonhosted.org/packages/1e/f1/099069198cccda69968ac6fb3803e2658b1ac14ac8ce9cc8eec768f9d7e2/faster-whisper-0.5.1.tar.gz
+[2023-05-24 16:17:24] INFO root fetch - processPackages [oc-mailer]: Downloading https://files.pythonhosted.org/packages/59/ae/e65062efee415a0c33758e0a7c3fcdae5c813e24fdd20e211cd816a2646c/oc_mailer-1.0.1-py3-none-any.whl
+[2023-05-24 16:17:24] INFO root fetch - main [MainThread]: End processing [coiled]: success
+[2023-05-24 16:17:24] INFO root fetch - processPackages [oc-mailer]: executing diffoscope
+[2023-05-24 16:17:24] INFO root fetch - processPackages [oc-mailer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/oc_mailer-1.0.0-py3-none-any.whl.zip tmp/oc_mailer-1.0.1-py3-none-any.whl.zip --markdown 20230524/o/oc-mailer/1.0.0-1.0.1/diff.md --exclude *.pyd
+[2023-05-24 16:17:24] INFO root fetch - main [MainThread]: End processing [mikro]: success
+[2023-05-24 16:17:24] INFO root fetch - main [MainThread]: End processing [TwitAnalysis]: success
+[2023-05-24 16:17:24] INFO root fetch - processPackages [faster-whisper]: executing diffoscope
+[2023-05-24 16:17:24] INFO root fetch - processPackages [faster-whisper]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/faster-whisper-0.5.0.tar.gz tmp/faster-whisper-0.5.1.tar.gz --markdown 20230524/f/faster-whisper/0.5.0-0.5.1/diff.md --exclude *.pyd
+[2023-05-24 16:17:24] INFO root fetch - main [MainThread]: End processing [deepdataspace]: success
+[2023-05-24 16:17:25] INFO root fetch - main [MainThread]: End processing [oc-mailer]: success
+[2023-05-24 16:17:25] INFO root fetch - main [MainThread]: End processing [aws-service-catalog-puppet]: success
+[2023-05-24 16:17:25] INFO root fetch - main [MainThread]: End processing [faster-whisper]: success
+[2023-05-24 16:17:32] INFO root fetch - main [MainThread]: End processing [unified-planning]: success
+[2023-05-24 16:17:32] INFO root fetch - main [MainThread]: Store serial: [18230823]
