@@ -13337,3 +13337,125 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd4 in position 72: invalid
 [2023-05-24 13:05:31] INFO root fetch - main [MainThread]: End processing [dcs-code-injector]: success
 [2023-05-24 13:05:32] INFO root fetch - main [MainThread]: End processing [eoq2]: success
 [2023-05-24 13:05:32] INFO root fetch - main [MainThread]: Store serial: [18228638]
+[2023-05-24 13:10:36] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18228638]
+[2023-05-24 13:10:41] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-05-24 13:10:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: metadefender-scan
+[2023-05-24 13:10:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: cm-two
+[2023-05-24 13:10:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: shrug-viz
+[2023-05-24 13:10:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: fragile
+[2023-05-24 13:10:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: kcli
+[2023-05-24 13:10:41] INFO root fetch - processPackages [shrug-viz]: New version: [0.1.2] Old Version: [0.1.1]
+[2023-05-24 13:10:41] INFO root fetch - processPackages [fragile]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-24 13:10:41] INFO root fetch - processPackages [cm-two]: New version: [2.3.19] Old Version: [2.3.18]
+[2023-05-24 13:10:41] INFO root fetch - processPackages [kcli]: New version: [99.0.202305240929] Old Version: [99.0.202305232041]
+[2023-05-24 13:10:41] INFO root fetch - processPackages [metadefender-scan]: New version: [0.2.0] Old Version: [0.1.0]
+[2023-05-24 13:10:41] INFO root fetch - processPackages [shrug-viz]: Downloading https://files.pythonhosted.org/packages/22/e1/c25d25066fa06addb943d72ff81eaff5a469e6dace0c77b1406df1b2d7de/shrug_viz-0.1.1.tar.gz
+[2023-05-24 13:10:41] INFO root fetch - processPackages [fragile]: Downloading https://files.pythonhosted.org/packages/d1/f8/73f4b647c7fc374a15f5cec7332a9df644b3bb755f2f80fe187d2ef473a4/fragile-0.0.8-py3-none-any.whl
+[2023-05-24 13:10:41] INFO root fetch - processPackages [metadefender-scan]: Downloading https://files.pythonhosted.org/packages/f6/14/dece35493fa3e1bab1786f5969b2c46f7e25063bf37448196eb282f455c3/metadefender-scan-0.1.0.tar.gz
+[2023-05-24 13:10:42] INFO root fetch - processPackages [cm-two]: Downloading https://files.pythonhosted.org/packages/e6/01/f937ad0b1ac581817417c99ac1433ab6506042b2de5c0ef34f88ffd81f0b/cm_two-2.3.19-py3-none-any.whl
+[2023-05-24 13:10:42] INFO root fetch - processPackages [kcli]: Downloading https://files.pythonhosted.org/packages/60/a2/2e1db72c1a19acf0b446ddff9e7034b24e6eaaad96a40067db09807eb310/kcli-99.0.202305240929-py3-none-any.whl
+[2023-05-24 13:10:42] INFO root fetch - processPackages [cm-two]: executing diffoscope
+[2023-05-24 13:10:42] INFO root fetch - processPackages [cm-two]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cm_two-2.3.18-py3-none-any.whl.zip tmp/cm_two-2.3.19-py3-none-any.whl.zip --markdown 20230524/c/cm-two/2.3.18-2.3.19/diff.md --exclude *.pyd
+[2023-05-24 13:10:42] INFO root fetch - processPackages [kcli]: executing diffoscope
+[2023-05-24 13:10:42] INFO root fetch - processPackages [kcli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kcli-99.0.202305232041-py3-none-any.whl.zip tmp/kcli-99.0.202305240929-py3-none-any.whl.zip --markdown 20230524/k/kcli/99.0.202305232041-99.0.202305240929/diff.md --exclude *.pyd
+[2023-05-24 13:10:42] INFO root fetch - processPackages [metadefender-scan]: Downloading https://files.pythonhosted.org/packages/0c/46/53deca9f8e6d7546292c8559836c7e9b5c6822c00a4a6d436f588b1ef6bb/metadefender-scan-0.2.0.tar.gz
+[2023-05-24 13:10:42] INFO root fetch - processPackages [fragile]: Downloading https://files.pythonhosted.org/packages/f2/b8/86fddbfc01334e93d9237e71b6919d775be94b450d43ce9bddbca05535a7/fragile-0.0.9-py3-none-any.whl
+[2023-05-24 13:10:42] INFO root fetch - processPackages [metadefender-scan]: executing diffoscope
+[2023-05-24 13:10:42] INFO root fetch - processPackages [metadefender-scan]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/metadefender-scan-0.1.0.tar.gz tmp/metadefender-scan-0.2.0.tar.gz --markdown 20230524/m/metadefender-scan/0.1.0-0.2.0/diff.md --exclude *.pyd
+[2023-05-24 13:10:42] INFO root fetch - processPackages [fragile]: executing diffoscope
+[2023-05-24 13:10:42] INFO root fetch - processPackages [fragile]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fragile-0.0.8-py3-none-any.whl.zip tmp/fragile-0.0.9-py3-none-any.whl.zip --markdown 20230524/f/fragile/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-24 13:10:43] ERROR root fetch - processPackages [cm-two]: Diffoscope failed: Traceback (most recent call last):
+  File "/srv/diffoscope/diffoscope/diff.py", line 334, in diff
+    with FIFOFeeder(feeder1, fifo1_path) as fifo1, FIFOFeeder(
+  File "/srv/diffoscope/diffoscope/diff.py", line 225, in __exit__
+    self.join()
+  File "/srv/diffoscope/diffoscope/diff.py", line 258, in join
+    raise self._exception
+  File "/srv/diffoscope/diffoscope/diff.py", line 249, in run
+    end_nl = self.feeder(fifo)
+             ^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/feeders.py", line 126, in feeder
+    end_nl = feeder(out_file)
+             ^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/feeders.py", line 81, in feeder
+    out = filter_reader(buf, filter)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/feeders.py", line 47, in filter_reader
+    buf = additional_filter(buf)
+          ^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/zip.py", line 57, in filter
+    m = self.re_strip_path.match(line.decode("utf-8"))
+                                 ^^^^^^^^^^^^^^^^^^^^
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd4 in position 72: invalid continuation byte
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/srv/diffoscope/diffoscope/main.py", line 767, in main
+    sys.exit(run_diffoscope(parsed_args))
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/main.py", line 718, in run_diffoscope
+    difference = compare_root_paths(path1, path2)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/compare.py", line 69, in compare_root_paths
+    difference = compare_files(file1, file2)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/compare.py", line 149, in compare_files
+    return file1.compare(file2, source)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/zip.py", line 217, in compare
+    x = super().compare(other, source)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/file.py", line 515, in compare
+    difference = self._compare_using_details(other, source)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/file.py", line 416, in _compare_using_details
+    details.extend(self.compare_details(other, source))
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/zip.py", line 252, in compare_details
+    differences.extend(zipinfo_differences(self, other))
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/zip.py", line 127, in zipinfo_differences
+    zipinfo = Difference.from_operation(Zipinfo, file.path, other.path)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/difference.py", line 267, in from_operation
+    return Difference.from_operation_exc(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/difference.py", line 316, in from_operation_exc
+    difference = Difference.from_feeder(
+                 ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/difference.py", line 214, in from_feeder
+    unified_diff = diff(feeder1, feeder2)
+                   ^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/diff.py", line 334, in diff
+    with FIFOFeeder(feeder1, fifo1_path) as fifo1, FIFOFeeder(
+  File "/srv/diffoscope/diffoscope/diff.py", line 225, in __exit__
+    self.join()
+  File "/srv/diffoscope/diffoscope/diff.py", line 258, in join
+    raise self._exception
+  File "/srv/diffoscope/diffoscope/diff.py", line 249, in run
+    end_nl = self.feeder(fifo)
+             ^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/feeders.py", line 126, in feeder
+    end_nl = feeder(out_file)
+             ^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/feeders.py", line 81, in feeder
+    out = filter_reader(buf, filter)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/feeders.py", line 47, in filter_reader
+    buf = additional_filter(buf)
+          ^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/zip.py", line 57, in filter
+    m = self.re_strip_path.match(line.decode("utf-8"))
+                                 ^^^^^^^^^^^^^^^^^^^^
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd4 in position 72: invalid continuation byte
+
+[2023-05-24 13:10:43] INFO root fetch - main [MainThread]: End processing [cm-two] error
+[2023-05-24 13:10:43] INFO root fetch - main [MainThread]: End processing [metadefender-scan]: success
+[2023-05-24 13:10:43] INFO root fetch - processPackages [shrug-viz]: Downloading https://files.pythonhosted.org/packages/14/40/53e6f267220b540799de7ac87affb04b9e9ccd624804ff9b1e20154a9752/shrug_viz-0.1.2.tar.gz
+[2023-05-24 13:10:43] INFO root fetch - main [MainThread]: End processing [fragile]: success
+[2023-05-24 13:10:44] INFO root fetch - processPackages [shrug-viz]: executing diffoscope
+[2023-05-24 13:10:44] INFO root fetch - processPackages [shrug-viz]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/shrug_viz-0.1.1.tar.gz tmp/shrug_viz-0.1.2.tar.gz --markdown 20230524/s/shrug-viz/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2023-05-24 13:10:49] INFO root fetch - main [MainThread]: End processing [kcli]: success
+[2023-05-24 13:10:50] INFO root fetch - main [MainThread]: End processing [shrug-viz]: success
+[2023-05-24 13:10:50] INFO root fetch - main [MainThread]: Store serial: [18228677]
