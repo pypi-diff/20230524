@@ -9999,3 +9999,89 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-05-24 09:56:24] INFO root fetch - main [MainThread]: End processing [superfluid]: success
 [2023-05-24 09:56:24] INFO root fetch - main [MainThread]: End processing [lazychains]: success
 [2023-05-24 09:56:24] INFO root fetch - main [MainThread]: Store serial: [18226532]
+[2023-05-24 10:01:28] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18226532]
+[2023-05-24 10:01:33] INFO root fetch - main [MainThread]: Found 15 changed packages
+[2023-05-24 10:01:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: click-extra
+[2023-05-24 10:01:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: cd-dynamic-versioning
+[2023-05-24 10:01:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: specmatic
+[2023-05-24 10:01:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: edm-arch
+[2023-05-24 10:01:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: tc-messageBroker
+[2023-05-24 10:01:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: deepmd-kit
+[2023-05-24 10:01:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: cycleops
+[2023-05-24 10:01:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: m-abac-test
+[2023-05-24 10:01:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: dsp-tools
+[2023-05-24 10:01:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: pyeCam
+[2023-05-24 10:01:33] INFO root fetch - processPackages [specmatic]: New version: [0.4.1] Old Version: [0.4.0]
+[2023-05-24 10:01:33] INFO root fetch - processPackages [cd-dynamic-versioning]: New version: [0.0.4] Old Version: [0.0.3]
+[2023-05-24 10:01:33] INFO root fetch - processPackages [pyeCam]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-05-24 10:01:33] INFO root fetch - processPackages [edm-arch]: New version: [1.0.35] Old Version: [1.0.34]
+[2023-05-24 10:01:33] INFO root fetch - processPackages [click-extra]: New version: [4.2.0] Old Version: [4.1.0]
+[2023-05-24 10:01:33] INFO root fetch - processPackages [m-abac-test]: New version: [1.0.4] Old Version: [1.0.3]
+[2023-05-24 10:01:33] INFO root fetch - processPackages [cycleops]: New version: [0.2.0] Old Version: [0.1.1]
+[2023-05-24 10:01:33] WARNING root fetch - processPackages [tc-messageBroker]: Skipping, unable to determine old version
+[2023-05-24 10:01:33] INFO root fetch - processPackages [tc-messageBroker]: Start processing: bigdict
+[2023-05-24 10:01:33] INFO root fetch - main [MainThread]: End processing [tc-messageBroker] error
+[2023-05-24 10:01:33] INFO root fetch - processPackages [dsp-tools]: New version: [2.3.1] Old Version: [2.3.0]
+[2023-05-24 10:01:33] INFO root fetch - processPackages [deepmd-kit]: New version: [2.2.2] Old Version: [2.2.1]
+[2023-05-24 10:01:33] INFO root fetch - processPackages [cd-dynamic-versioning]: executing diffoscope
+[2023-05-24 10:01:33] INFO root fetch - processPackages [cd-dynamic-versioning]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cd_dynamic_versioning-0.0.3.tar.gz tmp/cd_dynamic_versioning-0.0.4.tar.gz --markdown 20230524/c/cd-dynamic-versioning/0.0.3-0.0.4/diff.md --exclude *.pyd
+[2023-05-24 10:01:33] INFO root fetch - processPackages [specmatic]: Downloading https://files.pythonhosted.org/packages/bb/3c/1ad24b3adcf7e1e465e929ab6e77d72ca277c4dc5d04ef21fe7af83f6f80/specmatic-0.4.0.tar.gz
+[2023-05-24 10:01:33] INFO root fetch - processPackages [pyeCam]: Downloading https://files.pythonhosted.org/packages/cf/d9/07b3c7ee26d54d9c07cd88ade5aca127792b6618607384fb2104ac2f2cdd/pyeCam-0.0.1.tar.gz
+[2023-05-24 10:01:33] INFO root fetch - processPackages [edm-arch]: Downloading https://files.pythonhosted.org/packages/f3/61/3e08b02316f0815a2bfd8250bc074255e473851dec2551f975663ca5ea14/edm-arch-1.0.34.tar.gz
+[2023-05-24 10:01:33] INFO root fetch - processPackages [bigdict]: New version: [22.5.29] Old Version: [21.4.11]
+[2023-05-24 10:01:33] WARNING root fetch - processPackages [specmatic]: Skipping package: exceeds size limit 79087982>=10485760
+[2023-05-24 10:01:33] INFO root fetch - processPackages [specmatic]: Start processing: django-encryption
+[2023-05-24 10:01:33] INFO root fetch - main [MainThread]: End processing [specmatic] error
+[2023-05-24 10:01:33] INFO root fetch - processPackages [django-encryption]: New version: [0.3.4] Old Version: [0.3.3]
+[2023-05-24 10:01:33] INFO root fetch - processPackages [cycleops]: Downloading https://files.pythonhosted.org/packages/87/b5/cedfe0a0819f58da66f3f6a93ada28425a63204ed2b08d6e4914a9bb49b7/cycleops-0.1.1.tar.gz
+[2023-05-24 10:01:33] INFO root fetch - processPackages [click-extra]: Downloading https://files.pythonhosted.org/packages/28/01/fe28ca36d281ef1784255b0c4a504f6d58a289dd0ad252a83cf2ad31c902/click_extra-4.1.0.tar.gz
+[2023-05-24 10:01:33] INFO root fetch - processPackages [deepmd-kit]: Downloading https://files.pythonhosted.org/packages/52/af/3a7992e6bd3e2fe77cfdbbe7b1d43ec2b2212814d853721b30c6df6f6dcc/deepmd-kit-2.2.1.tar.gz
+[2023-05-24 10:01:33] INFO root fetch - processPackages [m-abac-test]: Downloading https://files.pythonhosted.org/packages/cd/c0/8cea95ea3e39291025b65e7ad5b89a97ab6d5f0126f043accd35fdfbf5b6/m-abac-test-1.0.4.tar.gz
+[2023-05-24 10:01:33] INFO root fetch - processPackages [dsp-tools]: Downloading https://files.pythonhosted.org/packages/d3/6c/de8680e454cbdbcc455482a0b739be460d8d7d786461e8c900ad36dfa46b/dsp_tools-2.3.1.tar.gz
+[2023-05-24 10:01:33] INFO root fetch - processPackages [pyeCam]: Downloading https://files.pythonhosted.org/packages/0e/a5/51516d94fb4165555861286478b45088447ff6d3400ce0b33cf6ac711785/pyeCam-0.0.2.tar.gz
+[2023-05-24 10:01:34] INFO root fetch - processPackages [edm-arch]: Downloading https://files.pythonhosted.org/packages/05/94/8859ff9e33e418efb6631ab48cf8bff0451a24accafd8f3d580acea8070c/edm-arch-1.0.35.tar.gz
+[2023-05-24 10:01:34] INFO root fetch - processPackages [m-abac-test]: executing diffoscope
+[2023-05-24 10:01:34] INFO root fetch - processPackages [m-abac-test]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/m-abac-test-1.0.3.tar.gz tmp/m-abac-test-1.0.4.tar.gz --markdown 20230524/m/m-abac-test/1.0.3-1.0.4/diff.md --exclude *.pyd
+[2023-05-24 10:01:34] INFO root fetch - processPackages [pyeCam]: executing diffoscope
+[2023-05-24 10:01:34] INFO root fetch - processPackages [pyeCam]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyeCam-0.0.1.tar.gz tmp/pyeCam-0.0.2.tar.gz --markdown 20230524/p/pyeCam/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-05-24 10:01:34] WARNING root fetch - processPackages [deepmd-kit]: Skipping package: exceeds size limit 12259634>=10485760
+[2023-05-24 10:01:34] INFO root fetch - processPackages [deepmd-kit]: Start processing: griffon
+[2023-05-24 10:01:34] INFO root fetch - main [MainThread]: End processing [deepmd-kit] error
+[2023-05-24 10:01:34] INFO root fetch - processPackages [edm-arch]: executing diffoscope
+[2023-05-24 10:01:34] INFO root fetch - processPackages [edm-arch]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/edm-arch-1.0.34.tar.gz tmp/edm-arch-1.0.35.tar.gz --markdown 20230524/e/edm-arch/1.0.34-1.0.35/diff.md --exclude *.pyd
+[2023-05-24 10:01:34] INFO root fetch - processPackages [dsp-tools]: executing diffoscope
+[2023-05-24 10:01:34] INFO root fetch - processPackages [dsp-tools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dsp_tools-2.3.0.tar.gz tmp/dsp_tools-2.3.1.tar.gz --markdown 20230524/d/dsp-tools/2.3.0-2.3.1/diff.md --exclude *.pyd
+[2023-05-24 10:01:34] INFO root fetch - processPackages [click-extra]: Downloading https://files.pythonhosted.org/packages/ef/ff/8f393fb1aa96cc26f3e89115556aa723c4fdbd00c76b3579cd6392c4df36/click_extra-4.2.0.tar.gz
+[2023-05-24 10:01:34] INFO root fetch - processPackages [bigdict]: executing diffoscope
+[2023-05-24 10:01:34] INFO root fetch - processPackages [bigdict]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bigdict-21.4.11.tar.gz tmp/bigdict-22.5.29.tar.gz --markdown 20230524/b/bigdict/21.4.11-22.5.29/diff.md --exclude *.pyd
+[2023-05-24 10:01:34] INFO root fetch - processPackages [django-encryption]: executing diffoscope
+[2023-05-24 10:01:34] INFO root fetch - processPackages [django-encryption]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django_encryption-0.3.3.tar.gz tmp/django_encryption-0.3.4.tar.gz --markdown 20230524/d/django-encryption/0.3.3-0.3.4/diff.md --exclude *.pyd
+[2023-05-24 10:01:34] INFO root fetch - processPackages [cycleops]: Downloading https://files.pythonhosted.org/packages/0d/ab/40c67ce1b77dbff602644fa99e3f9a4351b4c622ed059d31254c489c7b67/cycleops-0.2.0.tar.gz
+[2023-05-24 10:01:34] INFO root fetch - processPackages [griffon]: New version: [0.2.2] Old Version: [0.2.1]
+[2023-05-24 10:01:34] INFO root fetch - processPackages [cycleops]: executing diffoscope
+[2023-05-24 10:01:34] INFO root fetch - processPackages [cycleops]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cycleops-0.1.1.tar.gz tmp/cycleops-0.2.0.tar.gz --markdown 20230524/c/cycleops/0.1.1-0.2.0/diff.md --exclude *.pyd
+[2023-05-24 10:01:34] INFO root fetch - processPackages [click-extra]: executing diffoscope
+[2023-05-24 10:01:34] INFO root fetch - processPackages [click-extra]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/click_extra-4.1.0.tar.gz tmp/click_extra-4.2.0.tar.gz --markdown 20230524/c/click-extra/4.1.0-4.2.0/diff.md --exclude *.pyd
+[2023-05-24 10:01:34] INFO root fetch - processPackages [griffon]: Downloading https://files.pythonhosted.org/packages/c5/13/9adfc43103533175b38c6cbdb991345c20ea7017a73419a0c66615794457/griffon-0.2.2.tar.gz
+[2023-05-24 10:01:34] INFO root fetch - processPackages [griffon]: executing diffoscope
+[2023-05-24 10:01:34] INFO root fetch - processPackages [griffon]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/griffon-0.2.1.tar.gz tmp/griffon-0.2.2.tar.gz --markdown 20230524/g/griffon/0.2.1-0.2.2/diff.md --exclude *.pyd
+[2023-05-24 10:01:34] INFO root fetch - processPackages [cd-dynamic-versioning]: Start processing: certora-cli-alpha-gereon-cert-2325-cleanup-interactingcmdprocessor
+[2023-05-24 10:01:34] INFO root fetch - main [MainThread]: End processing [cd-dynamic-versioning]: success
+[2023-05-24 10:01:34] WARNING root fetch - processPackages [certora-cli-alpha-gereon-cert-2325-cleanup-interactingcmdprocessor]: Skipping, unable to determine old version
+[2023-05-24 10:01:34] INFO root fetch - processPackages [certora-cli-alpha-gereon-cert-2325-cleanup-interactingcmdprocessor]: Start processing: fedops
+[2023-05-24 10:01:34] INFO root fetch - main [MainThread]: End processing [certora-cli-alpha-gereon-cert-2325-cleanup-interactingcmdprocessor] error
+[2023-05-24 10:01:35] INFO root fetch - processPackages [fedops]: New version: [0.2.1] Old Version: [0.2.0]
+[2023-05-24 10:01:35] INFO root fetch - main [MainThread]: End processing [pyeCam]: success
+[2023-05-24 10:01:35] INFO root fetch - processPackages [fedops]: Downloading https://files.pythonhosted.org/packages/07/c1/61c837248286e64b5371dd52fad96c890bb4dd0d6f457b2c8c439586ecb9/fedops-0.2.1.tar.gz
+[2023-05-24 10:01:35] INFO root fetch - main [MainThread]: End processing [bigdict]: success
+[2023-05-24 10:01:35] INFO root fetch - main [MainThread]: End processing [django-encryption]: success
+[2023-05-24 10:01:35] INFO root fetch - processPackages [fedops]: executing diffoscope
+[2023-05-24 10:01:35] INFO root fetch - processPackages [fedops]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fedops-0.2.0.tar.gz tmp/fedops-0.2.1.tar.gz --markdown 20230524/f/fedops/0.2.0-0.2.1/diff.md --exclude *.pyd
+[2023-05-24 10:01:35] INFO root fetch - main [MainThread]: End processing [edm-arch]: success
+[2023-05-24 10:01:35] INFO root fetch - main [MainThread]: End processing [cycleops]: success
+[2023-05-24 10:01:36] INFO root fetch - main [MainThread]: End processing [click-extra]: success
+[2023-05-24 10:01:36] INFO root fetch - main [MainThread]: End processing [dsp-tools]: success
+[2023-05-24 10:01:36] INFO root fetch - main [MainThread]: End processing [griffon]: success
+[2023-05-24 10:01:36] INFO root fetch - main [MainThread]: End processing [fedops]: success
+[2023-05-24 10:01:37] INFO root fetch - main [MainThread]: End processing [m-abac-test]: success
+[2023-05-24 10:01:37] INFO root fetch - main [MainThread]: Store serial: [18226587]
