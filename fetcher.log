@@ -22655,3 +22655,71 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd4 in position 72: invalid
 [2023-05-24 21:09:21] INFO root fetch - main [MainThread]: End processing [mysql-statement-builder]: success
 [2023-05-24 21:09:21] INFO root fetch - main [MainThread]: End processing [objinspect]: success
 [2023-05-24 21:09:21] INFO root fetch - main [MainThread]: Store serial: [18234745]
+[2023-05-24 21:14:27] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18234745]
+[2023-05-24 21:14:32] INFO root fetch - main [MainThread]: Found 13 changed packages
+[2023-05-24 21:14:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: aiorobonect
+[2023-05-24 21:14:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: rayasdk
+[2023-05-24 21:14:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: onetl
+[2023-05-24 21:14:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: certora-cli-alpha-shays-CERT-2092
+[2023-05-24 21:14:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: mysql-statement-builder
+[2023-05-24 21:14:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: ChatRWKV
+[2023-05-24 21:14:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: cdk-sops-secrets
+[2023-05-24 21:14:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: xroms
+[2023-05-24 21:14:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: google-api-python-client
+[2023-05-24 21:14:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: sqlalchemy-iris
+[2023-05-24 21:14:32] INFO root fetch - processPackages [rayasdk]: New version: [1.1.0.dev8] Old Version: [1.1.0.dev7]
+[2023-05-24 21:14:32] INFO root fetch - processPackages [certora-cli-alpha-shays-CERT-2092]: New version: [20230524.9.30.504761] Old Version: [20230524.8.52.376429]
+[2023-05-24 21:14:32] INFO root fetch - processPackages [mysql-statement-builder]: New version: [0.2.4] Old Version: [0.2.3]
+[2023-05-24 21:14:32] INFO root fetch - processPackages [xroms]: New version: [0.2.1] Old Version: [0.2.0]
+[2023-05-24 21:14:32] INFO root fetch - processPackages [aiorobonect]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-24 21:14:32] INFO root fetch - processPackages [onetl]: New version: [0.7.2] Old Version: [0.7.1]
+[2023-05-24 21:14:32] INFO root fetch - processPackages [sqlalchemy-iris]: New version: [0.9.0] Old Version: [0.8.1b1]
+[2023-05-24 21:14:32] WARNING root fetch - processPackages [ChatRWKV]: Skipping, unable to determine old version
+[2023-05-24 21:14:32] INFO root fetch - processPackages [ChatRWKV]: Start processing: deklinacija
+[2023-05-24 21:14:32] INFO root fetch - main [MainThread]: End processing [ChatRWKV] error
+[2023-05-24 21:14:32] INFO root fetch - processPackages [google-api-python-client]: New version: [2.9.0] Old Version: [2.87.0]
+[2023-05-24 21:14:32] INFO root fetch - processPackages [rayasdk]: executing diffoscope
+[2023-05-24 21:14:32] INFO root fetch - processPackages [rayasdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rayasdk-1.1.0.dev7.tar.gz tmp/rayasdk-1.1.0.dev8.tar.gz --markdown 20230524/r/rayasdk/1.1.0.dev7-1.1.0.dev8/diff.md --exclude *.pyd
+[2023-05-24 21:14:32] INFO root fetch - processPackages [cdk-sops-secrets]: New version: [1.2.99] Old Version: [1.2.98]
+[2023-05-24 21:14:32] INFO root fetch - processPackages [deklinacija]: New version: [1.0.1] Old Version: [1.0.0]
+[2023-05-24 21:14:32] INFO root fetch - processPackages [mysql-statement-builder]: executing diffoscope
+[2023-05-24 21:14:32] INFO root fetch - processPackages [certora-cli-alpha-shays-CERT-2092]: Downloading https://files.pythonhosted.org/packages/54/eb/a0fa19fc87fd3ed6da906a222e27d8f3f198a5f3f2c373aa22efed6186e1/certora-cli-alpha-shays-CERT-2092-20230524.8.52.376429.tar.gz
+[2023-05-24 21:14:32] INFO root fetch - processPackages [mysql-statement-builder]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mysql-statement-builder-0.2.3.tar.gz tmp/mysql-statement-builder-0.2.4.tar.gz --markdown 20230524/m/mysql-statement-builder/0.2.3-0.2.4/diff.md --exclude *.pyd
+[2023-05-24 21:14:32] INFO root fetch - processPackages [xroms]: Downloading https://files.pythonhosted.org/packages/3b/c6/339781ddaa988f52ab73bd6eb035317975b4008c6f851a2a25584d65c05b/xroms-0.2.0.tar.gz
+[2023-05-24 21:14:32] WARNING root fetch - processPackages [certora-cli-alpha-shays-CERT-2092]: Skipping package: exceeds size limit 38977973>=10485760
+[2023-05-24 21:14:32] INFO root fetch - processPackages [certora-cli-alpha-shays-CERT-2092]: Start processing: spothinta-api
+[2023-05-24 21:14:32] INFO root fetch - main [MainThread]: End processing [certora-cli-alpha-shays-CERT-2092] error
+[2023-05-24 21:14:32] INFO root fetch - processPackages [google-api-python-client]: Downloading https://files.pythonhosted.org/packages/3c/f9/abe79be610c4e6613ceaab5d2d3ff54c5c6bc936916566bee28fceef6bdd/google-api-python-client-2.87.0.tar.gz
+[2023-05-24 21:14:32] WARNING root fetch - processPackages [xroms]: Skipping package: exceeds size limit 39564160>=10485760
+[2023-05-24 21:14:32] INFO root fetch - processPackages [xroms]: Start processing: xplorts
+[2023-05-24 21:14:32] INFO root fetch - main [MainThread]: End processing [xroms] error
+[2023-05-24 21:14:32] WARNING root fetch - processPackages [spothinta-api]: Skipping, unable to determine old version
+[2023-05-24 21:14:32] INFO root fetch - main [MainThread]: End processing [spothinta-api] error
+[2023-05-24 21:14:32] INFO root fetch - processPackages [deklinacija]: Downloading https://files.pythonhosted.org/packages/89/3c/f91be7fb085107a5696749260a4282bb29802209ec47fa1605a4ceec668a/deklinacija-1.0.1.tar.gz
+[2023-05-24 21:14:33] INFO root fetch - processPackages [aiorobonect]: executing diffoscope
+[2023-05-24 21:14:33] INFO root fetch - processPackages [aiorobonect]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aiorobonect-0.1.8.tar.gz tmp/aiorobonect-0.1.9.tar.gz --markdown 20230524/a/aiorobonect/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-24 21:14:33] INFO root fetch - processPackages [onetl]: Downloading https://files.pythonhosted.org/packages/a4/63/3894d1bbab52e7c34c6f8a2e90ff011ad1ce06045870985474d5492c013c/onetl-0.7.2.tar.gz
+[2023-05-24 21:14:33] WARNING root fetch - processPackages [google-api-python-client]: Skipping package: exceeds size limit 10933794>=10485760
+[2023-05-24 21:14:33] INFO root fetch - main [MainThread]: End processing [google-api-python-client] error
+[2023-05-24 21:14:33] INFO root fetch - processPackages [xplorts]: New version: [0.5] Old Version: [0.4]
+[2023-05-24 21:14:33] INFO root fetch - processPackages [deklinacija]: executing diffoscope
+[2023-05-24 21:14:33] INFO root fetch - processPackages [deklinacija]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/deklinacija-1.0.0.tar.gz tmp/deklinacija-1.0.1.tar.gz --markdown 20230524/d/deklinacija/1.0.0-1.0.1/diff.md --exclude *.pyd
+[2023-05-24 21:14:33] INFO root fetch - processPackages [sqlalchemy-iris]: executing diffoscope
+[2023-05-24 21:14:33] INFO root fetch - processPackages [sqlalchemy-iris]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sqlalchemy-iris-0.8.1b1.tar.gz tmp/sqlalchemy-iris-0.9.0.tar.gz --markdown 20230524/s/sqlalchemy-iris/0.8.1b1-0.9.0/diff.md --exclude *.pyd
+[2023-05-24 21:14:33] INFO root fetch - processPackages [onetl]: executing diffoscope
+[2023-05-24 21:14:33] INFO root fetch - processPackages [onetl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/onetl-0.7.1.tar.gz tmp/onetl-0.7.2.tar.gz --markdown 20230524/o/onetl/0.7.1-0.7.2/diff.md --exclude *.pyd
+[2023-05-24 21:14:33] INFO root fetch - processPackages [cdk-sops-secrets]: executing diffoscope
+[2023-05-24 21:14:33] INFO root fetch - processPackages [cdk-sops-secrets]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-sops-secrets-1.2.98.tar.gz tmp/cdk-sops-secrets-1.2.99.tar.gz --markdown 20230524/c/cdk-sops-secrets/1.2.98-1.2.99/diff.md --exclude *.pyd
+[2023-05-24 21:14:33] INFO root fetch - processPackages [xplorts]: Downloading https://files.pythonhosted.org/packages/d9/9d/9f4459cbcc10a520ca71426bc9f028ec3944269df7f6be1a289c643d56d0/xplorts-0.4.tar.gz
+[2023-05-24 21:14:33] INFO root fetch - processPackages [xplorts]: Downloading https://files.pythonhosted.org/packages/8d/fc/33450bd4b76e507b08865f9893e14b8db8947e997167168cf384909b11fc/xplorts-0.5.tar.gz
+[2023-05-24 21:14:34] INFO root fetch - main [MainThread]: End processing [mysql-statement-builder]: success
+[2023-05-24 21:14:34] INFO root fetch - main [MainThread]: End processing [rayasdk]: success
+[2023-05-24 21:14:34] INFO root fetch - main [MainThread]: End processing [aiorobonect]: success
+[2023-05-24 21:14:34] INFO root fetch - processPackages [xplorts]: executing diffoscope
+[2023-05-24 21:14:34] INFO root fetch - processPackages [xplorts]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xplorts-0.4.tar.gz tmp/xplorts-0.5.tar.gz --markdown 20230524/x/xplorts/0.4-0.5/diff.md --exclude *.pyd
+[2023-05-24 21:14:34] INFO root fetch - main [MainThread]: End processing [deklinacija]: success
+[2023-05-24 21:14:34] INFO root fetch - main [MainThread]: End processing [sqlalchemy-iris]: success
+[2023-05-24 21:14:35] INFO root fetch - main [MainThread]: End processing [onetl]: success
+[2023-05-24 21:14:35] INFO root fetch - main [MainThread]: End processing [cdk-sops-secrets]: success
+[2023-05-24 21:14:35] INFO root fetch - main [MainThread]: End processing [xplorts]: success
+[2023-05-24 21:14:35] INFO root fetch - main [MainThread]: Store serial: [18234790]
