@@ -16227,3 +16227,148 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd4 in position 72: invalid
 [2023-05-24 15:44:51] INFO root fetch - main [MainThread]: End processing [simframe]: success
 [2023-05-24 15:44:55] INFO root fetch - main [MainThread]: End processing [c2cciutils]: success
 [2023-05-24 15:44:55] INFO root fetch - main [MainThread]: Store serial: [18230338]
+[2023-05-24 15:50:00] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18230338]
+[2023-05-24 15:50:05] INFO root fetch - main [MainThread]: Found 24 changed packages
+[2023-05-24 15:50:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: nso-oc
+[2023-05-24 15:50:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ma-finance
+[2023-05-24 15:50:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: edwh-restic-plugin
+[2023-05-24 15:50:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: hcai-nova-server-nightly
+[2023-05-24 15:50:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: hcai-nova-server-nightly
+[2023-05-24 15:50:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: evolved5g
+[2023-05-24 15:50:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: pipe21
+[2023-05-24 15:50:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: petstore-sdk
+[2023-05-24 15:50:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: pyeCam
+[2023-05-24 15:50:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: modal-client
+[2023-05-24 15:50:05] INFO root fetch - processPackages [edwh-restic-plugin]: New version: [0.1.7] Old Version: [0.1.6]
+[2023-05-24 15:50:05] INFO root fetch - processPackages [hcai-nova-server-nightly]: New version: [0.1.6.dev202305241344] Old Version: [0.1.6.dev202305241339]
+[2023-05-24 15:50:05] INFO root fetch - processPackages [hcai-nova-server-nightly]: New version: [0.1.6.dev202305241344] Old Version: [0.1.6.dev202305241339]
+[2023-05-24 15:50:05] INFO root fetch - processPackages [pyeCam]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-24 15:50:05] INFO root fetch - processPackages [modal-client]: New version: [0.49.2283] Old Version: [0.49.2282]
+[2023-05-24 15:50:05] INFO root fetch - processPackages [nso-oc]: New version: [2.51.0] Old Version: [2.50.3]
+[2023-05-24 15:50:05] INFO root fetch - processPackages [hcai-nova-server-nightly]: executing diffoscope
+[2023-05-24 15:50:05] INFO root fetch - processPackages [hcai-nova-server-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hcai-nova-server-nightly-0.1.6.dev202305241339.tar.gz tmp/hcai-nova-server-nightly-0.1.6.dev202305241344.tar.gz --markdown 20230524/h/hcai-nova-server-nightly/0.1.6.dev202305241339-0.1.6.dev202305241344/diff.md --exclude *.pyd
+[2023-05-24 15:50:05] INFO root fetch - processPackages [hcai-nova-server-nightly]: executing diffoscope
+[2023-05-24 15:50:05] INFO root fetch - processPackages [hcai-nova-server-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hcai-nova-server-nightly-0.1.6.dev202305241339.tar.gz tmp/hcai-nova-server-nightly-0.1.6.dev202305241344.tar.gz --markdown 20230524/h/hcai-nova-server-nightly/0.1.6.dev202305241339-0.1.6.dev202305241344/diff.md --exclude *.pyd
+[2023-05-24 15:50:05] WARNING root fetch - processPackages [petstore-sdk]: Skipping, unable to determine old version
+[2023-05-24 15:50:05] INFO root fetch - processPackages [petstore-sdk]: Start processing: BigKindsParser
+[2023-05-24 15:50:05] INFO root fetch - main [MainThread]: End processing [petstore-sdk] error
+[2023-05-24 15:50:05] INFO root fetch - processPackages [pyeCam]: executing diffoscope
+[2023-05-24 15:50:05] INFO root fetch - processPackages [pyeCam]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyeCam-0.0.8.tar.gz tmp/pyeCam-0.0.9.tar.gz --markdown 20230524/p/pyeCam/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-24 15:50:05] INFO root fetch - processPackages [pipe21]: New version: [1.9.0] Old Version: [1.8.0]
+[2023-05-24 15:50:05] INFO root fetch - processPackages [evolved5g]: New version: [1.0.5] Old Version: [1.0.4]
+[2023-05-24 15:50:05] ERROR root fetch - processPackages [ma-finance]: Unable to get metadata: No such project 'ma-finance'
+[2023-05-24 15:50:05] INFO root fetch - processPackages [ma-finance]: Start processing: xmen
+[2023-05-24 15:50:05] INFO root fetch - main [MainThread]: End processing [ma-finance] error
+[2023-05-24 15:50:05] INFO root fetch - processPackages [BigKindsParser]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-05-24 15:50:05] INFO root fetch - processPackages [xmen]: New version: [0.9.5] Old Version: [0.9.4]
+[2023-05-24 15:50:05] INFO root fetch - processPackages [edwh-restic-plugin]: Downloading https://files.pythonhosted.org/packages/8e/92/449efd7bcf148700ce4ea0e151792a2e0d3d48e0f04dbffaae437570843a/edwh_restic_plugin-0.1.7.tar.gz
+[2023-05-24 15:50:05] INFO root fetch - processPackages [modal-client]: Downloading https://files.pythonhosted.org/packages/94/b2/7069f02625a4ae8bbf3931923ce432d418e689bd4b1bc186601eef81d38b/modal_client-0.49.2283-py3-none-any.whl
+[2023-05-24 15:50:05] INFO root fetch - processPackages [evolved5g]: Downloading https://files.pythonhosted.org/packages/b3/db/9541f22a0a7386327967bf4e872632f99a4661084d049d216270c0306cd9/evolved5g-1.0.4.tar.gz
+[2023-05-24 15:50:05] INFO root fetch - processPackages [edwh-restic-plugin]: executing diffoscope
+[2023-05-24 15:50:05] INFO root fetch - processPackages [edwh-restic-plugin]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/edwh_restic_plugin-0.1.6.tar.gz tmp/edwh_restic_plugin-0.1.7.tar.gz --markdown 20230524/e/edwh-restic-plugin/0.1.6-0.1.7/diff.md --exclude *.pyd
+[2023-05-24 15:50:05] INFO root fetch - processPackages [modal-client]: executing diffoscope
+[2023-05-24 15:50:05] INFO root fetch - processPackages [modal-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/modal_client-0.49.2282-py3-none-any.whl.zip tmp/modal_client-0.49.2283-py3-none-any.whl.zip --markdown 20230524/m/modal-client/0.49.2282-0.49.2283/diff.md --exclude *.pyd
+[2023-05-24 15:50:05] INFO root fetch - processPackages [BigKindsParser]: Downloading https://files.pythonhosted.org/packages/2f/c6/ccd594a9e19e1fa95dd1e30f26dd0471b856dfa4caa80b5fc1dc7641e67c/BigKindsParser-0.1.0-py3-none-any.whl
+[2023-05-24 15:50:05] INFO root fetch - processPackages [xmen]: Downloading https://files.pythonhosted.org/packages/30/ce/44bd0e05fc1170e13ea8a2defed343b200f2731412117e80e7200fa29d6a/xmen-0.9.4.tar.gz
+[2023-05-24 15:50:05] INFO root fetch - processPackages [nso-oc]: Downloading https://files.pythonhosted.org/packages/1d/14/96d24a1cd098b52fff3bde134cc1b4bd9927bcb722a06cfbcd1abfe18a7e/nso-oc-2.51.0.tar.gz
+[2023-05-24 15:50:05] INFO root fetch - processPackages [pipe21]: executing diffoscope
+[2023-05-24 15:50:05] INFO root fetch - processPackages [pipe21]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pipe21-1.8.0.tar.gz tmp/pipe21-1.9.0.tar.gz --markdown 20230524/p/pipe21/1.8.0-1.9.0/diff.md --exclude *.pyd
+[2023-05-24 15:50:05] INFO root fetch - processPackages [nso-oc]: executing diffoscope
+[2023-05-24 15:50:05] INFO root fetch - processPackages [nso-oc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nso-oc-2.50.3.tar.gz tmp/nso-oc-2.51.0.tar.gz --markdown 20230524/n/nso-oc/2.50.3-2.51.0/diff.md --exclude *.pyd
+[2023-05-24 15:50:06] INFO root fetch - processPackages [BigKindsParser]: Downloading https://files.pythonhosted.org/packages/76/72/1cae110109d1b04592cb8ccdc29e78418acf88d74dad9fd998d9334e6ebd/BigKindsParser-0.1.1-py3-none-any.whl
+[2023-05-24 15:50:06] INFO root fetch - processPackages [evolved5g]: Downloading https://files.pythonhosted.org/packages/bf/2d/0ff80d0ef37231a60bbb115cb449f75e9846ed9fc2a5d53d733b23367ada/evolved5g-1.0.5.tar.gz
+[2023-05-24 15:50:06] INFO root fetch - processPackages [xmen]: Downloading https://files.pythonhosted.org/packages/3d/43/3ed25cb685a5f7a7e376968104451aa5230be198828d16df8fa3522f1508/xmen-0.9.5.tar.gz
+[2023-05-24 15:50:06] INFO root fetch - processPackages [BigKindsParser]: executing diffoscope
+[2023-05-24 15:50:06] INFO root fetch - processPackages [BigKindsParser]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/BigKindsParser-0.1.0-py3-none-any.whl.zip tmp/BigKindsParser-0.1.1-py3-none-any.whl.zip --markdown 20230524/B/BigKindsParser/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-05-24 15:50:06] INFO root fetch - processPackages [xmen]: executing diffoscope
+[2023-05-24 15:50:06] INFO root fetch - processPackages [xmen]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xmen-0.9.4.tar.gz tmp/xmen-0.9.5.tar.gz --markdown 20230524/x/xmen/0.9.4-0.9.5/diff.md --exclude *.pyd
+[2023-05-24 15:50:06] INFO root fetch - processPackages [evolved5g]: executing diffoscope
+[2023-05-24 15:50:06] INFO root fetch - processPackages [evolved5g]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/evolved5g-1.0.4.tar.gz tmp/evolved5g-1.0.5.tar.gz --markdown 20230524/e/evolved5g/1.0.4-1.0.5/diff.md --exclude *.pyd
+[2023-05-24 15:50:06] INFO root fetch - processPackages [hcai-nova-server-nightly]: Start processing: certora-cli-alpha-master
+[2023-05-24 15:50:06] INFO root fetch - main [MainThread]: End processing [hcai-nova-server-nightly]: success
+[2023-05-24 15:50:06] INFO root fetch - processPackages [certora-cli-alpha-master]: New version: [20230524.7.55.4971] Old Version: [20230524.11.41.347695]
+[2023-05-24 15:50:06] INFO root fetch - processPackages [pyeCam]: Start processing: dbtgenlib
+[2023-05-24 15:50:06] INFO root fetch - main [MainThread]: End processing [pyeCam]: success
+[2023-05-24 15:50:07] INFO root fetch - processPackages [dbtgenlib]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-24 15:50:07] INFO root fetch - processPackages [certora-cli-alpha-master]: Downloading https://files.pythonhosted.org/packages/66/8a/0fc94c7ee52763b34dc7afa17ac96bfa3a1353862d1b143e5746a280fa22/certora-cli-alpha-master-20230524.11.41.347695.tar.gz
+[2023-05-24 15:50:07] WARNING root fetch - processPackages [certora-cli-alpha-master]: Skipping package: exceeds size limit 38998429>=10485760
+[2023-05-24 15:50:07] INFO root fetch - processPackages [certora-cli-alpha-master]: Start processing: python-hcl2
+[2023-05-24 15:50:07] INFO root fetch - main [MainThread]: End processing [certora-cli-alpha-master] error
+[2023-05-24 15:50:07] INFO root fetch - processPackages [hcai-nova-server-nightly]: Start processing: kiara-plugin.onboarding
+[2023-05-24 15:50:07] INFO root fetch - main [MainThread]: End processing [hcai-nova-server-nightly]: success
+[2023-05-24 15:50:07] INFO root fetch - processPackages [dbtgenlib]: executing diffoscope
+[2023-05-24 15:50:07] INFO root fetch - processPackages [dbtgenlib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dbtgenlib-0.0.8.tar.gz tmp/dbtgenlib-0.0.9.tar.gz --markdown 20230524/d/dbtgenlib/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-24 15:50:07] INFO root fetch - processPackages [kiara-plugin.onboarding]: New version: [0.4.4] Old Version: [0.4.3]
+[2023-05-24 15:50:07] INFO root fetch - processPackages [python-hcl2]: New version: [4.3.2] Old Version: [4.3.1]
+[2023-05-24 15:50:07] INFO root fetch - processPackages [edwh-restic-plugin]: Start processing: genreg
+[2023-05-24 15:50:07] INFO root fetch - processPackages [python-hcl2]: Downloading https://files.pythonhosted.org/packages/b8/50/9bad9281c5093327ef6cdcaf30b95aebd0c7070f9e27f07802b07f500ab1/python-hcl2-4.3.1.tar.gz
+[2023-05-24 15:50:07] INFO root fetch - main [MainThread]: End processing [edwh-restic-plugin]: success
+[2023-05-24 15:50:07] INFO root fetch - processPackages [kiara-plugin.onboarding]: Downloading https://files.pythonhosted.org/packages/90/b2/3318ee442906a1576c9da2821381efe6a6d28a19d52aaee3183f5587cd38/kiara_plugin.onboarding-0.4.3.tar.gz
+[2023-05-24 15:50:07] INFO root fetch - processPackages [genreg]: New version: [1.0.2] Old Version: [1.0.1]
+[2023-05-24 15:50:07] INFO root fetch - processPackages [pipe21]: Start processing: segfast
+[2023-05-24 15:50:07] INFO root fetch - main [MainThread]: End processing [pipe21]: success
+[2023-05-24 15:50:07] INFO root fetch - processPackages [nso-oc]: Start processing: troncos
+[2023-05-24 15:50:07] INFO root fetch - main [MainThread]: End processing [nso-oc]: success
+[2023-05-24 15:50:07] INFO root fetch - processPackages [genreg]: Downloading https://files.pythonhosted.org/packages/30/ec/05f817d62948bc8322a53728a0acd1e0a64e427605e6b4585b899166d3a2/genreg-1.0.1.tar.gz
+[2023-05-24 15:50:07] INFO root fetch - processPackages [troncos]: New version: [4.0.0b2] Old Version: [4.0.0b1]
+[2023-05-24 15:50:07] INFO root fetch - processPackages [BigKindsParser]: Start processing: papai-public
+[2023-05-24 15:50:07] INFO root fetch - main [MainThread]: End processing [BigKindsParser]: success
+[2023-05-24 15:50:07] INFO root fetch - processPackages [python-hcl2]: Downloading https://files.pythonhosted.org/packages/ef/94/cc6f7100a857a5a4a676c2c71322ca476051278fad4ec956f0116c1d3834/python-hcl2-4.3.2.tar.gz
+[2023-05-24 15:50:07] INFO root fetch - processPackages [kiara-plugin.onboarding]: Downloading https://files.pythonhosted.org/packages/39/ce/cbef0beb6b9358b16278ec9609eee289aa8b10129e0fb18f96aee6f296c8/kiara_plugin.onboarding-0.4.4.tar.gz
+[2023-05-24 15:50:07] INFO root fetch - processPackages [segfast]: New version: [1.0.1] Old Version: [1.0.0]
+[2023-05-24 15:50:07] INFO root fetch - processPackages [papai-public]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-24 15:50:07] INFO root fetch - processPackages [python-hcl2]: executing diffoscope
+[2023-05-24 15:50:07] INFO root fetch - processPackages [python-hcl2]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/python-hcl2-4.3.1.tar.gz tmp/python-hcl2-4.3.2.tar.gz --markdown 20230524/p/python-hcl2/4.3.1-4.3.2/diff.md --exclude *.pyd
+[2023-05-24 15:50:07] INFO root fetch - processPackages [kiara-plugin.onboarding]: executing diffoscope
+[2023-05-24 15:50:07] INFO root fetch - processPackages [kiara-plugin.onboarding]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kiara_plugin.onboarding-0.4.3.tar.gz tmp/kiara_plugin.onboarding-0.4.4.tar.gz --markdown 20230524/k/kiara-plugin.onboarding/0.4.3-0.4.4/diff.md --exclude *.pyd
+[2023-05-24 15:50:07] INFO root fetch - processPackages [papai-public]: executing diffoscope
+[2023-05-24 15:50:07] INFO root fetch - processPackages [papai-public]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/papai_public-0.1.8.tar.gz tmp/papai_public-0.1.9.tar.gz --markdown 20230524/p/papai-public/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-24 15:50:07] INFO root fetch - processPackages [segfast]: Downloading https://files.pythonhosted.org/packages/e6/77/a5be567231d31095c50adef9fc33de8512ebab1af6707770f9bdeda95e72/segfast-1.0.0.tar.gz
+[2023-05-24 15:50:08] INFO root fetch - processPackages [troncos]: Downloading https://files.pythonhosted.org/packages/80/8c/85f122fae73c5ccf4f053ef98352084a7d7c291959965f08712c8319b4d3/troncos-4.0.0b2.tar.gz
+[2023-05-24 15:50:08] INFO root fetch - processPackages [troncos]: executing diffoscope
+[2023-05-24 15:50:08] INFO root fetch - processPackages [troncos]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/troncos-4.0.0b1.tar.gz tmp/troncos-4.0.0b2.tar.gz --markdown 20230524/t/troncos/4.0.0b1-4.0.0b2/diff.md --exclude *.pyd
+[2023-05-24 15:50:08] INFO root fetch - processPackages [segfast]: Downloading https://files.pythonhosted.org/packages/b5/da/de60992e8a924b354be75d9ffb936516ce5d86457a566c393723bb5597c4/segfast-1.0.1.tar.gz
+[2023-05-24 15:50:08] INFO root fetch - processPackages [segfast]: executing diffoscope
+[2023-05-24 15:50:08] INFO root fetch - processPackages [segfast]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/segfast-1.0.0.tar.gz tmp/segfast-1.0.1.tar.gz --markdown 20230524/s/segfast/1.0.0-1.0.1/diff.md --exclude *.pyd
+[2023-05-24 15:50:08] INFO root fetch - processPackages [dbtgenlib]: Start processing: neuralpit
+[2023-05-24 15:50:08] INFO root fetch - main [MainThread]: End processing [dbtgenlib]: success
+[2023-05-24 15:50:08] INFO root fetch - processPackages [modal-client]: Start processing: ofscraper
+[2023-05-24 15:50:08] INFO root fetch - main [MainThread]: End processing [modal-client]: success
+[2023-05-24 15:50:08] INFO root fetch - processPackages [genreg]: Downloading https://files.pythonhosted.org/packages/74/7c/1f93c1ede124f7a5d7d96983bd8ad77770e6a30bb6121b0c6f4fef858473/genreg-1.0.2.tar.gz
+[2023-05-24 15:50:08] INFO root fetch - processPackages [neuralpit]: New version: [1.0.5] Old Version: [1.0.4]
+[2023-05-24 15:50:08] INFO root fetch - processPackages [ofscraper]: New version: [1.95.2] Old Version: [1.95.1]
+[2023-05-24 15:50:08] INFO root fetch - processPackages [genreg]: executing diffoscope
+[2023-05-24 15:50:08] INFO root fetch - processPackages [genreg]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/genreg-1.0.1.tar.gz tmp/genreg-1.0.2.tar.gz --markdown 20230524/g/genreg/1.0.1-1.0.2/diff.md --exclude *.pyd
+[2023-05-24 15:50:08] INFO root fetch - processPackages [neuralpit]: Downloading https://files.pythonhosted.org/packages/23/de/40f208599b59a1df35dd6f66b4d0746d0026f3dbf095df9fb75482c75a5e/neuralpit-1.0.4.tar.gz
+[2023-05-24 15:50:08] INFO root fetch - processPackages [evolved5g]: Start processing: digital-unit
+[2023-05-24 15:50:08] INFO root fetch - main [MainThread]: End processing [evolved5g]: success
+[2023-05-24 15:50:08] INFO root fetch - processPackages [digital-unit]: New version: [1.4b2] Old Version: [1.4b1]
+[2023-05-24 15:50:08] INFO root fetch - processPackages [ofscraper]: Downloading https://files.pythonhosted.org/packages/f9/1b/912c4e69ff6fa5d67e227ec23eccf0bc2eec1a62c1f40cc6a6aad337e0a0/ofscraper-1.95.2.tar.gz
+[2023-05-24 15:50:08] INFO root fetch - processPackages [neuralpit]: Downloading https://files.pythonhosted.org/packages/68/44/5dc12fcb154e295f1a1b1b97f980827b6253c1fa84be1b8ab485f572684f/neuralpit-1.0.5.tar.gz
+[2023-05-24 15:50:08] INFO root fetch - processPackages [ofscraper]: executing diffoscope
+[2023-05-24 15:50:08] INFO root fetch - processPackages [ofscraper]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ofscraper-1.95.1.tar.gz tmp/ofscraper-1.95.2.tar.gz --markdown 20230524/o/ofscraper/1.95.1-1.95.2/diff.md --exclude *.pyd
+[2023-05-24 15:50:08] WARNING root fetch - processPackages [digital-unit]: fallback to get urls: [1.4b1]
+[2023-05-24 15:50:08] WARNING root fetch - processPackages [digital-unit]: None
+[2023-05-24 15:50:09] INFO root fetch - processPackages [neuralpit]: executing diffoscope
+[2023-05-24 15:50:09] INFO root fetch - processPackages [neuralpit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/neuralpit-1.0.4.tar.gz tmp/neuralpit-1.0.5.tar.gz --markdown 20230524/n/neuralpit/1.0.4-1.0.5/diff.md --exclude *.pyd
+[2023-05-24 15:50:09] WARNING root fetch - processPackages [digital-unit]: None
+[2023-05-24 15:50:09] INFO root fetch - processPackages [papai-public]: Start processing: rattr
+[2023-05-24 15:50:09] INFO root fetch - main [MainThread]: End processing [papai-public]: success
+[2023-05-24 15:50:09] WARNING root fetch - processPackages [digital-unit]: unable to get url for both version [1.4b1]
+[2023-05-24 15:50:09] WARNING root fetch - processPackages [digital-unit]: None
+[2023-05-24 15:50:09] INFO root fetch - main [MainThread]: End processing [digital-unit] error
+[2023-05-24 15:50:09] INFO root fetch - processPackages [rattr]: New version: [0.1.5] Old Version: [0.1.4]
+[2023-05-24 15:50:09] INFO root fetch - main [MainThread]: End processing [xmen]: success
+[2023-05-24 15:50:09] INFO root fetch - main [MainThread]: End processing [python-hcl2]: success
+[2023-05-24 15:50:09] INFO root fetch - processPackages [rattr]: Downloading https://files.pythonhosted.org/packages/00/33/2fd5e7386d5a3d5d3200dda0763ba73b04773081fe9c05e143993b59ba34/rattr-0.1.4.tar.gz
+[2023-05-24 15:50:09] INFO root fetch - main [MainThread]: End processing [troncos]: success
+[2023-05-24 15:50:09] INFO root fetch - processPackages [rattr]: Downloading https://files.pythonhosted.org/packages/92/89/20806a7fd59a84fe6f95b24cad2bab8560efc535ad33a36c98ff48680808/rattr-0.1.5.tar.gz
+[2023-05-24 15:50:09] INFO root fetch - main [MainThread]: End processing [segfast]: success
+[2023-05-24 15:50:09] INFO root fetch - processPackages [rattr]: executing diffoscope
+[2023-05-24 15:50:09] INFO root fetch - processPackages [rattr]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rattr-0.1.4.tar.gz tmp/rattr-0.1.5.tar.gz --markdown 20230524/r/rattr/0.1.4-0.1.5/diff.md --exclude *.pyd
+[2023-05-24 15:50:09] INFO root fetch - main [MainThread]: End processing [genreg]: success
+[2023-05-24 15:50:10] INFO root fetch - main [MainThread]: End processing [kiara-plugin.onboarding]: success
+[2023-05-24 15:50:10] INFO root fetch - main [MainThread]: End processing [neuralpit]: success
+[2023-05-24 15:50:11] INFO root fetch - main [MainThread]: End processing [rattr]: success
+[2023-05-24 15:50:11] INFO root fetch - main [MainThread]: End processing [ofscraper]: success
+[2023-05-24 15:50:11] INFO root fetch - main [MainThread]: Store serial: [18230450]
