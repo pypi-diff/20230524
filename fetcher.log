@@ -9815,3 +9815,156 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-05-24 09:45:53] ERROR root fetch - processPackages [kiwi]: Timeout during execution of pkgdiff
 [2023-05-24 09:45:53] INFO root fetch - main [MainThread]: End processing [kiwi] error
 [2023-05-24 09:45:53] INFO root fetch - main [MainThread]: Store serial: [18226414]
+[2023-05-24 09:50:59] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18226414]
+[2023-05-24 09:51:04] INFO root fetch - main [MainThread]: Found 25 changed packages
+[2023-05-24 09:51:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: lalsuite
+[2023-05-24 09:51:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: rasa
+[2023-05-24 09:51:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: dcs-code-injector
+[2023-05-24 09:51:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: ghga-event-schemas
+[2023-05-24 09:51:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: sequana-variant-calling
+[2023-05-24 09:51:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: orchestrator-core
+[2023-05-24 09:51:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: sdss-clu
+[2023-05-24 09:51:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: youtube-summary
+[2023-05-24 09:51:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: thug
+[2023-05-24 09:51:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: pulumi-proxmoxve
+[2023-05-24 09:51:04] INFO root fetch - processPackages [sequana-variant-calling]: New version: [1.0.0] Old Version: [0.9.5]
+[2023-05-24 09:51:04] WARNING root fetch - processPackages [dcs-code-injector]: Skipping, unable to determine old version
+[2023-05-24 09:51:04] INFO root fetch - processPackages [dcs-code-injector]: Start processing: keras-nightly
+[2023-05-24 09:51:04] INFO root fetch - main [MainThread]: End processing [dcs-code-injector] error
+[2023-05-24 09:51:04] INFO root fetch - processPackages [ghga-event-schemas]: New version: [0.8.0] Old Version: [0.7.4]
+[2023-05-24 09:51:04] INFO root fetch - processPackages [orchestrator-core]: New version: [1.1.0rc1] Old Version: [1.0.2rc3]
+[2023-05-24 09:51:04] INFO root fetch - processPackages [lalsuite]: New version: [7.9] Old Version: [7.8]
+[2023-05-24 09:51:04] INFO root fetch - processPackages [rasa]: New version: [3.6.0a1] Old Version: [3.5.9]
+[2023-05-24 09:51:04] INFO root fetch - processPackages [youtube-summary]: New version: [0.4] Old Version: [0.3]
+[2023-05-24 09:51:04] INFO root fetch - processPackages [keras-nightly]: New version: [2.9.0.dev2022033107] Old Version: [2.9.0.dev2022033007]
+[2023-05-24 09:51:04] INFO root fetch - processPackages [pulumi-proxmoxve]: New version: [5.0.0] Old Version: [4.1.1]
+[2023-05-24 09:51:04] INFO root fetch - processPackages [sdss-clu]: New version: [2.0.2b1] Old Version: [2.0.2]
+[2023-05-24 09:51:04] INFO root fetch - processPackages [thug]: New version: [5.0.1] Old Version: [5.0]
+[2023-05-24 09:51:04] INFO root fetch - processPackages [sequana-variant-calling]: Downloading https://files.pythonhosted.org/packages/f6/7a/2416ca01266ad1e0eb3e91bea899727e48368562ca4598f1ba4633a7154d/sequana_variant_calling-0.9.5.tar.gz
+[2023-05-24 09:51:04] INFO root fetch - processPackages [keras-nightly]: executing diffoscope
+[2023-05-24 09:51:04] INFO root fetch - processPackages [keras-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/keras_nightly-2.9.0.dev2022033007-py2.py3-none-any.whl.zip tmp/keras_nightly-2.9.0.dev2022033107-py2.py3-none-any.whl.zip --markdown 20230524/k/keras-nightly/2.9.0.dev2022033007-2.9.0.dev2022033107/diff.md --exclude *.pyd
+[2023-05-24 09:51:04] INFO root fetch - processPackages [ghga-event-schemas]: Downloading https://files.pythonhosted.org/packages/3c/c0/caf266f667a293384e27df35c290f38f81bf0a1a5aae96f975e9a715ee43/ghga_event_schemas-0.7.4.tar.gz
+[2023-05-24 09:51:04] INFO root fetch - processPackages [sdss-clu]: Downloading https://files.pythonhosted.org/packages/b2/fd/5336e50417088afee147a91037d98d3905557f5df2e53acd0e7db229ce78/sdss_clu-2.0.2.tar.gz
+[2023-05-24 09:51:04] INFO root fetch - processPackages [lalsuite]: Downloading https://files.pythonhosted.org/packages/53/92/fc43211ca56b7c5532fc1b47c701a564c7ddcaf866c62ae45acbfdc34f23/lalsuite-7.8-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2023-05-24 09:51:04] INFO root fetch - processPackages [thug]: Downloading https://files.pythonhosted.org/packages/0a/24/4c3660246242fc6abff7d2a611b7c9bad04322e2321692e69c84924997a1/thug-5.0.tar.gz
+[2023-05-24 09:51:04] INFO root fetch - processPackages [youtube-summary]: Downloading https://files.pythonhosted.org/packages/9f/c1/bf353ced22aebc8bde90fb4afb43c564b52d6740edb30d02eddc99464c02/youtube-summary-0.3.tar.gz
+[2023-05-24 09:51:04] INFO root fetch - processPackages [pulumi-proxmoxve]: Downloading https://files.pythonhosted.org/packages/c7/51/43299aee8fab7cb1e28e30febec599eddd2d4528f96544276a87b66d3e13/pulumi_proxmoxve-4.1.1.tar.gz
+[2023-05-24 09:51:04] WARNING root fetch - processPackages [lalsuite]: Skipping package: exceeds size limit 48394251>=10485760
+[2023-05-24 09:51:04] INFO root fetch - processPackages [lalsuite]: Start processing: httpyexpect
+[2023-05-24 09:51:04] INFO root fetch - main [MainThread]: End processing [lalsuite] error
+[2023-05-24 09:51:05] INFO root fetch - processPackages [httpyexpect]: New version: [0.2.5] Old Version: [0.2.4]
+[2023-05-24 09:51:05] INFO root fetch - processPackages [rasa]: executing diffoscope
+[2023-05-24 09:51:05] INFO root fetch - processPackages [rasa]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rasa-3.5.9.tar.gz tmp/rasa-3.6.0a1.tar.gz --markdown 20230524/r/rasa/3.5.9-3.6.0a1/diff.md --exclude *.pyd
+[2023-05-24 09:51:05] INFO root fetch - processPackages [sequana-variant-calling]: Downloading https://files.pythonhosted.org/packages/6d/c5/bac62ec61c33ed403f28d0d32e860d981c2e16c31e3ac4ef4b6eb009f1c0/sequana_variant_calling-1.0.0.tar.gz
+[2023-05-24 09:51:05] INFO root fetch - processPackages [youtube-summary]: Downloading https://files.pythonhosted.org/packages/23/46/282f48606132c76bb9bcdf4af0e910978c47d1dd883b58ed1f15e5989f37/youtube-summary-0.4.tar.gz
+[2023-05-24 09:51:05] INFO root fetch - processPackages [pulumi-proxmoxve]: Downloading https://files.pythonhosted.org/packages/e2/4e/bf57caf4bf0b4880ab6b8204ecf43337c860c76a1b3b0b098a0182426140/pulumi_proxmoxve-5.0.0.tar.gz
+[2023-05-24 09:51:05] INFO root fetch - processPackages [thug]: Downloading https://files.pythonhosted.org/packages/44/e8/5d40ca06c688978589a6ddf44df25dd588a86d1a17c4bea12f63e728714c/thug-5.0.1.tar.gz
+[2023-05-24 09:51:05] INFO root fetch - processPackages [ghga-event-schemas]: Downloading https://files.pythonhosted.org/packages/1b/dd/6c4a8a81b4b88360cebb39bd9f5e698ba599cf34be72cea0dfd9911549d6/ghga_event_schemas-0.8.0.tar.gz
+[2023-05-24 09:51:05] INFO root fetch - processPackages [youtube-summary]: executing diffoscope
+[2023-05-24 09:51:05] INFO root fetch - processPackages [youtube-summary]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/youtube-summary-0.3.tar.gz tmp/youtube-summary-0.4.tar.gz --markdown 20230524/y/youtube-summary/0.3-0.4/diff.md --exclude *.pyd
+[2023-05-24 09:51:05] INFO root fetch - processPackages [sequana-variant-calling]: executing diffoscope
+[2023-05-24 09:51:05] INFO root fetch - processPackages [sequana-variant-calling]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sequana_variant_calling-0.9.5.tar.gz tmp/sequana_variant_calling-1.0.0.tar.gz --markdown 20230524/s/sequana-variant-calling/0.9.5-1.0.0/diff.md --exclude *.pyd
+[2023-05-24 09:51:05] INFO root fetch - processPackages [pulumi-proxmoxve]: executing diffoscope
+[2023-05-24 09:51:05] INFO root fetch - processPackages [pulumi-proxmoxve]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_proxmoxve-4.1.1.tar.gz tmp/pulumi_proxmoxve-5.0.0.tar.gz --markdown 20230524/p/pulumi-proxmoxve/4.1.1-5.0.0/diff.md --exclude *.pyd
+[2023-05-24 09:51:05] INFO root fetch - processPackages [sdss-clu]: executing diffoscope
+[2023-05-24 09:51:05] INFO root fetch - processPackages [sdss-clu]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sdss_clu-2.0.2.tar.gz tmp/sdss_clu-2.0.2b1.tar.gz --markdown 20230524/s/sdss-clu/2.0.2-2.0.2b1/diff.md --exclude *.pyd
+[2023-05-24 09:51:05] INFO root fetch - processPackages [httpyexpect]: Downloading https://files.pythonhosted.org/packages/87/ba/9448c8305ec6320e3c8a5400ccd8cea2dacb66e4e809d1023f35f7c3890c/httpyexpect-0.2.4.tar.gz
+[2023-05-24 09:51:05] INFO root fetch - processPackages [thug]: executing diffoscope
+[2023-05-24 09:51:05] INFO root fetch - processPackages [thug]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/thug-5.0.tar.gz tmp/thug-5.0.1.tar.gz --markdown 20230524/t/thug/5.0-5.0.1/diff.md --exclude *.pyd
+[2023-05-24 09:51:05] INFO root fetch - processPackages [orchestrator-core]: Downloading https://files.pythonhosted.org/packages/39/b2/d4001559bb59b4685f4602315389d3b9cc9beb99827eca42a1998c64c46b/orchestrator_core-1.1.0rc1.tar.gz
+[2023-05-24 09:51:05] INFO root fetch - processPackages [ghga-event-schemas]: executing diffoscope
+[2023-05-24 09:51:05] INFO root fetch - processPackages [ghga-event-schemas]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ghga_event_schemas-0.7.4.tar.gz tmp/ghga_event_schemas-0.8.0.tar.gz --markdown 20230524/g/ghga-event-schemas/0.7.4-0.8.0/diff.md --exclude *.pyd
+[2023-05-24 09:51:05] INFO root fetch - processPackages [orchestrator-core]: executing diffoscope
+[2023-05-24 09:51:05] INFO root fetch - processPackages [orchestrator-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/orchestrator-core-1.0.2rc3.tar.gz tmp/orchestrator_core-1.1.0rc1.tar.gz --markdown 20230524/o/orchestrator-core/1.0.2rc3-1.1.0rc1/diff.md --exclude *.pyd
+[2023-05-24 09:51:05] INFO root fetch - processPackages [httpyexpect]: Downloading https://files.pythonhosted.org/packages/57/dd/df800d26e238da14836ec50cd74c6c25b003b39de97b9c86d323b14040d8/httpyexpect-0.2.5.tar.gz
+[2023-05-24 09:51:05] INFO root fetch - processPackages [httpyexpect]: executing diffoscope
+[2023-05-24 09:51:05] INFO root fetch - processPackages [httpyexpect]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/httpyexpect-0.2.4.tar.gz tmp/httpyexpect-0.2.5.tar.gz --markdown 20230524/h/httpyexpect/0.2.4-0.2.5/diff.md --exclude *.pyd
+[2023-05-24 09:51:06] INFO root fetch - processPackages [youtube-summary]: Start processing: taktile-auth
+[2023-05-24 09:51:06] INFO root fetch - main [MainThread]: End processing [youtube-summary]: success
+[2023-05-24 09:51:06] INFO root fetch - processPackages [taktile-auth]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-24 09:51:06] INFO root fetch - processPackages [taktile-auth]: executing diffoscope
+[2023-05-24 09:51:06] INFO root fetch - processPackages [taktile-auth]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/taktile-auth-0.0.8.tar.gz tmp/taktile-auth-0.0.9.tar.gz --markdown 20230524/t/taktile-auth/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-24 09:51:06] INFO root fetch - processPackages [sequana-variant-calling]: Start processing: odoo-addon-account-move-line-tax-editable
+[2023-05-24 09:51:06] INFO root fetch - main [MainThread]: End processing [sequana-variant-calling]: success
+[2023-05-24 09:51:06] INFO root fetch - processPackages [odoo-addon-account-move-line-tax-editable]: New version: [16.0.1.0.0.2] Old Version: [15.0.1.0.1.2]
+[2023-05-24 09:51:07] INFO root fetch - processPackages [pulumi-proxmoxve]: Start processing: connect-eaas-core
+[2023-05-24 09:51:07] INFO root fetch - main [MainThread]: End processing [pulumi-proxmoxve]: success
+[2023-05-24 09:51:07] INFO root fetch - processPackages [sdss-clu]: Start processing: xzy-db
+[2023-05-24 09:51:07] INFO root fetch - main [MainThread]: End processing [sdss-clu]: success
+[2023-05-24 09:51:07] INFO root fetch - processPackages [ghga-event-schemas]: Start processing: iaesdk
+[2023-05-24 09:51:07] INFO root fetch - main [MainThread]: End processing [ghga-event-schemas]: success
+[2023-05-24 09:51:07] INFO root fetch - processPackages [connect-eaas-core]: New version: [4.1.0] Old Version: [4.0.0]
+[2023-05-24 09:51:07] INFO root fetch - processPackages [xzy-db]: New version: [0.0.7] Old Version: [0.0.6]
+[2023-05-24 09:51:07] INFO root fetch - processPackages [odoo-addon-account-move-line-tax-editable]: Downloading https://files.pythonhosted.org/packages/e9/92/c8b82bf5e7be6612d568ba8d44a33363d8d5b10a16ce0b5ababe03f631ae/odoo_addon_account_move_line_tax_editable-15.0.1.0.1.2-py3-none-any.whl
+[2023-05-24 09:51:07] INFO root fetch - processPackages [iaesdk]: New version: [3.2.0] Old Version: [3.1.0]
+[2023-05-24 09:51:07] INFO root fetch - processPackages [connect-eaas-core]: Downloading https://files.pythonhosted.org/packages/cc/2b/dea815280942b1c045ca9eecfafffe56712d2b8c5e293241f99caf0d825c/connect-eaas-core-4.0.0.tar.gz
+[2023-05-24 09:51:07] INFO root fetch - processPackages [httpyexpect]: Start processing: planetmint
+[2023-05-24 09:51:07] INFO root fetch - main [MainThread]: End processing [httpyexpect]: success
+[2023-05-24 09:51:07] INFO root fetch - processPackages [xzy-db]: Downloading https://files.pythonhosted.org/packages/98/ae/b2bb338a1a532afa1177a60b8438295cb5932ee8eef3e19ef3fc4169907b/xzy-db-0.0.6.tar.gz
+[2023-05-24 09:51:07] INFO root fetch - processPackages [iaesdk]: Downloading https://files.pythonhosted.org/packages/73/5b/d8ce3efb8224a62dbb9b8463717986b6e90faa3a7edf5f2ec6609a76cb83/iaesdk-3.1.0.tar.gz
+[2023-05-24 09:51:07] INFO root fetch - processPackages [odoo-addon-account-move-line-tax-editable]: Downloading https://files.pythonhosted.org/packages/1a/21/15e32a7483e0a42a4fc09d6d2408b2e07f0e5dc41a334ec7e1de565af41d/odoo_addon_account_move_line_tax_editable-16.0.1.0.0.2-py3-none-any.whl
+[2023-05-24 09:51:07] INFO root fetch - processPackages [planetmint]: New version: [2.4.6] Old Version: [2.4.5]
+[2023-05-24 09:51:07] INFO root fetch - processPackages [odoo-addon-account-move-line-tax-editable]: executing diffoscope
+[2023-05-24 09:51:07] INFO root fetch - processPackages [odoo-addon-account-move-line-tax-editable]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_account_move_line_tax_editable-15.0.1.0.1.2-py3-none-any.whl.zip tmp/odoo_addon_account_move_line_tax_editable-16.0.1.0.0.2-py3-none-any.whl.zip --markdown 20230524/o/odoo-addon-account-move-line-tax-editable/15.0.1.0.1.2-16.0.1.0.0.2/diff.md --exclude *.pyd
+[2023-05-24 09:51:07] INFO root fetch - processPackages [xzy-db]: Downloading https://files.pythonhosted.org/packages/3c/f0/bc14fa2249f31b64a98db857b6d5c5998cd16db992b5a0003d82ea53d6b5/xzy-db-0.0.7.tar.gz
+[2023-05-24 09:51:07] INFO root fetch - processPackages [iaesdk]: Downloading https://files.pythonhosted.org/packages/b0/06/061911cf4954a3a37ef38a03523d83ec27841bfc089b6a3c75f5c03330b3/iaesdk-3.2.0.tar.gz
+[2023-05-24 09:51:07] INFO root fetch - processPackages [connect-eaas-core]: Downloading https://files.pythonhosted.org/packages/b8/0e/223cf7857305fa1f3a5dd5f98ef3ffefc0eabf78b1d8512dc021aac41705/connect-eaas-core-4.1.0.tar.gz
+[2023-05-24 09:51:07] INFO root fetch - processPackages [planetmint]: Downloading https://files.pythonhosted.org/packages/f8/77/c4465229d7666eff671eae59762c877e93019eb64190e6ee3ec1730c880d/planetmint-2.4.5.tar.gz
+[2023-05-24 09:51:07] INFO root fetch - processPackages [iaesdk]: executing diffoscope
+[2023-05-24 09:51:07] INFO root fetch - processPackages [iaesdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/iaesdk-3.1.0.tar.gz tmp/iaesdk-3.2.0.tar.gz --markdown 20230524/i/iaesdk/3.1.0-3.2.0/diff.md --exclude *.pyd
+[2023-05-24 09:51:07] INFO root fetch - processPackages [xzy-db]: executing diffoscope
+[2023-05-24 09:51:07] INFO root fetch - processPackages [xzy-db]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xzy-db-0.0.6.tar.gz tmp/xzy-db-0.0.7.tar.gz --markdown 20230524/x/xzy-db/0.0.6-0.0.7/diff.md --exclude *.pyd
+[2023-05-24 09:51:07] INFO root fetch - processPackages [connect-eaas-core]: executing diffoscope
+[2023-05-24 09:51:07] INFO root fetch - processPackages [connect-eaas-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/connect-eaas-core-4.0.0.tar.gz tmp/connect-eaas-core-4.1.0.tar.gz --markdown 20230524/c/connect-eaas-core/4.0.0-4.1.0/diff.md --exclude *.pyd
+[2023-05-24 09:51:08] INFO root fetch - processPackages [taktile-auth]: Start processing: dav-tools
+[2023-05-24 09:51:08] INFO root fetch - main [MainThread]: End processing [taktile-auth]: success
+[2023-05-24 09:51:08] INFO root fetch - processPackages [dav-tools]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-05-24 09:51:08] INFO root fetch - processPackages [planetmint]: Downloading https://files.pythonhosted.org/packages/9c/b2/0784a34d1bc94c995a9d02a130d71ef38ff2fbb369c5bbfc48cfc0707df6/planetmint-2.4.6.tar.gz
+[2023-05-24 09:51:08] INFO root fetch - processPackages [dav-tools]: executing diffoscope
+[2023-05-24 09:51:08] INFO root fetch - processPackages [dav-tools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dav_tools-0.0.1.tar.gz tmp/dav_tools-0.0.2.tar.gz --markdown 20230524/d/dav-tools/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-05-24 09:51:08] INFO root fetch - processPackages [planetmint]: executing diffoscope
+[2023-05-24 09:51:08] INFO root fetch - processPackages [planetmint]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/planetmint-2.4.5.tar.gz tmp/planetmint-2.4.6.tar.gz --markdown 20230524/p/planetmint/2.4.5-2.4.6/diff.md --exclude *.pyd
+[2023-05-24 09:51:08] INFO root fetch - processPackages [odoo-addon-account-move-line-tax-editable]: Start processing: alibabacloud-btripopen20220520-py2
+[2023-05-24 09:51:08] INFO root fetch - main [MainThread]: End processing [odoo-addon-account-move-line-tax-editable]: success
+[2023-05-24 09:51:09] INFO root fetch - processPackages [alibabacloud-btripopen20220520-py2]: New version: [1.0.9] Old Version: [1.0.8]
+[2023-05-24 09:51:09] INFO root fetch - processPackages [xzy-db]: Start processing: alibabacloud-btripopen20220520
+[2023-05-24 09:51:09] INFO root fetch - main [MainThread]: End processing [xzy-db]: success
+[2023-05-24 09:51:09] INFO root fetch - processPackages [iaesdk]: Start processing: MedUS
+[2023-05-24 09:51:09] INFO root fetch - main [MainThread]: End processing [iaesdk]: success
+[2023-05-24 09:51:09] INFO root fetch - processPackages [alibabacloud-btripopen20220520-py2]: Downloading https://files.pythonhosted.org/packages/de/a0/5d0af6d89a2c23444ae609a054c08a29d7641fc54acaf60d73a7d01fe4c2/alibabacloud_btripopen20220520_py2-1.0.8.tar.gz
+[2023-05-24 09:51:09] INFO root fetch - processPackages [alibabacloud-btripopen20220520]: New version: [1.0.9] Old Version: [1.0.8]
+[2023-05-24 09:51:09] WARNING root fetch - processPackages [MedUS]: Skipping, unable to determine old version
+[2023-05-24 09:51:09] INFO root fetch - processPackages [MedUS]: Start processing: error-suggester
+[2023-05-24 09:51:09] INFO root fetch - main [MainThread]: End processing [MedUS] error
+[2023-05-24 09:51:09] INFO root fetch - processPackages [dav-tools]: Start processing: tf-nightly-cpu
+[2023-05-24 09:51:09] INFO root fetch - main [MainThread]: End processing [dav-tools]: success
+[2023-05-24 09:51:09] INFO root fetch - processPackages [alibabacloud-btripopen20220520]: Downloading https://files.pythonhosted.org/packages/22/db/55856f6d8870724d595ac9e131b5fb49d5acd414a50bd7142cebbc660f9d/alibabacloud_btripopen20220520-1.0.8.tar.gz
+[2023-05-24 09:51:09] WARNING root fetch - processPackages [error-suggester]: Skipping, unable to determine old version
+[2023-05-24 09:51:09] INFO root fetch - processPackages [error-suggester]: Start processing: dcs-code-injector
+[2023-05-24 09:51:09] INFO root fetch - main [MainThread]: End processing [error-suggester] error
+[2023-05-24 09:51:09] INFO root fetch - processPackages [alibabacloud-btripopen20220520-py2]: Downloading https://files.pythonhosted.org/packages/e4/c7/d4efe3620d3319b87755842b6ed1925259fd25ba21cce7089faa20c24d4b/alibabacloud_btripopen20220520_py2-1.0.9.tar.gz
+[2023-05-24 09:51:09] INFO root fetch - main [MainThread]: End processing [connect-eaas-core]: success
+[2023-05-24 09:51:09] INFO root fetch - processPackages [tf-nightly-cpu]: New version: [2.14.0.dev20230524] Old Version: [2.14.0.dev20230523]
+[2023-05-24 09:51:09] INFO root fetch - processPackages [dcs-code-injector]: New version: [1.0.1] Old Version: [1.0.0]
+[2023-05-24 09:51:09] INFO root fetch - processPackages [alibabacloud-btripopen20220520-py2]: executing diffoscope
+[2023-05-24 09:51:09] INFO root fetch - processPackages [alibabacloud-btripopen20220520-py2]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/alibabacloud_btripopen20220520_py2-1.0.8.tar.gz tmp/alibabacloud_btripopen20220520_py2-1.0.9.tar.gz --markdown 20230524/a/alibabacloud-btripopen20220520-py2/1.0.8-1.0.9/diff.md --exclude *.pyd
+[2023-05-24 09:51:09] INFO root fetch - processPackages [alibabacloud-btripopen20220520]: Downloading https://files.pythonhosted.org/packages/9a/a2/11400c6b9d370d1b31aa09ba794773931b464f71096c6677a22ccfacd119/alibabacloud_btripopen20220520-1.0.9.tar.gz
+[2023-05-24 09:51:09] INFO root fetch - processPackages [dcs-code-injector]: Downloading https://files.pythonhosted.org/packages/00/1f/ab9bc5ec854d7d1c63b7e27fd81329ef05cfbc218ebd5f94425f4bb6ef80/dcs-code-injector-1.0.0.tar.gz
+[2023-05-24 09:51:09] INFO root fetch - main [MainThread]: End processing [planetmint]: success
+[2023-05-24 09:51:09] INFO root fetch - processPackages [tf-nightly-cpu]: Downloading https://files.pythonhosted.org/packages/58/7c/a170f0df43df1ce19a6407852e24386906e6efcb686965cb3b50a1da7df5/tf_nightly_cpu-2.14.0.dev20230524-cp39-cp39-win_amd64.whl
+[2023-05-24 09:51:10] INFO root fetch - processPackages [dcs-code-injector]: Downloading https://files.pythonhosted.org/packages/50/44/e62023e64671407b937550b720f61370eb2c5557aacead2f67096a857b92/dcs-code-injector-1.0.1.tar.gz
+[2023-05-24 09:51:10] INFO root fetch - main [MainThread]: End processing [thug]: success
+[2023-05-24 09:51:10] INFO root fetch - processPackages [tf-nightly-cpu]: executing diffoscope
+[2023-05-24 09:51:10] INFO root fetch - processPackages [tf-nightly-cpu]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tf_nightly_cpu-2.14.0.dev20230523-cp39-cp39-win_amd64.whl.zip tmp/tf_nightly_cpu-2.14.0.dev20230524-cp39-cp39-win_amd64.whl.zip --markdown 20230524/t/tf-nightly-cpu/2.14.0.dev20230523-2.14.0.dev20230524/diff.md --exclude *.pyd
+[2023-05-24 09:51:10] INFO root fetch - processPackages [alibabacloud-btripopen20220520]: executing diffoscope
+[2023-05-24 09:51:10] INFO root fetch - processPackages [alibabacloud-btripopen20220520]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/alibabacloud_btripopen20220520-1.0.8.tar.gz tmp/alibabacloud_btripopen20220520-1.0.9.tar.gz --markdown 20230524/a/alibabacloud-btripopen20220520/1.0.8-1.0.9/diff.md --exclude *.pyd
+[2023-05-24 09:51:10] INFO root fetch - main [MainThread]: End processing [alibabacloud-btripopen20220520-py2]: success
+[2023-05-24 09:51:11] INFO root fetch - main [MainThread]: End processing [tf-nightly-cpu]: success
+[2023-05-24 09:51:11] INFO root fetch - main [MainThread]: End processing [alibabacloud-btripopen20220520]: success
+[2023-05-24 09:51:11] INFO root fetch - processPackages [dcs-code-injector]: executing diffoscope
+[2023-05-24 09:51:11] INFO root fetch - processPackages [dcs-code-injector]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dcs-code-injector-1.0.0.tar.gz tmp/dcs-code-injector-1.0.1.tar.gz --markdown 20230524/d/dcs-code-injector/1.0.0-1.0.1/diff.md --exclude *.pyd
+[2023-05-24 09:51:12] INFO root fetch - main [MainThread]: End processing [keras-nightly]: success
+[2023-05-24 09:51:12] INFO root fetch - main [MainThread]: End processing [rasa]: success
+[2023-05-24 09:51:12] INFO root fetch - main [MainThread]: End processing [dcs-code-injector]: success
+[2023-05-24 09:51:13] INFO root fetch - main [MainThread]: End processing [orchestrator-core]: success
+[2023-05-24 09:51:13] INFO root fetch - main [MainThread]: Store serial: [18226504]
