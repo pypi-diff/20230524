@@ -14093,3 +14093,134 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd4 in position 72: invalid
 [2023-05-24 13:55:02] INFO root fetch - main [MainThread]: End processing [topoly]: success
 [2023-05-24 13:55:31] INFO root fetch - main [MainThread]: End processing [pybabylonjs]: success
 [2023-05-24 13:55:31] INFO root fetch - main [MainThread]: Store serial: [18229054]
+[2023-05-24 14:00:44] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18229054]
+[2023-05-24 14:00:48] INFO root fetch - main [MainThread]: Found 21 changed packages
+[2023-05-24 14:00:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: tomtom-api
+[2023-05-24 14:00:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: PyMonCtl
+[2023-05-24 14:00:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: django-modshib-certic
+[2023-05-24 14:00:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: m4ai
+[2023-05-24 14:00:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: reportportal-client
+[2023-05-24 14:00:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: mujoco-dev
+[2023-05-24 14:00:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: modelon-impact-client
+[2023-05-24 14:00:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: upstash-redis
+[2023-05-24 14:00:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: lupin-grognard
+[2023-05-24 14:00:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: museval
+[2023-05-24 14:00:48] WARNING root fetch - processPackages [tomtom-api]: Skipping, unable to determine old version
+[2023-05-24 14:00:48] INFO root fetch - processPackages [tomtom-api]: Start processing: ronnytest
+[2023-05-24 14:00:48] INFO root fetch - main [MainThread]: End processing [tomtom-api] error
+[2023-05-24 14:00:48] INFO root fetch - processPackages [lupin-grognard]: New version: [1.9.0] Old Version: [1.7.0]
+[2023-05-24 14:00:48] INFO root fetch - processPackages [upstash-redis]: New version: [0.11.0] Old Version: [0.10.0]
+[2023-05-24 14:00:48] INFO root fetch - processPackages [museval]: New version: [0.4.0] Old Version: [0.3.1]
+[2023-05-24 14:00:48] INFO root fetch - processPackages [ronnytest]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-05-24 14:00:48] INFO root fetch - processPackages [lupin-grognard]: executing diffoscope
+[2023-05-24 14:00:48] INFO root fetch - processPackages [lupin-grognard]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lupin-grognard-1.7.0.tar.gz tmp/lupin-grognard-1.9.0.tar.gz --markdown 20230524/l/lupin-grognard/1.7.0-1.9.0/diff.md --exclude *.pyd
+[2023-05-24 14:00:48] WARNING root fetch - processPackages [django-modshib-certic]: Skipping, unable to determine old version
+[2023-05-24 14:00:48] INFO root fetch - processPackages [django-modshib-certic]: Start processing: cloudshell-l1-networking-core
+[2023-05-24 14:00:48] INFO root fetch - main [MainThread]: End processing [django-modshib-certic] error
+[2023-05-24 14:00:48] INFO root fetch - processPackages [reportportal-client]: New version: [5.3.3] Old Version: [5.3.2]
+[2023-05-24 14:00:48] WARNING root fetch - processPackages [PyMonCtl]: Skipping, unable to determine old version
+[2023-05-24 14:00:48] INFO root fetch - processPackages [m4ai]: New version: [1.0.1] Old Version: [1.0.0]
+[2023-05-24 14:00:48] INFO root fetch - processPackages [PyMonCtl]: Start processing: calcleaner
+[2023-05-24 14:00:48] INFO root fetch - main [MainThread]: End processing [PyMonCtl] error
+[2023-05-24 14:00:48] INFO root fetch - processPackages [modelon-impact-client]: New version: [3.0.0.dev9] Old Version: [3.0.0.dev8]
+[2023-05-24 14:00:49] INFO root fetch - processPackages [cloudshell-l1-networking-core]: New version: [2.0.1] Old Version: [2.0.0]
+[2023-05-24 14:00:49] INFO root fetch - processPackages [museval]: Downloading https://files.pythonhosted.org/packages/4d/2e/6da6554831119e84927ccc280d0948ae2079756c15c65b3be22bd250a721/museval-0.3.1.tar.gz
+[2023-05-24 14:00:49] INFO root fetch - processPackages [calcleaner]: New version: [1.1.2] Old Version: [1.1.1]
+[2023-05-24 14:00:49] INFO root fetch - processPackages [ronnytest]: Downloading https://files.pythonhosted.org/packages/f9/41/88ae2105b4d4175bc2e63b1bd335f0de8a9b485c3eecdd8e803844b83c85/ronnytest-0.0.1.tar.gz
+[2023-05-24 14:00:49] INFO root fetch - processPackages [upstash-redis]: Downloading https://files.pythonhosted.org/packages/26/a7/a11a5605125f13a1f9cba5c9ee3f84aa19cd8a8c30e66d8f08ff6576ac59/upstash_redis-0.10.0.tar.gz
+[2023-05-24 14:00:49] INFO root fetch - processPackages [m4ai]: Downloading https://files.pythonhosted.org/packages/d8/52/3bc1a3fbfc0372fa5125f7b29104a2795c0718812eb569a57f0c87c6a306/m4ai-1.0.0.tar.gz
+[2023-05-24 14:00:49] INFO root fetch - processPackages [mujoco-dev]: New version: [2.3.6.dev534783070] Old Version: [2.3.6.dev534141245]
+[2023-05-24 14:00:49] INFO root fetch - processPackages [reportportal-client]: Downloading https://files.pythonhosted.org/packages/eb/41/13fad183d8d6c30a635010ad138cebe739760946729d6cd68327aaae4b3f/reportportal-client-5.3.2.tar.gz
+[2023-05-24 14:00:49] INFO root fetch - processPackages [modelon-impact-client]: Downloading https://files.pythonhosted.org/packages/36/b4/452920b23dc5fce52f2d517cc942c5d5772022ddd6efdd2f337fe1b61977/modelon_impact_client-3.0.0.dev8.tar.gz
+[2023-05-24 14:00:49] INFO root fetch - processPackages [calcleaner]: Downloading https://files.pythonhosted.org/packages/64/5e/c994da73d9108b4cbb35d0575c3f7610a0c2cbe1a9bb391c6d8be0669d54/calcleaner-1.1.1.tar.gz
+[2023-05-24 14:00:49] INFO root fetch - processPackages [mujoco-dev]: Downloading https://files.pythonhosted.org/packages/52/49/b781cbeabd94bd195ccbfe9ab3843f8f5b43e773586515cdec04d39f0766/mujoco_dev-2.3.6.dev534141245-cp39-cp39-win_amd64.whl
+[2023-05-24 14:00:49] INFO root fetch - processPackages [upstash-redis]: Downloading https://files.pythonhosted.org/packages/6a/1f/9130b94803895c0dc92909a52277d4b18d0119d5aa2a4052457debf1a8ba/upstash_redis-0.11.0.tar.gz
+[2023-05-24 14:00:49] INFO root fetch - processPackages [m4ai]: Downloading https://files.pythonhosted.org/packages/16/f2/96893420275d8b00e3ec19a34bd2fa3a2e351e6d75f8ce0a34cac12e445e/m4ai-1.0.1.tar.gz
+[2023-05-24 14:00:49] INFO root fetch - processPackages [ronnytest]: Downloading https://files.pythonhosted.org/packages/12/28/522fe91173b30874bb5435d52c9e42cb1b4c94361bb94c81e4bd0e5666d7/ronnytest-0.0.2.tar.gz
+[2023-05-24 14:00:49] INFO root fetch - processPackages [cloudshell-l1-networking-core]: Downloading https://files.pythonhosted.org/packages/c2/46/c6a7615278e3d6be75e9180724e796b36c3b318daa6955c735980ca9f1e5/cloudshell-l1-networking-core-2.0.1.zip
+[2023-05-24 14:00:49] INFO root fetch - processPackages [upstash-redis]: executing diffoscope
+[2023-05-24 14:00:49] INFO root fetch - processPackages [upstash-redis]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/upstash_redis-0.10.0.tar.gz tmp/upstash_redis-0.11.0.tar.gz --markdown 20230524/u/upstash-redis/0.10.0-0.11.0/diff.md --exclude *.pyd
+[2023-05-24 14:00:49] INFO root fetch - processPackages [m4ai]: executing diffoscope
+[2023-05-24 14:00:49] INFO root fetch - processPackages [m4ai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/m4ai-1.0.0.tar.gz tmp/m4ai-1.0.1.tar.gz --markdown 20230524/m/m4ai/1.0.0-1.0.1/diff.md --exclude *.pyd
+[2023-05-24 14:00:49] INFO root fetch - processPackages [museval]: Downloading https://files.pythonhosted.org/packages/68/7f/bc830da872a2f0c5e2bee707e218123e53324cd24b75f6b55ed7bbb79c08/museval-0.4.0.tar.gz
+[2023-05-24 14:00:49] INFO root fetch - processPackages [calcleaner]: Downloading https://files.pythonhosted.org/packages/40/ce/9553ec9f92bbd119dd7fc8ed0d1fc4ae542cfbaf8fc348be68c40f20dbe2/calcleaner-1.1.2.tar.gz
+[2023-05-24 14:00:49] INFO root fetch - processPackages [modelon-impact-client]: Downloading https://files.pythonhosted.org/packages/4a/46/39f10d958eb7e1d3b6b332803f3e61b95fe2d424c01272f00a98cf4ec411/modelon_impact_client-3.0.0.dev9.tar.gz
+[2023-05-24 14:00:49] INFO root fetch - processPackages [reportportal-client]: Downloading https://files.pythonhosted.org/packages/76/4c/e00c2f1636a23bdc02c557c46a8b930ed41fe87c98acbff6b66b1f75f038/reportportal-client-5.3.3.tar.gz
+[2023-05-24 14:00:49] INFO root fetch - processPackages [ronnytest]: executing diffoscope
+[2023-05-24 14:00:49] INFO root fetch - processPackages [ronnytest]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ronnytest-0.0.1.tar.gz tmp/ronnytest-0.0.2.tar.gz --markdown 20230524/r/ronnytest/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-05-24 14:00:49] INFO root fetch - processPackages [cloudshell-l1-networking-core]: executing diffoscope
+[2023-05-24 14:00:49] INFO root fetch - processPackages [cloudshell-l1-networking-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cloudshell-l1-networking-core-2.0.0.zip tmp/cloudshell-l1-networking-core-2.0.1.zip --markdown 20230524/c/cloudshell-l1-networking-core/2.0.0-2.0.1/diff.md --exclude *.pyd
+[2023-05-24 14:00:49] INFO root fetch - processPackages [museval]: executing diffoscope
+[2023-05-24 14:00:49] INFO root fetch - processPackages [museval]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/museval-0.3.1.tar.gz tmp/museval-0.4.0.tar.gz --markdown 20230524/m/museval/0.3.1-0.4.0/diff.md --exclude *.pyd
+[2023-05-24 14:00:49] INFO root fetch - processPackages [calcleaner]: executing diffoscope
+[2023-05-24 14:00:49] INFO root fetch - processPackages [calcleaner]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/calcleaner-1.1.1.tar.gz tmp/calcleaner-1.1.2.tar.gz --markdown 20230524/c/calcleaner/1.1.1-1.1.2/diff.md --exclude *.pyd
+[2023-05-24 14:00:49] INFO root fetch - processPackages [reportportal-client]: executing diffoscope
+[2023-05-24 14:00:49] INFO root fetch - processPackages [reportportal-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/reportportal-client-5.3.2.tar.gz tmp/reportportal-client-5.3.3.tar.gz --markdown 20230524/r/reportportal-client/5.3.2-5.3.3/diff.md --exclude *.pyd
+[2023-05-24 14:00:49] INFO root fetch - processPackages [modelon-impact-client]: executing diffoscope
+[2023-05-24 14:00:49] INFO root fetch - processPackages [modelon-impact-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/modelon_impact_client-3.0.0.dev8.tar.gz tmp/modelon_impact_client-3.0.0.dev9.tar.gz --markdown 20230524/m/modelon-impact-client/3.0.0.dev8-3.0.0.dev9/diff.md --exclude *.pyd
+[2023-05-24 14:00:50] INFO root fetch - processPackages [lupin-grognard]: Start processing: odoo14-addon-sale-order-import
+[2023-05-24 14:00:50] INFO root fetch - main [MainThread]: End processing [lupin-grognard]: success
+[2023-05-24 14:00:50] INFO root fetch - processPackages [odoo14-addon-sale-order-import]: New version: [14.0.1.5.0] Old Version: [14.0.1.4.2]
+[2023-05-24 14:00:50] INFO root fetch - processPackages [mujoco-dev]: Downloading https://files.pythonhosted.org/packages/ef/a1/d32ab3bf04fc4dc12ae71c53a86782ba346591d8ebe0c2986653e8ee9e2a/mujoco_dev-2.3.6.dev534783070-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2023-05-24 14:00:50] INFO root fetch - processPackages [odoo14-addon-sale-order-import]: Downloading https://files.pythonhosted.org/packages/a4/2d/bf66523b00a134e06b9e433812166427165c4250a333030487c10b0ce724/odoo14_addon_sale_order_import-14.0.1.5.0-py3-none-any.whl
+[2023-05-24 14:00:50] INFO root fetch - processPackages [odoo14-addon-sale-order-import]: executing diffoscope
+[2023-05-24 14:00:50] INFO root fetch - processPackages [odoo14-addon-sale-order-import]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo14_addon_sale_order_import-14.0.1.4.2-py3-none-any.whl.zip tmp/odoo14_addon_sale_order_import-14.0.1.5.0-py3-none-any.whl.zip --markdown 20230524/o/odoo14-addon-sale-order-import/14.0.1.4.2-14.0.1.5.0/diff.md --exclude *.pyd
+[2023-05-24 14:00:50] INFO root fetch - processPackages [m4ai]: Start processing: dingtalk-stream
+[2023-05-24 14:00:50] INFO root fetch - main [MainThread]: End processing [m4ai]: success
+[2023-05-24 14:00:50] INFO root fetch - processPackages [ronnytest]: Start processing: asgi-matomo
+[2023-05-24 14:00:50] INFO root fetch - main [MainThread]: End processing [ronnytest]: success
+[2023-05-24 14:00:50] INFO root fetch - processPackages [upstash-redis]: Start processing: odoo-addon-stock-picking-delivery-link
+[2023-05-24 14:00:50] INFO root fetch - main [MainThread]: End processing [upstash-redis]: success
+[2023-05-24 14:00:50] INFO root fetch - processPackages [dingtalk-stream]: New version: [0.2.2] Old Version: [0.2.1]
+[2023-05-24 14:00:51] INFO root fetch - processPackages [asgi-matomo]: New version: [0.3.3] Old Version: [0.3.2]
+[2023-05-24 14:00:51] INFO root fetch - processPackages [odoo-addon-stock-picking-delivery-link]: New version: [16.0.1.1.0] Old Version: [16.0.1.0.1]
+[2023-05-24 14:00:51] INFO root fetch - processPackages [mujoco-dev]: executing diffoscope
+[2023-05-24 14:00:51] INFO root fetch - processPackages [mujoco-dev]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mujoco_dev-2.3.6.dev534141245-cp39-cp39-win_amd64.whl.zip tmp/mujoco_dev-2.3.6.dev534783070-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip --markdown 20230524/m/mujoco-dev/2.3.6.dev534141245-2.3.6.dev534783070/diff.md --exclude *.pyd
+[2023-05-24 14:00:51] INFO root fetch - processPackages [museval]: Start processing: envoy.code.check
+[2023-05-24 14:00:51] INFO root fetch - main [MainThread]: End processing [museval]: success
+[2023-05-24 14:00:51] INFO root fetch - processPackages [dingtalk-stream]: Downloading https://files.pythonhosted.org/packages/16/73/91a12a6a6b1a2d2dd18e6eea905a4b73accc828cd44d959b34e21b375dbf/dingtalk-stream-0.2.2.tar.gz
+[2023-05-24 14:00:51] INFO root fetch - processPackages [odoo-addon-stock-picking-delivery-link]: Downloading https://files.pythonhosted.org/packages/45/3d/cc5e159581cb7be404d655ddd7d1541e00114620651a260d433d74e5057b/odoo_addon_stock_picking_delivery_link-16.0.1.0.1-py3-none-any.whl
+[2023-05-24 14:00:51] INFO root fetch - processPackages [asgi-matomo]: Downloading https://files.pythonhosted.org/packages/ea/b3/ee8d4c11c24fade7a587aa32833b079498122a0e0b91ffb823de98839bde/asgi_matomo-0.3.3.tar.gz
+[2023-05-24 14:00:51] INFO root fetch - processPackages [cloudshell-l1-networking-core]: Start processing: kosmorro
+[2023-05-24 14:00:51] INFO root fetch - main [MainThread]: End processing [cloudshell-l1-networking-core]: success
+[2023-05-24 14:00:51] INFO root fetch - processPackages [envoy.code.check]: New version: [0.5.1] Old Version: [0.5.0]
+[2023-05-24 14:00:51] INFO root fetch - processPackages [kosmorro]: New version: [0.9.0] Old Version: [0.8.1]
+[2023-05-24 14:00:51] INFO root fetch - processPackages [dingtalk-stream]: executing diffoscope
+[2023-05-24 14:00:51] INFO root fetch - processPackages [dingtalk-stream]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dingtalk-stream-0.2.1.tar.gz tmp/dingtalk-stream-0.2.2.tar.gz --markdown 20230524/d/dingtalk-stream/0.2.1-0.2.2/diff.md --exclude *.pyd
+[2023-05-24 14:00:51] INFO root fetch - processPackages [asgi-matomo]: executing diffoscope
+[2023-05-24 14:00:51] INFO root fetch - processPackages [asgi-matomo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/asgi_matomo-0.3.2.tar.gz tmp/asgi_matomo-0.3.3.tar.gz --markdown 20230524/a/asgi-matomo/0.3.2-0.3.3/diff.md --exclude *.pyd
+[2023-05-24 14:00:51] INFO root fetch - processPackages [modelon-impact-client]: Start processing: translate-shell
+[2023-05-24 14:00:51] INFO root fetch - main [MainThread]: End processing [modelon-impact-client]: success
+[2023-05-24 14:00:51] INFO root fetch - processPackages [reportportal-client]: Start processing: kcli
+[2023-05-24 14:00:51] INFO root fetch - main [MainThread]: End processing [reportportal-client]: success
+[2023-05-24 14:00:51] INFO root fetch - processPackages [kcli]: New version: [99.0.202305241109] Old Version: [99.0.202305240929]
+[2023-05-24 14:00:51] INFO root fetch - processPackages [translate-shell]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-24 14:00:51] INFO root fetch - processPackages [envoy.code.check]: Downloading https://files.pythonhosted.org/packages/c5/50/0aaab23d58837f6f82caf7142a2e353c55e566ad32bac7eab4772d00d631/envoy.code.check-0.5.0.tar.gz
+[2023-05-24 14:00:51] INFO root fetch - processPackages [kosmorro]: Downloading https://files.pythonhosted.org/packages/5b/81/11a18037929c294304fa8ece273a87ee78702ea383941942b5dd4acd8856/kosmorro-0.8.1.tar.gz
+[2023-05-24 14:00:51] INFO root fetch - processPackages [translate-shell]: Downloading https://files.pythonhosted.org/packages/aa/ed/e25a7c89f8e66c89b4f998bd2f4280d8a427b319670e155b018f04adf8d8/translate-shell-0.0.8.tar.gz
+[2023-05-24 14:00:51] INFO root fetch - processPackages [kcli]: Downloading https://files.pythonhosted.org/packages/ab/c7/4d5dcf7cc841b2d57c8ce035453c48131f6a9ac2411bfe01cebe3f08e565/kcli-99.0.202305241109-py3-none-any.whl
+[2023-05-24 14:00:51] INFO root fetch - main [MainThread]: End processing [calcleaner]: success
+[2023-05-24 14:00:51] INFO root fetch - processPackages [envoy.code.check]: Downloading https://files.pythonhosted.org/packages/4d/de/ddc83aa97852bf9097264077e64a05a7d4a2d8e3124630265a665cf94fdc/envoy.code.check-0.5.1.tar.gz
+[2023-05-24 14:00:51] INFO root fetch - processPackages [envoy.code.check]: executing diffoscope
+[2023-05-24 14:00:51] INFO root fetch - processPackages [envoy.code.check]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/envoy.code.check-0.5.0.tar.gz tmp/envoy.code.check-0.5.1.tar.gz --markdown 20230524/e/envoy.code.check/0.5.0-0.5.1/diff.md --exclude *.pyd
+[2023-05-24 14:00:51] INFO root fetch - processPackages [odoo-addon-stock-picking-delivery-link]: Downloading https://files.pythonhosted.org/packages/13/e2/691c408044980cf29a425b30e6aa10b7d289d64ab19c3aa1d29ec6f8b202/odoo_addon_stock_picking_delivery_link-16.0.1.1.0-py3-none-any.whl
+[2023-05-24 14:00:51] INFO root fetch - processPackages [kcli]: executing diffoscope
+[2023-05-24 14:00:51] INFO root fetch - processPackages [kcli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kcli-99.0.202305240929-py3-none-any.whl.zip tmp/kcli-99.0.202305241109-py3-none-any.whl.zip --markdown 20230524/k/kcli/99.0.202305240929-99.0.202305241109/diff.md --exclude *.pyd
+[2023-05-24 14:00:52] INFO root fetch - processPackages [odoo-addon-stock-picking-delivery-link]: executing diffoscope
+[2023-05-24 14:00:52] INFO root fetch - processPackages [odoo-addon-stock-picking-delivery-link]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_stock_picking_delivery_link-16.0.1.0.1-py3-none-any.whl.zip tmp/odoo_addon_stock_picking_delivery_link-16.0.1.1.0-py3-none-any.whl.zip --markdown 20230524/o/odoo-addon-stock-picking-delivery-link/16.0.1.0.1-16.0.1.1.0/diff.md --exclude *.pyd
+[2023-05-24 14:00:52] INFO root fetch - processPackages [kosmorro]: Downloading https://files.pythonhosted.org/packages/67/ee/e61831838d3003ca79fd02d9b8617316cc0b837199296f1ca99f31366dff/kosmorro-0.9.0.tar.gz
+[2023-05-24 14:00:52] INFO root fetch - processPackages [translate-shell]: Downloading https://files.pythonhosted.org/packages/10/53/d1b2622fd5860f8b6f36dbdd934c30d2e357cd577f74de20d18e020079f4/translate-shell-0.0.9.tar.gz
+[2023-05-24 14:00:52] INFO root fetch - processPackages [kosmorro]: executing diffoscope
+[2023-05-24 14:00:52] INFO root fetch - processPackages [kosmorro]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kosmorro-0.8.1.tar.gz tmp/kosmorro-0.9.0.tar.gz --markdown 20230524/k/kosmorro/0.8.1-0.9.0/diff.md --exclude *.pyd
+[2023-05-24 14:00:52] INFO root fetch - main [MainThread]: End processing [odoo14-addon-sale-order-import]: success
+[2023-05-24 14:00:52] INFO root fetch - processPackages [translate-shell]: executing diffoscope
+[2023-05-24 14:00:52] INFO root fetch - processPackages [translate-shell]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/translate-shell-0.0.8.tar.gz tmp/translate-shell-0.0.9.tar.gz --markdown 20230524/t/translate-shell/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-24 14:00:52] INFO root fetch - main [MainThread]: End processing [dingtalk-stream]: success
+[2023-05-24 14:00:52] INFO root fetch - main [MainThread]: End processing [asgi-matomo]: success
+[2023-05-24 14:00:53] INFO root fetch - main [MainThread]: End processing [envoy.code.check]: success
+[2023-05-24 14:00:53] INFO root fetch - main [MainThread]: End processing [odoo-addon-stock-picking-delivery-link]: success
+[2023-05-24 14:00:53] INFO root fetch - main [MainThread]: End processing [kosmorro]: success
+[2023-05-24 14:00:54] INFO root fetch - main [MainThread]: End processing [translate-shell]: success
+[2023-05-24 14:00:55] INFO root fetch - main [MainThread]: End processing [mujoco-dev]: success
+[2023-05-24 14:01:00] INFO root fetch - main [MainThread]: End processing [kcli]: success
+[2023-05-24 14:01:00] INFO root fetch - main [MainThread]: Store serial: [18229125]
