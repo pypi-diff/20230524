@@ -15260,3 +15260,127 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd4 in position 72: invalid
 [2023-05-24 14:57:08] INFO root fetch - main [MainThread]: End processing [assisted-service-client]: success
 [2023-05-24 14:57:11] INFO root fetch - main [MainThread]: End processing [capellambse]: success
 [2023-05-24 14:57:11] INFO root fetch - main [MainThread]: Store serial: [18229778]
+[2023-05-24 15:02:15] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18229778]
+[2023-05-24 15:02:20] INFO root fetch - main [MainThread]: Found 21 changed packages
+[2023-05-24 15:02:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: tigerblog
+[2023-05-24 15:02:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: trulens-eval
+[2023-05-24 15:02:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: mwxlib
+[2023-05-24 15:02:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: localstack-core
+[2023-05-24 15:02:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: fdasrsf
+[2023-05-24 15:02:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: sry
+[2023-05-24 15:02:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: sharingiscaring
+[2023-05-24 15:02:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: kolibri-ml
+[2023-05-24 15:02:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: microdata-validator
+[2023-05-24 15:02:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: pix-framework
+[2023-05-24 15:02:20] WARNING root fetch - processPackages [trulens-eval]: Skipping, unable to determine old version
+[2023-05-24 15:02:20] INFO root fetch - processPackages [trulens-eval]: Start processing: syngen
+[2023-05-24 15:02:20] INFO root fetch - main [MainThread]: End processing [trulens-eval] error
+[2023-05-24 15:02:20] INFO root fetch - processPackages [mwxlib]: New version: [0.83.8] Old Version: [0.83.6]
+[2023-05-24 15:02:20] INFO root fetch - processPackages [sry]: New version: [0.0.3] Old Version: [0.0.2.1]
+[2023-05-24 15:02:20] INFO root fetch - processPackages [sharingiscaring]: New version: [0.2.9] Old Version: [0.2.8]
+[2023-05-24 15:02:20] INFO root fetch - processPackages [localstack-core]: New version: [2.0.3.dev20230524121028] Old Version: [2.0.3.dev20230524094841]
+[2023-05-24 15:02:20] INFO root fetch - processPackages [pix-framework]: New version: [0.8.7] Old Version: [0.8.6]
+[2023-05-24 15:02:20] INFO root fetch - processPackages [syngen]: New version: [0.1.6] Old Version: [0.1.5]
+[2023-05-24 15:02:20] INFO root fetch - processPackages [sharingiscaring]: executing diffoscope
+[2023-05-24 15:02:20] INFO root fetch - processPackages [sharingiscaring]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sharingiscaring-0.2.8.tar.gz tmp/sharingiscaring-0.2.9.tar.gz --markdown 20230524/s/sharingiscaring/0.2.8-0.2.9/diff.md --exclude *.pyd
+[2023-05-24 15:02:20] INFO root fetch - processPackages [tigerblog]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-24 15:02:20] INFO root fetch - processPackages [microdata-validator]: New version: [7.3.4] Old Version: [7.3.3]
+[2023-05-24 15:02:20] INFO root fetch - processPackages [fdasrsf]: New version: [2.4.1] Old Version: [2.4.0]
+[2023-05-24 15:02:20] INFO root fetch - processPackages [kolibri-ml]: New version: [1.1.8] Old Version: [1.1.70]
+[2023-05-24 15:02:20] INFO root fetch - processPackages [syngen]: executing diffoscope
+[2023-05-24 15:02:20] INFO root fetch - processPackages [syngen]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/syngen-0.1.5.tar.gz tmp/syngen-0.1.6.tar.gz --markdown 20230524/s/syngen/0.1.5-0.1.6/diff.md --exclude *.pyd
+[2023-05-24 15:02:20] INFO root fetch - processPackages [pix-framework]: Downloading https://files.pythonhosted.org/packages/5d/66/9ffc835e0993c47df07193190b4cf2752a6a615b2489807f8b9dd84c549b/pix_framework-0.8.7.tar.gz
+[2023-05-24 15:02:20] INFO root fetch - processPackages [sry]: Downloading https://files.pythonhosted.org/packages/75/9f/a7c7fa0c66b11bea625ffc4c95d04b2be7fd1517b9be9fa930c11cc8f549/sry-0.0.2.1-py3-none-any.whl
+[2023-05-24 15:02:20] INFO root fetch - processPackages [mwxlib]: Downloading https://files.pythonhosted.org/packages/61/94/0f63e60eaa8e3137d2255f2c62a31b3505930ea22061cb229da7f274cadd/mwxlib-0.83.8-py3-none-any.whl
+[2023-05-24 15:02:20] INFO root fetch - processPackages [kolibri-ml]: Downloading https://files.pythonhosted.org/packages/df/14/36097b76a37d202053dd03d2e2dac113932a359cde7c01f4df5f98811abf/kolibri_ml-1.1.70-py3-none-any.whl
+[2023-05-24 15:02:20] INFO root fetch - processPackages [localstack-core]: Downloading https://files.pythonhosted.org/packages/f6/b7/8300477cf186cc5f02a7ebf625aa95a354731544012052e7e26a8e697411/localstack-core-2.0.3.dev20230524121028.tar.gz
+[2023-05-24 15:02:20] INFO root fetch - processPackages [microdata-validator]: Downloading https://files.pythonhosted.org/packages/0e/6c/202575e98e4eec4b7d6d9b183c7a8e3349085503a42f491d4df2bb3b4342/microdata_validator-7.3.3.tar.gz
+[2023-05-24 15:02:20] INFO root fetch - processPackages [fdasrsf]: Downloading https://files.pythonhosted.org/packages/a9/83/c3cba5bfe1df76afa0a80e0004026981d9939e4a5ab26e25a53dd9bd76d5/fdasrsf-2.4.0.tar.gz
+[2023-05-24 15:02:21] INFO root fetch - processPackages [pix-framework]: executing diffoscope
+[2023-05-24 15:02:21] INFO root fetch - processPackages [pix-framework]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pix_framework-0.8.6.tar.gz tmp/pix_framework-0.8.7.tar.gz --markdown 20230524/p/pix-framework/0.8.6-0.8.7/diff.md --exclude *.pyd
+[2023-05-24 15:02:21] INFO root fetch - processPackages [mwxlib]: executing diffoscope
+[2023-05-24 15:02:21] INFO root fetch - processPackages [mwxlib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mwxlib-0.83.6-py3-none-any.whl.zip tmp/mwxlib-0.83.8-py3-none-any.whl.zip --markdown 20230524/m/mwxlib/0.83.6-0.83.8/diff.md --exclude *.pyd
+[2023-05-24 15:02:21] INFO root fetch - processPackages [localstack-core]: executing diffoscope
+[2023-05-24 15:02:21] INFO root fetch - processPackages [localstack-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/localstack-core-2.0.3.dev20230524094841.tar.gz tmp/localstack-core-2.0.3.dev20230524121028.tar.gz --markdown 20230524/l/localstack-core/2.0.3.dev20230524094841-2.0.3.dev20230524121028/diff.md --exclude *.pyd
+[2023-05-24 15:02:21] INFO root fetch - processPackages [tigerblog]: executing diffoscope
+[2023-05-24 15:02:21] INFO root fetch - processPackages [tigerblog]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tigerblog-0.1.8.tar.gz tmp/tigerblog-0.1.9.tar.gz --markdown 20230524/t/tigerblog/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-24 15:02:21] INFO root fetch - processPackages [kolibri-ml]: executing diffoscope
+[2023-05-24 15:02:21] INFO root fetch - processPackages [kolibri-ml]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kolibri_ml-1.1.70-py3-none-any.whl.zip tmp/kolibri_ml-1.1.8-py3-none-any.whl.zip --markdown 20230524/k/kolibri-ml/1.1.70-1.1.8/diff.md --exclude *.pyd
+[2023-05-24 15:02:21] INFO root fetch - processPackages [sry]: Downloading https://files.pythonhosted.org/packages/2e/ba/bed9ef03b7ff91f6aa1d3f4b48f9a70fbbd30d25b6320ffee462d3b3d4f1/sry-0.0.3-py3-none-any.whl
+[2023-05-24 15:02:21] INFO root fetch - processPackages [fdasrsf]: Downloading https://files.pythonhosted.org/packages/86/ee/cd1720effdc5ec951f0ac95050685904e7daf7f451d56b9fd9edef419160/fdasrsf-2.4.1.tar.gz
+[2023-05-24 15:02:21] INFO root fetch - processPackages [microdata-validator]: Downloading https://files.pythonhosted.org/packages/71/95/845cc3d8314dc40f7f5004c83cabfdaf313068bcf96c5f5975f910f84979/microdata_validator-7.3.4.tar.gz
+[2023-05-24 15:02:21] INFO root fetch - processPackages [microdata-validator]: executing diffoscope
+[2023-05-24 15:02:21] INFO root fetch - processPackages [microdata-validator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/microdata_validator-7.3.3.tar.gz tmp/microdata_validator-7.3.4.tar.gz --markdown 20230524/m/microdata-validator/7.3.3-7.3.4/diff.md --exclude *.pyd
+[2023-05-24 15:02:21] INFO root fetch - processPackages [fdasrsf]: executing diffoscope
+[2023-05-24 15:02:21] INFO root fetch - processPackages [fdasrsf]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fdasrsf-2.4.0.tar.gz tmp/fdasrsf-2.4.1.tar.gz --markdown 20230524/f/fdasrsf/2.4.0-2.4.1/diff.md --exclude *.pyd
+[2023-05-24 15:02:21] INFO root fetch - processPackages [sry]: executing diffoscope
+[2023-05-24 15:02:21] INFO root fetch - processPackages [sry]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sry-0.0.2.1-py3-none-any.whl.zip tmp/sry-0.0.3-py3-none-any.whl.zip --markdown 20230524/s/sry/0.0.2.1-0.0.3/diff.md --exclude *.pyd
+[2023-05-24 15:02:22] INFO root fetch - processPackages [pix-framework]: Start processing: panda-client-light
+[2023-05-24 15:02:22] INFO root fetch - main [MainThread]: End processing [pix-framework]: success
+[2023-05-24 15:02:22] INFO root fetch - processPackages [panda-client-light]: New version: [1.5.53] Old Version: [1.5.52]
+[2023-05-24 15:02:22] INFO root fetch - processPackages [panda-client-light]: executing diffoscope
+[2023-05-24 15:02:22] INFO root fetch - processPackages [panda-client-light]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/panda_client_light-1.5.52-py2.py3-none-any.whl.zip tmp/panda_client_light-1.5.53-py2.py3-none-any.whl.zip --markdown 20230524/p/panda-client-light/1.5.52-1.5.53/diff.md --exclude *.pyd
+[2023-05-24 15:02:22] INFO root fetch - processPackages [mwxlib]: Start processing: meta-matching-tool
+[2023-05-24 15:02:22] INFO root fetch - main [MainThread]: End processing [mwxlib]: success
+[2023-05-24 15:02:22] INFO root fetch - processPackages [meta-matching-tool]: New version: [1.2.0] Old Version: [1.1.1]
+[2023-05-24 15:02:22] INFO root fetch - processPackages [meta-matching-tool]: executing diffoscope
+[2023-05-24 15:02:22] INFO root fetch - processPackages [meta-matching-tool]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/meta_matching_tool-1.1.1.tar.gz tmp/meta_matching_tool-1.2.0.tar.gz --markdown 20230524/m/meta-matching-tool/1.1.1-1.2.0/diff.md --exclude *.pyd
+[2023-05-24 15:02:22] INFO root fetch - processPackages [sry]: Start processing: panda-client
+[2023-05-24 15:02:22] INFO root fetch - main [MainThread]: End processing [sry]: success
+[2023-05-24 15:02:22] INFO root fetch - processPackages [panda-client]: New version: [1.5.9] Old Version: [1.5.8]
+[2023-05-24 15:02:22] INFO root fetch - processPackages [panda-client]: executing diffoscope
+[2023-05-24 15:02:22] INFO root fetch - processPackages [panda-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/panda-client-1.5.8.tar.gz tmp/panda-client-1.5.9.tar.gz --markdown 20230524/p/panda-client/1.5.8-1.5.9/diff.md --exclude *.pyd
+[2023-05-24 15:02:23] INFO root fetch - processPackages [tigerblog]: Start processing: paketmutfak
+[2023-05-24 15:02:23] INFO root fetch - main [MainThread]: End processing [tigerblog]: success
+[2023-05-24 15:02:23] INFO root fetch - processPackages [paketmutfak]: New version: [1.1.9] Old Version: [1.1.8]
+[2023-05-24 15:02:23] INFO root fetch - processPackages [paketmutfak]: Downloading https://files.pythonhosted.org/packages/3c/54/6b8e1f2bcd64b51f198fb4d576dff4ede65f19ce0eee4e038611f1377b37/paketmutfak-1.1.8.tar.gz
+[2023-05-24 15:02:23] INFO root fetch - processPackages [microdata-validator]: Start processing: pybuilder-integration
+[2023-05-24 15:02:23] INFO root fetch - main [MainThread]: End processing [microdata-validator]: success
+[2023-05-24 15:02:23] INFO root fetch - processPackages [pybuilder-integration]: New version: [92] Old Version: [91]
+[2023-05-24 15:02:23] INFO root fetch - processPackages [paketmutfak]: Downloading https://files.pythonhosted.org/packages/b5/5d/4f1e341bd37a1410d14789bfe426e84aabdd7d7deba0f310c37444f8e0cb/paketmutfak-1.1.9.tar.gz
+[2023-05-24 15:02:23] INFO root fetch - processPackages [pybuilder-integration]: executing diffoscope
+[2023-05-24 15:02:23] INFO root fetch - processPackages [pybuilder-integration]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pybuilder-integration-91.tar.gz tmp/pybuilder-integration-92.tar.gz --markdown 20230524/p/pybuilder-integration/91-92/diff.md --exclude *.pyd
+[2023-05-24 15:02:23] INFO root fetch - processPackages [paketmutfak]: executing diffoscope
+[2023-05-24 15:02:23] INFO root fetch - processPackages [paketmutfak]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/paketmutfak-1.1.8.tar.gz tmp/paketmutfak-1.1.9.tar.gz --markdown 20230524/p/paketmutfak/1.1.8-1.1.9/diff.md --exclude *.pyd
+[2023-05-24 15:02:24] INFO root fetch - processPackages [meta-matching-tool]: Start processing: vvv-rpc-server
+[2023-05-24 15:02:24] INFO root fetch - main [MainThread]: End processing [meta-matching-tool]: success
+[2023-05-24 15:02:24] INFO root fetch - processPackages [vvv-rpc-server]: New version: [0.0.4] Old Version: [0.0.3]
+[2023-05-24 15:02:24] INFO root fetch - processPackages [panda-client-light]: Start processing: odoo-addon-mrp-sale-info
+[2023-05-24 15:02:24] INFO root fetch - main [MainThread]: End processing [panda-client-light]: success
+[2023-05-24 15:02:24] INFO root fetch - processPackages [vvv-rpc-server]: Downloading https://files.pythonhosted.org/packages/84/39/51c4b72963e78181c6d5289c680225f5f5c776abeaf1746d4fd2a035d3f0/vvv_rpc_server-0.0.3-py3-none-any.whl
+[2023-05-24 15:02:24] INFO root fetch - processPackages [odoo-addon-mrp-sale-info]: New version: [16.0.1.1.0] Old Version: [16.0.1.0.0.4]
+[2023-05-24 15:02:24] INFO root fetch - processPackages [syngen]: Start processing: mkdocs-techdocs-core
+[2023-05-24 15:02:24] INFO root fetch - main [MainThread]: End processing [syngen]: success
+[2023-05-24 15:02:24] INFO root fetch - processPackages [odoo-addon-mrp-sale-info]: Downloading https://files.pythonhosted.org/packages/3e/53/fcd6761768c759c946a16625d431830d51d7668ad0e643f2ab1dc8785818/odoo_addon_mrp_sale_info-16.0.1.0.0.4-py3-none-any.whl
+[2023-05-24 15:02:24] INFO root fetch - processPackages [mkdocs-techdocs-core]: New version: [1.2.1] Old Version: [1.2.0]
+[2023-05-24 15:02:24] INFO root fetch - processPackages [vvv-rpc-server]: Downloading https://files.pythonhosted.org/packages/e6/62/2d404c4783a2105d6abbd0602ac8a4d58c7167f0f8c221003e2a002399bb/vvv_rpc_server-0.0.4-py3-none-any.whl
+[2023-05-24 15:02:24] INFO root fetch - processPackages [sharingiscaring]: Start processing: twitter-text-parser
+[2023-05-24 15:02:24] INFO root fetch - main [MainThread]: End processing [sharingiscaring]: success
+[2023-05-24 15:02:24] INFO root fetch - processPackages [twitter-text-parser]: New version: [2.0.1] Old Version: [2.0.0]
+[2023-05-24 15:02:24] INFO root fetch - processPackages [twitter-text-parser]: executing diffoscope
+[2023-05-24 15:02:24] INFO root fetch - processPackages [twitter-text-parser]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/twitter-text-parser-2.0.0.tar.gz tmp/twitter-text-parser-2.0.1.tar.gz --markdown 20230524/t/twitter-text-parser/2.0.0-2.0.1/diff.md --exclude *.pyd
+[2023-05-24 15:02:24] INFO root fetch - processPackages [mkdocs-techdocs-core]: Downloading https://files.pythonhosted.org/packages/2b/da/28e294843535838eb56d676395ea216b146879b79110a27bb86416ca7d3f/mkdocs-techdocs-core-1.2.0.tar.gz
+[2023-05-24 15:02:24] INFO root fetch - processPackages [vvv-rpc-server]: executing diffoscope
+[2023-05-24 15:02:24] INFO root fetch - processPackages [vvv-rpc-server]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vvv_rpc_server-0.0.3-py3-none-any.whl.zip tmp/vvv_rpc_server-0.0.4-py3-none-any.whl.zip --markdown 20230524/v/vvv-rpc-server/0.0.3-0.0.4/diff.md --exclude *.pyd
+[2023-05-24 15:02:24] INFO root fetch - processPackages [odoo-addon-mrp-sale-info]: Downloading https://files.pythonhosted.org/packages/78/6e/40bac2db3611764c31c693de959e434ee1b54938a93a5d2736637d0299b4/odoo_addon_mrp_sale_info-16.0.1.1.0-py3-none-any.whl
+[2023-05-24 15:02:24] INFO root fetch - processPackages [odoo-addon-mrp-sale-info]: executing diffoscope
+[2023-05-24 15:02:24] INFO root fetch - processPackages [odoo-addon-mrp-sale-info]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_mrp_sale_info-16.0.1.0.0.4-py3-none-any.whl.zip tmp/odoo_addon_mrp_sale_info-16.0.1.1.0-py3-none-any.whl.zip --markdown 20230524/o/odoo-addon-mrp-sale-info/16.0.1.0.0.4-16.0.1.1.0/diff.md --exclude *.pyd
+[2023-05-24 15:02:24] INFO root fetch - processPackages [mkdocs-techdocs-core]: Downloading https://files.pythonhosted.org/packages/e6/e8/e82a670dae2e93d7b6f16d032238cc0fedb579fe8d0a79d27001c633c28e/mkdocs-techdocs-core-1.2.1.tar.gz
+[2023-05-24 15:02:25] INFO root fetch - processPackages [mkdocs-techdocs-core]: executing diffoscope
+[2023-05-24 15:02:25] INFO root fetch - processPackages [mkdocs-techdocs-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mkdocs-techdocs-core-1.2.0.tar.gz tmp/mkdocs-techdocs-core-1.2.1.tar.gz --markdown 20230524/m/mkdocs-techdocs-core/1.2.0-1.2.1/diff.md --exclude *.pyd
+[2023-05-24 15:02:25] INFO root fetch - processPackages [paketmutfak]: Start processing: st4sd-runtime-core
+[2023-05-24 15:02:25] INFO root fetch - main [MainThread]: End processing [paketmutfak]: success
+[2023-05-24 15:02:25] INFO root fetch - processPackages [st4sd-runtime-core]: New version: [2.0.0a9.dev8] Old Version: [2.0.0a9.dev7]
+[2023-05-24 15:02:25] INFO root fetch - main [MainThread]: End processing [pybuilder-integration]: success
+[2023-05-24 15:02:25] INFO root fetch - processPackages [st4sd-runtime-core]: executing diffoscope
+[2023-05-24 15:02:25] INFO root fetch - processPackages [st4sd-runtime-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/st4sd-runtime-core-2.0.0a9.dev7.tar.gz tmp/st4sd-runtime-core-2.0.0a9.dev8.tar.gz --markdown 20230524/s/st4sd-runtime-core/2.0.0a9.dev7-2.0.0a9.dev8/diff.md --exclude *.pyd
+[2023-05-24 15:02:26] INFO root fetch - main [MainThread]: End processing [twitter-text-parser]: success
+[2023-05-24 15:02:26] INFO root fetch - main [MainThread]: End processing [odoo-addon-mrp-sale-info]: success
+[2023-05-24 15:02:26] INFO root fetch - main [MainThread]: End processing [mkdocs-techdocs-core]: success
+[2023-05-24 15:02:26] INFO root fetch - main [MainThread]: End processing [panda-client]: success
+[2023-05-24 15:02:27] INFO root fetch - main [MainThread]: End processing [st4sd-runtime-core]: success
+[2023-05-24 15:02:28] INFO root fetch - main [MainThread]: End processing [vvv-rpc-server]: success
+[2023-05-24 15:02:29] INFO root fetch - main [MainThread]: End processing [kolibri-ml]: success
+[2023-05-24 15:02:30] INFO root fetch - main [MainThread]: End processing [localstack-core]: success
+[2023-05-24 15:02:30] INFO root fetch - main [MainThread]: End processing [fdasrsf]: success
+[2023-05-24 15:02:30] INFO root fetch - main [MainThread]: Store serial: [18229831]
