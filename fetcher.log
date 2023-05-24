@@ -8502,3 +8502,50 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-05-24 08:02:14] INFO root fetch - main [MainThread]: End processing [funasr]: success
 [2023-05-24 08:02:15] INFO root fetch - main [MainThread]: End processing [jijmodeling]: success
 [2023-05-24 08:02:15] INFO root fetch - main [MainThread]: Store serial: [18225611]
+[2023-05-24 08:07:20] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18225611]
+[2023-05-24 08:07:25] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-05-24 08:07:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: dash-connectivity-viewer
+[2023-05-24 08:07:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: femedu
+[2023-05-24 08:07:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: ai-transform
+[2023-05-24 08:07:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pyg-nightly
+[2023-05-24 08:07:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: electrumsv-secp256k1
+[2023-05-24 08:07:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: edge-testing-framework
+[2023-05-24 08:07:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: pykn-mysqltools
+[2023-05-24 08:07:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: sob
+[2023-05-24 08:07:25] INFO root fetch - processPackages [dash-connectivity-viewer]: New version: [2.0.9] Old Version: [2.0.8]
+[2023-05-24 08:07:25] INFO root fetch - processPackages [ai-transform]: New version: [0.31.2] Old Version: [0.31.1]
+[2023-05-24 08:07:25] WARNING root fetch - processPackages [edge-testing-framework]: Skipping, unable to determine old version
+[2023-05-24 08:07:25] INFO root fetch - main [MainThread]: End processing [edge-testing-framework] error
+[2023-05-24 08:07:25] INFO root fetch - processPackages [pyg-nightly]: New version: [2.4.0.dev20230523] Old Version: [2.4.0.dev20230522]
+[2023-05-24 08:07:25] INFO root fetch - processPackages [pykn-mysqltools]: New version: [0.0.4] Old Version: [0.0.3]
+[2023-05-24 08:07:25] INFO root fetch - processPackages [ai-transform]: executing diffoscope
+[2023-05-24 08:07:25] INFO root fetch - processPackages [ai-transform]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ai_transform-0.31.1.tar.gz tmp/ai_transform-0.31.2.tar.gz --markdown 20230524/a/ai-transform/0.31.1-0.31.2/diff.md --exclude *.pyd
+[2023-05-24 08:07:25] INFO root fetch - processPackages [dash-connectivity-viewer]: executing diffoscope
+[2023-05-24 08:07:25] INFO root fetch - processPackages [dash-connectivity-viewer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dash-connectivity-viewer-2.0.8.tar.gz tmp/dash-connectivity-viewer-2.0.9.tar.gz --markdown 20230524/d/dash-connectivity-viewer/2.0.8-2.0.9/diff.md --exclude *.pyd
+[2023-05-24 08:07:25] INFO root fetch - processPackages [femedu]: New version: [1.0.8] Old Version: [1.0.7]
+[2023-05-24 08:07:25] INFO root fetch - processPackages [electrumsv-secp256k1]: New version: [18.0.0] Old Version: [0.9.4]
+[2023-05-24 08:07:25] INFO root fetch - processPackages [sob]: New version: [1.9.0] Old Version: [1.8.0]
+[2023-05-24 08:07:25] INFO root fetch - processPackages [pykn-mysqltools]: Downloading https://files.pythonhosted.org/packages/ed/4b/2693783ca9834f4b9e4505907f25c3217bfc05922031efaebbb0214cd1bb/pykn_mysqltools-0.0.4.tar.gz
+[2023-05-24 08:07:25] INFO root fetch - processPackages [pykn-mysqltools]: executing diffoscope
+[2023-05-24 08:07:25] INFO root fetch - processPackages [pykn-mysqltools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pykn_mysqltools-0.0.3.tar.gz tmp/pykn_mysqltools-0.0.4.tar.gz --markdown 20230524/p/pykn-mysqltools/0.0.3-0.0.4/diff.md --exclude *.pyd
+[2023-05-24 08:07:25] INFO root fetch - processPackages [femedu]: Downloading https://files.pythonhosted.org/packages/98/52/e3074c89d0f5c081449681f6cbb702231c15696c193cb5dceac9cb810731/femedu-1.0.7.tar.gz
+[2023-05-24 08:07:25] INFO root fetch - processPackages [pyg-nightly]: Downloading https://files.pythonhosted.org/packages/42/1a/e2bb3f3f616d475efed84ec09494ac86704945af6ececef20069b815530c/pyg_nightly-2.4.0.dev20230523.tar.gz
+[2023-05-24 08:07:25] INFO root fetch - processPackages [electrumsv-secp256k1]: Downloading https://files.pythonhosted.org/packages/97/9a/5bc4f4041dff258b92290e5e1757bff80d21cc990db26eec90c1e92e1ecc/electrumsv-secp256k1-0.9.4.tar.gz
+[2023-05-24 08:07:26] WARNING root fetch - processPackages [femedu]: Skipping package: exceeds size limit 11027640>=10485760
+[2023-05-24 08:07:26] INFO root fetch - main [MainThread]: End processing [femedu] error
+[2023-05-24 08:07:26] INFO root fetch - processPackages [sob]: Downloading https://files.pythonhosted.org/packages/68/0b/18d1e5972567a1b3660ba9733a5c03b2b71fca688a5aa5470a0e42a09190/sob-1.8.0.tar.gz
+[2023-05-24 08:07:26] INFO root fetch - processPackages [pyg-nightly]: executing diffoscope
+[2023-05-24 08:07:26] INFO root fetch - processPackages [pyg-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyg_nightly-2.4.0.dev20230522.tar.gz tmp/pyg_nightly-2.4.0.dev20230523.tar.gz --markdown 20230524/p/pyg-nightly/2.4.0.dev20230522-2.4.0.dev20230523/diff.md --exclude *.pyd
+[2023-05-24 08:07:26] INFO root fetch - processPackages [sob]: Downloading https://files.pythonhosted.org/packages/0a/91/66740726cd91782b276f3988fdbe597428377437c72a2be9b03340cbbd72/sob-1.9.0.tar.gz
+[2023-05-24 08:07:26] INFO root fetch - processPackages [electrumsv-secp256k1]: Downloading https://files.pythonhosted.org/packages/99/fd/cbc8c44fccd80fb304958862a2b1e93c686e2cc82c398929ffd913b6a2d8/electrumsv_secp256k1-18.0.0-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2023-05-24 08:07:26] INFO root fetch - processPackages [sob]: executing diffoscope
+[2023-05-24 08:07:26] INFO root fetch - processPackages [sob]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sob-1.8.0.tar.gz tmp/sob-1.9.0.tar.gz --markdown 20230524/s/sob/1.8.0-1.9.0/diff.md --exclude *.pyd
+[2023-05-24 08:07:26] INFO root fetch - processPackages [electrumsv-secp256k1]: executing diffoscope
+[2023-05-24 08:07:26] INFO root fetch - processPackages [electrumsv-secp256k1]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/electrumsv-secp256k1-0.9.4.tar.gz tmp/electrumsv_secp256k1-18.0.0-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip --markdown 20230524/e/electrumsv-secp256k1/0.9.4-18.0.0/diff.md --exclude *.pyd
+[2023-05-24 08:07:26] INFO root fetch - main [MainThread]: End processing [dash-connectivity-viewer]: success
+[2023-05-24 08:07:27] INFO root fetch - main [MainThread]: End processing [pykn-mysqltools]: success
+[2023-05-24 08:07:27] INFO root fetch - main [MainThread]: End processing [ai-transform]: success
+[2023-05-24 08:07:27] INFO root fetch - main [MainThread]: End processing [sob]: success
+[2023-05-24 08:07:27] INFO root fetch - main [MainThread]: End processing [electrumsv-secp256k1]: success
+[2023-05-24 08:07:30] INFO root fetch - main [MainThread]: End processing [pyg-nightly]: success
+[2023-05-24 08:07:30] INFO root fetch - main [MainThread]: Store serial: [18225658]
