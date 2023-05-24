@@ -18485,3 +18485,122 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd4 in position 72: invalid
 [2023-05-24 17:27:52] INFO root fetch - main [MainThread]: End processing [abqpy]: success
 [2023-05-24 17:27:53] INFO root fetch - main [MainThread]: End processing [abqpy]: success
 [2023-05-24 17:27:53] INFO root fetch - main [MainThread]: Store serial: [18231879]
+[2023-05-24 17:32:57] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18231879]
+[2023-05-24 17:33:02] INFO root fetch - main [MainThread]: Found 19 changed packages
+[2023-05-24 17:33:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ddadevops
+[2023-05-24 17:33:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: dbnomics
+[2023-05-24 17:33:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: faust-streaming
+[2023-05-24 17:33:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: smartdash
+[2023-05-24 17:33:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pyrealb
+[2023-05-24 17:33:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: ansys-dpf-composites
+[2023-05-24 17:33:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: jira2branch
+[2023-05-24 17:33:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: pvbm
+[2023-05-24 17:33:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: cfgpie
+[2023-05-24 17:33:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: PyForks
+[2023-05-24 17:33:02] INFO root fetch - processPackages [faust-streaming]: New version: [0.9.5] Old Version: [0.9.4rc1]
+[2023-05-24 17:33:03] INFO root fetch - processPackages [dbnomics]: New version: [1.2.4] Old Version: [1.2.3]
+[2023-05-24 17:33:03] INFO root fetch - processPackages [ddadevops]: New version: [4.0.0.dev9] Old Version: [4.0.0.dev8]
+[2023-05-24 17:33:03] INFO root fetch - processPackages [smartdash]: New version: [0.0.1.dev2] Old Version: [0.0.1.dev1]
+[2023-05-24 17:33:03] INFO root fetch - processPackages [pyrealb]: New version: [2.3.4] Old Version: [2.3.3]
+[2023-05-24 17:33:03] INFO root fetch - processPackages [cfgpie]: New version: [3.0.0] Old Version: [2.3.9]
+[2023-05-24 17:33:03] INFO root fetch - processPackages [jira2branch]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-24 17:33:03] INFO root fetch - processPackages [ansys-dpf-composites]: New version: [0.2b2] Old Version: [0.2b1]
+[2023-05-24 17:33:03] INFO root fetch - processPackages [PyForks]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-24 17:33:03] INFO root fetch - processPackages [pvbm]: New version: [2.1.6] Old Version: [2.1.5]
+[2023-05-24 17:33:03] INFO root fetch - processPackages [faust-streaming]: Downloading https://files.pythonhosted.org/packages/a0/33/87ed4f61ff89274870fdd491beb84fb1b03999b49e3c918f8d467ab7979d/faust-streaming-0.9.4rc1.tar.gz
+[2023-05-24 17:33:03] INFO root fetch - processPackages [dbnomics]: Downloading https://files.pythonhosted.org/packages/b8/3c/a2d059c233add5155f872d7f77bae5a296a145b59cacc2ff389bdea64234/DBnomics-1.2.3.tar.gz
+[2023-05-24 17:33:03] INFO root fetch - processPackages [smartdash]: Downloading https://files.pythonhosted.org/packages/1c/c6/1aaa1e5722964a1c592fc7c6c4f8fea3361d466e0e3293cb839fe1de47de/smartdash-0.0.1.dev1.tar.gz
+[2023-05-24 17:33:03] INFO root fetch - processPackages [cfgpie]: Downloading https://files.pythonhosted.org/packages/70/1d/2b05a95ff48088a502f930a937eef343b0d35005edb5796884a8228481cd/cfgpie-2.3.9.tar.gz
+[2023-05-24 17:33:03] INFO root fetch - processPackages [pyrealb]: Downloading https://files.pythonhosted.org/packages/02/35/ecd30947d7803b978596f76145fd3745b97e43a2515bf9ef7a1ffa26842b/pyrealb-2.3.3.tar.gz
+[2023-05-24 17:33:03] INFO root fetch - processPackages [pvbm]: Downloading https://files.pythonhosted.org/packages/01/ea/12e07440916ab0b6b1412ffb3d90ab8aaa5d747990466193152c3d6472bd/pvbm-2.1.5.tar.gz
+[2023-05-24 17:33:03] INFO root fetch - processPackages [ansys-dpf-composites]: Downloading https://files.pythonhosted.org/packages/00/fb/57aecb4ee98a3fd75e9937429dd34229381596b9a731b92ef53a92932fba/ansys_dpf_composites-0.2b1.tar.gz
+[2023-05-24 17:33:03] INFO root fetch - processPackages [PyForks]: Downloading https://files.pythonhosted.org/packages/f3/8d/c493a7298e09f8d9b9946f2b08b53baa3f54e0beaf3ac8606dae3b7df594/PyForks-0.0.8.tar.gz
+[2023-05-24 17:33:03] INFO root fetch - processPackages [ddadevops]: executing diffoscope
+[2023-05-24 17:33:03] INFO root fetch - processPackages [ddadevops]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ddadevops-4.0.0.dev8.tar.gz tmp/ddadevops-4.0.0.dev9.tar.gz --markdown 20230524/d/ddadevops/4.0.0.dev8-4.0.0.dev9/diff.md --exclude *.pyd
+[2023-05-24 17:33:03] INFO root fetch - processPackages [dbnomics]: Downloading https://files.pythonhosted.org/packages/9b/b2/6cf49ca1d17ab62e40043ec56cfecce7add08b6314a4bb228663868c23fc/dbnomics-1.2.4.tar.gz
+[2023-05-24 17:33:03] INFO root fetch - processPackages [faust-streaming]: Downloading https://files.pythonhosted.org/packages/e2/50/6ce6477b286e2fcfedcc8a989de446d2a8380d471d05fc69b962b7817252/faust-streaming-0.9.5.tar.gz
+[2023-05-24 17:33:03] INFO root fetch - processPackages [smartdash]: Downloading https://files.pythonhosted.org/packages/7b/26/c84ae9166238d2c9991591921a8dab48756fe28b0a0b62f4607137deb1f9/smartdash-0.0.1.dev2.tar.gz
+[2023-05-24 17:33:03] INFO root fetch - processPackages [cfgpie]: Downloading https://files.pythonhosted.org/packages/28/42/d45e78fbafefb99b62ef0cf36324ea7bfbef3f13de1530f9743c565ec56e/cfgpie-3.0.0.tar.gz
+[2023-05-24 17:33:03] INFO root fetch - processPackages [pvbm]: Downloading https://files.pythonhosted.org/packages/63/08/125690b3ea07853e8d139841ecd70349cac98b41adb2fb237551bf100d95/pvbm-2.1.6.tar.gz
+[2023-05-24 17:33:03] INFO root fetch - processPackages [dbnomics]: executing diffoscope
+[2023-05-24 17:33:03] INFO root fetch - processPackages [dbnomics]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/DBnomics-1.2.3.tar.gz tmp/dbnomics-1.2.4.tar.gz --markdown 20230524/d/dbnomics/1.2.3-1.2.4/diff.md --exclude *.pyd
+[2023-05-24 17:33:03] INFO root fetch - processPackages [smartdash]: executing diffoscope
+[2023-05-24 17:33:03] INFO root fetch - processPackages [smartdash]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/smartdash-0.0.1.dev1.tar.gz tmp/smartdash-0.0.1.dev2.tar.gz --markdown 20230524/s/smartdash/0.0.1.dev1-0.0.1.dev2/diff.md --exclude *.pyd
+[2023-05-24 17:33:03] INFO root fetch - processPackages [cfgpie]: executing diffoscope
+[2023-05-24 17:33:03] INFO root fetch - processPackages [cfgpie]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cfgpie-2.3.9.tar.gz tmp/cfgpie-3.0.0.tar.gz --markdown 20230524/c/cfgpie/2.3.9-3.0.0/diff.md --exclude *.pyd
+[2023-05-24 17:33:03] INFO root fetch - processPackages [faust-streaming]: executing diffoscope
+[2023-05-24 17:33:03] INFO root fetch - processPackages [faust-streaming]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/faust-streaming-0.9.4rc1.tar.gz tmp/faust-streaming-0.9.5.tar.gz --markdown 20230524/f/faust-streaming/0.9.4rc1-0.9.5/diff.md --exclude *.pyd
+[2023-05-24 17:33:03] INFO root fetch - processPackages [ansys-dpf-composites]: Downloading https://files.pythonhosted.org/packages/e0/a0/347b2d7c3a2bb72dc8cff429548cbccc833045a72c87ce89c89129084670/ansys_dpf_composites-0.2b2.tar.gz
+[2023-05-24 17:33:03] INFO root fetch - processPackages [pyrealb]: Downloading https://files.pythonhosted.org/packages/68/fa/3c68ce096bd9da8d4569d3b602ea0a42242475fbdfc3dfba8d0d3e0cbc06/pyrealb-2.3.4.tar.gz
+[2023-05-24 17:33:03] INFO root fetch - processPackages [jira2branch]: executing diffoscope
+[2023-05-24 17:33:03] INFO root fetch - processPackages [jira2branch]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jira2branch-0.1.8.tar.gz tmp/jira2branch-0.1.9.tar.gz --markdown 20230524/j/jira2branch/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-24 17:33:03] INFO root fetch - processPackages [pvbm]: executing diffoscope
+[2023-05-24 17:33:03] INFO root fetch - processPackages [pvbm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pvbm-2.1.5.tar.gz tmp/pvbm-2.1.6.tar.gz --markdown 20230524/p/pvbm/2.1.5-2.1.6/diff.md --exclude *.pyd
+[2023-05-24 17:33:03] INFO root fetch - processPackages [PyForks]: Downloading https://files.pythonhosted.org/packages/47/10/f3aaeea62ff344d118fb2dd6e5be0c2e9f02682884aac86146291af7703d/PyForks-0.0.9.tar.gz
+[2023-05-24 17:33:03] INFO root fetch - processPackages [pyrealb]: executing diffoscope
+[2023-05-24 17:33:03] INFO root fetch - processPackages [pyrealb]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyrealb-2.3.3.tar.gz tmp/pyrealb-2.3.4.tar.gz --markdown 20230524/p/pyrealb/2.3.3-2.3.4/diff.md --exclude *.pyd
+[2023-05-24 17:33:03] INFO root fetch - processPackages [ansys-dpf-composites]: executing diffoscope
+[2023-05-24 17:33:03] INFO root fetch - processPackages [ansys-dpf-composites]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ansys_dpf_composites-0.2b1.tar.gz tmp/ansys_dpf_composites-0.2b2.tar.gz --markdown 20230524/a/ansys-dpf-composites/0.2b1-0.2b2/diff.md --exclude *.pyd
+[2023-05-24 17:33:03] INFO root fetch - processPackages [PyForks]: executing diffoscope
+[2023-05-24 17:33:03] INFO root fetch - processPackages [PyForks]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PyForks-0.0.8.tar.gz tmp/PyForks-0.0.9.tar.gz --markdown 20230524/P/PyForks/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-24 17:33:05] INFO root fetch - processPackages [smartdash]: Start processing: structify-net
+[2023-05-24 17:33:05] INFO root fetch - main [MainThread]: End processing [smartdash]: success
+[2023-05-24 17:33:05] INFO root fetch - processPackages [structify-net]: New version: [0.9.5.post0] Old Version: [0.9.49.dev0]
+[2023-05-24 17:33:05] INFO root fetch - processPackages [structify-net]: Downloading https://files.pythonhosted.org/packages/ed/81/eed6be563e3ac7ee21ba919c98a597ac87dd96c6c152baa6e5132b04230c/structify_net-0.9.49.dev0.tar.gz
+[2023-05-24 17:33:05] WARNING root fetch - processPackages [structify-net]: Skipping package: exceeds size limit 11178517>=10485760
+[2023-05-24 17:33:05] INFO root fetch - processPackages [structify-net]: Start processing: cdsspy
+[2023-05-24 17:33:05] INFO root fetch - main [MainThread]: End processing [structify-net] error
+[2023-05-24 17:33:05] INFO root fetch - processPackages [cfgpie]: Start processing: corby
+[2023-05-24 17:33:05] INFO root fetch - main [MainThread]: End processing [cfgpie]: success
+[2023-05-24 17:33:05] INFO root fetch - processPackages [cdsspy]: New version: [1.2.64] Old Version: [1.2.63]
+[2023-05-24 17:33:05] INFO root fetch - processPackages [corby]: New version: [0.0.6] Old Version: [0.0.5]
+[2023-05-24 17:33:05] INFO root fetch - processPackages [dbnomics]: Start processing: pyemerald
+[2023-05-24 17:33:05] INFO root fetch - main [MainThread]: End processing [dbnomics]: success
+[2023-05-24 17:33:05] INFO root fetch - processPackages [corby]: executing diffoscope
+[2023-05-24 17:33:05] INFO root fetch - processPackages [corby]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/corby-0.0.5.tar.gz tmp/corby-0.0.6.tar.gz --markdown 20230524/c/corby/0.0.5-0.0.6/diff.md --exclude *.pyd
+[2023-05-24 17:33:05] INFO root fetch - processPackages [jira2branch]: Start processing: tg-botting
+[2023-05-24 17:33:05] INFO root fetch - main [MainThread]: End processing [jira2branch]: success
+[2023-05-24 17:33:05] WARNING root fetch - processPackages [pyemerald]: Skipping, unable to determine old version
+[2023-05-24 17:33:05] INFO root fetch - processPackages [pyemerald]: Start processing: pysigma-backend-insightidr
+[2023-05-24 17:33:05] INFO root fetch - main [MainThread]: End processing [pyemerald] error
+[2023-05-24 17:33:05] INFO root fetch - processPackages [pvbm]: Start processing: pvbm
+[2023-05-24 17:33:05] INFO root fetch - main [MainThread]: End processing [pvbm]: success
+[2023-05-24 17:33:05] INFO root fetch - processPackages [cdsspy]: Downloading https://files.pythonhosted.org/packages/ce/2c/01d7900e395c0b9f7a18ac747e0e3ea2737c1e7be9c123c553f06fa45ebd/cdsspy-1.2.63-py3-none-any.whl
+[2023-05-24 17:33:05] INFO root fetch - processPackages [tg-botting]: New version: [1.6.2.7] Old Version: [1.6.2.6]
+[2023-05-24 17:33:05] INFO root fetch - processPackages [pvbm]: New version: [2.1.6] Old Version: [2.1.5]
+[2023-05-24 17:33:05] INFO root fetch - processPackages [pysigma-backend-insightidr]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-24 17:33:05] INFO root fetch - processPackages [ddadevops]: Start processing: dxsp
+[2023-05-24 17:33:05] INFO root fetch - main [MainThread]: End processing [ddadevops]: success
+[2023-05-24 17:33:05] INFO root fetch - processPackages [dxsp]: New version: [2.3.1] Old Version: [2.3.0]
+[2023-05-24 17:33:05] INFO root fetch - processPackages [pvbm]: executing diffoscope
+[2023-05-24 17:33:05] INFO root fetch - processPackages [pvbm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pvbm-2.1.5.tar.gz tmp/pvbm-2.1.6.tar.gz --markdown 20230524/p/pvbm/2.1.5-2.1.6/diff.md --exclude *.pyd
+[2023-05-24 17:33:05] INFO root fetch - processPackages [pysigma-backend-insightidr]: Downloading https://files.pythonhosted.org/packages/b8/03/2b5b41d9802f92cbda7a05265508f9f34c66ee71d5179b2d26f2a692cf55/pysigma-backend-insightidr-0.1.8.tar.gz
+[2023-05-24 17:33:05] INFO root fetch - processPackages [PyForks]: Start processing: mapfun
+[2023-05-24 17:33:05] INFO root fetch - main [MainThread]: End processing [PyForks]: success
+[2023-05-24 17:33:05] INFO root fetch - processPackages [mapfun]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-05-24 17:33:05] INFO root fetch - processPackages [dxsp]: Downloading https://files.pythonhosted.org/packages/76/9b/9fd5769966598f65870a8f0864a532994fc9c7e421c308330865032cac78/dxsp-2.3.1.tar.gz
+[2023-05-24 17:33:05] INFO root fetch - processPackages [tg-botting]: Downloading https://files.pythonhosted.org/packages/48/df/42c448a54b8aaedfcf5608f3ff0a85234c95e3b8deb9d1ddc2c499d09d52/tg-botting-1.6.2.7.tar.gz
+[2023-05-24 17:33:05] INFO root fetch - processPackages [cdsspy]: Downloading https://files.pythonhosted.org/packages/af/1a/f0134d6afa80aa686075b162c3a175174e3a802d12b94b51c000e410d166/cdsspy-1.2.64.tar.gz
+[2023-05-24 17:33:05] INFO root fetch - processPackages [dxsp]: executing diffoscope
+[2023-05-24 17:33:05] INFO root fetch - processPackages [dxsp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dxsp-2.3.0.tar.gz tmp/dxsp-2.3.1.tar.gz --markdown 20230524/d/dxsp/2.3.0-2.3.1/diff.md --exclude *.pyd
+[2023-05-24 17:33:05] INFO root fetch - processPackages [tg-botting]: executing diffoscope
+[2023-05-24 17:33:05] INFO root fetch - processPackages [tg-botting]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tg-botting-1.6.2.6.tar.gz tmp/tg-botting-1.6.2.7.tar.gz --markdown 20230524/t/tg-botting/1.6.2.6-1.6.2.7/diff.md --exclude *.pyd
+[2023-05-24 17:33:05] INFO root fetch - processPackages [pysigma-backend-insightidr]: Downloading https://files.pythonhosted.org/packages/9c/11/a2e7719bea8fd236769b728c878973e3567ffd4f0bfd81db8129ac5b09fd/pysigma-backend-insightidr-0.1.9.tar.gz
+[2023-05-24 17:33:05] INFO root fetch - processPackages [cdsspy]: executing diffoscope
+[2023-05-24 17:33:05] INFO root fetch - processPackages [cdsspy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdsspy-1.2.63-py3-none-any.whl.zip tmp/cdsspy-1.2.64.tar.gz --markdown 20230524/c/cdsspy/1.2.63-1.2.64/diff.md --exclude *.pyd
+[2023-05-24 17:33:05] INFO root fetch - processPackages [mapfun]: Downloading https://files.pythonhosted.org/packages/3f/f3/9423dfe0e7101ea97c6b767003320fdd912b113c412f018a2d336d0fa3d0/mapfun-0.0.3.tar.gz
+[2023-05-24 17:33:06] INFO root fetch - processPackages [mapfun]: executing diffoscope
+[2023-05-24 17:33:06] INFO root fetch - processPackages [mapfun]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mapfun-0.0.2.tar.gz tmp/mapfun-0.0.3.tar.gz --markdown 20230524/m/mapfun/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-05-24 17:33:06] INFO root fetch - processPackages [pysigma-backend-insightidr]: executing diffoscope
+[2023-05-24 17:33:06] INFO root fetch - processPackages [pysigma-backend-insightidr]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pysigma-backend-insightidr-0.1.8.tar.gz tmp/pysigma-backend-insightidr-0.1.9.tar.gz --markdown 20230524/p/pysigma-backend-insightidr/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-24 17:33:06] INFO root fetch - main [MainThread]: End processing [ansys-dpf-composites]: success
+[2023-05-24 17:33:06] INFO root fetch - main [MainThread]: End processing [corby]: success
+[2023-05-24 17:33:07] INFO root fetch - main [MainThread]: End processing [pvbm]: success
+[2023-05-24 17:33:07] INFO root fetch - main [MainThread]: End processing [cdsspy]: success
+[2023-05-24 17:33:07] INFO root fetch - main [MainThread]: End processing [dxsp]: success
+[2023-05-24 17:33:07] INFO root fetch - main [MainThread]: End processing [tg-botting]: success
+[2023-05-24 17:33:07] INFO root fetch - main [MainThread]: End processing [mapfun]: success
+[2023-05-24 17:33:07] INFO root fetch - main [MainThread]: End processing [pysigma-backend-insightidr]: success
+[2023-05-24 17:33:08] INFO root fetch - main [MainThread]: End processing [pyrealb]: success
+[2023-05-24 17:33:11] INFO root fetch - main [MainThread]: End processing [faust-streaming]: success
+[2023-05-24 17:33:11] INFO root fetch - main [MainThread]: Store serial: [18231960]
