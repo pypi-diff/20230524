@@ -7077,3 +7077,62 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-05-24 05:49:49] INFO root fetch - main [MainThread]: End processing [PyFixedReps-andnp]: success
 [2023-05-24 05:49:50] INFO root fetch - main [MainThread]: End processing [closet-engine-cv]: success
 [2023-05-24 05:49:50] INFO root fetch - main [MainThread]: Store serial: [18224651]
+[2023-05-24 05:54:53] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18224651]
+[2023-05-24 05:54:58] INFO root fetch - main [MainThread]: Found 10 changed packages
+[2023-05-24 05:54:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: azure-mgmt-resource
+[2023-05-24 05:54:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: dinohub-seedwork-be
+[2023-05-24 05:54:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: model-perf
+[2023-05-24 05:54:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: lowvision
+[2023-05-24 05:54:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: vl-datasets
+[2023-05-24 05:54:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: google-cloud-spanner
+[2023-05-24 05:54:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: caqui
+[2023-05-24 05:54:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: jsonfmt
+[2023-05-24 05:54:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: aind-data-schema
+[2023-05-24 05:54:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: lowvision
+[2023-05-24 05:54:58] INFO root fetch - processPackages [lowvision]: New version: [0.2.2] Old Version: [0.2.1]
+[2023-05-24 05:54:58] INFO root fetch - processPackages [azure-mgmt-resource]: New version: [9.0.0] Old Version: [8.0.1]
+[2023-05-24 05:54:58] INFO root fetch - processPackages [vl-datasets]: New version: [0.0.8] Old Version: [0.0.7]
+[2023-05-24 05:54:58] INFO root fetch - processPackages [lowvision]: New version: [0.2.2] Old Version: [0.2.1]
+[2023-05-24 05:54:58] INFO root fetch - processPackages [caqui]: New version: [1.0.1] Old Version: [0.0.1]
+[2023-05-24 05:54:58] INFO root fetch - processPackages [dinohub-seedwork-be]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-24 05:54:58] WARNING root fetch - processPackages [model-perf]: Skipping, unable to determine old version
+[2023-05-24 05:54:58] INFO root fetch - main [MainThread]: End processing [model-perf] error
+[2023-05-24 05:54:58] INFO root fetch - processPackages [jsonfmt]: New version: [0.2.0] Old Version: [0.1.4]
+[2023-05-24 05:54:58] INFO root fetch - processPackages [google-cloud-spanner]: New version: [3.9.0] Old Version: [3.8.0]
+[2023-05-24 05:54:59] INFO root fetch - processPackages [aind-data-schema]: New version: [0.9.6] Old Version: [0.9.5]
+[2023-05-24 05:54:59] INFO root fetch - processPackages [caqui]: Downloading https://files.pythonhosted.org/packages/d1/e2/c3984043af06d7a000c189a1630a84978face7f834b16955b3a3680354d8/caqui-0.0.1.tar.gz
+[2023-05-24 05:54:59] INFO root fetch - processPackages [lowvision]: Downloading https://files.pythonhosted.org/packages/13/49/37d695d0b73d6f520da8e41be2c4a46338c7dd09158ad501035c0ab5c314/lowvision-0.2.2.tar.gz
+[2023-05-24 05:54:59] INFO root fetch - processPackages [jsonfmt]: Downloading https://files.pythonhosted.org/packages/e5/13/8ca4b42e74ad461f7132ebb6ee2c294730d289a94a550b37dfb069b4b60f/jsonfmt-0.1.4.tar.gz
+[2023-05-24 05:54:59] INFO root fetch - processPackages [lowvision]: Downloading https://files.pythonhosted.org/packages/13/49/37d695d0b73d6f520da8e41be2c4a46338c7dd09158ad501035c0ab5c314/lowvision-0.2.2.tar.gz
+[2023-05-24 05:54:59] INFO root fetch - processPackages [google-cloud-spanner]: Downloading https://files.pythonhosted.org/packages/c0/2d/9383b183858aaf9f33a19f695d5db62abbd3750f41e5461f5d4dd68d2da2/google-cloud-spanner-3.8.0.tar.gz
+[2023-05-24 05:54:59] INFO root fetch - processPackages [dinohub-seedwork-be]: executing diffoscope
+[2023-05-24 05:54:59] INFO root fetch - processPackages [dinohub-seedwork-be]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dinohub_seedwork_be-0.1.8.tar.gz tmp/dinohub_seedwork_be-0.1.9.tar.gz --markdown 20230524/d/dinohub-seedwork-be/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-24 05:54:59] INFO root fetch - processPackages [azure-mgmt-resource]: executing diffoscope
+[2023-05-24 05:54:59] INFO root fetch - processPackages [azure-mgmt-resource]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/azure-mgmt-resource-8.0.1.zip tmp/azure-mgmt-resource-9.0.0.zip --markdown 20230524/a/azure-mgmt-resource/8.0.1-9.0.0/diff.md --exclude *.pyd
+[2023-05-24 05:54:59] INFO root fetch - processPackages [vl-datasets]: executing diffoscope
+[2023-05-24 05:54:59] INFO root fetch - processPackages [vl-datasets]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vl_datasets-0.0.7-py3.9-none-any.whl.zip tmp/vl_datasets-0.0.8-py3.9-none-any.whl.zip --markdown 20230524/v/vl-datasets/0.0.7-0.0.8/diff.md --exclude *.pyd
+[2023-05-24 05:54:59] INFO root fetch - processPackages [lowvision]: executing diffoscope
+[2023-05-24 05:54:59] INFO root fetch - processPackages [lowvision]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lowvision-0.2.1.tar.gz tmp/lowvision-0.2.2.tar.gz --markdown 20230524/l/lowvision/0.2.1-0.2.2/diff.md --exclude *.pyd
+[2023-05-24 05:54:59] INFO root fetch - processPackages [lowvision]: executing diffoscope
+[2023-05-24 05:54:59] INFO root fetch - processPackages [lowvision]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lowvision-0.2.1.tar.gz tmp/lowvision-0.2.2.tar.gz --markdown 20230524/l/lowvision/0.2.1-0.2.2/diff.md --exclude *.pyd
+[2023-05-24 05:54:59] INFO root fetch - processPackages [aind-data-schema]: executing diffoscope
+[2023-05-24 05:54:59] INFO root fetch - processPackages [aind-data-schema]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aind-data-schema-0.9.5.tar.gz tmp/aind-data-schema-0.9.6.tar.gz --markdown 20230524/a/aind-data-schema/0.9.5-0.9.6/diff.md --exclude *.pyd
+[2023-05-24 05:54:59] INFO root fetch - processPackages [jsonfmt]: Downloading https://files.pythonhosted.org/packages/61/de/99f2aacb74c8aafd3418a0e741c6614126c1ce0ff5e69534fcb421dad6ac/jsonfmt-0.2.0.tar.gz
+[2023-05-24 05:54:59] INFO root fetch - processPackages [caqui]: Downloading https://files.pythonhosted.org/packages/24/14/1796eb64ed8b947c76b63dfa04029f05f11be4193b63343949472fd23a40/caqui-1.0.1.tar.gz
+[2023-05-24 05:54:59] INFO root fetch - processPackages [caqui]: executing diffoscope
+[2023-05-24 05:54:59] INFO root fetch - processPackages [caqui]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/caqui-0.0.1.tar.gz tmp/caqui-1.0.1.tar.gz --markdown 20230524/c/caqui/0.0.1-1.0.1/diff.md --exclude *.pyd
+[2023-05-24 05:54:59] INFO root fetch - processPackages [google-cloud-spanner]: Downloading https://files.pythonhosted.org/packages/7f/af/852f011a0e2347701621b19205ec8b0037c7a76ce4c0705f0ee8e7788671/google-cloud-spanner-3.9.0.tar.gz
+[2023-05-24 05:54:59] INFO root fetch - processPackages [jsonfmt]: executing diffoscope
+[2023-05-24 05:54:59] INFO root fetch - processPackages [jsonfmt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jsonfmt-0.1.4.tar.gz tmp/jsonfmt-0.2.0.tar.gz --markdown 20230524/j/jsonfmt/0.1.4-0.2.0/diff.md --exclude *.pyd
+[2023-05-24 05:54:59] INFO root fetch - processPackages [google-cloud-spanner]: executing diffoscope
+[2023-05-24 05:54:59] INFO root fetch - processPackages [google-cloud-spanner]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/google-cloud-spanner-3.8.0.tar.gz tmp/google-cloud-spanner-3.9.0.tar.gz --markdown 20230524/g/google-cloud-spanner/3.8.0-3.9.0/diff.md --exclude *.pyd
+[2023-05-24 05:55:00] INFO root fetch - main [MainThread]: End processing [vl-datasets]: success
+[2023-05-24 05:55:00] INFO root fetch - main [MainThread]: End processing [lowvision]: success
+[2023-05-24 05:55:00] INFO root fetch - main [MainThread]: End processing [lowvision]: success
+[2023-05-24 05:55:01] INFO root fetch - main [MainThread]: End processing [jsonfmt]: success
+[2023-05-24 05:55:02] INFO root fetch - main [MainThread]: End processing [dinohub-seedwork-be]: success
+[2023-05-24 05:55:02] INFO root fetch - main [MainThread]: End processing [google-cloud-spanner]: success
+[2023-05-24 05:55:02] INFO root fetch - main [MainThread]: End processing [aind-data-schema]: success
+[2023-05-24 05:55:09] INFO root fetch - main [MainThread]: End processing [azure-mgmt-resource]: success
+[2023-05-24 05:55:46] INFO root fetch - main [MainThread]: End processing [caqui]: success
+[2023-05-24 05:55:46] INFO root fetch - main [MainThread]: Store serial: [18224691]

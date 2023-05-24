@@ -1,0 +1,2205 @@
+# Comparing `tmp/caqui-0.0.1.tar.gz` & `tmp/caqui-1.0.1.tar.gz`
+
+## Comparing `caqui-0.0.1.tar` & `caqui-1.0.1.tar`
+
+### file list
+
+```diff
+@@ -1,24 +1,24 @@
+--rw-r--r--   0        0        0     1539 2020-02-02 00:00:00.000000 caqui-0.0.1/sample.py
+--rw-r--r--   0        0        0      331 2020-02-02 00:00:00.000000 caqui-0.0.1/.vscode/settings.json
+--rw-r--r--   0        0        0    43559 2020-02-02 00:00:00.000000 caqui-0.0.1/caqui/__init__.py
+--rw-r--r--   0        0        0     2475 2020-02-02 00:00:00.000000 caqui-0.0.1/caqui/asynchronous.py
+--rw-r--r--   0        0        0      169 2020-02-02 00:00:00.000000 caqui-0.0.1/caqui/constants.py
+--rw-r--r--   0        0        0     2265 2020-02-02 00:00:00.000000 caqui-0.0.1/caqui/synchronous.py
+--rw-r--r--   0        0        0        0 2020-02-02 00:00:00.000000 caqui-0.0.1/tests/__init__.py
+--rw-r--r--   0        0        0      164 2020-02-02 00:00:00.000000 caqui-0.0.1/tests/constants.py
+--rw-r--r--   0        0        0     1238 2020-02-02 00:00:00.000000 caqui-0.0.1/tests/sniffer.py
+--rw-r--r--   0        0        0        0 2020-02-02 00:00:00.000000 caqui-0.0.1/tests/doubles/__init__.py
+--rw-r--r--   0        0        0     2519 2020-02-02 00:00:00.000000 caqui-0.0.1/tests/doubles/fake_responses.py
+--rwxr-xr-x   0        0        0  9710704 2020-02-02 00:00:00.000000 caqui-0.0.1/tests/drivers/geckdriver.113
+--rw-r--r--   0        0        0     2437 2020-02-02 00:00:00.000000 caqui-0.0.1/tests/feature/test_functions.py
+--rw-r--r--   0        0        0      608 2020-02-02 00:00:00.000000 caqui-0.0.1/tests/html/playground.html
+--rw-r--r--   0        0        0     1089 2020-02-02 00:00:00.000000 caqui-0.0.1/tests/integration/test_async_scenarios.py
+--rw-r--r--   0        0        0     1369 2020-02-02 00:00:00.000000 caqui-0.0.1/tests/integration/test_sync_scenarios.py
+--rw-r--r--   0        0        0        0 2020-02-02 00:00:00.000000 caqui-0.0.1/tests/unit/__initi__.py
+--rw-r--r--   0        0        0     3274 2020-02-02 00:00:00.000000 caqui-0.0.1/tests/unit/test_async_unit.py
+--rw-r--r--   0        0        0     2534 2020-02-02 00:00:00.000000 caqui-0.0.1/tests/unit/test_sync_unit.py
+--rw-r--r--   0        0        0     3093 2020-02-02 00:00:00.000000 caqui-0.0.1/.gitignore
+--rw-r--r--   0        0        0     1072 2020-02-02 00:00:00.000000 caqui-0.0.1/LICENSE
+--rw-r--r--   0        0        0     7416 2020-02-02 00:00:00.000000 caqui-0.0.1/README.md
+--rw-r--r--   0        0        0      659 2020-02-02 00:00:00.000000 caqui-0.0.1/pyproject.toml
+--rw-r--r--   0        0        0     8021 2020-02-02 00:00:00.000000 caqui-0.0.1/PKG-INFO
++-rwxr-xr-x   0        0        0       58 2020-02-02 00:00:00.000000 caqui-1.0.1/publish.sh
++-rw-r--r--   0        0        0     1667 2020-02-02 00:00:00.000000 caqui-1.0.1/sample.py
++-rw-r--r--   0        0        0      331 2020-02-02 00:00:00.000000 caqui-1.0.1/.vscode/settings.json
++-rw-r--r--   0        0        0    43559 2020-02-02 00:00:00.000000 caqui-1.0.1/caqui/__init__.py
++-rw-r--r--   0        0        0     2475 2020-02-02 00:00:00.000000 caqui-1.0.1/caqui/asynchronous.py
++-rw-r--r--   0        0        0      169 2020-02-02 00:00:00.000000 caqui-1.0.1/caqui/constants.py
++-rw-r--r--   0        0        0     2265 2020-02-02 00:00:00.000000 caqui-1.0.1/caqui/synchronous.py
++-rw-r--r--   0        0        0        0 2020-02-02 00:00:00.000000 caqui-1.0.1/tests/__init__.py
++-rw-r--r--   0        0        0      164 2020-02-02 00:00:00.000000 caqui-1.0.1/tests/constants.py
++-rw-r--r--   0        0        0     1238 2020-02-02 00:00:00.000000 caqui-1.0.1/tests/sniffer.py
++-rw-r--r--   0        0        0        0 2020-02-02 00:00:00.000000 caqui-1.0.1/tests/doubles/__init__.py
++-rw-r--r--   0        0        0     2519 2020-02-02 00:00:00.000000 caqui-1.0.1/tests/doubles/fake_responses.py
++-rw-r--r--   0        0        0     2437 2020-02-02 00:00:00.000000 caqui-1.0.1/tests/feature/test_functions.py
++-rw-r--r--   0        0        0      608 2020-02-02 00:00:00.000000 caqui-1.0.1/tests/html/playground.html
++-rw-r--r--   0        0        0     1089 2020-02-02 00:00:00.000000 caqui-1.0.1/tests/integration/test_async_scenarios.py
++-rw-r--r--   0        0        0     1369 2020-02-02 00:00:00.000000 caqui-1.0.1/tests/integration/test_sync_scenarios.py
++-rw-r--r--   0        0        0        0 2020-02-02 00:00:00.000000 caqui-1.0.1/tests/unit/__initi__.py
++-rw-r--r--   0        0        0     3274 2020-02-02 00:00:00.000000 caqui-1.0.1/tests/unit/test_async_unit.py
++-rw-r--r--   0        0        0     2534 2020-02-02 00:00:00.000000 caqui-1.0.1/tests/unit/test_sync_unit.py
++-rw-r--r--   0        0        0     3106 2020-02-02 00:00:00.000000 caqui-1.0.1/.gitignore
++-rw-r--r--   0        0        0     1072 2020-02-02 00:00:00.000000 caqui-1.0.1/LICENSE
++-rw-r--r--   0        0        0     8231 2020-02-02 00:00:00.000000 caqui-1.0.1/README.md
++-rw-r--r--   0        0        0      655 2020-02-02 00:00:00.000000 caqui-1.0.1/pyproject.toml
++-rw-r--r--   0        0        0     8832 2020-02-02 00:00:00.000000 caqui-1.0.1/PKG-INFO
+```
+
+### Comparing `caqui-0.0.1/sample.py` & `caqui-1.0.1/sample.py`
+
+ * *Files 24% similar despite different names*
+
+```diff
+@@ -1,11 +1,18 @@
+ import asyncio
+ import time
+ from caqui import synchronous, asynchronous
+-from tests.constants import PAGE_URL
++
++from os import getcwd
++
++BASE_DIR = getcwd()
++ROOT_DIR = BASE_DIR + "/caqui/src"
++TEST_DIR = BASE_DIR + "/tests"
++
++PAGE_URL = f"file:///{TEST_DIR}/html/playground.html"
+ 
+ 
+ async def get_all_links():
+     driver_url = "http://127.0.0.1:9999"
+     capabilities = {
+         "desiredCapabilities": {
+             "browserName": "firefox",
+```
+
+### Comparing `caqui-0.0.1/caqui/__init__.py` & `caqui-1.0.1/caqui/__init__.py`
+
+ * *Files identical despite different names*
+
+### Comparing `caqui-0.0.1/caqui/asynchronous.py` & `caqui-1.0.1/caqui/asynchronous.py`
+
+ * *Files identical despite different names*
+
+### Comparing `caqui-0.0.1/caqui/synchronous.py` & `caqui-1.0.1/caqui/synchronous.py`
+
+ * *Files identical despite different names*
+
+### Comparing `caqui-0.0.1/tests/sniffer.py` & `caqui-1.0.1/tests/sniffer.py`
+
+ * *Files identical despite different names*
+
+### Comparing `caqui-0.0.1/tests/doubles/fake_responses.py` & `caqui-1.0.1/tests/doubles/fake_responses.py`
+
+ * *Files identical despite different names*
+
+### Comparing `caqui-0.0.1/tests/feature/test_functions.py` & `caqui-1.0.1/tests/feature/test_functions.py`
+
+ * *Files identical despite different names*
+
+### Comparing `caqui-0.0.1/tests/html/playground.html` & `caqui-1.0.1/tests/html/playground.html`
+
+ * *Files identical despite different names*
+
+### Comparing `caqui-0.0.1/tests/integration/test_async_scenarios.py` & `caqui-1.0.1/tests/integration/test_async_scenarios.py`
+
+ * *Files identical despite different names*
+
+### Comparing `caqui-0.0.1/tests/integration/test_sync_scenarios.py` & `caqui-1.0.1/tests/integration/test_sync_scenarios.py`
+
+ * *Files identical despite different names*
+
+### Comparing `caqui-0.0.1/tests/unit/test_async_unit.py` & `caqui-1.0.1/tests/unit/test_async_unit.py`
+
+ * *Files identical despite different names*
+
+### Comparing `caqui-0.0.1/tests/unit/test_sync_unit.py` & `caqui-1.0.1/tests/unit/test_sync_unit.py`
+
+ * *Files identical despite different names*
+
+### Comparing `caqui-0.0.1/.gitignore` & `caqui-1.0.1/.gitignore`
+
+ * *Files 1% similar despite different names*
+
+```diff
+@@ -1,8 +1,9 @@
+ chromedriver*
++geckodriver*
+ 
+ # Byte-compiled / optimized / DLL files
+ __pycache__/
+ *.py[cod]
+ *$py.class
+ 
+ # C extensions
+```
+
+### Comparing `caqui-0.0.1/LICENSE` & `caqui-1.0.1/LICENSE`
+
+ * *Files identical despite different names*
+
+### Comparing `caqui-0.0.1/README.md` & `caqui-1.0.1/README.md`
+
+ * *Files 15% similar despite different names*
+
+```diff
+@@ -1,464 +1,515 @@
+ 00000000: 2320 4361 7175 690a 0a2a 2a43 6171 7569  # Caqui..**Caqui
+ 00000010: 2a2a 2069 7320 696e 7465 6e64 6564 2074  ** is intended t
+ 00000020: 6f20 636f 6d6d 616e 6420 6578 6563 7574  o command execut
+ 00000030: 696f 6e73 2061 6761 696e 7374 2044 7269  ions against Dri
+ 00000040: 7665 7273 2073 796e 6368 726f 6e6f 7573  vers synchronous
+-00000050: 6c79 2c20 6173 796e 6368 726f 6e6f 7573  ly, asynchronous
+-00000060: 6c79 2061 6e64 2069 6e20 7061 7261 6c6c  ly and in parall
+-00000070: 656c 2e20 4c61 756e 6368 2074 6865 2044  el. Launch the D
+-00000080: 7269 7665 7220 6173 2061 2073 6572 7665  river as a serve
+-00000090: 7220 616e 6420 7365 6e64 2072 6571 7565  r and send reque
+-000000a0: 7374 7320 746f 2069 742e 2054 6865 2069  sts to it. The i
+-000000b0: 6e74 656e 7469 6f6e 2069 7320 7468 6174  ntention is that
+-000000c0: 2074 6865 2075 7365 7220 646f 6573 206e   the user does n
+-000000d0: 6f74 2077 6f72 7279 2061 626f 7574 2077  ot worry about w
+-000000e0: 6869 6368 2044 7269 7665 7220 6865 2f73  hich Driver he/s
+-000000f0: 6865 2069 7320 7573 696e 672e 2049 7420  he is using. It 
+-00000100: 6361 6e20 6265 202a 2a57 6562 2a2a 4472  can be **Web**Dr
+-00000110: 6976 6572 7320 6c69 6b65 205b 5365 6c65  ivers like [Sele
+-00000120: 6e69 756d 5d28 6874 7470 733a 2f2f 7777  nium](https://ww
+-00000130: 772e 7365 6c65 6e69 756d 2e64 6576 2f29  w.selenium.dev/)
+-00000140: 2c20 2a2a 4d6f 6269 6c65 2a2a 4472 6976  , **Mobile**Driv
+-00000150: 6572 7320 6c69 6b65 205b 4170 7069 756d  ers like [Appium
+-00000160: 5d28 6874 7470 3a2f 2f61 7070 6975 6d2e  ](http://appium.
+-00000170: 696f 2f64 6f63 732f 656e 2f32 2e30 2f29  io/docs/en/2.0/)
+-00000180: 2c20 6f72 202a 2a44 6573 6b74 6f70 2a2a  , or **Desktop**
+-00000190: 4472 6976 6572 7320 6c69 6b65 205b 5769  Drivers like [Wi
+-000001a0: 6e69 756d 5d28 6874 7470 733a 2f2f 6769  nium](https://gi
+-000001b0: 7468 7562 2e63 6f6d 2f32 6769 732f 5769  thub.com/2gis/Wi
+-000001c0: 6e69 756d 2e44 6573 6b74 6f70 292e 0a0a  nium.Desktop)...
+-000001d0: 5468 6520 7072 6f63 6573 7320 2a2a 4361  The process **Ca
+-000001e0: 7175 692a 2a20 666f 6c6c 6f77 7320 6973  qui** follows is
+-000001f0: 2073 696d 696c 6172 206f 6620 7468 6520   similar of the 
+-00000200: 6f6e 6520 6465 7363 7269 6265 6420 696e  one described in
+-00000210: 2074 6869 7320 5b61 7274 6963 6c65 5d28   this [article](
+-00000220: 6874 7470 733a 2f2f 6d65 6469 756d 2e63  https://medium.c
+-00000230: 6f6d 2f40 646f 7567 6c61 732e 6463 6d2f  om/@douglas.dcm/
+-00000240: 7465 7374 696e 672d 7769 6e64 6f77 732d  testing-windows-
+-00000250: 6170 7073 2d77 6974 682d 6874 7470 2d72  apps-with-http-r
+-00000260: 6573 742d 6234 6538 6638 3066 3862 3765  est-b4e8f80f8b7e
+-00000270: 2920 7468 6174 2065 7870 6572 696d 656e  ) that experimen
+-00000280: 7473 2044 7269 7665 7273 2061 7320 7365  ts Drivers as se
+-00000290: 7276 6572 7320 746f 6765 7468 6572 2077  rvers together w
+-000002a0: 6974 6820 5b4a 6d65 7465 725d 2868 7474  ith [Jmeter](htt
+-000002b0: 7073 3a2f 2f6a 6d65 7465 722e 6170 6163  ps://jmeter.apac
+-000002c0: 6865 2e6f 7267 2f29 2074 6f20 7465 7374  he.org/) to test
+-000002d0: 2057 696e 646f 7773 2043 616c 6375 6c61   Windows Calcula
+-000002e0: 746f 722e 2048 6f77 6576 6572 2c20 7468  tor. However, th
+-000002f0: 6520 6d6f 7469 7661 7469 6f6e 2074 6f20  e motivation to 
+-00000300: 6372 6561 7465 202a 2a43 6171 7569 2a2a  create **Caqui**
+-00000310: 2077 6173 2066 6565 6420 6279 2074 6865   was feed by the
+-00000320: 2069 6e73 7069 7261 7469 6f6e 2069 6e20   inspiration in 
+-00000330: 5b41 7273 656e 6963 5d28 6874 7470 733a  [Arsenic](https:
+-00000340: 2f2f 6769 7468 7562 2e63 6f6d 2f48 454e  //github.com/HEN
+-00000350: 4e47 452f 6172 7365 6e69 6329 206c 6962  NGE/arsenic) lib
+-00000360: 7261 7279 2e0a 0a2a 2a43 6171 7569 2a2a  rary...**Caqui**
+-00000370: 2069 7320 706c 616e 6e65 6420 746f 2062   is planned to b
+-00000380: 6520 4472 6976 6572 2061 676e 6f73 7469  e Driver agnosti
+-00000390: 632c 2073 6f20 7468 6520 7573 6572 2063  c, so the user c
+-000003a0: 616e 2073 7461 7274 2061 6e79 2044 7269  an start any Dri
+-000003b0: 7665 7220 6173 2061 2073 6572 7665 7220  ver as a server 
+-000003c0: 616e 6420 6a75 7374 2069 6e66 6f72 6d20  and just inform 
+-000003d0: 7468 6520 7365 7276 6572 2055 524c 2e20  the server URL. 
+-000003e0: 4865 6e63 652c 2074 6865 2063 6f64 6520  Hence, the code 
+-000003f0: 6973 2064 6563 6f75 706c 6564 2066 726f  is decoupled fro
+-00000400: 6d20 7468 6520 6368 6f73 656e 2044 7269  m the chosen Dri
+-00000410: 7665 722e 0a0a 2a2a 4361 7175 692a 2a20  ver...**Caqui** 
+-00000420: 6361 6e20 6265 2075 7365 6420 696e 2072  can be used in r
+-00000430: 656d 6f74 6520 6361 6c6c 732e 2041 7320  emote calls. As 
+-00000440: 6974 206e 6565 6473 206a 7573 7420 7468  it needs just th
+-00000450: 6520 7365 7276 6572 2055 524c 2c20 7468  e server URL, th
+-00000460: 6520 7573 6572 2063 616e 2073 7461 7274  e user can start
+-00000470: 2074 6865 2044 7269 7665 7220 6173 2061   the Driver as a
+-00000480: 2073 6572 7665 7220 696e 2061 6e79 2068   server in any h
+-00000490: 6f73 7420 616e 6420 7072 6f76 6964 6520  ost and provide 
+-000004a0: 7468 6520 5552 4c20 746f 202a 2a43 6171  the URL to **Caq
+-000004b0: 7569 2a2a 2063 6c69 656e 7473 2e0a 0a23  ui** clients...#
+-000004c0: 2053 696d 706c 6520 7374 6172 740a 496e   Simple start.In
+-000004d0: 7374 616c 6c20 7468 6520 6c61 7374 6573  stall the lastes
+-000004e0: 7420 7665 7273 696f 6e20 6f66 202a 2a43  t version of **C
+-000004f0: 6171 7569 2a2a 0a0a 6060 600a 7069 7020  aqui**..```.pip 
+-00000500: 696e 7374 616c 6c20 6361 7175 690a 6060  install caqui.``
+-00000510: 600a 0a44 6f77 6e6c 6f61 6420 7468 6520  `..Download the 
+-00000520: 7361 6d65 2043 6872 6f6d 6544 7269 7665  same ChromeDrive
+-00000530: 7220 7665 7273 696f 6e20 6173 2079 6f75  r version as you
+-00000540: 7220 696e 7374 616c 6c65 6420 4368 726f  r installed Chro
+-00000550: 6d65 2061 6e64 2073 7461 7274 2074 6865  me and start the
+-00000560: 2044 7269 7665 7220 6173 2061 2073 6572   Driver as a ser
+-00000570: 7665 7220 7573 696e 6720 7468 6520 706f  ver using the po
+-00000580: 7274 2022 3939 3939 220a 0a60 6060 0a24  rt "9999"..```.$
+-00000590: 202e 2f63 6872 6f6d 6564 7269 7665 7220   ./chromedriver 
+-000005a0: 2d2d 706f 7274 3d39 3939 390a 5374 6172  --port=9999.Star
+-000005b0: 7469 6e67 2043 6872 6f6d 6544 7269 7665  ting ChromeDrive
+-000005c0: 7220 3934 2e30 2e34 3630 362e 3631 2028  r 94.0.4606.61 (
+-000005d0: 3431 3862 3738 6635 3833 3865 6430 6231  418b78f5838ed0b1
+-000005e0: 6336 3962 6234 6535 3165 6130 3235 3231  c69bb4e51ea02521
+-000005f0: 3731 3835 3439 3135 2d72 6566 732f 6272  71854915-refs/br
+-00000600: 616e 6368 2d68 6561 6473 2f34 3630 3640  anch-heads/4606@
+-00000610: 7b23 3132 3034 7d29 206f 6e20 706f 7274  {#1204}) on port
+-00000620: 2039 3939 390a 4f6e 6c79 206c 6f63 616c   9999.Only local
+-00000630: 2063 6f6e 6e65 6374 696f 6e73 2061 7265   connections are
+-00000640: 2061 6c6c 6f77 6564 2e0a 506c 6561 7365   allowed..Please
+-00000650: 2073 6565 2068 7474 7073 3a2f 2f63 6872   see https://chr
+-00000660: 6f6d 6564 7269 7665 722e 6368 726f 6d69  omedriver.chromi
+-00000670: 756d 2e6f 7267 2f73 6563 7572 6974 792d  um.org/security-
+-00000680: 636f 6e73 6964 6572 6174 696f 6e73 2066  considerations f
+-00000690: 6f72 2073 7567 6765 7374 696f 6e73 206f  or suggestions o
+-000006a0: 6e20 6b65 6570 696e 6720 4368 726f 6d65  n keeping Chrome
+-000006b0: 4472 6976 6572 2073 6166 652e 0a43 6872  Driver safe..Chr
+-000006c0: 6f6d 6544 7269 7665 7220 7761 7320 7374  omeDriver was st
+-000006d0: 6172 7465 6420 7375 6363 6573 7366 756c  arted successful
+-000006e0: 6c79 2e0a 6060 600a 0a43 6f70 7920 7468  ly..```..Copy th
+-000006f0: 6520 636f 6465 2074 6f20 6073 616d 706c  e code to `sampl
+-00000700: 652e 7079 6020 6669 6c65 0a60 6060 0a69  e.py` file.```.i
+-00000710: 6d70 6f72 7420 6173 796e 6369 6f0a 696d  mport asyncio.im
+-00000720: 706f 7274 2074 696d 650a 6672 6f6d 2063  port time.from c
+-00000730: 6171 7569 2069 6d70 6f72 7420 7379 6e63  aqui import sync
+-00000740: 6872 6f6e 6f75 732c 2061 7379 6e63 6872  hronous, asynchr
+-00000750: 6f6e 6f75 730a 6672 6f6d 2074 6573 7473  onous.from tests
+-00000760: 2e63 6f6e 7374 616e 7473 2069 6d70 6f72  .constants impor
+-00000770: 7420 5041 4745 5f55 524c 0a0a 0a61 7379  t PAGE_URL...asy
+-00000780: 6e63 2064 6566 2067 6574 5f61 6c6c 5f6c  nc def get_all_l
+-00000790: 696e 6b73 2829 3a0a 2020 2020 6472 6976  inks():.    driv
+-000007a0: 6572 5f75 726c 203d 2022 6874 7470 3a2f  er_url = "http:/
+-000007b0: 2f31 3237 2e30 2e30 2e31 3a39 3939 3922  /127.0.0.1:9999"
+-000007c0: 0a20 2020 2063 6170 6162 696c 6974 6965  .    capabilitie
+-000007d0: 7320 3d20 7b0a 2020 2020 2020 2020 2264  s = {.        "d
+-000007e0: 6573 6972 6564 4361 7061 6269 6c69 7469  esiredCapabiliti
+-000007f0: 6573 223a 207b 0a20 2020 2020 2020 2020  es": {.         
+-00000800: 2020 2022 6272 6f77 7365 724e 616d 6522     "browserName"
+-00000810: 3a20 2266 6972 6566 6f78 222c 0a20 2020  : "firefox",.   
+-00000820: 2020 2020 2020 2020 2022 6d61 7269 6f6e           "marion
+-00000830: 6574 7465 223a 2054 7275 652c 0a20 2020  ette": True,.   
+-00000840: 2020 2020 2020 2020 2022 6163 6365 7074           "accept
+-00000850: 496e 7365 6375 7265 4365 7274 7322 3a20  InsecureCerts": 
+-00000860: 5472 7565 2c0a 2020 2020 2020 2020 7d0a  True,.        }.
+-00000870: 2020 2020 7d0a 2020 2020 7365 7373 696f      }.    sessio
+-00000880: 6e20 3d20 7379 6e63 6872 6f6e 6f75 732e  n = synchronous.
+-00000890: 6765 745f 7365 7373 696f 6e28 6472 6976  get_session(driv
+-000008a0: 6572 5f75 726c 2c20 6361 7061 6269 6c69  er_url, capabili
+-000008b0: 7469 6573 290a 2020 2020 7379 6e63 6872  ties).    synchr
+-000008c0: 6f6e 6f75 732e 676f 5f74 6f5f 7061 6765  onous.go_to_page
+-000008d0: 280a 2020 2020 2020 2020 6472 6976 6572  (.        driver
+-000008e0: 5f75 726c 2c0a 2020 2020 2020 2020 7365  _url,.        se
+-000008f0: 7373 696f 6e2c 0a20 2020 2020 2020 2050  ssion,.        P
+-00000900: 4147 455f 5552 4c2c 0a20 2020 2029 0a0a  AGE_URL,.    )..
+-00000910: 2020 2020 6c6f 6361 746f 725f 7479 7065      locator_type
+-00000920: 203d 2022 7870 6174 6822 0a20 2020 2061   = "xpath".    a
+-00000930: 6e63 686f 7273 203d 205b 5d0a 0a20 2020  nchors = []..   
+-00000940: 2066 6f72 2069 2069 6e20 7261 6e67 6528   for i in range(
+-00000950: 3429 3a0a 2020 2020 2020 2020 6920 2b3d  4):.        i +=
+-00000960: 2031 0a20 2020 2020 2020 206c 6f63 6174   1.        locat
+-00000970: 6f72 5f76 616c 7565 203d 2066 222f 2f61  or_value = f"//a
+-00000980: 5b40 6964 3d27 617b 697d 275d 220a 2020  [@id='a{i}']".  
+-00000990: 2020 2020 2020 616e 6368 6f72 203d 2073        anchor = s
+-000009a0: 796e 6368 726f 6e6f 7573 2e66 696e 645f  ynchronous.find_
+-000009b0: 656c 656d 656e 7428 0a20 2020 2020 2020  element(.       
+-000009c0: 2020 2020 2064 7269 7665 725f 7572 6c2c       driver_url,
+-000009d0: 2073 6573 7369 6f6e 2c20 6c6f 6361 746f   session, locato
+-000009e0: 725f 7479 7065 2c20 6c6f 6361 746f 725f  r_type, locator_
+-000009f0: 7661 6c75 650a 2020 2020 2020 2020 290a  value.        ).
+-00000a00: 2020 2020 2020 2020 616e 6368 6f72 732e          anchors.
+-00000a10: 6170 7065 6e64 2861 6e63 686f 7229 0a20  append(anchor). 
+-00000a20: 2020 2020 2020 2061 7373 6572 7420 280a         assert (.
+-00000a30: 2020 2020 2020 2020 2020 2020 6177 6169              awai
+-00000a40: 7420 6173 796e 6368 726f 6e6f 7573 2e67  t asynchronous.g
+-00000a50: 6574 5f74 6578 7428 6472 6976 6572 5f75  et_text(driver_u
+-00000a60: 726c 2c20 7365 7373 696f 6e2c 2061 6e63  rl, session, anc
+-00000a70: 686f 7273 5b69 202d 2031 5d29 0a20 2020  hors[i - 1]).   
+-00000a80: 2020 2020 2020 2020 203d 3d20 6622 616e           == f"an
+-00000a90: 797b 697d 2e63 6f6d 220a 2020 2020 2020  y{i}.com".      
+-00000aa0: 2020 290a 0a20 2020 2073 796e 6368 726f    )..    synchro
+-00000ab0: 6e6f 7573 2e63 6c6f 7365 5f73 6573 7369  nous.close_sessi
+-00000ac0: 6f6e 2864 7269 7665 725f 7572 6c2c 2073  on(driver_url, s
+-00000ad0: 6573 7369 6f6e 290a 0a0a 7374 6172 7420  ession)...start 
+-00000ae0: 3d20 7469 6d65 2e74 696d 6528 290a 0a6c  = time.time()..l
+-00000af0: 6f6f 7020 3d20 6173 796e 6369 6f2e 6765  oop = asyncio.ge
+-00000b00: 745f 6576 656e 745f 6c6f 6f70 2829 0a74  t_event_loop().t
+-00000b10: 6173 6b73 203d 205b 0a20 2020 206c 6f6f  asks = [.    loo
+-00000b20: 702e 6372 6561 7465 5f74 6173 6b28 6765  p.create_task(ge
+-00000b30: 745f 616c 6c5f 6c69 6e6b 7328 2929 2c0a  t_all_links()),.
+-00000b40: 2020 2020 6c6f 6f70 2e63 7265 6174 655f      loop.create_
+-00000b50: 7461 736b 2867 6574 5f61 6c6c 5f6c 696e  task(get_all_lin
+-00000b60: 6b73 2829 292c 0a20 2020 206c 6f6f 702e  ks()),.    loop.
+-00000b70: 6372 6561 7465 5f74 6173 6b28 6765 745f  create_task(get_
+-00000b80: 616c 6c5f 6c69 6e6b 7328 2929 2c0a 2020  all_links()),.  
+-00000b90: 2020 6c6f 6f70 2e63 7265 6174 655f 7461    loop.create_ta
+-00000ba0: 736b 2867 6574 5f61 6c6c 5f6c 696e 6b73  sk(get_all_links
+-00000bb0: 2829 292c 0a20 2020 206c 6f6f 702e 6372  ()),.    loop.cr
+-00000bc0: 6561 7465 5f74 6173 6b28 6765 745f 616c  eate_task(get_al
+-00000bd0: 6c5f 6c69 6e6b 7328 2929 2c0a 2020 2020  l_links()),.    
+-00000be0: 6c6f 6f70 2e63 7265 6174 655f 7461 736b  loop.create_task
+-00000bf0: 2867 6574 5f61 6c6c 5f6c 696e 6b73 2829  (get_all_links()
+-00000c00: 292c 0a20 2020 206c 6f6f 702e 6372 6561  ),.    loop.crea
+-00000c10: 7465 5f74 6173 6b28 6765 745f 616c 6c5f  te_task(get_all_
+-00000c20: 6c69 6e6b 7328 2929 2c0a 2020 2020 6c6f  links()),.    lo
+-00000c30: 6f70 2e63 7265 6174 655f 7461 736b 2867  op.create_task(g
+-00000c40: 6574 5f61 6c6c 5f6c 696e 6b73 2829 292c  et_all_links()),
+-00000c50: 0a20 2020 206c 6f6f 702e 6372 6561 7465  .    loop.create
+-00000c60: 5f74 6173 6b28 6765 745f 616c 6c5f 6c69  _task(get_all_li
+-00000c70: 6e6b 7328 2929 2c0a 2020 2020 6c6f 6f70  nks()),.    loop
+-00000c80: 2e63 7265 6174 655f 7461 736b 2867 6574  .create_task(get
+-00000c90: 5f61 6c6c 5f6c 696e 6b73 2829 292c 0a5d  _all_links()),.]
+-00000ca0: 0a6c 6f6f 702e 7275 6e5f 756e 7469 6c5f  .loop.run_until_
+-00000cb0: 636f 6d70 6c65 7465 2861 7379 6e63 696f  complete(asyncio
+-00000cc0: 2e77 6169 7428 7461 736b 7329 290a 6c6f  .wait(tasks)).lo
+-00000cd0: 6f70 2e63 6c6f 7365 2829 0a0a 656e 6420  op.close()..end 
+-00000ce0: 3d20 7469 6d65 2e74 696d 6528 290a 7072  = time.time().pr
+-00000cf0: 696e 7428 6622 5469 6d65 3a20 7b65 6e64  int(f"Time: {end
+-00000d00: 2d73 7461 7274 3a2e 3266 7d20 7365 6322  -start:.2f} sec"
+-00000d10: 290a 0a60 6060 0a0a 5275 6e20 7468 6520  )..```..Run the 
+-00000d20: 6669 6c65 0a60 6060 0a70 7974 686f 6e20  file.```.python 
+-00000d30: 7361 6d70 6c65 2e70 790a 6060 600a 0a23  sample.py.```..#
+-00000d40: 2044 7269 7665 7220 6173 2073 6572 7665   Driver as serve
+-00000d50: 720a 546f 2069 6c6c 7573 7472 6174 6520  r.To illustrate 
+-00000d60: 7768 6174 2049 206d 6561 6e20 6279 2022  what I mean by "
+-00000d70: 4472 6976 6572 2061 7320 7365 7276 6572  Driver as server
+-00000d80: 222c 206c 6574 7320 6765 7420 5b63 6872  ", lets get [chr
+-00000d90: 6f6d 6564 7269 7665 725d 2868 7474 7073  omedriver](https
+-00000da0: 3a2f 2f63 6872 6f6d 6564 7269 7665 722e  ://chromedriver.
+-00000db0: 6368 726f 6d69 756d 2e6f 7267 2f68 6f6d  chromium.org/hom
+-00000dc0: 6529 2061 6e64 2065 7865 6375 7465 2069  e) and execute i
+-00000dd0: 7420 6173 2061 6e20 6f72 6469 6e61 7279  t as an ordinary
+-00000de0: 2073 6865 6c6c 2073 6372 6970 7420 6669   shell script fi
+-00000df0: 6c65 2e0a 0a60 6060 0a2e 2f63 6872 6f6d  le...```../chrom
+-00000e00: 6564 7269 7665 7220 2d2d 706f 7274 3d39  edriver --port=9
+-00000e10: 3939 390a 5374 6172 7469 6e67 2043 6872  999.Starting Chr
+-00000e20: 6f6d 6544 7269 7665 7220 3934 2e30 2e34  omeDriver 94.0.4
+-00000e30: 3630 362e 3631 2028 3431 3862 3738 6635  606.61 (418b78f5
+-00000e40: 3833 3865 6430 6231 6336 3962 6234 6535  838ed0b1c69bb4e5
+-00000e50: 3165 6130 3235 3231 3731 3835 3439 3135  1ea0252171854915
+-00000e60: 2d72 6566 732f 6272 616e 6368 2d68 6561  -refs/branch-hea
+-00000e70: 6473 2f34 3630 3640 7b23 3132 3034 7d29  ds/4606@{#1204})
+-00000e80: 206f 6e20 706f 7274 2039 3939 390a 4f6e   on port 9999.On
+-00000e90: 6c79 206c 6f63 616c 2063 6f6e 6e65 6374  ly local connect
+-00000ea0: 696f 6e73 2061 7265 2061 6c6c 6f77 6564  ions are allowed
+-00000eb0: 2e0a 506c 6561 7365 2073 6565 2068 7474  ..Please see htt
+-00000ec0: 7073 3a2f 2f63 6872 6f6d 6564 7269 7665  ps://chromedrive
+-00000ed0: 722e 6368 726f 6d69 756d 2e6f 7267 2f73  r.chromium.org/s
+-00000ee0: 6563 7572 6974 792d 636f 6e73 6964 6572  ecurity-consider
+-00000ef0: 6174 696f 6e73 2066 6f72 2073 7567 6765  ations for sugge
+-00000f00: 7374 696f 6e73 206f 6e20 6b65 6570 696e  stions on keepin
+-00000f10: 6720 4368 726f 6d65 4472 6976 6572 2073  g ChromeDriver s
+-00000f20: 6166 652e 0a43 6872 6f6d 6544 7269 7665  afe..ChromeDrive
+-00000f30: 7220 7761 7320 7374 6172 7465 6420 7375  r was started su
+-00000f40: 6363 6573 7366 756c 6c79 2e0a 0a60 6060  ccessfully...```
+-00000f50: 0a4e 6f74 6963 6520 7468 6520 4472 6976  .Notice the Driv
+-00000f60: 6572 2069 7320 7275 6e6e 696e 6720 616e  er is running an
+-00000f70: 6420 7761 6974 696e 6720 666f 7220 4854  d waiting for HT
+-00000f80: 5450 2072 6571 7565 7374 732e 0a0a 4c65  TP requests...Le
+-00000f90: 7473 206f 7065 6e20 6120 6e65 7720 7365  ts open a new se
+-00000fa0: 7373 696f 6e20 6167 6169 6e73 7420 6974  ssion against it
+-00000fb0: 0a60 6060 0a63 7572 6c20 2d2d 6c6f 6361  .```.curl --loca
+-00000fc0: 7469 6f6e 2027 3132 372e 302e 302e 313a  tion '127.0.0.1:
+-00000fd0: 3939 3939 2f73 6573 7369 6f6e 2720 5c0a  9999/session' \.
+-00000fe0: 2d2d 6865 6164 6572 2027 436f 6e74 656e  --header 'Conten
+-00000ff0: 742d 5479 7065 3a20 6170 706c 6963 6174  t-Type: applicat
+-00001000: 696f 6e2f 6a73 6f6e 2720 5c0a 2d2d 6461  ion/json' \.--da
+-00001010: 7461 2027 7b0a 2020 2020 2264 6573 6972  ta '{.    "desir
+-00001020: 6564 4361 7061 6269 6c69 7469 6573 223a  edCapabilities":
+-00001030: 207b 0a20 2020 2020 2020 2022 6272 6f77   {.        "brow
+-00001040: 7365 724e 616d 6522 3a20 2266 6972 6566  serName": "firef
+-00001050: 6f78 222c 0a20 2020 2020 2020 2022 6d61  ox",.        "ma
+-00001060: 7269 6f6e 6574 7465 223a 2074 7275 652c  rionette": true,
+-00001070: 0a20 2020 2020 2020 2022 6163 6365 7074  .        "accept
+-00001080: 496e 7365 6375 7265 4365 7274 7322 3a20  InsecureCerts": 
+-00001090: 7472 7565 0a20 2020 207d 0a7d 270a 6060  true.    }.}'.``
+-000010a0: 600a 4865 7265 2069 7320 7468 6520 7265  `.Here is the re
+-000010b0: 7370 6f6e 7365 2072 6574 7572 6e65 640a  sponse returned.
+-000010c0: 6060 600a 7b0a 2020 2020 2273 6573 7369  ```.{.    "sessi
+-000010d0: 6f6e 4964 223a 2022 6236 3635 3431 3231  onId": "b6654121
+-000010e0: 6334 6261 3165 3833 3935 6465 6437 3361  c4ba1e8395ded73a
+-000010f0: 3237 6237 6438 6635 222c 0a20 2020 2022  27b7d8f5",.    "
+-00001100: 7374 6174 7573 223a 2030 2c0a 2020 2020  status": 0,.    
+-00001110: 2276 616c 7565 223a 207b 0a20 2020 2020  "value": {.     
+-00001120: 2020 2022 6163 6365 7074 496e 7365 6375     "acceptInsecu
+-00001130: 7265 4365 7274 7322 3a20 7472 7565 2c0a  reCerts": true,.
+-00001140: 2020 2020 2020 2020 2261 6363 6570 7453          "acceptS
+-00001150: 736c 4365 7274 7322 3a20 7472 7565 2c0a  slCerts": true,.
+-00001160: 2020 2020 2020 2020 2261 7070 6c69 6361          "applica
+-00001170: 7469 6f6e 4361 6368 6545 6e61 626c 6564  tionCacheEnabled
+-00001180: 223a 2066 616c 7365 2c0a 2020 2020 2020  ": false,.      
+-00001190: 2020 2262 726f 7773 6572 436f 6e6e 6563    "browserConnec
+-000011a0: 7469 6f6e 456e 6162 6c65 6422 3a20 6661  tionEnabled": fa
+-000011b0: 6c73 652c 0a20 2020 2020 2020 2022 6272  lse,.        "br
+-000011c0: 6f77 7365 724e 616d 6522 3a20 2263 6872  owserName": "chr
+-000011d0: 6f6d 6522 2c0a 2020 2020 2020 2020 2263  ome",.        "c
+-000011e0: 6872 6f6d 6522 3a20 7b0a 2020 2020 2020  hrome": {.      
+-000011f0: 2020 2020 2020 2263 6872 6f6d 6564 7269        "chromedri
+-00001200: 7665 7256 6572 7369 6f6e 223a 2022 3934  verVersion": "94
+-00001210: 2e30 2e34 3630 362e 3631 2028 3431 3862  .0.4606.61 (418b
+-00001220: 3738 6635 3833 3865 6430 6231 6336 3962  78f5838ed0b1c69b
+-00001230: 6234 6535 3165 6130 3235 3231 3731 3835  b4e51ea025217185
+-00001240: 3439 3135 2d72 6566 732f 6272 616e 6368  4915-refs/branch
+-00001250: 2d68 6561 6473 2f34 3630 3640 7b23 3132  -heads/4606@{#12
+-00001260: 3034 7d29 222c 0a20 2020 2020 2020 2020  04})",.         
+-00001270: 2020 2022 7573 6572 4461 7461 4469 7222     "userDataDir"
+-00001280: 3a20 222f 746d 702f 2e63 6f6d 2e67 6f6f  : "/tmp/.com.goo
+-00001290: 676c 652e 4368 726f 6d65 2e78 745a 554f  gle.Chrome.xtZUO
+-000012a0: 6a22 0a20 2020 2020 2020 207d 2c0a 2020  j".        },.  
+-000012b0: 2020 2020 2020 2263 7373 5365 6c65 6374        "cssSelect
+-000012c0: 6f72 7345 6e61 626c 6564 223a 2074 7275  orsEnabled": tru
+-000012d0: 652c 0a20 2020 2020 2020 2022 6461 7461  e,.        "data
+-000012e0: 6261 7365 456e 6162 6c65 6422 3a20 6661  baseEnabled": fa
+-000012f0: 6c73 652c 0a20 2020 2020 2020 2022 676f  lse,.        "go
+-00001300: 6f67 3a63 6872 6f6d 654f 7074 696f 6e73  og:chromeOptions
+-00001310: 223a 207b 0a20 2020 2020 2020 2020 2020  ": {.           
+-00001320: 2022 6465 6275 6767 6572 4164 6472 6573   "debuggerAddres
+-00001330: 7322 3a20 226c 6f63 616c 686f 7374 3a34  s": "localhost:4
+-00001340: 3434 3337 220a 2020 2020 2020 2020 7d2c  4437".        },
+-00001350: 0a20 2020 2020 2020 2022 6861 6e64 6c65  .        "handle
+-00001360: 7341 6c65 7274 7322 3a20 7472 7565 2c0a  sAlerts": true,.
+-00001370: 2020 2020 2020 2020 2268 6173 546f 7563          "hasTouc
+-00001380: 6853 6372 6565 6e22 3a20 6661 6c73 652c  hScreen": false,
+-00001390: 0a20 2020 2020 2020 2022 6a61 7661 7363  .        "javasc
+-000013a0: 7269 7074 456e 6162 6c65 6422 3a20 7472  riptEnabled": tr
+-000013b0: 7565 2c0a 2020 2020 2020 2020 226c 6f63  ue,.        "loc
+-000013c0: 6174 696f 6e43 6f6e 7465 7874 456e 6162  ationContextEnab
+-000013d0: 6c65 6422 3a20 7472 7565 2c0a 2020 2020  led": true,.    
+-000013e0: 2020 2020 226d 6f62 696c 6545 6d75 6c61      "mobileEmula
+-000013f0: 7469 6f6e 456e 6162 6c65 6422 3a20 6661  tionEnabled": fa
+-00001400: 6c73 652c 0a20 2020 2020 2020 2022 6e61  lse,.        "na
+-00001410: 7469 7665 4576 656e 7473 223a 2074 7275  tiveEvents": tru
+-00001420: 652c 0a20 2020 2020 2020 2022 6e65 7477  e,.        "netw
+-00001430: 6f72 6b43 6f6e 6e65 6374 696f 6e45 6e61  orkConnectionEna
+-00001440: 626c 6564 223a 2066 616c 7365 2c0a 2020  bled": false,.  
+-00001450: 2020 2020 2020 2270 6167 654c 6f61 6453        "pageLoadS
+-00001460: 7472 6174 6567 7922 3a20 226e 6f72 6d61  trategy": "norma
+-00001470: 6c22 2c0a 2020 2020 2020 2020 2270 6c61  l",.        "pla
+-00001480: 7466 6f72 6d22 3a20 224c 696e 7578 222c  tform": "Linux",
+-00001490: 0a20 2020 2020 2020 2022 7072 6f78 7922  .        "proxy"
+-000014a0: 3a20 7b7d 2c0a 2020 2020 2020 2020 2272  : {},.        "r
+-000014b0: 6f74 6174 6162 6c65 223a 2066 616c 7365  otatable": false
+-000014c0: 2c0a 2020 2020 2020 2020 2273 6574 5769  ,.        "setWi
+-000014d0: 6e64 6f77 5265 6374 223a 2074 7275 652c  ndowRect": true,
+-000014e0: 0a20 2020 2020 2020 2022 7374 7269 6374  .        "strict
+-000014f0: 4669 6c65 496e 7465 7261 6374 6162 696c  FileInteractabil
+-00001500: 6974 7922 3a20 6661 6c73 652c 0a20 2020  ity": false,.   
+-00001510: 2020 2020 2022 7461 6b65 7348 6561 7053       "takesHeapS
+-00001520: 6e61 7073 686f 7422 3a20 7472 7565 2c0a  napshot": true,.
+-00001530: 2020 2020 2020 2020 2274 616b 6573 5363          "takesSc
+-00001540: 7265 656e 7368 6f74 223a 2074 7275 652c  reenshot": true,
+-00001550: 0a20 2020 2020 2020 2022 7469 6d65 6f75  .        "timeou
+-00001560: 7473 223a 207b 0a20 2020 2020 2020 2020  ts": {.         
+-00001570: 2020 2022 696d 706c 6963 6974 223a 2030     "implicit": 0
+-00001580: 2c0a 2020 2020 2020 2020 2020 2020 2270  ,.            "p
+-00001590: 6167 654c 6f61 6422 3a20 3330 3030 3030  ageLoad": 300000
+-000015a0: 2c0a 2020 2020 2020 2020 2020 2020 2273  ,.            "s
+-000015b0: 6372 6970 7422 3a20 3330 3030 300a 2020  cript": 30000.  
+-000015c0: 2020 2020 2020 7d2c 0a20 2020 2020 2020        },.       
+-000015d0: 2022 756e 6578 7065 6374 6564 416c 6572   "unexpectedAler
+-000015e0: 7442 6568 6176 696f 7572 223a 2022 6967  tBehaviour": "ig
+-000015f0: 6e6f 7265 222c 0a20 2020 2020 2020 2022  nore",.        "
+-00001600: 7665 7273 696f 6e22 3a20 2239 342e 302e  version": "94.0.
+-00001610: 3436 3036 2e35 3422 2c0a 2020 2020 2020  4606.54",.      
+-00001620: 2020 2277 6562 5374 6f72 6167 6545 6e61    "webStorageEna
+-00001630: 626c 6564 223a 2074 7275 652c 0a20 2020  bled": true,.   
+-00001640: 2020 2020 2022 7765 6261 7574 686e 3a65       "webauthn:e
+-00001650: 7874 656e 7369 6f6e 3a63 7265 6442 6c6f  xtension:credBlo
+-00001660: 6222 3a20 7472 7565 2c0a 2020 2020 2020  b": true,.      
+-00001670: 2020 2277 6562 6175 7468 6e3a 6578 7465    "webauthn:exte
+-00001680: 6e73 696f 6e3a 6c61 7267 6542 6c6f 6222  nsion:largeBlob"
+-00001690: 3a20 7472 7565 2c0a 2020 2020 2020 2020  : true,.        
+-000016a0: 2277 6562 6175 7468 6e3a 7669 7274 7561  "webauthn:virtua
+-000016b0: 6c41 7574 6865 6e74 6963 6174 6f72 7322  lAuthenticators"
+-000016c0: 3a20 7472 7565 0a20 2020 207d 0a7d 0a60  : true.    }.}.`
+-000016d0: 6060 0a54 6865 202a 7365 7373 696f 6e49  ``.The *sessionI
+-000016e0: 642a 2076 616c 7565 2063 616e 2062 6520  d* value can be 
+-000016f0: 7573 6564 2074 6f20 7065 7266 6f72 6d20  used to perform 
+-00001700: 6675 7274 6865 7220 6163 7469 6f6e 7320  further actions 
+-00001710: 6c69 6b65 202a 6669 6e64 2065 6c65 6d65  like *find eleme
+-00001720: 6e74 2a2c 202a 7365 6e64 206b 6579 732a  nt*, *send keys*
+-00001730: 206f 7220 2a63 6c69 636b 2a20 6275 7474   or *click* butt
+-00001740: 6f6e 732e 204d 6f72 6520 6465 7461 696c  ons. More detail
+-00001750: 7320 6361 6e20 6265 2066 6f75 6e64 2069  s can be found i
+-00001760: 6e20 5b4a 736f 6e20 5769 7265 2050 726f  n [Json Wire Pro
+-00001770: 746f 636f 6c20 5370 6563 6966 6963 6174  tocol Specificat
+-00001780: 696f 6e5d 2868 7474 7073 3a2f 2f77 7777  ion](https://www
+-00001790: 2e73 656c 656e 6975 6d2e 6465 762f 646f  .selenium.dev/do
+-000017a0: 6375 6d65 6e74 6174 696f 6e2f 6c65 6761  cumentation/lega
+-000017b0: 6379 2f6a 736f 6e5f 7769 7265 5f70 726f  cy/json_wire_pro
+-000017c0: 746f 636f 6c2f 292e 0a41 6c73 6f20 7769  tocol/)..Also wi
+-000017d0: 7468 2074 6865 202a 2d68 2a20 7061 7261  th the *-h* para
+-000017e0: 6d65 7465 7220 696e 2044 7269 7665 7273  meter in Drivers
+-000017f0: 2c20 666f 7220 6578 616d 706c 653a 200a  , for example: .
+-00001800: 6060 600a 2e2f 6368 726f 6d65 6472 6976  ```../chromedriv
+-00001810: 6572 202d 680a 0a55 7361 6765 3a20 2e2f  er -h..Usage: ./
+-00001820: 6368 726f 6d65 6472 6976 6572 205b 4f50  chromedriver [OP
+-00001830: 5449 4f4e 535d 0a0a 4f70 7469 6f6e 730a  TIONS]..Options.
+-00001840: 2020 2d2d 706f 7274 3d50 4f52 5420 2020    --port=PORT   
+-00001850: 2020 2020 2020 2020 2020 2020 2020 2020                  
+-00001860: 2020 706f 7274 2074 6f20 6c69 7374 656e    port to listen
+-00001870: 206f 6e0a 2020 2d2d 6164 622d 706f 7274   on.  --adb-port
+-00001880: 3d50 4f52 5420 2020 2020 2020 2020 2020  =PORT           
+-00001890: 2020 2020 2020 6164 6220 7365 7276 6572        adb server
+-000018a0: 2070 6f72 740a 2020 2d2d 6c6f 672d 7061   port.  --log-pa
+-000018b0: 7468 3d46 494c 4520 2020 2020 2020 2020  th=FILE         
+-000018c0: 2020 2020 2020 2020 7772 6974 6520 7365          write se
+-000018d0: 7276 6572 206c 6f67 2074 6f20 6669 6c65  rver log to file
+-000018e0: 2069 6e73 7465 6164 206f 6620 7374 6465   instead of stde
+-000018f0: 7272 2c20 696e 6372 6561 7365 7320 6c6f  rr, increases lo
+-00001900: 6720 6c65 7665 6c20 746f 2049 4e46 4f0a  g level to INFO.
+-00001910: 2020 2d2d 6c6f 672d 6c65 7665 6c3d 4c45    --log-level=LE
+-00001920: 5645 4c20 2020 2020 2020 2020 2020 2020  VEL             
+-00001930: 2020 7365 7420 6c6f 6720 6c65 7665 6c3a    set log level:
+-00001940: 2041 4c4c 2c20 4445 4255 472c 2049 4e46   ALL, DEBUG, INF
+-00001950: 4f2c 2057 4152 4e49 4e47 2c20 5345 5645  O, WARNING, SEVE
+-00001960: 5245 2c20 4f46 460a 2020 2d2d 7665 7262  RE, OFF.  --verb
+-00001970: 6f73 6520 2020 2020 2020 2020 2020 2020  ose             
+-00001980: 2020 2020 2020 2020 2020 6c6f 6720 7665            log ve
+-00001990: 7262 6f73 656c 7920 2865 7175 6976 616c  rbosely (equival
+-000019a0: 656e 7420 746f 202d 2d6c 6f67 2d6c 6576  ent to --log-lev
+-000019b0: 656c 3d41 4c4c 290a 2020 2d2d 7369 6c65  el=ALL).  --sile
+-000019c0: 6e74 2020 2020 2020 2020 2020 2020 2020  nt              
+-000019d0: 2020 2020 2020 2020 2020 6c6f 6720 6e6f            log no
+-000019e0: 7468 696e 6720 2865 7175 6976 616c 656e  thing (equivalen
+-000019f0: 7420 746f 202d 2d6c 6f67 2d6c 6576 656c  t to --log-level
+-00001a00: 3d4f 4646 290a 2020 2d2d 6170 7065 6e64  =OFF).  --append
+-00001a10: 2d6c 6f67 2020 2020 2020 2020 2020 2020  -log            
+-00001a20: 2020 2020 2020 2020 6170 7065 6e64 206c          append l
+-00001a30: 6f67 2066 696c 6520 696e 7374 6561 6420  og file instead 
+-00001a40: 6f66 2072 6577 7269 7469 6e67 0a20 202d  of rewriting.  -
+-00001a50: 2d72 6570 6c61 7961 626c 6520 2020 2020  -replayable     
+-00001a60: 2020 2020 2020 2020 2020 2020 2020 2028                 (
+-00001a70: 6578 7065 7269 6d65 6e74 616c 2920 6c6f  experimental) lo
+-00001a80: 6720 7665 7262 6f73 656c 7920 616e 6420  g verbosely and 
+-00001a90: 646f 6e27 7420 7472 756e 6361 7465 206c  don't truncate l
+-00001aa0: 6f6e 6720 7374 7269 6e67 7320 736f 2074  ong strings so t
+-00001ab0: 6861 7420 7468 6520 6c6f 6720 6361 6e20  hat the log can 
+-00001ac0: 6265 2072 6570 6c61 7965 642e 0a20 202d  be replayed..  -
+-00001ad0: 2d76 6572 7369 6f6e 2020 2020 2020 2020  -version        
+-00001ae0: 2020 2020 2020 2020 2020 2020 2020 2070                 p
+-00001af0: 7269 6e74 2074 6865 2076 6572 7369 6f6e  rint the version
+-00001b00: 206e 756d 6265 7220 616e 6420 6578 6974   number and exit
+-00001b10: 0a20 202d 2d75 726c 2d62 6173 6520 2020  .  --url-base   
+-00001b20: 2020 2020 2020 2020 2020 2020 2020 2020                  
+-00001b30: 2020 2062 6173 6520 5552 4c20 7061 7468     base URL path
+-00001b40: 2070 7265 6669 7820 666f 7220 636f 6d6d   prefix for comm
+-00001b50: 616e 6473 2c20 652e 672e 2077 642f 7572  ands, e.g. wd/ur
+-00001b60: 6c0a 2020 2d2d 7265 6164 6162 6c65 2d74  l.  --readable-t
+-00001b70: 696d 6573 7461 6d70 2020 2020 2020 2020  imestamp        
+-00001b80: 2020 2020 6164 6420 7265 6164 6162 6c65      add readable
+-00001b90: 2074 696d 6573 7461 6d70 7320 746f 206c   timestamps to l
+-00001ba0: 6f67 0a20 202d 2d65 6e61 626c 652d 6368  og.  --enable-ch
+-00001bb0: 726f 6d65 2d6c 6f67 7320 2020 2020 2020  rome-logs       
+-00001bc0: 2020 2020 2073 686f 7720 6c6f 6773 2066       show logs f
+-00001bd0: 726f 6d20 7468 6520 6272 6f77 7365 7220  rom the browser 
+-00001be0: 286f 7665 7272 6964 6573 206f 7468 6572  (overrides other
+-00001bf0: 206c 6f67 6769 6e67 206f 7074 696f 6e73   logging options
+-00001c00: 290a 2020 2d2d 6469 7361 626c 652d 6465  ).  --disable-de
+-00001c10: 762d 7368 6d2d 7573 6167 6520 2020 2020  v-shm-usage     
+-00001c20: 2020 2020 646f 206e 6f74 2075 7365 202f      do not use /
+-00001c30: 6465 762f 7368 6d20 2861 6464 2074 6869  dev/shm (add thi
+-00001c40: 7320 7377 6974 6368 2069 6620 7365 6569  s switch if seei
+-00001c50: 6e67 2065 7272 6f72 7320 7265 6c61 7465  ng errors relate
+-00001c60: 6420 746f 2073 6861 7265 6420 6d65 6d6f  d to shared memo
+-00001c70: 7279 290a 2020 2d2d 616c 6c6f 7765 642d  ry).  --allowed-
+-00001c80: 6970 7320 2020 2020 2020 2020 2020 2020  ips             
+-00001c90: 2020 2020 2020 636f 6d6d 612d 7365 7061        comma-sepa
+-00001ca0: 7261 7465 6420 616c 6c6f 776c 6973 7420  rated allowlist 
+-00001cb0: 6f66 2072 656d 6f74 6520 4950 2061 6464  of remote IP add
+-00001cc0: 7265 7373 6573 2077 6869 6368 2061 7265  resses which are
+-00001cd0: 2061 6c6c 6f77 6564 2074 6f20 636f 6e6e   allowed to conn
+-00001ce0: 6563 7420 746f 2043 6872 6f6d 6544 7269  ect to ChromeDri
+-00001cf0: 7665 720a 6060 600a                      ver.```.
++00000050: 6c79 2061 6e64 2061 7379 6e63 6872 6f6e  ly and asynchron
++00000060: 6f75 736c 792e 204c 6175 6e63 6820 7468  ously. Launch th
++00000070: 6520 4472 6976 6572 2061 7320 6120 7365  e Driver as a se
++00000080: 7276 6572 2061 6e64 2073 656e 6420 7265  rver and send re
++00000090: 7175 6573 7473 2074 6f20 6974 2e20 5468  quests to it. Th
++000000a0: 6520 696e 7465 6e74 696f 6e20 6973 2074  e intention is t
++000000b0: 6861 7420 7468 6520 7573 6572 2064 6f65  hat the user doe
++000000c0: 7320 6e6f 7420 776f 7272 7920 6162 6f75  s not worry abou
++000000d0: 7420 7768 6963 6820 4472 6976 6572 2068  t which Driver h
++000000e0: 652f 7368 6520 6973 2075 7369 6e67 2e20  e/she is using. 
++000000f0: 4974 2063 616e 2062 6520 2a2a 5765 622a  It can be **Web*
++00000100: 2a44 7269 7665 7273 206c 696b 6520 5b53  *Drivers like [S
++00000110: 656c 656e 6975 6d5d 2868 7474 7073 3a2f  elenium](https:/
++00000120: 2f77 7777 2e73 656c 656e 6975 6d2e 6465  /www.selenium.de
++00000130: 762f 292c 202a 2a4d 6f62 696c 652a 2a44  v/), **Mobile**D
++00000140: 7269 7665 7273 206c 696b 6520 5b41 7070  rivers like [App
++00000150: 6975 6d5d 2868 7474 703a 2f2f 6170 7069  ium](http://appi
++00000160: 756d 2e69 6f2f 646f 6373 2f65 6e2f 322e  um.io/docs/en/2.
++00000170: 302f 292c 206f 7220 2a2a 4465 736b 746f  0/), or **Deskto
++00000180: 702a 2a44 7269 7665 7273 206c 696b 6520  p**Drivers like 
++00000190: 5b57 696e 6975 6d5d 2868 7474 7073 3a2f  [Winium](https:/
++000001a0: 2f67 6974 6875 622e 636f 6d2f 3267 6973  /github.com/2gis
++000001b0: 2f57 696e 6975 6d2e 4465 736b 746f 7029  /Winium.Desktop)
++000001c0: 2e0a 0a54 6865 2070 726f 6365 7373 202a  ...The process *
++000001d0: 2a43 6171 7569 2a2a 2066 6f6c 6c6f 7773  *Caqui** follows
++000001e0: 2069 7320 7369 6d69 6c61 7220 6f66 2074   is similar of t
++000001f0: 6865 206f 6e65 2064 6573 6372 6962 6564  he one described
++00000200: 2069 6e20 7468 6973 205b 6172 7469 636c   in this [articl
++00000210: 655d 2868 7474 7073 3a2f 2f6d 6564 6975  e](https://mediu
++00000220: 6d2e 636f 6d2f 4064 6f75 676c 6173 2e64  m.com/@douglas.d
++00000230: 636d 2f74 6573 7469 6e67 2d77 696e 646f  cm/testing-windo
++00000240: 7773 2d61 7070 732d 7769 7468 2d68 7474  ws-apps-with-htt
++00000250: 702d 7265 7374 2d62 3465 3866 3830 6638  p-rest-b4e8f80f8
++00000260: 6237 6529 2074 6861 7420 6578 7065 7269  b7e) that experi
++00000270: 6d65 6e74 7320 4472 6976 6572 7320 6173  ments Drivers as
++00000280: 2073 6572 7665 7273 2074 6f67 6574 6865   servers togethe
++00000290: 7220 7769 7468 205b 4a6d 6574 6572 5d28  r with [Jmeter](
++000002a0: 6874 7470 733a 2f2f 6a6d 6574 6572 2e61  https://jmeter.a
++000002b0: 7061 6368 652e 6f72 672f 2920 746f 2074  pache.org/) to t
++000002c0: 6573 7420 7468 6520 5769 6e64 6f77 7320  est the Windows 
++000002d0: 4361 6c63 756c 6174 6f72 2e20 486f 7765  Calculator. Howe
++000002e0: 7665 722c 2074 6865 206d 6f74 6976 6174  ver, the motivat
++000002f0: 696f 6e20 746f 2063 7265 6174 6520 2a2a  ion to create **
++00000300: 4361 7175 692a 2a20 7761 7320 6665 6564  Caqui** was feed
++00000310: 2062 7920 7468 6520 696e 7370 6972 6174   by the inspirat
++00000320: 696f 6e20 696e 205b 4172 7365 6e69 635d  ion in [Arsenic]
++00000330: 2868 7474 7073 3a2f 2f67 6974 6875 622e  (https://github.
++00000340: 636f 6d2f 4845 4e4e 4745 2f61 7273 656e  com/HENNGE/arsen
++00000350: 6963 2920 6c69 6272 6172 792e 0a0a 2a2a  ic) library...**
++00000360: 4361 7175 692a 2a20 6973 2070 6c61 6e6e  Caqui** is plann
++00000370: 6564 2074 6f20 6265 2044 7269 7665 7220  ed to be Driver 
++00000380: 6167 6e6f 7374 6963 2c20 736f 2074 6865  agnostic, so the
++00000390: 2075 7365 7220 6361 6e20 7374 6172 7420   user can start 
++000003a0: 616e 7920 4472 6976 6572 2061 7320 6120  any Driver as a 
++000003b0: 7365 7276 6572 2061 6e64 206a 7573 7420  server and just 
++000003c0: 696e 666f 726d 2074 6865 2073 6572 7665  inform the serve
++000003d0: 7220 5552 4c2e 2048 656e 6365 2c20 7468  r URL. Hence, th
++000003e0: 6520 636f 6465 2069 7320 6465 636f 7570  e code is decoup
++000003f0: 6c65 6420 6672 6f6d 2074 6865 2063 686f  led from the cho
++00000400: 7365 6e20 4472 6976 6572 2e0a 0a2a 2a43  sen Driver...**C
++00000410: 6171 7569 2a2a 2063 616e 2062 6520 7573  aqui** can be us
++00000420: 6564 2069 6e20 7265 6d6f 7465 2063 616c  ed in remote cal
++00000430: 6c73 2e20 4173 2069 7420 6e65 6564 7320  ls. As it needs 
++00000440: 6a75 7374 2074 6865 2073 6572 7665 7220  just the server 
++00000450: 5552 4c2c 2074 6865 2075 7365 7220 6361  URL, the user ca
++00000460: 6e20 7374 6172 7420 7468 6520 4472 6976  n start the Driv
++00000470: 6572 2061 7320 6120 7365 7276 6572 2069  er as a server i
++00000480: 6e20 616e 7920 686f 7374 2061 6e64 2070  n any host and p
++00000490: 726f 7669 6465 2074 6865 2055 524c 2074  rovide the URL t
++000004a0: 6f20 2a2a 4361 7175 692a 2a20 636c 6965  o **Caqui** clie
++000004b0: 6e74 732e 0a0a 2320 5369 6d70 6c65 2073  nts...# Simple s
++000004c0: 7461 7274 0a49 6e73 7461 6c6c 2074 6865  tart.Install the
++000004d0: 206c 6173 7465 7374 2076 6572 7369 6f6e   lastest version
++000004e0: 206f 6620 2a2a 4361 7175 692a 2a0a 0a60   of **Caqui**..`
++000004f0: 6060 0a70 6970 2069 6e73 7461 6c6c 2063  ``.pip install c
++00000500: 6171 7569 0a60 6060 0a0a 446f 776e 6c6f  aqui.```..Downlo
++00000510: 6164 2074 6865 2073 616d 6520 5b43 6872  ad the same [Chr
++00000520: 6f6d 6544 7269 7665 725d 2868 7474 7073  omeDriver](https
++00000530: 3a2f 2f63 6872 6f6d 6564 7269 7665 722e  ://chromedriver.
++00000540: 6368 726f 6d69 756d 2e6f 7267 2f64 6f77  chromium.org/dow
++00000550: 6e6c 6f61 6473 2920 7665 7273 696f 6e20  nloads) version 
++00000560: 6173 2079 6f75 7220 696e 7374 616c 6c65  as your installe
++00000570: 6420 4368 726f 6d65 2061 6e64 2073 7461  d Chrome and sta
++00000580: 7274 2074 6865 2044 7269 7665 7220 6173  rt the Driver as
++00000590: 2061 2073 6572 7665 7220 7573 696e 6720   a server using 
++000005a0: 7468 6520 706f 7274 2022 3939 3939 220a  the port "9999".
++000005b0: 0a60 6060 0a24 202e 2f63 6872 6f6d 6564  .```.$ ./chromed
++000005c0: 7269 7665 7220 2d2d 706f 7274 3d39 3939  river --port=999
++000005d0: 390a 5374 6172 7469 6e67 2043 6872 6f6d  9.Starting Chrom
++000005e0: 6544 7269 7665 7220 3934 2e30 2e34 3630  eDriver 94.0.460
++000005f0: 362e 3631 2028 3431 3862 3738 6635 3833  6.61 (418b78f583
++00000600: 3865 6430 6231 6336 3962 6234 6535 3165  8ed0b1c69bb4e51e
++00000610: 6130 3235 3231 3731 3835 3439 3135 2d72  a0252171854915-r
++00000620: 6566 732f 6272 616e 6368 2d68 6561 6473  efs/branch-heads
++00000630: 2f34 3630 3640 7b23 3132 3034 7d29 206f  /4606@{#1204}) o
++00000640: 6e20 706f 7274 2039 3939 390a 4f6e 6c79  n port 9999.Only
++00000650: 206c 6f63 616c 2063 6f6e 6e65 6374 696f   local connectio
++00000660: 6e73 2061 7265 2061 6c6c 6f77 6564 2e0a  ns are allowed..
++00000670: 506c 6561 7365 2073 6565 2068 7474 7073  Please see https
++00000680: 3a2f 2f63 6872 6f6d 6564 7269 7665 722e  ://chromedriver.
++00000690: 6368 726f 6d69 756d 2e6f 7267 2f73 6563  chromium.org/sec
++000006a0: 7572 6974 792d 636f 6e73 6964 6572 6174  urity-considerat
++000006b0: 696f 6e73 2066 6f72 2073 7567 6765 7374  ions for suggest
++000006c0: 696f 6e73 206f 6e20 6b65 6570 696e 6720  ions on keeping 
++000006d0: 4368 726f 6d65 4472 6976 6572 2073 6166  ChromeDriver saf
++000006e0: 652e 0a43 6872 6f6d 6544 7269 7665 7220  e..ChromeDriver 
++000006f0: 7761 7320 7374 6172 7465 6420 7375 6363  was started succ
++00000700: 6573 7366 756c 6c79 2e0a 6060 600a 0a43  essfully..```..C
++00000710: 6f70 7920 7468 6520 4854 4d4c 2063 6f6e  opy the HTML con
++00000720: 7465 6e74 2074 6f20 6070 6c61 7967 726f  tent to `playgro
++00000730: 756e 642e 6874 6d6c 600a 0a60 6060 0a3c  und.html`..```.<
++00000740: 6874 6d6c 3e0a 0a3c 6865 6164 3e0a 2020  html>..<head>.  
++00000750: 2020 3c74 6974 6c65 3e53 616d 706c 6520    <title>Sample 
++00000760: 7061 6765 3c2f 7469 746c 653e 0a3c 2f68  page</title>.</h
++00000770: 6561 643e 0a0a 3c62 6f64 793e 0a20 2020  ead>..<body>.   
++00000780: 203c 6831 3e42 6173 6963 2070 6167 653c   <h1>Basic page<
++00000790: 2f68 313e 0a20 2020 203c 703e 2054 6869  /h1>.    <p> Thi
++000007a0: 7320 6973 2061 2073 616d 706c 6520 7061  s is a sample pa
++000007b0: 6765 2074 6f20 6265 2075 7365 6420 746f  ge to be used to
++000007c0: 2073 616e 6974 7920 6368 6563 6b20 3c2f   sanity check </
++000007d0: 703e 0a20 2020 203c 696e 7075 7420 6964  p>.    <input id
++000007e0: 3d22 696e 7075 7422 3e0a 2020 2020 3c62  ="input">.    <b
++000007f0: 7574 746f 6e20 6964 3d22 6275 7474 6f6e  utton id="button
++00000800: 2220 6f6e 636c 6963 6b3d 226d 7946 756e  " onclick="myFun
++00000810: 6374 696f 6e28 7468 6973 2c20 2772 6564  ction(this, 'red
++00000820: 2729 223e 7465 7374 3c2f 6275 7474 6f6e  ')">test</button
++00000830: 3e0a 2020 2020 3c70 2069 643d 2265 6e64  >.    <p id="end
++00000840: 223e 656e 643c 2f70 3e0a 2020 2020 3c61  ">end</p>.    <a
++00000850: 2073 7263 3d22 6874 7470 3a2f 2f61 6e79   src="http://any
++00000860: 312e 636f 6d22 2069 643d 2261 3122 3e61  1.com" id="a1">a
++00000870: 6e79 312e 636f 6d3c 2f61 3e0a 2020 2020  ny1.com</a>.    
++00000880: 3c61 2073 7263 3d22 6874 7470 3a2f 2f61  <a src="http://a
++00000890: 6e79 322e 636f 6d22 2069 643d 2261 3222  ny2.com" id="a2"
++000008a0: 3e61 6e79 322e 636f 6d3c 2f61 3e0a 2020  >any2.com</a>.  
++000008b0: 2020 3c61 2073 7263 3d22 6874 7470 3a2f    <a src="http:/
++000008c0: 2f61 6e79 332e 636f 6d22 2069 643d 2261  /any3.com" id="a
++000008d0: 3322 3e61 6e79 332e 636f 6d3c 2f61 3e0a  3">any3.com</a>.
++000008e0: 2020 2020 3c61 2073 7263 3d22 6874 7470      <a src="http
++000008f0: 3a2f 2f61 6e79 342e 636f 6d22 2069 643d  ://any4.com" id=
++00000900: 2261 3422 3e61 6e79 342e 636f 6d3c 2f61  "a4">any4.com</a
++00000910: 3e0a 0a20 2020 203c 7363 7269 7074 3e0a  >..    <script>.
++00000920: 2020 2020 2020 2020 6675 6e63 7469 6f6e          function
++00000930: 206d 7946 756e 6374 696f 6e28 656c 656d   myFunction(elem
++00000940: 656e 742c 2063 6f6c 6f72 2920 7b0a 2020  ent, color) {.  
++00000950: 2020 2020 2020 2020 2020 656c 656d 656e            elemen
++00000960: 742e 7374 796c 652e 636f 6c6f 7220 3d20  t.style.color = 
++00000970: 636f 6c6f 723b 0a20 2020 2020 2020 207d  color;.        }
++00000980: 0a20 2020 203c 2f73 6372 6970 743e 0a3c  .    </script>.<
++00000990: 2f62 6f64 793e 0a0a 3c2f 6874 6d6c 3e0a  /body>..</html>.
++000009a0: 6060 600a 0a43 6f70 7920 7468 6520 636f  ```..Copy the co
++000009b0: 6465 2074 6f20 6073 616d 706c 652e 7079  de to `sample.py
++000009c0: 6020 6669 6c65 2e20 5468 6973 2066 696c  ` file. This fil
++000009d0: 6520 6d75 7374 2062 6520 696e 2074 6865  e must be in the
++000009e0: 2073 616d 6520 666f 6c64 6572 206f 6620   same folder of 
++000009f0: 6070 6c61 7967 726f 756e 642e 6874 6d6c  `playground.html
++00000a00: 600a 6060 600a 696d 706f 7274 2061 7379  `.```.import asy
++00000a10: 6e63 696f 0a69 6d70 6f72 7420 7469 6d65  ncio.import time
++00000a20: 0a66 726f 6d20 6361 7175 6920 696d 706f  .from caqui impo
++00000a30: 7274 2073 796e 6368 726f 6e6f 7573 2c20  rt synchronous, 
++00000a40: 6173 796e 6368 726f 6e6f 7573 0a0a 6672  asynchronous..fr
++00000a50: 6f6d 206f 7320 696d 706f 7274 2067 6574  om os import get
++00000a60: 6377 640a 0a42 4153 455f 4449 5220 3d20  cwd..BASE_DIR = 
++00000a70: 6765 7463 7764 2829 0a50 4147 455f 5552  getcwd().PAGE_UR
++00000a80: 4c20 3d20 6622 6669 6c65 3a2f 2f2f 7b42  L = f"file:///{B
++00000a90: 4153 455f 4449 527d 2f70 6c61 7967 726f  ASE_DIR}/playgro
++00000aa0: 756e 642e 6874 6d6c 220a 0a0a 6173 796e  und.html"...asyn
++00000ab0: 6320 6465 6620 6765 745f 616c 6c5f 6c69  c def get_all_li
++00000ac0: 6e6b 7328 293a 0a20 2020 2064 7269 7665  nks():.    drive
++00000ad0: 725f 7572 6c20 3d20 2268 7474 703a 2f2f  r_url = "http://
++00000ae0: 3132 372e 302e 302e 313a 3939 3939 220a  127.0.0.1:9999".
++00000af0: 2020 2020 6361 7061 6269 6c69 7469 6573      capabilities
++00000b00: 203d 207b 0a20 2020 2020 2020 2022 6465   = {.        "de
++00000b10: 7369 7265 6443 6170 6162 696c 6974 6965  siredCapabilitie
++00000b20: 7322 3a20 7b0a 2020 2020 2020 2020 2020  s": {.          
++00000b30: 2020 2262 726f 7773 6572 4e61 6d65 223a    "browserName":
++00000b40: 2022 6669 7265 666f 7822 2c0a 2020 2020   "firefox",.    
++00000b50: 2020 2020 2020 2020 226d 6172 696f 6e65          "marione
++00000b60: 7474 6522 3a20 5472 7565 2c0a 2020 2020  tte": True,.    
++00000b70: 2020 2020 2020 2020 2261 6363 6570 7449          "acceptI
++00000b80: 6e73 6563 7572 6543 6572 7473 223a 2054  nsecureCerts": T
++00000b90: 7275 652c 0a20 2020 2020 2020 207d 0a20  rue,.        }. 
++00000ba0: 2020 207d 0a20 2020 2073 6573 7369 6f6e     }.    session
++00000bb0: 203d 2073 796e 6368 726f 6e6f 7573 2e67   = synchronous.g
++00000bc0: 6574 5f73 6573 7369 6f6e 2864 7269 7665  et_session(drive
++00000bd0: 725f 7572 6c2c 2063 6170 6162 696c 6974  r_url, capabilit
++00000be0: 6965 7329 0a20 2020 2073 796e 6368 726f  ies).    synchro
++00000bf0: 6e6f 7573 2e67 6f5f 746f 5f70 6167 6528  nous.go_to_page(
++00000c00: 0a20 2020 2020 2020 2064 7269 7665 725f  .        driver_
++00000c10: 7572 6c2c 0a20 2020 2020 2020 2073 6573  url,.        ses
++00000c20: 7369 6f6e 2c0a 2020 2020 2020 2020 5041  sion,.        PA
++00000c30: 4745 5f55 524c 2c0a 2020 2020 290a 0a20  GE_URL,.    ).. 
++00000c40: 2020 206c 6f63 6174 6f72 5f74 7970 6520     locator_type 
++00000c50: 3d20 2278 7061 7468 220a 2020 2020 616e  = "xpath".    an
++00000c60: 6368 6f72 7320 3d20 5b5d 0a0a 2020 2020  chors = []..    
++00000c70: 666f 7220 6920 696e 2072 616e 6765 2834  for i in range(4
++00000c80: 293a 0a20 2020 2020 2020 2069 202b 3d20  ):.        i += 
++00000c90: 310a 2020 2020 2020 2020 6c6f 6361 746f  1.        locato
++00000ca0: 725f 7661 6c75 6520 3d20 6622 2f2f 615b  r_value = f"//a[
++00000cb0: 4069 643d 2761 7b69 7d27 5d22 0a20 2020  @id='a{i}']".   
++00000cc0: 2020 2020 2061 6e63 686f 7220 3d20 7379       anchor = sy
++00000cd0: 6e63 6872 6f6e 6f75 732e 6669 6e64 5f65  nchronous.find_e
++00000ce0: 6c65 6d65 6e74 280a 2020 2020 2020 2020  lement(.        
++00000cf0: 2020 2020 6472 6976 6572 5f75 726c 2c20      driver_url, 
++00000d00: 7365 7373 696f 6e2c 206c 6f63 6174 6f72  session, locator
++00000d10: 5f74 7970 652c 206c 6f63 6174 6f72 5f76  _type, locator_v
++00000d20: 616c 7565 0a20 2020 2020 2020 2029 0a20  alue.        ). 
++00000d30: 2020 2020 2020 2061 6e63 686f 7273 2e61         anchors.a
++00000d40: 7070 656e 6428 616e 6368 6f72 290a 2020  ppend(anchor).  
++00000d50: 2020 2020 2020 6173 7365 7274 2028 0a20        assert (. 
++00000d60: 2020 2020 2020 2020 2020 2061 7761 6974             await
++00000d70: 2061 7379 6e63 6872 6f6e 6f75 732e 6765   asynchronous.ge
++00000d80: 745f 7465 7874 2864 7269 7665 725f 7572  t_text(driver_ur
++00000d90: 6c2c 2073 6573 7369 6f6e 2c20 616e 6368  l, session, anch
++00000da0: 6f72 735b 6920 2d20 315d 290a 2020 2020  ors[i - 1]).    
++00000db0: 2020 2020 2020 2020 3d3d 2066 2261 6e79          == f"any
++00000dc0: 7b69 7d2e 636f 6d22 0a20 2020 2020 2020  {i}.com".       
++00000dd0: 2029 0a0a 2020 2020 7379 6e63 6872 6f6e   )..    synchron
++00000de0: 6f75 732e 636c 6f73 655f 7365 7373 696f  ous.close_sessio
++00000df0: 6e28 6472 6976 6572 5f75 726c 2c20 7365  n(driver_url, se
++00000e00: 7373 696f 6e29 0a0a 0a73 7461 7274 203d  ssion)...start =
++00000e10: 2074 696d 652e 7469 6d65 2829 0a0a 6c6f   time.time()..lo
++00000e20: 6f70 203d 2061 7379 6e63 696f 2e67 6574  op = asyncio.get
++00000e30: 5f65 7665 6e74 5f6c 6f6f 7028 290a 7461  _event_loop().ta
++00000e40: 736b 7320 3d20 5b0a 2020 2020 6c6f 6f70  sks = [.    loop
++00000e50: 2e63 7265 6174 655f 7461 736b 2867 6574  .create_task(get
++00000e60: 5f61 6c6c 5f6c 696e 6b73 2829 292c 0a20  _all_links()),. 
++00000e70: 2020 206c 6f6f 702e 6372 6561 7465 5f74     loop.create_t
++00000e80: 6173 6b28 6765 745f 616c 6c5f 6c69 6e6b  ask(get_all_link
++00000e90: 7328 2929 2c0a 2020 2020 6c6f 6f70 2e63  s()),.    loop.c
++00000ea0: 7265 6174 655f 7461 736b 2867 6574 5f61  reate_task(get_a
++00000eb0: 6c6c 5f6c 696e 6b73 2829 292c 0a20 2020  ll_links()),.   
++00000ec0: 206c 6f6f 702e 6372 6561 7465 5f74 6173   loop.create_tas
++00000ed0: 6b28 6765 745f 616c 6c5f 6c69 6e6b 7328  k(get_all_links(
++00000ee0: 2929 2c0a 2020 2020 6c6f 6f70 2e63 7265  )),.    loop.cre
++00000ef0: 6174 655f 7461 736b 2867 6574 5f61 6c6c  ate_task(get_all
++00000f00: 5f6c 696e 6b73 2829 292c 0a20 2020 206c  _links()),.    l
++00000f10: 6f6f 702e 6372 6561 7465 5f74 6173 6b28  oop.create_task(
++00000f20: 6765 745f 616c 6c5f 6c69 6e6b 7328 2929  get_all_links())
++00000f30: 2c0a 2020 2020 6c6f 6f70 2e63 7265 6174  ,.    loop.creat
++00000f40: 655f 7461 736b 2867 6574 5f61 6c6c 5f6c  e_task(get_all_l
++00000f50: 696e 6b73 2829 292c 0a20 2020 206c 6f6f  inks()),.    loo
++00000f60: 702e 6372 6561 7465 5f74 6173 6b28 6765  p.create_task(ge
++00000f70: 745f 616c 6c5f 6c69 6e6b 7328 2929 2c0a  t_all_links()),.
++00000f80: 2020 2020 6c6f 6f70 2e63 7265 6174 655f      loop.create_
++00000f90: 7461 736b 2867 6574 5f61 6c6c 5f6c 696e  task(get_all_lin
++00000fa0: 6b73 2829 292c 0a20 2020 206c 6f6f 702e  ks()),.    loop.
++00000fb0: 6372 6561 7465 5f74 6173 6b28 6765 745f  create_task(get_
++00000fc0: 616c 6c5f 6c69 6e6b 7328 2929 2c0a 5d0a  all_links()),.].
++00000fd0: 6c6f 6f70 2e72 756e 5f75 6e74 696c 5f63  loop.run_until_c
++00000fe0: 6f6d 706c 6574 6528 6173 796e 6369 6f2e  omplete(asyncio.
++00000ff0: 7761 6974 2874 6173 6b73 2929 0a6c 6f6f  wait(tasks)).loo
++00001000: 702e 636c 6f73 6528 290a 0a65 6e64 203d  p.close()..end =
++00001010: 2074 696d 652e 7469 6d65 2829 0a70 7269   time.time().pri
++00001020: 6e74 2866 2254 696d 653a 207b 656e 642d  nt(f"Time: {end-
++00001030: 7374 6172 743a 2e32 667d 2073 6563 2229  start:.2f} sec")
++00001040: 0a0a 6060 600a 0a52 756e 2074 6865 2066  ..```..Run the f
++00001050: 696c 650a 6060 600a 7079 7468 6f6e 2073  ile.```.python s
++00001060: 616d 706c 652e 7079 0a60 6060 0a0a 2320  ample.py.```..# 
++00001070: 4472 6976 6572 2061 7320 7365 7276 6572  Driver as server
++00001080: 0a54 6f20 696c 6c75 7374 7261 7465 2077  .To illustrate w
++00001090: 6861 7420 4920 6d65 616e 2062 7920 2244  hat I mean by "D
++000010a0: 7269 7665 7220 6173 2073 6572 7665 7222  river as server"
++000010b0: 2c20 6c65 7473 2067 6574 205b 6368 726f  , lets get [chro
++000010c0: 6d65 6472 6976 6572 5d28 6874 7470 733a  medriver](https:
++000010d0: 2f2f 6368 726f 6d65 6472 6976 6572 2e63  //chromedriver.c
++000010e0: 6872 6f6d 6975 6d2e 6f72 672f 686f 6d65  hromium.org/home
++000010f0: 2920 616e 6420 6578 6563 7574 6520 6974  ) and execute it
++00001100: 2061 7320 616e 206f 7264 696e 6172 7920   as an ordinary 
++00001110: 7368 656c 6c20 7363 7269 7074 2066 696c  shell script fil
++00001120: 652e 0a0a 6060 600a 2e2f 6368 726f 6d65  e...```../chrome
++00001130: 6472 6976 6572 202d 2d70 6f72 743d 3939  driver --port=99
++00001140: 3939 0a53 7461 7274 696e 6720 4368 726f  99.Starting Chro
++00001150: 6d65 4472 6976 6572 2039 342e 302e 3436  meDriver 94.0.46
++00001160: 3036 2e36 3120 2834 3138 6237 3866 3538  06.61 (418b78f58
++00001170: 3338 6564 3062 3163 3639 6262 3465 3531  38ed0b1c69bb4e51
++00001180: 6561 3032 3532 3137 3138 3534 3931 352d  ea0252171854915-
++00001190: 7265 6673 2f62 7261 6e63 682d 6865 6164  refs/branch-head
++000011a0: 732f 3436 3036 407b 2331 3230 347d 2920  s/4606@{#1204}) 
++000011b0: 6f6e 2070 6f72 7420 3939 3939 0a4f 6e6c  on port 9999.Onl
++000011c0: 7920 6c6f 6361 6c20 636f 6e6e 6563 7469  y local connecti
++000011d0: 6f6e 7320 6172 6520 616c 6c6f 7765 642e  ons are allowed.
++000011e0: 0a50 6c65 6173 6520 7365 6520 6874 7470  .Please see http
++000011f0: 733a 2f2f 6368 726f 6d65 6472 6976 6572  s://chromedriver
++00001200: 2e63 6872 6f6d 6975 6d2e 6f72 672f 7365  .chromium.org/se
++00001210: 6375 7269 7479 2d63 6f6e 7369 6465 7261  curity-considera
++00001220: 7469 6f6e 7320 666f 7220 7375 6767 6573  tions for sugges
++00001230: 7469 6f6e 7320 6f6e 206b 6565 7069 6e67  tions on keeping
++00001240: 2043 6872 6f6d 6544 7269 7665 7220 7361   ChromeDriver sa
++00001250: 6665 2e0a 4368 726f 6d65 4472 6976 6572  fe..ChromeDriver
++00001260: 2077 6173 2073 7461 7274 6564 2073 7563   was started suc
++00001270: 6365 7373 6675 6c6c 792e 0a0a 6060 600a  cessfully...```.
++00001280: 4e6f 7469 6365 2074 6865 2044 7269 7665  Notice the Drive
++00001290: 7220 6973 2072 756e 6e69 6e67 2061 6e64  r is running and
++000012a0: 2077 6169 7469 6e67 2066 6f72 2048 5454   waiting for HTT
++000012b0: 5020 7265 7175 6573 7473 2e0a 0a4c 6574  P requests...Let
++000012c0: 7320 6f70 656e 2061 206e 6577 2073 6573  s open a new ses
++000012d0: 7369 6f6e 2061 6761 696e 7374 2069 740a  sion against it.
++000012e0: 6060 600a 6375 726c 202d 2d6c 6f63 6174  ```.curl --locat
++000012f0: 696f 6e20 2731 3237 2e30 2e30 2e31 3a39  ion '127.0.0.1:9
++00001300: 3939 392f 7365 7373 696f 6e27 205c 0a2d  999/session' \.-
++00001310: 2d68 6561 6465 7220 2743 6f6e 7465 6e74  -header 'Content
++00001320: 2d54 7970 653a 2061 7070 6c69 6361 7469  -Type: applicati
++00001330: 6f6e 2f6a 736f 6e27 205c 0a2d 2d64 6174  on/json' \.--dat
++00001340: 6120 277b 0a20 2020 2022 6465 7369 7265  a '{.    "desire
++00001350: 6443 6170 6162 696c 6974 6965 7322 3a20  dCapabilities": 
++00001360: 7b0a 2020 2020 2020 2020 2262 726f 7773  {.        "brows
++00001370: 6572 4e61 6d65 223a 2022 6669 7265 666f  erName": "firefo
++00001380: 7822 2c0a 2020 2020 2020 2020 226d 6172  x",.        "mar
++00001390: 696f 6e65 7474 6522 3a20 7472 7565 2c0a  ionette": true,.
++000013a0: 2020 2020 2020 2020 2261 6363 6570 7449          "acceptI
++000013b0: 6e73 6563 7572 6543 6572 7473 223a 2074  nsecureCerts": t
++000013c0: 7275 650a 2020 2020 7d0a 7d27 0a60 6060  rue.    }.}'.```
++000013d0: 0a48 6572 6520 6973 2074 6865 2072 6573  .Here is the res
++000013e0: 706f 6e73 6520 7265 7475 726e 6564 0a60  ponse returned.`
++000013f0: 6060 0a7b 0a20 2020 2022 7365 7373 696f  ``.{.    "sessio
++00001400: 6e49 6422 3a20 2262 3636 3534 3132 3163  nId": "b6654121c
++00001410: 3462 6131 6538 3339 3564 6564 3733 6132  4ba1e8395ded73a2
++00001420: 3762 3764 3866 3522 2c0a 2020 2020 2273  7b7d8f5",.    "s
++00001430: 7461 7475 7322 3a20 302c 0a20 2020 2022  tatus": 0,.    "
++00001440: 7661 6c75 6522 3a20 7b0a 2020 2020 2020  value": {.      
++00001450: 2020 2261 6363 6570 7449 6e73 6563 7572    "acceptInsecur
++00001460: 6543 6572 7473 223a 2074 7275 652c 0a20  eCerts": true,. 
++00001470: 2020 2020 2020 2022 6163 6365 7074 5373         "acceptSs
++00001480: 6c43 6572 7473 223a 2074 7275 652c 0a20  lCerts": true,. 
++00001490: 2020 2020 2020 2022 6170 706c 6963 6174         "applicat
++000014a0: 696f 6e43 6163 6865 456e 6162 6c65 6422  ionCacheEnabled"
++000014b0: 3a20 6661 6c73 652c 0a20 2020 2020 2020  : false,.       
++000014c0: 2022 6272 6f77 7365 7243 6f6e 6e65 6374   "browserConnect
++000014d0: 696f 6e45 6e61 626c 6564 223a 2066 616c  ionEnabled": fal
++000014e0: 7365 2c0a 2020 2020 2020 2020 2262 726f  se,.        "bro
++000014f0: 7773 6572 4e61 6d65 223a 2022 6368 726f  wserName": "chro
++00001500: 6d65 222c 0a20 2020 2020 2020 2022 6368  me",.        "ch
++00001510: 726f 6d65 223a 207b 0a20 2020 2020 2020  rome": {.       
++00001520: 2020 2020 2022 6368 726f 6d65 6472 6976       "chromedriv
++00001530: 6572 5665 7273 696f 6e22 3a20 2239 342e  erVersion": "94.
++00001540: 302e 3436 3036 2e36 3120 2834 3138 6237  0.4606.61 (418b7
++00001550: 3866 3538 3338 6564 3062 3163 3639 6262  8f5838ed0b1c69bb
++00001560: 3465 3531 6561 3032 3532 3137 3138 3534  4e51ea0252171854
++00001570: 3931 352d 7265 6673 2f62 7261 6e63 682d  915-refs/branch-
++00001580: 6865 6164 732f 3436 3036 407b 2331 3230  heads/4606@{#120
++00001590: 347d 2922 2c0a 2020 2020 2020 2020 2020  4})",.          
++000015a0: 2020 2275 7365 7244 6174 6144 6972 223a    "userDataDir":
++000015b0: 2022 2f74 6d70 2f2e 636f 6d2e 676f 6f67   "/tmp/.com.goog
++000015c0: 6c65 2e43 6872 6f6d 652e 7874 5a55 4f6a  le.Chrome.xtZUOj
++000015d0: 220a 2020 2020 2020 2020 7d2c 0a20 2020  ".        },.   
++000015e0: 2020 2020 2022 6373 7353 656c 6563 746f       "cssSelecto
++000015f0: 7273 456e 6162 6c65 6422 3a20 7472 7565  rsEnabled": true
++00001600: 2c0a 2020 2020 2020 2020 2264 6174 6162  ,.        "datab
++00001610: 6173 6545 6e61 626c 6564 223a 2066 616c  aseEnabled": fal
++00001620: 7365 2c0a 2020 2020 2020 2020 2267 6f6f  se,.        "goo
++00001630: 673a 6368 726f 6d65 4f70 7469 6f6e 7322  g:chromeOptions"
++00001640: 3a20 7b0a 2020 2020 2020 2020 2020 2020  : {.            
++00001650: 2264 6562 7567 6765 7241 6464 7265 7373  "debuggerAddress
++00001660: 223a 2022 6c6f 6361 6c68 6f73 743a 3434  ": "localhost:44
++00001670: 3433 3722 0a20 2020 2020 2020 207d 2c0a  437".        },.
++00001680: 2020 2020 2020 2020 2268 616e 646c 6573          "handles
++00001690: 416c 6572 7473 223a 2074 7275 652c 0a20  Alerts": true,. 
++000016a0: 2020 2020 2020 2022 6861 7354 6f75 6368         "hasTouch
++000016b0: 5363 7265 656e 223a 2066 616c 7365 2c0a  Screen": false,.
++000016c0: 2020 2020 2020 2020 226a 6176 6173 6372          "javascr
++000016d0: 6970 7445 6e61 626c 6564 223a 2074 7275  iptEnabled": tru
++000016e0: 652c 0a20 2020 2020 2020 2022 6c6f 6361  e,.        "loca
++000016f0: 7469 6f6e 436f 6e74 6578 7445 6e61 626c  tionContextEnabl
++00001700: 6564 223a 2074 7275 652c 0a20 2020 2020  ed": true,.     
++00001710: 2020 2022 6d6f 6269 6c65 456d 756c 6174     "mobileEmulat
++00001720: 696f 6e45 6e61 626c 6564 223a 2066 616c  ionEnabled": fal
++00001730: 7365 2c0a 2020 2020 2020 2020 226e 6174  se,.        "nat
++00001740: 6976 6545 7665 6e74 7322 3a20 7472 7565  iveEvents": true
++00001750: 2c0a 2020 2020 2020 2020 226e 6574 776f  ,.        "netwo
++00001760: 726b 436f 6e6e 6563 7469 6f6e 456e 6162  rkConnectionEnab
++00001770: 6c65 6422 3a20 6661 6c73 652c 0a20 2020  led": false,.   
++00001780: 2020 2020 2022 7061 6765 4c6f 6164 5374       "pageLoadSt
++00001790: 7261 7465 6779 223a 2022 6e6f 726d 616c  rategy": "normal
++000017a0: 222c 0a20 2020 2020 2020 2022 706c 6174  ",.        "plat
++000017b0: 666f 726d 223a 2022 4c69 6e75 7822 2c0a  form": "Linux",.
++000017c0: 2020 2020 2020 2020 2270 726f 7879 223a          "proxy":
++000017d0: 207b 7d2c 0a20 2020 2020 2020 2022 726f   {},.        "ro
++000017e0: 7461 7461 626c 6522 3a20 6661 6c73 652c  tatable": false,
++000017f0: 0a20 2020 2020 2020 2022 7365 7457 696e  .        "setWin
++00001800: 646f 7752 6563 7422 3a20 7472 7565 2c0a  dowRect": true,.
++00001810: 2020 2020 2020 2020 2273 7472 6963 7446          "strictF
++00001820: 696c 6549 6e74 6572 6163 7461 6269 6c69  ileInteractabili
++00001830: 7479 223a 2066 616c 7365 2c0a 2020 2020  ty": false,.    
++00001840: 2020 2020 2274 616b 6573 4865 6170 536e      "takesHeapSn
++00001850: 6170 7368 6f74 223a 2074 7275 652c 0a20  apshot": true,. 
++00001860: 2020 2020 2020 2022 7461 6b65 7353 6372         "takesScr
++00001870: 6565 6e73 686f 7422 3a20 7472 7565 2c0a  eenshot": true,.
++00001880: 2020 2020 2020 2020 2274 696d 656f 7574          "timeout
++00001890: 7322 3a20 7b0a 2020 2020 2020 2020 2020  s": {.          
++000018a0: 2020 2269 6d70 6c69 6369 7422 3a20 302c    "implicit": 0,
++000018b0: 0a20 2020 2020 2020 2020 2020 2022 7061  .            "pa
++000018c0: 6765 4c6f 6164 223a 2033 3030 3030 302c  geLoad": 300000,
++000018d0: 0a20 2020 2020 2020 2020 2020 2022 7363  .            "sc
++000018e0: 7269 7074 223a 2033 3030 3030 0a20 2020  ript": 30000.   
++000018f0: 2020 2020 207d 2c0a 2020 2020 2020 2020       },.        
++00001900: 2275 6e65 7870 6563 7465 6441 6c65 7274  "unexpectedAlert
++00001910: 4265 6861 7669 6f75 7222 3a20 2269 676e  Behaviour": "ign
++00001920: 6f72 6522 2c0a 2020 2020 2020 2020 2276  ore",.        "v
++00001930: 6572 7369 6f6e 223a 2022 3934 2e30 2e34  ersion": "94.0.4
++00001940: 3630 362e 3534 222c 0a20 2020 2020 2020  606.54",.       
++00001950: 2022 7765 6253 746f 7261 6765 456e 6162   "webStorageEnab
++00001960: 6c65 6422 3a20 7472 7565 2c0a 2020 2020  led": true,.    
++00001970: 2020 2020 2277 6562 6175 7468 6e3a 6578      "webauthn:ex
++00001980: 7465 6e73 696f 6e3a 6372 6564 426c 6f62  tension:credBlob
++00001990: 223a 2074 7275 652c 0a20 2020 2020 2020  ": true,.       
++000019a0: 2022 7765 6261 7574 686e 3a65 7874 656e   "webauthn:exten
++000019b0: 7369 6f6e 3a6c 6172 6765 426c 6f62 223a  sion:largeBlob":
++000019c0: 2074 7275 652c 0a20 2020 2020 2020 2022   true,.        "
++000019d0: 7765 6261 7574 686e 3a76 6972 7475 616c  webauthn:virtual
++000019e0: 4175 7468 656e 7469 6361 746f 7273 223a  Authenticators":
++000019f0: 2074 7275 650a 2020 2020 7d0a 7d0a 6060   true.    }.}.``
++00001a00: 600a 5468 6520 2a73 6573 7369 6f6e 4964  `.The *sessionId
++00001a10: 2a20 7661 6c75 6520 6361 6e20 6265 2075  * value can be u
++00001a20: 7365 6420 746f 2070 6572 666f 726d 2066  sed to perform f
++00001a30: 7572 7468 6572 2061 6374 696f 6e73 206c  urther actions l
++00001a40: 696b 6520 2a66 696e 6420 656c 656d 656e  ike *find elemen
++00001a50: 742a 2c20 2a73 656e 6420 6b65 7973 2a20  t*, *send keys* 
++00001a60: 6f72 202a 636c 6963 6b2a 2062 7574 746f  or *click* butto
++00001a70: 6e73 2e20 4d6f 7265 2064 6574 6169 6c73  ns. More details
++00001a80: 2063 616e 2062 6520 666f 756e 6420 696e   can be found in
++00001a90: 205b 4a73 6f6e 2057 6972 6520 5072 6f74   [Json Wire Prot
++00001aa0: 6f63 6f6c 2053 7065 6369 6669 6361 7469  ocol Specificati
++00001ab0: 6f6e 5d28 6874 7470 733a 2f2f 7777 772e  on](https://www.
++00001ac0: 7365 6c65 6e69 756d 2e64 6576 2f64 6f63  selenium.dev/doc
++00001ad0: 756d 656e 7461 7469 6f6e 2f6c 6567 6163  umentation/legac
++00001ae0: 792f 6a73 6f6e 5f77 6972 655f 7072 6f74  y/json_wire_prot
++00001af0: 6f63 6f6c 2f29 2e0a 416c 736f 2077 6974  ocol/)..Also wit
++00001b00: 6820 7468 6520 2a2d 682a 2070 6172 616d  h the *-h* param
++00001b10: 6574 6572 2069 6e20 4472 6976 6572 732c  eter in Drivers,
++00001b20: 2066 6f72 2065 7861 6d70 6c65 3a20 0a60   for example: .`
++00001b30: 6060 0a2e 2f63 6872 6f6d 6564 7269 7665  ``../chromedrive
++00001b40: 7220 2d68 0a0a 5573 6167 653a 202e 2f63  r -h..Usage: ./c
++00001b50: 6872 6f6d 6564 7269 7665 7220 5b4f 5054  hromedriver [OPT
++00001b60: 494f 4e53 5d0a 0a4f 7074 696f 6e73 0a20  IONS]..Options. 
++00001b70: 202d 2d70 6f72 743d 504f 5254 2020 2020   --port=PORT    
++00001b80: 2020 2020 2020 2020 2020 2020 2020 2020                  
++00001b90: 2070 6f72 7420 746f 206c 6973 7465 6e20   port to listen 
++00001ba0: 6f6e 0a20 202d 2d61 6462 2d70 6f72 743d  on.  --adb-port=
++00001bb0: 504f 5254 2020 2020 2020 2020 2020 2020  PORT            
++00001bc0: 2020 2020 2061 6462 2073 6572 7665 7220       adb server 
++00001bd0: 706f 7274 0a20 202d 2d6c 6f67 2d70 6174  port.  --log-pat
++00001be0: 683d 4649 4c45 2020 2020 2020 2020 2020  h=FILE          
++00001bf0: 2020 2020 2020 2077 7269 7465 2073 6572         write ser
++00001c00: 7665 7220 6c6f 6720 746f 2066 696c 6520  ver log to file 
++00001c10: 696e 7374 6561 6420 6f66 2073 7464 6572  instead of stder
++00001c20: 722c 2069 6e63 7265 6173 6573 206c 6f67  r, increases log
++00001c30: 206c 6576 656c 2074 6f20 494e 464f 0a20   level to INFO. 
++00001c40: 202d 2d6c 6f67 2d6c 6576 656c 3d4c 4556   --log-level=LEV
++00001c50: 454c 2020 2020 2020 2020 2020 2020 2020  EL              
++00001c60: 2073 6574 206c 6f67 206c 6576 656c 3a20   set log level: 
++00001c70: 414c 4c2c 2044 4542 5547 2c20 494e 464f  ALL, DEBUG, INFO
++00001c80: 2c20 5741 524e 494e 472c 2053 4556 4552  , WARNING, SEVER
++00001c90: 452c 204f 4646 0a20 202d 2d76 6572 626f  E, OFF.  --verbo
++00001ca0: 7365 2020 2020 2020 2020 2020 2020 2020  se              
++00001cb0: 2020 2020 2020 2020 206c 6f67 2076 6572           log ver
++00001cc0: 626f 7365 6c79 2028 6571 7569 7661 6c65  bosely (equivale
++00001cd0: 6e74 2074 6f20 2d2d 6c6f 672d 6c65 7665  nt to --log-leve
++00001ce0: 6c3d 414c 4c29 0a20 202d 2d73 696c 656e  l=ALL).  --silen
++00001cf0: 7420 2020 2020 2020 2020 2020 2020 2020  t               
++00001d00: 2020 2020 2020 2020 206c 6f67 206e 6f74           log not
++00001d10: 6869 6e67 2028 6571 7569 7661 6c65 6e74  hing (equivalent
++00001d20: 2074 6f20 2d2d 6c6f 672d 6c65 7665 6c3d   to --log-level=
++00001d30: 4f46 4629 0a20 202d 2d61 7070 656e 642d  OFF).  --append-
++00001d40: 6c6f 6720 2020 2020 2020 2020 2020 2020  log             
++00001d50: 2020 2020 2020 2061 7070 656e 6420 6c6f         append lo
++00001d60: 6720 6669 6c65 2069 6e73 7465 6164 206f  g file instead o
++00001d70: 6620 7265 7772 6974 696e 670a 2020 2d2d  f rewriting.  --
++00001d80: 7265 706c 6179 6162 6c65 2020 2020 2020  replayable      
++00001d90: 2020 2020 2020 2020 2020 2020 2020 2865                (e
++00001da0: 7870 6572 696d 656e 7461 6c29 206c 6f67  xperimental) log
++00001db0: 2076 6572 626f 7365 6c79 2061 6e64 2064   verbosely and d
++00001dc0: 6f6e 2774 2074 7275 6e63 6174 6520 6c6f  on't truncate lo
++00001dd0: 6e67 2073 7472 696e 6773 2073 6f20 7468  ng strings so th
++00001de0: 6174 2074 6865 206c 6f67 2063 616e 2062  at the log can b
++00001df0: 6520 7265 706c 6179 6564 2e0a 2020 2d2d  e replayed..  --
++00001e00: 7665 7273 696f 6e20 2020 2020 2020 2020  version         
++00001e10: 2020 2020 2020 2020 2020 2020 2020 7072                pr
++00001e20: 696e 7420 7468 6520 7665 7273 696f 6e20  int the version 
++00001e30: 6e75 6d62 6572 2061 6e64 2065 7869 740a  number and exit.
++00001e40: 2020 2d2d 7572 6c2d 6261 7365 2020 2020    --url-base    
++00001e50: 2020 2020 2020 2020 2020 2020 2020 2020                  
++00001e60: 2020 6261 7365 2055 524c 2070 6174 6820    base URL path 
++00001e70: 7072 6566 6978 2066 6f72 2063 6f6d 6d61  prefix for comma
++00001e80: 6e64 732c 2065 2e67 2e20 7764 2f75 726c  nds, e.g. wd/url
++00001e90: 0a20 202d 2d72 6561 6461 626c 652d 7469  .  --readable-ti
++00001ea0: 6d65 7374 616d 7020 2020 2020 2020 2020  mestamp         
++00001eb0: 2020 2061 6464 2072 6561 6461 626c 6520     add readable 
++00001ec0: 7469 6d65 7374 616d 7073 2074 6f20 6c6f  timestamps to lo
++00001ed0: 670a 2020 2d2d 656e 6162 6c65 2d63 6872  g.  --enable-chr
++00001ee0: 6f6d 652d 6c6f 6773 2020 2020 2020 2020  ome-logs        
++00001ef0: 2020 2020 7368 6f77 206c 6f67 7320 6672      show logs fr
++00001f00: 6f6d 2074 6865 2062 726f 7773 6572 2028  om the browser (
++00001f10: 6f76 6572 7269 6465 7320 6f74 6865 7220  overrides other 
++00001f20: 6c6f 6767 696e 6720 6f70 7469 6f6e 7329  logging options)
++00001f30: 0a20 202d 2d64 6973 6162 6c65 2d64 6576  .  --disable-dev
++00001f40: 2d73 686d 2d75 7361 6765 2020 2020 2020  -shm-usage      
++00001f50: 2020 2064 6f20 6e6f 7420 7573 6520 2f64     do not use /d
++00001f60: 6576 2f73 686d 2028 6164 6420 7468 6973  ev/shm (add this
++00001f70: 2073 7769 7463 6820 6966 2073 6565 696e   switch if seein
++00001f80: 6720 6572 726f 7273 2072 656c 6174 6564  g errors related
++00001f90: 2074 6f20 7368 6172 6564 206d 656d 6f72   to shared memor
++00001fa0: 7929 0a20 202d 2d61 6c6c 6f77 6564 2d69  y).  --allowed-i
++00001fb0: 7073 2020 2020 2020 2020 2020 2020 2020  ps              
++00001fc0: 2020 2020 2063 6f6d 6d61 2d73 6570 6172       comma-separ
++00001fd0: 6174 6564 2061 6c6c 6f77 6c69 7374 206f  ated allowlist o
++00001fe0: 6620 7265 6d6f 7465 2049 5020 6164 6472  f remote IP addr
++00001ff0: 6573 7365 7320 7768 6963 6820 6172 6520  esses which are 
++00002000: 616c 6c6f 7765 6420 746f 2063 6f6e 6e65  allowed to conne
++00002010: 6374 2074 6f20 4368 726f 6d65 4472 6976  ct to ChromeDriv
++00002020: 6572 0a60 6060 0a                        er.```.
+```
+
+### Comparing `caqui-0.0.1/pyproject.toml` & `caqui-1.0.1/pyproject.toml`
+
+ * *Files 4% similar despite different names*
+
+```diff
+@@ -1,22 +1,22 @@
+ [build-system]
+ requires = ["hatchling"]
+ build-backend = "hatchling.build"
+ 
+ [project]
+ name = "caqui"
+-version = "0.0.1"
++version = "1.0.1"
+ authors = [
+   { name="Douglas Cardoso", email="noemail@noemail.com" },
+ ]
+ description = "Run asynchronous commands in WebDrivers"
+ readme = "README.md"
+ requires-python = ">=3.7"
+ classifiers = [
+-    "Development Status :: 2 - Pre-Alpha",
++    "Development Status :: 3 - Alpha",
+     "Programming Language :: Python :: 3",
+     "License :: OSI Approved :: MIT License",
+     "Operating System :: OS Independent",
+ ]
+ 
+ dependencies = [
+   "requests",
+```
+
+### Comparing `caqui-0.0.1/PKG-INFO` & `caqui-1.0.1/PKG-INFO`
+
+ * *Files 9% similar despite different names*
+
+```diff
+@@ -1,10 +1,10 @@
+ 00000000: 4d65 7461 6461 7461 2d56 6572 7369 6f6e  Metadata-Version
+ 00000010: 3a20 322e 310a 4e61 6d65 3a20 6361 7175  : 2.1.Name: caqu
+-00000020: 690a 5665 7273 696f 6e3a 2030 2e30 2e31  i.Version: 0.0.1
++00000020: 690a 5665 7273 696f 6e3a 2031 2e30 2e31  i.Version: 1.0.1
+ 00000030: 0a53 756d 6d61 7279 3a20 5275 6e20 6173  .Summary: Run as
+ 00000040: 796e 6368 726f 6e6f 7573 2063 6f6d 6d61  ynchronous comma
+ 00000050: 6e64 7320 696e 2057 6562 4472 6976 6572  nds in WebDriver
+ 00000060: 730a 5072 6f6a 6563 742d 5552 4c3a 2048  s.Project-URL: H
+ 00000070: 6f6d 6570 6167 652c 2068 7474 7073 3a2f  omepage, https:/
+ 00000080: 2f67 6974 6875 622e 636f 6d2f 646f 7567  /github.com/doug
+ 00000090: 6c61 7364 636d 2f63 6171 7569 0a50 726f  lasdcm/caqui.Pro
+@@ -14,489 +14,539 @@
+ 000000d0: 7364 636d 2f63 6171 7569 2f69 7373 7565  sdcm/caqui/issue
+ 000000e0: 730a 4175 7468 6f72 2d65 6d61 696c 3a20  s.Author-email: 
+ 000000f0: 446f 7567 6c61 7320 4361 7264 6f73 6f20  Douglas Cardoso 
+ 00000100: 3c6e 6f65 6d61 696c 406e 6f65 6d61 696c  <noemail@noemail
+ 00000110: 2e63 6f6d 3e0a 4c69 6365 6e73 652d 4669  .com>.License-Fi
+ 00000120: 6c65 3a20 4c49 4345 4e53 450a 436c 6173  le: LICENSE.Clas
+ 00000130: 7369 6669 6572 3a20 4465 7665 6c6f 706d  sifier: Developm
+-00000140: 656e 7420 5374 6174 7573 203a 3a20 3220  ent Status :: 2 
+-00000150: 2d20 5072 652d 416c 7068 610a 436c 6173  - Pre-Alpha.Clas
+-00000160: 7369 6669 6572 3a20 4c69 6365 6e73 6520  sifier: License 
+-00000170: 3a3a 204f 5349 2041 7070 726f 7665 6420  :: OSI Approved 
+-00000180: 3a3a 204d 4954 204c 6963 656e 7365 0a43  :: MIT License.C
+-00000190: 6c61 7373 6966 6965 723a 204f 7065 7261  lassifier: Opera
+-000001a0: 7469 6e67 2053 7973 7465 6d20 3a3a 204f  ting System :: O
+-000001b0: 5320 496e 6465 7065 6e64 656e 740a 436c  S Independent.Cl
+-000001c0: 6173 7369 6669 6572 3a20 5072 6f67 7261  assifier: Progra
+-000001d0: 6d6d 696e 6720 4c61 6e67 7561 6765 203a  mming Language :
+-000001e0: 3a20 5079 7468 6f6e 203a 3a20 330a 5265  : Python :: 3.Re
+-000001f0: 7175 6972 6573 2d50 7974 686f 6e3a 203e  quires-Python: >
+-00000200: 3d33 2e37 0a52 6571 7569 7265 732d 4469  =3.7.Requires-Di
+-00000210: 7374 3a20 6169 6f68 7474 700a 5265 7175  st: aiohttp.Requ
+-00000220: 6972 6573 2d44 6973 743a 2072 6571 7565  ires-Dist: reque
+-00000230: 7374 730a 4465 7363 7269 7074 696f 6e2d  sts.Description-
+-00000240: 436f 6e74 656e 742d 5479 7065 3a20 7465  Content-Type: te
+-00000250: 7874 2f6d 6172 6b64 6f77 6e0a 0a23 2043  xt/markdown..# C
+-00000260: 6171 7569 0a0a 2a2a 4361 7175 692a 2a20  aqui..**Caqui** 
+-00000270: 6973 2069 6e74 656e 6465 6420 746f 2063  is intended to c
+-00000280: 6f6d 6d61 6e64 2065 7865 6375 7469 6f6e  ommand execution
+-00000290: 7320 6167 6169 6e73 7420 4472 6976 6572  s against Driver
+-000002a0: 7320 7379 6e63 6872 6f6e 6f75 736c 792c  s synchronously,
+-000002b0: 2061 7379 6e63 6872 6f6e 6f75 736c 7920   asynchronously 
+-000002c0: 616e 6420 696e 2070 6172 616c 6c65 6c2e  and in parallel.
+-000002d0: 204c 6175 6e63 6820 7468 6520 4472 6976   Launch the Driv
+-000002e0: 6572 2061 7320 6120 7365 7276 6572 2061  er as a server a
+-000002f0: 6e64 2073 656e 6420 7265 7175 6573 7473  nd send requests
+-00000300: 2074 6f20 6974 2e20 5468 6520 696e 7465   to it. The inte
+-00000310: 6e74 696f 6e20 6973 2074 6861 7420 7468  ntion is that th
+-00000320: 6520 7573 6572 2064 6f65 7320 6e6f 7420  e user does not 
+-00000330: 776f 7272 7920 6162 6f75 7420 7768 6963  worry about whic
+-00000340: 6820 4472 6976 6572 2068 652f 7368 6520  h Driver he/she 
+-00000350: 6973 2075 7369 6e67 2e20 4974 2063 616e  is using. It can
+-00000360: 2062 6520 2a2a 5765 622a 2a44 7269 7665   be **Web**Drive
+-00000370: 7273 206c 696b 6520 5b53 656c 656e 6975  rs like [Seleniu
+-00000380: 6d5d 2868 7474 7073 3a2f 2f77 7777 2e73  m](https://www.s
+-00000390: 656c 656e 6975 6d2e 6465 762f 292c 202a  elenium.dev/), *
+-000003a0: 2a4d 6f62 696c 652a 2a44 7269 7665 7273  *Mobile**Drivers
+-000003b0: 206c 696b 6520 5b41 7070 6975 6d5d 2868   like [Appium](h
+-000003c0: 7474 703a 2f2f 6170 7069 756d 2e69 6f2f  ttp://appium.io/
+-000003d0: 646f 6373 2f65 6e2f 322e 302f 292c 206f  docs/en/2.0/), o
+-000003e0: 7220 2a2a 4465 736b 746f 702a 2a44 7269  r **Desktop**Dri
+-000003f0: 7665 7273 206c 696b 6520 5b57 696e 6975  vers like [Winiu
+-00000400: 6d5d 2868 7474 7073 3a2f 2f67 6974 6875  m](https://githu
+-00000410: 622e 636f 6d2f 3267 6973 2f57 696e 6975  b.com/2gis/Winiu
+-00000420: 6d2e 4465 736b 746f 7029 2e0a 0a54 6865  m.Desktop)...The
+-00000430: 2070 726f 6365 7373 202a 2a43 6171 7569   process **Caqui
+-00000440: 2a2a 2066 6f6c 6c6f 7773 2069 7320 7369  ** follows is si
+-00000450: 6d69 6c61 7220 6f66 2074 6865 206f 6e65  milar of the one
+-00000460: 2064 6573 6372 6962 6564 2069 6e20 7468   described in th
+-00000470: 6973 205b 6172 7469 636c 655d 2868 7474  is [article](htt
+-00000480: 7073 3a2f 2f6d 6564 6975 6d2e 636f 6d2f  ps://medium.com/
+-00000490: 4064 6f75 676c 6173 2e64 636d 2f74 6573  @douglas.dcm/tes
+-000004a0: 7469 6e67 2d77 696e 646f 7773 2d61 7070  ting-windows-app
+-000004b0: 732d 7769 7468 2d68 7474 702d 7265 7374  s-with-http-rest
+-000004c0: 2d62 3465 3866 3830 6638 6237 6529 2074  -b4e8f80f8b7e) t
+-000004d0: 6861 7420 6578 7065 7269 6d65 6e74 7320  hat experiments 
+-000004e0: 4472 6976 6572 7320 6173 2073 6572 7665  Drivers as serve
+-000004f0: 7273 2074 6f67 6574 6865 7220 7769 7468  rs together with
+-00000500: 205b 4a6d 6574 6572 5d28 6874 7470 733a   [Jmeter](https:
+-00000510: 2f2f 6a6d 6574 6572 2e61 7061 6368 652e  //jmeter.apache.
+-00000520: 6f72 672f 2920 746f 2074 6573 7420 5769  org/) to test Wi
+-00000530: 6e64 6f77 7320 4361 6c63 756c 6174 6f72  ndows Calculator
+-00000540: 2e20 486f 7765 7665 722c 2074 6865 206d  . However, the m
+-00000550: 6f74 6976 6174 696f 6e20 746f 2063 7265  otivation to cre
+-00000560: 6174 6520 2a2a 4361 7175 692a 2a20 7761  ate **Caqui** wa
+-00000570: 7320 6665 6564 2062 7920 7468 6520 696e  s feed by the in
+-00000580: 7370 6972 6174 696f 6e20 696e 205b 4172  spiration in [Ar
+-00000590: 7365 6e69 635d 2868 7474 7073 3a2f 2f67  senic](https://g
+-000005a0: 6974 6875 622e 636f 6d2f 4845 4e4e 4745  ithub.com/HENNGE
+-000005b0: 2f61 7273 656e 6963 2920 6c69 6272 6172  /arsenic) librar
+-000005c0: 792e 0a0a 2a2a 4361 7175 692a 2a20 6973  y...**Caqui** is
+-000005d0: 2070 6c61 6e6e 6564 2074 6f20 6265 2044   planned to be D
+-000005e0: 7269 7665 7220 6167 6e6f 7374 6963 2c20  river agnostic, 
+-000005f0: 736f 2074 6865 2075 7365 7220 6361 6e20  so the user can 
+-00000600: 7374 6172 7420 616e 7920 4472 6976 6572  start any Driver
+-00000610: 2061 7320 6120 7365 7276 6572 2061 6e64   as a server and
+-00000620: 206a 7573 7420 696e 666f 726d 2074 6865   just inform the
+-00000630: 2073 6572 7665 7220 5552 4c2e 2048 656e   server URL. Hen
+-00000640: 6365 2c20 7468 6520 636f 6465 2069 7320  ce, the code is 
+-00000650: 6465 636f 7570 6c65 6420 6672 6f6d 2074  decoupled from t
+-00000660: 6865 2063 686f 7365 6e20 4472 6976 6572  he chosen Driver
+-00000670: 2e0a 0a2a 2a43 6171 7569 2a2a 2063 616e  ...**Caqui** can
+-00000680: 2062 6520 7573 6564 2069 6e20 7265 6d6f   be used in remo
+-00000690: 7465 2063 616c 6c73 2e20 4173 2069 7420  te calls. As it 
+-000006a0: 6e65 6564 7320 6a75 7374 2074 6865 2073  needs just the s
+-000006b0: 6572 7665 7220 5552 4c2c 2074 6865 2075  erver URL, the u
+-000006c0: 7365 7220 6361 6e20 7374 6172 7420 7468  ser can start th
+-000006d0: 6520 4472 6976 6572 2061 7320 6120 7365  e Driver as a se
+-000006e0: 7276 6572 2069 6e20 616e 7920 686f 7374  rver in any host
+-000006f0: 2061 6e64 2070 726f 7669 6465 2074 6865   and provide the
+-00000700: 2055 524c 2074 6f20 2a2a 4361 7175 692a   URL to **Caqui*
+-00000710: 2a20 636c 6965 6e74 732e 0a0a 2320 5369  * clients...# Si
+-00000720: 6d70 6c65 2073 7461 7274 0a49 6e73 7461  mple start.Insta
+-00000730: 6c6c 2074 6865 206c 6173 7465 7374 2076  ll the lastest v
+-00000740: 6572 7369 6f6e 206f 6620 2a2a 4361 7175  ersion of **Caqu
+-00000750: 692a 2a0a 0a60 6060 0a70 6970 2069 6e73  i**..```.pip ins
+-00000760: 7461 6c6c 2063 6171 7569 0a60 6060 0a0a  tall caqui.```..
+-00000770: 446f 776e 6c6f 6164 2074 6865 2073 616d  Download the sam
+-00000780: 6520 4368 726f 6d65 4472 6976 6572 2076  e ChromeDriver v
+-00000790: 6572 7369 6f6e 2061 7320 796f 7572 2069  ersion as your i
+-000007a0: 6e73 7461 6c6c 6564 2043 6872 6f6d 6520  nstalled Chrome 
+-000007b0: 616e 6420 7374 6172 7420 7468 6520 4472  and start the Dr
+-000007c0: 6976 6572 2061 7320 6120 7365 7276 6572  iver as a server
+-000007d0: 2075 7369 6e67 2074 6865 2070 6f72 7420   using the port 
+-000007e0: 2239 3939 3922 0a0a 6060 600a 2420 2e2f  "9999"..```.$ ./
+-000007f0: 6368 726f 6d65 6472 6976 6572 202d 2d70  chromedriver --p
+-00000800: 6f72 743d 3939 3939 0a53 7461 7274 696e  ort=9999.Startin
+-00000810: 6720 4368 726f 6d65 4472 6976 6572 2039  g ChromeDriver 9
+-00000820: 342e 302e 3436 3036 2e36 3120 2834 3138  4.0.4606.61 (418
+-00000830: 6237 3866 3538 3338 6564 3062 3163 3639  b78f5838ed0b1c69
+-00000840: 6262 3465 3531 6561 3032 3532 3137 3138  bb4e51ea02521718
+-00000850: 3534 3931 352d 7265 6673 2f62 7261 6e63  54915-refs/branc
+-00000860: 682d 6865 6164 732f 3436 3036 407b 2331  h-heads/4606@{#1
+-00000870: 3230 347d 2920 6f6e 2070 6f72 7420 3939  204}) on port 99
+-00000880: 3939 0a4f 6e6c 7920 6c6f 6361 6c20 636f  99.Only local co
+-00000890: 6e6e 6563 7469 6f6e 7320 6172 6520 616c  nnections are al
+-000008a0: 6c6f 7765 642e 0a50 6c65 6173 6520 7365  lowed..Please se
+-000008b0: 6520 6874 7470 733a 2f2f 6368 726f 6d65  e https://chrome
+-000008c0: 6472 6976 6572 2e63 6872 6f6d 6975 6d2e  driver.chromium.
+-000008d0: 6f72 672f 7365 6375 7269 7479 2d63 6f6e  org/security-con
+-000008e0: 7369 6465 7261 7469 6f6e 7320 666f 7220  siderations for 
+-000008f0: 7375 6767 6573 7469 6f6e 7320 6f6e 206b  suggestions on k
+-00000900: 6565 7069 6e67 2043 6872 6f6d 6544 7269  eeping ChromeDri
+-00000910: 7665 7220 7361 6665 2e0a 4368 726f 6d65  ver safe..Chrome
+-00000920: 4472 6976 6572 2077 6173 2073 7461 7274  Driver was start
+-00000930: 6564 2073 7563 6365 7373 6675 6c6c 792e  ed successfully.
+-00000940: 0a60 6060 0a0a 436f 7079 2074 6865 2063  .```..Copy the c
+-00000950: 6f64 6520 746f 2060 7361 6d70 6c65 2e70  ode to `sample.p
+-00000960: 7960 2066 696c 650a 6060 600a 696d 706f  y` file.```.impo
+-00000970: 7274 2061 7379 6e63 696f 0a69 6d70 6f72  rt asyncio.impor
+-00000980: 7420 7469 6d65 0a66 726f 6d20 6361 7175  t time.from caqu
+-00000990: 6920 696d 706f 7274 2073 796e 6368 726f  i import synchro
+-000009a0: 6e6f 7573 2c20 6173 796e 6368 726f 6e6f  nous, asynchrono
+-000009b0: 7573 0a66 726f 6d20 7465 7374 732e 636f  us.from tests.co
+-000009c0: 6e73 7461 6e74 7320 696d 706f 7274 2050  nstants import P
+-000009d0: 4147 455f 5552 4c0a 0a0a 6173 796e 6320  AGE_URL...async 
+-000009e0: 6465 6620 6765 745f 616c 6c5f 6c69 6e6b  def get_all_link
+-000009f0: 7328 293a 0a20 2020 2064 7269 7665 725f  s():.    driver_
+-00000a00: 7572 6c20 3d20 2268 7474 703a 2f2f 3132  url = "http://12
+-00000a10: 372e 302e 302e 313a 3939 3939 220a 2020  7.0.0.1:9999".  
+-00000a20: 2020 6361 7061 6269 6c69 7469 6573 203d    capabilities =
+-00000a30: 207b 0a20 2020 2020 2020 2022 6465 7369   {.        "desi
+-00000a40: 7265 6443 6170 6162 696c 6974 6965 7322  redCapabilities"
+-00000a50: 3a20 7b0a 2020 2020 2020 2020 2020 2020  : {.            
+-00000a60: 2262 726f 7773 6572 4e61 6d65 223a 2022  "browserName": "
+-00000a70: 6669 7265 666f 7822 2c0a 2020 2020 2020  firefox",.      
+-00000a80: 2020 2020 2020 226d 6172 696f 6e65 7474        "marionett
+-00000a90: 6522 3a20 5472 7565 2c0a 2020 2020 2020  e": True,.      
+-00000aa0: 2020 2020 2020 2261 6363 6570 7449 6e73        "acceptIns
+-00000ab0: 6563 7572 6543 6572 7473 223a 2054 7275  ecureCerts": Tru
+-00000ac0: 652c 0a20 2020 2020 2020 207d 0a20 2020  e,.        }.   
+-00000ad0: 207d 0a20 2020 2073 6573 7369 6f6e 203d   }.    session =
+-00000ae0: 2073 796e 6368 726f 6e6f 7573 2e67 6574   synchronous.get
+-00000af0: 5f73 6573 7369 6f6e 2864 7269 7665 725f  _session(driver_
+-00000b00: 7572 6c2c 2063 6170 6162 696c 6974 6965  url, capabilitie
+-00000b10: 7329 0a20 2020 2073 796e 6368 726f 6e6f  s).    synchrono
+-00000b20: 7573 2e67 6f5f 746f 5f70 6167 6528 0a20  us.go_to_page(. 
+-00000b30: 2020 2020 2020 2064 7269 7665 725f 7572         driver_ur
+-00000b40: 6c2c 0a20 2020 2020 2020 2073 6573 7369  l,.        sessi
+-00000b50: 6f6e 2c0a 2020 2020 2020 2020 5041 4745  on,.        PAGE
+-00000b60: 5f55 524c 2c0a 2020 2020 290a 0a20 2020  _URL,.    )..   
+-00000b70: 206c 6f63 6174 6f72 5f74 7970 6520 3d20   locator_type = 
+-00000b80: 2278 7061 7468 220a 2020 2020 616e 6368  "xpath".    anch
+-00000b90: 6f72 7320 3d20 5b5d 0a0a 2020 2020 666f  ors = []..    fo
+-00000ba0: 7220 6920 696e 2072 616e 6765 2834 293a  r i in range(4):
+-00000bb0: 0a20 2020 2020 2020 2069 202b 3d20 310a  .        i += 1.
+-00000bc0: 2020 2020 2020 2020 6c6f 6361 746f 725f          locator_
+-00000bd0: 7661 6c75 6520 3d20 6622 2f2f 615b 4069  value = f"//a[@i
+-00000be0: 643d 2761 7b69 7d27 5d22 0a20 2020 2020  d='a{i}']".     
+-00000bf0: 2020 2061 6e63 686f 7220 3d20 7379 6e63     anchor = sync
+-00000c00: 6872 6f6e 6f75 732e 6669 6e64 5f65 6c65  hronous.find_ele
+-00000c10: 6d65 6e74 280a 2020 2020 2020 2020 2020  ment(.          
+-00000c20: 2020 6472 6976 6572 5f75 726c 2c20 7365    driver_url, se
+-00000c30: 7373 696f 6e2c 206c 6f63 6174 6f72 5f74  ssion, locator_t
+-00000c40: 7970 652c 206c 6f63 6174 6f72 5f76 616c  ype, locator_val
+-00000c50: 7565 0a20 2020 2020 2020 2029 0a20 2020  ue.        ).   
+-00000c60: 2020 2020 2061 6e63 686f 7273 2e61 7070       anchors.app
+-00000c70: 656e 6428 616e 6368 6f72 290a 2020 2020  end(anchor).    
+-00000c80: 2020 2020 6173 7365 7274 2028 0a20 2020      assert (.   
+-00000c90: 2020 2020 2020 2020 2061 7761 6974 2061           await a
+-00000ca0: 7379 6e63 6872 6f6e 6f75 732e 6765 745f  synchronous.get_
+-00000cb0: 7465 7874 2864 7269 7665 725f 7572 6c2c  text(driver_url,
+-00000cc0: 2073 6573 7369 6f6e 2c20 616e 6368 6f72   session, anchor
+-00000cd0: 735b 6920 2d20 315d 290a 2020 2020 2020  s[i - 1]).      
+-00000ce0: 2020 2020 2020 3d3d 2066 2261 6e79 7b69        == f"any{i
+-00000cf0: 7d2e 636f 6d22 0a20 2020 2020 2020 2029  }.com".        )
+-00000d00: 0a0a 2020 2020 7379 6e63 6872 6f6e 6f75  ..    synchronou
+-00000d10: 732e 636c 6f73 655f 7365 7373 696f 6e28  s.close_session(
+-00000d20: 6472 6976 6572 5f75 726c 2c20 7365 7373  driver_url, sess
+-00000d30: 696f 6e29 0a0a 0a73 7461 7274 203d 2074  ion)...start = t
+-00000d40: 696d 652e 7469 6d65 2829 0a0a 6c6f 6f70  ime.time()..loop
+-00000d50: 203d 2061 7379 6e63 696f 2e67 6574 5f65   = asyncio.get_e
+-00000d60: 7665 6e74 5f6c 6f6f 7028 290a 7461 736b  vent_loop().task
+-00000d70: 7320 3d20 5b0a 2020 2020 6c6f 6f70 2e63  s = [.    loop.c
+-00000d80: 7265 6174 655f 7461 736b 2867 6574 5f61  reate_task(get_a
+-00000d90: 6c6c 5f6c 696e 6b73 2829 292c 0a20 2020  ll_links()),.   
+-00000da0: 206c 6f6f 702e 6372 6561 7465 5f74 6173   loop.create_tas
+-00000db0: 6b28 6765 745f 616c 6c5f 6c69 6e6b 7328  k(get_all_links(
+-00000dc0: 2929 2c0a 2020 2020 6c6f 6f70 2e63 7265  )),.    loop.cre
+-00000dd0: 6174 655f 7461 736b 2867 6574 5f61 6c6c  ate_task(get_all
+-00000de0: 5f6c 696e 6b73 2829 292c 0a20 2020 206c  _links()),.    l
+-00000df0: 6f6f 702e 6372 6561 7465 5f74 6173 6b28  oop.create_task(
+-00000e00: 6765 745f 616c 6c5f 6c69 6e6b 7328 2929  get_all_links())
+-00000e10: 2c0a 2020 2020 6c6f 6f70 2e63 7265 6174  ,.    loop.creat
+-00000e20: 655f 7461 736b 2867 6574 5f61 6c6c 5f6c  e_task(get_all_l
+-00000e30: 696e 6b73 2829 292c 0a20 2020 206c 6f6f  inks()),.    loo
+-00000e40: 702e 6372 6561 7465 5f74 6173 6b28 6765  p.create_task(ge
+-00000e50: 745f 616c 6c5f 6c69 6e6b 7328 2929 2c0a  t_all_links()),.
+-00000e60: 2020 2020 6c6f 6f70 2e63 7265 6174 655f      loop.create_
+-00000e70: 7461 736b 2867 6574 5f61 6c6c 5f6c 696e  task(get_all_lin
+-00000e80: 6b73 2829 292c 0a20 2020 206c 6f6f 702e  ks()),.    loop.
+-00000e90: 6372 6561 7465 5f74 6173 6b28 6765 745f  create_task(get_
+-00000ea0: 616c 6c5f 6c69 6e6b 7328 2929 2c0a 2020  all_links()),.  
+-00000eb0: 2020 6c6f 6f70 2e63 7265 6174 655f 7461    loop.create_ta
+-00000ec0: 736b 2867 6574 5f61 6c6c 5f6c 696e 6b73  sk(get_all_links
+-00000ed0: 2829 292c 0a20 2020 206c 6f6f 702e 6372  ()),.    loop.cr
+-00000ee0: 6561 7465 5f74 6173 6b28 6765 745f 616c  eate_task(get_al
+-00000ef0: 6c5f 6c69 6e6b 7328 2929 2c0a 5d0a 6c6f  l_links()),.].lo
+-00000f00: 6f70 2e72 756e 5f75 6e74 696c 5f63 6f6d  op.run_until_com
+-00000f10: 706c 6574 6528 6173 796e 6369 6f2e 7761  plete(asyncio.wa
+-00000f20: 6974 2874 6173 6b73 2929 0a6c 6f6f 702e  it(tasks)).loop.
+-00000f30: 636c 6f73 6528 290a 0a65 6e64 203d 2074  close()..end = t
+-00000f40: 696d 652e 7469 6d65 2829 0a70 7269 6e74  ime.time().print
+-00000f50: 2866 2254 696d 653a 207b 656e 642d 7374  (f"Time: {end-st
+-00000f60: 6172 743a 2e32 667d 2073 6563 2229 0a0a  art:.2f} sec")..
+-00000f70: 6060 600a 0a52 756e 2074 6865 2066 696c  ```..Run the fil
+-00000f80: 650a 6060 600a 7079 7468 6f6e 2073 616d  e.```.python sam
+-00000f90: 706c 652e 7079 0a60 6060 0a0a 2320 4472  ple.py.```..# Dr
+-00000fa0: 6976 6572 2061 7320 7365 7276 6572 0a54  iver as server.T
+-00000fb0: 6f20 696c 6c75 7374 7261 7465 2077 6861  o illustrate wha
+-00000fc0: 7420 4920 6d65 616e 2062 7920 2244 7269  t I mean by "Dri
+-00000fd0: 7665 7220 6173 2073 6572 7665 7222 2c20  ver as server", 
+-00000fe0: 6c65 7473 2067 6574 205b 6368 726f 6d65  lets get [chrome
+-00000ff0: 6472 6976 6572 5d28 6874 7470 733a 2f2f  driver](https://
+-00001000: 6368 726f 6d65 6472 6976 6572 2e63 6872  chromedriver.chr
+-00001010: 6f6d 6975 6d2e 6f72 672f 686f 6d65 2920  omium.org/home) 
+-00001020: 616e 6420 6578 6563 7574 6520 6974 2061  and execute it a
+-00001030: 7320 616e 206f 7264 696e 6172 7920 7368  s an ordinary sh
+-00001040: 656c 6c20 7363 7269 7074 2066 696c 652e  ell script file.
+-00001050: 0a0a 6060 600a 2e2f 6368 726f 6d65 6472  ..```../chromedr
+-00001060: 6976 6572 202d 2d70 6f72 743d 3939 3939  iver --port=9999
+-00001070: 0a53 7461 7274 696e 6720 4368 726f 6d65  .Starting Chrome
+-00001080: 4472 6976 6572 2039 342e 302e 3436 3036  Driver 94.0.4606
+-00001090: 2e36 3120 2834 3138 6237 3866 3538 3338  .61 (418b78f5838
+-000010a0: 6564 3062 3163 3639 6262 3465 3531 6561  ed0b1c69bb4e51ea
+-000010b0: 3032 3532 3137 3138 3534 3931 352d 7265  0252171854915-re
+-000010c0: 6673 2f62 7261 6e63 682d 6865 6164 732f  fs/branch-heads/
+-000010d0: 3436 3036 407b 2331 3230 347d 2920 6f6e  4606@{#1204}) on
+-000010e0: 2070 6f72 7420 3939 3939 0a4f 6e6c 7920   port 9999.Only 
+-000010f0: 6c6f 6361 6c20 636f 6e6e 6563 7469 6f6e  local connection
+-00001100: 7320 6172 6520 616c 6c6f 7765 642e 0a50  s are allowed..P
+-00001110: 6c65 6173 6520 7365 6520 6874 7470 733a  lease see https:
+-00001120: 2f2f 6368 726f 6d65 6472 6976 6572 2e63  //chromedriver.c
+-00001130: 6872 6f6d 6975 6d2e 6f72 672f 7365 6375  hromium.org/secu
+-00001140: 7269 7479 2d63 6f6e 7369 6465 7261 7469  rity-considerati
+-00001150: 6f6e 7320 666f 7220 7375 6767 6573 7469  ons for suggesti
+-00001160: 6f6e 7320 6f6e 206b 6565 7069 6e67 2043  ons on keeping C
+-00001170: 6872 6f6d 6544 7269 7665 7220 7361 6665  hromeDriver safe
+-00001180: 2e0a 4368 726f 6d65 4472 6976 6572 2077  ..ChromeDriver w
+-00001190: 6173 2073 7461 7274 6564 2073 7563 6365  as started succe
+-000011a0: 7373 6675 6c6c 792e 0a0a 6060 600a 4e6f  ssfully...```.No
+-000011b0: 7469 6365 2074 6865 2044 7269 7665 7220  tice the Driver 
+-000011c0: 6973 2072 756e 6e69 6e67 2061 6e64 2077  is running and w
+-000011d0: 6169 7469 6e67 2066 6f72 2048 5454 5020  aiting for HTTP 
+-000011e0: 7265 7175 6573 7473 2e0a 0a4c 6574 7320  requests...Lets 
+-000011f0: 6f70 656e 2061 206e 6577 2073 6573 7369  open a new sessi
+-00001200: 6f6e 2061 6761 696e 7374 2069 740a 6060  on against it.``
+-00001210: 600a 6375 726c 202d 2d6c 6f63 6174 696f  `.curl --locatio
+-00001220: 6e20 2731 3237 2e30 2e30 2e31 3a39 3939  n '127.0.0.1:999
+-00001230: 392f 7365 7373 696f 6e27 205c 0a2d 2d68  9/session' \.--h
+-00001240: 6561 6465 7220 2743 6f6e 7465 6e74 2d54  eader 'Content-T
+-00001250: 7970 653a 2061 7070 6c69 6361 7469 6f6e  ype: application
+-00001260: 2f6a 736f 6e27 205c 0a2d 2d64 6174 6120  /json' \.--data 
+-00001270: 277b 0a20 2020 2022 6465 7369 7265 6443  '{.    "desiredC
+-00001280: 6170 6162 696c 6974 6965 7322 3a20 7b0a  apabilities": {.
+-00001290: 2020 2020 2020 2020 2262 726f 7773 6572          "browser
+-000012a0: 4e61 6d65 223a 2022 6669 7265 666f 7822  Name": "firefox"
+-000012b0: 2c0a 2020 2020 2020 2020 226d 6172 696f  ,.        "mario
+-000012c0: 6e65 7474 6522 3a20 7472 7565 2c0a 2020  nette": true,.  
+-000012d0: 2020 2020 2020 2261 6363 6570 7449 6e73        "acceptIns
+-000012e0: 6563 7572 6543 6572 7473 223a 2074 7275  ecureCerts": tru
+-000012f0: 650a 2020 2020 7d0a 7d27 0a60 6060 0a48  e.    }.}'.```.H
+-00001300: 6572 6520 6973 2074 6865 2072 6573 706f  ere is the respo
+-00001310: 6e73 6520 7265 7475 726e 6564 0a60 6060  nse returned.```
+-00001320: 0a7b 0a20 2020 2022 7365 7373 696f 6e49  .{.    "sessionI
+-00001330: 6422 3a20 2262 3636 3534 3132 3163 3462  d": "b6654121c4b
+-00001340: 6131 6538 3339 3564 6564 3733 6132 3762  a1e8395ded73a27b
+-00001350: 3764 3866 3522 2c0a 2020 2020 2273 7461  7d8f5",.    "sta
+-00001360: 7475 7322 3a20 302c 0a20 2020 2022 7661  tus": 0,.    "va
+-00001370: 6c75 6522 3a20 7b0a 2020 2020 2020 2020  lue": {.        
+-00001380: 2261 6363 6570 7449 6e73 6563 7572 6543  "acceptInsecureC
+-00001390: 6572 7473 223a 2074 7275 652c 0a20 2020  erts": true,.   
+-000013a0: 2020 2020 2022 6163 6365 7074 5373 6c43       "acceptSslC
+-000013b0: 6572 7473 223a 2074 7275 652c 0a20 2020  erts": true,.   
+-000013c0: 2020 2020 2022 6170 706c 6963 6174 696f       "applicatio
+-000013d0: 6e43 6163 6865 456e 6162 6c65 6422 3a20  nCacheEnabled": 
+-000013e0: 6661 6c73 652c 0a20 2020 2020 2020 2022  false,.        "
+-000013f0: 6272 6f77 7365 7243 6f6e 6e65 6374 696f  browserConnectio
+-00001400: 6e45 6e61 626c 6564 223a 2066 616c 7365  nEnabled": false
+-00001410: 2c0a 2020 2020 2020 2020 2262 726f 7773  ,.        "brows
+-00001420: 6572 4e61 6d65 223a 2022 6368 726f 6d65  erName": "chrome
+-00001430: 222c 0a20 2020 2020 2020 2022 6368 726f  ",.        "chro
+-00001440: 6d65 223a 207b 0a20 2020 2020 2020 2020  me": {.         
+-00001450: 2020 2022 6368 726f 6d65 6472 6976 6572     "chromedriver
+-00001460: 5665 7273 696f 6e22 3a20 2239 342e 302e  Version": "94.0.
+-00001470: 3436 3036 2e36 3120 2834 3138 6237 3866  4606.61 (418b78f
+-00001480: 3538 3338 6564 3062 3163 3639 6262 3465  5838ed0b1c69bb4e
+-00001490: 3531 6561 3032 3532 3137 3138 3534 3931  51ea025217185491
+-000014a0: 352d 7265 6673 2f62 7261 6e63 682d 6865  5-refs/branch-he
+-000014b0: 6164 732f 3436 3036 407b 2331 3230 347d  ads/4606@{#1204}
+-000014c0: 2922 2c0a 2020 2020 2020 2020 2020 2020  )",.            
+-000014d0: 2275 7365 7244 6174 6144 6972 223a 2022  "userDataDir": "
+-000014e0: 2f74 6d70 2f2e 636f 6d2e 676f 6f67 6c65  /tmp/.com.google
+-000014f0: 2e43 6872 6f6d 652e 7874 5a55 4f6a 220a  .Chrome.xtZUOj".
+-00001500: 2020 2020 2020 2020 7d2c 0a20 2020 2020          },.     
+-00001510: 2020 2022 6373 7353 656c 6563 746f 7273     "cssSelectors
+-00001520: 456e 6162 6c65 6422 3a20 7472 7565 2c0a  Enabled": true,.
+-00001530: 2020 2020 2020 2020 2264 6174 6162 6173          "databas
+-00001540: 6545 6e61 626c 6564 223a 2066 616c 7365  eEnabled": false
+-00001550: 2c0a 2020 2020 2020 2020 2267 6f6f 673a  ,.        "goog:
+-00001560: 6368 726f 6d65 4f70 7469 6f6e 7322 3a20  chromeOptions": 
+-00001570: 7b0a 2020 2020 2020 2020 2020 2020 2264  {.            "d
+-00001580: 6562 7567 6765 7241 6464 7265 7373 223a  ebuggerAddress":
+-00001590: 2022 6c6f 6361 6c68 6f73 743a 3434 3433   "localhost:4443
+-000015a0: 3722 0a20 2020 2020 2020 207d 2c0a 2020  7".        },.  
+-000015b0: 2020 2020 2020 2268 616e 646c 6573 416c        "handlesAl
+-000015c0: 6572 7473 223a 2074 7275 652c 0a20 2020  erts": true,.   
+-000015d0: 2020 2020 2022 6861 7354 6f75 6368 5363       "hasTouchSc
+-000015e0: 7265 656e 223a 2066 616c 7365 2c0a 2020  reen": false,.  
+-000015f0: 2020 2020 2020 226a 6176 6173 6372 6970        "javascrip
+-00001600: 7445 6e61 626c 6564 223a 2074 7275 652c  tEnabled": true,
+-00001610: 0a20 2020 2020 2020 2022 6c6f 6361 7469  .        "locati
+-00001620: 6f6e 436f 6e74 6578 7445 6e61 626c 6564  onContextEnabled
+-00001630: 223a 2074 7275 652c 0a20 2020 2020 2020  ": true,.       
+-00001640: 2022 6d6f 6269 6c65 456d 756c 6174 696f   "mobileEmulatio
+-00001650: 6e45 6e61 626c 6564 223a 2066 616c 7365  nEnabled": false
+-00001660: 2c0a 2020 2020 2020 2020 226e 6174 6976  ,.        "nativ
+-00001670: 6545 7665 6e74 7322 3a20 7472 7565 2c0a  eEvents": true,.
+-00001680: 2020 2020 2020 2020 226e 6574 776f 726b          "network
+-00001690: 436f 6e6e 6563 7469 6f6e 456e 6162 6c65  ConnectionEnable
+-000016a0: 6422 3a20 6661 6c73 652c 0a20 2020 2020  d": false,.     
+-000016b0: 2020 2022 7061 6765 4c6f 6164 5374 7261     "pageLoadStra
+-000016c0: 7465 6779 223a 2022 6e6f 726d 616c 222c  tegy": "normal",
+-000016d0: 0a20 2020 2020 2020 2022 706c 6174 666f  .        "platfo
+-000016e0: 726d 223a 2022 4c69 6e75 7822 2c0a 2020  rm": "Linux",.  
+-000016f0: 2020 2020 2020 2270 726f 7879 223a 207b        "proxy": {
+-00001700: 7d2c 0a20 2020 2020 2020 2022 726f 7461  },.        "rota
+-00001710: 7461 626c 6522 3a20 6661 6c73 652c 0a20  table": false,. 
+-00001720: 2020 2020 2020 2022 7365 7457 696e 646f         "setWindo
+-00001730: 7752 6563 7422 3a20 7472 7565 2c0a 2020  wRect": true,.  
+-00001740: 2020 2020 2020 2273 7472 6963 7446 696c        "strictFil
+-00001750: 6549 6e74 6572 6163 7461 6269 6c69 7479  eInteractability
+-00001760: 223a 2066 616c 7365 2c0a 2020 2020 2020  ": false,.      
+-00001770: 2020 2274 616b 6573 4865 6170 536e 6170    "takesHeapSnap
+-00001780: 7368 6f74 223a 2074 7275 652c 0a20 2020  shot": true,.   
+-00001790: 2020 2020 2022 7461 6b65 7353 6372 6565       "takesScree
+-000017a0: 6e73 686f 7422 3a20 7472 7565 2c0a 2020  nshot": true,.  
+-000017b0: 2020 2020 2020 2274 696d 656f 7574 7322        "timeouts"
+-000017c0: 3a20 7b0a 2020 2020 2020 2020 2020 2020  : {.            
+-000017d0: 2269 6d70 6c69 6369 7422 3a20 302c 0a20  "implicit": 0,. 
+-000017e0: 2020 2020 2020 2020 2020 2022 7061 6765             "page
+-000017f0: 4c6f 6164 223a 2033 3030 3030 302c 0a20  Load": 300000,. 
+-00001800: 2020 2020 2020 2020 2020 2022 7363 7269             "scri
+-00001810: 7074 223a 2033 3030 3030 0a20 2020 2020  pt": 30000.     
+-00001820: 2020 207d 2c0a 2020 2020 2020 2020 2275     },.        "u
+-00001830: 6e65 7870 6563 7465 6441 6c65 7274 4265  nexpectedAlertBe
+-00001840: 6861 7669 6f75 7222 3a20 2269 676e 6f72  haviour": "ignor
+-00001850: 6522 2c0a 2020 2020 2020 2020 2276 6572  e",.        "ver
+-00001860: 7369 6f6e 223a 2022 3934 2e30 2e34 3630  sion": "94.0.460
+-00001870: 362e 3534 222c 0a20 2020 2020 2020 2022  6.54",.        "
+-00001880: 7765 6253 746f 7261 6765 456e 6162 6c65  webStorageEnable
+-00001890: 6422 3a20 7472 7565 2c0a 2020 2020 2020  d": true,.      
+-000018a0: 2020 2277 6562 6175 7468 6e3a 6578 7465    "webauthn:exte
+-000018b0: 6e73 696f 6e3a 6372 6564 426c 6f62 223a  nsion:credBlob":
+-000018c0: 2074 7275 652c 0a20 2020 2020 2020 2022   true,.        "
+-000018d0: 7765 6261 7574 686e 3a65 7874 656e 7369  webauthn:extensi
+-000018e0: 6f6e 3a6c 6172 6765 426c 6f62 223a 2074  on:largeBlob": t
+-000018f0: 7275 652c 0a20 2020 2020 2020 2022 7765  rue,.        "we
+-00001900: 6261 7574 686e 3a76 6972 7475 616c 4175  bauthn:virtualAu
+-00001910: 7468 656e 7469 6361 746f 7273 223a 2074  thenticators": t
+-00001920: 7275 650a 2020 2020 7d0a 7d0a 6060 600a  rue.    }.}.```.
+-00001930: 5468 6520 2a73 6573 7369 6f6e 4964 2a20  The *sessionId* 
+-00001940: 7661 6c75 6520 6361 6e20 6265 2075 7365  value can be use
+-00001950: 6420 746f 2070 6572 666f 726d 2066 7572  d to perform fur
+-00001960: 7468 6572 2061 6374 696f 6e73 206c 696b  ther actions lik
+-00001970: 6520 2a66 696e 6420 656c 656d 656e 742a  e *find element*
+-00001980: 2c20 2a73 656e 6420 6b65 7973 2a20 6f72  , *send keys* or
+-00001990: 202a 636c 6963 6b2a 2062 7574 746f 6e73   *click* buttons
+-000019a0: 2e20 4d6f 7265 2064 6574 6169 6c73 2063  . More details c
+-000019b0: 616e 2062 6520 666f 756e 6420 696e 205b  an be found in [
+-000019c0: 4a73 6f6e 2057 6972 6520 5072 6f74 6f63  Json Wire Protoc
+-000019d0: 6f6c 2053 7065 6369 6669 6361 7469 6f6e  ol Specification
+-000019e0: 5d28 6874 7470 733a 2f2f 7777 772e 7365  ](https://www.se
+-000019f0: 6c65 6e69 756d 2e64 6576 2f64 6f63 756d  lenium.dev/docum
+-00001a00: 656e 7461 7469 6f6e 2f6c 6567 6163 792f  entation/legacy/
+-00001a10: 6a73 6f6e 5f77 6972 655f 7072 6f74 6f63  json_wire_protoc
+-00001a20: 6f6c 2f29 2e0a 416c 736f 2077 6974 6820  ol/)..Also with 
+-00001a30: 7468 6520 2a2d 682a 2070 6172 616d 6574  the *-h* paramet
+-00001a40: 6572 2069 6e20 4472 6976 6572 732c 2066  er in Drivers, f
+-00001a50: 6f72 2065 7861 6d70 6c65 3a20 0a60 6060  or example: .```
+-00001a60: 0a2e 2f63 6872 6f6d 6564 7269 7665 7220  ../chromedriver 
+-00001a70: 2d68 0a0a 5573 6167 653a 202e 2f63 6872  -h..Usage: ./chr
+-00001a80: 6f6d 6564 7269 7665 7220 5b4f 5054 494f  omedriver [OPTIO
+-00001a90: 4e53 5d0a 0a4f 7074 696f 6e73 0a20 202d  NS]..Options.  -
+-00001aa0: 2d70 6f72 743d 504f 5254 2020 2020 2020  -port=PORT      
+-00001ab0: 2020 2020 2020 2020 2020 2020 2020 2070                 p
+-00001ac0: 6f72 7420 746f 206c 6973 7465 6e20 6f6e  ort to listen on
+-00001ad0: 0a20 202d 2d61 6462 2d70 6f72 743d 504f  .  --adb-port=PO
+-00001ae0: 5254 2020 2020 2020 2020 2020 2020 2020  RT              
+-00001af0: 2020 2061 6462 2073 6572 7665 7220 706f     adb server po
+-00001b00: 7274 0a20 202d 2d6c 6f67 2d70 6174 683d  rt.  --log-path=
+-00001b10: 4649 4c45 2020 2020 2020 2020 2020 2020  FILE            
+-00001b20: 2020 2020 2077 7269 7465 2073 6572 7665       write serve
+-00001b30: 7220 6c6f 6720 746f 2066 696c 6520 696e  r log to file in
+-00001b40: 7374 6561 6420 6f66 2073 7464 6572 722c  stead of stderr,
+-00001b50: 2069 6e63 7265 6173 6573 206c 6f67 206c   increases log l
+-00001b60: 6576 656c 2074 6f20 494e 464f 0a20 202d  evel to INFO.  -
+-00001b70: 2d6c 6f67 2d6c 6576 656c 3d4c 4556 454c  -log-level=LEVEL
+-00001b80: 2020 2020 2020 2020 2020 2020 2020 2073                 s
+-00001b90: 6574 206c 6f67 206c 6576 656c 3a20 414c  et log level: AL
+-00001ba0: 4c2c 2044 4542 5547 2c20 494e 464f 2c20  L, DEBUG, INFO, 
+-00001bb0: 5741 524e 494e 472c 2053 4556 4552 452c  WARNING, SEVERE,
+-00001bc0: 204f 4646 0a20 202d 2d76 6572 626f 7365   OFF.  --verbose
+-00001bd0: 2020 2020 2020 2020 2020 2020 2020 2020                  
+-00001be0: 2020 2020 2020 206c 6f67 2076 6572 626f         log verbo
+-00001bf0: 7365 6c79 2028 6571 7569 7661 6c65 6e74  sely (equivalent
+-00001c00: 2074 6f20 2d2d 6c6f 672d 6c65 7665 6c3d   to --log-level=
+-00001c10: 414c 4c29 0a20 202d 2d73 696c 656e 7420  ALL).  --silent 
+-00001c20: 2020 2020 2020 2020 2020 2020 2020 2020                  
+-00001c30: 2020 2020 2020 206c 6f67 206e 6f74 6869         log nothi
+-00001c40: 6e67 2028 6571 7569 7661 6c65 6e74 2074  ng (equivalent t
+-00001c50: 6f20 2d2d 6c6f 672d 6c65 7665 6c3d 4f46  o --log-level=OF
+-00001c60: 4629 0a20 202d 2d61 7070 656e 642d 6c6f  F).  --append-lo
+-00001c70: 6720 2020 2020 2020 2020 2020 2020 2020  g               
+-00001c80: 2020 2020 2061 7070 656e 6420 6c6f 6720       append log 
+-00001c90: 6669 6c65 2069 6e73 7465 6164 206f 6620  file instead of 
+-00001ca0: 7265 7772 6974 696e 670a 2020 2d2d 7265  rewriting.  --re
+-00001cb0: 706c 6179 6162 6c65 2020 2020 2020 2020  playable        
+-00001cc0: 2020 2020 2020 2020 2020 2020 2865 7870              (exp
+-00001cd0: 6572 696d 656e 7461 6c29 206c 6f67 2076  erimental) log v
+-00001ce0: 6572 626f 7365 6c79 2061 6e64 2064 6f6e  erbosely and don
+-00001cf0: 2774 2074 7275 6e63 6174 6520 6c6f 6e67  't truncate long
+-00001d00: 2073 7472 696e 6773 2073 6f20 7468 6174   strings so that
+-00001d10: 2074 6865 206c 6f67 2063 616e 2062 6520   the log can be 
+-00001d20: 7265 706c 6179 6564 2e0a 2020 2d2d 7665  replayed..  --ve
+-00001d30: 7273 696f 6e20 2020 2020 2020 2020 2020  rsion           
+-00001d40: 2020 2020 2020 2020 2020 2020 7072 696e              prin
+-00001d50: 7420 7468 6520 7665 7273 696f 6e20 6e75  t the version nu
+-00001d60: 6d62 6572 2061 6e64 2065 7869 740a 2020  mber and exit.  
+-00001d70: 2d2d 7572 6c2d 6261 7365 2020 2020 2020  --url-base      
+-00001d80: 2020 2020 2020 2020 2020 2020 2020 2020                  
+-00001d90: 6261 7365 2055 524c 2070 6174 6820 7072  base URL path pr
+-00001da0: 6566 6978 2066 6f72 2063 6f6d 6d61 6e64  efix for command
+-00001db0: 732c 2065 2e67 2e20 7764 2f75 726c 0a20  s, e.g. wd/url. 
+-00001dc0: 202d 2d72 6561 6461 626c 652d 7469 6d65   --readable-time
+-00001dd0: 7374 616d 7020 2020 2020 2020 2020 2020  stamp           
+-00001de0: 2061 6464 2072 6561 6461 626c 6520 7469   add readable ti
+-00001df0: 6d65 7374 616d 7073 2074 6f20 6c6f 670a  mestamps to log.
+-00001e00: 2020 2d2d 656e 6162 6c65 2d63 6872 6f6d    --enable-chrom
+-00001e10: 652d 6c6f 6773 2020 2020 2020 2020 2020  e-logs          
+-00001e20: 2020 7368 6f77 206c 6f67 7320 6672 6f6d    show logs from
+-00001e30: 2074 6865 2062 726f 7773 6572 2028 6f76   the browser (ov
+-00001e40: 6572 7269 6465 7320 6f74 6865 7220 6c6f  errides other lo
+-00001e50: 6767 696e 6720 6f70 7469 6f6e 7329 0a20  gging options). 
+-00001e60: 202d 2d64 6973 6162 6c65 2d64 6576 2d73   --disable-dev-s
+-00001e70: 686d 2d75 7361 6765 2020 2020 2020 2020  hm-usage        
+-00001e80: 2064 6f20 6e6f 7420 7573 6520 2f64 6576   do not use /dev
+-00001e90: 2f73 686d 2028 6164 6420 7468 6973 2073  /shm (add this s
+-00001ea0: 7769 7463 6820 6966 2073 6565 696e 6720  witch if seeing 
+-00001eb0: 6572 726f 7273 2072 656c 6174 6564 2074  errors related t
+-00001ec0: 6f20 7368 6172 6564 206d 656d 6f72 7929  o shared memory)
+-00001ed0: 0a20 202d 2d61 6c6c 6f77 6564 2d69 7073  .  --allowed-ips
+-00001ee0: 2020 2020 2020 2020 2020 2020 2020 2020                  
+-00001ef0: 2020 2063 6f6d 6d61 2d73 6570 6172 6174     comma-separat
+-00001f00: 6564 2061 6c6c 6f77 6c69 7374 206f 6620  ed allowlist of 
+-00001f10: 7265 6d6f 7465 2049 5020 6164 6472 6573  remote IP addres
+-00001f20: 7365 7320 7768 6963 6820 6172 6520 616c  ses which are al
+-00001f30: 6c6f 7765 6420 746f 2063 6f6e 6e65 6374  lowed to connect
+-00001f40: 2074 6f20 4368 726f 6d65 4472 6976 6572   to ChromeDriver
+-00001f50: 0a60 6060 0a                             .```.
++00000140: 656e 7420 5374 6174 7573 203a 3a20 3320  ent Status :: 3 
++00000150: 2d20 416c 7068 610a 436c 6173 7369 6669  - Alpha.Classifi
++00000160: 6572 3a20 4c69 6365 6e73 6520 3a3a 204f  er: License :: O
++00000170: 5349 2041 7070 726f 7665 6420 3a3a 204d  SI Approved :: M
++00000180: 4954 204c 6963 656e 7365 0a43 6c61 7373  IT License.Class
++00000190: 6966 6965 723a 204f 7065 7261 7469 6e67  ifier: Operating
++000001a0: 2053 7973 7465 6d20 3a3a 204f 5320 496e   System :: OS In
++000001b0: 6465 7065 6e64 656e 740a 436c 6173 7369  dependent.Classi
++000001c0: 6669 6572 3a20 5072 6f67 7261 6d6d 696e  fier: Programmin
++000001d0: 6720 4c61 6e67 7561 6765 203a 3a20 5079  g Language :: Py
++000001e0: 7468 6f6e 203a 3a20 330a 5265 7175 6972  thon :: 3.Requir
++000001f0: 6573 2d50 7974 686f 6e3a 203e 3d33 2e37  es-Python: >=3.7
++00000200: 0a52 6571 7569 7265 732d 4469 7374 3a20  .Requires-Dist: 
++00000210: 6169 6f68 7474 700a 5265 7175 6972 6573  aiohttp.Requires
++00000220: 2d44 6973 743a 2072 6571 7565 7374 730a  -Dist: requests.
++00000230: 4465 7363 7269 7074 696f 6e2d 436f 6e74  Description-Cont
++00000240: 656e 742d 5479 7065 3a20 7465 7874 2f6d  ent-Type: text/m
++00000250: 6172 6b64 6f77 6e0a 0a23 2043 6171 7569  arkdown..# Caqui
++00000260: 0a0a 2a2a 4361 7175 692a 2a20 6973 2069  ..**Caqui** is i
++00000270: 6e74 656e 6465 6420 746f 2063 6f6d 6d61  ntended to comma
++00000280: 6e64 2065 7865 6375 7469 6f6e 7320 6167  nd executions ag
++00000290: 6169 6e73 7420 4472 6976 6572 7320 7379  ainst Drivers sy
++000002a0: 6e63 6872 6f6e 6f75 736c 7920 616e 6420  nchronously and 
++000002b0: 6173 796e 6368 726f 6e6f 7573 6c79 2e20  asynchronously. 
++000002c0: 4c61 756e 6368 2074 6865 2044 7269 7665  Launch the Drive
++000002d0: 7220 6173 2061 2073 6572 7665 7220 616e  r as a server an
++000002e0: 6420 7365 6e64 2072 6571 7565 7374 7320  d send requests 
++000002f0: 746f 2069 742e 2054 6865 2069 6e74 656e  to it. The inten
++00000300: 7469 6f6e 2069 7320 7468 6174 2074 6865  tion is that the
++00000310: 2075 7365 7220 646f 6573 206e 6f74 2077   user does not w
++00000320: 6f72 7279 2061 626f 7574 2077 6869 6368  orry about which
++00000330: 2044 7269 7665 7220 6865 2f73 6865 2069   Driver he/she i
++00000340: 7320 7573 696e 672e 2049 7420 6361 6e20  s using. It can 
++00000350: 6265 202a 2a57 6562 2a2a 4472 6976 6572  be **Web**Driver
++00000360: 7320 6c69 6b65 205b 5365 6c65 6e69 756d  s like [Selenium
++00000370: 5d28 6874 7470 733a 2f2f 7777 772e 7365  ](https://www.se
++00000380: 6c65 6e69 756d 2e64 6576 2f29 2c20 2a2a  lenium.dev/), **
++00000390: 4d6f 6269 6c65 2a2a 4472 6976 6572 7320  Mobile**Drivers 
++000003a0: 6c69 6b65 205b 4170 7069 756d 5d28 6874  like [Appium](ht
++000003b0: 7470 3a2f 2f61 7070 6975 6d2e 696f 2f64  tp://appium.io/d
++000003c0: 6f63 732f 656e 2f32 2e30 2f29 2c20 6f72  ocs/en/2.0/), or
++000003d0: 202a 2a44 6573 6b74 6f70 2a2a 4472 6976   **Desktop**Driv
++000003e0: 6572 7320 6c69 6b65 205b 5769 6e69 756d  ers like [Winium
++000003f0: 5d28 6874 7470 733a 2f2f 6769 7468 7562  ](https://github
++00000400: 2e63 6f6d 2f32 6769 732f 5769 6e69 756d  .com/2gis/Winium
++00000410: 2e44 6573 6b74 6f70 292e 0a0a 5468 6520  .Desktop)...The 
++00000420: 7072 6f63 6573 7320 2a2a 4361 7175 692a  process **Caqui*
++00000430: 2a20 666f 6c6c 6f77 7320 6973 2073 696d  * follows is sim
++00000440: 696c 6172 206f 6620 7468 6520 6f6e 6520  ilar of the one 
++00000450: 6465 7363 7269 6265 6420 696e 2074 6869  described in thi
++00000460: 7320 5b61 7274 6963 6c65 5d28 6874 7470  s [article](http
++00000470: 733a 2f2f 6d65 6469 756d 2e63 6f6d 2f40  s://medium.com/@
++00000480: 646f 7567 6c61 732e 6463 6d2f 7465 7374  douglas.dcm/test
++00000490: 696e 672d 7769 6e64 6f77 732d 6170 7073  ing-windows-apps
++000004a0: 2d77 6974 682d 6874 7470 2d72 6573 742d  -with-http-rest-
++000004b0: 6234 6538 6638 3066 3862 3765 2920 7468  b4e8f80f8b7e) th
++000004c0: 6174 2065 7870 6572 696d 656e 7473 2044  at experiments D
++000004d0: 7269 7665 7273 2061 7320 7365 7276 6572  rivers as server
++000004e0: 7320 746f 6765 7468 6572 2077 6974 6820  s together with 
++000004f0: 5b4a 6d65 7465 725d 2868 7474 7073 3a2f  [Jmeter](https:/
++00000500: 2f6a 6d65 7465 722e 6170 6163 6865 2e6f  /jmeter.apache.o
++00000510: 7267 2f29 2074 6f20 7465 7374 2074 6865  rg/) to test the
++00000520: 2057 696e 646f 7773 2043 616c 6375 6c61   Windows Calcula
++00000530: 746f 722e 2048 6f77 6576 6572 2c20 7468  tor. However, th
++00000540: 6520 6d6f 7469 7661 7469 6f6e 2074 6f20  e motivation to 
++00000550: 6372 6561 7465 202a 2a43 6171 7569 2a2a  create **Caqui**
++00000560: 2077 6173 2066 6565 6420 6279 2074 6865   was feed by the
++00000570: 2069 6e73 7069 7261 7469 6f6e 2069 6e20   inspiration in 
++00000580: 5b41 7273 656e 6963 5d28 6874 7470 733a  [Arsenic](https:
++00000590: 2f2f 6769 7468 7562 2e63 6f6d 2f48 454e  //github.com/HEN
++000005a0: 4e47 452f 6172 7365 6e69 6329 206c 6962  NGE/arsenic) lib
++000005b0: 7261 7279 2e0a 0a2a 2a43 6171 7569 2a2a  rary...**Caqui**
++000005c0: 2069 7320 706c 616e 6e65 6420 746f 2062   is planned to b
++000005d0: 6520 4472 6976 6572 2061 676e 6f73 7469  e Driver agnosti
++000005e0: 632c 2073 6f20 7468 6520 7573 6572 2063  c, so the user c
++000005f0: 616e 2073 7461 7274 2061 6e79 2044 7269  an start any Dri
++00000600: 7665 7220 6173 2061 2073 6572 7665 7220  ver as a server 
++00000610: 616e 6420 6a75 7374 2069 6e66 6f72 6d20  and just inform 
++00000620: 7468 6520 7365 7276 6572 2055 524c 2e20  the server URL. 
++00000630: 4865 6e63 652c 2074 6865 2063 6f64 6520  Hence, the code 
++00000640: 6973 2064 6563 6f75 706c 6564 2066 726f  is decoupled fro
++00000650: 6d20 7468 6520 6368 6f73 656e 2044 7269  m the chosen Dri
++00000660: 7665 722e 0a0a 2a2a 4361 7175 692a 2a20  ver...**Caqui** 
++00000670: 6361 6e20 6265 2075 7365 6420 696e 2072  can be used in r
++00000680: 656d 6f74 6520 6361 6c6c 732e 2041 7320  emote calls. As 
++00000690: 6974 206e 6565 6473 206a 7573 7420 7468  it needs just th
++000006a0: 6520 7365 7276 6572 2055 524c 2c20 7468  e server URL, th
++000006b0: 6520 7573 6572 2063 616e 2073 7461 7274  e user can start
++000006c0: 2074 6865 2044 7269 7665 7220 6173 2061   the Driver as a
++000006d0: 2073 6572 7665 7220 696e 2061 6e79 2068   server in any h
++000006e0: 6f73 7420 616e 6420 7072 6f76 6964 6520  ost and provide 
++000006f0: 7468 6520 5552 4c20 746f 202a 2a43 6171  the URL to **Caq
++00000700: 7569 2a2a 2063 6c69 656e 7473 2e0a 0a23  ui** clients...#
++00000710: 2053 696d 706c 6520 7374 6172 740a 496e   Simple start.In
++00000720: 7374 616c 6c20 7468 6520 6c61 7374 6573  stall the lastes
++00000730: 7420 7665 7273 696f 6e20 6f66 202a 2a43  t version of **C
++00000740: 6171 7569 2a2a 0a0a 6060 600a 7069 7020  aqui**..```.pip 
++00000750: 696e 7374 616c 6c20 6361 7175 690a 6060  install caqui.``
++00000760: 600a 0a44 6f77 6e6c 6f61 6420 7468 6520  `..Download the 
++00000770: 7361 6d65 205b 4368 726f 6d65 4472 6976  same [ChromeDriv
++00000780: 6572 5d28 6874 7470 733a 2f2f 6368 726f  er](https://chro
++00000790: 6d65 6472 6976 6572 2e63 6872 6f6d 6975  medriver.chromiu
++000007a0: 6d2e 6f72 672f 646f 776e 6c6f 6164 7329  m.org/downloads)
++000007b0: 2076 6572 7369 6f6e 2061 7320 796f 7572   version as your
++000007c0: 2069 6e73 7461 6c6c 6564 2043 6872 6f6d   installed Chrom
++000007d0: 6520 616e 6420 7374 6172 7420 7468 6520  e and start the 
++000007e0: 4472 6976 6572 2061 7320 6120 7365 7276  Driver as a serv
++000007f0: 6572 2075 7369 6e67 2074 6865 2070 6f72  er using the por
++00000800: 7420 2239 3939 3922 0a0a 6060 600a 2420  t "9999"..```.$ 
++00000810: 2e2f 6368 726f 6d65 6472 6976 6572 202d  ./chromedriver -
++00000820: 2d70 6f72 743d 3939 3939 0a53 7461 7274  -port=9999.Start
++00000830: 696e 6720 4368 726f 6d65 4472 6976 6572  ing ChromeDriver
++00000840: 2039 342e 302e 3436 3036 2e36 3120 2834   94.0.4606.61 (4
++00000850: 3138 6237 3866 3538 3338 6564 3062 3163  18b78f5838ed0b1c
++00000860: 3639 6262 3465 3531 6561 3032 3532 3137  69bb4e51ea025217
++00000870: 3138 3534 3931 352d 7265 6673 2f62 7261  1854915-refs/bra
++00000880: 6e63 682d 6865 6164 732f 3436 3036 407b  nch-heads/4606@{
++00000890: 2331 3230 347d 2920 6f6e 2070 6f72 7420  #1204}) on port 
++000008a0: 3939 3939 0a4f 6e6c 7920 6c6f 6361 6c20  9999.Only local 
++000008b0: 636f 6e6e 6563 7469 6f6e 7320 6172 6520  connections are 
++000008c0: 616c 6c6f 7765 642e 0a50 6c65 6173 6520  allowed..Please 
++000008d0: 7365 6520 6874 7470 733a 2f2f 6368 726f  see https://chro
++000008e0: 6d65 6472 6976 6572 2e63 6872 6f6d 6975  medriver.chromiu
++000008f0: 6d2e 6f72 672f 7365 6375 7269 7479 2d63  m.org/security-c
++00000900: 6f6e 7369 6465 7261 7469 6f6e 7320 666f  onsiderations fo
++00000910: 7220 7375 6767 6573 7469 6f6e 7320 6f6e  r suggestions on
++00000920: 206b 6565 7069 6e67 2043 6872 6f6d 6544   keeping ChromeD
++00000930: 7269 7665 7220 7361 6665 2e0a 4368 726f  river safe..Chro
++00000940: 6d65 4472 6976 6572 2077 6173 2073 7461  meDriver was sta
++00000950: 7274 6564 2073 7563 6365 7373 6675 6c6c  rted successfull
++00000960: 792e 0a60 6060 0a0a 436f 7079 2074 6865  y..```..Copy the
++00000970: 2048 544d 4c20 636f 6e74 656e 7420 746f   HTML content to
++00000980: 2060 706c 6179 6772 6f75 6e64 2e68 746d   `playground.htm
++00000990: 6c60 0a0a 6060 600a 3c68 746d 6c3e 0a0a  l`..```.<html>..
++000009a0: 3c68 6561 643e 0a20 2020 203c 7469 746c  <head>.    <titl
++000009b0: 653e 5361 6d70 6c65 2070 6167 653c 2f74  e>Sample page</t
++000009c0: 6974 6c65 3e0a 3c2f 6865 6164 3e0a 0a3c  itle>.</head>..<
++000009d0: 626f 6479 3e0a 2020 2020 3c68 313e 4261  body>.    <h1>Ba
++000009e0: 7369 6320 7061 6765 3c2f 6831 3e0a 2020  sic page</h1>.  
++000009f0: 2020 3c70 3e20 5468 6973 2069 7320 6120    <p> This is a 
++00000a00: 7361 6d70 6c65 2070 6167 6520 746f 2062  sample page to b
++00000a10: 6520 7573 6564 2074 6f20 7361 6e69 7479  e used to sanity
++00000a20: 2063 6865 636b 203c 2f70 3e0a 2020 2020   check </p>.    
++00000a30: 3c69 6e70 7574 2069 643d 2269 6e70 7574  <input id="input
++00000a40: 223e 0a20 2020 203c 6275 7474 6f6e 2069  ">.    <button i
++00000a50: 643d 2262 7574 746f 6e22 206f 6e63 6c69  d="button" oncli
++00000a60: 636b 3d22 6d79 4675 6e63 7469 6f6e 2874  ck="myFunction(t
++00000a70: 6869 732c 2027 7265 6427 2922 3e74 6573  his, 'red')">tes
++00000a80: 743c 2f62 7574 746f 6e3e 0a20 2020 203c  t</button>.    <
++00000a90: 7020 6964 3d22 656e 6422 3e65 6e64 3c2f  p id="end">end</
++00000aa0: 703e 0a20 2020 203c 6120 7372 633d 2268  p>.    <a src="h
++00000ab0: 7474 703a 2f2f 616e 7931 2e63 6f6d 2220  ttp://any1.com" 
++00000ac0: 6964 3d22 6131 223e 616e 7931 2e63 6f6d  id="a1">any1.com
++00000ad0: 3c2f 613e 0a20 2020 203c 6120 7372 633d  </a>.    <a src=
++00000ae0: 2268 7474 703a 2f2f 616e 7932 2e63 6f6d  "http://any2.com
++00000af0: 2220 6964 3d22 6132 223e 616e 7932 2e63  " id="a2">any2.c
++00000b00: 6f6d 3c2f 613e 0a20 2020 203c 6120 7372  om</a>.    <a sr
++00000b10: 633d 2268 7474 703a 2f2f 616e 7933 2e63  c="http://any3.c
++00000b20: 6f6d 2220 6964 3d22 6133 223e 616e 7933  om" id="a3">any3
++00000b30: 2e63 6f6d 3c2f 613e 0a20 2020 203c 6120  .com</a>.    <a 
++00000b40: 7372 633d 2268 7474 703a 2f2f 616e 7934  src="http://any4
++00000b50: 2e63 6f6d 2220 6964 3d22 6134 223e 616e  .com" id="a4">an
++00000b60: 7934 2e63 6f6d 3c2f 613e 0a0a 2020 2020  y4.com</a>..    
++00000b70: 3c73 6372 6970 743e 0a20 2020 2020 2020  <script>.       
++00000b80: 2066 756e 6374 696f 6e20 6d79 4675 6e63   function myFunc
++00000b90: 7469 6f6e 2865 6c65 6d65 6e74 2c20 636f  tion(element, co
++00000ba0: 6c6f 7229 207b 0a20 2020 2020 2020 2020  lor) {.         
++00000bb0: 2020 2065 6c65 6d65 6e74 2e73 7479 6c65     element.style
++00000bc0: 2e63 6f6c 6f72 203d 2063 6f6c 6f72 3b0a  .color = color;.
++00000bd0: 2020 2020 2020 2020 7d0a 2020 2020 3c2f          }.    </
++00000be0: 7363 7269 7074 3e0a 3c2f 626f 6479 3e0a  script>.</body>.
++00000bf0: 0a3c 2f68 746d 6c3e 0a60 6060 0a0a 436f  .</html>.```..Co
++00000c00: 7079 2074 6865 2063 6f64 6520 746f 2060  py the code to `
++00000c10: 7361 6d70 6c65 2e70 7960 2066 696c 652e  sample.py` file.
++00000c20: 2054 6869 7320 6669 6c65 206d 7573 7420   This file must 
++00000c30: 6265 2069 6e20 7468 6520 7361 6d65 2066  be in the same f
++00000c40: 6f6c 6465 7220 6f66 2060 706c 6179 6772  older of `playgr
++00000c50: 6f75 6e64 2e68 746d 6c60 0a60 6060 0a69  ound.html`.```.i
++00000c60: 6d70 6f72 7420 6173 796e 6369 6f0a 696d  mport asyncio.im
++00000c70: 706f 7274 2074 696d 650a 6672 6f6d 2063  port time.from c
++00000c80: 6171 7569 2069 6d70 6f72 7420 7379 6e63  aqui import sync
++00000c90: 6872 6f6e 6f75 732c 2061 7379 6e63 6872  hronous, asynchr
++00000ca0: 6f6e 6f75 730a 0a66 726f 6d20 6f73 2069  onous..from os i
++00000cb0: 6d70 6f72 7420 6765 7463 7764 0a0a 4241  mport getcwd..BA
++00000cc0: 5345 5f44 4952 203d 2067 6574 6377 6428  SE_DIR = getcwd(
++00000cd0: 290a 5041 4745 5f55 524c 203d 2066 2266  ).PAGE_URL = f"f
++00000ce0: 696c 653a 2f2f 2f7b 4241 5345 5f44 4952  ile:///{BASE_DIR
++00000cf0: 7d2f 706c 6179 6772 6f75 6e64 2e68 746d  }/playground.htm
++00000d00: 6c22 0a0a 0a61 7379 6e63 2064 6566 2067  l"...async def g
++00000d10: 6574 5f61 6c6c 5f6c 696e 6b73 2829 3a0a  et_all_links():.
++00000d20: 2020 2020 6472 6976 6572 5f75 726c 203d      driver_url =
++00000d30: 2022 6874 7470 3a2f 2f31 3237 2e30 2e30   "http://127.0.0
++00000d40: 2e31 3a39 3939 3922 0a20 2020 2063 6170  .1:9999".    cap
++00000d50: 6162 696c 6974 6965 7320 3d20 7b0a 2020  abilities = {.  
++00000d60: 2020 2020 2020 2264 6573 6972 6564 4361        "desiredCa
++00000d70: 7061 6269 6c69 7469 6573 223a 207b 0a20  pabilities": {. 
++00000d80: 2020 2020 2020 2020 2020 2022 6272 6f77             "brow
++00000d90: 7365 724e 616d 6522 3a20 2266 6972 6566  serName": "firef
++00000da0: 6f78 222c 0a20 2020 2020 2020 2020 2020  ox",.           
++00000db0: 2022 6d61 7269 6f6e 6574 7465 223a 2054   "marionette": T
++00000dc0: 7275 652c 0a20 2020 2020 2020 2020 2020  rue,.           
++00000dd0: 2022 6163 6365 7074 496e 7365 6375 7265   "acceptInsecure
++00000de0: 4365 7274 7322 3a20 5472 7565 2c0a 2020  Certs": True,.  
++00000df0: 2020 2020 2020 7d0a 2020 2020 7d0a 2020        }.    }.  
++00000e00: 2020 7365 7373 696f 6e20 3d20 7379 6e63    session = sync
++00000e10: 6872 6f6e 6f75 732e 6765 745f 7365 7373  hronous.get_sess
++00000e20: 696f 6e28 6472 6976 6572 5f75 726c 2c20  ion(driver_url, 
++00000e30: 6361 7061 6269 6c69 7469 6573 290a 2020  capabilities).  
++00000e40: 2020 7379 6e63 6872 6f6e 6f75 732e 676f    synchronous.go
++00000e50: 5f74 6f5f 7061 6765 280a 2020 2020 2020  _to_page(.      
++00000e60: 2020 6472 6976 6572 5f75 726c 2c0a 2020    driver_url,.  
++00000e70: 2020 2020 2020 7365 7373 696f 6e2c 0a20        session,. 
++00000e80: 2020 2020 2020 2050 4147 455f 5552 4c2c         PAGE_URL,
++00000e90: 0a20 2020 2029 0a0a 2020 2020 6c6f 6361  .    )..    loca
++00000ea0: 746f 725f 7479 7065 203d 2022 7870 6174  tor_type = "xpat
++00000eb0: 6822 0a20 2020 2061 6e63 686f 7273 203d  h".    anchors =
++00000ec0: 205b 5d0a 0a20 2020 2066 6f72 2069 2069   []..    for i i
++00000ed0: 6e20 7261 6e67 6528 3429 3a0a 2020 2020  n range(4):.    
++00000ee0: 2020 2020 6920 2b3d 2031 0a20 2020 2020      i += 1.     
++00000ef0: 2020 206c 6f63 6174 6f72 5f76 616c 7565     locator_value
++00000f00: 203d 2066 222f 2f61 5b40 6964 3d27 617b   = f"//a[@id='a{
++00000f10: 697d 275d 220a 2020 2020 2020 2020 616e  i}']".        an
++00000f20: 6368 6f72 203d 2073 796e 6368 726f 6e6f  chor = synchrono
++00000f30: 7573 2e66 696e 645f 656c 656d 656e 7428  us.find_element(
++00000f40: 0a20 2020 2020 2020 2020 2020 2064 7269  .            dri
++00000f50: 7665 725f 7572 6c2c 2073 6573 7369 6f6e  ver_url, session
++00000f60: 2c20 6c6f 6361 746f 725f 7479 7065 2c20  , locator_type, 
++00000f70: 6c6f 6361 746f 725f 7661 6c75 650a 2020  locator_value.  
++00000f80: 2020 2020 2020 290a 2020 2020 2020 2020        ).        
++00000f90: 616e 6368 6f72 732e 6170 7065 6e64 2861  anchors.append(a
++00000fa0: 6e63 686f 7229 0a20 2020 2020 2020 2061  nchor).        a
++00000fb0: 7373 6572 7420 280a 2020 2020 2020 2020  ssert (.        
++00000fc0: 2020 2020 6177 6169 7420 6173 796e 6368      await asynch
++00000fd0: 726f 6e6f 7573 2e67 6574 5f74 6578 7428  ronous.get_text(
++00000fe0: 6472 6976 6572 5f75 726c 2c20 7365 7373  driver_url, sess
++00000ff0: 696f 6e2c 2061 6e63 686f 7273 5b69 202d  ion, anchors[i -
++00001000: 2031 5d29 0a20 2020 2020 2020 2020 2020   1]).           
++00001010: 203d 3d20 6622 616e 797b 697d 2e63 6f6d   == f"any{i}.com
++00001020: 220a 2020 2020 2020 2020 290a 0a20 2020  ".        )..   
++00001030: 2073 796e 6368 726f 6e6f 7573 2e63 6c6f   synchronous.clo
++00001040: 7365 5f73 6573 7369 6f6e 2864 7269 7665  se_session(drive
++00001050: 725f 7572 6c2c 2073 6573 7369 6f6e 290a  r_url, session).
++00001060: 0a0a 7374 6172 7420 3d20 7469 6d65 2e74  ..start = time.t
++00001070: 696d 6528 290a 0a6c 6f6f 7020 3d20 6173  ime()..loop = as
++00001080: 796e 6369 6f2e 6765 745f 6576 656e 745f  yncio.get_event_
++00001090: 6c6f 6f70 2829 0a74 6173 6b73 203d 205b  loop().tasks = [
++000010a0: 0a20 2020 206c 6f6f 702e 6372 6561 7465  .    loop.create
++000010b0: 5f74 6173 6b28 6765 745f 616c 6c5f 6c69  _task(get_all_li
++000010c0: 6e6b 7328 2929 2c0a 2020 2020 6c6f 6f70  nks()),.    loop
++000010d0: 2e63 7265 6174 655f 7461 736b 2867 6574  .create_task(get
++000010e0: 5f61 6c6c 5f6c 696e 6b73 2829 292c 0a20  _all_links()),. 
++000010f0: 2020 206c 6f6f 702e 6372 6561 7465 5f74     loop.create_t
++00001100: 6173 6b28 6765 745f 616c 6c5f 6c69 6e6b  ask(get_all_link
++00001110: 7328 2929 2c0a 2020 2020 6c6f 6f70 2e63  s()),.    loop.c
++00001120: 7265 6174 655f 7461 736b 2867 6574 5f61  reate_task(get_a
++00001130: 6c6c 5f6c 696e 6b73 2829 292c 0a20 2020  ll_links()),.   
++00001140: 206c 6f6f 702e 6372 6561 7465 5f74 6173   loop.create_tas
++00001150: 6b28 6765 745f 616c 6c5f 6c69 6e6b 7328  k(get_all_links(
++00001160: 2929 2c0a 2020 2020 6c6f 6f70 2e63 7265  )),.    loop.cre
++00001170: 6174 655f 7461 736b 2867 6574 5f61 6c6c  ate_task(get_all
++00001180: 5f6c 696e 6b73 2829 292c 0a20 2020 206c  _links()),.    l
++00001190: 6f6f 702e 6372 6561 7465 5f74 6173 6b28  oop.create_task(
++000011a0: 6765 745f 616c 6c5f 6c69 6e6b 7328 2929  get_all_links())
++000011b0: 2c0a 2020 2020 6c6f 6f70 2e63 7265 6174  ,.    loop.creat
++000011c0: 655f 7461 736b 2867 6574 5f61 6c6c 5f6c  e_task(get_all_l
++000011d0: 696e 6b73 2829 292c 0a20 2020 206c 6f6f  inks()),.    loo
++000011e0: 702e 6372 6561 7465 5f74 6173 6b28 6765  p.create_task(ge
++000011f0: 745f 616c 6c5f 6c69 6e6b 7328 2929 2c0a  t_all_links()),.
++00001200: 2020 2020 6c6f 6f70 2e63 7265 6174 655f      loop.create_
++00001210: 7461 736b 2867 6574 5f61 6c6c 5f6c 696e  task(get_all_lin
++00001220: 6b73 2829 292c 0a5d 0a6c 6f6f 702e 7275  ks()),.].loop.ru
++00001230: 6e5f 756e 7469 6c5f 636f 6d70 6c65 7465  n_until_complete
++00001240: 2861 7379 6e63 696f 2e77 6169 7428 7461  (asyncio.wait(ta
++00001250: 736b 7329 290a 6c6f 6f70 2e63 6c6f 7365  sks)).loop.close
++00001260: 2829 0a0a 656e 6420 3d20 7469 6d65 2e74  ()..end = time.t
++00001270: 696d 6528 290a 7072 696e 7428 6622 5469  ime().print(f"Ti
++00001280: 6d65 3a20 7b65 6e64 2d73 7461 7274 3a2e  me: {end-start:.
++00001290: 3266 7d20 7365 6322 290a 0a60 6060 0a0a  2f} sec")..```..
++000012a0: 5275 6e20 7468 6520 6669 6c65 0a60 6060  Run the file.```
++000012b0: 0a70 7974 686f 6e20 7361 6d70 6c65 2e70  .python sample.p
++000012c0: 790a 6060 600a 0a23 2044 7269 7665 7220  y.```..# Driver 
++000012d0: 6173 2073 6572 7665 720a 546f 2069 6c6c  as server.To ill
++000012e0: 7573 7472 6174 6520 7768 6174 2049 206d  ustrate what I m
++000012f0: 6561 6e20 6279 2022 4472 6976 6572 2061  ean by "Driver a
++00001300: 7320 7365 7276 6572 222c 206c 6574 7320  s server", lets 
++00001310: 6765 7420 5b63 6872 6f6d 6564 7269 7665  get [chromedrive
++00001320: 725d 2868 7474 7073 3a2f 2f63 6872 6f6d  r](https://chrom
++00001330: 6564 7269 7665 722e 6368 726f 6d69 756d  edriver.chromium
++00001340: 2e6f 7267 2f68 6f6d 6529 2061 6e64 2065  .org/home) and e
++00001350: 7865 6375 7465 2069 7420 6173 2061 6e20  xecute it as an 
++00001360: 6f72 6469 6e61 7279 2073 6865 6c6c 2073  ordinary shell s
++00001370: 6372 6970 7420 6669 6c65 2e0a 0a60 6060  cript file...```
++00001380: 0a2e 2f63 6872 6f6d 6564 7269 7665 7220  ../chromedriver 
++00001390: 2d2d 706f 7274 3d39 3939 390a 5374 6172  --port=9999.Star
++000013a0: 7469 6e67 2043 6872 6f6d 6544 7269 7665  ting ChromeDrive
++000013b0: 7220 3934 2e30 2e34 3630 362e 3631 2028  r 94.0.4606.61 (
++000013c0: 3431 3862 3738 6635 3833 3865 6430 6231  418b78f5838ed0b1
++000013d0: 6336 3962 6234 6535 3165 6130 3235 3231  c69bb4e51ea02521
++000013e0: 3731 3835 3439 3135 2d72 6566 732f 6272  71854915-refs/br
++000013f0: 616e 6368 2d68 6561 6473 2f34 3630 3640  anch-heads/4606@
++00001400: 7b23 3132 3034 7d29 206f 6e20 706f 7274  {#1204}) on port
++00001410: 2039 3939 390a 4f6e 6c79 206c 6f63 616c   9999.Only local
++00001420: 2063 6f6e 6e65 6374 696f 6e73 2061 7265   connections are
++00001430: 2061 6c6c 6f77 6564 2e0a 506c 6561 7365   allowed..Please
++00001440: 2073 6565 2068 7474 7073 3a2f 2f63 6872   see https://chr
++00001450: 6f6d 6564 7269 7665 722e 6368 726f 6d69  omedriver.chromi
++00001460: 756d 2e6f 7267 2f73 6563 7572 6974 792d  um.org/security-
++00001470: 636f 6e73 6964 6572 6174 696f 6e73 2066  considerations f
++00001480: 6f72 2073 7567 6765 7374 696f 6e73 206f  or suggestions o
++00001490: 6e20 6b65 6570 696e 6720 4368 726f 6d65  n keeping Chrome
++000014a0: 4472 6976 6572 2073 6166 652e 0a43 6872  Driver safe..Chr
++000014b0: 6f6d 6544 7269 7665 7220 7761 7320 7374  omeDriver was st
++000014c0: 6172 7465 6420 7375 6363 6573 7366 756c  arted successful
++000014d0: 6c79 2e0a 0a60 6060 0a4e 6f74 6963 6520  ly...```.Notice 
++000014e0: 7468 6520 4472 6976 6572 2069 7320 7275  the Driver is ru
++000014f0: 6e6e 696e 6720 616e 6420 7761 6974 696e  nning and waitin
++00001500: 6720 666f 7220 4854 5450 2072 6571 7565  g for HTTP reque
++00001510: 7374 732e 0a0a 4c65 7473 206f 7065 6e20  sts...Lets open 
++00001520: 6120 6e65 7720 7365 7373 696f 6e20 6167  a new session ag
++00001530: 6169 6e73 7420 6974 0a60 6060 0a63 7572  ainst it.```.cur
++00001540: 6c20 2d2d 6c6f 6361 7469 6f6e 2027 3132  l --location '12
++00001550: 372e 302e 302e 313a 3939 3939 2f73 6573  7.0.0.1:9999/ses
++00001560: 7369 6f6e 2720 5c0a 2d2d 6865 6164 6572  sion' \.--header
++00001570: 2027 436f 6e74 656e 742d 5479 7065 3a20   'Content-Type: 
++00001580: 6170 706c 6963 6174 696f 6e2f 6a73 6f6e  application/json
++00001590: 2720 5c0a 2d2d 6461 7461 2027 7b0a 2020  ' \.--data '{.  
++000015a0: 2020 2264 6573 6972 6564 4361 7061 6269    "desiredCapabi
++000015b0: 6c69 7469 6573 223a 207b 0a20 2020 2020  lities": {.     
++000015c0: 2020 2022 6272 6f77 7365 724e 616d 6522     "browserName"
++000015d0: 3a20 2266 6972 6566 6f78 222c 0a20 2020  : "firefox",.   
++000015e0: 2020 2020 2022 6d61 7269 6f6e 6574 7465       "marionette
++000015f0: 223a 2074 7275 652c 0a20 2020 2020 2020  ": true,.       
++00001600: 2022 6163 6365 7074 496e 7365 6375 7265   "acceptInsecure
++00001610: 4365 7274 7322 3a20 7472 7565 0a20 2020  Certs": true.   
++00001620: 207d 0a7d 270a 6060 600a 4865 7265 2069   }.}'.```.Here i
++00001630: 7320 7468 6520 7265 7370 6f6e 7365 2072  s the response r
++00001640: 6574 7572 6e65 640a 6060 600a 7b0a 2020  eturned.```.{.  
++00001650: 2020 2273 6573 7369 6f6e 4964 223a 2022    "sessionId": "
++00001660: 6236 3635 3431 3231 6334 6261 3165 3833  b6654121c4ba1e83
++00001670: 3935 6465 6437 3361 3237 6237 6438 6635  95ded73a27b7d8f5
++00001680: 222c 0a20 2020 2022 7374 6174 7573 223a  ",.    "status":
++00001690: 2030 2c0a 2020 2020 2276 616c 7565 223a   0,.    "value":
++000016a0: 207b 0a20 2020 2020 2020 2022 6163 6365   {.        "acce
++000016b0: 7074 496e 7365 6375 7265 4365 7274 7322  ptInsecureCerts"
++000016c0: 3a20 7472 7565 2c0a 2020 2020 2020 2020  : true,.        
++000016d0: 2261 6363 6570 7453 736c 4365 7274 7322  "acceptSslCerts"
++000016e0: 3a20 7472 7565 2c0a 2020 2020 2020 2020  : true,.        
++000016f0: 2261 7070 6c69 6361 7469 6f6e 4361 6368  "applicationCach
++00001700: 6545 6e61 626c 6564 223a 2066 616c 7365  eEnabled": false
++00001710: 2c0a 2020 2020 2020 2020 2262 726f 7773  ,.        "brows
++00001720: 6572 436f 6e6e 6563 7469 6f6e 456e 6162  erConnectionEnab
++00001730: 6c65 6422 3a20 6661 6c73 652c 0a20 2020  led": false,.   
++00001740: 2020 2020 2022 6272 6f77 7365 724e 616d       "browserNam
++00001750: 6522 3a20 2263 6872 6f6d 6522 2c0a 2020  e": "chrome",.  
++00001760: 2020 2020 2020 2263 6872 6f6d 6522 3a20        "chrome": 
++00001770: 7b0a 2020 2020 2020 2020 2020 2020 2263  {.            "c
++00001780: 6872 6f6d 6564 7269 7665 7256 6572 7369  hromedriverVersi
++00001790: 6f6e 223a 2022 3934 2e30 2e34 3630 362e  on": "94.0.4606.
++000017a0: 3631 2028 3431 3862 3738 6635 3833 3865  61 (418b78f5838e
++000017b0: 6430 6231 6336 3962 6234 6535 3165 6130  d0b1c69bb4e51ea0
++000017c0: 3235 3231 3731 3835 3439 3135 2d72 6566  252171854915-ref
++000017d0: 732f 6272 616e 6368 2d68 6561 6473 2f34  s/branch-heads/4
++000017e0: 3630 3640 7b23 3132 3034 7d29 222c 0a20  606@{#1204})",. 
++000017f0: 2020 2020 2020 2020 2020 2022 7573 6572             "user
++00001800: 4461 7461 4469 7222 3a20 222f 746d 702f  DataDir": "/tmp/
++00001810: 2e63 6f6d 2e67 6f6f 676c 652e 4368 726f  .com.google.Chro
++00001820: 6d65 2e78 745a 554f 6a22 0a20 2020 2020  me.xtZUOj".     
++00001830: 2020 207d 2c0a 2020 2020 2020 2020 2263     },.        "c
++00001840: 7373 5365 6c65 6374 6f72 7345 6e61 626c  ssSelectorsEnabl
++00001850: 6564 223a 2074 7275 652c 0a20 2020 2020  ed": true,.     
++00001860: 2020 2022 6461 7461 6261 7365 456e 6162     "databaseEnab
++00001870: 6c65 6422 3a20 6661 6c73 652c 0a20 2020  led": false,.   
++00001880: 2020 2020 2022 676f 6f67 3a63 6872 6f6d       "goog:chrom
++00001890: 654f 7074 696f 6e73 223a 207b 0a20 2020  eOptions": {.   
++000018a0: 2020 2020 2020 2020 2022 6465 6275 6767           "debugg
++000018b0: 6572 4164 6472 6573 7322 3a20 226c 6f63  erAddress": "loc
++000018c0: 616c 686f 7374 3a34 3434 3337 220a 2020  alhost:44437".  
++000018d0: 2020 2020 2020 7d2c 0a20 2020 2020 2020        },.       
++000018e0: 2022 6861 6e64 6c65 7341 6c65 7274 7322   "handlesAlerts"
++000018f0: 3a20 7472 7565 2c0a 2020 2020 2020 2020  : true,.        
++00001900: 2268 6173 546f 7563 6853 6372 6565 6e22  "hasTouchScreen"
++00001910: 3a20 6661 6c73 652c 0a20 2020 2020 2020  : false,.       
++00001920: 2022 6a61 7661 7363 7269 7074 456e 6162   "javascriptEnab
++00001930: 6c65 6422 3a20 7472 7565 2c0a 2020 2020  led": true,.    
++00001940: 2020 2020 226c 6f63 6174 696f 6e43 6f6e      "locationCon
++00001950: 7465 7874 456e 6162 6c65 6422 3a20 7472  textEnabled": tr
++00001960: 7565 2c0a 2020 2020 2020 2020 226d 6f62  ue,.        "mob
++00001970: 696c 6545 6d75 6c61 7469 6f6e 456e 6162  ileEmulationEnab
++00001980: 6c65 6422 3a20 6661 6c73 652c 0a20 2020  led": false,.   
++00001990: 2020 2020 2022 6e61 7469 7665 4576 656e       "nativeEven
++000019a0: 7473 223a 2074 7275 652c 0a20 2020 2020  ts": true,.     
++000019b0: 2020 2022 6e65 7477 6f72 6b43 6f6e 6e65     "networkConne
++000019c0: 6374 696f 6e45 6e61 626c 6564 223a 2066  ctionEnabled": f
++000019d0: 616c 7365 2c0a 2020 2020 2020 2020 2270  alse,.        "p
++000019e0: 6167 654c 6f61 6453 7472 6174 6567 7922  ageLoadStrategy"
++000019f0: 3a20 226e 6f72 6d61 6c22 2c0a 2020 2020  : "normal",.    
++00001a00: 2020 2020 2270 6c61 7466 6f72 6d22 3a20      "platform": 
++00001a10: 224c 696e 7578 222c 0a20 2020 2020 2020  "Linux",.       
++00001a20: 2022 7072 6f78 7922 3a20 7b7d 2c0a 2020   "proxy": {},.  
++00001a30: 2020 2020 2020 2272 6f74 6174 6162 6c65        "rotatable
++00001a40: 223a 2066 616c 7365 2c0a 2020 2020 2020  ": false,.      
++00001a50: 2020 2273 6574 5769 6e64 6f77 5265 6374    "setWindowRect
++00001a60: 223a 2074 7275 652c 0a20 2020 2020 2020  ": true,.       
++00001a70: 2022 7374 7269 6374 4669 6c65 496e 7465   "strictFileInte
++00001a80: 7261 6374 6162 696c 6974 7922 3a20 6661  ractability": fa
++00001a90: 6c73 652c 0a20 2020 2020 2020 2022 7461  lse,.        "ta
++00001aa0: 6b65 7348 6561 7053 6e61 7073 686f 7422  kesHeapSnapshot"
++00001ab0: 3a20 7472 7565 2c0a 2020 2020 2020 2020  : true,.        
++00001ac0: 2274 616b 6573 5363 7265 656e 7368 6f74  "takesScreenshot
++00001ad0: 223a 2074 7275 652c 0a20 2020 2020 2020  ": true,.       
++00001ae0: 2022 7469 6d65 6f75 7473 223a 207b 0a20   "timeouts": {. 
++00001af0: 2020 2020 2020 2020 2020 2022 696d 706c             "impl
++00001b00: 6963 6974 223a 2030 2c0a 2020 2020 2020  icit": 0,.      
++00001b10: 2020 2020 2020 2270 6167 654c 6f61 6422        "pageLoad"
++00001b20: 3a20 3330 3030 3030 2c0a 2020 2020 2020  : 300000,.      
++00001b30: 2020 2020 2020 2273 6372 6970 7422 3a20        "script": 
++00001b40: 3330 3030 300a 2020 2020 2020 2020 7d2c  30000.        },
++00001b50: 0a20 2020 2020 2020 2022 756e 6578 7065  .        "unexpe
++00001b60: 6374 6564 416c 6572 7442 6568 6176 696f  ctedAlertBehavio
++00001b70: 7572 223a 2022 6967 6e6f 7265 222c 0a20  ur": "ignore",. 
++00001b80: 2020 2020 2020 2022 7665 7273 696f 6e22         "version"
++00001b90: 3a20 2239 342e 302e 3436 3036 2e35 3422  : "94.0.4606.54"
++00001ba0: 2c0a 2020 2020 2020 2020 2277 6562 5374  ,.        "webSt
++00001bb0: 6f72 6167 6545 6e61 626c 6564 223a 2074  orageEnabled": t
++00001bc0: 7275 652c 0a20 2020 2020 2020 2022 7765  rue,.        "we
++00001bd0: 6261 7574 686e 3a65 7874 656e 7369 6f6e  bauthn:extension
++00001be0: 3a63 7265 6442 6c6f 6222 3a20 7472 7565  :credBlob": true
++00001bf0: 2c0a 2020 2020 2020 2020 2277 6562 6175  ,.        "webau
++00001c00: 7468 6e3a 6578 7465 6e73 696f 6e3a 6c61  thn:extension:la
++00001c10: 7267 6542 6c6f 6222 3a20 7472 7565 2c0a  rgeBlob": true,.
++00001c20: 2020 2020 2020 2020 2277 6562 6175 7468          "webauth
++00001c30: 6e3a 7669 7274 7561 6c41 7574 6865 6e74  n:virtualAuthent
++00001c40: 6963 6174 6f72 7322 3a20 7472 7565 0a20  icators": true. 
++00001c50: 2020 207d 0a7d 0a60 6060 0a54 6865 202a     }.}.```.The *
++00001c60: 7365 7373 696f 6e49 642a 2076 616c 7565  sessionId* value
++00001c70: 2063 616e 2062 6520 7573 6564 2074 6f20   can be used to 
++00001c80: 7065 7266 6f72 6d20 6675 7274 6865 7220  perform further 
++00001c90: 6163 7469 6f6e 7320 6c69 6b65 202a 6669  actions like *fi
++00001ca0: 6e64 2065 6c65 6d65 6e74 2a2c 202a 7365  nd element*, *se
++00001cb0: 6e64 206b 6579 732a 206f 7220 2a63 6c69  nd keys* or *cli
++00001cc0: 636b 2a20 6275 7474 6f6e 732e 204d 6f72  ck* buttons. Mor
++00001cd0: 6520 6465 7461 696c 7320 6361 6e20 6265  e details can be
++00001ce0: 2066 6f75 6e64 2069 6e20 5b4a 736f 6e20   found in [Json 
++00001cf0: 5769 7265 2050 726f 746f 636f 6c20 5370  Wire Protocol Sp
++00001d00: 6563 6966 6963 6174 696f 6e5d 2868 7474  ecification](htt
++00001d10: 7073 3a2f 2f77 7777 2e73 656c 656e 6975  ps://www.seleniu
++00001d20: 6d2e 6465 762f 646f 6375 6d65 6e74 6174  m.dev/documentat
++00001d30: 696f 6e2f 6c65 6761 6379 2f6a 736f 6e5f  ion/legacy/json_
++00001d40: 7769 7265 5f70 726f 746f 636f 6c2f 292e  wire_protocol/).
++00001d50: 0a41 6c73 6f20 7769 7468 2074 6865 202a  .Also with the *
++00001d60: 2d68 2a20 7061 7261 6d65 7465 7220 696e  -h* parameter in
++00001d70: 2044 7269 7665 7273 2c20 666f 7220 6578   Drivers, for ex
++00001d80: 616d 706c 653a 200a 6060 600a 2e2f 6368  ample: .```../ch
++00001d90: 726f 6d65 6472 6976 6572 202d 680a 0a55  romedriver -h..U
++00001da0: 7361 6765 3a20 2e2f 6368 726f 6d65 6472  sage: ./chromedr
++00001db0: 6976 6572 205b 4f50 5449 4f4e 535d 0a0a  iver [OPTIONS]..
++00001dc0: 4f70 7469 6f6e 730a 2020 2d2d 706f 7274  Options.  --port
++00001dd0: 3d50 4f52 5420 2020 2020 2020 2020 2020  =PORT           
++00001de0: 2020 2020 2020 2020 2020 706f 7274 2074            port t
++00001df0: 6f20 6c69 7374 656e 206f 6e0a 2020 2d2d  o listen on.  --
++00001e00: 6164 622d 706f 7274 3d50 4f52 5420 2020  adb-port=PORT   
++00001e10: 2020 2020 2020 2020 2020 2020 2020 6164                ad
++00001e20: 6220 7365 7276 6572 2070 6f72 740a 2020  b server port.  
++00001e30: 2d2d 6c6f 672d 7061 7468 3d46 494c 4520  --log-path=FILE 
++00001e40: 2020 2020 2020 2020 2020 2020 2020 2020                  
++00001e50: 7772 6974 6520 7365 7276 6572 206c 6f67  write server log
++00001e60: 2074 6f20 6669 6c65 2069 6e73 7465 6164   to file instead
++00001e70: 206f 6620 7374 6465 7272 2c20 696e 6372   of stderr, incr
++00001e80: 6561 7365 7320 6c6f 6720 6c65 7665 6c20  eases log level 
++00001e90: 746f 2049 4e46 4f0a 2020 2d2d 6c6f 672d  to INFO.  --log-
++00001ea0: 6c65 7665 6c3d 4c45 5645 4c20 2020 2020  level=LEVEL     
++00001eb0: 2020 2020 2020 2020 2020 7365 7420 6c6f            set lo
++00001ec0: 6720 6c65 7665 6c3a 2041 4c4c 2c20 4445  g level: ALL, DE
++00001ed0: 4255 472c 2049 4e46 4f2c 2057 4152 4e49  BUG, INFO, WARNI
++00001ee0: 4e47 2c20 5345 5645 5245 2c20 4f46 460a  NG, SEVERE, OFF.
++00001ef0: 2020 2d2d 7665 7262 6f73 6520 2020 2020    --verbose     
++00001f00: 2020 2020 2020 2020 2020 2020 2020 2020                  
++00001f10: 2020 6c6f 6720 7665 7262 6f73 656c 7920    log verbosely 
++00001f20: 2865 7175 6976 616c 656e 7420 746f 202d  (equivalent to -
++00001f30: 2d6c 6f67 2d6c 6576 656c 3d41 4c4c 290a  -log-level=ALL).
++00001f40: 2020 2d2d 7369 6c65 6e74 2020 2020 2020    --silent      
++00001f50: 2020 2020 2020 2020 2020 2020 2020 2020                  
++00001f60: 2020 6c6f 6720 6e6f 7468 696e 6720 2865    log nothing (e
++00001f70: 7175 6976 616c 656e 7420 746f 202d 2d6c  quivalent to --l
++00001f80: 6f67 2d6c 6576 656c 3d4f 4646 290a 2020  og-level=OFF).  
++00001f90: 2d2d 6170 7065 6e64 2d6c 6f67 2020 2020  --append-log    
++00001fa0: 2020 2020 2020 2020 2020 2020 2020 2020                  
++00001fb0: 6170 7065 6e64 206c 6f67 2066 696c 6520  append log file 
++00001fc0: 696e 7374 6561 6420 6f66 2072 6577 7269  instead of rewri
++00001fd0: 7469 6e67 0a20 202d 2d72 6570 6c61 7961  ting.  --replaya
++00001fe0: 626c 6520 2020 2020 2020 2020 2020 2020  ble             
++00001ff0: 2020 2020 2020 2028 6578 7065 7269 6d65         (experime
++00002000: 6e74 616c 2920 6c6f 6720 7665 7262 6f73  ntal) log verbos
++00002010: 656c 7920 616e 6420 646f 6e27 7420 7472  ely and don't tr
++00002020: 756e 6361 7465 206c 6f6e 6720 7374 7269  uncate long stri
++00002030: 6e67 7320 736f 2074 6861 7420 7468 6520  ngs so that the 
++00002040: 6c6f 6720 6361 6e20 6265 2072 6570 6c61  log can be repla
++00002050: 7965 642e 0a20 202d 2d76 6572 7369 6f6e  yed..  --version
++00002060: 2020 2020 2020 2020 2020 2020 2020 2020                  
++00002070: 2020 2020 2020 2070 7269 6e74 2074 6865         print the
++00002080: 2076 6572 7369 6f6e 206e 756d 6265 7220   version number 
++00002090: 616e 6420 6578 6974 0a20 202d 2d75 726c  and exit.  --url
++000020a0: 2d62 6173 6520 2020 2020 2020 2020 2020  -base           
++000020b0: 2020 2020 2020 2020 2020 2062 6173 6520             base 
++000020c0: 5552 4c20 7061 7468 2070 7265 6669 7820  URL path prefix 
++000020d0: 666f 7220 636f 6d6d 616e 6473 2c20 652e  for commands, e.
++000020e0: 672e 2077 642f 7572 6c0a 2020 2d2d 7265  g. wd/url.  --re
++000020f0: 6164 6162 6c65 2d74 696d 6573 7461 6d70  adable-timestamp
++00002100: 2020 2020 2020 2020 2020 2020 6164 6420              add 
++00002110: 7265 6164 6162 6c65 2074 696d 6573 7461  readable timesta
++00002120: 6d70 7320 746f 206c 6f67 0a20 202d 2d65  mps to log.  --e
++00002130: 6e61 626c 652d 6368 726f 6d65 2d6c 6f67  nable-chrome-log
++00002140: 7320 2020 2020 2020 2020 2020 2073 686f  s            sho
++00002150: 7720 6c6f 6773 2066 726f 6d20 7468 6520  w logs from the 
++00002160: 6272 6f77 7365 7220 286f 7665 7272 6964  browser (overrid
++00002170: 6573 206f 7468 6572 206c 6f67 6769 6e67  es other logging
++00002180: 206f 7074 696f 6e73 290a 2020 2d2d 6469   options).  --di
++00002190: 7361 626c 652d 6465 762d 7368 6d2d 7573  sable-dev-shm-us
++000021a0: 6167 6520 2020 2020 2020 2020 646f 206e  age         do n
++000021b0: 6f74 2075 7365 202f 6465 762f 7368 6d20  ot use /dev/shm 
++000021c0: 2861 6464 2074 6869 7320 7377 6974 6368  (add this switch
++000021d0: 2069 6620 7365 6569 6e67 2065 7272 6f72   if seeing error
++000021e0: 7320 7265 6c61 7465 6420 746f 2073 6861  s related to sha
++000021f0: 7265 6420 6d65 6d6f 7279 290a 2020 2d2d  red memory).  --
++00002200: 616c 6c6f 7765 642d 6970 7320 2020 2020  allowed-ips     
++00002210: 2020 2020 2020 2020 2020 2020 2020 636f                co
++00002220: 6d6d 612d 7365 7061 7261 7465 6420 616c  mma-separated al
++00002230: 6c6f 776c 6973 7420 6f66 2072 656d 6f74  lowlist of remot
++00002240: 6520 4950 2061 6464 7265 7373 6573 2077  e IP addresses w
++00002250: 6869 6368 2061 7265 2061 6c6c 6f77 6564  hich are allowed
++00002260: 2074 6f20 636f 6e6e 6563 7420 746f 2043   to connect to C
++00002270: 6872 6f6d 6544 7269 7665 720a 6060 600a  hromeDriver.```.
+```
+
