@@ -15191,3 +15191,72 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd4 in position 72: invalid
 [2023-05-24 14:51:50] INFO root fetch - main [MainThread]: End processing [c2cciutils]: success
 [2023-05-24 14:51:54] INFO root fetch - main [MainThread]: End processing [c2cciutils]: success
 [2023-05-24 14:51:54] INFO root fetch - main [MainThread]: Store serial: [18229734]
+[2023-05-24 14:56:58] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18229734]
+[2023-05-24 14:57:03] INFO root fetch - main [MainThread]: Found 13 changed packages
+[2023-05-24 14:57:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: easy-gpt-utils
+[2023-05-24 14:57:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: tk-cbed
+[2023-05-24 14:57:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pyeCam
+[2023-05-24 14:57:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: esds
+[2023-05-24 14:57:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: capellambse
+[2023-05-24 14:57:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: assisted-service-client
+[2023-05-24 14:57:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: wizata-dsapi
+[2023-05-24 14:57:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: ronnytest
+[2023-05-24 14:57:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: dev-gpt
+[2023-05-24 14:57:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: relativedate
+[2023-05-24 14:57:03] INFO root fetch - processPackages [pyeCam]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-24 14:57:03] INFO root fetch - processPackages [ronnytest]: New version: [0.0.8] Old Version: [0.0.7]
+[2023-05-24 14:57:03] INFO root fetch - processPackages [wizata-dsapi]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-24 14:57:03] INFO root fetch - processPackages [dev-gpt]: New version: [0.18.42.dev8] Old Version: [0.18.42.dev5]
+[2023-05-24 14:57:03] INFO root fetch - processPackages [relativedate]: New version: [1.2.0] Old Version: [1.1.0]
+[2023-05-24 14:57:03] INFO root fetch - processPackages [assisted-service-client]: New version: [2.9.0.post9] Old Version: [2.9.0.post8]
+[2023-05-24 14:57:03] INFO root fetch - processPackages [easy-gpt-utils]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-24 14:57:03] INFO root fetch - processPackages [tk-cbed]: New version: [0.1.2] Old Version: [0.1.1]
+[2023-05-24 14:57:03] WARNING root fetch - processPackages [esds]: Skipping, unable to determine old version
+[2023-05-24 14:57:03] INFO root fetch - processPackages [esds]: Start processing: DGet
+[2023-05-24 14:57:03] INFO root fetch - processPackages [capellambse]: New version: [0.5.9.dev5] Old Version: [0.5.9]
+[2023-05-24 14:57:03] INFO root fetch - main [MainThread]: End processing [esds] error
+[2023-05-24 14:57:03] INFO root fetch - processPackages [dev-gpt]: executing diffoscope
+[2023-05-24 14:57:03] INFO root fetch - processPackages [dev-gpt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dev-gpt-0.18.42.dev5.tar.gz tmp/dev-gpt-0.18.42.dev8.tar.gz --markdown 20230524/d/dev-gpt/0.18.42.dev5-0.18.42.dev8/diff.md --exclude *.pyd
+[2023-05-24 14:57:03] INFO root fetch - processPackages [wizata-dsapi]: executing diffoscope
+[2023-05-24 14:57:03] INFO root fetch - processPackages [wizata-dsapi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wizata-dsapi-0.1.8.tar.gz tmp/wizata-dsapi-0.1.9.tar.gz --markdown 20230524/w/wizata-dsapi/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-24 14:57:03] INFO root fetch - processPackages [pyeCam]: executing diffoscope
+[2023-05-24 14:57:03] INFO root fetch - processPackages [pyeCam]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyeCam-0.0.8.tar.gz tmp/pyeCam-0.0.9.tar.gz --markdown 20230524/p/pyeCam/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-24 14:57:03] INFO root fetch - processPackages [assisted-service-client]: executing diffoscope
+[2023-05-24 14:57:03] INFO root fetch - processPackages [assisted-service-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/assisted_service_client-2.9.0.post8-py3-none-any.whl.zip tmp/assisted_service_client-2.9.0.post9-py3-none-any.whl.zip --markdown 20230524/a/assisted-service-client/2.9.0.post8-2.9.0.post9/diff.md --exclude *.pyd
+[2023-05-24 14:57:03] INFO root fetch - processPackages [ronnytest]: Downloading https://files.pythonhosted.org/packages/df/12/bf850692700bbc275778af95ae03792c70710aeb2a4e17ea2a357639bc06/ronnytest-0.0.8.tar.gz
+[2023-05-24 14:57:03] INFO root fetch - processPackages [DGet]: New version: [0.9] Old Version: [0.8]
+[2023-05-24 14:57:04] INFO root fetch - processPackages [relativedate]: executing diffoscope
+[2023-05-24 14:57:04] INFO root fetch - processPackages [relativedate]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/relativedate-1.1.0.tar.gz tmp/relativedate-1.2.0.tar.gz --markdown 20230524/r/relativedate/1.1.0-1.2.0/diff.md --exclude *.pyd
+[2023-05-24 14:57:04] INFO root fetch - processPackages [easy-gpt-utils]: Downloading https://files.pythonhosted.org/packages/9e/3b/d85d14c36f8835701b518928d118010ea2b1d06523cc528b69edb9724086/easy_gpt_utils-0.1.8.tar.gz
+[2023-05-24 14:57:04] INFO root fetch - processPackages [ronnytest]: executing diffoscope
+[2023-05-24 14:57:04] INFO root fetch - processPackages [ronnytest]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ronnytest-0.0.7.tar.gz tmp/ronnytest-0.0.8.tar.gz --markdown 20230524/r/ronnytest/0.0.7-0.0.8/diff.md --exclude *.pyd
+[2023-05-24 14:57:04] INFO root fetch - processPackages [tk-cbed]: Downloading https://files.pythonhosted.org/packages/93/78/e495ff269801f1a49a8025a1de14069a23305e8eec0eecaa5846549d0f09/tk_cbed-0.1.1.tar.gz
+[2023-05-24 14:57:04] WARNING root fetch - processPackages [tk-cbed]: Skipping package: exceeds size limit 65605377>=10485760
+[2023-05-24 14:57:04] INFO root fetch - processPackages [tk-cbed]: Start processing: zyte-parsers
+[2023-05-24 14:57:04] INFO root fetch - main [MainThread]: End processing [tk-cbed] error
+[2023-05-24 14:57:04] INFO root fetch - processPackages [capellambse]: executing diffoscope
+[2023-05-24 14:57:04] INFO root fetch - processPackages [capellambse]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/capellambse-0.5.9.tar.gz tmp/capellambse-0.5.9.dev5.tar.gz --markdown 20230524/c/capellambse/0.5.9-0.5.9.dev5/diff.md --exclude *.pyd
+[2023-05-24 14:57:04] INFO root fetch - processPackages [easy-gpt-utils]: Downloading https://files.pythonhosted.org/packages/d8/0d/e613c1b82af6cc2a93cd6ff6c623f42436b1f987c50416dbc801fa283f6c/easy_gpt_utils-0.1.9.tar.gz
+[2023-05-24 14:57:04] INFO root fetch - processPackages [DGet]: executing diffoscope
+[2023-05-24 14:57:04] INFO root fetch - processPackages [DGet]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/DGet-0.8.tar.gz tmp/DGet-0.9.tar.gz --markdown 20230524/D/DGet/0.8-0.9/diff.md --exclude *.pyd
+[2023-05-24 14:57:04] WARNING root fetch - processPackages [zyte-parsers]: Skipping, unable to determine old version
+[2023-05-24 14:57:04] INFO root fetch - processPackages [zyte-parsers]: Start processing: pybuoy
+[2023-05-24 14:57:04] INFO root fetch - main [MainThread]: End processing [zyte-parsers] error
+[2023-05-24 14:57:04] INFO root fetch - processPackages [easy-gpt-utils]: executing diffoscope
+[2023-05-24 14:57:04] INFO root fetch - processPackages [easy-gpt-utils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/easy_gpt_utils-0.1.8.tar.gz tmp/easy_gpt_utils-0.1.9.tar.gz --markdown 20230524/e/easy-gpt-utils/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-24 14:57:04] INFO root fetch - processPackages [pybuoy]: New version: [0.5.2] Old Version: [0.5.1]
+[2023-05-24 14:57:04] INFO root fetch - processPackages [pybuoy]: Downloading https://files.pythonhosted.org/packages/db/23/8a693140d492cd6a8cd0802928b0cd934069aef7b0eab17c27827a238faa/pybuoy-0.5.1.tar.gz
+[2023-05-24 14:57:05] INFO root fetch - processPackages [pybuoy]: Downloading https://files.pythonhosted.org/packages/54/53/de5033bcad4271aa6903f8b82903281e9889c3f9e8ecb7b3204a25c943fd/pybuoy-0.5.2.tar.gz
+[2023-05-24 14:57:05] INFO root fetch - main [MainThread]: End processing [pyeCam]: success
+[2023-05-24 14:57:05] INFO root fetch - processPackages [pybuoy]: executing diffoscope
+[2023-05-24 14:57:05] INFO root fetch - processPackages [pybuoy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pybuoy-0.5.1.tar.gz tmp/pybuoy-0.5.2.tar.gz --markdown 20230524/p/pybuoy/0.5.1-0.5.2/diff.md --exclude *.pyd
+[2023-05-24 14:57:05] INFO root fetch - main [MainThread]: End processing [relativedate]: success
+[2023-05-24 14:57:05] INFO root fetch - main [MainThread]: End processing [ronnytest]: success
+[2023-05-24 14:57:05] INFO root fetch - main [MainThread]: End processing [wizata-dsapi]: success
+[2023-05-24 14:57:06] INFO root fetch - main [MainThread]: End processing [DGet]: success
+[2023-05-24 14:57:06] INFO root fetch - main [MainThread]: End processing [easy-gpt-utils]: success
+[2023-05-24 14:57:06] INFO root fetch - main [MainThread]: End processing [dev-gpt]: success
+[2023-05-24 14:57:06] INFO root fetch - main [MainThread]: End processing [pybuoy]: success
+[2023-05-24 14:57:08] INFO root fetch - main [MainThread]: End processing [assisted-service-client]: success
+[2023-05-24 14:57:11] INFO root fetch - main [MainThread]: End processing [capellambse]: success
+[2023-05-24 14:57:11] INFO root fetch - main [MainThread]: Store serial: [18229778]
