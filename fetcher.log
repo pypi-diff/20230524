@@ -22105,3 +22105,72 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd4 in position 72: invalid
 [2023-05-24 20:37:16] INFO root fetch - main [MainThread]: End processing [nso-oc]: success
 [2023-05-24 20:37:19] INFO root fetch - main [MainThread]: End processing [hotsos]: success
 [2023-05-24 20:37:19] INFO root fetch - main [MainThread]: Store serial: [18234262]
+[2023-05-24 20:42:23] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18234262]
+[2023-05-24 20:42:28] INFO root fetch - main [MainThread]: Found 12 changed packages
+[2023-05-24 20:42:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: speech-collator
+[2023-05-24 20:42:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: calitp-map-utils
+[2023-05-24 20:42:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pseudo-bridgeland-tilt
+[2023-05-24 20:42:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: arize-phoenix
+[2023-05-24 20:42:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: embree
+[2023-05-24 20:42:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: chyp
+[2023-05-24 20:42:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: vector-quantize-pytorch
+[2023-05-24 20:42:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: skyagi
+[2023-05-24 20:42:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: stringtokenizer
+[2023-05-24 20:42:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: dalle-pytorch
+[2023-05-24 20:42:28] INFO root fetch - processPackages [speech-collator]: New version: [0.1.8] Old Version: [0.1.7]
+[2023-05-24 20:42:28] INFO root fetch - processPackages [chyp]: New version: [0.4.1] Old Version: [0.4]
+[2023-05-24 20:42:28] INFO root fetch - processPackages [stringtokenizer]: New version: [1.1.8] Old Version: [1.1.7]
+[2023-05-24 20:42:28] INFO root fetch - processPackages [vector-quantize-pytorch]: New version: [1.5.9] Old Version: [1.5.8]
+[2023-05-24 20:42:28] INFO root fetch - processPackages [dalle-pytorch]: New version: [1.6.5] Old Version: [1.6.4]
+[2023-05-24 20:42:28] INFO root fetch - processPackages [embree]: New version: [0.0.4] Old Version: [0.0.3]
+[2023-05-24 20:42:28] INFO root fetch - processPackages [calitp-map-utils]: New version: [2023.5.24] Old Version: [2023.5.19.7]
+[2023-05-24 20:42:28] INFO root fetch - processPackages [vector-quantize-pytorch]: executing diffoscope
+[2023-05-24 20:42:28] INFO root fetch - processPackages [chyp]: executing diffoscope
+[2023-05-24 20:42:28] INFO root fetch - processPackages [vector-quantize-pytorch]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vector_quantize_pytorch-1.5.8.tar.gz tmp/vector_quantize_pytorch-1.5.9.tar.gz --markdown 20230524/v/vector-quantize-pytorch/1.5.8-1.5.9/diff.md --exclude *.pyd
+[2023-05-24 20:42:28] INFO root fetch - processPackages [chyp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/chyp-0.4.tar.gz tmp/chyp-0.4.1.tar.gz --markdown 20230524/c/chyp/0.4-0.4.1/diff.md --exclude *.pyd
+[2023-05-24 20:42:28] WARNING root fetch - processPackages [pseudo-bridgeland-tilt]: Skipping, unable to determine old version
+[2023-05-24 20:42:28] INFO root fetch - processPackages [pseudo-bridgeland-tilt]: Start processing: Sophia-Optimizer
+[2023-05-24 20:42:28] INFO root fetch - main [MainThread]: End processing [pseudo-bridgeland-tilt] error
+[2023-05-24 20:42:28] INFO root fetch - processPackages [skyagi]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-24 20:42:28] INFO root fetch - processPackages [arize-phoenix]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-24 20:42:28] INFO root fetch - processPackages [stringtokenizer]: Downloading https://files.pythonhosted.org/packages/79/5b/07540b208fe30d0ff87ee8d7240dcaf34261e0b43efd41975c69f7482210/stringtokenizer-1.1.8.tar.gz
+[2023-05-24 20:42:28] WARNING root fetch - processPackages [Sophia-Optimizer]: Skipping, unable to determine old version
+[2023-05-24 20:42:28] INFO root fetch - processPackages [Sophia-Optimizer]: Start processing: vector-vault
+[2023-05-24 20:42:28] INFO root fetch - main [MainThread]: End processing [Sophia-Optimizer] error
+[2023-05-24 20:42:28] INFO root fetch - processPackages [dalle-pytorch]: Downloading https://files.pythonhosted.org/packages/99/c8/9a6fb9a9f509b0eed68e08feedd570dc0373c16623029821a73c6d8829f5/dalle-pytorch-1.6.4.tar.gz
+[2023-05-24 20:42:28] INFO root fetch - processPackages [embree]: Downloading https://files.pythonhosted.org/packages/ec/87/819640a3451052501bb3a3f9641a62bf56aa2a0f29725fc4b16253a7b83c/embree-0.0.3-cp39-cp39-win_amd64.whl
+[2023-05-24 20:42:28] INFO root fetch - processPackages [calitp-map-utils]: Downloading https://files.pythonhosted.org/packages/74/69/758974a16b9560ce18dc8329a6dfac6456e16e9afc03c109df77b625c884/calitp_map_utils-2023.5.19.7.tar.gz
+[2023-05-24 20:42:28] INFO root fetch - processPackages [vector-vault]: New version: [1.0.4] Old Version: [1.0.3]
+[2023-05-24 20:42:28] INFO root fetch - processPackages [speech-collator]: Downloading https://files.pythonhosted.org/packages/f9/a4/349d7a91853a0ead03fafab1d6fee405085858bdb0911f8dce640ca538ce/speech_collator-0.1.8.tar.gz
+[2023-05-24 20:42:28] INFO root fetch - processPackages [skyagi]: Downloading https://files.pythonhosted.org/packages/2c/8a/1db7ac914c786f69dbbb17002028d389e8163581738de53e62af89312a32/skyagi-0.0.8.tar.gz
+[2023-05-24 20:42:28] INFO root fetch - processPackages [arize-phoenix]: Downloading https://files.pythonhosted.org/packages/aa/cd/6114a7b8cf79cdb8874b7fc09dd26b6b6193c6fd1d0872c07b33869e4529/arize_phoenix-0.0.8.tar.gz
+[2023-05-24 20:42:28] INFO root fetch - processPackages [stringtokenizer]: executing diffoscope
+[2023-05-24 20:42:28] INFO root fetch - processPackages [stringtokenizer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/stringtokenizer-1.1.7.tar.gz tmp/stringtokenizer-1.1.8.tar.gz --markdown 20230524/s/stringtokenizer/1.1.7-1.1.8/diff.md --exclude *.pyd
+[2023-05-24 20:42:28] INFO root fetch - processPackages [vector-vault]: executing diffoscope
+[2023-05-24 20:42:28] INFO root fetch - processPackages [vector-vault]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vector_vault-1.0.3.tar.gz tmp/vector_vault-1.0.4.tar.gz --markdown 20230524/v/vector-vault/1.0.3-1.0.4/diff.md --exclude *.pyd
+[2023-05-24 20:42:28] WARNING root fetch - processPackages [embree]: Skipping package: exceeds size limit 16581247>=10485760
+[2023-05-24 20:42:28] INFO root fetch - main [MainThread]: End processing [embree] error
+[2023-05-24 20:42:28] INFO root fetch - processPackages [speech-collator]: executing diffoscope
+[2023-05-24 20:42:28] INFO root fetch - processPackages [speech-collator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/speech_collator-0.1.7.tar.gz tmp/speech_collator-0.1.8.tar.gz --markdown 20230524/s/speech-collator/0.1.7-0.1.8/diff.md --exclude *.pyd
+[2023-05-24 20:42:28] INFO root fetch - processPackages [calitp-map-utils]: Downloading https://files.pythonhosted.org/packages/98/cf/b26053b4a0f9bca4ccbf278e060c07a88a612c7fdb39e6876414636b7e75/calitp_map_utils-2023.5.24.tar.gz
+[2023-05-24 20:42:28] INFO root fetch - processPackages [calitp-map-utils]: executing diffoscope
+[2023-05-24 20:42:28] INFO root fetch - processPackages [calitp-map-utils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/calitp_map_utils-2023.5.19.7.tar.gz tmp/calitp_map_utils-2023.5.24.tar.gz --markdown 20230524/c/calitp-map-utils/2023.5.19.7-2023.5.24/diff.md --exclude *.pyd
+[2023-05-24 20:42:28] INFO root fetch - processPackages [arize-phoenix]: Downloading https://files.pythonhosted.org/packages/af/d8/2db399e5e20785b2485581651ae7b1b6686105545492f859f0bf3a9c73f5/arize_phoenix-0.0.9.tar.gz
+[2023-05-24 20:42:28] INFO root fetch - processPackages [skyagi]: Downloading https://files.pythonhosted.org/packages/e7/6d/94b74c81494bc6abb7880d08e81a3f5fc789368c288d1234f9d367f4c2aa/skyagi-0.0.9.tar.gz
+[2023-05-24 20:42:28] INFO root fetch - processPackages [arize-phoenix]: executing diffoscope
+[2023-05-24 20:42:28] INFO root fetch - processPackages [arize-phoenix]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/arize_phoenix-0.0.8.tar.gz tmp/arize_phoenix-0.0.9.tar.gz --markdown 20230524/a/arize-phoenix/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-24 20:42:29] INFO root fetch - processPackages [dalle-pytorch]: Downloading https://files.pythonhosted.org/packages/98/cf/6f4f8189a43246991ad466dee412ca0e361cc7957ce504ce376b526f407d/dalle-pytorch-1.6.5.tar.gz
+[2023-05-24 20:42:29] INFO root fetch - processPackages [skyagi]: executing diffoscope
+[2023-05-24 20:42:29] INFO root fetch - processPackages [skyagi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/skyagi-0.0.8.tar.gz tmp/skyagi-0.0.9.tar.gz --markdown 20230524/s/skyagi/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-24 20:42:29] INFO root fetch - processPackages [dalle-pytorch]: executing diffoscope
+[2023-05-24 20:42:29] INFO root fetch - processPackages [dalle-pytorch]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dalle-pytorch-1.6.4.tar.gz tmp/dalle-pytorch-1.6.5.tar.gz --markdown 20230524/d/dalle-pytorch/1.6.4-1.6.5/diff.md --exclude *.pyd
+[2023-05-24 20:42:29] INFO root fetch - main [MainThread]: End processing [vector-quantize-pytorch]: success
+[2023-05-24 20:42:29] INFO root fetch - main [MainThread]: End processing [stringtokenizer]: success
+[2023-05-24 20:42:29] INFO root fetch - main [MainThread]: End processing [vector-vault]: success
+[2023-05-24 20:42:30] INFO root fetch - main [MainThread]: End processing [calitp-map-utils]: success
+[2023-05-24 20:42:30] INFO root fetch - main [MainThread]: End processing [chyp]: success
+[2023-05-24 20:42:30] INFO root fetch - main [MainThread]: End processing [skyagi]: success
+[2023-05-24 20:42:30] INFO root fetch - main [MainThread]: End processing [dalle-pytorch]: success
+[2023-05-24 20:42:32] INFO root fetch - main [MainThread]: End processing [speech-collator]: success
+[2023-05-24 20:42:49] INFO root fetch - main [MainThread]: End processing [arize-phoenix]: success
+[2023-05-24 20:42:49] INFO root fetch - main [MainThread]: Store serial: [18234382]
