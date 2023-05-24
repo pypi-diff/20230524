@@ -19116,3 +19116,89 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd4 in position 72: invalid
 [2023-05-24 17:56:06] INFO root fetch - main [MainThread]: End processing [mapillary-tools]: success
 [2023-05-24 17:56:22] INFO root fetch - main [MainThread]: End processing [topoly]: success
 [2023-05-24 17:56:22] INFO root fetch - main [MainThread]: Store serial: [18232269]
+[2023-05-24 18:01:28] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18232269]
+[2023-05-24 18:01:32] INFO root fetch - main [MainThread]: Found 16 changed packages
+[2023-05-24 18:01:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: hordelib
+[2023-05-24 18:01:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: cdk-backup-plan
+[2023-05-24 18:01:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: gdsfactory
+[2023-05-24 18:01:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pass-collaborate
+[2023-05-24 18:01:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: facets-overview
+[2023-05-24 18:01:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: schema-jobs
+[2023-05-24 18:01:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: easyass
+[2023-05-24 18:01:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: wipac-dev-tools
+[2023-05-24 18:01:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: pywxdll
+[2023-05-24 18:01:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: dbtgenlib
+[2023-05-24 18:01:32] WARNING root fetch - processPackages [pass-collaborate]: Skipping, unable to determine old version
+[2023-05-24 18:01:32] INFO root fetch - processPackages [pass-collaborate]: Start processing: py-gutenberg
+[2023-05-24 18:01:32] INFO root fetch - main [MainThread]: End processing [pass-collaborate] error
+[2023-05-24 18:01:32] INFO root fetch - processPackages [cdk-backup-plan]: New version: [0.0.5] Old Version: [0.0.4]
+[2023-05-24 18:01:32] INFO root fetch - processPackages [schema-jobs]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-24 18:01:32] INFO root fetch - processPackages [hordelib]: New version: [1.2.1] Old Version: [1.2.0]
+[2023-05-24 18:01:32] INFO root fetch - processPackages [pywxdll]: New version: [0.1.5] Old Version: [0.1.4]
+[2023-05-24 18:01:32] INFO root fetch - processPackages [easyass]: New version: [1.0.0b6] Old Version: [1.0.0b5]
+[2023-05-24 18:01:32] INFO root fetch - processPackages [dbtgenlib]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-24 18:01:32] INFO root fetch - processPackages [py-gutenberg]: New version: [1.0.2] Old Version: [1.0.1]
+[2023-05-24 18:01:32] INFO root fetch - processPackages [facets-overview]: New version: [1.1.1] Old Version: [1.1.0]
+[2023-05-24 18:01:32] INFO root fetch - processPackages [schema-jobs]: executing diffoscope
+[2023-05-24 18:01:32] INFO root fetch - processPackages [schema-jobs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/schema_jobs-0.1.8.tar.gz tmp/schema_jobs-0.1.9.tar.gz --markdown 20230524/s/schema-jobs/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-24 18:01:32] INFO root fetch - processPackages [wipac-dev-tools]: New version: [1.6.9] Old Version: [1.6.8]
+[2023-05-24 18:01:32] INFO root fetch - processPackages [pywxdll]: executing diffoscope
+[2023-05-24 18:01:32] INFO root fetch - processPackages [pywxdll]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pywxdll-0.1.4.tar.gz tmp/pywxdll-0.1.5.tar.gz --markdown 20230524/p/pywxdll/0.1.4-0.1.5/diff.md --exclude *.pyd
+[2023-05-24 18:01:32] INFO root fetch - processPackages [easyass]: executing diffoscope
+[2023-05-24 18:01:32] INFO root fetch - processPackages [easyass]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/easyass-1.0.0b5.tar.gz tmp/easyass-1.0.0b6.tar.gz --markdown 20230524/e/easyass/1.0.0b5-1.0.0b6/diff.md --exclude *.pyd
+[2023-05-24 18:01:32] INFO root fetch - processPackages [gdsfactory]: New version: [6.98.0] Old Version: [6.97.1]
+[2023-05-24 18:01:32] INFO root fetch - processPackages [py-gutenberg]: executing diffoscope
+[2023-05-24 18:01:32] INFO root fetch - processPackages [py-gutenberg]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/py-gutenberg-1.0.1.tar.gz tmp/py-gutenberg-1.0.2.tar.gz --markdown 20230524/p/py-gutenberg/1.0.1-1.0.2/diff.md --exclude *.pyd
+[2023-05-24 18:01:32] INFO root fetch - processPackages [dbtgenlib]: executing diffoscope
+[2023-05-24 18:01:32] INFO root fetch - processPackages [dbtgenlib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dbtgenlib-0.0.8.tar.gz tmp/dbtgenlib-0.0.9.tar.gz --markdown 20230524/d/dbtgenlib/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-24 18:01:33] INFO root fetch - processPackages [facets-overview]: Downloading https://files.pythonhosted.org/packages/0a/fd/951580bed735adcdc3e56a0d9508cad1d7d3aa9caf55df901773d8a3250a/facets_overview-1.1.0-py2.py3-none-any.whl
+[2023-05-24 18:01:33] INFO root fetch - processPackages [wipac-dev-tools]: Downloading https://files.pythonhosted.org/packages/4b/80/373bc74a326ee91b9698f8f35d66a0090214d60d80e3ffb012e168e32595/wipac-dev-tools-1.6.8.tar.gz
+[2023-05-24 18:01:33] INFO root fetch - processPackages [cdk-backup-plan]: executing diffoscope
+[2023-05-24 18:01:33] INFO root fetch - processPackages [cdk-backup-plan]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-backup-plan-0.0.4.tar.gz tmp/cdk-backup-plan-0.0.5.tar.gz --markdown 20230524/c/cdk-backup-plan/0.0.4-0.0.5/diff.md --exclude *.pyd
+[2023-05-24 18:01:33] INFO root fetch - processPackages [hordelib]: executing diffoscope
+[2023-05-24 18:01:33] INFO root fetch - processPackages [hordelib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hordelib-1.2.0.tar.gz tmp/hordelib-1.2.1.tar.gz --markdown 20230524/h/hordelib/1.2.0-1.2.1/diff.md --exclude *.pyd
+[2023-05-24 18:01:33] INFO root fetch - processPackages [facets-overview]: Downloading https://files.pythonhosted.org/packages/83/93/54a5f907d8faba25e588eebafcf36169e1ea7799609da7841ebb3a3b54aa/facets_overview-1.1.1-py2.py3-none-any.whl
+[2023-05-24 18:01:33] INFO root fetch - processPackages [facets-overview]: executing diffoscope
+[2023-05-24 18:01:33] INFO root fetch - processPackages [facets-overview]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/facets_overview-1.1.0-py2.py3-none-any.whl.zip tmp/facets_overview-1.1.1-py2.py3-none-any.whl.zip --markdown 20230524/f/facets-overview/1.1.0-1.1.1/diff.md --exclude *.pyd
+[2023-05-24 18:01:33] INFO root fetch - processPackages [wipac-dev-tools]: Downloading https://files.pythonhosted.org/packages/94/63/d61b482ad63886601f71414c57e148cd2c57ec910ea7c0c049404086a43d/wipac-dev-tools-1.6.9.tar.gz
+[2023-05-24 18:01:33] INFO root fetch - processPackages [gdsfactory]: Downloading https://files.pythonhosted.org/packages/4a/38/00696ae68809d79daf1e413e98e1c08aa699f18e272cc491a52ea9208c93/gdsfactory-6.98.0.tar.gz
+[2023-05-24 18:01:33] INFO root fetch - processPackages [gdsfactory]: executing diffoscope
+[2023-05-24 18:01:33] INFO root fetch - processPackages [gdsfactory]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gdsfactory-6.97.1.tar.gz tmp/gdsfactory-6.98.0.tar.gz --markdown 20230524/g/gdsfactory/6.97.1-6.98.0/diff.md --exclude *.pyd
+[2023-05-24 18:01:33] INFO root fetch - processPackages [wipac-dev-tools]: executing diffoscope
+[2023-05-24 18:01:33] INFO root fetch - processPackages [wipac-dev-tools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wipac-dev-tools-1.6.8.tar.gz tmp/wipac-dev-tools-1.6.9.tar.gz --markdown 20230524/w/wipac-dev-tools/1.6.8-1.6.9/diff.md --exclude *.pyd
+[2023-05-24 18:01:34] INFO root fetch - processPackages [schema-jobs]: Start processing: align4d
+[2023-05-24 18:01:34] INFO root fetch - main [MainThread]: End processing [schema-jobs]: success
+[2023-05-24 18:01:34] INFO root fetch - processPackages [dbtgenlib]: Start processing: testery
+[2023-05-24 18:01:34] INFO root fetch - main [MainThread]: End processing [dbtgenlib]: success
+[2023-05-24 18:01:34] INFO root fetch - processPackages [testery]: New version: [1.6.7] Old Version: [1.6.6]
+[2023-05-24 18:01:34] INFO root fetch - processPackages [align4d]: New version: [1.2.1] Old Version: [1.2.0]
+[2023-05-24 18:01:34] INFO root fetch - processPackages [pywxdll]: Start processing: xrouter
+[2023-05-24 18:01:34] INFO root fetch - main [MainThread]: End processing [pywxdll]: success
+[2023-05-24 18:01:34] INFO root fetch - processPackages [testery]: Downloading https://files.pythonhosted.org/packages/00/88/bc39013952eae4fabe12eb046852c0a826c1fcbc4f72c5916be57ad69d04/testery-1.6.6-py3-none-any.whl
+[2023-05-24 18:01:34] WARNING root fetch - processPackages [xrouter]: Skipping, unable to determine old version
+[2023-05-24 18:01:34] INFO root fetch - processPackages [xrouter]: Start processing: poetry-pypi-example
+[2023-05-24 18:01:34] INFO root fetch - main [MainThread]: End processing [xrouter] error
+[2023-05-24 18:01:34] INFO root fetch - processPackages [py-gutenberg]: Start processing: mapfun
+[2023-05-24 18:01:34] INFO root fetch - main [MainThread]: End processing [py-gutenberg]: success
+[2023-05-24 18:01:34] WARNING root fetch - processPackages [poetry-pypi-example]: Skipping, unable to determine old version
+[2023-05-24 18:01:34] INFO root fetch - main [MainThread]: End processing [poetry-pypi-example] error
+[2023-05-24 18:01:34] INFO root fetch - processPackages [mapfun]: New version: [0.0.4] Old Version: [0.0.3]
+[2023-05-24 18:01:34] INFO root fetch - processPackages [align4d]: Downloading https://files.pythonhosted.org/packages/47/52/516ef0ce9a07257fe0e80a66ac82590d24df163fda473302ffb1872a1313/align4d-1.2.1.tar.gz
+[2023-05-24 18:01:34] INFO root fetch - main [MainThread]: End processing [easyass]: success
+[2023-05-24 18:01:34] INFO root fetch - main [MainThread]: End processing [cdk-backup-plan]: success
+[2023-05-24 18:01:34] INFO root fetch - processPackages [testery]: Downloading https://files.pythonhosted.org/packages/57/66/67a1b7af339cb76cbaacf6cf3c332164403841a0c6980e0c6465707baaa6/testery-1.6.7-py3-none-any.whl
+[2023-05-24 18:01:34] INFO root fetch - main [MainThread]: End processing [facets-overview]: success
+[2023-05-24 18:01:34] INFO root fetch - processPackages [align4d]: executing diffoscope
+[2023-05-24 18:01:34] INFO root fetch - processPackages [align4d]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/align4d-1.2.0.tar.gz tmp/align4d-1.2.1.tar.gz --markdown 20230524/a/align4d/1.2.0-1.2.1/diff.md --exclude *.pyd
+[2023-05-24 18:01:34] INFO root fetch - processPackages [testery]: executing diffoscope
+[2023-05-24 18:01:34] INFO root fetch - processPackages [testery]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/testery-1.6.6-py3-none-any.whl.zip tmp/testery-1.6.7-py3-none-any.whl.zip --markdown 20230524/t/testery/1.6.6-1.6.7/diff.md --exclude *.pyd
+[2023-05-24 18:01:34] INFO root fetch - processPackages [mapfun]: Downloading https://files.pythonhosted.org/packages/06/09/f9bbc54fb5c8782f7b67d44c4123630689d3245dfe763c90848ab493c2d2/mapfun-0.0.4.tar.gz
+[2023-05-24 18:01:35] INFO root fetch - processPackages [mapfun]: executing diffoscope
+[2023-05-24 18:01:35] INFO root fetch - processPackages [mapfun]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mapfun-0.0.3.tar.gz tmp/mapfun-0.0.4.tar.gz --markdown 20230524/m/mapfun/0.0.3-0.0.4/diff.md --exclude *.pyd
+[2023-05-24 18:01:35] INFO root fetch - main [MainThread]: End processing [wipac-dev-tools]: success
+[2023-05-24 18:01:36] INFO root fetch - main [MainThread]: End processing [testery]: success
+[2023-05-24 18:01:36] INFO root fetch - main [MainThread]: End processing [align4d]: success
+[2023-05-24 18:01:36] INFO root fetch - main [MainThread]: End processing [mapfun]: success
+[2023-05-24 18:01:40] INFO root fetch - main [MainThread]: End processing [gdsfactory]: success
+[2023-05-24 18:01:42] INFO root fetch - main [MainThread]: End processing [hordelib]: success
+[2023-05-24 18:01:42] INFO root fetch - main [MainThread]: Store serial: [18232326]
