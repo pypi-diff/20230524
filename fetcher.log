@@ -21953,3 +21953,107 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd4 in position 72: invalid
 [2023-05-24 20:26:38] INFO root fetch - main [MainThread]: End processing [fern-persona]: success
 [2023-05-24 20:26:40] INFO root fetch - main [MainThread]: End processing [mujoco-dev]: success
 [2023-05-24 20:26:40] INFO root fetch - main [MainThread]: Store serial: [18234157]
+[2023-05-24 20:31:51] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18234157]
+[2023-05-24 20:31:56] INFO root fetch - main [MainThread]: Found 19 changed packages
+[2023-05-24 20:31:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: always-updates
+[2023-05-24 20:31:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: echofish-aws-create-empty-zarr-store-lambda
+[2023-05-24 20:31:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: wsi-annotations-kit
+[2023-05-24 20:31:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: vector-quantize-pytorch
+[2023-05-24 20:31:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: sageranger
+[2023-05-24 20:31:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: Shimmy
+[2023-05-24 20:31:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: secret-message
+[2023-05-24 20:31:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: dash-connectivity-viewer
+[2023-05-24 20:31:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: trame-client
+[2023-05-24 20:31:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: quickboard
+[2023-05-24 20:31:56] INFO root fetch - processPackages [vector-quantize-pytorch]: New version: [1.5.9] Old Version: [1.5.8]
+[2023-05-24 20:31:56] INFO root fetch - processPackages [dash-connectivity-viewer]: New version: [2.0.9] Old Version: [2.0.8]
+[2023-05-24 20:31:56] INFO root fetch - processPackages [secret-message]: New version: [0.6] Old Version: [0.5]
+[2023-05-24 20:31:56] INFO root fetch - processPackages [trame-client]: New version: [2.7.7] Old Version: [2.7.6]
+[2023-05-24 20:31:56] WARNING root fetch - processPackages [echofish-aws-create-empty-zarr-store-lambda]: Skipping, unable to determine old version
+[2023-05-24 20:31:56] INFO root fetch - processPackages [echofish-aws-create-empty-zarr-store-lambda]: Start processing: hotsos
+[2023-05-24 20:31:56] INFO root fetch - main [MainThread]: End processing [echofish-aws-create-empty-zarr-store-lambda] error
+[2023-05-24 20:31:56] INFO root fetch - processPackages [vector-quantize-pytorch]: executing diffoscope
+[2023-05-24 20:31:56] INFO root fetch - processPackages [vector-quantize-pytorch]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vector_quantize_pytorch-1.5.8.tar.gz tmp/vector_quantize_pytorch-1.5.9.tar.gz --markdown 20230524/v/vector-quantize-pytorch/1.5.8-1.5.9/diff.md --exclude *.pyd
+[2023-05-24 20:31:56] INFO root fetch - processPackages [dash-connectivity-viewer]: executing diffoscope
+[2023-05-24 20:31:56] INFO root fetch - processPackages [dash-connectivity-viewer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dash-connectivity-viewer-2.0.8.tar.gz tmp/dash-connectivity-viewer-2.0.9.tar.gz --markdown 20230524/d/dash-connectivity-viewer/2.0.8-2.0.9/diff.md --exclude *.pyd
+[2023-05-24 20:31:56] WARNING root fetch - processPackages [sageranger]: Skipping, unable to determine old version
+[2023-05-24 20:31:56] INFO root fetch - processPackages [Shimmy]: New version: [1.0.1] Old Version: [1.0.0]
+[2023-05-24 20:31:56] INFO root fetch - processPackages [wsi-annotations-kit]: New version: [1.0.1.1] Old Version: [1.0.1]
+[2023-05-24 20:31:56] INFO root fetch - processPackages [sageranger]: Start processing: django-mermaid
+[2023-05-24 20:31:56] INFO root fetch - main [MainThread]: End processing [sageranger] error
+[2023-05-24 20:31:56] INFO root fetch - processPackages [quickboard]: New version: [0.3.3] Old Version: [0.3.2]
+[2023-05-24 20:31:56] INFO root fetch - processPackages [secret-message]: executing diffoscope
+[2023-05-24 20:31:56] INFO root fetch - processPackages [secret-message]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/secret_message-0.5.tar.gz tmp/secret_message-0.6.tar.gz --markdown 20230524/s/secret-message/0.5-0.6/diff.md --exclude *.pyd
+[2023-05-24 20:31:56] INFO root fetch - processPackages [hotsos]: New version: [1.1.14.post4] Old Version: [1.1.14.post3]
+[2023-05-24 20:31:56] INFO root fetch - processPackages [always-updates]: New version: [99.9] Old Version: [99.8]
+[2023-05-24 20:31:56] INFO root fetch - processPackages [django-mermaid]: New version: [0.0.5] Old Version: [0.0.4]
+[2023-05-24 20:31:56] INFO root fetch - processPackages [trame-client]: Downloading https://files.pythonhosted.org/packages/a4/01/28ba5824e908ad6d19731c608ce138bbf22c685bc88044c0e24e2db9d261/trame-client-2.7.6.tar.gz
+[2023-05-24 20:31:56] INFO root fetch - processPackages [hotsos]: executing diffoscope
+[2023-05-24 20:31:56] INFO root fetch - processPackages [hotsos]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hotsos-1.1.14.post3.tar.gz tmp/hotsos-1.1.14.post4.tar.gz --markdown 20230524/h/hotsos/1.1.14.post3-1.1.14.post4/diff.md --exclude *.pyd
+[2023-05-24 20:31:56] INFO root fetch - processPackages [Shimmy]: Downloading https://files.pythonhosted.org/packages/3f/db/dafe19c6c612c8a08146bb039e173424da6bea1573fdaf4730c404f5d981/Shimmy-1.0.0.tar.gz
+[2023-05-24 20:31:56] INFO root fetch - processPackages [quickboard]: Downloading https://files.pythonhosted.org/packages/ff/a8/98113bf796faed75fd377eab0e778fa8dad7a1d78f3e3156c5fd6d3860d2/quickboard-0.3.2.tar.gz
+[2023-05-24 20:31:56] INFO root fetch - processPackages [django-mermaid]: Downloading https://files.pythonhosted.org/packages/6e/1b/4467c0b9d5879130426f6b7ff0b7fac401575aaf0390c30b6b5cac2315dc/django-mermaid-0.0.4.tar.gz
+[2023-05-24 20:31:56] INFO root fetch - processPackages [wsi-annotations-kit]: Downloading https://files.pythonhosted.org/packages/5e/3e/729f395ef650eafe2dead23bb9f5347b2f182eaf094e046c012b61b4cd4b/wsi-annotations-kit-1.0.1.1.tar.gz
+[2023-05-24 20:31:56] INFO root fetch - processPackages [wsi-annotations-kit]: executing diffoscope
+[2023-05-24 20:31:56] INFO root fetch - processPackages [wsi-annotations-kit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wsi-annotations-kit-1.0.1.tar.gz tmp/wsi-annotations-kit-1.0.1.1.tar.gz --markdown 20230524/w/wsi-annotations-kit/1.0.1-1.0.1.1/diff.md --exclude *.pyd
+[2023-05-24 20:31:56] INFO root fetch - processPackages [Shimmy]: Downloading https://files.pythonhosted.org/packages/08/7a/6d9246ccaa766e2d5b39aa84197e1042c37313a0b51a4a5f5f0dee402f46/Shimmy-1.0.1.tar.gz
+[2023-05-24 20:31:56] INFO root fetch - processPackages [quickboard]: Downloading https://files.pythonhosted.org/packages/f6/f2/153717676049408cc83434a76429afcef14777a9ca1b9373bf6e7e71eb4c/quickboard-0.3.3.tar.gz
+[2023-05-24 20:31:57] INFO root fetch - processPackages [always-updates]: executing diffoscope
+[2023-05-24 20:31:57] INFO root fetch - processPackages [always-updates]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/always_updates-99.8.tar.gz tmp/always_updates-99.9.tar.gz --markdown 20230524/a/always-updates/99.8-99.9/diff.md --exclude *.pyd
+[2023-05-24 20:31:57] INFO root fetch - processPackages [trame-client]: Downloading https://files.pythonhosted.org/packages/18/97/b3f6f94359154a26a94687419a2c1c2d807e2463764a619d8887a931e4f6/trame-client-2.7.7.tar.gz
+[2023-05-24 20:31:57] INFO root fetch - processPackages [Shimmy]: executing diffoscope
+[2023-05-24 20:31:57] INFO root fetch - processPackages [Shimmy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Shimmy-1.0.0.tar.gz tmp/Shimmy-1.0.1.tar.gz --markdown 20230524/S/Shimmy/1.0.0-1.0.1/diff.md --exclude *.pyd
+[2023-05-24 20:31:57] INFO root fetch - processPackages [quickboard]: executing diffoscope
+[2023-05-24 20:31:57] INFO root fetch - processPackages [quickboard]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/quickboard-0.3.2.tar.gz tmp/quickboard-0.3.3.tar.gz --markdown 20230524/q/quickboard/0.3.2-0.3.3/diff.md --exclude *.pyd
+[2023-05-24 20:31:57] INFO root fetch - processPackages [trame-client]: executing diffoscope
+[2023-05-24 20:31:57] INFO root fetch - processPackages [trame-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/trame-client-2.7.6.tar.gz tmp/trame-client-2.7.7.tar.gz --markdown 20230524/t/trame-client/2.7.6-2.7.7/diff.md --exclude *.pyd
+[2023-05-24 20:31:57] INFO root fetch - processPackages [django-mermaid]: Downloading https://files.pythonhosted.org/packages/93/dd/f3340391efc6a3631452946c13c9d2855797336b6b183b9f6d6469aefbc6/django-mermaid-0.0.5.tar.gz
+[2023-05-24 20:31:57] INFO root fetch - processPackages [django-mermaid]: executing diffoscope
+[2023-05-24 20:31:57] INFO root fetch - processPackages [django-mermaid]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django-mermaid-0.0.4.tar.gz tmp/django-mermaid-0.0.5.tar.gz --markdown 20230524/d/django-mermaid/0.0.4-0.0.5/diff.md --exclude *.pyd
+[2023-05-24 20:31:58] INFO root fetch - processPackages [secret-message]: Start processing: pulumi-aws-iam
+[2023-05-24 20:31:58] INFO root fetch - main [MainThread]: End processing [secret-message]: success
+[2023-05-24 20:31:58] INFO root fetch - processPackages [vector-quantize-pytorch]: Start processing: magnumnp
+[2023-05-24 20:31:58] INFO root fetch - main [MainThread]: End processing [vector-quantize-pytorch]: success
+[2023-05-24 20:31:58] INFO root fetch - processPackages [pulumi-aws-iam]: New version: [0.2.0] Old Version: [0.1.0]
+[2023-05-24 20:31:58] INFO root fetch - processPackages [magnumnp]: New version: [1.1.0] Old Version: [1.0.9]
+[2023-05-24 20:31:58] INFO root fetch - processPackages [dash-connectivity-viewer]: Start processing: ika-control
+[2023-05-24 20:31:58] INFO root fetch - main [MainThread]: End processing [dash-connectivity-viewer]: success
+[2023-05-24 20:31:58] INFO root fetch - processPackages [ika-control]: New version: [0.2.1] Old Version: [0.2.0]
+[2023-05-24 20:31:58] INFO root fetch - processPackages [pulumi-aws-iam]: Downloading https://files.pythonhosted.org/packages/99/89/8193fc8aba895c8c58184f39c670934033c9ef47479f62863173df22ccb9/pulumi_aws_iam-0.1.0.tar.gz
+[2023-05-24 20:31:58] INFO root fetch - processPackages [magnumnp]: Downloading https://files.pythonhosted.org/packages/5f/fc/a44059e3543e025a93d4d8f6f43b68a15a66dbf5556175e439eb93e86562/magnumnp-1.0.9.tar.gz
+[2023-05-24 20:31:58] INFO root fetch - processPackages [wsi-annotations-kit]: Start processing: prfiesta
+[2023-05-24 20:31:58] INFO root fetch - main [MainThread]: End processing [wsi-annotations-kit]: success
+[2023-05-24 20:31:58] INFO root fetch - processPackages [prfiesta]: New version: [0.8.1b127] Old Version: [0.8.1b126]
+[2023-05-24 20:31:58] INFO root fetch - processPackages [always-updates]: Start processing: nbox
+[2023-05-24 20:31:58] INFO root fetch - main [MainThread]: End processing [always-updates]: success
+[2023-05-24 20:31:58] INFO root fetch - processPackages [prfiesta]: executing diffoscope
+[2023-05-24 20:31:58] INFO root fetch - processPackages [prfiesta]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/prfiesta-0.8.1b126.tar.gz tmp/prfiesta-0.8.1b127.tar.gz --markdown 20230524/p/prfiesta/0.8.1b126-0.8.1b127/diff.md --exclude *.pyd
+[2023-05-24 20:31:58] INFO root fetch - processPackages [nbox]: New version: [0.9.9rc0] Old Version: [0.9.9]
+[2023-05-24 20:31:58] INFO root fetch - processPackages [pulumi-aws-iam]: Downloading https://files.pythonhosted.org/packages/fb/03/a0eb1bd386fff33b5d28a9d4dd37ee98b7526e9d7ba0ae2216bb8b77c255/pulumi_aws_iam-0.2.0.tar.gz
+[2023-05-24 20:31:58] INFO root fetch - processPackages [magnumnp]: Downloading https://files.pythonhosted.org/packages/2f/5d/98bf2778d84209053008f85372e12da95b3b241079d182aafb9cdf6afea8/magnumnp-1.1.0.tar.gz
+[2023-05-24 20:31:58] INFO root fetch - processPackages [ika-control]: Downloading https://files.pythonhosted.org/packages/63/f8/8fac682f2dfdf6971c5b39206ed2b692e2f72cdb43a1f68b1273578de809/ika-control-0.2.1.tar.gz
+[2023-05-24 20:31:58] INFO root fetch - processPackages [pulumi-aws-iam]: executing diffoscope
+[2023-05-24 20:31:58] INFO root fetch - processPackages [pulumi-aws-iam]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_aws_iam-0.1.0.tar.gz tmp/pulumi_aws_iam-0.2.0.tar.gz --markdown 20230524/p/pulumi-aws-iam/0.1.0-0.2.0/diff.md --exclude *.pyd
+[2023-05-24 20:31:58] INFO root fetch - processPackages [magnumnp]: executing diffoscope
+[2023-05-24 20:31:58] INFO root fetch - processPackages [magnumnp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/magnumnp-1.0.9.tar.gz tmp/magnumnp-1.1.0.tar.gz --markdown 20230524/m/magnumnp/1.0.9-1.1.0/diff.md --exclude *.pyd
+[2023-05-24 20:31:58] INFO root fetch - processPackages [ika-control]: executing diffoscope
+[2023-05-24 20:31:58] INFO root fetch - processPackages [ika-control]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ika-control-0.2.0.tar.gz tmp/ika-control-0.2.1.tar.gz --markdown 20230524/i/ika-control/0.2.0-0.2.1/diff.md --exclude *.pyd
+[2023-05-24 20:31:58] INFO root fetch - processPackages [django-mermaid]: Start processing: seeFretboard
+[2023-05-24 20:31:58] INFO root fetch - main [MainThread]: End processing [django-mermaid]: success
+[2023-05-24 20:31:58] WARNING root fetch - processPackages [seeFretboard]: Skipping, unable to determine old version
+[2023-05-24 20:31:58] INFO root fetch - processPackages [seeFretboard]: Start processing: covid19-model
+[2023-05-24 20:31:58] INFO root fetch - main [MainThread]: End processing [seeFretboard] error
+[2023-05-24 20:31:58] WARNING root fetch - processPackages [covid19-model]: Skipping, unable to determine old version
+[2023-05-24 20:31:58] INFO root fetch - main [MainThread]: End processing [covid19-model] error
+[2023-05-24 20:31:59] INFO root fetch - processPackages [nbox]: executing diffoscope
+[2023-05-24 20:31:59] INFO root fetch - processPackages [nbox]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nbox-0.9.9.tar.gz tmp/nbox-0.9.9rc0.tar.gz --markdown 20230524/n/nbox/0.9.9-0.9.9rc0/diff.md --exclude *.pyd
+[2023-05-24 20:31:59] INFO root fetch - main [MainThread]: End processing [quickboard]: success
+[2023-05-24 20:31:59] INFO root fetch - main [MainThread]: End processing [Shimmy]: success
+[2023-05-24 20:31:59] INFO root fetch - main [MainThread]: End processing [prfiesta]: success
+[2023-05-24 20:32:00] INFO root fetch - main [MainThread]: End processing [ika-control]: success
+[2023-05-24 20:32:00] INFO root fetch - main [MainThread]: End processing [pulumi-aws-iam]: success
+[2023-05-24 20:32:00] INFO root fetch - main [MainThread]: End processing [hotsos]: success
+[2023-05-24 20:32:00] INFO root fetch - main [MainThread]: End processing [magnumnp]: success
+[2023-05-24 20:32:00] INFO root fetch - main [MainThread]: End processing [nbox]: success
+[2023-05-24 20:32:04] INFO root fetch - main [MainThread]: End processing [trame-client]: success
+[2023-05-24 20:32:04] INFO root fetch - main [MainThread]: Store serial: [18234233]
