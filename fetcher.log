@@ -12216,3 +12216,113 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd4 in position 72: invalid
 [2023-05-24 11:54:22] INFO root fetch - main [MainThread]: End processing [mautrix]: success
 [2023-05-24 11:54:23] INFO root fetch - main [MainThread]: End processing [HighResAnalysis]: success
 [2023-05-24 11:54:23] INFO root fetch - main [MainThread]: Store serial: [18227856]
+[2023-05-24 11:59:28] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18227856]
+[2023-05-24 11:59:33] INFO root fetch - main [MainThread]: Found 17 changed packages
+[2023-05-24 11:59:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: vector-vault
+[2023-05-24 11:59:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: mtnet
+[2023-05-24 11:59:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: buckup
+[2023-05-24 11:59:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: os2ds-rules
+[2023-05-24 11:59:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: django-forbid
+[2023-05-24 11:59:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: vector-vault
+[2023-05-24 11:59:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: aars
+[2023-05-24 11:59:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: pyeCam
+[2023-05-24 11:59:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: inabox
+[2023-05-24 11:59:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: std-daq-client
+[2023-05-24 11:59:33] INFO root fetch - processPackages [inabox]: New version: [0.5.9] Old Version: [0.5.8]
+[2023-05-24 11:59:33] INFO root fetch - processPackages [mtnet]: New version: [4.5.202305240951] Old Version: [0.0]
+[2023-05-24 11:59:33] INFO root fetch - processPackages [django-forbid]: New version: [0.0.7] Old Version: [0.0.6]
+[2023-05-24 11:59:33] INFO root fetch - processPackages [std-daq-client]: New version: [1.0.1] Old Version: [1.0.0]
+[2023-05-24 11:59:33] INFO root fetch - processPackages [pyeCam]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-24 11:59:33] INFO root fetch - processPackages [buckup]: New version: [0.1a6] Old Version: [0.1a5]
+[2023-05-24 11:59:33] INFO root fetch - processPackages [std-daq-client]: executing diffoscope
+[2023-05-24 11:59:33] INFO root fetch - processPackages [std-daq-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/std_daq_client-1.0.0.tar.gz tmp/std_daq_client-1.0.1.tar.gz --markdown 20230524/s/std-daq-client/1.0.0-1.0.1/diff.md --exclude *.pyd
+[2023-05-24 11:59:33] INFO root fetch - processPackages [aars]: New version: [0.7.2] Old Version: [0.7.1]
+[2023-05-24 11:59:33] INFO root fetch - processPackages [mtnet]: executing diffoscope
+[2023-05-24 11:59:33] INFO root fetch - processPackages [mtnet]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mtnet-0.0-py3-none-any.whl.zip tmp/mtnet-4.5.202305240951-py3-none-any.whl.zip --markdown 20230524/m/mtnet/0.0-4.5.202305240951/diff.md --exclude *.pyd
+[2023-05-24 11:59:33] INFO root fetch - processPackages [vector-vault]: New version: [1.0.4] Old Version: [1.0.3]
+[2023-05-24 11:59:33] INFO root fetch - processPackages [vector-vault]: New version: [1.0.4] Old Version: [1.0.3]
+[2023-05-24 11:59:33] INFO root fetch - processPackages [os2ds-rules]: New version: [0.0.7] Old Version: [0.0.6]
+[2023-05-24 11:59:33] INFO root fetch - processPackages [pyeCam]: executing diffoscope
+[2023-05-24 11:59:33] INFO root fetch - processPackages [pyeCam]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyeCam-0.0.8.tar.gz tmp/pyeCam-0.0.9.tar.gz --markdown 20230524/p/pyeCam/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-24 11:59:33] INFO root fetch - processPackages [inabox]: Downloading https://files.pythonhosted.org/packages/fa/e9/55ccda7bfdb1dbdd293fd767c2a35a5ffeb767db196f2d994743e5e82753/inabox-0.5.8.tar.gz
+[2023-05-24 11:59:33] INFO root fetch - processPackages [django-forbid]: Downloading https://files.pythonhosted.org/packages/0f/cb/fedf7e56ffd5c12648ad6d5cecbe8fe39cc0242b4991f69383019f024634/django-forbid-0.0.6.tar.gz
+[2023-05-24 11:59:33] INFO root fetch - processPackages [buckup]: Downloading https://files.pythonhosted.org/packages/32/3c/0806e8719192bb4018eb94cbde3e07d5f06b7b1c9a8c5306c906779c4a47/buckup-0.1a5.tar.gz
+[2023-05-24 11:59:33] INFO root fetch - processPackages [aars]: Downloading https://files.pythonhosted.org/packages/e4/56/e8a6b9efc3753904d5579a8a206a06e22e4909baf3265c87aacf4beec925/aars-0.7.1.tar.gz
+[2023-05-24 11:59:33] INFO root fetch - processPackages [os2ds-rules]: Downloading https://files.pythonhosted.org/packages/c3/a2/d9d4aa6827db06cec5dffa5709619d05c375f027fd615b4c0ab3f21f88eb/os2ds-rules-0.0.6.tar.gz
+[2023-05-24 11:59:33] INFO root fetch - processPackages [vector-vault]: Downloading https://files.pythonhosted.org/packages/62/9c/6b7ea8efd85de3c7264238f72c88dae568e0ccb718c55f6b9b28c359b925/vector_vault-1.0.3.tar.gz
+[2023-05-24 11:59:33] INFO root fetch - processPackages [vector-vault]: Downloading https://files.pythonhosted.org/packages/62/9c/6b7ea8efd85de3c7264238f72c88dae568e0ccb718c55f6b9b28c359b925/vector_vault-1.0.3.tar.gz
+[2023-05-24 11:59:33] INFO root fetch - processPackages [inabox]: Downloading https://files.pythonhosted.org/packages/8f/0a/b60058fa2f29f008c2576f3619077d87a08b1027e4ab96be186b3450e161/inabox-0.5.9.tar.gz
+[2023-05-24 11:59:33] INFO root fetch - processPackages [aars]: Downloading https://files.pythonhosted.org/packages/dd/86/9200bc30b7a68994a944882f2425f871787f72e4ee0999ae74898c364ba5/aars-0.7.2.tar.gz
+[2023-05-24 11:59:33] INFO root fetch - processPackages [django-forbid]: Downloading https://files.pythonhosted.org/packages/d4/60/9b31683a39443035f5f3145758af6128088e03eae4e9945e128c4deca52b/django-forbid-0.0.7.tar.gz
+[2023-05-24 11:59:33] INFO root fetch - processPackages [vector-vault]: Downloading https://files.pythonhosted.org/packages/70/22/05b485af14928ae281b82c1a048879e415ad18a1643c10bfff5cfa24d547/vector_vault-1.0.4.tar.gz
+[2023-05-24 11:59:33] INFO root fetch - processPackages [vector-vault]: Downloading https://files.pythonhosted.org/packages/70/22/05b485af14928ae281b82c1a048879e415ad18a1643c10bfff5cfa24d547/vector_vault-1.0.4.tar.gz
+[2023-05-24 11:59:33] INFO root fetch - processPackages [inabox]: executing diffoscope
+[2023-05-24 11:59:33] INFO root fetch - processPackages [inabox]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/inabox-0.5.8.tar.gz tmp/inabox-0.5.9.tar.gz --markdown 20230524/i/inabox/0.5.8-0.5.9/diff.md --exclude *.pyd
+[2023-05-24 11:59:33] INFO root fetch - processPackages [django-forbid]: executing diffoscope
+[2023-05-24 11:59:33] INFO root fetch - processPackages [django-forbid]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django-forbid-0.0.6.tar.gz tmp/django-forbid-0.0.7.tar.gz --markdown 20230524/d/django-forbid/0.0.6-0.0.7/diff.md --exclude *.pyd
+[2023-05-24 11:59:33] INFO root fetch - processPackages [os2ds-rules]: Downloading https://files.pythonhosted.org/packages/3e/c7/11011391563ce5ed57e9f0563b30acef2df425aab83f324f5445795e9265/os2ds-rules-0.0.7.tar.gz
+[2023-05-24 11:59:34] INFO root fetch - processPackages [aars]: executing diffoscope
+[2023-05-24 11:59:34] INFO root fetch - processPackages [aars]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aars-0.7.1.tar.gz tmp/aars-0.7.2.tar.gz --markdown 20230524/a/aars/0.7.1-0.7.2/diff.md --exclude *.pyd
+[2023-05-24 11:59:34] INFO root fetch - processPackages [os2ds-rules]: executing diffoscope
+[2023-05-24 11:59:34] INFO root fetch - processPackages [os2ds-rules]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/os2ds-rules-0.0.6.tar.gz tmp/os2ds-rules-0.0.7.tar.gz --markdown 20230524/o/os2ds-rules/0.0.6-0.0.7/diff.md --exclude *.pyd
+[2023-05-24 11:59:34] INFO root fetch - processPackages [vector-vault]: executing diffoscope
+[2023-05-24 11:59:34] INFO root fetch - processPackages [vector-vault]: executing diffoscope
+[2023-05-24 11:59:34] INFO root fetch - processPackages [vector-vault]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vector_vault-1.0.3.tar.gz tmp/vector_vault-1.0.4.tar.gz --markdown 20230524/v/vector-vault/1.0.3-1.0.4/diff.md --exclude *.pyd
+[2023-05-24 11:59:34] INFO root fetch - processPackages [vector-vault]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vector_vault-1.0.3.tar.gz tmp/vector_vault-1.0.4.tar.gz --markdown 20230524/v/vector-vault/1.0.3-1.0.4/diff.md --exclude *.pyd
+[2023-05-24 11:59:34] INFO root fetch - processPackages [buckup]: Downloading https://files.pythonhosted.org/packages/b1/36/b3c2d74be8cc36841434672f5d0766503059620554de05b317a6a64580ca/buckup-0.1a6.tar.gz
+[2023-05-24 11:59:34] INFO root fetch - processPackages [buckup]: executing diffoscope
+[2023-05-24 11:59:34] INFO root fetch - processPackages [buckup]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/buckup-0.1a5.tar.gz tmp/buckup-0.1a6.tar.gz --markdown 20230524/b/buckup/0.1a5-0.1a6/diff.md --exclude *.pyd
+[2023-05-24 11:59:34] INFO root fetch - processPackages [pyeCam]: Start processing: mtbase
+[2023-05-24 11:59:34] INFO root fetch - main [MainThread]: End processing [pyeCam]: success
+[2023-05-24 11:59:34] INFO root fetch - processPackages [mtnet]: Start processing: vector-vault
+[2023-05-24 11:59:34] INFO root fetch - main [MainThread]: End processing [mtnet]: success
+[2023-05-24 11:59:34] INFO root fetch - processPackages [mtbase]: New version: [4.5.202305240951] Old Version: [4.5.202305240944]
+[2023-05-24 11:59:34] INFO root fetch - processPackages [vector-vault]: New version: [1.0.4] Old Version: [1.0.3]
+[2023-05-24 11:59:34] INFO root fetch - processPackages [std-daq-client]: Start processing: spacesense
+[2023-05-24 11:59:34] INFO root fetch - main [MainThread]: End processing [std-daq-client]: success
+[2023-05-24 11:59:34] INFO root fetch - processPackages [spacesense]: New version: [0.8.2] Old Version: [0.8.1]
+[2023-05-24 11:59:34] INFO root fetch - processPackages [vector-vault]: executing diffoscope
+[2023-05-24 11:59:34] INFO root fetch - processPackages [vector-vault]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vector_vault-1.0.3.tar.gz tmp/vector_vault-1.0.4.tar.gz --markdown 20230524/v/vector-vault/1.0.3-1.0.4/diff.md --exclude *.pyd
+[2023-05-24 11:59:34] INFO root fetch - processPackages [mtbase]: Downloading https://files.pythonhosted.org/packages/ac/c7/301758a12dec9f67859c019fa9df3f4886cfe783dba3ebe58b1266257771/mtbase-4.5.202305240951-py3-none-any.whl
+[2023-05-24 11:59:35] INFO root fetch - processPackages [spacesense]: Downloading https://files.pythonhosted.org/packages/b8/4d/b5d60f4b1379f00ab87dae95d1cb7759f3219aac1e4d63f060d32eeb4f32/spacesense-0.8.1-py3-none-any.whl
+[2023-05-24 11:59:35] INFO root fetch - processPackages [mtbase]: executing diffoscope
+[2023-05-24 11:59:35] INFO root fetch - processPackages [mtbase]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mtbase-4.5.202305240944-py3-none-any.whl.zip tmp/mtbase-4.5.202305240951-py3-none-any.whl.zip --markdown 20230524/m/mtbase/4.5.202305240944-4.5.202305240951/diff.md --exclude *.pyd
+[2023-05-24 11:59:35] INFO root fetch - processPackages [inabox]: Start processing: vasp-suite
+[2023-05-24 11:59:35] INFO root fetch - main [MainThread]: End processing [inabox]: success
+[2023-05-24 11:59:35] INFO root fetch - processPackages [vasp-suite]: New version: [1.1.0] Old Version: [1.0.2]
+[2023-05-24 11:59:35] INFO root fetch - processPackages [django-forbid]: Start processing: mttf
+[2023-05-24 11:59:35] INFO root fetch - main [MainThread]: End processing [django-forbid]: success
+[2023-05-24 11:59:35] INFO root fetch - processPackages [spacesense]: Downloading https://files.pythonhosted.org/packages/51/ce/906a6aea86b2bc434c91a0e4e8bcf714ecc89892f65ad71f6cca27e08d3d/spacesense-0.8.2-py3-none-any.whl
+[2023-05-24 11:59:35] INFO root fetch - processPackages [vasp-suite]: Downloading https://files.pythonhosted.org/packages/f9/56/2779e08b25354348f26f6e4cc176366704002096a7b2df6fe5aadce68ca7/vasp_suite-1.1.0.tar.gz
+[2023-05-24 11:59:35] INFO root fetch - processPackages [spacesense]: executing diffoscope
+[2023-05-24 11:59:35] INFO root fetch - processPackages [spacesense]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spacesense-0.8.1-py3-none-any.whl.zip tmp/spacesense-0.8.2-py3-none-any.whl.zip --markdown 20230524/s/spacesense/0.8.1-0.8.2/diff.md --exclude *.pyd
+[2023-05-24 11:59:35] INFO root fetch - processPackages [mttf]: New version: [0.9.202209080909] Old Version: [0.9.202209080905]
+[2023-05-24 11:59:35] INFO root fetch - processPackages [vasp-suite]: executing diffoscope
+[2023-05-24 11:59:35] INFO root fetch - processPackages [vasp-suite]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vasp_suite-1.0.2.tar.gz tmp/vasp_suite-1.1.0.tar.gz --markdown 20230524/v/vasp-suite/1.0.2-1.1.0/diff.md --exclude *.pyd
+[2023-05-24 11:59:35] INFO root fetch - processPackages [vector-vault]: Start processing: salesea
+[2023-05-24 11:59:35] INFO root fetch - main [MainThread]: End processing [vector-vault]: success
+[2023-05-24 11:59:35] INFO root fetch - processPackages [salesea]: New version: [1.0.9] Old Version: [1.0.10]
+[2023-05-24 11:59:35] INFO root fetch - processPackages [mttf]: Downloading https://files.pythonhosted.org/packages/46/76/a3f3cca5ba9d0c3c9dc77aa83159d75cd4087c9f02eafc456281b40187d2/mttf-0.9.202209080905-py3-none-any.whl
+[2023-05-24 11:59:35] INFO root fetch - processPackages [vector-vault]: Start processing: mttf
+[2023-05-24 11:59:35] INFO root fetch - main [MainThread]: End processing [vector-vault]: success
+[2023-05-24 11:59:35] INFO root fetch - processPackages [mttf]: New version: [0.9.202209080909] Old Version: [0.9.202209080905]
+[2023-05-24 11:59:36] INFO root fetch - processPackages [salesea]: Downloading https://files.pythonhosted.org/packages/ee/62/9e7e9a6e46dafff350b351e810a0db74f6610b63b167ad129bfca468469c/salesea-1.0.10.tar.gz
+[2023-05-24 11:59:36] INFO root fetch - main [MainThread]: End processing [os2ds-rules]: success
+[2023-05-24 11:59:36] INFO root fetch - main [MainThread]: End processing [aars]: success
+[2023-05-24 11:59:36] INFO root fetch - processPackages [mttf]: Downloading https://files.pythonhosted.org/packages/4e/1f/febde16f6cd22109dd73e3b250fb39d4192f526fdd62dd802a839a67b695/mttf-0.9.202209080909-py3-none-any.whl
+[2023-05-24 11:59:36] INFO root fetch - processPackages [mttf]: Downloading https://files.pythonhosted.org/packages/4e/1f/febde16f6cd22109dd73e3b250fb39d4192f526fdd62dd802a839a67b695/mttf-0.9.202209080909-py3-none-any.whl
+[2023-05-24 11:59:36] INFO root fetch - main [MainThread]: End processing [buckup]: success
+[2023-05-24 11:59:36] INFO root fetch - main [MainThread]: End processing [vector-vault]: success
+[2023-05-24 11:59:36] INFO root fetch - processPackages [salesea]: executing diffoscope
+[2023-05-24 11:59:36] INFO root fetch - processPackages [salesea]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/salesea-1.0.10.tar.gz tmp/salesea-1.0.9.tar.gz --markdown 20230524/s/salesea/1.0.10-1.0.9/diff.md --exclude *.pyd
+[2023-05-24 11:59:36] INFO root fetch - processPackages [mttf]: executing diffoscope
+[2023-05-24 11:59:36] INFO root fetch - processPackages [mttf]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mttf-0.9.202209080905-py3-none-any.whl.zip tmp/mttf-0.9.202209080909-py3-none-any.whl.zip --markdown 20230524/m/mttf/0.9.202209080905-0.9.202209080909/diff.md --exclude *.pyd
+[2023-05-24 11:59:36] INFO root fetch - processPackages [mttf]: executing diffoscope
+[2023-05-24 11:59:36] INFO root fetch - processPackages [mttf]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mttf-0.9.202209080905-py3-none-any.whl.zip tmp/mttf-0.9.202209080909-py3-none-any.whl.zip --markdown 20230524/m/mttf/0.9.202209080905-0.9.202209080909/diff.md --exclude *.pyd
+[2023-05-24 11:59:36] INFO root fetch - main [MainThread]: End processing [mtbase]: success
+[2023-05-24 11:59:37] INFO root fetch - main [MainThread]: End processing [vasp-suite]: success
+[2023-05-24 11:59:37] INFO root fetch - main [MainThread]: End processing [spacesense]: success
+[2023-05-24 11:59:37] INFO root fetch - main [MainThread]: End processing [salesea]: success
+[2023-05-24 11:59:37] INFO root fetch - main [MainThread]: End processing [mttf]: success
+[2023-05-24 11:59:37] INFO root fetch - main [MainThread]: End processing [mttf]: success
+[2023-05-24 11:59:37] INFO root fetch - main [MainThread]: Store serial: [18227910]
