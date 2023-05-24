@@ -11805,3 +11805,128 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-05-24 11:38:35] INFO root fetch - main [MainThread]: End processing [PyAltiumRunTop]: success
 [2023-05-24 11:38:36] INFO root fetch - main [MainThread]: End processing [ewoksweb]: success
 [2023-05-24 11:38:36] INFO root fetch - main [MainThread]: Store serial: [18227647]
+[2023-05-24 11:43:40] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18227647]
+[2023-05-24 11:43:45] INFO root fetch - main [MainThread]: Found 24 changed packages
+[2023-05-24 11:43:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: proxyparser-checker
+[2023-05-24 11:43:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: vbimage
+[2023-05-24 11:43:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: vl-datasets
+[2023-05-24 11:43:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pyeCam
+[2023-05-24 11:43:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: prosimos
+[2023-05-24 11:43:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: vasp-suite
+[2023-05-24 11:43:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: djangoldp-application
+[2023-05-24 11:43:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: ThaiQR
+[2023-05-24 11:43:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: aiogrpctools
+[2023-05-24 11:43:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: dinohub-seedwork-be
+[2023-05-24 11:43:45] INFO root fetch - processPackages [vbimage]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-24 11:43:45] INFO root fetch - processPackages [vl-datasets]: New version: [0.0.8] Old Version: [0.0.7]
+[2023-05-24 11:43:45] INFO root fetch - processPackages [aiogrpctools]: New version: [1.0.1] Old Version: [1.0.0]
+[2023-05-24 11:43:45] INFO root fetch - processPackages [pyeCam]: New version: [0.0.6] Old Version: [0.0.5]
+[2023-05-24 11:43:45] INFO root fetch - processPackages [dinohub-seedwork-be]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-24 11:43:45] INFO root fetch - processPackages [vasp-suite]: New version: [1.0.2] Old Version: [1.0.1]
+[2023-05-24 11:43:45] INFO root fetch - processPackages [djangoldp-application]: New version: [1.1.9] Old Version: [1.1.8]
+[2023-05-24 11:43:45] WARNING root fetch - processPackages [ThaiQR]: Skipping, unable to determine old version
+[2023-05-24 11:43:45] INFO root fetch - processPackages [ThaiQR]: Start processing: zensvi
+[2023-05-24 11:43:45] INFO root fetch - main [MainThread]: End processing [ThaiQR] error
+[2023-05-24 11:43:46] WARNING root fetch - processPackages [proxyparser-checker]: Skipping, unable to determine old version
+[2023-05-24 11:43:46] INFO root fetch - processPackages [proxyparser-checker]: Start processing: pymongo-smart-auth
+[2023-05-24 11:43:46] INFO root fetch - main [MainThread]: End processing [proxyparser-checker] error
+[2023-05-24 11:43:46] INFO root fetch - processPackages [prosimos]: New version: [1.2.4] Old Version: [1.2.3]
+[2023-05-24 11:43:46] INFO root fetch - processPackages [vl-datasets]: executing diffoscope
+[2023-05-24 11:43:46] INFO root fetch - processPackages [vl-datasets]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vl_datasets-0.0.7-py3.9-none-any.whl.zip tmp/vl_datasets-0.0.8-py3.9-none-any.whl.zip --markdown 20230524/v/vl-datasets/0.0.7-0.0.8/diff.md --exclude *.pyd
+[2023-05-24 11:43:46] INFO root fetch - processPackages [vbimage]: executing diffoscope
+[2023-05-24 11:43:46] INFO root fetch - processPackages [vbimage]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vbimage-0.1.8.tar.gz tmp/vbimage-0.1.9.tar.gz --markdown 20230524/v/vbimage/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-24 11:43:46] INFO root fetch - processPackages [dinohub-seedwork-be]: executing diffoscope
+[2023-05-24 11:43:46] INFO root fetch - processPackages [dinohub-seedwork-be]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dinohub_seedwork_be-0.1.8.tar.gz tmp/dinohub_seedwork_be-0.1.9.tar.gz --markdown 20230524/d/dinohub-seedwork-be/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-24 11:43:46] INFO root fetch - processPackages [zensvi]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-24 11:43:46] INFO root fetch - processPackages [djangoldp-application]: executing diffoscope
+[2023-05-24 11:43:46] INFO root fetch - processPackages [djangoldp-application]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/djangoldp_application-1.1.8.tar.gz tmp/djangoldp_application-1.1.9.tar.gz --markdown 20230524/d/djangoldp-application/1.1.8-1.1.9/diff.md --exclude *.pyd
+[2023-05-24 11:43:46] INFO root fetch - processPackages [aiogrpctools]: Downloading https://files.pythonhosted.org/packages/f0/6f/d92cb44306bdec8ac127f07a834dc861c9d758affaab12cf8c4d240aa423/aiogrpctools-1.0.0-py3-none-any.whl
+[2023-05-24 11:43:46] INFO root fetch - processPackages [pyeCam]: Downloading https://files.pythonhosted.org/packages/27/7e/6af97c1e74f3a60004a07289fb1a3598ea62350e65f9ccece9577d3ac512/pyeCam-0.0.6.tar.gz
+[2023-05-24 11:43:46] INFO root fetch - processPackages [pymongo-smart-auth]: New version: [2.0.0] Old Version: [1.3.1]
+[2023-05-24 11:43:46] INFO root fetch - processPackages [vasp-suite]: Downloading https://files.pythonhosted.org/packages/f4/fa/953354106e4eef829a90b440894a5933a6676f30d4381ab66b525540e175/vasp_suite-1.0.2.tar.gz
+[2023-05-24 11:43:46] INFO root fetch - processPackages [prosimos]: Downloading https://files.pythonhosted.org/packages/52/02/8507941c4fc3baffd44d116af38b34c8c2d245922683d9f122c71dc65d5b/prosimos-1.2.3.tar.gz
+[2023-05-24 11:43:46] INFO root fetch - processPackages [pyeCam]: executing diffoscope
+[2023-05-24 11:43:46] INFO root fetch - processPackages [pyeCam]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyeCam-0.0.5.tar.gz tmp/pyeCam-0.0.6.tar.gz --markdown 20230524/p/pyeCam/0.0.5-0.0.6/diff.md --exclude *.pyd
+[2023-05-24 11:43:46] INFO root fetch - processPackages [vasp-suite]: executing diffoscope
+[2023-05-24 11:43:46] INFO root fetch - processPackages [vasp-suite]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vasp_suite-1.0.1.tar.gz tmp/vasp_suite-1.0.2.tar.gz --markdown 20230524/v/vasp-suite/1.0.1-1.0.2/diff.md --exclude *.pyd
+[2023-05-24 11:43:46] INFO root fetch - processPackages [pymongo-smart-auth]: Downloading https://files.pythonhosted.org/packages/24/cd/88daf0c9adc2df5df59b6fb25b1307dfb86886a0edc63aa678d8b9b3373b/pymongo_smart_auth-1.3.1.tar.gz
+[2023-05-24 11:43:46] INFO root fetch - processPackages [aiogrpctools]: Downloading https://files.pythonhosted.org/packages/9a/f3/a4999e2221b5be284d309811b74f69dc0ab308aca80c6cf7da63371f3a0c/aiogrpctools-1.0.1-py3-none-any.whl
+[2023-05-24 11:43:46] INFO root fetch - processPackages [zensvi]: executing diffoscope
+[2023-05-24 11:43:46] INFO root fetch - processPackages [zensvi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/zensvi-0.1.8.tar.gz tmp/zensvi-0.1.9.tar.gz --markdown 20230524/z/zensvi/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-24 11:43:46] INFO root fetch - processPackages [prosimos]: Downloading https://files.pythonhosted.org/packages/6e/40/86832d07f962f21c72a76d45891640d51f27231b48588f49ff47b20ac4d6/prosimos-1.2.4.tar.gz
+[2023-05-24 11:43:46] INFO root fetch - processPackages [aiogrpctools]: executing diffoscope
+[2023-05-24 11:43:46] INFO root fetch - processPackages [aiogrpctools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aiogrpctools-1.0.0-py3-none-any.whl.zip tmp/aiogrpctools-1.0.1-py3-none-any.whl.zip --markdown 20230524/a/aiogrpctools/1.0.0-1.0.1/diff.md --exclude *.pyd
+[2023-05-24 11:43:46] INFO root fetch - processPackages [pymongo-smart-auth]: Downloading https://files.pythonhosted.org/packages/4c/9c/a56ed9b98cbab26bb27663ee228eb01b5ec2a7901e54341027669b6f16dc/pymongo_smart_auth-2.0.0.tar.gz
+[2023-05-24 11:43:46] INFO root fetch - processPackages [prosimos]: executing diffoscope
+[2023-05-24 11:43:46] INFO root fetch - processPackages [prosimos]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/prosimos-1.2.3.tar.gz tmp/prosimos-1.2.4.tar.gz --markdown 20230524/p/prosimos/1.2.3-1.2.4/diff.md --exclude *.pyd
+[2023-05-24 11:43:46] INFO root fetch - processPackages [pymongo-smart-auth]: executing diffoscope
+[2023-05-24 11:43:46] INFO root fetch - processPackages [pymongo-smart-auth]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pymongo_smart_auth-1.3.1.tar.gz tmp/pymongo_smart_auth-2.0.0.tar.gz --markdown 20230524/p/pymongo-smart-auth/1.3.1-2.0.0/diff.md --exclude *.pyd
+[2023-05-24 11:43:47] INFO root fetch - processPackages [vbimage]: Start processing: knifes
+[2023-05-24 11:43:47] INFO root fetch - main [MainThread]: End processing [vbimage]: success
+[2023-05-24 11:43:47] INFO root fetch - processPackages [vl-datasets]: Start processing: ewoksserver
+[2023-05-24 11:43:47] INFO root fetch - main [MainThread]: End processing [vl-datasets]: success
+[2023-05-24 11:43:47] INFO root fetch - processPackages [knifes]: New version: [0.8.9] Old Version: [0.8.8]
+[2023-05-24 11:43:47] INFO root fetch - processPackages [ewoksserver]: New version: [0.1.0rc0] Old Version: [0.0.4b0]
+[2023-05-24 11:43:47] INFO root fetch - processPackages [djangoldp-application]: Start processing: codal-tsetmc
+[2023-05-24 11:43:47] INFO root fetch - main [MainThread]: End processing [djangoldp-application]: success
+[2023-05-24 11:43:47] WARNING root fetch - processPackages [codal-tsetmc]: Skipping, unable to determine old version
+[2023-05-24 11:43:47] INFO root fetch - processPackages [codal-tsetmc]: Start processing: remarkabletools-mx-smartsend
+[2023-05-24 11:43:47] INFO root fetch - main [MainThread]: End processing [codal-tsetmc] error
+[2023-05-24 11:43:47] INFO root fetch - processPackages [knifes]: executing diffoscope
+[2023-05-24 11:43:47] INFO root fetch - processPackages [knifes]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/knifes-0.8.8.tar.gz tmp/knifes-0.8.9.tar.gz --markdown 20230524/k/knifes/0.8.8-0.8.9/diff.md --exclude *.pyd
+[2023-05-24 11:43:47] INFO root fetch - processPackages [ewoksserver]: executing diffoscope
+[2023-05-24 11:43:47] INFO root fetch - processPackages [ewoksserver]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ewoksserver-0.0.4b0.tar.gz tmp/ewoksserver-0.1.0rc0.tar.gz --markdown 20230524/e/ewoksserver/0.0.4b0-0.1.0rc0/diff.md --exclude *.pyd
+[2023-05-24 11:43:47] WARNING root fetch - processPackages [remarkabletools-mx-smartsend]: Skipping, unable to determine old version
+[2023-05-24 11:43:47] INFO root fetch - processPackages [remarkabletools-mx-smartsend]: Start processing: fastapi-opa
+[2023-05-24 11:43:47] INFO root fetch - main [MainThread]: End processing [remarkabletools-mx-smartsend] error
+[2023-05-24 11:43:47] INFO root fetch - processPackages [fastapi-opa]: New version: [1.4.3] Old Version: [1.4.2]
+[2023-05-24 11:43:47] INFO root fetch - processPackages [pyeCam]: Start processing: mtbase
+[2023-05-24 11:43:47] INFO root fetch - main [MainThread]: End processing [pyeCam]: success
+[2023-05-24 11:43:47] INFO root fetch - processPackages [mtbase]: New version: [4.4.202305240933] Old Version: [4.4.202305240620]
+[2023-05-24 11:43:48] INFO root fetch - processPackages [fastapi-opa]: Downloading https://files.pythonhosted.org/packages/86/b6/4418400a3ad795a38441e3cd154ae2e3ed5910ed51ff41ba1fa4a0a71678/fastapi-opa-1.4.2.tar.gz
+[2023-05-24 11:43:48] INFO root fetch - processPackages [mtbase]: Downloading https://files.pythonhosted.org/packages/92/3e/0a4562b74dc5551376d4473f77b829887d952bb57613c69e11309ba6ad55/mtbase-4.4.202305240933-py3-none-any.whl
+[2023-05-24 11:43:48] INFO root fetch - processPackages [dinohub-seedwork-be]: Start processing: ExPSO
+[2023-05-24 11:43:48] INFO root fetch - main [MainThread]: End processing [dinohub-seedwork-be]: success
+[2023-05-24 11:43:48] INFO root fetch - processPackages [aiogrpctools]: Start processing: izihawa-loglib
+[2023-05-24 11:43:48] INFO root fetch - main [MainThread]: End processing [aiogrpctools]: success
+[2023-05-24 11:43:48] WARNING root fetch - processPackages [izihawa-loglib]: Skipping, unable to determine old version
+[2023-05-24 11:43:48] INFO root fetch - processPackages [izihawa-loglib]: Start processing: megadata
+[2023-05-24 11:43:48] INFO root fetch - main [MainThread]: End processing [izihawa-loglib] error
+[2023-05-24 11:43:48] INFO root fetch - processPackages [mtbase]: executing diffoscope
+[2023-05-24 11:43:48] INFO root fetch - processPackages [mtbase]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mtbase-4.4.202305240620-py3-none-any.whl.zip tmp/mtbase-4.4.202305240933-py3-none-any.whl.zip --markdown 20230524/m/mtbase/4.4.202305240620-4.4.202305240933/diff.md --exclude *.pyd
+[2023-05-24 11:43:48] INFO root fetch - processPackages [megadata]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-24 11:43:48] INFO root fetch - processPackages [vasp-suite]: Start processing: clevertable
+[2023-05-24 11:43:48] INFO root fetch - main [MainThread]: End processing [vasp-suite]: success
+[2023-05-24 11:43:48] INFO root fetch - processPackages [fastapi-opa]: Downloading https://files.pythonhosted.org/packages/c3/af/61acfb147aa126ce69f57dccb891592ff1de3087162781a3844c3e943011/fastapi-opa-1.4.3.tar.gz
+[2023-05-24 11:43:48] WARNING root fetch - processPackages [ExPSO]: Skipping, unable to determine old version
+[2023-05-24 11:43:48] INFO root fetch - processPackages [ExPSO]: Start processing: p-template-generator
+[2023-05-24 11:43:48] INFO root fetch - main [MainThread]: End processing [ExPSO] error
+[2023-05-24 11:43:48] INFO root fetch - processPackages [clevertable]: New version: [2.4.0] Old Version: [2.3.0]
+[2023-05-24 11:43:48] INFO root fetch - processPackages [p-template-generator]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-24 11:43:48] INFO root fetch - processPackages [prosimos]: Start processing: discopy
+[2023-05-24 11:43:48] INFO root fetch - main [MainThread]: End processing [prosimos]: success
+[2023-05-24 11:43:48] INFO root fetch - processPackages [megadata]: executing diffoscope
+[2023-05-24 11:43:48] INFO root fetch - processPackages [megadata]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/megadata-0.0.8.tar.gz tmp/megadata-0.0.9.tar.gz --markdown 20230524/m/megadata/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-24 11:43:48] INFO root fetch - processPackages [discopy]: New version: [1.1.0] Old Version: [1.0.1]
+[2023-05-24 11:43:48] INFO root fetch - main [MainThread]: End processing [pymongo-smart-auth]: success
+[2023-05-24 11:43:48] INFO root fetch - processPackages [fastapi-opa]: executing diffoscope
+[2023-05-24 11:43:48] INFO root fetch - processPackages [fastapi-opa]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fastapi-opa-1.4.2.tar.gz tmp/fastapi-opa-1.4.3.tar.gz --markdown 20230524/f/fastapi-opa/1.4.2-1.4.3/diff.md --exclude *.pyd
+[2023-05-24 11:43:48] INFO root fetch - processPackages [discopy]: executing diffoscope
+[2023-05-24 11:43:48] INFO root fetch - processPackages [discopy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/discopy-1.0.1.tar.gz tmp/discopy-1.1.0.tar.gz --markdown 20230524/d/discopy/1.0.1-1.1.0/diff.md --exclude *.pyd
+[2023-05-24 11:43:48] INFO root fetch - processPackages [p-template-generator]: Downloading https://files.pythonhosted.org/packages/1c/df/a08a0d4221d9beca0d5fd6dda646c3a07951f26d77714cafa8a7c4b9c5cc/p-template-generator-0.1.8.tar.gz
+[2023-05-24 11:43:48] INFO root fetch - processPackages [clevertable]: Downloading https://files.pythonhosted.org/packages/de/b2/be50b5b9c90f3726c7aefaa4d96c1d562243a6be89224eb4286ff6259e92/clevertable-2.4.0.tar.gz
+[2023-05-24 11:43:48] INFO root fetch - processPackages [clevertable]: executing diffoscope
+[2023-05-24 11:43:48] INFO root fetch - processPackages [clevertable]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/clevertable-2.3.0.tar.gz tmp/clevertable-2.4.0.tar.gz --markdown 20230524/c/clevertable/2.3.0-2.4.0/diff.md --exclude *.pyd
+[2023-05-24 11:43:49] INFO root fetch - main [MainThread]: End processing [zensvi]: success
+[2023-05-24 11:43:49] INFO root fetch - main [MainThread]: End processing [knifes]: success
+[2023-05-24 11:43:49] INFO root fetch - processPackages [p-template-generator]: Downloading https://files.pythonhosted.org/packages/4d/c6/b1ba9d57550b94b120e03283c8ce61d054c3f089aed5ef88f169c30f97d8/p-template-generator-0.1.9.tar.gz
+[2023-05-24 11:43:49] INFO root fetch - main [MainThread]: End processing [ewoksserver]: success
+[2023-05-24 11:43:49] INFO root fetch - main [MainThread]: End processing [fastapi-opa]: success
+[2023-05-24 11:43:49] INFO root fetch - main [MainThread]: End processing [megadata]: success
+[2023-05-24 11:43:49] INFO root fetch - main [MainThread]: End processing [clevertable]: success
+[2023-05-24 11:43:49] INFO root fetch - main [MainThread]: End processing [mtbase]: success
+[2023-05-24 11:43:49] INFO root fetch - main [MainThread]: End processing [discopy]: success
+[2023-05-24 11:43:50] INFO root fetch - processPackages [p-template-generator]: executing diffoscope
+[2023-05-24 11:43:50] INFO root fetch - processPackages [p-template-generator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/p-template-generator-0.1.8.tar.gz tmp/p-template-generator-0.1.9.tar.gz --markdown 20230524/p/p-template-generator/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-24 11:43:51] INFO root fetch - main [MainThread]: End processing [p-template-generator]: success
+[2023-05-24 11:43:51] INFO root fetch - main [MainThread]: Store serial: [18227722]
