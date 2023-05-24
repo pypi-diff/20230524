@@ -1211,3 +1211,79 @@ EOFError: EOF read where object expected
 [2023-05-24 02:05:19] INFO root fetch - main [MainThread]: End processing [loophost]: success
 [2023-05-24 02:05:25] INFO root fetch - main [MainThread]: End processing [mct-nightly]: success
 [2023-05-24 02:05:25] INFO root fetch - main [MainThread]: Store serial: [18221224]
+[2023-05-24 02:10:29] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18221224]
+[2023-05-24 02:10:34] INFO root fetch - main [MainThread]: Found 13 changed packages
+[2023-05-24 02:10:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: coiled
+[2023-05-24 02:10:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: dash-connectivity-viewer
+[2023-05-24 02:10:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: gadapt
+[2023-05-24 02:10:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: jaxutils-nightly
+[2023-05-24 02:10:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: t8s
+[2023-05-24 02:10:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: torchlayers-nightly
+[2023-05-24 02:10:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: qky-tools
+[2023-05-24 02:10:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: lcapy
+[2023-05-24 02:10:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: circtools
+[2023-05-24 02:10:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: codon-jit
+[2023-05-24 02:10:34] INFO root fetch - processPackages [gadapt]: New version: [0.2.9] Old Version: [0.2.8]
+[2023-05-24 02:10:34] INFO root fetch - processPackages [dash-connectivity-viewer]: New version: [2.0.8] Old Version: [2.0.7]
+[2023-05-24 02:10:34] INFO root fetch - processPackages [qky-tools]: New version: [0.4.0] Old Version: [0.3.0]
+[2023-05-24 02:10:34] INFO root fetch - processPackages [codon-jit]: New version: [0.1.4] Old Version: [0.1.3]
+[2023-05-24 02:10:34] WARNING root fetch - processPackages [t8s]: Skipping, unable to determine old version
+[2023-05-24 02:10:34] INFO root fetch - processPackages [t8s]: Start processing: cdk-aws-discord-notifiers
+[2023-05-24 02:10:34] INFO root fetch - main [MainThread]: End processing [t8s] error
+[2023-05-24 02:10:34] INFO root fetch - processPackages [torchlayers-nightly]: New version: [1684800452] Old Version: [1684714051]
+[2023-05-24 02:10:34] INFO root fetch - processPackages [coiled]: New version: [0.6.7.dev9] Old Version: [0.6.7.dev8]
+[2023-05-24 02:10:34] INFO root fetch - processPackages [cdk-aws-discord-notifiers]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-24 02:10:34] INFO root fetch - processPackages [circtools]: New version: [1.3.0] Old Version: [1.2.2]
+[2023-05-24 02:10:34] INFO root fetch - processPackages [lcapy]: New version: [1.9.1] Old Version: [1.9]
+[2023-05-24 02:10:34] INFO root fetch - processPackages [jaxutils-nightly]: New version: [0.0.8.dev20230524] Old Version: [0.0.8.dev20230523]
+[2023-05-24 02:10:34] INFO root fetch - processPackages [gadapt]: executing diffoscope
+[2023-05-24 02:10:34] INFO root fetch - processPackages [gadapt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gadapt-0.2.8.tar.gz tmp/gadapt-0.2.9.tar.gz --markdown 20230524/g/gadapt/0.2.8-0.2.9/diff.md --exclude *.pyd
+[2023-05-24 02:10:34] INFO root fetch - processPackages [qky-tools]: executing diffoscope
+[2023-05-24 02:10:34] INFO root fetch - processPackages [qky-tools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/qky-tools-0.3.0.tar.gz tmp/qky-tools-0.4.0.tar.gz --markdown 20230524/q/qky-tools/0.3.0-0.4.0/diff.md --exclude *.pyd
+[2023-05-24 02:10:34] INFO root fetch - processPackages [coiled]: executing diffoscope
+[2023-05-24 02:10:34] INFO root fetch - processPackages [coiled]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/coiled-0.6.7.dev8.tar.gz tmp/coiled-0.6.7.dev9.tar.gz --markdown 20230524/c/coiled/0.6.7.dev8-0.6.7.dev9/diff.md --exclude *.pyd
+[2023-05-24 02:10:34] INFO root fetch - processPackages [codon-jit]: Downloading https://files.pythonhosted.org/packages/e1/47/c083beeb5bdd7cb5cbd31576de2b4d709a25c15cea2823bf4591ff689430/codon-jit-0.1.3.tar.gz
+[2023-05-24 02:10:34] INFO root fetch - processPackages [cdk-aws-discord-notifiers]: executing diffoscope
+[2023-05-24 02:10:34] INFO root fetch - processPackages [cdk-aws-discord-notifiers]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-aws-discord-notifiers-0.0.8.tar.gz tmp/cdk-aws-discord-notifiers-0.0.9.tar.gz --markdown 20230524/c/cdk-aws-discord-notifiers/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-24 02:10:34] INFO root fetch - processPackages [jaxutils-nightly]: Downloading https://files.pythonhosted.org/packages/20/38/9d46fcfac48ee8e3c211e25e36c60d6b394c1997a3e8919282e47319af3a/jaxutils-nightly-0.0.8.dev20230523.tar.gz
+[2023-05-24 02:10:34] INFO root fetch - processPackages [circtools]: Downloading https://files.pythonhosted.org/packages/2c/96/1e5706af74f0f8053ee20f64db0daed309e72e9ad1c9b72bed485a1ca30f/circtools-1.2.2.tar.gz
+[2023-05-24 02:10:34] INFO root fetch - processPackages [dash-connectivity-viewer]: executing diffoscope
+[2023-05-24 02:10:34] INFO root fetch - processPackages [dash-connectivity-viewer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dash-connectivity-viewer-2.0.7.tar.gz tmp/dash-connectivity-viewer-2.0.8.tar.gz --markdown 20230524/d/dash-connectivity-viewer/2.0.7-2.0.8/diff.md --exclude *.pyd
+[2023-05-24 02:10:34] INFO root fetch - processPackages [torchlayers-nightly]: Downloading https://files.pythonhosted.org/packages/09/ba/13f2262e3e77c8c81f4c02db3fc9472548fd190d0e70c26826adc1a0650e/torchlayers-nightly-1684800452.tar.gz
+[2023-05-24 02:10:34] INFO root fetch - processPackages [lcapy]: Downloading https://files.pythonhosted.org/packages/2c/f0/54cd6070f09dfebf91290600c1a22606d2e1528ed532f69bf71067b838f0/lcapy-1.9.tar.gz
+[2023-05-24 02:10:35] INFO root fetch - processPackages [torchlayers-nightly]: executing diffoscope
+[2023-05-24 02:10:35] INFO root fetch - processPackages [torchlayers-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/torchlayers-nightly-1684714051.tar.gz tmp/torchlayers-nightly-1684800452.tar.gz --markdown 20230524/t/torchlayers-nightly/1684714051-1684800452/diff.md --exclude *.pyd
+[2023-05-24 02:10:35] INFO root fetch - processPackages [codon-jit]: Downloading https://files.pythonhosted.org/packages/18/1a/22fb86fe0d6505ddb3129e98d46ccfa63bc33ed24ab059713c19c94ea272/codon-jit-0.1.4.tar.gz
+[2023-05-24 02:10:35] INFO root fetch - processPackages [jaxutils-nightly]: Downloading https://files.pythonhosted.org/packages/5f/f5/2de386ab49784711723043aafa4b35b4fa808bbc1b09e0e6f9dbda2dd4fc/jaxutils-nightly-0.0.8.dev20230524.tar.gz
+[2023-05-24 02:10:35] INFO root fetch - processPackages [circtools]: Downloading https://files.pythonhosted.org/packages/4e/f1/9dc4b2c6742bfa353e210e0dd079a624c65956acc92b540dd3041502dad9/circtools-1.3.0.tar.gz
+[2023-05-24 02:10:35] INFO root fetch - processPackages [codon-jit]: executing diffoscope
+[2023-05-24 02:10:35] INFO root fetch - processPackages [codon-jit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/codon-jit-0.1.3.tar.gz tmp/codon-jit-0.1.4.tar.gz --markdown 20230524/c/codon-jit/0.1.3-0.1.4/diff.md --exclude *.pyd
+[2023-05-24 02:10:35] INFO root fetch - processPackages [jaxutils-nightly]: executing diffoscope
+[2023-05-24 02:10:35] INFO root fetch - processPackages [jaxutils-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jaxutils-nightly-0.0.8.dev20230523.tar.gz tmp/jaxutils-nightly-0.0.8.dev20230524.tar.gz --markdown 20230524/j/jaxutils-nightly/0.0.8.dev20230523-0.0.8.dev20230524/diff.md --exclude *.pyd
+[2023-05-24 02:10:35] INFO root fetch - processPackages [circtools]: executing diffoscope
+[2023-05-24 02:10:35] INFO root fetch - processPackages [circtools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/circtools-1.2.2.tar.gz tmp/circtools-1.3.0.tar.gz --markdown 20230524/c/circtools/1.2.2-1.3.0/diff.md --exclude *.pyd
+[2023-05-24 02:10:35] INFO root fetch - processPackages [lcapy]: Downloading https://files.pythonhosted.org/packages/a5/d9/dab72456450c501743169a0e3f18050943fb6d589dc163d95440a5ded2e2/lcapy-1.9.1.tar.gz
+[2023-05-24 02:10:35] INFO root fetch - processPackages [lcapy]: executing diffoscope
+[2023-05-24 02:10:35] INFO root fetch - processPackages [lcapy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lcapy-1.9.tar.gz tmp/lcapy-1.9.1.tar.gz --markdown 20230524/l/lcapy/1.9-1.9.1/diff.md --exclude *.pyd
+[2023-05-24 02:10:36] INFO root fetch - processPackages [qky-tools]: Start processing: openbb-nightly
+[2023-05-24 02:10:36] INFO root fetch - main [MainThread]: End processing [qky-tools]: success
+[2023-05-24 02:10:36] INFO root fetch - processPackages [openbb-nightly]: New version: [3.0.1.dev20230523] Old Version: [3.0.1.dev20230522]
+[2023-05-24 02:10:36] INFO root fetch - processPackages [torchlayers-nightly]: Start processing: cdk-common
+[2023-05-24 02:10:36] INFO root fetch - main [MainThread]: End processing [torchlayers-nightly]: success
+[2023-05-24 02:10:36] INFO root fetch - main [MainThread]: End processing [codon-jit]: success
+[2023-05-24 02:10:36] INFO root fetch - main [MainThread]: End processing [jaxutils-nightly]: success
+[2023-05-24 02:10:36] INFO root fetch - processPackages [cdk-common]: New version: [2.0.99] Old Version: [2.0.98]
+[2023-05-24 02:10:36] INFO root fetch - processPackages [openbb-nightly]: Downloading https://files.pythonhosted.org/packages/11/92/f845acc68c4687287f34bd00ab95785416afbae7433d3a4223592e02de70/openbb_nightly-3.0.1.dev20230523.tar.gz
+[2023-05-24 02:10:36] INFO root fetch - processPackages [cdk-common]: executing diffoscope
+[2023-05-24 02:10:36] INFO root fetch - processPackages [cdk-common]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-common-2.0.98.tar.gz tmp/cdk-common-2.0.99.tar.gz --markdown 20230524/c/cdk-common/2.0.98-2.0.99/diff.md --exclude *.pyd
+[2023-05-24 02:10:36] INFO root fetch - processPackages [openbb-nightly]: executing diffoscope
+[2023-05-24 02:10:36] INFO root fetch - processPackages [openbb-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/openbb_nightly-3.0.1.dev20230522.tar.gz tmp/openbb_nightly-3.0.1.dev20230523.tar.gz --markdown 20230524/o/openbb-nightly/3.0.1.dev20230522-3.0.1.dev20230523/diff.md --exclude *.pyd
+[2023-05-24 02:10:37] INFO root fetch - main [MainThread]: End processing [gadapt]: success
+[2023-05-24 02:10:37] INFO root fetch - main [MainThread]: End processing [dash-connectivity-viewer]: success
+[2023-05-24 02:10:37] INFO root fetch - main [MainThread]: End processing [coiled]: success
+[2023-05-24 02:10:37] INFO root fetch - main [MainThread]: End processing [cdk-common]: success
+[2023-05-24 02:10:38] INFO root fetch - main [MainThread]: End processing [circtools]: success
+[2023-05-24 02:10:38] INFO root fetch - main [MainThread]: End processing [lcapy]: success
+[2023-05-24 02:10:38] INFO root fetch - main [MainThread]: End processing [cdk-aws-discord-notifiers]: success
+[2023-05-24 02:10:47] INFO root fetch - main [MainThread]: End processing [openbb-nightly]: success
+[2023-05-24 02:10:47] INFO root fetch - main [MainThread]: Store serial: [18221269]
