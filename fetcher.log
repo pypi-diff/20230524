@@ -8060,3 +8060,76 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-05-24 07:22:46] INFO root fetch - main [MainThread]: End processing [dash-connectivity-viewer]: success
 [2023-05-24 07:22:55] INFO root fetch - main [MainThread]: End processing [pipen-board]: success
 [2023-05-24 07:22:55] INFO root fetch - main [MainThread]: Store serial: [18225271]
+[2023-05-24 07:27:59] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18225271]
+[2023-05-24 07:28:04] INFO root fetch - main [MainThread]: Found 11 changed packages
+[2023-05-24 07:28:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pg-force-execute
+[2023-05-24 07:28:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: prfiesta
+[2023-05-24 07:28:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: algokit-utils
+[2023-05-24 07:28:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pacparser
+[2023-05-24 07:28:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: NikGapps
+[2023-05-24 07:28:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: asgiref
+[2023-05-24 07:28:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: python-kraken-sdk
+[2023-05-24 07:28:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: attm
+[2023-05-24 07:28:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: acryo
+[2023-05-24 07:28:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: stefutils
+[2023-05-24 07:28:04] INFO root fetch - processPackages [prfiesta]: New version: [0.8.0b124] Old Version: [0.8.0]
+[2023-05-24 07:28:04] INFO root fetch - processPackages [pg-force-execute]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-24 07:28:04] INFO root fetch - processPackages [algokit-utils]: New version: [1.2.0b4] Old Version: [1.2.0b3]
+[2023-05-24 07:28:04] INFO root fetch - processPackages [NikGapps]: New version: [1.16] Old Version: [1.15]
+[2023-05-24 07:28:04] INFO root fetch - processPackages [attm]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-24 07:28:04] INFO root fetch - processPackages [python-kraken-sdk]: New version: [1.2.0] Old Version: [1.1.1.dev2]
+[2023-05-24 07:28:04] INFO root fetch - processPackages [pacparser]: New version: [1.4.1.dev7] Old Version: [1.4.1]
+[2023-05-24 07:28:04] INFO root fetch - processPackages [asgiref]: New version: [3.7.0] Old Version: [3.6.0]
+[2023-05-24 07:28:04] INFO root fetch - processPackages [acryo]: New version: [0.4.0] Old Version: [0.3.1]
+[2023-05-24 07:28:04] INFO root fetch - processPackages [stefutils]: New version: [0.9.0] Old Version: [0.8.2]
+[2023-05-24 07:28:04] INFO root fetch - processPackages [asgiref]: Downloading https://files.pythonhosted.org/packages/85/b0/bb7ba9d107a910570ce811061e9b97dac918e3df5a8c3d42f07aded71d48/asgiref-3.7.0.tar.gz
+[2023-05-24 07:28:04] INFO root fetch - processPackages [pg-force-execute]: Downloading https://files.pythonhosted.org/packages/47/33/36aa39a69238b149a2876172df387d8a224533c21220b2c78eb4535700d5/pg_force_execute-0.0.8.tar.gz
+[2023-05-24 07:28:04] INFO root fetch - processPackages [NikGapps]: Downloading https://files.pythonhosted.org/packages/ce/72/17b6166bfc8343a7d907b39d2c6a6c58bcc63b77013c82cc1e14b300a102/NikGapps-1.15.tar.gz
+[2023-05-24 07:28:04] INFO root fetch - processPackages [asgiref]: executing diffoscope
+[2023-05-24 07:28:04] INFO root fetch - processPackages [asgiref]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/asgiref-3.6.0.tar.gz tmp/asgiref-3.7.0.tar.gz --markdown 20230524/a/asgiref/3.6.0-3.7.0/diff.md --exclude *.pyd
+[2023-05-24 07:28:04] INFO root fetch - processPackages [algokit-utils]: Downloading https://files.pythonhosted.org/packages/f6/e2/463fb9bf77f6f44e41c5a9229bd0d190ef6ce2002f77273855cfeb8f5ba6/algokit_utils-1.2.0b3-py3-none-any.whl
+[2023-05-24 07:28:04] INFO root fetch - processPackages [python-kraken-sdk]: Downloading https://files.pythonhosted.org/packages/27/d1/9aede8dd0acd12cf6e7e0bbd2374f32408dedf1f58f5a6a9b3e29dcbc00e/python_kraken_sdk-1.1.1.dev2-py3-none-any.whl
+[2023-05-24 07:28:04] INFO root fetch - processPackages [attm]: Downloading https://files.pythonhosted.org/packages/b6/e6/b5137006d92f9e8ccf2f1ebb4ee67891d2224550526863b573309d614d59/attm-0.0.9-py3-none-win_amd64.whl
+[2023-05-24 07:28:04] INFO root fetch - processPackages [pacparser]: Downloading https://files.pythonhosted.org/packages/ad/10/45fddc52d385c1b6675d92be1b59f77fa4f5c0679e065ed86f2d2b420e7f/pacparser-1.4.1.tar.gz
+[2023-05-24 07:28:04] INFO root fetch - processPackages [stefutils]: Downloading https://files.pythonhosted.org/packages/35/8a/1e1d14788f07a9e2f1f826ff7ed0782d942b144ca6bdd3e7aba10d88d63c/stefutils-0.8.2.tar.gz
+[2023-05-24 07:28:04] WARNING root fetch - processPackages [NikGapps]: Skipping package: exceeds size limit 41548949>=10485760
+[2023-05-24 07:28:04] INFO root fetch - processPackages [NikGapps]: Start processing: crazy-thursday
+[2023-05-24 07:28:04] INFO root fetch - main [MainThread]: End processing [NikGapps] error
+[2023-05-24 07:28:04] INFO root fetch - processPackages [prfiesta]: Downloading https://files.pythonhosted.org/packages/52/ef/c4ce264f93a746384484479af0b5a93b7aabe94f3464ad3aa55b8b8e9d34/prfiesta-0.8.0b124.tar.gz
+[2023-05-24 07:28:04] INFO root fetch - processPackages [acryo]: Downloading https://files.pythonhosted.org/packages/f7/37/3c5ed155c57c64376fc141d36fdd244480276a62e1faea473723d9fc113b/acryo-0.3.1.tar.gz
+[2023-05-24 07:28:04] INFO root fetch - processPackages [pg-force-execute]: Downloading https://files.pythonhosted.org/packages/33/fe/7d3153892dd777f7a86180126c8afcc32a7c1de14299b3c0bef74fee91af/pg_force_execute-0.0.9.tar.gz
+[2023-05-24 07:28:04] INFO root fetch - processPackages [crazy-thursday]: New version: [2023.5.9.1] Old Version: [2023.5.9.0]
+[2023-05-24 07:28:04] INFO root fetch - processPackages [attm]: executing diffoscope
+[2023-05-24 07:28:04] INFO root fetch - processPackages [attm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/attm-0.0.8-py3-none-win_amd64.whl.zip tmp/attm-0.0.9-py3-none-win_amd64.whl.zip --markdown 20230524/a/attm/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-24 07:28:04] INFO root fetch - processPackages [prfiesta]: executing diffoscope
+[2023-05-24 07:28:04] INFO root fetch - processPackages [prfiesta]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/prfiesta-0.8.0.tar.gz tmp/prfiesta-0.8.0b124.tar.gz --markdown 20230524/p/prfiesta/0.8.0-0.8.0b124/diff.md --exclude *.pyd
+[2023-05-24 07:28:04] INFO root fetch - processPackages [pg-force-execute]: executing diffoscope
+[2023-05-24 07:28:04] INFO root fetch - processPackages [pg-force-execute]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pg_force_execute-0.0.8.tar.gz tmp/pg_force_execute-0.0.9.tar.gz --markdown 20230524/p/pg-force-execute/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-24 07:28:04] INFO root fetch - processPackages [crazy-thursday]: executing diffoscope
+[2023-05-24 07:28:04] INFO root fetch - processPackages [crazy-thursday]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/crazy-thursday-2023.5.9.0.tar.gz tmp/crazy-thursday-2023.5.9.1.tar.gz --markdown 20230524/c/crazy-thursday/2023.5.9.0-2023.5.9.1/diff.md --exclude *.pyd
+[2023-05-24 07:28:04] INFO root fetch - processPackages [algokit-utils]: Downloading https://files.pythonhosted.org/packages/a9/65/957aa5f70a3eea9788fdcac6ed79d70f0c02bc2164e3fb0f9af3e3eaa38e/algokit_utils-1.2.0b4-py3-none-any.whl
+[2023-05-24 07:28:04] INFO root fetch - processPackages [pacparser]: Downloading https://files.pythonhosted.org/packages/9a/7e/9a66867982573d995f2ea33569d4e5739a1d6a833272cb41fb103ca20ac9/pacparser-1.4.1.dev7.tar.gz
+[2023-05-24 07:28:04] INFO root fetch - processPackages [acryo]: Downloading https://files.pythonhosted.org/packages/a9/c3/de534ed870fb1762978f6e1800afeb4db7873af8c17e7c2c80a1bb8e8e2a/acryo-0.4.0.tar.gz
+[2023-05-24 07:28:04] INFO root fetch - processPackages [stefutils]: Downloading https://files.pythonhosted.org/packages/97/83/18c4d714dca8e70776fec14f20e075956fd6a82321ac6df03f78534d47eb/stefutils-0.9.0.tar.gz
+[2023-05-24 07:28:04] INFO root fetch - processPackages [python-kraken-sdk]: Downloading https://files.pythonhosted.org/packages/92/7b/5053c760eede464deab9c8c51f8322f8a682f58c07fdeb520d69c9649e1f/python_kraken_sdk-1.2.0-py3-none-any.whl
+[2023-05-24 07:28:04] INFO root fetch - processPackages [python-kraken-sdk]: executing diffoscope
+[2023-05-24 07:28:04] INFO root fetch - processPackages [python-kraken-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/python_kraken_sdk-1.1.1.dev2-py3-none-any.whl.zip tmp/python_kraken_sdk-1.2.0-py3-none-any.whl.zip --markdown 20230524/p/python-kraken-sdk/1.1.1.dev2-1.2.0/diff.md --exclude *.pyd
+[2023-05-24 07:28:04] INFO root fetch - processPackages [algokit-utils]: executing diffoscope
+[2023-05-24 07:28:04] INFO root fetch - processPackages [pacparser]: executing diffoscope
+[2023-05-24 07:28:04] INFO root fetch - processPackages [pacparser]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pacparser-1.4.1.tar.gz tmp/pacparser-1.4.1.dev7.tar.gz --markdown 20230524/p/pacparser/1.4.1-1.4.1.dev7/diff.md --exclude *.pyd
+[2023-05-24 07:28:04] INFO root fetch - processPackages [algokit-utils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/algokit_utils-1.2.0b3-py3-none-any.whl.zip tmp/algokit_utils-1.2.0b4-py3-none-any.whl.zip --markdown 20230524/a/algokit-utils/1.2.0b3-1.2.0b4/diff.md --exclude *.pyd
+[2023-05-24 07:28:04] INFO root fetch - processPackages [acryo]: executing diffoscope
+[2023-05-24 07:28:04] INFO root fetch - processPackages [acryo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/acryo-0.3.1.tar.gz tmp/acryo-0.4.0.tar.gz --markdown 20230524/a/acryo/0.3.1-0.4.0/diff.md --exclude *.pyd
+[2023-05-24 07:28:04] INFO root fetch - processPackages [stefutils]: executing diffoscope
+[2023-05-24 07:28:04] INFO root fetch - processPackages [stefutils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/stefutils-0.8.2.tar.gz tmp/stefutils-0.9.0.tar.gz --markdown 20230524/s/stefutils/0.8.2-0.9.0/diff.md --exclude *.pyd
+[2023-05-24 07:28:05] INFO root fetch - main [MainThread]: End processing [attm]: success
+[2023-05-24 07:28:06] INFO root fetch - main [MainThread]: End processing [pg-force-execute]: success
+[2023-05-24 07:28:06] INFO root fetch - main [MainThread]: End processing [prfiesta]: success
+[2023-05-24 07:28:06] INFO root fetch - main [MainThread]: End processing [asgiref]: success
+[2023-05-24 07:28:06] INFO root fetch - main [MainThread]: End processing [pacparser]: success
+[2023-05-24 07:28:06] INFO root fetch - main [MainThread]: End processing [algokit-utils]: success
+[2023-05-24 07:28:06] INFO root fetch - main [MainThread]: End processing [crazy-thursday]: success
+[2023-05-24 07:28:06] INFO root fetch - main [MainThread]: End processing [python-kraken-sdk]: success
+[2023-05-24 07:28:06] INFO root fetch - main [MainThread]: End processing [acryo]: success
+[2023-05-24 07:28:06] INFO root fetch - main [MainThread]: End processing [stefutils]: success
+[2023-05-24 07:28:06] INFO root fetch - main [MainThread]: Store serial: [18225314]
