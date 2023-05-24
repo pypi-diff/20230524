@@ -1287,3 +1287,95 @@ EOFError: EOF read where object expected
 [2023-05-24 02:10:38] INFO root fetch - main [MainThread]: End processing [cdk-aws-discord-notifiers]: success
 [2023-05-24 02:10:47] INFO root fetch - main [MainThread]: End processing [openbb-nightly]: success
 [2023-05-24 02:10:47] INFO root fetch - main [MainThread]: Store serial: [18221269]
+[2023-05-24 02:15:51] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18221269]
+[2023-05-24 02:15:56] INFO root fetch - main [MainThread]: Found 17 changed packages
+[2023-05-24 02:15:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: cdktf-local-exec
+[2023-05-24 02:15:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: interactive-multi-category-table
+[2023-05-24 02:15:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pepperize.cdk-github
+[2023-05-24 02:15:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: ovos-plugin-manager
+[2023-05-24 02:15:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: t8s
+[2023-05-24 02:15:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: cdk-iot-core-certificates
+[2023-05-24 02:15:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: cdk-events-notify
+[2023-05-24 02:15:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: odoo14-addon-l10n-br-base
+[2023-05-24 02:15:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: torchmultimodal-nightly
+[2023-05-24 02:15:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: pytorch-ignite
+[2023-05-24 02:15:56] INFO root fetch - processPackages [cdk-iot-core-certificates]: New version: [1.0.9] Old Version: [1.0.8]
+[2023-05-24 02:15:56] INFO root fetch - processPackages [interactive-multi-category-table]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-05-24 02:15:56] INFO root fetch - processPackages [t8s]: New version: [0.1.3] Old Version: [0.1.2]
+[2023-05-24 02:15:57] INFO root fetch - processPackages [cdk-events-notify]: New version: [2.0.99] Old Version: [2.0.98]
+[2023-05-24 02:15:57] INFO root fetch - processPackages [pytorch-ignite]: New version: [0.5.0.dev20230523] Old Version: [0.5.0.dev20230522]
+[2023-05-24 02:15:57] INFO root fetch - processPackages [torchmultimodal-nightly]: New version: [2023.5.9] Old Version: [2023.5.8]
+[2023-05-24 02:15:57] INFO root fetch - processPackages [pepperize.cdk-github]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-05-24 02:15:57] INFO root fetch - processPackages [odoo14-addon-l10n-br-base]: New version: [14.0.3.1.2] Old Version: [14.0.3.1.1.dev4]
+[2023-05-24 02:15:57] INFO root fetch - processPackages [ovos-plugin-manager]: New version: [0.0.9] Old Version: [0.0.8a3]
+[2023-05-24 02:15:57] INFO root fetch - processPackages [cdktf-local-exec]: New version: [0.2.9] Old Version: [0.2.8]
+[2023-05-24 02:15:57] ERROR root fetch - processPackages [t8s]: Unable to fetch info: No such project/version 't8s' 0.1.2
+[2023-05-24 02:15:57] INFO root fetch - processPackages [t8s]: Start processing: cdktf-gitlab-runner
+[2023-05-24 02:15:57] INFO root fetch - main [MainThread]: End processing [t8s] error
+[2023-05-24 02:15:57] INFO root fetch - processPackages [cdk-events-notify]: executing diffoscope
+[2023-05-24 02:15:57] INFO root fetch - processPackages [cdk-events-notify]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-events-notify-2.0.98.tar.gz tmp/cdk-events-notify-2.0.99.tar.gz --markdown 20230524/c/cdk-events-notify/2.0.98-2.0.99/diff.md --exclude *.pyd
+[2023-05-24 02:15:57] INFO root fetch - processPackages [cdktf-gitlab-runner]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-05-24 02:15:57] INFO root fetch - processPackages [interactive-multi-category-table]: executing diffoscope
+[2023-05-24 02:15:57] INFO root fetch - processPackages [pepperize.cdk-github]: executing diffoscope
+[2023-05-24 02:15:57] INFO root fetch - processPackages [interactive-multi-category-table]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/interactive_multi_category_table-0.0.2.tar.gz tmp/interactive_multi_category_table-0.0.3.tar.gz --markdown 20230524/i/interactive-multi-category-table/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-05-24 02:15:57] INFO root fetch - processPackages [pepperize.cdk-github]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pepperize.cdk-github-0.0.98.tar.gz tmp/pepperize.cdk-github-0.0.99.tar.gz --markdown 20230524/p/pepperize.cdk-github/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-05-24 02:15:57] INFO root fetch - processPackages [torchmultimodal-nightly]: executing diffoscope
+[2023-05-24 02:15:57] INFO root fetch - processPackages [torchmultimodal-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/torchmultimodal_nightly-2023.5.8-py39-none-any.whl.zip tmp/torchmultimodal_nightly-2023.5.9-py39-none-any.whl.zip --markdown 20230524/t/torchmultimodal-nightly/2023.5.8-2023.5.9/diff.md --exclude *.pyd
+[2023-05-24 02:15:57] INFO root fetch - processPackages [cdk-iot-core-certificates]: executing diffoscope
+[2023-05-24 02:15:57] INFO root fetch - processPackages [cdk-iot-core-certificates]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-iot-core-certificates-1.0.8.tar.gz tmp/cdk-iot-core-certificates-1.0.9.tar.gz --markdown 20230524/c/cdk-iot-core-certificates/1.0.8-1.0.9/diff.md --exclude *.pyd
+[2023-05-24 02:15:57] INFO root fetch - processPackages [cdktf-gitlab-runner]: executing diffoscope
+[2023-05-24 02:15:57] INFO root fetch - processPackages [cdktf-gitlab-runner]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdktf-gitlab-runner-0.0.98.tar.gz tmp/cdktf-gitlab-runner-0.0.99.tar.gz --markdown 20230524/c/cdktf-gitlab-runner/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-05-24 02:15:57] INFO root fetch - processPackages [odoo14-addon-l10n-br-base]: Downloading https://files.pythonhosted.org/packages/60/f7/97c38fea0b57562bb571ffa7543a48833175ecc143129eb56508efd227fc/odoo14_addon_l10n_br_base-14.0.3.1.1.dev4-py3-none-any.whl
+[2023-05-24 02:15:57] INFO root fetch - processPackages [cdktf-local-exec]: Downloading https://files.pythonhosted.org/packages/b6/d5/9db67e5018cbb315231f1cbe55a86e64898b9ce0809ed5cc5d4632fc5c5c/cdktf-local-exec-0.2.8.tar.gz
+[2023-05-24 02:15:57] INFO root fetch - processPackages [pytorch-ignite]: executing diffoscope
+[2023-05-24 02:15:57] INFO root fetch - processPackages [pytorch-ignite]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pytorch-ignite-0.5.0.dev20230522.tar.gz tmp/pytorch-ignite-0.5.0.dev20230523.tar.gz --markdown 20230524/p/pytorch-ignite/0.5.0.dev20230522-0.5.0.dev20230523/diff.md --exclude *.pyd
+[2023-05-24 02:15:57] INFO root fetch - processPackages [ovos-plugin-manager]: executing diffoscope
+[2023-05-24 02:15:57] INFO root fetch - processPackages [ovos-plugin-manager]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ovos_plugin_manager-0.0.8a3-py3-none-any.whl.zip tmp/ovos_plugin_manager-0.0.9-py3-none-any.whl.zip --markdown 20230524/o/ovos-plugin-manager/0.0.8a3-0.0.9/diff.md --exclude *.pyd
+[2023-05-24 02:15:57] INFO root fetch - processPackages [cdktf-local-exec]: Downloading https://files.pythonhosted.org/packages/19/02/83e6ceb8de9cca722ee3e14572dc8001d4f7c34c4de404e7ca645de74bc4/cdktf-local-exec-0.2.9.tar.gz
+[2023-05-24 02:15:57] INFO root fetch - processPackages [odoo14-addon-l10n-br-base]: Downloading https://files.pythonhosted.org/packages/00/48/a263b79cce6bc5e050ff17f067d767d01559b4f0e57d9338373561d2a960/odoo14_addon_l10n_br_base-14.0.3.1.2-py3-none-any.whl
+[2023-05-24 02:15:57] INFO root fetch - processPackages [cdktf-local-exec]: executing diffoscope
+[2023-05-24 02:15:57] INFO root fetch - processPackages [cdktf-local-exec]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdktf-local-exec-0.2.8.tar.gz tmp/cdktf-local-exec-0.2.9.tar.gz --markdown 20230524/c/cdktf-local-exec/0.2.8-0.2.9/diff.md --exclude *.pyd
+[2023-05-24 02:15:57] INFO root fetch - processPackages [odoo14-addon-l10n-br-base]: executing diffoscope
+[2023-05-24 02:15:57] INFO root fetch - processPackages [odoo14-addon-l10n-br-base]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo14_addon_l10n_br_base-14.0.3.1.1.dev4-py3-none-any.whl.zip tmp/odoo14_addon_l10n_br_base-14.0.3.1.2-py3-none-any.whl.zip --markdown 20230524/o/odoo14-addon-l10n-br-base/14.0.3.1.1.dev4-14.0.3.1.2/diff.md --exclude *.pyd
+[2023-05-24 02:15:58] INFO root fetch - processPackages [interactive-multi-category-table]: Start processing: cdk-skylight
+[2023-05-24 02:15:58] INFO root fetch - main [MainThread]: End processing [interactive-multi-category-table]: success
+[2023-05-24 02:15:58] INFO root fetch - processPackages [cdk-skylight]: New version: [1.1.99] Old Version: [1.1.98]
+[2023-05-24 02:15:58] INFO root fetch - processPackages [cdk-iot-core-certificates]: Start processing: cdktf-cdk8s
+[2023-05-24 02:15:58] INFO root fetch - main [MainThread]: End processing [cdk-iot-core-certificates]: success
+[2023-05-24 02:15:58] INFO root fetch - processPackages [cdk-events-notify]: Start processing: cdk-events-notify
+[2023-05-24 02:15:58] INFO root fetch - main [MainThread]: End processing [cdk-events-notify]: success
+[2023-05-24 02:15:58] INFO root fetch - processPackages [cdktf-gitlab-runner]: Start processing: cdk-watchful
+[2023-05-24 02:15:58] INFO root fetch - main [MainThread]: End processing [cdktf-gitlab-runner]: success
+[2023-05-24 02:15:58] INFO root fetch - processPackages [cdk-events-notify]: New version: [2.0.99] Old Version: [2.0.98]
+[2023-05-24 02:15:58] INFO root fetch - processPackages [cdktf-cdk8s]: New version: [0.5.9] Old Version: [0.5.8]
+[2023-05-24 02:15:58] INFO root fetch - processPackages [ovos-plugin-manager]: Start processing: cdk-common
+[2023-05-24 02:15:58] INFO root fetch - main [MainThread]: End processing [ovos-plugin-manager]: success
+[2023-05-24 02:15:59] INFO root fetch - processPackages [cdk-common]: New version: [2.0.99] Old Version: [2.0.98]
+[2023-05-24 02:15:59] INFO root fetch - processPackages [cdktf-cdk8s]: executing diffoscope
+[2023-05-24 02:15:59] INFO root fetch - processPackages [cdktf-cdk8s]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdktf-cdk8s-0.5.8.tar.gz tmp/cdktf-cdk8s-0.5.9.tar.gz --markdown 20230524/c/cdktf-cdk8s/0.5.8-0.5.9/diff.md --exclude *.pyd
+[2023-05-24 02:15:59] INFO root fetch - processPackages [cdktf-local-exec]: Start processing: xenoslib
+[2023-05-24 02:15:59] INFO root fetch - main [MainThread]: End processing [cdktf-local-exec]: success
+[2023-05-24 02:15:59] INFO root fetch - processPackages [cdk-events-notify]: executing diffoscope
+[2023-05-24 02:15:59] INFO root fetch - processPackages [cdk-events-notify]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-events-notify-2.0.98.tar.gz tmp/cdk-events-notify-2.0.99.tar.gz --markdown 20230524/c/cdk-events-notify/2.0.98-2.0.99/diff.md --exclude *.pyd
+[2023-05-24 02:15:59] INFO root fetch - main [MainThread]: End processing [torchmultimodal-nightly]: success
+[2023-05-24 02:15:59] INFO root fetch - processPackages [cdk-skylight]: executing diffoscope
+[2023-05-24 02:15:59] INFO root fetch - processPackages [cdk-skylight]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-skylight-1.1.98.tar.gz tmp/cdk-skylight-1.1.99.tar.gz --markdown 20230524/c/cdk-skylight/1.1.98-1.1.99/diff.md --exclude *.pyd
+[2023-05-24 02:15:59] INFO root fetch - processPackages [cdk-watchful]: New version: [0.6.99] Old Version: [0.6.98]
+[2023-05-24 02:15:59] INFO root fetch - processPackages [xenoslib]: New version: [0.1.27.1] Old Version: [0.1.27.0]
+[2023-05-24 02:15:59] INFO root fetch - processPackages [cdk-common]: executing diffoscope
+[2023-05-24 02:15:59] INFO root fetch - processPackages [cdk-common]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-common-2.0.98.tar.gz tmp/cdk-common-2.0.99.tar.gz --markdown 20230524/c/cdk-common/2.0.98-2.0.99/diff.md --exclude *.pyd
+[2023-05-24 02:15:59] INFO root fetch - processPackages [cdk-watchful]: executing diffoscope
+[2023-05-24 02:15:59] INFO root fetch - processPackages [cdk-watchful]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-watchful-0.6.98.tar.gz tmp/cdk-watchful-0.6.99.tar.gz --markdown 20230524/c/cdk-watchful/0.6.98-0.6.99/diff.md --exclude *.pyd
+[2023-05-24 02:15:59] INFO root fetch - processPackages [xenoslib]: Downloading https://files.pythonhosted.org/packages/7f/b8/b4f73a73422e6c13421f0e8a206b94ec5555ecd22aeb7a24256fa9f48308/xenoslib-0.1.27.1.tar.gz
+[2023-05-24 02:15:59] INFO root fetch - processPackages [xenoslib]: executing diffoscope
+[2023-05-24 02:15:59] INFO root fetch - processPackages [xenoslib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xenoslib-0.1.27.0.tar.gz tmp/xenoslib-0.1.27.1.tar.gz --markdown 20230524/x/xenoslib/0.1.27.0-0.1.27.1/diff.md --exclude *.pyd
+[2023-05-24 02:15:59] INFO root fetch - main [MainThread]: End processing [pytorch-ignite]: success
+[2023-05-24 02:15:59] INFO root fetch - main [MainThread]: End processing [odoo14-addon-l10n-br-base]: success
+[2023-05-24 02:16:00] INFO root fetch - main [MainThread]: End processing [cdk-events-notify]: success
+[2023-05-24 02:16:00] INFO root fetch - main [MainThread]: End processing [cdktf-cdk8s]: success
+[2023-05-24 02:16:00] INFO root fetch - main [MainThread]: End processing [cdk-skylight]: success
+[2023-05-24 02:16:00] INFO root fetch - main [MainThread]: End processing [cdk-watchful]: success
+[2023-05-24 02:16:00] INFO root fetch - main [MainThread]: End processing [cdk-common]: success
+[2023-05-24 02:16:00] INFO root fetch - main [MainThread]: End processing [pepperize.cdk-github]: success
+[2023-05-24 02:16:01] INFO root fetch - main [MainThread]: End processing [xenoslib]: success
+[2023-05-24 02:16:01] INFO root fetch - main [MainThread]: Store serial: [18221319]
