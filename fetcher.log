@@ -21683,3 +21683,41 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd4 in position 72: invalid
 [2023-05-24 19:57:16] INFO root fetch - main [MainThread]: End processing [intecomm-edc]: success
 [2023-05-24 19:57:18] INFO root fetch - main [MainThread]: End processing [intecomm-edc]: success
 [2023-05-24 19:57:18] INFO root fetch - main [MainThread]: Store serial: [18233956]
+[2023-05-24 20:02:22] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18233956]
+[2023-05-24 20:02:27] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-05-24 20:02:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: nomnomdata-engine
+[2023-05-24 20:02:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: chalkpy
+[2023-05-24 20:02:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: opvious
+[2023-05-24 20:02:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: quantconnect-stubs
+[2023-05-24 20:02:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: serializer-Konchik
+[2023-05-24 20:02:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: klayout
+[2023-05-24 20:02:27] INFO root fetch - processPackages [nomnomdata-engine]: New version: [1.1.9] Old Version: [1.1.8.post6.dev0]
+[2023-05-24 20:02:27] INFO root fetch - processPackages [opvious]: New version: [0.9.6] Old Version: [0.9.5]
+[2023-05-24 20:02:27] INFO root fetch - processPackages [serializer-Konchik]: New version: [0.1.5] Old Version: [0.1.4]
+[2023-05-24 20:02:27] INFO root fetch - processPackages [chalkpy]: New version: [2.3.9] Old Version: [2.3.8]
+[2023-05-24 20:02:27] INFO root fetch - processPackages [quantconnect-stubs]: New version: [9998] Old Version: [9997]
+[2023-05-24 20:02:27] INFO root fetch - processPackages [opvious]: executing diffoscope
+[2023-05-24 20:02:27] INFO root fetch - processPackages [opvious]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/opvious-0.9.5.tar.gz tmp/opvious-0.9.6.tar.gz --markdown 20230524/o/opvious/0.9.5-0.9.6/diff.md --exclude *.pyd
+[2023-05-24 20:02:27] INFO root fetch - processPackages [nomnomdata-engine]: Downloading https://files.pythonhosted.org/packages/29/ca/6d982a8c2b03cf4674754f450cf541fc754fd3a21b93b0aa0560ca38ce09/nomnomdata-engine-1.1.8.post6.dev0.tar.gz
+[2023-05-24 20:02:27] INFO root fetch - processPackages [klayout]: New version: [0.28.post1] Old Version: [0.28.8]
+[2023-05-24 20:02:27] INFO root fetch - processPackages [quantconnect-stubs]: executing diffoscope
+[2023-05-24 20:02:27] INFO root fetch - processPackages [quantconnect-stubs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/quantconnect-stubs-9997.tar.gz tmp/quantconnect-stubs-9998.tar.gz --markdown 20230524/q/quantconnect-stubs/9997-9998/diff.md --exclude *.pyd
+[2023-05-24 20:02:27] INFO root fetch - processPackages [klayout]: Downloading https://files.pythonhosted.org/packages/42/f6/d9f6c500a371ae483e4c97be8750413e2dfbdaa1f875060f89736e317a45/klayout-0.28.8-cp310-cp310-win32.whl
+[2023-05-24 20:02:27] INFO root fetch - processPackages [serializer-Konchik]: Downloading https://files.pythonhosted.org/packages/47/7d/32996028d84c4fbfc0ccdb609e7e642cdaac0ef7cc39101e3137e0f5f980/serializer_Konchik-0.1.5.tar.gz
+[2023-05-24 20:02:28] INFO root fetch - processPackages [chalkpy]: executing diffoscope
+[2023-05-24 20:02:28] INFO root fetch - processPackages [chalkpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/chalkpy-2.3.8.tar.gz tmp/chalkpy-2.3.9.tar.gz --markdown 20230524/c/chalkpy/2.3.8-2.3.9/diff.md --exclude *.pyd
+[2023-05-24 20:02:28] INFO root fetch - processPackages [nomnomdata-engine]: Downloading https://files.pythonhosted.org/packages/2f/c8/ecfb7b0b8c8d033e114ff0d96f1dd7bcc8133c9e475a23340d0103ee13c3/nomnomdata-engine-1.1.9.tar.gz
+[2023-05-24 20:02:28] INFO root fetch - processPackages [serializer-Konchik]: executing diffoscope
+[2023-05-24 20:02:28] INFO root fetch - processPackages [serializer-Konchik]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/serializer_Konchik-0.1.4.tar.gz tmp/serializer_Konchik-0.1.5.tar.gz --markdown 20230524/s/serializer-Konchik/0.1.4-0.1.5/diff.md --exclude *.pyd
+[2023-05-24 20:02:28] INFO root fetch - processPackages [nomnomdata-engine]: executing diffoscope
+[2023-05-24 20:02:28] INFO root fetch - processPackages [nomnomdata-engine]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nomnomdata-engine-1.1.8.post6.dev0.tar.gz tmp/nomnomdata-engine-1.1.9.tar.gz --markdown 20230524/n/nomnomdata-engine/1.1.8.post6.dev0-1.1.9/diff.md --exclude *.pyd
+[2023-05-24 20:02:28] INFO root fetch - main [MainThread]: End processing [opvious]: success
+[2023-05-24 20:02:29] INFO root fetch - main [MainThread]: End processing [serializer-Konchik]: success
+[2023-05-24 20:02:29] INFO root fetch - main [MainThread]: End processing [nomnomdata-engine]: success
+[2023-05-24 20:02:32] INFO root fetch - main [MainThread]: End processing [quantconnect-stubs]: success
+[2023-05-24 20:02:32] INFO root fetch - processPackages [klayout]: Downloading https://files.pythonhosted.org/packages/24/6d/942ebb901e7e6a1fe55a2953fda5080fac8835ccceeed4731995694b7076/klayout-0.28.post1.tar.gz
+[2023-05-24 20:02:33] INFO root fetch - main [MainThread]: End processing [chalkpy]: success
+[2023-05-24 20:02:33] INFO root fetch - processPackages [klayout]: executing diffoscope
+[2023-05-24 20:02:33] INFO root fetch - processPackages [klayout]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/klayout-0.28.8-cp310-cp310-win32.whl.zip tmp/klayout-0.28.post1.tar.gz --markdown 20230524/k/klayout/0.28.8-0.28.post1/diff.md --exclude *.pyd
+[2023-05-24 20:02:43] INFO root fetch - main [MainThread]: End processing [klayout]: success
+[2023-05-24 20:02:43] INFO root fetch - main [MainThread]: Store serial: [18233973]
