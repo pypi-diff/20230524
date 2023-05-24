@@ -12675,3 +12675,106 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd4 in position 72: invalid
 [2023-05-24 12:22:05] INFO root fetch - main [MainThread]: End processing [waveforms]: success
 [2023-05-24 12:22:09] INFO root fetch - main [MainThread]: End processing [pywfa]: success
 [2023-05-24 12:22:09] INFO root fetch - main [MainThread]: Store serial: [18228142]
+[2023-05-24 12:27:14] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18228142]
+[2023-05-24 12:27:19] INFO root fetch - main [MainThread]: Found 18 changed packages
+[2023-05-24 12:27:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ExPSO
+[2023-05-24 12:27:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: mikro
+[2023-05-24 12:27:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: directory-sso-api-client
+[2023-05-24 12:27:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: automatix
+[2023-05-24 12:27:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: extr
+[2023-05-24 12:27:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: validataclass
+[2023-05-24 12:27:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: openai-pygenerator
+[2023-05-24 12:27:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: agsi
+[2023-05-24 12:27:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: lupin-grognard
+[2023-05-24 12:27:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: JBPhD
+[2023-05-24 12:27:19] INFO root fetch - processPackages [directory-sso-api-client]: New version: [7.2.0] Old Version: [7.1.2]
+[2023-05-24 12:27:19] INFO root fetch - processPackages [mikro]: New version: [0.3.9] Old Version: [0.3.8]
+[2023-05-24 12:27:19] INFO root fetch - processPackages [lupin-grognard]: New version: [1.9.0] Old Version: [1.7.0]
+[2023-05-24 12:27:19] INFO root fetch - processPackages [directory-sso-api-client]: executing diffoscope
+[2023-05-24 12:27:19] INFO root fetch - processPackages [directory-sso-api-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/directory_sso_api_client-7.1.2-py3-none-any.whl.zip tmp/directory_sso_api_client-7.2.0-py3-none-any.whl.zip --markdown 20230524/d/directory-sso-api-client/7.1.2-7.2.0/diff.md --exclude *.pyd
+[2023-05-24 12:27:19] INFO root fetch - processPackages [lupin-grognard]: executing diffoscope
+[2023-05-24 12:27:19] INFO root fetch - processPackages [lupin-grognard]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lupin-grognard-1.7.0.tar.gz tmp/lupin-grognard-1.9.0.tar.gz --markdown 20230524/l/lupin-grognard/1.7.0-1.9.0/diff.md --exclude *.pyd
+[2023-05-24 12:27:19] INFO root fetch - processPackages [mikro]: executing diffoscope
+[2023-05-24 12:27:19] INFO root fetch - processPackages [mikro]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mikro-0.3.8.tar.gz tmp/mikro-0.3.9.tar.gz --markdown 20230524/m/mikro/0.3.8-0.3.9/diff.md --exclude *.pyd
+[2023-05-24 12:27:19] INFO root fetch - processPackages [openai-pygenerator]: New version: [0.3.0] Old Version: [0.2.2]
+[2023-05-24 12:27:19] INFO root fetch - processPackages [JBPhD]: New version: [2.1.9] Old Version: [2.1.8]
+[2023-05-24 12:27:19] INFO root fetch - processPackages [ExPSO]: New version: [0.0.24] Old Version: [0.0.23]
+[2023-05-24 12:27:19] INFO root fetch - processPackages [extr]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-24 12:27:19] INFO root fetch - processPackages [agsi]: New version: [1.1] Old Version: [1.0.9]
+[2023-05-24 12:27:19] INFO root fetch - processPackages [validataclass]: New version: [0.9.0] Old Version: [0.8.1]
+[2023-05-24 12:27:19] INFO root fetch - processPackages [automatix]: New version: [1.9.0] Old Version: [1.8.2]
+[2023-05-24 12:27:19] INFO root fetch - processPackages [ExPSO]: Downloading https://files.pythonhosted.org/packages/27/c8/bc096ea4101bd8dea71dfd77eaa8e4de13c4b886b8f346e56fd620c7663f/ExPSO-0.0.23.tar.gz
+[2023-05-24 12:27:19] INFO root fetch - processPackages [openai-pygenerator]: Downloading https://files.pythonhosted.org/packages/bf/8d/a04c26f87c33c845ec7beb063aa7a0ff9b56ce5bb040b829d2d86f8495b0/openai-pygenerator-0.2.2.tar.gz
+[2023-05-24 12:27:19] INFO root fetch - processPackages [validataclass]: Downloading https://files.pythonhosted.org/packages/e5/73/647d36401b1befb81170c34acf7f0bd3ebf0c809c71773f92b6989bb6612/validataclass-0.8.1.tar.gz
+[2023-05-24 12:27:19] INFO root fetch - processPackages [JBPhD]: Downloading https://files.pythonhosted.org/packages/b1/95/b4f30f9d8b57ecbf40a5dc83f5f5c04a4b4cddc773d46e887e7274f339b5/JBPhD-2.1.9.tar.gz
+[2023-05-24 12:27:19] INFO root fetch - processPackages [agsi]: Downloading https://files.pythonhosted.org/packages/8b/a1/d48b4c5430dc97d635e463f13ed355b727a277b659882ebfb0c19490c2db/agsi-1.1.tar.gz
+[2023-05-24 12:27:19] INFO root fetch - processPackages [openai-pygenerator]: Downloading https://files.pythonhosted.org/packages/3b/51/e438d4a7e755786b5492d427de5cd6bca02c1742d5498649f6752697a685/openai-pygenerator-0.3.0.tar.gz
+[2023-05-24 12:27:19] INFO root fetch - processPackages [validataclass]: Downloading https://files.pythonhosted.org/packages/49/57/0dd814e55715ca8eea74f7cb8afad8d40c9d55f40c3708223964c01dad55/validataclass-0.9.0.tar.gz
+[2023-05-24 12:27:19] INFO root fetch - processPackages [extr]: executing diffoscope
+[2023-05-24 12:27:19] INFO root fetch - processPackages [extr]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/extr-0.0.8.tar.gz tmp/extr-0.0.9.tar.gz --markdown 20230524/e/extr/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-24 12:27:19] INFO root fetch - processPackages [automatix]: executing diffoscope
+[2023-05-24 12:27:19] INFO root fetch - processPackages [automatix]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/automatix-1.8.2.tar.gz tmp/automatix-1.9.0.tar.gz --markdown 20230524/a/automatix/1.8.2-1.9.0/diff.md --exclude *.pyd
+[2023-05-24 12:27:19] INFO root fetch - processPackages [ExPSO]: Downloading https://files.pythonhosted.org/packages/5c/9c/9dad0fc2379a76cfb48e524a3b3a53e990955c61725028e5b366f25f656e/ExPSO-0.0.24.tar.gz
+[2023-05-24 12:27:19] INFO root fetch - processPackages [openai-pygenerator]: executing diffoscope
+[2023-05-24 12:27:19] INFO root fetch - processPackages [openai-pygenerator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/openai-pygenerator-0.2.2.tar.gz tmp/openai-pygenerator-0.3.0.tar.gz --markdown 20230524/o/openai-pygenerator/0.2.2-0.3.0/diff.md --exclude *.pyd
+[2023-05-24 12:27:19] INFO root fetch - processPackages [validataclass]: executing diffoscope
+[2023-05-24 12:27:19] INFO root fetch - processPackages [validataclass]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/validataclass-0.8.1.tar.gz tmp/validataclass-0.9.0.tar.gz --markdown 20230524/v/validataclass/0.8.1-0.9.0/diff.md --exclude *.pyd
+[2023-05-24 12:27:19] INFO root fetch - processPackages [agsi]: executing diffoscope
+[2023-05-24 12:27:19] INFO root fetch - processPackages [agsi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/agsi-1.0.9.tar.gz tmp/agsi-1.1.tar.gz --markdown 20230524/a/agsi/1.0.9-1.1/diff.md --exclude *.pyd
+[2023-05-24 12:27:19] INFO root fetch - processPackages [ExPSO]: executing diffoscope
+[2023-05-24 12:27:19] INFO root fetch - processPackages [ExPSO]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ExPSO-0.0.23.tar.gz tmp/ExPSO-0.0.24.tar.gz --markdown 20230524/E/ExPSO/0.0.23-0.0.24/diff.md --exclude *.pyd
+[2023-05-24 12:27:20] INFO root fetch - processPackages [JBPhD]: executing diffoscope
+[2023-05-24 12:27:20] INFO root fetch - processPackages [JBPhD]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/JBPhD-2.1.8-py3-none-any.whl.zip tmp/JBPhD-2.1.9.tar.gz --markdown 20230524/J/JBPhD/2.1.8-2.1.9/diff.md --exclude *.pyd
+[2023-05-24 12:27:20] INFO root fetch - processPackages [directory-sso-api-client]: Start processing: PVNet
+[2023-05-24 12:27:20] INFO root fetch - main [MainThread]: End processing [directory-sso-api-client]: success
+[2023-05-24 12:27:20] INFO root fetch - processPackages [PVNet]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-24 12:27:20] INFO root fetch - processPackages [PVNet]: executing diffoscope
+[2023-05-24 12:27:20] INFO root fetch - processPackages [PVNet]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PVNet-0.0.8.tar.gz tmp/PVNet-0.0.9.tar.gz --markdown 20230524/P/PVNet/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-24 12:27:20] INFO root fetch - processPackages [lupin-grognard]: Start processing: cefeste
+[2023-05-24 12:27:20] INFO root fetch - main [MainThread]: End processing [lupin-grognard]: success
+[2023-05-24 12:27:20] INFO root fetch - processPackages [cefeste]: New version: [1.1.8] Old Version: [1.1.7]
+[2023-05-24 12:27:20] INFO root fetch - processPackages [cefeste]: Downloading https://files.pythonhosted.org/packages/1a/ef/88301679a3cd44621a7b0b6d414e340e38c8a29b94c81dd950dc1032ca4d/cefeste-1.1.8.tar.gz
+[2023-05-24 12:27:21] INFO root fetch - processPackages [cefeste]: executing diffoscope
+[2023-05-24 12:27:21] INFO root fetch - processPackages [cefeste]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cefeste-1.1.7.tar.gz tmp/cefeste-1.1.8.tar.gz --markdown 20230524/c/cefeste/1.1.7-1.1.8/diff.md --exclude *.pyd
+[2023-05-24 12:27:21] INFO root fetch - processPackages [extr]: Start processing: pyopf
+[2023-05-24 12:27:21] INFO root fetch - main [MainThread]: End processing [extr]: success
+[2023-05-24 12:27:21] WARNING root fetch - processPackages [pyopf]: Skipping, unable to determine old version
+[2023-05-24 12:27:21] INFO root fetch - processPackages [pyopf]: Start processing: vasp-suite
+[2023-05-24 12:27:21] INFO root fetch - main [MainThread]: End processing [pyopf] error
+[2023-05-24 12:27:21] INFO root fetch - processPackages [vasp-suite]: New version: [1.1.2] Old Version: [1.1.1]
+[2023-05-24 12:27:21] INFO root fetch - processPackages [openai-pygenerator]: Start processing: NNetEn
+[2023-05-24 12:27:21] INFO root fetch - main [MainThread]: End processing [openai-pygenerator]: success
+[2023-05-24 12:27:21] INFO root fetch - processPackages [automatix]: Start processing: vbimage
+[2023-05-24 12:27:21] INFO root fetch - main [MainThread]: End processing [automatix]: success
+[2023-05-24 12:27:21] INFO root fetch - processPackages [vbimage]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-24 12:27:21] INFO root fetch - processPackages [mikro]: Start processing: nqsdk
+[2023-05-24 12:27:21] INFO root fetch - main [MainThread]: End processing [mikro]: success
+[2023-05-24 12:27:21] INFO root fetch - processPackages [NNetEn]: New version: [1.0.5] Old Version: [1.0.4]
+[2023-05-24 12:27:21] INFO root fetch - processPackages [nqsdk]: New version: [1.0.0a9] Old Version: [1.0.0a8]
+[2023-05-24 12:27:21] INFO root fetch - processPackages [vasp-suite]: Downloading https://files.pythonhosted.org/packages/9b/25/30ef787da79bbe4331d18d2c21ed9564e9f20bf274eefc4f684e702bb798/vasp_suite-1.1.2.tar.gz
+[2023-05-24 12:27:21] INFO root fetch - processPackages [vbimage]: executing diffoscope
+[2023-05-24 12:27:21] INFO root fetch - processPackages [vbimage]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vbimage-0.1.8.tar.gz tmp/vbimage-0.1.9.tar.gz --markdown 20230524/v/vbimage/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-24 12:27:21] INFO root fetch - processPackages [nqsdk]: executing diffoscope
+[2023-05-24 12:27:21] INFO root fetch - processPackages [nqsdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nqsdk-1.0.0a8.tar.gz tmp/nqsdk-1.0.0a9.tar.gz --markdown 20230524/n/nqsdk/1.0.0a8-1.0.0a9/diff.md --exclude *.pyd
+[2023-05-24 12:27:21] INFO root fetch - processPackages [vasp-suite]: executing diffoscope
+[2023-05-24 12:27:21] INFO root fetch - processPackages [vasp-suite]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vasp_suite-1.1.1.tar.gz tmp/vasp_suite-1.1.2.tar.gz --markdown 20230524/v/vasp-suite/1.1.1-1.1.2/diff.md --exclude *.pyd
+[2023-05-24 12:27:21] INFO root fetch - processPackages [NNetEn]: Downloading https://files.pythonhosted.org/packages/3b/da/27510c67c2824fd79962457f62194c368b3c7e53bd667d3b56312bb00e5e/NNetEn-1.0.4.tar.gz
+[2023-05-24 12:27:21] WARNING root fetch - processPackages [NNetEn]: Skipping package: exceeds size limit 11677875>=10485760
+[2023-05-24 12:27:21] INFO root fetch - processPackages [NNetEn]: Start processing: jupyterhub-ltiauthenticator
+[2023-05-24 12:27:21] INFO root fetch - main [MainThread]: End processing [NNetEn] error
+[2023-05-24 12:27:21] INFO root fetch - processPackages [jupyterhub-ltiauthenticator]: New version: [1.5.1] Old Version: [1.5.0]
+[2023-05-24 12:27:22] INFO root fetch - main [MainThread]: End processing [ExPSO]: success
+[2023-05-24 12:27:22] INFO root fetch - processPackages [jupyterhub-ltiauthenticator]: Downloading https://files.pythonhosted.org/packages/77/15/d320a9b4407e97769f2bacddc21d23ca0678adad52796ff937774d4e4f1b/jupyterhub_ltiauthenticator-1.5.0.tar.gz
+[2023-05-24 12:27:22] INFO root fetch - main [MainThread]: End processing [PVNet]: success
+[2023-05-24 12:27:22] INFO root fetch - main [MainThread]: End processing [validataclass]: success
+[2023-05-24 12:27:22] INFO root fetch - processPackages [jupyterhub-ltiauthenticator]: Downloading https://files.pythonhosted.org/packages/4a/67/5813b6cc3b8b768eafb0815fada7c2390967150d5d34208e1ecbbe68f5d5/jupyterhub_ltiauthenticator-1.5.1.tar.gz
+[2023-05-24 12:27:22] INFO root fetch - main [MainThread]: End processing [cefeste]: success
+[2023-05-24 12:27:22] INFO root fetch - main [MainThread]: End processing [vbimage]: success
+[2023-05-24 12:27:22] INFO root fetch - processPackages [jupyterhub-ltiauthenticator]: executing diffoscope
+[2023-05-24 12:27:22] INFO root fetch - processPackages [jupyterhub-ltiauthenticator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jupyterhub_ltiauthenticator-1.5.0.tar.gz tmp/jupyterhub_ltiauthenticator-1.5.1.tar.gz --markdown 20230524/j/jupyterhub-ltiauthenticator/1.5.0-1.5.1/diff.md --exclude *.pyd
+[2023-05-24 12:27:23] INFO root fetch - main [MainThread]: End processing [vasp-suite]: success
+[2023-05-24 12:27:23] INFO root fetch - main [MainThread]: End processing [nqsdk]: success
+[2023-05-24 12:27:23] INFO root fetch - main [MainThread]: End processing [agsi]: success
+[2023-05-24 12:27:23] INFO root fetch - main [MainThread]: End processing [jupyterhub-ltiauthenticator]: success
+[2023-05-24 12:27:23] INFO root fetch - main [MainThread]: End processing [JBPhD]: success
+[2023-05-24 12:27:23] INFO root fetch - main [MainThread]: Store serial: [18228224]
