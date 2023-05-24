@@ -7254,3 +7254,37 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-05-24 06:06:11] INFO root fetch - main [MainThread]: End processing [kecam]: success
 [2023-05-24 06:06:13] INFO root fetch - main [MainThread]: End processing [keras-cv-attention-models]: success
 [2023-05-24 06:06:13] INFO root fetch - main [MainThread]: Store serial: [18224774]
+[2023-05-24 06:11:18] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18224774]
+[2023-05-24 06:11:23] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-05-24 06:11:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pysimflow
+[2023-05-24 06:11:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: odoo14-addon-mrp-routing
+[2023-05-24 06:11:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: segment-geospatial
+[2023-05-24 06:11:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pyleft
+[2023-05-24 06:11:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: dash-connectivity-viewer
+[2023-05-24 06:11:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: launchflow
+[2023-05-24 06:11:23] INFO root fetch - processPackages [pyleft]: New version: [1.2.0] Old Version: [1.1.5]
+[2023-05-24 06:11:23] INFO root fetch - processPackages [dash-connectivity-viewer]: New version: [2.0.9] Old Version: [2.0.8]
+[2023-05-24 06:11:23] INFO root fetch - processPackages [launchflow]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-24 06:11:23] INFO root fetch - processPackages [launchflow]: Downloading https://files.pythonhosted.org/packages/2a/b0/56dc7bd9ba2263bd34aa1a371f6b9c20aea5efc162d9c5179983dcd3fd1b/launchflow-0.1.8.tar.gz
+[2023-05-24 06:11:23] INFO root fetch - processPackages [odoo14-addon-mrp-routing]: New version: [14.0.1.0.1.dev4] Old Version: [14.0.1.0.1.dev2]
+[2023-05-24 06:11:23] WARNING root fetch - processPackages [pysimflow]: Skipping, unable to determine old version
+[2023-05-24 06:11:23] INFO root fetch - main [MainThread]: End processing [pysimflow] error
+[2023-05-24 06:11:23] INFO root fetch - processPackages [dash-connectivity-viewer]: executing diffoscope
+[2023-05-24 06:11:23] INFO root fetch - processPackages [dash-connectivity-viewer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dash-connectivity-viewer-2.0.8.tar.gz tmp/dash-connectivity-viewer-2.0.9.tar.gz --markdown 20230524/d/dash-connectivity-viewer/2.0.8-2.0.9/diff.md --exclude *.pyd
+[2023-05-24 06:11:23] INFO root fetch - processPackages [segment-geospatial]: New version: [0.8.0] Old Version: [0.7.0]
+[2023-05-24 06:11:23] INFO root fetch - processPackages [pyleft]: executing diffoscope
+[2023-05-24 06:11:23] INFO root fetch - processPackages [pyleft]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyleft-1.1.5.tar.gz tmp/pyleft-1.2.0.tar.gz --markdown 20230524/p/pyleft/1.1.5-1.2.0/diff.md --exclude *.pyd
+[2023-05-24 06:11:23] WARNING root fetch - processPackages [launchflow]: Skipping package: exceeds size limit 96610312>=10485760
+[2023-05-24 06:11:23] INFO root fetch - main [MainThread]: End processing [launchflow] error
+[2023-05-24 06:11:23] INFO root fetch - processPackages [odoo14-addon-mrp-routing]: Downloading https://files.pythonhosted.org/packages/e3/e4/c30aa2b5740d961cae3cc2b318f12e9077e1a6a4c04e7141380ae80fdd86/odoo14_addon_mrp_routing-14.0.1.0.1.dev2-py3-none-any.whl
+[2023-05-24 06:11:24] INFO root fetch - processPackages [segment-geospatial]: Downloading https://files.pythonhosted.org/packages/25/63/68555565d50241dee3495924b454d7d622ecd147696dcf7b7553bc0bb75c/segment-geospatial-0.8.0.tar.gz
+[2023-05-24 06:11:24] INFO root fetch - processPackages [segment-geospatial]: executing diffoscope
+[2023-05-24 06:11:24] INFO root fetch - processPackages [segment-geospatial]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/segment-geospatial-0.7.0.tar.gz tmp/segment-geospatial-0.8.0.tar.gz --markdown 20230524/s/segment-geospatial/0.7.0-0.8.0/diff.md --exclude *.pyd
+[2023-05-24 06:11:24] INFO root fetch - processPackages [odoo14-addon-mrp-routing]: Downloading https://files.pythonhosted.org/packages/57/50/d47d293c483d13d98060397718a65d2b8b76d60635a0820193dc25dcb6d2/odoo14_addon_mrp_routing-14.0.1.0.1.dev4-py3-none-any.whl
+[2023-05-24 06:11:24] INFO root fetch - processPackages [odoo14-addon-mrp-routing]: executing diffoscope
+[2023-05-24 06:11:24] INFO root fetch - processPackages [odoo14-addon-mrp-routing]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo14_addon_mrp_routing-14.0.1.0.1.dev2-py3-none-any.whl.zip tmp/odoo14_addon_mrp_routing-14.0.1.0.1.dev4-py3-none-any.whl.zip --markdown 20230524/o/odoo14-addon-mrp-routing/14.0.1.0.1.dev2-14.0.1.0.1.dev4/diff.md --exclude *.pyd
+[2023-05-24 06:11:24] INFO root fetch - main [MainThread]: End processing [pyleft]: success
+[2023-05-24 06:11:24] INFO root fetch - main [MainThread]: End processing [dash-connectivity-viewer]: success
+[2023-05-24 06:11:25] INFO root fetch - main [MainThread]: End processing [segment-geospatial]: success
+[2023-05-24 06:11:25] INFO root fetch - main [MainThread]: End processing [odoo14-addon-mrp-routing]: success
+[2023-05-24 06:11:25] INFO root fetch - main [MainThread]: Store serial: [18224800]
