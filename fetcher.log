@@ -21820,3 +21820,61 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd4 in position 72: invalid
 [2023-05-24 20:13:37] INFO root fetch - main [MainThread]: End processing [RecordFlux]: success
 [2023-05-24 20:13:39] INFO root fetch - main [MainThread]: End processing [rdk]: success
 [2023-05-24 20:13:39] INFO root fetch - main [MainThread]: Store serial: [18234072]
+[2023-05-24 20:18:43] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18234072]
+[2023-05-24 20:18:48] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2023-05-24 20:18:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: craft-archives
+[2023-05-24 20:18:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: seaduck
+[2023-05-24 20:18:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: oedisi
+[2023-05-24 20:18:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: oking
+[2023-05-24 20:18:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: autoretouch
+[2023-05-24 20:18:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: plush-fabric
+[2023-05-24 20:18:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: dbtgenlib
+[2023-05-24 20:18:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: revChatGPT
+[2023-05-24 20:18:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: qcs-sdk-python
+[2023-05-24 20:18:48] INFO root fetch - processPackages [revChatGPT]: New version: [5.1.1] Old Version: [5.1.0]
+[2023-05-24 20:18:48] INFO root fetch - processPackages [oking]: New version: [4.1.89] Old Version: [4.1.88]
+[2023-05-24 20:18:48] INFO root fetch - processPackages [dbtgenlib]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-24 20:18:48] INFO root fetch - processPackages [qcs-sdk-python]: New version: [0.6.0rc4] Old Version: [0.6.0rc3]
+[2023-05-24 20:18:48] INFO root fetch - processPackages [oking]: Downloading https://files.pythonhosted.org/packages/ae/30/1e6fff9e86b5e80317cab043f7c3baac37c9a05e3747796a28bfbcd55e4d/oking-4.1.88.tar.gz
+[2023-05-24 20:18:48] INFO root fetch - processPackages [craft-archives]: New version: [1.0.0] Old Version: [0.0.3]
+[2023-05-24 20:18:48] INFO root fetch - processPackages [oedisi]: New version: [1.0.0rc2] Old Version: [1.0.0rc1]
+[2023-05-24 20:18:48] INFO root fetch - processPackages [plush-fabric]: New version: [0.5.9] Old Version: [0.5.8]
+[2023-05-24 20:18:48] INFO root fetch - processPackages [seaduck]: New version: [0.1.2] Old Version: [0.1.0]
+[2023-05-24 20:18:48] INFO root fetch - processPackages [autoretouch]: New version: [0.3.0] Old Version: [0.2.1]
+[2023-05-24 20:18:48] INFO root fetch - processPackages [dbtgenlib]: executing diffoscope
+[2023-05-24 20:18:48] INFO root fetch - processPackages [dbtgenlib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dbtgenlib-0.0.8.tar.gz tmp/dbtgenlib-0.0.9.tar.gz --markdown 20230524/d/dbtgenlib/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-24 20:18:48] WARNING root fetch - processPackages [oking]: Skipping package: exceeds size limit 82454860>=10485760
+[2023-05-24 20:18:48] INFO root fetch - main [MainThread]: End processing [oking] error
+[2023-05-24 20:18:48] INFO root fetch - processPackages [revChatGPT]: Downloading https://files.pythonhosted.org/packages/f0/3a/2f22bdaf8be2dab82df8811c5feee1b1ccb611e190d8b4c8c3f487e3bcfd/revChatGPT-5.1.1.tar.gz
+[2023-05-24 20:18:48] INFO root fetch - processPackages [seaduck]: Downloading https://files.pythonhosted.org/packages/47/e1/37fb6be9b8c682b14de91e5842ad8809757c1986b2cb9a3669e08af69ade/seaduck-0.1.0.tar.gz
+[2023-05-24 20:18:48] INFO root fetch - processPackages [oedisi]: Downloading https://files.pythonhosted.org/packages/5e/a6/b0606df0822b94820a3b298bd24da84967f98ec5ab21a6da9e523a8367a8/oedisi-1.0.0rc1.tar.gz
+[2023-05-24 20:18:48] INFO root fetch - processPackages [plush-fabric]: Downloading https://files.pythonhosted.org/packages/30/c5/37aef832cd3a1ab6daa7024e80128b4083d3cba3e19d630bd6d21984fa90/plush-fabric-0.5.8.tar.gz
+[2023-05-24 20:18:48] INFO root fetch - processPackages [craft-archives]: Downloading https://files.pythonhosted.org/packages/f7/67/14b306a9df245d7c7c4085e18e8be69e0f3fa965eb5e5f01eed42eaa6a6f/craft-archives-0.0.3.tar.gz
+[2023-05-24 20:18:48] INFO root fetch - processPackages [revChatGPT]: executing diffoscope
+[2023-05-24 20:18:48] INFO root fetch - processPackages [revChatGPT]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/revChatGPT-5.1.0.tar.gz tmp/revChatGPT-5.1.1.tar.gz --markdown 20230524/r/revChatGPT/5.1.0-5.1.1/diff.md --exclude *.pyd
+[2023-05-24 20:18:48] INFO root fetch - processPackages [autoretouch]: Downloading https://files.pythonhosted.org/packages/d0/16/bba27ec1f73c2c9f49b0a9fec124473ef8aa255ec3421fc6218826c8bc66/autoretouch-0.3.0.tar.gz
+[2023-05-24 20:18:49] INFO root fetch - processPackages [autoretouch]: executing diffoscope
+[2023-05-24 20:18:49] INFO root fetch - processPackages [autoretouch]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/autoretouch-0.2.1.tar.gz tmp/autoretouch-0.3.0.tar.gz --markdown 20230524/a/autoretouch/0.2.1-0.3.0/diff.md --exclude *.pyd
+[2023-05-24 20:18:49] INFO root fetch - processPackages [oedisi]: Downloading https://files.pythonhosted.org/packages/22/01/f897f7c5e787b2f7b20227da1ad6941b4c0ad4a23fe33b8fdadde2c12dbb/oedisi-1.0.0rc2.tar.gz
+[2023-05-24 20:18:49] INFO root fetch - processPackages [qcs-sdk-python]: executing diffoscope
+[2023-05-24 20:18:49] INFO root fetch - processPackages [qcs-sdk-python]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/qcs_sdk_python-0.6.0rc3-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip tmp/qcs_sdk_python-0.6.0rc4-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip --markdown 20230524/q/qcs-sdk-python/0.6.0rc3-0.6.0rc4/diff.md --exclude *.pyd
+[2023-05-24 20:18:49] INFO root fetch - processPackages [seaduck]: Downloading https://files.pythonhosted.org/packages/81/55/64af7a1491c80e6d8dc4f39cf4ebe727df9a11b102a76ec98128984b0a00/seaduck-0.1.2.tar.gz
+[2023-05-24 20:18:49] INFO root fetch - processPackages [plush-fabric]: Downloading https://files.pythonhosted.org/packages/47/dd/d9e91f6ac73dce2d7ddcb57faa1779d3671bb6725cd8881088f9e32a0af4/plush-fabric-0.5.9.tar.gz
+[2023-05-24 20:18:49] INFO root fetch - processPackages [craft-archives]: Downloading https://files.pythonhosted.org/packages/0e/c5/53581f84fcccb90e1b64863843776b0eb9f6c1c5a713248efd2456edf4a0/craft-archives-1.0.0.tar.gz
+[2023-05-24 20:18:49] INFO root fetch - processPackages [oedisi]: executing diffoscope
+[2023-05-24 20:18:49] INFO root fetch - processPackages [oedisi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/oedisi-1.0.0rc1.tar.gz tmp/oedisi-1.0.0rc2.tar.gz --markdown 20230524/o/oedisi/1.0.0rc1-1.0.0rc2/diff.md --exclude *.pyd
+[2023-05-24 20:18:49] INFO root fetch - processPackages [plush-fabric]: executing diffoscope
+[2023-05-24 20:18:49] INFO root fetch - processPackages [plush-fabric]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/plush-fabric-0.5.8.tar.gz tmp/plush-fabric-0.5.9.tar.gz --markdown 20230524/p/plush-fabric/0.5.8-0.5.9/diff.md --exclude *.pyd
+[2023-05-24 20:18:49] INFO root fetch - processPackages [craft-archives]: executing diffoscope
+[2023-05-24 20:18:49] INFO root fetch - processPackages [craft-archives]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/craft-archives-0.0.3.tar.gz tmp/craft-archives-1.0.0.tar.gz --markdown 20230524/c/craft-archives/0.0.3-1.0.0/diff.md --exclude *.pyd
+[2023-05-24 20:18:49] INFO root fetch - processPackages [seaduck]: executing diffoscope
+[2023-05-24 20:18:49] INFO root fetch - processPackages [seaduck]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/seaduck-0.1.0.tar.gz tmp/seaduck-0.1.2.tar.gz --markdown 20230524/s/seaduck/0.1.0-0.1.2/diff.md --exclude *.pyd
+[2023-05-24 20:18:49] INFO root fetch - main [MainThread]: End processing [dbtgenlib]: success
+[2023-05-24 20:18:50] INFO root fetch - main [MainThread]: End processing [revChatGPT]: success
+[2023-05-24 20:18:50] INFO root fetch - main [MainThread]: End processing [plush-fabric]: success
+[2023-05-24 20:18:50] INFO root fetch - main [MainThread]: End processing [craft-archives]: success
+[2023-05-24 20:18:50] INFO root fetch - main [MainThread]: End processing [autoretouch]: success
+[2023-05-24 20:18:50] INFO root fetch - main [MainThread]: End processing [oedisi]: success
+[2023-05-24 20:18:50] INFO root fetch - main [MainThread]: End processing [seaduck]: success
+[2023-05-24 20:21:01] INFO root fetch - main [MainThread]: End processing [qcs-sdk-python]: success
+[2023-05-24 20:21:01] INFO root fetch - main [MainThread]: Store serial: [18234102]
