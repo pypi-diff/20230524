@@ -12778,3 +12778,73 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd4 in position 72: invalid
 [2023-05-24 12:27:23] INFO root fetch - main [MainThread]: End processing [jupyterhub-ltiauthenticator]: success
 [2023-05-24 12:27:23] INFO root fetch - main [MainThread]: End processing [JBPhD]: success
 [2023-05-24 12:27:23] INFO root fetch - main [MainThread]: Store serial: [18228224]
+[2023-05-24 12:32:33] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18228224]
+[2023-05-24 12:32:37] INFO root fetch - main [MainThread]: Found 14 changed packages
+[2023-05-24 12:32:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: start-time-estimator
+[2023-05-24 12:32:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: salesea
+[2023-05-24 12:32:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: stlock
+[2023-05-24 12:32:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: minimizer4mpi
+[2023-05-24 12:32:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: djangoldp-component
+[2023-05-24 12:32:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: djangoldp-application
+[2023-05-24 12:32:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: voxspex
+[2023-05-24 12:32:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: BookerWikiTool
+[2023-05-24 12:32:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: vocex
+[2023-05-24 12:32:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: pasta-eln
+[2023-05-24 12:32:38] WARNING root fetch - processPackages [minimizer4mpi]: Skipping, unable to determine old version
+[2023-05-24 12:32:38] INFO root fetch - processPackages [minimizer4mpi]: Start processing: irails
+[2023-05-24 12:32:38] INFO root fetch - main [MainThread]: End processing [minimizer4mpi] error
+[2023-05-24 12:32:38] INFO root fetch - processPackages [stlock]: New version: [0.0.7.1] Old Version: [0.0.6]
+[2023-05-24 12:32:38] INFO root fetch - processPackages [BookerWikiTool]: New version: [2023.3.30.0] Old Version: [2023.2.27.3]
+[2023-05-24 12:32:38] INFO root fetch - processPackages [salesea]: New version: [1.0.9] Old Version: [1.0.11]
+[2023-05-24 12:32:38] INFO root fetch - processPackages [djangoldp-application]: New version: [1.1.9] Old Version: [1.1.8]
+[2023-05-24 12:32:38] INFO root fetch - processPackages [irails]: New version: [1.3.23] Old Version: [1.3.22]
+[2023-05-24 12:32:38] INFO root fetch - processPackages [start-time-estimator]: New version: [1.10.9] Old Version: [1.10.8]
+[2023-05-24 12:32:38] INFO root fetch - processPackages [pasta-eln]: New version: [2.3.9] Old Version: [2.3.8]
+[2023-05-24 12:32:38] INFO root fetch - processPackages [djangoldp-application]: executing diffoscope
+[2023-05-24 12:32:38] INFO root fetch - processPackages [djangoldp-component]: New version: [1.0.6] Old Version: [1.0.5]
+[2023-05-24 12:32:38] INFO root fetch - processPackages [djangoldp-application]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/djangoldp_application-1.1.8.tar.gz tmp/djangoldp_application-1.1.9.tar.gz --markdown 20230524/d/djangoldp-application/1.1.8-1.1.9/diff.md --exclude *.pyd
+[2023-05-24 12:32:38] WARNING root fetch - processPackages [voxspex]: Skipping, unable to determine old version
+[2023-05-24 12:32:38] INFO root fetch - processPackages [voxspex]: Start processing: v8unpack
+[2023-05-24 12:32:38] INFO root fetch - processPackages [stlock]: executing diffoscope
+[2023-05-24 12:32:38] INFO root fetch - main [MainThread]: End processing [voxspex] error
+[2023-05-24 12:32:38] WARNING root fetch - processPackages [vocex]: Skipping, unable to determine old version
+[2023-05-24 12:32:38] INFO root fetch - processPackages [stlock]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/stlock-0.0.6.tar.gz tmp/stlock-0.0.7.1.tar.gz --markdown 20230524/s/stlock/0.0.6-0.0.7.1/diff.md --exclude *.pyd
+[2023-05-24 12:32:38] INFO root fetch - processPackages [vocex]: Start processing: v8unpack
+[2023-05-24 12:32:38] INFO root fetch - main [MainThread]: End processing [vocex] error
+[2023-05-24 12:32:38] INFO root fetch - processPackages [irails]: executing diffoscope
+[2023-05-24 12:32:38] INFO root fetch - processPackages [irails]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/irails-1.3.22.tar.gz tmp/irails-1.3.23.tar.gz --markdown 20230524/i/irails/1.3.22-1.3.23/diff.md --exclude *.pyd
+[2023-05-24 12:32:38] ERROR root fetch - processPackages [salesea]: Unable to fetch info: No such project/version 'salesea' 1.0.11
+[2023-05-24 12:32:38] INFO root fetch - processPackages [salesea]: Start processing: sun
+[2023-05-24 12:32:38] INFO root fetch - main [MainThread]: End processing [salesea] error
+[2023-05-24 12:32:38] INFO root fetch - processPackages [BookerWikiTool]: Downloading https://files.pythonhosted.org/packages/dd/79/9136156cd85434025709873aa972f3cdc35d5ee9b20a89bd7d9f05aa8238/BookerWikiTool-2023.2.27.3.tar.gz
+[2023-05-24 12:32:38] INFO root fetch - processPackages [sun]: New version: [1.5.0] Old Version: [1.4.9]
+[2023-05-24 12:32:38] INFO root fetch - processPackages [v8unpack]: New version: [0.9.3] Old Version: [0.9.2]
+[2023-05-24 12:32:38] INFO root fetch - processPackages [v8unpack]: New version: [0.9.3] Old Version: [0.9.2]
+[2023-05-24 12:32:38] INFO root fetch - processPackages [start-time-estimator]: Downloading https://files.pythonhosted.org/packages/2c/7f/a55d56f456f379a423c930f06586d49ed9a38614643731da07e7698176cd/start_time_estimator-1.10.9.tar.gz
+[2023-05-24 12:32:38] INFO root fetch - processPackages [pasta-eln]: executing diffoscope
+[2023-05-24 12:32:38] INFO root fetch - processPackages [pasta-eln]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pasta_eln-2.3.8-py3-none-any.whl.zip tmp/pasta_eln-2.3.9-py3-none-any.whl.zip --markdown 20230524/p/pasta-eln/2.3.8-2.3.9/diff.md --exclude *.pyd
+[2023-05-24 12:32:38] INFO root fetch - processPackages [djangoldp-component]: Downloading https://files.pythonhosted.org/packages/df/b4/cc5d30fd622c7bb62b0f8b44c6e56ad891ff32e1e912a2e61357b886abec/djangoldp_component-1.0.6.tar.gz
+[2023-05-24 12:32:38] INFO root fetch - processPackages [start-time-estimator]: executing diffoscope
+[2023-05-24 12:32:38] INFO root fetch - processPackages [start-time-estimator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/start_time_estimator-1.10.8.tar.gz tmp/start_time_estimator-1.10.9.tar.gz --markdown 20230524/s/start-time-estimator/1.10.8-1.10.9/diff.md --exclude *.pyd
+[2023-05-24 12:32:38] INFO root fetch - processPackages [djangoldp-component]: executing diffoscope
+[2023-05-24 12:32:38] INFO root fetch - processPackages [djangoldp-component]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/djangoldp_component-1.0.5.tar.gz tmp/djangoldp_component-1.0.6.tar.gz --markdown 20230524/d/djangoldp-component/1.0.5-1.0.6/diff.md --exclude *.pyd
+[2023-05-24 12:32:38] INFO root fetch - processPackages [sun]: executing diffoscope
+[2023-05-24 12:32:38] INFO root fetch - processPackages [sun]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sun-1.4.9.tar.gz tmp/sun-1.5.0.tar.gz --markdown 20230524/s/sun/1.4.9-1.5.0/diff.md --exclude *.pyd
+[2023-05-24 12:32:38] INFO root fetch - processPackages [v8unpack]: executing diffoscope
+[2023-05-24 12:32:38] INFO root fetch - processPackages [v8unpack]: executing diffoscope
+[2023-05-24 12:32:38] INFO root fetch - processPackages [v8unpack]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/v8unpack-0.9.2.tar.gz tmp/v8unpack-0.9.3.tar.gz --markdown 20230524/v/v8unpack/0.9.2-0.9.3/diff.md --exclude *.pyd
+[2023-05-24 12:32:38] INFO root fetch - processPackages [v8unpack]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/v8unpack-0.9.2.tar.gz tmp/v8unpack-0.9.3.tar.gz --markdown 20230524/v/v8unpack/0.9.2-0.9.3/diff.md --exclude *.pyd
+[2023-05-24 12:32:39] INFO root fetch - main [MainThread]: End processing [stlock]: success
+[2023-05-24 12:32:39] INFO root fetch - main [MainThread]: End processing [djangoldp-application]: success
+[2023-05-24 12:32:39] INFO root fetch - processPackages [BookerWikiTool]: Downloading https://files.pythonhosted.org/packages/92/32/7e13aaa6580a8af16e6986b3135675bd32e680f40280d5f023746a2d3859/BookerWikiTool-2023.3.30.0.tar.gz
+[2023-05-24 12:32:40] INFO root fetch - main [MainThread]: End processing [pasta-eln]: success
+[2023-05-24 12:32:40] INFO root fetch - main [MainThread]: End processing [djangoldp-component]: success
+[2023-05-24 12:32:40] INFO root fetch - main [MainThread]: End processing [start-time-estimator]: success
+[2023-05-24 12:32:40] INFO root fetch - main [MainThread]: End processing [irails]: success
+[2023-05-24 12:32:40] INFO root fetch - main [MainThread]: End processing [v8unpack]: success
+[2023-05-24 12:32:40] INFO root fetch - main [MainThread]: End processing [sun]: success
+[2023-05-24 12:32:40] INFO root fetch - processPackages [BookerWikiTool]: executing diffoscope
+[2023-05-24 12:32:40] INFO root fetch - processPackages [BookerWikiTool]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/BookerWikiTool-2023.2.27.3.tar.gz tmp/BookerWikiTool-2023.3.30.0.tar.gz --markdown 20230524/B/BookerWikiTool/2023.2.27.3-2023.3.30.0/diff.md --exclude *.pyd
+[2023-05-24 12:32:41] INFO root fetch - main [MainThread]: End processing [v8unpack]: success
+[2023-05-24 12:32:43] INFO root fetch - main [MainThread]: End processing [BookerWikiTool]: success
+[2023-05-24 12:32:43] INFO root fetch - main [MainThread]: Store serial: [18228320]
