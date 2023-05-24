@@ -7925,3 +7925,104 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-05-24 07:08:48] INFO root fetch - main [MainThread]: End processing [sdc-scissor]: success
 [2023-05-24 07:11:29] INFO root fetch - main [MainThread]: End processing [multi-model-server]: success
 [2023-05-24 07:11:29] INFO root fetch - main [MainThread]: Store serial: [18225181]
+[2023-05-24 07:16:33] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18225181]
+[2023-05-24 07:16:38] INFO root fetch - main [MainThread]: Found 16 changed packages
+[2023-05-24 07:16:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: tflite-model-maker-nightly
+[2023-05-24 07:16:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: odoo12-addon-stock-inventory-valuation-report
+[2023-05-24 07:16:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pytest-homeassistant-custom-component
+[2023-05-24 07:16:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: odoo14-addon-stock-report-quantity-by-location
+[2023-05-24 07:16:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: phap
+[2023-05-24 07:16:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: mpservice
+[2023-05-24 07:16:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: pykn-mysqltools
+[2023-05-24 07:16:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: vval
+[2023-05-24 07:16:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: NikGapps
+[2023-05-24 07:16:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: coguard-cli
+[2023-05-24 07:16:38] WARNING root fetch - processPackages [vval]: Skipping, unable to determine old version
+[2023-05-24 07:16:38] INFO root fetch - processPackages [vval]: Start processing: djangoldp-application
+[2023-05-24 07:16:38] INFO root fetch - main [MainThread]: End processing [vval] error
+[2023-05-24 07:16:38] INFO root fetch - processPackages [NikGapps]: New version: [1.15] Old Version: [1.14]
+[2023-05-24 07:16:38] INFO root fetch - processPackages [pykn-mysqltools]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-05-24 07:16:38] INFO root fetch - processPackages [djangoldp-application]: New version: [1.1.7] Old Version: [1.1.6]
+[2023-05-24 07:16:38] INFO root fetch - processPackages [odoo14-addon-stock-report-quantity-by-location]: New version: [14.0.1.0.1.dev6] Old Version: [14.0.1.0.1.dev4]
+[2023-05-24 07:16:38] INFO root fetch - processPackages [pytest-homeassistant-custom-component]: New version: [0.9.9] Old Version: [0.9.8]
+[2023-05-24 07:16:38] INFO root fetch - processPackages [phap]: New version: [2.1.2] Old Version: [2.1.1]
+[2023-05-24 07:16:38] INFO root fetch - processPackages [odoo12-addon-stock-inventory-valuation-report]: New version: [12.0.1.1.2.99.dev2] Old Version: [12.0.1.1.2]
+[2023-05-24 07:16:38] INFO root fetch - processPackages [mpservice]: New version: [0.9.9.post1] Old Version: [0.9.9]
+[2023-05-24 07:16:38] INFO root fetch - processPackages [coguard-cli]: New version: [0.2.9] Old Version: [0.2.8]
+[2023-05-24 07:16:38] INFO root fetch - processPackages [tflite-model-maker-nightly]: New version: [0.4.3.dev202305240509] Old Version: [0.4.3.dev202305230508]
+[2023-05-24 07:16:38] INFO root fetch - processPackages [NikGapps]: Downloading https://files.pythonhosted.org/packages/35/fb/8872edba2a0baf222ec0b7937ec1a7afa1c15bcb9ac53b7f23e2a65d8449/NikGapps-1.14.tar.gz
+[2023-05-24 07:16:38] WARNING root fetch - processPackages [NikGapps]: Skipping package: exceeds size limit 41548932>=10485760
+[2023-05-24 07:16:38] INFO root fetch - processPackages [NikGapps]: Start processing: fgo-api-types
+[2023-05-24 07:16:38] INFO root fetch - main [MainThread]: End processing [NikGapps] error
+[2023-05-24 07:16:38] INFO root fetch - processPackages [pytest-homeassistant-custom-component]: Downloading https://files.pythonhosted.org/packages/8a/3b/b76075872ac35edad46a4fd3401c3faebda7af874b306526a1d7e1a4336a/pytest-homeassistant-custom-component-0.9.8.tar.gz
+[2023-05-24 07:16:38] INFO root fetch - processPackages [pykn-mysqltools]: Downloading https://files.pythonhosted.org/packages/17/e0/c68090c06717bcda993708605d5340c6e6d478abb712b1e202359db40e35/pykn_mysqltools-0.0.3.tar.gz
+[2023-05-24 07:16:38] INFO root fetch - processPackages [djangoldp-application]: Downloading https://files.pythonhosted.org/packages/bd/81/09b26699644cd22515b6f4d70cf506f08b47fe02dfd331610facc219615a/djangoldp_application-1.1.7.tar.gz
+[2023-05-24 07:16:38] INFO root fetch - processPackages [odoo14-addon-stock-report-quantity-by-location]: Downloading https://files.pythonhosted.org/packages/93/52/986bf0da8fd213056e64d69667fce8a6deb3ef3099d4a905087a8469c595/odoo14_addon_stock_report_quantity_by_location-14.0.1.0.1.dev4-py3-none-any.whl
+[2023-05-24 07:16:38] INFO root fetch - processPackages [odoo12-addon-stock-inventory-valuation-report]: Downloading https://files.pythonhosted.org/packages/18/53/e69e3634d644993abb7274c6647433847b331b953c1c426cb68809076c11/odoo12_addon_stock_inventory_valuation_report-12.0.1.1.2-py3-none-any.whl
+[2023-05-24 07:16:38] INFO root fetch - processPackages [coguard-cli]: Downloading https://files.pythonhosted.org/packages/b8/73/d9cba4d8c7d0f8c97547575fe2a6b760566e5cc0331c1e7ca04b0f494d8a/coguard-cli-0.2.8.tar.gz
+[2023-05-24 07:16:38] INFO root fetch - processPackages [phap]: Downloading https://files.pythonhosted.org/packages/08/e5/5b79d1558a4d20692aae3c5fbdb805fe0b46d9dd439b735de8a4c5a69eee/phap-2.1.1.tar.gz
+[2023-05-24 07:16:38] INFO root fetch - processPackages [pykn-mysqltools]: executing diffoscope
+[2023-05-24 07:16:38] INFO root fetch - processPackages [pykn-mysqltools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pykn_mysqltools-0.0.2.tar.gz tmp/pykn_mysqltools-0.0.3.tar.gz --markdown 20230524/p/pykn-mysqltools/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-05-24 07:16:38] INFO root fetch - processPackages [fgo-api-types]: New version: [2023.5.3.17.28.2] Old Version: [2023.5.24.5.14.45]
+[2023-05-24 07:16:38] INFO root fetch - processPackages [djangoldp-application]: executing diffoscope
+[2023-05-24 07:16:38] INFO root fetch - processPackages [djangoldp-application]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/djangoldp_application-1.1.6.tar.gz tmp/djangoldp_application-1.1.7.tar.gz --markdown 20230524/d/djangoldp-application/1.1.6-1.1.7/diff.md --exclude *.pyd
+[2023-05-24 07:16:38] INFO root fetch - processPackages [tflite-model-maker-nightly]: Downloading https://files.pythonhosted.org/packages/6a/c4/5ba836046afe56c2b601661b650d94227c5a785b6ffe907a8e09c76baa91/tflite-model-maker-nightly-0.4.3.dev202305240509.tar.gz
+[2023-05-24 07:16:38] INFO root fetch - processPackages [mpservice]: executing diffoscope
+[2023-05-24 07:16:38] INFO root fetch - processPackages [mpservice]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mpservice-0.9.9.tar.gz tmp/mpservice-0.9.9.post1.tar.gz --markdown 20230524/m/mpservice/0.9.9-0.9.9.post1/diff.md --exclude *.pyd
+[2023-05-24 07:16:38] INFO root fetch - processPackages [odoo14-addon-stock-report-quantity-by-location]: Downloading https://files.pythonhosted.org/packages/d9/c0/eeb13d7e9054023ddbd68f193b18bf63e3b0db520707e4b83079dba7c3b1/odoo14_addon_stock_report_quantity_by_location-14.0.1.0.1.dev6-py3-none-any.whl
+[2023-05-24 07:16:38] INFO root fetch - processPackages [pytest-homeassistant-custom-component]: Downloading https://files.pythonhosted.org/packages/60/4e/ba1174db4b883610c2a5afba7a30857178ada41a2368936b2e3d764bfe6a/pytest-homeassistant-custom-component-0.9.9.tar.gz
+[2023-05-24 07:16:38] INFO root fetch - processPackages [fgo-api-types]: Downloading https://files.pythonhosted.org/packages/e3/85/0e77b41b29a1a492308ad8b8df895a4dc4002aade78973b073055e4fa65c/fgo_api_types-2023.5.24.5.14.45.tar.gz
+[2023-05-24 07:16:38] INFO root fetch - processPackages [odoo12-addon-stock-inventory-valuation-report]: Downloading https://files.pythonhosted.org/packages/53/96/f77686f6cf6c38cf5f3240e3ab226bf7a43fa1b1891ff1ea1afa648da551/odoo12_addon_stock_inventory_valuation_report-12.0.1.1.2.99.dev2-py3-none-any.whl
+[2023-05-24 07:16:39] INFO root fetch - processPackages [odoo14-addon-stock-report-quantity-by-location]: executing diffoscope
+[2023-05-24 07:16:39] INFO root fetch - processPackages [odoo14-addon-stock-report-quantity-by-location]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo14_addon_stock_report_quantity_by_location-14.0.1.0.1.dev4-py3-none-any.whl.zip tmp/odoo14_addon_stock_report_quantity_by_location-14.0.1.0.1.dev6-py3-none-any.whl.zip --markdown 20230524/o/odoo14-addon-stock-report-quantity-by-location/14.0.1.0.1.dev4-14.0.1.0.1.dev6/diff.md --exclude *.pyd
+[2023-05-24 07:16:39] INFO root fetch - processPackages [pytest-homeassistant-custom-component]: executing diffoscope
+[2023-05-24 07:16:39] INFO root fetch - processPackages [pytest-homeassistant-custom-component]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pytest-homeassistant-custom-component-0.9.8.tar.gz tmp/pytest-homeassistant-custom-component-0.9.9.tar.gz --markdown 20230524/p/pytest-homeassistant-custom-component/0.9.8-0.9.9/diff.md --exclude *.pyd
+[2023-05-24 07:16:39] INFO root fetch - processPackages [phap]: Downloading https://files.pythonhosted.org/packages/38/8e/c20644e042d89082130011c9a7e7d3ccef705fc56c704c151a7161f11fbd/phap-2.1.2.tar.gz
+[2023-05-24 07:16:39] INFO root fetch - processPackages [odoo12-addon-stock-inventory-valuation-report]: executing diffoscope
+[2023-05-24 07:16:39] INFO root fetch - processPackages [coguard-cli]: Downloading https://files.pythonhosted.org/packages/f1/d5/774d6c77526935394608b2fcb80ea9eabb52f7db94ff28edebe5ba23721e/coguard-cli-0.2.9.tar.gz
+[2023-05-24 07:16:39] INFO root fetch - processPackages [odoo12-addon-stock-inventory-valuation-report]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo12_addon_stock_inventory_valuation_report-12.0.1.1.2-py3-none-any.whl.zip tmp/odoo12_addon_stock_inventory_valuation_report-12.0.1.1.2.99.dev2-py3-none-any.whl.zip --markdown 20230524/o/odoo12-addon-stock-inventory-valuation-report/12.0.1.1.2-12.0.1.1.2.99.dev2/diff.md --exclude *.pyd
+[2023-05-24 07:16:39] INFO root fetch - processPackages [tflite-model-maker-nightly]: executing diffoscope
+[2023-05-24 07:16:39] INFO root fetch - processPackages [tflite-model-maker-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tflite-model-maker-nightly-0.4.3.dev202305230508.tar.gz tmp/tflite-model-maker-nightly-0.4.3.dev202305240509.tar.gz --markdown 20230524/t/tflite-model-maker-nightly/0.4.3.dev202305230508-0.4.3.dev202305240509/diff.md --exclude *.pyd
+[2023-05-24 07:16:39] INFO root fetch - processPackages [coguard-cli]: executing diffoscope
+[2023-05-24 07:16:39] INFO root fetch - processPackages [coguard-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/coguard-cli-0.2.8.tar.gz tmp/coguard-cli-0.2.9.tar.gz --markdown 20230524/c/coguard-cli/0.2.8-0.2.9/diff.md --exclude *.pyd
+[2023-05-24 07:16:39] INFO root fetch - processPackages [phap]: executing diffoscope
+[2023-05-24 07:16:39] INFO root fetch - processPackages [phap]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/phap-2.1.1.tar.gz tmp/phap-2.1.2.tar.gz --markdown 20230524/p/phap/2.1.1-2.1.2/diff.md --exclude *.pyd
+[2023-05-24 07:16:39] INFO root fetch - processPackages [fgo-api-types]: Downloading https://files.pythonhosted.org/packages/ae/f0/b983486e22671b3ef939963fb84b7347ca19852441cca98f552b4e3cc4c5/fgo_api_types-2023.5.3.17.28.2.tar.gz
+[2023-05-24 07:16:39] INFO root fetch - processPackages [fgo-api-types]: executing diffoscope
+[2023-05-24 07:16:39] INFO root fetch - processPackages [fgo-api-types]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fgo_api_types-2023.5.24.5.14.45.tar.gz tmp/fgo_api_types-2023.5.3.17.28.2.tar.gz --markdown 20230524/f/fgo-api-types/2023.5.24.5.14.45-2023.5.3.17.28.2/diff.md --exclude *.pyd
+[2023-05-24 07:16:40] INFO root fetch - processPackages [pykn-mysqltools]: Start processing: Mosek
+[2023-05-24 07:16:40] INFO root fetch - main [MainThread]: End processing [pykn-mysqltools]: success
+[2023-05-24 07:16:40] INFO root fetch - processPackages [mpservice]: Start processing: league-client
+[2023-05-24 07:16:40] INFO root fetch - main [MainThread]: End processing [mpservice]: success
+[2023-05-24 07:16:40] INFO root fetch - processPackages [league-client]: New version: [1.0.9] Old Version: [1.0.8]
+[2023-05-24 07:16:40] INFO root fetch - processPackages [djangoldp-application]: Start processing: smartdict
+[2023-05-24 07:16:40] INFO root fetch - main [MainThread]: End processing [djangoldp-application]: success
+[2023-05-24 07:16:40] INFO root fetch - processPackages [smartdict]: New version: [0.0.7] Old Version: [0.0.6]
+[2023-05-24 07:16:40] INFO root fetch - processPackages [phap]: Start processing: lavue
+[2023-05-24 07:16:40] INFO root fetch - main [MainThread]: End processing [phap]: success
+[2023-05-24 07:16:40] INFO root fetch - processPackages [league-client]: Downloading https://files.pythonhosted.org/packages/6c/04/9929e1e274fb1b8465e5b0a422d4b94ed7344109af5a65de3a94a0f20cbc/league_client-1.0.8-py3-none-any.whl
+[2023-05-24 07:16:40] INFO root fetch - main [MainThread]: End processing [odoo12-addon-stock-inventory-valuation-report]: success
+[2023-05-24 07:16:40] INFO root fetch - main [MainThread]: End processing [odoo14-addon-stock-report-quantity-by-location]: success
+[2023-05-24 07:16:40] INFO root fetch - processPackages [Mosek]: New version: [9.3.9] Old Version: [9.3.8]
+[2023-05-24 07:16:40] INFO root fetch - processPackages [lavue]: New version: [2.83.0] Old Version: [2.82.0]
+[2023-05-24 07:16:40] INFO root fetch - main [MainThread]: End processing [pytest-homeassistant-custom-component]: success
+[2023-05-24 07:16:40] INFO root fetch - processPackages [smartdict]: Downloading https://files.pythonhosted.org/packages/24/f1/77cf0c44716728e6aedaf139cc1ade97f52e693357f5d5ccec57334f4f07/smartdict-0.0.7.tar.gz
+[2023-05-24 07:16:40] INFO root fetch - processPackages [Mosek]: Downloading https://files.pythonhosted.org/packages/4c/32/630b9e420bad8d8d1d1ac6ec6b3e5097f8b1b4783e16b3991153044fad86/Mosek-9.3.8-cp39-cp39-win_amd64.whl
+[2023-05-24 07:16:40] INFO root fetch - processPackages [league-client]: Downloading https://files.pythonhosted.org/packages/aa/87/fc183fd3ed892333e3d73e72ce9a6cd78d3516202fe299f819159565d8a5/league-client-1.0.9.tar.gz
+[2023-05-24 07:16:41] INFO root fetch - processPackages [lavue]: Downloading https://files.pythonhosted.org/packages/56/ca/136cec6dbef91f684d797b0c74dda7a67f521997b21e036537d07da9132c/lavue-2.82.0.tar.gz
+[2023-05-24 07:16:41] INFO root fetch - main [MainThread]: End processing [fgo-api-types]: success
+[2023-05-24 07:16:41] INFO root fetch - processPackages [smartdict]: executing diffoscope
+[2023-05-24 07:16:41] INFO root fetch - processPackages [smartdict]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/smartdict-0.0.6.tar.gz tmp/smartdict-0.0.7.tar.gz --markdown 20230524/s/smartdict/0.0.6-0.0.7/diff.md --exclude *.pyd
+[2023-05-24 07:16:41] INFO root fetch - processPackages [league-client]: executing diffoscope
+[2023-05-24 07:16:41] INFO root fetch - processPackages [league-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/league_client-1.0.8-py3-none-any.whl.zip tmp/league-client-1.0.9.tar.gz --markdown 20230524/l/league-client/1.0.8-1.0.9/diff.md --exclude *.pyd
+[2023-05-24 07:16:41] INFO root fetch - main [MainThread]: End processing [coguard-cli]: success
+[2023-05-24 07:16:41] WARNING root fetch - processPackages [lavue]: Skipping package: exceeds size limit 32418263>=10485760
+[2023-05-24 07:16:41] INFO root fetch - main [MainThread]: End processing [lavue] error
+[2023-05-24 07:16:41] INFO root fetch - main [MainThread]: End processing [smartdict]: success
+[2023-05-24 07:16:41] INFO root fetch - main [MainThread]: End processing [league-client]: success
+[2023-05-24 07:16:44] INFO root fetch - processPackages [Mosek]: Downloading https://files.pythonhosted.org/packages/f5/78/ea902908d2878b83f8e37f551e0f59478b1840a9f5f031e123c393c88b0e/Mosek-9.3.9-cp39-cp39-win_amd64.whl
+[2023-05-24 07:16:44] INFO root fetch - main [MainThread]: End processing [tflite-model-maker-nightly]: success
+[2023-05-24 07:16:47] INFO root fetch - processPackages [Mosek]: executing diffoscope
+[2023-05-24 07:16:47] INFO root fetch - processPackages [Mosek]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Mosek-9.3.8-cp39-cp39-win_amd64.whl.zip tmp/Mosek-9.3.9-cp39-cp39-win_amd64.whl.zip --markdown 20230524/M/Mosek/9.3.8-9.3.9/diff.md --exclude *.pyd
+[2023-05-24 07:17:34] INFO root fetch - main [MainThread]: End processing [Mosek]: success
+[2023-05-24 07:17:34] INFO root fetch - main [MainThread]: Store serial: [18225249]
