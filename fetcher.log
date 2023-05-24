@@ -7703,3 +7703,30 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-05-24 06:47:55] INFO root fetch - main [MainThread]: End processing [odoo13-addons-oca-sale-promotion]: success
 [2023-05-24 06:47:55] INFO root fetch - main [MainThread]: End processing [paragrep]: success
 [2023-05-24 06:47:55] INFO root fetch - main [MainThread]: Store serial: [18225032]
+[2023-05-24 06:53:00] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18225032]
+[2023-05-24 06:53:05] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-05-24 06:53:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: elm-messenger
+[2023-05-24 06:53:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: quick-pypi-test
+[2023-05-24 06:53:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: Python-dependency-confusion-attacks
+[2023-05-24 06:53:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: hello2
+[2023-05-24 06:53:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: Python-dependency-confusion-attacks
+[2023-05-24 06:53:05] INFO root fetch - processPackages [elm-messenger]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-24 06:53:05] WARNING root fetch - processPackages [Python-dependency-confusion-attacks]: Skipping, unable to determine old version
+[2023-05-24 06:53:05] INFO root fetch - main [MainThread]: End processing [Python-dependency-confusion-attacks] error
+[2023-05-24 06:53:05] WARNING root fetch - processPackages [Python-dependency-confusion-attacks]: Skipping, unable to determine old version
+[2023-05-24 06:53:05] INFO root fetch - main [MainThread]: End processing [Python-dependency-confusion-attacks] error
+[2023-05-24 06:53:05] INFO root fetch - processPackages [quick-pypi-test]: New version: [0.0.3a0] Old Version: [0.0.2]
+[2023-05-24 06:53:06] INFO root fetch - processPackages [hello2]: New version: [1.7.2] Old Version: [1.7.1]
+[2023-05-24 06:53:06] INFO root fetch - processPackages [elm-messenger]: Downloading https://files.pythonhosted.org/packages/13/98/de03329cdfaa064e74a0a1d8e30d180d77e3a29d14fdc09a0dcfd35eed7f/elm-messenger-0.1.9.tar.gz
+[2023-05-24 06:53:06] INFO root fetch - processPackages [quick-pypi-test]: Downloading https://files.pythonhosted.org/packages/db/14/c7aa63e45c3a96cf5365b81af28e21cddd5f65437778a79eeee7feaab1cf/quick-pypi-test-0.0.3a0.tar.gz
+[2023-05-24 06:53:06] INFO root fetch - processPackages [elm-messenger]: executing diffoscope
+[2023-05-24 06:53:06] INFO root fetch - processPackages [elm-messenger]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/elm-messenger-0.1.8.tar.gz tmp/elm-messenger-0.1.9.tar.gz --markdown 20230524/e/elm-messenger/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-24 06:53:06] INFO root fetch - processPackages [hello2]: Downloading https://files.pythonhosted.org/packages/65/19/91e4b4d278f96180892ad3503b25d873585cbd4d4013a6d61e4ac8f028a6/hello2-1.7.2.tar.gz
+[2023-05-24 06:53:06] INFO root fetch - processPackages [quick-pypi-test]: executing diffoscope
+[2023-05-24 06:53:06] INFO root fetch - processPackages [quick-pypi-test]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/quick-pypi-test-0.0.2.tar.gz tmp/quick-pypi-test-0.0.3a0.tar.gz --markdown 20230524/q/quick-pypi-test/0.0.2-0.0.3a0/diff.md --exclude *.pyd
+[2023-05-24 06:53:06] INFO root fetch - processPackages [hello2]: executing diffoscope
+[2023-05-24 06:53:06] INFO root fetch - processPackages [hello2]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hello2-1.7.1.tar.gz tmp/hello2-1.7.2.tar.gz --markdown 20230524/h/hello2/1.7.1-1.7.2/diff.md --exclude *.pyd
+[2023-05-24 06:53:07] INFO root fetch - main [MainThread]: End processing [elm-messenger]: success
+[2023-05-24 06:53:07] INFO root fetch - main [MainThread]: End processing [quick-pypi-test]: success
+[2023-05-24 06:53:08] INFO root fetch - main [MainThread]: End processing [hello2]: success
+[2023-05-24 06:53:08] INFO root fetch - main [MainThread]: Store serial: [18225052]
