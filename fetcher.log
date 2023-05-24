@@ -14224,3 +14224,121 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd4 in position 72: invalid
 [2023-05-24 14:00:55] INFO root fetch - main [MainThread]: End processing [mujoco-dev]: success
 [2023-05-24 14:01:00] INFO root fetch - main [MainThread]: End processing [kcli]: success
 [2023-05-24 14:01:00] INFO root fetch - main [MainThread]: Store serial: [18229125]
+[2023-05-24 14:06:08] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18229125]
+[2023-05-24 14:06:13] INFO root fetch - main [MainThread]: Found 21 changed packages
+[2023-05-24 14:06:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: returnn
+[2023-05-24 14:06:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: gocart
+[2023-05-24 14:06:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: vector-quantize-tf
+[2023-05-24 14:06:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: django-content-blocks
+[2023-05-24 14:06:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: oarepo-model-builder
+[2023-05-24 14:06:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: mlfoundry
+[2023-05-24 14:06:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: medsenger-api
+[2023-05-24 14:06:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: kfish
+[2023-05-24 14:06:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: ronnytest
+[2023-05-24 14:06:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: ckan
+[2023-05-24 14:06:13] INFO root fetch - processPackages [vector-quantize-tf]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-05-24 14:06:13] INFO root fetch - processPackages [ronnytest]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-05-24 14:06:13] INFO root fetch - processPackages [django-content-blocks]: New version: [1.3.1] Old Version: [1.3.0]
+[2023-05-24 14:06:13] INFO root fetch - processPackages [medsenger-api]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-24 14:06:13] INFO root fetch - processPackages [kfish]: New version: [99.0.202305240932] Old Version: [99.0.202305240931]
+[2023-05-24 14:06:13] INFO root fetch - processPackages [ckan]: New version: [2.9.8] Old Version: [2.9.7]
+[2023-05-24 14:06:13] INFO root fetch - processPackages [mlfoundry]: New version: [0.8.0rc4] Old Version: [0.8.0rc3]
+[2023-05-24 14:06:13] INFO root fetch - processPackages [oarepo-model-builder]: New version: [4.0.3] Old Version: [4.0.2]
+[2023-05-24 14:06:13] INFO root fetch - processPackages [gocart]: New version: [0.4.0] Old Version: [0.3.0]
+[2023-05-24 14:06:13] INFO root fetch - processPackages [returnn]: New version: [1.20230524.133005] Old Version: [1.20230524.103608]
+[2023-05-24 14:06:13] INFO root fetch - processPackages [medsenger-api]: executing diffoscope
+[2023-05-24 14:06:13] INFO root fetch - processPackages [medsenger-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/medsenger_api-0.1.8.tar.gz tmp/medsenger_api-0.1.9.tar.gz --markdown 20230524/m/medsenger-api/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-24 14:06:13] INFO root fetch - processPackages [django-content-blocks]: executing diffoscope
+[2023-05-24 14:06:13] INFO root fetch - processPackages [django-content-blocks]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django-content-blocks-1.3.0.tar.gz tmp/django-content-blocks-1.3.1.tar.gz --markdown 20230524/d/django-content-blocks/1.3.0-1.3.1/diff.md --exclude *.pyd
+[2023-05-24 14:06:13] INFO root fetch - processPackages [ronnytest]: Downloading https://files.pythonhosted.org/packages/ac/6b/9380856f1723c46b5e2b74b7cf89bb9f607fec36406fa63c4963864cf516/ronnytest-0.0.3.tar.gz
+[2023-05-24 14:06:13] INFO root fetch - processPackages [ckan]: Downloading https://files.pythonhosted.org/packages/2f/2d/c0474a3a7df1fbe80409a20c06a287307f7afcec26d4b8cda66526deb6c0/ckan-2.9.7.tar.gz
+[2023-05-24 14:06:13] INFO root fetch - processPackages [vector-quantize-tf]: Downloading https://files.pythonhosted.org/packages/78/41/1168cd8c7001758b31c3a0eb9aa6da0d779d25866ecfc30babf410ed5e49/vector-quantize-tf-0.0.1.tar.gz
+[2023-05-24 14:06:13] INFO root fetch - processPackages [kfish]: executing diffoscope
+[2023-05-24 14:06:13] INFO root fetch - processPackages [kfish]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kfish-99.0.202305240931-py3-none-any.whl.zip tmp/kfish-99.0.202305240932-py3-none-any.whl.zip --markdown 20230524/k/kfish/99.0.202305240931-99.0.202305240932/diff.md --exclude *.pyd
+[2023-05-24 14:06:13] INFO root fetch - processPackages [ronnytest]: executing diffoscope
+[2023-05-24 14:06:13] INFO root fetch - processPackages [ronnytest]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ronnytest-0.0.2.tar.gz tmp/ronnytest-0.0.3.tar.gz --markdown 20230524/r/ronnytest/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-05-24 14:06:13] INFO root fetch - processPackages [returnn]: Downloading https://files.pythonhosted.org/packages/17/2b/13d1fe41d1c0b55e2e2cc5d1597ad29ce00bc082c3c44d51ec2fb10dacc1/returnn-1.20230524.133005.tar.gz
+[2023-05-24 14:06:13] INFO root fetch - processPackages [gocart]: Downloading https://files.pythonhosted.org/packages/27/50/9f3ed95e095eedd3ebc0f3842da4a447312ab977fb9942abf07c995fe418/gocart-0.4.0.tar.gz
+[2023-05-24 14:06:13] INFO root fetch - processPackages [oarepo-model-builder]: Downloading https://files.pythonhosted.org/packages/9b/0f/e169d93fd0142e5da1122d603678e7c6ae2efedbb4ce5f0ee3c7064d6fc9/oarepo-model-builder-4.0.3.tar.gz
+[2023-05-24 14:06:13] INFO root fetch - processPackages [vector-quantize-tf]: Downloading https://files.pythonhosted.org/packages/ca/7f/65444c54c2d8c540227a631377743ad714a6de6dcb86b98fb76e22a63314/vector-quantize-tf-0.0.2.tar.gz
+[2023-05-24 14:06:13] INFO root fetch - processPackages [mlfoundry]: Downloading https://files.pythonhosted.org/packages/46/9e/124bc2c2ae099ad83514b21b5e20b97d8df788bf02a5c1fa63885768cfaf/mlfoundry-0.8.0rc4.tar.gz
+[2023-05-24 14:06:13] INFO root fetch - processPackages [vector-quantize-tf]: executing diffoscope
+[2023-05-24 14:06:13] INFO root fetch - processPackages [vector-quantize-tf]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vector-quantize-tf-0.0.1.tar.gz tmp/vector-quantize-tf-0.0.2.tar.gz --markdown 20230524/v/vector-quantize-tf/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-05-24 14:06:13] INFO root fetch - processPackages [gocart]: executing diffoscope
+[2023-05-24 14:06:13] INFO root fetch - processPackages [gocart]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gocart-0.3.0.tar.gz tmp/gocart-0.4.0.tar.gz --markdown 20230524/g/gocart/0.3.0-0.4.0/diff.md --exclude *.pyd
+[2023-05-24 14:06:13] INFO root fetch - processPackages [oarepo-model-builder]: executing diffoscope
+[2023-05-24 14:06:13] INFO root fetch - processPackages [oarepo-model-builder]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/oarepo-model-builder-4.0.2.tar.gz tmp/oarepo-model-builder-4.0.3.tar.gz --markdown 20230524/o/oarepo-model-builder/4.0.2-4.0.3/diff.md --exclude *.pyd
+[2023-05-24 14:06:13] INFO root fetch - processPackages [mlfoundry]: executing diffoscope
+[2023-05-24 14:06:13] INFO root fetch - processPackages [mlfoundry]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mlfoundry-0.8.0rc3.tar.gz tmp/mlfoundry-0.8.0rc4.tar.gz --markdown 20230524/m/mlfoundry/0.8.0rc3-0.8.0rc4/diff.md --exclude *.pyd
+[2023-05-24 14:06:14] INFO root fetch - processPackages [returnn]: executing diffoscope
+[2023-05-24 14:06:14] INFO root fetch - processPackages [returnn]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/returnn-1.20230524.103608.tar.gz tmp/returnn-1.20230524.133005.tar.gz --markdown 20230524/r/returnn/1.20230524.103608-1.20230524.133005/diff.md --exclude *.pyd
+[2023-05-24 14:06:14] INFO root fetch - processPackages [medsenger-api]: Start processing: mypykits
+[2023-05-24 14:06:14] INFO root fetch - main [MainThread]: End processing [medsenger-api]: success
+[2023-05-24 14:06:14] WARNING root fetch - processPackages [mypykits]: Skipping, unable to determine old version
+[2023-05-24 14:06:14] INFO root fetch - processPackages [mypykits]: Start processing: ckan
+[2023-05-24 14:06:14] INFO root fetch - main [MainThread]: End processing [mypykits] error
+[2023-05-24 14:06:14] INFO root fetch - processPackages [ckan]: New version: [2.9.9] Old Version: [2.9.8]
+[2023-05-24 14:06:14] INFO root fetch - processPackages [kfish]: Start processing: embrace
+[2023-05-24 14:06:14] INFO root fetch - main [MainThread]: End processing [kfish]: success
+[2023-05-24 14:06:14] INFO root fetch - processPackages [ckan]: Downloading https://files.pythonhosted.org/packages/d5/72/506cd08812a066ae1edfe9703165b62b121bb3f617f42abc042f485ff5cd/ckan-2.9.8.tar.gz
+[2023-05-24 14:06:14] INFO root fetch - processPackages [embrace]: New version: [4.2.1] Old Version: [4.2.0]
+[2023-05-24 14:06:14] INFO root fetch - processPackages [ronnytest]: Start processing: tinystream
+[2023-05-24 14:06:14] INFO root fetch - main [MainThread]: End processing [ronnytest]: success
+[2023-05-24 14:06:14] INFO root fetch - processPackages [tinystream]: New version: [0.1.2] Old Version: [0.1.1]
+[2023-05-24 14:06:15] INFO root fetch - processPackages [embrace]: Downloading https://files.pythonhosted.org/packages/b0/de/1d8d5a9667ebc8e5971b354783773c423e50e6e5c832c488a4a14b610312/embrace-4.2.0.tar.gz
+[2023-05-24 14:06:15] INFO root fetch - processPackages [django-content-blocks]: Start processing: bmsdna-lakeapi
+[2023-05-24 14:06:15] INFO root fetch - main [MainThread]: End processing [django-content-blocks]: success
+[2023-05-24 14:06:15] INFO root fetch - processPackages [bmsdna-lakeapi]: New version: [0.4.1] Old Version: [0.4.0]
+[2023-05-24 14:06:15] INFO root fetch - processPackages [vector-quantize-tf]: Start processing: m4ai
+[2023-05-24 14:06:15] INFO root fetch - main [MainThread]: End processing [vector-quantize-tf]: success
+[2023-05-24 14:06:15] INFO root fetch - processPackages [m4ai]: New version: [1.0.1] Old Version: [1.0.0]
+[2023-05-24 14:06:15] INFO root fetch - processPackages [bmsdna-lakeapi]: executing diffoscope
+[2023-05-24 14:06:15] INFO root fetch - processPackages [bmsdna-lakeapi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bmsdna_lakeapi-0.4.0.tar.gz tmp/bmsdna_lakeapi-0.4.1.tar.gz --markdown 20230524/b/bmsdna-lakeapi/0.4.0-0.4.1/diff.md --exclude *.pyd
+[2023-05-24 14:06:15] INFO root fetch - processPackages [m4ai]: executing diffoscope
+[2023-05-24 14:06:15] INFO root fetch - processPackages [m4ai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/m4ai-1.0.0.tar.gz tmp/m4ai-1.0.1.tar.gz --markdown 20230524/m/m4ai/1.0.0-1.0.1/diff.md --exclude *.pyd
+[2023-05-24 14:06:15] INFO root fetch - processPackages [tinystream]: executing diffoscope
+[2023-05-24 14:06:15] INFO root fetch - processPackages [tinystream]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tinystream-0.1.1.tar.gz tmp/tinystream-0.1.2.tar.gz --markdown 20230524/t/tinystream/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2023-05-24 14:06:15] INFO root fetch - processPackages [gocart]: Start processing: megadata
+[2023-05-24 14:06:15] INFO root fetch - main [MainThread]: End processing [gocart]: success
+[2023-05-24 14:06:15] INFO root fetch - processPackages [megadata]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-24 14:06:15] INFO root fetch - processPackages [embrace]: Downloading https://files.pythonhosted.org/packages/38/4e/54ff3cd1cdd40e690808b9ecac3bb0964eb31101e49bba2e9bafc236f710/embrace-4.2.1.tar.gz
+[2023-05-24 14:06:15] INFO root fetch - processPackages [megadata]: executing diffoscope
+[2023-05-24 14:06:15] INFO root fetch - processPackages [megadata]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/megadata-0.0.8.tar.gz tmp/megadata-0.0.9.tar.gz --markdown 20230524/m/megadata/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-24 14:06:15] INFO root fetch - processPackages [embrace]: executing diffoscope
+[2023-05-24 14:06:15] INFO root fetch - processPackages [embrace]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/embrace-4.2.0.tar.gz tmp/embrace-4.2.1.tar.gz --markdown 20230524/e/embrace/4.2.0-4.2.1/diff.md --exclude *.pyd
+[2023-05-24 14:06:15] INFO root fetch - processPackages [mlfoundry]: Start processing: PyUpyog
+[2023-05-24 14:06:15] INFO root fetch - main [MainThread]: End processing [mlfoundry]: success
+[2023-05-24 14:06:16] WARNING root fetch - processPackages [PyUpyog]: Skipping, unable to determine old version
+[2023-05-24 14:06:16] INFO root fetch - processPackages [PyUpyog]: Start processing: pyeCam
+[2023-05-24 14:06:16] INFO root fetch - main [MainThread]: End processing [PyUpyog] error
+[2023-05-24 14:06:16] INFO root fetch - processPackages [pyeCam]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-24 14:06:16] INFO root fetch - processPackages [ckan]: Downloading https://files.pythonhosted.org/packages/d5/72/506cd08812a066ae1edfe9703165b62b121bb3f617f42abc042f485ff5cd/ckan-2.9.8.tar.gz
+[2023-05-24 14:06:16] INFO root fetch - processPackages [pyeCam]: executing diffoscope
+[2023-05-24 14:06:16] INFO root fetch - processPackages [pyeCam]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyeCam-0.0.8.tar.gz tmp/pyeCam-0.0.9.tar.gz --markdown 20230524/p/pyeCam/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-24 14:06:16] INFO root fetch - processPackages [ckan]: executing diffoscope
+[2023-05-24 14:06:16] INFO root fetch - processPackages [ckan]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ckan-2.9.7.tar.gz tmp/ckan-2.9.8.tar.gz --markdown 20230524/c/ckan/2.9.7-2.9.8/diff.md --exclude *.pyd
+[2023-05-24 14:06:16] INFO root fetch - processPackages [ckan]: Downloading https://files.pythonhosted.org/packages/00/b3/27e462d16f45a83091604ea1387373d77a6b7a32f69b1524793f5c13d6b4/ckan-2.9.9.tar.gz
+[2023-05-24 14:06:16] INFO root fetch - processPackages [ckan]: executing diffoscope
+[2023-05-24 14:06:16] INFO root fetch - processPackages [ckan]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ckan-2.9.8.tar.gz tmp/ckan-2.9.9.tar.gz --markdown 20230524/c/ckan/2.9.8-2.9.9/diff.md --exclude *.pyd
+[2023-05-24 14:06:16] INFO root fetch - processPackages [m4ai]: Start processing: petitRADTRANS
+[2023-05-24 14:06:16] INFO root fetch - main [MainThread]: End processing [m4ai]: success
+[2023-05-24 14:06:16] INFO root fetch - processPackages [petitRADTRANS]: New version: [2.6.6] Old Version: [2.6.5]
+[2023-05-24 14:06:16] INFO root fetch - processPackages [bmsdna-lakeapi]: Start processing: bigdl-dllib
+[2023-05-24 14:06:16] INFO root fetch - main [MainThread]: End processing [bmsdna-lakeapi]: success
+[2023-05-24 14:06:16] INFO root fetch - processPackages [bigdl-dllib]: New version: [2.4.0b20230523] Old Version: [2.4.0b20230522]
+[2023-05-24 14:06:16] INFO root fetch - main [MainThread]: End processing [megadata]: success
+[2023-05-24 14:06:16] INFO root fetch - main [MainThread]: End processing [tinystream]: success
+[2023-05-24 14:06:16] INFO root fetch - processPackages [petitRADTRANS]: Downloading https://files.pythonhosted.org/packages/02/ef/67dc387e26da46f1f03cfef41425631c463924501b908acbf62aa1ce3e29/petitRADTRANS-2.6.6.tar.gz
+[2023-05-24 14:06:17] INFO root fetch - processPackages [bigdl-dllib]: Downloading https://files.pythonhosted.org/packages/ea/7c/4deebc98ab1213eecd8329ec7e3f6c039d73573dd18f29400eface818c58/bigdl-dllib-2.4.0b20230522.tar.gz
+[2023-05-24 14:06:17] WARNING root fetch - processPackages [bigdl-dllib]: Skipping package: exceeds size limit 53560717>=10485760
+[2023-05-24 14:06:17] INFO root fetch - main [MainThread]: End processing [bigdl-dllib] error
+[2023-05-24 14:06:17] INFO root fetch - processPackages [petitRADTRANS]: executing diffoscope
+[2023-05-24 14:06:17] INFO root fetch - processPackages [petitRADTRANS]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/petitRADTRANS-2.6.5.tar.gz tmp/petitRADTRANS-2.6.6.tar.gz --markdown 20230524/p/petitRADTRANS/2.6.5-2.6.6/diff.md --exclude *.pyd
+[2023-05-24 14:06:17] INFO root fetch - main [MainThread]: End processing [embrace]: success
+[2023-05-24 14:06:17] INFO root fetch - main [MainThread]: End processing [pyeCam]: success
+[2023-05-24 14:06:17] INFO root fetch - main [MainThread]: End processing [oarepo-model-builder]: success
+[2023-05-24 14:06:18] INFO root fetch - main [MainThread]: End processing [petitRADTRANS]: success
+[2023-05-24 14:06:18] INFO root fetch - main [MainThread]: End processing [returnn]: success
+[2023-05-24 14:06:53] INFO root fetch - main [MainThread]: End processing [ckan]: success
+[2023-05-24 14:07:05] INFO root fetch - main [MainThread]: End processing [ckan]: success
+[2023-05-24 14:07:05] INFO root fetch - main [MainThread]: Store serial: [18229185]
