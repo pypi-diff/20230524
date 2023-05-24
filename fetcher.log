@@ -23124,3 +23124,52 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd4 in position 72: invalid
 [2023-05-24 21:46:45] INFO root fetch - main [MainThread]: End processing [cdklabs.cdk-enterprise-iac]: success
 [2023-05-24 21:46:46] INFO root fetch - main [MainThread]: End processing [dp4plus-app]: success
 [2023-05-24 21:46:46] INFO root fetch - main [MainThread]: Store serial: [18235001]
+[2023-05-24 21:51:52] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18235001]
+[2023-05-24 21:51:57] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-05-24 21:51:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: djangocms-simple-admin-style
+[2023-05-24 21:51:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: aries-cloudcontroller
+[2023-05-24 21:51:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: clvm-rs
+[2023-05-24 21:51:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: coiled
+[2023-05-24 21:51:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: flashy
+[2023-05-24 21:51:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: nyckel
+[2023-05-24 21:51:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: nyckel
+[2023-05-24 21:51:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: com-enovation
+[2023-05-24 21:51:57] INFO root fetch - processPackages [coiled]: New version: [0.6.8.dev3] Old Version: [0.6.7.dev9]
+[2023-05-24 21:51:57] INFO root fetch - processPackages [djangocms-simple-admin-style]: New version: [0.4.2] Old Version: [0.4.1]
+[2023-05-24 21:51:57] INFO root fetch - processPackages [aries-cloudcontroller]: New version: [0.8.0rc9] Old Version: [0.8.0rc8]
+[2023-05-24 21:51:57] INFO root fetch - processPackages [flashy]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-05-24 21:51:57] INFO root fetch - processPackages [nyckel]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-24 21:51:57] INFO root fetch - processPackages [nyckel]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-24 21:51:57] INFO root fetch - processPackages [com-enovation]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-24 21:51:57] INFO root fetch - processPackages [clvm-rs]: New version: [0.2.5] Old Version: [0.2.3]
+[2023-05-24 21:51:57] INFO root fetch - processPackages [djangocms-simple-admin-style]: executing diffoscope
+[2023-05-24 21:51:57] INFO root fetch - processPackages [djangocms-simple-admin-style]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/djangocms-simple-admin-style-0.4.1.tar.gz tmp/djangocms-simple-admin-style-0.4.2.tar.gz --markdown 20230524/d/djangocms-simple-admin-style/0.4.1-0.4.2/diff.md --exclude *.pyd
+[2023-05-24 21:51:57] INFO root fetch - processPackages [aries-cloudcontroller]: executing diffoscope
+[2023-05-24 21:51:57] INFO root fetch - processPackages [aries-cloudcontroller]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aries_cloudcontroller-0.8.0rc8.tar.gz tmp/aries_cloudcontroller-0.8.0rc9.tar.gz --markdown 20230524/a/aries-cloudcontroller/0.8.0rc8-0.8.0rc9/diff.md --exclude *.pyd
+[2023-05-24 21:51:58] INFO root fetch - processPackages [coiled]: Downloading https://files.pythonhosted.org/packages/d1/d7/0034ac6143e76f63cb82d19802ce6ba43615d3fda479fc6a4ae48fa006b1/coiled-0.6.8.dev3.tar.gz
+[2023-05-24 21:51:58] INFO root fetch - processPackages [clvm-rs]: Downloading https://files.pythonhosted.org/packages/77/02/5207fb390d1ed5f7033e231dd92ba6dee02756651105bcf715d947b5db1b/clvm_rs-0.2.3.tar.gz
+[2023-05-24 21:51:58] INFO root fetch - processPackages [com-enovation]: Downloading https://files.pythonhosted.org/packages/c7/47/8bf90800f9b548041db0f6953d05f96cc6ad24f661318df912725718d5fc/com-enovation-0.0.8.tar.gz
+[2023-05-24 21:51:58] INFO root fetch - processPackages [flashy]: Downloading https://files.pythonhosted.org/packages/32/1b/262b98d72cfafb16e1fbdb4529fd806da9f7975ca67531854ab2a75f7d22/flashy-0.0.2.tar.gz
+[2023-05-24 21:51:58] INFO root fetch - processPackages [coiled]: executing diffoscope
+[2023-05-24 21:51:58] INFO root fetch - processPackages [coiled]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/coiled-0.6.7.dev9.tar.gz tmp/coiled-0.6.8.dev3.tar.gz --markdown 20230524/c/coiled/0.6.7.dev9-0.6.8.dev3/diff.md --exclude *.pyd
+[2023-05-24 21:51:58] INFO root fetch - processPackages [nyckel]: executing diffoscope
+[2023-05-24 21:51:58] INFO root fetch - processPackages [nyckel]: executing diffoscope
+[2023-05-24 21:51:58] INFO root fetch - processPackages [nyckel]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nyckel-0.0.8.tar.gz tmp/nyckel-0.0.9.tar.gz --markdown 20230524/n/nyckel/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-24 21:51:58] INFO root fetch - processPackages [nyckel]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nyckel-0.0.8.tar.gz tmp/nyckel-0.0.9.tar.gz --markdown 20230524/n/nyckel/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-24 21:51:58] INFO root fetch - processPackages [flashy]: executing diffoscope
+[2023-05-24 21:51:58] INFO root fetch - processPackages [flashy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/flashy-0.0.1.tar.gz tmp/flashy-0.0.2.tar.gz --markdown 20230524/f/flashy/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-05-24 21:51:58] INFO root fetch - processPackages [com-enovation]: Downloading https://files.pythonhosted.org/packages/ad/07/6f3ceb4730ffd80b197951d9ec0fd0618e16215b218526fe8c6abf3a33a5/com-enovation-0.0.9.tar.gz
+[2023-05-24 21:51:58] INFO root fetch - processPackages [com-enovation]: executing diffoscope
+[2023-05-24 21:51:58] INFO root fetch - processPackages [com-enovation]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/com-enovation-0.0.8.tar.gz tmp/com-enovation-0.0.9.tar.gz --markdown 20230524/c/com-enovation/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-24 21:51:59] INFO root fetch - main [MainThread]: End processing [djangocms-simple-admin-style]: success
+[2023-05-24 21:51:59] INFO root fetch - processPackages [clvm-rs]: Downloading https://files.pythonhosted.org/packages/f1/84/42977b37ff776a255852c111cab360b0c09adf9fe4cb5f1b64cc4306ccd8/clvm_rs-0.2.5-cp37-abi3-manylinux_2_17_aarch64.manylinux2014_aarch64.whl
+[2023-05-24 21:51:59] INFO root fetch - processPackages [clvm-rs]: executing diffoscope
+[2023-05-24 21:51:59] INFO root fetch - processPackages [clvm-rs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/clvm_rs-0.2.3.tar.gz tmp/clvm_rs-0.2.5-cp37-abi3-manylinux_2_17_aarch64.manylinux2014_aarch64.whl.zip --markdown 20230524/c/clvm-rs/0.2.3-0.2.5/diff.md --exclude *.pyd
+[2023-05-24 21:51:59] INFO root fetch - main [MainThread]: End processing [nyckel]: success
+[2023-05-24 21:51:59] INFO root fetch - main [MainThread]: End processing [nyckel]: success
+[2023-05-24 21:51:59] INFO root fetch - main [MainThread]: End processing [coiled]: success
+[2023-05-24 21:51:59] INFO root fetch - main [MainThread]: End processing [com-enovation]: success
+[2023-05-24 21:52:00] INFO root fetch - main [MainThread]: End processing [flashy]: success
+[2023-05-24 21:52:00] INFO root fetch - main [MainThread]: End processing [clvm-rs]: success
+[2023-05-24 21:52:01] INFO root fetch - main [MainThread]: End processing [aries-cloudcontroller]: success
+[2023-05-24 21:52:01] INFO root fetch - main [MainThread]: Store serial: [18235024]
