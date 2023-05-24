@@ -18180,3 +18180,154 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd4 in position 72: invalid
 [2023-05-24 17:16:23] INFO root fetch - main [MainThread]: End processing [trame-simput]: success
 [2023-05-24 17:16:26] INFO root fetch - main [MainThread]: End processing [english-words]: success
 [2023-05-24 17:16:26] INFO root fetch - main [MainThread]: Store serial: [18231635]
+[2023-05-24 17:21:54] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18231635]
+[2023-05-24 17:21:59] INFO root fetch - main [MainThread]: Found 25 changed packages
+[2023-05-24 17:21:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: django-cte
+[2023-05-24 17:21:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: volare
+[2023-05-24 17:21:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: sampo
+[2023-05-24 17:21:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: imagen-pytorch
+[2023-05-24 17:21:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: PVNet
+[2023-05-24 17:21:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: ubkg-api
+[2023-05-24 17:21:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: pytest-reportportal
+[2023-05-24 17:21:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: crunch-cli
+[2023-05-24 17:21:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: lib310
+[2023-05-24 17:21:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: corby
+[2023-05-24 17:21:59] INFO root fetch - processPackages [volare]: New version: [0.7.3] Old Version: [0.7.2]
+[2023-05-24 17:21:59] INFO root fetch - processPackages [PVNet]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-24 17:21:59] INFO root fetch - processPackages [ubkg-api]: New version: [1.3.0] Old Version: [0.0.1]
+[2023-05-24 17:21:59] INFO root fetch - processPackages [corby]: New version: [0.0.5] Old Version: [0.0.4]
+[2023-05-24 17:21:59] INFO root fetch - processPackages [crunch-cli]: New version: [1.4.4] Old Version: [1.4.3]
+[2023-05-24 17:21:59] INFO root fetch - processPackages [django-cte]: New version: [1.3.0] Old Version: [1.2.1]
+[2023-05-24 17:21:59] INFO root fetch - processPackages [pytest-reportportal]: New version: [5.1.8] Old Version: [5.1.7]
+[2023-05-24 17:21:59] INFO root fetch - processPackages [sampo]: New version: [0.1.1.99] Old Version: [0.1.1.98]
+[2023-05-24 17:21:59] INFO root fetch - processPackages [lib310]: New version: [0.2.9] Old Version: [0.2.8]
+[2023-05-24 17:21:59] INFO root fetch - processPackages [imagen-pytorch]: New version: [1.9.7] Old Version: [1.9.6]
+[2023-05-24 17:21:59] INFO root fetch - processPackages [ubkg-api]: Downloading https://files.pythonhosted.org/packages/77/95/3f31385be28ab96ab41097d5ee2d8b80f4c1d5e94be0f9f40d1c640774c2/ubkg_api-0.0.1.tar.gz
+[2023-05-24 17:21:59] INFO root fetch - processPackages [corby]: Downloading https://files.pythonhosted.org/packages/fb/a4/125476be73b5b689b92208f05d15e80008e37eff56fb741ebe7decda6378/corby-0.0.4.tar.gz
+[2023-05-24 17:21:59] INFO root fetch - processPackages [volare]: Downloading https://files.pythonhosted.org/packages/19/c6/73e73d0e22eaa9f1069e460974bceeebbc5eb6d814a0979f49bc91f49bb0/volare-0.7.2.tar.gz
+[2023-05-24 17:21:59] INFO root fetch - processPackages [django-cte]: Downloading https://files.pythonhosted.org/packages/7d/92/223e4b82e7b6dc1642af85ed616aa5efb73c2c459f0706b549242fac1ff2/django-cte-1.2.1.tar.gz
+[2023-05-24 17:22:00] INFO root fetch - processPackages [pytest-reportportal]: Downloading https://files.pythonhosted.org/packages/51/b6/a82c33cfe10b4b2f47069c679a4ae97de334417fcde13863ba59f98215dc/pytest-reportportal-5.1.7.tar.gz
+[2023-05-24 17:22:00] INFO root fetch - processPackages [lib310]: Downloading https://files.pythonhosted.org/packages/5e/c2/6aef937fc65ef0d12d18a6ad3c27532b2f33c0d5842d714e3a110543bf83/lib310-0.2.8.tar.gz
+[2023-05-24 17:22:00] INFO root fetch - processPackages [imagen-pytorch]: Downloading https://files.pythonhosted.org/packages/95/5a/938ac965e87b49870e957284b455d2436327c8540007bf10e3accc2c5e02/imagen-pytorch-1.9.6.tar.gz
+[2023-05-24 17:22:00] INFO root fetch - processPackages [crunch-cli]: Downloading https://files.pythonhosted.org/packages/fb/e1/16f6f8f5b105137c20ed1ac1d807fa58b27eec8e9715d4f00a5788f388ca/crunch-cli-1.4.4.tar.gz
+[2023-05-24 17:22:00] INFO root fetch - processPackages [sampo]: executing diffoscope
+[2023-05-24 17:22:00] INFO root fetch - processPackages [sampo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sampo-0.1.1.98.tar.gz tmp/sampo-0.1.1.99.tar.gz --markdown 20230524/s/sampo/0.1.1.98-0.1.1.99/diff.md --exclude *.pyd
+[2023-05-24 17:22:00] INFO root fetch - processPackages [volare]: Downloading https://files.pythonhosted.org/packages/73/65/a46fa948669eb9e398b69b14f4b2dbc1f5bc995c90ed6d9cc12a373654c3/volare-0.7.3.tar.gz
+[2023-05-24 17:22:00] INFO root fetch - processPackages [PVNet]: executing diffoscope
+[2023-05-24 17:22:00] INFO root fetch - processPackages [PVNet]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PVNet-0.0.8.tar.gz tmp/PVNet-0.0.9.tar.gz --markdown 20230524/P/PVNet/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-24 17:22:00] INFO root fetch - processPackages [corby]: Downloading https://files.pythonhosted.org/packages/c4/23/e397b35cb0fb5caa625d150cc7fbf880562f43f18bb71d2c78ad128beed4/corby-0.0.5.tar.gz
+[2023-05-24 17:22:00] INFO root fetch - processPackages [django-cte]: Downloading https://files.pythonhosted.org/packages/23/12/53a8bb015a8f1b46753846704f0f090e6d4e11fe4b3ee44f70131f955f9e/django-cte-1.3.0.tar.gz
+[2023-05-24 17:22:00] INFO root fetch - processPackages [ubkg-api]: Downloading https://files.pythonhosted.org/packages/a7/e2/77bd07991487b4b2884670da2667cdd9044a7bf9440810330f43216cb72e/ubkg_api-1.3.0.tar.gz
+[2023-05-24 17:22:00] INFO root fetch - processPackages [volare]: executing diffoscope
+[2023-05-24 17:22:00] INFO root fetch - processPackages [volare]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/volare-0.7.2.tar.gz tmp/volare-0.7.3.tar.gz --markdown 20230524/v/volare/0.7.2-0.7.3/diff.md --exclude *.pyd
+[2023-05-24 17:22:00] INFO root fetch - processPackages [django-cte]: executing diffoscope
+[2023-05-24 17:22:00] INFO root fetch - processPackages [django-cte]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django-cte-1.2.1.tar.gz tmp/django-cte-1.3.0.tar.gz --markdown 20230524/d/django-cte/1.2.1-1.3.0/diff.md --exclude *.pyd
+[2023-05-24 17:22:00] INFO root fetch - processPackages [ubkg-api]: executing diffoscope
+[2023-05-24 17:22:00] INFO root fetch - processPackages [ubkg-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ubkg_api-0.0.1.tar.gz tmp/ubkg_api-1.3.0.tar.gz --markdown 20230524/u/ubkg-api/0.0.1-1.3.0/diff.md --exclude *.pyd
+[2023-05-24 17:22:00] INFO root fetch - processPackages [crunch-cli]: executing diffoscope
+[2023-05-24 17:22:00] INFO root fetch - processPackages [crunch-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/crunch-cli-1.4.3.tar.gz tmp/crunch-cli-1.4.4.tar.gz --markdown 20230524/c/crunch-cli/1.4.3-1.4.4/diff.md --exclude *.pyd
+[2023-05-24 17:22:00] INFO root fetch - processPackages [lib310]: Downloading https://files.pythonhosted.org/packages/aa/e3/6c69ec3e73eeaa86b73971aef01b7431617f838888c6c4bfd6abf5401f2f/lib310-0.2.9.tar.gz
+[2023-05-24 17:22:00] INFO root fetch - processPackages [imagen-pytorch]: Downloading https://files.pythonhosted.org/packages/7e/6d/250293a0593cd824ef8578a96061c59bb36cb69a54a697b41469b4f6aa46/imagen-pytorch-1.9.7.tar.gz
+[2023-05-24 17:22:00] INFO root fetch - processPackages [corby]: executing diffoscope
+[2023-05-24 17:22:00] INFO root fetch - processPackages [corby]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/corby-0.0.4.tar.gz tmp/corby-0.0.5.tar.gz --markdown 20230524/c/corby/0.0.4-0.0.5/diff.md --exclude *.pyd
+[2023-05-24 17:22:00] INFO root fetch - processPackages [lib310]: executing diffoscope
+[2023-05-24 17:22:00] INFO root fetch - processPackages [lib310]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lib310-0.2.8.tar.gz tmp/lib310-0.2.9.tar.gz --markdown 20230524/l/lib310/0.2.8-0.2.9/diff.md --exclude *.pyd
+[2023-05-24 17:22:00] INFO root fetch - processPackages [imagen-pytorch]: executing diffoscope
+[2023-05-24 17:22:00] INFO root fetch - processPackages [imagen-pytorch]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/imagen-pytorch-1.9.6.tar.gz tmp/imagen-pytorch-1.9.7.tar.gz --markdown 20230524/i/imagen-pytorch/1.9.6-1.9.7/diff.md --exclude *.pyd
+[2023-05-24 17:22:00] INFO root fetch - processPackages [pytest-reportportal]: Downloading https://files.pythonhosted.org/packages/92/03/01d4bfb342e1bff5d21e7f14f8ae42d66aee955eda04439136b0f2d7e8d1/pytest-reportportal-5.1.8.tar.gz
+[2023-05-24 17:22:00] INFO root fetch - processPackages [pytest-reportportal]: executing diffoscope
+[2023-05-24 17:22:00] INFO root fetch - processPackages [pytest-reportportal]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pytest-reportportal-5.1.7.tar.gz tmp/pytest-reportportal-5.1.8.tar.gz --markdown 20230524/p/pytest-reportportal/5.1.7-5.1.8/diff.md --exclude *.pyd
+[2023-05-24 17:22:01] INFO root fetch - processPackages [PVNet]: Start processing: odoo14-addon-crm-rest-api
+[2023-05-24 17:22:01] INFO root fetch - main [MainThread]: End processing [PVNet]: success
+[2023-05-24 17:22:02] INFO root fetch - processPackages [odoo14-addon-crm-rest-api]: New version: [14.0.1.0.1.dev1] Old Version: [14.0.1.0.1]
+[2023-05-24 17:22:02] INFO root fetch - processPackages [volare]: Start processing: odoo14-addon-crm-metadata-rest-api
+[2023-05-24 17:22:02] INFO root fetch - main [MainThread]: End processing [volare]: success
+[2023-05-24 17:22:02] INFO root fetch - processPackages [odoo14-addon-crm-rest-api]: Downloading https://files.pythonhosted.org/packages/d4/3d/9fcdb8dc101cf18a9299e45877e67056835e0709ba57c26491e5ed06bdcc/odoo14_addon_crm_rest_api-14.0.1.0.1-py3-none-any.whl
+[2023-05-24 17:22:02] INFO root fetch - processPackages [odoo14-addon-crm-metadata-rest-api]: New version: [14.0.1.0.1] Old Version: [14.0.1.0.0]
+[2023-05-24 17:22:02] INFO root fetch - processPackages [django-cte]: Start processing: oceano-algos
+[2023-05-24 17:22:02] INFO root fetch - main [MainThread]: End processing [django-cte]: success
+[2023-05-24 17:22:02] INFO root fetch - processPackages [crunch-cli]: Start processing: smartlogger
+[2023-05-24 17:22:02] INFO root fetch - main [MainThread]: End processing [crunch-cli]: success
+[2023-05-24 17:22:02] INFO root fetch - processPackages [oceano-algos]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-05-24 17:22:02] INFO root fetch - processPackages [smartlogger]: New version: [0.0.1.dev9] Old Version: [0.0.1.dev8]
+[2023-05-24 17:22:02] INFO root fetch - processPackages [corby]: Start processing: corby
+[2023-05-24 17:22:02] INFO root fetch - main [MainThread]: End processing [corby]: success
+[2023-05-24 17:22:02] INFO root fetch - processPackages [corby]: New version: [0.0.5] Old Version: [0.0.4]
+[2023-05-24 17:22:02] INFO root fetch - processPackages [odoo14-addon-crm-metadata-rest-api]: Downloading https://files.pythonhosted.org/packages/63/83/e589dc1f7e4debc416e2b2167b76e62106e639ce7d324959d9dd94df177a/odoo14_addon_crm_metadata_rest_api-14.0.1.0.0-py3-none-any.whl
+[2023-05-24 17:22:02] INFO root fetch - processPackages [imagen-pytorch]: Start processing: uquake
+[2023-05-24 17:22:02] INFO root fetch - main [MainThread]: End processing [imagen-pytorch]: success
+[2023-05-24 17:22:02] INFO root fetch - processPackages [oceano-algos]: executing diffoscope
+[2023-05-24 17:22:02] INFO root fetch - processPackages [oceano-algos]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/oceano_algos-0.0.98.tar.gz tmp/oceano_algos-0.0.99.tar.gz --markdown 20230524/o/oceano-algos/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-05-24 17:22:02] INFO root fetch - processPackages [uquake]: New version: [1.3.3] Old Version: [1.3.2]
+[2023-05-24 17:22:02] INFO root fetch - processPackages [smartlogger]: executing diffoscope
+[2023-05-24 17:22:02] INFO root fetch - processPackages [smartlogger]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/smartlogger-0.0.1.dev8.tar.gz tmp/smartlogger-0.0.1.dev9.tar.gz --markdown 20230524/s/smartlogger/0.0.1.dev8-0.0.1.dev9/diff.md --exclude *.pyd
+[2023-05-24 17:22:02] INFO root fetch - processPackages [lib310]: Start processing: agsi
+[2023-05-24 17:22:02] INFO root fetch - main [MainThread]: End processing [lib310]: success
+[2023-05-24 17:22:02] INFO root fetch - processPackages [sampo]: Start processing: django-dynamic-storage
+[2023-05-24 17:22:02] INFO root fetch - main [MainThread]: End processing [sampo]: success
+[2023-05-24 17:22:02] INFO root fetch - processPackages [corby]: executing diffoscope
+[2023-05-24 17:22:02] INFO root fetch - processPackages [corby]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/corby-0.0.4.tar.gz tmp/corby-0.0.5.tar.gz --markdown 20230524/c/corby/0.0.4-0.0.5/diff.md --exclude *.pyd
+[2023-05-24 17:22:02] INFO root fetch - processPackages [agsi]: New version: [1.1] Old Version: [1.0.9]
+[2023-05-24 17:22:02] WARNING root fetch - processPackages [django-dynamic-storage]: Skipping, unable to determine old version
+[2023-05-24 17:22:02] INFO root fetch - processPackages [django-dynamic-storage]: Start processing: deepchem
+[2023-05-24 17:22:02] INFO root fetch - main [MainThread]: End processing [django-dynamic-storage] error
+[2023-05-24 17:22:02] INFO root fetch - processPackages [odoo14-addon-crm-rest-api]: Downloading https://files.pythonhosted.org/packages/9c/eb/5c0a4df612e0c477e2ed2c2b44347ac6db375c317332c4dc09b767785dac/odoo14_addon_crm_rest_api-14.0.1.0.1.dev1-py3-none-any.whl
+[2023-05-24 17:22:02] INFO root fetch - processPackages [deepchem]: New version: [2.7.2.dev20230523163554] Old Version: [2.7.2.dev20230523160930]
+[2023-05-24 17:22:02] INFO root fetch - processPackages [odoo14-addon-crm-metadata-rest-api]: Downloading https://files.pythonhosted.org/packages/0b/94/39b51e3e54025a4cf1b0f535405630ea9ac1ef6668c8e426f86bea4f9b51/odoo14_addon_crm_metadata_rest_api-14.0.1.0.1-py3-none-any.whl
+[2023-05-24 17:22:02] INFO root fetch - processPackages [uquake]: Downloading https://files.pythonhosted.org/packages/55/8f/1c8901356e47a2b3edd0b8629f248e22897e97b6b8945eded7954640e50c/uquake-1.3.3.tar.gz
+[2023-05-24 17:22:02] INFO root fetch - processPackages [odoo14-addon-crm-rest-api]: executing diffoscope
+[2023-05-24 17:22:02] INFO root fetch - processPackages [odoo14-addon-crm-rest-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo14_addon_crm_rest_api-14.0.1.0.1-py3-none-any.whl.zip tmp/odoo14_addon_crm_rest_api-14.0.1.0.1.dev1-py3-none-any.whl.zip --markdown 20230524/o/odoo14-addon-crm-rest-api/14.0.1.0.1-14.0.1.0.1.dev1/diff.md --exclude *.pyd
+[2023-05-24 17:22:02] INFO root fetch - processPackages [deepchem]: executing diffoscope
+[2023-05-24 17:22:02] INFO root fetch - processPackages [deepchem]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/deepchem-2.7.2.dev20230523160930.tar.gz tmp/deepchem-2.7.2.dev20230523163554.tar.gz --markdown 20230524/d/deepchem/2.7.2.dev20230523160930-2.7.2.dev20230523163554/diff.md --exclude *.pyd
+[2023-05-24 17:22:02] INFO root fetch - processPackages [agsi]: executing diffoscope
+[2023-05-24 17:22:02] INFO root fetch - processPackages [agsi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/agsi-1.0.9.tar.gz tmp/agsi-1.1.tar.gz --markdown 20230524/a/agsi/1.0.9-1.1/diff.md --exclude *.pyd
+[2023-05-24 17:22:02] INFO root fetch - processPackages [odoo14-addon-crm-metadata-rest-api]: executing diffoscope
+[2023-05-24 17:22:02] INFO root fetch - processPackages [odoo14-addon-crm-metadata-rest-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo14_addon_crm_metadata_rest_api-14.0.1.0.0-py3-none-any.whl.zip tmp/odoo14_addon_crm_metadata_rest_api-14.0.1.0.1-py3-none-any.whl.zip --markdown 20230524/o/odoo14-addon-crm-metadata-rest-api/14.0.1.0.0-14.0.1.0.1/diff.md --exclude *.pyd
+[2023-05-24 17:22:02] INFO root fetch - processPackages [uquake]: executing diffoscope
+[2023-05-24 17:22:02] INFO root fetch - processPackages [uquake]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/uquake-1.3.2.tar.gz tmp/uquake-1.3.3.tar.gz --markdown 20230524/u/uquake/1.3.2-1.3.3/diff.md --exclude *.pyd
+[2023-05-24 17:22:02] INFO root fetch - processPackages [pytest-reportportal]: Start processing: speech-collator
+[2023-05-24 17:22:02] INFO root fetch - main [MainThread]: End processing [pytest-reportportal]: success
+[2023-05-24 17:22:02] INFO root fetch - processPackages [speech-collator]: New version: [0.1.6] Old Version: [0.1.5]
+[2023-05-24 17:22:03] INFO root fetch - processPackages [speech-collator]: executing diffoscope
+[2023-05-24 17:22:03] INFO root fetch - processPackages [speech-collator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/speech_collator-0.1.5.tar.gz tmp/speech_collator-0.1.6.tar.gz --markdown 20230524/s/speech-collator/0.1.5-0.1.6/diff.md --exclude *.pyd
+[2023-05-24 17:22:03] INFO root fetch - processPackages [ubkg-api]: Start processing: corby
+[2023-05-24 17:22:03] INFO root fetch - main [MainThread]: End processing [ubkg-api]: success
+[2023-05-24 17:22:03] INFO root fetch - processPackages [corby]: New version: [0.0.5] Old Version: [0.0.4]
+[2023-05-24 17:22:03] INFO root fetch - processPackages [corby]: executing diffoscope
+[2023-05-24 17:22:03] INFO root fetch - processPackages [corby]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/corby-0.0.4.tar.gz tmp/corby-0.0.5.tar.gz --markdown 20230524/c/corby/0.0.4-0.0.5/diff.md --exclude *.pyd
+[2023-05-24 17:22:03] INFO root fetch - processPackages [corby]: Start processing: flaretool
+[2023-05-24 17:22:03] INFO root fetch - main [MainThread]: End processing [corby]: success
+[2023-05-24 17:22:04] INFO root fetch - processPackages [smartlogger]: Start processing: emanifest
+[2023-05-24 17:22:04] INFO root fetch - main [MainThread]: End processing [smartlogger]: success
+[2023-05-24 17:22:04] INFO root fetch - processPackages [flaretool]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-24 17:22:04] INFO root fetch - processPackages [emanifest]: New version: [3.0.5] Old Version: [3.0.4]
+[2023-05-24 17:22:04] INFO root fetch - processPackages [odoo14-addon-crm-rest-api]: Start processing: uquake
+[2023-05-24 17:22:04] INFO root fetch - main [MainThread]: End processing [odoo14-addon-crm-rest-api]: success
+[2023-05-24 17:22:04] INFO root fetch - processPackages [uquake]: New version: [1.3.5] Old Version: [1.3.4]
+[2023-05-24 17:22:04] INFO root fetch - processPackages [emanifest]: Downloading https://files.pythonhosted.org/packages/61/74/361558e228a4a7668f008a27ade5b928d598f6e06f75c6757338fd51f27a/emanifest-3.0.4.tar.gz
+[2023-05-24 17:22:04] INFO root fetch - processPackages [oceano-algos]: Start processing: tango-mlflow
+[2023-05-24 17:22:04] INFO root fetch - main [MainThread]: End processing [oceano-algos]: success
+[2023-05-24 17:22:04] INFO root fetch - processPackages [uquake]: Downloading https://files.pythonhosted.org/packages/9b/88/a443dc1924a19cd51414a4da07cfdf41cb8fe2cf102b547d0ee18d62b5d8/uquake-1.3.4.tar.gz
+[2023-05-24 17:22:04] INFO root fetch - main [MainThread]: End processing [odoo14-addon-crm-metadata-rest-api]: success
+[2023-05-24 17:22:04] INFO root fetch - processPackages [tango-mlflow]: New version: [1.1.1] Old Version: [1.1.0]
+[2023-05-24 17:22:04] INFO root fetch - processPackages [flaretool]: executing diffoscope
+[2023-05-24 17:22:04] INFO root fetch - processPackages [flaretool]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/flaretool-0.1.8.tar.gz tmp/flaretool-0.1.9-py3-none-any.whl.zip --markdown 20230524/f/flaretool/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-24 17:22:04] INFO root fetch - main [MainThread]: End processing [corby]: success
+[2023-05-24 17:22:04] INFO root fetch - processPackages [emanifest]: Downloading https://files.pythonhosted.org/packages/fc/a6/5e9c87d152b9a3a9f9df6b4f96547ab1b66510e5a279d322aa16fe5884d5/emanifest-3.0.5.tar.gz
+[2023-05-24 17:22:04] INFO root fetch - processPackages [uquake]: Downloading https://files.pythonhosted.org/packages/01/da/7987bf3067bf1a5e1e16a0c4cf87838eea42341560e11731f072b9d69617/uquake-1.3.5.tar.gz
+[2023-05-24 17:22:04] INFO root fetch - processPackages [emanifest]: executing diffoscope
+[2023-05-24 17:22:04] INFO root fetch - processPackages [emanifest]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/emanifest-3.0.4.tar.gz tmp/emanifest-3.0.5.tar.gz --markdown 20230524/e/emanifest/3.0.4-3.0.5/diff.md --exclude *.pyd
+[2023-05-24 17:22:04] INFO root fetch - processPackages [tango-mlflow]: Downloading https://files.pythonhosted.org/packages/90/80/9f0eb366150c6a882b74e8fed865a7527d641ff942c59aba6214575e88f1/tango_mlflow-1.1.1.tar.gz
+[2023-05-24 17:22:04] INFO root fetch - processPackages [uquake]: executing diffoscope
+[2023-05-24 17:22:04] INFO root fetch - processPackages [uquake]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/uquake-1.3.4.tar.gz tmp/uquake-1.3.5.tar.gz --markdown 20230524/u/uquake/1.3.4-1.3.5/diff.md --exclude *.pyd
+[2023-05-24 17:22:04] INFO root fetch - processPackages [tango-mlflow]: executing diffoscope
+[2023-05-24 17:22:04] INFO root fetch - processPackages [tango-mlflow]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tango_mlflow-1.1.0.tar.gz tmp/tango_mlflow-1.1.1.tar.gz --markdown 20230524/t/tango-mlflow/1.1.0-1.1.1/diff.md --exclude *.pyd
+[2023-05-24 17:22:05] INFO root fetch - main [MainThread]: End processing [flaretool]: success
+[2023-05-24 17:22:05] INFO root fetch - main [MainThread]: End processing [agsi]: success
+[2023-05-24 17:22:05] INFO root fetch - main [MainThread]: End processing [emanifest]: success
+[2023-05-24 17:22:06] INFO root fetch - main [MainThread]: End processing [tango-mlflow]: success
+[2023-05-24 17:22:06] INFO root fetch - main [MainThread]: End processing [deepchem]: success
+[2023-05-24 17:22:06] INFO root fetch - main [MainThread]: End processing [uquake]: success
+[2023-05-24 17:22:07] INFO root fetch - main [MainThread]: End processing [uquake]: success
+[2023-05-24 17:22:07] INFO root fetch - main [MainThread]: End processing [speech-collator]: success
+[2023-05-24 17:22:07] INFO root fetch - main [MainThread]: Store serial: [18231779]
