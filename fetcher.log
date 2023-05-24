@@ -23173,3 +23173,101 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd4 in position 72: invalid
 [2023-05-24 21:52:00] INFO root fetch - main [MainThread]: End processing [clvm-rs]: success
 [2023-05-24 21:52:01] INFO root fetch - main [MainThread]: End processing [aries-cloudcontroller]: success
 [2023-05-24 21:52:01] INFO root fetch - main [MainThread]: Store serial: [18235024]
+[2023-05-24 21:57:05] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18235024]
+[2023-05-24 21:57:09] INFO root fetch - main [MainThread]: Found 17 changed packages
+[2023-05-24 21:57:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: echoloader
+[2023-05-24 21:57:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: sparkverse
+[2023-05-24 21:57:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: jppype
+[2023-05-24 21:57:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: planetmint
+[2023-05-24 21:57:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: typed-argparse
+[2023-05-24 21:57:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: picimagesearch
+[2023-05-24 21:57:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: sayql
+[2023-05-24 21:57:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: lupin-grognard
+[2023-05-24 21:57:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: rcmpy
+[2023-05-24 21:57:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: hgitaly
+[2023-05-24 21:57:09] INFO root fetch - processPackages [echoloader]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-24 21:57:09] INFO root fetch - processPackages [jppype]: New version: [0.1.1rc1] Old Version: [0.1.1a0]
+[2023-05-24 21:57:09] INFO root fetch - processPackages [planetmint]: New version: [2.4.7] Old Version: [2.4.6]
+[2023-05-24 21:57:09] INFO root fetch - processPackages [typed-argparse]: New version: [0.2.9] Old Version: [0.2.8]
+[2023-05-24 21:57:09] INFO root fetch - processPackages [sparkverse]: New version: [0.0.6] Old Version: [0.0.5]
+[2023-05-24 21:57:09] INFO root fetch - processPackages [picimagesearch]: New version: [3.9.1] Old Version: [3.9.0]
+[2023-05-24 21:57:09] INFO root fetch - processPackages [lupin-grognard]: New version: [1.9.0] Old Version: [1.7.0]
+[2023-05-24 21:57:09] INFO root fetch - processPackages [rcmpy]: New version: [1.5.1] Old Version: [1.5.0]
+[2023-05-24 21:57:09] WARNING root fetch - processPackages [sayql]: Skipping, unable to determine old version
+[2023-05-24 21:57:09] INFO root fetch - processPackages [sayql]: Start processing: jacoco-badge-generator
+[2023-05-24 21:57:09] INFO root fetch - main [MainThread]: End processing [sayql] error
+[2023-05-24 21:57:09] INFO root fetch - processPackages [hgitaly]: New version: [0.9.0] Old Version: [0.8.1]
+[2023-05-24 21:57:09] INFO root fetch - processPackages [jacoco-badge-generator]: New version: [2.9.0] Old Version: [2.8.1]
+[2023-05-24 21:57:09] INFO root fetch - processPackages [lupin-grognard]: executing diffoscope
+[2023-05-24 21:57:09] INFO root fetch - processPackages [lupin-grognard]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lupin-grognard-1.7.0.tar.gz tmp/lupin-grognard-1.9.0.tar.gz --markdown 20230524/l/lupin-grognard/1.7.0-1.9.0/diff.md --exclude *.pyd
+[2023-05-24 21:57:09] INFO root fetch - processPackages [typed-argparse]: executing diffoscope
+[2023-05-24 21:57:09] INFO root fetch - processPackages [typed-argparse]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/typed-argparse-0.2.8.tar.gz tmp/typed-argparse-0.2.9.tar.gz --markdown 20230524/t/typed-argparse/0.2.8-0.2.9/diff.md --exclude *.pyd
+[2023-05-24 21:57:10] INFO root fetch - processPackages [jppype]: Downloading https://files.pythonhosted.org/packages/24/a0/fff00d77f3611cfeceb7c337262ba4edec3fbd46f0c0a605c12882ecf7ca/jppype-0.1.1a0-py3-none-any.whl
+[2023-05-24 21:57:10] INFO root fetch - processPackages [rcmpy]: Downloading https://files.pythonhosted.org/packages/26/a2/8be0e5145cde4b9de88e0b221eb2c563b6cab334148d651b9e67838560f4/rcmpy-1.5.0.tar.gz
+[2023-05-24 21:57:10] INFO root fetch - processPackages [planetmint]: Downloading https://files.pythonhosted.org/packages/13/85/719cfbd71628db3bafa471e19139b7eb5b4f0ed6c127a1ad67bd87518ffa/planetmint-2.4.7.tar.gz
+[2023-05-24 21:57:10] INFO root fetch - processPackages [picimagesearch]: Downloading https://files.pythonhosted.org/packages/34/1d/56ce156758c75d860b3e598ca0a2cc5b99cbbfd5444b38659c6561f9b8b2/picimagesearch-3.9.0.tar.gz
+[2023-05-24 21:57:10] INFO root fetch - processPackages [sparkverse]: Downloading https://files.pythonhosted.org/packages/5b/15/696b5c386e03c687c49cb2e02f079e9cc5ddd931deefdf3a6438d470cbdd/sparkverse-0.0.6.tar.gz
+[2023-05-24 21:57:10] INFO root fetch - processPackages [hgitaly]: Downloading https://files.pythonhosted.org/packages/a2/0c/9dd703bc7d48c43959335a79b723c5072d33f7c056b44ede5e4243ca5575/hgitaly-0.8.1.tar.gz
+[2023-05-24 21:57:10] INFO root fetch - processPackages [planetmint]: executing diffoscope
+[2023-05-24 21:57:10] INFO root fetch - processPackages [planetmint]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/planetmint-2.4.6.tar.gz tmp/planetmint-2.4.7.tar.gz --markdown 20230524/p/planetmint/2.4.6-2.4.7/diff.md --exclude *.pyd
+[2023-05-24 21:57:10] INFO root fetch - processPackages [sparkverse]: executing diffoscope
+[2023-05-24 21:57:10] INFO root fetch - processPackages [sparkverse]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sparkverse-0.0.5.tar.gz tmp/sparkverse-0.0.6.tar.gz --markdown 20230524/s/sparkverse/0.0.5-0.0.6/diff.md --exclude *.pyd
+[2023-05-24 21:57:10] INFO root fetch - processPackages [jacoco-badge-generator]: Downloading https://files.pythonhosted.org/packages/ae/1f/8b9919d559fcac4ac87c8bfd97b969b42252977bb81f3578bab24a0fc688/jacoco_badge_generator-2.8.1.tar.gz
+[2023-05-24 21:57:10] INFO root fetch - processPackages [echoloader]: executing diffoscope
+[2023-05-24 21:57:10] INFO root fetch - processPackages [echoloader]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/echoloader-0.1.8.tar.gz tmp/echoloader-0.1.9.tar.gz --markdown 20230524/e/echoloader/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-24 21:57:10] INFO root fetch - processPackages [picimagesearch]: Downloading https://files.pythonhosted.org/packages/87/c5/272764b90940dd30cac6bb12e55bd018dc2e3897f283dd1ccd13ec26b035/picimagesearch-3.9.1.tar.gz
+[2023-05-24 21:57:10] INFO root fetch - processPackages [picimagesearch]: executing diffoscope
+[2023-05-24 21:57:10] INFO root fetch - processPackages [picimagesearch]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/picimagesearch-3.9.0.tar.gz tmp/picimagesearch-3.9.1.tar.gz --markdown 20230524/p/picimagesearch/3.9.0-3.9.1/diff.md --exclude *.pyd
+[2023-05-24 21:57:10] INFO root fetch - processPackages [jppype]: Downloading https://files.pythonhosted.org/packages/99/89/a2543e13e026c1bf7d10ad857a2a1d45a80aef12af16e6bd3479f4f4eae9/jppype-0.1.1rc1.tar.gz
+[2023-05-24 21:57:10] INFO root fetch - processPackages [rcmpy]: Downloading https://files.pythonhosted.org/packages/61/dd/6cea9b95343a94c06f3784601912527ada2340d338df3f759573c43884e0/rcmpy-1.5.1.tar.gz
+[2023-05-24 21:57:10] INFO root fetch - processPackages [hgitaly]: Downloading https://files.pythonhosted.org/packages/b3/28/2284528e77ab1a467d1cfb1cf31f9c3e120dfb50df289c90bd11539dfb2e/hgitaly-0.9.0.tar.gz
+[2023-05-24 21:57:10] INFO root fetch - processPackages [rcmpy]: executing diffoscope
+[2023-05-24 21:57:10] INFO root fetch - processPackages [rcmpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rcmpy-1.5.0.tar.gz tmp/rcmpy-1.5.1.tar.gz --markdown 20230524/r/rcmpy/1.5.0-1.5.1/diff.md --exclude *.pyd
+[2023-05-24 21:57:10] INFO root fetch - processPackages [jppype]: executing diffoscope
+[2023-05-24 21:57:10] INFO root fetch - processPackages [jppype]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jppype-0.1.1a0-py3-none-any.whl.zip tmp/jppype-0.1.1rc1.tar.gz --markdown 20230524/j/jppype/0.1.1a0-0.1.1rc1/diff.md --exclude *.pyd
+[2023-05-24 21:57:10] INFO root fetch - processPackages [jacoco-badge-generator]: Downloading https://files.pythonhosted.org/packages/b0/cd/36a877bb4245581ae09c87a8cf4889b83fa458d7ace3476a106c2e0a28b7/jacoco_badge_generator-2.9.0.tar.gz
+[2023-05-24 21:57:10] INFO root fetch - processPackages [hgitaly]: executing diffoscope
+[2023-05-24 21:57:10] INFO root fetch - processPackages [hgitaly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hgitaly-0.8.1.tar.gz tmp/hgitaly-0.9.0.tar.gz --markdown 20230524/h/hgitaly/0.8.1-0.9.0/diff.md --exclude *.pyd
+[2023-05-24 21:57:10] INFO root fetch - processPackages [jacoco-badge-generator]: executing diffoscope
+[2023-05-24 21:57:10] INFO root fetch - processPackages [jacoco-badge-generator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jacoco_badge_generator-2.8.1.tar.gz tmp/jacoco_badge_generator-2.9.0.tar.gz --markdown 20230524/j/jacoco-badge-generator/2.8.1-2.9.0/diff.md --exclude *.pyd
+[2023-05-24 21:57:11] INFO root fetch - processPackages [lupin-grognard]: Start processing: luminesce-sdk-preview
+[2023-05-24 21:57:11] INFO root fetch - main [MainThread]: End processing [lupin-grognard]: success
+[2023-05-24 21:57:11] INFO root fetch - processPackages [luminesce-sdk-preview]: New version: [1.9.92] Old Version: [1.9.88]
+[2023-05-24 21:57:11] INFO root fetch - processPackages [typed-argparse]: Start processing: easyQuake
+[2023-05-24 21:57:11] INFO root fetch - main [MainThread]: End processing [typed-argparse]: success
+[2023-05-24 21:57:11] INFO root fetch - processPackages [easyQuake]: New version: [1.3.3] Old Version: [1.3.2]
+[2023-05-24 21:57:11] INFO root fetch - processPackages [easyQuake]: Downloading https://files.pythonhosted.org/packages/85/21/14a6ee9cd6896b0d57ac863c84599cac18f2e8597600dea68d9c26318ced/easyQuake-1.3.2.tar.gz
+[2023-05-24 21:57:11] INFO root fetch - processPackages [echoloader]: Start processing: domolibrary
+[2023-05-24 21:57:11] INFO root fetch - main [MainThread]: End processing [echoloader]: success
+[2023-05-24 21:57:11] INFO root fetch - processPackages [domolibrary]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-24 21:57:11] WARNING root fetch - processPackages [easyQuake]: Skipping package: exceeds size limit 31069375>=10485760
+[2023-05-24 21:57:11] INFO root fetch - processPackages [easyQuake]: Start processing: datumaro-headless
+[2023-05-24 21:57:11] INFO root fetch - main [MainThread]: End processing [easyQuake] error
+[2023-05-24 21:57:11] INFO root fetch - processPackages [domolibrary]: executing diffoscope
+[2023-05-24 21:57:11] INFO root fetch - processPackages [domolibrary]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/domolibrary-0.1.8.tar.gz tmp/domolibrary-0.1.9.tar.gz --markdown 20230524/d/domolibrary/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-24 21:57:11] INFO root fetch - processPackages [planetmint]: Start processing: nyckel
+[2023-05-24 21:57:11] INFO root fetch - main [MainThread]: End processing [planetmint]: success
+[2023-05-24 21:57:11] INFO root fetch - processPackages [luminesce-sdk-preview]: executing diffoscope
+[2023-05-24 21:57:11] INFO root fetch - processPackages [luminesce-sdk-preview]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/luminesce-sdk-preview-1.9.88.tar.gz tmp/luminesce-sdk-preview-1.9.92.tar.gz --markdown 20230524/l/luminesce-sdk-preview/1.9.88-1.9.92/diff.md --exclude *.pyd
+[2023-05-24 21:57:11] INFO root fetch - processPackages [nyckel]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-24 21:57:12] WARNING root fetch - processPackages [datumaro-headless]: Skipping, unable to determine old version
+[2023-05-24 21:57:12] INFO root fetch - processPackages [datumaro-headless]: Start processing: pypgstac
+[2023-05-24 21:57:12] INFO root fetch - main [MainThread]: End processing [datumaro-headless] error
+[2023-05-24 21:57:12] INFO root fetch - processPackages [nyckel]: executing diffoscope
+[2023-05-24 21:57:12] INFO root fetch - processPackages [nyckel]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nyckel-0.0.8.tar.gz tmp/nyckel-0.0.9.tar.gz --markdown 20230524/n/nyckel/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-24 21:57:12] INFO root fetch - main [MainThread]: End processing [rcmpy]: success
+[2023-05-24 21:57:12] INFO root fetch - processPackages [pypgstac]: New version: [0.7.7] Old Version: [0.7.6]
+[2023-05-24 21:57:12] INFO root fetch - main [MainThread]: End processing [picimagesearch]: success
+[2023-05-24 21:57:12] INFO root fetch - processPackages [pypgstac]: Downloading https://files.pythonhosted.org/packages/5e/8f/8884c018f90d9380c250d94d718382fd60c24ace4ae86415093f780b2f17/pypgstac-0.7.6.tar.gz
+[2023-05-24 21:57:12] INFO root fetch - main [MainThread]: End processing [jppype]: success
+[2023-05-24 21:57:12] INFO root fetch - main [MainThread]: End processing [sparkverse]: success
+[2023-05-24 21:57:12] INFO root fetch - processPackages [pypgstac]: Downloading https://files.pythonhosted.org/packages/f3/74/c8357f90d78ec89789d2a5401231654bdfdd1c06ab1826dc485e3c6467e8/pypgstac-0.7.7.tar.gz
+[2023-05-24 21:57:13] INFO root fetch - processPackages [pypgstac]: executing diffoscope
+[2023-05-24 21:57:13] INFO root fetch - processPackages [pypgstac]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pypgstac-0.7.6.tar.gz tmp/pypgstac-0.7.7.tar.gz --markdown 20230524/p/pypgstac/0.7.6-0.7.7/diff.md --exclude *.pyd
+[2023-05-24 21:57:13] INFO root fetch - main [MainThread]: End processing [nyckel]: success
+[2023-05-24 21:57:13] INFO root fetch - main [MainThread]: End processing [jacoco-badge-generator]: success
+[2023-05-24 21:57:13] INFO root fetch - main [MainThread]: End processing [luminesce-sdk-preview]: success
+[2023-05-24 21:57:15] INFO root fetch - main [MainThread]: End processing [hgitaly]: success
+[2023-05-24 21:57:15] INFO root fetch - main [MainThread]: End processing [pypgstac]: success
+[2023-05-24 21:57:15] INFO root fetch - main [MainThread]: End processing [domolibrary]: success
+[2023-05-24 21:57:15] INFO root fetch - main [MainThread]: Store serial: [18235082]
