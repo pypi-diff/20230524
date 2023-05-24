@@ -7026,3 +7026,33 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-05-24 05:39:26] INFO root fetch - main [MainThread]: End processing [azureml-core]: success
 [2023-05-24 05:39:27] INFO root fetch - main [MainThread]: End processing [mainnet]: success
 [2023-05-24 05:39:27] INFO root fetch - main [MainThread]: Store serial: [18224627]
+[2023-05-24 05:44:31] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18224627]
+[2023-05-24 05:44:36] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-05-24 05:44:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: autoxx
+[2023-05-24 05:44:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ezyquant-execution
+[2023-05-24 05:44:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: CityLearn
+[2023-05-24 05:44:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: langchain-serve
+[2023-05-24 05:44:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: seven-cloudapp-frame
+[2023-05-24 05:44:36] INFO root fetch - processPackages [autoxx]: New version: [0.0.26] Old Version: [0.0.25]
+[2023-05-24 05:44:36] INFO root fetch - processPackages [langchain-serve]: New version: [0.0.9.dev9] Old Version: [0.0.9.dev22]
+[2023-05-24 05:44:36] INFO root fetch - processPackages [CityLearn]: New version: [2.0b1] Old Version: [1.8.0]
+[2023-05-24 05:44:36] INFO root fetch - processPackages [seven-cloudapp-frame]: New version: [1.0.9.9] Old Version: [1.0.9.8]
+[2023-05-24 05:44:36] INFO root fetch - processPackages [ezyquant-execution]: New version: [0.0.7] Old Version: [0.0.6]
+[2023-05-24 05:44:36] INFO root fetch - processPackages [CityLearn]: Downloading https://files.pythonhosted.org/packages/8a/85/ee6c895bc554fb799d94375fa9d9e0999a543089d27754cbb802eaf967a4/CityLearn-1.8.0.tar.gz
+[2023-05-24 05:44:36] INFO root fetch - processPackages [langchain-serve]: executing diffoscope
+[2023-05-24 05:44:36] INFO root fetch - processPackages [langchain-serve]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/langchain-serve-0.0.9.dev22.tar.gz tmp/langchain-serve-0.0.9.dev9.tar.gz --markdown 20230524/l/langchain-serve/0.0.9.dev22-0.0.9.dev9/diff.md --exclude *.pyd
+[2023-05-24 05:44:36] WARNING root fetch - processPackages [CityLearn]: Skipping package: exceeds size limit 14827637>=10485760
+[2023-05-24 05:44:36] INFO root fetch - main [MainThread]: End processing [CityLearn] error
+[2023-05-24 05:44:36] INFO root fetch - processPackages [autoxx]: Downloading https://files.pythonhosted.org/packages/7d/39/fc50b00a1844db63f02ffffe8996ac2240d6dd9e1da531bb1c43671beca5/autoxx-0.0.26.tar.gz
+[2023-05-24 05:44:37] INFO root fetch - processPackages [autoxx]: executing diffoscope
+[2023-05-24 05:44:37] INFO root fetch - processPackages [autoxx]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/autoxx-0.0.25.tar.gz tmp/autoxx-0.0.26.tar.gz --markdown 20230524/a/autoxx/0.0.25-0.0.26/diff.md --exclude *.pyd
+[2023-05-24 05:44:37] INFO root fetch - processPackages [ezyquant-execution]: Downloading https://files.pythonhosted.org/packages/e1/8d/fc90390287fc396b16e556fc1c1dfae5979d928d58fe52461ced668ec670/ezyquant-execution-0.0.7.tar.gz
+[2023-05-24 05:44:37] INFO root fetch - processPackages [seven-cloudapp-frame]: executing diffoscope
+[2023-05-24 05:44:37] INFO root fetch - processPackages [seven-cloudapp-frame]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/seven_cloudapp_frame-1.0.9.8.tar.gz tmp/seven_cloudapp_frame-1.0.9.9.tar.gz --markdown 20230524/s/seven-cloudapp-frame/1.0.9.8-1.0.9.9/diff.md --exclude *.pyd
+[2023-05-24 05:44:37] INFO root fetch - processPackages [ezyquant-execution]: executing diffoscope
+[2023-05-24 05:44:37] INFO root fetch - processPackages [ezyquant-execution]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ezyquant-execution-0.0.6.tar.gz tmp/ezyquant-execution-0.0.7.tar.gz --markdown 20230524/e/ezyquant-execution/0.0.6-0.0.7/diff.md --exclude *.pyd
+[2023-05-24 05:44:38] INFO root fetch - main [MainThread]: End processing [autoxx]: success
+[2023-05-24 05:44:38] INFO root fetch - main [MainThread]: End processing [langchain-serve]: success
+[2023-05-24 05:44:38] INFO root fetch - main [MainThread]: End processing [ezyquant-execution]: success
+[2023-05-24 05:44:38] INFO root fetch - main [MainThread]: End processing [seven-cloudapp-frame]: success
+[2023-05-24 05:44:38] INFO root fetch - main [MainThread]: Store serial: [18224642]
