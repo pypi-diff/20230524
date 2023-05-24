@@ -5896,3 +5896,48 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-05-24 04:25:11] INFO root fetch - main [MainThread]: End processing [deep-training]: success
 [2023-05-24 04:25:12] INFO root fetch - main [MainThread]: End processing [ai-transform]: success
 [2023-05-24 04:25:12] INFO root fetch - main [MainThread]: Store serial: [18224079]
+[2023-05-24 04:30:16] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18224079]
+[2023-05-24 04:30:21] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-05-24 04:30:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: netdem
+[2023-05-24 04:30:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: xgh-say-hello
+[2023-05-24 04:30:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: DeltaTopic
+[2023-05-24 04:30:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: sj201-interface
+[2023-05-24 04:30:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: ziper
+[2023-05-24 04:30:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: agixt
+[2023-05-24 04:30:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: idpmodem
+[2023-05-24 04:30:21] INFO root fetch - processPackages [idpmodem]: New version: [2.3.6] Old Version: [2.3.5]
+[2023-05-24 04:30:21] INFO root fetch - processPackages [netdem]: New version: [1.2] Old Version: [1.1]
+[2023-05-24 04:30:21] INFO root fetch - processPackages [DeltaTopic]: New version: [0.1.0] Old Version: [0.0.2]
+[2023-05-24 04:30:21] INFO root fetch - processPackages [agixt]: New version: [1.1.70b0] Old Version: [1.1.69b0]
+[2023-05-24 04:30:21] INFO root fetch - processPackages [xgh-say-hello]: New version: [0.0.1] Old Version: [0.0.0]
+[2023-05-24 04:30:21] INFO root fetch - processPackages [sj201-interface]: New version: [0.0.3a1] Old Version: [0.0.3a0]
+[2023-05-24 04:30:21] WARNING root fetch - processPackages [ziper]: Skipping, unable to determine old version
+[2023-05-24 04:30:21] INFO root fetch - main [MainThread]: End processing [ziper] error
+[2023-05-24 04:30:21] INFO root fetch - processPackages [xgh-say-hello]: executing diffoscope
+[2023-05-24 04:30:21] INFO root fetch - processPackages [xgh-say-hello]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xgh_say_hello-0.0.0.tar.gz tmp/xgh_say_hello-0.0.1.tar.gz --markdown 20230524/x/xgh-say-hello/0.0.0-0.0.1/diff.md --exclude *.pyd
+[2023-05-24 04:30:21] INFO root fetch - processPackages [DeltaTopic]: Downloading https://files.pythonhosted.org/packages/65/6e/f56157c09c17d3a7870c369b2efeba193a036bbfc06fb918e5d2acef63da/DeltaTopic-0.0.2.tar.gz
+[2023-05-24 04:30:21] INFO root fetch - processPackages [idpmodem]: Downloading https://files.pythonhosted.org/packages/93/d3/7d3bf333b6249f42d3f20919459299b09ce09b01571bad3b5f8cc0f8bf56/idpmodem-2.3.5.tar.gz
+[2023-05-24 04:30:21] INFO root fetch - processPackages [netdem]: Downloading https://files.pythonhosted.org/packages/ea/96/f9c14bf0b81fbc3ef3d4e2670da4b052d780d0295579d52f745188c37978/netdem-1.1-cp38-cp38-manylinux_2_31_x86_64.whl
+[2023-05-24 04:30:21] INFO root fetch - processPackages [sj201-interface]: Downloading https://files.pythonhosted.org/packages/d6/d8/e0d0ae5708b6b4462b2b351d8384cc11f33055f1cb321a727489a581bed2/sj201_interface-0.0.3a0-py3-none-any.whl
+[2023-05-24 04:30:21] INFO root fetch - processPackages [agixt]: Downloading https://files.pythonhosted.org/packages/86/a5/8483c8182b9cc85ebf8d65af36f110f461be1bec8b36583f7c6ac3d997fb/agixt-1.1.70b0.tar.gz
+[2023-05-24 04:30:21] INFO root fetch - processPackages [agixt]: executing diffoscope
+[2023-05-24 04:30:21] INFO root fetch - processPackages [agixt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/agixt-1.1.69b0.tar.gz tmp/agixt-1.1.70b0.tar.gz --markdown 20230524/a/agixt/1.1.69b0-1.1.70b0/diff.md --exclude *.pyd
+[2023-05-24 04:30:21] INFO root fetch - processPackages [DeltaTopic]: Downloading https://files.pythonhosted.org/packages/3d/18/f7d989bb35c75a4ad49fa43e106ac5d90be5ea00fad0f2e517f9ad96149d/DeltaTopic-0.1.0.tar.gz
+[2023-05-24 04:30:21] INFO root fetch - processPackages [netdem]: Downloading https://files.pythonhosted.org/packages/0d/78/9d0d8581acd886cbdb98fdfec4cc5385481bd808b964c79b48b130d11d55/netdem-1.2-cp311-cp311-macosx_13_0_arm64.whl
+[2023-05-24 04:30:21] INFO root fetch - processPackages [sj201-interface]: Downloading https://files.pythonhosted.org/packages/4c/9f/98995b42f2f48ec413cf840e9838612be135bada3b9b9642d129c776d3d6/sj201_interface-0.0.3a1-py3-none-any.whl
+[2023-05-24 04:30:21] INFO root fetch - processPackages [idpmodem]: Downloading https://files.pythonhosted.org/packages/7e/94/ac3e87d48fcb857ffcc5fde41774e3d5bf67716f0cbc85fa26f04bbdbf38/idpmodem-2.3.6.tar.gz
+[2023-05-24 04:30:21] INFO root fetch - processPackages [sj201-interface]: executing diffoscope
+[2023-05-24 04:30:21] INFO root fetch - processPackages [sj201-interface]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sj201_interface-0.0.3a0-py3-none-any.whl.zip tmp/sj201_interface-0.0.3a1-py3-none-any.whl.zip --markdown 20230524/s/sj201-interface/0.0.3a0-0.0.3a1/diff.md --exclude *.pyd
+[2023-05-24 04:30:21] INFO root fetch - processPackages [DeltaTopic]: executing diffoscope
+[2023-05-24 04:30:21] INFO root fetch - processPackages [DeltaTopic]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/DeltaTopic-0.0.2.tar.gz tmp/DeltaTopic-0.1.0.tar.gz --markdown 20230524/D/DeltaTopic/0.0.2-0.1.0/diff.md --exclude *.pyd
+[2023-05-24 04:30:21] INFO root fetch - processPackages [netdem]: executing diffoscope
+[2023-05-24 04:30:21] INFO root fetch - processPackages [netdem]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/netdem-1.1-cp38-cp38-manylinux_2_31_x86_64.whl.zip tmp/netdem-1.2-cp311-cp311-macosx_13_0_arm64.whl.zip --markdown 20230524/n/netdem/1.1-1.2/diff.md --exclude *.pyd
+[2023-05-24 04:30:22] INFO root fetch - processPackages [idpmodem]: executing diffoscope
+[2023-05-24 04:30:22] INFO root fetch - processPackages [idpmodem]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/idpmodem-2.3.5.tar.gz tmp/idpmodem-2.3.6.tar.gz --markdown 20230524/i/idpmodem/2.3.5-2.3.6/diff.md --exclude *.pyd
+[2023-05-24 04:30:22] INFO root fetch - main [MainThread]: End processing [xgh-say-hello]: success
+[2023-05-24 04:30:22] INFO root fetch - main [MainThread]: End processing [agixt]: success
+[2023-05-24 04:30:22] INFO root fetch - main [MainThread]: End processing [sj201-interface]: success
+[2023-05-24 04:30:23] INFO root fetch - main [MainThread]: End processing [DeltaTopic]: success
+[2023-05-24 04:30:23] INFO root fetch - main [MainThread]: End processing [idpmodem]: success
+[2023-05-24 04:30:23] INFO root fetch - main [MainThread]: End processing [netdem]: success
+[2023-05-24 04:30:23] INFO root fetch - main [MainThread]: Store serial: [18224107]
