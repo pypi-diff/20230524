@@ -8412,3 +8412,53 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-05-24 07:51:24] INFO root fetch - main [MainThread]: End processing [odoo-addon-account-financial-report]: success
 [2023-05-24 07:51:46] INFO root fetch - main [MainThread]: End processing [volcengine-python-sdk]: success
 [2023-05-24 07:51:46] INFO root fetch - main [MainThread]: Store serial: [18225520]
+[2023-05-24 07:56:50] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18225520]
+[2023-05-24 07:56:55] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2023-05-24 07:56:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: aroma
+[2023-05-24 07:56:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: mizu
+[2023-05-24 07:56:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: packagetenssor
+[2023-05-24 07:56:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: prfiesta
+[2023-05-24 07:56:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: edman-cli
+[2023-05-24 07:56:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: odoo14-addon-sale-commission-product-criteria
+[2023-05-24 07:56:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: libretrofuzz
+[2023-05-24 07:56:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: injson-check
+[2023-05-24 07:56:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: dash-connectivity-viewer
+[2023-05-24 07:56:55] INFO root fetch - processPackages [prfiesta]: New version: [0.8.1b125] Old Version: [0.8.0b124]
+[2023-05-24 07:56:55] INFO root fetch - processPackages [packagetenssor]: New version: [0.7] Old Version: [0.6]
+[2023-05-24 07:56:55] INFO root fetch - processPackages [libretrofuzz]: New version: [2.7.9] Old Version: [2.7.8]
+[2023-05-24 07:56:55] INFO root fetch - processPackages [dash-connectivity-viewer]: New version: [2.0.9] Old Version: [2.0.8]
+[2023-05-24 07:56:55] INFO root fetch - processPackages [aroma]: New version: [0.0.0a7] Old Version: [0.0.0a3]
+[2023-05-24 07:56:55] INFO root fetch - processPackages [libretrofuzz]: executing diffoscope
+[2023-05-24 07:56:55] INFO root fetch - processPackages [libretrofuzz]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/libretrofuzz-2.7.8.tar.gz tmp/libretrofuzz-2.7.9.tar.gz --markdown 20230524/l/libretrofuzz/2.7.8-2.7.9/diff.md --exclude *.pyd
+[2023-05-24 07:56:55] WARNING root fetch - processPackages [odoo14-addon-sale-commission-product-criteria]: Skipping, unable to determine old version
+[2023-05-24 07:56:55] INFO root fetch - main [MainThread]: End processing [odoo14-addon-sale-commission-product-criteria] error
+[2023-05-24 07:56:55] INFO root fetch - processPackages [mizu]: New version: [0.2.0a5] Old Version: [0.2.0a4]
+[2023-05-24 07:56:55] WARNING root fetch - processPackages [injson-check]: Skipping, unable to determine old version
+[2023-05-24 07:56:55] INFO root fetch - processPackages [edman-cli]: New version: [2023.5.24] Old Version: [2023.5.23]
+[2023-05-24 07:56:55] INFO root fetch - main [MainThread]: End processing [injson-check] error
+[2023-05-24 07:56:55] INFO root fetch - processPackages [dash-connectivity-viewer]: executing diffoscope
+[2023-05-24 07:56:55] INFO root fetch - processPackages [dash-connectivity-viewer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dash-connectivity-viewer-2.0.8.tar.gz tmp/dash-connectivity-viewer-2.0.9.tar.gz --markdown 20230524/d/dash-connectivity-viewer/2.0.8-2.0.9/diff.md --exclude *.pyd
+[2023-05-24 07:56:55] INFO root fetch - processPackages [packagetenssor]: Downloading https://files.pythonhosted.org/packages/88/1e/5cad3142652fe91e921b5ba114dadb6009bffb13c821cb7b54fe5293d822/packagetenssor-0.7.tar.gz
+[2023-05-24 07:56:55] INFO root fetch - processPackages [prfiesta]: Downloading https://files.pythonhosted.org/packages/e6/cd/5d414a8fe32d6ef384da25c0cd3142add3c82518736ea55066846cb5a7ab/prfiesta-0.8.1b125.tar.gz
+[2023-05-24 07:56:55] INFO root fetch - processPackages [mizu]: Downloading https://files.pythonhosted.org/packages/cb/b3/f3ac0adcab8ede2f067c0e04e8095050e5a6d898b248752df7529ef9c4cc/mizu-0.2.0a4.tar.gz
+[2023-05-24 07:56:55] INFO root fetch - processPackages [prfiesta]: executing diffoscope
+[2023-05-24 07:56:55] INFO root fetch - processPackages [prfiesta]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/prfiesta-0.8.0b124.tar.gz tmp/prfiesta-0.8.1b125.tar.gz --markdown 20230524/p/prfiesta/0.8.0b124-0.8.1b125/diff.md --exclude *.pyd
+[2023-05-24 07:56:55] INFO root fetch - processPackages [aroma]: Downloading https://files.pythonhosted.org/packages/9d/04/ce1e09512be81acfa39edafbbcda71e5ca651772b2c95a3cda40131fc7fa/aroma-0.0.0a7.tar.gz
+[2023-05-24 07:56:55] INFO root fetch - processPackages [packagetenssor]: executing diffoscope
+[2023-05-24 07:56:55] INFO root fetch - processPackages [packagetenssor]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/packagetenssor-0.6.tar.gz tmp/packagetenssor-0.7.tar.gz --markdown 20230524/p/packagetenssor/0.6-0.7/diff.md --exclude *.pyd
+[2023-05-24 07:56:55] INFO root fetch - processPackages [aroma]: executing diffoscope
+[2023-05-24 07:56:55] INFO root fetch - processPackages [aroma]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aroma-0.0.0a3.tar.gz tmp/aroma-0.0.0a7.tar.gz --markdown 20230524/a/aroma/0.0.0a3-0.0.0a7/diff.md --exclude *.pyd
+[2023-05-24 07:56:55] INFO root fetch - processPackages [edman-cli]: Downloading https://files.pythonhosted.org/packages/77/6a/4149cf3fba683322cecdeaa48800bb1fcd580c53aa0186a9a794f60b7a64/edman_cli-2023.5.24.tar.gz
+[2023-05-24 07:56:55] INFO root fetch - processPackages [edman-cli]: executing diffoscope
+[2023-05-24 07:56:55] INFO root fetch - processPackages [edman-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/edman_cli-2023.5.23.tar.gz tmp/edman_cli-2023.5.24.tar.gz --markdown 20230524/e/edman-cli/2023.5.23-2023.5.24/diff.md --exclude *.pyd
+[2023-05-24 07:56:56] INFO root fetch - processPackages [mizu]: Downloading https://files.pythonhosted.org/packages/4f/8c/9c8a2e7ef30cd3954574368ec56cff724581ac8df2c055ce40386f71deec/mizu-0.2.0a5.tar.gz
+[2023-05-24 07:56:56] INFO root fetch - processPackages [mizu]: executing diffoscope
+[2023-05-24 07:56:56] INFO root fetch - processPackages [mizu]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mizu-0.2.0a4.tar.gz tmp/mizu-0.2.0a5.tar.gz --markdown 20230524/m/mizu/0.2.0a4-0.2.0a5/diff.md --exclude *.pyd
+[2023-05-24 07:56:56] INFO root fetch - main [MainThread]: End processing [libretrofuzz]: success
+[2023-05-24 07:56:56] INFO root fetch - main [MainThread]: End processing [dash-connectivity-viewer]: success
+[2023-05-24 07:56:56] INFO root fetch - main [MainThread]: End processing [prfiesta]: success
+[2023-05-24 07:56:57] INFO root fetch - main [MainThread]: End processing [packagetenssor]: success
+[2023-05-24 07:56:57] INFO root fetch - main [MainThread]: End processing [aroma]: success
+[2023-05-24 07:56:57] INFO root fetch - main [MainThread]: End processing [mizu]: success
+[2023-05-24 07:56:58] INFO root fetch - main [MainThread]: End processing [edman-cli]: success
+[2023-05-24 07:56:58] INFO root fetch - main [MainThread]: Store serial: [18225566]
