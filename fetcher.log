@@ -2009,3 +2009,26 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-05-24 03:09:00] INFO root fetch - main [MainThread]: End processing [llama-index]: success
 [2023-05-24 03:09:00] INFO root fetch - main [MainThread]: End processing [gpt-index]: success
 [2023-05-24 03:09:00] INFO root fetch - main [MainThread]: Store serial: [18221639]
+[2023-05-24 03:14:04] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18221639]
+[2023-05-24 03:14:09] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2023-05-24 03:14:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: bmt
+[2023-05-24 03:14:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: toolshelf
+[2023-05-24 03:14:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: cdk-sops-secrets
+[2023-05-24 03:14:09] INFO root fetch - processPackages [cdk-sops-secrets]: New version: [1.2.99] Old Version: [1.2.98]
+[2023-05-24 03:14:09] INFO root fetch - processPackages [bmt]: New version: [1.0.9] Old Version: [1.0.8]
+[2023-05-24 03:14:09] INFO root fetch - processPackages [toolshelf]: New version: [0.2.2] Old Version: [0.2.1]
+[2023-05-24 03:14:09] INFO root fetch - processPackages [cdk-sops-secrets]: executing diffoscope
+[2023-05-24 03:14:09] INFO root fetch - processPackages [cdk-sops-secrets]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-sops-secrets-1.2.98.tar.gz tmp/cdk-sops-secrets-1.2.99.tar.gz --markdown 20230524/c/cdk-sops-secrets/1.2.98-1.2.99/diff.md --exclude *.pyd
+[2023-05-24 03:14:09] WARNING root fetch - processPackages [toolshelf]: fallback to get urls: [0.2.1]
+[2023-05-24 03:14:09] INFO root fetch - processPackages [bmt]: Downloading https://files.pythonhosted.org/packages/f5/39/a3ace91da91477b767057eb4e8f4aa5df159d95d592afd684baa185286a9/bmt-1.0.8.tar.gz
+[2023-05-24 03:14:09] WARNING root fetch - processPackages [toolshelf]: None
+[2023-05-24 03:14:10] WARNING root fetch - processPackages [toolshelf]: None
+[2023-05-24 03:14:10] WARNING root fetch - processPackages [toolshelf]: unable to get url for both version [0.2.1]
+[2023-05-24 03:14:10] WARNING root fetch - processPackages [toolshelf]: None
+[2023-05-24 03:14:10] INFO root fetch - main [MainThread]: End processing [toolshelf] error
+[2023-05-24 03:14:10] INFO root fetch - processPackages [bmt]: Downloading https://files.pythonhosted.org/packages/5b/fc/7f3c93eccba238f8a2a650442102bf7501a02080b7b37b8264343c384cef/bmt-1.0.9.tar.gz
+[2023-05-24 03:14:10] INFO root fetch - processPackages [bmt]: executing diffoscope
+[2023-05-24 03:14:10] INFO root fetch - processPackages [bmt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bmt-1.0.8.tar.gz tmp/bmt-1.0.9.tar.gz --markdown 20230524/b/bmt/1.0.8-1.0.9/diff.md --exclude *.pyd
+[2023-05-24 03:14:11] INFO root fetch - main [MainThread]: End processing [bmt]: success
+[2023-05-24 03:14:11] INFO root fetch - main [MainThread]: End processing [cdk-sops-secrets]: success
+[2023-05-24 03:14:11] INFO root fetch - main [MainThread]: Store serial: [18221648]
