@@ -12326,3 +12326,108 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd4 in position 72: invalid
 [2023-05-24 11:59:37] INFO root fetch - main [MainThread]: End processing [mttf]: success
 [2023-05-24 11:59:37] INFO root fetch - main [MainThread]: End processing [mttf]: success
 [2023-05-24 11:59:37] INFO root fetch - main [MainThread]: Store serial: [18227910]
+[2023-05-24 12:04:41] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18227910]
+[2023-05-24 12:04:46] INFO root fetch - main [MainThread]: Found 18 changed packages
+[2023-05-24 12:04:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: griffe
+[2023-05-24 12:04:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: st-microservice
+[2023-05-24 12:04:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: kalm
+[2023-05-24 12:04:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: makarenko-serializer
+[2023-05-24 12:04:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: automation-editor
+[2023-05-24 12:04:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: automation-editor-dev
+[2023-05-24 12:04:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: isotopylog
+[2023-05-24 12:04:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: je-editor
+[2023-05-24 12:04:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: je-editor-dev
+[2023-05-24 12:04:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: BingImageCreator
+[2023-05-24 12:04:46] INFO root fetch - processPackages [kalm]: New version: [0.5.6] Old Version: [0.5.5]
+[2023-05-24 12:04:46] INFO root fetch - processPackages [isotopylog]: New version: [0.0.7] Old Version: [0.0.6]
+[2023-05-24 12:04:46] INFO root fetch - processPackages [automation-editor-dev]: New version: [0.0.8] Old Version: [0.0.7]
+[2023-05-24 12:04:46] INFO root fetch - processPackages [automation-editor]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-24 12:04:46] INFO root fetch - processPackages [griffe]: New version: [0.9.0] Old Version: [0.8.0]
+[2023-05-24 12:04:46] WARNING root fetch - processPackages [makarenko-serializer]: Skipping, unable to determine old version
+[2023-05-24 12:04:46] INFO root fetch - processPackages [makarenko-serializer]: Start processing: ibmcloudant
+[2023-05-24 12:04:46] INFO root fetch - main [MainThread]: End processing [makarenko-serializer] error
+[2023-05-24 12:04:46] INFO root fetch - processPackages [BingImageCreator]: New version: [0.3.0] Old Version: [0.2.1]
+[2023-05-24 12:04:46] INFO root fetch - processPackages [st-microservice]: New version: [0.9.9] Old Version: [0.9.8]
+[2023-05-24 12:04:46] INFO root fetch - processPackages [je-editor-dev]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-05-24 12:04:46] INFO root fetch - processPackages [je-editor]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-05-24 12:04:46] INFO root fetch - processPackages [kalm]: Downloading https://files.pythonhosted.org/packages/3f/99/5790ac5d5a7606d22538e4774ccceae8ef01f7675a0178181882348a4d1e/kalm-0.5.5.tar.gz
+[2023-05-24 12:04:46] INFO root fetch - processPackages [isotopylog]: Downloading https://files.pythonhosted.org/packages/3f/9d/2793bf3be3ee4f54458b849691b2b98a8cb7e22fe016981a3a4f08e15a4e/isotopylog-0.0.6.tar.gz
+[2023-05-24 12:04:46] INFO root fetch - processPackages [ibmcloudant]: New version: [0.4.2] Old Version: [0.4.1]
+[2023-05-24 12:04:46] INFO root fetch - processPackages [st-microservice]: Downloading https://files.pythonhosted.org/packages/14/3f/326843a9564a94328b59d0f2ae0411d9ebb51df4af14613d0c4a6a1e81b2/st_microservice-0.9.8.tar.gz
+[2023-05-24 12:04:47] INFO root fetch - processPackages [automation-editor-dev]: executing diffoscope
+[2023-05-24 12:04:47] INFO root fetch - processPackages [automation-editor-dev]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/automation_editor_dev-0.0.7.tar.gz tmp/automation_editor_dev-0.0.8.tar.gz --markdown 20230524/a/automation-editor-dev/0.0.7-0.0.8/diff.md --exclude *.pyd
+[2023-05-24 12:04:47] INFO root fetch - processPackages [ibmcloudant]: Downloading https://files.pythonhosted.org/packages/b2/f9/01603067fa67ec81d07ec30c77c58efa6f9c5fd8d8648af101434d0b2e1a/ibmcloudant-0.4.1.tar.gz
+[2023-05-24 12:04:47] INFO root fetch - processPackages [griffe]: executing diffoscope
+[2023-05-24 12:04:47] INFO root fetch - processPackages [griffe]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/griffe-0.8.0.tar.gz tmp/griffe-0.9.0.tar.gz --markdown 20230524/g/griffe/0.8.0-0.9.0/diff.md --exclude *.pyd
+[2023-05-24 12:04:47] INFO root fetch - processPackages [kalm]: Downloading https://files.pythonhosted.org/packages/f0/30/c5c149b1937e81af85aa4c7475a920cb8eaf92b89ab5ca4deccd356b836a/kalm-0.5.6.tar.gz
+[2023-05-24 12:04:47] INFO root fetch - processPackages [BingImageCreator]: Downloading https://files.pythonhosted.org/packages/a9/26/8502ba158132f1e26a24a83cd7eb60f2e431368fe9b8ab6b3327353848c1/BingImageCreator-0.3.0.tar.gz
+[2023-05-24 12:04:47] INFO root fetch - processPackages [je-editor]: executing diffoscope
+[2023-05-24 12:04:47] INFO root fetch - processPackages [je-editor]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/je_editor-0.0.98.tar.gz tmp/je_editor-0.0.99.tar.gz --markdown 20230524/j/je-editor/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-05-24 12:04:47] INFO root fetch - processPackages [je-editor-dev]: executing diffoscope
+[2023-05-24 12:04:47] INFO root fetch - processPackages [je-editor-dev]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/je_editor_dev-0.0.98.tar.gz tmp/je_editor_dev-0.0.99.tar.gz --markdown 20230524/j/je-editor-dev/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-05-24 12:04:47] INFO root fetch - processPackages [isotopylog]: Downloading https://files.pythonhosted.org/packages/88/2e/12999f055fb3fac356fa976667c7c869d4d484612edad05cc2a6931568ce/isotopylog-0.0.7.tar.gz
+[2023-05-24 12:04:47] INFO root fetch - processPackages [automation-editor]: Downloading https://files.pythonhosted.org/packages/50/4c/caa76f5eb438558d75b65bbcb114724ff8359c2db4245dd07c86a05485a5/automation_editor-0.0.9.tar.gz
+[2023-05-24 12:04:47] INFO root fetch - processPackages [kalm]: executing diffoscope
+[2023-05-24 12:04:47] INFO root fetch - processPackages [kalm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kalm-0.5.5.tar.gz tmp/kalm-0.5.6.tar.gz --markdown 20230524/k/kalm/0.5.5-0.5.6/diff.md --exclude *.pyd
+[2023-05-24 12:04:47] INFO root fetch - processPackages [BingImageCreator]: executing diffoscope
+[2023-05-24 12:04:47] INFO root fetch - processPackages [BingImageCreator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/BingImageCreator-0.2.1.tar.gz tmp/BingImageCreator-0.3.0.tar.gz --markdown 20230524/B/BingImageCreator/0.2.1-0.3.0/diff.md --exclude *.pyd
+[2023-05-24 12:04:47] INFO root fetch - processPackages [isotopylog]: executing diffoscope
+[2023-05-24 12:04:47] INFO root fetch - processPackages [isotopylog]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/isotopylog-0.0.6.tar.gz tmp/isotopylog-0.0.7.tar.gz --markdown 20230524/i/isotopylog/0.0.6-0.0.7/diff.md --exclude *.pyd
+[2023-05-24 12:04:47] INFO root fetch - processPackages [automation-editor]: executing diffoscope
+[2023-05-24 12:04:47] INFO root fetch - processPackages [automation-editor]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/automation_editor-0.0.8.tar.gz tmp/automation_editor-0.0.9.tar.gz --markdown 20230524/a/automation-editor/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-24 12:04:47] INFO root fetch - processPackages [st-microservice]: Downloading https://files.pythonhosted.org/packages/2c/f5/8b62561ffc9a8e02841c7dcb7be6ff9dc742da988b64e7f553ef182db1a0/st_microservice-0.9.9.tar.gz
+[2023-05-24 12:04:47] INFO root fetch - processPackages [ibmcloudant]: Downloading https://files.pythonhosted.org/packages/c4/e5/26632e019375c69675b4323e4505d5654be02fd0431a4773ed5ab4ed7be1/ibmcloudant-0.4.2.tar.gz
+[2023-05-24 12:04:47] INFO root fetch - processPackages [ibmcloudant]: executing diffoscope
+[2023-05-24 12:04:47] INFO root fetch - processPackages [ibmcloudant]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ibmcloudant-0.4.1.tar.gz tmp/ibmcloudant-0.4.2.tar.gz --markdown 20230524/i/ibmcloudant/0.4.1-0.4.2/diff.md --exclude *.pyd
+[2023-05-24 12:04:47] INFO root fetch - processPackages [st-microservice]: executing diffoscope
+[2023-05-24 12:04:47] INFO root fetch - processPackages [st-microservice]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/st_microservice-0.9.8.tar.gz tmp/st_microservice-0.9.9.tar.gz --markdown 20230524/s/st-microservice/0.9.8-0.9.9/diff.md --exclude *.pyd
+[2023-05-24 12:04:48] INFO root fetch - processPackages [automation-editor-dev]: Start processing: pydflow
+[2023-05-24 12:04:48] INFO root fetch - main [MainThread]: End processing [automation-editor-dev]: success
+[2023-05-24 12:04:48] INFO root fetch - processPackages [BingImageCreator]: Start processing: stabby
+[2023-05-24 12:04:48] INFO root fetch - main [MainThread]: End processing [BingImageCreator]: success
+[2023-05-24 12:04:48] INFO root fetch - processPackages [je-editor]: Start processing: aws-cdk-constructs
+[2023-05-24 12:04:48] INFO root fetch - main [MainThread]: End processing [je-editor]: success
+[2023-05-24 12:04:48] INFO root fetch - processPackages [stabby]: New version: [1.0.3] Old Version: [1.0.2]
+[2023-05-24 12:04:48] INFO root fetch - processPackages [pydflow]: New version: [1.6.99] Old Version: [1.6.98]
+[2023-05-24 12:04:48] INFO root fetch - processPackages [isotopylog]: Start processing: mtnet
+[2023-05-24 12:04:48] INFO root fetch - main [MainThread]: End processing [isotopylog]: success
+[2023-05-24 12:04:48] INFO root fetch - processPackages [mtnet]: New version: [0.1.202305240954] Old Version: [0.0]
+[2023-05-24 12:04:48] INFO root fetch - processPackages [aws-cdk-constructs]: New version: [2.9.2] Old Version: [2.9.1]
+[2023-05-24 12:04:49] INFO root fetch - processPackages [kalm]: Start processing: brainpy
+[2023-05-24 12:04:49] INFO root fetch - main [MainThread]: End processing [kalm]: success
+[2023-05-24 12:04:49] INFO root fetch - processPackages [stabby]: Downloading https://files.pythonhosted.org/packages/78/b1/85fdf343edd2a61576a40159c3e5ea2f9287ba1eaf8f9f81224f44dcb80d/stabby-1.0.3.tar.gz
+[2023-05-24 12:04:49] INFO root fetch - processPackages [aws-cdk-constructs]: Downloading https://files.pythonhosted.org/packages/e6/37/d91f15ad3ff666b7db55fc300424baecc14de758543e3ada24b95f4ff718/aws_cdk_constructs-2.9.1.tar.gz
+[2023-05-24 12:04:49] INFO root fetch - processPackages [stabby]: executing diffoscope
+[2023-05-24 12:04:49] INFO root fetch - processPackages [stabby]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/stabby-1.0.2.tar.gz tmp/stabby-1.0.3.tar.gz --markdown 20230524/s/stabby/1.0.2-1.0.3/diff.md --exclude *.pyd
+[2023-05-24 12:04:49] INFO root fetch - processPackages [brainpy]: New version: [2.4.1] Old Version: [2.4.0.0.1]
+[2023-05-24 12:04:49] INFO root fetch - processPackages [st-microservice]: Start processing: ExPSO
+[2023-05-24 12:04:49] INFO root fetch - main [MainThread]: End processing [st-microservice]: success
+[2023-05-24 12:04:49] WARNING root fetch - processPackages [ExPSO]: Skipping, unable to determine old version
+[2023-05-24 12:04:49] INFO root fetch - processPackages [ExPSO]: Start processing: vbimage
+[2023-05-24 12:04:49] INFO root fetch - main [MainThread]: End processing [ExPSO] error
+[2023-05-24 12:04:49] INFO root fetch - processPackages [mtnet]: Downloading https://files.pythonhosted.org/packages/a1/9a/6896bcbff0809ec9c17463aba2d68843d6d7f6de978d5bb1521afaa4479e/mtnet-0.1.202305240954-py3-none-any.whl
+[2023-05-24 12:04:49] INFO root fetch - processPackages [vbimage]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-24 12:04:49] INFO root fetch - processPackages [mtnet]: executing diffoscope
+[2023-05-24 12:04:49] INFO root fetch - processPackages [mtnet]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mtnet-0.0-py3-none-any.whl.zip tmp/mtnet-0.1.202305240954-py3-none-any.whl.zip --markdown 20230524/m/mtnet/0.0-0.1.202305240954/diff.md --exclude *.pyd
+[2023-05-24 12:04:49] INFO root fetch - processPackages [pydflow]: executing diffoscope
+[2023-05-24 12:04:49] INFO root fetch - processPackages [pydflow]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pydflow-1.6.98.tar.gz tmp/pydflow-1.6.99.tar.gz --markdown 20230524/p/pydflow/1.6.98-1.6.99/diff.md --exclude *.pyd
+[2023-05-24 12:04:49] INFO root fetch - processPackages [vbimage]: executing diffoscope
+[2023-05-24 12:04:49] INFO root fetch - processPackages [vbimage]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vbimage-0.1.8.tar.gz tmp/vbimage-0.1.9.tar.gz --markdown 20230524/v/vbimage/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-24 12:04:49] INFO root fetch - processPackages [brainpy]: Downloading https://files.pythonhosted.org/packages/b8/2c/488b62a2871038c017c69fcf9aac3e1469c3252650154be33276464407aa/brainpy-2.4.0.0.1-py3-none-any.whl
+[2023-05-24 12:04:49] INFO root fetch - processPackages [aws-cdk-constructs]: Downloading https://files.pythonhosted.org/packages/35/f4/09f600eaed6a0720c0130482f53b61f86271746b2385735edef0f6e0c731/aws_cdk_constructs-2.9.2.tar.gz
+[2023-05-24 12:04:49] INFO root fetch - processPackages [aws-cdk-constructs]: executing diffoscope
+[2023-05-24 12:04:49] INFO root fetch - processPackages [aws-cdk-constructs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aws_cdk_constructs-2.9.1.tar.gz tmp/aws_cdk_constructs-2.9.2.tar.gz --markdown 20230524/a/aws-cdk-constructs/2.9.1-2.9.2/diff.md --exclude *.pyd
+[2023-05-24 12:04:49] INFO root fetch - processPackages [brainpy]: Downloading https://files.pythonhosted.org/packages/c2/e3/7bfe3256e30d7cf053ad83d8ee20d1ff96a190a4ac80e07391f80905e365/brainpy-2.4.1-py3-none-any.whl
+[2023-05-24 12:04:49] INFO root fetch - processPackages [brainpy]: executing diffoscope
+[2023-05-24 12:04:49] INFO root fetch - processPackages [brainpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/brainpy-2.4.0.0.1-py3-none-any.whl.zip tmp/brainpy-2.4.1-py3-none-any.whl.zip --markdown 20230524/b/brainpy/2.4.0.0.1-2.4.1/diff.md --exclude *.pyd
+[2023-05-24 12:04:49] INFO root fetch - main [MainThread]: End processing [automation-editor]: success
+[2023-05-24 12:04:50] INFO root fetch - main [MainThread]: End processing [je-editor-dev]: success
+[2023-05-24 12:04:50] INFO root fetch - main [MainThread]: End processing [stabby]: success
+[2023-05-24 12:04:50] INFO root fetch - main [MainThread]: End processing [mtnet]: success
+[2023-05-24 12:04:50] INFO root fetch - main [MainThread]: End processing [vbimage]: success
+[2023-05-24 12:04:50] INFO root fetch - main [MainThread]: End processing [griffe]: success
+[2023-05-24 12:04:50] INFO root fetch - main [MainThread]: End processing [aws-cdk-constructs]: success
+[2023-05-24 12:04:50] INFO root fetch - main [MainThread]: End processing [pydflow]: success
+[2023-05-24 12:04:51] INFO root fetch - main [MainThread]: End processing [ibmcloudant]: success
+[2023-05-24 12:04:58] INFO root fetch - main [MainThread]: End processing [brainpy]: success
+[2023-05-24 12:04:58] INFO root fetch - main [MainThread]: Store serial: [18227962]
