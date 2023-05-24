@@ -20837,3 +20837,92 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd4 in position 72: invalid
 [2023-05-24 19:06:48] INFO root fetch - main [MainThread]: End processing [falocalrepo]: success
 [2023-05-24 19:06:49] INFO root fetch - main [MainThread]: End processing [edc-lab-dashboard]: success
 [2023-05-24 19:06:49] INFO root fetch - main [MainThread]: Store serial: [18233317]
+[2023-05-24 19:11:53] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18233317]
+[2023-05-24 19:11:58] INFO root fetch - main [MainThread]: Found 14 changed packages
+[2023-05-24 19:11:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: edc-form-describer
+[2023-05-24 19:11:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: divio-docs-gen
+[2023-05-24 19:11:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: edc-phq9
+[2023-05-24 19:11:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: aio-dt-protocol
+[2023-05-24 19:11:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: aiodiskqueue
+[2023-05-24 19:11:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: edc-dashboard
+[2023-05-24 19:11:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: edc-csf
+[2023-05-24 19:11:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: ml-starter
+[2023-05-24 19:11:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: vssource
+[2023-05-24 19:11:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: tensortrax
+[2023-05-24 19:11:58] INFO root fetch - processPackages [edc-phq9]: New version: [0.1.8] Old Version: [0.1.7]
+[2023-05-24 19:11:58] WARNING root fetch - processPackages [aiodiskqueue]: Skipping, unable to determine old version
+[2023-05-24 19:11:58] INFO root fetch - processPackages [aiodiskqueue]: Start processing: edc-reportable
+[2023-05-24 19:11:58] INFO root fetch - main [MainThread]: End processing [aiodiskqueue] error
+[2023-05-24 19:11:58] INFO root fetch - processPackages [tensortrax]: New version: [0.9.0] Old Version: [0.8.5]
+[2023-05-24 19:11:58] WARNING root fetch - processPackages [vssource]: Skipping, unable to determine old version
+[2023-05-24 19:11:58] INFO root fetch - processPackages [vssource]: Start processing: regobslib
+[2023-05-24 19:11:58] INFO root fetch - main [MainThread]: End processing [vssource] error
+[2023-05-24 19:11:58] INFO root fetch - processPackages [edc-form-describer]: New version: [0.3.9] Old Version: [0.3.8]
+[2023-05-24 19:11:58] INFO root fetch - processPackages [aio-dt-protocol]: New version: [1.0.1] Old Version: [0.9.5]
+[2023-05-24 19:11:58] INFO root fetch - processPackages [edc-dashboard]: New version: [0.3.9] Old Version: [0.3.8]
+[2023-05-24 19:11:58] INFO root fetch - processPackages [tensortrax]: executing diffoscope
+[2023-05-24 19:11:58] INFO root fetch - processPackages [tensortrax]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tensortrax-0.8.5.tar.gz tmp/tensortrax-0.9.0.tar.gz --markdown 20230524/t/tensortrax/0.8.5-0.9.0/diff.md --exclude *.pyd
+[2023-05-24 19:11:58] INFO root fetch - processPackages [edc-csf]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-24 19:11:58] INFO root fetch - processPackages [divio-docs-gen]: New version: [0.2.7] Old Version: [0.2.6]
+[2023-05-24 19:11:58] INFO root fetch - processPackages [ml-starter]: New version: [0.0.42] Old Version: [0.0.41]
+[2023-05-24 19:11:58] INFO root fetch - processPackages [edc-reportable]: New version: [0.3.9] Old Version: [0.3.8]
+[2023-05-24 19:11:58] INFO root fetch - processPackages [regobslib]: New version: [1.0.1] Old Version: [1.0.0]
+[2023-05-24 19:11:59] INFO root fetch - processPackages [edc-phq9]: Downloading https://files.pythonhosted.org/packages/3b/8e/800a5045e44536a7761cfb50ff002e46be413f9d6aca3c8944c22cb94c6e/edc-phq9-0.1.7.tar.gz
+[2023-05-24 19:11:59] INFO root fetch - processPackages [divio-docs-gen]: Downloading https://files.pythonhosted.org/packages/73/c5/cc5a3e5f0dbe590cb1a5e298f72cc04f67f9a2a95916400f5e1db4772861/divio_docs_gen-0.2.6.tar.gz
+[2023-05-24 19:11:59] INFO root fetch - processPackages [edc-csf]: Downloading https://files.pythonhosted.org/packages/54/4c/cabd91add1ad978a5404845eee6e5b65e0cd718decb4f92cf09d20a29ea9/edc-csf-0.1.8.tar.gz
+[2023-05-24 19:11:59] INFO root fetch - processPackages [edc-form-describer]: Downloading https://files.pythonhosted.org/packages/cd/b3/f6876879ea63d0a7e54a9712dba59325d0abbfe9e74e376a504a9f4e02af/edc-form-describer-0.3.8.tar.gz
+[2023-05-24 19:11:59] INFO root fetch - processPackages [edc-dashboard]: Downloading https://files.pythonhosted.org/packages/2d/b8/29114e0dfb22fdc3bd793529dde989d9f6a5f547672fddf514129968de83/edc_dashboard-0.3.8-py3-none-any.whl
+[2023-05-24 19:11:59] INFO root fetch - processPackages [edc-reportable]: Downloading https://files.pythonhosted.org/packages/32/8e/fa3bbcdaf5cfa3229c6f75bd797d29534f2a47895889481ab484e191bef4/edc_reportable-0.3.8-py3-none-any.whl
+[2023-05-24 19:11:59] INFO root fetch - processPackages [regobslib]: Downloading https://files.pythonhosted.org/packages/a9/c8/0dd91f367831e15962ae327570d89e687005505726671c69231ff66979fa/regobslib-1.0.0.tar.gz
+[2023-05-24 19:11:59] INFO root fetch - processPackages [aio-dt-protocol]: Downloading https://files.pythonhosted.org/packages/aa/32/462ccf70094b9b0c08b8e7e8dc11ab9b130d9b9f4a88cf629059cb94d0ab/aio_dt_protocol-1.0.1.tar.gz
+[2023-05-24 19:11:59] INFO root fetch - processPackages [edc-phq9]: Downloading https://files.pythonhosted.org/packages/88/01/92d6ca18b57de3e21b3687ca7b2ace4997990ba17538db86b84b205cbfc2/edc-phq9-0.1.8.tar.gz
+[2023-05-24 19:11:59] INFO root fetch - processPackages [edc-phq9]: executing diffoscope
+[2023-05-24 19:11:59] INFO root fetch - processPackages [edc-phq9]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/edc-phq9-0.1.7.tar.gz tmp/edc-phq9-0.1.8.tar.gz --markdown 20230524/e/edc-phq9/0.1.7-0.1.8/diff.md --exclude *.pyd
+[2023-05-24 19:11:59] INFO root fetch - processPackages [regobslib]: Downloading https://files.pythonhosted.org/packages/aa/d0/5684fdec4fa4bd3b2dcbf3c6fa54fcbf3f291d7adb3bb786a36fca867593/regobslib-1.0.1.tar.gz
+[2023-05-24 19:11:59] INFO root fetch - processPackages [edc-form-describer]: Downloading https://files.pythonhosted.org/packages/04/98/6e6e648a17f6a0b548995f55504d336e29dd7540a8787396a1c8366ee999/edc-form-describer-0.3.9.tar.gz
+[2023-05-24 19:11:59] INFO root fetch - processPackages [edc-csf]: Downloading https://files.pythonhosted.org/packages/1a/31/ce8a099957f1e177b9853c8ac65ef662c1ebefa195040390b65834aa12fe/edc-csf-0.1.9.tar.gz
+[2023-05-24 19:11:59] INFO root fetch - processPackages [divio-docs-gen]: Downloading https://files.pythonhosted.org/packages/3c/5a/cec4fda6a5b7c57c1c5b2b9f43b229274f7dcf253266cd09fe97c657249c/divio_docs_gen-0.2.7.tar.gz
+[2023-05-24 19:11:59] INFO root fetch - processPackages [aio-dt-protocol]: executing diffoscope
+[2023-05-24 19:11:59] INFO root fetch - processPackages [aio-dt-protocol]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aio_dt_protocol-0.9.5.tar.gz tmp/aio_dt_protocol-1.0.1.tar.gz --markdown 20230524/a/aio-dt-protocol/0.9.5-1.0.1/diff.md --exclude *.pyd
+[2023-05-24 19:11:59] INFO root fetch - processPackages [edc-dashboard]: Downloading https://files.pythonhosted.org/packages/5e/a7/a3c0392aeb0460e65b093a1c4379917e377b84d41cb2886b5c199906a679/edc_dashboard-0.3.9-py3-none-any.whl
+[2023-05-24 19:11:59] INFO root fetch - processPackages [edc-reportable]: Downloading https://files.pythonhosted.org/packages/ad/60/92ef7f4ee0c6b8425bd586e6081f940127887d57b0a229f286f84b11f584/edc_reportable-0.3.9-py3-none-any.whl
+[2023-05-24 19:11:59] INFO root fetch - processPackages [edc-form-describer]: executing diffoscope
+[2023-05-24 19:11:59] INFO root fetch - processPackages [edc-form-describer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/edc-form-describer-0.3.8.tar.gz tmp/edc-form-describer-0.3.9.tar.gz --markdown 20230524/e/edc-form-describer/0.3.8-0.3.9/diff.md --exclude *.pyd
+[2023-05-24 19:11:59] INFO root fetch - processPackages [divio-docs-gen]: executing diffoscope
+[2023-05-24 19:11:59] INFO root fetch - processPackages [divio-docs-gen]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/divio_docs_gen-0.2.6.tar.gz tmp/divio_docs_gen-0.2.7.tar.gz --markdown 20230524/d/divio-docs-gen/0.2.6-0.2.7/diff.md --exclude *.pyd
+[2023-05-24 19:11:59] INFO root fetch - processPackages [edc-csf]: executing diffoscope
+[2023-05-24 19:11:59] INFO root fetch - processPackages [regobslib]: executing diffoscope
+[2023-05-24 19:11:59] INFO root fetch - processPackages [edc-csf]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/edc-csf-0.1.8.tar.gz tmp/edc-csf-0.1.9.tar.gz --markdown 20230524/e/edc-csf/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-24 19:11:59] INFO root fetch - processPackages [regobslib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/regobslib-1.0.0.tar.gz tmp/regobslib-1.0.1.tar.gz --markdown 20230524/r/regobslib/1.0.0-1.0.1/diff.md --exclude *.pyd
+[2023-05-24 19:11:59] INFO root fetch - processPackages [ml-starter]: Downloading https://files.pythonhosted.org/packages/cf/78/4995d4e8c34823d1846f4bdbef58f5a20716ac452aa26098505446d661ed/ml-starter-0.0.42.tar.gz
+[2023-05-24 19:11:59] INFO root fetch - processPackages [edc-dashboard]: executing diffoscope
+[2023-05-24 19:11:59] INFO root fetch - processPackages [edc-dashboard]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/edc_dashboard-0.3.8-py3-none-any.whl.zip tmp/edc_dashboard-0.3.9-py3-none-any.whl.zip --markdown 20230524/e/edc-dashboard/0.3.8-0.3.9/diff.md --exclude *.pyd
+[2023-05-24 19:11:59] INFO root fetch - processPackages [edc-reportable]: executing diffoscope
+[2023-05-24 19:11:59] INFO root fetch - processPackages [edc-reportable]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/edc_reportable-0.3.8-py3-none-any.whl.zip tmp/edc_reportable-0.3.9-py3-none-any.whl.zip --markdown 20230524/e/edc-reportable/0.3.8-0.3.9/diff.md --exclude *.pyd
+[2023-05-24 19:11:59] INFO root fetch - processPackages [ml-starter]: executing diffoscope
+[2023-05-24 19:11:59] INFO root fetch - processPackages [ml-starter]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ml-starter-0.0.41.tar.gz tmp/ml-starter-0.0.42.tar.gz --markdown 20230524/m/ml-starter/0.0.41-0.0.42/diff.md --exclude *.pyd
+[2023-05-24 19:12:01] INFO root fetch - processPackages [tensortrax]: Start processing: edc-vitals
+[2023-05-24 19:12:01] INFO root fetch - main [MainThread]: End processing [tensortrax]: success
+[2023-05-24 19:12:01] INFO root fetch - processPackages [edc-vitals]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-24 19:12:01] INFO root fetch - processPackages [divio-docs-gen]: Start processing: edc-metadata
+[2023-05-24 19:12:01] INFO root fetch - main [MainThread]: End processing [divio-docs-gen]: success
+[2023-05-24 19:12:01] INFO root fetch - main [MainThread]: End processing [regobslib]: success
+[2023-05-24 19:12:01] INFO root fetch - main [MainThread]: End processing [aio-dt-protocol]: success
+[2023-05-24 19:12:01] INFO root fetch - processPackages [edc-vitals]: Downloading https://files.pythonhosted.org/packages/6d/b5/97242e3e0ec45e2d062e7f2999557f5f167414a2f2c2997095d826a71496/edc-vitals-0.1.8.tar.gz
+[2023-05-24 19:12:01] INFO root fetch - main [MainThread]: End processing [edc-phq9]: success
+[2023-05-24 19:12:01] INFO root fetch - processPackages [edc-metadata]: New version: [0.3.9] Old Version: [0.3.8]
+[2023-05-24 19:12:01] INFO root fetch - main [MainThread]: End processing [edc-form-describer]: success
+[2023-05-24 19:12:01] INFO root fetch - main [MainThread]: End processing [edc-reportable]: success
+[2023-05-24 19:12:01] INFO root fetch - processPackages [edc-metadata]: Downloading https://files.pythonhosted.org/packages/31/9d/7e4dc7d00a9f09501415d10d685657f87a104cade0c183eeed14910dacce/edc_metadata-0.3.8-py3-none-any.whl
+[2023-05-24 19:12:01] INFO root fetch - processPackages [edc-vitals]: Downloading https://files.pythonhosted.org/packages/95/4a/974f2c31cdc4016c471ab90e304d5df3635216418967ed5c8b9e11ba8dab/edc-vitals-0.1.9.tar.gz
+[2023-05-24 19:12:01] INFO root fetch - processPackages [edc-vitals]: executing diffoscope
+[2023-05-24 19:12:01] INFO root fetch - processPackages [edc-vitals]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/edc-vitals-0.1.8.tar.gz tmp/edc-vitals-0.1.9.tar.gz --markdown 20230524/e/edc-vitals/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-24 19:12:01] INFO root fetch - main [MainThread]: End processing [edc-csf]: success
+[2023-05-24 19:12:01] INFO root fetch - main [MainThread]: End processing [edc-dashboard]: success
+[2023-05-24 19:12:01] INFO root fetch - processPackages [edc-metadata]: Downloading https://files.pythonhosted.org/packages/fc/87/223d66df835d66d65b4b4fee1285f68343b30d95b0385ea166afd9f48874/edc_metadata-0.3.9-py3-none-any.whl
+[2023-05-24 19:12:02] INFO root fetch - processPackages [edc-metadata]: executing diffoscope
+[2023-05-24 19:12:02] INFO root fetch - processPackages [edc-metadata]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/edc_metadata-0.3.8-py3-none-any.whl.zip tmp/edc_metadata-0.3.9-py3-none-any.whl.zip --markdown 20230524/e/edc-metadata/0.3.8-0.3.9/diff.md --exclude *.pyd
+[2023-05-24 19:12:02] INFO root fetch - main [MainThread]: End processing [edc-vitals]: success
+[2023-05-24 19:12:03] INFO root fetch - main [MainThread]: End processing [edc-metadata]: success
+[2023-05-24 19:12:04] INFO root fetch - main [MainThread]: End processing [ml-starter]: success
+[2023-05-24 19:12:04] INFO root fetch - main [MainThread]: Store serial: [18233355]
