@@ -8462,3 +8462,43 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-05-24 07:56:57] INFO root fetch - main [MainThread]: End processing [mizu]: success
 [2023-05-24 07:56:58] INFO root fetch - main [MainThread]: End processing [edman-cli]: success
 [2023-05-24 07:56:58] INFO root fetch - main [MainThread]: Store serial: [18225566]
+[2023-05-24 08:02:02] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18225566]
+[2023-05-24 08:02:07] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-05-24 08:02:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: slangpy
+[2023-05-24 08:02:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: funasr
+[2023-05-24 08:02:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: prfiesta
+[2023-05-24 08:02:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: jijmodeling
+[2023-05-24 08:02:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: cloud-governance
+[2023-05-24 08:02:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: pysiml
+[2023-05-24 08:02:07] INFO root fetch - processPackages [slangpy]: New version: [0.2.8] Old Version: [0.2.7]
+[2023-05-24 08:02:07] INFO root fetch - processPackages [funasr]: New version: [0.5.6] Old Version: [0.5.5]
+[2023-05-24 08:02:07] INFO root fetch - processPackages [jijmodeling]: New version: [0.9.9] Old Version: [0.9.8]
+[2023-05-24 08:02:07] INFO root fetch - processPackages [prfiesta]: New version: [0.8.1b127] Old Version: [0.8.1b126]
+[2023-05-24 08:02:07] INFO root fetch - processPackages [cloud-governance]: New version: [1.1.99] Old Version: [1.1.98]
+[2023-05-24 08:02:07] INFO root fetch - processPackages [pysiml]: New version: [0.2.9.dev202305240600] Old Version: [0.2.9.dev202305021032]
+[2023-05-24 08:02:07] INFO root fetch - processPackages [slangpy]: Downloading https://files.pythonhosted.org/packages/18/d4/634d19776179d9f7aad7a45190b0f8c3d39089a2e539c95685d498ea9942/slangpy-0.2.7.tar.gz
+[2023-05-24 08:02:07] INFO root fetch - processPackages [prfiesta]: Downloading https://files.pythonhosted.org/packages/75/2c/44186c737cb2c6b738df32f6b8f814ba4367055cb1d60ce945b4dad92def/prfiesta-0.8.1b126.tar.gz
+[2023-05-24 08:02:07] INFO root fetch - processPackages [jijmodeling]: Downloading https://files.pythonhosted.org/packages/49/fc/537e863c69af7f86de4ae2f7cb3b9df507938ba8fcbd0fe6c683b76b6e75/jijmodeling-0.9.8-cp39-cp39-win_amd64.whl
+[2023-05-24 08:02:07] WARNING root fetch - processPackages [slangpy]: Skipping package: exceeds size limit 12947118>=10485760
+[2023-05-24 08:02:07] INFO root fetch - main [MainThread]: End processing [slangpy] error
+[2023-05-24 08:02:07] INFO root fetch - processPackages [pysiml]: Downloading https://files.pythonhosted.org/packages/03/2c/a7580921fced28068c1d96835cb60840f51c60415e99674ee7876ee36234/pysiml-0.2.9.dev202305021032-py3-none-any.whl
+[2023-05-24 08:02:07] INFO root fetch - processPackages [funasr]: Downloading https://files.pythonhosted.org/packages/0d/c5/ba4981bd5977fef3f4657d00aa1388e0c15c2521c9885d9353f32af01dc0/funasr-0.5.6.tar.gz
+[2023-05-24 08:02:07] INFO root fetch - processPackages [funasr]: executing diffoscope
+[2023-05-24 08:02:07] INFO root fetch - processPackages [funasr]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/funasr-0.5.5.tar.gz tmp/funasr-0.5.6.tar.gz --markdown 20230524/f/funasr/0.5.5-0.5.6/diff.md --exclude *.pyd
+[2023-05-24 08:02:07] INFO root fetch - processPackages [prfiesta]: Downloading https://files.pythonhosted.org/packages/e1/48/3199cd81076b0b741ff64d13d2311b630e40d9206cd5a0f5ecbe751496ec/prfiesta-0.8.1b127.tar.gz
+[2023-05-24 08:02:07] INFO root fetch - processPackages [cloud-governance]: executing diffoscope
+[2023-05-24 08:02:07] INFO root fetch - processPackages [cloud-governance]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cloud-governance-1.1.98.tar.gz tmp/cloud-governance-1.1.99.tar.gz --markdown 20230524/c/cloud-governance/1.1.98-1.1.99/diff.md --exclude *.pyd
+[2023-05-24 08:02:08] INFO root fetch - processPackages [prfiesta]: executing diffoscope
+[2023-05-24 08:02:08] INFO root fetch - processPackages [prfiesta]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/prfiesta-0.8.1b126.tar.gz tmp/prfiesta-0.8.1b127.tar.gz --markdown 20230524/p/prfiesta/0.8.1b126-0.8.1b127/diff.md --exclude *.pyd
+[2023-05-24 08:02:08] INFO root fetch - processPackages [pysiml]: Downloading https://files.pythonhosted.org/packages/2d/92/37dcae8315ff524968df1f1f97e39fda9481e52ecb1149b4a0dac9cd2aa1/pysiml-0.2.9.dev202305240600-py3-none-any.whl
+[2023-05-24 08:02:08] INFO root fetch - processPackages [pysiml]: executing diffoscope
+[2023-05-24 08:02:08] INFO root fetch - processPackages [pysiml]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pysiml-0.2.9.dev202305021032-py3-none-any.whl.zip tmp/pysiml-0.2.9.dev202305240600-py3-none-any.whl.zip --markdown 20230524/p/pysiml/0.2.9.dev202305021032-0.2.9.dev202305240600/diff.md --exclude *.pyd
+[2023-05-24 08:02:08] INFO root fetch - processPackages [jijmodeling]: Downloading https://files.pythonhosted.org/packages/89/d0/6cb71561aecdb852259cf24ad501a533d6d8ff22ba4e5836ab18377e567f/jijmodeling-0.9.9-cp39-cp39-win_amd64.whl
+[2023-05-24 08:02:08] INFO root fetch - processPackages [jijmodeling]: executing diffoscope
+[2023-05-24 08:02:08] INFO root fetch - processPackages [jijmodeling]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jijmodeling-0.9.8-cp39-cp39-win_amd64.whl.zip tmp/jijmodeling-0.9.9-cp39-cp39-win_amd64.whl.zip --markdown 20230524/j/jijmodeling/0.9.8-0.9.9/diff.md --exclude *.pyd
+[2023-05-24 08:02:09] INFO root fetch - main [MainThread]: End processing [prfiesta]: success
+[2023-05-24 08:02:09] INFO root fetch - main [MainThread]: End processing [cloud-governance]: success
+[2023-05-24 08:02:09] INFO root fetch - main [MainThread]: End processing [pysiml]: success
+[2023-05-24 08:02:14] INFO root fetch - main [MainThread]: End processing [funasr]: success
+[2023-05-24 08:02:15] INFO root fetch - main [MainThread]: End processing [jijmodeling]: success
+[2023-05-24 08:02:15] INFO root fetch - main [MainThread]: Store serial: [18225611]
