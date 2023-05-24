@@ -21359,3 +21359,72 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd4 in position 72: invalid
 [2023-05-24 19:33:47] INFO root fetch - main [MainThread]: End processing [modelbit]: success
 [2023-05-24 19:33:49] INFO root fetch - main [MainThread]: End processing [open-dread-rando]: success
 [2023-05-24 19:33:49] INFO root fetch - main [MainThread]: Store serial: [18233679]
+[2023-05-24 19:38:56] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18233679]
+[2023-05-24 19:39:01] INFO root fetch - main [MainThread]: Found 13 changed packages
+[2023-05-24 19:39:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: envoy.code.check
+[2023-05-24 19:39:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: speech-collator
+[2023-05-24 19:39:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: autora-experimentalist-sampler-uncertainty
+[2023-05-24 19:39:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: oedisi
+[2023-05-24 19:39:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: photcal
+[2023-05-24 19:39:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: edc
+[2023-05-24 19:39:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: devstats
+[2023-05-24 19:39:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: th2-data-services-lwdp
+[2023-05-24 19:39:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: RealEstate-package
+[2023-05-24 19:39:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: embiggen
+[2023-05-24 19:39:01] INFO root fetch - processPackages [envoy.code.check]: New version: [0.5.1] Old Version: [0.5.0]
+[2023-05-24 19:39:01] INFO root fetch - processPackages [speech-collator]: New version: [0.1.7] Old Version: [0.1.6]
+[2023-05-24 19:39:01] INFO root fetch - processPackages [th2-data-services-lwdp]: New version: [2.0.3.0.dev4893468846] Old Version: [2.0.2.0.dev4818891739]
+[2023-05-24 19:39:01] WARNING root fetch - processPackages [oedisi]: Skipping, unable to determine old version
+[2023-05-24 19:39:01] INFO root fetch - processPackages [oedisi]: Start processing: python-lsp-pyre
+[2023-05-24 19:39:01] INFO root fetch - main [MainThread]: End processing [oedisi] error
+[2023-05-24 19:39:01] INFO root fetch - processPackages [envoy.code.check]: executing diffoscope
+[2023-05-24 19:39:01] INFO root fetch - processPackages [envoy.code.check]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/envoy.code.check-0.5.0.tar.gz tmp/envoy.code.check-0.5.1.tar.gz --markdown 20230524/e/envoy.code.check/0.5.0-0.5.1/diff.md --exclude *.pyd
+[2023-05-24 19:39:01] INFO root fetch - processPackages [edc]: New version: [0.4.93] Old Version: [0.4.92]
+[2023-05-24 19:39:01] INFO root fetch - processPackages [devstats]: New version: [0.1rc1] Old Version: [0.1rc0]
+[2023-05-24 19:39:01] WARNING root fetch - processPackages [photcal]: Skipping, unable to determine old version
+[2023-05-24 19:39:01] INFO root fetch - processPackages [photcal]: Start processing: fern-persona
+[2023-05-24 19:39:01] INFO root fetch - main [MainThread]: End processing [photcal] error
+[2023-05-24 19:39:01] WARNING root fetch - processPackages [autora-experimentalist-sampler-uncertainty]: Skipping, unable to determine old version
+[2023-05-24 19:39:01] INFO root fetch - processPackages [embiggen]: New version: [0.9.3] Old Version: [0.9.2]
+[2023-05-24 19:39:01] INFO root fetch - processPackages [autora-experimentalist-sampler-uncertainty]: Start processing: cdsspy
+[2023-05-24 19:39:01] INFO root fetch - main [MainThread]: End processing [autora-experimentalist-sampler-uncertainty] error
+[2023-05-24 19:39:01] WARNING root fetch - processPackages [RealEstate-package]: Skipping, unable to determine old version
+[2023-05-24 19:39:01] INFO root fetch - main [MainThread]: End processing [RealEstate-package] error
+[2023-05-24 19:39:01] WARNING root fetch - processPackages [python-lsp-pyre]: Skipping, unable to determine old version
+[2023-05-24 19:39:01] INFO root fetch - main [MainThread]: End processing [python-lsp-pyre] error
+[2023-05-24 19:39:01] INFO root fetch - processPackages [cdsspy]: New version: [1.2.69] Old Version: [1.2.68]
+[2023-05-24 19:39:01] INFO root fetch - processPackages [th2-data-services-lwdp]: Downloading https://files.pythonhosted.org/packages/af/c8/74f8878a7bce2ca6b0847a9b1156c8d5e21dfd7646d9b00e6ed66e0a65d5/th2_data_services_lwdp-2.0.2.0.dev4818891739.tar.gz
+[2023-05-24 19:39:01] INFO root fetch - processPackages [fern-persona]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-05-24 19:39:01] INFO root fetch - processPackages [speech-collator]: Downloading https://files.pythonhosted.org/packages/4b/88/0329430d75a9b8c955cca54b962ed6066d2f64875c5bf308d32aba703a3e/speech_collator-0.1.7.tar.gz
+[2023-05-24 19:39:01] INFO root fetch - processPackages [edc]: Downloading https://files.pythonhosted.org/packages/06/6d/1d0e9b0a02eb677308c890f15e6b7b140613328c1a2519bffa198094fed6/edc-0.4.92.tar.gz
+[2023-05-24 19:39:01] INFO root fetch - processPackages [embiggen]: Downloading https://files.pythonhosted.org/packages/93/68/e13cdca050b32069a58f9e36d05835a384d261a5d1f299af468629e721e1/embiggen-0.9.2.tar.gz
+[2023-05-24 19:39:01] INFO root fetch - processPackages [devstats]: Downloading https://files.pythonhosted.org/packages/ed/39/2eea06d539b287f8f7a9580ea2ffa4c703bc4504abf4961f4237f26e678a/devstats-0.1rc0.tar.gz
+[2023-05-24 19:39:02] INFO root fetch - processPackages [speech-collator]: executing diffoscope
+[2023-05-24 19:39:02] INFO root fetch - processPackages [speech-collator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/speech_collator-0.1.6.tar.gz tmp/speech_collator-0.1.7.tar.gz --markdown 20230524/s/speech-collator/0.1.6-0.1.7/diff.md --exclude *.pyd
+[2023-05-24 19:39:02] INFO root fetch - processPackages [cdsspy]: Downloading https://files.pythonhosted.org/packages/38/80/6f34471c4b149e5a8e8f4d02493cf8551c6d7d86cb7f59cf43033d8db487/cdsspy-1.2.69.tar.gz
+[2023-05-24 19:39:02] INFO root fetch - processPackages [cdsspy]: executing diffoscope
+[2023-05-24 19:39:02] INFO root fetch - processPackages [cdsspy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdsspy-1.2.68.tar.gz tmp/cdsspy-1.2.69.tar.gz --markdown 20230524/c/cdsspy/1.2.68-1.2.69/diff.md --exclude *.pyd
+[2023-05-24 19:39:02] INFO root fetch - processPackages [embiggen]: Downloading https://files.pythonhosted.org/packages/4b/25/4e08b9a62e34917ef75c8ed47526252ca4bcd5d5e15961bc14dc9486ccf8/embiggen-0.9.3.tar.gz
+[2023-05-24 19:39:02] INFO root fetch - processPackages [th2-data-services-lwdp]: Downloading https://files.pythonhosted.org/packages/ca/fe/ef0ac56e377b12c5ad8a4b941f4ff229eb58f93c6871bcb29adf81162a04/th2_data_services_lwdp-2.0.3.0.dev4893468846.tar.gz
+[2023-05-24 19:39:02] INFO root fetch - processPackages [embiggen]: executing diffoscope
+[2023-05-24 19:39:02] INFO root fetch - processPackages [embiggen]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/embiggen-0.9.2.tar.gz tmp/embiggen-0.9.3.tar.gz --markdown 20230524/e/embiggen/0.9.2-0.9.3/diff.md --exclude *.pyd
+[2023-05-24 19:39:02] INFO root fetch - processPackages [edc]: Downloading https://files.pythonhosted.org/packages/3a/93/d32d5721aa7800909df29e10ec1b5dcf9cd01777f5e3bee877f8985b5f49/edc-0.4.93.tar.gz
+[2023-05-24 19:39:02] INFO root fetch - processPackages [devstats]: Downloading https://files.pythonhosted.org/packages/51/54/ba6491bd0edb0a9bff0f61a944b507807c7468893a6617fd590df4ea5f23/devstats-0.1rc1.tar.gz
+[2023-05-24 19:39:02] INFO root fetch - processPackages [fern-persona]: Downloading https://files.pythonhosted.org/packages/db/c7/b09cacf3a5b524ffc731147f8bdd792d6677a4716b04e07153a1f86749f7/fern_persona-0.0.3.tar.gz
+[2023-05-24 19:39:02] INFO root fetch - processPackages [th2-data-services-lwdp]: executing diffoscope
+[2023-05-24 19:39:02] INFO root fetch - processPackages [th2-data-services-lwdp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/th2_data_services_lwdp-2.0.2.0.dev4818891739.tar.gz tmp/th2_data_services_lwdp-2.0.3.0.dev4893468846.tar.gz --markdown 20230524/t/th2-data-services-lwdp/2.0.2.0.dev4818891739-2.0.3.0.dev4893468846/diff.md --exclude *.pyd
+[2023-05-24 19:39:02] INFO root fetch - processPackages [devstats]: executing diffoscope
+[2023-05-24 19:39:02] INFO root fetch - processPackages [devstats]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/devstats-0.1rc0.tar.gz tmp/devstats-0.1rc1.tar.gz --markdown 20230524/d/devstats/0.1rc0-0.1rc1/diff.md --exclude *.pyd
+[2023-05-24 19:39:02] INFO root fetch - processPackages [fern-persona]: executing diffoscope
+[2023-05-24 19:39:02] INFO root fetch - processPackages [fern-persona]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fern_persona-0.0.2.tar.gz tmp/fern_persona-0.0.3.tar.gz --markdown 20230524/f/fern-persona/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-05-24 19:39:02] INFO root fetch - processPackages [edc]: executing diffoscope
+[2023-05-24 19:39:02] INFO root fetch - processPackages [edc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/edc-0.4.92.tar.gz tmp/edc-0.4.93.tar.gz --markdown 20230524/e/edc/0.4.92-0.4.93/diff.md --exclude *.pyd
+[2023-05-24 19:39:03] INFO root fetch - main [MainThread]: End processing [envoy.code.check]: success
+[2023-05-24 19:39:03] INFO root fetch - main [MainThread]: End processing [devstats]: success
+[2023-05-24 19:39:03] INFO root fetch - main [MainThread]: End processing [th2-data-services-lwdp]: success
+[2023-05-24 19:39:03] INFO root fetch - main [MainThread]: End processing [edc]: success
+[2023-05-24 19:39:04] INFO root fetch - main [MainThread]: End processing [cdsspy]: success
+[2023-05-24 19:39:04] INFO root fetch - main [MainThread]: End processing [embiggen]: success
+[2023-05-24 19:39:05] INFO root fetch - main [MainThread]: End processing [speech-collator]: success
+[2023-05-24 19:39:11] INFO root fetch - main [MainThread]: End processing [fern-persona]: success
+[2023-05-24 19:39:11] INFO root fetch - main [MainThread]: Store serial: [18233734]
