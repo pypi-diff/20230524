@@ -19838,3 +19838,124 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd4 in position 72: invalid
 [2023-05-24 18:28:37] INFO root fetch - main [MainThread]: End processing [domolibrary]: success
 [2023-05-24 18:28:50] INFO root fetch - main [MainThread]: End processing [rime-sdk]: success
 [2023-05-24 18:28:50] INFO root fetch - main [MainThread]: Store serial: [18232761]
+[2023-05-24 18:33:54] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18232761]
+[2023-05-24 18:33:59] INFO root fetch - main [MainThread]: Found 20 changed packages
+[2023-05-24 18:33:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: xeno
+[2023-05-24 18:33:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: edc-device
+[2023-05-24 18:33:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: transaction-indexer-quality-checker
+[2023-05-24 18:33:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: schema-jobs
+[2023-05-24 18:33:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: edc-locator
+[2023-05-24 18:33:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: ValiotWorker
+[2023-05-24 18:33:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: edc-adherence
+[2023-05-24 18:33:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: rzpipe
+[2023-05-24 18:33:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: django-dbmi-client
+[2023-05-24 18:33:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: ifd-python
+[2023-05-24 18:33:59] WARNING root fetch - processPackages [transaction-indexer-quality-checker]: Skipping, unable to determine old version
+[2023-05-24 18:33:59] INFO root fetch - processPackages [transaction-indexer-quality-checker]: Start processing: edc-ltfu
+[2023-05-24 18:33:59] INFO root fetch - main [MainThread]: End processing [transaction-indexer-quality-checker] error
+[2023-05-24 18:33:59] INFO root fetch - processPackages [edc-locator]: New version: [0.3.9] Old Version: [0.3.8]
+[2023-05-24 18:33:59] INFO root fetch - processPackages [django-dbmi-client]: New version: [1.0.4] Old Version: [1.0.3]
+[2023-05-24 18:33:59] INFO root fetch - processPackages [ValiotWorker]: New version: [5.3.3] Old Version: [5.3.2]
+[2023-05-24 18:33:59] INFO root fetch - processPackages [schema-jobs]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-24 18:33:59] INFO root fetch - processPackages [edc-device]: New version: [0.3.9] Old Version: [0.3.8]
+[2023-05-24 18:33:59] INFO root fetch - processPackages [edc-adherence]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-24 18:33:59] INFO root fetch - processPackages [rzpipe]: New version: [0.5.0] Old Version: [0.4.0]
+[2023-05-24 18:33:59] INFO root fetch - processPackages [ifd-python]: New version: [10.1.5] Old Version: [10.1.4]
+[2023-05-24 18:33:59] INFO root fetch - processPackages [edc-ltfu]: New version: [0.3.9] Old Version: [0.3.8]
+[2023-05-24 18:33:59] INFO root fetch - processPackages [xeno]: New version: [6.1.2] Old Version: [6.1.1]
+[2023-05-24 18:33:59] INFO root fetch - processPackages [ValiotWorker]: executing diffoscope
+[2023-05-24 18:33:59] INFO root fetch - processPackages [ValiotWorker]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ValiotWorker-5.3.2.tar.gz tmp/ValiotWorker-5.3.3.tar.gz --markdown 20230524/V/ValiotWorker/5.3.2-5.3.3/diff.md --exclude *.pyd
+[2023-05-24 18:33:59] INFO root fetch - processPackages [schema-jobs]: executing diffoscope
+[2023-05-24 18:33:59] INFO root fetch - processPackages [schema-jobs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/schema_jobs-0.1.8.tar.gz tmp/schema_jobs-0.1.9.tar.gz --markdown 20230524/s/schema-jobs/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-24 18:33:59] INFO root fetch - processPackages [edc-locator]: Downloading https://files.pythonhosted.org/packages/23/dc/5dfe8e311dc347218bf82960648dd9859311bda95f3734940080bbee8770/edc_locator-0.3.8-py3-none-any.whl
+[2023-05-24 18:33:59] INFO root fetch - processPackages [django-dbmi-client]: Downloading https://files.pythonhosted.org/packages/87/c3/1d0aa873c536bc8d8b31d61b19ca0e51b65c9f2bec1969db3b0869775716/django-dbmi-client-1.0.4.tar.gz
+[2023-05-24 18:33:59] INFO root fetch - processPackages [xeno]: Downloading https://files.pythonhosted.org/packages/cd/02/9e504e465004e398362542ae5b2aa575f2df230476e022df25e7a79e4808/xeno-6.1.1.tar.gz
+[2023-05-24 18:33:59] INFO root fetch - processPackages [edc-adherence]: Downloading https://files.pythonhosted.org/packages/20/d1/e99c9b905ff807b4c6e0dd6992336666d95c1ec75f11caa823f5bf676965/edc-adherence-0.1.8.tar.gz
+[2023-05-24 18:33:59] INFO root fetch - processPackages [edc-device]: Downloading https://files.pythonhosted.org/packages/e3/7a/02324650b8ff9c542bc549c5ec311ba535bec30a4505ee2084442206fccc/edc-device-0.3.8.tar.gz
+[2023-05-24 18:33:59] INFO root fetch - processPackages [ifd-python]: Downloading https://files.pythonhosted.org/packages/01/c1/86556a33dc95642bced2fb94babbefc5bec488614043fe64bc061be463f0/ifd_python-10.1.4.tar.gz
+[2023-05-24 18:33:59] INFO root fetch - processPackages [django-dbmi-client]: executing diffoscope
+[2023-05-24 18:33:59] INFO root fetch - processPackages [django-dbmi-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django-dbmi-client-1.0.3.tar.gz tmp/django-dbmi-client-1.0.4.tar.gz --markdown 20230524/d/django-dbmi-client/1.0.3-1.0.4/diff.md --exclude *.pyd
+[2023-05-24 18:33:59] INFO root fetch - processPackages [edc-ltfu]: Downloading https://files.pythonhosted.org/packages/99/07/524b6a9cfcf1cf782087cdcad1cb9a01ff3bcbe7e150dbe153276f582d46/edc_ltfu-0.3.8-py3-none-any.whl
+[2023-05-24 18:33:59] INFO root fetch - processPackages [rzpipe]: Downloading https://files.pythonhosted.org/packages/fa/ff/fd9d3af4da2e5d57dd03ff581bb7d1fc08ec41963d46f60368a7597c3666/rzpipe-0.4.0.tar.gz
+[2023-05-24 18:33:59] INFO root fetch - processPackages [ifd-python]: Downloading https://files.pythonhosted.org/packages/38/93/1e706c802b516da5f8fc3a83e865f503b52acf2d4d67134ee47cdacf1930/ifd_python-10.1.5.tar.gz
+[2023-05-24 18:33:59] INFO root fetch - processPackages [edc-locator]: Downloading https://files.pythonhosted.org/packages/8d/89/63cfcd98d138c00cbdb907bc1bf53adc8d3af73e2a79ce70d1e6deccd71a/edc_locator-0.3.9-py3-none-any.whl
+[2023-05-24 18:33:59] INFO root fetch - processPackages [rzpipe]: Downloading https://files.pythonhosted.org/packages/6c/9f/70003320e4b909c19423f0b7a1adb385e3474b1544857b69639b111884fb/rzpipe-0.5.0.tar.gz
+[2023-05-24 18:33:59] INFO root fetch - processPackages [edc-ltfu]: Downloading https://files.pythonhosted.org/packages/f4/4d/223c39e0e8009dbf8a6ba97f7baac1c6b6e3aee426e984bc4f779018e32f/edc_ltfu-0.3.9-py3-none-any.whl
+[2023-05-24 18:33:59] INFO root fetch - processPackages [ifd-python]: executing diffoscope
+[2023-05-24 18:33:59] INFO root fetch - processPackages [ifd-python]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ifd_python-10.1.4.tar.gz tmp/ifd_python-10.1.5.tar.gz --markdown 20230524/i/ifd-python/10.1.4-10.1.5/diff.md --exclude *.pyd
+[2023-05-24 18:33:59] INFO root fetch - processPackages [xeno]: Downloading https://files.pythonhosted.org/packages/e8/e1/e2b04b40f358682964a3b9772489e0dbc0165ed783159b2037943a5953ae/xeno-6.1.2.tar.gz
+[2023-05-24 18:33:59] INFO root fetch - processPackages [edc-device]: Downloading https://files.pythonhosted.org/packages/5d/82/242f0f5054f69e855529f6aff265d9f0ea7cb293e23f55d79cf720b8cd83/edc-device-0.3.9.tar.gz
+[2023-05-24 18:33:59] INFO root fetch - processPackages [rzpipe]: executing diffoscope
+[2023-05-24 18:33:59] INFO root fetch - processPackages [rzpipe]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rzpipe-0.4.0.tar.gz tmp/rzpipe-0.5.0.tar.gz --markdown 20230524/r/rzpipe/0.4.0-0.5.0/diff.md --exclude *.pyd
+[2023-05-24 18:33:59] INFO root fetch - processPackages [xeno]: executing diffoscope
+[2023-05-24 18:33:59] INFO root fetch - processPackages [xeno]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xeno-6.1.1.tar.gz tmp/xeno-6.1.2.tar.gz --markdown 20230524/x/xeno/6.1.1-6.1.2/diff.md --exclude *.pyd
+[2023-05-24 18:33:59] INFO root fetch - processPackages [edc-locator]: executing diffoscope
+[2023-05-24 18:33:59] INFO root fetch - processPackages [edc-locator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/edc_locator-0.3.8-py3-none-any.whl.zip tmp/edc_locator-0.3.9-py3-none-any.whl.zip --markdown 20230524/e/edc-locator/0.3.8-0.3.9/diff.md --exclude *.pyd
+[2023-05-24 18:33:59] INFO root fetch - processPackages [edc-ltfu]: executing diffoscope
+[2023-05-24 18:33:59] INFO root fetch - processPackages [edc-ltfu]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/edc_ltfu-0.3.8-py3-none-any.whl.zip tmp/edc_ltfu-0.3.9-py3-none-any.whl.zip --markdown 20230524/e/edc-ltfu/0.3.8-0.3.9/diff.md --exclude *.pyd
+[2023-05-24 18:34:00] INFO root fetch - processPackages [edc-device]: executing diffoscope
+[2023-05-24 18:34:00] INFO root fetch - processPackages [edc-device]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/edc-device-0.3.8.tar.gz tmp/edc-device-0.3.9.tar.gz --markdown 20230524/e/edc-device/0.3.8-0.3.9/diff.md --exclude *.pyd
+[2023-05-24 18:34:00] INFO root fetch - processPackages [edc-adherence]: Downloading https://files.pythonhosted.org/packages/eb/8a/d4f08dd464918c67eaaf5e360e6e8068f5970056cc9c9461ea1947751a43/edc-adherence-0.1.9.tar.gz
+[2023-05-24 18:34:00] INFO root fetch - processPackages [edc-adherence]: executing diffoscope
+[2023-05-24 18:34:00] INFO root fetch - processPackages [edc-adherence]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/edc-adherence-0.1.8.tar.gz tmp/edc-adherence-0.1.9.tar.gz --markdown 20230524/e/edc-adherence/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-24 18:34:00] INFO root fetch - processPackages [ValiotWorker]: Start processing: echofish-aws-raw-to-zarr-dlq-lambda
+[2023-05-24 18:34:00] INFO root fetch - main [MainThread]: End processing [ValiotWorker]: success
+[2023-05-24 18:34:00] INFO root fetch - processPackages [schema-jobs]: Start processing: vssource
+[2023-05-24 18:34:00] INFO root fetch - main [MainThread]: End processing [schema-jobs]: success
+[2023-05-24 18:34:00] WARNING root fetch - processPackages [echofish-aws-raw-to-zarr-dlq-lambda]: Skipping, unable to determine old version
+[2023-05-24 18:34:00] INFO root fetch - processPackages [echofish-aws-raw-to-zarr-dlq-lambda]: Start processing: EdgeGPT
+[2023-05-24 18:34:00] INFO root fetch - main [MainThread]: End processing [echofish-aws-raw-to-zarr-dlq-lambda] error
+[2023-05-24 18:34:00] WARNING root fetch - processPackages [vssource]: Skipping, unable to determine old version
+[2023-05-24 18:34:00] INFO root fetch - processPackages [vssource]: Start processing: bose
+[2023-05-24 18:34:00] INFO root fetch - main [MainThread]: End processing [vssource] error
+[2023-05-24 18:34:00] INFO root fetch - processPackages [bose]: New version: [1.5.3] Old Version: [1.5.1]
+[2023-05-24 18:34:00] INFO root fetch - processPackages [EdgeGPT]: New version: [0.6.3] Old Version: [0.6.2]
+[2023-05-24 18:34:01] INFO root fetch - processPackages [bose]: executing diffoscope
+[2023-05-24 18:34:01] INFO root fetch - processPackages [bose]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bose-1.5.1.tar.gz tmp/bose-1.5.3.tar.gz --markdown 20230524/b/bose/1.5.1-1.5.3/diff.md --exclude *.pyd
+[2023-05-24 18:34:01] INFO root fetch - processPackages [ifd-python]: Start processing: edc-registration
+[2023-05-24 18:34:01] INFO root fetch - main [MainThread]: End processing [ifd-python]: success
+[2023-05-24 18:34:01] INFO root fetch - processPackages [rzpipe]: Start processing: edc-model
+[2023-05-24 18:34:01] INFO root fetch - main [MainThread]: End processing [rzpipe]: success
+[2023-05-24 18:34:01] INFO root fetch - processPackages [edc-model]: New version: [0.3.9] Old Version: [0.3.8]
+[2023-05-24 18:34:01] INFO root fetch - processPackages [edc-registration]: New version: [0.3.9] Old Version: [0.3.8]
+[2023-05-24 18:34:01] INFO root fetch - processPackages [EdgeGPT]: Downloading https://files.pythonhosted.org/packages/7c/4a/77de74209442f1aa214295f75bbc5732a48282d98dcedeedf94ac948b55a/EdgeGPT-0.6.3.tar.gz
+[2023-05-24 18:34:01] INFO root fetch - processPackages [edc-model]: Downloading https://files.pythonhosted.org/packages/2f/50/3f093f49f84fdca943092a526df4af7162f963b74ba735c31e895648d975/edc_model-0.3.8-py3-none-any.whl
+[2023-05-24 18:34:01] INFO root fetch - processPackages [EdgeGPT]: executing diffoscope
+[2023-05-24 18:34:01] INFO root fetch - processPackages [EdgeGPT]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/EdgeGPT-0.6.2.tar.gz tmp/EdgeGPT-0.6.3.tar.gz --markdown 20230524/E/EdgeGPT/0.6.2-0.6.3/diff.md --exclude *.pyd
+[2023-05-24 18:34:01] INFO root fetch - processPackages [edc-registration]: Downloading https://files.pythonhosted.org/packages/dc/88/0563544c9dceea4ec160655dc4f86b36d97def66763381459106a45d1df7/edc_registration-0.3.8-py3-none-any.whl
+[2023-05-24 18:34:01] INFO root fetch - processPackages [edc-locator]: Start processing: edc-model-fields
+[2023-05-24 18:34:01] INFO root fetch - main [MainThread]: End processing [edc-locator]: success
+[2023-05-24 18:34:01] INFO root fetch - processPackages [edc-model-fields]: New version: [0.3.6] Old Version: [0.3.4]
+[2023-05-24 18:34:01] INFO root fetch - processPackages [edc-ltfu]: Start processing: liteindex
+[2023-05-24 18:34:01] INFO root fetch - main [MainThread]: End processing [edc-ltfu]: success
+[2023-05-24 18:34:01] INFO root fetch - processPackages [xeno]: Start processing: edc-lab-panel
+[2023-05-24 18:34:01] INFO root fetch - main [MainThread]: End processing [xeno]: success
+[2023-05-24 18:34:01] INFO root fetch - processPackages [liteindex]: New version: [0.0.1.dev9] Old Version: [0.0.1.dev8]
+[2023-05-24 18:34:01] INFO root fetch - processPackages [edc-lab-panel]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-24 18:34:01] INFO root fetch - processPackages [liteindex]: executing diffoscope
+[2023-05-24 18:34:01] INFO root fetch - processPackages [liteindex]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/liteindex-0.0.1.dev8.tar.gz tmp/liteindex-0.0.1.dev9.tar.gz --markdown 20230524/l/liteindex/0.0.1.dev8-0.0.1.dev9/diff.md --exclude *.pyd
+[2023-05-24 18:34:01] INFO root fetch - processPackages [edc-model-fields]: Downloading https://files.pythonhosted.org/packages/07/57/25d2502dc01d19f241b0d96680a11dc0302c736f04d049fad6bc10468bf2/edc_model_fields-0.3.4-py3-none-any.whl
+[2023-05-24 18:34:01] INFO root fetch - main [MainThread]: End processing [edc-adherence]: success
+[2023-05-24 18:34:01] INFO root fetch - processPackages [edc-model]: Downloading https://files.pythonhosted.org/packages/22/c1/0520252af45753682431977db2a79bf94298e33d9063bd1f7d801159fbad/edc_model-0.3.9-py3-none-any.whl
+[2023-05-24 18:34:02] INFO root fetch - processPackages [edc-registration]: Downloading https://files.pythonhosted.org/packages/fb/5b/04bae10091aa445dc667581a412c97ff2eb399920d3964339af6f312a8ef/edc_registration-0.3.9-py3-none-any.whl
+[2023-05-24 18:34:02] INFO root fetch - processPackages [edc-lab-panel]: Downloading https://files.pythonhosted.org/packages/22/70/8dbda37d891cd6dd83101f9b2fab3c69e24bd92bb7d30e38b032dd16bc95/edc-lab-panel-0.1.8.tar.gz
+[2023-05-24 18:34:02] INFO root fetch - processPackages [edc-model]: executing diffoscope
+[2023-05-24 18:34:02] INFO root fetch - processPackages [edc-model]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/edc_model-0.3.8-py3-none-any.whl.zip tmp/edc_model-0.3.9-py3-none-any.whl.zip --markdown 20230524/e/edc-model/0.3.8-0.3.9/diff.md --exclude *.pyd
+[2023-05-24 18:34:02] INFO root fetch - processPackages [edc-registration]: executing diffoscope
+[2023-05-24 18:34:02] INFO root fetch - processPackages [edc-registration]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/edc_registration-0.3.8-py3-none-any.whl.zip tmp/edc_registration-0.3.9-py3-none-any.whl.zip --markdown 20230524/e/edc-registration/0.3.8-0.3.9/diff.md --exclude *.pyd
+[2023-05-24 18:34:02] INFO root fetch - processPackages [edc-model-fields]: Downloading https://files.pythonhosted.org/packages/22/26/0b79053cd5af2ec3a9ae44c64e0755527c34bebcac80709aaa203a3805aa/edc-model-fields-0.3.6.tar.gz
+[2023-05-24 18:34:02] INFO root fetch - processPackages [edc-model-fields]: executing diffoscope
+[2023-05-24 18:34:02] INFO root fetch - processPackages [edc-model-fields]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/edc_model_fields-0.3.4-py3-none-any.whl.zip tmp/edc-model-fields-0.3.6.tar.gz --markdown 20230524/e/edc-model-fields/0.3.4-0.3.6/diff.md --exclude *.pyd
+[2023-05-24 18:34:02] INFO root fetch - processPackages [edc-lab-panel]: Downloading https://files.pythonhosted.org/packages/5d/c6/ecf38eeb586c2180edb3c4a866ffacb8e66901fc7463bcf14fe2f74547d6/edc-lab-panel-0.1.9.tar.gz
+[2023-05-24 18:34:02] INFO root fetch - main [MainThread]: End processing [edc-device]: success
+[2023-05-24 18:34:02] INFO root fetch - processPackages [edc-lab-panel]: executing diffoscope
+[2023-05-24 18:34:02] INFO root fetch - processPackages [edc-lab-panel]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/edc-lab-panel-0.1.8.tar.gz tmp/edc-lab-panel-0.1.9.tar.gz --markdown 20230524/e/edc-lab-panel/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-24 18:34:02] INFO root fetch - main [MainThread]: End processing [bose]: success
+[2023-05-24 18:34:02] INFO root fetch - main [MainThread]: End processing [EdgeGPT]: success
+[2023-05-24 18:34:03] INFO root fetch - main [MainThread]: End processing [django-dbmi-client]: success
+[2023-05-24 18:34:03] INFO root fetch - main [MainThread]: End processing [liteindex]: success
+[2023-05-24 18:34:03] INFO root fetch - main [MainThread]: End processing [edc-model-fields]: success
+[2023-05-24 18:34:03] INFO root fetch - main [MainThread]: End processing [edc-registration]: success
+[2023-05-24 18:34:03] INFO root fetch - main [MainThread]: End processing [edc-model]: success
+[2023-05-24 18:34:03] INFO root fetch - main [MainThread]: End processing [edc-lab-panel]: success
+[2023-05-24 18:34:03] INFO root fetch - main [MainThread]: Store serial: [18232836]
