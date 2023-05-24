@@ -15032,3 +15032,70 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd4 in position 72: invalid
 [2023-05-24 14:40:34] INFO root fetch - main [MainThread]: End processing [lusid-sdk-preview]: success
 [2023-05-24 14:41:09] INFO root fetch - main [MainThread]: End processing [topoly]: success
 [2023-05-24 14:41:09] INFO root fetch - main [MainThread]: Store serial: [18229643]
+[2023-05-24 14:46:20] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18229643]
+[2023-05-24 14:46:25] INFO root fetch - main [MainThread]: Found 12 changed packages
+[2023-05-24 14:46:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pydisadm
+[2023-05-24 14:46:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: scaneo
+[2023-05-24 14:46:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: meta-matching-tool
+[2023-05-24 14:46:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: medivisio
+[2023-05-24 14:46:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: fuzzy-ads
+[2023-05-24 14:46:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: ramodels
+[2023-05-24 14:46:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: lifeguard-simple-dashboard
+[2023-05-24 14:46:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: HighResAnalysis
+[2023-05-24 14:46:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: PVNet
+[2023-05-24 14:46:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: c2cciutils
+[2023-05-24 14:46:25] WARNING root fetch - processPackages [medivisio]: Skipping, unable to determine old version
+[2023-05-24 14:46:25] INFO root fetch - processPackages [medivisio]: Start processing: griffon
+[2023-05-24 14:46:25] INFO root fetch - main [MainThread]: End processing [medivisio] error
+[2023-05-24 14:46:25] INFO root fetch - processPackages [HighResAnalysis]: New version: [0.0.6] Old Version: [0.0.5]
+[2023-05-24 14:46:25] INFO root fetch - processPackages [PVNet]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-24 14:46:25] WARNING root fetch - processPackages [lifeguard-simple-dashboard]: Skipping, unable to determine old version
+[2023-05-24 14:46:25] INFO root fetch - processPackages [lifeguard-simple-dashboard]: Start processing: merqube-client-lib
+[2023-05-24 14:46:25] INFO root fetch - main [MainThread]: End processing [lifeguard-simple-dashboard] error
+[2023-05-24 14:46:25] INFO root fetch - processPackages [griffon]: New version: [0.2.2] Old Version: [0.2.1]
+[2023-05-24 14:46:25] INFO root fetch - processPackages [ramodels]: New version: [9.7.3] Old Version: [9.7.2]
+[2023-05-24 14:46:25] INFO root fetch - processPackages [pydisadm]: New version: [1.3.1] Old Version: [1.3.0]
+[2023-05-24 14:46:25] INFO root fetch - processPackages [fuzzy-ads]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-24 14:46:25] INFO root fetch - processPackages [PVNet]: executing diffoscope
+[2023-05-24 14:46:25] INFO root fetch - processPackages [PVNet]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PVNet-0.0.8.tar.gz tmp/PVNet-0.0.9.tar.gz --markdown 20230524/P/PVNet/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-24 14:46:25] INFO root fetch - processPackages [meta-matching-tool]: New version: [1.2.0] Old Version: [1.1.1]
+[2023-05-24 14:46:25] INFO root fetch - processPackages [scaneo]: New version: [0.0.9.post3] Old Version: [0.0.9.post2]
+[2023-05-24 14:46:25] INFO root fetch - processPackages [ramodels]: executing diffoscope
+[2023-05-24 14:46:25] INFO root fetch - processPackages [ramodels]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ramodels-9.7.2.tar.gz tmp/ramodels-9.7.3.tar.gz --markdown 20230524/r/ramodels/9.7.2-9.7.3/diff.md --exclude *.pyd
+[2023-05-24 14:46:25] INFO root fetch - processPackages [griffon]: executing diffoscope
+[2023-05-24 14:46:25] INFO root fetch - processPackages [griffon]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/griffon-0.2.1.tar.gz tmp/griffon-0.2.2.tar.gz --markdown 20230524/g/griffon/0.2.1-0.2.2/diff.md --exclude *.pyd
+[2023-05-24 14:46:25] INFO root fetch - processPackages [c2cciutils]: New version: [1.6.0.dev98] Old Version: [1.6.0.dev95]
+[2023-05-24 14:46:25] INFO root fetch - processPackages [merqube-client-lib]: New version: [0.8.1] Old Version: [0.8.0]
+[2023-05-24 14:46:26] INFO root fetch - processPackages [HighResAnalysis]: Downloading https://files.pythonhosted.org/packages/24/5b/e71aeafb5c0f9861ee241d777923e78f94de0249c78175ceda29da304749/HighResAnalysis-0.0.6.tar.gz
+[2023-05-24 14:46:26] INFO root fetch - processPackages [meta-matching-tool]: Downloading https://files.pythonhosted.org/packages/d6/96/ceaa90953d8491045c48f1d4d0f53be9ac0dfd44299575d973c52fa19473/meta_matching_tool-1.1.1.tar.gz
+[2023-05-24 14:46:26] INFO root fetch - processPackages [HighResAnalysis]: executing diffoscope
+[2023-05-24 14:46:26] INFO root fetch - processPackages [HighResAnalysis]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/HighResAnalysis-0.0.5.tar.gz tmp/HighResAnalysis-0.0.6.tar.gz --markdown 20230524/H/HighResAnalysis/0.0.5-0.0.6/diff.md --exclude *.pyd
+[2023-05-24 14:46:26] INFO root fetch - processPackages [merqube-client-lib]: Downloading https://files.pythonhosted.org/packages/58/3d/a85f36e05f80d02308b2f0faf88ecd56cde5f9c5eb6f9efc0d52eefc82e4/merqube_client_lib-0.8.0.tar.gz
+[2023-05-24 14:46:26] INFO root fetch - processPackages [fuzzy-ads]: Downloading https://files.pythonhosted.org/packages/84/35/dfcf18b1a67cc9852e67eb677eeaa69af2e65a66580c60f954fd8fe127b9/fuzzy-ads-0.1.8.tar.gz
+[2023-05-24 14:46:26] INFO root fetch - processPackages [scaneo]: executing diffoscope
+[2023-05-24 14:46:26] INFO root fetch - processPackages [scaneo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/scaneo-0.0.9.post2.tar.gz tmp/scaneo-0.0.9.post3.tar.gz --markdown 20230524/s/scaneo/0.0.9.post2-0.0.9.post3/diff.md --exclude *.pyd
+[2023-05-24 14:46:26] INFO root fetch - processPackages [pydisadm]: Downloading https://files.pythonhosted.org/packages/42/a7/22ef40fd974cd2fe98a8623c80837e6e4b02212e9a65fb0250362079b15d/pydisadm-1.3.1.tar.gz
+[2023-05-24 14:46:26] INFO root fetch - processPackages [meta-matching-tool]: Downloading https://files.pythonhosted.org/packages/2e/c1/fbf540139faf70aad81f3d4d9a3295c21f983872611fa27ba8b326cf4ab8/meta_matching_tool-1.2.0.tar.gz
+[2023-05-24 14:46:26] INFO root fetch - processPackages [merqube-client-lib]: Downloading https://files.pythonhosted.org/packages/f5/e9/6c54b0bcd3c1c573d439c9535b5fc08a75840b9edd7aef304eb8663e89eb/merqube_client_lib-0.8.1.tar.gz
+[2023-05-24 14:46:26] INFO root fetch - processPackages [c2cciutils]: executing diffoscope
+[2023-05-24 14:46:26] INFO root fetch - processPackages [c2cciutils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/c2cciutils-1.6.0.dev95.tar.gz tmp/c2cciutils-1.6.0.dev98.tar.gz --markdown 20230524/c/c2cciutils/1.6.0.dev95-1.6.0.dev98/diff.md --exclude *.pyd
+[2023-05-24 14:46:26] INFO root fetch - processPackages [meta-matching-tool]: executing diffoscope
+[2023-05-24 14:46:26] INFO root fetch - processPackages [meta-matching-tool]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/meta_matching_tool-1.1.1.tar.gz tmp/meta_matching_tool-1.2.0.tar.gz --markdown 20230524/m/meta-matching-tool/1.1.1-1.2.0/diff.md --exclude *.pyd
+[2023-05-24 14:46:26] INFO root fetch - processPackages [merqube-client-lib]: executing diffoscope
+[2023-05-24 14:46:26] INFO root fetch - processPackages [merqube-client-lib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/merqube_client_lib-0.8.0.tar.gz tmp/merqube_client_lib-0.8.1.tar.gz --markdown 20230524/m/merqube-client-lib/0.8.0-0.8.1/diff.md --exclude *.pyd
+[2023-05-24 14:46:26] INFO root fetch - processPackages [pydisadm]: executing diffoscope
+[2023-05-24 14:46:26] INFO root fetch - processPackages [pydisadm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pydisadm-1.3.0.tar.gz tmp/pydisadm-1.3.1.tar.gz --markdown 20230524/p/pydisadm/1.3.0-1.3.1/diff.md --exclude *.pyd
+[2023-05-24 14:46:26] INFO root fetch - processPackages [fuzzy-ads]: Downloading https://files.pythonhosted.org/packages/b1/be/230b7ff6007a07fdb1b69a35847f864b9f5e59dcc4dc6846a7566815b305/fuzzy-ads-0.1.9.tar.gz
+[2023-05-24 14:46:26] INFO root fetch - processPackages [fuzzy-ads]: executing diffoscope
+[2023-05-24 14:46:26] INFO root fetch - processPackages [fuzzy-ads]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fuzzy-ads-0.1.8.tar.gz tmp/fuzzy-ads-0.1.9.tar.gz --markdown 20230524/f/fuzzy-ads/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-24 14:46:27] INFO root fetch - main [MainThread]: End processing [ramodels]: success
+[2023-05-24 14:46:27] INFO root fetch - main [MainThread]: End processing [PVNet]: success
+[2023-05-24 14:46:27] INFO root fetch - main [MainThread]: End processing [griffon]: success
+[2023-05-24 14:46:27] INFO root fetch - main [MainThread]: End processing [fuzzy-ads]: success
+[2023-05-24 14:46:27] INFO root fetch - main [MainThread]: End processing [meta-matching-tool]: success
+[2023-05-24 14:46:28] INFO root fetch - main [MainThread]: End processing [merqube-client-lib]: success
+[2023-05-24 14:46:28] INFO root fetch - main [MainThread]: End processing [scaneo]: success
+[2023-05-24 14:46:29] INFO root fetch - main [MainThread]: End processing [pydisadm]: success
+[2023-05-24 14:46:29] INFO root fetch - main [MainThread]: End processing [HighResAnalysis]: success
+[2023-05-24 14:46:32] INFO root fetch - main [MainThread]: End processing [c2cciutils]: success
+[2023-05-24 14:46:32] INFO root fetch - main [MainThread]: Store serial: [18229681]
