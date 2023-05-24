@@ -11332,3 +11332,105 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-05-24 11:17:03] INFO root fetch - main [MainThread]: End processing [jieba-pyfast]: success
 [2023-05-24 11:17:07] INFO root fetch - main [MainThread]: End processing [yandexcloud]: success
 [2023-05-24 11:17:07] INFO root fetch - main [MainThread]: Store serial: [18227350]
+[2023-05-24 11:22:12] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18227350]
+[2023-05-24 11:22:17] INFO root fetch - main [MainThread]: Found 18 changed packages
+[2023-05-24 11:22:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: digitalguide
+[2023-05-24 11:22:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: petitRADTRANS
+[2023-05-24 11:22:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: whassup
+[2023-05-24 11:22:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: dxsp
+[2023-05-24 11:22:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: jieba-pyfast
+[2023-05-24 11:22:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: stable-baselines3
+[2023-05-24 11:22:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: whippersnappy
+[2023-05-24 11:22:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: vasp-suite
+[2023-05-24 11:22:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: legend-pygeom-optics
+[2023-05-24 11:22:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: sme
+[2023-05-24 11:22:17] INFO root fetch - processPackages [whassup]: New version: [0.12.0] Old Version: [0.11.0]
+[2023-05-24 11:22:17] WARNING root fetch - processPackages [legend-pygeom-optics]: Skipping, unable to determine old version
+[2023-05-24 11:22:17] INFO root fetch - processPackages [legend-pygeom-optics]: Start processing: sclblpy
+[2023-05-24 11:22:17] INFO root fetch - main [MainThread]: End processing [legend-pygeom-optics] error
+[2023-05-24 11:22:17] WARNING root fetch - processPackages [whippersnappy]: Skipping, unable to determine old version
+[2023-05-24 11:22:17] INFO root fetch - processPackages [stable-baselines3]: New version: [2.0.0a9] Old Version: [2.0.0a5]
+[2023-05-24 11:22:17] INFO root fetch - processPackages [whippersnappy]: Start processing: spanishconjugator
+[2023-05-24 11:22:17] INFO root fetch - main [MainThread]: End processing [whippersnappy] error
+[2023-05-24 11:22:17] INFO root fetch - processPackages [vasp-suite]: New version: [1.0.1] Old Version: [1.0.0]
+[2023-05-24 11:22:17] INFO root fetch - processPackages [petitRADTRANS]: New version: [2.6.5] Old Version: [2.6.4]
+[2023-05-24 11:22:17] INFO root fetch - processPackages [jieba-pyfast]: New version: [3.11.0] Old Version: [1.4.2]
+[2023-05-24 11:22:17] INFO root fetch - processPackages [dxsp]: New version: [2.2.9] Old Version: [2.2.8]
+[2023-05-24 11:22:17] INFO root fetch - processPackages [sclblpy]: New version: [0.1.8] Old Version: [0.1.7]
+[2023-05-24 11:22:17] INFO root fetch - processPackages [digitalguide]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-05-24 11:22:17] INFO root fetch - processPackages [sme]: New version: [1.3.6] Old Version: [1.3.5]
+[2023-05-24 11:22:17] INFO root fetch - processPackages [dxsp]: executing diffoscope
+[2023-05-24 11:22:17] INFO root fetch - processPackages [dxsp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dxsp-2.2.8.tar.gz tmp/dxsp-2.2.9.tar.gz --markdown 20230524/d/dxsp/2.2.8-2.2.9/diff.md --exclude *.pyd
+[2023-05-24 11:22:17] INFO root fetch - processPackages [spanishconjugator]: New version: [2.3.999] Old Version: [2.3.998]
+[2023-05-24 11:22:17] INFO root fetch - processPackages [whassup]: Downloading https://files.pythonhosted.org/packages/06/b4/5a3aa8b1fea2f6849e4fa58130a1c119e5ad3ea715bcb996bacbca3ac148/whassup-0.11.0.tar.gz
+[2023-05-24 11:22:17] INFO root fetch - processPackages [petitRADTRANS]: Downloading https://files.pythonhosted.org/packages/fe/95/952113da7b85e12a1394a596e13b36ee6f46c50587d78d4dcc54966b7d97/petitRADTRANS-2.6.4.tar.gz
+[2023-05-24 11:22:17] INFO root fetch - processPackages [vasp-suite]: Downloading https://files.pythonhosted.org/packages/4e/5b/0e870f91a0d2ddeac69d39a491176d557bdde787b8b83f8a31a031a8dbda/vasp_suite-1.0.1.tar.gz
+[2023-05-24 11:22:17] INFO root fetch - processPackages [sme]: Downloading https://files.pythonhosted.org/packages/16/ee/420a31df4cd5a57e1553b5af545344da27029e274a437c12f4d15d97ec14/sme-1.3.5-pp39-pypy39_pp73-win_amd64.whl
+[2023-05-24 11:22:17] INFO root fetch - processPackages [sclblpy]: Downloading https://files.pythonhosted.org/packages/43/31/8f8dc25824cc344f33489e6a2b0a9c54a36c41954c97fb402d83e70682e6/sclblpy-0.1.7.tar.gz
+[2023-05-24 11:22:17] INFO root fetch - processPackages [jieba-pyfast]: Downloading https://files.pythonhosted.org/packages/87/ee/9f207b7f1707bd9ae55084fc52d98af323e7f32c92fc2957f86eae6924cd/jieba_pyfast-3.11.0-cp311-cp311-macosx_12_0_x86_64.whl
+[2023-05-24 11:22:17] INFO root fetch - processPackages [spanishconjugator]: executing diffoscope
+[2023-05-24 11:22:17] INFO root fetch - processPackages [spanishconjugator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spanishconjugator-2.3.998.tar.gz tmp/spanishconjugator-2.3.999.tar.gz --markdown 20230524/s/spanishconjugator/2.3.998-2.3.999/diff.md --exclude *.pyd
+[2023-05-24 11:22:17] WARNING root fetch - processPackages [sme]: Skipping package: exceeds size limit 26482376>=10485760
+[2023-05-24 11:22:17] INFO root fetch - processPackages [sme]: Start processing: paddypy
+[2023-05-24 11:22:17] INFO root fetch - main [MainThread]: End processing [sme] error
+[2023-05-24 11:22:17] INFO root fetch - processPackages [paddypy]: New version: [0.2.2] Old Version: [0.2.1]
+[2023-05-24 11:22:17] INFO root fetch - processPackages [vasp-suite]: executing diffoscope
+[2023-05-24 11:22:17] INFO root fetch - processPackages [vasp-suite]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vasp_suite-1.0.0.tar.gz tmp/vasp_suite-1.0.1.tar.gz --markdown 20230524/v/vasp-suite/1.0.0-1.0.1/diff.md --exclude *.pyd
+[2023-05-24 11:22:17] INFO root fetch - processPackages [jieba-pyfast]: executing diffoscope
+[2023-05-24 11:22:17] INFO root fetch - processPackages [jieba-pyfast]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jieba_pyfast-1.4.2-cp311-cp311-macosx_12_0_x86_64.whl.zip tmp/jieba_pyfast-3.11.0-cp311-cp311-macosx_12_0_x86_64.whl.zip --markdown 20230524/j/jieba-pyfast/1.4.2-3.11.0/diff.md --exclude *.pyd
+[2023-05-24 11:22:17] INFO root fetch - processPackages [stable-baselines3]: executing diffoscope
+[2023-05-24 11:22:17] INFO root fetch - processPackages [stable-baselines3]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/stable_baselines3-2.0.0a5.tar.gz tmp/stable_baselines3-2.0.0a9.tar.gz --markdown 20230524/s/stable-baselines3/2.0.0a5-2.0.0a9/diff.md --exclude *.pyd
+[2023-05-24 11:22:17] INFO root fetch - processPackages [whassup]: Downloading https://files.pythonhosted.org/packages/32/72/8b01f37de5e40601ec22a7ce812c6d39f51b2a37a6ad37f84626038f889f/whassup-0.12.0.tar.gz
+[2023-05-24 11:22:17] INFO root fetch - processPackages [petitRADTRANS]: Downloading https://files.pythonhosted.org/packages/78/88/3f49aa2f05c26000336a10ce6a5d191b2e9fedb42ceb00d7506ca4ae3b14/petitRADTRANS-2.6.5.tar.gz
+[2023-05-24 11:22:17] INFO root fetch - processPackages [paddypy]: Downloading https://files.pythonhosted.org/packages/ff/83/917b7d394e02a85907d6b83178453f83481aebf2595b19df1c2adda78557/paddypy-0.2.2.tar.gz
+[2023-05-24 11:22:17] INFO root fetch - processPackages [digitalguide]: executing diffoscope
+[2023-05-24 11:22:17] INFO root fetch - processPackages [digitalguide]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/digitalguide-0.0.98.tar.gz tmp/digitalguide-0.0.99.tar.gz --markdown 20230524/d/digitalguide/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-05-24 11:22:17] INFO root fetch - processPackages [whassup]: executing diffoscope
+[2023-05-24 11:22:17] INFO root fetch - processPackages [sclblpy]: Downloading https://files.pythonhosted.org/packages/12/4a/0589005ce5dccce1776bd3346646669d9259a78aa4dc58e5a643b46cbc34/sclblpy-0.1.8.tar.gz
+[2023-05-24 11:22:17] INFO root fetch - processPackages [whassup]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/whassup-0.11.0.tar.gz tmp/whassup-0.12.0.tar.gz --markdown 20230524/w/whassup/0.11.0-0.12.0/diff.md --exclude *.pyd
+[2023-05-24 11:22:17] INFO root fetch - processPackages [petitRADTRANS]: executing diffoscope
+[2023-05-24 11:22:17] INFO root fetch - processPackages [petitRADTRANS]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/petitRADTRANS-2.6.4.tar.gz tmp/petitRADTRANS-2.6.5.tar.gz --markdown 20230524/p/petitRADTRANS/2.6.4-2.6.5/diff.md --exclude *.pyd
+[2023-05-24 11:22:17] INFO root fetch - processPackages [sclblpy]: executing diffoscope
+[2023-05-24 11:22:17] INFO root fetch - processPackages [sclblpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sclblpy-0.1.7.tar.gz tmp/sclblpy-0.1.8.tar.gz --markdown 20230524/s/sclblpy/0.1.7-0.1.8/diff.md --exclude *.pyd
+[2023-05-24 11:22:17] INFO root fetch - processPackages [paddypy]: executing diffoscope
+[2023-05-24 11:22:17] INFO root fetch - processPackages [paddypy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/paddypy-0.2.1.tar.gz tmp/paddypy-0.2.2.tar.gz --markdown 20230524/p/paddypy/0.2.1-0.2.2/diff.md --exclude *.pyd
+[2023-05-24 11:22:18] INFO root fetch - processPackages [dxsp]: Start processing: anticaptchaofficial
+[2023-05-24 11:22:18] INFO root fetch - main [MainThread]: End processing [dxsp]: success
+[2023-05-24 11:22:18] INFO root fetch - processPackages [anticaptchaofficial]: New version: [1.0.51] Old Version: [1.0.50]
+[2023-05-24 11:22:19] INFO root fetch - processPackages [anticaptchaofficial]: Downloading https://files.pythonhosted.org/packages/f4/36/8542e8b40cd0d88b2a6b4c0ff0d412065162896101c710b33fd74826630f/anticaptchaofficial-1.0.50-py3-none-any.whl
+[2023-05-24 11:22:19] INFO root fetch - processPackages [whassup]: Start processing: spanishconjugator
+[2023-05-24 11:22:19] INFO root fetch - main [MainThread]: End processing [whassup]: success
+[2023-05-24 11:22:19] INFO root fetch - processPackages [spanishconjugator]: New version: [2.3.999] Old Version: [2.3.998]
+[2023-05-24 11:22:19] INFO root fetch - processPackages [digitalguide]: Start processing: tbp-nightly
+[2023-05-24 11:22:19] INFO root fetch - main [MainThread]: End processing [digitalguide]: success
+[2023-05-24 11:22:19] INFO root fetch - processPackages [paddypy]: Start processing: pyflipper
+[2023-05-24 11:22:19] INFO root fetch - main [MainThread]: End processing [paddypy]: success
+[2023-05-24 11:22:19] INFO root fetch - processPackages [pyflipper]: New version: [0.16] Old Version: [0.15]
+[2023-05-24 11:22:19] INFO root fetch - processPackages [tbp-nightly]: New version: [2.9.0a20221130] Old Version: [2.9.0a20221129]
+[2023-05-24 11:22:19] INFO root fetch - processPackages [spanishconjugator]: Start processing: cairo-lang
+[2023-05-24 11:22:19] INFO root fetch - main [MainThread]: End processing [spanishconjugator]: success
+[2023-05-24 11:22:19] INFO root fetch - main [MainThread]: End processing [sclblpy]: success
+[2023-05-24 11:22:19] INFO root fetch - processPackages [spanishconjugator]: executing diffoscope
+[2023-05-24 11:22:19] INFO root fetch - processPackages [spanishconjugator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spanishconjugator-2.3.998.tar.gz tmp/spanishconjugator-2.3.999.tar.gz --markdown 20230524/s/spanishconjugator/2.3.998-2.3.999/diff.md --exclude *.pyd
+[2023-05-24 11:22:19] INFO root fetch - processPackages [anticaptchaofficial]: Downloading https://files.pythonhosted.org/packages/a2/2a/241a513b8c9a3731c41e84d50cfc33fbe3a6ea7fa71ffaf5cd3fe27bca29/anticaptchaofficial-1.0.51-py3-none-any.whl
+[2023-05-24 11:22:19] INFO root fetch - main [MainThread]: End processing [vasp-suite]: success
+[2023-05-24 11:22:19] INFO root fetch - processPackages [pyflipper]: executing diffoscope
+[2023-05-24 11:22:19] INFO root fetch - processPackages [pyflipper]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyflipper-0.15.tar.gz tmp/pyflipper-0.16.tar.gz --markdown 20230524/p/pyflipper/0.15-0.16/diff.md --exclude *.pyd
+[2023-05-24 11:22:19] INFO root fetch - processPackages [tbp-nightly]: executing diffoscope
+[2023-05-24 11:22:19] INFO root fetch - processPackages [tbp-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tbp-nightly-2.9.0a20221129.tar.gz tmp/tbp-nightly-2.9.0a20221130.tar.gz --markdown 20230524/t/tbp-nightly/2.9.0a20221129-2.9.0a20221130/diff.md --exclude *.pyd
+[2023-05-24 11:22:19] INFO root fetch - processPackages [anticaptchaofficial]: executing diffoscope
+[2023-05-24 11:22:19] INFO root fetch - processPackages [anticaptchaofficial]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/anticaptchaofficial-1.0.50-py3-none-any.whl.zip tmp/anticaptchaofficial-1.0.51-py3-none-any.whl.zip --markdown 20230524/a/anticaptchaofficial/1.0.50-1.0.51/diff.md --exclude *.pyd
+[2023-05-24 11:22:19] INFO root fetch - processPackages [cairo-lang]: New version: [0.9.1] Old Version: [0.9.0]
+[2023-05-24 11:22:19] INFO root fetch - processPackages [cairo-lang]: Downloading https://files.pythonhosted.org/packages/11/ce/067fdb9b6154af674ea52b4ec1f0e58ce300973835cae5f290e9bcd9a87f/cairo-lang-0.9.0.zip
+[2023-05-24 11:22:20] INFO root fetch - processPackages [cairo-lang]: Downloading https://files.pythonhosted.org/packages/00/8e/4505453196ad40ba5158eef2496504fc0b9059187402217ff26d053d7027/cairo-lang-0.9.1.zip
+[2023-05-24 11:22:20] INFO root fetch - main [MainThread]: End processing [stable-baselines3]: success
+[2023-05-24 11:22:20] INFO root fetch - processPackages [cairo-lang]: executing diffoscope
+[2023-05-24 11:22:20] INFO root fetch - processPackages [cairo-lang]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cairo-lang-0.9.0.zip tmp/cairo-lang-0.9.1.zip --markdown 20230524/c/cairo-lang/0.9.0-0.9.1/diff.md --exclude *.pyd
+[2023-05-24 11:22:20] INFO root fetch - main [MainThread]: End processing [spanishconjugator]: success
+[2023-05-24 11:22:20] INFO root fetch - main [MainThread]: End processing [pyflipper]: success
+[2023-05-24 11:22:20] INFO root fetch - main [MainThread]: End processing [anticaptchaofficial]: success
+[2023-05-24 11:22:21] INFO root fetch - main [MainThread]: End processing [petitRADTRANS]: success
+[2023-05-24 11:22:22] INFO root fetch - main [MainThread]: End processing [tbp-nightly]: success
+[2023-05-24 11:22:23] INFO root fetch - main [MainThread]: End processing [jieba-pyfast]: success
+[2023-05-24 11:22:30] INFO root fetch - main [MainThread]: End processing [cairo-lang]: success
+[2023-05-24 11:22:30] INFO root fetch - main [MainThread]: Store serial: [18227433]
