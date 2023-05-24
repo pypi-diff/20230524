@@ -21428,3 +21428,57 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd4 in position 72: invalid
 [2023-05-24 19:39:05] INFO root fetch - main [MainThread]: End processing [speech-collator]: success
 [2023-05-24 19:39:11] INFO root fetch - main [MainThread]: End processing [fern-persona]: success
 [2023-05-24 19:39:11] INFO root fetch - main [MainThread]: Store serial: [18233734]
+[2023-05-24 19:44:16] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18233734]
+[2023-05-24 19:44:20] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2023-05-24 19:44:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: vector-quantize-pytorch
+[2023-05-24 19:44:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: edc-he
+[2023-05-24 19:44:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: secret-message
+[2023-05-24 19:44:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: cardsort
+[2023-05-24 19:44:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: shelephant
+[2023-05-24 19:44:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: benchling-api-client
+[2023-05-24 19:44:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: embiggen
+[2023-05-24 19:44:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: odoo-addon-hr-timesheet-begin-end
+[2023-05-24 19:44:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: moonrise
+[2023-05-24 19:44:21] INFO root fetch - processPackages [cardsort]: New version: [0.2.6] Old Version: [0.2.4]
+[2023-05-24 19:44:21] INFO root fetch - processPackages [edc-he]: New version: [0.1.6] Old Version: [0.1.5]
+[2023-05-24 19:44:21] INFO root fetch - processPackages [vector-quantize-pytorch]: New version: [1.5.9] Old Version: [1.5.8]
+[2023-05-24 19:44:21] INFO root fetch - processPackages [embiggen]: New version: [0.9.3] Old Version: [0.9.2]
+[2023-05-24 19:44:21] INFO root fetch - processPackages [benchling-api-client]: New version: [2.0.99] Old Version: [2.0.98]
+[2023-05-24 19:44:21] INFO root fetch - processPackages [shelephant]: New version: [0.9.0] Old Version: [0.8.1]
+[2023-05-24 19:44:21] INFO root fetch - processPackages [vector-quantize-pytorch]: executing diffoscope
+[2023-05-24 19:44:21] INFO root fetch - processPackages [vector-quantize-pytorch]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vector_quantize_pytorch-1.5.8.tar.gz tmp/vector_quantize_pytorch-1.5.9.tar.gz --markdown 20230524/v/vector-quantize-pytorch/1.5.8-1.5.9/diff.md --exclude *.pyd
+[2023-05-24 19:44:21] INFO root fetch - processPackages [moonrise]: New version: [1.1.0] Old Version: [1.0.0]
+[2023-05-24 19:44:21] INFO root fetch - processPackages [cardsort]: executing diffoscope
+[2023-05-24 19:44:21] INFO root fetch - processPackages [embiggen]: executing diffoscope
+[2023-05-24 19:44:21] INFO root fetch - processPackages [edc-he]: executing diffoscope
+[2023-05-24 19:44:21] INFO root fetch - processPackages [cardsort]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cardsort-0.2.4.tar.gz tmp/cardsort-0.2.6.tar.gz --markdown 20230524/c/cardsort/0.2.4-0.2.6/diff.md --exclude *.pyd
+[2023-05-24 19:44:21] INFO root fetch - processPackages [embiggen]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/embiggen-0.9.2.tar.gz tmp/embiggen-0.9.3.tar.gz --markdown 20230524/e/embiggen/0.9.2-0.9.3/diff.md --exclude *.pyd
+[2023-05-24 19:44:21] INFO root fetch - processPackages [edc-he]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/edc-he-0.1.5.tar.gz tmp/edc-he-0.1.6.tar.gz --markdown 20230524/e/edc-he/0.1.5-0.1.6/diff.md --exclude *.pyd
+[2023-05-24 19:44:21] INFO root fetch - processPackages [odoo-addon-hr-timesheet-begin-end]: New version: [16.0.1.0.0.3] Old Version: [15.0.1.0.0.3]
+[2023-05-24 19:44:21] INFO root fetch - processPackages [secret-message]: New version: [0.6] Old Version: [0.5]
+[2023-05-24 19:44:21] INFO root fetch - processPackages [benchling-api-client]: executing diffoscope
+[2023-05-24 19:44:21] INFO root fetch - processPackages [benchling-api-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/benchling_api_client-2.0.98.tar.gz tmp/benchling_api_client-2.0.99.tar.gz --markdown 20230524/b/benchling-api-client/2.0.98-2.0.99/diff.md --exclude *.pyd
+[2023-05-24 19:44:21] INFO root fetch - processPackages [moonrise]: Downloading https://files.pythonhosted.org/packages/c9/da/adafa1adac2e43a1e68faf2689b14c2469c6243f01523e04d4d325099d61/moonrise-1.0.0.tar.gz
+[2023-05-24 19:44:21] INFO root fetch - processPackages [odoo-addon-hr-timesheet-begin-end]: Downloading https://files.pythonhosted.org/packages/32/18/fc875df40c6aabcb64cc11eca744ff0e9d80ce2b5664fb815198e398c781/odoo_addon_hr_timesheet_begin_end-15.0.1.0.0.3-py3-none-any.whl
+[2023-05-24 19:44:21] INFO root fetch - processPackages [secret-message]: Downloading https://files.pythonhosted.org/packages/11/59/110d5633a5ef9b0c947d012f2154aae6e2beef340019ffe8883dd1f3dd81/secret_message-0.5.tar.gz
+[2023-05-24 19:44:21] INFO root fetch - processPackages [shelephant]: executing diffoscope
+[2023-05-24 19:44:21] INFO root fetch - processPackages [shelephant]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/shelephant-0.8.1.tar.gz tmp/shelephant-0.9.0.tar.gz --markdown 20230524/s/shelephant/0.8.1-0.9.0/diff.md --exclude *.pyd
+[2023-05-24 19:44:21] INFO root fetch - processPackages [secret-message]: Downloading https://files.pythonhosted.org/packages/5e/88/7db31d5f9cb0b44b0c8d29ac7c1d63eddcb2fb7608d8eb4eac3b5f6ee712/secret_message-0.6.tar.gz
+[2023-05-24 19:44:21] INFO root fetch - processPackages [odoo-addon-hr-timesheet-begin-end]: Downloading https://files.pythonhosted.org/packages/1e/51/a9ccb5bed9a63353bcfad40822c1cd8a92f948ff5638861d4d1060938c39/odoo_addon_hr_timesheet_begin_end-16.0.1.0.0.3-py3-none-any.whl
+[2023-05-24 19:44:21] INFO root fetch - processPackages [moonrise]: Downloading https://files.pythonhosted.org/packages/a1/03/2c9c3dd7db685f161689800a7ef5feecffb29264eeaa18b4e075499dbe38/moonrise-1.1.0.tar.gz
+[2023-05-24 19:44:21] INFO root fetch - processPackages [secret-message]: executing diffoscope
+[2023-05-24 19:44:21] INFO root fetch - processPackages [secret-message]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/secret_message-0.5.tar.gz tmp/secret_message-0.6.tar.gz --markdown 20230524/s/secret-message/0.5-0.6/diff.md --exclude *.pyd
+[2023-05-24 19:44:21] INFO root fetch - processPackages [moonrise]: executing diffoscope
+[2023-05-24 19:44:21] INFO root fetch - processPackages [moonrise]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/moonrise-1.0.0.tar.gz tmp/moonrise-1.1.0.tar.gz --markdown 20230524/m/moonrise/1.0.0-1.1.0/diff.md --exclude *.pyd
+[2023-05-24 19:44:21] INFO root fetch - processPackages [odoo-addon-hr-timesheet-begin-end]: executing diffoscope
+[2023-05-24 19:44:21] INFO root fetch - processPackages [odoo-addon-hr-timesheet-begin-end]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_hr_timesheet_begin_end-15.0.1.0.0.3-py3-none-any.whl.zip tmp/odoo_addon_hr_timesheet_begin_end-16.0.1.0.0.3-py3-none-any.whl.zip --markdown 20230524/o/odoo-addon-hr-timesheet-begin-end/15.0.1.0.0.3-16.0.1.0.0.3/diff.md --exclude *.pyd
+[2023-05-24 19:44:22] INFO root fetch - main [MainThread]: End processing [cardsort]: success
+[2023-05-24 19:44:22] INFO root fetch - main [MainThread]: End processing [vector-quantize-pytorch]: success
+[2023-05-24 19:44:22] INFO root fetch - main [MainThread]: End processing [edc-he]: success
+[2023-05-24 19:44:22] INFO root fetch - main [MainThread]: End processing [moonrise]: success
+[2023-05-24 19:44:23] INFO root fetch - main [MainThread]: End processing [secret-message]: success
+[2023-05-24 19:44:23] INFO root fetch - main [MainThread]: End processing [odoo-addon-hr-timesheet-begin-end]: success
+[2023-05-24 19:44:23] INFO root fetch - main [MainThread]: End processing [shelephant]: success
+[2023-05-24 19:44:23] INFO root fetch - main [MainThread]: End processing [embiggen]: success
+[2023-05-24 19:46:10] INFO root fetch - main [MainThread]: End processing [benchling-api-client]: success
+[2023-05-24 19:46:10] INFO root fetch - main [MainThread]: Store serial: [18233813]
