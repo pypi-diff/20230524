@@ -7645,3 +7645,36 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-05-24 06:37:30] INFO root fetch - main [MainThread]: End processing [flowmachine]: success
 [2023-05-24 06:37:31] INFO root fetch - main [MainThread]: End processing [sdc-scissor]: success
 [2023-05-24 06:37:31] INFO root fetch - main [MainThread]: Store serial: [18224976]
+[2023-05-24 06:42:35] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18224976]
+[2023-05-24 06:42:40] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-05-24 06:42:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: seislib
+[2023-05-24 06:42:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: volworld-common
+[2023-05-24 06:42:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: clevertable
+[2023-05-24 06:42:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: kanu
+[2023-05-24 06:42:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: hrin-msb
+[2023-05-24 06:42:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: NikGapps
+[2023-05-24 06:42:40] INFO root fetch - processPackages [clevertable]: New version: [2.2.0] Old Version: [2.1.1]
+[2023-05-24 06:42:40] INFO root fetch - processPackages [NikGapps]: New version: [1.14] Old Version: [1.13]
+[2023-05-24 06:42:40] INFO root fetch - processPackages [volworld-common]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-24 06:42:40] INFO root fetch - processPackages [hrin-msb]: New version: [0.2.9] Old Version: [0.2.8]
+[2023-05-24 06:42:40] WARNING root fetch - processPackages [kanu]: Skipping, unable to determine old version
+[2023-05-24 06:42:40] INFO root fetch - main [MainThread]: End processing [kanu] error
+[2023-05-24 06:42:40] INFO root fetch - processPackages [seislib]: New version: [0.6.9] Old Version: [0.6.8]
+[2023-05-24 06:42:41] INFO root fetch - processPackages [volworld-common]: executing diffoscope
+[2023-05-24 06:42:41] INFO root fetch - processPackages [volworld-common]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/volworld_common-0.1.8.tar.gz tmp/volworld_common-0.1.9.tar.gz --markdown 20230524/v/volworld-common/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-24 06:42:41] INFO root fetch - processPackages [hrin-msb]: executing diffoscope
+[2023-05-24 06:42:41] INFO root fetch - processPackages [hrin-msb]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hrin_msb-0.2.8.tar.gz tmp/hrin_msb-0.2.9.tar.gz --markdown 20230524/h/hrin-msb/0.2.8-0.2.9/diff.md --exclude *.pyd
+[2023-05-24 06:42:41] INFO root fetch - processPackages [NikGapps]: Downloading https://files.pythonhosted.org/packages/76/31/bd42be33b36ef5c55cb76ca071aab3c88cf565bf2a76d88081a53df1a660/NikGapps-1.13.tar.gz
+[2023-05-24 06:42:41] INFO root fetch - processPackages [seislib]: Downloading https://files.pythonhosted.org/packages/fa/db/7cd5468132f947ba6fbc576ac83465af1395fdf81126672172a2e8a884f6/seislib-0.6.8.tar.gz
+[2023-05-24 06:42:41] INFO root fetch - processPackages [clevertable]: executing diffoscope
+[2023-05-24 06:42:41] INFO root fetch - processPackages [clevertable]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/clevertable-2.1.1.tar.gz tmp/clevertable-2.2.0.tar.gz --markdown 20230524/c/clevertable/2.1.1-2.2.0/diff.md --exclude *.pyd
+[2023-05-24 06:42:41] WARNING root fetch - processPackages [NikGapps]: Skipping package: exceeds size limit 41548977>=10485760
+[2023-05-24 06:42:41] INFO root fetch - main [MainThread]: End processing [NikGapps] error
+[2023-05-24 06:42:41] INFO root fetch - processPackages [seislib]: Downloading https://files.pythonhosted.org/packages/6e/89/88649e946b7aaa8994cb16d24ac91ff50b3c51bf3ee343461e805667cfa6/seislib-0.6.9.tar.gz
+[2023-05-24 06:42:41] INFO root fetch - processPackages [seislib]: executing diffoscope
+[2023-05-24 06:42:41] INFO root fetch - processPackages [seislib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/seislib-0.6.8.tar.gz tmp/seislib-0.6.9.tar.gz --markdown 20230524/s/seislib/0.6.8-0.6.9/diff.md --exclude *.pyd
+[2023-05-24 06:42:42] INFO root fetch - main [MainThread]: End processing [volworld-common]: success
+[2023-05-24 06:42:42] INFO root fetch - main [MainThread]: End processing [clevertable]: success
+[2023-05-24 06:42:42] INFO root fetch - main [MainThread]: End processing [hrin-msb]: success
+[2023-05-24 06:42:45] INFO root fetch - main [MainThread]: End processing [seislib]: success
+[2023-05-24 06:42:45] INFO root fetch - main [MainThread]: Store serial: [18225005]
