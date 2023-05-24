@@ -20505,3 +20505,169 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd4 in position 72: invalid
 [2023-05-24 18:55:35] INFO root fetch - main [MainThread]: End processing [edc-pharmacy-dashboard]: success
 [2023-05-24 18:55:37] INFO root fetch - main [MainThread]: End processing [t4-geom-convert]: success
 [2023-05-24 18:55:37] INFO root fetch - main [MainThread]: Store serial: [18233143]
+[2023-05-24 19:00:41] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18233143]
+[2023-05-24 19:00:46] INFO root fetch - main [MainThread]: Found 27 changed packages
+[2023-05-24 19:00:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: edc-pdutils
+[2023-05-24 19:00:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: divio-docs-gen
+[2023-05-24 19:00:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: edc-visit-tracking
+[2023-05-24 19:00:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pymemri
+[2023-05-24 19:00:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: edc-test-utils
+[2023-05-24 19:00:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: mechanical-bull
+[2023-05-24 19:00:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: katello-host-tools
+[2023-05-24 19:00:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: edc-egfr
+[2023-05-24 19:00:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: remla12-lib-release
+[2023-05-24 19:00:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: digest
+[2023-05-24 19:00:46] INFO root fetch - processPackages [divio-docs-gen]: New version: [0.2.4] Old Version: [0.2.3]
+[2023-05-24 19:00:46] INFO root fetch - processPackages [katello-host-tools]: New version: [4.2.3] Old Version: [4.2.2]
+[2023-05-24 19:00:46] INFO root fetch - processPackages [digest]: New version: [1.1.0] Old Version: [1.0.8.1]
+[2023-05-24 19:00:46] INFO root fetch - processPackages [remla12-lib-release]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-05-24 19:00:46] INFO root fetch - processPackages [pymemri]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-24 19:00:46] INFO root fetch - processPackages [divio-docs-gen]: executing diffoscope
+[2023-05-24 19:00:46] INFO root fetch - processPackages [divio-docs-gen]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/divio_docs_gen-0.2.3.tar.gz tmp/divio_docs_gen-0.2.4.tar.gz --markdown 20230524/d/divio-docs-gen/0.2.3-0.2.4/diff.md --exclude *.pyd
+[2023-05-24 19:00:46] INFO root fetch - processPackages [edc-visit-tracking]: New version: [0.3.9] Old Version: [0.3.8]
+[2023-05-24 19:00:46] INFO root fetch - processPackages [digest]: executing diffoscope
+[2023-05-24 19:00:46] INFO root fetch - processPackages [mechanical-bull]: New version: [0.1.0] Old Version: [0.0.7]
+[2023-05-24 19:00:46] INFO root fetch - processPackages [digest]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/digest-1.0.8.1.tar.gz tmp/digest-1.1.0.tar.gz --markdown 20230524/d/digest/1.0.8.1-1.1.0/diff.md --exclude *.pyd
+[2023-05-24 19:00:46] INFO root fetch - processPackages [edc-pdutils]: New version: [0.3.9] Old Version: [0.3.8]
+[2023-05-24 19:00:46] INFO root fetch - processPackages [edc-test-utils]: New version: [0.3.9] Old Version: [0.3.8]
+[2023-05-24 19:00:46] INFO root fetch - processPackages [edc-egfr]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-24 19:00:46] INFO root fetch - processPackages [katello-host-tools]: Downloading https://files.pythonhosted.org/packages/2e/ce/45c0ac477530677ba69e20647411db5bc9310862e24fc98107bdcb0323f6/katello-host-tools-4.2.2.tar.gz
+[2023-05-24 19:00:47] INFO root fetch - processPackages [remla12-lib-release]: Downloading https://files.pythonhosted.org/packages/6a/c1/13b6d2d211b1014bce13773d7709eff12f446eb313eff6c025f5d948c5d6/remla12-lib-release-0.1.1.tar.gz
+[2023-05-24 19:00:47] INFO root fetch - processPackages [edc-pdutils]: Downloading https://files.pythonhosted.org/packages/ac/92/c41cc262cff276e79b8cc3813b19bcf9131456c1d51710f77276875aa803/edc-pdutils-0.3.8.tar.gz
+[2023-05-24 19:00:47] INFO root fetch - processPackages [edc-visit-tracking]: Downloading https://files.pythonhosted.org/packages/1a/06/f2a9bc1cef336d39c82c1055f707cc73912c2e08799ac43095b50a894cbc/edc_visit_tracking-0.3.8-py3-none-any.whl
+[2023-05-24 19:00:47] INFO root fetch - processPackages [mechanical-bull]: Downloading https://files.pythonhosted.org/packages/62/65/7a51a51e3013a735914737895c9755308657a0d9b490cd522c267b0a8543/mechanical_bull-0.0.7.tar.gz
+[2023-05-24 19:00:47] INFO root fetch - processPackages [remla12-lib-release]: executing diffoscope
+[2023-05-24 19:00:47] INFO root fetch - processPackages [remla12-lib-release]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/remla12-lib-release-0.1.0.tar.gz tmp/remla12-lib-release-0.1.1.tar.gz --markdown 20230524/r/remla12-lib-release/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-05-24 19:00:47] INFO root fetch - processPackages [pymemri]: Downloading https://files.pythonhosted.org/packages/72/3b/fd0739b423a7ca70dc033e9e822ae382c63c559a0d82d8e72fe58085ac5e/pymemri-0.0.8.tar.gz
+[2023-05-24 19:00:47] INFO root fetch - processPackages [edc-test-utils]: Downloading https://files.pythonhosted.org/packages/88/77/6830dd4f3853661a4058f77baf647d89588609ed3a08c34e32d75f9dbc47/edc_test_utils-0.3.8-py3-none-any.whl
+[2023-05-24 19:00:47] INFO root fetch - processPackages [edc-egfr]: Downloading https://files.pythonhosted.org/packages/eb/c3/2f1f0251027470041bb6c75392f6fc6ebcc0eaa5c2dce683194ff2f9571d/edc-egfr-0.1.8.tar.gz
+[2023-05-24 19:00:47] INFO root fetch - processPackages [katello-host-tools]: Downloading https://files.pythonhosted.org/packages/46/a6/a6e037ffa144543748a5af3040170255ca107836dce8352eed73df235109/katello-host-tools-4.2.3.tar.gz
+[2023-05-24 19:00:47] INFO root fetch - processPackages [edc-pdutils]: Downloading https://files.pythonhosted.org/packages/b4/3d/d7a4580ab240013e057e0ed96a7fafca5197d37130b9896166ea0d9cc200/edc-pdutils-0.3.9.tar.gz
+[2023-05-24 19:00:47] INFO root fetch - processPackages [katello-host-tools]: executing diffoscope
+[2023-05-24 19:00:47] INFO root fetch - processPackages [katello-host-tools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/katello-host-tools-4.2.2.tar.gz tmp/katello-host-tools-4.2.3.tar.gz --markdown 20230524/k/katello-host-tools/4.2.2-4.2.3/diff.md --exclude *.pyd
+[2023-05-24 19:00:47] INFO root fetch - processPackages [edc-test-utils]: Downloading https://files.pythonhosted.org/packages/85/4d/0b5aa585370e88312de5b4663f06fab953d5798e3516907e3eccc76abae6/edc_test_utils-0.3.9-py3-none-any.whl
+[2023-05-24 19:00:47] INFO root fetch - processPackages [mechanical-bull]: Downloading https://files.pythonhosted.org/packages/61/f5/b8a2e5ec3f63f5005daf7f3eb1c065c8054bd9bca0eb8b35290390d3c056/mechanical_bull-0.1.0.tar.gz
+[2023-05-24 19:00:47] INFO root fetch - processPackages [edc-egfr]: Downloading https://files.pythonhosted.org/packages/9e/83/2d1b993cb9b027886dc4327f5ae157cbcf7b30260e8901ca2cf5264323c1/edc-egfr-0.1.9.tar.gz
+[2023-05-24 19:00:47] INFO root fetch - processPackages [edc-visit-tracking]: Downloading https://files.pythonhosted.org/packages/cc/b6/616bf936c99497cd724389cfd967ef496bbcf233516084b90307f5d30127/edc_visit_tracking-0.3.9-py3-none-any.whl
+[2023-05-24 19:00:47] INFO root fetch - processPackages [edc-pdutils]: executing diffoscope
+[2023-05-24 19:00:47] INFO root fetch - processPackages [edc-pdutils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/edc-pdutils-0.3.8.tar.gz tmp/edc-pdutils-0.3.9.tar.gz --markdown 20230524/e/edc-pdutils/0.3.8-0.3.9/diff.md --exclude *.pyd
+[2023-05-24 19:00:47] INFO root fetch - processPackages [mechanical-bull]: executing diffoscope
+[2023-05-24 19:00:47] INFO root fetch - processPackages [mechanical-bull]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mechanical_bull-0.0.7.tar.gz tmp/mechanical_bull-0.1.0.tar.gz --markdown 20230524/m/mechanical-bull/0.0.7-0.1.0/diff.md --exclude *.pyd
+[2023-05-24 19:00:47] INFO root fetch - processPackages [pymemri]: Downloading https://files.pythonhosted.org/packages/76/34/fd60ecc79c07d503e6fbe32e661bd1324390924f0746bb39459636a366ef/pymemri-0.0.9.tar.gz
+[2023-05-24 19:00:47] INFO root fetch - processPackages [edc-visit-tracking]: executing diffoscope
+[2023-05-24 19:00:47] INFO root fetch - processPackages [edc-visit-tracking]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/edc_visit_tracking-0.3.8-py3-none-any.whl.zip tmp/edc_visit_tracking-0.3.9-py3-none-any.whl.zip --markdown 20230524/e/edc-visit-tracking/0.3.8-0.3.9/diff.md --exclude *.pyd
+[2023-05-24 19:00:47] INFO root fetch - processPackages [edc-test-utils]: executing diffoscope
+[2023-05-24 19:00:47] INFO root fetch - processPackages [edc-test-utils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/edc_test_utils-0.3.8-py3-none-any.whl.zip tmp/edc_test_utils-0.3.9-py3-none-any.whl.zip --markdown 20230524/e/edc-test-utils/0.3.8-0.3.9/diff.md --exclude *.pyd
+[2023-05-24 19:00:47] INFO root fetch - processPackages [pymemri]: executing diffoscope
+[2023-05-24 19:00:47] INFO root fetch - processPackages [pymemri]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pymemri-0.0.8.tar.gz tmp/pymemri-0.0.9.tar.gz --markdown 20230524/p/pymemri/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-24 19:00:47] INFO root fetch - processPackages [edc-egfr]: executing diffoscope
+[2023-05-24 19:00:47] INFO root fetch - processPackages [edc-egfr]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/edc-egfr-0.1.8.tar.gz tmp/edc-egfr-0.1.9.tar.gz --markdown 20230524/e/edc-egfr/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-24 19:00:48] INFO root fetch - processPackages [digest]: Start processing: edc-protocol-incident
+[2023-05-24 19:00:48] INFO root fetch - main [MainThread]: End processing [digest]: success
+[2023-05-24 19:00:48] INFO root fetch - processPackages [remla12-lib-release]: Start processing: size-constrained-clustering2
+[2023-05-24 19:00:48] INFO root fetch - main [MainThread]: End processing [remla12-lib-release]: success
+[2023-05-24 19:00:48] WARNING root fetch - processPackages [size-constrained-clustering2]: Skipping, unable to determine old version
+[2023-05-24 19:00:48] INFO root fetch - processPackages [size-constrained-clustering2]: Start processing: sisaptools
+[2023-05-24 19:00:48] INFO root fetch - main [MainThread]: End processing [size-constrained-clustering2] error
+[2023-05-24 19:00:48] INFO root fetch - processPackages [edc-protocol-incident]: New version: [0.1.25] Old Version: [0.1.24]
+[2023-05-24 19:00:48] INFO root fetch - processPackages [sisaptools]: New version: [1.9.9] Old Version: [1.9.8]
+[2023-05-24 19:00:48] INFO root fetch - processPackages [sisaptools]: executing diffoscope
+[2023-05-24 19:00:48] INFO root fetch - processPackages [sisaptools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sisaptools-1.9.8.tar.gz tmp/sisaptools-1.9.9.tar.gz --markdown 20230524/s/sisaptools/1.9.8-1.9.9/diff.md --exclude *.pyd
+[2023-05-24 19:00:48] INFO root fetch - processPackages [divio-docs-gen]: Start processing: liteindex
+[2023-05-24 19:00:48] INFO root fetch - main [MainThread]: End processing [divio-docs-gen]: success
+[2023-05-24 19:00:48] INFO root fetch - processPackages [liteindex]: New version: [0.0.1.dev9] Old Version: [0.0.1.dev8]
+[2023-05-24 19:00:48] INFO root fetch - processPackages [edc-protocol-incident]: Downloading https://files.pythonhosted.org/packages/39/94/944168bb0976cfe27c141b38498ae305ac10d61604cabee712f0434474d2/edc-protocol-incident-0.1.24.tar.gz
+[2023-05-24 19:00:48] INFO root fetch - processPackages [liteindex]: executing diffoscope
+[2023-05-24 19:00:48] INFO root fetch - processPackages [liteindex]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/liteindex-0.0.1.dev8.tar.gz tmp/liteindex-0.0.1.dev9.tar.gz --markdown 20230524/l/liteindex/0.0.1.dev8-0.0.1.dev9/diff.md --exclude *.pyd
+[2023-05-24 19:00:48] INFO root fetch - processPackages [edc-protocol-incident]: Downloading https://files.pythonhosted.org/packages/62/04/62ffebedb29ee11d4aa21cf16e67b1ec6cb7e0dd6d296948223cb36daddf/edc-protocol-incident-0.1.25.tar.gz
+[2023-05-24 19:00:48] INFO root fetch - processPackages [edc-protocol-incident]: executing diffoscope
+[2023-05-24 19:00:48] INFO root fetch - processPackages [edc-protocol-incident]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/edc-protocol-incident-0.1.24.tar.gz tmp/edc-protocol-incident-0.1.25.tar.gz --markdown 20230524/e/edc-protocol-incident/0.1.24-0.1.25/diff.md --exclude *.pyd
+[2023-05-24 19:00:49] INFO root fetch - processPackages [mechanical-bull]: Start processing: edc-review-dashboard
+[2023-05-24 19:00:49] INFO root fetch - main [MainThread]: End processing [mechanical-bull]: success
+[2023-05-24 19:00:49] INFO root fetch - processPackages [edc-review-dashboard]: New version: [0.3.9] Old Version: [0.3.8]
+[2023-05-24 19:00:49] INFO root fetch - processPackages [edc-review-dashboard]: Downloading https://files.pythonhosted.org/packages/51/7d/4f8499cc8677c775d354234d37daa0e43e762b117ad61f1f61e9833dfade/edc_review_dashboard-0.3.8-py3-none-any.whl
+[2023-05-24 19:00:49] INFO root fetch - processPackages [edc-test-utils]: Start processing: flyteidl
+[2023-05-24 19:00:49] INFO root fetch - main [MainThread]: End processing [edc-test-utils]: success
+[2023-05-24 19:00:49] INFO root fetch - processPackages [flyteidl]: New version: [1.5.8] Old Version: [1.5.7]
+[2023-05-24 19:00:49] INFO root fetch - processPackages [edc-visit-tracking]: Start processing: remla12-lib-release
+[2023-05-24 19:00:49] INFO root fetch - main [MainThread]: End processing [edc-visit-tracking]: success
+[2023-05-24 19:00:49] INFO root fetch - processPackages [remla12-lib-release]: New version: [0.1.3] Old Version: [0.1.2]
+[2023-05-24 19:00:49] INFO root fetch - processPackages [edc-pdutils]: Start processing: owlml
+[2023-05-24 19:00:49] INFO root fetch - main [MainThread]: End processing [edc-pdutils]: success
+[2023-05-24 19:00:49] INFO root fetch - processPackages [owlml]: New version: [0.1.2.dev1684938929] Old Version: [0.1.2.dev1684878969]
+[2023-05-24 19:00:49] INFO root fetch - processPackages [pymemri]: Start processing: scikit-surgeryvtk
+[2023-05-24 19:00:49] INFO root fetch - main [MainThread]: End processing [pymemri]: success
+[2023-05-24 19:00:49] INFO root fetch - processPackages [edc-egfr]: Start processing: edc-stata
+[2023-05-24 19:00:49] INFO root fetch - main [MainThread]: End processing [edc-egfr]: success
+[2023-05-24 19:00:49] INFO root fetch - processPackages [remla12-lib-release]: Downloading https://files.pythonhosted.org/packages/52/ed/c9fdaa14d1de5459ae66ccc1936f0a76bd6b7c0c8e20d8ad6acda2a105b5/remla12_lib_release-0.1.2.tar.gz
+[2023-05-24 19:00:49] INFO root fetch - processPackages [katello-host-tools]: Start processing: edc-notification
+[2023-05-24 19:00:49] INFO root fetch - main [MainThread]: End processing [katello-host-tools]: success
+[2023-05-24 19:00:49] INFO root fetch - processPackages [edc-review-dashboard]: Downloading https://files.pythonhosted.org/packages/00/aa/478f0003f519e4d2985c177db44fe855a600c1738e58181cc6c46a56af0a/edc-review-dashboard-0.3.9.tar.gz
+[2023-05-24 19:00:49] INFO root fetch - processPackages [scikit-surgeryvtk]: New version: [2.0rc0] Old Version: [2.0.0]
+[2023-05-24 19:00:49] WARNING root fetch - processPackages [edc-stata]: Skipping, unable to determine old version
+[2023-05-24 19:00:49] INFO root fetch - processPackages [edc-stata]: Start processing: edc-auth
+[2023-05-24 19:00:49] INFO root fetch - main [MainThread]: End processing [edc-stata] error
+[2023-05-24 19:00:49] INFO root fetch - processPackages [flyteidl]: Downloading https://files.pythonhosted.org/packages/30/75/40650c36dbb4ef8cc1004e8f2165f0e1e0bb2845ddfa4bf608056d4f5e43/flyteidl-1.5.8.tar.gz
+[2023-05-24 19:00:49] INFO root fetch - processPackages [owlml]: Downloading https://files.pythonhosted.org/packages/11/80/bcbaf7e1d6a052fe605dbcc86f9af9e1d388ad52f3e9e00c9e97fa15952d/owlml-0.1.2.dev1684938929.tar.gz
+[2023-05-24 19:00:49] INFO root fetch - processPackages [edc-notification]: New version: [0.3.9] Old Version: [0.3.8]
+[2023-05-24 19:00:49] INFO root fetch - processPackages [sisaptools]: Start processing: onnxruntime-training
+[2023-05-24 19:00:49] INFO root fetch - main [MainThread]: End processing [sisaptools]: success
+[2023-05-24 19:00:49] INFO root fetch - processPackages [scikit-surgeryvtk]: Downloading https://files.pythonhosted.org/packages/36/29/1a6b774c9affbccc0bc6e4c6cbfeb6f3957da7d61fd7b7a31d5111c5b680/scikit-surgeryvtk-2.0.0.tar.gz
+[2023-05-24 19:00:49] INFO root fetch - processPackages [edc-review-dashboard]: executing diffoscope
+[2023-05-24 19:00:49] INFO root fetch - processPackages [edc-auth]: New version: [0.3.9] Old Version: [0.3.8]
+[2023-05-24 19:00:49] INFO root fetch - processPackages [edc-review-dashboard]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/edc_review_dashboard-0.3.8-py3-none-any.whl.zip tmp/edc-review-dashboard-0.3.9.tar.gz --markdown 20230524/e/edc-review-dashboard/0.3.8-0.3.9/diff.md --exclude *.pyd
+[2023-05-24 19:00:50] INFO root fetch - processPackages [owlml]: executing diffoscope
+[2023-05-24 19:00:50] INFO root fetch - processPackages [owlml]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/owlml-0.1.2.dev1684878969.tar.gz tmp/owlml-0.1.2.dev1684938929.tar.gz --markdown 20230524/o/owlml/0.1.2.dev1684878969-0.1.2.dev1684938929/diff.md --exclude *.pyd
+[2023-05-24 19:00:50] INFO root fetch - processPackages [onnxruntime-training]: New version: [1.9.0] Old Version: [1.8.1]
+[2023-05-24 19:00:50] INFO root fetch - processPackages [flyteidl]: executing diffoscope
+[2023-05-24 19:00:50] INFO root fetch - processPackages [flyteidl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/flyteidl-1.5.7.tar.gz tmp/flyteidl-1.5.8.tar.gz --markdown 20230524/f/flyteidl/1.5.7-1.5.8/diff.md --exclude *.pyd
+[2023-05-24 19:00:50] INFO root fetch - processPackages [remla12-lib-release]: Downloading https://files.pythonhosted.org/packages/6d/d3/436edae4291df9398b77f200467d39396a25801a6fcf94e42571537764f1/remla12_lib_release-0.1.3.tar.gz
+[2023-05-24 19:00:50] INFO root fetch - processPackages [edc-notification]: Downloading https://files.pythonhosted.org/packages/b8/1a/bda920041499f01259342b9a7a45fc3033e75d0bcf7debc4d0be4f93a5a1/edc_notification-0.3.8-py3-none-any.whl
+[2023-05-24 19:00:50] INFO root fetch - processPackages [edc-auth]: Downloading https://files.pythonhosted.org/packages/c4/50/dda687f1b63b07640e69d4d9bff6d375bae86f1c4b27b5046c322ede21cf/edc_auth-0.3.8-py2.py3-none-any.whl
+[2023-05-24 19:00:50] INFO root fetch - processPackages [onnxruntime-training]: Downloading https://files.pythonhosted.org/packages/db/f0/936284f7d954e90e93e9beb02c062a16ecefdb9d4b6d69f1bb9f2e9126ba/onnxruntime_training-1.8.1-cp39-cp39-manylinux2014_x86_64.whl
+[2023-05-24 19:00:50] INFO root fetch - processPackages [scikit-surgeryvtk]: Downloading https://files.pythonhosted.org/packages/25/b6/1ae6860e710517b83b49ef137ca6b82765e8e16b4b601755aadd32d1044f/scikit-surgeryvtk-2.0rc0.tar.gz
+[2023-05-24 19:00:50] INFO root fetch - processPackages [remla12-lib-release]: executing diffoscope
+[2023-05-24 19:00:50] INFO root fetch - processPackages [remla12-lib-release]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/remla12_lib_release-0.1.2.tar.gz tmp/remla12_lib_release-0.1.3.tar.gz --markdown 20230524/r/remla12-lib-release/0.1.2-0.1.3/diff.md --exclude *.pyd
+[2023-05-24 19:00:50] INFO root fetch - processPackages [scikit-surgeryvtk]: executing diffoscope
+[2023-05-24 19:00:50] INFO root fetch - processPackages [scikit-surgeryvtk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/scikit-surgeryvtk-2.0.0.tar.gz tmp/scikit-surgeryvtk-2.0rc0.tar.gz --markdown 20230524/s/scikit-surgeryvtk/2.0.0-2.0rc0/diff.md --exclude *.pyd
+[2023-05-24 19:00:50] INFO root fetch - processPackages [edc-notification]: Downloading https://files.pythonhosted.org/packages/d2/e9/8ead99b35d327ac0996299b626ba7e61fcfb6c2f82372bc232d4c55f47cf/edc_notification-0.3.9-py3-none-any.whl
+[2023-05-24 19:00:50] INFO root fetch - processPackages [edc-auth]: Downloading https://files.pythonhosted.org/packages/63/36/404b92dd95bce03bc0fafd2cf5a0f3e72bc2176ca44f89ee75c57f685864/edc_auth-0.3.9-py2.py3-none-any.whl
+[2023-05-24 19:00:50] INFO root fetch - processPackages [edc-auth]: executing diffoscope
+[2023-05-24 19:00:50] INFO root fetch - processPackages [edc-auth]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/edc_auth-0.3.8-py2.py3-none-any.whl.zip tmp/edc_auth-0.3.9-py2.py3-none-any.whl.zip --markdown 20230524/e/edc-auth/0.3.8-0.3.9/diff.md --exclude *.pyd
+[2023-05-24 19:00:50] INFO root fetch - processPackages [edc-notification]: executing diffoscope
+[2023-05-24 19:00:50] INFO root fetch - processPackages [edc-notification]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/edc_notification-0.3.8-py3-none-any.whl.zip tmp/edc_notification-0.3.9-py3-none-any.whl.zip --markdown 20230524/e/edc-notification/0.3.8-0.3.9/diff.md --exclude *.pyd
+[2023-05-24 19:00:50] WARNING root fetch - processPackages [onnxruntime-training]: Skipping package: exceeds size limit 86009665>=10485760
+[2023-05-24 19:00:50] INFO root fetch - processPackages [onnxruntime-training]: Start processing: aiorobonect
+[2023-05-24 19:00:50] INFO root fetch - main [MainThread]: End processing [onnxruntime-training] error
+[2023-05-24 19:00:50] INFO root fetch - processPackages [aiorobonect]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-24 19:00:50] INFO root fetch - processPackages [aiorobonect]: executing diffoscope
+[2023-05-24 19:00:50] INFO root fetch - processPackages [aiorobonect]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aiorobonect-0.1.8.tar.gz tmp/aiorobonect-0.1.9.tar.gz --markdown 20230524/a/aiorobonect/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-24 19:00:51] INFO root fetch - processPackages [edc-protocol-incident]: Start processing: havoc-clustering
+[2023-05-24 19:00:51] INFO root fetch - main [MainThread]: End processing [edc-protocol-incident]: success
+[2023-05-24 19:00:51] INFO root fetch - processPackages [havoc-clustering]: New version: [0.0.9] Old Version: [0.0.4]
+[2023-05-24 19:00:51] INFO root fetch - processPackages [havoc-clustering]: executing diffoscope
+[2023-05-24 19:00:51] INFO root fetch - processPackages [havoc-clustering]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/havoc_clustering-0.0.4.tar.gz tmp/havoc_clustering-0.0.9.tar.gz --markdown 20230524/h/havoc-clustering/0.0.4-0.0.9/diff.md --exclude *.pyd
+[2023-05-24 19:00:51] INFO root fetch - processPackages [edc-review-dashboard]: Start processing: stringtokenizer
+[2023-05-24 19:00:51] INFO root fetch - main [MainThread]: End processing [edc-review-dashboard]: success
+[2023-05-24 19:00:51] INFO root fetch - processPackages [stringtokenizer]: New version: [1.1.6] Old Version: [1.1.3]
+[2023-05-24 19:00:51] INFO root fetch - processPackages [owlml]: Start processing: edc-subject-model-wrappers
+[2023-05-24 19:00:51] INFO root fetch - main [MainThread]: End processing [owlml]: success
+[2023-05-24 19:00:51] INFO root fetch - processPackages [stringtokenizer]: Downloading https://files.pythonhosted.org/packages/02/b5/ecd3e7b44948bf8919ef463e7bc2038704f294593301761f52e79325d3ce/stringtokenizer-1.1.6.tar.gz
+[2023-05-24 19:00:51] INFO root fetch - processPackages [edc-subject-model-wrappers]: New version: [0.3.9] Old Version: [0.3.8]
+[2023-05-24 19:00:51] INFO root fetch - main [MainThread]: End processing [remla12-lib-release]: success
+[2023-05-24 19:00:51] INFO root fetch - processPackages [stringtokenizer]: executing diffoscope
+[2023-05-24 19:00:51] INFO root fetch - processPackages [stringtokenizer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/stringtokenizer-1.1.3.tar.gz tmp/stringtokenizer-1.1.6.tar.gz --markdown 20230524/s/stringtokenizer/1.1.3-1.1.6/diff.md --exclude *.pyd
+[2023-05-24 19:00:51] INFO root fetch - processPackages [edc-subject-model-wrappers]: Downloading https://files.pythonhosted.org/packages/fc/9c/2cd01946d9aa5187f9e02bd2559b88c7eb6a2a109e93cfdc5f1cb4888a1b/edc-subject-model-wrappers-0.3.8.tar.gz
+[2023-05-24 19:00:52] INFO root fetch - processPackages [edc-subject-model-wrappers]: Downloading https://files.pythonhosted.org/packages/36/8c/e6d92e05644d5b760fa169cb64f3fb8c019204bfc33f49c542c135571bc3/edc-subject-model-wrappers-0.3.9.tar.gz
+[2023-05-24 19:00:52] INFO root fetch - processPackages [edc-subject-model-wrappers]: executing diffoscope
+[2023-05-24 19:00:52] INFO root fetch - processPackages [edc-subject-model-wrappers]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/edc-subject-model-wrappers-0.3.8.tar.gz tmp/edc-subject-model-wrappers-0.3.9.tar.gz --markdown 20230524/e/edc-subject-model-wrappers/0.3.8-0.3.9/diff.md --exclude *.pyd
+[2023-05-24 19:00:52] INFO root fetch - main [MainThread]: End processing [edc-notification]: success
+[2023-05-24 19:00:52] INFO root fetch - main [MainThread]: End processing [havoc-clustering]: success
+[2023-05-24 19:00:52] INFO root fetch - main [MainThread]: End processing [aiorobonect]: success
+[2023-05-24 19:00:52] INFO root fetch - main [MainThread]: End processing [edc-auth]: success
+[2023-05-24 19:00:52] INFO root fetch - main [MainThread]: End processing [stringtokenizer]: success
+[2023-05-24 19:00:53] INFO root fetch - main [MainThread]: End processing [scikit-surgeryvtk]: success
+[2023-05-24 19:00:54] INFO root fetch - main [MainThread]: End processing [edc-subject-model-wrappers]: success
+[2023-05-24 19:00:55] INFO root fetch - main [MainThread]: End processing [flyteidl]: success
+[2023-05-24 19:01:31] INFO root fetch - main [MainThread]: End processing [liteindex]: success
+[2023-05-24 19:01:31] INFO root fetch - main [MainThread]: Store serial: [18233228]
