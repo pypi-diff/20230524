@@ -14342,3 +14342,123 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd4 in position 72: invalid
 [2023-05-24 14:06:53] INFO root fetch - main [MainThread]: End processing [ckan]: success
 [2023-05-24 14:07:05] INFO root fetch - main [MainThread]: End processing [ckan]: success
 [2023-05-24 14:07:05] INFO root fetch - main [MainThread]: Store serial: [18229185]
+[2023-05-24 14:12:11] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18229185]
+[2023-05-24 14:12:15] INFO root fetch - main [MainThread]: Found 19 changed packages
+[2023-05-24 14:12:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: urllib3-ext-hface
+[2023-05-24 14:12:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: psyke
+[2023-05-24 14:12:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: domain-paas-sdk-python
+[2023-05-24 14:12:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: salure-helpers-profit
+[2023-05-24 14:12:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: vid2info
+[2023-05-24 14:12:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: graphdatascience
+[2023-05-24 14:12:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: qiskit-ibm-experiment
+[2023-05-24 14:12:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: argus-toolbelt
+[2023-05-24 14:12:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: cloudmesh-rivanna
+[2023-05-24 14:12:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: edwh-restic-plugin
+[2023-05-24 14:12:15] INFO root fetch - processPackages [vid2info]: New version: [1.99] Old Version: [1.98]
+[2023-05-24 14:12:15] INFO root fetch - processPackages [edwh-restic-plugin]: New version: [0.1.6] Old Version: [0.1.5]
+[2023-05-24 14:12:15] INFO root fetch - processPackages [cloudmesh-rivanna]: New version: [4.3.8] Old Version: [4.3.7]
+[2023-05-24 14:12:15] INFO root fetch - processPackages [domain-paas-sdk-python]: New version: [1.0.1] Old Version: [1.0.0]
+[2023-05-24 14:12:15] INFO root fetch - processPackages [qiskit-ibm-experiment]: New version: [0.3.2] Old Version: [0.3.1]
+[2023-05-24 14:12:15] INFO root fetch - processPackages [vid2info]: executing diffoscope
+[2023-05-24 14:12:15] INFO root fetch - processPackages [vid2info]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vid2info-1.98.tar.gz tmp/vid2info-1.99.tar.gz --markdown 20230524/v/vid2info/1.98-1.99/diff.md --exclude *.pyd
+[2023-05-24 14:12:15] INFO root fetch - processPackages [urllib3-ext-hface]: New version: [0.2.9] Old Version: [0.2.8]
+[2023-05-24 14:12:15] INFO root fetch - processPackages [graphdatascience]: New version: [1.7a1] Old Version: [1.6rc1]
+[2023-05-24 14:12:16] INFO root fetch - processPackages [salure-helpers-profit]: New version: [1.3.1] Old Version: [1.3.0]
+[2023-05-24 14:12:16] INFO root fetch - processPackages [psyke]: New version: [0.3.4.dev3] Old Version: [0.3.4.dev2]
+[2023-05-24 14:12:16] INFO root fetch - processPackages [argus-toolbelt]: New version: [6.9.3] Old Version: [6.9.2]
+[2023-05-24 14:12:16] INFO root fetch - processPackages [cloudmesh-rivanna]: executing diffoscope
+[2023-05-24 14:12:16] INFO root fetch - processPackages [cloudmesh-rivanna]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cloudmesh-rivanna-4.3.7.tar.gz tmp/cloudmesh-rivanna-4.3.8.tar.gz --markdown 20230524/c/cloudmesh-rivanna/4.3.7-4.3.8/diff.md --exclude *.pyd
+[2023-05-24 14:12:16] INFO root fetch - processPackages [edwh-restic-plugin]: executing diffoscope
+[2023-05-24 14:12:16] INFO root fetch - processPackages [edwh-restic-plugin]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/edwh_restic_plugin-0.1.5.tar.gz tmp/edwh_restic_plugin-0.1.6.tar.gz --markdown 20230524/e/edwh-restic-plugin/0.1.5-0.1.6/diff.md --exclude *.pyd
+[2023-05-24 14:12:16] INFO root fetch - processPackages [domain-paas-sdk-python]: Downloading https://files.pythonhosted.org/packages/d6/17/b67074a5233480efc7cf9c9c9c784e7440a89afc0022fa3632c8d25aa670/domain-paas-sdk-python-1.0.0.tar.gz
+[2023-05-24 14:12:16] INFO root fetch - processPackages [salure-helpers-profit]: Downloading https://files.pythonhosted.org/packages/8f/1a/76e74e2668c6f5f73b615740ccf536702c2d15a0546d979b5f5c36a6d068/salure_helpers_profit-1.3.0.tar.gz
+[2023-05-24 14:12:16] INFO root fetch - processPackages [qiskit-ibm-experiment]: Downloading https://files.pythonhosted.org/packages/16/aa/d51c0050bc47b9460449ea4602d993f53e48debf761b7a268a0851bb0a84/qiskit-ibm-experiment-0.3.1.tar.gz
+[2023-05-24 14:12:16] INFO root fetch - processPackages [graphdatascience]: Downloading https://files.pythonhosted.org/packages/46/b8/79c9fa09ada1bfdeb32342fef7cf59566d5ed8c824a63f04dac00dcf7c1b/graphdatascience-1.6rc1.tar.gz
+[2023-05-24 14:12:16] INFO root fetch - processPackages [argus-toolbelt]: Downloading https://files.pythonhosted.org/packages/5a/9b/9ffe0dedbbba053489bd0128af23ba436e9b4b4e790dc4523bd1c9150589/argus_toolbelt-6.9.2-py3-none-any.whl
+[2023-05-24 14:12:16] INFO root fetch - processPackages [domain-paas-sdk-python]: Downloading https://files.pythonhosted.org/packages/90/2f/44ac19b4bb5e4b82b6869c8cedbb5da8398b168974de175b597e00317f18/domain-paas-sdk-python-1.0.1.tar.gz
+[2023-05-24 14:12:16] INFO root fetch - processPackages [psyke]: Downloading https://files.pythonhosted.org/packages/b9/4e/5c96437b239699b6499a23a376a83300921adda6dbbe89115e0a9220d963/psyke-0.3.4.dev3.tar.gz
+[2023-05-24 14:12:16] INFO root fetch - processPackages [salure-helpers-profit]: Downloading https://files.pythonhosted.org/packages/79/cc/692563c6aa35b8f167290a13fe296267b7df8d327f773f91dbc0e2513c2e/salure_helpers_profit-1.3.1.tar.gz
+[2023-05-24 14:12:16] INFO root fetch - processPackages [urllib3-ext-hface]: executing diffoscope
+[2023-05-24 14:12:16] INFO root fetch - processPackages [urllib3-ext-hface]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/urllib3_ext_hface-0.2.8.tar.gz tmp/urllib3_ext_hface-0.2.9.tar.gz --markdown 20230524/u/urllib3-ext-hface/0.2.8-0.2.9/diff.md --exclude *.pyd
+[2023-05-24 14:12:16] INFO root fetch - processPackages [psyke]: executing diffoscope
+[2023-05-24 14:12:16] INFO root fetch - processPackages [psyke]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/psyke-0.3.4.dev2.tar.gz tmp/psyke-0.3.4.dev3.tar.gz --markdown 20230524/p/psyke/0.3.4.dev2-0.3.4.dev3/diff.md --exclude *.pyd
+[2023-05-24 14:12:16] INFO root fetch - processPackages [salure-helpers-profit]: executing diffoscope
+[2023-05-24 14:12:16] INFO root fetch - processPackages [salure-helpers-profit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/salure_helpers_profit-1.3.0.tar.gz tmp/salure_helpers_profit-1.3.1.tar.gz --markdown 20230524/s/salure-helpers-profit/1.3.0-1.3.1/diff.md --exclude *.pyd
+[2023-05-24 14:12:16] INFO root fetch - processPackages [qiskit-ibm-experiment]: Downloading https://files.pythonhosted.org/packages/75/40/1aa48eb0f7b7f775db533f2d551fc52159445f31ca4eb24b4e16a1ab9c79/qiskit-ibm-experiment-0.3.2.tar.gz
+[2023-05-24 14:12:16] INFO root fetch - processPackages [domain-paas-sdk-python]: executing diffoscope
+[2023-05-24 14:12:16] INFO root fetch - processPackages [domain-paas-sdk-python]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/domain-paas-sdk-python-1.0.0.tar.gz tmp/domain-paas-sdk-python-1.0.1.tar.gz --markdown 20230524/d/domain-paas-sdk-python/1.0.0-1.0.1/diff.md --exclude *.pyd
+[2023-05-24 14:12:16] INFO root fetch - processPackages [argus-toolbelt]: Downloading https://files.pythonhosted.org/packages/b7/a1/72c8c4de737e233775d5d75822ec3082214447ad8159fa2f5cdbda5a25ae/argus_toolbelt-6.9.3-py3-none-any.whl
+[2023-05-24 14:12:16] INFO root fetch - processPackages [qiskit-ibm-experiment]: executing diffoscope
+[2023-05-24 14:12:16] INFO root fetch - processPackages [qiskit-ibm-experiment]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/qiskit-ibm-experiment-0.3.1.tar.gz tmp/qiskit-ibm-experiment-0.3.2.tar.gz --markdown 20230524/q/qiskit-ibm-experiment/0.3.1-0.3.2/diff.md --exclude *.pyd
+[2023-05-24 14:12:16] INFO root fetch - processPackages [argus-toolbelt]: executing diffoscope
+[2023-05-24 14:12:16] INFO root fetch - processPackages [argus-toolbelt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/argus_toolbelt-6.9.2-py3-none-any.whl.zip tmp/argus_toolbelt-6.9.3-py3-none-any.whl.zip --markdown 20230524/a/argus-toolbelt/6.9.2-6.9.3/diff.md --exclude *.pyd
+[2023-05-24 14:12:16] INFO root fetch - processPackages [graphdatascience]: Downloading https://files.pythonhosted.org/packages/5d/27/47f2c300f5f553a455d0b899f6ef0dc507f76662c2b346e8187bdfb73ed6/graphdatascience-1.7a1.tar.gz
+[2023-05-24 14:12:17] INFO root fetch - processPackages [graphdatascience]: executing diffoscope
+[2023-05-24 14:12:17] INFO root fetch - processPackages [graphdatascience]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/graphdatascience-1.6rc1.tar.gz tmp/graphdatascience-1.7a1.tar.gz --markdown 20230524/g/graphdatascience/1.6rc1-1.7a1/diff.md --exclude *.pyd
+[2023-05-24 14:12:17] INFO root fetch - processPackages [edwh-restic-plugin]: Start processing: vodesfunc
+[2023-05-24 14:12:17] INFO root fetch - main [MainThread]: End processing [edwh-restic-plugin]: success
+[2023-05-24 14:12:17] INFO root fetch - processPackages [cloudmesh-rivanna]: Start processing: regula.documentreader.webclient
+[2023-05-24 14:12:17] INFO root fetch - main [MainThread]: End processing [cloudmesh-rivanna]: success
+[2023-05-24 14:12:17] INFO root fetch - processPackages [regula.documentreader.webclient]: New version: [6.8.0] Old Version: [6.7.2]
+[2023-05-24 14:12:17] INFO root fetch - processPackages [vodesfunc]: New version: [1.3.8] Old Version: [1.3.7]
+[2023-05-24 14:12:17] INFO root fetch - processPackages [regula.documentreader.webclient]: executing diffoscope
+[2023-05-24 14:12:17] INFO root fetch - processPackages [regula.documentreader.webclient]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/regula.documentreader.webclient-6.7.2.tar.gz tmp/regula.documentreader.webclient-6.8.0.tar.gz --markdown 20230524/r/regula.documentreader.webclient/6.7.2-6.8.0/diff.md --exclude *.pyd
+[2023-05-24 14:12:17] INFO root fetch - processPackages [vodesfunc]: Downloading https://files.pythonhosted.org/packages/20/d1/d40748e999410c7544577b7eb5ca6ef1407e4e381c2a1d0944f2562af13b/vodesfunc-1.3.7.tar.gz
+[2023-05-24 14:12:17] INFO root fetch - processPackages [domain-paas-sdk-python]: Start processing: car-connector-framework
+[2023-05-24 14:12:17] INFO root fetch - main [MainThread]: End processing [domain-paas-sdk-python]: success
+[2023-05-24 14:12:18] INFO root fetch - processPackages [vodesfunc]: Downloading https://files.pythonhosted.org/packages/b2/b7/92dc649b1a0bf4dadc0da218f1be2b6987c9371ac57d0d33912a156ef3e7/vodesfunc-1.3.8.tar.gz
+[2023-05-24 14:12:18] INFO root fetch - processPackages [car-connector-framework]: New version: [3.0.2rc285] Old Version: [3.0.2rc284]
+[2023-05-24 14:12:18] INFO root fetch - processPackages [urllib3-ext-hface]: Start processing: car-connector-framework
+[2023-05-24 14:12:18] INFO root fetch - main [MainThread]: End processing [urllib3-ext-hface]: success
+[2023-05-24 14:12:18] INFO root fetch - processPackages [car-connector-framework]: New version: [3.0.2rc285] Old Version: [3.0.2rc284]
+[2023-05-24 14:12:18] INFO root fetch - processPackages [vodesfunc]: executing diffoscope
+[2023-05-24 14:12:18] INFO root fetch - processPackages [vodesfunc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vodesfunc-1.3.7.tar.gz tmp/vodesfunc-1.3.8.tar.gz --markdown 20230524/v/vodesfunc/1.3.7-1.3.8/diff.md --exclude *.pyd
+[2023-05-24 14:12:18] INFO root fetch - processPackages [car-connector-framework]: Downloading https://files.pythonhosted.org/packages/1f/21/097e1ead5d189673956eb42cc4f58684492ede436853666e922b866fe8f7/car-connector-framework-3.0.2rc284.tar.gz
+[2023-05-24 14:12:18] INFO root fetch - processPackages [car-connector-framework]: Downloading https://files.pythonhosted.org/packages/1f/21/097e1ead5d189673956eb42cc4f58684492ede436853666e922b866fe8f7/car-connector-framework-3.0.2rc284.tar.gz
+[2023-05-24 14:12:18] INFO root fetch - processPackages [argus-toolbelt]: Start processing: nanolayer
+[2023-05-24 14:12:18] INFO root fetch - main [MainThread]: End processing [argus-toolbelt]: success
+[2023-05-24 14:12:18] INFO root fetch - processPackages [nanolayer]: New version: [0.4.9] Old Version: [0.4.8]
+[2023-05-24 14:12:18] INFO root fetch - processPackages [car-connector-framework]: Downloading https://files.pythonhosted.org/packages/4c/29/051f1731ba2ffa600fd30dfbf6fab1a8b3ab8b02ccc95ba2a4be3c2ca664/car-connector-framework-3.0.2rc285.tar.gz
+[2023-05-24 14:12:18] INFO root fetch - processPackages [car-connector-framework]: Downloading https://files.pythonhosted.org/packages/4c/29/051f1731ba2ffa600fd30dfbf6fab1a8b3ab8b02ccc95ba2a4be3c2ca664/car-connector-framework-3.0.2rc285.tar.gz
+[2023-05-24 14:12:18] INFO root fetch - processPackages [nanolayer]: Downloading https://files.pythonhosted.org/packages/f7/80/e468152babc6e88200c8550f2acb9118ee6b98559961a04f5057b14cce4a/nanolayer-0.4.8-py3-none-any.whl
+[2023-05-24 14:12:18] INFO root fetch - processPackages [car-connector-framework]: executing diffoscope
+[2023-05-24 14:12:18] INFO root fetch - processPackages [car-connector-framework]: executing diffoscope
+[2023-05-24 14:12:18] INFO root fetch - processPackages [car-connector-framework]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/car-connector-framework-3.0.2rc284.tar.gz tmp/car-connector-framework-3.0.2rc285.tar.gz --markdown 20230524/c/car-connector-framework/3.0.2rc284-3.0.2rc285/diff.md --exclude *.pyd
+[2023-05-24 14:12:18] INFO root fetch - processPackages [car-connector-framework]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/car-connector-framework-3.0.2rc284.tar.gz tmp/car-connector-framework-3.0.2rc285.tar.gz --markdown 20230524/c/car-connector-framework/3.0.2rc284-3.0.2rc285/diff.md --exclude *.pyd
+[2023-05-24 14:12:18] INFO root fetch - processPackages [salure-helpers-profit]: Start processing: localstack-core
+[2023-05-24 14:12:18] INFO root fetch - main [MainThread]: End processing [salure-helpers-profit]: success
+[2023-05-24 14:12:18] INFO root fetch - processPackages [localstack-core]: New version: [2.0.3.dev20230524094841] Old Version: [2.0.3.dev20230523165919]
+[2023-05-24 14:12:19] INFO root fetch - processPackages [nanolayer]: Downloading https://files.pythonhosted.org/packages/70/8a/a686dbb9639ca2e1d67b4529bad6754b3a7a4935d0e3000f500f51951aa4/nanolayer-0.4.9-py3-none-any.whl
+[2023-05-24 14:12:19] INFO root fetch - processPackages [localstack-core]: Downloading https://files.pythonhosted.org/packages/82/6a/587d8b296e86b2aabf792e994be5d0a5a2720c42da2be94b7c042e8d9877/localstack-core-2.0.3.dev20230524094841.tar.gz
+[2023-05-24 14:12:19] INFO root fetch - processPackages [vid2info]: Start processing: spyden
+[2023-05-24 14:12:19] INFO root fetch - main [MainThread]: End processing [vid2info]: success
+[2023-05-24 14:12:19] WARNING root fetch - processPackages [spyden]: Skipping, unable to determine old version
+[2023-05-24 14:12:19] INFO root fetch - processPackages [spyden]: Start processing: pytransform3d
+[2023-05-24 14:12:19] INFO root fetch - main [MainThread]: End processing [spyden] error
+[2023-05-24 14:12:19] INFO root fetch - processPackages [localstack-core]: executing diffoscope
+[2023-05-24 14:12:19] INFO root fetch - processPackages [localstack-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/localstack-core-2.0.3.dev20230523165919.tar.gz tmp/localstack-core-2.0.3.dev20230524094841.tar.gz --markdown 20230524/l/localstack-core/2.0.3.dev20230523165919-2.0.3.dev20230524094841/diff.md --exclude *.pyd
+[2023-05-24 14:12:19] INFO root fetch - processPackages [vodesfunc]: Start processing: provo
+[2023-05-24 14:12:19] INFO root fetch - main [MainThread]: End processing [vodesfunc]: success
+[2023-05-24 14:12:19] INFO root fetch - main [MainThread]: End processing [qiskit-ibm-experiment]: success
+[2023-05-24 14:12:19] INFO root fetch - processPackages [pytransform3d]: New version: [3.2.0] Old Version: [3.1.0]
+[2023-05-24 14:12:19] INFO root fetch - main [MainThread]: End processing [psyke]: success
+[2023-05-24 14:12:19] INFO root fetch - processPackages [provo]: New version: [1.0.4] Old Version: [1.0.3]
+[2023-05-24 14:12:19] INFO root fetch - processPackages [pytransform3d]: Downloading https://files.pythonhosted.org/packages/e6/4c/6dc006b517bd90180598dc238bd77bcfdfe78144e6f39500e21da280dd1a/pytransform3d-3.1.0.tar.gz
+[2023-05-24 14:12:19] INFO root fetch - processPackages [nanolayer]: executing diffoscope
+[2023-05-24 14:12:19] INFO root fetch - processPackages [nanolayer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nanolayer-0.4.8-py3-none-any.whl.zip tmp/nanolayer-0.4.9-py3-none-any.whl.zip --markdown 20230524/n/nanolayer/0.4.8-0.4.9/diff.md --exclude *.pyd
+[2023-05-24 14:12:19] INFO root fetch - processPackages [provo]: Downloading https://files.pythonhosted.org/packages/ee/ca/76b2551400211716b8b3b3d0a135a333240c654fa91dae2dc60bde51a73f/provo-1.0.3.tar.gz
+[2023-05-24 14:12:19] INFO root fetch - main [MainThread]: End processing [regula.documentreader.webclient]: success
+[2023-05-24 14:12:19] INFO root fetch - processPackages [pytransform3d]: Downloading https://files.pythonhosted.org/packages/cb/2f/233b4e503f2794d2619b162bc474e0d2fa55539a7c8b01a72cbf55dc8310/pytransform3d-3.2.0.tar.gz
+[2023-05-24 14:12:20] INFO root fetch - main [MainThread]: End processing [car-connector-framework]: success
+[2023-05-24 14:12:20] INFO root fetch - processPackages [pytransform3d]: executing diffoscope
+[2023-05-24 14:12:20] INFO root fetch - processPackages [pytransform3d]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pytransform3d-3.1.0.tar.gz tmp/pytransform3d-3.2.0.tar.gz --markdown 20230524/p/pytransform3d/3.1.0-3.2.0/diff.md --exclude *.pyd
+[2023-05-24 14:12:20] INFO root fetch - processPackages [provo]: Downloading https://files.pythonhosted.org/packages/0f/7b/1a1bc053c064a8772223c931058be9d3caa9b1246294b8fa35f97168b2e7/provo-1.0.4.tar.gz
+[2023-05-24 14:12:20] INFO root fetch - main [MainThread]: End processing [car-connector-framework]: success
+[2023-05-24 14:12:20] INFO root fetch - processPackages [provo]: executing diffoscope
+[2023-05-24 14:12:20] INFO root fetch - processPackages [provo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/provo-1.0.3.tar.gz tmp/provo-1.0.4.tar.gz --markdown 20230524/p/provo/1.0.3-1.0.4/diff.md --exclude *.pyd
+[2023-05-24 14:12:20] INFO root fetch - main [MainThread]: End processing [nanolayer]: success
+[2023-05-24 14:12:21] INFO root fetch - main [MainThread]: End processing [pytransform3d]: success
+[2023-05-24 14:12:21] INFO root fetch - main [MainThread]: End processing [provo]: success
+[2023-05-24 14:12:25] INFO root fetch - main [MainThread]: End processing [localstack-core]: success
+[2023-05-24 14:12:26] INFO root fetch - main [MainThread]: End processing [graphdatascience]: success
+[2023-05-24 14:12:26] INFO root fetch - main [MainThread]: Store serial: [18229245]
