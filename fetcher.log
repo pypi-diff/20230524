@@ -1752,3 +1752,140 @@ EOFError: EOF read where object expected
 [2023-05-24 02:49:34] INFO root fetch - main [MainThread]: End processing [auto-schema]: success
 [2023-05-24 02:49:46] INFO root fetch - main [MainThread]: End processing [tfds-nightly]: success
 [2023-05-24 02:49:46] INFO root fetch - main [MainThread]: Store serial: [18221534]
+[2023-05-24 02:54:50] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18221534]
+[2023-05-24 02:54:55] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-05-24 02:54:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: tjax
+[2023-05-24 02:54:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: biolink-model
+[2023-05-24 02:54:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: osintgpt
+[2023-05-24 02:54:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pycde
+[2023-05-24 02:54:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: progress-runner
+[2023-05-24 02:54:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: autoAmbient
+[2023-05-24 02:54:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: gmlutil
+[2023-05-24 02:54:55] INFO root fetch - processPackages [biolink-model]: New version: [3.4.1] Old Version: [3.4.0]
+[2023-05-24 02:54:55] INFO root fetch - processPackages [progress-runner]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-05-24 02:54:55] INFO root fetch - processPackages [pycde]: New version: [0.2.1.dev9] Old Version: [0.2.1.dev80]
+[2023-05-24 02:54:55] INFO root fetch - processPackages [osintgpt]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-05-24 02:54:55] INFO root fetch - processPackages [gmlutil]: New version: [0.8.1] Old Version: [0.7.9]
+[2023-05-24 02:54:55] INFO root fetch - processPackages [autoAmbient]: New version: [0.3.3] Old Version: [0.3.1]
+[2023-05-24 02:54:55] INFO root fetch - processPackages [tjax]: New version: [0.9.0] Old Version: [0.8.4]
+[2023-05-24 02:54:55] INFO root fetch - processPackages [progress-runner]: Downloading https://files.pythonhosted.org/packages/f6/81/8a96198388d10638859db55c8f5b05c6987c6335b895b5b2c916d8144a0a/progress_runner-0.0.1.tar.gz
+[2023-05-24 02:54:55] INFO root fetch - processPackages [biolink-model]: Downloading https://files.pythonhosted.org/packages/c6/ec/7665deaa03ddc854c0b83a84b7c031ad48c5757d186a7a26d823480209f6/biolink-model-3.4.1.tar.gz
+[2023-05-24 02:54:55] INFO root fetch - processPackages [osintgpt]: Downloading https://files.pythonhosted.org/packages/4b/9f/76d377608ac99ac82076a28c0417fc4a5dd590a65e596cb2860eae03ebae/osintgpt-0.1.0.tar.gz
+[2023-05-24 02:54:55] INFO root fetch - processPackages [autoAmbient]: Downloading https://files.pythonhosted.org/packages/fb/44/c8bce09d05f23bfa32b102f9b6a4f4a62ff0c463a4790b4b01a7bf00e5b7/autoAmbient-0.3.1.tar.gz
+[2023-05-24 02:54:55] INFO root fetch - processPackages [gmlutil]: Downloading https://files.pythonhosted.org/packages/1e/21/7f709f0517c19cc50f4bd6b6c32f25ff9aeb954ea6458ed0baa0e7e66d0e/gmlutil-0.7.9.tar.gz
+[2023-05-24 02:54:55] INFO root fetch - processPackages [biolink-model]: executing diffoscope
+[2023-05-24 02:54:55] INFO root fetch - processPackages [biolink-model]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/biolink-model-3.4.0.tar.gz tmp/biolink-model-3.4.1.tar.gz --markdown 20230524/b/biolink-model/3.4.0-3.4.1/diff.md --exclude *.pyd
+[2023-05-24 02:54:55] INFO root fetch - processPackages [progress-runner]: Downloading https://files.pythonhosted.org/packages/77/80/540d5a1ae0f0ec2013e2baad576bd0cd0268bb3478ab5e183a4fefccbee7/progress_runner-0.0.2.tar.gz
+[2023-05-24 02:54:55] INFO root fetch - processPackages [tjax]: executing diffoscope
+[2023-05-24 02:54:55] INFO root fetch - processPackages [tjax]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tjax-0.8.4.tar.gz tmp/tjax-0.9.0.tar.gz --markdown 20230524/t/tjax/0.8.4-0.9.0/diff.md --exclude *.pyd
+[2023-05-24 02:54:55] INFO root fetch - processPackages [osintgpt]: Downloading https://files.pythonhosted.org/packages/09/0e/e56c726789f052fb5ac537a25e6d2cd5e73910bf0e9f07d031423a8cc715/osintgpt-0.1.1.tar.gz
+[2023-05-24 02:54:55] INFO root fetch - processPackages [progress-runner]: executing diffoscope
+[2023-05-24 02:54:55] INFO root fetch - processPackages [progress-runner]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/progress_runner-0.0.1.tar.gz tmp/progress_runner-0.0.2.tar.gz --markdown 20230524/p/progress-runner/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-05-24 02:54:55] INFO root fetch - processPackages [pycde]: executing diffoscope
+[2023-05-24 02:54:56] INFO root fetch - processPackages [pycde]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pycde-0.2.1.dev80-cp39-cp39-win_amd64.whl.zip tmp/pycde-0.2.1.dev9-cp39-cp39-win_amd64.whl.zip --markdown 20230524/p/pycde/0.2.1.dev80-0.2.1.dev9/diff.md --exclude *.pyd
+[2023-05-24 02:54:56] INFO root fetch - processPackages [osintgpt]: executing diffoscope
+[2023-05-24 02:54:56] INFO root fetch - processPackages [osintgpt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/osintgpt-0.1.0.tar.gz tmp/osintgpt-0.1.1.tar.gz --markdown 20230524/o/osintgpt/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-05-24 02:54:56] INFO root fetch - processPackages [gmlutil]: Downloading https://files.pythonhosted.org/packages/91/9a/4c07a74d9538128fe00a31bac7cd9c4f2d32eee51f6b98d9186e66601418/gmlutil-0.8.1.tar.gz
+[2023-05-24 02:54:56] INFO root fetch - processPackages [autoAmbient]: Downloading https://files.pythonhosted.org/packages/b5/77/b48b504a30cf536f3c3ead134c71260eff31f26935afe6635f1207544da3/autoAmbient-0.3.3.tar.gz
+[2023-05-24 02:54:56] INFO root fetch - processPackages [autoAmbient]: executing diffoscope
+[2023-05-24 02:54:56] INFO root fetch - processPackages [autoAmbient]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/autoAmbient-0.3.1.tar.gz tmp/autoAmbient-0.3.3.tar.gz --markdown 20230524/a/autoAmbient/0.3.1-0.3.3/diff.md --exclude *.pyd
+[2023-05-24 02:54:56] INFO root fetch - processPackages [gmlutil]: executing diffoscope
+[2023-05-24 02:54:56] INFO root fetch - processPackages [gmlutil]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gmlutil-0.7.9.tar.gz tmp/gmlutil-0.8.1.tar.gz --markdown 20230524/g/gmlutil/0.7.9-0.8.1/diff.md --exclude *.pyd
+[2023-05-24 02:54:57] INFO root fetch - main [MainThread]: End processing [progress-runner]: success
+[2023-05-24 02:54:57] INFO root fetch - main [MainThread]: End processing [osintgpt]: success
+[2023-05-24 02:54:57] INFO root fetch - main [MainThread]: End processing [autoAmbient]: success
+[2023-05-24 02:54:57] INFO root fetch - main [MainThread]: End processing [biolink-model]: success
+[2023-05-24 02:54:57] INFO root fetch - main [MainThread]: End processing [gmlutil]: success
+[2023-05-24 02:54:57] INFO root fetch - main [MainThread]: End processing [tjax]: success
+[2023-05-24 02:55:36] ERROR root fetch - processPackages [pycde]: Diffoscope failed: Traceback (most recent call last):
+  File "/srv/diffoscope/diffoscope/diff.py", line 334, in diff
+    with FIFOFeeder(feeder1, fifo1_path) as fifo1, FIFOFeeder(
+  File "/srv/diffoscope/diffoscope/diff.py", line 225, in __exit__
+    self.join()
+  File "/srv/diffoscope/diffoscope/diff.py", line 258, in join
+    raise self._exception
+  File "/srv/diffoscope/diffoscope/diff.py", line 249, in run
+    end_nl = self.feeder(fifo)
+             ^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/feeders.py", line 79, in feeder
+    for buf in in_file:
+  File "/srv/diffoscope/diffoscope/comparators/utils/libarchive.py", line 127, in list_libarchive
+    for entry in archive:
+  File "/usr/lib/python3/dist-packages/libarchive/read.py", line 26, in __iter__
+    r = read_next_header2(archive_p, entry_p)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/libarchive/ffi.py", line 91, in check_int
+    raise archive_error(args[0], retcode)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/libarchive/ffi.py", line 75, in archive_error
+    raise ArchiveError(msg, errno(archive_p), retcode, archive_p)
+libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, archive_p=140283832443296)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/srv/diffoscope/diffoscope/main.py", line 767, in main
+    sys.exit(run_diffoscope(parsed_args))
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/main.py", line 718, in run_diffoscope
+    difference = compare_root_paths(path1, path2)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/compare.py", line 69, in compare_root_paths
+    difference = compare_files(file1, file2)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/compare.py", line 149, in compare_files
+    return file1.compare(file2, source)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/zip.py", line 217, in compare
+    x = super().compare(other, source)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/file.py", line 515, in compare
+    difference = self._compare_using_details(other, source)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/file.py", line 450, in _compare_using_details
+    details.extend(
+  File "/srv/diffoscope/diffoscope/comparators/utils/container.py", line 197, in compare_pair
+    difference = compare_files(
+                 ^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/compare.py", line 149, in compare_files
+    return file1.compare(file2, source)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/file.py", line 515, in compare
+    difference = self._compare_using_details(other, source)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/file.py", line 416, in _compare_using_details
+    details.extend(self.compare_details(other, source))
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/ar.py", line 71, in compare_details
+    Difference.from_text_readers(
+  File "/srv/diffoscope/diffoscope/difference.py", line 258, in from_text_readers
+    return Difference.from_feeder(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/difference.py", line 214, in from_feeder
+    unified_diff = diff(feeder1, feeder2)
+                   ^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/diff.py", line 334, in diff
+    with FIFOFeeder(feeder1, fifo1_path) as fifo1, FIFOFeeder(
+  File "/srv/diffoscope/diffoscope/diff.py", line 225, in __exit__
+    self.join()
+  File "/srv/diffoscope/diffoscope/diff.py", line 258, in join
+    raise self._exception
+  File "/srv/diffoscope/diffoscope/diff.py", line 249, in run
+    end_nl = self.feeder(fifo)
+             ^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/feeders.py", line 79, in feeder
+    for buf in in_file:
+  File "/srv/diffoscope/diffoscope/comparators/utils/libarchive.py", line 127, in list_libarchive
+    for entry in archive:
+  File "/usr/lib/python3/dist-packages/libarchive/read.py", line 26, in __iter__
+    r = read_next_header2(archive_p, entry_p)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/libarchive/ffi.py", line 91, in check_int
+    raise archive_error(args[0], retcode)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/libarchive/ffi.py", line 75, in archive_error
+    raise ArchiveError(msg, errno(archive_p), retcode, archive_p)
+libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, archive_p=140283698220464)
+
+[2023-05-24 02:55:36] INFO root fetch - main [MainThread]: End processing [pycde] error
+[2023-05-24 02:55:36] INFO root fetch - main [MainThread]: Store serial: [18221556]
