@@ -1112,3 +1112,54 @@ EOFError: EOF read where object expected
 [2023-05-24 01:52:22] INFO root fetch - main [MainThread]: End processing [dinohub-seedwork-be]: success
 [2023-05-24 01:54:37] INFO root fetch - main [MainThread]: End processing [viser]: success
 [2023-05-24 01:54:37] INFO root fetch - main [MainThread]: Store serial: [18221159]
+[2023-05-24 01:59:42] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18221159]
+[2023-05-24 01:59:46] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-05-24 01:59:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: gadapt
+[2023-05-24 01:59:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: fabrictestbed-extensions
+[2023-05-24 01:59:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: zenoml
+[2023-05-24 01:59:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pybuilder-integration
+[2023-05-24 01:59:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: youcan
+[2023-05-24 01:59:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: pybuilder-integration
+[2023-05-24 01:59:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: tybase
+[2023-05-24 01:59:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: loophost
+[2023-05-24 01:59:47] INFO root fetch - processPackages [fabrictestbed-extensions]: New version: [1.5.0rc3] Old Version: [1.5.0rc2]
+[2023-05-24 01:59:47] INFO root fetch - processPackages [pybuilder-integration]: New version: [92] Old Version: [91]
+[2023-05-24 01:59:47] INFO root fetch - processPackages [pybuilder-integration]: New version: [92] Old Version: [91]
+[2023-05-24 01:59:47] INFO root fetch - processPackages [zenoml]: New version: [0.6.0] Old Version: [0.5.3]
+[2023-05-24 01:59:47] WARNING root fetch - processPackages [youcan]: Skipping, unable to determine old version
+[2023-05-24 01:59:47] INFO root fetch - processPackages [gadapt]: New version: [0.2.8] Old Version: [0.2.7]
+[2023-05-24 01:59:47] INFO root fetch - processPackages [loophost]: New version: [0.2.7] Old Version: [0.2.5]
+[2023-05-24 01:59:47] INFO root fetch - main [MainThread]: End processing [youcan] error
+[2023-05-24 01:59:47] INFO root fetch - processPackages [tybase]: New version: [0.1.2] Old Version: [0.1.0]
+[2023-05-24 01:59:47] INFO root fetch - processPackages [pybuilder-integration]: Downloading https://files.pythonhosted.org/packages/ca/52/5149d15a65bd3c439ddcfeaa0ccdf415b2b04c6ded37965b23ff7a7bdd8c/pybuilder-integration-91.tar.gz
+[2023-05-24 01:59:47] INFO root fetch - processPackages [pybuilder-integration]: Downloading https://files.pythonhosted.org/packages/ca/52/5149d15a65bd3c439ddcfeaa0ccdf415b2b04c6ded37965b23ff7a7bdd8c/pybuilder-integration-91.tar.gz
+[2023-05-24 01:59:47] INFO root fetch - processPackages [zenoml]: Downloading https://files.pythonhosted.org/packages/8b/16/6747f7ad090e05aca7484e13c29e9224545e9e2ec6e40d74f9397d64b78a/zenoml-0.5.3.tar.gz
+[2023-05-24 01:59:47] INFO root fetch - processPackages [tybase]: Downloading https://files.pythonhosted.org/packages/4e/4f/718ad79494e0b3c353777d74a9087ccb74c3ad7e0093135b8978ad621f5d/tybase-0.1.2.tar.gz
+[2023-05-24 01:59:47] INFO root fetch - processPackages [gadapt]: Downloading https://files.pythonhosted.org/packages/cf/6b/3200154d37e89ff840d14d5029f53b1ec5cf9830690ae7e986002145a3e1/gadapt-0.2.7.tar.gz
+[2023-05-24 01:59:47] INFO root fetch - processPackages [fabrictestbed-extensions]: executing diffoscope
+[2023-05-24 01:59:47] INFO root fetch - processPackages [fabrictestbed-extensions]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fabrictestbed-extensions-1.5.0rc2.tar.gz tmp/fabrictestbed-extensions-1.5.0rc3.tar.gz --markdown 20230524/f/fabrictestbed-extensions/1.5.0rc2-1.5.0rc3/diff.md --exclude *.pyd
+[2023-05-24 01:59:47] INFO root fetch - processPackages [tybase]: executing diffoscope
+[2023-05-24 01:59:47] INFO root fetch - processPackages [tybase]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tybase-0.1.0.tar.gz tmp/tybase-0.1.2.tar.gz --markdown 20230524/t/tybase/0.1.0-0.1.2/diff.md --exclude *.pyd
+[2023-05-24 01:59:47] INFO root fetch - processPackages [pybuilder-integration]: Downloading https://files.pythonhosted.org/packages/66/28/31afe83be5fca6db7f611716e5ce2ef3f4a1c527bf58b5037d2d6f069c8a/pybuilder-integration-92.tar.gz
+[2023-05-24 01:59:47] INFO root fetch - processPackages [pybuilder-integration]: Downloading https://files.pythonhosted.org/packages/66/28/31afe83be5fca6db7f611716e5ce2ef3f4a1c527bf58b5037d2d6f069c8a/pybuilder-integration-92.tar.gz
+[2023-05-24 01:59:47] INFO root fetch - processPackages [loophost]: Downloading https://files.pythonhosted.org/packages/6c/1b/8e305f6e21bbac91b61ec5a08bc9f3d480b05bac3bd30bb47bfe555a10f2/loophost-0.2.7.tar.gz
+[2023-05-24 01:59:47] INFO root fetch - processPackages [gadapt]: Downloading https://files.pythonhosted.org/packages/2a/97/da81cfcea83f1707949e4748b987d184c81b9e7043a8e09bc8853a0e0fae/gadapt-0.2.8.tar.gz
+[2023-05-24 01:59:47] INFO root fetch - processPackages [pybuilder-integration]: executing diffoscope
+[2023-05-24 01:59:47] INFO root fetch - processPackages [pybuilder-integration]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pybuilder-integration-91.tar.gz tmp/pybuilder-integration-92.tar.gz --markdown 20230524/p/pybuilder-integration/91-92/diff.md --exclude *.pyd
+[2023-05-24 01:59:47] INFO root fetch - processPackages [pybuilder-integration]: executing diffoscope
+[2023-05-24 01:59:47] INFO root fetch - processPackages [pybuilder-integration]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pybuilder-integration-91.tar.gz tmp/pybuilder-integration-92.tar.gz --markdown 20230524/p/pybuilder-integration/91-92/diff.md --exclude *.pyd
+[2023-05-24 01:59:47] INFO root fetch - processPackages [zenoml]: Downloading https://files.pythonhosted.org/packages/4d/5e/09824726dfacc9a2ee7bd2d13109305a2a5b78d8287e12b1ee8780676352/zenoml-0.6.0.tar.gz
+[2023-05-24 01:59:47] INFO root fetch - processPackages [gadapt]: executing diffoscope
+[2023-05-24 01:59:47] INFO root fetch - processPackages [gadapt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gadapt-0.2.7.tar.gz tmp/gadapt-0.2.8.tar.gz --markdown 20230524/g/gadapt/0.2.7-0.2.8/diff.md --exclude *.pyd
+[2023-05-24 01:59:47] INFO root fetch - processPackages [loophost]: executing diffoscope
+[2023-05-24 01:59:47] INFO root fetch - processPackages [loophost]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/loophost-0.2.5.tar.gz tmp/loophost-0.2.7.tar.gz --markdown 20230524/l/loophost/0.2.5-0.2.7/diff.md --exclude *.pyd
+[2023-05-24 01:59:47] INFO root fetch - processPackages [zenoml]: executing diffoscope
+[2023-05-24 01:59:47] INFO root fetch - processPackages [zenoml]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/zenoml-0.5.3.tar.gz tmp/zenoml-0.6.0.tar.gz --markdown 20230524/z/zenoml/0.5.3-0.6.0/diff.md --exclude *.pyd
+[2023-05-24 01:59:48] INFO root fetch - main [MainThread]: End processing [tybase]: success
+[2023-05-24 01:59:48] INFO root fetch - main [MainThread]: End processing [fabrictestbed-extensions]: success
+[2023-05-24 01:59:48] INFO root fetch - main [MainThread]: End processing [pybuilder-integration]: success
+[2023-05-24 01:59:48] INFO root fetch - main [MainThread]: End processing [pybuilder-integration]: success
+[2023-05-24 01:59:49] INFO root fetch - main [MainThread]: End processing [gadapt]: success
+[2023-05-24 01:59:49] INFO root fetch - main [MainThread]: End processing [loophost]: success
+[2023-05-24 02:00:07] INFO root fetch - main [MainThread]: End processing [zenoml]: success
+[2023-05-24 02:00:07] INFO root fetch - main [MainThread]: Store serial: [18221182]
