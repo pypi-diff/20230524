@@ -16509,3 +16509,106 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd4 in position 72: invalid
 [2023-05-24 15:55:25] INFO root fetch - main [MainThread]: End processing [dipex]: success
 [2023-05-24 15:55:38] INFO root fetch - main [MainThread]: End processing [windmill-api]: success
 [2023-05-24 15:55:38] INFO root fetch - main [MainThread]: Store serial: [18230535]
+[2023-05-24 16:00:43] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18230535]
+[2023-05-24 16:00:47] INFO root fetch - main [MainThread]: Found 20 changed packages
+[2023-05-24 16:00:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: celerity
+[2023-05-24 16:00:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: shihua-sunshareservice
+[2023-05-24 16:00:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: neulabs-cdk-constructs
+[2023-05-24 16:00:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: remla12-lib-release
+[2023-05-24 16:00:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: anonupload
+[2023-05-24 16:00:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: gitwithtea-py
+[2023-05-24 16:00:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: shihua-sunshareclient
+[2023-05-24 16:00:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: shihua-sundrip
+[2023-05-24 16:00:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: fabcohort-test
+[2023-05-24 16:00:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: servicefoundry
+[2023-05-24 16:00:48] INFO root fetch - processPackages [remla12-lib-release]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-05-24 16:00:48] INFO root fetch - processPackages [servicefoundry]: New version: [0.8.8] Old Version: [0.8.7]
+[2023-05-24 16:00:48] WARNING root fetch - processPackages [shihua-sunshareclient]: Skipping, unable to determine old version
+[2023-05-24 16:00:48] INFO root fetch - processPackages [shihua-sunshareclient]: Start processing: NikGapps
+[2023-05-24 16:00:48] WARNING root fetch - processPackages [shihua-sunshareservice]: Skipping, unable to determine old version
+[2023-05-24 16:00:48] INFO root fetch - main [MainThread]: End processing [shihua-sunshareclient] error
+[2023-05-24 16:00:48] INFO root fetch - processPackages [celerity]: New version: [0.9.0] Old Version: [0.8.0]
+[2023-05-24 16:00:48] INFO root fetch - processPackages [anonupload]: New version: [1.1.2] Old Version: [1.1.1]
+[2023-05-24 16:00:48] INFO root fetch - processPackages [shihua-sunshareservice]: Start processing: sentry-relay
+[2023-05-24 16:00:48] WARNING root fetch - processPackages [fabcohort-test]: Skipping, unable to determine old version
+[2023-05-24 16:00:48] INFO root fetch - main [MainThread]: End processing [shihua-sunshareservice] error
+[2023-05-24 16:00:48] WARNING root fetch - processPackages [shihua-sundrip]: Skipping, unable to determine old version
+[2023-05-24 16:00:48] WARNING root fetch - processPackages [gitwithtea-py]: Skipping, unable to determine old version
+[2023-05-24 16:00:48] INFO root fetch - processPackages [neulabs-cdk-constructs]: New version: [0.4.3] Old Version: [0.4.2]
+[2023-05-24 16:00:48] INFO root fetch - processPackages [fabcohort-test]: Start processing: tah-example-pkg
+[2023-05-24 16:00:48] INFO root fetch - main [MainThread]: End processing [fabcohort-test] error
+[2023-05-24 16:00:48] INFO root fetch - processPackages [shihua-sundrip]: Start processing: vector-quantize-pytorch
+[2023-05-24 16:00:48] INFO root fetch - processPackages [gitwithtea-py]: Start processing: json2csv
+[2023-05-24 16:00:48] INFO root fetch - main [MainThread]: End processing [shihua-sundrip] error
+[2023-05-24 16:00:48] INFO root fetch - main [MainThread]: End processing [gitwithtea-py] error
+[2023-05-24 16:00:48] INFO root fetch - processPackages [NikGapps]: New version: [1.17] Old Version: [1.16]
+[2023-05-24 16:00:48] INFO root fetch - processPackages [json2csv]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-05-24 16:00:48] INFO root fetch - processPackages [tah-example-pkg]: New version: [0.5.0] Old Version: [0.4.0]
+[2023-05-24 16:00:48] INFO root fetch - processPackages [vector-quantize-pytorch]: New version: [1.5.5] Old Version: [1.5.4]
+[2023-05-24 16:00:48] INFO root fetch - processPackages [servicefoundry]: Downloading https://files.pythonhosted.org/packages/56/5c/3bb5355595981749cae33b536bb935cb02808632aba558bbe9ae01745936/servicefoundry-0.8.7.tar.gz
+[2023-05-24 16:00:48] INFO root fetch - processPackages [sentry-relay]: New version: [1.1.4] Old Version: [0.8.9]
+[2023-05-24 16:00:48] INFO root fetch - processPackages [anonupload]: Downloading https://files.pythonhosted.org/packages/ea/3e/45bcdad835085a111225d28b2db3ed631a29966e0b5501f2e7c8e64fb69f/anonupload-1.1.1.tar.gz
+[2023-05-24 16:00:48] INFO root fetch - processPackages [json2csv]: Downloading https://files.pythonhosted.org/packages/df/85/5b45a1397e939a6ce745a0631599e138cf9848f719151c37958d7ad7a382/json2csv-0.0.1.tar.gz
+[2023-05-24 16:00:48] INFO root fetch - processPackages [remla12-lib-release]: executing diffoscope
+[2023-05-24 16:00:48] INFO root fetch - processPackages [remla12-lib-release]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/remla12-lib-release-0.0.1.tar.gz tmp/remla12-lib-release-0.0.2.tar.gz --markdown 20230524/r/remla12-lib-release/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-05-24 16:00:48] INFO root fetch - processPackages [neulabs-cdk-constructs]: Downloading https://files.pythonhosted.org/packages/b1/2c/fecb734ec57c936699cb59aa0948b824ebb9a7a4add7284a69fc3222513a/neulabs-cdk-constructs-0.4.2.tar.gz
+[2023-05-24 16:00:48] INFO root fetch - processPackages [NikGapps]: Downloading https://files.pythonhosted.org/packages/b9/28/06e53a7c2fc16cdfca4f88858dedaf5ff52ccfed094add8a755e171b41a0/NikGapps-1.16.tar.gz
+[2023-05-24 16:00:48] INFO root fetch - processPackages [tah-example-pkg]: executing diffoscope
+[2023-05-24 16:00:48] INFO root fetch - processPackages [tah-example-pkg]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tah_example_pkg-0.4.0.tar.gz tmp/tah_example_pkg-0.5.0.tar.gz --markdown 20230524/t/tah-example-pkg/0.4.0-0.5.0/diff.md --exclude *.pyd
+[2023-05-24 16:00:48] INFO root fetch - processPackages [sentry-relay]: Downloading https://files.pythonhosted.org/packages/f6/e5/aa1ba95a9654dbeaec6ebc0fd3b439b4c7c406d9ef0b9592002f1e90b6eb/sentry-relay-0.8.9.zip
+[2023-05-24 16:00:48] WARNING root fetch - processPackages [NikGapps]: Skipping package: exceeds size limit 41549173>=10485760
+[2023-05-24 16:00:48] INFO root fetch - processPackages [NikGapps]: Start processing: dbtgenlib
+[2023-05-24 16:00:48] INFO root fetch - main [MainThread]: End processing [NikGapps] error
+[2023-05-24 16:00:48] INFO root fetch - processPackages [celerity]: executing diffoscope
+[2023-05-24 16:00:48] INFO root fetch - processPackages [celerity]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/celerity-0.8.0.tar.gz tmp/celerity-0.9.0.tar.gz --markdown 20230524/c/celerity/0.8.0-0.9.0/diff.md --exclude *.pyd
+[2023-05-24 16:00:48] INFO root fetch - processPackages [vector-quantize-pytorch]: Downloading https://files.pythonhosted.org/packages/bc/ad/595fc407cbd370793cc99aaca8c2a77e7794cc7e380ac4b5c18712a9c138/vector_quantize_pytorch-1.5.5.tar.gz
+[2023-05-24 16:00:48] INFO root fetch - processPackages [dbtgenlib]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-24 16:00:48] INFO root fetch - processPackages [json2csv]: Downloading https://files.pythonhosted.org/packages/df/b8/bab76fcb1084fa2ac84aececdd86629c0bac57b7fb535e8945c94246d96c/json2csv-0.0.2.tar.gz
+[2023-05-24 16:00:48] WARNING root fetch - processPackages [sentry-relay]: Skipping package: exceeds size limit 31231225>=10485760
+[2023-05-24 16:00:48] INFO root fetch - processPackages [sentry-relay]: Start processing: dftpack
+[2023-05-24 16:00:48] INFO root fetch - main [MainThread]: End processing [sentry-relay] error
+[2023-05-24 16:00:48] INFO root fetch - processPackages [neulabs-cdk-constructs]: Downloading https://files.pythonhosted.org/packages/91/17/67862195da0db4cd05668fdfc0c82c0652f47d9fc05360f6b6699c19d555/neulabs-cdk-constructs-0.4.3.tar.gz
+[2023-05-24 16:00:48] INFO root fetch - processPackages [json2csv]: executing diffoscope
+[2023-05-24 16:00:48] INFO root fetch - processPackages [json2csv]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/json2csv-0.0.1.tar.gz tmp/json2csv-0.0.2.tar.gz --markdown 20230524/j/json2csv/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-05-24 16:00:48] INFO root fetch - processPackages [vector-quantize-pytorch]: executing diffoscope
+[2023-05-24 16:00:48] INFO root fetch - processPackages [vector-quantize-pytorch]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vector_quantize_pytorch-1.5.4.tar.gz tmp/vector_quantize_pytorch-1.5.5.tar.gz --markdown 20230524/v/vector-quantize-pytorch/1.5.4-1.5.5/diff.md --exclude *.pyd
+[2023-05-24 16:00:48] INFO root fetch - processPackages [servicefoundry]: Downloading https://files.pythonhosted.org/packages/4a/f4/c85ae02531c73375493b93017467c18967c45c07a3d963f66a8feb9d67e3/servicefoundry-0.8.8.tar.gz
+[2023-05-24 16:00:48] INFO root fetch - processPackages [dbtgenlib]: executing diffoscope
+[2023-05-24 16:00:48] INFO root fetch - processPackages [dbtgenlib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dbtgenlib-0.0.8.tar.gz tmp/dbtgenlib-0.0.9.tar.gz --markdown 20230524/d/dbtgenlib/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-24 16:00:48] WARNING root fetch - processPackages [dftpack]: Skipping, unable to determine old version
+[2023-05-24 16:00:48] INFO root fetch - processPackages [dftpack]: Start processing: otelib
+[2023-05-24 16:00:48] INFO root fetch - main [MainThread]: End processing [dftpack] error
+[2023-05-24 16:00:48] INFO root fetch - processPackages [anonupload]: Downloading https://files.pythonhosted.org/packages/66/97/17a8334fd00f2dbf90338b68f0a4d65e272fa3ba1799210865e0a2ca2431/anonupload-1.1.2-py3-none-any.whl
+[2023-05-24 16:00:48] INFO root fetch - processPackages [neulabs-cdk-constructs]: executing diffoscope
+[2023-05-24 16:00:48] INFO root fetch - processPackages [neulabs-cdk-constructs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/neulabs-cdk-constructs-0.4.2.tar.gz tmp/neulabs-cdk-constructs-0.4.3.tar.gz --markdown 20230524/n/neulabs-cdk-constructs/0.4.2-0.4.3/diff.md --exclude *.pyd
+[2023-05-24 16:00:48] INFO root fetch - processPackages [servicefoundry]: executing diffoscope
+[2023-05-24 16:00:48] INFO root fetch - processPackages [servicefoundry]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/servicefoundry-0.8.7.tar.gz tmp/servicefoundry-0.8.8.tar.gz --markdown 20230524/s/servicefoundry/0.8.7-0.8.8/diff.md --exclude *.pyd
+[2023-05-24 16:00:48] INFO root fetch - processPackages [anonupload]: executing diffoscope
+[2023-05-24 16:00:48] INFO root fetch - processPackages [anonupload]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/anonupload-1.1.1.tar.gz tmp/anonupload-1.1.2-py3-none-any.whl.zip --markdown 20230524/a/anonupload/1.1.1-1.1.2/diff.md --exclude *.pyd
+[2023-05-24 16:00:48] INFO root fetch - processPackages [otelib]: New version: [0.3.1] Old Version: [0.3.0]
+[2023-05-24 16:00:49] INFO root fetch - processPackages [otelib]: Downloading https://files.pythonhosted.org/packages/22/03/fa5c87679baed489486f04c78c670aad3f5d34235f44d1055f542eff770f/otelib-0.3.0.tar.gz
+[2023-05-24 16:00:49] INFO root fetch - processPackages [otelib]: Downloading https://files.pythonhosted.org/packages/3a/0f/8ae550c787abb5ee036dd46da920fad7734cd13ceb52e72d8f242d492189/otelib-0.3.1.tar.gz
+[2023-05-24 16:00:49] INFO root fetch - processPackages [otelib]: executing diffoscope
+[2023-05-24 16:00:49] INFO root fetch - processPackages [otelib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/otelib-0.3.0.tar.gz tmp/otelib-0.3.1.tar.gz --markdown 20230524/o/otelib/0.3.0-0.3.1/diff.md --exclude *.pyd
+[2023-05-24 16:00:49] INFO root fetch - processPackages [remla12-lib-release]: Start processing: eis1600
+[2023-05-24 16:00:49] INFO root fetch - main [MainThread]: End processing [remla12-lib-release]: success
+[2023-05-24 16:00:49] INFO root fetch - processPackages [eis1600]: New version: [0.9.2] Old Version: [0.9.1]
+[2023-05-24 16:00:49] INFO root fetch - processPackages [tah-example-pkg]: Start processing: mysmallutils
+[2023-05-24 16:00:49] INFO root fetch - main [MainThread]: End processing [tah-example-pkg]: success
+[2023-05-24 16:00:49] INFO root fetch - processPackages [mysmallutils]: New version: [2.0.5] Old Version: [2.0.4]
+[2023-05-24 16:00:50] INFO root fetch - processPackages [mysmallutils]: executing diffoscope
+[2023-05-24 16:00:50] INFO root fetch - processPackages [mysmallutils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mysmallutils-2.0.4.tar.gz tmp/mysmallutils-2.0.5.tar.gz --markdown 20230524/m/mysmallutils/2.0.4-2.0.5/diff.md --exclude *.pyd
+[2023-05-24 16:00:50] INFO root fetch - processPackages [eis1600]: Downloading https://files.pythonhosted.org/packages/23/9c/2ca6ba549d305e9ef392061ae18123912c7e260be9d1ee3f128c92f876aa/eis1600-0.9.2.tar.gz
+[2023-05-24 16:00:50] INFO root fetch - main [MainThread]: End processing [celerity]: success
+[2023-05-24 16:00:50] INFO root fetch - main [MainThread]: End processing [json2csv]: success
+[2023-05-24 16:00:50] INFO root fetch - processPackages [eis1600]: executing diffoscope
+[2023-05-24 16:00:50] INFO root fetch - processPackages [eis1600]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/eis1600-0.9.1.tar.gz tmp/eis1600-0.9.2.tar.gz --markdown 20230524/e/eis1600/0.9.1-0.9.2/diff.md --exclude *.pyd
+[2023-05-24 16:00:50] INFO root fetch - main [MainThread]: End processing [anonupload]: success
+[2023-05-24 16:00:50] INFO root fetch - main [MainThread]: End processing [dbtgenlib]: success
+[2023-05-24 16:00:50] INFO root fetch - main [MainThread]: End processing [neulabs-cdk-constructs]: success
+[2023-05-24 16:00:50] INFO root fetch - main [MainThread]: End processing [vector-quantize-pytorch]: success
+[2023-05-24 16:00:51] INFO root fetch - main [MainThread]: End processing [otelib]: success
+[2023-05-24 16:00:51] INFO root fetch - main [MainThread]: End processing [mysmallutils]: success
+[2023-05-24 16:00:51] INFO root fetch - main [MainThread]: End processing [eis1600]: success
+[2023-05-24 16:00:53] INFO root fetch - main [MainThread]: End processing [servicefoundry]: success
+[2023-05-24 16:00:53] INFO root fetch - main [MainThread]: Store serial: [18230621]
