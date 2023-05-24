@@ -6624,3 +6624,31 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-05-24 05:28:33] INFO root fetch - main [MainThread]: End processing [konfuzio-sdk]: success
 [2023-05-24 05:28:44] INFO root fetch - main [MainThread]: End processing [areixio]: success
 [2023-05-24 05:28:44] INFO root fetch - main [MainThread]: Store serial: [18224460]
+[2023-05-24 05:33:51] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18224460]
+[2023-05-24 05:33:56] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-05-24 05:33:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: witness-etl
+[2023-05-24 05:33:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: clustersight
+[2023-05-24 05:33:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: rapidpro-flow-tools
+[2023-05-24 05:33:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: lowvision
+[2023-05-24 05:33:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pyhttpx
+[2023-05-24 05:33:56] INFO root fetch - processPackages [rapidpro-flow-tools]: New version: [0.6.0] Old Version: [0.5.0]
+[2023-05-24 05:33:56] INFO root fetch - processPackages [lowvision]: New version: [0.2.1] Old Version: [0.2.0]
+[2023-05-24 05:33:56] INFO root fetch - processPackages [witness-etl]: New version: [0.0.6] Old Version: [0.0.5]
+[2023-05-24 05:33:56] INFO root fetch - processPackages [pyhttpx]: New version: [2.10.3] Old Version: [2.10.2]
+[2023-05-24 05:33:56] WARNING root fetch - processPackages [clustersight]: Skipping, unable to determine old version
+[2023-05-24 05:33:56] INFO root fetch - main [MainThread]: End processing [clustersight] error
+[2023-05-24 05:33:56] INFO root fetch - processPackages [witness-etl]: executing diffoscope
+[2023-05-24 05:33:56] INFO root fetch - processPackages [witness-etl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/witness-etl-0.0.5.tar.gz tmp/witness-etl-0.0.6.tar.gz --markdown 20230524/w/witness-etl/0.0.5-0.0.6/diff.md --exclude *.pyd
+[2023-05-24 05:33:56] INFO root fetch - processPackages [lowvision]: executing diffoscope
+[2023-05-24 05:33:56] INFO root fetch - processPackages [lowvision]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lowvision-0.2.0.tar.gz tmp/lowvision-0.2.1.tar.gz --markdown 20230524/l/lowvision/0.2.0-0.2.1/diff.md --exclude *.pyd
+[2023-05-24 05:33:57] INFO root fetch - processPackages [rapidpro-flow-tools]: Downloading https://files.pythonhosted.org/packages/8b/35/42e9d0e2ac986647686b9e63bc553952e3eb862f130fdb0dfb79e58bd2dc/rapidpro_flow_tools-0.6.0.tar.gz
+[2023-05-24 05:33:57] INFO root fetch - processPackages [pyhttpx]: Downloading https://files.pythonhosted.org/packages/44/a4/83d4b70a60bc9be85772eb179c5e940515a393d4fa5571a269a71db24e4b/pyhttpx-2.10.3.tar.gz
+[2023-05-24 05:33:57] INFO root fetch - processPackages [rapidpro-flow-tools]: executing diffoscope
+[2023-05-24 05:33:57] INFO root fetch - processPackages [rapidpro-flow-tools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rapidpro_flow_tools-0.5.0.tar.gz tmp/rapidpro_flow_tools-0.6.0.tar.gz --markdown 20230524/r/rapidpro-flow-tools/0.5.0-0.6.0/diff.md --exclude *.pyd
+[2023-05-24 05:33:57] INFO root fetch - processPackages [pyhttpx]: executing diffoscope
+[2023-05-24 05:33:57] INFO root fetch - processPackages [pyhttpx]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyhttpx-2.10.2.tar.gz tmp/pyhttpx-2.10.3.tar.gz --markdown 20230524/p/pyhttpx/2.10.2-2.10.3/diff.md --exclude *.pyd
+[2023-05-24 05:33:58] INFO root fetch - main [MainThread]: End processing [witness-etl]: success
+[2023-05-24 05:33:58] INFO root fetch - main [MainThread]: End processing [lowvision]: success
+[2023-05-24 05:33:58] INFO root fetch - main [MainThread]: End processing [rapidpro-flow-tools]: success
+[2023-05-24 05:33:58] INFO root fetch - main [MainThread]: End processing [pyhttpx]: success
+[2023-05-24 05:33:58] INFO root fetch - main [MainThread]: Store serial: [18224482]
