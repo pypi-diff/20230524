@@ -21878,3 +21878,78 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd4 in position 72: invalid
 [2023-05-24 20:18:50] INFO root fetch - main [MainThread]: End processing [seaduck]: success
 [2023-05-24 20:21:01] INFO root fetch - main [MainThread]: End processing [qcs-sdk-python]: success
 [2023-05-24 20:21:01] INFO root fetch - main [MainThread]: Store serial: [18234102]
+[2023-05-24 20:26:23] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18234102]
+[2023-05-24 20:26:28] INFO root fetch - main [MainThread]: Found 13 changed packages
+[2023-05-24 20:26:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: dynamodb-enhanced
+[2023-05-24 20:26:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: versium-reach-sdk
+[2023-05-24 20:26:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: lumibot
+[2023-05-24 20:26:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: mplfonts
+[2023-05-24 20:26:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: generic-etl
+[2023-05-24 20:26:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: ovos-messagebus
+[2023-05-24 20:26:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: lightning-graphcore
+[2023-05-24 20:26:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: pyviz-comms
+[2023-05-24 20:26:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: fern-persona
+[2023-05-24 20:26:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: mujoco-dev
+[2023-05-24 20:26:28] INFO root fetch - processPackages [lightning-graphcore]: New version: [0.1.0rc2] Old Version: [0.1.0rc1]
+[2023-05-24 20:26:28] INFO root fetch - processPackages [fern-persona]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-05-24 20:26:28] INFO root fetch - processPackages [mujoco-dev]: New version: [2.3.6.dev534783070] Old Version: [2.3.6.dev534141245]
+[2023-05-24 20:26:28] WARNING root fetch - processPackages [dynamodb-enhanced]: Skipping, unable to determine old version
+[2023-05-24 20:26:28] INFO root fetch - processPackages [dynamodb-enhanced]: Start processing: pulumiverse-astra
+[2023-05-24 20:26:28] INFO root fetch - processPackages [mplfonts]: New version: [0.0.8] Old Version: [0.0.7]
+[2023-05-24 20:26:28] INFO root fetch - main [MainThread]: End processing [dynamodb-enhanced] error
+[2023-05-24 20:26:28] INFO root fetch - processPackages [versium-reach-sdk]: New version: [1.1.0] Old Version: [1.0.0]
+[2023-05-24 20:26:28] INFO root fetch - processPackages [ovos-messagebus]: New version: [0.0.3a2] Old Version: [0.0.3a1]
+[2023-05-24 20:26:28] INFO root fetch - processPackages [pulumiverse-astra]: New version: [1.0.37] Old Version: [1.0.26]
+[2023-05-24 20:26:28] INFO root fetch - processPackages [generic-etl]: New version: [0.1.dev3] Old Version: [0.1.dev2]
+[2023-05-24 20:26:28] INFO root fetch - processPackages [pyviz-comms]: New version: [2.3.0] Old Version: [2.2.1rc1]
+[2023-05-24 20:26:28] INFO root fetch - processPackages [lumibot]: New version: [2.6.1] Old Version: [2.6.0]
+[2023-05-24 20:26:28] INFO root fetch - processPackages [fern-persona]: executing diffoscope
+[2023-05-24 20:26:28] INFO root fetch - processPackages [fern-persona]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fern_persona-0.0.2.tar.gz tmp/fern_persona-0.0.3.tar.gz --markdown 20230524/f/fern-persona/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-05-24 20:26:28] INFO root fetch - processPackages [pulumiverse-astra]: executing diffoscope
+[2023-05-24 20:26:28] INFO root fetch - processPackages [pulumiverse-astra]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumiverse_astra-1.0.26.tar.gz tmp/pulumiverse_astra-1.0.37.tar.gz --markdown 20230524/p/pulumiverse-astra/1.0.26-1.0.37/diff.md --exclude *.pyd
+[2023-05-24 20:26:28] INFO root fetch - processPackages [ovos-messagebus]: executing diffoscope
+[2023-05-24 20:26:28] INFO root fetch - processPackages [ovos-messagebus]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ovos_messagebus-0.0.3a1-py3-none-any.whl.zip tmp/ovos-messagebus-0.0.3a2.tar.gz --markdown 20230524/o/ovos-messagebus/0.0.3a1-0.0.3a2/diff.md --exclude *.pyd
+[2023-05-24 20:26:28] INFO root fetch - processPackages [lightning-graphcore]: Downloading https://files.pythonhosted.org/packages/ee/03/815299d180eb1faa3a35aa809606fd64f63100725c8c338d6b27424d0e0b/lightning-graphcore-0.1.0rc2.tar.gz
+[2023-05-24 20:26:28] INFO root fetch - processPackages [versium-reach-sdk]: Downloading https://files.pythonhosted.org/packages/39/44/408b05918fcc7eb219741e96185057a5981f2861795d3ac589ff2390691b/versium-reach-sdk-1.0.0.tar.gz
+[2023-05-24 20:26:28] INFO root fetch - processPackages [mplfonts]: Downloading https://files.pythonhosted.org/packages/db/e1/00791d7b84e0968d3b1214c4ec5af1bba17b89d61315514a5f2389f5ec56/mplfonts-0.0.7.tar.gz
+[2023-05-24 20:26:28] INFO root fetch - processPackages [lumibot]: Downloading https://files.pythonhosted.org/packages/a0/72/7b9e282443d838136151c27ecad7f2227599ed68b00f2399aa8e09e27021/lumibot-2.6.0.tar.gz
+[2023-05-24 20:26:28] WARNING root fetch - processPackages [mplfonts]: Skipping package: exceeds size limit 84962576>=10485760
+[2023-05-24 20:26:28] INFO root fetch - processPackages [mplfonts]: Start processing: pulumi-docker
+[2023-05-24 20:26:28] INFO root fetch - main [MainThread]: End processing [mplfonts] error
+[2023-05-24 20:26:28] INFO root fetch - processPackages [pyviz-comms]: Downloading https://files.pythonhosted.org/packages/ac/95/f7201c6338d55ca2716c5a6bbcf1b004892f3ab9a7e69eb6ba62e7f0c483/pyviz_comms-2.2.1rc1.tar.gz
+[2023-05-24 20:26:28] INFO root fetch - processPackages [generic-etl]: Downloading https://files.pythonhosted.org/packages/06/b9/d3c53b2c3ae7a1473477e6e8255b8e93439c1f89a787bf97eab041dde3c4/generic-etl-0.1.dev2.tar.gz
+[2023-05-24 20:26:28] WARNING root fetch - processPackages [lumibot]: Skipping package: exceeds size limit 23654361>=10485760
+[2023-05-24 20:26:28] INFO root fetch - processPackages [lumibot]: Start processing: always-updates
+[2023-05-24 20:26:28] INFO root fetch - main [MainThread]: End processing [lumibot] error
+[2023-05-24 20:26:28] INFO root fetch - processPackages [mujoco-dev]: Downloading https://files.pythonhosted.org/packages/5c/ef/61f1042e8fb45c6bb6fd3b1ef2f4c74c816c78625cf9257812563feef86e/mujoco_dev-2.3.6.dev534783070-cp39-cp39-win_amd64.whl
+[2023-05-24 20:26:28] INFO root fetch - processPackages [lightning-graphcore]: executing diffoscope
+[2023-05-24 20:26:28] INFO root fetch - processPackages [lightning-graphcore]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lightning-graphcore-0.1.0rc1.tar.gz tmp/lightning-graphcore-0.1.0rc2.tar.gz --markdown 20230524/l/lightning-graphcore/0.1.0rc1-0.1.0rc2/diff.md --exclude *.pyd
+[2023-05-24 20:26:28] INFO root fetch - processPackages [pulumi-docker]: New version: [4.3.0a1684950981] Old Version: [4.3.0a1684784707]
+[2023-05-24 20:26:28] INFO root fetch - processPackages [versium-reach-sdk]: Downloading https://files.pythonhosted.org/packages/61/c6/6acb81e68238c9bab6491e81082a9685a6a5f72135dee71f6355362f45e3/versium-reach-sdk-1.1.0.tar.gz
+[2023-05-24 20:26:29] INFO root fetch - processPackages [versium-reach-sdk]: executing diffoscope
+[2023-05-24 20:26:29] INFO root fetch - processPackages [versium-reach-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/versium-reach-sdk-1.0.0.tar.gz tmp/versium-reach-sdk-1.1.0.tar.gz --markdown 20230524/v/versium-reach-sdk/1.0.0-1.1.0/diff.md --exclude *.pyd
+[2023-05-24 20:26:29] INFO root fetch - processPackages [pyviz-comms]: Downloading https://files.pythonhosted.org/packages/07/0c/c6f1d642834bd41a1709571d43dea401afcf7135c59fdda8d98cd6273c8f/pyviz_comms-2.3.0.tar.gz
+[2023-05-24 20:26:29] INFO root fetch - processPackages [pulumi-docker]: Downloading https://files.pythonhosted.org/packages/9d/de/03108e9b9f58b7abc177ca666dc51932b9c2b496594cd192a8e9ec9a77e1/pulumi_docker-4.3.0a1684950981.tar.gz
+[2023-05-24 20:26:29] INFO root fetch - processPackages [pyviz-comms]: executing diffoscope
+[2023-05-24 20:26:29] INFO root fetch - processPackages [pyviz-comms]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyviz_comms-2.2.1rc1.tar.gz tmp/pyviz_comms-2.3.0.tar.gz --markdown 20230524/p/pyviz-comms/2.2.1rc1-2.3.0/diff.md --exclude *.pyd
+[2023-05-24 20:26:29] INFO root fetch - processPackages [mujoco-dev]: executing diffoscope
+[2023-05-24 20:26:29] INFO root fetch - processPackages [mujoco-dev]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mujoco_dev-2.3.6.dev534141245-cp39-cp39-win_amd64.whl.zip tmp/mujoco_dev-2.3.6.dev534783070-cp39-cp39-win_amd64.whl.zip --markdown 20230524/m/mujoco-dev/2.3.6.dev534141245-2.3.6.dev534783070/diff.md --exclude *.pyd
+[2023-05-24 20:26:29] INFO root fetch - processPackages [generic-etl]: Downloading https://files.pythonhosted.org/packages/5c/92/641a67f370f546e0829f70e1ed22ca583ddf83168dea0b3dba8cb5657b1a/generic-etl-0.1.dev3.tar.gz
+[2023-05-24 20:26:29] INFO root fetch - processPackages [pulumi-docker]: executing diffoscope
+[2023-05-24 20:26:29] INFO root fetch - processPackages [pulumi-docker]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_docker-4.3.0a1684784707.tar.gz tmp/pulumi_docker-4.3.0a1684950981.tar.gz --markdown 20230524/p/pulumi-docker/4.3.0a1684784707-4.3.0a1684950981/diff.md --exclude *.pyd
+[2023-05-24 20:26:29] INFO root fetch - processPackages [generic-etl]: executing diffoscope
+[2023-05-24 20:26:29] INFO root fetch - processPackages [generic-etl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/generic-etl-0.1.dev2.tar.gz tmp/generic-etl-0.1.dev3.tar.gz --markdown 20230524/g/generic-etl/0.1.dev2-0.1.dev3/diff.md --exclude *.pyd
+[2023-05-24 20:26:29] INFO root fetch - processPackages [always-updates]: New version: [99.9] Old Version: [99.8]
+[2023-05-24 20:26:29] INFO root fetch - main [MainThread]: End processing [ovos-messagebus]: success
+[2023-05-24 20:26:30] INFO root fetch - processPackages [always-updates]: executing diffoscope
+[2023-05-24 20:26:30] INFO root fetch - processPackages [always-updates]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/always_updates-99.8.tar.gz tmp/always_updates-99.9.tar.gz --markdown 20230524/a/always-updates/99.8-99.9/diff.md --exclude *.pyd
+[2023-05-24 20:26:30] INFO root fetch - main [MainThread]: End processing [pulumiverse-astra]: success
+[2023-05-24 20:26:30] INFO root fetch - main [MainThread]: End processing [lightning-graphcore]: success
+[2023-05-24 20:26:30] INFO root fetch - main [MainThread]: End processing [versium-reach-sdk]: success
+[2023-05-24 20:26:30] INFO root fetch - main [MainThread]: End processing [generic-etl]: success
+[2023-05-24 20:26:31] INFO root fetch - main [MainThread]: End processing [always-updates]: success
+[2023-05-24 20:26:31] INFO root fetch - main [MainThread]: End processing [pyviz-comms]: success
+[2023-05-24 20:26:32] INFO root fetch - main [MainThread]: End processing [pulumi-docker]: success
+[2023-05-24 20:26:38] INFO root fetch - main [MainThread]: End processing [fern-persona]: success
+[2023-05-24 20:26:40] INFO root fetch - main [MainThread]: End processing [mujoco-dev]: success
+[2023-05-24 20:26:40] INFO root fetch - main [MainThread]: Store serial: [18234157]
