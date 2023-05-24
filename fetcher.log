@@ -11697,3 +11697,111 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-05-24 11:33:15] INFO root fetch - main [MainThread]: End processing [kcli]: success
 [2023-05-24 11:33:17] INFO root fetch - main [MainThread]: End processing [pyFipper]: success
 [2023-05-24 11:33:17] INFO root fetch - main [MainThread]: Store serial: [18227589]
+[2023-05-24 11:38:25] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18227589]
+[2023-05-24 11:38:30] INFO root fetch - main [MainThread]: Found 20 changed packages
+[2023-05-24 11:38:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: megadata
+[2023-05-24 11:38:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: armonik
+[2023-05-24 11:38:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: mtbase
+[2023-05-24 11:38:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: jschemator
+[2023-05-24 11:38:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: vantage6-common
+[2023-05-24 11:38:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: vantage6-client
+[2023-05-24 11:38:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: vantage6
+[2023-05-24 11:38:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: vantage6-node
+[2023-05-24 11:38:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: vantage6-server
+[2023-05-24 11:38:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: pyocient
+[2023-05-24 11:38:30] INFO root fetch - processPackages [mtbase]: New version: [4.4.202305240620] Old Version: [4.4.202305240618]
+[2023-05-24 11:38:30] INFO root fetch - processPackages [jschemator]: New version: [0.0.8] Old Version: [0.0.7]
+[2023-05-24 11:38:30] INFO root fetch - processPackages [armonik]: New version: [3.8.2.dev360] Old Version: [3.8.2.dev359]
+[2023-05-24 11:38:30] INFO root fetch - processPackages [vantage6-server]: New version: [3.9.0rc2] Old Version: [3.8.8rc3]
+[2023-05-24 11:38:30] INFO root fetch - processPackages [vantage6-client]: New version: [3.9.0rc2] Old Version: [3.8.8rc3]
+[2023-05-24 11:38:30] INFO root fetch - processPackages [vantage6]: New version: [3.9.0rc2] Old Version: [3.8.8rc3]
+[2023-05-24 11:38:30] INFO root fetch - processPackages [vantage6-common]: New version: [3.9.0rc2] Old Version: [3.8.8rc3]
+[2023-05-24 11:38:30] INFO root fetch - processPackages [vantage6-node]: New version: [3.9.0rc2] Old Version: [3.8.8rc3]
+[2023-05-24 11:38:30] INFO root fetch - processPackages [megadata]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-24 11:38:30] INFO root fetch - processPackages [pyocient]: New version: [2.0.0] Old Version: [1.0.9]
+[2023-05-24 11:38:30] INFO root fetch - processPackages [armonik]: executing diffoscope
+[2023-05-24 11:38:30] INFO root fetch - processPackages [armonik]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/armonik-3.8.2.dev359.tar.gz tmp/armonik-3.8.2.dev360.tar.gz --markdown 20230524/a/armonik/3.8.2.dev359-3.8.2.dev360/diff.md --exclude *.pyd
+[2023-05-24 11:38:30] INFO root fetch - processPackages [vantage6-server]: executing diffoscope
+[2023-05-24 11:38:30] INFO root fetch - processPackages [vantage6-server]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vantage6-server-3.8.8rc3.tar.gz tmp/vantage6-server-3.9.0rc2.tar.gz --markdown 20230524/v/vantage6-server/3.8.8rc3-3.9.0rc2/diff.md --exclude *.pyd
+[2023-05-24 11:38:31] INFO root fetch - processPackages [mtbase]: Downloading https://files.pythonhosted.org/packages/01/85/1ef4d03def81d82796ab7e40f9cab3ffffaf5d9a45985615b7dc980bb58b/mtbase-4.4.202305240618-py3-none-any.whl
+[2023-05-24 11:38:31] INFO root fetch - processPackages [vantage6]: executing diffoscope
+[2023-05-24 11:38:31] INFO root fetch - processPackages [vantage6]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vantage6-3.8.8rc3.tar.gz tmp/vantage6-3.9.0rc2.tar.gz --markdown 20230524/v/vantage6/3.8.8rc3-3.9.0rc2/diff.md --exclude *.pyd
+[2023-05-24 11:38:31] INFO root fetch - processPackages [vantage6-node]: executing diffoscope
+[2023-05-24 11:38:31] INFO root fetch - processPackages [vantage6-node]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vantage6-node-3.8.8rc3.tar.gz tmp/vantage6-node-3.9.0rc2.tar.gz --markdown 20230524/v/vantage6-node/3.8.8rc3-3.9.0rc2/diff.md --exclude *.pyd
+[2023-05-24 11:38:31] INFO root fetch - processPackages [vantage6-client]: executing diffoscope
+[2023-05-24 11:38:31] INFO root fetch - processPackages [vantage6-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vantage6-client-3.8.8rc3.tar.gz tmp/vantage6-client-3.9.0rc2.tar.gz --markdown 20230524/v/vantage6-client/3.8.8rc3-3.9.0rc2/diff.md --exclude *.pyd
+[2023-05-24 11:38:31] INFO root fetch - processPackages [vantage6-common]: executing diffoscope
+[2023-05-24 11:38:31] INFO root fetch - processPackages [vantage6-common]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vantage6-common-3.8.8rc3.tar.gz tmp/vantage6-common-3.9.0rc2.tar.gz --markdown 20230524/v/vantage6-common/3.8.8rc3-3.9.0rc2/diff.md --exclude *.pyd
+[2023-05-24 11:38:31] INFO root fetch - processPackages [jschemator]: Downloading https://files.pythonhosted.org/packages/57/68/a2c64d70bf9781388c98a51eb8bf206388f1a5eba385a4f9429c80f0bfd2/jschemator-0.0.7.tar.gz
+[2023-05-24 11:38:31] INFO root fetch - processPackages [pyocient]: Downloading https://files.pythonhosted.org/packages/4a/d6/6d60d5bf8ad5ea463f0519727d93f8d3da3cac3a995758d9256c3fe267f4/pyocient-1.0.9.tar.gz
+[2023-05-24 11:38:31] INFO root fetch - processPackages [megadata]: executing diffoscope
+[2023-05-24 11:38:31] INFO root fetch - processPackages [megadata]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/megadata-0.0.8.tar.gz tmp/megadata-0.0.9.tar.gz --markdown 20230524/m/megadata/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-24 11:38:31] INFO root fetch - processPackages [mtbase]: Downloading https://files.pythonhosted.org/packages/bd/65/6595adaddf2f1ae5ba2329bf56321688a492607752671fc65fc01f0aa53f/mtbase-4.4.202305240620-py3-none-any.whl
+[2023-05-24 11:38:31] INFO root fetch - processPackages [jschemator]: Downloading https://files.pythonhosted.org/packages/3e/15/05c36a847c007f0e7c080c8d289c45782ec0bd9403ab23888008501fa27a/jschemator-0.0.8.tar.gz
+[2023-05-24 11:38:31] INFO root fetch - processPackages [mtbase]: executing diffoscope
+[2023-05-24 11:38:31] INFO root fetch - processPackages [mtbase]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mtbase-4.4.202305240618-py3-none-any.whl.zip tmp/mtbase-4.4.202305240620-py3-none-any.whl.zip --markdown 20230524/m/mtbase/4.4.202305240618-4.4.202305240620/diff.md --exclude *.pyd
+[2023-05-24 11:38:31] INFO root fetch - processPackages [pyocient]: Downloading https://files.pythonhosted.org/packages/1e/08/7d360091af4b07d10ea48a14d66f652613c2db5e33a2ec4856a53484ad73/pyocient-2.0.0.tar.gz
+[2023-05-24 11:38:31] INFO root fetch - processPackages [jschemator]: executing diffoscope
+[2023-05-24 11:38:31] INFO root fetch - processPackages [jschemator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jschemator-0.0.7.tar.gz tmp/jschemator-0.0.8.tar.gz --markdown 20230524/j/jschemator/0.0.7-0.0.8/diff.md --exclude *.pyd
+[2023-05-24 11:38:31] INFO root fetch - processPackages [pyocient]: executing diffoscope
+[2023-05-24 11:38:31] INFO root fetch - processPackages [pyocient]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyocient-1.0.9.tar.gz tmp/pyocient-2.0.0.tar.gz --markdown 20230524/p/pyocient/1.0.9-2.0.0/diff.md --exclude *.pyd
+[2023-05-24 11:38:32] INFO root fetch - processPackages [megadata]: Start processing: pyopnsenseapi
+[2023-05-24 11:38:32] INFO root fetch - main [MainThread]: End processing [megadata]: success
+[2023-05-24 11:38:32] WARNING root fetch - processPackages [pyopnsenseapi]: Skipping, unable to determine old version
+[2023-05-24 11:38:32] INFO root fetch - processPackages [pyopnsenseapi]: Start processing: TorchEase
+[2023-05-24 11:38:32] INFO root fetch - main [MainThread]: End processing [pyopnsenseapi] error
+[2023-05-24 11:38:32] INFO root fetch - processPackages [TorchEase]: New version: [0.0.8] Old Version: [0.0.7]
+[2023-05-24 11:38:32] INFO root fetch - processPackages [vantage6-client]: Start processing: HighResAnalysis
+[2023-05-24 11:38:32] INFO root fetch - main [MainThread]: End processing [vantage6-client]: success
+[2023-05-24 11:38:32] INFO root fetch - processPackages [HighResAnalysis]: New version: [0.0.4] Old Version: [0.0.3]
+[2023-05-24 11:38:32] INFO root fetch - processPackages [vantage6-common]: Start processing: pytket-qir
+[2023-05-24 11:38:32] INFO root fetch - main [MainThread]: End processing [vantage6-common]: success
+[2023-05-24 11:38:32] INFO root fetch - processPackages [TorchEase]: Downloading https://files.pythonhosted.org/packages/4c/fa/a3a219b7b9613ddcdb4a86e822d631e2c4f830eeefe56e849b0c67f18a92/TorchEase-0.0.7.tar.gz
+[2023-05-24 11:38:32] INFO root fetch - processPackages [pytket-qir]: New version: [0.2.0rc5] Old Version: [0.2.0rc4]
+[2023-05-24 11:38:32] INFO root fetch - processPackages [vantage6-node]: Start processing: PyAltiumRunTop
+[2023-05-24 11:38:32] INFO root fetch - main [MainThread]: End processing [vantage6-node]: success
+[2023-05-24 11:38:32] INFO root fetch - processPackages [vantage6]: Start processing: semeio
+[2023-05-24 11:38:32] INFO root fetch - main [MainThread]: End processing [vantage6]: success
+[2023-05-24 11:38:32] INFO root fetch - processPackages [HighResAnalysis]: executing diffoscope
+[2023-05-24 11:38:32] INFO root fetch - processPackages [HighResAnalysis]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/HighResAnalysis-0.0.3.tar.gz tmp/HighResAnalysis-0.0.4.tar.gz --markdown 20230524/H/HighResAnalysis/0.0.3-0.0.4/diff.md --exclude *.pyd
+[2023-05-24 11:38:32] INFO root fetch - processPackages [pytket-qir]: executing diffoscope
+[2023-05-24 11:38:32] INFO root fetch - processPackages [pytket-qir]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pytket_qir-0.2.0rc4-py3-none-any.whl.zip tmp/pytket_qir-0.2.0rc5-py3-none-any.whl.zip --markdown 20230524/p/pytket-qir/0.2.0rc4-0.2.0rc5/diff.md --exclude *.pyd
+[2023-05-24 11:38:32] INFO root fetch - processPackages [jschemator]: Start processing: ewoksweb
+[2023-05-24 11:38:32] INFO root fetch - main [MainThread]: End processing [jschemator]: success
+[2023-05-24 11:38:32] INFO root fetch - processPackages [ewoksweb]: New version: [0.1.0rc3] Old Version: [0.1.0rc2]
+[2023-05-24 11:38:32] INFO root fetch - processPackages [PyAltiumRunTop]: New version: [0.2.4.7] Old Version: [0.2.4.6]
+[2023-05-24 11:38:32] INFO root fetch - processPackages [semeio]: New version: [1.6.0rc0] Old Version: [1.5.2]
+[2023-05-24 11:38:33] INFO root fetch - processPackages [TorchEase]: Downloading https://files.pythonhosted.org/packages/6f/50/05b459937c722627b86857d9a02735a660b592a20bb43ac0794d749c2be2/TorchEase-0.0.8.tar.gz
+[2023-05-24 11:38:33] INFO root fetch - processPackages [mtbase]: Start processing: scaneo
+[2023-05-24 11:38:33] INFO root fetch - main [MainThread]: End processing [mtbase]: success
+[2023-05-24 11:38:33] INFO root fetch - processPackages [pyocient]: Start processing: aiogrpctools
+[2023-05-24 11:38:33] INFO root fetch - main [MainThread]: End processing [pyocient]: success
+[2023-05-24 11:38:33] WARNING root fetch - processPackages [aiogrpctools]: Skipping, unable to determine old version
+[2023-05-24 11:38:33] INFO root fetch - processPackages [ewoksweb]: Downloading https://files.pythonhosted.org/packages/47/b5/4c0de2ac5d225efd04ccaed2a4f6c4cf7eee411de935857403746a6c5588/ewoksweb-0.1.0rc3.tar.gz
+[2023-05-24 11:38:33] INFO root fetch - processPackages [aiogrpctools]: Start processing: twc-cli
+[2023-05-24 11:38:33] INFO root fetch - main [MainThread]: End processing [aiogrpctools] error
+[2023-05-24 11:38:33] INFO root fetch - processPackages [semeio]: Downloading https://files.pythonhosted.org/packages/d2/29/aa36251ecd05c527bc95913eeefed4e6058b7267071e8c332f762aea03ef/semeio-1.5.2.tar.gz
+[2023-05-24 11:38:33] WARNING root fetch - processPackages [scaneo]: Skipping, unable to determine old version
+[2023-05-24 11:38:33] INFO root fetch - main [MainThread]: End processing [scaneo] error
+[2023-05-24 11:38:33] INFO root fetch - processPackages [TorchEase]: executing diffoscope
+[2023-05-24 11:38:33] INFO root fetch - processPackages [TorchEase]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/TorchEase-0.0.7.tar.gz tmp/TorchEase-0.0.8.tar.gz --markdown 20230524/T/TorchEase/0.0.7-0.0.8/diff.md --exclude *.pyd
+[2023-05-24 11:38:33] WARNING root fetch - processPackages [semeio]: Skipping package: exceeds size limit 17364790>=10485760
+[2023-05-24 11:38:33] INFO root fetch - main [MainThread]: End processing [semeio] error
+[2023-05-24 11:38:33] INFO root fetch - processPackages [PyAltiumRunTop]: Downloading https://files.pythonhosted.org/packages/10/33/182bdb4ce23ef75e5b888aa123540eb545d450e3533716fdc742e895a614/PyAltiumRunTop-0.2.4.7.tar.gz
+[2023-05-24 11:38:33] INFO root fetch - processPackages [twc-cli]: New version: [2.0.2] Old Version: [2.0.1]
+[2023-05-24 11:38:33] INFO root fetch - processPackages [ewoksweb]: executing diffoscope
+[2023-05-24 11:38:33] INFO root fetch - processPackages [ewoksweb]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ewoksweb-0.1.0rc2.tar.gz tmp/ewoksweb-0.1.0rc3.tar.gz --markdown 20230524/e/ewoksweb/0.1.0rc2-0.1.0rc3/diff.md --exclude *.pyd
+[2023-05-24 11:38:33] INFO root fetch - processPackages [PyAltiumRunTop]: executing diffoscope
+[2023-05-24 11:38:33] INFO root fetch - processPackages [PyAltiumRunTop]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PyAltiumRunTop-0.2.4.6.tar.gz tmp/PyAltiumRunTop-0.2.4.7.tar.gz --markdown 20230524/P/PyAltiumRunTop/0.2.4.6-0.2.4.7/diff.md --exclude *.pyd
+[2023-05-24 11:38:33] INFO root fetch - processPackages [twc-cli]: Downloading https://files.pythonhosted.org/packages/6a/3b/b22ce4e8c253af055f4247dceed681bde2a94cc474b779addf7e9c1dcd23/twc_cli-2.0.2.tar.gz
+[2023-05-24 11:38:33] INFO root fetch - processPackages [twc-cli]: executing diffoscope
+[2023-05-24 11:38:33] INFO root fetch - processPackages [twc-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/twc_cli-2.0.1.tar.gz tmp/twc_cli-2.0.2.tar.gz --markdown 20230524/t/twc-cli/2.0.1-2.0.2/diff.md --exclude *.pyd
+[2023-05-24 11:38:34] INFO root fetch - main [MainThread]: End processing [armonik]: success
+[2023-05-24 11:38:34] INFO root fetch - main [MainThread]: End processing [pytket-qir]: success
+[2023-05-24 11:38:34] INFO root fetch - main [MainThread]: End processing [HighResAnalysis]: success
+[2023-05-24 11:38:34] INFO root fetch - main [MainThread]: End processing [TorchEase]: success
+[2023-05-24 11:38:34] INFO root fetch - main [MainThread]: End processing [vantage6-server]: success
+[2023-05-24 11:38:34] INFO root fetch - main [MainThread]: End processing [twc-cli]: success
+[2023-05-24 11:38:35] INFO root fetch - main [MainThread]: End processing [PyAltiumRunTop]: success
+[2023-05-24 11:38:36] INFO root fetch - main [MainThread]: End processing [ewoksweb]: success
+[2023-05-24 11:38:36] INFO root fetch - main [MainThread]: Store serial: [18227647]
