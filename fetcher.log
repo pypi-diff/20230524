@@ -5839,3 +5839,60 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-05-24 04:19:59] INFO root fetch - main [MainThread]: End processing [dashscope]: success
 [2023-05-24 04:20:00] INFO root fetch - main [MainThread]: End processing [lineagex]: success
 [2023-05-24 04:20:00] INFO root fetch - main [MainThread]: Store serial: [18224044]
+[2023-05-24 04:25:03] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18224044]
+[2023-05-24 04:25:08] INFO root fetch - main [MainThread]: Found 10 changed packages
+[2023-05-24 04:25:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: NikGapps
+[2023-05-24 04:25:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: xgh-say-hello
+[2023-05-24 04:25:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: jwtools
+[2023-05-24 04:25:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: vl-datasets
+[2023-05-24 04:25:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: attm
+[2023-05-24 04:25:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: salesea
+[2023-05-24 04:25:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: logger-local
+[2023-05-24 04:25:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: deep-training
+[2023-05-24 04:25:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: attm
+[2023-05-24 04:25:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: ai-transform
+[2023-05-24 04:25:08] WARNING root fetch - processPackages [salesea]: Skipping, unable to determine old version
+[2023-05-24 04:25:08] INFO root fetch - main [MainThread]: End processing [salesea] error
+[2023-05-24 04:25:08] INFO root fetch - processPackages [NikGapps]: New version: [1.9] Old Version: [1.8]
+[2023-05-24 04:25:08] INFO root fetch - processPackages [jwtools]: New version: [0.1.7] Old Version: [0.1.6]
+[2023-05-24 04:25:08] INFO root fetch - processPackages [attm]: New version: [0.0.5] Old Version: [0.0.4]
+[2023-05-24 04:25:08] INFO root fetch - processPackages [attm]: New version: [0.0.5] Old Version: [0.0.4]
+[2023-05-24 04:25:09] INFO root fetch - processPackages [NikGapps]: Downloading https://files.pythonhosted.org/packages/99/f4/d8ce2e2d719825cba07c0ab6e175642ee57182f3f7ee3ffaf256507432bf/NikGapps-1.8.tar.gz
+[2023-05-24 04:25:09] INFO root fetch - processPackages [deep-training]: New version: [0.1.7.post1] Old Version: [0.1.7.post0]
+[2023-05-24 04:25:09] WARNING root fetch - processPackages [NikGapps]: Skipping package: exceeds size limit 41549849>=10485760
+[2023-05-24 04:25:09] INFO root fetch - main [MainThread]: End processing [NikGapps] error
+[2023-05-24 04:25:09] INFO root fetch - processPackages [jwtools]: executing diffoscope
+[2023-05-24 04:25:09] INFO root fetch - processPackages [jwtools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jwtools-0.1.6.tar.gz tmp/jwtools-0.1.7.tar.gz --markdown 20230524/j/jwtools/0.1.6-0.1.7/diff.md --exclude *.pyd
+[2023-05-24 04:25:09] INFO root fetch - processPackages [vl-datasets]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-24 04:25:09] INFO root fetch - processPackages [xgh-say-hello]: New version: [0.0.1] Old Version: [0.0.0]
+[2023-05-24 04:25:09] WARNING root fetch - processPackages [logger-local]: Skipping, unable to determine old version
+[2023-05-24 04:25:09] INFO root fetch - main [MainThread]: End processing [logger-local] error
+[2023-05-24 04:25:09] INFO root fetch - processPackages [xgh-say-hello]: Downloading https://files.pythonhosted.org/packages/b7/59/65da6da083fb77c8359046398a435c92bc30897dd190259a5b3485c37db9/xgh_say_hello-0.0.0.tar.gz
+[2023-05-24 04:25:09] INFO root fetch - processPackages [ai-transform]: New version: [0.31.2] Old Version: [0.31.1]
+[2023-05-24 04:25:09] INFO root fetch - processPackages [attm]: Downloading https://files.pythonhosted.org/packages/53/2c/401697c92b7f35861d7797a5a5a97c56b3bd0d3d3b141b72f01f56ebe145/attm-0.0.5-py3-none-win_amd64.whl
+[2023-05-24 04:25:09] INFO root fetch - processPackages [attm]: Downloading https://files.pythonhosted.org/packages/53/2c/401697c92b7f35861d7797a5a5a97c56b3bd0d3d3b141b72f01f56ebe145/attm-0.0.5-py3-none-win_amd64.whl
+[2023-05-24 04:25:09] INFO root fetch - processPackages [deep-training]: Downloading https://files.pythonhosted.org/packages/cc/de/cfb74e8410b294a8caf397c0a98cf74aeab215bbc7cde4a85ef58b350373/deep_training-0.1.7.post1-py3-none-any.whl
+[2023-05-24 04:25:09] INFO root fetch - processPackages [attm]: executing diffoscope
+[2023-05-24 04:25:09] INFO root fetch - processPackages [attm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/attm-0.0.4-py3-none-win_amd64.whl.zip tmp/attm-0.0.5-py3-none-win_amd64.whl.zip --markdown 20230524/a/attm/0.0.4-0.0.5/diff.md --exclude *.pyd
+[2023-05-24 04:25:09] INFO root fetch - processPackages [vl-datasets]: Downloading https://files.pythonhosted.org/packages/8b/38/30c10624cf972f7b6cc45bb89c624e9a8c4fa5ceef6e5a9f5146902e640a/vl_datasets-0.0.9-py3.9-none-any.whl
+[2023-05-24 04:25:09] INFO root fetch - processPackages [attm]: executing diffoscope
+[2023-05-24 04:25:09] INFO root fetch - processPackages [attm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/attm-0.0.4-py3-none-win_amd64.whl.zip tmp/attm-0.0.5-py3-none-win_amd64.whl.zip --markdown 20230524/a/attm/0.0.4-0.0.5/diff.md --exclude *.pyd
+[2023-05-24 04:25:09] INFO root fetch - processPackages [xgh-say-hello]: Downloading https://files.pythonhosted.org/packages/6f/9c/545e0374ee84ff8098521e48fe10a74aa98afe60a58b57f83946282905f2/xgh_say_hello-0.0.1.tar.gz
+[2023-05-24 04:25:09] INFO root fetch - processPackages [ai-transform]: Downloading https://files.pythonhosted.org/packages/48/3b/0e3beaf5a1939393f975741d21d8dafc7e0470386f438f193679d0d0432e/ai_transform-0.31.1.tar.gz
+[2023-05-24 04:25:09] INFO root fetch - processPackages [deep-training]: executing diffoscope
+[2023-05-24 04:25:09] INFO root fetch - processPackages [deep-training]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/deep_training-0.1.7.post0-py3-none-any.whl.zip tmp/deep_training-0.1.7.post1-py3-none-any.whl.zip --markdown 20230524/d/deep-training/0.1.7.post0-0.1.7.post1/diff.md --exclude *.pyd
+[2023-05-24 04:25:09] INFO root fetch - processPackages [xgh-say-hello]: executing diffoscope
+[2023-05-24 04:25:09] INFO root fetch - processPackages [xgh-say-hello]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xgh_say_hello-0.0.0.tar.gz tmp/xgh_say_hello-0.0.1.tar.gz --markdown 20230524/x/xgh-say-hello/0.0.0-0.0.1/diff.md --exclude *.pyd
+[2023-05-24 04:25:09] INFO root fetch - processPackages [vl-datasets]: executing diffoscope
+[2023-05-24 04:25:09] INFO root fetch - processPackages [vl-datasets]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vl_datasets-0.0.8-py3.9-none-any.whl.zip tmp/vl_datasets-0.0.9-py3.9-none-any.whl.zip --markdown 20230524/v/vl-datasets/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-24 04:25:09] INFO root fetch - processPackages [ai-transform]: Downloading https://files.pythonhosted.org/packages/62/d9/d820d2f745e7639fb7cf9860cb8c3cb82d28aa6a4188c6fb9747d3ec9d44/ai_transform-0.31.2.tar.gz
+[2023-05-24 04:25:09] INFO root fetch - processPackages [ai-transform]: executing diffoscope
+[2023-05-24 04:25:09] INFO root fetch - processPackages [ai-transform]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ai_transform-0.31.1.tar.gz tmp/ai_transform-0.31.2.tar.gz --markdown 20230524/a/ai-transform/0.31.1-0.31.2/diff.md --exclude *.pyd
+[2023-05-24 04:25:10] INFO root fetch - main [MainThread]: End processing [jwtools]: success
+[2023-05-24 04:25:10] INFO root fetch - main [MainThread]: End processing [attm]: success
+[2023-05-24 04:25:10] INFO root fetch - main [MainThread]: End processing [xgh-say-hello]: success
+[2023-05-24 04:25:10] INFO root fetch - main [MainThread]: End processing [attm]: success
+[2023-05-24 04:25:10] INFO root fetch - main [MainThread]: End processing [vl-datasets]: success
+[2023-05-24 04:25:11] INFO root fetch - main [MainThread]: End processing [deep-training]: success
+[2023-05-24 04:25:12] INFO root fetch - main [MainThread]: End processing [ai-transform]: success
+[2023-05-24 04:25:12] INFO root fetch - main [MainThread]: Store serial: [18224079]

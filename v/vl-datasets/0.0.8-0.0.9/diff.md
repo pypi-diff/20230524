@@ -1,4 +1,4 @@
-# Comparing `tmp/vl_datasets-0.0.8-py3.9-none-any.whl.zip` & `tmp/vl_datasets-0.0.9-py3-none-any.whl.zip`
+# Comparing `tmp/vl_datasets-0.0.8-py3.9-none-any.whl.zip` & `tmp/vl_datasets-0.0.9-py3.9-none-any.whl.zip`
 
 ## zipinfo {}
 
@@ -17,19 +17,19 @@
 --rw-r--r--  2.0 unx       12 b- defN 23-May-22 14:26 vl_datasets-0.0.8.dist-info/top_level.txt
 --rw-rw-r--  2.0 unx      899 b- defN 23-May-22 14:26 vl_datasets-0.0.8.dist-info/RECORD
 -11 files, 50001 bytes uncompressed, 16702 bytes compressed:  66.6%
-+Zip file size: 18294 bytes, number of entries: 11
-+-rw-r--r--  2.0 unx      193 b- defN 23-May-24 02:11 vl_datasets/__init__.py
-+-rw-r--r--  2.0 unx     2352 b- defN 23-May-24 02:11 vl_datasets/image_folder.py
-+-rw-r--r--  2.0 unx     4940 b- defN 23-May-24 02:11 vl_datasets/sentry.py
-+-rw-r--r--  2.0 unx     1056 b- defN 23-May-24 02:11 vl_datasets/utils.py
-+-rw-r--r--  2.0 unx     5099 b- defN 23-May-24 02:11 vl_datasets/vl_food101.py
-+-rw-r--r--  2.0 unx     5008 b- defN 23-May-24 02:11 vl_datasets/vl_oxford_iiit_pet.py
-+-rw-r--r--  2.0 unx    11357 b- defN 23-May-24 02:11 vl_datasets-0.0.9.dist-info/LICENSE
-+-rw-r--r--  2.0 unx    19794 b- defN 23-May-24 02:11 vl_datasets-0.0.9.dist-info/METADATA
-+-rw-r--r--  2.0 unx       92 b- defN 23-May-24 02:11 vl_datasets-0.0.9.dist-info/WHEEL
-+-rw-r--r--  2.0 unx       12 b- defN 23-May-24 02:11 vl_datasets-0.0.9.dist-info/top_level.txt
-+-rw-rw-r--  2.0 unx      898 b- defN 23-May-24 02:11 vl_datasets-0.0.9.dist-info/RECORD
-+11 files, 50801 bytes uncompressed, 16780 bytes compressed:  67.0%
++Zip file size: 18301 bytes, number of entries: 11
++-rw-r--r--  2.0 unx      193 b- defN 23-May-24 02:21 vl_datasets/__init__.py
++-rw-r--r--  2.0 unx     2352 b- defN 23-May-24 02:21 vl_datasets/image_folder.py
++-rw-r--r--  2.0 unx     4940 b- defN 23-May-24 02:21 vl_datasets/sentry.py
++-rw-r--r--  2.0 unx     1056 b- defN 23-May-24 02:21 vl_datasets/utils.py
++-rw-r--r--  2.0 unx     5099 b- defN 23-May-24 02:21 vl_datasets/vl_food101.py
++-rw-r--r--  2.0 unx     5008 b- defN 23-May-24 02:21 vl_datasets/vl_oxford_iiit_pet.py
++-rw-r--r--  2.0 unx    11357 b- defN 23-May-24 02:21 vl_datasets-0.0.9.dist-info/LICENSE
++-rw-r--r--  2.0 unx    19794 b- defN 23-May-24 02:21 vl_datasets-0.0.9.dist-info/METADATA
++-rw-r--r--  2.0 unx      108 b- defN 23-May-24 02:21 vl_datasets-0.0.9.dist-info/WHEEL
++-rw-r--r--  2.0 unx       12 b- defN 23-May-24 02:21 vl_datasets-0.0.9.dist-info/top_level.txt
++-rw-rw-r--  2.0 unx      899 b- defN 23-May-24 02:21 vl_datasets-0.0.9.dist-info/RECORD
++11 files, 50818 bytes uncompressed, 16787 bytes compressed:  67.0%
 ```
 
 ## zipnote {}
@@ -69,15 +69,16 @@
 ## vl_datasets/__init__.py
 
 ```diff
-@@ -1,7 +1,7 @@
+@@ -1,7 +1,6 @@
 -__version__ = '0.0.8'
 +__version__ = '0.0.9'
++init_sentry()
  from .image_folder import CleanImageFolder
  from .vl_food101 import VLFood101
  from .vl_oxford_iiit_pet import VLOxfordIIITPet
  from .sentry import init_sentry
- 
- init_sentry()
+-
+-init_sentry()
 ```
 
 ## Comparing `vl_datasets-0.0.8.dist-info/LICENSE` & `vl_datasets-0.0.9.dist-info/LICENSE`
@@ -362,7 +363,7 @@
 ```diff
 @@ -1,11 +1,11 @@
 -vl_datasets/__init__.py,sha256=5lSjEKpAZplC0Hgvbpfp4h_PsyugEhyNyr9tSDA3gsE,193
-+vl_datasets/__init__.py,sha256=9dsFWuDhY6gO0frNv_r3ksYoQ5a0F9uard-5WZwQtvg,193
++vl_datasets/__init__.py,sha256=3F0M0HNOUbubEz96EBDOV7vHK6NpAGjKiOlGpbNNHoo,193
  vl_datasets/image_folder.py,sha256=qjhkPSbGeK5pcYL7t1md5b4RDUPUuo5MrCdtt0LrNYQ,2352
  vl_datasets/sentry.py,sha256=aDwvaApepFq2MQSXxxcIux684aG18v8tSO94-E8mzs8,4940
  vl_datasets/utils.py,sha256=JXQ9pMvbIwr92FYlNEZJXuScF9OkBrE8Bs8faWQoj_w,1056
@@ -375,7 +376,7 @@
 -vl_datasets-0.0.8.dist-info/RECORD,,
 +vl_datasets-0.0.9.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
 +vl_datasets-0.0.9.dist-info/METADATA,sha256=__lc5Vl2ZBQemjKNOhUfwz4LAw_2GGADC2Ef6at_6OQ,19794
-+vl_datasets-0.0.9.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
++vl_datasets-0.0.9.dist-info/WHEEL,sha256=YT1wPceIeW2Q5XD-ypzUqEKq0BMVsXhboTN8eU2aMIk,108
 +vl_datasets-0.0.9.dist-info/top_level.txt,sha256=XbUC34rGj0OLHbugO4YnVobn0t02Nc-NM3F4pwV-j8g,12
 +vl_datasets-0.0.9.dist-info/RECORD,,
 ```
