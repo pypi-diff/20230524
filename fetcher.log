@@ -22246,3 +22246,97 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd4 in position 72: invalid
 [2023-05-24 20:48:03] INFO root fetch - main [MainThread]: End processing [boonamber]: success
 [2023-05-24 20:48:09] INFO root fetch - main [MainThread]: End processing [sharedbuffers]: success
 [2023-05-24 20:48:09] INFO root fetch - main [MainThread]: Store serial: [18234427]
+[2023-05-24 20:53:14] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18234427]
+[2023-05-24 20:53:19] INFO root fetch - main [MainThread]: Found 17 changed packages
+[2023-05-24 20:53:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: rayasdk
+[2023-05-24 20:53:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pulumiverse-astra
+[2023-05-24 20:53:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: rahaut2
+[2023-05-24 20:53:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: wf-video-io
+[2023-05-24 20:53:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: sageranger
+[2023-05-24 20:53:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: wsi-annotations-kit
+[2023-05-24 20:53:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: pyNAVIS
+[2023-05-24 20:53:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: vector-vault
+[2023-05-24 20:53:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: rahaut3
+[2023-05-24 20:53:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: PyUpyog
+[2023-05-24 20:53:19] INFO root fetch - processPackages [pulumiverse-astra]: New version: [1.0.38] Old Version: [1.0.37]
+[2023-05-24 20:53:19] INFO root fetch - processPackages [wsi-annotations-kit]: New version: [1.0.1.1] Old Version: [1.0.1]
+[2023-05-24 20:53:19] INFO root fetch - processPackages [vector-vault]: New version: [1.0.5] Old Version: [1.0.4]
+[2023-05-24 20:53:19] WARNING root fetch - processPackages [PyUpyog]: Skipping, unable to determine old version
+[2023-05-24 20:53:19] INFO root fetch - processPackages [PyUpyog]: Start processing: enebootools
+[2023-05-24 20:53:19] INFO root fetch - main [MainThread]: End processing [PyUpyog] error
+[2023-05-24 20:53:20] INFO root fetch - processPackages [enebootools]: New version: [2.0.4] Old Version: [2.0.3]
+[2023-05-24 20:53:20] INFO root fetch - processPackages [wf-video-io]: New version: [3.3.0] Old Version: [3.2.5]
+[2023-05-24 20:53:20] INFO root fetch - processPackages [rayasdk]: New version: [1.1.0.dev8] Old Version: [1.1.0.dev7]
+[2023-05-24 20:53:20] WARNING root fetch - processPackages [rahaut2]: Skipping, unable to determine old version
+[2023-05-24 20:53:20] INFO root fetch - processPackages [rahaut2]: Start processing: dp4plus-app
+[2023-05-24 20:53:20] INFO root fetch - processPackages [wsi-annotations-kit]: executing diffoscope
+[2023-05-24 20:53:20] INFO root fetch - main [MainThread]: End processing [rahaut2] error
+[2023-05-24 20:53:20] INFO root fetch - processPackages [wsi-annotations-kit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wsi-annotations-kit-1.0.1.tar.gz tmp/wsi-annotations-kit-1.0.1.1.tar.gz --markdown 20230524/w/wsi-annotations-kit/1.0.1-1.0.1.1/diff.md --exclude *.pyd
+[2023-05-24 20:53:20] WARNING root fetch - processPackages [rahaut3]: Skipping, unable to determine old version
+[2023-05-24 20:53:20] INFO root fetch - processPackages [rahaut3]: Start processing: cmake-pre-commit-hooks
+[2023-05-24 20:53:20] INFO root fetch - main [MainThread]: End processing [rahaut3] error
+[2023-05-24 20:53:20] WARNING root fetch - processPackages [sageranger]: Skipping, unable to determine old version
+[2023-05-24 20:53:20] INFO root fetch - processPackages [sageranger]: Start processing: slskd-api
+[2023-05-24 20:53:20] INFO root fetch - main [MainThread]: End processing [sageranger] error
+[2023-05-24 20:53:20] INFO root fetch - processPackages [pyNAVIS]: New version: [1.1.5] Old Version: [1.1.4]
+[2023-05-24 20:53:20] INFO root fetch - processPackages [enebootools]: executing diffoscope
+[2023-05-24 20:53:20] INFO root fetch - processPackages [enebootools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/enebootools-2.0.3.tar.gz tmp/enebootools-2.0.4.tar.gz --markdown 20230524/e/enebootools/2.0.3-2.0.4/diff.md --exclude *.pyd
+[2023-05-24 20:53:20] INFO root fetch - processPackages [pulumiverse-astra]: Downloading https://files.pythonhosted.org/packages/66/4e/b6be6c27f001401225fc6c057f4f92b99d97eb90ab38bd13890f0749680b/pulumiverse_astra-1.0.38.tar.gz
+[2023-05-24 20:53:20] INFO root fetch - processPackages [vector-vault]: Downloading https://files.pythonhosted.org/packages/b8/57/272f659ca04075f0c2bc20cbb8a63105fa4d257c6679e786574b32676a77/vector_vault-1.0.5.tar.gz
+[2023-05-24 20:53:20] INFO root fetch - processPackages [dp4plus-app]: New version: [0.1.2] Old Version: [0.1.1]
+[2023-05-24 20:53:20] INFO root fetch - processPackages [slskd-api]: New version: [0.1.0] Old Version: [0.0.7]
+[2023-05-24 20:53:20] INFO root fetch - processPackages [cmake-pre-commit-hooks]: New version: [1.9.0] Old Version: [1.8.1]
+[2023-05-24 20:53:20] INFO root fetch - processPackages [wf-video-io]: Downloading https://files.pythonhosted.org/packages/28/b5/60e15f373bdc5afe04a39923b429364e00be4aff4217da2ae73f7f330bfc/wf_video_io-3.2.5.tar.gz
+[2023-05-24 20:53:20] INFO root fetch - processPackages [pulumiverse-astra]: executing diffoscope
+[2023-05-24 20:53:20] INFO root fetch - processPackages [pulumiverse-astra]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumiverse_astra-1.0.37.tar.gz tmp/pulumiverse_astra-1.0.38.tar.gz --markdown 20230524/p/pulumiverse-astra/1.0.37-1.0.38/diff.md --exclude *.pyd
+[2023-05-24 20:53:20] INFO root fetch - processPackages [vector-vault]: executing diffoscope
+[2023-05-24 20:53:20] INFO root fetch - processPackages [vector-vault]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vector_vault-1.0.4.tar.gz tmp/vector_vault-1.0.5.tar.gz --markdown 20230524/v/vector-vault/1.0.4-1.0.5/diff.md --exclude *.pyd
+[2023-05-24 20:53:20] INFO root fetch - processPackages [pyNAVIS]: Downloading https://files.pythonhosted.org/packages/61/07/3f5093f192df14c290b33e0ed55fc714c8abd0c311729381dfae1280ee71/pyNAVIS-1.1.4.tar.gz
+[2023-05-24 20:53:20] INFO root fetch - processPackages [rayasdk]: Downloading https://files.pythonhosted.org/packages/1b/8b/3efa718f85387637487b2fe5021a5205b11666f4cf6d41bfd73bcaf17538/rayasdk-1.1.0.dev8.tar.gz
+[2023-05-24 20:53:20] INFO root fetch - processPackages [dp4plus-app]: Downloading https://files.pythonhosted.org/packages/1e/e8/4165f0ff49f365c5e3e92795ff3072192471642d5a15d4da1eed6aefb397/dp4plus_app-0.1.1.tar.gz
+[2023-05-24 20:53:20] INFO root fetch - processPackages [cmake-pre-commit-hooks]: Downloading https://files.pythonhosted.org/packages/b9/29/2a2a7aebfd42ccfc94cae3a6e8abd9591860bb577de92695ef68e41ba9ac/cmake_pre_commit_hooks-1.8.1.tar.gz
+[2023-05-24 20:53:20] INFO root fetch - processPackages [wf-video-io]: Downloading https://files.pythonhosted.org/packages/cb/b1/c3dff0e728772903339fd231816c09d67c1348d93b88956fda2dc52edcf5/wf_video_io-3.3.0.tar.gz
+[2023-05-24 20:53:20] INFO root fetch - processPackages [slskd-api]: Downloading https://files.pythonhosted.org/packages/2b/9c/f4d903a9b8baca74097f00351a0bf4e3a6c12d5ce931a9508ae8e972393c/slskd-api-0.1.0.tar.gz
+[2023-05-24 20:53:20] INFO root fetch - processPackages [rayasdk]: executing diffoscope
+[2023-05-24 20:53:20] INFO root fetch - processPackages [rayasdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rayasdk-1.1.0.dev7.tar.gz tmp/rayasdk-1.1.0.dev8.tar.gz --markdown 20230524/r/rayasdk/1.1.0.dev7-1.1.0.dev8/diff.md --exclude *.pyd
+[2023-05-24 20:53:20] INFO root fetch - processPackages [wf-video-io]: executing diffoscope
+[2023-05-24 20:53:20] INFO root fetch - processPackages [wf-video-io]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wf_video_io-3.2.5.tar.gz tmp/wf_video_io-3.3.0.tar.gz --markdown 20230524/w/wf-video-io/3.2.5-3.3.0/diff.md --exclude *.pyd
+[2023-05-24 20:53:20] INFO root fetch - processPackages [pyNAVIS]: Downloading https://files.pythonhosted.org/packages/01/44/3b1ba306d067f43ee96a02b8a17298e7aa06a116aa7f4877d8bba295c0a5/pyNAVIS-1.1.5.tar.gz
+[2023-05-24 20:53:20] INFO root fetch - processPackages [slskd-api]: executing diffoscope
+[2023-05-24 20:53:20] INFO root fetch - processPackages [slskd-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/slskd-api-0.0.7.tar.gz tmp/slskd-api-0.1.0.tar.gz --markdown 20230524/s/slskd-api/0.0.7-0.1.0/diff.md --exclude *.pyd
+[2023-05-24 20:53:20] INFO root fetch - processPackages [pyNAVIS]: executing diffoscope
+[2023-05-24 20:53:20] INFO root fetch - processPackages [pyNAVIS]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyNAVIS-1.1.4.tar.gz tmp/pyNAVIS-1.1.5.tar.gz --markdown 20230524/p/pyNAVIS/1.1.4-1.1.5/diff.md --exclude *.pyd
+[2023-05-24 20:53:20] INFO root fetch - processPackages [dp4plus-app]: Downloading https://files.pythonhosted.org/packages/cb/87/f19e51daceceb6b45d6bf4e1f0910264a5794e86b00777adf8332d9864ca/dp4plus_app-0.1.2.tar.gz
+[2023-05-24 20:53:20] INFO root fetch - processPackages [cmake-pre-commit-hooks]: Downloading https://files.pythonhosted.org/packages/ad/dc/0914df21e4876e5c4ea1f60ba2d0b364d57de30474e65ca28d70d453ce61/cmake_pre_commit_hooks-1.9.0.tar.gz
+[2023-05-24 20:53:21] INFO root fetch - processPackages [cmake-pre-commit-hooks]: executing diffoscope
+[2023-05-24 20:53:21] INFO root fetch - processPackages [cmake-pre-commit-hooks]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cmake_pre_commit_hooks-1.8.1.tar.gz tmp/cmake_pre_commit_hooks-1.9.0.tar.gz --markdown 20230524/c/cmake-pre-commit-hooks/1.8.1-1.9.0/diff.md --exclude *.pyd
+[2023-05-24 20:53:21] INFO root fetch - processPackages [wsi-annotations-kit]: Start processing: steamship
+[2023-05-24 20:53:21] INFO root fetch - main [MainThread]: End processing [wsi-annotations-kit]: success
+[2023-05-24 20:53:21] INFO root fetch - processPackages [steamship]: New version: [2.3.9] Old Version: [2.3.8]
+[2023-05-24 20:53:21] INFO root fetch - processPackages [steamship]: executing diffoscope
+[2023-05-24 20:53:21] INFO root fetch - processPackages [steamship]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/steamship-2.3.8.tar.gz tmp/steamship-2.3.9.tar.gz --markdown 20230524/s/steamship/2.3.8-2.3.9/diff.md --exclude *.pyd
+[2023-05-24 20:53:21] INFO root fetch - processPackages [vector-vault]: Start processing: trame-server
+[2023-05-24 20:53:21] INFO root fetch - main [MainThread]: End processing [vector-vault]: success
+[2023-05-24 20:53:21] INFO root fetch - processPackages [trame-server]: New version: [2.9.1] Old Version: [2.9.0]
+[2023-05-24 20:53:21] INFO root fetch - processPackages [dp4plus-app]: executing diffoscope
+[2023-05-24 20:53:21] INFO root fetch - processPackages [dp4plus-app]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dp4plus_app-0.1.1.tar.gz tmp/dp4plus_app-0.1.2.tar.gz --markdown 20230524/d/dp4plus-app/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2023-05-24 20:53:21] INFO root fetch - processPackages [trame-server]: Downloading https://files.pythonhosted.org/packages/ff/21/1f6fe85842c2868c759cc0fe6afd775c1cf48d14a7bde3c0d3fa846bcfb6/trame-server-2.9.0.tar.gz
+[2023-05-24 20:53:22] INFO root fetch - processPackages [wf-video-io]: Start processing: bigraph-viz
+[2023-05-24 20:53:22] INFO root fetch - main [MainThread]: End processing [wf-video-io]: success
+[2023-05-24 20:53:22] INFO root fetch - processPackages [trame-server]: Downloading https://files.pythonhosted.org/packages/26/e2/4a78771f17ab649d699d0f84fef5416b02ee3f59e5642211b013061adde0/trame-server-2.9.1.tar.gz
+[2023-05-24 20:53:22] INFO root fetch - main [MainThread]: End processing [rayasdk]: success
+[2023-05-24 20:53:22] INFO root fetch - processPackages [trame-server]: executing diffoscope
+[2023-05-24 20:53:22] INFO root fetch - processPackages [trame-server]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/trame-server-2.9.0.tar.gz tmp/trame-server-2.9.1.tar.gz --markdown 20230524/t/trame-server/2.9.0-2.9.1/diff.md --exclude *.pyd
+[2023-05-24 20:53:22] INFO root fetch - processPackages [bigraph-viz]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-24 20:53:22] INFO root fetch - main [MainThread]: End processing [slskd-api]: success
+[2023-05-24 20:53:22] INFO root fetch - processPackages [bigraph-viz]: executing diffoscope
+[2023-05-24 20:53:22] INFO root fetch - processPackages [bigraph-viz]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bigraph-viz-0.0.8.tar.gz tmp/bigraph-viz-0.0.9.tar.gz --markdown 20230524/b/bigraph-viz/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-24 20:53:22] INFO root fetch - main [MainThread]: End processing [pulumiverse-astra]: success
+[2023-05-24 20:53:22] INFO root fetch - main [MainThread]: End processing [pyNAVIS]: success
+[2023-05-24 20:53:23] INFO root fetch - main [MainThread]: End processing [cmake-pre-commit-hooks]: success
+[2023-05-24 20:53:23] INFO root fetch - main [MainThread]: End processing [trame-server]: success
+[2023-05-24 20:53:23] INFO root fetch - main [MainThread]: End processing [bigraph-viz]: success
+[2023-05-24 20:53:24] INFO root fetch - main [MainThread]: End processing [enebootools]: success
+[2023-05-24 20:53:27] INFO root fetch - main [MainThread]: End processing [dp4plus-app]: success
+[2023-05-24 20:53:28] INFO root fetch - main [MainThread]: End processing [steamship]: success
+[2023-05-24 20:53:28] INFO root fetch - main [MainThread]: Store serial: [18234483]
