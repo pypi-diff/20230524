@@ -13988,3 +13988,108 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd4 in position 72: invalid
 [2023-05-24 13:48:46] INFO root fetch - main [MainThread]: End processing [vid2info]: success
 [2023-05-24 13:48:47] INFO root fetch - main [MainThread]: End processing [RIFT]: success
 [2023-05-24 13:48:47] INFO root fetch - main [MainThread]: Store serial: [18229003]
+[2023-05-24 13:53:51] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18229003]
+[2023-05-24 13:53:56] INFO root fetch - main [MainThread]: Found 18 changed packages
+[2023-05-24 13:53:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: PVNet
+[2023-05-24 13:53:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: topoly
+[2023-05-24 13:53:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: mecoda-minka
+[2023-05-24 13:53:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: bigdl-dllib-spark3
+[2023-05-24 13:53:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: seven-cloudapp-frame
+[2023-05-24 13:53:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: gluonts
+[2023-05-24 13:53:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: bigdl-orca-spark3
+[2023-05-24 13:53:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: bigdl-friesian-spark3
+[2023-05-24 13:53:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: bigdl-chronos-spark3
+[2023-05-24 13:53:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: bigdl-spark3
+[2023-05-24 13:53:56] INFO root fetch - processPackages [bigdl-dllib-spark3]: New version: [2.4.0b20230523] Old Version: [2.4.0b20230522]
+[2023-05-24 13:53:56] INFO root fetch - processPackages [PVNet]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-24 13:53:56] INFO root fetch - processPackages [bigdl-orca-spark3]: New version: [2.4.0b20230523] Old Version: [2.4.0b20230522]
+[2023-05-24 13:53:56] INFO root fetch - processPackages [bigdl-spark3]: New version: [2.4.0b20230523] Old Version: [2.4.0b20230522]
+[2023-05-24 13:53:56] INFO root fetch - processPackages [bigdl-friesian-spark3]: New version: [2.4.0b20230523] Old Version: [2.4.0b20230522]
+[2023-05-24 13:53:56] INFO root fetch - processPackages [bigdl-chronos-spark3]: New version: [2.4.0b20230523] Old Version: [2.4.0b20230522]
+[2023-05-24 13:53:56] INFO root fetch - processPackages [seven-cloudapp-frame]: New version: [1.0.9.9] Old Version: [1.0.9.8]
+[2023-05-24 13:53:56] INFO root fetch - processPackages [mecoda-minka]: New version: [1.1.0] Old Version: [1.0.1]
+[2023-05-24 13:53:56] INFO root fetch - processPackages [gluonts]: New version: [0.9.9] Old Version: [0.9.8]
+[2023-05-24 13:53:56] INFO root fetch - processPackages [PVNet]: executing diffoscope
+[2023-05-24 13:53:56] INFO root fetch - processPackages [PVNet]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PVNet-0.0.8.tar.gz tmp/PVNet-0.0.9.tar.gz --markdown 20230524/P/PVNet/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-24 13:53:56] INFO root fetch - processPackages [bigdl-dllib-spark3]: Downloading https://files.pythonhosted.org/packages/b7/38/ee05d280e4375fedd2fbb68e01f5c092ce8bdd6ad1d94e5cb906ec58d555/bigdl-dllib-spark3-2.4.0b20230522.tar.gz
+[2023-05-24 13:53:56] INFO root fetch - processPackages [bigdl-orca-spark3]: Downloading https://files.pythonhosted.org/packages/48/e6/9d0f66661d6e411758e471c90355e81e75e04f45a7d3184d8a3da371d06e/bigdl_orca_spark3-2.4.0b20230522-py3-none-manylinux1_x86_64.whl
+[2023-05-24 13:53:56] INFO root fetch - processPackages [mecoda-minka]: Downloading https://files.pythonhosted.org/packages/51/4c/57e334b74b98357d6932535ea88f8c3af19e08ff34354655756591d91ee6/mecoda-minka-1.0.1.tar.gz
+[2023-05-24 13:53:56] WARNING root fetch - processPackages [bigdl-dllib-spark3]: Skipping package: exceeds size limit 61251818>=10485760
+[2023-05-24 13:53:56] INFO root fetch - processPackages [bigdl-dllib-spark3]: Start processing: cs-models
+[2023-05-24 13:53:56] INFO root fetch - main [MainThread]: End processing [bigdl-dllib-spark3] error
+[2023-05-24 13:53:56] WARNING root fetch - processPackages [bigdl-orca-spark3]: Skipping package: exceeds size limit 20207562>=10485760
+[2023-05-24 13:53:56] INFO root fetch - processPackages [bigdl-orca-spark3]: Start processing: pybabylonjs
+[2023-05-24 13:53:56] INFO root fetch - main [MainThread]: End processing [bigdl-orca-spark3] error
+[2023-05-24 13:53:56] INFO root fetch - processPackages [cs-models]: New version: [0.0.99.dev4] Old Version: [0.0.99.dev3]
+[2023-05-24 13:53:56] INFO root fetch - processPackages [seven-cloudapp-frame]: executing diffoscope
+[2023-05-24 13:53:56] INFO root fetch - processPackages [seven-cloudapp-frame]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/seven_cloudapp_frame-1.0.9.8.tar.gz tmp/seven_cloudapp_frame-1.0.9.9.tar.gz --markdown 20230524/s/seven-cloudapp-frame/1.0.9.8-1.0.9.9/diff.md --exclude *.pyd
+[2023-05-24 13:53:57] INFO root fetch - processPackages [bigdl-friesian-spark3]: executing diffoscope
+[2023-05-24 13:53:57] INFO root fetch - processPackages [bigdl-friesian-spark3]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bigdl_friesian_spark3-2.4.0b20230522-py3-none-manylinux1_x86_64.whl.zip tmp/bigdl_friesian_spark3-2.4.0b20230523-py3-none-manylinux1_x86_64.whl.zip --markdown 20230524/b/bigdl-friesian-spark3/2.4.0b20230522-2.4.0b20230523/diff.md --exclude *.pyd
+[2023-05-24 13:53:57] INFO root fetch - processPackages [pybabylonjs]: New version: [1.3.1b0] Old Version: [1.3.0]
+[2023-05-24 13:53:57] INFO root fetch - processPackages [bigdl-spark3]: Downloading https://files.pythonhosted.org/packages/98/99/c1d074cf5cc8768ccc73189f6b8d3ef9da45ecf9a5910083a35cbcbeb6b7/bigdl_spark3-2.4.0b20230523-py3-none-manylinux1_x86_64.whl
+[2023-05-24 13:53:57] INFO root fetch - processPackages [bigdl-chronos-spark3]: Downloading https://files.pythonhosted.org/packages/be/7a/525f28899a4ddd6c8535d4e2f3d838640b53b6031e62891654f60308bc36/bigdl_chronos_spark3-2.4.0b20230523-py3-none-manylinux1_x86_64.whl
+[2023-05-24 13:53:57] INFO root fetch - processPackages [topoly]: New version: [0.9.9] Old Version: [0.9.8]
+[2023-05-24 13:53:57] INFO root fetch - processPackages [gluonts]: executing diffoscope
+[2023-05-24 13:53:57] INFO root fetch - processPackages [gluonts]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gluonts-0.9.8.tar.gz tmp/gluonts-0.9.9.tar.gz --markdown 20230524/g/gluonts/0.9.8-0.9.9/diff.md --exclude *.pyd
+[2023-05-24 13:53:57] INFO root fetch - processPackages [bigdl-spark3]: executing diffoscope
+[2023-05-24 13:53:57] INFO root fetch - processPackages [bigdl-spark3]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bigdl_spark3-2.4.0b20230522-py3-none-manylinux1_x86_64.whl.zip tmp/bigdl_spark3-2.4.0b20230523-py3-none-manylinux1_x86_64.whl.zip --markdown 20230524/b/bigdl-spark3/2.4.0b20230522-2.4.0b20230523/diff.md --exclude *.pyd
+[2023-05-24 13:53:57] INFO root fetch - processPackages [pybabylonjs]: Downloading https://files.pythonhosted.org/packages/52/34/317e859e6fcc2f7775fe277b00e0ff042bfa02b42494f60199cb3b3ecec0/pybabylonjs-1.3.0-py2.py3-none-any.whl
+[2023-05-24 13:53:57] INFO root fetch - processPackages [mecoda-minka]: Downloading https://files.pythonhosted.org/packages/1e/10/46f087f509d47626593899a1017485c4146ff53c948c028eaf33c1fd07b2/mecoda-minka-1.1.0.tar.gz
+[2023-05-24 13:53:57] INFO root fetch - processPackages [bigdl-chronos-spark3]: executing diffoscope
+[2023-05-24 13:53:57] INFO root fetch - processPackages [bigdl-chronos-spark3]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bigdl_chronos_spark3-2.4.0b20230522-py3-none-manylinux1_x86_64.whl.zip tmp/bigdl_chronos_spark3-2.4.0b20230523-py3-none-manylinux1_x86_64.whl.zip --markdown 20230524/b/bigdl-chronos-spark3/2.4.0b20230522-2.4.0b20230523/diff.md --exclude *.pyd
+[2023-05-24 13:53:57] INFO root fetch - processPackages [topoly]: Downloading https://files.pythonhosted.org/packages/a4/ad/9583fd69f49f208eda00dc2afaaef6b3e0f8012abb51127656712d0a55ab/topoly-0.9.8-cp38-cp38-manylinux2010_x86_64.whl
+[2023-05-24 13:53:57] INFO root fetch - processPackages [cs-models]: executing diffoscope
+[2023-05-24 13:53:57] INFO root fetch - processPackages [cs-models]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cs-models-0.0.99.dev3.tar.gz tmp/cs-models-0.0.99.dev4.tar.gz --markdown 20230524/c/cs-models/0.0.99.dev3-0.0.99.dev4/diff.md --exclude *.pyd
+[2023-05-24 13:53:57] INFO root fetch - processPackages [mecoda-minka]: executing diffoscope
+[2023-05-24 13:53:57] INFO root fetch - processPackages [mecoda-minka]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mecoda-minka-1.0.1.tar.gz tmp/mecoda-minka-1.1.0.tar.gz --markdown 20230524/m/mecoda-minka/1.0.1-1.1.0/diff.md --exclude *.pyd
+[2023-05-24 13:53:58] INFO root fetch - processPackages [PVNet]: Start processing: wizata-dsapi
+[2023-05-24 13:53:58] INFO root fetch - main [MainThread]: End processing [PVNet]: success
+[2023-05-24 13:53:58] INFO root fetch - processPackages [wizata-dsapi]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-24 13:53:58] INFO root fetch - processPackages [wizata-dsapi]: executing diffoscope
+[2023-05-24 13:53:58] INFO root fetch - processPackages [wizata-dsapi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wizata-dsapi-0.1.8.tar.gz tmp/wizata-dsapi-0.1.9.tar.gz --markdown 20230524/w/wizata-dsapi/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-24 13:53:58] INFO root fetch - processPackages [bigdl-spark3]: Start processing: archimedes-config
+[2023-05-24 13:53:58] INFO root fetch - main [MainThread]: End processing [bigdl-spark3]: success
+[2023-05-24 13:53:58] INFO root fetch - processPackages [archimedes-config]: New version: [0.3.2] Old Version: [0.3.1]
+[2023-05-24 13:53:58] INFO root fetch - processPackages [bigdl-friesian-spark3]: Start processing: eea.sentry
+[2023-05-24 13:53:58] INFO root fetch - main [MainThread]: End processing [bigdl-friesian-spark3]: success
+[2023-05-24 13:53:58] INFO root fetch - processPackages [eea.sentry]: New version: [3.0] Old Version: [2.4]
+[2023-05-24 13:53:58] INFO root fetch - processPackages [archimedes-config]: Downloading https://files.pythonhosted.org/packages/99/90/7baf4ed1ed4c7ad3ed07ee3f5acba6d6d7f11a037ad74a913d2fc7724bd0/archimedes_config-0.3.1.tar.gz
+[2023-05-24 13:53:58] INFO root fetch - processPackages [eea.sentry]: Downloading https://files.pythonhosted.org/packages/6e/dd/5465c3af30f1abab9bdec31fd30a8ed51ad44ed6f5dc09999b209267588e/eea.sentry-2.4.zip
+[2023-05-24 13:53:59] INFO root fetch - processPackages [archimedes-config]: Downloading https://files.pythonhosted.org/packages/12/46/238551461eaaad6189ec617a80359a9cce3d9a3dc6b5c291227a3251b6ef/archimedes_config-0.3.2.tar.gz
+[2023-05-24 13:53:59] INFO root fetch - processPackages [eea.sentry]: Downloading https://files.pythonhosted.org/packages/19/4b/3ff39fe463ed57d0b4095c21751393bc811e90b82023f10d325c27bf78d8/eea.sentry-3.0.zip
+[2023-05-24 13:53:59] INFO root fetch - processPackages [seven-cloudapp-frame]: Start processing: pyremo
+[2023-05-24 13:53:59] INFO root fetch - processPackages [archimedes-config]: executing diffoscope
+[2023-05-24 13:53:59] INFO root fetch - processPackages [archimedes-config]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/archimedes_config-0.3.1.tar.gz tmp/archimedes_config-0.3.2.tar.gz --markdown 20230524/a/archimedes-config/0.3.1-0.3.2/diff.md --exclude *.pyd
+[2023-05-24 13:53:59] INFO root fetch - main [MainThread]: End processing [seven-cloudapp-frame]: success
+[2023-05-24 13:53:59] INFO root fetch - processPackages [eea.sentry]: executing diffoscope
+[2023-05-24 13:53:59] INFO root fetch - processPackages [eea.sentry]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/eea.sentry-2.4.zip tmp/eea.sentry-3.0.zip --markdown 20230524/e/eea.sentry/2.4-3.0/diff.md --exclude *.pyd
+[2023-05-24 13:53:59] INFO root fetch - processPackages [pyremo]: New version: [0.5.1] Old Version: [0.5.0]
+[2023-05-24 13:53:59] INFO root fetch - processPackages [pybabylonjs]: Downloading https://files.pythonhosted.org/packages/0a/17/214b8f41b92fc33435451ca3dfe87db30bf9508c60c08ff86dc78011da95/pybabylonjs-1.3.1b0-py2.py3-none-any.whl
+[2023-05-24 13:53:59] INFO root fetch - processPackages [topoly]: Downloading https://files.pythonhosted.org/packages/fe/ae/4be43f7edd2cc506a54e294bfce9a139a22db2f3d8e93444ef3186dc0501/topoly-0.9.9-cp39-cp39-manylinux2010_x86_64.whl
+[2023-05-24 13:53:59] INFO root fetch - processPackages [wizata-dsapi]: Start processing: gaiaunlimited
+[2023-05-24 13:53:59] INFO root fetch - main [MainThread]: End processing [wizata-dsapi]: success
+[2023-05-24 13:53:59] INFO root fetch - processPackages [gaiaunlimited]: New version: [0.2.0] Old Version: [0.1.0]
+[2023-05-24 13:53:59] INFO root fetch - processPackages [pyremo]: Downloading https://files.pythonhosted.org/packages/f7/ab/e4653deb4f40ab1361615651450c50bd5be6050c758e613b160fb1c444bb/pyremo-0.5.0.tar.gz
+[2023-05-24 13:53:59] INFO root fetch - processPackages [pybabylonjs]: executing diffoscope
+[2023-05-24 13:53:59] INFO root fetch - processPackages [pybabylonjs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pybabylonjs-1.3.0-py2.py3-none-any.whl.zip tmp/pybabylonjs-1.3.1b0-py2.py3-none-any.whl.zip --markdown 20230524/p/pybabylonjs/1.3.0-1.3.1b0/diff.md --exclude *.pyd
+[2023-05-24 13:53:59] WARNING root fetch - processPackages [pyremo]: Skipping package: exceeds size limit 52635165>=10485760
+[2023-05-24 13:53:59] INFO root fetch - processPackages [pyremo]: Start processing: tomtom-api
+[2023-05-24 13:53:59] INFO root fetch - main [MainThread]: End processing [pyremo] error
+[2023-05-24 13:53:59] INFO root fetch - main [MainThread]: End processing [cs-models]: success
+[2023-05-24 13:53:59] INFO root fetch - main [MainThread]: End processing [bigdl-chronos-spark3]: success
+[2023-05-24 13:53:59] INFO root fetch - processPackages [gaiaunlimited]: Downloading https://files.pythonhosted.org/packages/6d/3f/f7e1c775c31960bbd0e741fbcb9370544d59264b31e7c4faa798dc3a5d16/gaiaunlimited-0.1.0.tar.gz
+[2023-05-24 13:53:59] WARNING root fetch - processPackages [tomtom-api]: Skipping, unable to determine old version
+[2023-05-24 13:53:59] INFO root fetch - main [MainThread]: End processing [tomtom-api] error
+[2023-05-24 13:54:00] INFO root fetch - main [MainThread]: End processing [archimedes-config]: success
+[2023-05-24 13:54:00] INFO root fetch - processPackages [gaiaunlimited]: Downloading https://files.pythonhosted.org/packages/2e/bd/bb36e3b32820cef890a9c18db61d2fa1fa5b89d7212e627328f2f974e8b7/gaiaunlimited-0.2.0.tar.gz
+[2023-05-24 13:54:00] INFO root fetch - main [MainThread]: End processing [eea.sentry]: success
+[2023-05-24 13:54:01] INFO root fetch - processPackages [topoly]: executing diffoscope
+[2023-05-24 13:54:01] INFO root fetch - processPackages [topoly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/topoly-0.9.8-cp38-cp38-manylinux2010_x86_64.whl.zip tmp/topoly-0.9.9-cp39-cp39-manylinux2010_x86_64.whl.zip --markdown 20230524/t/topoly/0.9.8-0.9.9/diff.md --exclude *.pyd
+[2023-05-24 13:54:01] INFO root fetch - processPackages [gaiaunlimited]: executing diffoscope
+[2023-05-24 13:54:01] INFO root fetch - processPackages [gaiaunlimited]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gaiaunlimited-0.1.0.tar.gz tmp/gaiaunlimited-0.2.0.tar.gz --markdown 20230524/g/gaiaunlimited/0.1.0-0.2.0/diff.md --exclude *.pyd
+[2023-05-24 13:54:01] INFO root fetch - main [MainThread]: End processing [mecoda-minka]: success
+[2023-05-24 13:54:03] INFO root fetch - main [MainThread]: End processing [gaiaunlimited]: success
+[2023-05-24 13:54:13] INFO root fetch - main [MainThread]: End processing [gluonts]: success
+[2023-05-24 13:55:02] INFO root fetch - main [MainThread]: End processing [topoly]: success
+[2023-05-24 13:55:31] INFO root fetch - main [MainThread]: End processing [pybabylonjs]: success
+[2023-05-24 13:55:31] INFO root fetch - main [MainThread]: Store serial: [18229054]
