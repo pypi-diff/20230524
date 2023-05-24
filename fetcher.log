@@ -16738,3 +16738,116 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd4 in position 72: invalid
 [2023-05-24 16:06:08] INFO root fetch - main [MainThread]: End processing [tripper]: success
 [2023-05-24 16:06:09] INFO root fetch - main [MainThread]: End processing [bhousing-model]: success
 [2023-05-24 16:06:09] INFO root fetch - main [MainThread]: Store serial: [18230684]
+[2023-05-24 16:11:15] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18230684]
+[2023-05-24 16:11:19] INFO root fetch - main [MainThread]: Found 20 changed packages
+[2023-05-24 16:11:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: directory-healthcheck
+[2023-05-24 16:11:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: scarf
+[2023-05-24 16:11:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: ddadevops
+[2023-05-24 16:11:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: prefixed-aiostatsd
+[2023-05-24 16:11:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: otx
+[2023-05-24 16:11:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: isoCycle
+[2023-05-24 16:11:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: quick-pypi
+[2023-05-24 16:11:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: oteapi-dlite
+[2023-05-24 16:11:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: remla12-lib-release
+[2023-05-24 16:11:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: PVNet
+[2023-05-24 16:11:20] INFO root fetch - processPackages [directory-healthcheck]: New version: [3.1.1] Old Version: [3.1.0]
+[2023-05-24 16:11:20] INFO root fetch - processPackages [otx]: New version: [1.3.0rc1] Old Version: [1.2.1rc7]
+[2023-05-24 16:11:20] INFO root fetch - processPackages [PVNet]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-24 16:11:20] INFO root fetch - processPackages [isoCycle]: New version: [0.0.34] Old Version: [0.0.33]
+[2023-05-24 16:11:20] INFO root fetch - processPackages [ddadevops]: New version: [4.0.0.dev9] Old Version: [4.0.0.dev8]
+[2023-05-24 16:11:20] INFO root fetch - processPackages [remla12-lib-release]: New version: [0.0.6] Old Version: [0.0.2]
+[2023-05-24 16:11:20] INFO root fetch - processPackages [quick-pypi]: New version: [0.0.3a0] Old Version: [0.0.2]
+[2023-05-24 16:11:20] INFO root fetch - processPackages [isoCycle]: Downloading https://files.pythonhosted.org/packages/6c/59/aa79670688fbb55e8cda02162b44da09233a42e932939b64859ec218c50e/isoCycle-0.0.33.tar.gz
+[2023-05-24 16:11:20] INFO root fetch - processPackages [prefixed-aiostatsd]: New version: [1.2] Old Version: [1.1]
+[2023-05-24 16:11:20] INFO root fetch - processPackages [scarf]: New version: [0.9.2] Old Version: [0.9.1]
+[2023-05-24 16:11:20] INFO root fetch - processPackages [oteapi-dlite]: New version: [0.1.3] Old Version: [0.1.2]
+[2023-05-24 16:11:20] INFO root fetch - processPackages [PVNet]: executing diffoscope
+[2023-05-24 16:11:20] INFO root fetch - processPackages [PVNet]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PVNet-0.0.8.tar.gz tmp/PVNet-0.0.9.tar.gz --markdown 20230524/P/PVNet/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-24 16:11:20] WARNING root fetch - processPackages [isoCycle]: Skipping package: exceeds size limit 18573179>=10485760
+[2023-05-24 16:11:20] INFO root fetch - processPackages [isoCycle]: Start processing: py-gutenberg
+[2023-05-24 16:11:20] INFO root fetch - main [MainThread]: End processing [isoCycle] error
+[2023-05-24 16:11:20] INFO root fetch - processPackages [quick-pypi]: executing diffoscope
+[2023-05-24 16:11:20] INFO root fetch - processPackages [quick-pypi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/quick-pypi-0.0.2.tar.gz tmp/quick-pypi-0.0.3a0.tar.gz --markdown 20230524/q/quick-pypi/0.0.2-0.0.3a0/diff.md --exclude *.pyd
+[2023-05-24 16:11:20] INFO root fetch - processPackages [otx]: executing diffoscope
+[2023-05-24 16:11:20] INFO root fetch - processPackages [otx]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/otx-1.2.1rc7.tar.gz tmp/otx-1.3.0rc1.tar.gz --markdown 20230524/o/otx/1.2.1rc7-1.3.0rc1/diff.md --exclude *.pyd
+[2023-05-24 16:11:20] INFO root fetch - processPackages [remla12-lib-release]: Downloading https://files.pythonhosted.org/packages/a3/d6/0c00f389beb08396e4802a752fb00594c054b5ef9be89615bb3895bed82d/remla12-lib-release-0.0.6.tar.gz
+[2023-05-24 16:11:20] INFO root fetch - processPackages [py-gutenberg]: New version: [1.0.2] Old Version: [1.0.1]
+[2023-05-24 16:11:20] INFO root fetch - processPackages [directory-healthcheck]: Downloading https://files.pythonhosted.org/packages/86/c4/d374885b48e9f1b45e2294e528c2d8af4be07de083f0a1e95d2626bc237b/directory_healthcheck-3.1.1-py3-none-any.whl
+[2023-05-24 16:11:20] INFO root fetch - processPackages [remla12-lib-release]: executing diffoscope
+[2023-05-24 16:11:20] INFO root fetch - processPackages [remla12-lib-release]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/remla12-lib-release-0.0.2.tar.gz tmp/remla12-lib-release-0.0.6.tar.gz --markdown 20230524/r/remla12-lib-release/0.0.2-0.0.6/diff.md --exclude *.pyd
+[2023-05-24 16:11:20] INFO root fetch - processPackages [oteapi-dlite]: Downloading https://files.pythonhosted.org/packages/9d/f8/d70b0a85eba060329f4b9ae28a454b301b4c297a4e5ca219ee30d175c0b2/oteapi-dlite-0.1.2.tar.gz
+[2023-05-24 16:11:20] INFO root fetch - processPackages [ddadevops]: executing diffoscope
+[2023-05-24 16:11:20] INFO root fetch - processPackages [ddadevops]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ddadevops-4.0.0.dev8.tar.gz tmp/ddadevops-4.0.0.dev9.tar.gz --markdown 20230524/d/ddadevops/4.0.0.dev8-4.0.0.dev9/diff.md --exclude *.pyd
+[2023-05-24 16:11:20] INFO root fetch - processPackages [directory-healthcheck]: executing diffoscope
+[2023-05-24 16:11:20] INFO root fetch - processPackages [directory-healthcheck]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/directory_healthcheck-3.1.0-py3-none-any.whl.zip tmp/directory_healthcheck-3.1.1-py3-none-any.whl.zip --markdown 20230524/d/directory-healthcheck/3.1.0-3.1.1/diff.md --exclude *.pyd
+[2023-05-24 16:11:20] INFO root fetch - processPackages [scarf]: executing diffoscope
+[2023-05-24 16:11:20] INFO root fetch - processPackages [scarf]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/scarf-0.9.1.tar.gz tmp/scarf-0.9.2.tar.gz --markdown 20230524/s/scarf/0.9.1-0.9.2/diff.md --exclude *.pyd
+[2023-05-24 16:11:20] INFO root fetch - processPackages [prefixed-aiostatsd]: Downloading https://files.pythonhosted.org/packages/e8/44/8868f3a8101b99025b6e390fd5a37130ec67d42f906dcc8d813c1d3f8b3b/prefixed_aiostatsd-1.2-py3-none-any.whl
+[2023-05-24 16:11:20] INFO root fetch - processPackages [prefixed-aiostatsd]: executing diffoscope
+[2023-05-24 16:11:20] INFO root fetch - processPackages [prefixed-aiostatsd]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/prefixed_aiostatsd-1.1-py3-none-any.whl.zip tmp/prefixed_aiostatsd-1.2-py3-none-any.whl.zip --markdown 20230524/p/prefixed-aiostatsd/1.1-1.2/diff.md --exclude *.pyd
+[2023-05-24 16:11:20] INFO root fetch - processPackages [oteapi-dlite]: Downloading https://files.pythonhosted.org/packages/ae/3c/dca3508ed61bf57e7a14f2cb19253f565fff151ba5f0202873728382a0ad/oteapi-dlite-0.1.3.tar.gz
+[2023-05-24 16:11:20] INFO root fetch - processPackages [py-gutenberg]: Downloading https://files.pythonhosted.org/packages/e9/a9/e15d14aa4e536b865f9fea70fe788c429d1b06848477b9f2708ba091b414/py-gutenberg-1.0.2.tar.gz
+[2023-05-24 16:11:20] INFO root fetch - processPackages [oteapi-dlite]: executing diffoscope
+[2023-05-24 16:11:20] INFO root fetch - processPackages [oteapi-dlite]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/oteapi-dlite-0.1.2.tar.gz tmp/oteapi-dlite-0.1.3.tar.gz --markdown 20230524/o/oteapi-dlite/0.1.2-0.1.3/diff.md --exclude *.pyd
+[2023-05-24 16:11:20] INFO root fetch - processPackages [py-gutenberg]: executing diffoscope
+[2023-05-24 16:11:20] INFO root fetch - processPackages [py-gutenberg]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/py-gutenberg-1.0.1.tar.gz tmp/py-gutenberg-1.0.2.tar.gz --markdown 20230524/p/py-gutenberg/1.0.1-1.0.2/diff.md --exclude *.pyd
+[2023-05-24 16:11:21] INFO root fetch - processPackages [PVNet]: Start processing: slideio
+[2023-05-24 16:11:21] INFO root fetch - main [MainThread]: End processing [PVNet]: success
+[2023-05-24 16:11:21] INFO root fetch - processPackages [slideio]: New version: [2.1.1] Old Version: [2.1.0]
+[2023-05-24 16:11:21] INFO root fetch - processPackages [remla12-lib-release]: Start processing: hexkit
+[2023-05-24 16:11:21] INFO root fetch - main [MainThread]: End processing [remla12-lib-release]: success
+[2023-05-24 16:11:21] INFO root fetch - processPackages [slideio]: Downloading https://files.pythonhosted.org/packages/4f/97/dff0553881d71d400f987d86fd895ec25532365f17379289243706c387ac/slideio-2.1.0-cp39-cp39-win_amd64.whl
+[2023-05-24 16:11:21] WARNING root fetch - processPackages [slideio]: Skipping package: exceeds size limit 33205165>=10485760
+[2023-05-24 16:11:21] INFO root fetch - processPackages [slideio]: Start processing: dbtgenlib
+[2023-05-24 16:11:21] INFO root fetch - main [MainThread]: End processing [slideio] error
+[2023-05-24 16:11:21] INFO root fetch - processPackages [dbtgenlib]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-24 16:11:21] INFO root fetch - processPackages [directory-healthcheck]: Start processing: pybiolib
+[2023-05-24 16:11:21] INFO root fetch - main [MainThread]: End processing [directory-healthcheck]: success
+[2023-05-24 16:11:21] INFO root fetch - processPackages [hexkit]: New version: [0.9.3] Old Version: [0.9.2]
+[2023-05-24 16:11:22] INFO root fetch - processPackages [dbtgenlib]: executing diffoscope
+[2023-05-24 16:11:22] INFO root fetch - processPackages [dbtgenlib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dbtgenlib-0.0.8.tar.gz tmp/dbtgenlib-0.0.9.tar.gz --markdown 20230524/d/dbtgenlib/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-24 16:11:22] INFO root fetch - processPackages [prefixed-aiostatsd]: Start processing: coretex
+[2023-05-24 16:11:22] INFO root fetch - main [MainThread]: End processing [prefixed-aiostatsd]: success
+[2023-05-24 16:11:22] INFO root fetch - processPackages [coretex]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-24 16:11:22] INFO root fetch - processPackages [pybiolib]: New version: [1.1.94] Old Version: [1.1.918]
+[2023-05-24 16:11:22] INFO root fetch - processPackages [hexkit]: Downloading https://files.pythonhosted.org/packages/94/d4/e89552231e88cbe454d7c382ca5851f361312949e7f3a7209a6c8c5c1324/hexkit-0.9.2.tar.gz
+[2023-05-24 16:11:22] INFO root fetch - processPackages [py-gutenberg]: Start processing: oking
+[2023-05-24 16:11:22] INFO root fetch - main [MainThread]: End processing [py-gutenberg]: success
+[2023-05-24 16:11:22] INFO root fetch - processPackages [quick-pypi]: Start processing: FCSAPIAccessSDK
+[2023-05-24 16:11:22] INFO root fetch - main [MainThread]: End processing [quick-pypi]: success
+[2023-05-24 16:11:22] INFO root fetch - processPackages [coretex]: executing diffoscope
+[2023-05-24 16:11:22] INFO root fetch - processPackages [coretex]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/coretex-0.0.8.tar.gz tmp/coretex-0.0.9.tar.gz --markdown 20230524/c/coretex/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-24 16:11:22] INFO root fetch - processPackages [pybiolib]: Downloading https://files.pythonhosted.org/packages/f8/a7/6f263d700f440f55fdb2700abcb1c384462e59440b56271c345134713865/pybiolib-1.1.918.tar.gz
+[2023-05-24 16:11:22] INFO root fetch - processPackages [FCSAPIAccessSDK]: New version: [1.1.1] Old Version: [1.1.0]
+[2023-05-24 16:11:22] INFO root fetch - processPackages [oking]: New version: [4.1.89] Old Version: [4.1.88]
+[2023-05-24 16:11:22] INFO root fetch - processPackages [hexkit]: Downloading https://files.pythonhosted.org/packages/52/c1/6fa73247c1cf0cfc078f503a5983148c39c2e34f29aa13ef4722324760bd/hexkit-0.9.3.tar.gz
+[2023-05-24 16:11:22] INFO root fetch - processPackages [ddadevops]: Start processing: simplefourierfilter
+[2023-05-24 16:11:22] INFO root fetch - main [MainThread]: End processing [ddadevops]: success
+[2023-05-24 16:11:22] INFO root fetch - processPackages [oking]: Downloading https://files.pythonhosted.org/packages/ae/30/1e6fff9e86b5e80317cab043f7c3baac37c9a05e3747796a28bfbcd55e4d/oking-4.1.88.tar.gz
+[2023-05-24 16:11:22] INFO root fetch - processPackages [hexkit]: executing diffoscope
+[2023-05-24 16:11:22] INFO root fetch - processPackages [hexkit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hexkit-0.9.2.tar.gz tmp/hexkit-0.9.3.tar.gz --markdown 20230524/h/hexkit/0.9.2-0.9.3/diff.md --exclude *.pyd
+[2023-05-24 16:11:22] WARNING root fetch - processPackages [simplefourierfilter]: Skipping, unable to determine old version
+[2023-05-24 16:11:22] INFO root fetch - processPackages [simplefourierfilter]: Start processing: simple-alto-parser
+[2023-05-24 16:11:22] INFO root fetch - main [MainThread]: End processing [simplefourierfilter] error
+[2023-05-24 16:11:22] INFO root fetch - processPackages [FCSAPIAccessSDK]: Downloading https://files.pythonhosted.org/packages/0a/3d/f9808bb6b3a3c0fc83cc1bd6f3f0f3484ed9e490874e8f2f716a65f61826/FCSAPIAccessSDK-1.1.1.tar.gz
+[2023-05-24 16:11:22] INFO root fetch - main [MainThread]: End processing [oteapi-dlite]: success
+[2023-05-24 16:11:22] INFO root fetch - processPackages [simple-alto-parser]: New version: [0.0.5] Old Version: [0.0.4]
+[2023-05-24 16:11:22] INFO root fetch - processPackages [pybiolib]: executing diffoscope
+[2023-05-24 16:11:22] INFO root fetch - processPackages [pybiolib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pybiolib-1.1.918.tar.gz tmp/pybiolib-1.1.94.tar.gz --markdown 20230524/p/pybiolib/1.1.918-1.1.94/diff.md --exclude *.pyd
+[2023-05-24 16:11:22] INFO root fetch - processPackages [FCSAPIAccessSDK]: executing diffoscope
+[2023-05-24 16:11:22] INFO root fetch - processPackages [FCSAPIAccessSDK]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/FCSAPIAccessSDK-1.1.0.tar.gz tmp/FCSAPIAccessSDK-1.1.1.tar.gz --markdown 20230524/F/FCSAPIAccessSDK/1.1.0-1.1.1/diff.md --exclude *.pyd
+[2023-05-24 16:11:22] INFO root fetch - processPackages [simple-alto-parser]: Downloading https://files.pythonhosted.org/packages/57/57/854c3d2f4be5a7470c1bfecf1afc261d2b6356496b985fef38134f8e78f5/simple-alto-parser-0.0.4.tar.gz
+[2023-05-24 16:11:23] INFO root fetch - main [MainThread]: End processing [dbtgenlib]: success
+[2023-05-24 16:11:23] INFO root fetch - processPackages [simple-alto-parser]: Downloading https://files.pythonhosted.org/packages/a7/a2/43b814be6b606769df698fd3baa1e201c9f43e175e16a1f4214d0bd32a5e/simple-alto-parser-0.0.5.tar.gz
+[2023-05-24 16:11:23] WARNING root fetch - processPackages [oking]: Skipping package: exceeds size limit 82454860>=10485760
+[2023-05-24 16:11:23] INFO root fetch - main [MainThread]: End processing [oking] error
+[2023-05-24 16:11:23] INFO root fetch - processPackages [simple-alto-parser]: executing diffoscope
+[2023-05-24 16:11:23] INFO root fetch - processPackages [simple-alto-parser]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/simple-alto-parser-0.0.4.tar.gz tmp/simple-alto-parser-0.0.5.tar.gz --markdown 20230524/s/simple-alto-parser/0.0.4-0.0.5/diff.md --exclude *.pyd
+[2023-05-24 16:11:23] INFO root fetch - main [MainThread]: End processing [scarf]: success
+[2023-05-24 16:11:24] INFO root fetch - main [MainThread]: End processing [hexkit]: success
+[2023-05-24 16:11:24] INFO root fetch - main [MainThread]: End processing [FCSAPIAccessSDK]: success
+[2023-05-24 16:11:24] INFO root fetch - main [MainThread]: End processing [simple-alto-parser]: success
+[2023-05-24 16:11:24] INFO root fetch - main [MainThread]: End processing [coretex]: success
+[2023-05-24 16:11:26] INFO root fetch - main [MainThread]: End processing [pybiolib]: success
+[2023-05-24 16:12:11] INFO root fetch - main [MainThread]: End processing [otx]: success
+[2023-05-24 16:12:11] INFO root fetch - main [MainThread]: Store serial: [18230754]
