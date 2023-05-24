@@ -12913,3 +12913,134 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd4 in position 72: invalid
 [2023-05-24 12:37:56] INFO root fetch - main [MainThread]: End processing [superannotate]: success
 [2023-05-24 12:37:58] INFO root fetch - main [MainThread]: End processing [qontract-reconcile]: success
 [2023-05-24 12:37:58] INFO root fetch - main [MainThread]: Store serial: [18228382]
+[2023-05-24 12:43:02] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18228382]
+[2023-05-24 12:43:07] INFO root fetch - main [MainThread]: Found 21 changed packages
+[2023-05-24 12:43:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: superannotate
+[2023-05-24 12:43:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: otx
+[2023-05-24 12:43:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: stlock
+[2023-05-24 12:43:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: georideapilib
+[2023-05-24 12:43:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: stlock
+[2023-05-24 12:43:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: seven-cloudapp-frame
+[2023-05-24 12:43:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: northgravity
+[2023-05-24 12:43:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: scaneo
+[2023-05-24 12:43:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: unitlab
+[2023-05-24 12:43:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: Exegol
+[2023-05-24 12:43:07] INFO root fetch - processPackages [scaneo]: New version: [0.1.0] Old Version: [0.0.2]
+[2023-05-24 12:43:07] INFO root fetch - processPackages [northgravity]: New version: [0.1.8] Old Version: [0.1.7]
+[2023-05-24 12:43:07] INFO root fetch - processPackages [unitlab]: New version: [1.8.6] Old Version: [1.8.5]
+[2023-05-24 12:43:07] INFO root fetch - processPackages [seven-cloudapp-frame]: New version: [1.0.9.9] Old Version: [1.0.9.8]
+[2023-05-24 12:43:08] INFO root fetch - processPackages [superannotate]: New version: [4.4.9b1] Old Version: [4.4.9.dev5]
+[2023-05-24 12:43:08] INFO root fetch - processPackages [stlock]: New version: [0.0.7.5] Old Version: [0.0.7.4]
+[2023-05-24 12:43:08] INFO root fetch - processPackages [stlock]: New version: [0.0.7.5] Old Version: [0.0.7.4]
+[2023-05-24 12:43:08] INFO root fetch - processPackages [Exegol]: New version: [4.2.3] Old Version: [4.2.2]
+[2023-05-24 12:43:08] INFO root fetch - processPackages [georideapilib]: New version: [1.0.0] Old Version: [0.9.6]
+[2023-05-24 12:43:08] INFO root fetch - processPackages [otx]: New version: [1.3.0rc1] Old Version: [1.2.1rc7]
+[2023-05-24 12:43:08] INFO root fetch - processPackages [seven-cloudapp-frame]: executing diffoscope
+[2023-05-24 12:43:08] INFO root fetch - processPackages [seven-cloudapp-frame]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/seven_cloudapp_frame-1.0.9.8.tar.gz tmp/seven_cloudapp_frame-1.0.9.9.tar.gz --markdown 20230524/s/seven-cloudapp-frame/1.0.9.8-1.0.9.9/diff.md --exclude *.pyd
+[2023-05-24 12:43:08] INFO root fetch - processPackages [scaneo]: Downloading https://files.pythonhosted.org/packages/db/cc/c7e9f75353af7b267622f78edf4d33902ee21095776a77d50921caa22db2/scaneo-0.0.2.tar.gz
+[2023-05-24 12:43:08] INFO root fetch - processPackages [stlock]: Downloading https://files.pythonhosted.org/packages/44/77/e6c9db74046891b6bb2c0c6abc4d2d014776af0045c340c3967f3e57e48a/stlock-0.0.7.4.tar.gz
+[2023-05-24 12:43:08] INFO root fetch - processPackages [stlock]: Downloading https://files.pythonhosted.org/packages/44/77/e6c9db74046891b6bb2c0c6abc4d2d014776af0045c340c3967f3e57e48a/stlock-0.0.7.4.tar.gz
+[2023-05-24 12:43:08] INFO root fetch - processPackages [unitlab]: Downloading https://files.pythonhosted.org/packages/c0/cc/6ac1babbf50a7aba1f8659f717eb85bacac007cfb8eab11078490fc721d7/unitlab-1.8.6.tar.gz
+[2023-05-24 12:43:08] INFO root fetch - processPackages [otx]: Downloading https://files.pythonhosted.org/packages/f0/a3/3d35b03a268f9d8f66b139fae89bdc8e708ccaa54ec4d3ad398e38065e6f/otx-1.2.1rc7.tar.gz
+[2023-05-24 12:43:08] INFO root fetch - processPackages [northgravity]: Downloading https://files.pythonhosted.org/packages/3d/97/7cab7e24882423ad41487b758f63e72731b3d4227f5d05b3988ed6b1c590/northgravity-0.1.8.tar.gz
+[2023-05-24 12:43:08] INFO root fetch - processPackages [Exegol]: Downloading https://files.pythonhosted.org/packages/e6/f4/a4f2d9e6a7b2aa3410f54608f617033548993fb2a63f5d4532799dd3568f/Exegol-4.2.2.tar.gz
+[2023-05-24 12:43:08] INFO root fetch - processPackages [georideapilib]: Downloading https://files.pythonhosted.org/packages/87/0e/ac149fb2f77700f83f4b483c322e4eda2dfb3a5568d4216d9c40a9e5f57a/georideapilib-0.9.6.tar.gz
+[2023-05-24 12:43:08] INFO root fetch - processPackages [unitlab]: executing diffoscope
+[2023-05-24 12:43:08] INFO root fetch - processPackages [unitlab]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/unitlab-1.8.5.tar.gz tmp/unitlab-1.8.6.tar.gz --markdown 20230524/u/unitlab/1.8.5-1.8.6/diff.md --exclude *.pyd
+[2023-05-24 12:43:08] INFO root fetch - processPackages [northgravity]: executing diffoscope
+[2023-05-24 12:43:08] INFO root fetch - processPackages [northgravity]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/northgravity-0.1.7.tar.gz tmp/northgravity-0.1.8.tar.gz --markdown 20230524/n/northgravity/0.1.7-0.1.8/diff.md --exclude *.pyd
+[2023-05-24 12:43:08] ERROR root fetch - processPackages [scaneo]: Unable to fetch info: No such project/version 'scaneo' 0.1.0
+[2023-05-24 12:43:08] INFO root fetch - processPackages [scaneo]: Start processing: dynamicprompts
+[2023-05-24 12:43:08] INFO root fetch - main [MainThread]: End processing [scaneo] error
+[2023-05-24 12:43:08] INFO root fetch - processPackages [dynamicprompts]: New version: [0.7.1] Old Version: [0.7.0]
+[2023-05-24 12:43:08] INFO root fetch - processPackages [superannotate]: executing diffoscope
+[2023-05-24 12:43:08] INFO root fetch - processPackages [superannotate]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/superannotate-4.4.9.dev5.tar.gz tmp/superannotate-4.4.9b1.tar.gz --markdown 20230524/s/superannotate/4.4.9.dev5-4.4.9b1/diff.md --exclude *.pyd
+[2023-05-24 12:43:08] INFO root fetch - processPackages [georideapilib]: Downloading https://files.pythonhosted.org/packages/c5/ba/786bf564a48f74787ae5b172852e73e2cd7bbd75a0610ded2262f8fd5c9e/georideapilib-1.0.0.tar.gz
+[2023-05-24 12:43:08] INFO root fetch - processPackages [stlock]: Downloading https://files.pythonhosted.org/packages/e8/48/7432589f1066247ac9e50522ea3b8445f727f8eafe9d14467708edebec17/stlock-0.0.7.5.tar.gz
+[2023-05-24 12:43:08] INFO root fetch - processPackages [otx]: executing diffoscope
+[2023-05-24 12:43:08] INFO root fetch - processPackages [otx]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/otx-1.2.1rc7.tar.gz tmp/otx-1.3.0rc1.tar.gz --markdown 20230524/o/otx/1.2.1rc7-1.3.0rc1/diff.md --exclude *.pyd
+[2023-05-24 12:43:08] INFO root fetch - processPackages [stlock]: Downloading https://files.pythonhosted.org/packages/e8/48/7432589f1066247ac9e50522ea3b8445f727f8eafe9d14467708edebec17/stlock-0.0.7.5.tar.gz
+[2023-05-24 12:43:08] INFO root fetch - processPackages [georideapilib]: executing diffoscope
+[2023-05-24 12:43:08] INFO root fetch - processPackages [georideapilib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/georideapilib-0.9.6.tar.gz tmp/georideapilib-1.0.0.tar.gz --markdown 20230524/g/georideapilib/0.9.6-1.0.0/diff.md --exclude *.pyd
+[2023-05-24 12:43:08] INFO root fetch - processPackages [stlock]: executing diffoscope
+[2023-05-24 12:43:08] INFO root fetch - processPackages [Exegol]: Downloading https://files.pythonhosted.org/packages/38/e3/f0700d6ceef16eb5caab6e7b3fb26a35c9d2a93e183968de44c4afd1a049/Exegol-4.2.3.tar.gz
+[2023-05-24 12:43:08] INFO root fetch - processPackages [stlock]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/stlock-0.0.7.4.tar.gz tmp/stlock-0.0.7.5.tar.gz --markdown 20230524/s/stlock/0.0.7.4-0.0.7.5/diff.md --exclude *.pyd
+[2023-05-24 12:43:08] INFO root fetch - processPackages [stlock]: executing diffoscope
+[2023-05-24 12:43:08] INFO root fetch - processPackages [stlock]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/stlock-0.0.7.4.tar.gz tmp/stlock-0.0.7.5.tar.gz --markdown 20230524/s/stlock/0.0.7.4-0.0.7.5/diff.md --exclude *.pyd
+[2023-05-24 12:43:08] INFO root fetch - processPackages [Exegol]: executing diffoscope
+[2023-05-24 12:43:08] INFO root fetch - processPackages [Exegol]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Exegol-4.2.2.tar.gz tmp/Exegol-4.2.3.tar.gz --markdown 20230524/E/Exegol/4.2.2-4.2.3/diff.md --exclude *.pyd
+[2023-05-24 12:43:08] INFO root fetch - processPackages [dynamicprompts]: executing diffoscope
+[2023-05-24 12:43:08] INFO root fetch - processPackages [dynamicprompts]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dynamicprompts-0.7.0.tar.gz tmp/dynamicprompts-0.7.1.tar.gz --markdown 20230524/d/dynamicprompts/0.7.0-0.7.1/diff.md --exclude *.pyd
+[2023-05-24 12:43:09] INFO root fetch - processPackages [unitlab]: Start processing: behave-html-pretty-formatter
+[2023-05-24 12:43:09] INFO root fetch - main [MainThread]: End processing [unitlab]: success
+[2023-05-24 12:43:09] INFO root fetch - processPackages [behave-html-pretty-formatter]: New version: [1.9] Old Version: [1.8.2]
+[2023-05-24 12:43:09] INFO root fetch - processPackages [behave-html-pretty-formatter]: Downloading https://files.pythonhosted.org/packages/d1/17/88ce861ca1f21075d6ce479fadecad1539a2f4ad073d66ba29644cac06ea/behave-html-pretty-formatter-1.8.2.tar.gz
+[2023-05-24 12:43:10] INFO root fetch - processPackages [behave-html-pretty-formatter]: Downloading https://files.pythonhosted.org/packages/ea/82/03ce16234e72eae773122957a87b94131dbf072db9d2b40168524a65e66a/behave-html-pretty-formatter-1.9.tar.gz
+[2023-05-24 12:43:10] INFO root fetch - processPackages [stlock]: Start processing: listupy
+[2023-05-24 12:43:10] INFO root fetch - main [MainThread]: End processing [stlock]: success
+[2023-05-24 12:43:10] INFO root fetch - processPackages [stlock]: Start processing: OpenNMT-py
+[2023-05-24 12:43:10] INFO root fetch - main [MainThread]: End processing [stlock]: success
+[2023-05-24 12:43:10] INFO root fetch - processPackages [georideapilib]: Start processing: cblind
+[2023-05-24 12:43:10] INFO root fetch - main [MainThread]: End processing [georideapilib]: success
+[2023-05-24 12:43:10] INFO root fetch - processPackages [dynamicprompts]: Start processing: pyeCam
+[2023-05-24 12:43:10] INFO root fetch - main [MainThread]: End processing [dynamicprompts]: success
+[2023-05-24 12:43:10] WARNING root fetch - processPackages [listupy]: Skipping, unable to determine old version
+[2023-05-24 12:43:10] INFO root fetch - processPackages [listupy]: Start processing: waveforms
+[2023-05-24 12:43:10] INFO root fetch - main [MainThread]: End processing [listupy] error
+[2023-05-24 12:43:10] INFO root fetch - processPackages [OpenNMT-py]: New version: [3.1.3] Old Version: [3.1.2]
+[2023-05-24 12:43:10] INFO root fetch - processPackages [cblind]: New version: [2.2.4] Old Version: [2.2.3]
+[2023-05-24 12:43:10] INFO root fetch - processPackages [pyeCam]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-24 12:43:10] INFO root fetch - processPackages [behave-html-pretty-formatter]: executing diffoscope
+[2023-05-24 12:43:10] INFO root fetch - processPackages [behave-html-pretty-formatter]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/behave-html-pretty-formatter-1.8.2.tar.gz tmp/behave-html-pretty-formatter-1.9.tar.gz --markdown 20230524/b/behave-html-pretty-formatter/1.8.2-1.9/diff.md --exclude *.pyd
+[2023-05-24 12:43:10] INFO root fetch - processPackages [waveforms]: New version: [1.5.99] Old Version: [1.5.98]
+[2023-05-24 12:43:10] INFO root fetch - processPackages [northgravity]: Start processing: Operetta-tool
+[2023-05-24 12:43:10] INFO root fetch - main [MainThread]: End processing [northgravity]: success
+[2023-05-24 12:43:10] INFO root fetch - processPackages [pyeCam]: executing diffoscope
+[2023-05-24 12:43:10] INFO root fetch - processPackages [pyeCam]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyeCam-0.0.8.tar.gz tmp/pyeCam-0.0.9.tar.gz --markdown 20230524/p/pyeCam/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-24 12:43:10] INFO root fetch - processPackages [OpenNMT-py]: Downloading https://files.pythonhosted.org/packages/d5/aa/121c6b471966fbe8c1d31c7b2ddce54cd22fb5e43af2139769bec0886867/OpenNMT-py-3.1.2.tar.gz
+[2023-05-24 12:43:10] INFO root fetch - processPackages [cblind]: Downloading https://files.pythonhosted.org/packages/20/34/d1741621871ba3b8060a333dbd23a2ed3b486e3eeb1f356b1dcf0007eab6/cblind-2.2.3.tar.gz
+[2023-05-24 12:43:10] INFO root fetch - processPackages [Operetta-tool]: New version: [1.3.3] Old Version: [1.3.2]
+[2023-05-24 12:43:10] INFO root fetch - processPackages [Operetta-tool]: Downloading https://files.pythonhosted.org/packages/cc/9e/b1e05fd07449359be7dfb54dc24197d5c8bb17776b04428c9a99a4317f64/Operetta_tool-1.3.2.tar.gz
+[2023-05-24 12:43:10] INFO root fetch - processPackages [cblind]: Downloading https://files.pythonhosted.org/packages/16/4f/3263b643e12e731c0e2b2eafc6934927266f1d270f0fe4aee1e2a1d10a2f/cblind-2.2.4.tar.gz
+[2023-05-24 12:43:10] INFO root fetch - processPackages [OpenNMT-py]: Downloading https://files.pythonhosted.org/packages/62/a3/68c7ad732c94be0a03e92babefbb1b144eb7ca6aae11aa91fc953980a8a7/OpenNMT-py-3.1.3.tar.gz
+[2023-05-24 12:43:10] INFO root fetch - processPackages [waveforms]: Downloading https://files.pythonhosted.org/packages/51/10/c9e40bdf9d03d2c48da400a9741a43d65acd457aebc3d42806ade215a4c2/waveforms-1.5.99.tar.gz
+[2023-05-24 12:43:10] INFO root fetch - processPackages [cblind]: executing diffoscope
+[2023-05-24 12:43:10] INFO root fetch - processPackages [cblind]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cblind-2.2.3.tar.gz tmp/cblind-2.2.4.tar.gz --markdown 20230524/c/cblind/2.2.3-2.2.4/diff.md --exclude *.pyd
+[2023-05-24 12:43:10] INFO root fetch - processPackages [OpenNMT-py]: executing diffoscope
+[2023-05-24 12:43:10] INFO root fetch - processPackages [OpenNMT-py]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/OpenNMT-py-3.1.2.tar.gz tmp/OpenNMT-py-3.1.3.tar.gz --markdown 20230524/O/OpenNMT-py/3.1.2-3.1.3/diff.md --exclude *.pyd
+[2023-05-24 12:43:10] INFO root fetch - processPackages [waveforms]: executing diffoscope
+[2023-05-24 12:43:10] INFO root fetch - processPackages [waveforms]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/waveforms-1.5.98.tar.gz tmp/waveforms-1.5.99.tar.gz --markdown 20230524/w/waveforms/1.5.98-1.5.99/diff.md --exclude *.pyd
+[2023-05-24 12:43:11] INFO root fetch - processPackages [superannotate]: Start processing: scaneo
+[2023-05-24 12:43:11] INFO root fetch - main [MainThread]: End processing [superannotate]: success
+[2023-05-24 12:43:11] INFO root fetch - processPackages [scaneo]: New version: [0.0.3.post2] Old Version: [0.0.3]
+[2023-05-24 12:43:11] INFO root fetch - processPackages [Operetta-tool]: Downloading https://files.pythonhosted.org/packages/bf/eb/a5123c7e74e06c21ca45c7e2ca47b4029775ef611a170af8df46b688af0a/Operetta_tool-1.3.3.tar.gz
+[2023-05-24 12:43:11] INFO root fetch - processPackages [Operetta-tool]: executing diffoscope
+[2023-05-24 12:43:11] INFO root fetch - processPackages [Operetta-tool]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Operetta_tool-1.3.2.tar.gz tmp/Operetta_tool-1.3.3.tar.gz --markdown 20230524/O/Operetta-tool/1.3.2-1.3.3/diff.md --exclude *.pyd
+[2023-05-24 12:43:11] INFO root fetch - processPackages [scaneo]: Downloading https://files.pythonhosted.org/packages/eb/5c/334eafa65880aeda9a2f6197d1e5a0500be33b8a8b7f4701dcf85513d3bd/scaneo-0.0.3.tar.gz
+[2023-05-24 12:43:11] INFO root fetch - processPackages [scaneo]: Downloading https://files.pythonhosted.org/packages/89/a8/9a9b1b96f58bf0d9106ac546b48b8468408b587cbd40f7a36c32f15f30c9/scaneo-0.0.3.post2.tar.gz
+[2023-05-24 12:43:11] INFO root fetch - processPackages [pyeCam]: Start processing: yunpancli
+[2023-05-24 12:43:11] INFO root fetch - main [MainThread]: End processing [pyeCam]: success
+[2023-05-24 12:43:11] INFO root fetch - processPackages [yunpancli]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-05-24 12:43:11] INFO root fetch - processPackages [behave-html-pretty-formatter]: Start processing: apply-pr
+[2023-05-24 12:43:11] INFO root fetch - main [MainThread]: End processing [behave-html-pretty-formatter]: success
+[2023-05-24 12:43:11] INFO root fetch - processPackages [scaneo]: executing diffoscope
+[2023-05-24 12:43:11] INFO root fetch - processPackages [scaneo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/scaneo-0.0.3.tar.gz tmp/scaneo-0.0.3.post2.tar.gz --markdown 20230524/s/scaneo/0.0.3-0.0.3.post2/diff.md --exclude *.pyd
+[2023-05-24 12:43:11] INFO root fetch - processPackages [apply-pr]: New version: [2.9.0] Old Version: [2.8.2]
+[2023-05-24 12:43:11] INFO root fetch - processPackages [yunpancli]: Downloading https://files.pythonhosted.org/packages/ac/ef/d66e0b02439497e3e737e06829449a78d7d9d072ee9f38ad2d773502db1f/yunpancli-0.0.3.tar.gz
+[2023-05-24 12:43:11] INFO root fetch - processPackages [apply-pr]: Downloading https://files.pythonhosted.org/packages/43/6c/60182920eab7225ab8a2557b4abf81ea8a9710a4b3a37fe14522660e6f39/apply_pr-2.8.2.tar.gz
+[2023-05-24 12:43:12] INFO root fetch - processPackages [yunpancli]: executing diffoscope
+[2023-05-24 12:43:12] INFO root fetch - processPackages [yunpancli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/yunpancli-0.0.2.tar.gz tmp/yunpancli-0.0.3.tar.gz --markdown 20230524/y/yunpancli/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-05-24 12:43:12] INFO root fetch - main [MainThread]: End processing [cblind]: success
+[2023-05-24 12:43:12] INFO root fetch - processPackages [apply-pr]: Downloading https://files.pythonhosted.org/packages/9d/3a/51eb45cc812081a266e2048731bf896c58501d3b7a1a9f2825f74948e539/apply_pr-2.9.0.tar.gz
+[2023-05-24 12:43:12] INFO root fetch - processPackages [apply-pr]: executing diffoscope
+[2023-05-24 12:43:12] INFO root fetch - processPackages [apply-pr]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/apply_pr-2.8.2.tar.gz tmp/apply_pr-2.9.0.tar.gz --markdown 20230524/a/apply-pr/2.8.2-2.9.0/diff.md --exclude *.pyd
+[2023-05-24 12:43:12] INFO root fetch - main [MainThread]: End processing [Exegol]: success
+[2023-05-24 12:43:12] INFO root fetch - main [MainThread]: End processing [scaneo]: success
+[2023-05-24 12:43:13] INFO root fetch - main [MainThread]: End processing [yunpancli]: success
+[2023-05-24 12:43:13] INFO root fetch - main [MainThread]: End processing [apply-pr]: success
+[2023-05-24 12:43:13] INFO root fetch - main [MainThread]: End processing [seven-cloudapp-frame]: success
+[2023-05-24 12:43:13] INFO root fetch - main [MainThread]: End processing [OpenNMT-py]: success
+[2023-05-24 12:43:14] INFO root fetch - main [MainThread]: End processing [Operetta-tool]: success
+[2023-05-24 12:43:15] INFO root fetch - main [MainThread]: End processing [waveforms]: success
+[2023-05-24 12:43:53] INFO root fetch - main [MainThread]: End processing [otx]: success
+[2023-05-24 12:43:53] INFO root fetch - main [MainThread]: Store serial: [18228453]
