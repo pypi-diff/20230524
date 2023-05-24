@@ -16127,3 +16127,103 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd4 in position 72: invalid
 [2023-05-24 15:39:33] INFO root fetch - main [MainThread]: End processing [pyshacl]: success
 [2023-05-24 15:39:35] INFO root fetch - main [MainThread]: End processing [panda-server]: success
 [2023-05-24 15:39:35] INFO root fetch - main [MainThread]: Store serial: [18230277]
+[2023-05-24 15:44:40] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18230277]
+[2023-05-24 15:44:45] INFO root fetch - main [MainThread]: Found 17 changed packages
+[2023-05-24 15:44:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: c2cciutils
+[2023-05-24 15:44:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: paketmutfak
+[2023-05-24 15:44:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: hcai-nova-server-nightly
+[2023-05-24 15:44:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: c104
+[2023-05-24 15:44:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pysiml
+[2023-05-24 15:44:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: dbtgenlib
+[2023-05-24 15:44:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: ansible-compat
+[2023-05-24 15:44:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: simframe
+[2023-05-24 15:44:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: iron-toolbox
+[2023-05-24 15:44:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: tah-example-pkg
+[2023-05-24 15:44:45] INFO root fetch - processPackages [pysiml]: New version: [0.2.9.dev202305240600] Old Version: [0.2.9.dev202305021032]
+[2023-05-24 15:44:45] INFO root fetch - processPackages [iron-toolbox]: New version: [1.0.9] Old Version: [1.0.8]
+[2023-05-24 15:44:45] INFO root fetch - processPackages [dbtgenlib]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-24 15:44:45] INFO root fetch - processPackages [hcai-nova-server-nightly]: New version: [0.1.6.dev202305241140] Old Version: [0.1.6.dev202305221457]
+[2023-05-24 15:44:45] INFO root fetch - processPackages [simframe]: New version: [1.0.3rc0] Old Version: [1.0.2]
+[2023-05-24 15:44:45] INFO root fetch - processPackages [pysiml]: executing diffoscope
+[2023-05-24 15:44:45] INFO root fetch - processPackages [pysiml]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pysiml-0.2.9.dev202305021032-py3-none-any.whl.zip tmp/pysiml-0.2.9.dev202305240600-py3-none-any.whl.zip --markdown 20230524/p/pysiml/0.2.9.dev202305021032-0.2.9.dev202305240600/diff.md --exclude *.pyd
+[2023-05-24 15:44:45] INFO root fetch - processPackages [c104]: New version: [1.16.1] Old Version: [1.16.0]
+[2023-05-24 15:44:45] INFO root fetch - processPackages [c2cciutils]: New version: [1.6.0.dev98] Old Version: [1.6.0.dev95]
+[2023-05-24 15:44:45] INFO root fetch - processPackages [dbtgenlib]: executing diffoscope
+[2023-05-24 15:44:45] INFO root fetch - processPackages [dbtgenlib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dbtgenlib-0.0.8.tar.gz tmp/dbtgenlib-0.0.9.tar.gz --markdown 20230524/d/dbtgenlib/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-24 15:44:45] INFO root fetch - processPackages [tah-example-pkg]: New version: [0.5.0] Old Version: [0.4.0]
+[2023-05-24 15:44:45] INFO root fetch - processPackages [iron-toolbox]: executing diffoscope
+[2023-05-24 15:44:45] INFO root fetch - processPackages [iron-toolbox]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/iron_toolbox-1.0.8.tar.gz tmp/iron_toolbox-1.0.9.tar.gz --markdown 20230524/i/iron-toolbox/1.0.8-1.0.9/diff.md --exclude *.pyd
+[2023-05-24 15:44:45] INFO root fetch - processPackages [ansible-compat]: New version: [4.1.0] Old Version: [4.0.5]
+[2023-05-24 15:44:45] INFO root fetch - processPackages [paketmutfak]: New version: [1.1.9] Old Version: [1.1.8]
+[2023-05-24 15:44:45] INFO root fetch - processPackages [simframe]: Downloading https://files.pythonhosted.org/packages/01/e8/28501b1e90facbb9a541374995b19e2a4b40611ae11c89595796c9184b86/simframe-1.0.2.tar.gz
+[2023-05-24 15:44:45] INFO root fetch - processPackages [hcai-nova-server-nightly]: Downloading https://files.pythonhosted.org/packages/8c/a0/3a66ae1a601c59a868d02b57cbf1ec90c13f4e034de4207b0f8addf92742/hcai-nova-server-nightly-0.1.6.dev202305241140.tar.gz
+[2023-05-24 15:44:45] INFO root fetch - processPackages [tah-example-pkg]: Downloading https://files.pythonhosted.org/packages/9d/4a/f661c7bd0d64c2a320742e62c5a0b1b9afdc38fac5af788d7c8c6bc748d8/tah_example_pkg-0.4.0.tar.gz
+[2023-05-24 15:44:45] INFO root fetch - processPackages [c104]: Downloading https://files.pythonhosted.org/packages/93/15/31e069629347fad056b6637c262f83ab1a220f60d36c85341bc8a4d87bcc/c104-1.16.0-cp39-cp39-win_amd64.whl
+[2023-05-24 15:44:46] INFO root fetch - processPackages [hcai-nova-server-nightly]: executing diffoscope
+[2023-05-24 15:44:46] INFO root fetch - processPackages [hcai-nova-server-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hcai-nova-server-nightly-0.1.6.dev202305221457.tar.gz tmp/hcai-nova-server-nightly-0.1.6.dev202305241140.tar.gz --markdown 20230524/h/hcai-nova-server-nightly/0.1.6.dev202305221457-0.1.6.dev202305241140/diff.md --exclude *.pyd
+[2023-05-24 15:44:46] INFO root fetch - processPackages [ansible-compat]: Downloading https://files.pythonhosted.org/packages/a6/47/93fdb26a089a935ef2749c34f15ccc1404b30e13b92125ea0d2516c09c31/ansible-compat-4.1.0.tar.gz
+[2023-05-24 15:44:46] INFO root fetch - processPackages [c2cciutils]: executing diffoscope
+[2023-05-24 15:44:46] INFO root fetch - processPackages [paketmutfak]: executing diffoscope
+[2023-05-24 15:44:46] INFO root fetch - processPackages [c2cciutils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/c2cciutils-1.6.0.dev95.tar.gz tmp/c2cciutils-1.6.0.dev98.tar.gz --markdown 20230524/c/c2cciutils/1.6.0.dev95-1.6.0.dev98/diff.md --exclude *.pyd
+[2023-05-24 15:44:46] INFO root fetch - processPackages [paketmutfak]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/paketmutfak-1.1.8.tar.gz tmp/paketmutfak-1.1.9.tar.gz --markdown 20230524/p/paketmutfak/1.1.8-1.1.9/diff.md --exclude *.pyd
+[2023-05-24 15:44:46] INFO root fetch - processPackages [tah-example-pkg]: Downloading https://files.pythonhosted.org/packages/91/ac/df25266a257a307baa2d63fc89a491f2d2be15abe3a5d1ea0e1ad205a9f1/tah_example_pkg-0.5.0.tar.gz
+[2023-05-24 15:44:46] INFO root fetch - processPackages [c104]: Downloading https://files.pythonhosted.org/packages/8e/51/2f45dbad8a1e0be7053e70d85cef3b3327bbadb8da0b430b474ce5fbd629/c104-1.16.1-cp39-cp39-win_amd64.whl
+[2023-05-24 15:44:46] INFO root fetch - processPackages [simframe]: Downloading https://files.pythonhosted.org/packages/d7/66/d54309dd6fadb378d0461fa7494a05072d83983477310ac9e13cb9fd3d60/simframe-1.0.3rc0.tar.gz
+[2023-05-24 15:44:46] INFO root fetch - processPackages [ansible-compat]: executing diffoscope
+[2023-05-24 15:44:46] INFO root fetch - processPackages [ansible-compat]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ansible-compat-4.0.5.tar.gz tmp/ansible-compat-4.1.0.tar.gz --markdown 20230524/a/ansible-compat/4.0.5-4.1.0/diff.md --exclude *.pyd
+[2023-05-24 15:44:46] INFO root fetch - processPackages [tah-example-pkg]: executing diffoscope
+[2023-05-24 15:44:46] INFO root fetch - processPackages [tah-example-pkg]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tah_example_pkg-0.4.0.tar.gz tmp/tah_example_pkg-0.5.0.tar.gz --markdown 20230524/t/tah-example-pkg/0.4.0-0.5.0/diff.md --exclude *.pyd
+[2023-05-24 15:44:46] INFO root fetch - processPackages [c104]: executing diffoscope
+[2023-05-24 15:44:46] INFO root fetch - processPackages [c104]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/c104-1.16.0-cp39-cp39-win_amd64.whl.zip tmp/c104-1.16.1-cp39-cp39-win_amd64.whl.zip --markdown 20230524/c/c104/1.16.0-1.16.1/diff.md --exclude *.pyd
+[2023-05-24 15:44:47] INFO root fetch - processPackages [dbtgenlib]: Start processing: coretex
+[2023-05-24 15:44:47] INFO root fetch - main [MainThread]: End processing [dbtgenlib]: success
+[2023-05-24 15:44:47] INFO root fetch - processPackages [simframe]: executing diffoscope
+[2023-05-24 15:44:47] INFO root fetch - processPackages [simframe]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/simframe-1.0.2.tar.gz tmp/simframe-1.0.3rc0.tar.gz --markdown 20230524/s/simframe/1.0.2-1.0.3rc0/diff.md --exclude *.pyd
+[2023-05-24 15:44:47] INFO root fetch - processPackages [coretex]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-24 15:44:47] INFO root fetch - processPackages [iron-toolbox]: Start processing: Python-Road
+[2023-05-24 15:44:47] INFO root fetch - main [MainThread]: End processing [iron-toolbox]: success
+[2023-05-24 15:44:47] INFO root fetch - processPackages [hcai-nova-server-nightly]: Start processing: shipyard-shortcut
+[2023-05-24 15:44:47] INFO root fetch - main [MainThread]: End processing [hcai-nova-server-nightly]: success
+[2023-05-24 15:44:47] INFO root fetch - processPackages [coretex]: executing diffoscope
+[2023-05-24 15:44:47] INFO root fetch - processPackages [coretex]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/coretex-0.0.8.tar.gz tmp/coretex-0.0.9.tar.gz --markdown 20230524/c/coretex/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-24 15:44:47] WARNING root fetch - processPackages [shipyard-shortcut]: Skipping, unable to determine old version
+[2023-05-24 15:44:47] INFO root fetch - processPackages [shipyard-shortcut]: Start processing: python-frog
+[2023-05-24 15:44:47] INFO root fetch - main [MainThread]: End processing [shipyard-shortcut] error
+[2023-05-24 15:44:47] WARNING root fetch - processPackages [Python-Road]: Skipping, unable to determine old version
+[2023-05-24 15:44:47] INFO root fetch - processPackages [Python-Road]: Start processing: YMS
+[2023-05-24 15:44:47] INFO root fetch - main [MainThread]: End processing [Python-Road] error
+[2023-05-24 15:44:47] INFO root fetch - processPackages [python-frog]: New version: [0.6.6] Old Version: [0.6.5]
+[2023-05-24 15:44:47] INFO root fetch - processPackages [YMS]: New version: [0.81] Old Version: [0.8]
+[2023-05-24 15:44:47] INFO root fetch - processPackages [python-frog]: Downloading https://files.pythonhosted.org/packages/1f/75/3271549106bc3830dab54335d23d2edd6c7c549cb294746647079393dfcf/python-frog-0.6.5.tar.gz
+[2023-05-24 15:44:47] INFO root fetch - processPackages [paketmutfak]: Start processing: elevenlabslib
+[2023-05-24 15:44:47] INFO root fetch - main [MainThread]: End processing [paketmutfak]: success
+[2023-05-24 15:44:47] INFO root fetch - processPackages [YMS]: Downloading https://files.pythonhosted.org/packages/34/81/4099e1709c0dcbc874d39a50e33bf09b65e441b26eada1a2b37abd3bbb9d/YMS-0.8.tar.gz
+[2023-05-24 15:44:47] INFO root fetch - processPackages [tah-example-pkg]: Start processing: hcai-nova-server-nightly
+[2023-05-24 15:44:47] INFO root fetch - main [MainThread]: End processing [tah-example-pkg]: success
+[2023-05-24 15:44:48] INFO root fetch - processPackages [hcai-nova-server-nightly]: New version: [0.1.6.dev202305241344] Old Version: [0.1.6.dev202305241339]
+[2023-05-24 15:44:48] INFO root fetch - processPackages [elevenlabslib]: New version: [0.8.1] Old Version: [0.8.0]
+[2023-05-24 15:44:48] INFO root fetch - main [MainThread]: End processing [pysiml]: success
+[2023-05-24 15:44:48] INFO root fetch - main [MainThread]: End processing [c104]: success
+[2023-05-24 15:44:48] INFO root fetch - processPackages [python-frog]: Downloading https://files.pythonhosted.org/packages/30/5b/354c70e30c5fd65789b5d0d708163d4ea1620e233d254010748ed6c95417/python-frog-0.6.6.tar.gz
+[2023-05-24 15:44:48] INFO root fetch - processPackages [YMS]: Downloading https://files.pythonhosted.org/packages/ce/6c/b8b8a7db49b41cf3e6bda4b02b33baab87305b97d84e56c8652395a0f317/YMS-0.81.tar.gz
+[2023-05-24 15:44:48] INFO root fetch - main [MainThread]: End processing [ansible-compat]: success
+[2023-05-24 15:44:48] INFO root fetch - processPackages [hcai-nova-server-nightly]: Downloading https://files.pythonhosted.org/packages/4e/29/1fbde6312d482846b592d568cbb6bfc6ff20bde222e0463c0aac1e755ef4/hcai-nova-server-nightly-0.1.6.dev202305241339.tar.gz
+[2023-05-24 15:44:48] INFO root fetch - processPackages [elevenlabslib]: Downloading https://files.pythonhosted.org/packages/ba/df/1cc1e14826e4c0907f8709d2455ea8899a7a3330ab5aed10312163c2c414/elevenlabslib-0.8.0.tar.gz
+[2023-05-24 15:44:48] INFO root fetch - processPackages [python-frog]: executing diffoscope
+[2023-05-24 15:44:48] INFO root fetch - processPackages [python-frog]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/python-frog-0.6.5.tar.gz tmp/python-frog-0.6.6.tar.gz --markdown 20230524/p/python-frog/0.6.5-0.6.6/diff.md --exclude *.pyd
+[2023-05-24 15:44:48] INFO root fetch - processPackages [YMS]: executing diffoscope
+[2023-05-24 15:44:48] INFO root fetch - processPackages [YMS]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/YMS-0.8.tar.gz tmp/YMS-0.81.tar.gz --markdown 20230524/Y/YMS/0.8-0.81/diff.md --exclude *.pyd
+[2023-05-24 15:44:48] INFO root fetch - processPackages [hcai-nova-server-nightly]: Downloading https://files.pythonhosted.org/packages/ce/bc/e32e5a9e44dfd4813d751e465d95a67d86aac85a440f21f1647a22c1911c/hcai-nova-server-nightly-0.1.6.dev202305241344.tar.gz
+[2023-05-24 15:44:48] INFO root fetch - processPackages [elevenlabslib]: Downloading https://files.pythonhosted.org/packages/9e/62/4c46022be668ee2c1035c1522840a2dde66fe7bd2cebdbaee51217c9dad5/elevenlabslib-0.8.1.tar.gz
+[2023-05-24 15:44:48] INFO root fetch - processPackages [hcai-nova-server-nightly]: executing diffoscope
+[2023-05-24 15:44:48] INFO root fetch - processPackages [hcai-nova-server-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hcai-nova-server-nightly-0.1.6.dev202305241339.tar.gz tmp/hcai-nova-server-nightly-0.1.6.dev202305241344.tar.gz --markdown 20230524/h/hcai-nova-server-nightly/0.1.6.dev202305241339-0.1.6.dev202305241344/diff.md --exclude *.pyd
+[2023-05-24 15:44:48] INFO root fetch - processPackages [elevenlabslib]: executing diffoscope
+[2023-05-24 15:44:48] INFO root fetch - processPackages [elevenlabslib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/elevenlabslib-0.8.0.tar.gz tmp/elevenlabslib-0.8.1.tar.gz --markdown 20230524/e/elevenlabslib/0.8.0-0.8.1/diff.md --exclude *.pyd
+[2023-05-24 15:44:49] INFO root fetch - main [MainThread]: End processing [coretex]: success
+[2023-05-24 15:44:49] INFO root fetch - main [MainThread]: End processing [YMS]: success
+[2023-05-24 15:44:49] INFO root fetch - main [MainThread]: End processing [python-frog]: success
+[2023-05-24 15:44:49] INFO root fetch - main [MainThread]: End processing [hcai-nova-server-nightly]: success
+[2023-05-24 15:44:49] INFO root fetch - main [MainThread]: End processing [elevenlabslib]: success
+[2023-05-24 15:44:51] INFO root fetch - main [MainThread]: End processing [simframe]: success
+[2023-05-24 15:44:55] INFO root fetch - main [MainThread]: End processing [c2cciutils]: success
+[2023-05-24 15:44:55] INFO root fetch - main [MainThread]: Store serial: [18230338]
