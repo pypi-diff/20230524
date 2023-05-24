@@ -21058,3 +21058,142 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd4 in position 72: invalid
 [2023-05-24 19:17:18] INFO root fetch - main [MainThread]: End processing [edc-utils]: success
 [2023-05-24 19:17:20] INFO root fetch - main [MainThread]: End processing [edc-mnsi]: success
 [2023-05-24 19:17:20] INFO root fetch - main [MainThread]: Store serial: [18233431]
+[2023-05-24 19:22:24] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18233431]
+[2023-05-24 19:22:29] INFO root fetch - main [MainThread]: Found 22 changed packages
+[2023-05-24 19:22:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: flordb
+[2023-05-24 19:22:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: vsiew
+[2023-05-24 19:22:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: edc-model-form
+[2023-05-24 19:22:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: cellmaps-pipeline
+[2023-05-24 19:22:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: edc-label
+[2023-05-24 19:22:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: Simba-UW-tf-dev
+[2023-05-24 19:22:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: edc-visit-schedule
+[2023-05-24 19:22:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: mythic-container
+[2023-05-24 19:22:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: cardsort
+[2023-05-24 19:22:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: edc-lab-results
+[2023-05-24 19:22:29] INFO root fetch - processPackages [cardsort]: New version: [0.2.6] Old Version: [0.2.4]
+[2023-05-24 19:22:29] INFO root fetch - processPackages [cellmaps-pipeline]: New version: [0.1.0a2] Old Version: [0.1.0a1]
+[2023-05-24 19:22:29] INFO root fetch - processPackages [mythic-container]: New version: [0.2.9] Old Version: [0.2.8rc5]
+[2023-05-24 19:22:29] INFO root fetch - processPackages [Simba-UW-tf-dev]: New version: [1.61.2] Old Version: [1.61.1]
+[2023-05-24 19:22:29] INFO root fetch - processPackages [flordb]: New version: [2.6.4] Old Version: [2.6.3]
+[2023-05-24 19:22:29] INFO root fetch - processPackages [edc-label]: New version: [0.3.9] Old Version: [0.3.8]
+[2023-05-24 19:22:29] INFO root fetch - processPackages [vsiew]: New version: [2.1.2] Old Version: [2.1.1]
+[2023-05-24 19:22:29] INFO root fetch - processPackages [edc-lab-results]: New version: [0.1.38] Old Version: [0.1.37]
+[2023-05-24 19:22:29] INFO root fetch - processPackages [edc-model-form]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-24 19:22:29] INFO root fetch - processPackages [edc-visit-schedule]: New version: [0.3.9] Old Version: [0.3.8]
+[2023-05-24 19:22:29] INFO root fetch - processPackages [mythic-container]: executing diffoscope
+[2023-05-24 19:22:29] INFO root fetch - processPackages [mythic-container]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mythic_container-0.2.8rc5.tar.gz tmp/mythic_container-0.2.9.tar.gz --markdown 20230524/m/mythic-container/0.2.8rc5-0.2.9/diff.md --exclude *.pyd
+[2023-05-24 19:22:29] INFO root fetch - processPackages [cardsort]: executing diffoscope
+[2023-05-24 19:22:29] INFO root fetch - processPackages [cardsort]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cardsort-0.2.4.tar.gz tmp/cardsort-0.2.6.tar.gz --markdown 20230524/c/cardsort/0.2.4-0.2.6/diff.md --exclude *.pyd
+[2023-05-24 19:22:30] INFO root fetch - processPackages [cellmaps-pipeline]: Downloading https://files.pythonhosted.org/packages/fc/7c/e8488ed17fc6765e3a661cc0eea830e1a9714324c8c2b40c404cde53b9e5/cellmaps_pipeline-0.1.0a1.tar.gz
+[2023-05-24 19:22:30] INFO root fetch - processPackages [Simba-UW-tf-dev]: Downloading https://files.pythonhosted.org/packages/0a/0c/0b098e2a57c47d6440a7f0deabe846f3a5f8ac54b3d7fad2d17dbdc50ff5/Simba-UW-tf-dev-1.61.1.tar.gz
+[2023-05-24 19:22:30] INFO root fetch - processPackages [edc-visit-schedule]: Downloading https://files.pythonhosted.org/packages/55/62/08b5eb66559fe5f11493a7403cf1549605588ac96f1433e68190de33a591/edc_visit_schedule-0.3.8-py3-none-any.whl
+[2023-05-24 19:22:30] INFO root fetch - processPackages [edc-lab-results]: Downloading https://files.pythonhosted.org/packages/fd/57/efe4c0c8f09ad9643f4e6b2e778a77c6a63d02899ec904f9198abe49abd6/edc-lab-results-0.1.37.tar.gz
+[2023-05-24 19:22:30] INFO root fetch - processPackages [edc-model-form]: Downloading https://files.pythonhosted.org/packages/f2/07/9ad0b04ab53ba54c0acf39d4ca39c614c0ea3a5fde8336c110036322c773/edc-model-form-0.1.8.tar.gz
+[2023-05-24 19:22:30] INFO root fetch - processPackages [edc-label]: Downloading https://files.pythonhosted.org/packages/50/bf/4b600e11941538e1b8f041ad664fabb6a1f23316afdc3205384f5ad27228/edc-label-0.3.8.tar.gz
+[2023-05-24 19:22:30] INFO root fetch - processPackages [flordb]: Downloading https://files.pythonhosted.org/packages/ae/c3/15d653e1c80078ce17f329a6e57cb3b4c233462be61995add2d8b925c877/flordb-2.6.3.tar.gz
+[2023-05-24 19:22:30] INFO root fetch - processPackages [vsiew]: Downloading https://files.pythonhosted.org/packages/df/12/8493e18c98151b5297b54833a2a1a875b8d7bce0b1b34b47d50c6f037169/vsiew-2.1.2.tar.gz
+[2023-05-24 19:22:30] INFO root fetch - processPackages [cellmaps-pipeline]: Downloading https://files.pythonhosted.org/packages/70/a9/73cb04b6fbce871b15a41012be09fd4531d0e4f794024dec08d69c8f80ea/cellmaps_pipeline-0.1.0a2.tar.gz
+[2023-05-24 19:22:30] INFO root fetch - processPackages [Simba-UW-tf-dev]: Downloading https://files.pythonhosted.org/packages/21/86/62ada1121fe1f8b76ff0c43d660733d4befebb7b1492e2c721cf71f4e6c8/Simba-UW-tf-dev-1.61.2.tar.gz
+[2023-05-24 19:22:30] INFO root fetch - processPackages [cellmaps-pipeline]: executing diffoscope
+[2023-05-24 19:22:30] INFO root fetch - processPackages [cellmaps-pipeline]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cellmaps_pipeline-0.1.0a1.tar.gz tmp/cellmaps_pipeline-0.1.0a2.tar.gz --markdown 20230524/c/cellmaps-pipeline/0.1.0a1-0.1.0a2/diff.md --exclude *.pyd
+[2023-05-24 19:22:30] INFO root fetch - processPackages [vsiew]: executing diffoscope
+[2023-05-24 19:22:30] INFO root fetch - processPackages [vsiew]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vsiew-2.1.1.tar.gz tmp/vsiew-2.1.2.tar.gz --markdown 20230524/v/vsiew/2.1.1-2.1.2/diff.md --exclude *.pyd
+[2023-05-24 19:22:30] INFO root fetch - processPackages [edc-visit-schedule]: Downloading https://files.pythonhosted.org/packages/d5/72/3df1323c5292ddeb8587bdab58504a97371317f435cce78a6e93a1c6561a/edc_visit_schedule-0.3.9-py3-none-any.whl
+[2023-05-24 19:22:30] INFO root fetch - processPackages [edc-lab-results]: Downloading https://files.pythonhosted.org/packages/1c/dc/167a338e8d87139b0fd38521b95777e1050367bdcbbdf3425e0e09091316/edc-lab-results-0.1.38.tar.gz
+[2023-05-24 19:22:30] INFO root fetch - processPackages [flordb]: Downloading https://files.pythonhosted.org/packages/31/47/9c2cc4485e5da1eaf05215f340e282c2a1d5fb00beaf391afd0f6ceddc5e/flordb-2.6.4.tar.gz
+[2023-05-24 19:22:30] INFO root fetch - processPackages [edc-model-form]: Downloading https://files.pythonhosted.org/packages/7f/2e/04eb526a59f7c918cc17a7314c159f4a6e2d904d95a6ca3c10218050da5d/edc-model-form-0.1.9.tar.gz
+[2023-05-24 19:22:30] INFO root fetch - processPackages [edc-label]: Downloading https://files.pythonhosted.org/packages/25/14/69a99baaf8c6762af05ed633b49d3d7927a70ee58d6228edb0b89f93edc2/edc-label-0.3.9.tar.gz
+[2023-05-24 19:22:30] INFO root fetch - processPackages [Simba-UW-tf-dev]: executing diffoscope
+[2023-05-24 19:22:30] INFO root fetch - processPackages [Simba-UW-tf-dev]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Simba-UW-tf-dev-1.61.1.tar.gz tmp/Simba-UW-tf-dev-1.61.2.tar.gz --markdown 20230524/S/Simba-UW-tf-dev/1.61.1-1.61.2/diff.md --exclude *.pyd
+[2023-05-24 19:22:30] INFO root fetch - processPackages [flordb]: executing diffoscope
+[2023-05-24 19:22:30] INFO root fetch - processPackages [flordb]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/flordb-2.6.3.tar.gz tmp/flordb-2.6.4.tar.gz --markdown 20230524/f/flordb/2.6.3-2.6.4/diff.md --exclude *.pyd
+[2023-05-24 19:22:30] INFO root fetch - processPackages [edc-visit-schedule]: executing diffoscope
+[2023-05-24 19:22:30] INFO root fetch - processPackages [edc-visit-schedule]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/edc_visit_schedule-0.3.8-py3-none-any.whl.zip tmp/edc_visit_schedule-0.3.9-py3-none-any.whl.zip --markdown 20230524/e/edc-visit-schedule/0.3.8-0.3.9/diff.md --exclude *.pyd
+[2023-05-24 19:22:30] INFO root fetch - processPackages [edc-lab-results]: executing diffoscope
+[2023-05-24 19:22:30] INFO root fetch - processPackages [edc-lab-results]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/edc-lab-results-0.1.37.tar.gz tmp/edc-lab-results-0.1.38.tar.gz --markdown 20230524/e/edc-lab-results/0.1.37-0.1.38/diff.md --exclude *.pyd
+[2023-05-24 19:22:30] INFO root fetch - processPackages [edc-model-form]: executing diffoscope
+[2023-05-24 19:22:30] INFO root fetch - processPackages [edc-model-form]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/edc-model-form-0.1.8.tar.gz tmp/edc-model-form-0.1.9.tar.gz --markdown 20230524/e/edc-model-form/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-24 19:22:30] INFO root fetch - processPackages [edc-label]: executing diffoscope
+[2023-05-24 19:22:30] INFO root fetch - processPackages [edc-label]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/edc-label-0.3.8.tar.gz tmp/edc-label-0.3.9.tar.gz --markdown 20230524/e/edc-label/0.3.8-0.3.9/diff.md --exclude *.pyd
+[2023-05-24 19:22:31] INFO root fetch - processPackages [cardsort]: Start processing: i18nx
+[2023-05-24 19:22:31] INFO root fetch - main [MainThread]: End processing [cardsort]: success
+[2023-05-24 19:22:31] INFO root fetch - processPackages [i18nx]: New version: [1.3.0] Old Version: [1.2.0]
+[2023-05-24 19:22:31] INFO root fetch - processPackages [i18nx]: Downloading https://files.pythonhosted.org/packages/f6/9e/97343178c03f622a04f849fc9ac97ce24110692acddf2f83dabea4db4a0c/i18nx-1.2.0.tar.gz
+[2023-05-24 19:22:31] INFO root fetch - processPackages [i18nx]: Downloading https://files.pythonhosted.org/packages/4f/49/f49c6e39a51fcfaa200f21195ad94b70c6ff691ecdaae02aa6027c710a76/i18nx-1.3.0.tar.gz
+[2023-05-24 19:22:31] INFO root fetch - processPackages [vsiew]: Start processing: pulumi-vsphere
+[2023-05-24 19:22:31] INFO root fetch - main [MainThread]: End processing [vsiew]: success
+[2023-05-24 19:22:31] INFO root fetch - processPackages [pulumi-vsphere]: New version: [4.5.0a1684947541] Old Version: [4.5.0a1684391558]
+[2023-05-24 19:22:31] INFO root fetch - processPackages [cellmaps-pipeline]: Start processing: isidore
+[2023-05-24 19:22:31] INFO root fetch - main [MainThread]: End processing [cellmaps-pipeline]: success
+[2023-05-24 19:22:31] INFO root fetch - processPackages [i18nx]: executing diffoscope
+[2023-05-24 19:22:31] INFO root fetch - processPackages [i18nx]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/i18nx-1.2.0.tar.gz tmp/i18nx-1.3.0.tar.gz --markdown 20230524/i/i18nx/1.2.0-1.3.0/diff.md --exclude *.pyd
+[2023-05-24 19:22:32] INFO root fetch - processPackages [isidore]: New version: [0.1.4] Old Version: [0.1.3]
+[2023-05-24 19:22:32] INFO root fetch - processPackages [pulumi-vsphere]: Downloading https://files.pythonhosted.org/packages/17/ce/b8161e836df20f9695d1fe596e8f2221da34c143c1a92b87f7e4cc81a7cc/pulumi_vsphere-4.5.0a1684947541.tar.gz
+[2023-05-24 19:22:32] INFO root fetch - processPackages [pulumi-vsphere]: executing diffoscope
+[2023-05-24 19:22:32] INFO root fetch - processPackages [pulumi-vsphere]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_vsphere-4.5.0a1684391558.tar.gz tmp/pulumi_vsphere-4.5.0a1684947541.tar.gz --markdown 20230524/p/pulumi-vsphere/4.5.0a1684391558-4.5.0a1684947541/diff.md --exclude *.pyd
+[2023-05-24 19:22:32] INFO root fetch - processPackages [isidore]: Downloading https://files.pythonhosted.org/packages/64/e1/f6fca155ee6f4ceed979ae82e71df75369017b4d6af125c5bd83c1aca189/isidore-0.1.4.tar.gz
+[2023-05-24 19:22:32] INFO root fetch - processPackages [isidore]: executing diffoscope
+[2023-05-24 19:22:32] INFO root fetch - processPackages [isidore]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/isidore-0.1.3.tar.gz tmp/isidore-0.1.4.tar.gz --markdown 20230524/i/isidore/0.1.3-0.1.4/diff.md --exclude *.pyd
+[2023-05-24 19:22:32] INFO root fetch - processPackages [edc-visit-schedule]: Start processing: edc-dx
+[2023-05-24 19:22:32] INFO root fetch - main [MainThread]: End processing [edc-visit-schedule]: success
+[2023-05-24 19:22:32] INFO root fetch - processPackages [edc-dx]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-24 19:22:32] INFO root fetch - processPackages [edc-model-form]: Start processing: vector-quantize-pytorch
+[2023-05-24 19:22:32] INFO root fetch - main [MainThread]: End processing [edc-model-form]: success
+[2023-05-24 19:22:32] INFO root fetch - processPackages [vector-quantize-pytorch]: New version: [1.5.9] Old Version: [1.5.8]
+[2023-05-24 19:22:33] INFO root fetch - processPackages [edc-dx]: Downloading https://files.pythonhosted.org/packages/68/c0/edc698e2d32e05844560fb0783b9a30821ac88a0a52c9585e771c70f08a3/edc-dx-0.1.8.tar.gz
+[2023-05-24 19:22:33] INFO root fetch - processPackages [edc-lab-results]: Start processing: remla12-lib-release
+[2023-05-24 19:22:33] INFO root fetch - main [MainThread]: End processing [edc-lab-results]: success
+[2023-05-24 19:22:33] INFO root fetch - processPackages [remla12-lib-release]: New version: [0.1.3] Old Version: [0.1.2]
+[2023-05-24 19:22:33] INFO root fetch - processPackages [flordb]: Start processing: getm
+[2023-05-24 19:22:33] INFO root fetch - main [MainThread]: End processing [flordb]: success
+[2023-05-24 19:22:33] INFO root fetch - processPackages [getm]: New version: [0.0.4] Old Version: [0.0.3]
+[2023-05-24 19:22:33] INFO root fetch - processPackages [vector-quantize-pytorch]: Downloading https://files.pythonhosted.org/packages/d7/72/bc07e7ab68385d2cafc695f989a4a025b0e0c847227d146acaca952ca5c1/vector_quantize_pytorch-1.5.9.tar.gz
+[2023-05-24 19:22:33] INFO root fetch - processPackages [edc-label]: Start processing: stlock
+[2023-05-24 19:22:33] INFO root fetch - main [MainThread]: End processing [edc-label]: success
+[2023-05-24 19:22:33] INFO root fetch - processPackages [remla12-lib-release]: executing diffoscope
+[2023-05-24 19:22:33] INFO root fetch - processPackages [remla12-lib-release]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/remla12_lib_release-0.1.2.tar.gz tmp/remla12_lib_release-0.1.3.tar.gz --markdown 20230524/r/remla12-lib-release/0.1.2-0.1.3/diff.md --exclude *.pyd
+[2023-05-24 19:22:33] INFO root fetch - processPackages [stlock]: New version: [0.0.7.5] Old Version: [0.0.7.4]
+[2023-05-24 19:22:33] INFO root fetch - processPackages [vector-quantize-pytorch]: executing diffoscope
+[2023-05-24 19:22:33] INFO root fetch - processPackages [vector-quantize-pytorch]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vector_quantize_pytorch-1.5.8.tar.gz tmp/vector_quantize_pytorch-1.5.9.tar.gz --markdown 20230524/v/vector-quantize-pytorch/1.5.8-1.5.9/diff.md --exclude *.pyd
+[2023-05-24 19:22:33] INFO root fetch - processPackages [edc-dx]: Downloading https://files.pythonhosted.org/packages/a0/87/5a42918cb811af1101d0b9aea1d7e5a950e2e2a4686a60ffa5aa4afba98a/edc-dx-0.1.9.tar.gz
+[2023-05-24 19:22:33] INFO root fetch - processPackages [i18nx]: Start processing: spanishconjugator
+[2023-05-24 19:22:33] INFO root fetch - main [MainThread]: End processing [i18nx]: success
+[2023-05-24 19:22:33] INFO root fetch - processPackages [getm]: Downloading https://files.pythonhosted.org/packages/5c/39/54dba0905d3dc14f3bdc79f2c829122d1747422e672197fb7ef3c6f8f11f/getm-0.0.3.tar.gz
+[2023-05-24 19:22:33] INFO root fetch - processPackages [stlock]: executing diffoscope
+[2023-05-24 19:22:33] INFO root fetch - processPackages [stlock]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/stlock-0.0.7.4.tar.gz tmp/stlock-0.0.7.5.tar.gz --markdown 20230524/s/stlock/0.0.7.4-0.0.7.5/diff.md --exclude *.pyd
+[2023-05-24 19:22:33] INFO root fetch - processPackages [mythic-container]: Start processing: ts-python-client
+[2023-05-24 19:22:33] INFO root fetch - main [MainThread]: End processing [mythic-container]: success
+[2023-05-24 19:22:33] INFO root fetch - processPackages [spanishconjugator]: New version: [2.3.999] Old Version: [2.3.998]
+[2023-05-24 19:22:33] INFO root fetch - processPackages [ts-python-client]: New version: [2.0.4] Old Version: [2.0.3]
+[2023-05-24 19:22:33] INFO root fetch - processPackages [spanishconjugator]: executing diffoscope
+[2023-05-24 19:22:33] INFO root fetch - processPackages [spanishconjugator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spanishconjugator-2.3.998.tar.gz tmp/spanishconjugator-2.3.999.tar.gz --markdown 20230524/s/spanishconjugator/2.3.998-2.3.999/diff.md --exclude *.pyd
+[2023-05-24 19:22:33] INFO root fetch - processPackages [ts-python-client]: Downloading https://files.pythonhosted.org/packages/ef/71/61fac775166100ae9b789c3d6e09db0cb1f62306557a70f8f825836de6fc/ts-python-client-2.0.3.tar.gz
+[2023-05-24 19:22:33] INFO root fetch - processPackages [getm]: Downloading https://files.pythonhosted.org/packages/cc/db/e6dad0bff39cbe315d43d18d2ac46f29784823bb5a0829f14991e2975129/getm-0.0.4.tar.gz
+[2023-05-24 19:22:33] INFO root fetch - processPackages [edc-dx]: executing diffoscope
+[2023-05-24 19:22:33] INFO root fetch - processPackages [edc-dx]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/edc-dx-0.1.8.tar.gz tmp/edc-dx-0.1.9.tar.gz --markdown 20230524/e/edc-dx/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-24 19:22:33] INFO root fetch - processPackages [getm]: executing diffoscope
+[2023-05-24 19:22:33] INFO root fetch - processPackages [getm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/getm-0.0.3.tar.gz tmp/getm-0.0.4.tar.gz --markdown 20230524/g/getm/0.0.3-0.0.4/diff.md --exclude *.pyd
+[2023-05-24 19:22:33] INFO root fetch - processPackages [ts-python-client]: Downloading https://files.pythonhosted.org/packages/53/eb/708f68e87089785074b76e0440a5db2f8d77481dd279c75b67320bf45b5d/ts-python-client-2.0.4.tar.gz
+[2023-05-24 19:22:34] INFO root fetch - processPackages [ts-python-client]: executing diffoscope
+[2023-05-24 19:22:34] INFO root fetch - processPackages [ts-python-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ts-python-client-2.0.3.tar.gz tmp/ts-python-client-2.0.4.tar.gz --markdown 20230524/t/ts-python-client/2.0.3-2.0.4/diff.md --exclude *.pyd
+[2023-05-24 19:22:34] INFO root fetch - processPackages [isidore]: Start processing: spanishconjugator
+[2023-05-24 19:22:34] INFO root fetch - main [MainThread]: End processing [isidore]: success
+[2023-05-24 19:22:34] INFO root fetch - processPackages [spanishconjugator]: New version: [2.3.999] Old Version: [2.3.998]
+[2023-05-24 19:22:34] INFO root fetch - processPackages [spanishconjugator]: executing diffoscope
+[2023-05-24 19:22:34] INFO root fetch - processPackages [spanishconjugator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spanishconjugator-2.3.998.tar.gz tmp/spanishconjugator-2.3.999.tar.gz --markdown 20230524/s/spanishconjugator/2.3.998-2.3.999/diff.md --exclude *.pyd
+[2023-05-24 19:22:34] INFO root fetch - processPackages [remla12-lib-release]: Start processing: edc-dx
+[2023-05-24 19:22:34] INFO root fetch - main [MainThread]: End processing [remla12-lib-release]: success
+[2023-05-24 19:22:34] INFO root fetch - processPackages [edc-dx]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-24 19:22:34] INFO root fetch - processPackages [edc-dx]: executing diffoscope
+[2023-05-24 19:22:34] INFO root fetch - processPackages [edc-dx]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/edc-dx-0.1.8.tar.gz tmp/edc-dx-0.1.9.tar.gz --markdown 20230524/e/edc-dx/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-24 19:22:34] INFO root fetch - main [MainThread]: End processing [stlock]: success
+[2023-05-24 19:22:34] INFO root fetch - main [MainThread]: End processing [vector-quantize-pytorch]: success
+[2023-05-24 19:22:35] INFO root fetch - main [MainThread]: End processing [spanishconjugator]: success
+[2023-05-24 19:22:35] INFO root fetch - main [MainThread]: End processing [pulumi-vsphere]: success
+[2023-05-24 19:22:35] INFO root fetch - main [MainThread]: End processing [ts-python-client]: success
+[2023-05-24 19:22:35] INFO root fetch - main [MainThread]: End processing [getm]: success
+[2023-05-24 19:22:36] INFO root fetch - main [MainThread]: End processing [edc-dx]: success
+[2023-05-24 19:22:36] INFO root fetch - main [MainThread]: End processing [edc-dx]: success
+[2023-05-24 19:22:36] INFO root fetch - main [MainThread]: End processing [spanishconjugator]: success
+[2023-05-24 19:22:36] INFO root fetch - main [MainThread]: End processing [Simba-UW-tf-dev]: success
+[2023-05-24 19:22:36] INFO root fetch - main [MainThread]: Store serial: [18233495]
