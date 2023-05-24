@@ -6225,3 +6225,59 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-05-24 04:56:24] INFO root fetch - main [MainThread]: End processing [ipylib]: success
 [2023-05-24 04:56:24] INFO root fetch - main [MainThread]: End processing [aliyun-python-sdk-gpdb]: success
 [2023-05-24 04:56:24] INFO root fetch - main [MainThread]: Store serial: [18224246]
+[2023-05-24 05:01:28] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18224246]
+[2023-05-24 05:01:33] INFO root fetch - main [MainThread]: Found 11 changed packages
+[2023-05-24 05:01:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: idf-build-apps
+[2023-05-24 05:01:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: AstroSubtractor
+[2023-05-24 05:01:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: custardpy
+[2023-05-24 05:01:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: vectorbt
+[2023-05-24 05:01:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: tiledb
+[2023-05-24 05:01:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: OpenCage-local
+[2023-05-24 05:01:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: motc
+[2023-05-24 05:01:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: pip-run
+[2023-05-24 05:01:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: sonos-websocket
+[2023-05-24 05:01:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: location-local
+[2023-05-24 05:01:33] INFO root fetch - processPackages [custardpy]: New version: [0.5.0] Old Version: [0.4.5]
+[2023-05-24 05:01:33] INFO root fetch - processPackages [idf-build-apps]: New version: [1.0.0.dev1] Old Version: [1.0.0.dev0]
+[2023-05-24 05:01:33] INFO root fetch - processPackages [pip-run]: New version: [9.5.0] Old Version: [9.4.0]
+[2023-05-24 05:01:33] WARNING root fetch - processPackages [AstroSubtractor]: Skipping, unable to determine old version
+[2023-05-24 05:01:33] INFO root fetch - processPackages [AstroSubtractor]: Start processing: AkvoDjangoFormGateway
+[2023-05-24 05:01:33] INFO root fetch - main [MainThread]: End processing [AstroSubtractor] error
+[2023-05-24 05:01:33] INFO root fetch - processPackages [vectorbt]: New version: [0.25.3] Old Version: [0.25.2]
+[2023-05-24 05:01:33] WARNING root fetch - processPackages [OpenCage-local]: Skipping, unable to determine old version
+[2023-05-24 05:01:33] INFO root fetch - main [MainThread]: End processing [OpenCage-local] error
+[2023-05-24 05:01:33] INFO root fetch - processPackages [pip-run]: executing diffoscope
+[2023-05-24 05:01:33] WARNING root fetch - processPackages [motc]: Skipping, unable to determine old version
+[2023-05-24 05:01:33] INFO root fetch - processPackages [pip-run]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pip-run-9.4.0.tar.gz tmp/pip-run-9.5.0.tar.gz --markdown 20230524/p/pip-run/9.4.0-9.5.0/diff.md --exclude *.pyd
+[2023-05-24 05:01:33] INFO root fetch - main [MainThread]: End processing [motc] error
+[2023-05-24 05:01:33] WARNING root fetch - processPackages [location-local]: Skipping, unable to determine old version
+[2023-05-24 05:01:33] INFO root fetch - main [MainThread]: End processing [location-local] error
+[2023-05-24 05:01:33] INFO root fetch - processPackages [sonos-websocket]: New version: [0.1.2] Old Version: [0.1.1]
+[2023-05-24 05:01:34] INFO root fetch - processPackages [tiledb]: New version: [0.9.5] Old Version: [0.9.4]
+[2023-05-24 05:01:34] INFO root fetch - processPackages [AkvoDjangoFormGateway]: New version: [0.0.7] Old Version: [0.0.6]
+[2023-05-24 05:01:34] INFO root fetch - processPackages [idf-build-apps]: executing diffoscope
+[2023-05-24 05:01:34] INFO root fetch - processPackages [idf-build-apps]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/idf_build_apps-1.0.0.dev0.tar.gz tmp/idf_build_apps-1.0.0.dev1.tar.gz --markdown 20230524/i/idf-build-apps/1.0.0.dev0-1.0.0.dev1/diff.md --exclude *.pyd
+[2023-05-24 05:01:34] INFO root fetch - processPackages [AkvoDjangoFormGateway]: executing diffoscope
+[2023-05-24 05:01:34] INFO root fetch - processPackages [AkvoDjangoFormGateway]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/AkvoDjangoFormGateway-0.0.6.tar.gz tmp/AkvoDjangoFormGateway-0.0.7.tar.gz --markdown 20230524/A/AkvoDjangoFormGateway/0.0.6-0.0.7/diff.md --exclude *.pyd
+[2023-05-24 05:01:34] INFO root fetch - processPackages [sonos-websocket]: Downloading https://files.pythonhosted.org/packages/54/c6/187e978b7073180c1756fde4c5460e57fda4f7a6c7012994b2ba785a4d83/sonos-websocket-0.1.1.tar.gz
+[2023-05-24 05:01:34] INFO root fetch - processPackages [tiledb]: Downloading https://files.pythonhosted.org/packages/a6/bb/0b224f95554a746b8b636f3022ddc5a851deefae6fd90452b6ab95bd9de1/tiledb-0.9.4.tar.gz
+[2023-05-24 05:01:34] INFO root fetch - processPackages [custardpy]: Downloading https://files.pythonhosted.org/packages/6c/d3/9827107f1678477a16d576fdf56c8d92d54055b2445ce271c4121394ef50/custardpy-0.5.0-py3-none-any.whl
+[2023-05-24 05:01:34] INFO root fetch - processPackages [vectorbt]: Downloading https://files.pythonhosted.org/packages/0c/b9/d1d2591a3fc33d9324e979948c9453cc657d5665e2bace0091a1534255ca/vectorbt-0.25.3.tar.gz
+[2023-05-24 05:01:34] INFO root fetch - processPackages [vectorbt]: executing diffoscope
+[2023-05-24 05:01:34] INFO root fetch - processPackages [vectorbt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vectorbt-0.25.2.tar.gz tmp/vectorbt-0.25.3.tar.gz --markdown 20230524/v/vectorbt/0.25.2-0.25.3/diff.md --exclude *.pyd
+[2023-05-24 05:01:34] INFO root fetch - processPackages [custardpy]: executing diffoscope
+[2023-05-24 05:01:34] INFO root fetch - processPackages [custardpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/custardpy-0.4.5-py3-none-any.whl.zip tmp/custardpy-0.5.0-py3-none-any.whl.zip --markdown 20230524/c/custardpy/0.4.5-0.5.0/diff.md --exclude *.pyd
+[2023-05-24 05:01:34] INFO root fetch - processPackages [sonos-websocket]: Downloading https://files.pythonhosted.org/packages/de/8a/1555775380f8e38eba84f1d38761e5847c5e36a2d12e4c59e0303947fba4/sonos-websocket-0.1.2.tar.gz
+[2023-05-24 05:01:34] INFO root fetch - processPackages [tiledb]: Downloading https://files.pythonhosted.org/packages/f8/e1/999448b6ef9ee22f6171c37306b83f59ccf699de7fee4ed271b7e06a796c/tiledb-0.9.5.tar.gz
+[2023-05-24 05:01:34] INFO root fetch - processPackages [sonos-websocket]: executing diffoscope
+[2023-05-24 05:01:34] INFO root fetch - processPackages [sonos-websocket]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sonos-websocket-0.1.1.tar.gz tmp/sonos-websocket-0.1.2.tar.gz --markdown 20230524/s/sonos-websocket/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2023-05-24 05:01:34] INFO root fetch - processPackages [tiledb]: executing diffoscope
+[2023-05-24 05:01:34] INFO root fetch - processPackages [tiledb]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tiledb-0.9.4.tar.gz tmp/tiledb-0.9.5.tar.gz --markdown 20230524/t/tiledb/0.9.4-0.9.5/diff.md --exclude *.pyd
+[2023-05-24 05:01:35] INFO root fetch - main [MainThread]: End processing [AkvoDjangoFormGateway]: success
+[2023-05-24 05:01:35] INFO root fetch - main [MainThread]: End processing [idf-build-apps]: success
+[2023-05-24 05:01:35] INFO root fetch - main [MainThread]: End processing [sonos-websocket]: success
+[2023-05-24 05:01:35] INFO root fetch - main [MainThread]: End processing [custardpy]: success
+[2023-05-24 05:01:35] INFO root fetch - main [MainThread]: End processing [pip-run]: success
+[2023-05-24 05:01:36] INFO root fetch - main [MainThread]: End processing [vectorbt]: success
+[2023-05-24 05:01:38] INFO root fetch - main [MainThread]: End processing [tiledb]: success
+[2023-05-24 05:01:38] INFO root fetch - main [MainThread]: Store serial: [18224301]
