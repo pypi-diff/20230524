@@ -19478,3 +19478,158 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd4 in position 72: invalid
 [2023-05-24 18:12:31] INFO root fetch - main [MainThread]: End processing [ask-smapi-model]: success
 [2023-05-24 18:12:48] INFO root fetch - main [MainThread]: End processing [tvb-framework]: success
 [2023-05-24 18:12:48] INFO root fetch - main [MainThread]: Store serial: [18232524]
+[2023-05-24 18:17:53] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18232524]
+[2023-05-24 18:17:58] INFO root fetch - main [MainThread]: Found 28 changed packages
+[2023-05-24 18:17:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: nista-library
+[2023-05-24 18:17:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: amazon-braket-pennylane-plugin
+[2023-05-24 18:17:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: rocm-docs-core
+[2023-05-24 18:17:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: yarok
+[2023-05-24 18:17:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: musicpy
+[2023-05-24 18:17:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: evergreen-py
+[2023-05-24 18:17:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: contenda-api-client
+[2023-05-24 18:17:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: pxgrid-api
+[2023-05-24 18:17:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: fastapi-ecommerce-core
+[2023-05-24 18:17:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: pepperize.cdk-vpc
+[2023-05-24 18:17:58] INFO root fetch - processPackages [rocm-docs-core]: New version: [0.9.2] Old Version: [0.9.1]
+[2023-05-24 18:17:58] INFO root fetch - processPackages [yarok]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-24 18:17:58] INFO root fetch - processPackages [nista-library]: New version: [4.0.4] Old Version: [4.0.3]
+[2023-05-24 18:17:58] INFO root fetch - processPackages [amazon-braket-pennylane-plugin]: New version: [1.9.0] Old Version: [1.8.0]
+[2023-05-24 18:17:58] WARNING root fetch - processPackages [musicpy]: Skipping, unable to determine old version
+[2023-05-24 18:17:58] INFO root fetch - processPackages [musicpy]: Start processing: OctoPrint-PiSupport
+[2023-05-24 18:17:58] INFO root fetch - main [MainThread]: End processing [musicpy] error
+[2023-05-24 18:17:58] INFO root fetch - processPackages [evergreen-py]: New version: [3.6.4] Old Version: [3.6.3]
+[2023-05-24 18:17:58] INFO root fetch - processPackages [contenda-api-client]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-05-24 18:17:58] INFO root fetch - processPackages [pxgrid-api]: New version: [0.2.4] Old Version: [0.2.3]
+[2023-05-24 18:17:58] WARNING root fetch - processPackages [fastapi-ecommerce-core]: Skipping, unable to determine old version
+[2023-05-24 18:17:58] INFO root fetch - processPackages [fastapi-ecommerce-core]: Start processing: OSF-EIMTC
+[2023-05-24 18:17:58] INFO root fetch - main [MainThread]: End processing [fastapi-ecommerce-core] error
+[2023-05-24 18:17:58] INFO root fetch - processPackages [pepperize.cdk-vpc]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-05-24 18:17:58] INFO root fetch - processPackages [OctoPrint-PiSupport]: New version: [2023.5.24] Old Version: [2022.6.13]
+[2023-05-24 18:17:58] INFO root fetch - processPackages [OSF-EIMTC]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-24 18:17:58] INFO root fetch - processPackages [OSF-EIMTC]: Downloading https://files.pythonhosted.org/packages/07/47/16d078e1107ddbfc1c5606fa448180e3bd7923ef32d5aad2a9a3e97e0214/OSF_EIMTC-0.1.8.tar.gz
+[2023-05-24 18:17:58] INFO root fetch - processPackages [pepperize.cdk-vpc]: executing diffoscope
+[2023-05-24 18:17:58] INFO root fetch - processPackages [pepperize.cdk-vpc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pepperize.cdk-vpc-0.0.98.tar.gz tmp/pepperize.cdk-vpc-0.0.99.tar.gz --markdown 20230524/p/pepperize.cdk-vpc/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-05-24 18:17:58] INFO root fetch - processPackages [pxgrid-api]: Downloading https://files.pythonhosted.org/packages/9a/e9/0d54848cd6d3fcf730ca9296718e9b09ab1d46a965583bc3551062662fb8/pxgrid-api-0.2.3.tar.gz
+[2023-05-24 18:17:58] INFO root fetch - processPackages [contenda-api-client]: Downloading https://files.pythonhosted.org/packages/d8/66/92d6addda1f6a8a699203a6f17c1f8faac895977451fff3c03b2a9a0e8cc/contenda-api-client-0.1.0.tar.gz
+[2023-05-24 18:17:58] INFO root fetch - processPackages [OctoPrint-PiSupport]: Downloading https://files.pythonhosted.org/packages/56/e1/24d7dad04870dd0aaf0b134abec7d478ded6922090e6639aebcf5e2e87bb/OctoPrint-PiSupport-2022.6.13.tar.gz
+[2023-05-24 18:17:58] WARNING root fetch - processPackages [OSF-EIMTC]: Skipping package: exceeds size limit 13771117>=10485760
+[2023-05-24 18:17:58] INFO root fetch - processPackages [OSF-EIMTC]: Start processing: gardener-cicd-base
+[2023-05-24 18:17:58] INFO root fetch - main [MainThread]: End processing [OSF-EIMTC] error
+[2023-05-24 18:17:58] INFO root fetch - processPackages [yarok]: executing diffoscope
+[2023-05-24 18:17:58] INFO root fetch - processPackages [yarok]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/yarok-0.0.8.tar.gz tmp/yarok-0.0.9.tar.gz --markdown 20230524/y/yarok/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-24 18:17:58] INFO root fetch - processPackages [nista-library]: Downloading https://files.pythonhosted.org/packages/59/fc/1c59c12a9acb8a41eaed51993768d6906901bc90108d7b1997dac15534d3/nista_library-4.0.4.tar.gz
+[2023-05-24 18:17:58] INFO root fetch - processPackages [gardener-cicd-base]: New version: [1.2062.0] Old Version: [1.2061.0]
+[2023-05-24 18:17:58] INFO root fetch - processPackages [rocm-docs-core]: executing diffoscope
+[2023-05-24 18:17:58] INFO root fetch - processPackages [rocm-docs-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rocm-docs-core-0.9.1.tar.gz tmp/rocm-docs-core-0.9.2.tar.gz --markdown 20230524/r/rocm-docs-core/0.9.1-0.9.2/diff.md --exclude *.pyd
+[2023-05-24 18:17:58] INFO root fetch - processPackages [evergreen-py]: Downloading https://files.pythonhosted.org/packages/71/d3/dde9fa17961c6c3d08c207255cb3189f08beb9012db59b6d37eca2efaa21/evergreen_py-3.6.4.tar.gz
+[2023-05-24 18:17:58] INFO root fetch - processPackages [nista-library]: executing diffoscope
+[2023-05-24 18:17:58] INFO root fetch - processPackages [nista-library]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nista_library-4.0.3.tar.gz tmp/nista_library-4.0.4.tar.gz --markdown 20230524/n/nista-library/4.0.3-4.0.4/diff.md --exclude *.pyd
+[2023-05-24 18:17:58] INFO root fetch - processPackages [contenda-api-client]: Downloading https://files.pythonhosted.org/packages/88/ce/e9a8502d6b6c711a39bab53b02f62336d74ae7b46d9c5ef33b653a88cddc/contenda-api-client-0.1.1.tar.gz
+[2023-05-24 18:17:58] INFO root fetch - processPackages [pxgrid-api]: Downloading https://files.pythonhosted.org/packages/c7/95/50f5f90283f6fea1d5257b9b5391f61d09feba9349f4d96abdb1a687592f/pxgrid-api-0.2.4.tar.gz
+[2023-05-24 18:17:58] INFO root fetch - processPackages [amazon-braket-pennylane-plugin]: executing diffoscope
+[2023-05-24 18:17:58] INFO root fetch - processPackages [amazon-braket-pennylane-plugin]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/amazon-braket-pennylane-plugin-1.8.0.tar.gz tmp/amazon-braket-pennylane-plugin-1.9.0.tar.gz --markdown 20230524/a/amazon-braket-pennylane-plugin/1.8.0-1.9.0/diff.md --exclude *.pyd
+[2023-05-24 18:17:59] INFO root fetch - processPackages [evergreen-py]: executing diffoscope
+[2023-05-24 18:17:59] INFO root fetch - processPackages [evergreen-py]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/evergreen_py-3.6.3.tar.gz tmp/evergreen_py-3.6.4.tar.gz --markdown 20230524/e/evergreen-py/3.6.3-3.6.4/diff.md --exclude *.pyd
+[2023-05-24 18:17:59] INFO root fetch - processPackages [gardener-cicd-base]: Downloading https://files.pythonhosted.org/packages/68/a5/f0f4180a94516ca9be1345cf0ae6ff3aba20695023214caf74053eced49b/gardener-cicd-base-1.2062.0.tar.gz
+[2023-05-24 18:17:59] INFO root fetch - processPackages [contenda-api-client]: executing diffoscope
+[2023-05-24 18:17:59] INFO root fetch - processPackages [contenda-api-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/contenda-api-client-0.1.0.tar.gz tmp/contenda-api-client-0.1.1.tar.gz --markdown 20230524/c/contenda-api-client/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-05-24 18:17:59] INFO root fetch - processPackages [pxgrid-api]: executing diffoscope
+[2023-05-24 18:17:59] INFO root fetch - processPackages [pxgrid-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pxgrid-api-0.2.3.tar.gz tmp/pxgrid-api-0.2.4.tar.gz --markdown 20230524/p/pxgrid-api/0.2.3-0.2.4/diff.md --exclude *.pyd
+[2023-05-24 18:17:59] INFO root fetch - processPackages [OctoPrint-PiSupport]: Downloading https://files.pythonhosted.org/packages/3a/cc/c0caa3ee0b7141c8381d2b56b1a92df235e780b98fe62f4f8041ac70a631/OctoPrint-PiSupport-2023.5.24.tar.gz
+[2023-05-24 18:17:59] INFO root fetch - processPackages [gardener-cicd-base]: executing diffoscope
+[2023-05-24 18:17:59] INFO root fetch - processPackages [gardener-cicd-base]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gardener-cicd-base-1.2061.0.tar.gz tmp/gardener-cicd-base-1.2062.0.tar.gz --markdown 20230524/g/gardener-cicd-base/1.2061.0-1.2062.0/diff.md --exclude *.pyd
+[2023-05-24 18:17:59] INFO root fetch - processPackages [OctoPrint-PiSupport]: executing diffoscope
+[2023-05-24 18:17:59] INFO root fetch - processPackages [OctoPrint-PiSupport]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/OctoPrint-PiSupport-2022.6.13.tar.gz tmp/OctoPrint-PiSupport-2023.5.24.tar.gz --markdown 20230524/O/OctoPrint-PiSupport/2022.6.13-2023.5.24/diff.md --exclude *.pyd
+[2023-05-24 18:18:00] INFO root fetch - processPackages [pepperize.cdk-vpc]: Start processing: pyiir
+[2023-05-24 18:18:00] INFO root fetch - main [MainThread]: End processing [pepperize.cdk-vpc]: success
+[2023-05-24 18:18:00] INFO root fetch - processPackages [pyiir]: New version: [0.0.6] Old Version: [0.0.5]
+[2023-05-24 18:18:00] INFO root fetch - processPackages [pyiir]: Downloading https://files.pythonhosted.org/packages/c2/58/56cdc1a07bbe9d42c59cba444364156f4e3b859cc3e034c28c4e5905a255/pyiir-0.0.6.tar.gz
+[2023-05-24 18:18:00] INFO root fetch - processPackages [pyiir]: executing diffoscope
+[2023-05-24 18:18:00] INFO root fetch - processPackages [pyiir]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyiir-0.0.5.tar.gz tmp/pyiir-0.0.6.tar.gz --markdown 20230524/p/pyiir/0.0.5-0.0.6/diff.md --exclude *.pyd
+[2023-05-24 18:18:00] INFO root fetch - processPackages [amazon-braket-pennylane-plugin]: Start processing: gardener-cicd-cli
+[2023-05-24 18:18:00] INFO root fetch - main [MainThread]: End processing [amazon-braket-pennylane-plugin]: success
+[2023-05-24 18:18:00] INFO root fetch - processPackages [gardener-cicd-cli]: New version: [1.2062.0] Old Version: [1.2061.0]
+[2023-05-24 18:18:00] INFO root fetch - processPackages [gardener-cicd-cli]: Downloading https://files.pythonhosted.org/packages/6f/ff/172ca95697bfdd20f0afddd2ece005aee1aa52bff619f43bb1e8b12761e0/gardener-cicd-cli-1.2062.0.tar.gz
+[2023-05-24 18:18:00] INFO root fetch - processPackages [rocm-docs-core]: Start processing: gardener-cicd-dso
+[2023-05-24 18:18:00] INFO root fetch - main [MainThread]: End processing [rocm-docs-core]: success
+[2023-05-24 18:18:00] INFO root fetch - processPackages [gardener-cicd-dso]: New version: [1.2062.0] Old Version: [1.2061.0]
+[2023-05-24 18:18:01] INFO root fetch - processPackages [gardener-cicd-cli]: executing diffoscope
+[2023-05-24 18:18:01] INFO root fetch - processPackages [gardener-cicd-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gardener-cicd-cli-1.2061.0.tar.gz tmp/gardener-cicd-cli-1.2062.0.tar.gz --markdown 20230524/g/gardener-cicd-cli/1.2061.0-1.2062.0/diff.md --exclude *.pyd
+[2023-05-24 18:18:01] INFO root fetch - processPackages [OctoPrint-PiSupport]: Start processing: gardener-cicd-libs
+[2023-05-24 18:18:01] INFO root fetch - main [MainThread]: End processing [OctoPrint-PiSupport]: success
+[2023-05-24 18:18:01] INFO root fetch - processPackages [gardener-cicd-dso]: Downloading https://files.pythonhosted.org/packages/ec/82/e7ebda0115aebf80c17504ae8b90081f91e0e4d66e71f0c8fe176d2a1319/gardener-cicd-dso-1.2062.0.tar.gz
+[2023-05-24 18:18:01] INFO root fetch - processPackages [gardener-cicd-libs]: New version: [1.2062.0] Old Version: [1.2061.0]
+[2023-05-24 18:18:01] INFO root fetch - processPackages [pxgrid-api]: Start processing: gardener-cicd-whd
+[2023-05-24 18:18:01] INFO root fetch - main [MainThread]: End processing [pxgrid-api]: success
+[2023-05-24 18:18:01] INFO root fetch - processPackages [gardener-cicd-dso]: executing diffoscope
+[2023-05-24 18:18:01] INFO root fetch - processPackages [gardener-cicd-dso]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gardener-cicd-dso-1.2061.0.tar.gz tmp/gardener-cicd-dso-1.2062.0.tar.gz --markdown 20230524/g/gardener-cicd-dso/1.2061.0-1.2062.0/diff.md --exclude *.pyd
+[2023-05-24 18:18:01] INFO root fetch - processPackages [gardener-cicd-whd]: New version: [1.2062.0] Old Version: [1.2061.0]
+[2023-05-24 18:18:01] INFO root fetch - processPackages [pyiir]: Start processing: gardener-oci
+[2023-05-24 18:18:01] INFO root fetch - main [MainThread]: End processing [pyiir]: success
+[2023-05-24 18:18:01] INFO root fetch - processPackages [gardener-oci]: New version: [1.999.0] Old Version: [1.998.0]
+[2023-05-24 18:18:01] INFO root fetch - processPackages [gardener-cicd-libs]: Downloading https://files.pythonhosted.org/packages/d8/66/d8ec09bafc62093a65b51e8c35a7f198c7b2791a3ba70c7b621d3c612b0a/gardener-cicd-libs-1.2062.0.tar.gz
+[2023-05-24 18:18:01] INFO root fetch - processPackages [gardener-oci]: executing diffoscope
+[2023-05-24 18:18:01] INFO root fetch - processPackages [gardener-oci]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gardener-oci-1.998.0.tar.gz tmp/gardener-oci-1.999.0.tar.gz --markdown 20230524/g/gardener-oci/1.998.0-1.999.0/diff.md --exclude *.pyd
+[2023-05-24 18:18:01] INFO root fetch - processPackages [gardener-cicd-whd]: Downloading https://files.pythonhosted.org/packages/dd/0d/b1c9853f04b37519bf5b0db43b5c38754a0a1d26733d51a43d08b4ff45af/gardener-cicd-whd-1.2062.0.tar.gz
+[2023-05-24 18:18:01] INFO root fetch - processPackages [gardener-cicd-libs]: executing diffoscope
+[2023-05-24 18:18:01] INFO root fetch - processPackages [gardener-cicd-libs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gardener-cicd-libs-1.2061.0.tar.gz tmp/gardener-cicd-libs-1.2062.0.tar.gz --markdown 20230524/g/gardener-cicd-libs/1.2061.0-1.2062.0/diff.md --exclude *.pyd
+[2023-05-24 18:18:01] INFO root fetch - processPackages [gardener-cicd-whd]: executing diffoscope
+[2023-05-24 18:18:01] INFO root fetch - processPackages [gardener-cicd-whd]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gardener-cicd-whd-1.2061.0.tar.gz tmp/gardener-cicd-whd-1.2062.0.tar.gz --markdown 20230524/g/gardener-cicd-whd/1.2061.0-1.2062.0/diff.md --exclude *.pyd
+[2023-05-24 18:18:01] INFO root fetch - processPackages [evergreen-py]: Start processing: shaperone
+[2023-05-24 18:18:01] INFO root fetch - main [MainThread]: End processing [evergreen-py]: success
+[2023-05-24 18:18:01] INFO root fetch - processPackages [shaperone]: New version: [0.41.5] Old Version: [0.41.4]
+[2023-05-24 18:18:02] INFO root fetch - processPackages [contenda-api-client]: Start processing: FlaskSuper
+[2023-05-24 18:18:02] INFO root fetch - main [MainThread]: End processing [contenda-api-client]: success
+[2023-05-24 18:18:02] INFO root fetch - processPackages [shaperone]: Downloading https://files.pythonhosted.org/packages/15/0c/3e04447a07cf03f21d8f7c3e00eab41f59daf3a7c5ab3b33eb091a252f64/shaperone-0.41.5.tar.gz
+[2023-05-24 18:18:02] WARNING root fetch - processPackages [FlaskSuper]: Skipping, unable to determine old version
+[2023-05-24 18:18:02] INFO root fetch - processPackages [FlaskSuper]: Start processing: stefutils
+[2023-05-24 18:18:02] INFO root fetch - main [MainThread]: End processing [FlaskSuper] error
+[2023-05-24 18:18:02] INFO root fetch - processPackages [stefutils]: New version: [0.9.0] Old Version: [0.8.2]
+[2023-05-24 18:18:02] INFO root fetch - processPackages [gardener-cicd-cli]: Start processing: JBPhD
+[2023-05-24 18:18:02] INFO root fetch - main [MainThread]: End processing [gardener-cicd-cli]: success
+[2023-05-24 18:18:02] INFO root fetch - processPackages [shaperone]: executing diffoscope
+[2023-05-24 18:18:02] INFO root fetch - processPackages [shaperone]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/shaperone-0.41.4.tar.gz tmp/shaperone-0.41.5.tar.gz --markdown 20230524/s/shaperone/0.41.4-0.41.5/diff.md --exclude *.pyd
+[2023-05-24 18:18:02] INFO root fetch - processPackages [JBPhD]: New version: [2.2.1] Old Version: [2.1.9]
+[2023-05-24 18:18:02] INFO root fetch - processPackages [yarok]: Start processing: gusty
+[2023-05-24 18:18:02] INFO root fetch - main [MainThread]: End processing [yarok]: success
+[2023-05-24 18:18:02] INFO root fetch - processPackages [stefutils]: executing diffoscope
+[2023-05-24 18:18:02] INFO root fetch - processPackages [stefutils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/stefutils-0.8.2.tar.gz tmp/stefutils-0.9.0.tar.gz --markdown 20230524/s/stefutils/0.8.2-0.9.0/diff.md --exclude *.pyd
+[2023-05-24 18:18:02] INFO root fetch - processPackages [gusty]: New version: [0.9.1] Old Version: [0.9.0]
+[2023-05-24 18:18:02] INFO root fetch - processPackages [gusty]: Downloading https://files.pythonhosted.org/packages/0a/c3/3f48b8204d761905ee6ab472e4918ee3ceca4047846e14a347cc9e20a57d/gusty-0.9.0.tar.gz
+[2023-05-24 18:18:02] INFO root fetch - processPackages [JBPhD]: Downloading https://files.pythonhosted.org/packages/8c/15/43b08d59acecc4ca3fa6ae388814949b5131111cf50bce471584be959007/JBPhD-2.2.1.tar.gz
+[2023-05-24 18:18:02] INFO root fetch - processPackages [gardener-cicd-base]: Start processing: mapillary-tools
+[2023-05-24 18:18:02] INFO root fetch - main [MainThread]: End processing [gardener-cicd-base]: success
+[2023-05-24 18:18:02] INFO root fetch - processPackages [mapillary-tools]: New version: [0.9.5] Old Version: [0.9.4]
+[2023-05-24 18:18:02] INFO root fetch - processPackages [JBPhD]: executing diffoscope
+[2023-05-24 18:18:02] INFO root fetch - processPackages [JBPhD]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/JBPhD-2.1.9.tar.gz tmp/JBPhD-2.2.1.tar.gz --markdown 20230524/J/JBPhD/2.1.9-2.2.1/diff.md --exclude *.pyd
+[2023-05-24 18:18:02] INFO root fetch - processPackages [gardener-cicd-dso]: Start processing: FlaskSuper
+[2023-05-24 18:18:02] INFO root fetch - main [MainThread]: End processing [gardener-cicd-dso]: success
+[2023-05-24 18:18:02] ERROR root fetch - processPackages [FlaskSuper]: Unable to get metadata: No such project 'FlaskSuper'
+[2023-05-24 18:18:02] INFO root fetch - processPackages [FlaskSuper]: Start processing: aiorobonect
+[2023-05-24 18:18:02] INFO root fetch - main [MainThread]: End processing [FlaskSuper] error
+[2023-05-24 18:18:03] INFO root fetch - processPackages [gardener-oci]: Start processing: weaverbird
+[2023-05-24 18:18:03] INFO root fetch - main [MainThread]: End processing [gardener-oci]: success
+[2023-05-24 18:18:03] INFO root fetch - processPackages [aiorobonect]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-24 18:18:03] INFO root fetch - processPackages [mapillary-tools]: executing diffoscope
+[2023-05-24 18:18:03] INFO root fetch - processPackages [mapillary-tools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mapillary_tools-0.9.4.tar.gz tmp/mapillary_tools-0.9.5.tar.gz --markdown 20230524/m/mapillary-tools/0.9.4-0.9.5/diff.md --exclude *.pyd
+[2023-05-24 18:18:03] INFO root fetch - processPackages [weaverbird]: New version: [0.9.0] Old Version: [0.8.9]
+[2023-05-24 18:18:03] INFO root fetch - processPackages [aiorobonect]: executing diffoscope
+[2023-05-24 18:18:03] INFO root fetch - processPackages [aiorobonect]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aiorobonect-0.1.8.tar.gz tmp/aiorobonect-0.1.9.tar.gz --markdown 20230524/a/aiorobonect/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-24 18:18:03] INFO root fetch - processPackages [gusty]: Downloading https://files.pythonhosted.org/packages/63/08/51cd1690ba070ab783bbc77e5c5dcd9c4365ba8aed312ee046fcd33a32b8/gusty-0.9.1.tar.gz
+[2023-05-24 18:18:03] INFO root fetch - processPackages [gusty]: executing diffoscope
+[2023-05-24 18:18:03] INFO root fetch - processPackages [gusty]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gusty-0.9.0.tar.gz tmp/gusty-0.9.1.tar.gz --markdown 20230524/g/gusty/0.9.0-0.9.1/diff.md --exclude *.pyd
+[2023-05-24 18:18:03] INFO root fetch - processPackages [weaverbird]: Downloading https://files.pythonhosted.org/packages/13/d4/a67794d24aede09e2291acd8527a2687b1bb832998e72426432346f1c29b/weaverbird-0.8.9.tar.gz
+[2023-05-24 18:18:03] INFO root fetch - main [MainThread]: End processing [nista-library]: success
+[2023-05-24 18:18:03] INFO root fetch - main [MainThread]: End processing [gardener-cicd-whd]: success
+[2023-05-24 18:18:04] INFO root fetch - processPackages [weaverbird]: Downloading https://files.pythonhosted.org/packages/7d/6c/1b304fa798ee7d82dbc5bc587a90653cc03647f25d1c498a0020b52a5f78/weaverbird-0.9.0.tar.gz
+[2023-05-24 18:18:04] INFO root fetch - main [MainThread]: End processing [stefutils]: success
+[2023-05-24 18:18:04] INFO root fetch - processPackages [weaverbird]: executing diffoscope
+[2023-05-24 18:18:04] INFO root fetch - processPackages [weaverbird]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/weaverbird-0.8.9.tar.gz tmp/weaverbird-0.9.0.tar.gz --markdown 20230524/w/weaverbird/0.8.9-0.9.0/diff.md --exclude *.pyd
+[2023-05-24 18:18:04] INFO root fetch - main [MainThread]: End processing [shaperone]: success
+[2023-05-24 18:18:04] INFO root fetch - main [MainThread]: End processing [aiorobonect]: success
+[2023-05-24 18:18:04] INFO root fetch - main [MainThread]: End processing [gusty]: success
+[2023-05-24 18:18:04] INFO root fetch - main [MainThread]: End processing [gardener-cicd-libs]: success
+[2023-05-24 18:18:04] INFO root fetch - main [MainThread]: End processing [mapillary-tools]: success
+[2023-05-24 18:18:06] INFO root fetch - main [MainThread]: End processing [weaverbird]: success
+[2023-05-24 18:18:06] INFO root fetch - main [MainThread]: End processing [JBPhD]: success
+[2023-05-24 18:18:06] INFO root fetch - main [MainThread]: Store serial: [18232638]
