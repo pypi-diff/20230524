@@ -9582,3 +9582,63 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-05-24 09:26:44] INFO root fetch - main [MainThread]: End processing [sealights-python-agent]: success
 [2023-05-24 09:27:05] INFO root fetch - main [MainThread]: End processing [apache-airflow-providers-google]: success
 [2023-05-24 09:27:05] INFO root fetch - main [MainThread]: Store serial: [18226265]
+[2023-05-24 09:32:09] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18226265]
+[2023-05-24 09:32:14] INFO root fetch - main [MainThread]: Found 10 changed packages
+[2023-05-24 09:32:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: chromoformer
+[2023-05-24 09:32:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: odri-control-interface
+[2023-05-24 09:32:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: yolo-pyutils
+[2023-05-24 09:32:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pyFipper
+[2023-05-24 09:32:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: curated-transformers
+[2023-05-24 09:32:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: cloudreactor-aws-setup-wizard
+[2023-05-24 09:32:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: c2cwsgiutils
+[2023-05-24 09:32:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: dash-connectivity-viewer
+[2023-05-24 09:32:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: attm
+[2023-05-24 09:32:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: deepset-cloud-sdk
+[2023-05-24 09:32:14] INFO root fetch - processPackages [pyFipper]: New version: [0.1.2.dev1] Old Version: [0.1.0]
+[2023-05-24 09:32:14] INFO root fetch - processPackages [yolo-pyutils]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-24 09:32:14] INFO root fetch - processPackages [curated-transformers]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-05-24 09:32:14] INFO root fetch - processPackages [cloudreactor-aws-setup-wizard]: New version: [1.4.0] Old Version: [1.0.1]
+[2023-05-24 09:32:14] INFO root fetch - processPackages [dash-connectivity-viewer]: New version: [2.0.9] Old Version: [2.0.8]
+[2023-05-24 09:32:14] WARNING root fetch - processPackages [odri-control-interface]: Skipping, unable to determine old version
+[2023-05-24 09:32:14] INFO root fetch - main [MainThread]: End processing [odri-control-interface] error
+[2023-05-24 09:32:14] INFO root fetch - processPackages [attm]: New version: [0.1.0] Old Version: [0.0.9]
+[2023-05-24 09:32:14] INFO root fetch - processPackages [c2cwsgiutils]: New version: [5.2.2] Old Version: [5.2.1]
+[2023-05-24 09:32:14] INFO root fetch - processPackages [chromoformer]: New version: [1.1.2] Old Version: [1.1.1]
+[2023-05-24 09:32:14] INFO root fetch - processPackages [attm]: executing diffoscope
+[2023-05-24 09:32:14] INFO root fetch - processPackages [attm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/attm-0.0.9-py3-none-win_amd64.whl.zip tmp/attm-0.1.0-py3-none-win_amd64.whl.zip --markdown 20230524/a/attm/0.0.9-0.1.0/diff.md --exclude *.pyd
+[2023-05-24 09:32:14] INFO root fetch - processPackages [dash-connectivity-viewer]: executing diffoscope
+[2023-05-24 09:32:14] INFO root fetch - processPackages [dash-connectivity-viewer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dash-connectivity-viewer-2.0.8.tar.gz tmp/dash-connectivity-viewer-2.0.9.tar.gz --markdown 20230524/d/dash-connectivity-viewer/2.0.8-2.0.9/diff.md --exclude *.pyd
+[2023-05-24 09:32:14] INFO root fetch - processPackages [deepset-cloud-sdk]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-24 09:32:15] INFO root fetch - processPackages [pyFipper]: Downloading https://files.pythonhosted.org/packages/55/30/a67363c70da13a5f947ef652a182aafd0665863cb602039f093372c2ff77/pyFipper-0.1.0.tar.gz
+[2023-05-24 09:32:15] INFO root fetch - processPackages [cloudreactor-aws-setup-wizard]: Downloading https://files.pythonhosted.org/packages/e2/4b/f808d1676e1b4e9a030b4f689b17f3d27e3ccb6210738743f8b07051ba3c/cloudreactor_aws_setup_wizard-1.4.0.tar.gz
+[2023-05-24 09:32:15] INFO root fetch - processPackages [curated-transformers]: Downloading https://files.pythonhosted.org/packages/ca/f7/06ae48ca276ec55bfa28e563aa743e035170cd58b1dbfa8d680b3be73489/curated-transformers-0.1.0.tar.gz
+[2023-05-24 09:32:15] INFO root fetch - processPackages [c2cwsgiutils]: Downloading https://files.pythonhosted.org/packages/00/0c/5aed31bbbef2c017b7316cffb0dada856962d2356c49fc8948209f5adb84/c2cwsgiutils-5.2.1.tar.gz
+[2023-05-24 09:32:15] INFO root fetch - processPackages [cloudreactor-aws-setup-wizard]: executing diffoscope
+[2023-05-24 09:32:15] INFO root fetch - processPackages [cloudreactor-aws-setup-wizard]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cloudreactor_aws_setup_wizard-1.0.1.tar.gz tmp/cloudreactor_aws_setup_wizard-1.4.0.tar.gz --markdown 20230524/c/cloudreactor-aws-setup-wizard/1.0.1-1.4.0/diff.md --exclude *.pyd
+[2023-05-24 09:32:15] INFO root fetch - processPackages [chromoformer]: Downloading https://files.pythonhosted.org/packages/a9/cb/cf769059c079572d33da34a385eddae62e2e8aa7c3215df133822ebda800/chromoformer-1.1.1.tar.gz
+[2023-05-24 09:32:15] INFO root fetch - processPackages [yolo-pyutils]: executing diffoscope
+[2023-05-24 09:32:15] INFO root fetch - processPackages [yolo-pyutils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/yolo-pyutils-0.1.8.tar.gz tmp/yolo-pyutils-0.1.9.tar.gz --markdown 20230524/y/yolo-pyutils/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-24 09:32:15] INFO root fetch - processPackages [pyFipper]: Downloading https://files.pythonhosted.org/packages/87/ed/56e38e945faf1f605becaa69ce70044c5130b25d0ecd88a9baa8e871c4d8/pyFipper-0.1.2.dev1.tar.gz
+[2023-05-24 09:32:15] INFO root fetch - processPackages [c2cwsgiutils]: Downloading https://files.pythonhosted.org/packages/55/93/2e4f992a13695d7fbb2850755523ce47803febe908b690ecebf49fe4ab9c/c2cwsgiutils-5.2.2.tar.gz
+[2023-05-24 09:32:15] INFO root fetch - processPackages [deepset-cloud-sdk]: executing diffoscope
+[2023-05-24 09:32:15] INFO root fetch - processPackages [deepset-cloud-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/deepset_cloud_sdk-0.0.8.tar.gz tmp/deepset_cloud_sdk-0.0.9.tar.gz --markdown 20230524/d/deepset-cloud-sdk/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-24 09:32:15] INFO root fetch - processPackages [curated-transformers]: Downloading https://files.pythonhosted.org/packages/70/06/6c12c149a7f737dacc76b4c3949dbc7ff87d622567b86996896ae4d104aa/curated-transformers-0.1.1.tar.gz
+[2023-05-24 09:32:15] INFO root fetch - processPackages [pyFipper]: executing diffoscope
+[2023-05-24 09:32:15] INFO root fetch - processPackages [pyFipper]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyFipper-0.1.0.tar.gz tmp/pyFipper-0.1.2.dev1.tar.gz --markdown 20230524/p/pyFipper/0.1.0-0.1.2.dev1/diff.md --exclude *.pyd
+[2023-05-24 09:32:15] INFO root fetch - processPackages [c2cwsgiutils]: executing diffoscope
+[2023-05-24 09:32:15] INFO root fetch - processPackages [c2cwsgiutils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/c2cwsgiutils-5.2.1.tar.gz tmp/c2cwsgiutils-5.2.2.tar.gz --markdown 20230524/c/c2cwsgiutils/5.2.1-5.2.2/diff.md --exclude *.pyd
+[2023-05-24 09:32:15] INFO root fetch - processPackages [curated-transformers]: executing diffoscope
+[2023-05-24 09:32:15] INFO root fetch - processPackages [curated-transformers]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/curated-transformers-0.1.0.tar.gz tmp/curated-transformers-0.1.1.tar.gz --markdown 20230524/c/curated-transformers/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-05-24 09:32:15] INFO root fetch - processPackages [chromoformer]: Downloading https://files.pythonhosted.org/packages/7e/07/33cef6e32acced40c545756140618721b358bc740aba72e2f9f79e4caea1/chromoformer-1.1.2.tar.gz
+[2023-05-24 09:32:15] INFO root fetch - processPackages [chromoformer]: executing diffoscope
+[2023-05-24 09:32:15] INFO root fetch - processPackages [chromoformer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/chromoformer-1.1.1.tar.gz tmp/chromoformer-1.1.2.tar.gz --markdown 20230524/c/chromoformer/1.1.1-1.1.2/diff.md --exclude *.pyd
+[2023-05-24 09:32:16] INFO root fetch - main [MainThread]: End processing [attm]: success
+[2023-05-24 09:32:16] INFO root fetch - main [MainThread]: End processing [dash-connectivity-viewer]: success
+[2023-05-24 09:32:16] INFO root fetch - main [MainThread]: End processing [cloudreactor-aws-setup-wizard]: success
+[2023-05-24 09:32:16] INFO root fetch - main [MainThread]: End processing [deepset-cloud-sdk]: success
+[2023-05-24 09:32:16] INFO root fetch - main [MainThread]: End processing [yolo-pyutils]: success
+[2023-05-24 09:32:17] INFO root fetch - main [MainThread]: End processing [curated-transformers]: success
+[2023-05-24 09:32:17] INFO root fetch - main [MainThread]: End processing [chromoformer]: success
+[2023-05-24 09:32:19] INFO root fetch - main [MainThread]: End processing [c2cwsgiutils]: success
+[2023-05-24 09:32:26] INFO root fetch - main [MainThread]: End processing [pyFipper]: success
+[2023-05-24 09:32:26] INFO root fetch - main [MainThread]: Store serial: [18226308]
