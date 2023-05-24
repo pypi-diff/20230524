@@ -21774,3 +21774,49 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd4 in position 72: invalid
 [2023-05-24 20:08:23] INFO root fetch - main [MainThread]: End processing [apache-beam]: success
 [2023-05-24 20:08:23] INFO root fetch - main [MainThread]: End processing [anyscale]: success
 [2023-05-24 20:08:23] INFO root fetch - main [MainThread]: Store serial: [18234053]
+[2023-05-24 20:13:29] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18234053]
+[2023-05-24 20:13:34] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-05-24 20:13:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pytimeline
+[2023-05-24 20:13:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: rdk
+[2023-05-24 20:13:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: mixture-of-attention
+[2023-05-24 20:13:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: rapidpro-flow-tools
+[2023-05-24 20:13:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: macos-application-location
+[2023-05-24 20:13:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: devvio-util
+[2023-05-24 20:13:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: RecordFlux
+[2023-05-24 20:13:34] INFO root fetch - processPackages [macos-application-location]: New version: [1.0.2] Old Version: [1.0.1]
+[2023-05-24 20:13:34] INFO root fetch - processPackages [devvio-util]: New version: [1.5.0] Old Version: [1.4.2]
+[2023-05-24 20:13:34] INFO root fetch - processPackages [rapidpro-flow-tools]: New version: [0.9.6] Old Version: [0.9.5]
+[2023-05-24 20:13:34] INFO root fetch - processPackages [pytimeline]: New version: [0.2.0] Old Version: [0.1.0]
+[2023-05-24 20:13:34] INFO root fetch - processPackages [mixture-of-attention]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-24 20:13:34] INFO root fetch - processPackages [rdk]: New version: [0.9.0] Old Version: [0.8.5]
+[2023-05-24 20:13:34] INFO root fetch - processPackages [RecordFlux]: New version: [0.9.1] Old Version: [0.9.0]
+[2023-05-24 20:13:34] INFO root fetch - processPackages [devvio-util]: executing diffoscope
+[2023-05-24 20:13:34] INFO root fetch - processPackages [devvio-util]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/devvio_util-1.4.2.tar.gz tmp/devvio_util-1.5.0.tar.gz --markdown 20230524/d/devvio-util/1.4.2-1.5.0/diff.md --exclude *.pyd
+[2023-05-24 20:13:34] INFO root fetch - processPackages [pytimeline]: Downloading https://files.pythonhosted.org/packages/f5/3d/76c2d31ef12862b5adf6e1f82010ac9ff41c4bb8341d8ea467b2241f0dca/pytimeline-0.1.0.tar.gz
+[2023-05-24 20:13:34] INFO root fetch - processPackages [rdk]: Downloading https://files.pythonhosted.org/packages/e3/76/71395a397545e65a224751eca5ecb692bb4a4e33a1104f1cbb07811bf0ae/rdk-0.8.5.tar.gz
+[2023-05-24 20:13:34] INFO root fetch - processPackages [RecordFlux]: Downloading https://files.pythonhosted.org/packages/ac/c2/366f8cb005111dc8000730e4c17d1ed9c68c8166c4120585492a1cd20bba/RecordFlux-0.9.0.tar.gz
+[2023-05-24 20:13:34] INFO root fetch - processPackages [rapidpro-flow-tools]: Downloading https://files.pythonhosted.org/packages/2e/83/d4afa524333115e25a41adc0dccff58e3f297c5a60c703c783bf5129c99f/rapidpro_flow_tools-0.9.6.tar.gz
+[2023-05-24 20:13:34] INFO root fetch - processPackages [macos-application-location]: Downloading https://files.pythonhosted.org/packages/1b/1f/76407e35ce2f4433f74a8056c1d9c6d514b69bf5b53cb7771fc282050020/macos_application_location-1.0.2.tar.gz
+[2023-05-24 20:13:34] INFO root fetch - processPackages [rapidpro-flow-tools]: executing diffoscope
+[2023-05-24 20:13:34] INFO root fetch - processPackages [rapidpro-flow-tools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rapidpro_flow_tools-0.9.5.tar.gz tmp/rapidpro_flow_tools-0.9.6.tar.gz --markdown 20230524/r/rapidpro-flow-tools/0.9.5-0.9.6/diff.md --exclude *.pyd
+[2023-05-24 20:13:34] INFO root fetch - processPackages [pytimeline]: Downloading https://files.pythonhosted.org/packages/5b/79/c4169eeb388a81db659ad5c6951472ee42ec79a54464d5215ec8fb47ce22/pytimeline-0.2.0.tar.gz
+[2023-05-24 20:13:35] INFO root fetch - processPackages [mixture-of-attention]: executing diffoscope
+[2023-05-24 20:13:35] INFO root fetch - processPackages [mixture-of-attention]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mixture-of-attention-0.0.8.tar.gz tmp/mixture-of-attention-0.0.9.tar.gz --markdown 20230524/m/mixture-of-attention/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-24 20:13:35] INFO root fetch - processPackages [macos-application-location]: executing diffoscope
+[2023-05-24 20:13:35] INFO root fetch - processPackages [macos-application-location]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/macos_application_location-1.0.1.tar.gz tmp/macos_application_location-1.0.2.tar.gz --markdown 20230524/m/macos-application-location/1.0.1-1.0.2/diff.md --exclude *.pyd
+[2023-05-24 20:13:35] INFO root fetch - processPackages [pytimeline]: executing diffoscope
+[2023-05-24 20:13:35] INFO root fetch - processPackages [pytimeline]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pytimeline-0.1.0.tar.gz tmp/pytimeline-0.2.0.tar.gz --markdown 20230524/p/pytimeline/0.1.0-0.2.0/diff.md --exclude *.pyd
+[2023-05-24 20:13:35] INFO root fetch - processPackages [RecordFlux]: Downloading https://files.pythonhosted.org/packages/ff/69/1dcd3b428fc1ed519aa5bc8c6b2e6eccc1e3b460abc98a5f79cf1da827fb/RecordFlux-0.9.1.tar.gz
+[2023-05-24 20:13:35] INFO root fetch - processPackages [rdk]: Downloading https://files.pythonhosted.org/packages/7e/f5/2792b83eb4dc0a61ffecdde6461fbdfe6c988af251ca613dececae8d991d/rdk-0.9.0.tar.gz
+[2023-05-24 20:13:35] INFO root fetch - processPackages [RecordFlux]: executing diffoscope
+[2023-05-24 20:13:35] INFO root fetch - processPackages [RecordFlux]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/RecordFlux-0.9.0.tar.gz tmp/RecordFlux-0.9.1.tar.gz --markdown 20230524/R/RecordFlux/0.9.0-0.9.1/diff.md --exclude *.pyd
+[2023-05-24 20:13:35] INFO root fetch - processPackages [rdk]: executing diffoscope
+[2023-05-24 20:13:35] INFO root fetch - processPackages [rdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rdk-0.8.5.tar.gz tmp/rdk-0.9.0.tar.gz --markdown 20230524/r/rdk/0.8.5-0.9.0/diff.md --exclude *.pyd
+[2023-05-24 20:13:35] INFO root fetch - main [MainThread]: End processing [devvio-util]: success
+[2023-05-24 20:13:36] INFO root fetch - main [MainThread]: End processing [mixture-of-attention]: success
+[2023-05-24 20:13:36] INFO root fetch - main [MainThread]: End processing [pytimeline]: success
+[2023-05-24 20:13:36] INFO root fetch - main [MainThread]: End processing [rapidpro-flow-tools]: success
+[2023-05-24 20:13:36] INFO root fetch - main [MainThread]: End processing [macos-application-location]: success
+[2023-05-24 20:13:37] INFO root fetch - main [MainThread]: End processing [RecordFlux]: success
+[2023-05-24 20:13:39] INFO root fetch - main [MainThread]: End processing [rdk]: success
+[2023-05-24 20:13:39] INFO root fetch - main [MainThread]: Store serial: [18234072]
