@@ -10754,3 +10754,56 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-05-24 10:44:58] INFO root fetch - main [MainThread]: End processing [tfp-nightly]: success
 [2023-05-24 10:45:28] INFO root fetch - main [MainThread]: End processing [tff-nightly]: success
 [2023-05-24 10:45:28] INFO root fetch - main [MainThread]: Store serial: [18226979]
+[2023-05-24 10:50:33] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18226979]
+[2023-05-24 10:50:38] INFO root fetch - main [MainThread]: Found 10 changed packages
+[2023-05-24 10:50:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: panda-server
+[2023-05-24 10:50:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: SRPAstro
+[2023-05-24 10:50:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: tf-nightly
+[2023-05-24 10:50:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: keystore-client
+[2023-05-24 10:50:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: angeltools
+[2023-05-24 10:50:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: smunger
+[2023-05-24 10:50:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: samarium62
+[2023-05-24 10:50:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: vbimage
+[2023-05-24 10:50:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: ersciyt
+[2023-05-24 10:50:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: nannyml
+[2023-05-24 10:50:38] WARNING root fetch - processPackages [keystore-client]: Skipping, unable to determine old version
+[2023-05-24 10:50:38] INFO root fetch - main [MainThread]: End processing [keystore-client] error
+[2023-05-24 10:50:38] INFO root fetch - processPackages [angeltools]: New version: [0.3.4] Old Version: [0.3.2]
+[2023-05-24 10:50:38] INFO root fetch - processPackages [ersciyt]: New version: [1.91] Old Version: [1.9]
+[2023-05-24 10:50:38] INFO root fetch - processPackages [vbimage]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-24 10:50:38] INFO root fetch - processPackages [panda-server]: New version: [0.0.54] Old Version: [0.0.53]
+[2023-05-24 10:50:38] INFO root fetch - processPackages [angeltools]: executing diffoscope
+[2023-05-24 10:50:38] INFO root fetch - processPackages [vbimage]: executing diffoscope
+[2023-05-24 10:50:38] INFO root fetch - processPackages [angeltools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/angeltools-0.3.2.tar.gz tmp/angeltools-0.3.4.tar.gz --markdown 20230524/a/angeltools/0.3.2-0.3.4/diff.md --exclude *.pyd
+[2023-05-24 10:50:38] INFO root fetch - processPackages [vbimage]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vbimage-0.1.8.tar.gz tmp/vbimage-0.1.9.tar.gz --markdown 20230524/v/vbimage/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-24 10:50:38] INFO root fetch - processPackages [SRPAstro]: New version: [4.8.3] Old Version: [4.8.2]
+[2023-05-24 10:50:38] WARNING root fetch - processPackages [samarium62]: Skipping, unable to determine old version
+[2023-05-24 10:50:38] INFO root fetch - main [MainThread]: End processing [samarium62] error
+[2023-05-24 10:50:38] INFO root fetch - processPackages [smunger]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-24 10:50:38] INFO root fetch - processPackages [nannyml]: New version: [0.8.6] Old Version: [0.8.5]
+[2023-05-24 10:50:38] INFO root fetch - processPackages [tf-nightly]: New version: [2.14.0.dev20230524] Old Version: [2.14.0.dev20230523]
+[2023-05-24 10:50:38] INFO root fetch - processPackages [ersciyt]: Downloading https://files.pythonhosted.org/packages/35/67/f30039bd2248449105f33e5137f3151a219b78ee2d3eba7543eb4a3ec03b/ersciyt-1.91.tar.gz
+[2023-05-24 10:50:38] INFO root fetch - processPackages [SRPAstro]: Downloading https://files.pythonhosted.org/packages/d3/77/d674ec3fff68e00b27b0b81d9def26c8aebf2b4f862e7079efa0baf0a91f/SRPAstro-4.8.2.tar.gz
+[2023-05-24 10:50:38] INFO root fetch - processPackages [panda-server]: Downloading https://files.pythonhosted.org/packages/68/3b/42a7163a01fe81db1710391ae88a280e22fa71edf35c30fabf7aa69f3bef/panda-server-0.0.53.tar.gz
+[2023-05-24 10:50:38] WARNING root fetch - processPackages [SRPAstro]: Skipping package: exceeds size limit 14334370>=10485760
+[2023-05-24 10:50:38] INFO root fetch - main [MainThread]: End processing [SRPAstro] error
+[2023-05-24 10:50:38] INFO root fetch - processPackages [nannyml]: Downloading https://files.pythonhosted.org/packages/73/39/4b00577bfc6f61891de84e6b2b3eb52b27918371da04676b3de4b61090c0/nannyml-0.8.5.tar.gz
+[2023-05-24 10:50:38] INFO root fetch - processPackages [tf-nightly]: Downloading https://files.pythonhosted.org/packages/f4/5e/cef5cae78369b590157aa28bdb68d4280099d5c4f7951b7a59928ae60e6a/tf_nightly-2.14.0.dev20230523-cp39-cp39-win_amd64.whl
+[2023-05-24 10:50:38] INFO root fetch - processPackages [ersciyt]: executing diffoscope
+[2023-05-24 10:50:38] INFO root fetch - processPackages [ersciyt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ersciyt-1.9.tar.gz tmp/ersciyt-1.91.tar.gz --markdown 20230524/e/ersciyt/1.9-1.91/diff.md --exclude *.pyd
+[2023-05-24 10:50:38] WARNING root fetch - processPackages [nannyml]: Skipping package: exceeds size limit 14531445>=10485760
+[2023-05-24 10:50:38] INFO root fetch - main [MainThread]: End processing [nannyml] error
+[2023-05-24 10:50:38] INFO root fetch - processPackages [smunger]: executing diffoscope
+[2023-05-24 10:50:38] INFO root fetch - processPackages [smunger]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/smunger-0.0.8.tar.gz tmp/smunger-0.0.9.tar.gz --markdown 20230524/s/smunger/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-24 10:50:38] INFO root fetch - processPackages [tf-nightly]: Downloading https://files.pythonhosted.org/packages/a9/c6/1737040ebeddf62fdf7b8875e7006efbc5e7583b461521b39392dc62ffd3/tf_nightly-2.14.0.dev20230524-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2023-05-24 10:50:38] WARNING root fetch - processPackages [tf-nightly]: Skipping package: exceeds size limit 488002499>=10485760
+[2023-05-24 10:50:38] INFO root fetch - main [MainThread]: End processing [tf-nightly] error
+[2023-05-24 10:50:38] INFO root fetch - processPackages [panda-server]: Downloading https://files.pythonhosted.org/packages/18/5e/130a4bb235920e4c26027e6048ccb586a28fc3a542d5b271494e037b1854/panda-server-0.0.54.tar.gz
+[2023-05-24 10:50:39] INFO root fetch - processPackages [panda-server]: executing diffoscope
+[2023-05-24 10:50:39] INFO root fetch - processPackages [panda-server]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/panda-server-0.0.53.tar.gz tmp/panda-server-0.0.54.tar.gz --markdown 20230524/p/panda-server/0.0.53-0.0.54/diff.md --exclude *.pyd
+[2023-05-24 10:50:39] INFO root fetch - main [MainThread]: End processing [vbimage]: success
+[2023-05-24 10:50:39] INFO root fetch - main [MainThread]: End processing [ersciyt]: success
+[2023-05-24 10:50:40] INFO root fetch - main [MainThread]: End processing [smunger]: success
+[2023-05-24 10:50:40] INFO root fetch - main [MainThread]: End processing [angeltools]: success
+[2023-05-24 10:50:41] INFO root fetch - main [MainThread]: End processing [panda-server]: success
+[2023-05-24 10:50:41] INFO root fetch - main [MainThread]: Store serial: [18227022]
