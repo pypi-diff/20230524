@@ -21287,3 +21287,75 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd4 in position 72: invalid
 [2023-05-24 19:27:50] INFO root fetch - main [MainThread]: End processing [PrimeBotFramework]: success
 [2023-05-24 19:28:35] INFO root fetch - main [MainThread]: End processing [awscrt]: success
 [2023-05-24 19:28:35] INFO root fetch - main [MainThread]: Store serial: [18233608]
+[2023-05-24 19:33:39] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18233608]
+[2023-05-24 19:33:44] INFO root fetch - main [MainThread]: Found 14 changed packages
+[2023-05-24 19:33:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: crazy-thursday
+[2023-05-24 19:33:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: cardsort
+[2023-05-24 19:33:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: ts-deepscan
+[2023-05-24 19:33:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: shareddata
+[2023-05-24 19:33:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: django-vendor-promo
+[2023-05-24 19:33:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: open-dread-rando
+[2023-05-24 19:33:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: protobuf-to-pydantic
+[2023-05-24 19:33:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: modelbit
+[2023-05-24 19:33:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: remla12-lib-release
+[2023-05-24 19:33:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: pythonnnexam
+[2023-05-24 19:33:44] INFO root fetch - processPackages [remla12-lib-release]: New version: [0.1.5] Old Version: [0.1.4]
+[2023-05-24 19:33:44] INFO root fetch - processPackages [django-vendor-promo]: New version: [0.2.0] Old Version: [0.1.9]
+[2023-05-24 19:33:44] INFO root fetch - processPackages [modelbit]: New version: [0.9.7] Old Version: [0.9.6]
+[2023-05-24 19:33:44] INFO root fetch - processPackages [crazy-thursday]: New version: [2023.5.9.1] Old Version: [2023.5.9.0]
+[2023-05-24 19:33:45] WARNING root fetch - processPackages [pythonnnexam]: Skipping, unable to determine old version
+[2023-05-24 19:33:45] INFO root fetch - processPackages [pythonnnexam]: Start processing: dna-parser
+[2023-05-24 19:33:45] INFO root fetch - processPackages [cardsort]: New version: [0.2.6] Old Version: [0.2.4]
+[2023-05-24 19:33:45] INFO root fetch - main [MainThread]: End processing [pythonnnexam] error
+[2023-05-24 19:33:45] INFO root fetch - processPackages [ts-deepscan]: New version: [2.0.5] Old Version: [2.0.4]
+[2023-05-24 19:33:45] INFO root fetch - processPackages [protobuf-to-pydantic]: New version: [0.1.7.4] Old Version: [0.1.7.3]
+[2023-05-24 19:33:45] INFO root fetch - processPackages [modelbit]: executing diffoscope
+[2023-05-24 19:33:45] INFO root fetch - processPackages [modelbit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/modelbit-0.9.6.tar.gz tmp/modelbit-0.9.7.tar.gz --markdown 20230524/m/modelbit/0.9.6-0.9.7/diff.md --exclude *.pyd
+[2023-05-24 19:33:45] INFO root fetch - processPackages [open-dread-rando]: New version: [2.2.0] Old Version: [2.1.1]
+[2023-05-24 19:33:45] INFO root fetch - processPackages [shareddata]: New version: [2.0.9] Old Version: [2.0.8]
+[2023-05-24 19:33:45] INFO root fetch - processPackages [remla12-lib-release]: Downloading https://files.pythonhosted.org/packages/9f/52/4ede4243a0be080843f36e0df345c53409637870458a18c9f470ae766a11/remla12_lib_release-0.1.5.tar.gz
+[2023-05-24 19:33:45] WARNING root fetch - processPackages [dna-parser]: Skipping, unable to determine old version
+[2023-05-24 19:33:45] INFO root fetch - processPackages [dna-parser]: Start processing: pyrbx
+[2023-05-24 19:33:45] INFO root fetch - main [MainThread]: End processing [dna-parser] error
+[2023-05-24 19:33:45] WARNING root fetch - processPackages [pyrbx]: Skipping, unable to determine old version
+[2023-05-24 19:33:45] INFO root fetch - processPackages [pyrbx]: Start processing: ovos-dinkum-listener
+[2023-05-24 19:33:45] INFO root fetch - main [MainThread]: End processing [pyrbx] error
+[2023-05-24 19:33:45] INFO root fetch - processPackages [ovos-dinkum-listener]: New version: [0.0.2a9] Old Version: [0.0.2a8]
+[2023-05-24 19:33:45] INFO root fetch - processPackages [ts-deepscan]: Downloading https://files.pythonhosted.org/packages/88/20/0d750db7445039c96d6d3d27751289f7b05662e4fd802b98d4a0fde2c009/ts-deepscan-2.0.4.tar.gz
+[2023-05-24 19:33:45] INFO root fetch - processPackages [django-vendor-promo]: executing diffoscope
+[2023-05-24 19:33:45] INFO root fetch - processPackages [django-vendor-promo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django-vendor-promo-0.1.9.tar.gz tmp/django-vendor-promo-0.2.0.tar.gz --markdown 20230524/d/django-vendor-promo/0.1.9-0.2.0/diff.md --exclude *.pyd
+[2023-05-24 19:33:45] INFO root fetch - processPackages [remla12-lib-release]: executing diffoscope
+[2023-05-24 19:33:45] INFO root fetch - processPackages [remla12-lib-release]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/remla12_lib_release-0.1.4.tar.gz tmp/remla12_lib_release-0.1.5.tar.gz --markdown 20230524/r/remla12-lib-release/0.1.4-0.1.5/diff.md --exclude *.pyd
+[2023-05-24 19:33:45] INFO root fetch - processPackages [ovos-dinkum-listener]: executing diffoscope
+[2023-05-24 19:33:45] INFO root fetch - processPackages [ovos-dinkum-listener]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ovos_dinkum_listener-0.0.2a8-py3-none-any.whl.zip tmp/ovos_dinkum_listener-0.0.2a9-py3-none-any.whl.zip --markdown 20230524/o/ovos-dinkum-listener/0.0.2a8-0.0.2a9/diff.md --exclude *.pyd
+[2023-05-24 19:33:45] INFO root fetch - processPackages [open-dread-rando]: Downloading https://files.pythonhosted.org/packages/79/ac/229fdf9afb0ef930f77fb76e8b5b61650a640e5508a97cba4e05295e35d4/open-dread-rando-2.1.1.tar.gz
+[2023-05-24 19:33:45] INFO root fetch - processPackages [protobuf-to-pydantic]: Downloading https://files.pythonhosted.org/packages/41/39/fefc6a3d3dc790670fa85a78b43c0d218398e2d2d3a86e7e1f85bd29ce66/protobuf_to_pydantic-0.1.7.3.tar.gz
+[2023-05-24 19:33:45] INFO root fetch - processPackages [cardsort]: executing diffoscope
+[2023-05-24 19:33:45] INFO root fetch - processPackages [cardsort]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cardsort-0.2.4.tar.gz tmp/cardsort-0.2.6.tar.gz --markdown 20230524/c/cardsort/0.2.4-0.2.6/diff.md --exclude *.pyd
+[2023-05-24 19:33:45] INFO root fetch - processPackages [crazy-thursday]: executing diffoscope
+[2023-05-24 19:33:45] INFO root fetch - processPackages [crazy-thursday]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/crazy-thursday-2023.5.9.0.tar.gz tmp/crazy-thursday-2023.5.9.1.tar.gz --markdown 20230524/c/crazy-thursday/2023.5.9.0-2023.5.9.1/diff.md --exclude *.pyd
+[2023-05-24 19:33:45] INFO root fetch - processPackages [ts-deepscan]: Downloading https://files.pythonhosted.org/packages/53/24/ca994fdeaca8fd28503c44c5229ba85b26bb29c15dd3f69350ab5e2a110b/ts-deepscan-2.0.5.tar.gz
+[2023-05-24 19:33:45] INFO root fetch - processPackages [shareddata]: executing diffoscope
+[2023-05-24 19:33:45] INFO root fetch - processPackages [shareddata]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/shareddata-2.0.8.tar.gz tmp/shareddata-2.0.9.tar.gz --markdown 20230524/s/shareddata/2.0.8-2.0.9/diff.md --exclude *.pyd
+[2023-05-24 19:33:45] INFO root fetch - processPackages [ts-deepscan]: executing diffoscope
+[2023-05-24 19:33:45] INFO root fetch - processPackages [ts-deepscan]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ts-deepscan-2.0.4.tar.gz tmp/ts-deepscan-2.0.5.tar.gz --markdown 20230524/t/ts-deepscan/2.0.4-2.0.5/diff.md --exclude *.pyd
+[2023-05-24 19:33:45] INFO root fetch - processPackages [protobuf-to-pydantic]: Downloading https://files.pythonhosted.org/packages/af/be/0b88add455490a9c8c0a146e93d91e93d5824bfc9aeed5337a8ae745e4fa/protobuf_to_pydantic-0.1.7.4.tar.gz
+[2023-05-24 19:33:45] INFO root fetch - processPackages [open-dread-rando]: Downloading https://files.pythonhosted.org/packages/8c/a9/74b4c48a96d79f78169dda189a35e56b91201906e056e335f1824ab63736/open-dread-rando-2.2.0.tar.gz
+[2023-05-24 19:33:45] INFO root fetch - processPackages [protobuf-to-pydantic]: executing diffoscope
+[2023-05-24 19:33:45] INFO root fetch - processPackages [protobuf-to-pydantic]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/protobuf_to_pydantic-0.1.7.3.tar.gz tmp/protobuf_to_pydantic-0.1.7.4.tar.gz --markdown 20230524/p/protobuf-to-pydantic/0.1.7.3-0.1.7.4/diff.md --exclude *.pyd
+[2023-05-24 19:33:45] INFO root fetch - processPackages [open-dread-rando]: executing diffoscope
+[2023-05-24 19:33:45] INFO root fetch - processPackages [open-dread-rando]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/open-dread-rando-2.1.1.tar.gz tmp/open-dread-rando-2.2.0.tar.gz --markdown 20230524/o/open-dread-rando/2.1.1-2.2.0/diff.md --exclude *.pyd
+[2023-05-24 19:33:46] INFO root fetch - processPackages [remla12-lib-release]: Start processing: oedisi
+[2023-05-24 19:33:46] INFO root fetch - main [MainThread]: End processing [remla12-lib-release]: success
+[2023-05-24 19:33:46] WARNING root fetch - processPackages [oedisi]: Skipping, unable to determine old version
+[2023-05-24 19:33:46] INFO root fetch - main [MainThread]: End processing [oedisi] error
+[2023-05-24 19:33:46] INFO root fetch - main [MainThread]: End processing [ovos-dinkum-listener]: success
+[2023-05-24 19:33:46] INFO root fetch - main [MainThread]: End processing [cardsort]: success
+[2023-05-24 19:33:47] INFO root fetch - main [MainThread]: End processing [crazy-thursday]: success
+[2023-05-24 19:33:47] INFO root fetch - main [MainThread]: End processing [shareddata]: success
+[2023-05-24 19:33:47] INFO root fetch - main [MainThread]: End processing [ts-deepscan]: success
+[2023-05-24 19:33:47] INFO root fetch - main [MainThread]: End processing [protobuf-to-pydantic]: success
+[2023-05-24 19:33:47] INFO root fetch - main [MainThread]: End processing [django-vendor-promo]: success
+[2023-05-24 19:33:47] INFO root fetch - main [MainThread]: End processing [modelbit]: success
+[2023-05-24 19:33:49] INFO root fetch - main [MainThread]: End processing [open-dread-rando]: success
+[2023-05-24 19:33:49] INFO root fetch - main [MainThread]: Store serial: [18233679]
