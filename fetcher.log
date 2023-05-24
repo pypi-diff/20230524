@@ -13459,3 +13459,75 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd4 in position 72: invalid
 [2023-05-24 13:10:49] INFO root fetch - main [MainThread]: End processing [kcli]: success
 [2023-05-24 13:10:50] INFO root fetch - main [MainThread]: End processing [shrug-viz]: success
 [2023-05-24 13:10:50] INFO root fetch - main [MainThread]: Store serial: [18228677]
+[2023-05-24 13:15:54] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18228677]
+[2023-05-24 13:15:59] INFO root fetch - main [MainThread]: Found 12 changed packages
+[2023-05-24 13:15:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pyeCam
+[2023-05-24 13:15:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: linkedinpdfextractor
+[2023-05-24 13:15:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: gkligo
+[2023-05-24 13:15:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: sharingiscaring
+[2023-05-24 13:15:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: fluidsim-core
+[2023-05-24 13:15:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: scaneo
+[2023-05-24 13:15:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: unigui
+[2023-05-24 13:15:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: fluidsim
+[2023-05-24 13:15:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: direct-speech-extractor-ru
+[2023-05-24 13:15:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: upstash-redis
+[2023-05-24 13:15:59] INFO root fetch - processPackages [pyeCam]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-24 13:15:59] INFO root fetch - processPackages [scaneo]: New version: [0.0.3.post6] Old Version: [0.0.3.post5]
+[2023-05-24 13:15:59] WARNING root fetch - processPackages [upstash-redis]: Skipping, unable to determine old version
+[2023-05-24 13:15:59] INFO root fetch - processPackages [upstash-redis]: Start processing: enc-tool
+[2023-05-24 13:15:59] INFO root fetch - main [MainThread]: End processing [upstash-redis] error
+[2023-05-24 13:15:59] INFO root fetch - processPackages [gkligo]: New version: [0.1.0] Old Version: [0.0.9]
+[2023-05-24 13:15:59] INFO root fetch - processPackages [sharingiscaring]: New version: [0.2.9] Old Version: [0.2.8]
+[2023-05-24 13:15:59] INFO root fetch - processPackages [fluidsim-core]: New version: [0.7.3] Old Version: [0.7.2]
+[2023-05-24 13:15:59] INFO root fetch - processPackages [linkedinpdfextractor]: New version: [1.2.3] Old Version: [1.2.2]
+[2023-05-24 13:15:59] INFO root fetch - processPackages [pyeCam]: executing diffoscope
+[2023-05-24 13:15:59] INFO root fetch - processPackages [pyeCam]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyeCam-0.0.8.tar.gz tmp/pyeCam-0.0.9.tar.gz --markdown 20230524/p/pyeCam/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-24 13:15:59] INFO root fetch - processPackages [fluidsim]: New version: [0.7.3] Old Version: [0.7.2]
+[2023-05-24 13:15:59] INFO root fetch - processPackages [direct-speech-extractor-ru]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-05-24 13:15:59] INFO root fetch - processPackages [enc-tool]: New version: [1.1.2] Old Version: [1.1.0]
+[2023-05-24 13:15:59] INFO root fetch - processPackages [unigui]: New version: [1.4.7] Old Version: [1.4.6]
+[2023-05-24 13:15:59] INFO root fetch - processPackages [scaneo]: Downloading https://files.pythonhosted.org/packages/0f/91/98995ed400ac062062493b6a0bd30bfc6ec6b8566f23ef6bdcdf4d0d8a00/scaneo-0.0.3.post5.tar.gz
+[2023-05-24 13:15:59] INFO root fetch - processPackages [gkligo]: executing diffoscope
+[2023-05-24 13:15:59] INFO root fetch - processPackages [gkligo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gkligo-0.0.9.tar.gz tmp/gkligo-0.1.0.tar.gz --markdown 20230524/g/gkligo/0.0.9-0.1.0/diff.md --exclude *.pyd
+[2023-05-24 13:15:59] INFO root fetch - processPackages [fluidsim-core]: Downloading https://files.pythonhosted.org/packages/9e/fe/6a8418467351fd249d78c9f2a177325724ecf5e18c9aaf42aee116bdcb9f/fluidsim-core-0.7.2.tar.gz
+[2023-05-24 13:15:59] INFO root fetch - processPackages [fluidsim]: Downloading https://files.pythonhosted.org/packages/ee/01/73c2bf56f20ea97cb31979f33da06697b9b8bcb0a2dd1e9e886dfb07bad0/fluidsim-0.7.2.tar.gz
+[2023-05-24 13:15:59] INFO root fetch - processPackages [direct-speech-extractor-ru]: Downloading https://files.pythonhosted.org/packages/da/72/9ec49fb8e9f9de75d18c16cce1a7d8c8b7029075920ff4d2fe51ae67e0ee/direct_speech_extractor_ru-0.0.1.tar.gz
+[2023-05-24 13:15:59] INFO root fetch - processPackages [linkedinpdfextractor]: Downloading https://files.pythonhosted.org/packages/9b/b5/9f8393a6a585aacf728d406b02240a80287d8b33f66ba7bf071b6eef0b86/linkedinpdfextractor-1.2.3.tar.gz
+[2023-05-24 13:15:59] INFO root fetch - processPackages [scaneo]: Downloading https://files.pythonhosted.org/packages/71/10/9c96a84bd9764f3ce70fec5f14c99ef82f4f9add431920cb59f5e3bbbfed/scaneo-0.0.3.post6.tar.gz
+[2023-05-24 13:15:59] INFO root fetch - processPackages [sharingiscaring]: executing diffoscope
+[2023-05-24 13:15:59] INFO root fetch - processPackages [sharingiscaring]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sharingiscaring-0.2.8.tar.gz tmp/sharingiscaring-0.2.9.tar.gz --markdown 20230524/s/sharingiscaring/0.2.8-0.2.9/diff.md --exclude *.pyd
+[2023-05-24 13:15:59] INFO root fetch - processPackages [unigui]: Downloading https://files.pythonhosted.org/packages/0c/b0/d0155f072ba5093541ede8cb179f8d3383872eb8415e5c0b09d525ac063a/unigui-1.4.7.tar.gz
+[2023-05-24 13:16:00] INFO root fetch - processPackages [enc-tool]: Downloading https://files.pythonhosted.org/packages/b8/08/92e36a5d582ea020dd65cffe5d8209c0034d1083a502edaf40a99e3f3d53/enc_tool-1.1.2.tar.gz
+[2023-05-24 13:16:00] INFO root fetch - processPackages [linkedinpdfextractor]: executing diffoscope
+[2023-05-24 13:16:00] INFO root fetch - processPackages [linkedinpdfextractor]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/linkedinpdfextractor-1.2.2.tar.gz tmp/linkedinpdfextractor-1.2.3.tar.gz --markdown 20230524/l/linkedinpdfextractor/1.2.2-1.2.3/diff.md --exclude *.pyd
+[2023-05-24 13:16:00] INFO root fetch - processPackages [scaneo]: executing diffoscope
+[2023-05-24 13:16:00] INFO root fetch - processPackages [scaneo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/scaneo-0.0.3.post5.tar.gz tmp/scaneo-0.0.3.post6.tar.gz --markdown 20230524/s/scaneo/0.0.3.post5-0.0.3.post6/diff.md --exclude *.pyd
+[2023-05-24 13:16:00] INFO root fetch - processPackages [enc-tool]: executing diffoscope
+[2023-05-24 13:16:00] INFO root fetch - processPackages [enc-tool]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/enc_tool-1.1.0.tar.gz tmp/enc_tool-1.1.2.tar.gz --markdown 20230524/e/enc-tool/1.1.0-1.1.2/diff.md --exclude *.pyd
+[2023-05-24 13:16:00] INFO root fetch - processPackages [unigui]: executing diffoscope
+[2023-05-24 13:16:00] INFO root fetch - processPackages [unigui]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/unigui-1.4.6.tar.gz tmp/unigui-1.4.7.tar.gz --markdown 20230524/u/unigui/1.4.6-1.4.7/diff.md --exclude *.pyd
+[2023-05-24 13:16:00] INFO root fetch - processPackages [fluidsim-core]: Downloading https://files.pythonhosted.org/packages/d9/54/cfa0d28a8dcbea6b63f39072abfd52b71473586ca56d68be1059abc58eb6/fluidsim-core-0.7.3.tar.gz
+[2023-05-24 13:16:00] INFO root fetch - processPackages [direct-speech-extractor-ru]: Downloading https://files.pythonhosted.org/packages/da/98/3f0bdc1b210aa8375661ba424373f689681a887a4a2ea88e902a0e0ed3a6/direct_speech_extractor_ru-0.0.2.tar.gz
+[2023-05-24 13:16:00] INFO root fetch - processPackages [fluidsim]: Downloading https://files.pythonhosted.org/packages/c2/04/e971759a2571f3b41c48eeba4c6690165bf95691493ceff7b096c1a4833c/fluidsim-0.7.3.tar.gz
+[2023-05-24 13:16:00] INFO root fetch - processPackages [direct-speech-extractor-ru]: executing diffoscope
+[2023-05-24 13:16:00] INFO root fetch - processPackages [direct-speech-extractor-ru]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/direct_speech_extractor_ru-0.0.1.tar.gz tmp/direct_speech_extractor_ru-0.0.2.tar.gz --markdown 20230524/d/direct-speech-extractor-ru/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-05-24 13:16:00] INFO root fetch - processPackages [fluidsim]: executing diffoscope
+[2023-05-24 13:16:00] INFO root fetch - processPackages [fluidsim]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fluidsim-0.7.2.tar.gz tmp/fluidsim-0.7.3.tar.gz --markdown 20230524/f/fluidsim/0.7.2-0.7.3/diff.md --exclude *.pyd
+[2023-05-24 13:16:00] INFO root fetch - processPackages [fluidsim-core]: executing diffoscope
+[2023-05-24 13:16:00] INFO root fetch - processPackages [fluidsim-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fluidsim-core-0.7.2.tar.gz tmp/fluidsim-core-0.7.3.tar.gz --markdown 20230524/f/fluidsim-core/0.7.2-0.7.3/diff.md --exclude *.pyd
+[2023-05-24 13:16:00] INFO root fetch - processPackages [pyeCam]: Start processing: sageintacctsdk
+[2023-05-24 13:16:00] INFO root fetch - main [MainThread]: End processing [pyeCam]: success
+[2023-05-24 13:16:00] INFO root fetch - processPackages [sageintacctsdk]: New version: [1.9.6] Old Version: [1.9.5]
+[2023-05-24 13:16:01] INFO root fetch - main [MainThread]: End processing [gkligo]: success
+[2023-05-24 13:16:01] INFO root fetch - processPackages [sageintacctsdk]: executing diffoscope
+[2023-05-24 13:16:01] INFO root fetch - processPackages [sageintacctsdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sageintacctsdk-1.9.5.tar.gz tmp/sageintacctsdk-1.9.6.tar.gz --markdown 20230524/s/sageintacctsdk/1.9.5-1.9.6/diff.md --exclude *.pyd
+[2023-05-24 13:16:01] INFO root fetch - main [MainThread]: End processing [scaneo]: success
+[2023-05-24 13:16:01] INFO root fetch - main [MainThread]: End processing [enc-tool]: success
+[2023-05-24 13:16:01] INFO root fetch - main [MainThread]: End processing [direct-speech-extractor-ru]: success
+[2023-05-24 13:16:02] INFO root fetch - main [MainThread]: End processing [sharingiscaring]: success
+[2023-05-24 13:16:02] INFO root fetch - main [MainThread]: End processing [sageintacctsdk]: success
+[2023-05-24 13:16:02] INFO root fetch - main [MainThread]: End processing [fluidsim-core]: success
+[2023-05-24 13:16:03] INFO root fetch - main [MainThread]: End processing [unigui]: success
+[2023-05-24 13:16:08] INFO root fetch - main [MainThread]: End processing [fluidsim]: success
+[2023-05-24 13:16:45] INFO root fetch - main [MainThread]: End processing [linkedinpdfextractor]: success
+[2023-05-24 13:16:45] INFO root fetch - main [MainThread]: Store serial: [18228710]
