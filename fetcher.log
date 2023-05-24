@@ -23420,3 +23420,98 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd4 in position 72: invalid
 [2023-05-24 22:02:39] INFO root fetch - main [MainThread]: End processing [hordelib]: success
 [2023-05-24 22:02:40] INFO root fetch - main [MainThread]: End processing [dtscalibration]: success
 [2023-05-24 22:02:40] INFO root fetch - main [MainThread]: Store serial: [18235187]
+[2023-05-24 22:07:45] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18235187]
+[2023-05-24 22:07:49] INFO root fetch - main [MainThread]: Found 17 changed packages
+[2023-05-24 22:07:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: joulescope-ui
+[2023-05-24 22:07:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: hotsos
+[2023-05-24 22:07:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: trodesnetwork
+[2023-05-24 22:07:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: EBglmnet
+[2023-05-24 22:07:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: infra-buddy-too
+[2023-05-24 22:07:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: hotsos
+[2023-05-24 22:07:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: pyjej
+[2023-05-24 22:07:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: ruff
+[2023-05-24 22:07:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: tap-neon
+[2023-05-24 22:07:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: hotsos
+[2023-05-24 22:07:49] INFO root fetch - processPackages [infra-buddy-too]: New version: [68] Old Version: [67]
+[2023-05-24 22:07:49] INFO root fetch - processPackages [joulescope-ui]: New version: [1.0.9] Old Version: [1.0.8]
+[2023-05-24 22:07:49] INFO root fetch - processPackages [hotsos]: New version: [1.1.14.post9] Old Version: [1.1.14.post8]
+[2023-05-24 22:07:49] INFO root fetch - processPackages [trodesnetwork]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-24 22:07:49] INFO root fetch - processPackages [pyjej]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-05-24 22:07:49] INFO root fetch - processPackages [tap-neon]: New version: [0.0.1a1] Old Version: [0.0.1]
+[2023-05-24 22:07:49] WARNING root fetch - processPackages [EBglmnet]: Skipping, unable to determine old version
+[2023-05-24 22:07:49] INFO root fetch - processPackages [EBglmnet]: Start processing: digitalguide
+[2023-05-24 22:07:49] INFO root fetch - main [MainThread]: End processing [EBglmnet] error
+[2023-05-24 22:07:49] INFO root fetch - processPackages [hotsos]: New version: [1.1.14.post9] Old Version: [1.1.14.post8]
+[2023-05-24 22:07:49] INFO root fetch - processPackages [hotsos]: New version: [1.1.14.post9] Old Version: [1.1.14.post8]
+[2023-05-24 22:07:49] INFO root fetch - processPackages [digitalguide]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-05-24 22:07:49] INFO root fetch - processPackages [ruff]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-05-24 22:07:49] INFO root fetch - processPackages [hotsos]: Downloading https://files.pythonhosted.org/packages/de/2d/fdf0aaa2b1e07e6d91918c01be57d8f6a6e848e85ed670d75fe1d9b39cd5/hotsos-1.1.14.post8.tar.gz
+[2023-05-24 22:07:49] INFO root fetch - processPackages [tap-neon]: Downloading https://files.pythonhosted.org/packages/aa/ab/146a6540115003b5e878df7d15d1fc9c4249ff7634947cca1194f1ae5e1e/tap_neon-0.0.1.tar.gz
+[2023-05-24 22:07:49] INFO root fetch - processPackages [hotsos]: Downloading https://files.pythonhosted.org/packages/de/2d/fdf0aaa2b1e07e6d91918c01be57d8f6a6e848e85ed670d75fe1d9b39cd5/hotsos-1.1.14.post8.tar.gz
+[2023-05-24 22:07:49] INFO root fetch - processPackages [hotsos]: Downloading https://files.pythonhosted.org/packages/de/2d/fdf0aaa2b1e07e6d91918c01be57d8f6a6e848e85ed670d75fe1d9b39cd5/hotsos-1.1.14.post8.tar.gz
+[2023-05-24 22:07:49] INFO root fetch - processPackages [pyjej]: Downloading https://files.pythonhosted.org/packages/42/9c/b7408a78a261d86a3b3bb80192929e5458b1e0db2992d1921d5de7b597cf/pyjej-0.1.0.tar.gz
+[2023-05-24 22:07:49] INFO root fetch - processPackages [trodesnetwork]: Downloading https://files.pythonhosted.org/packages/7e/8e/3c1f799c1c9b635a5dfd48b965aae7fa8ad8504283903df5c07c3604c7ab/trodesnetwork-0.0.8.tar.gz
+[2023-05-24 22:07:49] INFO root fetch - processPackages [digitalguide]: executing diffoscope
+[2023-05-24 22:07:49] INFO root fetch - processPackages [digitalguide]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/digitalguide-0.0.98.tar.gz tmp/digitalguide-0.0.99.tar.gz --markdown 20230524/d/digitalguide/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-05-24 22:07:50] INFO root fetch - processPackages [infra-buddy-too]: Downloading https://files.pythonhosted.org/packages/db/2e/6a26d11a82164d6cea482be91807268f34ebab465766e2c21c391c3ca77e/infra-buddy-too-68.tar.gz
+[2023-05-24 22:07:50] INFO root fetch - processPackages [joulescope-ui]: executing diffoscope
+[2023-05-24 22:07:50] INFO root fetch - processPackages [joulescope-ui]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/joulescope_ui-1.0.8.tar.gz tmp/joulescope_ui-1.0.9.tar.gz --markdown 20230524/j/joulescope-ui/1.0.8-1.0.9/diff.md --exclude *.pyd
+[2023-05-24 22:07:50] INFO root fetch - processPackages [tap-neon]: Downloading https://files.pythonhosted.org/packages/28/3d/f22a102687b7f3daab442bf55ff978cba301da9d2c80a1b47e521cb372a9/tap_neon-0.0.1a1.tar.gz
+[2023-05-24 22:07:50] ERROR root fetch - processPackages [pyjej]: Unable to fetch info: No such project/version 'pyjej' 0.1.1
+[2023-05-24 22:07:50] INFO root fetch - processPackages [pyjej]: Start processing: mailerlite
+[2023-05-24 22:07:50] INFO root fetch - main [MainThread]: End processing [pyjej] error
+[2023-05-24 22:07:50] INFO root fetch - processPackages [mailerlite]: New version: [0.1.3] Old Version: [0.1.2]
+[2023-05-24 22:07:50] INFO root fetch - processPackages [hotsos]: Downloading https://files.pythonhosted.org/packages/da/c9/7eacdd09b8fe987d35c33395e293035c63b16ded1000aadb2bc49c6f7882/hotsos-1.1.14.post9.tar.gz
+[2023-05-24 22:07:50] INFO root fetch - processPackages [hotsos]: Downloading https://files.pythonhosted.org/packages/da/c9/7eacdd09b8fe987d35c33395e293035c63b16ded1000aadb2bc49c6f7882/hotsos-1.1.14.post9.tar.gz
+[2023-05-24 22:07:50] INFO root fetch - processPackages [hotsos]: Downloading https://files.pythonhosted.org/packages/da/c9/7eacdd09b8fe987d35c33395e293035c63b16ded1000aadb2bc49c6f7882/hotsos-1.1.14.post9.tar.gz
+[2023-05-24 22:07:50] INFO root fetch - processPackages [tap-neon]: executing diffoscope
+[2023-05-24 22:07:50] INFO root fetch - processPackages [tap-neon]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tap_neon-0.0.1.tar.gz tmp/tap_neon-0.0.1a1.tar.gz --markdown 20230524/t/tap-neon/0.0.1-0.0.1a1/diff.md --exclude *.pyd
+[2023-05-24 22:07:50] INFO root fetch - processPackages [infra-buddy-too]: executing diffoscope
+[2023-05-24 22:07:50] INFO root fetch - processPackages [infra-buddy-too]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/infra-buddy-too-67.tar.gz tmp/infra-buddy-too-68.tar.gz --markdown 20230524/i/infra-buddy-too/67-68/diff.md --exclude *.pyd
+[2023-05-24 22:07:50] INFO root fetch - processPackages [ruff]: executing diffoscope
+[2023-05-24 22:07:50] INFO root fetch - processPackages [ruff]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ruff-0.0.98.tar.gz tmp/ruff-0.0.99.tar.gz --markdown 20230524/r/ruff/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-05-24 22:07:50] INFO root fetch - processPackages [trodesnetwork]: Downloading https://files.pythonhosted.org/packages/db/47/26feff18c6d758f9041454ff6a75edf53343b26a255892210d2d01394f87/trodesnetwork-0.0.9.tar.gz
+[2023-05-24 22:07:50] INFO root fetch - processPackages [hotsos]: executing diffoscope
+[2023-05-24 22:07:50] INFO root fetch - processPackages [hotsos]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hotsos-1.1.14.post8.tar.gz tmp/hotsos-1.1.14.post9.tar.gz --markdown 20230524/h/hotsos/1.1.14.post8-1.1.14.post9/diff.md --exclude *.pyd
+[2023-05-24 22:07:50] INFO root fetch - processPackages [hotsos]: executing diffoscope
+[2023-05-24 22:07:50] INFO root fetch - processPackages [hotsos]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hotsos-1.1.14.post8.tar.gz tmp/hotsos-1.1.14.post9.tar.gz --markdown 20230524/h/hotsos/1.1.14.post8-1.1.14.post9/diff.md --exclude *.pyd
+[2023-05-24 22:07:50] INFO root fetch - processPackages [hotsos]: executing diffoscope
+[2023-05-24 22:07:50] INFO root fetch - processPackages [hotsos]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hotsos-1.1.14.post8.tar.gz tmp/hotsos-1.1.14.post9.tar.gz --markdown 20230524/h/hotsos/1.1.14.post8-1.1.14.post9/diff.md --exclude *.pyd
+[2023-05-24 22:07:50] INFO root fetch - processPackages [mailerlite]: Downloading https://files.pythonhosted.org/packages/91/fa/47f805309422d5c36687cbc22a5136abb0b271937ebefa7006d3ef7dec41/mailerlite-0.1.2.tar.gz
+[2023-05-24 22:07:50] INFO root fetch - processPackages [trodesnetwork]: executing diffoscope
+[2023-05-24 22:07:50] INFO root fetch - processPackages [trodesnetwork]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/trodesnetwork-0.0.8.tar.gz tmp/trodesnetwork-0.0.9.tar.gz --markdown 20230524/t/trodesnetwork/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-24 22:07:50] INFO root fetch - processPackages [mailerlite]: Downloading https://files.pythonhosted.org/packages/7d/8c/8c233f45040cdc47bd0ac5e5949090a2a90f5d11e7f72e14e84685f0bbc5/mailerlite-0.1.3.tar.gz
+[2023-05-24 22:07:50] INFO root fetch - processPackages [mailerlite]: executing diffoscope
+[2023-05-24 22:07:50] INFO root fetch - processPackages [mailerlite]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mailerlite-0.1.2.tar.gz tmp/mailerlite-0.1.3.tar.gz --markdown 20230524/m/mailerlite/0.1.2-0.1.3/diff.md --exclude *.pyd
+[2023-05-24 22:07:51] INFO root fetch - processPackages [digitalguide]: Start processing: frankAllSkyCam
+[2023-05-24 22:07:51] INFO root fetch - main [MainThread]: End processing [digitalguide]: success
+[2023-05-24 22:07:51] WARNING root fetch - processPackages [frankAllSkyCam]: Skipping, unable to determine old version
+[2023-05-24 22:07:51] INFO root fetch - processPackages [frankAllSkyCam]: Start processing: napari-imagej
+[2023-05-24 22:07:51] INFO root fetch - main [MainThread]: End processing [frankAllSkyCam] error
+[2023-05-24 22:07:51] WARNING root fetch - processPackages [napari-imagej]: Skipping, unable to determine old version
+[2023-05-24 22:07:51] INFO root fetch - processPackages [napari-imagej]: Start processing: datumaro-headless
+[2023-05-24 22:07:51] INFO root fetch - main [MainThread]: End processing [napari-imagej] error
+[2023-05-24 22:07:51] WARNING root fetch - processPackages [datumaro-headless]: Skipping, unable to determine old version
+[2023-05-24 22:07:51] INFO root fetch - processPackages [datumaro-headless]: Start processing: tenforce
+[2023-05-24 22:07:51] INFO root fetch - main [MainThread]: End processing [datumaro-headless] error
+[2023-05-24 22:07:51] INFO root fetch - processPackages [tap-neon]: Start processing: NikGapps
+[2023-05-24 22:07:51] INFO root fetch - main [MainThread]: End processing [tap-neon]: success
+[2023-05-24 22:07:51] INFO root fetch - processPackages [tenforce]: New version: [0.1.4] Old Version: [0.1.3]
+[2023-05-24 22:07:51] INFO root fetch - processPackages [NikGapps]: New version: [1.21] Old Version: [1.20]
+[2023-05-24 22:07:51] INFO root fetch - processPackages [tenforce]: Downloading https://files.pythonhosted.org/packages/ec/1b/a4c12bd7a800e41e3391b9a418acc420b17b1503cba92d11a6e7cf7665af/tenforce-0.1.3.tar.gz
+[2023-05-24 22:07:51] INFO root fetch - processPackages [NikGapps]: Downloading https://files.pythonhosted.org/packages/3a/90/ad11b74607873793b41b7b93a992247ee02bcec8433268fa782bfdde817e/NikGapps-1.20.tar.gz
+[2023-05-24 22:07:52] WARNING root fetch - processPackages [NikGapps]: Skipping package: exceeds size limit 41549818>=10485760
+[2023-05-24 22:07:52] INFO root fetch - main [MainThread]: End processing [NikGapps] error
+[2023-05-24 22:07:52] INFO root fetch - main [MainThread]: End processing [mailerlite]: success
+[2023-05-24 22:07:52] INFO root fetch - processPackages [tenforce]: Downloading https://files.pythonhosted.org/packages/17/64/75dfd97fc8878e74e3ef680aada5551d7be3929f19a899c1154cdf15c908/tenforce-0.1.4.tar.gz
+[2023-05-24 22:07:52] INFO root fetch - processPackages [tenforce]: executing diffoscope
+[2023-05-24 22:07:52] INFO root fetch - processPackages [tenforce]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tenforce-0.1.3.tar.gz tmp/tenforce-0.1.4.tar.gz --markdown 20230524/t/tenforce/0.1.3-0.1.4/diff.md --exclude *.pyd
+[2023-05-24 22:07:52] INFO root fetch - main [MainThread]: End processing [trodesnetwork]: success
+[2023-05-24 22:07:53] INFO root fetch - main [MainThread]: End processing [infra-buddy-too]: success
+[2023-05-24 22:07:53] INFO root fetch - main [MainThread]: End processing [joulescope-ui]: success
+[2023-05-24 22:07:53] INFO root fetch - main [MainThread]: End processing [tenforce]: success
+[2023-05-24 22:07:54] INFO root fetch - main [MainThread]: End processing [ruff]: success
+[2023-05-24 22:07:55] INFO root fetch - main [MainThread]: End processing [hotsos]: success
+[2023-05-24 22:07:55] INFO root fetch - main [MainThread]: End processing [hotsos]: success
+[2023-05-24 22:07:56] INFO root fetch - main [MainThread]: End processing [hotsos]: success
+[2023-05-24 22:07:56] INFO root fetch - main [MainThread]: Store serial: [18235257]
