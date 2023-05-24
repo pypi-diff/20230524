@@ -9374,3 +9374,74 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-05-24 09:16:14] INFO root fetch - main [MainThread]: End processing [scrappo]: success
 [2023-05-24 09:16:14] INFO root fetch - main [MainThread]: End processing [easy-pil]: success
 [2023-05-24 09:16:14] INFO root fetch - main [MainThread]: Store serial: [18226155]
+[2023-05-24 09:21:19] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18226155]
+[2023-05-24 09:21:23] INFO root fetch - main [MainThread]: Found 13 changed packages
+[2023-05-24 09:21:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: keystore-client
+[2023-05-24 09:21:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: vbimage
+[2023-05-24 09:21:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: authpy
+[2023-05-24 09:21:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: bmsdna-lakeapi
+[2023-05-24 09:21:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: Aihelper64
+[2023-05-24 09:21:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: HawaData
+[2023-05-24 09:21:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: vbimage
+[2023-05-24 09:21:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: stdf-utils
+[2023-05-24 09:21:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: okdata-cli
+[2023-05-24 09:21:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: syngen
+[2023-05-24 09:21:23] WARNING root fetch - processPackages [authpy]: Skipping, unable to determine old version
+[2023-05-24 09:21:23] INFO root fetch - processPackages [authpy]: Start processing: redhat-qe-cloud-tools
+[2023-05-24 09:21:23] INFO root fetch - main [MainThread]: End processing [authpy] error
+[2023-05-24 09:21:23] INFO root fetch - processPackages [HawaData]: New version: [0.5.4] Old Version: [0.5.3]
+[2023-05-24 09:21:23] WARNING root fetch - processPackages [keystore-client]: Skipping, unable to determine old version
+[2023-05-24 09:21:23] INFO root fetch - processPackages [keystore-client]: Start processing: vbimage
+[2023-05-24 09:21:23] INFO root fetch - main [MainThread]: End processing [keystore-client] error
+[2023-05-24 09:21:23] INFO root fetch - processPackages [vbimage]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-24 09:21:23] INFO root fetch - processPackages [stdf-utils]: New version: [0.2.3] Old Version: [0.2.2]
+[2023-05-24 09:21:23] INFO root fetch - processPackages [bmsdna-lakeapi]: New version: [0.4.1] Old Version: [0.4.0]
+[2023-05-24 09:21:23] WARNING root fetch - processPackages [Aihelper64]: Skipping, unable to determine old version
+[2023-05-24 09:21:23] INFO root fetch - processPackages [Aihelper64]: Start processing: attm
+[2023-05-24 09:21:23] INFO root fetch - main [MainThread]: End processing [Aihelper64] error
+[2023-05-24 09:21:23] INFO root fetch - processPackages [okdata-cli]: New version: [2.0.1] Old Version: [2.0.0]
+[2023-05-24 09:21:23] INFO root fetch - processPackages [syngen]: New version: [0.1.6] Old Version: [0.1.5]
+[2023-05-24 09:21:23] INFO root fetch - processPackages [vbimage]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-24 09:21:23] INFO root fetch - processPackages [redhat-qe-cloud-tools]: New version: [1.0.4] Old Version: [1.0.3]
+[2023-05-24 09:21:23] INFO root fetch - processPackages [vbimage]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-24 09:21:23] INFO root fetch - processPackages [attm]: New version: [0.1.0] Old Version: [0.0.9]
+[2023-05-24 09:21:23] INFO root fetch - processPackages [bmsdna-lakeapi]: Downloading https://files.pythonhosted.org/packages/da/56/3e6b025db198fc9fb3e6631582b5ac28cd624c216f7e3cbab68c108f742f/bmsdna_lakeapi-0.4.0.tar.gz
+[2023-05-24 09:21:23] INFO root fetch - processPackages [stdf-utils]: Downloading https://files.pythonhosted.org/packages/69/1d/63fe28584f1413b556c56cdcf79dc764ba839fe1658c9aa84bb8a84b6bb2/stdf-utils-0.2.3.tar.gz
+[2023-05-24 09:21:23] INFO root fetch - processPackages [attm]: Downloading https://files.pythonhosted.org/packages/02/eb/c7bd4591fb62f5198b3a55cb3990ee7c2367afdcb2790e0323e1acb0f744/attm-0.1.0-py3-none-win_amd64.whl
+[2023-05-24 09:21:24] INFO root fetch - processPackages [okdata-cli]: Downloading https://files.pythonhosted.org/packages/1b/cc/b057465a7eaecda32656bc04d4b3f1ea2c53eaacf50d8007e59e5514dedb/okdata-cli-2.0.0.tar.gz
+[2023-05-24 09:21:24] INFO root fetch - processPackages [HawaData]: Downloading https://files.pythonhosted.org/packages/5a/9b/a51c3ea45d4d8255d91ede201481ecf23ba1e4479eda3f399c12dc3e5f2e/HawaData-0.5.4.tar.gz
+[2023-05-24 09:21:24] INFO root fetch - processPackages [stdf-utils]: executing diffoscope
+[2023-05-24 09:21:24] INFO root fetch - processPackages [stdf-utils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/stdf-utils-0.2.2.tar.gz tmp/stdf-utils-0.2.3.tar.gz --markdown 20230524/s/stdf-utils/0.2.2-0.2.3/diff.md --exclude *.pyd
+[2023-05-24 09:21:24] INFO root fetch - processPackages [attm]: executing diffoscope
+[2023-05-24 09:21:24] INFO root fetch - processPackages [attm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/attm-0.0.9-py3-none-win_amd64.whl.zip tmp/attm-0.1.0-py3-none-win_amd64.whl.zip --markdown 20230524/a/attm/0.0.9-0.1.0/diff.md --exclude *.pyd
+[2023-05-24 09:21:24] INFO root fetch - processPackages [syngen]: Downloading https://files.pythonhosted.org/packages/88/5d/215af3787cfb43cfc01ea19b442c89656ec3fe83bed364b984e58070b3ac/syngen-0.1.6.tar.gz
+[2023-05-24 09:21:24] INFO root fetch - processPackages [bmsdna-lakeapi]: Downloading https://files.pythonhosted.org/packages/e3/11/10959c8e5aa07aabeea5f45f8b0edf08a9d00272849922cd39077a990189/bmsdna_lakeapi-0.4.1.tar.gz
+[2023-05-24 09:21:24] INFO root fetch - processPackages [vbimage]: executing diffoscope
+[2023-05-24 09:21:24] INFO root fetch - processPackages [vbimage]: executing diffoscope
+[2023-05-24 09:21:24] INFO root fetch - processPackages [vbimage]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vbimage-0.1.8.tar.gz tmp/vbimage-0.1.9.tar.gz --markdown 20230524/v/vbimage/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-24 09:21:24] INFO root fetch - processPackages [vbimage]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vbimage-0.1.8.tar.gz tmp/vbimage-0.1.9.tar.gz --markdown 20230524/v/vbimage/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-24 09:21:24] INFO root fetch - processPackages [vbimage]: executing diffoscope
+[2023-05-24 09:21:24] INFO root fetch - processPackages [vbimage]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vbimage-0.1.8.tar.gz tmp/vbimage-0.1.9.tar.gz --markdown 20230524/v/vbimage/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-24 09:21:24] INFO root fetch - processPackages [redhat-qe-cloud-tools]: Downloading https://files.pythonhosted.org/packages/07/fa/12c6f910d514a2c7263d2411a95c9a54600edffdeb33e5dea7d30c62df5b/redhat_qe_cloud_tools-1.0.4.tar.gz
+[2023-05-24 09:21:24] INFO root fetch - processPackages [HawaData]: executing diffoscope
+[2023-05-24 09:21:24] INFO root fetch - processPackages [HawaData]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/HawaData-0.5.3.tar.gz tmp/HawaData-0.5.4.tar.gz --markdown 20230524/H/HawaData/0.5.3-0.5.4/diff.md --exclude *.pyd
+[2023-05-24 09:21:24] INFO root fetch - processPackages [syngen]: executing diffoscope
+[2023-05-24 09:21:24] INFO root fetch - processPackages [syngen]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/syngen-0.1.5.tar.gz tmp/syngen-0.1.6.tar.gz --markdown 20230524/s/syngen/0.1.5-0.1.6/diff.md --exclude *.pyd
+[2023-05-24 09:21:24] INFO root fetch - processPackages [redhat-qe-cloud-tools]: executing diffoscope
+[2023-05-24 09:21:24] INFO root fetch - processPackages [redhat-qe-cloud-tools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/redhat_qe_cloud_tools-1.0.3.tar.gz tmp/redhat_qe_cloud_tools-1.0.4.tar.gz --markdown 20230524/r/redhat-qe-cloud-tools/1.0.3-1.0.4/diff.md --exclude *.pyd
+[2023-05-24 09:21:24] INFO root fetch - processPackages [okdata-cli]: Downloading https://files.pythonhosted.org/packages/6f/a8/affd49d7e8914ffb62bbd36c63f0b6ed201b0735c3c467e134c8e23efb7a/okdata-cli-2.0.1.tar.gz
+[2023-05-24 09:21:24] INFO root fetch - processPackages [bmsdna-lakeapi]: executing diffoscope
+[2023-05-24 09:21:24] INFO root fetch - processPackages [bmsdna-lakeapi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bmsdna_lakeapi-0.4.0.tar.gz tmp/bmsdna_lakeapi-0.4.1.tar.gz --markdown 20230524/b/bmsdna-lakeapi/0.4.0-0.4.1/diff.md --exclude *.pyd
+[2023-05-24 09:21:24] INFO root fetch - processPackages [okdata-cli]: executing diffoscope
+[2023-05-24 09:21:24] INFO root fetch - processPackages [okdata-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/okdata-cli-2.0.0.tar.gz tmp/okdata-cli-2.0.1.tar.gz --markdown 20230524/o/okdata-cli/2.0.0-2.0.1/diff.md --exclude *.pyd
+[2023-05-24 09:21:25] INFO root fetch - main [MainThread]: End processing [vbimage]: success
+[2023-05-24 09:21:25] INFO root fetch - main [MainThread]: End processing [vbimage]: success
+[2023-05-24 09:21:25] INFO root fetch - main [MainThread]: End processing [vbimage]: success
+[2023-05-24 09:21:25] INFO root fetch - main [MainThread]: End processing [attm]: success
+[2023-05-24 09:21:25] INFO root fetch - main [MainThread]: End processing [HawaData]: success
+[2023-05-24 09:21:25] INFO root fetch - main [MainThread]: End processing [redhat-qe-cloud-tools]: success
+[2023-05-24 09:21:25] INFO root fetch - main [MainThread]: End processing [stdf-utils]: success
+[2023-05-24 09:21:26] INFO root fetch - main [MainThread]: End processing [bmsdna-lakeapi]: success
+[2023-05-24 09:21:26] INFO root fetch - main [MainThread]: End processing [okdata-cli]: success
+[2023-05-24 09:21:28] INFO root fetch - main [MainThread]: End processing [syngen]: success
+[2023-05-24 09:21:28] INFO root fetch - main [MainThread]: Store serial: [18226200]
