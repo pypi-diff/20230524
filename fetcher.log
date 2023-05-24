@@ -15599,3 +15599,174 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd4 in position 72: invalid
 [2023-05-24 15:14:10] INFO root fetch - main [MainThread]: End processing [openmetadata-ingestion]: success
 [2023-05-24 15:14:57] INFO root fetch - main [MainThread]: End processing [parimutuelsdk]: success
 [2023-05-24 15:14:57] INFO root fetch - main [MainThread]: Store serial: [18229975]
+[2023-05-24 15:20:09] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18229975]
+[2023-05-24 15:20:14] INFO root fetch - main [MainThread]: Found 29 changed packages
+[2023-05-24 15:20:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: thrivve-core
+[2023-05-24 15:20:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: trulens-eval
+[2023-05-24 15:20:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: nbdev-sphinx
+[2023-05-24 15:20:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: bhousing-model
+[2023-05-24 15:20:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: season
+[2023-05-24 15:20:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: tasksource
+[2023-05-24 15:20:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: trulens-eval
+[2023-05-24 15:20:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: text2tags-lib
+[2023-05-24 15:20:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: geocube
+[2023-05-24 15:20:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: remotemanager
+[2023-05-24 15:20:14] INFO root fetch - processPackages [geocube]: New version: [0.4.1] Old Version: [0.4.0]
+[2023-05-24 15:20:14] INFO root fetch - processPackages [geocube]: executing diffoscope
+[2023-05-24 15:20:14] INFO root fetch - processPackages [geocube]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/geocube-0.4.0.tar.gz tmp/geocube-0.4.1.tar.gz --markdown 20230524/g/geocube/0.4.0-0.4.1/diff.md --exclude *.pyd
+[2023-05-24 15:20:14] INFO root fetch - processPackages [thrivve-core]: New version: [0.2.7] Old Version: [0.2.6]
+[2023-05-24 15:20:14] INFO root fetch - processPackages [bhousing-model]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-05-24 15:20:14] WARNING root fetch - processPackages [text2tags-lib]: Skipping, unable to determine old version
+[2023-05-24 15:20:14] INFO root fetch - processPackages [text2tags-lib]: Start processing: nbdev-django
+[2023-05-24 15:20:14] INFO root fetch - main [MainThread]: End processing [text2tags-lib] error
+[2023-05-24 15:20:14] INFO root fetch - processPackages [trulens-eval]: New version: [0.1.1a0] Old Version: [0.1.1]
+[2023-05-24 15:20:14] INFO root fetch - processPackages [trulens-eval]: New version: [0.1.1a0] Old Version: [0.1.1]
+[2023-05-24 15:20:14] INFO root fetch - processPackages [season]: New version: [2.3.1] Old Version: [2.3.0]
+[2023-05-24 15:20:14] INFO root fetch - processPackages [remotemanager]: New version: [0.5.9] Old Version: [0.5.8]
+[2023-05-24 15:20:14] INFO root fetch - processPackages [tasksource]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-24 15:20:14] INFO root fetch - processPackages [nbdev-django]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-05-24 15:20:14] INFO root fetch - processPackages [nbdev-sphinx]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-05-24 15:20:15] INFO root fetch - processPackages [bhousing-model]: Downloading https://files.pythonhosted.org/packages/b2/a6/e67b714927ea62888fd0e833e26417832555204ce83b9187532a74c5ba3a/bhousing-model-0.0.2.tar.gz
+[2023-05-24 15:20:15] INFO root fetch - processPackages [season]: Downloading https://files.pythonhosted.org/packages/1b/88/ac4e80da8fefdaf140fafc2d6d07d41ebfddb27386c48e43b8aa28d8a54e/season-2.3.0-py3-none-any.whl
+[2023-05-24 15:20:15] INFO root fetch - processPackages [nbdev-django]: executing diffoscope
+[2023-05-24 15:20:15] INFO root fetch - processPackages [nbdev-django]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nbdev-django-0.0.98.tar.gz tmp/nbdev-django-0.0.99.tar.gz --markdown 20230524/n/nbdev-django/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-05-24 15:20:15] WARNING root fetch - processPackages [season]: Skipping package: exceeds size limit 13772725>=10485760
+[2023-05-24 15:20:15] INFO root fetch - processPackages [season]: Start processing: scaneo
+[2023-05-24 15:20:15] INFO root fetch - main [MainThread]: End processing [season] error
+[2023-05-24 15:20:15] INFO root fetch - processPackages [tasksource]: Downloading https://files.pythonhosted.org/packages/c5/5a/577f24b048a52087b4bb9d752d76d480b0018786e5342599cfaa1c3572bc/tasksource-0.0.8.tar.gz
+[2023-05-24 15:20:15] INFO root fetch - processPackages [thrivve-core]: Downloading https://files.pythonhosted.org/packages/13/4f/71a28ccf5e7f56b6c3ca804ab305ae5a2eb873fce873473d8c220e0857aa/thrivve_core-0.2.6.tar.gz
+[2023-05-24 15:20:15] INFO root fetch - processPackages [scaneo]: New version: [0.0.9.post3] Old Version: [0.0.9.post2]
+[2023-05-24 15:20:15] INFO root fetch - processPackages [scaneo]: executing diffoscope
+[2023-05-24 15:20:15] INFO root fetch - processPackages [scaneo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/scaneo-0.0.9.post2.tar.gz tmp/scaneo-0.0.9.post3.tar.gz --markdown 20230524/s/scaneo/0.0.9.post2-0.0.9.post3/diff.md --exclude *.pyd
+[2023-05-24 15:20:15] INFO root fetch - processPackages [trulens-eval]: Downloading https://files.pythonhosted.org/packages/46/32/2be3b761cdb9d6c278ccd56668c23f10ae095060b25c982bae6b5f33e794/trulens_eval-0.1.1a0-py3-none-any.whl
+[2023-05-24 15:20:15] INFO root fetch - processPackages [trulens-eval]: Downloading https://files.pythonhosted.org/packages/46/32/2be3b761cdb9d6c278ccd56668c23f10ae095060b25c982bae6b5f33e794/trulens_eval-0.1.1a0-py3-none-any.whl
+[2023-05-24 15:20:15] INFO root fetch - processPackages [bhousing-model]: Downloading https://files.pythonhosted.org/packages/6a/09/84184b3f9ac69d6a210b460c38cbd756db21fff85917b0d4f2ad938dc8a1/bhousing-model-0.0.3.tar.gz
+[2023-05-24 15:20:15] INFO root fetch - processPackages [remotemanager]: executing diffoscope
+[2023-05-24 15:20:15] INFO root fetch - processPackages [remotemanager]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/remotemanager-0.5.8.tar.gz tmp/remotemanager-0.5.9.tar.gz --markdown 20230524/r/remotemanager/0.5.8-0.5.9/diff.md --exclude *.pyd
+[2023-05-24 15:20:15] INFO root fetch - processPackages [nbdev-sphinx]: executing diffoscope
+[2023-05-24 15:20:15] INFO root fetch - processPackages [nbdev-sphinx]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nbdev-sphinx-0.0.98.tar.gz tmp/nbdev-sphinx-0.0.99.tar.gz --markdown 20230524/n/nbdev-sphinx/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-05-24 15:20:15] INFO root fetch - processPackages [thrivve-core]: Downloading https://files.pythonhosted.org/packages/87/f6/fe81fe0808c0ecd9517d9dc51fb70d260505b97f99b7cc2fc83050013fc8/thrivve_core-0.2.7.tar.gz
+[2023-05-24 15:20:15] INFO root fetch - processPackages [bhousing-model]: executing diffoscope
+[2023-05-24 15:20:15] INFO root fetch - processPackages [bhousing-model]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bhousing-model-0.0.2.tar.gz tmp/bhousing-model-0.0.3.tar.gz --markdown 20230524/b/bhousing-model/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-05-24 15:20:15] INFO root fetch - processPackages [trulens-eval]: executing diffoscope
+[2023-05-24 15:20:15] INFO root fetch - processPackages [trulens-eval]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/trulens_eval-0.1.1-py3-none-any.whl.zip tmp/trulens_eval-0.1.1a0-py3-none-any.whl.zip --markdown 20230524/t/trulens-eval/0.1.1-0.1.1a0/diff.md --exclude *.pyd
+[2023-05-24 15:20:15] INFO root fetch - processPackages [trulens-eval]: executing diffoscope
+[2023-05-24 15:20:15] INFO root fetch - processPackages [trulens-eval]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/trulens_eval-0.1.1-py3-none-any.whl.zip tmp/trulens_eval-0.1.1a0-py3-none-any.whl.zip --markdown 20230524/t/trulens-eval/0.1.1-0.1.1a0/diff.md --exclude *.pyd
+[2023-05-24 15:20:15] INFO root fetch - processPackages [thrivve-core]: executing diffoscope
+[2023-05-24 15:20:15] INFO root fetch - processPackages [thrivve-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/thrivve_core-0.2.6.tar.gz tmp/thrivve_core-0.2.7.tar.gz --markdown 20230524/t/thrivve-core/0.2.6-0.2.7/diff.md --exclude *.pyd
+[2023-05-24 15:20:16] INFO root fetch - processPackages [tasksource]: Downloading https://files.pythonhosted.org/packages/79/98/5f442144303c3b9aad3c1d81a6dfca8f937304149324559064fb9f84a79f/tasksource-0.0.9.tar.gz
+[2023-05-24 15:20:16] INFO root fetch - processPackages [nbdev-django]: Start processing: flow360
+[2023-05-24 15:20:16] INFO root fetch - main [MainThread]: End processing [nbdev-django]: success
+[2023-05-24 15:20:16] INFO root fetch - processPackages [flow360]: New version: [0.2.0b8] Old Version: [0.2.0b7]
+[2023-05-24 15:20:16] INFO root fetch - processPackages [tasksource]: executing diffoscope
+[2023-05-24 15:20:16] INFO root fetch - processPackages [tasksource]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tasksource-0.0.8.tar.gz tmp/tasksource-0.0.9.tar.gz --markdown 20230524/t/tasksource/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-24 15:20:16] INFO root fetch - processPackages [flow360]: Downloading https://files.pythonhosted.org/packages/bd/61/9bb2e0b3b2eaa88629a5940dfa5e83b4f147a3962f253e38879af7f0d77b/flow360-0.2.0b7.tar.gz
+[2023-05-24 15:20:16] INFO root fetch - processPackages [nbdev-sphinx]: Start processing: sparsezoo-nightly
+[2023-05-24 15:20:16] INFO root fetch - main [MainThread]: End processing [nbdev-sphinx]: success
+[2023-05-24 15:20:16] INFO root fetch - processPackages [remotemanager]: Start processing: sparseml-nightly
+[2023-05-24 15:20:16] INFO root fetch - main [MainThread]: End processing [remotemanager]: success
+[2023-05-24 15:20:16] INFO root fetch - processPackages [sparseml-nightly]: New version: [1.5.0.20230516] Old Version: [1.5.0.20230509]
+[2023-05-24 15:20:17] INFO root fetch - processPackages [sparsezoo-nightly]: New version: [1.5.0.20230520] Old Version: [1.5.0.20230516]
+[2023-05-24 15:20:17] INFO root fetch - processPackages [flow360]: Downloading https://files.pythonhosted.org/packages/d0/fb/a17fd0a3a12d858f09d0a20f14fa6e9733f5c8f80dbbbeb346515f6a8d56/flow360-0.2.0b8.tar.gz
+[2023-05-24 15:20:17] INFO root fetch - processPackages [geocube]: Start processing: neopolitan
+[2023-05-24 15:20:17] INFO root fetch - main [MainThread]: End processing [geocube]: success
+[2023-05-24 15:20:17] INFO root fetch - processPackages [trulens-eval]: Start processing: hiyobot
+[2023-05-24 15:20:17] INFO root fetch - main [MainThread]: End processing [trulens-eval]: success
+[2023-05-24 15:20:17] INFO root fetch - processPackages [sparseml-nightly]: Downloading https://files.pythonhosted.org/packages/c9/d1/c5c5b4e1eb8e3644c6c6c92cce8d2e8345423b75632382a4a74dffa09424/sparseml_nightly-1.5.0.20230509-py3-none-any.whl
+[2023-05-24 15:20:17] INFO root fetch - processPackages [flow360]: executing diffoscope
+[2023-05-24 15:20:17] INFO root fetch - processPackages [flow360]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/flow360-0.2.0b7.tar.gz tmp/flow360-0.2.0b8.tar.gz --markdown 20230524/f/flow360/0.2.0b7-0.2.0b8/diff.md --exclude *.pyd
+[2023-05-24 15:20:17] INFO root fetch - processPackages [neopolitan]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-24 15:20:17] INFO root fetch - processPackages [trulens-eval]: Start processing: mitosheet
+[2023-05-24 15:20:17] INFO root fetch - main [MainThread]: End processing [trulens-eval]: success
+[2023-05-24 15:20:17] INFO root fetch - processPackages [hiyobot]: New version: [0.2.5] Old Version: [0.2.4]
+[2023-05-24 15:20:17] INFO root fetch - processPackages [mitosheet]: New version: [0.1.99] Old Version: [0.1.98]
+[2023-05-24 15:20:17] INFO root fetch - processPackages [mitosheet]: Downloading https://files.pythonhosted.org/packages/8f/ca/cfa5a04a8bad41705bac5f84cf0c0a38c2e86f34a87c85d097c82dd321da/mitosheet-0.1.98.tar.gz
+[2023-05-24 15:20:17] INFO root fetch - processPackages [sparsezoo-nightly]: Downloading https://files.pythonhosted.org/packages/b1/7e/355a5e0d6ba7b7738f58cd7dc862268f3ed950237c99b748e75287515f9b/sparsezoo_nightly-1.5.0.20230516-py3-none-any.whl
+[2023-05-24 15:20:17] WARNING root fetch - processPackages [mitosheet]: Skipping package: exceeds size limit 14622615>=10485760
+[2023-05-24 15:20:17] INFO root fetch - processPackages [mitosheet]: Start processing: scaneo
+[2023-05-24 15:20:17] INFO root fetch - main [MainThread]: End processing [mitosheet] error
+[2023-05-24 15:20:17] INFO root fetch - processPackages [scaneo]: New version: [0.0.9.post3] Old Version: [0.0.9.post2]
+[2023-05-24 15:20:17] INFO root fetch - processPackages [hiyobot]: Downloading https://files.pythonhosted.org/packages/c1/5a/51a356c58eb47e0f85ea8f19b06ac291ecc4485d552ae2dda17faf6140ca/hiyobot-0.2.4.tar.gz
+[2023-05-24 15:20:17] INFO root fetch - processPackages [scaneo]: executing diffoscope
+[2023-05-24 15:20:17] INFO root fetch - processPackages [scaneo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/scaneo-0.0.9.post2.tar.gz tmp/scaneo-0.0.9.post3.tar.gz --markdown 20230524/s/scaneo/0.0.9.post2-0.0.9.post3/diff.md --exclude *.pyd
+[2023-05-24 15:20:17] INFO root fetch - processPackages [sparseml-nightly]: Downloading https://files.pythonhosted.org/packages/e9/3a/33a7cbd69a46ce83b239ecf6036be74323eb0926385841710e5bfaa13905/sparseml_nightly-1.5.0.20230516-py3-none-any.whl
+[2023-05-24 15:20:17] INFO root fetch - processPackages [neopolitan]: executing diffoscope
+[2023-05-24 15:20:17] INFO root fetch - processPackages [neopolitan]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/neopolitan-0.1.8.tar.gz tmp/neopolitan-0.1.9.tar.gz --markdown 20230524/n/neopolitan/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-24 15:20:17] INFO root fetch - processPackages [hiyobot]: Downloading https://files.pythonhosted.org/packages/64/3a/8ec1ba833fe024225f5ac7b08fbeb52b14a2bceb1701a69db7d792b5a6ef/hiyobot-0.2.5.tar.gz
+[2023-05-24 15:20:17] INFO root fetch - processPackages [sparsezoo-nightly]: Downloading https://files.pythonhosted.org/packages/c4/05/bd0a37babe5cdba11a27db50dbeef677c8643d4f66cf425565fa53198d9d/sparsezoo_nightly-1.5.0.20230520-py3-none-any.whl
+[2023-05-24 15:20:17] INFO root fetch - processPackages [thrivve-core]: Start processing: nbdev-apl
+[2023-05-24 15:20:17] INFO root fetch - main [MainThread]: End processing [thrivve-core]: success
+[2023-05-24 15:20:17] INFO root fetch - processPackages [hiyobot]: executing diffoscope
+[2023-05-24 15:20:17] INFO root fetch - processPackages [hiyobot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hiyobot-0.2.4.tar.gz tmp/hiyobot-0.2.5.tar.gz --markdown 20230524/h/hiyobot/0.2.4-0.2.5/diff.md --exclude *.pyd
+[2023-05-24 15:20:17] INFO root fetch - processPackages [nbdev-apl]: New version: [0.0.791] Old Version: [0.0.790]
+[2023-05-24 15:20:17] INFO root fetch - processPackages [sparseml-nightly]: executing diffoscope
+[2023-05-24 15:20:17] INFO root fetch - processPackages [sparseml-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sparseml_nightly-1.5.0.20230509-py3-none-any.whl.zip tmp/sparseml_nightly-1.5.0.20230516-py3-none-any.whl.zip --markdown 20230524/s/sparseml-nightly/1.5.0.20230509-1.5.0.20230516/diff.md --exclude *.pyd
+[2023-05-24 15:20:17] INFO root fetch - processPackages [sparsezoo-nightly]: executing diffoscope
+[2023-05-24 15:20:17] INFO root fetch - processPackages [sparsezoo-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sparsezoo_nightly-1.5.0.20230516-py3-none-any.whl.zip tmp/sparsezoo_nightly-1.5.0.20230520-py3-none-any.whl.zip --markdown 20230524/s/sparsezoo-nightly/1.5.0.20230516-1.5.0.20230520/diff.md --exclude *.pyd
+[2023-05-24 15:20:17] INFO root fetch - processPackages [bhousing-model]: Start processing: mitosheet3
+[2023-05-24 15:20:17] INFO root fetch - main [MainThread]: End processing [bhousing-model]: success
+[2023-05-24 15:20:17] INFO root fetch - processPackages [tasksource]: Start processing: deepsparse-nightly
+[2023-05-24 15:20:17] INFO root fetch - main [MainThread]: End processing [tasksource]: success
+[2023-05-24 15:20:17] INFO root fetch - processPackages [deepsparse-nightly]: New version: [1.5.0.20230516] Old Version: [1.5.0.20230509]
+[2023-05-24 15:20:17] INFO root fetch - processPackages [mitosheet3]: New version: [0.3.92] Old Version: [0.3.91]
+[2023-05-24 15:20:17] INFO root fetch - processPackages [scaneo]: Start processing: databank
+[2023-05-24 15:20:17] INFO root fetch - main [MainThread]: End processing [scaneo]: success
+[2023-05-24 15:20:18] INFO root fetch - processPackages [nbdev-apl]: Downloading https://files.pythonhosted.org/packages/19/b0/31ce1e32e796a3930817c9530a78b903ff018dda5da21d3cb798668a4964/nbdev-apl-0.0.791.tar.gz
+[2023-05-24 15:20:18] INFO root fetch - processPackages [mitosheet3]: executing diffoscope
+[2023-05-24 15:20:18] INFO root fetch - processPackages [mitosheet3]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mitosheet3-0.3.91.tar.gz tmp/mitosheet3-0.3.92.tar.gz --markdown 20230524/m/mitosheet3/0.3.91-0.3.92/diff.md --exclude *.pyd
+[2023-05-24 15:20:18] INFO root fetch - processPackages [databank]: New version: [0.5.0] Old Version: [0.4.1]
+[2023-05-24 15:20:18] INFO root fetch - processPackages [deepsparse-nightly]: Downloading https://files.pythonhosted.org/packages/bd/51/32b746a7da86780cfe23de12481748904fbf34c3e0a16db5cacd77e9f569/deepsparse-nightly-1.5.0.20230509.tar.gz
+[2023-05-24 15:20:18] INFO root fetch - processPackages [nbdev-apl]: executing diffoscope
+[2023-05-24 15:20:18] INFO root fetch - processPackages [nbdev-apl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nbdev-apl-0.0.790.tar.gz tmp/nbdev-apl-0.0.791.tar.gz --markdown 20230524/n/nbdev-apl/0.0.790-0.0.791/diff.md --exclude *.pyd
+[2023-05-24 15:20:18] INFO root fetch - processPackages [databank]: Downloading https://files.pythonhosted.org/packages/29/92/0a6ab8e3e327434ce9263a1b3a98a884393d0e7a3e1b722ad9424cd052b6/databank-0.4.1.tar.gz
+[2023-05-24 15:20:18] INFO root fetch - processPackages [databank]: Downloading https://files.pythonhosted.org/packages/2d/83/c96b4b163a73d13741db34da8a55bacb03058b16c2c41e7efe73991f5be9/databank-0.5.0.tar.gz
+[2023-05-24 15:20:18] INFO root fetch - processPackages [databank]: executing diffoscope
+[2023-05-24 15:20:18] INFO root fetch - processPackages [databank]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/databank-0.4.1.tar.gz tmp/databank-0.5.0.tar.gz --markdown 20230524/d/databank/0.4.1-0.5.0/diff.md --exclude *.pyd
+[2023-05-24 15:20:18] WARNING root fetch - processPackages [deepsparse-nightly]: Skipping package: exceeds size limit 41875411>=10485760
+[2023-05-24 15:20:18] INFO root fetch - processPackages [deepsparse-nightly]: Start processing: certora-cli-alpha-shays-CERT-2259
+[2023-05-24 15:20:18] INFO root fetch - main [MainThread]: End processing [deepsparse-nightly] error
+[2023-05-24 15:20:18] INFO root fetch - processPackages [certora-cli-alpha-shays-CERT-2259]: New version: [20230524.13.17.472413] Old Version: [20230523.10.50.879141]
+[2023-05-24 15:20:19] INFO root fetch - processPackages [flow360]: Start processing: scaneo
+[2023-05-24 15:20:19] INFO root fetch - main [MainThread]: End processing [flow360]: success
+[2023-05-24 15:20:19] INFO root fetch - processPackages [scaneo]: New version: [0.0.9.post3] Old Version: [0.0.9.post2]
+[2023-05-24 15:20:19] INFO root fetch - processPackages [certora-cli-alpha-shays-CERT-2259]: Downloading https://files.pythonhosted.org/packages/a6/42/40dae60022c1a3f27c42d3faec05c5f1b87a676d0a74377ab7a19a4aca83/certora-cli-alpha-shays-CERT-2259-20230523.10.50.879141.tar.gz
+[2023-05-24 15:20:19] WARNING root fetch - processPackages [certora-cli-alpha-shays-CERT-2259]: Skipping package: exceeds size limit 38988404>=10485760
+[2023-05-24 15:20:19] INFO root fetch - processPackages [certora-cli-alpha-shays-CERT-2259]: Start processing: ipyvue
+[2023-05-24 15:20:19] INFO root fetch - main [MainThread]: End processing [certora-cli-alpha-shays-CERT-2259] error
+[2023-05-24 15:20:19] INFO root fetch - processPackages [hiyobot]: Start processing: sparsify-nightly
+[2023-05-24 15:20:19] INFO root fetch - main [MainThread]: End processing [hiyobot]: success
+[2023-05-24 15:20:19] INFO root fetch - processPackages [scaneo]: executing diffoscope
+[2023-05-24 15:20:19] INFO root fetch - processPackages [scaneo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/scaneo-0.0.9.post2.tar.gz tmp/scaneo-0.0.9.post3.tar.gz --markdown 20230524/s/scaneo/0.0.9.post2-0.0.9.post3/diff.md --exclude *.pyd
+[2023-05-24 15:20:19] INFO root fetch - processPackages [sparsify-nightly]: New version: [1.5.0.20230520] Old Version: [1.5.0.20230516]
+[2023-05-24 15:20:19] INFO root fetch - processPackages [ipyvue]: New version: [1.9.1] Old Version: [1.9.0]
+[2023-05-24 15:20:19] INFO root fetch - processPackages [neopolitan]: Start processing: pyopnsenseapi
+[2023-05-24 15:20:19] INFO root fetch - main [MainThread]: End processing [neopolitan]: success
+[2023-05-24 15:20:19] INFO root fetch - processPackages [ipyvue]: Downloading https://files.pythonhosted.org/packages/12/02/c1f2efaf74b9b7f661aec80be468ba63223d5189735a76a27dce8ed6c7de/ipyvue-1.9.0.tar.gz
+[2023-05-24 15:20:19] INFO root fetch - processPackages [pyopnsenseapi]: New version: [0.1.0] Old Version: [0.0.1]
+[2023-05-24 15:20:19] INFO root fetch - processPackages [sparsify-nightly]: Downloading https://files.pythonhosted.org/packages/53/be/f8c9b17a4375c8a907ec8af82b40b3a269480ba46d0f00bcb40fc8741c31/sparsify-nightly-1.5.0.20230516.tar.gz
+[2023-05-24 15:20:19] INFO root fetch - processPackages [nbdev-apl]: Start processing: pref-voting
+[2023-05-24 15:20:19] INFO root fetch - main [MainThread]: End processing [nbdev-apl]: success
+[2023-05-24 15:20:19] INFO root fetch - main [MainThread]: End processing [sparsezoo-nightly]: success
+[2023-05-24 15:20:19] INFO root fetch - processPackages [pyopnsenseapi]: Downloading https://files.pythonhosted.org/packages/83/63/397ed74d250633891fb441cd94d7ba43681481bdd40ef6b99b8eae22b649/pyopnsenseapi-0.0.1.tar.gz
+[2023-05-24 15:20:19] INFO root fetch - processPackages [pref-voting]: New version: [0.2.9] Old Version: [0.2.8]
+[2023-05-24 15:20:19] INFO root fetch - processPackages [ipyvue]: Downloading https://files.pythonhosted.org/packages/92/d6/11410bcafe41696f6d790f6a6e9df1e0a350ac36ea01756bbdbf595091d3/ipyvue-1.9.1.tar.gz
+[2023-05-24 15:20:19] INFO root fetch - processPackages [sparsify-nightly]: Downloading https://files.pythonhosted.org/packages/9b/a9/f0d63b462a3954506976ac0eb266bec4d4d3ba37c04dddeaeebb6b14ef34/sparsify-nightly-1.5.0.20230520.tar.gz
+[2023-05-24 15:20:19] INFO root fetch - main [MainThread]: End processing [databank]: success
+[2023-05-24 15:20:20] INFO root fetch - processPackages [pyopnsenseapi]: Downloading https://files.pythonhosted.org/packages/fc/dd/f1d635ca610762668ed9ec428b31c7be61d7377362ae7ace8104a230bd4d/pyopnsenseapi-0.1.0.tar.gz
+[2023-05-24 15:20:20] INFO root fetch - processPackages [sparsify-nightly]: executing diffoscope
+[2023-05-24 15:20:20] INFO root fetch - processPackages [sparsify-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sparsify-nightly-1.5.0.20230516.tar.gz tmp/sparsify-nightly-1.5.0.20230520.tar.gz --markdown 20230524/s/sparsify-nightly/1.5.0.20230516-1.5.0.20230520/diff.md --exclude *.pyd
+[2023-05-24 15:20:20] INFO root fetch - processPackages [pyopnsenseapi]: executing diffoscope
+[2023-05-24 15:20:20] INFO root fetch - processPackages [pyopnsenseapi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyopnsenseapi-0.0.1.tar.gz tmp/pyopnsenseapi-0.1.0.tar.gz --markdown 20230524/p/pyopnsenseapi/0.0.1-0.1.0/diff.md --exclude *.pyd
+[2023-05-24 15:20:20] INFO root fetch - processPackages [ipyvue]: executing diffoscope
+[2023-05-24 15:20:20] INFO root fetch - processPackages [ipyvue]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ipyvue-1.9.0.tar.gz tmp/ipyvue-1.9.1.tar.gz --markdown 20230524/i/ipyvue/1.9.0-1.9.1/diff.md --exclude *.pyd
+[2023-05-24 15:20:20] INFO root fetch - processPackages [pref-voting]: executing diffoscope
+[2023-05-24 15:20:20] INFO root fetch - processPackages [pref-voting]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pref_voting-0.2.8.tar.gz tmp/pref_voting-0.2.9.tar.gz --markdown 20230524/p/pref-voting/0.2.8-0.2.9/diff.md --exclude *.pyd
+[2023-05-24 15:20:20] INFO root fetch - main [MainThread]: End processing [scaneo]: success
+[2023-05-24 15:20:21] INFO root fetch - main [MainThread]: End processing [scaneo]: success
+[2023-05-24 15:20:21] INFO root fetch - main [MainThread]: End processing [pref-voting]: success
+[2023-05-24 15:20:21] INFO root fetch - main [MainThread]: End processing [pyopnsenseapi]: success
+[2023-05-24 15:20:22] INFO root fetch - main [MainThread]: End processing [mitosheet3]: success
+[2023-05-24 15:20:22] INFO root fetch - main [MainThread]: End processing [sparseml-nightly]: success
+[2023-05-24 15:20:29] INFO root fetch - main [MainThread]: End processing [sparsify-nightly]: success
+[2023-05-24 15:20:44] INFO root fetch - main [MainThread]: End processing [ipyvue]: success
+[2023-05-24 15:20:44] INFO root fetch - main [MainThread]: Store serial: [18230068]
