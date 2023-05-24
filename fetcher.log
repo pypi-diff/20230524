@@ -8549,3 +8549,76 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-05-24 08:07:27] INFO root fetch - main [MainThread]: End processing [electrumsv-secp256k1]: success
 [2023-05-24 08:07:30] INFO root fetch - main [MainThread]: End processing [pyg-nightly]: success
 [2023-05-24 08:07:30] INFO root fetch - main [MainThread]: Store serial: [18225658]
+[2023-05-24 08:12:34] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18225658]
+[2023-05-24 08:12:39] INFO root fetch - main [MainThread]: Found 12 changed packages
+[2023-05-24 08:12:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pysimflow
+[2023-05-24 08:12:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: getdaft
+[2023-05-24 08:12:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: zdaemon
+[2023-05-24 08:12:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: mtbase
+[2023-05-24 08:12:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: fastapi_keycloak
+[2023-05-24 08:12:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: nxs-analysis-tools
+[2023-05-24 08:12:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: lvgl
+[2023-05-24 08:12:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: aos-keys
+[2023-05-24 08:12:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: mtbase
+[2023-05-24 08:12:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: aos-prov
+[2023-05-24 08:12:39] INFO root fetch - processPackages [nxs-analysis-tools]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-24 08:12:39] INFO root fetch - processPackages [nxs-analysis-tools]: executing diffoscope
+[2023-05-24 08:12:39] INFO root fetch - processPackages [nxs-analysis-tools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nxs_analysis_tools-0.0.8.tar.gz tmp/nxs_analysis_tools-0.0.9.tar.gz --markdown 20230524/n/nxs-analysis-tools/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-24 08:12:39] INFO root fetch - processPackages [pysimflow]: New version: [0.0.37] Old Version: [0.0.36]
+[2023-05-24 08:12:39] INFO root fetch - processPackages [fastapi_keycloak]: New version: [1.0.7] Old Version: [1.0.6]
+[2023-05-24 08:12:39] INFO root fetch - processPackages [zdaemon]: New version: [5.0] Old Version: [4.4]
+[2023-05-24 08:12:39] WARNING root fetch - processPackages [lvgl]: Skipping, unable to determine old version
+[2023-05-24 08:12:39] INFO root fetch - processPackages [aos-keys]: New version: [1.5.2b3] Old Version: [1.5.2b2]
+[2023-05-24 08:12:39] INFO root fetch - processPackages [lvgl]: Start processing: ds-stats-mexico
+[2023-05-24 08:12:39] INFO root fetch - main [MainThread]: End processing [lvgl] error
+[2023-05-24 08:12:39] INFO root fetch - processPackages [aos-prov]: New version: [4.0.2b3] Old Version: [4.0.2b2]
+[2023-05-24 08:12:39] INFO root fetch - processPackages [getdaft]: New version: [0.1.3] Old Version: [0.1.2]
+[2023-05-24 08:12:39] INFO root fetch - processPackages [mtbase]: New version: [4.4.202305240611] Old Version: [4.4.202305240609]
+[2023-05-24 08:12:39] INFO root fetch - processPackages [mtbase]: New version: [4.4.202305240611] Old Version: [4.4.202305240609]
+[2023-05-24 08:12:39] WARNING root fetch - processPackages [ds-stats-mexico]: Skipping, unable to determine old version
+[2023-05-24 08:12:39] INFO root fetch - processPackages [ds-stats-mexico]: Start processing: edman-web
+[2023-05-24 08:12:39] INFO root fetch - main [MainThread]: End processing [ds-stats-mexico] error
+[2023-05-24 08:12:39] INFO root fetch - processPackages [pysimflow]: Downloading https://files.pythonhosted.org/packages/b0/c3/b717347fcb0b0e1de335cd292f82ecabcaa47abaa58197b0e719a432b1d3/pysimflow-0.0.36.tar.gz
+[2023-05-24 08:12:39] INFO root fetch - processPackages [mtbase]: Downloading https://files.pythonhosted.org/packages/72/81/daee2aa8ef12b7667ea228c319708641c47ddcad59a4dd6001dec4b8a30f/mtbase-4.4.202305240609-py3-none-any.whl
+[2023-05-24 08:12:39] INFO root fetch - processPackages [zdaemon]: Downloading https://files.pythonhosted.org/packages/00/49/355b50c2b79fedde0627f19bde24a0474af674fee0e1ec21c20b0c9f94ba/zdaemon-4.4.tar.gz
+[2023-05-24 08:12:40] INFO root fetch - processPackages [mtbase]: Downloading https://files.pythonhosted.org/packages/72/81/daee2aa8ef12b7667ea228c319708641c47ddcad59a4dd6001dec4b8a30f/mtbase-4.4.202305240609-py3-none-any.whl
+[2023-05-24 08:12:40] INFO root fetch - processPackages [fastapi_keycloak]: Downloading https://files.pythonhosted.org/packages/e1/e8/a778507554ed45bff87e5f2f204e0bab4bd10ba083db8ffa420d8a1f8937/fastapi_keycloak-1.0.6.tar.gz
+[2023-05-24 08:12:40] INFO root fetch - processPackages [edman-web]: New version: [2023.5.8] Old Version: [2023.5.24]
+[2023-05-24 08:12:40] INFO root fetch - processPackages [aos-prov]: Downloading https://files.pythonhosted.org/packages/8c/2f/8ec397a93c976a31b340b07cc6f2782165e9c5340d627c232fb2f8a795d7/aos_prov-4.0.2b3-py3-none-any.whl
+[2023-05-24 08:12:40] INFO root fetch - processPackages [aos-keys]: Downloading https://files.pythonhosted.org/packages/5a/3e/b5a2ee96f2ff57787e634e98050eefe588c0855680c2f5db10ea5bdd9760/aos_keys-1.5.2b3-py3-none-any.whl
+[2023-05-24 08:12:40] INFO root fetch - processPackages [getdaft]: Downloading https://files.pythonhosted.org/packages/96/2b/93a919d6811249cbc2e54fc1a29cb59a8fbe87b1393dfe1544bc486619fb/getdaft-0.1.3.tar.gz
+[2023-05-24 08:12:40] INFO root fetch - processPackages [pysimflow]: Downloading https://files.pythonhosted.org/packages/dd/1b/ec74e7ee4e13e647138fa2a46b31711857f0343196039ec341241340027e/pysimflow-0.0.37.tar.gz
+[2023-05-24 08:12:40] INFO root fetch - processPackages [mtbase]: Downloading https://files.pythonhosted.org/packages/98/19/c020641861aa083faeb22754c1a8f2d76684f1fef39af0c7e21ef925b1f1/mtbase-4.4.202305240611-py3-none-any.whl
+[2023-05-24 08:12:40] INFO root fetch - processPackages [mtbase]: Downloading https://files.pythonhosted.org/packages/98/19/c020641861aa083faeb22754c1a8f2d76684f1fef39af0c7e21ef925b1f1/mtbase-4.4.202305240611-py3-none-any.whl
+[2023-05-24 08:12:40] INFO root fetch - processPackages [zdaemon]: Downloading https://files.pythonhosted.org/packages/54/da/19b9bf471923dbebcb7b9a915739542b44e7386352d7ce49678b8ae59614/zdaemon-5.0.tar.gz
+[2023-05-24 08:12:40] INFO root fetch - processPackages [aos-prov]: executing diffoscope
+[2023-05-24 08:12:40] INFO root fetch - processPackages [aos-prov]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aos_prov-4.0.2b2-py3-none-any.whl.zip tmp/aos_prov-4.0.2b3-py3-none-any.whl.zip --markdown 20230524/a/aos-prov/4.0.2b2-4.0.2b3/diff.md --exclude *.pyd
+[2023-05-24 08:12:40] INFO root fetch - processPackages [edman-web]: Downloading https://files.pythonhosted.org/packages/4f/f4/324ee5f951de40a5eb2aaf01e9de8cd4604f623fdfd5b32f43089803df25/edman_web-2023.5.24.tar.gz
+[2023-05-24 08:12:40] INFO root fetch - processPackages [aos-keys]: executing diffoscope
+[2023-05-24 08:12:40] INFO root fetch - processPackages [aos-keys]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aos_keys-1.5.2b2-py3-none-any.whl.zip tmp/aos_keys-1.5.2b3-py3-none-any.whl.zip --markdown 20230524/a/aos-keys/1.5.2b2-1.5.2b3/diff.md --exclude *.pyd
+[2023-05-24 08:12:40] INFO root fetch - processPackages [getdaft]: executing diffoscope
+[2023-05-24 08:12:40] INFO root fetch - processPackages [zdaemon]: executing diffoscope
+[2023-05-24 08:12:40] INFO root fetch - processPackages [getdaft]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/getdaft-0.1.2.tar.gz tmp/getdaft-0.1.3.tar.gz --markdown 20230524/g/getdaft/0.1.2-0.1.3/diff.md --exclude *.pyd
+[2023-05-24 08:12:40] INFO root fetch - processPackages [zdaemon]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/zdaemon-4.4.tar.gz tmp/zdaemon-5.0.tar.gz --markdown 20230524/z/zdaemon/4.4-5.0/diff.md --exclude *.pyd
+[2023-05-24 08:12:40] INFO root fetch - processPackages [pysimflow]: executing diffoscope
+[2023-05-24 08:12:40] INFO root fetch - processPackages [pysimflow]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pysimflow-0.0.36.tar.gz tmp/pysimflow-0.0.37.tar.gz --markdown 20230524/p/pysimflow/0.0.36-0.0.37/diff.md --exclude *.pyd
+[2023-05-24 08:12:40] INFO root fetch - processPackages [mtbase]: executing diffoscope
+[2023-05-24 08:12:40] INFO root fetch - processPackages [mtbase]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mtbase-4.4.202305240609-py3-none-any.whl.zip tmp/mtbase-4.4.202305240611-py3-none-any.whl.zip --markdown 20230524/m/mtbase/4.4.202305240609-4.4.202305240611/diff.md --exclude *.pyd
+[2023-05-24 08:12:40] INFO root fetch - processPackages [mtbase]: executing diffoscope
+[2023-05-24 08:12:40] INFO root fetch - processPackages [mtbase]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mtbase-4.4.202305240609-py3-none-any.whl.zip tmp/mtbase-4.4.202305240611-py3-none-any.whl.zip --markdown 20230524/m/mtbase/4.4.202305240609-4.4.202305240611/diff.md --exclude *.pyd
+[2023-05-24 08:12:40] INFO root fetch - processPackages [fastapi_keycloak]: Downloading https://files.pythonhosted.org/packages/11/41/c4be470e82ebbc114592f428dbb7abcc4189311e2183d3149b366971c27f/fastapi_keycloak-1.0.7.tar.gz
+[2023-05-24 08:12:40] INFO root fetch - processPackages [edman-web]: executing diffoscope
+[2023-05-24 08:12:40] INFO root fetch - processPackages [edman-web]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/edman_web-2023.5.24.tar.gz tmp/edman_web-2023.5.8.tar.gz --markdown 20230524/e/edman-web/2023.5.24-2023.5.8/diff.md --exclude *.pyd
+[2023-05-24 08:12:40] INFO root fetch - processPackages [fastapi_keycloak]: executing diffoscope
+[2023-05-24 08:12:40] INFO root fetch - processPackages [fastapi_keycloak]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fastapi_keycloak-1.0.6.tar.gz tmp/fastapi_keycloak-1.0.7.tar.gz --markdown 20230524/f/fastapi_keycloak/1.0.6-1.0.7/diff.md --exclude *.pyd
+[2023-05-24 08:12:41] INFO root fetch - main [MainThread]: End processing [nxs-analysis-tools]: success
+[2023-05-24 08:12:41] INFO root fetch - main [MainThread]: End processing [aos-keys]: success
+[2023-05-24 08:12:41] INFO root fetch - main [MainThread]: End processing [pysimflow]: success
+[2023-05-24 08:12:42] INFO root fetch - main [MainThread]: End processing [aos-prov]: success
+[2023-05-24 08:12:42] INFO root fetch - main [MainThread]: End processing [zdaemon]: success
+[2023-05-24 08:12:42] INFO root fetch - main [MainThread]: End processing [mtbase]: success
+[2023-05-24 08:12:42] INFO root fetch - main [MainThread]: End processing [edman-web]: success
+[2023-05-24 08:12:42] INFO root fetch - main [MainThread]: End processing [mtbase]: success
+[2023-05-24 08:12:43] INFO root fetch - main [MainThread]: End processing [fastapi_keycloak]: success
+[2023-05-24 08:12:46] INFO root fetch - main [MainThread]: End processing [getdaft]: success
+[2023-05-24 08:12:46] INFO root fetch - main [MainThread]: Store serial: [18225708]
