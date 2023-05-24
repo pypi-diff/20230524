@@ -1889,3 +1889,65 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 
 [2023-05-24 02:55:36] INFO root fetch - main [MainThread]: End processing [pycde] error
 [2023-05-24 02:55:36] INFO root fetch - main [MainThread]: Store serial: [18221556]
+[2023-05-24 03:00:40] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18221556]
+[2023-05-24 03:00:45] INFO root fetch - main [MainThread]: Found 10 changed packages
+[2023-05-24 03:00:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: bioversions
+[2023-05-24 03:00:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: drtodo
+[2023-05-24 03:00:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: cdk-lambda-layer-wget
+[2023-05-24 03:00:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: cdk-sns-notify
+[2023-05-24 03:00:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: np-workflows
+[2023-05-24 03:00:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: xenoslib
+[2023-05-24 03:00:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: pyagrum-nightly
+[2023-05-24 03:00:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: aemcmc-nightly
+[2023-05-24 03:00:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: types-unopy
+[2023-05-24 03:00:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: concertina_helper
+[2023-05-24 03:00:45] INFO root fetch - processPackages [xenoslib]: New version: [0.1.27.3] Old Version: [0.1.27.2]
+[2023-05-24 03:00:45] INFO root fetch - processPackages [cdk-sns-notify]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-05-24 03:00:45] INFO root fetch - processPackages [cdk-lambda-layer-wget]: New version: [2.0.99] Old Version: [2.0.98]
+[2023-05-24 03:00:45] INFO root fetch - processPackages [types-unopy]: New version: [1.2.1] Old Version: [1.2.0]
+[2023-05-24 03:00:45] INFO root fetch - processPackages [aemcmc-nightly]: New version: [0.0.8.dev20230524] Old Version: [0.0.8.dev20230523]
+[2023-05-24 03:00:45] INFO root fetch - processPackages [np-workflows]: New version: [1.4.9] Old Version: [1.4.8]
+[2023-05-24 03:00:45] INFO root fetch - processPackages [concertina_helper]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-05-24 03:00:45] INFO root fetch - processPackages [bioversions]: New version: [0.5.99] Old Version: [0.5.98]
+[2023-05-24 03:00:45] INFO root fetch - processPackages [cdk-sns-notify]: executing diffoscope
+[2023-05-24 03:00:45] INFO root fetch - processPackages [cdk-sns-notify]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-sns-notify-0.0.98.tar.gz tmp/cdk-sns-notify-0.0.99.tar.gz --markdown 20230524/c/cdk-sns-notify/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-05-24 03:00:45] INFO root fetch - processPackages [cdk-lambda-layer-wget]: executing diffoscope
+[2023-05-24 03:00:45] INFO root fetch - processPackages [drtodo]: New version: [0.6.4] Old Version: [0.6.3]
+[2023-05-24 03:00:45] INFO root fetch - processPackages [cdk-lambda-layer-wget]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-lambda-layer-wget-2.0.98.tar.gz tmp/cdk-lambda-layer-wget-2.0.99.tar.gz --markdown 20230524/c/cdk-lambda-layer-wget/2.0.98-2.0.99/diff.md --exclude *.pyd
+[2023-05-24 03:00:45] INFO root fetch - processPackages [pyagrum-nightly]: New version: [1.8.0.9.dev202305231684706696] Old Version: [1.8.0.9.dev202305221684706696]
+[2023-05-24 03:00:45] INFO root fetch - processPackages [xenoslib]: Downloading https://files.pythonhosted.org/packages/5a/ca/1d1e968a1a2ad4ae8416b89bfc2318cc5b7b6ab46a95d1cafd867d7c621b/xenoslib-0.1.27.3.tar.gz
+[2023-05-24 03:00:45] INFO root fetch - processPackages [concertina_helper]: Downloading https://files.pythonhosted.org/packages/6a/3d/b83ea9a7203c156b9ccd47fedb761f97b2374a1dbcd8a3a38931400c3a7c/concertina_helper-0.0.2-py3-none-any.whl
+[2023-05-24 03:00:45] INFO root fetch - processPackages [aemcmc-nightly]: Downloading https://files.pythonhosted.org/packages/12/ab/e054802e3b4a8facdf5fae82f8506722a8af708fbddf0ae67163910b45eb/aemcmc-nightly-0.0.8.dev20230523.tar.gz
+[2023-05-24 03:00:45] INFO root fetch - processPackages [xenoslib]: executing diffoscope
+[2023-05-24 03:00:45] INFO root fetch - processPackages [xenoslib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xenoslib-0.1.27.2.tar.gz tmp/xenoslib-0.1.27.3.tar.gz --markdown 20230524/x/xenoslib/0.1.27.2-0.1.27.3/diff.md --exclude *.pyd
+[2023-05-24 03:00:45] INFO root fetch - processPackages [pyagrum-nightly]: Downloading https://files.pythonhosted.org/packages/b3/2d/42224444687e93bc618fb42c0f168e88b7864e071687286559eea5cce68e/pyAgrum_nightly-1.8.0.9.dev202305231684706696-cp39-cp39-win_amd64.whl
+[2023-05-24 03:00:45] INFO root fetch - processPackages [types-unopy]: Downloading https://files.pythonhosted.org/packages/90/46/3418dae942a67d75c50ee110331d342ee74a4ae8934175d63241ef9d20bb/types_unopy-1.2.1.tar.gz
+[2023-05-24 03:00:45] INFO root fetch - processPackages [concertina_helper]: Downloading https://files.pythonhosted.org/packages/73/f1/70fb68f3813e0910c694fa389734c1b8c31ec1abf7dd6e1df5fa9f5aaf0d/concertina_helper-0.0.3-py3-none-any.whl
+[2023-05-24 03:00:45] INFO root fetch - processPackages [aemcmc-nightly]: Downloading https://files.pythonhosted.org/packages/49/93/4e4604669b8e68ba6b699ca4228644a3cd9275d1b8ac9a8631a5cda89ea7/aemcmc-nightly-0.0.8.dev20230524.tar.gz
+[2023-05-24 03:00:45] INFO root fetch - processPackages [bioversions]: executing diffoscope
+[2023-05-24 03:00:45] INFO root fetch - processPackages [bioversions]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bioversions-0.5.98.tar.gz tmp/bioversions-0.5.99.tar.gz --markdown 20230524/b/bioversions/0.5.98-0.5.99/diff.md --exclude *.pyd
+[2023-05-24 03:00:45] INFO root fetch - processPackages [concertina_helper]: executing diffoscope
+[2023-05-24 03:00:45] INFO root fetch - processPackages [concertina_helper]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/concertina_helper-0.0.2-py3-none-any.whl.zip tmp/concertina_helper-0.0.3-py3-none-any.whl.zip --markdown 20230524/c/concertina_helper/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-05-24 03:00:45] INFO root fetch - processPackages [types-unopy]: executing diffoscope
+[2023-05-24 03:00:45] INFO root fetch - processPackages [types-unopy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/types_unopy-1.2.0.tar.gz tmp/types_unopy-1.2.1.tar.gz --markdown 20230524/t/types-unopy/1.2.0-1.2.1/diff.md --exclude *.pyd
+[2023-05-24 03:00:46] INFO root fetch - processPackages [aemcmc-nightly]: executing diffoscope
+[2023-05-24 03:00:46] INFO root fetch - processPackages [aemcmc-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aemcmc-nightly-0.0.8.dev20230523.tar.gz tmp/aemcmc-nightly-0.0.8.dev20230524.tar.gz --markdown 20230524/a/aemcmc-nightly/0.0.8.dev20230523-0.0.8.dev20230524/diff.md --exclude *.pyd
+[2023-05-24 03:00:46] INFO root fetch - processPackages [drtodo]: Downloading https://files.pythonhosted.org/packages/b6/21/375034ecf4e9cbcb7546469d6c84fb16ff5721ca0902ac1387a21cd53979/drtodo-0.6.4.tar.gz
+[2023-05-24 03:00:46] INFO root fetch - processPackages [drtodo]: executing diffoscope
+[2023-05-24 03:00:46] INFO root fetch - processPackages [drtodo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/drtodo-0.6.3.tar.gz tmp/drtodo-0.6.4.tar.gz --markdown 20230524/d/drtodo/0.6.3-0.6.4/diff.md --exclude *.pyd
+[2023-05-24 03:00:46] INFO root fetch - processPackages [np-workflows]: executing diffoscope
+[2023-05-24 03:00:46] INFO root fetch - processPackages [np-workflows]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/np_workflows-1.4.8.tar.gz tmp/np_workflows-1.4.9.tar.gz --markdown 20230524/n/np-workflows/1.4.8-1.4.9/diff.md --exclude *.pyd
+[2023-05-24 03:00:46] INFO root fetch - main [MainThread]: End processing [cdk-sns-notify]: success
+[2023-05-24 03:00:46] INFO root fetch - processPackages [pyagrum-nightly]: executing diffoscope
+[2023-05-24 03:00:46] INFO root fetch - processPackages [pyagrum-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyAgrum_nightly-1.8.0.9.dev202305221684706696-cp39-cp39-win_amd64.whl.zip tmp/pyAgrum_nightly-1.8.0.9.dev202305231684706696-cp39-cp39-win_amd64.whl.zip --markdown 20230524/p/pyagrum-nightly/1.8.0.9.dev202305221684706696-1.8.0.9.dev202305231684706696/diff.md --exclude *.pyd
+[2023-05-24 03:00:46] INFO root fetch - main [MainThread]: End processing [xenoslib]: success
+[2023-05-24 03:00:47] INFO root fetch - main [MainThread]: End processing [cdk-lambda-layer-wget]: success
+[2023-05-24 03:00:47] INFO root fetch - main [MainThread]: End processing [concertina_helper]: success
+[2023-05-24 03:00:47] INFO root fetch - main [MainThread]: End processing [np-workflows]: success
+[2023-05-24 03:00:47] INFO root fetch - main [MainThread]: End processing [drtodo]: success
+[2023-05-24 03:00:47] INFO root fetch - main [MainThread]: End processing [pyagrum-nightly]: success
+[2023-05-24 03:00:48] INFO root fetch - main [MainThread]: End processing [aemcmc-nightly]: success
+[2023-05-24 03:01:07] INFO root fetch - main [MainThread]: End processing [bioversions]: success
+[2023-05-24 03:03:46] ERROR root fetch - processPackages [types-unopy]: Timeout during execution of pkgdiff
+[2023-05-24 03:03:46] INFO root fetch - main [MainThread]: End processing [types-unopy] error
+[2023-05-24 03:03:46] INFO root fetch - main [MainThread]: Store serial: [18221608]
