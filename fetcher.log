@@ -11234,3 +11234,101 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-05-24 11:11:48] INFO root fetch - main [MainThread]: End processing [pyxllib]: success
 [2023-05-24 11:11:48] INFO root fetch - main [MainThread]: End processing [finbourne-access-sdk]: success
 [2023-05-24 11:11:48] INFO root fetch - main [MainThread]: Store serial: [18227271]
+[2023-05-24 11:16:52] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18227271]
+[2023-05-24 11:16:57] INFO root fetch - main [MainThread]: Found 17 changed packages
+[2023-05-24 11:16:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pyflipper
+[2023-05-24 11:16:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: django-auth-dingding
+[2023-05-24 11:16:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: anaouder
+[2023-05-24 11:16:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: error-suggester
+[2023-05-24 11:16:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: yandexcloud
+[2023-05-24 11:16:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: sdl-x
+[2023-05-24 11:16:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: aiomisc
+[2023-05-24 11:16:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: pyeCam
+[2023-05-24 11:16:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: t2iapi
+[2023-05-24 11:16:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: pyFipper
+[2023-05-24 11:16:57] INFO root fetch - processPackages [error-suggester]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-05-24 11:16:57] WARNING root fetch - processPackages [sdl-x]: Skipping, unable to determine old version
+[2023-05-24 11:16:57] INFO root fetch - processPackages [sdl-x]: Start processing: chaine
+[2023-05-24 11:16:57] INFO root fetch - main [MainThread]: End processing [sdl-x] error
+[2023-05-24 11:16:57] INFO root fetch - processPackages [anaouder]: New version: [0.7.9] Old Version: [0.7.8]
+[2023-05-24 11:16:57] INFO root fetch - processPackages [pyflipper]: New version: [0.15] Old Version: [0.14]
+[2023-05-24 11:16:57] INFO root fetch - processPackages [pyeCam]: New version: [0.0.5] Old Version: [0.0.4]
+[2023-05-24 11:16:57] INFO root fetch - processPackages [t2iapi]: New version: [3.0.0.dev142] Old Version: [3.0.0.dev135]
+[2023-05-24 11:16:57] INFO root fetch - processPackages [pyFipper]: New version: [0.1.2.dev2] Old Version: [0.1.2.dev1]
+[2023-05-24 11:16:57] INFO root fetch - processPackages [yandexcloud]: New version: [0.99.0] Old Version: [0.98.0]
+[2023-05-24 11:16:57] INFO root fetch - processPackages [aiomisc]: New version: [9.8.4] Old Version: [9.8.1]
+[2023-05-24 11:16:57] INFO root fetch - processPackages [anaouder]: Downloading https://files.pythonhosted.org/packages/e9/11/646c871078bde3f4d267accdcc8b0227332efe3b5c85ea69646933eb6e6c/anaouder-0.7.8.tar.gz
+[2023-05-24 11:16:57] WARNING root fetch - processPackages [django-auth-dingding]: Skipping, unable to determine old version
+[2023-05-24 11:16:57] INFO root fetch - processPackages [django-auth-dingding]: Start processing: pyflipper
+[2023-05-24 11:16:57] INFO root fetch - main [MainThread]: End processing [django-auth-dingding] error
+[2023-05-24 11:16:57] WARNING root fetch - processPackages [anaouder]: Skipping package: exceeds size limit 73418928>=10485760
+[2023-05-24 11:16:57] INFO root fetch - processPackages [anaouder]: Start processing: m3-core
+[2023-05-24 11:16:57] INFO root fetch - main [MainThread]: End processing [anaouder] error
+[2023-05-24 11:16:57] INFO root fetch - processPackages [yandexcloud]: executing diffoscope
+[2023-05-24 11:16:57] INFO root fetch - processPackages [yandexcloud]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/yandexcloud-0.98.0.tar.gz tmp/yandexcloud-0.99.0.tar.gz --markdown 20230524/y/yandexcloud/0.98.0-0.99.0/diff.md --exclude *.pyd
+[2023-05-24 11:16:57] INFO root fetch - processPackages [pyflipper]: New version: [0.16] Old Version: [0.15]
+[2023-05-24 11:16:57] INFO root fetch - processPackages [chaine]: New version: [3.11.0] Old Version: [2.1.0]
+[2023-05-24 11:16:58] INFO root fetch - processPackages [error-suggester]: Downloading https://files.pythonhosted.org/packages/05/43/a7fbf5e08a3e07943e1c5a0ad15aa4b589f2a95708d4a7220b973dfaceba/error_suggester-0.1.0.tar.gz
+[2023-05-24 11:16:58] INFO root fetch - processPackages [aiomisc]: executing diffoscope
+[2023-05-24 11:16:58] INFO root fetch - processPackages [aiomisc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aiomisc-9.8.1.tar.gz tmp/aiomisc-9.8.4.tar.gz --markdown 20230524/a/aiomisc/9.8.1-9.8.4/diff.md --exclude *.pyd
+[2023-05-24 11:16:58] INFO root fetch - processPackages [pyflipper]: Downloading https://files.pythonhosted.org/packages/8e/61/c4c21e14a686c0f7081e1996ea6b2d13c3b517431194849a922b2ce1b7b2/pyflipper-0.15.tar.gz
+[2023-05-24 11:16:58] INFO root fetch - processPackages [t2iapi]: Downloading https://files.pythonhosted.org/packages/43/4c/d335ec842e2514005e5d6268bb531f7af20d0656b1bd3599918e2df57991/t2iapi-3.0.0.dev135.tar.gz
+[2023-05-24 11:16:58] INFO root fetch - processPackages [pyflipper]: Downloading https://files.pythonhosted.org/packages/8e/61/c4c21e14a686c0f7081e1996ea6b2d13c3b517431194849a922b2ce1b7b2/pyflipper-0.15.tar.gz
+[2023-05-24 11:16:58] INFO root fetch - processPackages [m3-core]: New version: [3.1.9] Old Version: [3.1.8]
+[2023-05-24 11:16:58] INFO root fetch - processPackages [pyeCam]: Downloading https://files.pythonhosted.org/packages/57/e3/618e3b8a1de832e83539224a6cbb1d9bfcb8191d8d7227da6002b8cd2c10/pyeCam-0.0.4.tar.gz
+[2023-05-24 11:16:58] INFO root fetch - processPackages [pyFipper]: Downloading https://files.pythonhosted.org/packages/12/f8/4693d630d989963ff3493fc3a4891f2c6e9448e583a8c7c9be2c466ad33f/pyFipper-0.1.2.dev2.tar.gz
+[2023-05-24 11:16:58] INFO root fetch - processPackages [pyflipper]: executing diffoscope
+[2023-05-24 11:16:58] INFO root fetch - processPackages [pyflipper]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyflipper-0.14.tar.gz tmp/pyflipper-0.15.tar.gz --markdown 20230524/p/pyflipper/0.14-0.15/diff.md --exclude *.pyd
+[2023-05-24 11:16:58] INFO root fetch - processPackages [chaine]: Downloading https://files.pythonhosted.org/packages/71/58/6a3e71194580cff831dfb9193d2f32782aafeb96bb6b90c35f8b37fdf74f/chaine-2.1.0-cp311-cp311-win_amd64.whl
+[2023-05-24 11:16:58] INFO root fetch - processPackages [error-suggester]: Downloading https://files.pythonhosted.org/packages/20/ea/24997d9012280dc1749538a1c9e4a4d0afa439627e74a4daa0e0176341e4/error_suggester-0.1.1.tar.gz
+[2023-05-24 11:16:58] INFO root fetch - processPackages [pyflipper]: Downloading https://files.pythonhosted.org/packages/f6/43/b5685b20db66fe8d988ddc4472ed5ac10c35fc9ff0b52273f346f49ed65b/pyflipper-0.16.tar.gz
+[2023-05-24 11:16:58] INFO root fetch - processPackages [m3-core]: Downloading https://files.pythonhosted.org/packages/72/d9/47888d5859aa3028d2c4f3ff56e40b173b9fbe0a1b3e4ddf6d3a2955c583/m3-core-3.1.8.tar.gz
+[2023-05-24 11:16:58] INFO root fetch - processPackages [pyeCam]: Downloading https://files.pythonhosted.org/packages/6b/09/7a019d71f3c37be33ae0255668b90d3336469b90356638ee9d62dc664d37/pyeCam-0.0.5.tar.gz
+[2023-05-24 11:16:58] INFO root fetch - processPackages [t2iapi]: Downloading https://files.pythonhosted.org/packages/50/a5/c8c1ab9dafdd07134330c8f897dcda500626fe58c425731b5b28da526607/t2iapi-3.0.0.dev142.tar.gz
+[2023-05-24 11:16:58] INFO root fetch - processPackages [pyeCam]: executing diffoscope
+[2023-05-24 11:16:58] INFO root fetch - processPackages [pyeCam]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyeCam-0.0.4.tar.gz tmp/pyeCam-0.0.5.tar.gz --markdown 20230524/p/pyeCam/0.0.4-0.0.5/diff.md --exclude *.pyd
+[2023-05-24 11:16:58] INFO root fetch - processPackages [error-suggester]: executing diffoscope
+[2023-05-24 11:16:58] INFO root fetch - processPackages [error-suggester]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/error_suggester-0.1.0.tar.gz tmp/error_suggester-0.1.1.tar.gz --markdown 20230524/e/error-suggester/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-05-24 11:16:58] INFO root fetch - processPackages [pyflipper]: executing diffoscope
+[2023-05-24 11:16:58] INFO root fetch - processPackages [pyflipper]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyflipper-0.15.tar.gz tmp/pyflipper-0.16.tar.gz --markdown 20230524/p/pyflipper/0.15-0.16/diff.md --exclude *.pyd
+[2023-05-24 11:16:58] INFO root fetch - processPackages [pyFipper]: executing diffoscope
+[2023-05-24 11:16:58] INFO root fetch - processPackages [t2iapi]: executing diffoscope
+[2023-05-24 11:16:58] INFO root fetch - processPackages [t2iapi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/t2iapi-3.0.0.dev135.tar.gz tmp/t2iapi-3.0.0.dev142.tar.gz --markdown 20230524/t/t2iapi/3.0.0.dev135-3.0.0.dev142/diff.md --exclude *.pyd
+[2023-05-24 11:16:58] INFO root fetch - processPackages [pyFipper]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyFipper-0.1.2.dev1.tar.gz tmp/pyFipper-0.1.2.dev2.tar.gz --markdown 20230524/p/pyFipper/0.1.2.dev1-0.1.2.dev2/diff.md --exclude *.pyd
+[2023-05-24 11:16:58] INFO root fetch - processPackages [chaine]: Downloading https://files.pythonhosted.org/packages/ee/67/82d1914820def462405140a3656e7fcb796daa976f871454f93a683f5ad9/chaine-3.11.0-cp311-cp311-manylinux_2_17_i686.manylinux_2_12_i686.manylinux2010_i686.manylinux2014_i686.whl
+[2023-05-24 11:16:58] INFO root fetch - processPackages [m3-core]: Downloading https://files.pythonhosted.org/packages/14/9f/8d8f1881bbcadb290b6fa7c0c801af4e48494284843a2451515da801ae42/m3-core-3.1.9.tar.gz
+[2023-05-24 11:16:58] INFO root fetch - processPackages [m3-core]: executing diffoscope
+[2023-05-24 11:16:58] INFO root fetch - processPackages [m3-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/m3-core-3.1.8.tar.gz tmp/m3-core-3.1.9.tar.gz --markdown 20230524/m/m3-core/3.1.8-3.1.9/diff.md --exclude *.pyd
+[2023-05-24 11:16:59] INFO root fetch - processPackages [chaine]: executing diffoscope
+[2023-05-24 11:16:59] INFO root fetch - processPackages [chaine]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/chaine-2.1.0-cp311-cp311-win_amd64.whl.zip tmp/chaine-3.11.0-cp311-cp311-manylinux_2_17_i686.manylinux_2_12_i686.manylinux2010_i686.manylinux2014_i686.whl.zip --markdown 20230524/c/chaine/2.1.0-3.11.0/diff.md --exclude *.pyd
+[2023-05-24 11:16:59] INFO root fetch - processPackages [pyeCam]: Start processing: vmas
+[2023-05-24 11:16:59] INFO root fetch - main [MainThread]: End processing [pyeCam]: success
+[2023-05-24 11:16:59] INFO root fetch - processPackages [vmas]: New version: [1.2.9] Old Version: [1.2.8]
+[2023-05-24 11:16:59] INFO root fetch - processPackages [error-suggester]: Start processing: st-lucas
+[2023-05-24 11:16:59] INFO root fetch - main [MainThread]: End processing [error-suggester]: success
+[2023-05-24 11:16:59] WARNING root fetch - processPackages [st-lucas]: Skipping, unable to determine old version
+[2023-05-24 11:16:59] INFO root fetch - processPackages [st-lucas]: Start processing: fuzzy-json
+[2023-05-24 11:16:59] INFO root fetch - main [MainThread]: End processing [st-lucas] error
+[2023-05-24 11:16:59] INFO root fetch - processPackages [pyflipper]: Start processing: jieba-pyfast
+[2023-05-24 11:16:59] INFO root fetch - main [MainThread]: End processing [pyflipper]: success
+[2023-05-24 11:16:59] INFO root fetch - main [MainThread]: End processing [pyflipper]: success
+[2023-05-24 11:17:00] INFO root fetch - processPackages [vmas]: Downloading https://files.pythonhosted.org/packages/f4/72/82f524b537de832f863cd15b0a37ba3699626ca0245133a5e722499c5e6c/vmas-1.2.8.tar.gz
+[2023-05-24 11:17:00] WARNING root fetch - processPackages [fuzzy-json]: Skipping, unable to determine old version
+[2023-05-24 11:17:00] INFO root fetch - main [MainThread]: End processing [fuzzy-json] error
+[2023-05-24 11:17:00] INFO root fetch - processPackages [jieba-pyfast]: New version: [1.4.2] Old Version: [1.4.1]
+[2023-05-24 11:17:00] INFO root fetch - processPackages [jieba-pyfast]: Downloading https://files.pythonhosted.org/packages/82/e3/29b0046f855e7c91bde88b1bf1d9ede2620b5b6517549d377b2c4e5e4ed7/jieba_pyfast-1.4.1-cp311-cp311-macosx_12_0_x86_64.whl
+[2023-05-24 11:17:00] INFO root fetch - main [MainThread]: End processing [aiomisc]: success
+[2023-05-24 11:17:00] INFO root fetch - main [MainThread]: End processing [t2iapi]: success
+[2023-05-24 11:17:00] INFO root fetch - processPackages [vmas]: Downloading https://files.pythonhosted.org/packages/03/5a/3c0dc85ffedabc7b752f0e4d56bff8cd17c393e69ce15d4c5372832ff65f/vmas-1.2.9.tar.gz
+[2023-05-24 11:17:00] INFO root fetch - processPackages [vmas]: executing diffoscope
+[2023-05-24 11:17:00] INFO root fetch - processPackages [vmas]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vmas-1.2.8.tar.gz tmp/vmas-1.2.9.tar.gz --markdown 20230524/v/vmas/1.2.8-1.2.9/diff.md --exclude *.pyd
+[2023-05-24 11:17:01] INFO root fetch - main [MainThread]: End processing [m3-core]: success
+[2023-05-24 11:17:01] INFO root fetch - processPackages [jieba-pyfast]: Downloading https://files.pythonhosted.org/packages/7a/67/7771edf57b720b1728b243e659d9a4bde2e8b8c33b07d5adf451053cecd6/jieba_pyfast-1.4.2-cp311-cp311-macosx_12_0_x86_64.whl
+[2023-05-24 11:17:01] INFO root fetch - processPackages [jieba-pyfast]: executing diffoscope
+[2023-05-24 11:17:01] INFO root fetch - processPackages [jieba-pyfast]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jieba_pyfast-1.4.1-cp311-cp311-macosx_12_0_x86_64.whl.zip tmp/jieba_pyfast-1.4.2-cp311-cp311-macosx_12_0_x86_64.whl.zip --markdown 20230524/j/jieba-pyfast/1.4.1-1.4.2/diff.md --exclude *.pyd
+[2023-05-24 11:17:01] INFO root fetch - main [MainThread]: End processing [chaine]: success
+[2023-05-24 11:17:02] INFO root fetch - main [MainThread]: End processing [vmas]: success
+[2023-05-24 11:17:02] INFO root fetch - main [MainThread]: End processing [pyFipper]: success
+[2023-05-24 11:17:03] INFO root fetch - main [MainThread]: End processing [jieba-pyfast]: success
+[2023-05-24 11:17:07] INFO root fetch - main [MainThread]: End processing [yandexcloud]: success
+[2023-05-24 11:17:07] INFO root fetch - main [MainThread]: Store serial: [18227350]
