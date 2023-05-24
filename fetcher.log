@@ -12590,3 +12590,88 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd4 in position 72: invalid
 [2023-05-24 12:16:40] INFO root fetch - main [MainThread]: End processing [datapane]: success
 [2023-05-24 12:16:51] INFO root fetch - main [MainThread]: End processing [dm-reverb-nightly]: success
 [2023-05-24 12:16:51] INFO root fetch - main [MainThread]: Store serial: [18228063]
+[2023-05-24 12:21:56] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18228063]
+[2023-05-24 12:22:01] INFO root fetch - main [MainThread]: Found 15 changed packages
+[2023-05-24 12:22:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: aiiiSharedPython
+[2023-05-24 12:22:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: yunpancli
+[2023-05-24 12:22:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: bridgecrew
+[2023-05-24 12:22:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: certora-cli-alpha-master
+[2023-05-24 12:22:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: minimizer4mpi
+[2023-05-24 12:22:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: pywfa
+[2023-05-24 12:22:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: vasp-suite
+[2023-05-24 12:22:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: tdb-io
+[2023-05-24 12:22:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: waveforms
+[2023-05-24 12:22:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: mecapacktools
+[2023-05-24 12:22:01] INFO root fetch - processPackages [certora-cli-alpha-master]: New version: [20230524.7.55.4971] Old Version: [20230523.15.35.372425]
+[2023-05-24 12:22:01] INFO root fetch - processPackages [pywfa]: New version: [0.4.1] Old Version: [0.4.0]
+[2023-05-24 12:22:01] INFO root fetch - processPackages [tdb-io]: New version: [0.5.9] Old Version: [0.5.8]
+[2023-05-24 12:22:01] INFO root fetch - processPackages [vasp-suite]: New version: [1.1.1] Old Version: [1.1.0]
+[2023-05-24 12:22:01] INFO root fetch - processPackages [waveforms]: New version: [1.5.98] Old Version: [1.5.97]
+[2023-05-24 12:22:01] INFO root fetch - processPackages [yunpancli]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-05-24 12:22:01] WARNING root fetch - processPackages [minimizer4mpi]: Skipping, unable to determine old version
+[2023-05-24 12:22:01] INFO root fetch - processPackages [minimizer4mpi]: Start processing: dxsp
+[2023-05-24 12:22:01] INFO root fetch - main [MainThread]: End processing [minimizer4mpi] error
+[2023-05-24 12:22:01] WARNING root fetch - processPackages [aiiiSharedPython]: Skipping, unable to determine old version
+[2023-05-24 12:22:01] INFO root fetch - processPackages [aiiiSharedPython]: Start processing: irene-pro
+[2023-05-24 12:22:01] INFO root fetch - main [MainThread]: End processing [aiiiSharedPython] error
+[2023-05-24 12:22:01] INFO root fetch - processPackages [mecapacktools]: New version: [1.0.2] Old Version: [1.0.1]
+[2023-05-24 12:22:01] INFO root fetch - processPackages [tdb-io]: executing diffoscope
+[2023-05-24 12:22:01] INFO root fetch - processPackages [tdb-io]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tdb_io-0.5.8.tar.gz tmp/tdb_io-0.5.9.tar.gz --markdown 20230524/t/tdb-io/0.5.8-0.5.9/diff.md --exclude *.pyd
+[2023-05-24 12:22:01] INFO root fetch - processPackages [dxsp]: New version: [2.2.9] Old Version: [2.2.8]
+[2023-05-24 12:22:01] INFO root fetch - processPackages [bridgecrew]: New version: [2.3.99] Old Version: [2.3.98]
+[2023-05-24 12:22:01] INFO root fetch - processPackages [dxsp]: executing diffoscope
+[2023-05-24 12:22:01] INFO root fetch - processPackages [dxsp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dxsp-2.2.8.tar.gz tmp/dxsp-2.2.9.tar.gz --markdown 20230524/d/dxsp/2.2.8-2.2.9/diff.md --exclude *.pyd
+[2023-05-24 12:22:01] INFO root fetch - processPackages [irene-pro]: New version: [0.0.43] Old Version: [0.0.42]
+[2023-05-24 12:22:01] INFO root fetch - processPackages [certora-cli-alpha-master]: Downloading https://files.pythonhosted.org/packages/20/d5/9523fe5d1141b01718b9a0e8ebe2f40a15be8efc61e9952e21bc06865b85/certora-cli-alpha-master-20230523.15.35.372425.tar.gz
+[2023-05-24 12:22:01] INFO root fetch - processPackages [pywfa]: Downloading https://files.pythonhosted.org/packages/de/00/b037e1881f50f88d2a3f312a44f03d2430e8c58b3a5b81a005280a54c21a/pywfa-0.4.0.tar.gz
+[2023-05-24 12:22:01] INFO root fetch - processPackages [vasp-suite]: Downloading https://files.pythonhosted.org/packages/01/59/99ce928f4db75429c348bd1931f21132fb88418a6e82ca7a173e9b466038/vasp_suite-1.1.1.tar.gz
+[2023-05-24 12:22:01] WARNING root fetch - processPackages [certora-cli-alpha-master]: Skipping package: exceeds size limit 39044175>=10485760
+[2023-05-24 12:22:01] INFO root fetch - processPackages [certora-cli-alpha-master]: Start processing: isqopen
+[2023-05-24 12:22:01] INFO root fetch - main [MainThread]: End processing [certora-cli-alpha-master] error
+[2023-05-24 12:22:01] INFO root fetch - processPackages [yunpancli]: Downloading https://files.pythonhosted.org/packages/37/ed/6a0f8d3069c375fef94863b02e827dc1f7045e0a8bde0da4c10a100fd9be/yunpancli-0.0.1.tar.gz
+[2023-05-24 12:22:01] INFO root fetch - processPackages [vasp-suite]: executing diffoscope
+[2023-05-24 12:22:01] INFO root fetch - processPackages [vasp-suite]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vasp_suite-1.1.0.tar.gz tmp/vasp_suite-1.1.1.tar.gz --markdown 20230524/v/vasp-suite/1.1.0-1.1.1/diff.md --exclude *.pyd
+[2023-05-24 12:22:01] INFO root fetch - processPackages [isqopen]: New version: [1.0.2] Old Version: [1.0.1]
+[2023-05-24 12:22:01] INFO root fetch - processPackages [mecapacktools]: Downloading https://files.pythonhosted.org/packages/ee/10/28622b2b512b36c6e0f69f04ef7a4c0d8b6bfcd502762ae468307500c0ea/mecapacktools-1.0.2.tar.gz
+[2023-05-24 12:22:01] INFO root fetch - processPackages [waveforms]: executing diffoscope
+[2023-05-24 12:22:01] INFO root fetch - processPackages [waveforms]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/waveforms-1.5.97.tar.gz tmp/waveforms-1.5.98.tar.gz --markdown 20230524/w/waveforms/1.5.97-1.5.98/diff.md --exclude *.pyd
+[2023-05-24 12:22:01] INFO root fetch - processPackages [irene-pro]: Downloading https://files.pythonhosted.org/packages/7c/67/de4e6af33dfa617750f3dfc37ed0960fab6ffb8503cc674b43a0a62500d3/irene_pro-0.0.43.tar.gz
+[2023-05-24 12:22:01] INFO root fetch - processPackages [isqopen]: Downloading https://files.pythonhosted.org/packages/d4/1d/3a9dd16fecdebd70a4e4af1fddc54334dce6cfa44c85dc8c2df9d5bd8589/isqopen-1.0.1.tar.gz
+[2023-05-24 12:22:01] INFO root fetch - processPackages [mecapacktools]: executing diffoscope
+[2023-05-24 12:22:01] INFO root fetch - processPackages [mecapacktools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mecapacktools-1.0.1.tar.gz tmp/mecapacktools-1.0.2.tar.gz --markdown 20230524/m/mecapacktools/1.0.1-1.0.2/diff.md --exclude *.pyd
+[2023-05-24 12:22:01] INFO root fetch - processPackages [yunpancli]: Downloading https://files.pythonhosted.org/packages/e2/ef/dadec7be51cf3ae3a29ec257cd0f258ef85a71110447be7650bb96cc7aed/yunpancli-0.0.2.tar.gz
+[2023-05-24 12:22:01] INFO root fetch - processPackages [bridgecrew]: executing diffoscope
+[2023-05-24 12:22:01] INFO root fetch - processPackages [bridgecrew]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bridgecrew-2.3.98.tar.gz tmp/bridgecrew-2.3.99.tar.gz --markdown 20230524/b/bridgecrew/2.3.98-2.3.99/diff.md --exclude *.pyd
+[2023-05-24 12:22:01] INFO root fetch - processPackages [irene-pro]: executing diffoscope
+[2023-05-24 12:22:01] INFO root fetch - processPackages [irene-pro]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/irene_pro-0.0.42.tar.gz tmp/irene_pro-0.0.43.tar.gz --markdown 20230524/i/irene-pro/0.0.42-0.0.43/diff.md --exclude *.pyd
+[2023-05-24 12:22:01] INFO root fetch - processPackages [yunpancli]: executing diffoscope
+[2023-05-24 12:22:01] INFO root fetch - processPackages [yunpancli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/yunpancli-0.0.1.tar.gz tmp/yunpancli-0.0.2.tar.gz --markdown 20230524/y/yunpancli/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-05-24 12:22:01] INFO root fetch - processPackages [isqopen]: Downloading https://files.pythonhosted.org/packages/82/55/e3bcc691b976d01980bd44e1e2e013e342f26e793490f56f6fcac9ce9c51/isqopen-1.0.2.tar.gz
+[2023-05-24 12:22:02] INFO root fetch - processPackages [pywfa]: Downloading https://files.pythonhosted.org/packages/98/83/0b435c0c681ef8d9418b3d493342041189f3faf470d2dbfa384e7dd234cf/pywfa-0.4.1.tar.gz
+[2023-05-24 12:22:02] INFO root fetch - processPackages [isqopen]: executing diffoscope
+[2023-05-24 12:22:02] INFO root fetch - processPackages [isqopen]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/isqopen-1.0.1.tar.gz tmp/isqopen-1.0.2.tar.gz --markdown 20230524/i/isqopen/1.0.1-1.0.2/diff.md --exclude *.pyd
+[2023-05-24 12:22:02] INFO root fetch - processPackages [tdb-io]: Start processing: medkit-lib
+[2023-05-24 12:22:02] INFO root fetch - main [MainThread]: End processing [tdb-io]: success
+[2023-05-24 12:22:02] INFO root fetch - processPackages [pywfa]: executing diffoscope
+[2023-05-24 12:22:02] INFO root fetch - processPackages [pywfa]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pywfa-0.4.0.tar.gz tmp/pywfa-0.4.1.tar.gz --markdown 20230524/p/pywfa/0.4.0-0.4.1/diff.md --exclude *.pyd
+[2023-05-24 12:22:02] INFO root fetch - processPackages [medkit-lib]: New version: [0.6.0] Old Version: [0.5.0]
+[2023-05-24 12:22:02] INFO root fetch - processPackages [dxsp]: Start processing: auto-archiver
+[2023-05-24 12:22:02] INFO root fetch - main [MainThread]: End processing [dxsp]: success
+[2023-05-24 12:22:02] INFO root fetch - processPackages [auto-archiver]: New version: [0.5.8] Old Version: [0.5.7]
+[2023-05-24 12:22:02] INFO root fetch - processPackages [medkit-lib]: Downloading https://files.pythonhosted.org/packages/96/bb/4de6802baba5e0afdd4ee01133098d8667b755e619cdc76f6ac88d12b313/medkit_lib-0.5.0.tar.gz
+[2023-05-24 12:22:02] INFO root fetch - processPackages [auto-archiver]: executing diffoscope
+[2023-05-24 12:22:02] INFO root fetch - processPackages [auto-archiver]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/auto_archiver-0.5.7.tar.gz tmp/auto_archiver-0.5.8.tar.gz --markdown 20230524/a/auto-archiver/0.5.7-0.5.8/diff.md --exclude *.pyd
+[2023-05-24 12:22:03] INFO root fetch - processPackages [medkit-lib]: Downloading https://files.pythonhosted.org/packages/79/da/8d142f6d700fcd56c045592bbb95f942e4e393bff9fdd1b3a76a0bb43c89/medkit_lib-0.6.0.tar.gz
+[2023-05-24 12:22:03] INFO root fetch - main [MainThread]: End processing [yunpancli]: success
+[2023-05-24 12:22:03] INFO root fetch - processPackages [medkit-lib]: executing diffoscope
+[2023-05-24 12:22:03] INFO root fetch - processPackages [medkit-lib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/medkit_lib-0.5.0.tar.gz tmp/medkit_lib-0.6.0.tar.gz --markdown 20230524/m/medkit-lib/0.5.0-0.6.0/diff.md --exclude *.pyd
+[2023-05-24 12:22:03] INFO root fetch - main [MainThread]: End processing [bridgecrew]: success
+[2023-05-24 12:22:03] INFO root fetch - main [MainThread]: End processing [vasp-suite]: success
+[2023-05-24 12:22:03] INFO root fetch - main [MainThread]: End processing [irene-pro]: success
+[2023-05-24 12:22:03] INFO root fetch - main [MainThread]: End processing [mecapacktools]: success
+[2023-05-24 12:22:03] INFO root fetch - main [MainThread]: End processing [isqopen]: success
+[2023-05-24 12:22:04] INFO root fetch - main [MainThread]: End processing [auto-archiver]: success
+[2023-05-24 12:22:04] INFO root fetch - main [MainThread]: End processing [medkit-lib]: success
+[2023-05-24 12:22:05] INFO root fetch - main [MainThread]: End processing [waveforms]: success
+[2023-05-24 12:22:09] INFO root fetch - main [MainThread]: End processing [pywfa]: success
+[2023-05-24 12:22:09] INFO root fetch - main [MainThread]: Store serial: [18228142]
