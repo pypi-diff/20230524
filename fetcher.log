@@ -17166,3 +17166,185 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd4 in position 72: invalid
 [2023-05-24 16:28:09] INFO root fetch - main [MainThread]: End processing [vessl]: success
 [2023-05-24 16:30:49] INFO root fetch - main [MainThread]: End processing [chainforge]: success
 [2023-05-24 16:30:49] INFO root fetch - main [MainThread]: Store serial: [18230964]
+[2023-05-24 16:35:54] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18230964]
+[2023-05-24 16:35:59] INFO root fetch - main [MainThread]: Found 33 changed packages
+[2023-05-24 16:35:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: vector-quantize-pytorch
+[2023-05-24 16:35:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: klab-client-py
+[2023-05-24 16:35:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: YMS
+[2023-05-24 16:35:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: CalSciPy
+[2023-05-24 16:35:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: havoc-clustering
+[2023-05-24 16:35:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: remla12-lib-release
+[2023-05-24 16:35:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: autora-synthetic-data
+[2023-05-24 16:35:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: promptops
+[2023-05-24 16:35:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: cdk8s
+[2023-05-24 16:35:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: tiny-cli
+[2023-05-24 16:35:59] INFO root fetch - processPackages [havoc-clustering]: New version: [0.0.9] Old Version: [0.0.4]
+[2023-05-24 16:35:59] INFO root fetch - processPackages [klab-client-py]: New version: [0.1.2] Old Version: [0.1.1]
+[2023-05-24 16:35:59] WARNING root fetch - processPackages [promptops]: Skipping, unable to determine old version
+[2023-05-24 16:35:59] INFO root fetch - processPackages [remla12-lib-release]: New version: [0.1.0] Old Version: [0.0.8]
+[2023-05-24 16:35:59] INFO root fetch - processPackages [promptops]: Start processing: json2csv
+[2023-05-24 16:35:59] INFO root fetch - main [MainThread]: End processing [promptops] error
+[2023-05-24 16:35:59] WARNING root fetch - processPackages [tiny-cli]: Skipping, unable to determine old version
+[2023-05-24 16:35:59] INFO root fetch - processPackages [tiny-cli]: Start processing: xerparser
+[2023-05-24 16:35:59] INFO root fetch - main [MainThread]: End processing [tiny-cli] error
+[2023-05-24 16:35:59] INFO root fetch - processPackages [autora-synthetic-data]: New version: [1.0.0a5] Old Version: [1.0.0a4]
+[2023-05-24 16:35:59] INFO root fetch - processPackages [YMS]: New version: [0.83] Old Version: [0.82]
+[2023-05-24 16:35:59] INFO root fetch - processPackages [CalSciPy]: New version: [0.3.0] Old Version: [0.2.8]
+[2023-05-24 16:35:59] INFO root fetch - processPackages [vector-quantize-pytorch]: New version: [1.5.8] Old Version: [1.5.7]
+[2023-05-24 16:36:00] INFO root fetch - processPackages [cdk8s]: New version: [2.7.9] Old Version: [2.7.8]
+[2023-05-24 16:36:00] INFO root fetch - processPackages [xerparser]: New version: [0.9.8] Old Version: [0.9.7]
+[2023-05-24 16:36:00] INFO root fetch - processPackages [json2csv]: New version: [0.0.6] Old Version: [0.0.5]
+[2023-05-24 16:36:00] INFO root fetch - processPackages [klab-client-py]: Downloading https://files.pythonhosted.org/packages/6a/e1/1bcdffde2bfa746c1ef8bcaafee816f5629ee13f13aee15e5782dfbe080b/klab-client-py-0.1.1.tar.gz
+[2023-05-24 16:36:00] INFO root fetch - processPackages [YMS]: Downloading https://files.pythonhosted.org/packages/a3/6a/9bba3a01be4e3c14f8c4d4ab95dbb3526d5a73d8f88fd302d0827b352564/YMS-0.82.tar.gz
+[2023-05-24 16:36:00] INFO root fetch - processPackages [json2csv]: Downloading https://files.pythonhosted.org/packages/70/7d/e70f7aafb2c47ef94bed9b8c4d6826a330fef2727f2aa6d21ee29113620f/json2csv-0.0.5.tar.gz
+[2023-05-24 16:36:00] INFO root fetch - processPackages [CalSciPy]: Downloading https://files.pythonhosted.org/packages/54/30/3935ca31dd3f0a199a2004ae99ed1dc5cc347c8f5fea71ec969ed5a7ce79/CalSciPy-0.2.8.tar.gz
+[2023-05-24 16:36:00] INFO root fetch - processPackages [vector-quantize-pytorch]: Downloading https://files.pythonhosted.org/packages/78/14/d9dabd9419d3e7b327fd1b29c0a348192eb27e8cbcfc2ebac86c44244a3f/vector_quantize_pytorch-1.5.8.tar.gz
+[2023-05-24 16:36:00] INFO root fetch - processPackages [remla12-lib-release]: Downloading https://files.pythonhosted.org/packages/fe/61/84b1661413d3fcb59f7a8f545ac8623a5326a540c671ba10cd855c1bc041/remla12-lib-release-0.1.0.tar.gz
+[2023-05-24 16:36:00] INFO root fetch - processPackages [autora-synthetic-data]: Downloading https://files.pythonhosted.org/packages/19/ab/16ff131a92a0ea578be06ace3d1a2746faa7d29e3762356156a829134a8f/autora-synthetic-data-1.0.0a5.tar.gz
+[2023-05-24 16:36:00] INFO root fetch - processPackages [xerparser]: Downloading https://files.pythonhosted.org/packages/d9/b8/18f3046e2056eba25c985ca6032f27b0e998fc148dcae61ba8c1137c2fda/xerparser-0.9.8.tar.gz
+[2023-05-24 16:36:00] INFO root fetch - processPackages [vector-quantize-pytorch]: executing diffoscope
+[2023-05-24 16:36:00] INFO root fetch - processPackages [vector-quantize-pytorch]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vector_quantize_pytorch-1.5.7.tar.gz tmp/vector_quantize_pytorch-1.5.8.tar.gz --markdown 20230524/v/vector-quantize-pytorch/1.5.7-1.5.8/diff.md --exclude *.pyd
+[2023-05-24 16:36:00] INFO root fetch - processPackages [klab-client-py]: Downloading https://files.pythonhosted.org/packages/12/dd/a28bc8a30b04e6ca4b4789d4dfd703551e6dbf89f6b5f5abc01d4f689e66/klab-client-py-0.1.2.tar.gz
+[2023-05-24 16:36:00] INFO root fetch - processPackages [havoc-clustering]: executing diffoscope
+[2023-05-24 16:36:00] INFO root fetch - processPackages [havoc-clustering]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/havoc_clustering-0.0.4.tar.gz tmp/havoc_clustering-0.0.9.tar.gz --markdown 20230524/h/havoc-clustering/0.0.4-0.0.9/diff.md --exclude *.pyd
+[2023-05-24 16:36:00] INFO root fetch - processPackages [YMS]: Downloading https://files.pythonhosted.org/packages/9d/22/d3f191bbb9293f85d57252b7ac92d6fca586412cc78f26d0c29495ba408b/YMS-0.83.tar.gz
+[2023-05-24 16:36:00] INFO root fetch - processPackages [cdk8s]: executing diffoscope
+[2023-05-24 16:36:00] INFO root fetch - processPackages [autora-synthetic-data]: executing diffoscope
+[2023-05-24 16:36:00] INFO root fetch - processPackages [cdk8s]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk8s-2.7.8.tar.gz tmp/cdk8s-2.7.9.tar.gz --markdown 20230524/c/cdk8s/2.7.8-2.7.9/diff.md --exclude *.pyd
+[2023-05-24 16:36:00] INFO root fetch - processPackages [autora-synthetic-data]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/autora-synthetic-data-1.0.0a4.tar.gz tmp/autora-synthetic-data-1.0.0a5.tar.gz --markdown 20230524/a/autora-synthetic-data/1.0.0a4-1.0.0a5/diff.md --exclude *.pyd
+[2023-05-24 16:36:00] INFO root fetch - processPackages [json2csv]: Downloading https://files.pythonhosted.org/packages/9f/aa/117e68ac7974411ccb130b08f630cebd651790bf34a7c09efc97eb0a7572/json2csv-0.0.6.tar.gz
+[2023-05-24 16:36:00] INFO root fetch - processPackages [CalSciPy]: Downloading https://files.pythonhosted.org/packages/c5/06/065f4bcbaf61dc97eb2015dadbf10a4674110f714f1802c01f69e9c3903b/CalSciPy-0.3.0.tar.gz
+[2023-05-24 16:36:00] INFO root fetch - processPackages [remla12-lib-release]: executing diffoscope
+[2023-05-24 16:36:00] INFO root fetch - processPackages [remla12-lib-release]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/remla12-lib-release-0.0.8.tar.gz tmp/remla12-lib-release-0.1.0.tar.gz --markdown 20230524/r/remla12-lib-release/0.0.8-0.1.0/diff.md --exclude *.pyd
+[2023-05-24 16:36:00] INFO root fetch - processPackages [klab-client-py]: executing diffoscope
+[2023-05-24 16:36:00] INFO root fetch - processPackages [klab-client-py]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/klab-client-py-0.1.1.tar.gz tmp/klab-client-py-0.1.2.tar.gz --markdown 20230524/k/klab-client-py/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2023-05-24 16:36:00] INFO root fetch - processPackages [YMS]: executing diffoscope
+[2023-05-24 16:36:00] INFO root fetch - processPackages [YMS]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/YMS-0.82.tar.gz tmp/YMS-0.83.tar.gz --markdown 20230524/Y/YMS/0.82-0.83/diff.md --exclude *.pyd
+[2023-05-24 16:36:00] INFO root fetch - processPackages [xerparser]: executing diffoscope
+[2023-05-24 16:36:00] INFO root fetch - processPackages [xerparser]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xerparser-0.9.7.tar.gz tmp/xerparser-0.9.8.tar.gz --markdown 20230524/x/xerparser/0.9.7-0.9.8/diff.md --exclude *.pyd
+[2023-05-24 16:36:00] INFO root fetch - processPackages [CalSciPy]: executing diffoscope
+[2023-05-24 16:36:00] INFO root fetch - processPackages [CalSciPy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/CalSciPy-0.2.8.tar.gz tmp/CalSciPy-0.3.0.tar.gz --markdown 20230524/C/CalSciPy/0.2.8-0.3.0/diff.md --exclude *.pyd
+[2023-05-24 16:36:00] INFO root fetch - processPackages [json2csv]: executing diffoscope
+[2023-05-24 16:36:00] INFO root fetch - processPackages [json2csv]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/json2csv-0.0.5.tar.gz tmp/json2csv-0.0.6.tar.gz --markdown 20230524/j/json2csv/0.0.5-0.0.6/diff.md --exclude *.pyd
+[2023-05-24 16:36:01] INFO root fetch - processPackages [vector-quantize-pytorch]: Start processing: pbcmd
+[2023-05-24 16:36:01] INFO root fetch - main [MainThread]: End processing [vector-quantize-pytorch]: success
+[2023-05-24 16:36:01] INFO root fetch - processPackages [pbcmd]: New version: [5.0] Old Version: [0.3.8]
+[2023-05-24 16:36:02] INFO root fetch - processPackages [pbcmd]: Downloading https://files.pythonhosted.org/packages/7c/48/2aa2f0a4e50be1ebf853b255d1cb3e41ceae48ddaa0d244f491c9eeeb480/pbcmd-0.3.8.tar.gz
+[2023-05-24 16:36:02] INFO root fetch - processPackages [havoc-clustering]: Start processing: str-style
+[2023-05-24 16:36:02] INFO root fetch - main [MainThread]: End processing [havoc-clustering]: success
+[2023-05-24 16:36:02] WARNING root fetch - processPackages [str-style]: Skipping, unable to determine old version
+[2023-05-24 16:36:02] INFO root fetch - processPackages [str-style]: Start processing: flask-starter
+[2023-05-24 16:36:02] INFO root fetch - main [MainThread]: End processing [str-style] error
+[2023-05-24 16:36:02] INFO root fetch - processPackages [flask-starter]: New version: [0.8.1] Old Version: [0.8.0]
+[2023-05-24 16:36:02] INFO root fetch - processPackages [YMS]: Start processing: CalSciPy
+[2023-05-24 16:36:02] INFO root fetch - main [MainThread]: End processing [YMS]: success
+[2023-05-24 16:36:02] INFO root fetch - processPackages [CalSciPy]: New version: [0.3.0] Old Version: [0.2.8]
+[2023-05-24 16:36:02] INFO root fetch - processPackages [pbcmd]: Downloading https://files.pythonhosted.org/packages/17/82/3b6adba6a4ebeab45ae9f8e764e2f0a4e8f7bea804128d2fcc6d170ebb98/pbcmd-5.0.tar.gz
+[2023-05-24 16:36:02] INFO root fetch - processPackages [CalSciPy]: executing diffoscope
+[2023-05-24 16:36:02] INFO root fetch - processPackages [CalSciPy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/CalSciPy-0.2.8.tar.gz tmp/CalSciPy-0.3.0.tar.gz --markdown 20230524/C/CalSciPy/0.2.8-0.3.0/diff.md --exclude *.pyd
+[2023-05-24 16:36:02] INFO root fetch - processPackages [klab-client-py]: Start processing: deepdataspace
+[2023-05-24 16:36:02] INFO root fetch - main [MainThread]: End processing [klab-client-py]: success
+[2023-05-24 16:36:02] INFO root fetch - processPackages [flask-starter]: Downloading https://files.pythonhosted.org/packages/95/50/45b0e125a3232a3759548de64bec925f0a33d91c5bbfe1997e210376afab/flask-starter-0.8.1.tar.gz
+[2023-05-24 16:36:02] INFO root fetch - processPackages [deepdataspace]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-05-24 16:36:02] INFO root fetch - processPackages [remla12-lib-release]: Start processing: intel-sgx-ra
+[2023-05-24 16:36:02] INFO root fetch - main [MainThread]: End processing [remla12-lib-release]: success
+[2023-05-24 16:36:02] INFO root fetch - processPackages [xerparser]: Start processing: FCSAPIAccessSDK
+[2023-05-24 16:36:02] INFO root fetch - main [MainThread]: End processing [xerparser]: success
+[2023-05-24 16:36:02] INFO root fetch - processPackages [FCSAPIAccessSDK]: New version: [1.1.2] Old Version: [1.1.1]
+[2023-05-24 16:36:02] INFO root fetch - processPackages [CalSciPy]: Start processing: cenao
+[2023-05-24 16:36:02] INFO root fetch - main [MainThread]: End processing [CalSciPy]: success
+[2023-05-24 16:36:02] INFO root fetch - processPackages [json2csv]: Start processing: bulma-sphinx-theme
+[2023-05-24 16:36:02] INFO root fetch - main [MainThread]: End processing [json2csv]: success
+[2023-05-24 16:36:02] INFO root fetch - processPackages [pbcmd]: executing diffoscope
+[2023-05-24 16:36:02] INFO root fetch - processPackages [pbcmd]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pbcmd-0.3.8.tar.gz tmp/pbcmd-5.0.tar.gz --markdown 20230524/p/pbcmd/0.3.8-5.0/diff.md --exclude *.pyd
+[2023-05-24 16:36:02] INFO root fetch - processPackages [cdk8s]: Start processing: json2csv
+[2023-05-24 16:36:02] INFO root fetch - main [MainThread]: End processing [cdk8s]: success
+[2023-05-24 16:36:02] INFO root fetch - processPackages [cenao]: New version: [0.9.2] Old Version: [0.9.1]
+[2023-05-24 16:36:02] INFO root fetch - processPackages [deepdataspace]: executing diffoscope
+[2023-05-24 16:36:02] INFO root fetch - processPackages [deepdataspace]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/deepdataspace-0.0.2.tar.gz tmp/deepdataspace-0.0.3.tar.gz --markdown 20230524/d/deepdataspace/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-05-24 16:36:02] INFO root fetch - processPackages [json2csv]: New version: [0.0.6] Old Version: [0.0.5]
+[2023-05-24 16:36:02] INFO root fetch - processPackages [intel-sgx-ra]: New version: [2.0a4] Old Version: [2.0a3]
+[2023-05-24 16:36:02] WARNING root fetch - processPackages [bulma-sphinx-theme]: Skipping, unable to determine old version
+[2023-05-24 16:36:02] INFO root fetch - processPackages [flask-starter]: executing diffoscope
+[2023-05-24 16:36:02] INFO root fetch - processPackages [bulma-sphinx-theme]: Start processing: cdk8s
+[2023-05-24 16:36:02] INFO root fetch - main [MainThread]: End processing [bulma-sphinx-theme] error
+[2023-05-24 16:36:02] INFO root fetch - processPackages [flask-starter]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/flask-starter-0.8.0.tar.gz tmp/flask-starter-0.8.1.tar.gz --markdown 20230524/f/flask-starter/0.8.0-0.8.1/diff.md --exclude *.pyd
+[2023-05-24 16:36:02] INFO root fetch - processPackages [json2csv]: executing diffoscope
+[2023-05-24 16:36:02] INFO root fetch - processPackages [json2csv]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/json2csv-0.0.5.tar.gz tmp/json2csv-0.0.6.tar.gz --markdown 20230524/j/json2csv/0.0.5-0.0.6/diff.md --exclude *.pyd
+[2023-05-24 16:36:02] INFO root fetch - processPackages [cenao]: executing diffoscope
+[2023-05-24 16:36:02] INFO root fetch - processPackages [cenao]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cenao-0.9.1.tar.gz tmp/cenao-0.9.2.tar.gz --markdown 20230524/c/cenao/0.9.1-0.9.2/diff.md --exclude *.pyd
+[2023-05-24 16:36:02] INFO root fetch - processPackages [cdk8s]: New version: [2.7.9] Old Version: [2.7.8]
+[2023-05-24 16:36:02] INFO root fetch - processPackages [FCSAPIAccessSDK]: Downloading https://files.pythonhosted.org/packages/08/2e/036a1a7aeae3dbe7c74fbbf64ea7eb4d3f5f56fdc067866f382e3513b156/FCSAPIAccessSDK-1.1.2.tar.gz
+[2023-05-24 16:36:02] INFO root fetch - processPackages [cdk8s]: executing diffoscope
+[2023-05-24 16:36:02] INFO root fetch - processPackages [cdk8s]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk8s-2.7.8.tar.gz tmp/cdk8s-2.7.9.tar.gz --markdown 20230524/c/cdk8s/2.7.8-2.7.9/diff.md --exclude *.pyd
+[2023-05-24 16:36:03] INFO root fetch - processPackages [intel-sgx-ra]: Downloading https://files.pythonhosted.org/packages/60/7a/4cdb9225064c3f234248d07d5368793784d7b6ef5b9a82691c8a4dfea40b/intel_sgx_ra-2.0a4.tar.gz
+[2023-05-24 16:36:03] INFO root fetch - processPackages [FCSAPIAccessSDK]: executing diffoscope
+[2023-05-24 16:36:03] INFO root fetch - processPackages [FCSAPIAccessSDK]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/FCSAPIAccessSDK-1.1.1.tar.gz tmp/FCSAPIAccessSDK-1.1.2.tar.gz --markdown 20230524/F/FCSAPIAccessSDK/1.1.1-1.1.2/diff.md --exclude *.pyd
+[2023-05-24 16:36:03] INFO root fetch - processPackages [intel-sgx-ra]: executing diffoscope
+[2023-05-24 16:36:03] INFO root fetch - processPackages [intel-sgx-ra]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/intel_sgx_ra-2.0a3.tar.gz tmp/intel_sgx_ra-2.0a4.tar.gz --markdown 20230524/i/intel-sgx-ra/2.0a3-2.0a4/diff.md --exclude *.pyd
+[2023-05-24 16:36:03] INFO root fetch - processPackages [autora-synthetic-data]: Start processing: django-passkeys
+[2023-05-24 16:36:03] INFO root fetch - main [MainThread]: End processing [autora-synthetic-data]: success
+[2023-05-24 16:36:03] INFO root fetch - processPackages [django-passkeys]: New version: [1.1.0] Old Version: [1.0.0]
+[2023-05-24 16:36:03] INFO root fetch - processPackages [django-passkeys]: executing diffoscope
+[2023-05-24 16:36:03] INFO root fetch - processPackages [django-passkeys]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django-passkeys-1.0.0.tar.gz tmp/django-passkeys-1.1.0.tar.gz --markdown 20230524/d/django-passkeys/1.0.0-1.1.0/diff.md --exclude *.pyd
+[2023-05-24 16:36:04] INFO root fetch - processPackages [CalSciPy]: Start processing: anastasia-logging
+[2023-05-24 16:36:04] INFO root fetch - main [MainThread]: End processing [CalSciPy]: success
+[2023-05-24 16:36:04] INFO root fetch - processPackages [pbcmd]: Start processing: carto-reader
+[2023-05-24 16:36:04] INFO root fetch - main [MainThread]: End processing [pbcmd]: success
+[2023-05-24 16:36:04] INFO root fetch - processPackages [json2csv]: Start processing: swspy
+[2023-05-24 16:36:04] INFO root fetch - main [MainThread]: End processing [json2csv]: success
+[2023-05-24 16:36:04] INFO root fetch - processPackages [anastasia-logging]: New version: [1.3.3] Old Version: [1.3.2]
+[2023-05-24 16:36:04] INFO root fetch - processPackages [carto-reader]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-24 16:36:04] INFO root fetch - processPackages [swspy]: New version: [1.0.2] Old Version: [1.0.1]
+[2023-05-24 16:36:04] INFO root fetch - processPackages [anastasia-logging]: Downloading https://files.pythonhosted.org/packages/d2/32/77db584809153f59a721d1c4db53e22c467c15568959f5a722da0181e692/anastasia_logging-1.3.2.tar.gz
+[2023-05-24 16:36:04] INFO root fetch - processPackages [intel-sgx-ra]: Start processing: componentize-py
+[2023-05-24 16:36:04] INFO root fetch - main [MainThread]: End processing [intel-sgx-ra]: success
+[2023-05-24 16:36:04] INFO root fetch - processPackages [componentize-py]: New version: [0.2.1] Old Version: [0.2.0]
+[2023-05-24 16:36:04] INFO root fetch - processPackages [componentize-py]: executing diffoscope
+[2023-05-24 16:36:04] INFO root fetch - processPackages [componentize-py]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/componentize_py-0.2.0.tar.gz tmp/componentize_py-0.2.1.tar.gz --markdown 20230524/c/componentize-py/0.2.0-0.2.1/diff.md --exclude *.pyd
+[2023-05-24 16:36:04] INFO root fetch - processPackages [carto-reader]: executing diffoscope
+[2023-05-24 16:36:04] INFO root fetch - processPackages [carto-reader]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/carto_reader-0.0.8.tar.gz tmp/carto_reader-0.0.9.tar.gz --markdown 20230524/c/carto-reader/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-24 16:36:04] INFO root fetch - processPackages [cenao]: Start processing: lumina
+[2023-05-24 16:36:04] INFO root fetch - main [MainThread]: End processing [cenao]: success
+[2023-05-24 16:36:04] INFO root fetch - processPackages [swspy]: Downloading https://files.pythonhosted.org/packages/aa/a7/e000ea37fd8358dfb517f51f6ae8a7f8b66f9ab42c9d9d9d6b1909db62b7/swspy-1.0.2.tar.gz
+[2023-05-24 16:36:04] INFO root fetch - processPackages [anastasia-logging]: Downloading https://files.pythonhosted.org/packages/82/8c/65bbc5929976c32603449d4222e30365f109dc1a263e81bba38f542a799e/anastasia_logging-1.3.3.tar.gz
+[2023-05-24 16:36:04] INFO root fetch - processPackages [FCSAPIAccessSDK]: Start processing: specfabpy
+[2023-05-24 16:36:04] INFO root fetch - main [MainThread]: End processing [FCSAPIAccessSDK]: success
+[2023-05-24 16:36:04] INFO root fetch - processPackages [swspy]: executing diffoscope
+[2023-05-24 16:36:04] INFO root fetch - processPackages [swspy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/swspy-1.0.1.tar.gz tmp/swspy-1.0.2.tar.gz --markdown 20230524/s/swspy/1.0.1-1.0.2/diff.md --exclude *.pyd
+[2023-05-24 16:36:04] WARNING root fetch - processPackages [lumina]: Skipping, unable to determine old version
+[2023-05-24 16:36:04] INFO root fetch - processPackages [lumina]: Start processing: firebolt-sdk
+[2023-05-24 16:36:04] INFO root fetch - main [MainThread]: End processing [lumina] error
+[2023-05-24 16:36:04] INFO root fetch - processPackages [anastasia-logging]: executing diffoscope
+[2023-05-24 16:36:04] INFO root fetch - processPackages [anastasia-logging]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/anastasia_logging-1.3.2.tar.gz tmp/anastasia_logging-1.3.3.tar.gz --markdown 20230524/a/anastasia-logging/1.3.2-1.3.3/diff.md --exclude *.pyd
+[2023-05-24 16:36:04] INFO root fetch - processPackages [firebolt-sdk]: New version: [0.9.2] Old Version: [0.9.1]
+[2023-05-24 16:36:05] INFO root fetch - processPackages [specfabpy]: New version: [2023.5.26] Old Version: [2023.4.9]
+[2023-05-24 16:36:05] INFO root fetch - processPackages [firebolt-sdk]: executing diffoscope
+[2023-05-24 16:36:05] INFO root fetch - processPackages [firebolt-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/firebolt_sdk-0.9.1.tar.gz tmp/firebolt_sdk-0.9.2.tar.gz --markdown 20230524/f/firebolt-sdk/0.9.1-0.9.2/diff.md --exclude *.pyd
+[2023-05-24 16:36:05] INFO root fetch - processPackages [django-passkeys]: Start processing: nucliadb-contributor-assets
+[2023-05-24 16:36:05] INFO root fetch - main [MainThread]: End processing [django-passkeys]: success
+[2023-05-24 16:36:05] INFO root fetch - processPackages [nucliadb-contributor-assets]: New version: [1.0.0.post795] Old Version: [1.0.0.post791]
+[2023-05-24 16:36:05] INFO root fetch - processPackages [specfabpy]: Downloading https://files.pythonhosted.org/packages/63/e3/cc62b82b3193ab79c3ad0a0359dd7cac9bdef5762f49185c4ee915d46bb4/specfabpy-2023.4.9-py3-none-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2023-05-24 16:36:05] INFO root fetch - processPackages [nucliadb-contributor-assets]: Downloading https://files.pythonhosted.org/packages/63/03/e28acf1cb4e491489e205eccac4ca13e42fc63f4ffa74a6a537eea39e21c/nucliadb_contributor_assets-1.0.0.post795-py3-none-any.whl
+[2023-05-24 16:36:05] INFO root fetch - processPackages [nucliadb-contributor-assets]: executing diffoscope
+[2023-05-24 16:36:05] INFO root fetch - processPackages [nucliadb-contributor-assets]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nucliadb_contributor_assets-1.0.0.post791-py3-none-any.whl.zip tmp/nucliadb_contributor_assets-1.0.0.post795-py3-none-any.whl.zip --markdown 20230524/n/nucliadb-contributor-assets/1.0.0.post791-1.0.0.post795/diff.md --exclude *.pyd
+[2023-05-24 16:36:05] INFO root fetch - processPackages [cdk8s]: Start processing: owlml
+[2023-05-24 16:36:05] INFO root fetch - main [MainThread]: End processing [cdk8s]: success
+[2023-05-24 16:36:05] INFO root fetch - processPackages [owlml]: New version: [0.1.2.dev1684878969] Old Version: [0.1.2.dev1684875369]
+[2023-05-24 16:36:05] INFO root fetch - processPackages [owlml]: Downloading https://files.pythonhosted.org/packages/d8/53/082bed6ec6a5abd93baec7d1635f8d1ade5f1fed2b9b5d4f52cb04e04579/owlml-0.1.2.dev1684878969.tar.gz
+[2023-05-24 16:36:05] INFO root fetch - processPackages [owlml]: executing diffoscope
+[2023-05-24 16:36:05] INFO root fetch - processPackages [owlml]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/owlml-0.1.2.dev1684875369.tar.gz tmp/owlml-0.1.2.dev1684878969.tar.gz --markdown 20230524/o/owlml/0.1.2.dev1684875369-0.1.2.dev1684878969/diff.md --exclude *.pyd
+[2023-05-24 16:36:06] INFO root fetch - main [MainThread]: End processing [swspy]: success
+[2023-05-24 16:36:06] INFO root fetch - main [MainThread]: End processing [anastasia-logging]: success
+[2023-05-24 16:36:06] INFO root fetch - main [MainThread]: End processing [carto-reader]: success
+[2023-05-24 16:36:06] INFO root fetch - processPackages [specfabpy]: Downloading https://files.pythonhosted.org/packages/ba/b0/d5898a15f612bfe30fc6e7fa70105ccdfe7a6fc7228b19a0134a3c2679bf/specfabpy-2023.5.26-py3-none-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2023-05-24 16:36:07] INFO root fetch - main [MainThread]: End processing [nucliadb-contributor-assets]: success
+[2023-05-24 16:36:07] INFO root fetch - processPackages [specfabpy]: executing diffoscope
+[2023-05-24 16:36:07] INFO root fetch - processPackages [specfabpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/specfabpy-2023.4.9-py3-none-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip tmp/specfabpy-2023.5.26-py3-none-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip --markdown 20230524/s/specfabpy/2023.4.9-2023.5.26/diff.md --exclude *.pyd
+[2023-05-24 16:36:07] INFO root fetch - main [MainThread]: End processing [owlml]: success
+[2023-05-24 16:36:07] INFO root fetch - main [MainThread]: End processing [firebolt-sdk]: success
+[2023-05-24 16:36:08] INFO root fetch - main [MainThread]: End processing [componentize-py]: success
+[2023-05-24 16:36:08] INFO root fetch - main [MainThread]: End processing [deepdataspace]: success
+[2023-05-24 16:36:42] INFO root fetch - main [MainThread]: End processing [flask-starter]: success
+[2023-05-24 16:37:10] INFO root fetch - main [MainThread]: End processing [specfabpy]: success
+[2023-05-24 16:37:10] INFO root fetch - main [MainThread]: Store serial: [18231091]
