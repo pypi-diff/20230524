@@ -22933,3 +22933,79 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd4 in position 72: invalid
 [2023-05-24 21:30:19] INFO root fetch - main [MainThread]: End processing [determined]: success
 [2023-05-24 21:30:53] INFO root fetch - main [MainThread]: End processing [sqlite-vss]: success
 [2023-05-24 21:30:53] INFO root fetch - main [MainThread]: Store serial: [18234886]
+[2023-05-24 21:35:57] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18234886]
+[2023-05-24 21:36:02] INFO root fetch - main [MainThread]: Found 13 changed packages
+[2023-05-24 21:36:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: determined-cli
+[2023-05-24 21:36:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: model-hub
+[2023-05-24 21:36:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: jppype
+[2023-05-24 21:36:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: odoo14-addon-l10n-br-fiscal
+[2023-05-24 21:36:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: steamship
+[2023-05-24 21:36:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: seeFretboard
+[2023-05-24 21:36:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: echofish-aws-resample-and-write-to-zarr-store-lambda
+[2023-05-24 21:36:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: promptlayer
+[2023-05-24 21:36:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: ligo-em-bright
+[2023-05-24 21:36:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: NikGapps
+[2023-05-24 21:36:02] INFO root fetch - processPackages [jppype]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-05-24 21:36:02] INFO root fetch - processPackages [steamship]: New version: [2.3.9] Old Version: [2.3.8]
+[2023-05-24 21:36:02] INFO root fetch - processPackages [odoo14-addon-l10n-br-fiscal]: New version: [14.0.9.2.1.dev3] Old Version: [14.0.9.2.1.dev2]
+[2023-05-24 21:36:02] INFO root fetch - processPackages [seeFretboard]: New version: [0.0.5] Old Version: [0.0.4]
+[2023-05-24 21:36:02] INFO root fetch - processPackages [NikGapps]: New version: [1.18] Old Version: [1.17]
+[2023-05-24 21:36:03] INFO root fetch - processPackages [steamship]: executing diffoscope
+[2023-05-24 21:36:03] INFO root fetch - processPackages [steamship]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/steamship-2.3.8.tar.gz tmp/steamship-2.3.9.tar.gz --markdown 20230524/s/steamship/2.3.8-2.3.9/diff.md --exclude *.pyd
+[2023-05-24 21:36:03] INFO root fetch - processPackages [jppype]: executing diffoscope
+[2023-05-24 21:36:03] INFO root fetch - processPackages [jppype]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jppype-0.1.0.tar.gz tmp/jppype-0.1.1.tar.gz --markdown 20230524/j/jppype/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-05-24 21:36:03] WARNING root fetch - processPackages [echofish-aws-resample-and-write-to-zarr-store-lambda]: Skipping, unable to determine old version
+[2023-05-24 21:36:03] INFO root fetch - processPackages [echofish-aws-resample-and-write-to-zarr-store-lambda]: Start processing: prefeitura-rio
+[2023-05-24 21:36:03] INFO root fetch - main [MainThread]: End processing [echofish-aws-resample-and-write-to-zarr-store-lambda] error
+[2023-05-24 21:36:03] INFO root fetch - processPackages [promptlayer]: New version: [0.1.82] Old Version: [0.1.81]
+[2023-05-24 21:36:03] INFO root fetch - processPackages [ligo-em-bright]: New version: [1.1.3] Old Version: [1.1.2]
+[2023-05-24 21:36:03] INFO root fetch - processPackages [model-hub]: New version: [0.22.2rc1] Old Version: [0.22.2rc0]
+[2023-05-24 21:36:03] INFO root fetch - processPackages [odoo14-addon-l10n-br-fiscal]: executing diffoscope
+[2023-05-24 21:36:03] INFO root fetch - processPackages [odoo14-addon-l10n-br-fiscal]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo14_addon_l10n_br_fiscal-14.0.9.2.1.dev2-py3-none-any.whl.zip tmp/odoo14_addon_l10n_br_fiscal-14.0.9.2.1.dev3-py3-none-any.whl.zip --markdown 20230524/o/odoo14-addon-l10n-br-fiscal/14.0.9.2.1.dev2-14.0.9.2.1.dev3/diff.md --exclude *.pyd
+[2023-05-24 21:36:03] INFO root fetch - processPackages [prefeitura-rio]: New version: [0.1.1a1] Old Version: [0.1.1]
+[2023-05-24 21:36:03] INFO root fetch - processPackages [NikGapps]: Downloading https://files.pythonhosted.org/packages/a1/57/53af5d605eb05652cc804dc68dda2d094bbcd71e197545c17fb6d1fed51a/NikGapps-1.17.tar.gz
+[2023-05-24 21:36:03] INFO root fetch - processPackages [seeFretboard]: Downloading https://files.pythonhosted.org/packages/66/b4/aef120d1c6bc91b43e18323524112526860645f8febaafb4f6e206a500ee/seeFretboard-0.0.5.tar.gz
+[2023-05-24 21:36:03] WARNING root fetch - processPackages [NikGapps]: Skipping package: exceeds size limit 41549095>=10485760
+[2023-05-24 21:36:03] INFO root fetch - processPackages [NikGapps]: Start processing: envoy.code.check
+[2023-05-24 21:36:03] INFO root fetch - main [MainThread]: End processing [NikGapps] error
+[2023-05-24 21:36:03] INFO root fetch - processPackages [promptlayer]: Downloading https://files.pythonhosted.org/packages/9b/42/d93717bb9592c265b08c929b08869450950430ed9140a5a9872f6318357b/promptlayer-0.1.81.tar.gz
+[2023-05-24 21:36:03] INFO root fetch - processPackages [determined-cli]: New version: [0.22.2rc1] Old Version: [0.22.2rc0]
+[2023-05-24 21:36:03] INFO root fetch - processPackages [envoy.code.check]: New version: [0.5.3] Old Version: [0.5.1]
+[2023-05-24 21:36:03] INFO root fetch - processPackages [ligo-em-bright]: Downloading https://files.pythonhosted.org/packages/33/12/e6e037bf5996e5d0f8799ba8b3aad09bcb5186464435b1b4e2dd82c96ee0/ligo_em_bright-1.1.2.tar.gz
+[2023-05-24 21:36:03] INFO root fetch - processPackages [prefeitura-rio]: Downloading https://files.pythonhosted.org/packages/8a/09/4a2b47cff367924c07a8090c47b8bc3a2f77d7c8b4b6cb39628ca59018d4/prefeitura_rio-0.1.1.tar.gz
+[2023-05-24 21:36:03] INFO root fetch - processPackages [seeFretboard]: executing diffoscope
+[2023-05-24 21:36:03] INFO root fetch - processPackages [promptlayer]: Downloading https://files.pythonhosted.org/packages/c0/0b/669fa0402a191de4f95c5fb477680e9291c4d4d5a73381bc542c02b0b2a9/promptlayer-0.1.82.tar.gz
+[2023-05-24 21:36:03] INFO root fetch - processPackages [seeFretboard]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/seeFretboard-0.0.4.tar.gz tmp/seeFretboard-0.0.5.tar.gz --markdown 20230524/s/seeFretboard/0.0.4-0.0.5/diff.md --exclude *.pyd
+[2023-05-24 21:36:03] INFO root fetch - processPackages [envoy.code.check]: Downloading https://files.pythonhosted.org/packages/95/55/dcaa7b2b64d7895dab5606e5e4e7a1ef922122d31c28c2dca5c64fe10e60/envoy.code.check-0.5.3.tar.gz
+[2023-05-24 21:36:03] INFO root fetch - processPackages [model-hub]: executing diffoscope
+[2023-05-24 21:36:03] INFO root fetch - processPackages [model-hub]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/model_hub-0.22.2rc0-py3-none-any.whl.zip tmp/model_hub-0.22.2rc1-py3-none-any.whl.zip --markdown 20230524/m/model-hub/0.22.2rc0-0.22.2rc1/diff.md --exclude *.pyd
+[2023-05-24 21:36:03] INFO root fetch - processPackages [ligo-em-bright]: Downloading https://files.pythonhosted.org/packages/37/ce/cd6ee6470dda6c1abc31a771172d0169e49d177928150fa7389820a81d24/ligo_em_bright-1.1.3.tar.gz
+[2023-05-24 21:36:03] INFO root fetch - processPackages [determined-cli]: executing diffoscope
+[2023-05-24 21:36:03] INFO root fetch - processPackages [determined-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/determined_cli-0.22.2rc0-py3-none-any.whl.zip tmp/determined_cli-0.22.2rc1-py3-none-any.whl.zip --markdown 20230524/d/determined-cli/0.22.2rc0-0.22.2rc1/diff.md --exclude *.pyd
+[2023-05-24 21:36:03] INFO root fetch - processPackages [promptlayer]: executing diffoscope
+[2023-05-24 21:36:03] INFO root fetch - processPackages [promptlayer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/promptlayer-0.1.81.tar.gz tmp/promptlayer-0.1.82.tar.gz --markdown 20230524/p/promptlayer/0.1.81-0.1.82/diff.md --exclude *.pyd
+[2023-05-24 21:36:03] INFO root fetch - processPackages [ligo-em-bright]: executing diffoscope
+[2023-05-24 21:36:03] INFO root fetch - processPackages [ligo-em-bright]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ligo_em_bright-1.1.2.tar.gz tmp/ligo_em_bright-1.1.3.tar.gz --markdown 20230524/l/ligo-em-bright/1.1.2-1.1.3/diff.md --exclude *.pyd
+[2023-05-24 21:36:03] INFO root fetch - processPackages [prefeitura-rio]: Downloading https://files.pythonhosted.org/packages/39/81/35cd8bc54c4f65d3e40e22306011fab724952a8b03bbc42a6e3c1d5b9bdc/prefeitura-rio-0.1.1a1.tar.gz
+[2023-05-24 21:36:03] INFO root fetch - processPackages [envoy.code.check]: executing diffoscope
+[2023-05-24 21:36:03] INFO root fetch - processPackages [envoy.code.check]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/envoy.code.check-0.5.1.tar.gz tmp/envoy.code.check-0.5.3.tar.gz --markdown 20230524/e/envoy.code.check/0.5.1-0.5.3/diff.md --exclude *.pyd
+[2023-05-24 21:36:03] INFO root fetch - processPackages [prefeitura-rio]: executing diffoscope
+[2023-05-24 21:36:03] INFO root fetch - processPackages [prefeitura-rio]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/prefeitura_rio-0.1.1.tar.gz tmp/prefeitura-rio-0.1.1a1.tar.gz --markdown 20230524/p/prefeitura-rio/0.1.1-0.1.1a1/diff.md --exclude *.pyd
+[2023-05-24 21:36:04] INFO root fetch - processPackages [model-hub]: Start processing: vcrpy
+[2023-05-24 21:36:04] INFO root fetch - main [MainThread]: End processing [model-hub]: success
+[2023-05-24 21:36:04] INFO root fetch - main [MainThread]: End processing [determined-cli]: success
+[2023-05-24 21:36:05] INFO root fetch - processPackages [vcrpy]: New version: [4.3.0] Old Version: [4.2.1]
+[2023-05-24 21:36:05] INFO root fetch - main [MainThread]: End processing [ligo-em-bright]: success
+[2023-05-24 21:36:05] INFO root fetch - processPackages [vcrpy]: Downloading https://files.pythonhosted.org/packages/74/ae/642573c8f79999a6da22e78d80c53924e0faa140bfca3dcc41240dcd567f/vcrpy-4.2.1.tar.gz
+[2023-05-24 21:36:05] INFO root fetch - main [MainThread]: End processing [seeFretboard]: success
+[2023-05-24 21:36:05] INFO root fetch - main [MainThread]: End processing [envoy.code.check]: success
+[2023-05-24 21:36:05] INFO root fetch - main [MainThread]: End processing [prefeitura-rio]: success
+[2023-05-24 21:36:05] INFO root fetch - processPackages [vcrpy]: Downloading https://files.pythonhosted.org/packages/c4/ef/0adac7ae234126b7ce90c4f45cf3750ea7d21320ad472a45fc2e13625245/vcrpy-4.3.0.tar.gz
+[2023-05-24 21:36:05] INFO root fetch - main [MainThread]: End processing [promptlayer]: success
+[2023-05-24 21:36:05] INFO root fetch - processPackages [vcrpy]: executing diffoscope
+[2023-05-24 21:36:05] INFO root fetch - processPackages [vcrpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vcrpy-4.2.1.tar.gz tmp/vcrpy-4.3.0.tar.gz --markdown 20230524/v/vcrpy/4.2.1-4.3.0/diff.md --exclude *.pyd
+[2023-05-24 21:36:06] INFO root fetch - main [MainThread]: End processing [odoo14-addon-l10n-br-fiscal]: success
+[2023-05-24 21:36:07] INFO root fetch - main [MainThread]: End processing [vcrpy]: success
+[2023-05-24 21:36:08] INFO root fetch - main [MainThread]: End processing [steamship]: success
+[2023-05-24 21:36:14] INFO root fetch - main [MainThread]: End processing [jppype]: success
+[2023-05-24 21:36:14] INFO root fetch - main [MainThread]: Store serial: [18234924]
