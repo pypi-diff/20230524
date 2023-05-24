@@ -6309,3 +6309,45 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-05-24 05:06:49] INFO root fetch - main [MainThread]: End processing [cloudimg]: success
 [2023-05-24 05:06:50] INFO root fetch - main [MainThread]: End processing [antchain-twc]: success
 [2023-05-24 05:06:50] INFO root fetch - main [MainThread]: Store serial: [18224322]
+[2023-05-24 05:11:54] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18224322]
+[2023-05-24 05:11:59] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-05-24 05:11:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: gTdev
+[2023-05-24 05:11:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: eyes-robotframework
+[2023-05-24 05:11:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: easyaiapi
+[2023-05-24 05:11:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: aind-data-transfer
+[2023-05-24 05:11:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: Slpapy
+[2023-05-24 05:11:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: ngspice-tools
+[2023-05-24 05:11:59] INFO root fetch - processPackages [eyes-robotframework]: New version: [5.9.0] Old Version: [5.8.1]
+[2023-05-24 05:11:59] INFO root fetch - processPackages [ngspice-tools]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-05-24 05:11:59] INFO root fetch - processPackages [gTdev]: New version: [0.0.4] Old Version: [0.0.2]
+[2023-05-24 05:11:59] INFO root fetch - processPackages [easyaiapi]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-05-24 05:11:59] INFO root fetch - processPackages [eyes-robotframework]: Downloading https://files.pythonhosted.org/packages/8f/07/16bad5d6312d4ecba4288a79afb17dc3e13da50304c95beff7cdf51b2371/eyes_robotframework-5.8.1-py2.py3-none-any.whl
+[2023-05-24 05:11:59] INFO root fetch - processPackages [ngspice-tools]: Downloading https://files.pythonhosted.org/packages/f3/cb/8ab2292e7852f4301c5272a035556b67321c117f829403fc694f3a84e789/ngspice-tools-0.0.1.tar.gz
+[2023-05-24 05:11:59] INFO root fetch - processPackages [gTdev]: Downloading https://files.pythonhosted.org/packages/f4/56/85b2b046e4fb3a483e680640ce7e0bcc7e153e657d5b117299a6f2828426/gTdev-0.0.2.tar.gz
+[2023-05-24 05:11:59] INFO root fetch - processPackages [aind-data-transfer]: New version: [0.9.3] Old Version: [0.9.2]
+[2023-05-24 05:11:59] INFO root fetch - processPackages [Slpapy]: New version: [0.3.23] Old Version: [0.3.22]
+[2023-05-24 05:11:59] INFO root fetch - processPackages [easyaiapi]: Downloading https://files.pythonhosted.org/packages/93/cf/eb1e157c9c15c994d647ed2651463fc716fe366365a8331a56bb682e8b66/easyaiapi-0.0.2.tar.gz
+[2023-05-24 05:11:59] INFO root fetch - processPackages [gTdev]: Downloading https://files.pythonhosted.org/packages/6d/c6/52af02a8fdcfbf11f690f8862587dd7c00f89debfb8513455681142ce118/gTdev-0.0.4.tar.gz
+[2023-05-24 05:12:00] INFO root fetch - processPackages [eyes-robotframework]: Downloading https://files.pythonhosted.org/packages/40/cd/befa1ed0e10992e7957c319d39d71b391cde687201b8f906018b7f1e3c20/eyes_robotframework-5.9.0-py2.py3-none-any.whl
+[2023-05-24 05:12:00] INFO root fetch - processPackages [ngspice-tools]: Downloading https://files.pythonhosted.org/packages/7d/a8/02a650a0a8f23565d1961d9f94ec8f5bad9a6e02060f966747df0c3aadf4/ngspice-tools-0.0.2.tar.gz
+[2023-05-24 05:12:00] INFO root fetch - processPackages [gTdev]: executing diffoscope
+[2023-05-24 05:12:00] INFO root fetch - processPackages [gTdev]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gTdev-0.0.2.tar.gz tmp/gTdev-0.0.4.tar.gz --markdown 20230524/g/gTdev/0.0.2-0.0.4/diff.md --exclude *.pyd
+[2023-05-24 05:12:00] INFO root fetch - processPackages [aind-data-transfer]: executing diffoscope
+[2023-05-24 05:12:00] INFO root fetch - processPackages [aind-data-transfer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aind-data-transfer-0.9.2.tar.gz tmp/aind-data-transfer-0.9.3.tar.gz --markdown 20230524/a/aind-data-transfer/0.9.2-0.9.3/diff.md --exclude *.pyd
+[2023-05-24 05:12:00] INFO root fetch - processPackages [eyes-robotframework]: executing diffoscope
+[2023-05-24 05:12:00] INFO root fetch - processPackages [eyes-robotframework]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/eyes_robotframework-5.8.1-py2.py3-none-any.whl.zip tmp/eyes_robotframework-5.9.0-py2.py3-none-any.whl.zip --markdown 20230524/e/eyes-robotframework/5.8.1-5.9.0/diff.md --exclude *.pyd
+[2023-05-24 05:12:00] INFO root fetch - processPackages [easyaiapi]: Downloading https://files.pythonhosted.org/packages/b0/f7/2db8ceb757f170922f4853f5d154a0147b4954d04d53ff6712a3eb3684bc/easyaiapi-0.0.3.tar.gz
+[2023-05-24 05:12:00] INFO root fetch - processPackages [ngspice-tools]: executing diffoscope
+[2023-05-24 05:12:00] INFO root fetch - processPackages [ngspice-tools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ngspice-tools-0.0.1.tar.gz tmp/ngspice-tools-0.0.2.tar.gz --markdown 20230524/n/ngspice-tools/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-05-24 05:12:00] INFO root fetch - processPackages [easyaiapi]: executing diffoscope
+[2023-05-24 05:12:00] INFO root fetch - processPackages [easyaiapi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/easyaiapi-0.0.2.tar.gz tmp/easyaiapi-0.0.3.tar.gz --markdown 20230524/e/easyaiapi/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-05-24 05:12:00] INFO root fetch - processPackages [Slpapy]: Downloading https://files.pythonhosted.org/packages/eb/a4/d5c32088be11f430c8f01c824a48e41bde550a7096b70df6079883db127d/Slpapy-0.3.23.tar.gz
+[2023-05-24 05:12:00] INFO root fetch - processPackages [Slpapy]: executing diffoscope
+[2023-05-24 05:12:00] INFO root fetch - processPackages [Slpapy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Slpapy-0.3.22.tar.gz tmp/Slpapy-0.3.23.tar.gz --markdown 20230524/S/Slpapy/0.3.22-0.3.23/diff.md --exclude *.pyd
+[2023-05-24 05:12:01] INFO root fetch - main [MainThread]: End processing [easyaiapi]: success
+[2023-05-24 05:12:01] INFO root fetch - main [MainThread]: End processing [eyes-robotframework]: success
+[2023-05-24 05:12:01] INFO root fetch - main [MainThread]: End processing [gTdev]: success
+[2023-05-24 05:12:01] INFO root fetch - main [MainThread]: End processing [ngspice-tools]: success
+[2023-05-24 05:12:04] INFO root fetch - main [MainThread]: End processing [aind-data-transfer]: success
+[2023-05-24 05:12:46] INFO root fetch - main [MainThread]: End processing [Slpapy]: success
+[2023-05-24 05:12:46] INFO root fetch - main [MainThread]: Store serial: [18224339]
