@@ -7678,3 +7678,28 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-05-24 06:42:42] INFO root fetch - main [MainThread]: End processing [hrin-msb]: success
 [2023-05-24 06:42:45] INFO root fetch - main [MainThread]: End processing [seislib]: success
 [2023-05-24 06:42:45] INFO root fetch - main [MainThread]: Store serial: [18225005]
+[2023-05-24 06:47:49] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18225005]
+[2023-05-24 06:47:54] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2023-05-24 06:47:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: paragrep
+[2023-05-24 06:47:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: sandhole
+[2023-05-24 06:47:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: odoo13-addons-oca-sale-promotion
+[2023-05-24 06:47:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: shopcloud-serverless
+[2023-05-24 06:47:54] WARNING root fetch - processPackages [sandhole]: Skipping, unable to determine old version
+[2023-05-24 06:47:54] INFO root fetch - main [MainThread]: End processing [sandhole] error
+[2023-05-24 06:47:54] INFO root fetch - processPackages [shopcloud-serverless]: New version: [4.9.0] Old Version: [4.8.0]
+[2023-05-24 06:47:54] INFO root fetch - processPackages [paragrep]: New version: [3.2.3] Old Version: [3.2.1]
+[2023-05-24 06:47:54] INFO root fetch - processPackages [odoo13-addons-oca-sale-promotion]: New version: [13.0.20230523.0] Old Version: [13.0.20230227.0]
+[2023-05-24 06:47:54] INFO root fetch - processPackages [shopcloud-serverless]: executing diffoscope
+[2023-05-24 06:47:54] INFO root fetch - processPackages [shopcloud-serverless]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/shopcloud-serverless-4.8.0.tar.gz tmp/shopcloud-serverless-4.9.0.tar.gz --markdown 20230524/s/shopcloud-serverless/4.8.0-4.9.0/diff.md --exclude *.pyd
+[2023-05-24 06:47:54] INFO root fetch - processPackages [paragrep]: Downloading https://files.pythonhosted.org/packages/7b/cd/4783efaba386825a086639e23aaa6a585dd024937b1366829626961e9cba/paragrep-3.2.1.zip
+[2023-05-24 06:47:54] INFO root fetch - processPackages [odoo13-addons-oca-sale-promotion]: Downloading https://files.pythonhosted.org/packages/31/20/5c66204a5e17ea4c126336a63b5b76d71c930ff48295b119f351d9015501/odoo13_addons_oca_sale_promotion-13.0.20230227.0-py3-none-any.whl
+[2023-05-24 06:47:54] INFO root fetch - processPackages [paragrep]: Downloading https://files.pythonhosted.org/packages/e7/5a/2fae5df4e546ef4366eaae29ed0d6693b93f1bf2beccd261cdcbe3f06c5a/paragrep-3.2.3.zip
+[2023-05-24 06:47:54] INFO root fetch - processPackages [odoo13-addons-oca-sale-promotion]: Downloading https://files.pythonhosted.org/packages/63/a6/4fb57d8a5dc1a418a6e39474bb925bba3c1adaba23afb94eebd9830de6ff/odoo13_addons_oca_sale_promotion-13.0.20230523.0-py3-none-any.whl
+[2023-05-24 06:47:54] INFO root fetch - processPackages [paragrep]: executing diffoscope
+[2023-05-24 06:47:54] INFO root fetch - processPackages [paragrep]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/paragrep-3.2.1.zip tmp/paragrep-3.2.3.zip --markdown 20230524/p/paragrep/3.2.1-3.2.3/diff.md --exclude *.pyd
+[2023-05-24 06:47:55] INFO root fetch - processPackages [odoo13-addons-oca-sale-promotion]: executing diffoscope
+[2023-05-24 06:47:55] INFO root fetch - processPackages [odoo13-addons-oca-sale-promotion]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo13_addons_oca_sale_promotion-13.0.20230227.0-py3-none-any.whl.zip tmp/odoo13_addons_oca_sale_promotion-13.0.20230523.0-py3-none-any.whl.zip --markdown 20230524/o/odoo13-addons-oca-sale-promotion/13.0.20230227.0-13.0.20230523.0/diff.md --exclude *.pyd
+[2023-05-24 06:47:55] INFO root fetch - main [MainThread]: End processing [shopcloud-serverless]: success
+[2023-05-24 06:47:55] INFO root fetch - main [MainThread]: End processing [odoo13-addons-oca-sale-promotion]: success
+[2023-05-24 06:47:55] INFO root fetch - main [MainThread]: End processing [paragrep]: success
+[2023-05-24 06:47:55] INFO root fetch - main [MainThread]: Store serial: [18225032]
