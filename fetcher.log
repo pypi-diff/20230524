@@ -11533,3 +11533,167 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-05-24 11:27:48] INFO root fetch - main [MainThread]: End processing [enebootools]: success
 [2023-05-24 11:27:56] INFO root fetch - main [MainThread]: End processing [tb-rest-client]: success
 [2023-05-24 11:27:56] INFO root fetch - main [MainThread]: Store serial: [18227497]
+[2023-05-24 11:33:02] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18227497]
+[2023-05-24 11:33:07] INFO root fetch - main [MainThread]: Found 29 changed packages
+[2023-05-24 11:33:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: salure-helpers-ftp
+[2023-05-24 11:33:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: cp-mgmt-api-sdk
+[2023-05-24 11:33:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: routingfilter
+[2023-05-24 11:33:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: rogue-tools
+[2023-05-24 11:33:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pix-framework
+[2023-05-24 11:33:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: odoo12-addon-somconnexio
+[2023-05-24 11:33:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: najapy
+[2023-05-24 11:33:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: pyPreservica
+[2023-05-24 11:33:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: km3astro
+[2023-05-24 11:33:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: django-simple-notes
+[2023-05-24 11:33:07] INFO root fetch - processPackages [cp-mgmt-api-sdk]: New version: [1.6.0] Old Version: [1.5.0]
+[2023-05-24 11:33:07] INFO root fetch - processPackages [routingfilter]: New version: [1.3.2] Old Version: [1.3.1]
+[2023-05-24 11:33:07] INFO root fetch - processPackages [pix-framework]: New version: [0.8.6] Old Version: [0.8.5]
+[2023-05-24 11:33:07] WARNING root fetch - processPackages [django-simple-notes]: Skipping, unable to determine old version
+[2023-05-24 11:33:07] INFO root fetch - processPackages [km3astro]: New version: [0.9.0] Old Version: [0.8.4]
+[2023-05-24 11:33:07] INFO root fetch - processPackages [django-simple-notes]: Start processing: kcli
+[2023-05-24 11:33:07] INFO root fetch - main [MainThread]: End processing [django-simple-notes] error
+[2023-05-24 11:33:07] INFO root fetch - processPackages [odoo12-addon-somconnexio]: New version: [12.0.2.1.9] Old Version: [12.0.2.1.8]
+[2023-05-24 11:33:07] INFO root fetch - processPackages [kcli]: New version: [99.0.202305232041] Old Version: [99.0.202305232003]
+[2023-05-24 11:33:07] INFO root fetch - processPackages [salure-helpers-ftp]: New version: [1.3.1] Old Version: [1.3.0]
+[2023-05-24 11:33:07] INFO root fetch - processPackages [rogue-tools]: New version: [1.0.9] Old Version: [1.0.8]
+[2023-05-24 11:33:07] INFO root fetch - processPackages [najapy]: New version: [1.3.0] Old Version: [1.2.9]
+[2023-05-24 11:33:07] INFO root fetch - processPackages [pyPreservica]: New version: [1.7.9] Old Version: [1.7.8]
+[2023-05-24 11:33:07] INFO root fetch - processPackages [km3astro]: executing diffoscope
+[2023-05-24 11:33:07] INFO root fetch - processPackages [km3astro]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/km3astro-0.8.4.tar.gz tmp/km3astro-0.9.0.tar.gz --markdown 20230524/k/km3astro/0.8.4-0.9.0/diff.md --exclude *.pyd
+[2023-05-24 11:33:07] INFO root fetch - processPackages [kcli]: executing diffoscope
+[2023-05-24 11:33:07] INFO root fetch - processPackages [kcli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kcli-99.0.202305232003-py3-none-any.whl.zip tmp/kcli-99.0.202305232041-py3-none-any.whl.zip --markdown 20230524/k/kcli/99.0.202305232003-99.0.202305232041/diff.md --exclude *.pyd
+[2023-05-24 11:33:07] INFO root fetch - processPackages [cp-mgmt-api-sdk]: Downloading https://files.pythonhosted.org/packages/65/a6/3b6d891bf1171213d1a96aabfa0ea8e9802137b08874521c5f58a2b106c2/cp-mgmt-api-sdk-1.5.0.tar.gz
+[2023-05-24 11:33:07] INFO root fetch - processPackages [pix-framework]: Downloading https://files.pythonhosted.org/packages/b5/61/b95b08c0d953a21eb0b83297f21fd6ee47fc559d68ee4c84d8d2c34510ff/pix_framework-0.8.6.tar.gz
+[2023-05-24 11:33:07] INFO root fetch - processPackages [routingfilter]: Downloading https://files.pythonhosted.org/packages/75/c4/ba3f8556cd8adf6df27c635df502fb5846e615c6da58a71648faf2ef438c/routingfilter-1.3.1.tar.gz
+[2023-05-24 11:33:07] INFO root fetch - processPackages [odoo12-addon-somconnexio]: Downloading https://files.pythonhosted.org/packages/fb/f8/c18a5108d554bdde11e93bdab929dad36be5f7ece677a1757878a161d4a1/odoo12-addon-somconnexio-12.0.2.1.8.tar.gz
+[2023-05-24 11:33:07] INFO root fetch - processPackages [rogue-tools]: Downloading https://files.pythonhosted.org/packages/37/88/160e6186cc66081c211dca0073ba15132e44d50e96e89e07d36f0921e8c0/rogue_tools-1.0.8.tar.gz
+[2023-05-24 11:33:07] INFO root fetch - processPackages [pix-framework]: executing diffoscope
+[2023-05-24 11:33:07] INFO root fetch - processPackages [pix-framework]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pix_framework-0.8.5.tar.gz tmp/pix_framework-0.8.6.tar.gz --markdown 20230524/p/pix-framework/0.8.5-0.8.6/diff.md --exclude *.pyd
+[2023-05-24 11:33:07] INFO root fetch - processPackages [pyPreservica]: Downloading https://files.pythonhosted.org/packages/a6/f7/f34a798f646009950ce94e126d7224a3013948df0e590536c731eb576f8d/pyPreservica-1.7.8.tar.gz
+[2023-05-24 11:33:07] INFO root fetch - processPackages [najapy]: Downloading https://files.pythonhosted.org/packages/f2/31/f961d0508d02967979a008f719bead693bc13620d295b577d18a9919581c/najapy-1.2.9.tar.gz
+[2023-05-24 11:33:07] INFO root fetch - processPackages [salure-helpers-ftp]: Downloading https://files.pythonhosted.org/packages/97/7c/b67c4c23b68e7dd161c4a8ae09a49a60f0204e0004bd4cf084f1bb7c3acb/salure_helpers_ftp-1.3.1.tar.gz
+[2023-05-24 11:33:07] INFO root fetch - processPackages [routingfilter]: Downloading https://files.pythonhosted.org/packages/b7/8a/066bde5881fb7c1746f51e2b7d001c4b5a0b293027041391445f28c373c4/routingfilter-1.3.2.tar.gz
+[2023-05-24 11:33:07] INFO root fetch - processPackages [rogue-tools]: Downloading https://files.pythonhosted.org/packages/55/cb/de4cb451007292c298cc3b2c96ebab47c6d2ca1877dd2e7b3f4e93392328/rogue_tools-1.0.9.tar.gz
+[2023-05-24 11:33:07] INFO root fetch - processPackages [odoo12-addon-somconnexio]: Downloading https://files.pythonhosted.org/packages/5a/e4/62b9ab665239604d6e9eb2f5d739e534ab7967d4fb65a7d15b4b8e6db714/odoo12-addon-somconnexio-12.0.2.1.9.tar.gz
+[2023-05-24 11:33:07] INFO root fetch - processPackages [salure-helpers-ftp]: executing diffoscope
+[2023-05-24 11:33:07] INFO root fetch - processPackages [salure-helpers-ftp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/salure_helpers_ftp-1.3.0.tar.gz tmp/salure_helpers_ftp-1.3.1.tar.gz --markdown 20230524/s/salure-helpers-ftp/1.3.0-1.3.1/diff.md --exclude *.pyd
+[2023-05-24 11:33:07] INFO root fetch - processPackages [cp-mgmt-api-sdk]: Downloading https://files.pythonhosted.org/packages/03/fd/5e7c4792a1d272705418076e82f64265bd5c4670741040bb1587f7dab67c/cp-mgmt-api-sdk-1.6.0.tar.gz
+[2023-05-24 11:33:07] INFO root fetch - processPackages [pyPreservica]: Downloading https://files.pythonhosted.org/packages/aa/2b/acebd6438af7d533f95b5a15d089c3de83c67958301cb2ef0ae0c19dda1e/pyPreservica-1.7.9.tar.gz
+[2023-05-24 11:33:07] INFO root fetch - processPackages [rogue-tools]: executing diffoscope
+[2023-05-24 11:33:07] INFO root fetch - processPackages [rogue-tools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rogue_tools-1.0.8.tar.gz tmp/rogue_tools-1.0.9.tar.gz --markdown 20230524/r/rogue-tools/1.0.8-1.0.9/diff.md --exclude *.pyd
+[2023-05-24 11:33:07] INFO root fetch - processPackages [pyPreservica]: executing diffoscope
+[2023-05-24 11:33:07] INFO root fetch - processPackages [pyPreservica]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyPreservica-1.7.8.tar.gz tmp/pyPreservica-1.7.9.tar.gz --markdown 20230524/p/pyPreservica/1.7.8-1.7.9/diff.md --exclude *.pyd
+[2023-05-24 11:33:08] INFO root fetch - processPackages [routingfilter]: executing diffoscope
+[2023-05-24 11:33:08] INFO root fetch - processPackages [routingfilter]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/routingfilter-1.3.1.tar.gz tmp/routingfilter-1.3.2.tar.gz --markdown 20230524/r/routingfilter/1.3.1-1.3.2/diff.md --exclude *.pyd
+[2023-05-24 11:33:08] INFO root fetch - processPackages [odoo12-addon-somconnexio]: executing diffoscope
+[2023-05-24 11:33:08] INFO root fetch - processPackages [odoo12-addon-somconnexio]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo12-addon-somconnexio-12.0.2.1.8.tar.gz tmp/odoo12-addon-somconnexio-12.0.2.1.9.tar.gz --markdown 20230524/o/odoo12-addon-somconnexio/12.0.2.1.8-12.0.2.1.9/diff.md --exclude *.pyd
+[2023-05-24 11:33:08] INFO root fetch - processPackages [cp-mgmt-api-sdk]: executing diffoscope
+[2023-05-24 11:33:08] INFO root fetch - processPackages [cp-mgmt-api-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cp-mgmt-api-sdk-1.5.0.tar.gz tmp/cp-mgmt-api-sdk-1.6.0.tar.gz --markdown 20230524/c/cp-mgmt-api-sdk/1.5.0-1.6.0/diff.md --exclude *.pyd
+[2023-05-24 11:33:08] INFO root fetch - processPackages [najapy]: Downloading https://files.pythonhosted.org/packages/8d/f7/7fa644554597be1e4f5032f518ada285b6f09a7677dd95173482b99c8d75/najapy-1.3.0.tar.gz
+[2023-05-24 11:33:08] INFO root fetch - processPackages [najapy]: executing diffoscope
+[2023-05-24 11:33:08] INFO root fetch - processPackages [najapy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/najapy-1.2.9.tar.gz tmp/najapy-1.3.0.tar.gz --markdown 20230524/n/najapy/1.2.9-1.3.0/diff.md --exclude *.pyd
+[2023-05-24 11:33:09] INFO root fetch - processPackages [salure-helpers-ftp]: Start processing: vcsc-data-common
+[2023-05-24 11:33:09] INFO root fetch - main [MainThread]: End processing [salure-helpers-ftp]: success
+[2023-05-24 11:33:09] INFO root fetch - processPackages [vcsc-data-common]: New version: [0.1.8] Old Version: [0.1.7]
+[2023-05-24 11:33:09] INFO root fetch - processPackages [rogue-tools]: Start processing: inabox
+[2023-05-24 11:33:09] INFO root fetch - main [MainThread]: End processing [rogue-tools]: success
+[2023-05-24 11:33:09] INFO root fetch - processPackages [routingfilter]: Start processing: vasp-suite
+[2023-05-24 11:33:09] INFO root fetch - main [MainThread]: End processing [routingfilter]: success
+[2023-05-24 11:33:09] INFO root fetch - processPackages [vasp-suite]: New version: [1.0.1] Old Version: [1.0.0]
+[2023-05-24 11:33:09] WARNING root fetch - processPackages [inabox]: Skipping, unable to determine old version
+[2023-05-24 11:33:09] INFO root fetch - processPackages [inabox]: Start processing: certora-cli-alpha-shays-CERT-2092
+[2023-05-24 11:33:09] INFO root fetch - main [MainThread]: End processing [inabox] error
+[2023-05-24 11:33:09] INFO root fetch - processPackages [cp-mgmt-api-sdk]: Start processing: mtv-dl
+[2023-05-24 11:33:09] INFO root fetch - main [MainThread]: End processing [cp-mgmt-api-sdk]: success
+[2023-05-24 11:33:09] INFO root fetch - processPackages [vasp-suite]: executing diffoscope
+[2023-05-24 11:33:09] INFO root fetch - processPackages [vasp-suite]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vasp_suite-1.0.0.tar.gz tmp/vasp_suite-1.0.1.tar.gz --markdown 20230524/v/vasp-suite/1.0.0-1.0.1/diff.md --exclude *.pyd
+[2023-05-24 11:33:09] INFO root fetch - processPackages [pyPreservica]: Start processing: scan-new
+[2023-05-24 11:33:09] INFO root fetch - main [MainThread]: End processing [pyPreservica]: success
+[2023-05-24 11:33:09] INFO root fetch - processPackages [certora-cli-alpha-shays-CERT-2092]: New version: [20230524.8.52.376429] Old Version: [20230523.9.24.81079]
+[2023-05-24 11:33:09] INFO root fetch - processPackages [vcsc-data-common]: executing diffoscope
+[2023-05-24 11:33:09] INFO root fetch - processPackages [vcsc-data-common]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vcsc_data_common-0.1.7.tar.gz tmp/vcsc_data_common-0.1.8.tar.gz --markdown 20230524/v/vcsc-data-common/0.1.7-0.1.8/diff.md --exclude *.pyd
+[2023-05-24 11:33:09] INFO root fetch - processPackages [km3astro]: Start processing: aiogrpctools
+[2023-05-24 11:33:09] INFO root fetch - main [MainThread]: End processing [km3astro]: success
+[2023-05-24 11:33:09] ERROR root fetch - processPackages [scan-new]: Unable to get metadata: No such project 'scan-new'
+[2023-05-24 11:33:09] INFO root fetch - processPackages [scan-new]: Start processing: petitRADTRANS
+[2023-05-24 11:33:09] INFO root fetch - main [MainThread]: End processing [scan-new] error
+[2023-05-24 11:33:09] INFO root fetch - processPackages [mtv-dl]: New version: [0.9] Old Version: [0.8]
+[2023-05-24 11:33:09] INFO root fetch - processPackages [pix-framework]: Start processing: armonik
+[2023-05-24 11:33:09] INFO root fetch - main [MainThread]: End processing [pix-framework]: success
+[2023-05-24 11:33:09] INFO root fetch - processPackages [petitRADTRANS]: New version: [2.6.5] Old Version: [2.6.4]
+[2023-05-24 11:33:09] INFO root fetch - processPackages [armonik]: New version: [3.8.2.dev349] Old Version: [3.8.2.dev345]
+[2023-05-24 11:33:09] WARNING root fetch - processPackages [aiogrpctools]: Skipping, unable to determine old version
+[2023-05-24 11:33:09] INFO root fetch - processPackages [aiogrpctools]: Start processing: pyFipper
+[2023-05-24 11:33:09] INFO root fetch - main [MainThread]: End processing [aiogrpctools] error
+[2023-05-24 11:33:09] INFO root fetch - processPackages [certora-cli-alpha-shays-CERT-2092]: Downloading https://files.pythonhosted.org/packages/5c/a5/1de0a0dc9dc31789b96599a0a18eb122c206330330ab2510e2bdc39479ee/certora-cli-alpha-shays-CERT-2092-20230523.9.24.81079.tar.gz
+[2023-05-24 11:33:09] INFO root fetch - processPackages [pyFipper]: New version: [0.1.2.dev3] Old Version: [0.1.2.dev2]
+[2023-05-24 11:33:09] INFO root fetch - processPackages [petitRADTRANS]: executing diffoscope
+[2023-05-24 11:33:09] INFO root fetch - processPackages [petitRADTRANS]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/petitRADTRANS-2.6.4.tar.gz tmp/petitRADTRANS-2.6.5.tar.gz --markdown 20230524/p/petitRADTRANS/2.6.4-2.6.5/diff.md --exclude *.pyd
+[2023-05-24 11:33:09] WARNING root fetch - processPackages [certora-cli-alpha-shays-CERT-2092]: Skipping package: exceeds size limit 38977607>=10485760
+[2023-05-24 11:33:09] INFO root fetch - processPackages [certora-cli-alpha-shays-CERT-2092]: Start processing: kfish
+[2023-05-24 11:33:09] INFO root fetch - main [MainThread]: End processing [certora-cli-alpha-shays-CERT-2092] error
+[2023-05-24 11:33:09] INFO root fetch - processPackages [armonik]: executing diffoscope
+[2023-05-24 11:33:09] INFO root fetch - processPackages [armonik]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/armonik-3.8.2.dev345.tar.gz tmp/armonik-3.8.2.dev349.tar.gz --markdown 20230524/a/armonik/3.8.2.dev345-3.8.2.dev349/diff.md --exclude *.pyd
+[2023-05-24 11:33:09] INFO root fetch - processPackages [mtv-dl]: Downloading https://files.pythonhosted.org/packages/70/ee/446cac7e740060a41aa92e0918608943e05dd565388d3340a876a0c7c2d7/mtv_dl-0.8.tar.gz
+[2023-05-24 11:33:09] INFO root fetch - processPackages [kfish]: New version: [99.0.202305232044] Old Version: [99.0.202305232005]
+[2023-05-24 11:33:10] INFO root fetch - processPackages [pyFipper]: Downloading https://files.pythonhosted.org/packages/06/f5/7988cb5e6f62d01cf3d0f8348f444c197be509c7dff2b066f3bddc292013/pyFipper-0.1.2.dev3.tar.gz
+[2023-05-24 11:33:10] INFO root fetch - processPackages [mtv-dl]: Downloading https://files.pythonhosted.org/packages/9d/16/7abc16cee0b4573586fd9679f8cb8f37f2f8859fc96903692ded1640537c/mtv_dl-0.9.tar.gz
+[2023-05-24 11:33:10] INFO root fetch - processPackages [kfish]: Downloading https://files.pythonhosted.org/packages/cc/62/34db5a7435bf8504764cacf27b25d3d61bdd2a8779a2f964728193697651/kfish-99.0.202305232044-py3-none-any.whl
+[2023-05-24 11:33:10] INFO root fetch - processPackages [mtv-dl]: executing diffoscope
+[2023-05-24 11:33:10] INFO root fetch - processPackages [mtv-dl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mtv_dl-0.8.tar.gz tmp/mtv_dl-0.9.tar.gz --markdown 20230524/m/mtv-dl/0.8-0.9/diff.md --exclude *.pyd
+[2023-05-24 11:33:10] INFO root fetch - processPackages [kfish]: executing diffoscope
+[2023-05-24 11:33:10] INFO root fetch - processPackages [kfish]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kfish-99.0.202305232005-py3-none-any.whl.zip tmp/kfish-99.0.202305232044-py3-none-any.whl.zip --markdown 20230524/k/kfish/99.0.202305232005-99.0.202305232044/diff.md --exclude *.pyd
+[2023-05-24 11:33:10] INFO root fetch - processPackages [pyFipper]: executing diffoscope
+[2023-05-24 11:33:10] INFO root fetch - processPackages [pyFipper]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyFipper-0.1.2.dev2.tar.gz tmp/pyFipper-0.1.2.dev3.tar.gz --markdown 20230524/p/pyFipper/0.1.2.dev2-0.1.2.dev3/diff.md --exclude *.pyd
+[2023-05-24 11:33:10] INFO root fetch - processPackages [vcsc-data-common]: Start processing: finalynx
+[2023-05-24 11:33:10] INFO root fetch - main [MainThread]: End processing [vcsc-data-common]: success
+[2023-05-24 11:33:10] INFO root fetch - processPackages [finalynx]: New version: [1.9.0] Old Version: [1.8.3]
+[2023-05-24 11:33:10] INFO root fetch - processPackages [finalynx]: executing diffoscope
+[2023-05-24 11:33:10] INFO root fetch - processPackages [finalynx]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/finalynx-1.8.3.tar.gz tmp/finalynx-1.9.0.tar.gz --markdown 20230524/f/finalynx/1.8.3-1.9.0/diff.md --exclude *.pyd
+[2023-05-24 11:33:11] INFO root fetch - processPackages [vasp-suite]: Start processing: armonik
+[2023-05-24 11:33:11] INFO root fetch - main [MainThread]: End processing [vasp-suite]: success
+[2023-05-24 11:33:11] INFO root fetch - processPackages [armonik]: New version: [3.8.2.dev360] Old Version: [3.8.2.dev359]
+[2023-05-24 11:33:11] INFO root fetch - processPackages [armonik]: Downloading https://files.pythonhosted.org/packages/52/f6/00f14c57da523cc8be54c1afa062c99a46d38ee106dc1ccf65ab6f1fd82f/armonik-3.8.2.dev359.tar.gz
+[2023-05-24 11:33:11] INFO root fetch - processPackages [kfish]: Start processing: kfish
+[2023-05-24 11:33:11] INFO root fetch - main [MainThread]: End processing [kfish]: success
+[2023-05-24 11:33:11] INFO root fetch - processPackages [kfish]: New version: [99.0.202305240932] Old Version: [99.0.202305240931]
+[2023-05-24 11:33:11] INFO root fetch - processPackages [najapy]: Start processing: skytek-utils
+[2023-05-24 11:33:11] INFO root fetch - main [MainThread]: End processing [najapy]: success
+[2023-05-24 11:33:11] INFO root fetch - processPackages [skytek-utils]: New version: [0.5.1] Old Version: [0.5.0]
+[2023-05-24 11:33:11] INFO root fetch - processPackages [kfish]: Downloading https://files.pythonhosted.org/packages/51/9b/202dc568f1a9d0c8c217026ca426c564859db1faa64f1adf0591e1ec366d/kfish-99.0.202305240931-py3-none-any.whl
+[2023-05-24 11:33:11] INFO root fetch - processPackages [armonik]: Downloading https://files.pythonhosted.org/packages/03/1a/063441b16fd7870922dfd6db2a48e00925af21833a86f2695930aa1b3d59/armonik-3.8.2.dev360.tar.gz
+[2023-05-24 11:33:11] INFO root fetch - processPackages [skytek-utils]: Downloading https://files.pythonhosted.org/packages/ee/77/96e41b1a3d49f61d934ef0c7c317aeaf8a38ad3a6feb2f0f8d4be728c115/skytek-utils-0.5.1.tar.gz
+[2023-05-24 11:33:11] INFO root fetch - processPackages [armonik]: Start processing: armonik
+[2023-05-24 11:33:11] INFO root fetch - main [MainThread]: End processing [armonik]: success
+[2023-05-24 11:33:11] INFO root fetch - processPackages [armonik]: New version: [3.8.2.dev360] Old Version: [3.8.2.dev359]
+[2023-05-24 11:33:11] INFO root fetch - processPackages [mtv-dl]: Start processing: ignord
+[2023-05-24 11:33:11] INFO root fetch - main [MainThread]: End processing [mtv-dl]: success
+[2023-05-24 11:33:11] WARNING root fetch - processPackages [ignord]: Skipping, unable to determine old version
+[2023-05-24 11:33:11] INFO root fetch - processPackages [ignord]: Start processing: juju
+[2023-05-24 11:33:11] INFO root fetch - main [MainThread]: End processing [ignord] error
+[2023-05-24 11:33:11] INFO root fetch - processPackages [kfish]: Downloading https://files.pythonhosted.org/packages/62/e7/0fbc15a327818b60293fd8b77b8a46015dd0a135a6b3fb04df4e49969124/kfish-99.0.202305240932-py3-none-any.whl
+[2023-05-24 11:33:11] INFO root fetch - processPackages [skytek-utils]: executing diffoscope
+[2023-05-24 11:33:11] INFO root fetch - processPackages [skytek-utils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/skytek-utils-0.5.0.tar.gz tmp/skytek-utils-0.5.1.tar.gz --markdown 20230524/s/skytek-utils/0.5.0-0.5.1/diff.md --exclude *.pyd
+[2023-05-24 11:33:12] INFO root fetch - processPackages [armonik]: Downloading https://files.pythonhosted.org/packages/03/1a/063441b16fd7870922dfd6db2a48e00925af21833a86f2695930aa1b3d59/armonik-3.8.2.dev360.tar.gz
+[2023-05-24 11:33:12] INFO root fetch - processPackages [armonik]: executing diffoscope
+[2023-05-24 11:33:12] INFO root fetch - processPackages [armonik]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/armonik-3.8.2.dev359.tar.gz tmp/armonik-3.8.2.dev360.tar.gz --markdown 20230524/a/armonik/3.8.2.dev359-3.8.2.dev360/diff.md --exclude *.pyd
+[2023-05-24 11:33:12] INFO root fetch - processPackages [juju]: New version: [3.1.2.0] Old Version: [3.1.0b1]
+[2023-05-24 11:33:12] INFO root fetch - processPackages [armonik]: executing diffoscope
+[2023-05-24 11:33:12] INFO root fetch - processPackages [armonik]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/armonik-3.8.2.dev359.tar.gz tmp/armonik-3.8.2.dev360.tar.gz --markdown 20230524/a/armonik/3.8.2.dev359-3.8.2.dev360/diff.md --exclude *.pyd
+[2023-05-24 11:33:12] INFO root fetch - processPackages [kfish]: executing diffoscope
+[2023-05-24 11:33:12] INFO root fetch - processPackages [kfish]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kfish-99.0.202305240931-py3-none-any.whl.zip tmp/kfish-99.0.202305240932-py3-none-any.whl.zip --markdown 20230524/k/kfish/99.0.202305240931-99.0.202305240932/diff.md --exclude *.pyd
+[2023-05-24 11:33:12] INFO root fetch - processPackages [juju]: Downloading https://files.pythonhosted.org/packages/43/54/773d747e953efeb17c5c1c0158a7c4b79a17f4490b657a5b0bdb817a20d3/juju-3.1.0b1-py3.10.egg
+[2023-05-24 11:33:12] INFO root fetch - main [MainThread]: End processing [finalynx]: success
+[2023-05-24 11:33:12] INFO root fetch - processPackages [juju]: Downloading https://files.pythonhosted.org/packages/0b/5b/28f670aef3cb4d8de0261b7038dcbccda97a463baadad4105421cfa486da/juju-3.1.2.0.tar.gz
+[2023-05-24 11:33:12] INFO root fetch - processPackages [juju]: executing diffoscope
+[2023-05-24 11:33:12] INFO root fetch - processPackages [juju]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/juju-3.1.0b1-py3.10.egg tmp/juju-3.1.2.0.tar.gz --markdown 20230524/j/juju/3.1.0b1-3.1.2.0/diff.md --exclude *.pyd
+[2023-05-24 11:33:13] INFO root fetch - main [MainThread]: End processing [skytek-utils]: success
+[2023-05-24 11:33:13] INFO root fetch - main [MainThread]: End processing [kfish]: success
+[2023-05-24 11:33:13] INFO root fetch - main [MainThread]: End processing [armonik]: success
+[2023-05-24 11:33:13] INFO root fetch - main [MainThread]: End processing [armonik]: success
+[2023-05-24 11:33:14] INFO root fetch - main [MainThread]: End processing [petitRADTRANS]: success
+[2023-05-24 11:33:14] INFO root fetch - main [MainThread]: End processing [odoo12-addon-somconnexio]: success
+[2023-05-24 11:33:15] INFO root fetch - main [MainThread]: End processing [juju]: success
+[2023-05-24 11:33:15] INFO root fetch - main [MainThread]: End processing [kcli]: success
+[2023-05-24 11:33:17] INFO root fetch - main [MainThread]: End processing [pyFipper]: success
+[2023-05-24 11:33:17] INFO root fetch - main [MainThread]: Store serial: [18227589]
