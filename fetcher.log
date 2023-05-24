@@ -7466,3 +7466,52 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-05-24 06:21:51] INFO root fetch - main [MainThread]: End processing [odoo11-addon-partner-academic-title]: success
 [2023-05-24 06:21:51] INFO root fetch - main [MainThread]: End processing [odoo11-addon-partner-contact-job-position]: success
 [2023-05-24 06:21:51] INFO root fetch - main [MainThread]: Store serial: [18224870]
+[2023-05-24 06:26:55] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18224870]
+[2023-05-24 06:27:00] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-05-24 06:27:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: quao
+[2023-05-24 06:27:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: webarchiver
+[2023-05-24 06:27:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: odoo-addon-hr-payroll-period
+[2023-05-24 06:27:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: odoo-addons-oca-payroll
+[2023-05-24 06:27:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: quickstart-vdk
+[2023-05-24 06:27:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: NikGapps
+[2023-05-24 06:27:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: odoo14-addon-pos-customer-tree-view-vat
+[2023-05-24 06:27:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: rapidpro-flow-tools
+[2023-05-24 06:27:00] WARNING root fetch - processPackages [odoo-addon-hr-payroll-period]: Skipping, unable to determine old version
+[2023-05-24 06:27:00] INFO root fetch - main [MainThread]: End processing [odoo-addon-hr-payroll-period] error
+[2023-05-24 06:27:00] INFO root fetch - processPackages [rapidpro-flow-tools]: New version: [0.8.0] Old Version: [0.7.0]
+[2023-05-24 06:27:00] INFO root fetch - processPackages [quao]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-05-24 06:27:00] INFO root fetch - processPackages [quickstart-vdk]: New version: [0.2.875478551.dev10715] Old Version: [0.2.874667213.dev10687]
+[2023-05-24 06:27:00] WARNING root fetch - processPackages [NikGapps]: Skipping, unable to determine old version
+[2023-05-24 06:27:00] INFO root fetch - main [MainThread]: End processing [NikGapps] error
+[2023-05-24 06:27:00] INFO root fetch - processPackages [odoo-addons-oca-payroll]: New version: [16.0.20221114.0] Old Version: [16.0.20221111.0]
+[2023-05-24 06:27:00] INFO root fetch - processPackages [odoo14-addon-pos-customer-tree-view-vat]: New version: [14.0.1.0.2.dev3] Old Version: [14.0.1.0.2.dev2]
+[2023-05-24 06:27:00] INFO root fetch - processPackages [webarchiver]: New version: [0.9.0] Old Version: [0.8.0]
+[2023-05-24 06:27:00] INFO root fetch - processPackages [quao]: Downloading https://files.pythonhosted.org/packages/54/56/2aca84d68f281f69c5c652c12efbc99008f23eea79c711c44bc738f5b592/quao-0.0.2.tar.gz
+[2023-05-24 06:27:00] INFO root fetch - processPackages [rapidpro-flow-tools]: Downloading https://files.pythonhosted.org/packages/b8/2f/1e6437aa553b2e512bafba9e4a321d9b7024a3f9492fcc8099822e90efa1/rapidpro_flow_tools-0.8.0.tar.gz
+[2023-05-24 06:27:00] INFO root fetch - processPackages [quickstart-vdk]: Downloading https://files.pythonhosted.org/packages/09/bd/4890c58719fd07b7518bd6ae1a75ae0d952b97ec439ec06fa68681b7dbc8/quickstart-vdk-0.2.875478551.dev10715.tar.gz
+[2023-05-24 06:27:01] INFO root fetch - processPackages [odoo-addons-oca-payroll]: Downloading https://files.pythonhosted.org/packages/f4/e5/599c083567467aed23afc89d632b5208850ac6e62002d3fe6a58f2c19488/odoo_addons_oca_payroll-16.0.20221111.0-py3-none-any.whl
+[2023-05-24 06:27:01] INFO root fetch - processPackages [odoo14-addon-pos-customer-tree-view-vat]: Downloading https://files.pythonhosted.org/packages/7c/73/4b587381a6c3b3decb4e7c26932f219c99ceee9fddc5239c0fcbb3e94a25/odoo14_addon_pos_customer_tree_view_vat-14.0.1.0.2.dev2-py3-none-any.whl
+[2023-05-24 06:27:01] INFO root fetch - processPackages [rapidpro-flow-tools]: executing diffoscope
+[2023-05-24 06:27:01] INFO root fetch - processPackages [quickstart-vdk]: executing diffoscope
+[2023-05-24 06:27:01] INFO root fetch - processPackages [rapidpro-flow-tools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rapidpro_flow_tools-0.7.0.tar.gz tmp/rapidpro_flow_tools-0.8.0.tar.gz --markdown 20230524/r/rapidpro-flow-tools/0.7.0-0.8.0/diff.md --exclude *.pyd
+[2023-05-24 06:27:01] INFO root fetch - processPackages [quickstart-vdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/quickstart-vdk-0.2.874667213.dev10687.tar.gz tmp/quickstart-vdk-0.2.875478551.dev10715.tar.gz --markdown 20230524/q/quickstart-vdk/0.2.874667213.dev10687-0.2.875478551.dev10715/diff.md --exclude *.pyd
+[2023-05-24 06:27:01] INFO root fetch - processPackages [webarchiver]: Downloading https://files.pythonhosted.org/packages/8b/9a/c8f521351841e4f8f2e9edc8e89dc32dd5d69a459228392ab38660d0914b/webarchiver-0.8.0-py2.py3-none-any.whl
+[2023-05-24 06:27:01] INFO root fetch - processPackages [odoo-addons-oca-payroll]: Downloading https://files.pythonhosted.org/packages/e3/77/6b007e8b16ebe92733f0e6ef9559a4fd88d6a0c3d92389dbb9bdbc6002eb/odoo_addons_oca_payroll-16.0.20221114.0-py3-none-any.whl
+[2023-05-24 06:27:01] INFO root fetch - processPackages [quao]: Downloading https://files.pythonhosted.org/packages/3b/2b/0c7cbbf3caec2b4672b9724704aef6b5a1f9edeedf4010345c6122b8c5c9/quao-0.0.3.tar.gz
+[2023-05-24 06:27:01] INFO root fetch - processPackages [odoo14-addon-pos-customer-tree-view-vat]: Downloading https://files.pythonhosted.org/packages/00/65/b82719fa00bf547a5fa765627da869c68584eb3f5d2c5e8c64fa38c7470a/odoo14_addon_pos_customer_tree_view_vat-14.0.1.0.2.dev3-py3-none-any.whl
+[2023-05-24 06:27:01] INFO root fetch - processPackages [quao]: executing diffoscope
+[2023-05-24 06:27:01] INFO root fetch - processPackages [quao]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/quao-0.0.2.tar.gz tmp/quao-0.0.3.tar.gz --markdown 20230524/q/quao/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-05-24 06:27:01] INFO root fetch - processPackages [odoo14-addon-pos-customer-tree-view-vat]: executing diffoscope
+[2023-05-24 06:27:01] INFO root fetch - processPackages [odoo14-addon-pos-customer-tree-view-vat]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo14_addon_pos_customer_tree_view_vat-14.0.1.0.2.dev2-py3-none-any.whl.zip tmp/odoo14_addon_pos_customer_tree_view_vat-14.0.1.0.2.dev3-py3-none-any.whl.zip --markdown 20230524/o/odoo14-addon-pos-customer-tree-view-vat/14.0.1.0.2.dev2-14.0.1.0.2.dev3/diff.md --exclude *.pyd
+[2023-05-24 06:27:01] INFO root fetch - processPackages [odoo-addons-oca-payroll]: executing diffoscope
+[2023-05-24 06:27:01] INFO root fetch - processPackages [odoo-addons-oca-payroll]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addons_oca_payroll-16.0.20221111.0-py3-none-any.whl.zip tmp/odoo_addons_oca_payroll-16.0.20221114.0-py3-none-any.whl.zip --markdown 20230524/o/odoo-addons-oca-payroll/16.0.20221111.0-16.0.20221114.0/diff.md --exclude *.pyd
+[2023-05-24 06:27:02] INFO root fetch - main [MainThread]: End processing [quickstart-vdk]: success
+[2023-05-24 06:27:02] INFO root fetch - main [MainThread]: End processing [rapidpro-flow-tools]: success
+[2023-05-24 06:27:02] INFO root fetch - main [MainThread]: End processing [odoo-addons-oca-payroll]: success
+[2023-05-24 06:27:02] INFO root fetch - main [MainThread]: End processing [quao]: success
+[2023-05-24 06:27:02] INFO root fetch - main [MainThread]: End processing [odoo14-addon-pos-customer-tree-view-vat]: success
+[2023-05-24 06:27:03] INFO root fetch - processPackages [webarchiver]: Downloading https://files.pythonhosted.org/packages/4d/18/d61823bb35498ed6ef62a78d2e0f5c75cbe3c3c36c63d417def12d394870/webarchiver-0.9.0-py2.py3-none-any.whl
+[2023-05-24 06:27:05] INFO root fetch - processPackages [webarchiver]: executing diffoscope
+[2023-05-24 06:27:05] INFO root fetch - processPackages [webarchiver]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/webarchiver-0.8.0-py2.py3-none-any.whl.zip tmp/webarchiver-0.9.0-py2.py3-none-any.whl.zip --markdown 20230524/w/webarchiver/0.8.0-0.9.0/diff.md --exclude *.pyd
+[2023-05-24 06:27:06] INFO root fetch - main [MainThread]: End processing [webarchiver]: success
+[2023-05-24 06:27:06] INFO root fetch - main [MainThread]: Store serial: [18224890]
