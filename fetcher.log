@@ -17484,3 +17484,97 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd4 in position 72: invalid
 [2023-05-24 16:42:59] INFO root fetch - main [MainThread]: End processing [iree-runtime]: success
 [2023-05-24 16:43:13] INFO root fetch - main [MainThread]: End processing [iree-runtime-instrumented]: success
 [2023-05-24 16:43:13] INFO root fetch - main [MainThread]: Store serial: [18231183]
+[2023-05-24 16:48:27] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18231183]
+[2023-05-24 16:48:32] INFO root fetch - main [MainThread]: Found 15 changed packages
+[2023-05-24 16:48:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pymagento
+[2023-05-24 16:48:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: developers-chamber
+[2023-05-24 16:48:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: anomalib
+[2023-05-24 16:48:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: jorun
+[2023-05-24 16:48:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: useis
+[2023-05-24 16:48:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: pylywsdxx
+[2023-05-24 16:48:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: schema-jobs
+[2023-05-24 16:48:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: promptops
+[2023-05-24 16:48:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: django-formfieldstash
+[2023-05-24 16:48:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: nanolayer
+[2023-05-24 16:48:32] INFO root fetch - processPackages [nanolayer]: New version: [0.4.9] Old Version: [0.4.8]
+[2023-05-24 16:48:32] INFO root fetch - processPackages [schema-jobs]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-24 16:48:32] WARNING root fetch - processPackages [promptops]: Skipping, unable to determine old version
+[2023-05-24 16:48:32] INFO root fetch - processPackages [promptops]: Start processing: ndcurves
+[2023-05-24 16:48:32] INFO root fetch - main [MainThread]: End processing [promptops] error
+[2023-05-24 16:48:32] INFO root fetch - processPackages [useis]: New version: [1.0.3] Old Version: [1.0.2]
+[2023-05-24 16:48:32] INFO root fetch - processPackages [pymagento]: New version: [1.7.0] Old Version: [1.6.1]
+[2023-05-24 16:48:32] INFO root fetch - processPackages [pylywsdxx]: New version: [1.8.1] Old Version: [1.6.1]
+[2023-05-24 16:48:32] INFO root fetch - processPackages [django-formfieldstash]: New version: [0.1.0] Old Version: [0.0.8]
+[2023-05-24 16:48:32] INFO root fetch - processPackages [developers-chamber]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-24 16:48:32] INFO root fetch - processPackages [nanolayer]: executing diffoscope
+[2023-05-24 16:48:32] INFO root fetch - processPackages [nanolayer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nanolayer-0.4.8-py3-none-any.whl.zip tmp/nanolayer-0.4.9-py3-none-any.whl.zip --markdown 20230524/n/nanolayer/0.4.8-0.4.9/diff.md --exclude *.pyd
+[2023-05-24 16:48:32] INFO root fetch - processPackages [anomalib]: New version: [0.5.1] Old Version: [0.5.0]
+[2023-05-24 16:48:32] INFO root fetch - processPackages [jorun]: New version: [0.1.0] Old Version: [0.0.7]
+[2023-05-24 16:48:32] INFO root fetch - processPackages [ndcurves]: New version: [1.3.0] Old Version: [1.2.0]
+[2023-05-24 16:48:32] INFO root fetch - processPackages [useis]: executing diffoscope
+[2023-05-24 16:48:32] INFO root fetch - processPackages [useis]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/useis-1.0.2.tar.gz tmp/useis-1.0.3.tar.gz --markdown 20230524/u/useis/1.0.2-1.0.3/diff.md --exclude *.pyd
+[2023-05-24 16:48:32] INFO root fetch - processPackages [schema-jobs]: executing diffoscope
+[2023-05-24 16:48:32] INFO root fetch - processPackages [schema-jobs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/schema_jobs-0.1.8.tar.gz tmp/schema_jobs-0.1.9.tar.gz --markdown 20230524/s/schema-jobs/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-24 16:48:32] INFO root fetch - processPackages [pymagento]: Downloading https://files.pythonhosted.org/packages/1c/a8/630403df581126485a4cce38c1c12693dd44513fd027a0c882d01646ba14/pymagento-1.6.1.tar.gz
+[2023-05-24 16:48:32] INFO root fetch - processPackages [pylywsdxx]: Downloading https://files.pythonhosted.org/packages/ec/9a/5c0706ec3e54db47e3ead9d7558cf1b1d66a20b0a79d2f01a21e5797ed0a/pylywsdxx-1.6.1.tar.gz
+[2023-05-24 16:48:32] INFO root fetch - processPackages [developers-chamber]: Downloading https://files.pythonhosted.org/packages/36/af/9798c6d41bf80ddb5c475cdcbc9239f5ff358acecb75df5af85aa4519fc7/developers-chamber-0.0.8.tar.gz
+[2023-05-24 16:48:32] INFO root fetch - processPackages [anomalib]: Downloading https://files.pythonhosted.org/packages/64/4c/c4b3f22cf94b9e8cfb5e5597ba1ef7081c211697ad0ae4289b2145540df1/anomalib-0.5.0.tar.gz
+[2023-05-24 16:48:32] INFO root fetch - processPackages [django-formfieldstash]: Downloading https://files.pythonhosted.org/packages/fc/dd/8632a09dcff69d8676b3e2d8b42b648af2687632c4fbdc99201e625e6896/django-formfieldstash-0.0.8.tar.gz
+[2023-05-24 16:48:32] INFO root fetch - processPackages [ndcurves]: Downloading https://files.pythonhosted.org/packages/6c/d3/c8dbd431126624d0cf79bc8c09f63bd95d0bbc2e0d1cbb6bfa4fc3d82f73/ndcurves-1.3.0-0-pp39-pypy39_pp73-macosx_11_0_arm64.whl
+[2023-05-24 16:48:32] INFO root fetch - processPackages [jorun]: Downloading https://files.pythonhosted.org/packages/19/7d/41e8408891a7756f7d87fd026d7760e3ae3e8c03ef76816087ed142f7338/jorun-0.1.0.tar.gz
+[2023-05-24 16:48:32] INFO root fetch - processPackages [pymagento]: Downloading https://files.pythonhosted.org/packages/36/6e/08d15cc2774cb8a5954cc5b5037bcec7ea5a0cd4be1288164086e103ced5/pymagento-1.7.0.tar.gz
+[2023-05-24 16:48:32] INFO root fetch - processPackages [pylywsdxx]: Downloading https://files.pythonhosted.org/packages/da/d4/01089c84dc0115e3667fc178a875b59e268a3253fe6e8ceb63d15eb302f2/pylywsdxx-1.8.1.tar.gz
+[2023-05-24 16:48:32] INFO root fetch - processPackages [anomalib]: Downloading https://files.pythonhosted.org/packages/d1/20/ba4b38f54e9491b860f6bc77a9a72718a90998138b1c1f7cb6db20664a01/anomalib-0.5.1.tar.gz
+[2023-05-24 16:48:32] INFO root fetch - processPackages [django-formfieldstash]: Downloading https://files.pythonhosted.org/packages/cb/20/e2b331dd9639b5082a1c64e55b97daa407749c04fbfcf9dd4dc9214e92f7/django-formfieldstash-0.1.0.tar.gz
+[2023-05-24 16:48:32] INFO root fetch - processPackages [jorun]: executing diffoscope
+[2023-05-24 16:48:32] INFO root fetch - processPackages [jorun]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jorun-0.0.7.tar.gz tmp/jorun-0.1.0.tar.gz --markdown 20230524/j/jorun/0.0.7-0.1.0/diff.md --exclude *.pyd
+[2023-05-24 16:48:32] INFO root fetch - processPackages [pymagento]: executing diffoscope
+[2023-05-24 16:48:32] INFO root fetch - processPackages [pymagento]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pymagento-1.6.1.tar.gz tmp/pymagento-1.7.0.tar.gz --markdown 20230524/p/pymagento/1.6.1-1.7.0/diff.md --exclude *.pyd
+[2023-05-24 16:48:32] INFO root fetch - processPackages [django-formfieldstash]: executing diffoscope
+[2023-05-24 16:48:32] INFO root fetch - processPackages [django-formfieldstash]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django-formfieldstash-0.0.8.tar.gz tmp/django-formfieldstash-0.1.0.tar.gz --markdown 20230524/d/django-formfieldstash/0.0.8-0.1.0/diff.md --exclude *.pyd
+[2023-05-24 16:48:33] INFO root fetch - processPackages [anomalib]: executing diffoscope
+[2023-05-24 16:48:33] INFO root fetch - processPackages [anomalib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/anomalib-0.5.0.tar.gz tmp/anomalib-0.5.1.tar.gz --markdown 20230524/a/anomalib/0.5.0-0.5.1/diff.md --exclude *.pyd
+[2023-05-24 16:48:33] INFO root fetch - processPackages [pylywsdxx]: executing diffoscope
+[2023-05-24 16:48:33] INFO root fetch - processPackages [pylywsdxx]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pylywsdxx-1.6.1.tar.gz tmp/pylywsdxx-1.8.1.tar.gz --markdown 20230524/p/pylywsdxx/1.6.1-1.8.1/diff.md --exclude *.pyd
+[2023-05-24 16:48:33] INFO root fetch - processPackages [developers-chamber]: Downloading https://files.pythonhosted.org/packages/53/06/448d9c575ddf6fcfcc48327cf6c988496a9fe8c338c5d3f88b1907645a36/developers-chamber-0.0.9.tar.gz
+[2023-05-24 16:48:33] INFO root fetch - processPackages [ndcurves]: executing diffoscope
+[2023-05-24 16:48:33] INFO root fetch - processPackages [ndcurves]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ndcurves-1.2.0-2-pp39-pypy39_pp73-macosx_11_0_arm64.whl.zip tmp/ndcurves-1.3.0-0-pp39-pypy39_pp73-macosx_11_0_arm64.whl.zip --markdown 20230524/n/ndcurves/1.2.0-1.3.0/diff.md --exclude *.pyd
+[2023-05-24 16:48:33] INFO root fetch - processPackages [developers-chamber]: executing diffoscope
+[2023-05-24 16:48:33] INFO root fetch - processPackages [developers-chamber]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/developers-chamber-0.0.8.tar.gz tmp/developers-chamber-0.0.9.tar.gz --markdown 20230524/d/developers-chamber/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-24 16:48:33] INFO root fetch - processPackages [schema-jobs]: Start processing: scorecardpipeline
+[2023-05-24 16:48:33] INFO root fetch - main [MainThread]: End processing [schema-jobs]: success
+[2023-05-24 16:48:33] INFO root fetch - processPackages [scorecardpipeline]: New version: [0.1.7] Old Version: [0.1.6]
+[2023-05-24 16:48:33] INFO root fetch - processPackages [nanolayer]: Start processing: longalpha-utils
+[2023-05-24 16:48:33] INFO root fetch - main [MainThread]: End processing [nanolayer]: success
+[2023-05-24 16:48:33] INFO root fetch - processPackages [scorecardpipeline]: executing diffoscope
+[2023-05-24 16:48:33] INFO root fetch - processPackages [scorecardpipeline]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/scorecardpipeline-0.1.6.tar.gz tmp/scorecardpipeline-0.1.7.tar.gz --markdown 20230524/s/scorecardpipeline/0.1.6-0.1.7/diff.md --exclude *.pyd
+[2023-05-24 16:48:33] INFO root fetch - processPackages [longalpha-utils]: New version: [0.53] Old Version: [0.52]
+[2023-05-24 16:48:34] INFO root fetch - processPackages [longalpha-utils]: Downloading https://files.pythonhosted.org/packages/fe/33/e7dcdd463bee8705dd11faba59ccf15517ac43a0c7f1683149cf2bb612b2/longalpha_utils-0.53.tar.gz
+[2023-05-24 16:48:34] INFO root fetch - processPackages [jorun]: Start processing: edc-constants
+[2023-05-24 16:48:34] INFO root fetch - main [MainThread]: End processing [jorun]: success
+[2023-05-24 16:48:34] INFO root fetch - processPackages [longalpha-utils]: executing diffoscope
+[2023-05-24 16:48:34] INFO root fetch - processPackages [longalpha-utils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/longalpha_utils-0.52.tar.gz tmp/longalpha_utils-0.53.tar.gz --markdown 20230524/l/longalpha-utils/0.52-0.53/diff.md --exclude *.pyd
+[2023-05-24 16:48:34] INFO root fetch - processPackages [edc-constants]: New version: [0.3.9] Old Version: [0.3.8]
+[2023-05-24 16:48:34] INFO root fetch - processPackages [edc-constants]: Downloading https://files.pythonhosted.org/packages/e1/6e/b8edf4ad6fa5549d1b7e98a9cf2c8b4dc3242215cb886aaef19b64a9ccf9/edc_constants-0.3.8-py3-none-any.whl
+[2023-05-24 16:48:34] INFO root fetch - processPackages [pylywsdxx]: Start processing: pycarlo
+[2023-05-24 16:48:34] INFO root fetch - main [MainThread]: End processing [pylywsdxx]: success
+[2023-05-24 16:48:34] INFO root fetch - main [MainThread]: End processing [developers-chamber]: success
+[2023-05-24 16:48:34] INFO root fetch - main [MainThread]: End processing [pymagento]: success
+[2023-05-24 16:48:35] INFO root fetch - processPackages [pycarlo]: New version: [0.7.5] Old Version: [0.7.4]
+[2023-05-24 16:48:35] INFO root fetch - processPackages [edc-constants]: Downloading https://files.pythonhosted.org/packages/a5/d1/9988cdbdb1f2e472539d91e620b2b13a958a8e477c1da4b977ad8aa7e185/edc_constants-0.3.9-py3-none-any.whl
+[2023-05-24 16:48:35] INFO root fetch - main [MainThread]: End processing [django-formfieldstash]: success
+[2023-05-24 16:48:35] INFO root fetch - processPackages [edc-constants]: executing diffoscope
+[2023-05-24 16:48:35] INFO root fetch - processPackages [edc-constants]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/edc_constants-0.3.8-py3-none-any.whl.zip tmp/edc_constants-0.3.9-py3-none-any.whl.zip --markdown 20230524/e/edc-constants/0.3.8-0.3.9/diff.md --exclude *.pyd
+[2023-05-24 16:48:35] INFO root fetch - processPackages [pycarlo]: Downloading https://files.pythonhosted.org/packages/9c/2a/fd2dbb524a9b7367a913de982a24dd76b45a7c015452f479eefd9f52ae17/pycarlo-0.7.4.tar.gz
+[2023-05-24 16:48:35] INFO root fetch - processPackages [pycarlo]: Downloading https://files.pythonhosted.org/packages/45/55/819966143a511ec16a9277b644952410674b3fb673699b49b2ac456ccf9e/pycarlo-0.7.5.tar.gz
+[2023-05-24 16:48:35] INFO root fetch - main [MainThread]: End processing [longalpha-utils]: success
+[2023-05-24 16:48:35] INFO root fetch - processPackages [pycarlo]: executing diffoscope
+[2023-05-24 16:48:35] INFO root fetch - processPackages [pycarlo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pycarlo-0.7.4.tar.gz tmp/pycarlo-0.7.5.tar.gz --markdown 20230524/p/pycarlo/0.7.4-0.7.5/diff.md --exclude *.pyd
+[2023-05-24 16:48:36] INFO root fetch - main [MainThread]: End processing [edc-constants]: success
+[2023-05-24 16:48:36] INFO root fetch - main [MainThread]: End processing [useis]: success
+[2023-05-24 16:48:38] INFO root fetch - main [MainThread]: End processing [anomalib]: success
+[2023-05-24 16:48:44] INFO root fetch - main [MainThread]: End processing [ndcurves]: success
+[2023-05-24 16:49:12] INFO root fetch - main [MainThread]: End processing [scorecardpipeline]: success
+[2023-05-24 16:51:35] ERROR root fetch - processPackages [pycarlo]: Timeout during execution of pkgdiff
+[2023-05-24 16:51:35] INFO root fetch - main [MainThread]: End processing [pycarlo] error
+[2023-05-24 16:51:35] INFO root fetch - main [MainThread]: Store serial: [18231226]
