@@ -10524,3 +10524,102 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-05-24 10:33:06] INFO root fetch - main [MainThread]: End processing [asposepdfcloud]: success
 [2023-05-24 10:33:15] INFO root fetch - main [MainThread]: End processing [pixano]: success
 [2023-05-24 10:33:15] INFO root fetch - main [MainThread]: Store serial: [18226854]
+[2023-05-24 10:38:20] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18226854]
+[2023-05-24 10:38:25] INFO root fetch - main [MainThread]: Found 17 changed packages
+[2023-05-24 10:38:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ugot
+[2023-05-24 10:38:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: alibabacloud-dingtalk
+[2023-05-24 10:38:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: unified-planning
+[2023-05-24 10:38:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: strelok
+[2023-05-24 10:38:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: opensesame-core
+[2023-05-24 10:38:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: chyp
+[2023-05-24 10:38:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: perun.proxygui
+[2023-05-24 10:38:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: USsym
+[2023-05-24 10:38:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: populationDescent
+[2023-05-24 10:38:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: natalify
+[2023-05-24 10:38:25] INFO root fetch - processPackages [USsym]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-05-24 10:38:25] INFO root fetch - processPackages [strelok]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-05-24 10:38:25] INFO root fetch - processPackages [opensesame-core]: New version: [4.0.0a5] Old Version: [4.0.0a39]
+[2023-05-24 10:38:25] INFO root fetch - processPackages [unified-planning]: New version: [0.6.0.9.dev1] Old Version: [0.6.0.56.dev1]
+[2023-05-24 10:38:25] INFO root fetch - processPackages [opensesame-core]: Downloading https://files.pythonhosted.org/packages/25/7d/528deb8969b72bcc135c411725acbdf2d88690ab2061fafc55ce1801b627/opensesame_core-4.0.0a39.tar.gz
+[2023-05-24 10:38:25] WARNING root fetch - processPackages [populationDescent]: Skipping, unable to determine old version
+[2023-05-24 10:38:25] INFO root fetch - processPackages [ugot]: New version: [0.1.2] Old Version: [0.1.1]
+[2023-05-24 10:38:25] INFO root fetch - processPackages [populationDescent]: Start processing: aiomisc
+[2023-05-24 10:38:25] INFO root fetch - main [MainThread]: End processing [populationDescent] error
+[2023-05-24 10:38:25] INFO root fetch - processPackages [perun.proxygui]: New version: [1.7.0] Old Version: [1.6.1]
+[2023-05-24 10:38:25] INFO root fetch - processPackages [strelok]: executing diffoscope
+[2023-05-24 10:38:25] INFO root fetch - processPackages [natalify]: New version: [2.8] Old Version: [2.6]
+[2023-05-24 10:38:25] INFO root fetch - processPackages [chyp]: New version: [0.4.1] Old Version: [0.4]
+[2023-05-24 10:38:25] INFO root fetch - processPackages [strelok]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/strelok-0.0.1.tar.gz tmp/strelok-0.0.2.tar.gz --markdown 20230524/s/strelok/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-05-24 10:38:25] INFO root fetch - processPackages [alibabacloud-dingtalk]: New version: [2.0.16] Old Version: [2.0.15]
+[2023-05-24 10:38:25] WARNING root fetch - processPackages [opensesame-core]: Skipping package: exceeds size limit 18924948>=10485760
+[2023-05-24 10:38:25] INFO root fetch - processPackages [opensesame-core]: Start processing: PyVBMC
+[2023-05-24 10:38:25] INFO root fetch - main [MainThread]: End processing [opensesame-core] error
+[2023-05-24 10:38:25] INFO root fetch - processPackages [unified-planning]: executing diffoscope
+[2023-05-24 10:38:25] INFO root fetch - processPackages [unified-planning]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/unified_planning-0.6.0.56.dev1.tar.gz tmp/unified_planning-0.6.0.9.dev1.tar.gz --markdown 20230524/u/unified-planning/0.6.0.56.dev1-0.6.0.9.dev1/diff.md --exclude *.pyd
+[2023-05-24 10:38:25] INFO root fetch - processPackages [USsym]: Downloading https://files.pythonhosted.org/packages/4c/8c/bba4f8d7d8c71d24487e8fcb349ffc2a04ec81001747c5ac36abbec423f0/USsym-0.1.1.tar.gz
+[2023-05-24 10:38:25] INFO root fetch - processPackages [aiomisc]: New version: [9.8.4] Old Version: [9.8.1]
+[2023-05-24 10:38:25] INFO root fetch - processPackages [ugot]: Downloading https://files.pythonhosted.org/packages/0a/09/11b6731a01ebb130aa90b28fd4f58cfa65bbfb78cacf05d6b9e073587a37/ugot-0.1.1-py3-none-any.whl
+[2023-05-24 10:38:25] INFO root fetch - processPackages [aiomisc]: executing diffoscope
+[2023-05-24 10:38:25] INFO root fetch - processPackages [aiomisc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aiomisc-9.8.1.tar.gz tmp/aiomisc-9.8.4.tar.gz --markdown 20230524/a/aiomisc/9.8.1-9.8.4/diff.md --exclude *.pyd
+[2023-05-24 10:38:25] INFO root fetch - processPackages [PyVBMC]: New version: [1.0.1] Old Version: [1.0.0]
+[2023-05-24 10:38:25] INFO root fetch - processPackages [natalify]: Downloading https://files.pythonhosted.org/packages/a2/fa/2dc2ff7d818f21fa5ac57a907a346fd634eceba2dabc5c38bafcdb6e4a59/natalify-2.6.tar.gz
+[2023-05-24 10:38:25] INFO root fetch - processPackages [perun.proxygui]: Downloading https://files.pythonhosted.org/packages/cf/89/47341e0bf059896bc9accde061cccc3051c9b5d001113ff1ac10dc403cd6/perun.proxygui-1.7.0.tar.gz
+[2023-05-24 10:38:25] INFO root fetch - processPackages [chyp]: Downloading https://files.pythonhosted.org/packages/2d/09/8f7dbf54069db6f196be8b4b48e109d3c336d450422bde630064aa79b4e9/chyp-0.4.tar.gz
+[2023-05-24 10:38:25] INFO root fetch - processPackages [USsym]: executing diffoscope
+[2023-05-24 10:38:25] INFO root fetch - processPackages [USsym]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/USsym-0.1.0.tar.gz tmp/USsym-0.1.1.tar.gz --markdown 20230524/U/USsym/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-05-24 10:38:25] INFO root fetch - processPackages [PyVBMC]: Downloading https://files.pythonhosted.org/packages/97/1e/ac0106baf075baec23b106614b61a994d7ecba8c8be7be56438e555548f3/PyVBMC-1.0.0.tar.gz
+[2023-05-24 10:38:25] INFO root fetch - processPackages [ugot]: Downloading https://files.pythonhosted.org/packages/56/b0/30773b0a62aba3a6e654ba1f479429b7ccff92a90972d36cf37a305b4f59/ugot-0.1.2.tar.gz
+[2023-05-24 10:38:26] INFO root fetch - processPackages [natalify]: Downloading https://files.pythonhosted.org/packages/88/db/dc6231eb8eed5652e1940ffc8ae22519872ffa60c9373eb6aa14f2548fc7/natalify-2.8.tar.gz
+[2023-05-24 10:38:26] INFO root fetch - processPackages [chyp]: Downloading https://files.pythonhosted.org/packages/b6/5c/9b98862105d82e42e1fae066d23bf0208f5be0e99c74016a6c822ebd327a/chyp-0.4.1.tar.gz
+[2023-05-24 10:38:26] INFO root fetch - processPackages [ugot]: executing diffoscope
+[2023-05-24 10:38:26] INFO root fetch - processPackages [ugot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ugot-0.1.1-py3-none-any.whl.zip tmp/ugot-0.1.2.tar.gz --markdown 20230524/u/ugot/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2023-05-24 10:38:26] INFO root fetch - processPackages [natalify]: executing diffoscope
+[2023-05-24 10:38:26] INFO root fetch - processPackages [natalify]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/natalify-2.6.tar.gz tmp/natalify-2.8.tar.gz --markdown 20230524/n/natalify/2.6-2.8/diff.md --exclude *.pyd
+[2023-05-24 10:38:26] INFO root fetch - processPackages [alibabacloud-dingtalk]: Downloading https://files.pythonhosted.org/packages/4f/f0/af7a236e8784b4d47e7b04fca4ca55f2c674ffa7dee673e7c1e0b0b83c4a/alibabacloud_dingtalk-2.0.16.tar.gz
+[2023-05-24 10:38:26] INFO root fetch - processPackages [chyp]: executing diffoscope
+[2023-05-24 10:38:26] INFO root fetch - processPackages [chyp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/chyp-0.4.tar.gz tmp/chyp-0.4.1.tar.gz --markdown 20230524/c/chyp/0.4-0.4.1/diff.md --exclude *.pyd
+[2023-05-24 10:38:26] INFO root fetch - processPackages [alibabacloud-dingtalk]: executing diffoscope
+[2023-05-24 10:38:26] INFO root fetch - processPackages [alibabacloud-dingtalk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/alibabacloud_dingtalk-2.0.15.tar.gz tmp/alibabacloud_dingtalk-2.0.16.tar.gz --markdown 20230524/a/alibabacloud-dingtalk/2.0.15-2.0.16/diff.md --exclude *.pyd
+[2023-05-24 10:38:26] INFO root fetch - processPackages [PyVBMC]: Downloading https://files.pythonhosted.org/packages/73/b2/c8b24eb69de68fd2a7c256a85ad2a2154d01379b8b66f2568c0888446af2/PyVBMC-1.0.1.tar.gz
+[2023-05-24 10:38:26] INFO root fetch - processPackages [perun.proxygui]: executing diffoscope
+[2023-05-24 10:38:26] INFO root fetch - processPackages [perun.proxygui]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/perun.proxygui-1.6.1.tar.gz tmp/perun.proxygui-1.7.0.tar.gz --markdown 20230524/p/perun.proxygui/1.6.1-1.7.0/diff.md --exclude *.pyd
+[2023-05-24 10:38:26] INFO root fetch - processPackages [PyVBMC]: executing diffoscope
+[2023-05-24 10:38:26] INFO root fetch - processPackages [PyVBMC]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PyVBMC-1.0.0.tar.gz tmp/PyVBMC-1.0.1.tar.gz --markdown 20230524/P/PyVBMC/1.0.0-1.0.1/diff.md --exclude *.pyd
+[2023-05-24 10:38:27] INFO root fetch - processPackages [strelok]: Start processing: tdb-io
+[2023-05-24 10:38:27] INFO root fetch - main [MainThread]: End processing [strelok]: success
+[2023-05-24 10:38:27] INFO root fetch - processPackages [tdb-io]: New version: [0.5.9] Old Version: [0.5.8]
+[2023-05-24 10:38:27] INFO root fetch - processPackages [tdb-io]: executing diffoscope
+[2023-05-24 10:38:27] INFO root fetch - processPackages [tdb-io]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tdb_io-0.5.8.tar.gz tmp/tdb_io-0.5.9.tar.gz --markdown 20230524/t/tdb-io/0.5.8-0.5.9/diff.md --exclude *.pyd
+[2023-05-24 10:38:27] INFO root fetch - processPackages [aiomisc]: Start processing: USsym
+[2023-05-24 10:38:27] INFO root fetch - main [MainThread]: End processing [aiomisc]: success
+[2023-05-24 10:38:27] INFO root fetch - processPackages [USsym]: New version: [0.1.3] Old Version: [0.1.2]
+[2023-05-24 10:38:27] INFO root fetch - processPackages [USsym]: Downloading https://files.pythonhosted.org/packages/6b/1f/13e05ecf5e1406c22020cd0ddb12761c9eb3ad09c20cf36700e932b17212/USsym-0.1.2.tar.gz
+[2023-05-24 10:38:27] INFO root fetch - processPackages [ugot]: Start processing: satosacontrib.perun
+[2023-05-24 10:38:27] INFO root fetch - main [MainThread]: End processing [ugot]: success
+[2023-05-24 10:38:27] INFO root fetch - processPackages [natalify]: Start processing: ewoksweb
+[2023-05-24 10:38:27] INFO root fetch - main [MainThread]: End processing [natalify]: success
+[2023-05-24 10:38:27] INFO root fetch - processPackages [ewoksweb]: New version: [0.1.0rc2] Old Version: [0.0.3a0]
+[2023-05-24 10:38:27] INFO root fetch - processPackages [satosacontrib.perun]: New version: [3.1.0] Old Version: [3.0.0]
+[2023-05-24 10:38:27] INFO root fetch - processPackages [USsym]: Start processing: django-auth-dingding
+[2023-05-24 10:38:27] INFO root fetch - main [MainThread]: End processing [USsym]: success
+[2023-05-24 10:38:27] INFO root fetch - processPackages [ewoksweb]: executing diffoscope
+[2023-05-24 10:38:27] INFO root fetch - processPackages [ewoksweb]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ewoksweb-0.0.3a0.tar.gz tmp/ewoksweb-0.1.0rc2.tar.gz --markdown 20230524/e/ewoksweb/0.0.3a0-0.1.0rc2/diff.md --exclude *.pyd
+[2023-05-24 10:38:27] WARNING root fetch - processPackages [django-auth-dingding]: Skipping, unable to determine old version
+[2023-05-24 10:38:27] INFO root fetch - main [MainThread]: End processing [django-auth-dingding] error
+[2023-05-24 10:38:27] INFO root fetch - processPackages [satosacontrib.perun]: Downloading https://files.pythonhosted.org/packages/a3/aa/e1b0cf1d2492faa58c5cad81d8c10d51394f2aedf8d7cf9deb962511dbfe/satosacontrib.perun-3.0.0.tar.gz
+[2023-05-24 10:38:27] INFO root fetch - processPackages [USsym]: Downloading https://files.pythonhosted.org/packages/9e/5c/0a1358cd82be640662d5c91498a976e97e42b5aa08fa3667c1ac30c64a6f/USsym-0.1.3.tar.gz
+[2023-05-24 10:38:27] INFO root fetch - processPackages [USsym]: executing diffoscope
+[2023-05-24 10:38:27] INFO root fetch - processPackages [USsym]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/USsym-0.1.2.tar.gz tmp/USsym-0.1.3.tar.gz --markdown 20230524/U/USsym/0.1.2-0.1.3/diff.md --exclude *.pyd
+[2023-05-24 10:38:28] INFO root fetch - processPackages [satosacontrib.perun]: Downloading https://files.pythonhosted.org/packages/97/78/b6ab2f3b2c3f3fb16acddcdc4beccb5f59a778fde29edbcdced7e1a35e54/satosacontrib.perun-3.1.0.tar.gz
+[2023-05-24 10:38:28] INFO root fetch - main [MainThread]: End processing [chyp]: success
+[2023-05-24 10:38:28] INFO root fetch - processPackages [satosacontrib.perun]: executing diffoscope
+[2023-05-24 10:38:28] INFO root fetch - processPackages [satosacontrib.perun]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/satosacontrib.perun-3.0.0.tar.gz tmp/satosacontrib.perun-3.1.0.tar.gz --markdown 20230524/s/satosacontrib.perun/3.0.0-3.1.0/diff.md --exclude *.pyd
+[2023-05-24 10:38:28] INFO root fetch - main [MainThread]: End processing [tdb-io]: success
+[2023-05-24 10:38:29] INFO root fetch - main [MainThread]: End processing [USsym]: success
+[2023-05-24 10:38:29] INFO root fetch - main [MainThread]: End processing [satosacontrib.perun]: success
+[2023-05-24 10:38:30] INFO root fetch - main [MainThread]: End processing [perun.proxygui]: success
+[2023-05-24 10:38:31] INFO root fetch - main [MainThread]: End processing [PyVBMC]: success
+[2023-05-24 10:38:31] INFO root fetch - main [MainThread]: End processing [unified-planning]: success
+[2023-05-24 10:38:32] INFO root fetch - main [MainThread]: End processing [alibabacloud-dingtalk]: success
+[2023-05-24 10:39:29] INFO root fetch - main [MainThread]: End processing [ewoksweb]: success
+[2023-05-24 10:39:29] INFO root fetch - main [MainThread]: Store serial: [18226909]
