@@ -10150,3 +10150,86 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-05-24 10:06:52] INFO root fetch - main [MainThread]: End processing [tfy-mlflow-client]: success
 [2023-05-24 10:06:56] INFO root fetch - main [MainThread]: End processing [cg]: success
 [2023-05-24 10:06:56] INFO root fetch - main [MainThread]: Store serial: [18226630]
+[2023-05-24 10:12:01] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18226630]
+[2023-05-24 10:12:06] INFO root fetch - main [MainThread]: Found 14 changed packages
+[2023-05-24 10:12:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: greedyFAS
+[2023-05-24 10:12:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: wayfarer
+[2023-05-24 10:12:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: lupin-grognard
+[2023-05-24 10:12:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: connect-cli
+[2023-05-24 10:12:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: ydata-profiling
+[2023-05-24 10:12:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: xj-enroll
+[2023-05-24 10:12:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: sparkverse
+[2023-05-24 10:12:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: ThaiQR
+[2023-05-24 10:12:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: aioairzone-cloud
+[2023-05-24 10:12:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: PrSpiders
+[2023-05-24 10:12:06] INFO root fetch - processPackages [aioairzone-cloud]: New version: [0.1.2] Old Version: [0.1.1]
+[2023-05-24 10:12:06] INFO root fetch - processPackages [wayfarer]: New version: [0.9.2] Old Version: [0.9.1]
+[2023-05-24 10:12:06] INFO root fetch - processPackages [lupin-grognard]: New version: [1.9.0] Old Version: [1.7.0]
+[2023-05-24 10:12:06] INFO root fetch - processPackages [PrSpiders]: New version: [0.5.2] Old Version: [0.5.1]
+[2023-05-24 10:12:06] INFO root fetch - processPackages [connect-cli]: New version: [27.3] Old Version: [27.2]
+[2023-05-24 10:12:06] INFO root fetch - processPackages [xj-enroll]: New version: [1.0.99] Old Version: [1.0.98]
+[2023-05-24 10:12:06] WARNING root fetch - processPackages [ThaiQR]: Skipping, unable to determine old version
+[2023-05-24 10:12:06] INFO root fetch - processPackages [ThaiQR]: Start processing: chailie
+[2023-05-24 10:12:06] INFO root fetch - main [MainThread]: End processing [ThaiQR] error
+[2023-05-24 10:12:06] INFO root fetch - processPackages [greedyFAS]: New version: [1.9.1] Old Version: [1.9.0]
+[2023-05-24 10:12:06] INFO root fetch - processPackages [ydata-profiling]: New version: [4.2.0] Old Version: [4.1.2]
+[2023-05-24 10:12:06] INFO root fetch - processPackages [sparkverse]: New version: [0.0.5] Old Version: [0.0.4]
+[2023-05-24 10:12:06] INFO root fetch - processPackages [aioairzone-cloud]: executing diffoscope
+[2023-05-24 10:12:06] INFO root fetch - processPackages [aioairzone-cloud]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aioairzone-cloud-0.1.1.tar.gz tmp/aioairzone-cloud-0.1.2.tar.gz --markdown 20230524/a/aioairzone-cloud/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2023-05-24 10:12:06] INFO root fetch - processPackages [xj-enroll]: executing diffoscope
+[2023-05-24 10:12:06] INFO root fetch - processPackages [xj-enroll]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xj_enroll-1.0.98.tar.gz tmp/xj_enroll-1.0.99.tar.gz --markdown 20230524/x/xj-enroll/1.0.98-1.0.99/diff.md --exclude *.pyd
+[2023-05-24 10:12:06] INFO root fetch - processPackages [connect-cli]: executing diffoscope
+[2023-05-24 10:12:06] INFO root fetch - processPackages [connect-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/connect_cli-27.2.tar.gz tmp/connect_cli-27.3.tar.gz --markdown 20230524/c/connect-cli/27.2-27.3/diff.md --exclude *.pyd
+[2023-05-24 10:12:06] INFO root fetch - processPackages [chailie]: New version: [0.3.2] Old Version: [0.3.1]
+[2023-05-24 10:12:06] INFO root fetch - processPackages [wayfarer]: Downloading https://files.pythonhosted.org/packages/00/8b/7f603fb275a7b4389ffa82033734d1287cc2580c660da544d1e11194953f/wayfarer-0.9.1.tar.gz
+[2023-05-24 10:12:06] INFO root fetch - processPackages [PrSpiders]: Downloading https://files.pythonhosted.org/packages/6c/ab/0fd99edefc7317f828d286ac15049dbc97fda8a7afba7823aa21d56b1b8f/PrSpiders-0.5.2.tar.gz
+[2023-05-24 10:12:06] INFO root fetch - processPackages [lupin-grognard]: executing diffoscope
+[2023-05-24 10:12:06] INFO root fetch - processPackages [lupin-grognard]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lupin-grognard-1.7.0.tar.gz tmp/lupin-grognard-1.9.0.tar.gz --markdown 20230524/l/lupin-grognard/1.7.0-1.9.0/diff.md --exclude *.pyd
+[2023-05-24 10:12:06] INFO root fetch - processPackages [PrSpiders]: executing diffoscope
+[2023-05-24 10:12:06] INFO root fetch - processPackages [PrSpiders]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PrSpiders-0.5.1.tar.gz tmp/PrSpiders-0.5.2.tar.gz --markdown 20230524/P/PrSpiders/0.5.1-0.5.2/diff.md --exclude *.pyd
+[2023-05-24 10:12:06] INFO root fetch - processPackages [ydata-profiling]: Downloading https://files.pythonhosted.org/packages/84/33/d29c87a10e87b2477eaca3ced08c3cf578d42f349ed56218f0304743e3c3/ydata-profiling-4.1.2.tar.gz
+[2023-05-24 10:12:06] INFO root fetch - processPackages [wayfarer]: Downloading https://files.pythonhosted.org/packages/38/a4/02d4495938e872cf621d74b77be10aa7b9eb4d19679062e58ce8323c4345/wayfarer-0.9.2.tar.gz
+[2023-05-24 10:12:06] INFO root fetch - processPackages [sparkverse]: Downloading https://files.pythonhosted.org/packages/2d/48/8cac6aa08e4ef3a8c6bc313d8a57284c09286ec15fdca9ca3d20bd6e0ea2/sparkverse-0.0.5.tar.gz
+[2023-05-24 10:12:06] INFO root fetch - processPackages [wayfarer]: executing diffoscope
+[2023-05-24 10:12:06] INFO root fetch - processPackages [wayfarer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wayfarer-0.9.1.tar.gz tmp/wayfarer-0.9.2.tar.gz --markdown 20230524/w/wayfarer/0.9.1-0.9.2/diff.md --exclude *.pyd
+[2023-05-24 10:12:06] INFO root fetch - processPackages [greedyFAS]: executing diffoscope
+[2023-05-24 10:12:06] INFO root fetch - processPackages [greedyFAS]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/greedyFAS-1.9.0.tar.gz tmp/greedyFAS-1.9.1.tar.gz --markdown 20230524/g/greedyFAS/1.9.0-1.9.1/diff.md --exclude *.pyd
+[2023-05-24 10:12:06] INFO root fetch - processPackages [chailie]: Downloading https://files.pythonhosted.org/packages/ca/42/a2af6c474f5fdfd6969d2ddc9cca46956118a37cae91689b0a2fe55c5e04/chailie-0.3.2.tar.gz
+[2023-05-24 10:12:07] INFO root fetch - processPackages [ydata-profiling]: Downloading https://files.pythonhosted.org/packages/5e/00/d3e5797449dfbfe73e7b703a198c73148a5dd65ee2478314f6f72602596b/ydata-profiling-4.2.0.tar.gz
+[2023-05-24 10:12:07] INFO root fetch - processPackages [sparkverse]: executing diffoscope
+[2023-05-24 10:12:07] INFO root fetch - processPackages [sparkverse]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sparkverse-0.0.4.tar.gz tmp/sparkverse-0.0.5.tar.gz --markdown 20230524/s/sparkverse/0.0.4-0.0.5/diff.md --exclude *.pyd
+[2023-05-24 10:12:07] INFO root fetch - processPackages [chailie]: executing diffoscope
+[2023-05-24 10:12:07] INFO root fetch - processPackages [chailie]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/chailie-0.3.1.tar.gz tmp/chailie-0.3.2.tar.gz --markdown 20230524/c/chailie/0.3.1-0.3.2/diff.md --exclude *.pyd
+[2023-05-24 10:12:07] INFO root fetch - processPackages [ydata-profiling]: executing diffoscope
+[2023-05-24 10:12:07] INFO root fetch - processPackages [ydata-profiling]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ydata-profiling-4.1.2.tar.gz tmp/ydata-profiling-4.2.0.tar.gz --markdown 20230524/y/ydata-profiling/4.1.2-4.2.0/diff.md --exclude *.pyd
+[2023-05-24 10:12:08] INFO root fetch - processPackages [aioairzone-cloud]: Start processing: th2-common-utils
+[2023-05-24 10:12:08] INFO root fetch - main [MainThread]: End processing [aioairzone-cloud]: success
+[2023-05-24 10:12:08] INFO root fetch - processPackages [th2-common-utils]: New version: [2.0.1] Old Version: [2.0.0.dev4574477823]
+[2023-05-24 10:12:08] INFO root fetch - processPackages [PrSpiders]: Start processing: ghga-service-commons
+[2023-05-24 10:12:08] INFO root fetch - main [MainThread]: End processing [PrSpiders]: success
+[2023-05-24 10:12:08] INFO root fetch - processPackages [lupin-grognard]: Start processing: tensortrax
+[2023-05-24 10:12:08] INFO root fetch - main [MainThread]: End processing [lupin-grognard]: success
+[2023-05-24 10:12:08] INFO root fetch - processPackages [ghga-service-commons]: New version: [0.3.2] Old Version: [0.3.1]
+[2023-05-24 10:12:08] INFO root fetch - processPackages [th2-common-utils]: Downloading https://files.pythonhosted.org/packages/d2/d0/6f1010e2ed729438d5640c7cccb30ee316efd7d7b1267f2b953226cb8250/th2_common_utils-2.0.0.dev4574477823.tar.gz
+[2023-05-24 10:12:08] INFO root fetch - processPackages [tensortrax]: New version: [0.9.0] Old Version: [0.8.5]
+[2023-05-24 10:12:08] INFO root fetch - main [MainThread]: End processing [wayfarer]: success
+[2023-05-24 10:12:08] INFO root fetch - main [MainThread]: End processing [chailie]: success
+[2023-05-24 10:12:08] INFO root fetch - processPackages [ghga-service-commons]: Downloading https://files.pythonhosted.org/packages/3b/fb/7bf3dc2387b1516128112246a255cac2ab35bcdc2f1fb1c77ed401fe8256/ghga_service_commons-0.3.2.tar.gz
+[2023-05-24 10:12:08] INFO root fetch - main [MainThread]: End processing [greedyFAS]: success
+[2023-05-24 10:12:08] INFO root fetch - main [MainThread]: End processing [sparkverse]: success
+[2023-05-24 10:12:08] INFO root fetch - processPackages [tensortrax]: Downloading https://files.pythonhosted.org/packages/89/90/35a2c54ede65e72fe80b04f638e7a8151b0671dbd4e55318c2de29784a04/tensortrax-0.8.5.tar.gz
+[2023-05-24 10:12:08] INFO root fetch - processPackages [th2-common-utils]: Downloading https://files.pythonhosted.org/packages/5a/d2/9ef50be6753e598457abc63b37aea0d1307baea43dc44cc6261e549cf708/th2_common_utils-2.0.1.tar.gz
+[2023-05-24 10:12:08] INFO root fetch - processPackages [th2-common-utils]: executing diffoscope
+[2023-05-24 10:12:08] INFO root fetch - processPackages [th2-common-utils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/th2_common_utils-2.0.0.dev4574477823.tar.gz tmp/th2_common_utils-2.0.1.tar.gz --markdown 20230524/t/th2-common-utils/2.0.0.dev4574477823-2.0.1/diff.md --exclude *.pyd
+[2023-05-24 10:12:08] INFO root fetch - processPackages [ghga-service-commons]: executing diffoscope
+[2023-05-24 10:12:08] INFO root fetch - processPackages [ghga-service-commons]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ghga_service_commons-0.3.1.tar.gz tmp/ghga_service_commons-0.3.2.tar.gz --markdown 20230524/g/ghga-service-commons/0.3.1-0.3.2/diff.md --exclude *.pyd
+[2023-05-24 10:12:08] INFO root fetch - main [MainThread]: End processing [xj-enroll]: success
+[2023-05-24 10:12:08] INFO root fetch - processPackages [tensortrax]: Downloading https://files.pythonhosted.org/packages/d5/ee/5781c8a0fd8be11b0a4fef0fa32c022b900698e16870bf834671c45e36c3/tensortrax-0.9.0.tar.gz
+[2023-05-24 10:12:09] INFO root fetch - processPackages [tensortrax]: executing diffoscope
+[2023-05-24 10:12:09] INFO root fetch - processPackages [tensortrax]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tensortrax-0.8.5.tar.gz tmp/tensortrax-0.9.0.tar.gz --markdown 20230524/t/tensortrax/0.8.5-0.9.0/diff.md --exclude *.pyd
+[2023-05-24 10:12:09] INFO root fetch - main [MainThread]: End processing [th2-common-utils]: success
+[2023-05-24 10:12:09] INFO root fetch - main [MainThread]: End processing [ghga-service-commons]: success
+[2023-05-24 10:12:10] INFO root fetch - main [MainThread]: End processing [tensortrax]: success
+[2023-05-24 10:12:11] INFO root fetch - main [MainThread]: End processing [connect-cli]: success
+[2023-05-24 10:12:12] INFO root fetch - main [MainThread]: End processing [ydata-profiling]: success
+[2023-05-24 10:12:12] INFO root fetch - main [MainThread]: Store serial: [18226673]
