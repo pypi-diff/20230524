@@ -23271,3 +23271,152 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd4 in position 72: invalid
 [2023-05-24 21:57:15] INFO root fetch - main [MainThread]: End processing [pypgstac]: success
 [2023-05-24 21:57:15] INFO root fetch - main [MainThread]: End processing [domolibrary]: success
 [2023-05-24 21:57:15] INFO root fetch - main [MainThread]: Store serial: [18235082]
+[2023-05-24 22:02:21] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18235082]
+[2023-05-24 22:02:26] INFO root fetch - main [MainThread]: Found 27 changed packages
+[2023-05-24 22:02:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pypgstac
+[2023-05-24 22:02:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pyCapsid
+[2023-05-24 22:02:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: np-queuey
+[2023-05-24 22:02:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pyjej
+[2023-05-24 22:02:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: AoE2ScenarioParser
+[2023-05-24 22:02:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: thoughtful
+[2023-05-24 22:02:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: mitoinstaller
+[2023-05-24 22:02:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: nyckel
+[2023-05-24 22:02:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: typedspark
+[2023-05-24 22:02:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: PyScreeze
+[2023-05-24 22:02:26] WARNING root fetch - processPackages [pyjej]: Skipping, unable to determine old version
+[2023-05-24 22:02:26] INFO root fetch - processPackages [pyjej]: Start processing: django-streamfield
+[2023-05-24 22:02:26] INFO root fetch - main [MainThread]: End processing [pyjej] error
+[2023-05-24 22:02:26] INFO root fetch - processPackages [AoE2ScenarioParser]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-24 22:02:26] INFO root fetch - processPackages [pyCapsid]: New version: [0.2.2] Old Version: [0.2.1]
+[2023-05-24 22:02:26] INFO root fetch - processPackages [nyckel]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-24 22:02:26] INFO root fetch - processPackages [pypgstac]: New version: [0.7.7] Old Version: [0.7.6]
+[2023-05-24 22:02:26] INFO root fetch - processPackages [np-queuey]: New version: [0.2.9] Old Version: [0.2.8]
+[2023-05-24 22:02:26] INFO root fetch - processPackages [PyScreeze]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-24 22:02:26] INFO root fetch - processPackages [django-streamfield]: New version: [2.0.7] Old Version: [2.0.6]
+[2023-05-24 22:02:26] INFO root fetch - processPackages [mitoinstaller]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-05-24 22:02:26] INFO root fetch - processPackages [typedspark]: New version: [1.0.4] Old Version: [1.0.3]
+[2023-05-24 22:02:26] INFO root fetch - processPackages [thoughtful]: New version: [2.0.0rc0] Old Version: [1.9.0]
+[2023-05-24 22:02:26] INFO root fetch - processPackages [nyckel]: executing diffoscope
+[2023-05-24 22:02:26] INFO root fetch - processPackages [nyckel]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nyckel-0.0.8.tar.gz tmp/nyckel-0.0.9.tar.gz --markdown 20230524/n/nyckel/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-24 22:02:26] INFO root fetch - processPackages [mitoinstaller]: executing diffoscope
+[2023-05-24 22:02:26] INFO root fetch - processPackages [mitoinstaller]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mitoinstaller-0.0.98.tar.gz tmp/mitoinstaller-0.0.99.tar.gz --markdown 20230524/m/mitoinstaller/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-05-24 22:02:26] INFO root fetch - processPackages [np-queuey]: executing diffoscope
+[2023-05-24 22:02:26] INFO root fetch - processPackages [np-queuey]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/np_queuey-0.2.8.tar.gz tmp/np_queuey-0.2.9.tar.gz --markdown 20230524/n/np-queuey/0.2.8-0.2.9/diff.md --exclude *.pyd
+[2023-05-24 22:02:26] INFO root fetch - processPackages [pyCapsid]: Downloading https://files.pythonhosted.org/packages/51/b1/114486894c191fd761a7e0b37a5c80463f3fe00d31b8c624190e6470a3c0/pyCapsid-0.2.1.tar.gz
+[2023-05-24 22:02:26] INFO root fetch - processPackages [django-streamfield]: Downloading https://files.pythonhosted.org/packages/e9/3a/6a83840c80b397c90aed104dec05792998ea29373d3947cbfd59177f014b/django-streamfield-2.0.6.tar.gz
+[2023-05-24 22:02:26] INFO root fetch - processPackages [typedspark]: Downloading https://files.pythonhosted.org/packages/c4/9a/1db89c035c2f7e19666ec2ca1baac610c5e54af0a55bd3c05704682c6462/typedspark-1.0.3.tar.gz
+[2023-05-24 22:02:26] WARNING root fetch - processPackages [pyCapsid]: Skipping package: exceeds size limit 52447679>=10485760
+[2023-05-24 22:02:26] INFO root fetch - processPackages [pyCapsid]: Start processing: dtscalibration
+[2023-05-24 22:02:26] INFO root fetch - main [MainThread]: End processing [pyCapsid] error
+[2023-05-24 22:02:26] INFO root fetch - processPackages [PyScreeze]: Downloading https://files.pythonhosted.org/packages/aa/9c/480bc78f864c996dd14f5892976e94d1d96d6b992a91f733d11f69055d89/PyScreeze-0.1.8.zip
+[2023-05-24 22:02:26] INFO root fetch - processPackages [thoughtful]: Downloading https://files.pythonhosted.org/packages/d6/dc/1fc8220320bd5c0187b45f8b667c5509990736dbc1baaf1856b3b6c8b29b/thoughtful-1.9.0.tar.gz
+[2023-05-24 22:02:26] INFO root fetch - processPackages [pypgstac]: executing diffoscope
+[2023-05-24 22:02:26] INFO root fetch - processPackages [pypgstac]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pypgstac-0.7.6.tar.gz tmp/pypgstac-0.7.7.tar.gz --markdown 20230524/p/pypgstac/0.7.6-0.7.7/diff.md --exclude *.pyd
+[2023-05-24 22:02:26] INFO root fetch - processPackages [dtscalibration]: New version: [2.0.0] Old Version: [1.2.0]
+[2023-05-24 22:02:26] INFO root fetch - processPackages [AoE2ScenarioParser]: executing diffoscope
+[2023-05-24 22:02:26] INFO root fetch - processPackages [AoE2ScenarioParser]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/AoE2ScenarioParser-0.1.8.tar.gz tmp/AoE2ScenarioParser-0.1.9.tar.gz --markdown 20230524/A/AoE2ScenarioParser/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-24 22:02:26] INFO root fetch - processPackages [django-streamfield]: Downloading https://files.pythonhosted.org/packages/9d/4a/ca523e35dfee34a81fb9c0e5d5cd80096391e7cd43ca238b6aaba96438d8/django-streamfield-2.0.7.tar.gz
+[2023-05-24 22:02:26] INFO root fetch - processPackages [typedspark]: Downloading https://files.pythonhosted.org/packages/28/78/d6620fa2871f916a8f277fa612220ba9a09e4aafa6eb308684034e4b4d7a/typedspark-1.0.4.tar.gz
+[2023-05-24 22:02:26] INFO root fetch - processPackages [thoughtful]: Downloading https://files.pythonhosted.org/packages/96/d5/3135f30ef60f3295619c015df7f09eb1f3e6656821a299420c6224b42d67/thoughtful-2.0.0rc0.tar.gz
+[2023-05-24 22:02:26] INFO root fetch - processPackages [typedspark]: executing diffoscope
+[2023-05-24 22:02:26] INFO root fetch - processPackages [typedspark]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/typedspark-1.0.3.tar.gz tmp/typedspark-1.0.4.tar.gz --markdown 20230524/t/typedspark/1.0.3-1.0.4/diff.md --exclude *.pyd
+[2023-05-24 22:02:26] INFO root fetch - processPackages [dtscalibration]: Downloading https://files.pythonhosted.org/packages/89/ff/dd752bb749ce30cdcc21b926922ea8a91864385dba47cead407f72b6c090/dtscalibration-1.2.0.tar.gz
+[2023-05-24 22:02:26] INFO root fetch - processPackages [PyScreeze]: Downloading https://files.pythonhosted.org/packages/7f/c0/048904ca07deba550778556c33eb8c1f105a2b40e92259d2bb7339b02f7b/PyScreeze-0.1.9.tar.gz
+[2023-05-24 22:02:26] INFO root fetch - processPackages [django-streamfield]: executing diffoscope
+[2023-05-24 22:02:26] INFO root fetch - processPackages [django-streamfield]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django-streamfield-2.0.6.tar.gz tmp/django-streamfield-2.0.7.tar.gz --markdown 20230524/d/django-streamfield/2.0.6-2.0.7/diff.md --exclude *.pyd
+[2023-05-24 22:02:26] INFO root fetch - processPackages [PyScreeze]: executing diffoscope
+[2023-05-24 22:02:26] INFO root fetch - processPackages [PyScreeze]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PyScreeze-0.1.8.zip tmp/PyScreeze-0.1.9.tar.gz --markdown 20230524/P/PyScreeze/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-24 22:02:27] INFO root fetch - processPackages [thoughtful]: executing diffoscope
+[2023-05-24 22:02:27] INFO root fetch - processPackages [thoughtful]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/thoughtful-1.9.0.tar.gz tmp/thoughtful-2.0.0rc0.tar.gz --markdown 20230524/t/thoughtful/1.9.0-2.0.0rc0/diff.md --exclude *.pyd
+[2023-05-24 22:02:27] INFO root fetch - processPackages [nyckel]: Start processing: simsopt
+[2023-05-24 22:02:27] INFO root fetch - main [MainThread]: End processing [nyckel]: success
+[2023-05-24 22:02:27] INFO root fetch - processPackages [simsopt]: New version: [0.9.4] Old Version: [0.9.2]
+[2023-05-24 22:02:27] INFO root fetch - processPackages [np-queuey]: Start processing: divio-docs-gen
+[2023-05-24 22:02:27] INFO root fetch - main [MainThread]: End processing [np-queuey]: success
+[2023-05-24 22:02:27] INFO root fetch - processPackages [divio-docs-gen]: New version: [0.2.7] Old Version: [0.2.6]
+[2023-05-24 22:02:27] INFO root fetch - processPackages [mitoinstaller]: Start processing: jppype
+[2023-05-24 22:02:27] INFO root fetch - main [MainThread]: End processing [mitoinstaller]: success
+[2023-05-24 22:02:27] INFO root fetch - processPackages [jppype]: New version: [0.1.1rc1] Old Version: [0.1.1a0]
+[2023-05-24 22:02:27] INFO root fetch - processPackages [simsopt]: Downloading https://files.pythonhosted.org/packages/95/7b/6c611a204e5830f53556a4d39344658f3f9b1cad1d01cc1af66111cb3f7f/simsopt-0.9.2.tar.gz
+[2023-05-24 22:02:28] INFO root fetch - processPackages [divio-docs-gen]: executing diffoscope
+[2023-05-24 22:02:28] INFO root fetch - processPackages [divio-docs-gen]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/divio_docs_gen-0.2.6.tar.gz tmp/divio_docs_gen-0.2.7.tar.gz --markdown 20230524/d/divio-docs-gen/0.2.6-0.2.7/diff.md --exclude *.pyd
+[2023-05-24 22:02:28] WARNING root fetch - processPackages [simsopt]: Skipping package: exceeds size limit 29878827>=10485760
+[2023-05-24 22:02:28] INFO root fetch - processPackages [simsopt]: Start processing: calfpy
+[2023-05-24 22:02:28] INFO root fetch - main [MainThread]: End processing [simsopt] error
+[2023-05-24 22:02:28] INFO root fetch - processPackages [jppype]: executing diffoscope
+[2023-05-24 22:02:28] INFO root fetch - processPackages [jppype]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jppype-0.1.1a0-py3-none-any.whl.zip tmp/jppype-0.1.1rc1.tar.gz --markdown 20230524/j/jppype/0.1.1a0-0.1.1rc1/diff.md --exclude *.pyd
+[2023-05-24 22:02:28] INFO root fetch - processPackages [dtscalibration]: Downloading https://files.pythonhosted.org/packages/32/fc/e220b44810c3b88374788366183247db84eb2bf9c0226b1f2287ca0033fb/dtscalibration-2.0.0.tar.gz
+[2023-05-24 22:02:28] INFO root fetch - processPackages [calfpy]: New version: [1.20.1] Old Version: [1.17.0]
+[2023-05-24 22:02:28] INFO root fetch - processPackages [PyScreeze]: Start processing: hordelib
+[2023-05-24 22:02:28] INFO root fetch - main [MainThread]: End processing [PyScreeze]: success
+[2023-05-24 22:02:28] INFO root fetch - processPackages [calfpy]: Downloading https://files.pythonhosted.org/packages/14/be/10e9e5eb5c240df38e173b0ffe28cafb2e2a2146ae7402ed407ccb7d650f/calfpy-1.17.0.tar.gz
+[2023-05-24 22:02:28] INFO root fetch - processPackages [hordelib]: New version: [1.3.0] Old Version: [1.2.1]
+[2023-05-24 22:02:28] INFO root fetch - processPackages [calfpy]: Downloading https://files.pythonhosted.org/packages/91/95/7477a6674c633b689e2835df703c76f46695d9ada501172f941cf90b6de8/calfpy-1.20.1.tar.gz
+[2023-05-24 22:02:28] INFO root fetch - processPackages [typedspark]: Start processing: dve-lumipy-preview
+[2023-05-24 22:02:28] INFO root fetch - main [MainThread]: End processing [typedspark]: success
+[2023-05-24 22:02:28] INFO root fetch - processPackages [hordelib]: Downloading https://files.pythonhosted.org/packages/06/67/6ebe03f0fb29290148159217e8353b38210465fdb81a25e758b12580ccd5/hordelib-1.3.0.tar.gz
+[2023-05-24 22:02:28] INFO root fetch - processPackages [thoughtful]: Start processing: t8s
+[2023-05-24 22:02:28] INFO root fetch - main [MainThread]: End processing [thoughtful]: success
+[2023-05-24 22:02:28] WARNING root fetch - processPackages [t8s]: Skipping, unable to determine old version
+[2023-05-24 22:02:28] INFO root fetch - processPackages [t8s]: Start processing: mitosheet
+[2023-05-24 22:02:28] INFO root fetch - main [MainThread]: End processing [t8s] error
+[2023-05-24 22:02:28] INFO root fetch - processPackages [dve-lumipy-preview]: New version: [0.1.99] Old Version: [0.1.98]
+[2023-05-24 22:02:28] INFO root fetch - processPackages [hordelib]: executing diffoscope
+[2023-05-24 22:02:28] INFO root fetch - processPackages [hordelib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hordelib-1.2.1.tar.gz tmp/hordelib-1.3.0.tar.gz --markdown 20230524/h/hordelib/1.2.1-1.3.0/diff.md --exclude *.pyd
+[2023-05-24 22:02:28] INFO root fetch - processPackages [calfpy]: executing diffoscope
+[2023-05-24 22:02:28] INFO root fetch - processPackages [calfpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/calfpy-1.17.0.tar.gz tmp/calfpy-1.20.1.tar.gz --markdown 20230524/c/calfpy/1.17.0-1.20.1/diff.md --exclude *.pyd
+[2023-05-24 22:02:28] INFO root fetch - processPackages [mitosheet]: New version: [0.1.99] Old Version: [0.1.98]
+[2023-05-24 22:02:28] INFO root fetch - processPackages [mitosheet]: Downloading https://files.pythonhosted.org/packages/8f/ca/cfa5a04a8bad41705bac5f84cf0c0a38c2e86f34a87c85d097c82dd321da/mitosheet-0.1.98.tar.gz
+[2023-05-24 22:02:29] INFO root fetch - processPackages [divio-docs-gen]: Start processing: pyjoulescope-driver
+[2023-05-24 22:02:29] INFO root fetch - main [MainThread]: End processing [divio-docs-gen]: success
+[2023-05-24 22:02:29] INFO root fetch - processPackages [dve-lumipy-preview]: executing diffoscope
+[2023-05-24 22:02:29] INFO root fetch - processPackages [dve-lumipy-preview]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dve_lumipy_preview-0.1.98-py3-none-any.whl.zip tmp/dve_lumipy_preview-0.1.99-py3-none-any.whl.zip --markdown 20230524/d/dve-lumipy-preview/0.1.98-0.1.99/diff.md --exclude *.pyd
+[2023-05-24 22:02:29] INFO root fetch - processPackages [dtscalibration]: executing diffoscope
+[2023-05-24 22:02:29] INFO root fetch - processPackages [dtscalibration]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dtscalibration-1.2.0.tar.gz tmp/dtscalibration-2.0.0.tar.gz --markdown 20230524/d/dtscalibration/1.2.0-2.0.0/diff.md --exclude *.pyd
+[2023-05-24 22:02:29] INFO root fetch - processPackages [pyjoulescope-driver]: New version: [1.3.9] Old Version: [1.3.8]
+[2023-05-24 22:02:29] INFO root fetch - processPackages [pypgstac]: Start processing: mitosheet3
+[2023-05-24 22:02:29] INFO root fetch - main [MainThread]: End processing [pypgstac]: success
+[2023-05-24 22:02:29] INFO root fetch - processPackages [mitosheet3]: New version: [0.3.92] Old Version: [0.3.91]
+[2023-05-24 22:02:29] WARNING root fetch - processPackages [mitosheet]: Skipping package: exceeds size limit 14622615>=10485760
+[2023-05-24 22:02:29] INFO root fetch - processPackages [mitosheet]: Start processing: galaxykit
+[2023-05-24 22:02:29] INFO root fetch - main [MainThread]: End processing [mitosheet] error
+[2023-05-24 22:02:29] INFO root fetch - processPackages [galaxykit]: New version: [0.9.0] Old Version: [0.8.0]
+[2023-05-24 22:02:29] INFO root fetch - processPackages [mitosheet3]: executing diffoscope
+[2023-05-24 22:02:29] INFO root fetch - processPackages [mitosheet3]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mitosheet3-0.3.91.tar.gz tmp/mitosheet3-0.3.92.tar.gz --markdown 20230524/m/mitosheet3/0.3.91-0.3.92/diff.md --exclude *.pyd
+[2023-05-24 22:02:29] INFO root fetch - processPackages [galaxykit]: Downloading https://files.pythonhosted.org/packages/9e/c9/69f3bdfdbaa042e09a0a07608bb1f5ca62cf600aa002334db74526bd741a/galaxykit-0.8.0.tar.gz
+[2023-05-24 22:02:29] INFO root fetch - processPackages [pyjoulescope-driver]: executing diffoscope
+[2023-05-24 22:02:29] INFO root fetch - processPackages [pyjoulescope-driver]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyjoulescope_driver-1.3.8.tar.gz tmp/pyjoulescope_driver-1.3.9.tar.gz --markdown 20230524/p/pyjoulescope-driver/1.3.8-1.3.9/diff.md --exclude *.pyd
+[2023-05-24 22:02:29] INFO root fetch - processPackages [jppype]: Start processing: trame-server
+[2023-05-24 22:02:29] INFO root fetch - main [MainThread]: End processing [jppype]: success
+[2023-05-24 22:02:29] INFO root fetch - processPackages [trame-server]: New version: [2.9.1] Old Version: [2.9.0]
+[2023-05-24 22:02:29] INFO root fetch - processPackages [trame-server]: executing diffoscope
+[2023-05-24 22:02:29] INFO root fetch - processPackages [trame-server]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/trame-server-2.9.0.tar.gz tmp/trame-server-2.9.1.tar.gz --markdown 20230524/t/trame-server/2.9.0-2.9.1/diff.md --exclude *.pyd
+[2023-05-24 22:02:30] INFO root fetch - processPackages [galaxykit]: Downloading https://files.pythonhosted.org/packages/a8/60/792470a9b191ee24b0a136be444fad0b2801f93985a38dcd4d4ad0eb52f9/galaxykit-0.9.0.tar.gz
+[2023-05-24 22:02:30] INFO root fetch - processPackages [AoE2ScenarioParser]: Start processing: tap-neon
+[2023-05-24 22:02:30] INFO root fetch - main [MainThread]: End processing [AoE2ScenarioParser]: success
+[2023-05-24 22:02:30] INFO root fetch - processPackages [galaxykit]: executing diffoscope
+[2023-05-24 22:02:30] INFO root fetch - processPackages [galaxykit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/galaxykit-0.8.0.tar.gz tmp/galaxykit-0.9.0.tar.gz --markdown 20230524/g/galaxykit/0.8.0-0.9.0/diff.md --exclude *.pyd
+[2023-05-24 22:02:30] WARNING root fetch - processPackages [tap-neon]: Skipping, unable to determine old version
+[2023-05-24 22:02:30] INFO root fetch - processPackages [tap-neon]: Start processing: hotsos
+[2023-05-24 22:02:30] INFO root fetch - main [MainThread]: End processing [tap-neon] error
+[2023-05-24 22:02:30] INFO root fetch - processPackages [hotsos]: New version: [1.1.14.post7] Old Version: [1.1.14.post6]
+[2023-05-24 22:02:30] INFO root fetch - processPackages [hotsos]: executing diffoscope
+[2023-05-24 22:02:30] INFO root fetch - processPackages [hotsos]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hotsos-1.1.14.post6.tar.gz tmp/hotsos-1.1.14.post7.tar.gz --markdown 20230524/h/hotsos/1.1.14.post6-1.1.14.post7/diff.md --exclude *.pyd
+[2023-05-24 22:02:30] INFO root fetch - processPackages [calfpy]: Start processing: joulescope
+[2023-05-24 22:02:30] INFO root fetch - main [MainThread]: End processing [calfpy]: success
+[2023-05-24 22:02:31] INFO root fetch - processPackages [joulescope]: New version: [1.1.5] Old Version: [1.1.4]
+[2023-05-24 22:02:31] INFO root fetch - processPackages [joulescope]: Downloading https://files.pythonhosted.org/packages/54/5a/7eb940b83552100e1cfeec936b3e9ea25c17dc333e413f98b57874710c0f/joulescope-1.1.4.tar.gz
+[2023-05-24 22:02:31] INFO root fetch - main [MainThread]: End processing [galaxykit]: success
+[2023-05-24 22:02:31] INFO root fetch - main [MainThread]: End processing [trame-server]: success
+[2023-05-24 22:02:31] INFO root fetch - main [MainThread]: End processing [dve-lumipy-preview]: success
+[2023-05-24 22:02:31] INFO root fetch - processPackages [joulescope]: Downloading https://files.pythonhosted.org/packages/fd/5d/0da50781c9251251a6ed0de365fb516aa1241b34a5b6d39f060e16781b13/joulescope-1.1.5.tar.gz
+[2023-05-24 22:02:31] INFO root fetch - processPackages [joulescope]: executing diffoscope
+[2023-05-24 22:02:31] INFO root fetch - processPackages [joulescope]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/joulescope-1.1.4.tar.gz tmp/joulescope-1.1.5.tar.gz --markdown 20230524/j/joulescope/1.1.4-1.1.5/diff.md --exclude *.pyd
+[2023-05-24 22:02:33] INFO root fetch - main [MainThread]: End processing [django-streamfield]: success
+[2023-05-24 22:02:33] INFO root fetch - main [MainThread]: End processing [hotsos]: success
+[2023-05-24 22:02:33] INFO root fetch - main [MainThread]: End processing [joulescope]: success
+[2023-05-24 22:02:35] INFO root fetch - main [MainThread]: End processing [mitosheet3]: success
+[2023-05-24 22:02:36] INFO root fetch - main [MainThread]: End processing [pyjoulescope-driver]: success
+[2023-05-24 22:02:39] INFO root fetch - main [MainThread]: End processing [hordelib]: success
+[2023-05-24 22:02:40] INFO root fetch - main [MainThread]: End processing [dtscalibration]: success
+[2023-05-24 22:02:40] INFO root fetch - main [MainThread]: Store serial: [18235187]
