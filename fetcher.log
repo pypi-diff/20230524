@@ -10085,3 +10085,68 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-05-24 10:01:36] INFO root fetch - main [MainThread]: End processing [fedops]: success
 [2023-05-24 10:01:37] INFO root fetch - main [MainThread]: End processing [m-abac-test]: success
 [2023-05-24 10:01:37] INFO root fetch - main [MainThread]: Store serial: [18226587]
+[2023-05-24 10:06:41] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18226587]
+[2023-05-24 10:06:45] INFO root fetch - main [MainThread]: Found 11 changed packages
+[2023-05-24 10:06:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pyoscada
+[2023-05-24 10:06:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: jaz
+[2023-05-24 10:06:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: oarepo-vocabularies
+[2023-05-24 10:06:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: cg
+[2023-05-24 10:06:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: directory-forms-api-client
+[2023-05-24 10:06:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: serious-scaffold
+[2023-05-24 10:06:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: upgini
+[2023-05-24 10:06:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: fold-core
+[2023-05-24 10:06:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: pyglove
+[2023-05-24 10:06:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: tfy-mlflow-client
+[2023-05-24 10:06:46] WARNING root fetch - processPackages [jaz]: Skipping, unable to determine old version
+[2023-05-24 10:06:46] INFO root fetch - processPackages [jaz]: Start processing: connect-extension-runner
+[2023-05-24 10:06:46] INFO root fetch - main [MainThread]: End processing [jaz] error
+[2023-05-24 10:06:46] INFO root fetch - processPackages [tfy-mlflow-client]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-24 10:06:46] INFO root fetch - processPackages [cg]: New version: [31.2.0] Old Version: [31.1.6]
+[2023-05-24 10:06:46] INFO root fetch - processPackages [pyglove]: New version: [0.3.1.dev20230523] Old Version: [0.3.1.dev20230522]
+[2023-05-24 10:06:46] INFO root fetch - processPackages [oarepo-vocabularies]: New version: [2.0.1] Old Version: [2.0.0]
+[2023-05-24 10:06:46] INFO root fetch - processPackages [fold-core]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-24 10:06:46] INFO root fetch - processPackages [tfy-mlflow-client]: executing diffoscope
+[2023-05-24 10:06:46] INFO root fetch - processPackages [tfy-mlflow-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tfy-mlflow-client-0.0.8.tar.gz tmp/tfy-mlflow-client-0.0.9.tar.gz --markdown 20230524/t/tfy-mlflow-client/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-24 10:06:46] INFO root fetch - processPackages [serious-scaffold]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-24 10:06:46] INFO root fetch - processPackages [directory-forms-api-client]: New version: [7.2.0] Old Version: [7.1.1]
+[2023-05-24 10:06:46] ERROR root fetch - processPackages [pyoscada]: Unable to get metadata: No such project 'pyoscada'
+[2023-05-24 10:06:46] INFO root fetch - main [MainThread]: End processing [pyoscada] error
+[2023-05-24 10:06:46] INFO root fetch - processPackages [upgini]: New version: [1.1.99] Old Version: [1.1.98]
+[2023-05-24 10:06:46] INFO root fetch - processPackages [connect-extension-runner]: New version: [27.9] Old Version: [27.8]
+[2023-05-24 10:06:46] INFO root fetch - processPackages [cg]: Downloading https://files.pythonhosted.org/packages/1a/08/4fbe155df845c9c378d4b2d4e6a783c7dcdfa2d9a3ad57246995553cbdae/cg-31.2.0.tar.gz
+[2023-05-24 10:06:46] INFO root fetch - processPackages [fold-core]: Downloading https://files.pythonhosted.org/packages/44/18/bc73f3c1de83b997e0fc9d242c5361bbaff7d11093f05f5611c0807fb970/fold_core-0.1.8.tar.gz
+[2023-05-24 10:06:46] INFO root fetch - processPackages [serious-scaffold]: Downloading https://files.pythonhosted.org/packages/32/3c/e6484de31530bf7bb33e95077503fb7ea842aa301478cb4c472fadef987f/serious-scaffold-0.0.8.tar.gz
+[2023-05-24 10:06:46] INFO root fetch - processPackages [directory-forms-api-client]: Downloading https://files.pythonhosted.org/packages/b5/0c/f2ee0468bde4a96a569fc1b62d5bded88ac6b9cc51d4a6e742633d62d094/directory_forms_api_client-7.1.1-py3-none-any.whl
+[2023-05-24 10:06:46] INFO root fetch - processPackages [cg]: executing diffoscope
+[2023-05-24 10:06:46] INFO root fetch - processPackages [cg]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cg-31.1.6.tar.gz tmp/cg-31.2.0.tar.gz --markdown 20230524/c/cg/31.1.6-31.2.0/diff.md --exclude *.pyd
+[2023-05-24 10:06:46] INFO root fetch - processPackages [pyglove]: Downloading https://files.pythonhosted.org/packages/63/10/d953f8d13166e40113a33b5b2666da355e33e426836f9eeaa950c5a54cba/pyglove-0.3.1.dev20230523.tar.gz
+[2023-05-24 10:06:46] INFO root fetch - processPackages [oarepo-vocabularies]: Downloading https://files.pythonhosted.org/packages/95/b3/7bc0cf32178dca485ba34f5f37dbc12c2a3d8af201cf93f13508782db3a9/oarepo-vocabularies-2.0.1.tar.gz
+[2023-05-24 10:06:46] INFO root fetch - processPackages [connect-extension-runner]: Downloading https://files.pythonhosted.org/packages/b7/ed/a02e4a8a747cd41940435e62d52fce3167d11224d2567d65c03cdfa3f4ba/connect_extension_runner-27.8.tar.gz
+[2023-05-24 10:06:46] INFO root fetch - processPackages [oarepo-vocabularies]: executing diffoscope
+[2023-05-24 10:06:46] INFO root fetch - processPackages [oarepo-vocabularies]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/oarepo-vocabularies-2.0.0.tar.gz tmp/oarepo-vocabularies-2.0.1.tar.gz --markdown 20230524/o/oarepo-vocabularies/2.0.0-2.0.1/diff.md --exclude *.pyd
+[2023-05-24 10:06:46] INFO root fetch - processPackages [pyglove]: executing diffoscope
+[2023-05-24 10:06:46] INFO root fetch - processPackages [pyglove]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyglove-0.3.1.dev20230522.tar.gz tmp/pyglove-0.3.1.dev20230523.tar.gz --markdown 20230524/p/pyglove/0.3.1.dev20230522-0.3.1.dev20230523/diff.md --exclude *.pyd
+[2023-05-24 10:06:46] INFO root fetch - processPackages [upgini]: executing diffoscope
+[2023-05-24 10:06:46] INFO root fetch - processPackages [fold-core]: Downloading https://files.pythonhosted.org/packages/4c/61/bcc8188c56b484555b95092095cb807d6da4dfe82949419fb97327a0f83e/fold_core-0.1.9.tar.gz
+[2023-05-24 10:06:46] INFO root fetch - processPackages [upgini]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/upgini-1.1.98.tar.gz tmp/upgini-1.1.99.tar.gz --markdown 20230524/u/upgini/1.1.98-1.1.99/diff.md --exclude *.pyd
+[2023-05-24 10:06:46] INFO root fetch - processPackages [fold-core]: executing diffoscope
+[2023-05-24 10:06:46] INFO root fetch - processPackages [fold-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fold_core-0.1.8.tar.gz tmp/fold_core-0.1.9.tar.gz --markdown 20230524/f/fold-core/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-24 10:06:46] INFO root fetch - processPackages [serious-scaffold]: Downloading https://files.pythonhosted.org/packages/28/1d/90200135e74525af4f58a5c732e1a7ff8c5603e519f5e35d6968fe6e1e76/serious-scaffold-0.0.9.tar.gz
+[2023-05-24 10:06:46] INFO root fetch - processPackages [serious-scaffold]: executing diffoscope
+[2023-05-24 10:06:46] INFO root fetch - processPackages [serious-scaffold]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/serious-scaffold-0.0.8.tar.gz tmp/serious-scaffold-0.0.9.tar.gz --markdown 20230524/s/serious-scaffold/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-24 10:06:46] INFO root fetch - processPackages [connect-extension-runner]: Downloading https://files.pythonhosted.org/packages/47/aa/2906e55e3f6e3d95b8c7007f7182c704a35f6fb92baffad108611f34ecfa/connect_extension_runner-27.9.tar.gz
+[2023-05-24 10:06:46] INFO root fetch - processPackages [directory-forms-api-client]: Downloading https://files.pythonhosted.org/packages/5a/1b/0c2250ec907ea611694ee978737c8613e425c888a349027df5286f9d7cd1/directory_forms_api_client-7.2.0-py3-none-any.whl
+[2023-05-24 10:06:47] INFO root fetch - processPackages [connect-extension-runner]: executing diffoscope
+[2023-05-24 10:06:47] INFO root fetch - processPackages [connect-extension-runner]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/connect_extension_runner-27.8.tar.gz tmp/connect_extension_runner-27.9.tar.gz --markdown 20230524/c/connect-extension-runner/27.8-27.9/diff.md --exclude *.pyd
+[2023-05-24 10:06:47] INFO root fetch - processPackages [directory-forms-api-client]: executing diffoscope
+[2023-05-24 10:06:47] INFO root fetch - processPackages [directory-forms-api-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/directory_forms_api_client-7.1.1-py3-none-any.whl.zip tmp/directory_forms_api_client-7.2.0-py3-none-any.whl.zip --markdown 20230524/d/directory-forms-api-client/7.1.1-7.2.0/diff.md --exclude *.pyd
+[2023-05-24 10:06:48] INFO root fetch - main [MainThread]: End processing [serious-scaffold]: success
+[2023-05-24 10:06:48] INFO root fetch - main [MainThread]: End processing [directory-forms-api-client]: success
+[2023-05-24 10:06:48] INFO root fetch - main [MainThread]: End processing [connect-extension-runner]: success
+[2023-05-24 10:06:48] INFO root fetch - main [MainThread]: End processing [upgini]: success
+[2023-05-24 10:06:48] INFO root fetch - main [MainThread]: End processing [oarepo-vocabularies]: success
+[2023-05-24 10:06:50] INFO root fetch - main [MainThread]: End processing [fold-core]: success
+[2023-05-24 10:06:50] INFO root fetch - main [MainThread]: End processing [pyglove]: success
+[2023-05-24 10:06:52] INFO root fetch - main [MainThread]: End processing [tfy-mlflow-client]: success
+[2023-05-24 10:06:56] INFO root fetch - main [MainThread]: End processing [cg]: success
+[2023-05-24 10:06:56] INFO root fetch - main [MainThread]: Store serial: [18226630]
