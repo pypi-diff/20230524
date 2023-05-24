@@ -9314,3 +9314,63 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-05-24 09:10:53] INFO root fetch - main [MainThread]: End processing [savant-rs]: success
 [2023-05-24 09:11:03] INFO root fetch - main [MainThread]: End processing [tf-models-nightly]: success
 [2023-05-24 09:11:03] INFO root fetch - main [MainThread]: Store serial: [18226105]
+[2023-05-24 09:16:07] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18226105]
+[2023-05-24 09:16:12] INFO root fetch - main [MainThread]: Found 10 changed packages
+[2023-05-24 09:16:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: applovin-report
+[2023-05-24 09:16:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: authpy
+[2023-05-24 09:16:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: piwaterflow
+[2023-05-24 09:16:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: nonebot-plugin-herocard
+[2023-05-24 09:16:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: scrappo
+[2023-05-24 09:16:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: easy-pil
+[2023-05-24 09:16:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: tf-hub-nightly
+[2023-05-24 09:16:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: pepperize.cdk-apigateway-swagger-ui
+[2023-05-24 09:16:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: midvoxio
+[2023-05-24 09:16:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: keystore-client
+[2023-05-24 09:16:12] WARNING root fetch - processPackages [authpy]: Skipping, unable to determine old version
+[2023-05-24 09:16:12] INFO root fetch - main [MainThread]: End processing [authpy] error
+[2023-05-24 09:16:12] INFO root fetch - processPackages [scrappo]: New version: [1.1.1] Old Version: [1.1.0]
+[2023-05-24 09:16:12] INFO root fetch - processPackages [applovin-report]: New version: [0.1.3] Old Version: [0.1.0]
+[2023-05-24 09:16:12] INFO root fetch - processPackages [piwaterflow]: New version: [0.5.6] Old Version: [0.5.4]
+[2023-05-24 09:16:12] INFO root fetch - processPackages [easy-pil]: New version: [0.2.5] Old Version: [0.2.4]
+[2023-05-24 09:16:12] INFO root fetch - processPackages [nonebot-plugin-herocard]: New version: [1.0.1] Old Version: [1.0.0]
+[2023-05-24 09:16:12] INFO root fetch - processPackages [pepperize.cdk-apigateway-swagger-ui]: New version: [0.0.99] Old Version: [0.0.97]
+[2023-05-24 09:16:12] INFO root fetch - processPackages [tf-hub-nightly]: New version: [0.9.0.dev202008190006] Old Version: [0.9.0.dev202008180006]
+[2023-05-24 09:16:12] INFO root fetch - processPackages [midvoxio]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-05-24 09:16:12] INFO root fetch - processPackages [pepperize.cdk-apigateway-swagger-ui]: executing diffoscope
+[2023-05-24 09:16:12] INFO root fetch - processPackages [pepperize.cdk-apigateway-swagger-ui]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pepperize.cdk-apigateway-swagger-ui-0.0.97.tar.gz tmp/pepperize.cdk-apigateway-swagger-ui-0.0.99.tar.gz --markdown 20230524/p/pepperize.cdk-apigateway-swagger-ui/0.0.97-0.0.99/diff.md --exclude *.pyd
+[2023-05-24 09:16:12] INFO root fetch - processPackages [tf-hub-nightly]: executing diffoscope
+[2023-05-24 09:16:12] INFO root fetch - processPackages [tf-hub-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tf_hub_nightly-0.9.0.dev202008180006-py2.py3-none-any.whl.zip tmp/tf_hub_nightly-0.9.0.dev202008190006-py2.py3-none-any.whl.zip --markdown 20230524/t/tf-hub-nightly/0.9.0.dev202008180006-0.9.0.dev202008190006/diff.md --exclude *.pyd
+[2023-05-24 09:16:12] WARNING root fetch - processPackages [keystore-client]: Skipping, unable to determine old version
+[2023-05-24 09:16:12] INFO root fetch - main [MainThread]: End processing [keystore-client] error
+[2023-05-24 09:16:12] INFO root fetch - processPackages [nonebot-plugin-herocard]: Downloading https://files.pythonhosted.org/packages/8b/f9/7e74e41ba480d475fe26697a99b288aa0eb5219022580f69c0c5d96c523a/nonebot-plugin-herocard-1.0.0.tar.gz
+[2023-05-24 09:16:12] INFO root fetch - processPackages [scrappo]: Downloading https://files.pythonhosted.org/packages/60/86/575d2a863a71962c46a3ac538bf423f52ccb8edf57ea3f40494e09cb9568/scrappo-1.1.0.tar.gz
+[2023-05-24 09:16:12] INFO root fetch - processPackages [applovin-report]: Downloading https://files.pythonhosted.org/packages/22/1f/9353dee2ace4590b8eba2b401358a3fd397c348eaa6088d65a26590548cf/applovin_report-0.1.0.tar.gz
+[2023-05-24 09:16:12] INFO root fetch - processPackages [easy-pil]: Downloading https://files.pythonhosted.org/packages/c4/9d/fc1ea818c982715d4b9275d66511f80ce24a0e67caa634a37f8d6f5cc15d/easy_pil-0.2.4.tar.gz
+[2023-05-24 09:16:12] INFO root fetch - processPackages [midvoxio]: Downloading https://files.pythonhosted.org/packages/80/28/ef9c184b91a8287220948422a1f1bd0180d4c19ba48463cf1881480e9dfe/midvoxio-0.1.0.tar.gz
+[2023-05-24 09:16:12] INFO root fetch - processPackages [nonebot-plugin-herocard]: Downloading https://files.pythonhosted.org/packages/ad/16/b864f6c3808915c84454ced3cc53af8b000806f0c3540f59306c351e6fe8/nonebot_plugin_herocard-1.0.1.tar.gz
+[2023-05-24 09:16:12] INFO root fetch - processPackages [piwaterflow]: Downloading https://files.pythonhosted.org/packages/c3/94/84923e80d13d77923a39350cf146dff88178b83efee3496f740e57f347fa/piwaterflow-0.5.6.tar.gz
+[2023-05-24 09:16:12] INFO root fetch - processPackages [scrappo]: Downloading https://files.pythonhosted.org/packages/8d/16/4696848204706aa45a6b90e0748df73015684c1279681b08d9cfc7e6b04a/scrappo-1.1.1.tar.gz
+[2023-05-24 09:16:12] INFO root fetch - processPackages [nonebot-plugin-herocard]: executing diffoscope
+[2023-05-24 09:16:12] INFO root fetch - processPackages [nonebot-plugin-herocard]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nonebot-plugin-herocard-1.0.0.tar.gz tmp/nonebot_plugin_herocard-1.0.1.tar.gz --markdown 20230524/n/nonebot-plugin-herocard/1.0.0-1.0.1/diff.md --exclude *.pyd
+[2023-05-24 09:16:12] INFO root fetch - processPackages [applovin-report]: Downloading https://files.pythonhosted.org/packages/bf/1a/d3164f43fbd4aa6abd3ca3671ada6e3022e10ae977f9fceddd60fb6a4f84/applovin_report-0.1.3.tar.gz
+[2023-05-24 09:16:12] INFO root fetch - processPackages [scrappo]: executing diffoscope
+[2023-05-24 09:16:12] INFO root fetch - processPackages [piwaterflow]: executing diffoscope
+[2023-05-24 09:16:12] INFO root fetch - processPackages [scrappo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/scrappo-1.1.0.tar.gz tmp/scrappo-1.1.1.tar.gz --markdown 20230524/s/scrappo/1.1.0-1.1.1/diff.md --exclude *.pyd
+[2023-05-24 09:16:12] INFO root fetch - processPackages [piwaterflow]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/piwaterflow-0.5.4.tar.gz tmp/piwaterflow-0.5.6.tar.gz --markdown 20230524/p/piwaterflow/0.5.4-0.5.6/diff.md --exclude *.pyd
+[2023-05-24 09:16:12] INFO root fetch - processPackages [midvoxio]: Downloading https://files.pythonhosted.org/packages/0e/fa/83ac1fbab3331e237342da12553f35252b4a512e6cc948049816d27e9bac/midvoxio-0.1.1.tar.gz
+[2023-05-24 09:16:13] INFO root fetch - processPackages [applovin-report]: executing diffoscope
+[2023-05-24 09:16:13] INFO root fetch - processPackages [applovin-report]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/applovin_report-0.1.0.tar.gz tmp/applovin_report-0.1.3.tar.gz --markdown 20230524/a/applovin-report/0.1.0-0.1.3/diff.md --exclude *.pyd
+[2023-05-24 09:16:13] INFO root fetch - processPackages [midvoxio]: executing diffoscope
+[2023-05-24 09:16:13] INFO root fetch - processPackages [midvoxio]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/midvoxio-0.1.0.tar.gz tmp/midvoxio-0.1.1.tar.gz --markdown 20230524/m/midvoxio/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-05-24 09:16:13] INFO root fetch - processPackages [easy-pil]: Downloading https://files.pythonhosted.org/packages/59/18/4ba29a2b318abeb0b89bc2303b6ca7861a6565c115b58be271b803a5f6ca/easy-pil-0.2.5.tar.gz
+[2023-05-24 09:16:13] INFO root fetch - processPackages [easy-pil]: executing diffoscope
+[2023-05-24 09:16:13] INFO root fetch - processPackages [easy-pil]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/easy_pil-0.2.4.tar.gz tmp/easy-pil-0.2.5.tar.gz --markdown 20230524/e/easy-pil/0.2.4-0.2.5/diff.md --exclude *.pyd
+[2023-05-24 09:16:14] INFO root fetch - main [MainThread]: End processing [pepperize.cdk-apigateway-swagger-ui]: success
+[2023-05-24 09:16:14] INFO root fetch - main [MainThread]: End processing [tf-hub-nightly]: success
+[2023-05-24 09:16:14] INFO root fetch - main [MainThread]: End processing [nonebot-plugin-herocard]: success
+[2023-05-24 09:16:14] INFO root fetch - main [MainThread]: End processing [piwaterflow]: success
+[2023-05-24 09:16:14] INFO root fetch - main [MainThread]: End processing [applovin-report]: success
+[2023-05-24 09:16:14] INFO root fetch - main [MainThread]: End processing [midvoxio]: success
+[2023-05-24 09:16:14] INFO root fetch - main [MainThread]: End processing [scrappo]: success
+[2023-05-24 09:16:14] INFO root fetch - main [MainThread]: End processing [easy-pil]: success
+[2023-05-24 09:16:14] INFO root fetch - main [MainThread]: Store serial: [18226155]
