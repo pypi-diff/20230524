@@ -13924,3 +13924,67 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd4 in position 72: invalid
 [2023-05-24 13:43:19] INFO root fetch - main [MainThread]: End processing [vid2info]: success
 [2023-05-24 13:43:33] INFO root fetch - main [MainThread]: End processing [chainlit]: success
 [2023-05-24 13:43:33] INFO root fetch - main [MainThread]: Store serial: [18228970]
+[2023-05-24 13:48:38] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18228970]
+[2023-05-24 13:48:43] INFO root fetch - main [MainThread]: Found 11 changed packages
+[2023-05-24 13:48:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: sap-business-document-processing
+[2023-05-24 13:48:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: tensortrax
+[2023-05-24 13:48:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: jupyter-matlab-proxy
+[2023-05-24 13:48:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: m4ai
+[2023-05-24 13:48:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: searchkit
+[2023-05-24 13:48:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: GD-utils
+[2023-05-24 13:48:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: vid2info
+[2023-05-24 13:48:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: cleanchausie
+[2023-05-24 13:48:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: domain-paas-sdk-python
+[2023-05-24 13:48:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: RIFT
+[2023-05-24 13:48:43] INFO root fetch - processPackages [vid2info]: New version: [1.99] Old Version: [1.98]
+[2023-05-24 13:48:43] INFO root fetch - processPackages [tensortrax]: New version: [0.9.0] Old Version: [0.8.5]
+[2023-05-24 13:48:43] INFO root fetch - processPackages [sap-business-document-processing]: New version: [0.3.2] Old Version: [0.3.1]
+[2023-05-24 13:48:43] INFO root fetch - processPackages [cleanchausie]: New version: [1.9.1] Old Version: [1.9.0]
+[2023-05-24 13:48:43] WARNING root fetch - processPackages [m4ai]: Skipping, unable to determine old version
+[2023-05-24 13:48:43] INFO root fetch - processPackages [m4ai]: Start processing: ronnytest
+[2023-05-24 13:48:43] INFO root fetch - main [MainThread]: End processing [m4ai] error
+[2023-05-24 13:48:43] INFO root fetch - processPackages [jupyter-matlab-proxy]: New version: [0.5.4] Old Version: [0.5.3]
+[2023-05-24 13:48:43] WARNING root fetch - processPackages [domain-paas-sdk-python]: Skipping, unable to determine old version
+[2023-05-24 13:48:43] INFO root fetch - main [MainThread]: End processing [domain-paas-sdk-python] error
+[2023-05-24 13:48:43] INFO root fetch - processPackages [GD-utils]: New version: [0.2.0.9] Old Version: [0.2.0.8]
+[2023-05-24 13:48:43] INFO root fetch - processPackages [vid2info]: executing diffoscope
+[2023-05-24 13:48:43] INFO root fetch - processPackages [vid2info]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vid2info-1.98.tar.gz tmp/vid2info-1.99.tar.gz --markdown 20230524/v/vid2info/1.98-1.99/diff.md --exclude *.pyd
+[2023-05-24 13:48:43] INFO root fetch - processPackages [searchkit]: New version: [0.2.6] Old Version: [0.2.5]
+[2023-05-24 13:48:43] WARNING root fetch - processPackages [ronnytest]: Skipping, unable to determine old version
+[2023-05-24 13:48:43] INFO root fetch - main [MainThread]: End processing [ronnytest] error
+[2023-05-24 13:48:43] INFO root fetch - processPackages [RIFT]: New version: [0.0.15.9rc1] Old Version: [0.0.15.8rc9]
+[2023-05-24 13:48:43] INFO root fetch - processPackages [tensortrax]: executing diffoscope
+[2023-05-24 13:48:43] INFO root fetch - processPackages [tensortrax]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tensortrax-0.8.5.tar.gz tmp/tensortrax-0.9.0.tar.gz --markdown 20230524/t/tensortrax/0.8.5-0.9.0/diff.md --exclude *.pyd
+[2023-05-24 13:48:43] INFO root fetch - processPackages [sap-business-document-processing]: Downloading https://files.pythonhosted.org/packages/39/6e/866a92efe069fd6cc2e0f7eafa95a524aff412d5d214e79ba13c76664378/sap-business-document-processing-0.3.1.tar.gz
+[2023-05-24 13:48:43] INFO root fetch - processPackages [jupyter-matlab-proxy]: Downloading https://files.pythonhosted.org/packages/9f/ce/388bd74e8cb025741646d1c38c07525ec6f6a2007cadb9193e60d0880574/jupyter_matlab_proxy-0.5.3-py3-none-any.whl
+[2023-05-24 13:48:43] INFO root fetch - processPackages [cleanchausie]: Downloading https://files.pythonhosted.org/packages/a7/78/dbb98225f8ff4846374d6aa1685bf9ef970270d109deb0b928ca4b213424/cleanchausie-1.9.0.tar.gz
+[2023-05-24 13:48:43] INFO root fetch - processPackages [searchkit]: Downloading https://files.pythonhosted.org/packages/21/44/8fbca96e35edac1d1ca7d379eb06606d7cac3601985424d4e0eef04f4586/searchkit-0.2.5.tar.gz
+[2023-05-24 13:48:43] INFO root fetch - processPackages [GD-utils]: Downloading https://files.pythonhosted.org/packages/76/da/d52151dd4ccbc9408beb62f6ffaf5b2fe937a5bfd1f9759aef71c1632633/GD_utils-0.2.0.8-py3-none-any.whl
+[2023-05-24 13:48:43] INFO root fetch - processPackages [RIFT]: Downloading https://files.pythonhosted.org/packages/69/18/86670e626c86d62cd95a6c51d963e54f59ba3cc207b7b54e83542ede13fa/RIFT-0.0.15.8rc9.tar.gz
+[2023-05-24 13:48:43] INFO root fetch - processPackages [jupyter-matlab-proxy]: Downloading https://files.pythonhosted.org/packages/e9/f3/d2064577eec7e8ed32b9ee2e9ce8a52e15049ae2193ce3f295120be57dde/jupyter_matlab_proxy-0.5.4-py3-none-any.whl
+[2023-05-24 13:48:43] INFO root fetch - processPackages [searchkit]: Downloading https://files.pythonhosted.org/packages/30/9b/3cdaa2fa9e2f4ed39cd698568b519b0d8eee242d766d0b4c743c3a93cb99/searchkit-0.2.6.tar.gz
+[2023-05-24 13:48:43] INFO root fetch - processPackages [sap-business-document-processing]: Downloading https://files.pythonhosted.org/packages/0c/15/6863924c66eb87112765d1cbd769aef2cf355f33dcf07380bedf8665d36c/sap-business-document-processing-0.3.2.tar.gz
+[2023-05-24 13:48:43] INFO root fetch - processPackages [GD-utils]: Downloading https://files.pythonhosted.org/packages/0e/7c/38cb98bd1559ae89cf8fa3761097b0f0a4ec10dabdb2cc2ff5556b0c1e4f/GD_utils-0.2.0.9-py3-none-any.whl
+[2023-05-24 13:48:43] INFO root fetch - processPackages [jupyter-matlab-proxy]: executing diffoscope
+[2023-05-24 13:48:43] INFO root fetch - processPackages [jupyter-matlab-proxy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jupyter_matlab_proxy-0.5.3-py3-none-any.whl.zip tmp/jupyter_matlab_proxy-0.5.4-py3-none-any.whl.zip --markdown 20230524/j/jupyter-matlab-proxy/0.5.3-0.5.4/diff.md --exclude *.pyd
+[2023-05-24 13:48:43] INFO root fetch - processPackages [searchkit]: executing diffoscope
+[2023-05-24 13:48:43] INFO root fetch - processPackages [searchkit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/searchkit-0.2.5.tar.gz tmp/searchkit-0.2.6.tar.gz --markdown 20230524/s/searchkit/0.2.5-0.2.6/diff.md --exclude *.pyd
+[2023-05-24 13:48:43] INFO root fetch - processPackages [cleanchausie]: Downloading https://files.pythonhosted.org/packages/4f/6b/b3ff2752ea6aefe1723794295a2001fe12d9b4991690db10fe4a1c09f609/cleanchausie-1.9.1.tar.gz
+[2023-05-24 13:48:43] INFO root fetch - processPackages [sap-business-document-processing]: executing diffoscope
+[2023-05-24 13:48:43] INFO root fetch - processPackages [sap-business-document-processing]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sap-business-document-processing-0.3.1.tar.gz tmp/sap-business-document-processing-0.3.2.tar.gz --markdown 20230524/s/sap-business-document-processing/0.3.1-0.3.2/diff.md --exclude *.pyd
+[2023-05-24 13:48:43] INFO root fetch - processPackages [GD-utils]: executing diffoscope
+[2023-05-24 13:48:43] INFO root fetch - processPackages [GD-utils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/GD_utils-0.2.0.8-py3-none-any.whl.zip tmp/GD_utils-0.2.0.9-py3-none-any.whl.zip --markdown 20230524/G/GD-utils/0.2.0.8-0.2.0.9/diff.md --exclude *.pyd
+[2023-05-24 13:48:44] INFO root fetch - processPackages [cleanchausie]: executing diffoscope
+[2023-05-24 13:48:44] INFO root fetch - processPackages [cleanchausie]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cleanchausie-1.9.0.tar.gz tmp/cleanchausie-1.9.1.tar.gz --markdown 20230524/c/cleanchausie/1.9.0-1.9.1/diff.md --exclude *.pyd
+[2023-05-24 13:48:44] INFO root fetch - processPackages [RIFT]: Downloading https://files.pythonhosted.org/packages/66/4a/e3a7cecd1ca12299fdcce691d0f27ebb81bcf7e4664cf3aeae051ad23828/RIFT-0.0.15.9rc1.tar.gz
+[2023-05-24 13:48:44] INFO root fetch - processPackages [RIFT]: executing diffoscope
+[2023-05-24 13:48:44] INFO root fetch - processPackages [RIFT]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230524:/home/abi/fetcher/20230524:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/RIFT-0.0.15.8rc9.tar.gz tmp/RIFT-0.0.15.9rc1.tar.gz --markdown 20230524/R/RIFT/0.0.15.8rc9-0.0.15.9rc1/diff.md --exclude *.pyd
+[2023-05-24 13:48:44] INFO root fetch - main [MainThread]: End processing [tensortrax]: success
+[2023-05-24 13:48:45] INFO root fetch - main [MainThread]: End processing [searchkit]: success
+[2023-05-24 13:48:45] INFO root fetch - main [MainThread]: End processing [GD-utils]: success
+[2023-05-24 13:48:45] INFO root fetch - main [MainThread]: End processing [sap-business-document-processing]: success
+[2023-05-24 13:48:45] INFO root fetch - main [MainThread]: End processing [cleanchausie]: success
+[2023-05-24 13:48:45] INFO root fetch - main [MainThread]: End processing [jupyter-matlab-proxy]: success
+[2023-05-24 13:48:46] INFO root fetch - main [MainThread]: End processing [vid2info]: success
+[2023-05-24 13:48:47] INFO root fetch - main [MainThread]: End processing [RIFT]: success
+[2023-05-24 13:48:47] INFO root fetch - main [MainThread]: Store serial: [18229003]
